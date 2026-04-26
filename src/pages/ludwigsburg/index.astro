@@ -2,23 +2,12 @@
 import Base from "../../layouts/Base.astro";
 import EventCard from "../../components/EventCard.astro";
 import FilterBar from "../../components/FilterBar.astro";
-import { readFileSync } from "fs";
-import { fileURLToPath } from "url";
-import path from "path";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+import eventsData from "../../../public/data/ludwigsburg/events-current.json";
+import metaData from "../../../public/data/ludwigsburg/meta.json";
 
-let events = [];
-let meta = {};
-
-try {
-  const evPath   = path.resolve(__dirname, "../../../public/data/ludwigsburg/events-current.json");
-  const metaPath = path.resolve(__dirname, "../../../public/data/ludwigsburg/meta.json");
-  events = JSON.parse(readFileSync(evPath, "utf-8"));
-  meta   = JSON.parse(readFileSync(metaPath, "utf-8"));
-} catch (e) {
-  console.warn("[ludwigsburg/index.astro] Could not read data files:", e.message);
-}
+const events = eventsData;
+const meta = metaData;
 
 const scrapedDate = meta.scraped_at
   ? new Date(meta.scraped_at).toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" })

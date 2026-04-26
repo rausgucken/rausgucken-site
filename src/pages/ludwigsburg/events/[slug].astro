@@ -1,24 +1,9 @@
 ---
-// src/pages/ludwigsburg/events/[slug].astro
-// One static page per event — generated at build time.
-// Schema.org Event JSON-LD on every page for Google rich results.
-
 import Base from "../../../layouts/Base.astro";
-import { readFileSync } from "fs";
-import { fileURLToPath } from "url";
-import path from "path";
+import eventsData from "../../../../public/data/ludwigsburg/events-current.json";
 
 export async function getStaticPaths() {
-  const __dirname = path.dirname(fileURLToPath(import.meta.url));
-  const evPath = path.resolve(__dirname, "../../../../public/data/ludwigsburg/events-current.json");
-  let events = [];
-  try {
-    events = JSON.parse(readFileSync(evPath, "utf-8"));
-  } catch (e) {
-    console.warn("[slug].astro: Could not read events-current.json:", e.message);
-  }
-
-  return events.map(ev => ({
+  return eventsData.map(ev => ({
     params: { slug: ev.slug },
     props:  { event: ev },
   }));
@@ -46,22 +31,10 @@ const jsonLd = {
   "name": ev.title,
   "description": ev.description || undefined,
   "startDate": ev.date_start || undefined,
-  "endDate": ev.date_end || undefined,
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "location": {
     "@type": "Place",
     "name": ev.location || "Ludwigsburg",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ludwigsburg",
-      "addressCountry": "DE",
-    }
-  },
-  "organizer": {
-    "@type": "Organization",
-    "name": ev.source,
-    "url": ev.original_url,
+    "address": { "@type": "PostalAddress", "addressLocality": "Ludwigsburg", "addressCountry": "DE" }
   },
   "url": `https://rausgucken.de/ludwigsburg/events/${ev.slug}`,
 };
@@ -140,82 +113,22 @@ const jsonLd = {
 </Base>
 
 <style>
-  .breadcrumb {
-    font-size: 0.82rem;
-    color: var(--color-text-muted);
-    margin-bottom: 1.5rem;
-  }
+  .breadcrumb { font-size: 0.82rem; color: var(--color-text-muted); margin-bottom: 1.5rem; }
   .breadcrumb a { color: var(--color-text-muted); }
-  .breadcrumb span { color: var(--color-text); }
-
   .event-detail { max-width: 720px; }
-
   .event-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem; }
-  .tag {
-    background: var(--color-tag-bg);
-    color: var(--color-text-muted);
-    font-size: 0.75rem;
-    padding: 2px 10px;
-    border-radius: 20px;
-  }
+  .tag { background: var(--color-tag-bg); color: var(--color-text-muted); font-size: 0.75rem; padding: 2px 10px; border-radius: 20px; }
   .tag--age { background: var(--color-accent-light); color: var(--color-accent); }
-
-  h1 {
-    font-size: clamp(1.4rem, 4vw, 2rem);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.25;
-    margin-bottom: 1.5rem;
-  }
-
-  .meta-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius);
-    padding: 1.25rem;
-    margin-bottom: 2rem;
-  }
+  h1 { font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; margin-bottom: 1.5rem; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1.25rem; margin-bottom: 2rem; }
   .meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
   .meta-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); }
   .meta-value { font-size: 0.95rem; color: var(--color-text); }
-
   .event-description h2 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.65rem; }
   .event-description p { line-height: 1.7; color: var(--color-text-muted); }
-
-  .source-box {
-    margin-top: 2rem;
-    background: var(--color-accent-light);
-    border: 1px solid #f0cdb8;
-    border-radius: var(--radius);
-    padding: 1.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
+  .source-box { margin-top: 2rem; background: var(--color-accent-light); border: 1px solid #f0cdb8; border-radius: var(--radius); padding: 1.25rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
   .disclaimer-text { font-size: 0.82rem; color: #7a3b18; line-height: 1.5; flex: 1; }
-
-  .btn-original {
-    display: inline-block;
-    background: var(--color-accent);
-    color: #fff;
-    padding: 0.55rem 1.25rem;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    white-space: nowrap;
-    text-decoration: none;
-  }
+  .btn-original { display: inline-block; background: var(--color-accent); color: #fff; padding: 0.55rem 1.25rem; border-radius: 6px; font-size: 0.9rem; font-weight: 600; white-space: nowrap; text-decoration: none; }
   .btn-original:hover { background: #a8421a; }
-
-  .back-link {
-    display: inline-block;
-    margin-top: 2rem;
-    font-size: 0.88rem;
-    color: var(--color-text-muted);
-  }
+  .back-link { display: inline-block; margin-top: 2rem; font-size: 0.88rem; color: var(--color-text-muted); }
 </style>
