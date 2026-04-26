@@ -1,0 +1,114 @@
+---
+// src/components/FilterBar.astro
+// All filtering is client-side via app.js — this renders the controls only.
+---
+
+<div class="filter-bar" id="filter-bar">
+  <div class="filter-group">
+    <label for="tag-filter">Kategorie</label>
+    <select id="tag-filter">
+      <option value="">Alle Kategorien</option>
+      <option value="Ausstellung">Ausstellung</option>
+      <option value="Entertainment">Entertainment</option>
+      <option value="Familie">Familie</option>
+      <option value="Fest">Fest</option>
+      <option value="Fuehrung">Führung</option>
+      <option value="Jugend">Jugend</option>
+      <option value="Kinder">Kinder</option>
+      <option value="Kulinarik">Kulinarik</option>
+      <option value="Lesung">Lesung</option>
+      <option value="Musik">Musik</option>
+      <option value="Outdoor">Outdoor</option>
+      <option value="Sport">Sport</option>
+      <option value="Tanz">Tanz</option>
+      <option value="Theater">Theater</option>
+      <option value="Vortrag">Vortrag</option>
+      <option value="Workshop">Workshop</option>
+    </select>
+  </div>
+
+  <div class="filter-group">
+    <label for="age-filter">Altersgruppe</label>
+    <select id="age-filter">
+      <option value="0-99">Alle Altersgruppen</option>
+      <option value="0-3">Kleinkinder (0–3 J.)</option>
+      <option value="3-6">Kinder (3–6 J.)</option>
+      <option value="6-12">Schulkinder (6–12 J.)</option>
+      <option value="12-17">Jugendliche (12–17 J.)</option>
+      <option value="18-99">Erwachsene (18+)</option>
+    </select>
+  </div>
+
+  <div class="filter-group">
+    <label for="date-filter">Zeitraum</label>
+    <select id="date-filter">
+      <option value="">Alle Termine</option>
+      <option value="today">Heute</option>
+      <option value="week">Diese Woche</option>
+      <option value="month">Dieser Monat</option>
+    </select>
+  </div>
+
+  <button id="filter-reset" class="filter-reset" type="button">Zurücksetzen</button>
+
+  <span class="filter-count" id="filter-count"></span>
+</div>
+
+<style>
+  .filter-bar {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+    margin-bottom: 1.5rem;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 160px;
+  }
+
+  label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  select {
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background: var(--color-bg);
+    color: var(--color-text);
+    cursor: pointer;
+  }
+  select:focus { outline: 2px solid var(--color-accent); outline-offset: 1px; }
+
+  .filter-reset {
+    padding: 0.45rem 1rem;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  .filter-reset:hover { border-color: var(--color-accent); color: var(--color-accent); }
+
+  .filter-count {
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+    align-self: flex-end;
+    padding-bottom: 0.45rem;
+  }
+</style>

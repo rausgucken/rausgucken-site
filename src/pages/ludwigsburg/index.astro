@@ -1,0 +1,84 @@
+---
+// src/pages/index.astro
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="rausgucken.de — Veranstaltungen in deiner Stadt"
+  description="Entdecke Events, Führungen, Konzerte und Ausstellungen in Ludwigsburg und Umgebung."
+>
+  <div class="hero">
+    <h1>Was ist los in deiner Stadt?</h1>
+    <p class="hero-sub">Events, Führungen, Konzerte und Ausstellungen — alles auf einen Blick.</p>
+
+    <div class="city-grid">
+      <a href="/ludwigsburg" class="city-card city-card--active">
+        <span class="city-name">Ludwigsburg</span>
+        <span class="city-hint">Schloss · Museum · Bibliothek · Kunstverein</span>
+      </a>
+      <div class="city-card city-card--coming">
+        <span class="city-name">Tamm</span>
+        <span class="city-hint">Demnächst</span>
+      </div>
+      <div class="city-card city-card--coming">
+        <span class="city-name">Asperg</span>
+        <span class="city-hint">Demnächst</span>
+      </div>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .hero {
+    text-align: center;
+    padding: 3rem 0;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+  }
+  .hero-sub {
+    font-size: 1.05rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2.5rem;
+  }
+
+  .city-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .city-card {
+    padding: 1.25rem 2rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 180px;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow 0.15s;
+  }
+  .city-card--active {
+    background: var(--color-surface);
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 1px var(--color-accent);
+  }
+  .city-card--active:hover { box-shadow: 0 4px 16px rgba(200,84,26,0.15); }
+  .city-card--coming {
+    background: var(--color-bg);
+    opacity: 0.55;
+    cursor: default;
+  }
+
+  .city-name { font-weight: 700; font-size: 1.1rem; color: var(--color-text); }
+  .city-hint { font-size: 0.78rem; color: var(--color-text-muted); }
+</style>

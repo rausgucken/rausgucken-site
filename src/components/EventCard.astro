@@ -1,0 +1,153 @@
+---
+// src/components/EventCard.astro
+const { event: ev } = Astro.props;
+
+// Format date for display: "2026-05-10" → "10. Mai 2026"
+function formatDate(iso) {
+  if (!iso) return "Dauerhaft";
+  const d = new Date(iso + "T12:00:00");
+  return d.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
+}
+
+// Tag display labels (matches tags.json)
+const TAG_LABELS = {
+  Ausstellung: "Ausstellung", Entertainment: "Entertainment", Familie: "Familie",
+  Fest: "Fest", Fuehrung: "Führung", Jugend: "Jugend", Kinder: "Kinder",
+  Kulinarik: "Kulinarik", Lesung: "Lesung", Messe: "Messe", Musik: "Musik",
+  Outdoor: "Outdoor", Sport: "Sport", Sprache: "Sprache", Tanz: "Tanz",
+  Theater: "Theater", Vortrag: "Vortrag", Workshop: "Workshop",
+};
+
+const dateLabel = formatDate(ev.date_start);
+const isStanding = !ev.date_start;
+---
+
+<article
+  class:list={["event-card", { "event-card--standing": isStanding, "event-card--new": ev.is_new }]}
+  data-tags={ev.tags.join(",")}
+  data-age-min={ev.age_min ?? ""}
+  data-age-max={ev.age_max ?? ""}
+>
+  {ev.is_new && <span class="badge-new">Neu</span>}
+
+  <h3 class="event-title">
+    <a href={`/ludwigsburg/events/${ev.slug}`}>{ev.title}</a>
+  </h3>
+
+  <div class="event-meta">
+    <span class="event-date">📅 {dateLabel}</span>
+    {ev.time && <span class="event-time">🕐 {ev.time} Uhr</span>}
+    {ev.location && <span class="event-location">📍 {ev.location}</span>}
+  </div>
+
+  {ev.price && <p class="event-price">💶 {ev.price}</p>}
+
+  {ev.description && (
+    <p class="event-desc">{ev.description.slice(0, 160)}{ev.description.length > 160 ? " …" : ""}</p>
+  )}
+
+  <div class="event-footer">
+    <div class="event-tags">
+      {ev.tags.map(t => (
+        <span class="tag">{TAG_LABELS[t] ?? t}</span>
+      ))}
+      {ev.age_min != null && (
+        <span class="tag tag--age">
+          ab {ev.age_min} J.{ev.age_max ? ` bis ${ev.age_max} J.` : "+"}
+        </span>
+      )}
+    </div>
+    <a href={ev.original_url} target="_blank" rel="noopener noreferrer" class="source-link">
+      Originalseite →
+    </a>
+  </div>
+
+  <p class="disclaimer-micro">Alle Angaben ohne Gewähr.</p>
+</article>
+
+<style>
+  .event-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.15s;
+  }
+  .event-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  .event-card--standing { border-left: 3px solid var(--color-accent); }
+
+  .badge-new {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--color-accent);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .event-title { font-size: 1rem; font-weight: 600; line-height: 1.3; }
+  .event-title a { color: var(--color-text); }
+  .event-title a:hover { color: var(--color-accent); text-decoration: none; }
+
+  .event-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+
+  .event-price { font-size: 0.85rem; color: var(--color-text-muted); }
+
+  .event-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+  }
+
+  .event-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+  }
+
+  .event-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+  .tag {
+    background: var(--color-tag-bg);
+    color: var(--color-text-muted);
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 20px;
+  }
+  .tag--age {
+    background: var(--color-accent-light);
+    color: var(--color-accent);
+  }
+
+  .source-link {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+  .source-link:hover { color: var(--color-accent); }
+
+  .disclaimer-micro {
+    font-size: 0.72rem;
+    color: #aaa;
+    margin-top: 0.25rem;
+  }
+</style>

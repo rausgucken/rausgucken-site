@@ -1,0 +1,81 @@
+---
+// src/pages/about.astro
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="Über rausgucken.de — Datenschutz & Impressum"
+  description="Informationen zur automatischen Datenerfassung, Datenschutz und Impressum von rausgucken.de"
+>
+  <div class="about-page">
+    <h1>Über rausgucken.de</h1>
+
+    <section>
+      <h2>Was ist rausgucken.de?</h2>
+      <p>
+        rausgucken.de ist ein unabhängiger Veranstaltungskalender für Ludwigsburg und Umgebung.
+        Wir aggregieren öffentlich zugängliche Veranstaltungsdaten aus verschiedenen Quellen
+        und machen sie in einer übersichtlichen, durchsuchbaren Oberfläche zugänglich.
+      </p>
+    </section>
+
+    <section>
+      <h2>Haftungsausschluss</h2>
+      <p class="disclaimer-full">
+        Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von
+        öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen
+        wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten.
+        Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite
+        (siehe „Originalseite" Link bei jedem Eintrag) bevor Sie teilnehmen.
+        Die angezeigten Informationen stammen von den genannten Quellen und wurden zum
+        angegebenen Zeitpunkt (Stand) automatisch erfasst.
+      </p>
+    </section>
+
+    <section>
+      <h2>Quellen (Ludwigsburg)</h2>
+      <ul>
+        <li><a href="https://www.schloss-ludwigsburg.de" target="_blank" rel="noopener">Schloss Ludwigsburg</a></li>
+        <li><a href="https://www.stadtmuseum-ludwigsburg.de" target="_blank" rel="noopener">Stadtmuseum Ludwigsburg</a></li>
+        <li><a href="https://karlskaserne.ludwigsburg.de" target="_blank" rel="noopener">Kunstzentrum Karlskaserne</a></li>
+        <li><a href="https://events-stabi.ludwigsburg.de" target="_blank" rel="noopener">Stadtbibliothek Ludwigsburg</a></li>
+        <li><a href="https://kunstverein-ludwigsburg.de" target="_blank" rel="noopener">Kunstverein Ludwigsburg</a></li>
+        <li><a href="https://kunstschule-labyrinth.ludwigsburg.de" target="_blank" rel="noopener">Kunstschule Labyrinth</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Datenschutz</h2>
+      <p>
+        rausgucken.de speichert keine personenbezogenen Daten der Besucher. Es werden
+        keine Cookies gesetzt. Die Seite wird über Cloudflare Pages ausgeliefert.
+        Es gelten die <a href="https://www.cloudflare.com/de-de/privacypolicy/" target="_blank" rel="noopener">Datenschutzbestimmungen von Cloudflare</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Kontakt & Impressum</h2>
+      <p>Angaben gemäß § 5 TMG — Inhaber: [Ihr Name]<br/>
+         [Adresse]<br/>
+         [E-Mail-Adresse]
+      </p>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .about-page { max-width: 680px; }
+  h1 { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 2rem; }
+  section { margin-bottom: 2rem; }
+  h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.65rem; }
+  p, li { font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.7; }
+  ul { padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.3rem; }
+  .disclaimer-full {
+    background: var(--color-accent-light);
+    border-left: 3px solid var(--color-accent);
+    padding: 1rem 1.25rem;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    font-size: 0.9rem;
+    color: #7a3b18;
+  }
+</style>
