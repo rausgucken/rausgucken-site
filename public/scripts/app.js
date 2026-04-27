@@ -1,87 +1,105 @@
-// src/scripts/app.js
-// Client-side filtering for the Ludwigsburg event grid.
-// Reads data-tags, data-age-min, data-age-max, data-date from each .event-card.
-
+// public/scripts/app.js
 (function () {
-  const tagFilter   = document.getElementById("tag-filter");
-  const ageFilter   = document.getElementById("age-filter");
-  const dateFilter  = document.getElementById("date-filter");
-  const resetBtn    = document.getElementById("filter-reset");
-  const countEl     = document.getElementById("filter-count");
-  const cards       = Array.from(document.querySelectorAll(".event-card"));
+  const tagFilter      = document.getElementById("tag-filter");
+  const ageFilter      = document.getElementById("age-filter");
+  const locationFilter = document.getElementById("location-filter");
+  const dateFrom       = document.getElementById("date-from");
+  const dateTo         = document.getElementById("date-to");
+  const resetBtn       = document.getElementById("filter-reset");
+  const countEl        = document.getElementById("filter-count");
+  const cards          = Array.from(document.querySelectorAll(".event-card"));
 
-  function isoToDate(iso) {
-    if (!iso) return null;
-    return new Date(iso + "T00:00:00");
+  // ── Populate location dropdown from card data ────────────────────────────
+  if (locationFilter) {
+    const locs = new Set();
+    cards.forEach(c => { if (c.dataset.location) locs.add(c.dataset.location); });
+    Array.from(locs).sort().forEach(loc => {
+      const opt = document.createElement("option");
+      opt.value = loc;
+      opt.textContent = loc.replace("Residenzschloss Ludwigsburg", "Residenzschloss Ludwigsburg");
+      locationFilter.appendChild(opt);
+    });
   }
 
+  // ── Default date-from = today ────────────────────────────────────────────
+  const todayISO = new Date().toISOString().slice(0, 10);
+  if (dateFrom && !dateFrom.value) {
+    dateFrom.value = todayISO;
+    dateFrom.min   = todayISO;
+  }
+
+  // ── Filter logic ─────────────────────────────────────────────────────────
   function applyFilters() {
-    const tag = tagFilter.value;
-
-    const [ageMin, ageMax] = ageFilter.value
-      ? ageFilter.value.split("-").map(Number)
-      : [0, 99];
-
-    const dateVal = dateFilter.value;
-    const now = new Date();
-    const todayStr = now.toISOString().slice(0, 10);
-
-    let weekEnd = new Date(now);
-    weekEnd.setDate(weekEnd.getDate() + 7);
-    const weekEndStr = weekEnd.toISOString().slice(0, 10);
-
-    const monthEndStr = new Date(now.getFullYear(), now.getMonth() + 1, 0)
-      .toISOString().slice(0, 10);
+    const tag      = tagFilter      ? tagFilter.value      : "";
+    const location = locationFilter ? locationFilter.value : "";
+    const fromVal  = dateFrom       ? dateFrom.value       : "";
+    const toVal    = dateTo         ? dateTo.value         : "";
+    const [ageMin, ageMax] = ageFilter && ageFilter.value
+      ? ageFilter.value.split("-").map(Number) : [0, 99];
 
     let visible = 0;
 
     cards.forEach(card => {
-      const cardTags    = (card.dataset.tags || "").split(",").filter(Boolean);
-      const cardAgeMin  = card.dataset.ageMin !== "" ? parseInt(card.dataset.ageMin) : 0;
-      const cardAgeMax  = card.dataset.ageMax !== "" ? parseInt(card.dataset.ageMax) : 99;
-      const cardDate    = card.dataset.date || "";  // YYYY-MM-DD or "" for standing
+      const cardTags   = (card.dataset.tags || "").split(",").filter(Boolean);
+      const cardAgeMin = card.dataset.ageMin !== "" ? parseInt(card.dataset.ageMin) : 0;
+      const cardAgeMax = card.dataset.ageMax !== "" ? parseInt(card.dataset.ageMax) : 99;
+      const cardDate   = card.dataset.date   || "";
+      const cardLoc    = card.dataset.location || "";
 
-      // Tag filter
-      if (tag && !cardTags.includes(tag)) {
-        card.style.display = "none";
-        return;
+      // Tag
+      if (tag && !cardTags.includes(tag)) { hide(card); return; }
+
+      // Age — only when card has age data
+      if (ageFilter && ageFilter.value !== "0-99" && card.dataset.ageMin !== "") {
+        if (!(cardAgeMin <= ageMax && cardAgeMax >= ageMin)) { hide(card); return; }
       }
 
-      // Age filter — only apply if card has age data
-      if (ageFilter.value !== "0-99" && card.dataset.ageMin !== "") {
-        const overlap = cardAgeMin <= ageMax && cardAgeMax >= ageMin;
-        if (!overlap) {
-          card.style.display = "none";
-          return;
-        }
+      // Location
+      if (location && cardLoc !== location) { hide(card); return; }
+
+      // Date range — standing tours (no date) always pass
+      if (cardDate) {
+        if (fromVal && cardDate < fromVal) { hide(card); return; }
+        if (toVal   && cardDate > toVal)   { hide(card); return; }
       }
 
-      // Date filter — standing tours always pass
-      if (dateVal && cardDate) {
-        if (dateVal === "today"  && cardDate !== todayStr)     { card.style.display = "none"; return; }
-        if (dateVal === "week"   && cardDate > weekEndStr)     { card.style.display = "none"; return; }
-        if (dateVal === "month"  && cardDate > monthEndStr)    { card.style.display = "none"; return; }
-      }
-
-      card.style.display = "";
+      show(card);
       visible++;
     });
 
-    countEl.textContent = `${visible} von ${cards.length} Veranstaltungen`;
+    updateCount(visible);
   }
 
+  function hide(card) { card.style.display = "none"; }
+  function show(card) { card.style.display = ""; }
+
+  function updateCount(visible) {
+    if (!countEl) return;
+    const isEn = document.getElementById("html-root")?.classList.contains("lang-en");
+    countEl.textContent = isEn
+      ? `${visible} of ${cards.length} events`
+      : `${visible} von ${cards.length} Veranstaltungen`;
+  }
+
+  // ── Reset ────────────────────────────────────────────────────────────────
   function resetFilters() {
-    tagFilter.value  = "";
-    ageFilter.value  = "0-99";
-    dateFilter.value = "";
+    if (tagFilter)      tagFilter.value      = "";
+    if (ageFilter)      ageFilter.value      = "0-99";
+    if (locationFilter) locationFilter.value = "";
+    if (dateTo)         dateTo.value         = "";
+    if (dateFrom)       dateFrom.value       = todayISO;
     applyFilters();
   }
 
-  tagFilter.addEventListener("change", applyFilters);
-  ageFilter.addEventListener("change", applyFilters);
-  dateFilter.addEventListener("change", applyFilters);
-  resetBtn.addEventListener("click", resetFilters);
+  // ── Listeners ────────────────────────────────────────────────────────────
+  [tagFilter, ageFilter, locationFilter, dateFrom, dateTo].forEach(el => {
+    if (el) el.addEventListener("change", applyFilters);
+  });
+  if (resetBtn) resetBtn.addEventListener("click", resetFilters);
 
-  // Initial count
+  // Re-count when language switches
+  document.addEventListener("langchange", () => setTimeout(applyFilters, 30));
+
+  // Run on load
   applyFilters();
 })();

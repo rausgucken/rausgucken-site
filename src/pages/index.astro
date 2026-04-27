@@ -7,29 +7,108 @@ import Base from "../layouts/Base.astro";
   description="Entdecke Events, Führungen, Konzerte und Ausstellungen in Ludwigsburg und Umgebung."
 >
   <div class="hero">
-    <h1>Was ist los in deiner Stadt?</h1>
-    <p class="hero-sub">Events, Führungen, Konzerte und Ausstellungen — alles auf einen Blick.</p>
+    <div class="hero-text">
+      <h1>
+        <span data-de>Was ist los in deiner Stadt?</span>
+        <span data-en>What's happening in your city?</span>
+      </h1>
+      <p class="hero-sub">
+        <span data-de>Events, Führungen, Konzerte und Ausstellungen — alles auf einen Blick.</span>
+        <span data-en>Events, guided tours, concerts and exhibitions — all in one place.</span>
+      </p>
+    </div>
+
     <div class="city-grid">
       <a href="/ludwigsburg" class="city-card city-card--active">
-        <span class="city-name">Ludwigsburg</span>
-        <span class="city-hint">Schloss · Museum · Bibliothek · Kunstverein</span>
+        <div class="city-icon">🏰</div>
+        <div>
+          <span class="city-name">Ludwigsburg</span>
+          <span class="city-hint">
+            <span data-de>Schloss · Museum · Bibliothek · Kunstverein</span>
+            <span data-en>Palace · Museum · Library · Art Society</span>
+          </span>
+        </div>
+        <span class="city-arrow">→</span>
       </a>
       <div class="city-card city-card--coming">
-        <span class="city-name">Tamm</span>
-        <span class="city-hint">Demnächst</span>
+        <div class="city-icon">📍</div>
+        <div>
+          <span class="city-name">Tamm</span>
+          <span class="city-hint"><span data-de>Demnächst</span><span data-en>Coming soon</span></span>
+        </div>
+      </div>
+      <div class="city-card city-card--coming">
+        <div class="city-icon">📍</div>
+        <div>
+          <span class="city-name">Asperg</span>
+          <span class="city-hint"><span data-de>Demnächst</span><span data-en>Coming soon</span></span>
+        </div>
       </div>
     </div>
   </div>
 </Base>
 
 <style>
-  .hero { text-align: center; padding: 3rem 0; }
-  h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 0.75rem; }
-  .hero-sub { font-size: 1.05rem; color: var(--color-text-muted); margin-bottom: 2.5rem; }
-  .city-grid { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; max-width: 700px; margin: 0 auto; }
-  .city-card { padding: 1.25rem 2rem; border-radius: var(--radius); border: 1px solid var(--color-border); display: flex; flex-direction: column; gap: 0.3rem; min-width: 180px; text-align: left; text-decoration: none; }
-  .city-card--active { background: var(--color-surface); border-color: var(--color-accent); box-shadow: 0 0 0 1px var(--color-accent); }
-  .city-card--coming { background: var(--color-bg); opacity: 0.55; cursor: default; }
-  .city-name { font-weight: 700; font-size: 1.1rem; color: var(--color-text); }
-  .city-hint { font-size: 0.78rem; color: var(--color-text-muted); }
+  .hero { padding: 3rem 0 2rem; }
+  .hero-text { text-align: center; margin-bottom: 2.5rem; }
+  h1 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--charcoal);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 0.85rem;
+  }
+  .hero-sub {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--charcoal-60);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .city-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+
+  .city-card {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 1.1rem 1.5rem;
+    border-radius: var(--radius);
+    border: 1.5px solid var(--border);
+    text-decoration: none;
+    transition: var(--transition);
+    min-width: 220px;
+    flex: 1;
+    background: var(--surface);
+    box-shadow: var(--shadow-card);
+  }
+
+  .city-card--active:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--coral);
+    text-decoration: none;
+  }
+  .city-card--active { border-color: var(--coral); }
+  .city-card--coming { opacity: 0.45; cursor: default; pointer-events: none; }
+
+  .city-icon { font-size: 1.6rem; line-height: 1; }
+
+  .city-card > div { display: flex; flex-direction: column; gap: 0.2rem; flex: 1; }
+  .city-name { font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; color: var(--charcoal); }
+  .city-hint { font-size: 0.78rem; font-weight: 400; color: var(--charcoal-60); }
+  .city-arrow { font-size: 1.2rem; color: var(--coral); margin-left: auto; }
+
+  @media (max-width: 500px) {
+    .city-card { min-width: 100%; }
+  }
 </style>

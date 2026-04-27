@@ -1,114 +1,154 @@
 ---
 // src/components/FilterBar.astro
-// All filtering is client-side via app.js — this renders the controls only.
 ---
 
 <div class="filter-bar" id="filter-bar">
+
   <div class="filter-group">
-    <label for="tag-filter">Kategorie</label>
+    <label for="tag-filter"><span data-de>Kategorie</span><span data-en>Category</span></label>
     <select id="tag-filter">
-      <option value="">Alle Kategorien</option>
-      <option value="Ausstellung">Ausstellung</option>
+      <option value=""><span data-de>Alle</span><span data-en>All</span></option>
+      <option value="Ausstellung">Ausstellung / Exhibition</option>
       <option value="Entertainment">Entertainment</option>
-      <option value="Familie">Familie</option>
-      <option value="Fest">Fest</option>
-      <option value="Fuehrung">Führung</option>
-      <option value="Jugend">Jugend</option>
-      <option value="Kinder">Kinder</option>
-      <option value="Kulinarik">Kulinarik</option>
-      <option value="Lesung">Lesung</option>
-      <option value="Musik">Musik</option>
+      <option value="Familie">Familie / Family</option>
+      <option value="Fest">Fest / Festival</option>
+      <option value="Fuehrung">Führung / Guided Tour</option>
+      <option value="Jugend">Jugend / Youth</option>
+      <option value="Kinder">Kinder / Children</option>
+      <option value="Kulinarik">Kulinarik / Food</option>
+      <option value="Lesung">Lesung / Reading</option>
+      <option value="Musik">Musik / Music</option>
       <option value="Outdoor">Outdoor</option>
       <option value="Sport">Sport</option>
-      <option value="Tanz">Tanz</option>
+      <option value="Tanz">Tanz / Dance</option>
       <option value="Theater">Theater</option>
-      <option value="Vortrag">Vortrag</option>
+      <option value="Vortrag">Vortrag / Talk</option>
       <option value="Workshop">Workshop</option>
     </select>
   </div>
 
   <div class="filter-group">
-    <label for="age-filter">Altersgruppe</label>
+    <label for="age-filter"><span data-de>Altersgruppe</span><span data-en>Age group</span></label>
     <select id="age-filter">
-      <option value="0-99">Alle Altersgruppen</option>
-      <option value="0-3">Kleinkinder (0–3 J.)</option>
-      <option value="3-6">Kinder (3–6 J.)</option>
-      <option value="6-12">Schulkinder (6–12 J.)</option>
-      <option value="12-17">Jugendliche (12–17 J.)</option>
-      <option value="18-99">Erwachsene (18+)</option>
+      <option value="0-99"><span data-de>Alle Altersgruppen</span><span data-en>All ages</span></option>
+      <option value="0-3">0–3 <span data-de>Jahre</span><span data-en>years</span></option>
+      <option value="3-6">3–6 <span data-de>Jahre</span><span data-en>years</span></option>
+      <option value="6-12">6–12 <span data-de>Jahre</span><span data-en>years</span></option>
+      <option value="12-17">12–17 <span data-de>Jahre</span><span data-en>years</span></option>
+      <option value="18-99"><span data-de>Erwachsene</span><span data-en>Adults</span> (18+)</option>
     </select>
   </div>
 
   <div class="filter-group">
-    <label for="date-filter">Zeitraum</label>
-    <select id="date-filter">
-      <option value="">Alle Termine</option>
-      <option value="today">Heute</option>
-      <option value="week">Diese Woche</option>
-      <option value="month">Dieser Monat</option>
+    <label for="location-filter"><span data-de>Ort</span><span data-en>Location</span></label>
+    <select id="location-filter">
+      <option value=""><span data-de>Alle Orte</span><span data-en>All locations</span></option>
+      <!-- populated dynamically by app.js -->
     </select>
   </div>
 
-  <button id="filter-reset" class="filter-reset" type="button">Zurücksetzen</button>
+  <div class="filter-group filter-group--date">
+    <label><span data-de>Von</span><span data-en>From</span></label>
+    <input type="date" id="date-from" />
+  </div>
+
+  <div class="filter-group filter-group--date">
+    <label><span data-de>Bis</span><span data-en>To</span></label>
+    <input type="date" id="date-to" />
+  </div>
+
+  <button id="filter-reset" class="filter-reset" type="button">
+    ✕ <span data-de>Zurücksetzen</span><span data-en>Reset</span>
+  </button>
 
   <span class="filter-count" id="filter-count"></span>
 </div>
 
 <style>
   .filter-bar {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 1rem 1.25rem;
+    padding: 1.1rem 1.4rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.85rem 1.1rem;
     align-items: flex-end;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
+    box-shadow: var(--shadow-card);
   }
 
   .filter-group {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-    min-width: 160px;
   }
 
   label {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 600;
-    color: var(--color-text-muted);
+    color: var(--charcoal-60);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
   }
 
-  select {
-    padding: 0.45rem 0.75rem;
-    border: 1px solid var(--color-border);
-    border-radius: 6px;
-    font-size: 0.9rem;
-    background: var(--color-bg);
-    color: var(--color-text);
+  select, input[type="date"] {
+    height: 38px;
+    padding: 0 0.75rem;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 500;
+    background: var(--offwhite);
+    color: var(--charcoal);
     cursor: pointer;
+    transition: border-color 150ms;
+    appearance: auto;
   }
-  select:focus { outline: 2px solid var(--color-accent); outline-offset: 1px; }
+  select { min-width: 155px; }
+  input[type="date"] { min-width: 145px; padding: 0 0.6rem; }
+
+  select:focus, input[type="date"]:focus {
+    outline: none;
+    border-color: var(--coral);
+    box-shadow: 0 0 0 3px var(--coral-light);
+  }
 
   .filter-reset {
-    padding: 0.45rem 1rem;
+    height: 38px;
+    padding: 0 1rem;
     background: transparent;
-    border: 1px solid var(--color-border);
-    border-radius: 6px;
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--charcoal-60);
     cursor: pointer;
+    transition: border-color 150ms, color 150ms, background 150ms;
     align-self: flex-end;
+    white-space: nowrap;
   }
-  .filter-reset:hover { border-color: var(--color-accent); color: var(--color-accent); }
+  .filter-reset:hover {
+    border-color: var(--coral);
+    color: var(--coral);
+    background: var(--coral-light);
+  }
 
   .filter-count {
     font-size: 0.82rem;
-    color: var(--color-text-muted);
+    font-weight: 500;
+    color: var(--charcoal-60);
     align-self: flex-end;
-    padding-bottom: 0.45rem;
+    padding-bottom: 0.5rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 640px) {
+    .filter-group { width: calc(50% - 0.55rem); }
+    .filter-group--date { width: calc(50% - 0.55rem); }
+    select, input[type="date"] { width: 100%; min-width: unset; }
+    .filter-reset { width: 100%; }
   }
 </style>

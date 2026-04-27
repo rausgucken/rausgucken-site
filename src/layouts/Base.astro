@@ -5,7 +5,7 @@ const siteUrl = "https://rausgucken.de";
 const canonical = city ? `${siteUrl}/${city}/` : `${siteUrl}/`;
 ---
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" id="html-root">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,94 +16,99 @@ const canonical = city ? `${siteUrl}/${city}/` : `${siteUrl}/`;
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonical} />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="de_DE" />
-  <link rel="sitemap" href="/sitemap.xml" />
+  <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --color-bg: #f9f8f6;
-      --color-surface: #ffffff;
-      --color-border: #e2e0dc;
-      --color-text: #1a1a1a;
-      --color-text-muted: #6b6867;
-      --color-accent: #c8541a;
-      --color-accent-light: #fdf1eb;
-      --color-tag-bg: #eeecea;
-      --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
-      --radius: 10px;
-      --shadow: 0 1px 4px rgba(0,0,0,0.08);
+      --coral:       #FF6F61;
+      --coral-dark:  #e55a4d;
+      --coral-light: rgba(255,111,97,0.10);
+      --sage:        #90BE6D;
+      --offwhite:    #FFFDF9;
+      --charcoal:    #373F51;
+      --charcoal-60: rgba(55,63,81,0.60);
+      --charcoal-10: rgba(55,63,81,0.08);
+      --border:      rgba(55,63,81,0.13);
+      --surface:     #ffffff;
+      --color-bg: var(--offwhite); --color-surface: var(--surface);
+      --color-border: var(--border); --color-text: var(--charcoal);
+      --color-text-muted: var(--charcoal-60); --color-accent: var(--coral);
+      --color-accent-light: var(--coral-light); --color-tag-bg: var(--charcoal-10);
+      --font-heading: 'Nunito', sans-serif;
+      --font-body:    'Inter', sans-serif;
+      --radius:    14px; --radius-sm: 8px;
+      --shadow-card:  0 4px 6px -1px rgba(0,0,0,0.05),0 2px 4px -1px rgba(0,0,0,0.03);
+      --shadow-hover: 0 10px 15px -3px rgba(0,0,0,0.10),0 4px 6px -2px rgba(0,0,0,0.05);
     }
-
-    body {
-      font-family: var(--font-sans);
-      background: var(--color-bg);
-      color: var(--color-text);
-      line-height: 1.6;
-    }
-
-    a { color: var(--color-accent); text-decoration: none; }
+    body { font-family: var(--font-body); background: var(--offwhite); color: var(--charcoal); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    h1,h2,h3,h4 { font-family: var(--font-heading); color: var(--charcoal); line-height: 1.2; }
+    a { color: var(--coral); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    .site-header {
-      background: var(--color-surface);
-      border-bottom: 1px solid var(--color-border);
-      padding: 0 1.5rem;
-    }
-    .site-header-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 56px;
-    }
-    .site-logo {
-      font-weight: 700;
-      font-size: 1.2rem;
-      color: var(--color-text);
-      letter-spacing: -0.02em;
-    }
-    .site-logo span { color: var(--color-accent); }
+    .site-header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 1.5rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+    .site-header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 1rem; }
+    .site-logo { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; }
+    .site-logo img { height: 40px; width: 40px; border-radius: 10px; object-fit: cover; }
+    .site-logo-text { font-family: var(--font-heading); font-weight: 800; font-size: 1.25rem; color: var(--charcoal); letter-spacing: -0.02em; }
+    .site-logo-text span { color: var(--coral); }
+    .site-nav { display: flex; align-items: center; gap: 1.25rem; }
+    .site-nav > a { font-size: 0.9rem; font-weight: 500; color: var(--charcoal-60); transition: color 150ms; }
+    .site-nav > a:hover { color: var(--coral); text-decoration: none; }
+    .lang-toggle { display: flex; border: 1.5px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
+    .lang-btn { padding: 5px 12px; background: transparent; border: none; cursor: pointer; color: var(--charcoal-60); font-family: var(--font-body); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.05em; transition: background 150ms, color 150ms; }
+    .lang-btn.active { background: var(--coral); color: #fff; }
+    .lang-btn:hover:not(.active) { background: var(--charcoal-10); color: var(--charcoal); }
 
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-    }
+    main { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; }
 
-    .site-footer {
-      background: var(--color-surface);
-      border-top: 1px solid var(--color-border);
-      padding: 2rem 1.5rem;
-      margin-top: 4rem;
-      font-size: 0.82rem;
-      color: var(--color-text-muted);
-      text-align: center;
-    }
-    .site-footer a { color: var(--color-text-muted); }
+    .site-footer { background: var(--surface); border-top: 1px solid var(--border); padding: 2rem 1.5rem; margin-top: 5rem; font-size: 0.82rem; color: var(--charcoal-60); text-align: center; }
+    .site-footer a { color: var(--charcoal-60); }
+    .site-footer a:hover { color: var(--coral); }
+
+    [data-de] { display: inline; } [data-en] { display: none; }
+    html.lang-en [data-de] { display: none; } html.lang-en [data-en] { display: inline; }
+
+    .btn-primary { display: inline-block; background: var(--coral); color: #fff; font-family: var(--font-body); font-weight: 600; font-size: 0.9rem; padding: 0.6rem 1.4rem; border-radius: var(--radius-sm); border: none; cursor: pointer; transition: background 150ms, transform 150ms; text-decoration: none; }
+    .btn-primary:hover { background: var(--coral-dark); transform: translateY(-1px); text-decoration: none; color: #fff; }
   </style>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <a href="/" class="site-logo">raus<span>gucken</span>.de</a>
-      <nav>
-        <a href="/about" style="font-size:0.9rem;color:var(--color-text-muted)">Über uns</a>
+      <a href="/" class="site-logo">
+        <img src="/logo.jpg" alt="rausgucken.de" />
+        <span class="site-logo-text">raus<span>gucken</span>.de</span>
+      </a>
+      <nav class="site-nav">
+        <a href="/about"><span data-de>Über uns</span><span data-en>About</span></a>
+        <div class="lang-toggle">
+          <button class="lang-btn active" id="btn-de" onclick="setLang('de')">DE</button>
+          <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+        </div>
       </nav>
     </div>
   </header>
-
-  <main>
-    <slot />
-  </main>
-
+  <main><slot /></main>
   <footer class="site-footer">
     <p>
-      Alle Angaben ohne Gewähr. Veranstaltungsdaten werden automatisch gesammelt. 
-      Bitte prüfen Sie alle Infos auf der jeweiligen Originalseite. &nbsp;·&nbsp;
-      <a href="/about">Datenschutz &amp; Impressum</a>
+      <span data-de>Alle Angaben ohne Gewähr. Veranstaltungsdaten werden automatisch gesammelt. Bitte Infos auf der jeweiligen Originalseite prüfen.</span>
+      <span data-en>All information without guarantee. Event data is collected automatically. Please verify details on the original source page.</span>
+      &nbsp;·&nbsp;
+      <a href="/about"><span data-de>Datenschutz &amp; Impressum</span><span data-en>Privacy &amp; Legal</span></a>
     </p>
   </footer>
+  <script is:inline>
+    function setLang(lang) {
+      document.getElementById('html-root').className = lang === 'en' ? 'lang-en' : '';
+      document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      try { localStorage.setItem('rg-lang', lang); } catch(e) {}
+      document.dispatchEvent(new CustomEvent('langchange'));
+    }
+    try { const s = localStorage.getItem('rg-lang'); if (s === 'en') setLang('en'); } catch(e) {}
+  </script>
 </body>
 </html>

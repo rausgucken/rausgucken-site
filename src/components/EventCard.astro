@@ -2,24 +2,43 @@
 // src/components/EventCard.astro
 const { event: ev } = Astro.props;
 
-// Format date for display: "2026-05-10" → "10. Mai 2026"
 function formatDate(iso) {
-  if (!iso) return "Dauerhaft";
+  if (!iso) return null;
   const d = new Date(iso + "T12:00:00");
-  return d.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
+  return {
+    de: d.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" }),
+    en: d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }),
+    weekday_de: d.toLocaleDateString("de-DE", { weekday: "short" }),
+    weekday_en: d.toLocaleDateString("en-GB", { weekday: "short" }),
+    day: d.getDate(),
+    month_de: d.toLocaleDateString("de-DE", { month: "short" }),
+    month_en: d.toLocaleDateString("en-GB", { month: "short" }),
+  };
 }
 
-// Tag display labels (matches tags.json)
 const TAG_LABELS = {
-  Ausstellung: "Ausstellung", Entertainment: "Entertainment", Familie: "Familie",
-  Fest: "Fest", Fuehrung: "Führung", Jugend: "Jugend", Kinder: "Kinder",
-  Kulinarik: "Kulinarik", Lesung: "Lesung", Messe: "Messe", Musik: "Musik",
-  Outdoor: "Outdoor", Sport: "Sport", Sprache: "Sprache", Tanz: "Tanz",
-  Theater: "Theater", Vortrag: "Vortrag", Workshop: "Workshop",
+  Ausstellung:   { de: "Ausstellung",  en: "Exhibition" },
+  Entertainment: { de: "Entertainment",en: "Entertainment" },
+  Familie:       { de: "Familie",      en: "Family" },
+  Fest:          { de: "Fest",         en: "Festival" },
+  Fuehrung:      { de: "Führung",      en: "Guided Tour" },
+  Jugend:        { de: "Jugend",       en: "Youth" },
+  Kinder:        { de: "Kinder",       en: "Children" },
+  Kulinarik:     { de: "Kulinarik",    en: "Food & Drink" },
+  Lesung:        { de: "Lesung",       en: "Reading" },
+  Musik:         { de: "Musik",        en: "Music" },
+  Outdoor:       { de: "Outdoor",      en: "Outdoor" },
+  Sport:         { de: "Sport",        en: "Sport" },
+  Sprache:       { de: "Sprache",      en: "Language" },
+  Tanz:          { de: "Tanz",         en: "Dance" },
+  Theater:       { de: "Theater",      en: "Theatre" },
+  Vortrag:       { de: "Vortrag",      en: "Talk" },
+  Workshop:      { de: "Workshop",     en: "Workshop" },
 };
 
-const dateLabel = formatDate(ev.date_start);
+const dateObj = formatDate(ev.date_start);
 const isStanding = !ev.date_start;
+const locationSlug = (ev.location || "").toLowerCase().replace(/\s+/g, "-").slice(0, 40);
 ---
 
 <article
@@ -27,127 +46,225 @@ const isStanding = !ev.date_start;
   data-tags={ev.tags.join(",")}
   data-age-min={ev.age_min ?? ""}
   data-age-max={ev.age_max ?? ""}
+  data-date={ev.date_start ?? ""}
+  data-location={ev.location ?? ""}
 >
-  {ev.is_new && <span class="badge-new">Neu</span>}
+  <a href={`/ludwigsburg/events/${ev.slug}`} class="card-inner" tabindex="0">
 
-  <h3 class="event-title">
-    <a href={`/ludwigsburg/events/${ev.slug}`}>{ev.title}</a>
-  </h3>
+    <!-- Date badge -->
+    {dateObj ? (
+      <div class="date-badge">
+        <span class="date-day">{dateObj.day}</span>
+        <span class="date-month"><span data-de>{dateObj.month_de}</span><span data-en>{dateObj.month_en}</span></span>
+      </div>
+    ) : (
+      <div class="date-badge date-badge--standing">
+        <span class="date-standing">∞</span>
+      </div>
+    )}
 
-  <div class="event-meta">
-    <span class="event-date">📅 {dateLabel}</span>
-    {ev.time && <span class="event-time">🕐 {ev.time} Uhr</span>}
-    {ev.location && <span class="event-location">📍 {ev.location}</span>}
-  </div>
+    <!-- Card content -->
+    <div class="card-body">
+      {ev.is_new && <span class="badge-new"><span data-de>Neu</span><span data-en>New</span></span>}
 
-  {ev.price && <p class="event-price">💶 {ev.price}</p>}
+      <div class="card-tags">
+        {ev.tags.slice(0, 3).map(t => {
+          const label = TAG_LABELS[t];
+          return label ? (
+            <span class="tag" data-tag={t}>
+              <span data-de>{label.de}</span>
+              <span data-en>{label.en}</span>
+            </span>
+          ) : <span class="tag">{t}</span>;
+        })}
+        {ev.age_min != null && (
+          <span class="tag tag--age">
+            {ev.age_min}–{ev.age_max ?? "99"}+
+          </span>
+        )}
+      </div>
 
-  {ev.description && (
-    <p class="event-desc">{ev.description.slice(0, 160)}{ev.description.length > 160 ? " …" : ""}</p>
-  )}
+      <h3 class="card-title">{ev.title}</h3>
 
-  <div class="event-footer">
-    <div class="event-tags">
-      {ev.tags.map(t => (
-        <span class="tag">{TAG_LABELS[t] ?? t}</span>
-      ))}
-      {ev.age_min != null && (
-        <span class="tag tag--age">
-          ab {ev.age_min} J.{ev.age_max ? ` bis ${ev.age_max} J.` : "+"}
-        </span>
+      <div class="card-meta">
+        {ev.time && (
+          <span class="meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            {ev.time} <span data-de>Uhr</span>
+          </span>
+        )}
+        {isStanding && (
+          <span class="meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span data-de>Regelmäßig</span><span data-en>Regular</span>
+          </span>
+        )}
+        {ev.location && (
+          <span class="meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            {ev.location.replace("Residenzschloss Ludwigsburg","Residenzschloss")}
+          </span>
+        )}
+        {ev.price && (
+          <span class="meta-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            {ev.price.split(" ").slice(0,3).join(" ")}
+          </span>
+        )}
+      </div>
+
+      {ev.description && (
+        <p class="card-desc">{ev.description.slice(0, 100)}{ev.description.length > 100 ? "…" : ""}</p>
       )}
     </div>
-    <a href={ev.original_url} target="_blank" rel="noopener noreferrer" class="source-link">
-      Originalseite →
-    </a>
-  </div>
+  </a>
 
-  <p class="disclaimer-micro">Alle Angaben ohne Gewähr.</p>
+  <div class="card-footer">
+    <a href={ev.original_url} target="_blank" rel="noopener noreferrer" class="source-link" onclick="event.stopPropagation()">
+      <span data-de>Originalseite</span><span data-en>Source</span>
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </a>
+    <span class="disclaimer-micro"><span data-de>Ohne Gewähr</span><span data-en>Unverified</span></span>
+  </div>
 </article>
 
 <style>
   .event-card {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 1.25rem 1.5rem;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    box-shadow: var(--shadow-card);
+    transition: var(--transition);
     position: relative;
-    box-shadow: var(--shadow);
-    transition: box-shadow 0.15s;
   }
-  .event-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-  .event-card--standing { border-left: 3px solid var(--color-accent); }
+  .event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+  }
+  .event-card--standing {
+    border-left: 3px solid var(--coral);
+  }
+
+  .card-inner {
+    display: flex;
+    gap: 0;
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  .card-inner:hover { text-decoration: none; }
+
+  /* Date badge — left strip */
+  .date-badge {
+    background: var(--coral);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 58px;
+    padding: 1rem 0.5rem;
+    flex-shrink: 0;
+    gap: 2px;
+  }
+  .date-badge--standing { background: var(--charcoal-10); color: var(--charcoal-60); }
+  .date-day { font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem; line-height: 1; }
+  .date-month { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.85; }
+  .date-standing { font-size: 1.4rem; opacity: 0.4; }
+
+  /* Card body */
+  .card-body {
+    padding: 0.9rem 1rem 0.7rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-width: 0;
+  }
 
   .badge-new {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: var(--color-accent);
-    color: #fff;
-    font-size: 0.7rem;
+    display: inline-block;
+    background: var(--sage);
+    color: var(--charcoal);
+    font-size: 0.65rem;
     font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    align-self: flex-start;
+  }
+
+  .card-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+  .tag {
+    background: var(--charcoal-10);
+    color: var(--charcoal-60);
+    font-size: 0.71rem;
+    font-weight: 500;
     padding: 2px 8px;
     border-radius: 20px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  }
+  .tag--age { background: var(--coral-light); color: var(--coral); font-weight: 600; }
+
+  .card-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.97rem;
+    color: var(--charcoal);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
-  .event-title { font-size: 1rem; font-weight: 600; line-height: 1.3; }
-  .event-title a { color: var(--color-text); }
-  .event-title a:hover { color: var(--color-accent); text-decoration: none; }
-
-  .event-meta {
+  .card-meta {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1rem;
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
+    flex-direction: column;
+    gap: 0.2rem;
   }
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--charcoal-60);
+  }
+  .meta-item svg { flex-shrink: 0; color: var(--coral); }
 
-  .event-price { font-size: 0.85rem; color: var(--color-text-muted); }
-
-  .event-desc {
-    font-size: 0.88rem;
-    color: var(--color-text-muted);
+  .card-desc {
+    font-size: 0.8rem;
+    color: var(--charcoal-60);
     line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
-  .event-footer {
+  /* Footer strip */
+  .card-footer {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 0.25rem;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1.25rem;
+    border-top: 1px solid var(--border);
+    background: var(--offwhite);
   }
-
-  .event-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
-
-  .tag {
-    background: var(--color-tag-bg);
-    color: var(--color-text-muted);
-    font-size: 0.75rem;
-    padding: 2px 8px;
-    border-radius: 20px;
-  }
-  .tag--age {
-    background: var(--color-accent-light);
-    color: var(--color-accent);
-  }
-
   .source-link {
-    font-size: 0.78rem;
-    color: var(--color-text-muted);
-    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--charcoal-60);
+    transition: color 150ms;
   }
-  .source-link:hover { color: var(--color-accent); }
-
-  .disclaimer-micro {
-    font-size: 0.72rem;
-    color: #aaa;
-    margin-top: 0.25rem;
-  }
+  .source-link:hover { color: var(--coral); text-decoration: none; }
+  .disclaimer-micro { font-size: 0.68rem; color: var(--charcoal-60); opacity: 0.6; }
 </style>
