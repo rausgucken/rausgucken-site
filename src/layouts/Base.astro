@@ -87,7 +87,7 @@ const websiteSchema = isHomepage ? {
   <meta name="twitter:image"       content={ogImageUrl} />
 
   <!-- ── Favicon ──────────────────────────────────────────────────────────── -->
-  <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+  <link rel="icon" type="image/png" href="/logo.png" />
 
   <!-- ── Font preload (SEO §23 Core Web Vitals) ───────────────────────────── -->
   <!-- Preload only the two weights actually used above the fold -->
@@ -206,7 +206,7 @@ const websiteSchema = isHomepage ? {
       gap: 1rem;
     }
     .site-logo { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; }
-    .site-logo img { height: 40px; width: 40px; border-radius: 10px; object-fit: cover; }
+    .site-logo img { height: 40px; width: 40px; border-radius: 0; object-fit: contain; }
     .site-logo-text { font-family: var(--font-heading); font-weight: 800; font-size: 1.25rem; color: var(--text); letter-spacing: -0.02em; }
     .site-logo-text span { color: var(--coral); }
     .site-logo:hover { text-decoration: none; }
@@ -277,7 +277,7 @@ const websiteSchema = isHomepage ? {
   <header class="site-header">
     <div class="site-header-inner">
       <a href="/" class="site-logo">
-        <img src="/logo.jpg" alt="rausgucken.de Logo" width="40" height="40" />
+        <img src="/logo.png" alt="rausgucken.de Logo" width="40" height="40" />
         <span class="site-logo-text">raus<span>gucken</span>.de</span>
       </a>
       <nav class="site-nav" aria-label="Hauptnavigation">
