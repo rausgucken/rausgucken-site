@@ -1,0 +1,193 @@
+---
+// src/pages/ludwigsburg/heute/index.astro
+// SEO §2: Permanent keyword landing page. Real content. Canonical to itself. Never a redirect.
+// SEO §9: Title includes dynamic date. SEO §3: Data loaded client-side from today.json (Tier 2 model).
+
+import Base from "../../../layouts/Base.astro";
+
+const siteUrl = "https://rausgucken.de";
+const city    = "ludwigsburg";
+
+// Dynamic date for title (SEO §9)
+const now        = new Date();
+const todayDE    = now.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
+const todayISO   = now.toISOString().slice(0, 10);
+
+// SEO §9 title formula: keyword-first, event count from today.json at client load
+const seoTitle   = `Veranstaltungen in Ludwigsburg heute (${todayDE}) | rausgucken.de`;
+const metaDesc   = `Alle Events in Ludwigsburg heute, ${todayDE}. Führungen, Ausstellungen, Kinder, Kultur – lokal, aktuell, übersichtlich.`;
+const canonical  = `${siteUrl}/${city}/heute/`;
+
+// CollectionPage schema — SEO §10B
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `Veranstaltungen in Ludwigsburg heute – ${todayDE}`,
+  "description": metaDesc,
+  "url": canonical,
+  "inLanguage": "de-DE",
+};
+
+// BreadcrumbList schema — SEO §10C
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": siteUrl },
+    { "@type": "ListItem", "position": 2, "name": "Ludwigsburg",   "item": `${siteUrl}/${city}/` },
+    { "@type": "ListItem", "position": 3, "name": "Heute",         "item": canonical },
+  ],
+};
+---
+
+<Base
+  title={seoTitle}
+  description={metaDesc}
+  canonical={canonical}
+  ogImage="/og/ludwigsburg/heute.jpg"
+  schema={[collectionSchema, breadcrumbSchema]}
+>
+  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+    <a href="/">rausgucken.de</a> ›
+    <a href="/ludwigsburg">Ludwigsburg</a> ›
+    <span aria-current="page">Heute</span>
+  </nav>
+
+  <div class="page-header">
+    <h1>Events in Ludwigsburg heute</h1>
+    <p class="page-subtitle" id="today-subtitle">{todayDE}</p>
+  </div>
+
+  <!-- Events rendered client-side from today.json (Tier 2 daily data swap, no build) -->
+  <div id="events-container" aria-live="polite" aria-label="Heutige Veranstaltungen">
+    <div class="loading-state" id="loading-state">Lade heutige Veranstaltungen…</div>
+    <div class="event-list" id="event-list" hidden></div>
+    <div class="empty-today" id="empty-today" hidden>
+      <div class="empty-inner">
+        <p class="empty-headline">Heute keine eingetragenen Veranstaltungen.</p>
+        <p class="empty-body">Trotzdem lohnt sich ein Ausflug nach Ludwigsburg!</p>
+        <div class="empty-ctas">
+          <a href="/ludwigsburg/dieses-wochenende" class="btn-cta">Wochenende →</a>
+          <a href="/ludwigsburg" class="btn-cta btn-cta--ghost">Alle Veranstaltungen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Internal linking mesh — SEO §22 -->
+  <nav class="temporal-nav" aria-label="Andere Zeiträume">
+    <p class="temporal-label">Andere Zeiträume</p>
+    <div class="temporal-links">
+      <a href="/ludwigsburg/morgen">Morgen</a>
+      <a href="/ludwigsburg/dieses-wochenende">Dieses Wochenende</a>
+      <a href="/ludwigsburg/naechste-woche">Nächste Woche</a>
+      <a href="/ludwigsburg/kinder">Kinder &amp; Familie</a>
+      <a href="/ludwigsburg">Alle Veranstaltungen</a>
+    </div>
+  </nav>
+</Base>
+
+<!-- Client-side data fetch from today.json (Tier 2 deployment: no Cloudflare build) -->
+<script>
+(async function() {
+  const list    = document.getElementById('event-list');
+  const empty   = document.getElementById('empty-today');
+  const loading = document.getElementById('loading-state');
+
+  try {
+    const res  = await fetch('/data/ludwigsburg/today.json');
+    const data = await res.json();
+
+    loading.hidden = true;
+
+    if (!data || data.length === 0) {
+      empty.hidden = false;
+      return;
+    }
+
+    // Render event cards
+    data.forEach(ev => {
+      const card = document.createElement('a');
+      card.href = `/ludwigsburg/events/${ev.slug}`;
+      card.className = 'event-row';
+      card.innerHTML = `
+        <div class="event-row-left">
+          <span class="event-row-time">${ev.time ? ev.time + ' Uhr' : ''}</span>
+          <span class="event-row-title">${ev.title}</span>
+          ${ev.location ? `<span class="event-row-loc">📍 ${ev.location}</span>` : ''}
+        </div>
+        <div class="event-row-tags">
+          ${(ev.tags || []).slice(0,2).map(t => `<span class="tag">${t}</span>`).join('')}
+        </div>
+      `;
+      list.appendChild(card);
+    });
+
+    // Update subtitle with count (SEO §9: dynamic event count in UI)
+    const sub = document.getElementById('today-subtitle');
+    if (sub) sub.textContent = `${data.length} Veranstaltungen · ${sub.textContent}`;
+
+    list.hidden = false;
+  } catch(e) {
+    loading.textContent = 'Daten konnten nicht geladen werden.';
+  }
+})();
+</script>
+
+<style>
+  .breadcrumb { font-size: 0.82rem; color: var(--text-60); margin-bottom: 1.5rem; }
+  .breadcrumb a { color: var(--text-60); }
+  .breadcrumb a:hover { color: var(--coral); }
+
+  .page-header { margin-bottom: 2rem; max-width: 720px; }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; }
+  .page-subtitle { color: var(--text-60); font-size: 1rem; margin-top: 0.35rem; }
+
+  .loading-state { color: var(--text-60); font-size: 0.95rem; padding: 2rem 0; }
+
+  .event-list { display: flex; flex-direction: column; gap: 0.65rem; max-width: 720px; }
+
+  /* Simplified row layout for temporal pages — faster to scan than full card */
+  .event-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.85rem 1rem;
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--text);
+    box-shadow: var(--shadow-card);
+    transition: transform 200ms cubic-bezier(0.4,0,0.2,1), box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .event-row:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+  }
+  .event-row-left { display: flex; flex-direction: column; gap: 0.2rem; }
+  .event-row-time  { font-size: 0.75rem; font-weight: 600; color: var(--coral); }
+  .event-row-title { font-family: var(--font-heading); font-weight: 700; font-size: 0.97rem; }
+  .event-row-loc   { font-size: 0.78rem; color: var(--text-60); }
+  .event-row-tags  { display: flex; gap: 0.3rem; flex-shrink: 0; }
+  .tag { background: var(--tag-bg); color: var(--text-60); font-size: 0.7rem; font-weight: 500; padding: 2px 8px; border-radius: 20px; }
+
+  /* Empty state */
+  .empty-today { max-width: 720px; padding: 2rem 0; }
+  .empty-inner { background: var(--surface-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem 2rem; text-align: center; }
+  .empty-headline { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; }
+  .empty-body { color: var(--text-60); margin-bottom: 1.5rem; }
+  .empty-ctas { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+  /* Coral bg → Charcoal text per design spec "Button" rule */
+  .btn-cta { display: inline-flex; align-items: center; height: 44px; padding: 0 1.25rem; background: var(--coral); color: var(--text); border-radius: var(--radius-sm); font-weight: 600; font-size: 0.875rem; text-decoration: none; transition: background 150ms; }
+  .btn-cta:hover { background: var(--coral-dark); text-decoration: none; }
+  .btn-cta--ghost { background: var(--tag-bg); color: var(--text-60); }
+  .btn-cta--ghost:hover { background: var(--coral-light); color: var(--coral); }
+
+  /* Temporal nav — SEO §22 */
+  .temporal-nav { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); max-width: 720px; }
+  .temporal-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-60); margin-bottom: 0.65rem; }
+  .temporal-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .temporal-links a { display: inline-flex; align-items: center; height: 36px; padding: 0 0.85rem; background: var(--tag-bg); color: var(--text-60); border-radius: 20px; font-size: 0.82rem; font-weight: 500; text-decoration: none; transition: background 150ms, color 150ms; }
+  .temporal-links a:hover { background: var(--coral-light); color: var(--coral); }
+</style>

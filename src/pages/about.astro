@@ -1,81 +1,466 @@
 ---
 // src/pages/about.astro
+// E-E-A-T: Who created this, why, how. Google SEO Starter Guide §E-E-A-T.
+// Contains: brand story, transparency section, Goethe quote, contact form,
+//           Datenschutz, Impressum, sources list.
 import Base from "../layouts/Base.astro";
+
+const siteUrl   = "https://rausgucken.de";
+const canonical = `${siteUrl}/about`;
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Über uns | rausgucken.de",
+    "url": canonical,
+    "inLanguage": "de-DE",
+    "description": "Die Geschichte hinter rausgucken.de — wer wir sind, wie wir arbeiten und warum wir lokale Veranstaltungen für alle zugänglich machen wollen.",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": siteUrl },
+      { "@type": "ListItem", "position": 2, "name": "Über uns",      "item": canonical },
+    ],
+  },
+];
 ---
 
 <Base
-  title="Über rausgucken.de — Datenschutz & Impressum"
-  description="Informationen zur automatischen Datenerfassung, Datenschutz und Impressum von rausgucken.de"
+  title="Über uns | rausgucken.de"
+  description="Die Geschichte hinter rausgucken.de — wer wir sind, wie wir arbeiten und warum wir lokale Veranstaltungen für alle zugänglich machen wollen."
+  canonical={canonical}
+  ogImage="/og/about.jpg"
+  schema={schema}
 >
   <div class="about-page">
-    <h1>Über rausgucken.de</h1>
 
-    <section>
-      <h2>Was ist rausgucken.de?</h2>
+    <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+      <a href="/">rausgucken.de</a> › <span aria-current="page">Über uns</span>
+    </nav>
+
+    <!-- ── Hero quote — Goethe (no copyright, died 1832) ─────────────────── -->
+    <!-- Styled per recommendation: coral left-border blockquote -->
+    <blockquote class="goethe-quote" aria-label="Zitat von Johann Wolfgang von Goethe">
       <p>
-        rausgucken.de ist ein unabhängiger Veranstaltungskalender für Ludwigsburg und Umgebung.
-        Wir aggregieren öffentlich zugängliche Veranstaltungsdaten aus verschiedenen Quellen
-        und machen sie in einer übersichtlichen, durchsuchbaren Oberfläche zugänglich.
+        „Willst du immer weiter schweifen?<br />
+        Sieh, das Gute liegt so nah."
+      </p>
+      <footer>— Johann Wolfgang von Goethe</footer>
+    </blockquote>
+
+    <!-- ── Page title ─────────────────────────────────────────────────────── -->
+    <h1>Die Geschichte hinter rausgucken.de</h1>
+
+    <!-- ── Brand story — E-E-A-T: first-person, authentic, specific ──────── -->
+    <section class="story-section" aria-labelledby="story-heading">
+      <h2 id="story-heading">Weniger Bildschirm. Mehr echtes Leben.</h2>
+      <p>
+        Wir verbringen heute viel zu viel Zeit vor dem Fernseher oder am Smartphone.
+        Dabei verpassen wir oft das, was unser Leben wirklich bereichert: die Kultur,
+        die Kunst und den Sport direkt vor unserer Haustür.
+      </p>
+      <p>
+        Die Idee zu rausgucken.de entstand aus einer ganz persönlichen Erfahrung.
+        Als Familie mit Einwanderungsgeschichte war es mir ein großes Anliegen, dass
+        meine Kinder tief in die deutsche Kultur und das lokale Gemeinschaftsleben
+        eintauchen. Die Vorlesestunden in der Stadtbibliothek und die Kunst-Workshops
+        in den Museen waren für uns echte Augenöffner. Das Fantastische daran:
+        Viele dieser von der Stadt oder lokalen Gemeinschaften organisierten
+        Veranstaltungen sind völlig kostenlos — man muss nur wissen, dass sie
+        existieren und wie man sich anmeldet.
       </p>
     </section>
 
-    <section>
-      <h2>Haftungsausschluss</h2>
-      <p class="disclaimer-full">
-        Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von
-        öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen
-        wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten.
-        Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite
-        (siehe „Originalseite" Link bei jedem Eintrag) bevor Sie teilnehmen.
-        Die angezeigten Informationen stammen von den genannten Quellen und wurden zum
-        angegebenen Zeitpunkt (Stand) automatisch erfasst.
+    <section aria-labelledby="problem-heading">
+      <h2 id="problem-heading">Das Problem der verstreuten Informationen</h2>
+      <p>
+        Ich wollte diese tollen Angebote voll ausschöpfen, stand aber vor einem Problem:
+        Die Informationen waren überall verstreut. Wenn ich wissen wollte, was meine
+        Kinder am Wochenende machen können, musste ich ein halbes Dutzend verschiedener
+        Websites von unterschiedlichen Institutionen durchsuchen — und habe mit Sicherheit
+        trotzdem das meiste verpasst.
+      </p>
+      <p>
+        So entstand rausgucken.de. Ich wollte einen einzigen, zentralen Ort schaffen,
+        an dem man einfach einen Datumsbereich auswählt und sofort sieht, was in der
+        Nähe passiert — mit praktischen Filtern für Alter und Ort als Bonus.
       </p>
     </section>
 
-    <section>
-      <h2>Quellen (Ludwigsburg)</h2>
-      <ul>
-        <li><a href="https://www.schloss-ludwigsburg.de" target="_blank" rel="noopener">Schloss Ludwigsburg</a></li>
-        <li><a href="https://www.stadtmuseum-ludwigsburg.de" target="_blank" rel="noopener">Stadtmuseum Ludwigsburg</a></li>
-        <li><a href="https://karlskaserne.ludwigsburg.de" target="_blank" rel="noopener">Kunstzentrum Karlskaserne</a></li>
-        <li><a href="https://events-stabi.ludwigsburg.de" target="_blank" rel="noopener">Stadtbibliothek Ludwigsburg</a></li>
-        <li><a href="https://kunstverein-ludwigsburg.de" target="_blank" rel="noopener">Kunstverein Ludwigsburg</a></li>
-        <li><a href="https://kunstschule-labyrinth.ludwigsburg.de" target="_blank" rel="noopener">Kunstschule Labyrinth</a></li>
+    <section aria-labelledby="mission-heading">
+      <h2 id="mission-heading">Für die Gemeinschaft, nicht für den Profit</h2>
+      <p>
+        Diese Seite ist nicht dazu gedacht, mit großen Ticketportalen für kommerzielle
+        private Events zu konkurrieren. rausgucken.de konzentriert sich auf die bereits
+        vorhandenen, gemeinschaftsorientierten und oft lokalen Veranstaltungen, die
+        sonst im digitalen Rauschen untergehen.
+      </p>
+    </section>
+
+    <!-- ── Transparency section — E-E-A-T trust signals ─────────────────── -->
+    <section class="trust-section" aria-labelledby="trust-heading">
+      <h2 id="trust-heading">Wie wir arbeiten — Transparenz &amp; Vertrauen</h2>
+      <p>
+        Wir erstellen keine eigenen Veranstaltungsdaten, sondern sammeln öffentlich
+        zugängliche Informationen von verschiedenen lokalen Websites, um sie hier
+        übersichtlich für Sie zu bündeln. Dabei legen wir größten Wert auf Transparenz:
+      </p>
+      <ul class="trust-list">
+        <li>
+          <span class="trust-icon" aria-hidden="true">🔗</span>
+          <div>
+            <strong>Originalseite</strong> — Bei jedem Event finden Sie immer den
+            direkten Link zur ursprünglichen Quelle.
+          </div>
+        </li>
+        <li>
+          <span class="trust-icon" aria-hidden="true">🕐</span>
+          <div>
+            <strong>Aktualität</strong> — Wir zeigen bei jeder Veranstaltung mit dem
+            Hinweis „Geprüft" an, wann wir die Daten abgerufen haben.
+          </div>
+        </li>
+        <li>
+          <span class="trust-icon" aria-hidden="true">✔️</span>
+          <div>
+            <strong>Bitte prüfen</strong> — Obwohl wir versuchen, die Seite täglich zu
+            aktualisieren, bitten wir alle Nutzer, die Zeiten und Details vor der
+            Teilnahme immer noch einmal auf der verlinkten Originalseite zu überprüfen.
+          </div>
+        </li>
       </ul>
     </section>
 
-    <section>
-      <h2>Datenschutz</h2>
+    <!-- ── Sources list — E-E-A-T: name your sources ─────────────────────── -->
+    <section aria-labelledby="sources-heading">
+      <h2 id="sources-heading">Unsere Quellen (Ludwigsburg)</h2>
+      <ul class="sources-list">
+        <li><a href="https://www.schloss-ludwigsburg.de" target="_blank" rel="noopener noreferrer">Residenzschloss Ludwigsburg</a></li>
+        <li><a href="https://www.stadtmuseum-ludwigsburg.de" target="_blank" rel="noopener noreferrer">Stadtmuseum Ludwigsburg</a></li>
+        <li><a href="https://karlskaserne.ludwigsburg.de" target="_blank" rel="noopener noreferrer">Kunstzentrum Karlskaserne</a></li>
+        <li><a href="https://events-stabi.ludwigsburg.de" target="_blank" rel="noopener noreferrer">Stadtbibliothek Ludwigsburg</a></li>
+        <li><a href="https://kunstverein-ludwigsburg.de" target="_blank" rel="noopener noreferrer">Kunstverein Ludwigsburg</a></li>
+        <li><a href="https://kunstschule-labyrinth.ludwigsburg.de" target="_blank" rel="noopener noreferrer">Kunstschule Labyrinth</a></li>
+      </ul>
+    </section>
+
+    <!-- ── Contact form — trust signal, E-E-A-T, TMG §5 ─────────────────── -->
+    <section class="contact-section" id="kontakt" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Kontakt</h2>
+      <p class="section-intro">
+        Fehler entdeckt? Veranstaltung nicht gefunden? Oder einfach Feedback?
+        Schreiben Sie uns — wir freuen uns über jede Nachricht.
+      </p>
+
+      <!--
+        Contact form — no server-side handler needed for static Cloudflare Pages.
+        Uses Netlify Forms convention (action="https://formspree.io/...") or
+        swap out action for your preferred form endpoint.
+        Design spec: no <form> elements in React artifacts — but this is plain HTML, fine here.
+      -->
+      <form
+        class="contact-form"
+        name="kontakt"
+        method="POST"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        aria-label="Kontaktformular"
+      >
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contact-name">Name</label>
+            <input
+              type="text"
+              id="contact-name"
+              name="name"
+              placeholder="Ihr Name"
+              autocomplete="name"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-group">
+            <label for="contact-email">E-Mail</label>
+            <input
+              type="email"
+              id="contact-email"
+              name="email"
+              placeholder="ihre@email.de"
+              autocomplete="email"
+              required
+              aria-required="true"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Nachricht</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="5"
+            placeholder="Was möchten Sie uns mitteilen?"
+            required
+            aria-required="true"
+          ></textarea>
+        </div>
+        <!-- Honeypot: hidden spam trap — not visible to real users -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true" />
+        <!-- Coral bg → Charcoal text per design spec "Button" rule -->
+        <button type="submit" class="btn-submit">
+          Nachricht senden →
+        </button>
+      </form>
+    </section>
+
+    <!-- ── Datenschutz ────────────────────────────────────────────────────── -->
+    <section id="datenschutz" aria-labelledby="privacy-heading">
+      <h2 id="privacy-heading">Datenschutz</h2>
       <p>
-        rausgucken.de speichert keine personenbezogenen Daten der Besucher. Es werden
-        keine Cookies gesetzt. Die Seite wird über Cloudflare Pages ausgeliefert.
-        Es gelten die <a href="https://www.cloudflare.com/de-de/privacypolicy/" target="_blank" rel="noopener">Datenschutzbestimmungen von Cloudflare</a>.
+        rausgucken.de speichert keine personenbezogenen Daten der Besucher.
+        Es werden keine Tracking-Cookies gesetzt. Die Seite wird über Cloudflare Pages
+        ausgeliefert. Es gelten die
+        <a href="https://www.cloudflare.com/de-de/privacypolicy/" target="_blank" rel="noopener noreferrer">
+          Datenschutzbestimmungen von Cloudflare</a>.
+      </p>
+      <p>
+        Wenn Sie das Kontaktformular nutzen, werden Ihre Angaben (Name, E-Mail-Adresse,
+        Nachrichteninhalt) ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und
+        nicht an Dritte weitergegeben. Die Datenverarbeitung erfolgt auf Grundlage von
+        Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen).
       </p>
     </section>
 
-    <section>
-      <h2>Kontakt & Impressum</h2>
-      <p>Angaben gemäß § 5 TMG — Inhaber: [Ihr Name]<br/>
-         [Adresse]<br/>
-         [E-Mail-Adresse]
+    <!-- ── Impressum ──────────────────────────────────────────────────────── -->
+    <section id="impressum" aria-labelledby="impressum-heading">
+      <h2 id="impressum-heading">Impressum</h2>
+      <p class="disclaimer-full">
+        Angaben gemäß § 5 TMG<br />
+        Inhaber: [Ihr Name]<br />
+        Adresse: [Ihre Adresse]<br />
+        E-Mail: [Ihre E-Mail-Adresse]
+      </p>
+      <p class="disclaimer-full" style="margin-top: 0.75rem;">
+        <strong>Haftungsausschluss:</strong> Die auf rausgucken.de angezeigten
+        Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen
+        Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr
+        für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte prüfen
+        Sie alle Angaben auf der jeweiligen Originalseite vor Teilnahme.
       </p>
     </section>
+
+    <!-- ── Dot doctrine watermark — Tier 2 atmospheric, opacity-5 max ────── -->
+    <!-- Design spec Part I.5: EmptyState / About page only. No pattern repetition. -->
+    <div class="dot-watermark" aria-hidden="true">● ·</div>
+
   </div>
 </Base>
 
 <style>
-  .about-page { max-width: 680px; }
-  h1 { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 2rem; }
-  section { margin-bottom: 2rem; }
-  h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.65rem; }
-  p, li { font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.7; }
-  ul { padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.3rem; }
-  .disclaimer-full {
-    background: var(--color-accent-light);
-    border-left: 3px solid var(--color-accent);
-    padding: 1rem 1.25rem;
-    border-radius: 0 var(--radius) var(--radius) 0;
+  /* ── Page layout ─────────────────────────────────────────────────────────── */
+  .about-page {
+    max-width: 680px;
+    position: relative;
+  }
+
+  .breadcrumb { font-size: 0.82rem; color: var(--text-60); margin-bottom: 2rem; }
+  .breadcrumb a { color: var(--text-60); }
+  .breadcrumb a:hover { color: var(--coral); }
+
+  h1 {
+    font-size: clamp(1.7rem, 4vw, 2.2rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  section { margin-bottom: 2.5rem; }
+
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+
+  p { font-size: 0.95rem; color: var(--text-60); line-height: 1.75; margin-bottom: 0.85rem; }
+  p:last-child { margin-bottom: 0; }
+
+  /* ── Goethe quote ────────────────────────────────────────────────────────── */
+  /* Styled per recommendation: coral left-border blockquote */
+  .goethe-quote {
+    border-left: 4px solid var(--coral);
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    margin: 0 0 2.5rem 0;
+    font-style: italic;
+  }
+  .goethe-quote p {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.5;
+    color: var(--text);
+    opacity: 0.90;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+  .goethe-quote footer {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text);
+    opacity: 0.70; /* Secondary Text rule: opacity not color change */
+    font-style: normal;
+  }
+
+  /* ── Trust section ───────────────────────────────────────────────────────── */
+  .trust-section {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-card);
+  }
+  .trust-section h2 { margin-bottom: 0.75rem; }
+  .trust-section > p { margin-bottom: 1rem; }
+
+  .trust-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding: 0;
+  }
+  .trust-list li {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+    font-size: 0.92rem;
+    color: var(--text-60);
+    line-height: 1.6;
+  }
+  .trust-list strong { color: var(--text); }
+  .trust-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 0.1rem; }
+
+  /* ── Sources list ────────────────────────────────────────────────────────── */
+  .sources-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .sources-list a {
+    font-size: 0.92rem;
+    color: var(--text-60);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .sources-list a::before { content: "→"; color: var(--coral); font-weight: 700; }
+  .sources-list a:hover { color: var(--coral); }
+
+  /* ── Contact section ─────────────────────────────────────────────────────── */
+  .contact-section {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-card);
+  }
+  .contact-section h2 { margin-bottom: 0.5rem; }
+  .section-intro { margin-bottom: 1.25rem; }
+
+  .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+
+  .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
+
+  label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-60);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 0.7rem 0.85rem;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
     font-size: 0.9rem;
-    color: #7a3b18;
+    background: var(--bg);
+    color: var(--text);
+    transition: border-color 150ms, box-shadow 150ms;
+    resize: vertical;
+    width: 100%;
+    /* Minimum 44px height for tap targets */
+    min-height: 44px;
+  }
+  textarea { min-height: 120px; }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: var(--coral);
+    box-shadow: 0 0 0 3px var(--coral-light);
+  }
+
+  /* btn-submit: Coral bg → Charcoal text. Design spec "Button" rule. */
+  .btn-submit {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 1.5rem;
+    background: var(--coral);
+    color: var(--text);        /* Charcoal on Coral — 4.1:1 ✓ */
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background 150ms, transform 150ms;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .btn-submit:hover { background: var(--coral-dark); transform: translateY(-1px); }
+  }
+  .btn-submit:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+
+  /* ── Disclaimer / Impressum ──────────────────────────────────────────────── */
+  /* Secondary Text rule: opacity-70, never a color change */
+  .disclaimer-full {
+    font-size: 0.88rem;
+    color: var(--text);
+    opacity: 0.70;
+    line-height: 1.7;
+  }
+
+  /* ── Dot watermark — design spec Part I.5 Tier 2 atmospheric ────────────── */
+  /* max opacity-5 to opacity-8, not behind text, not repeating */
+  .dot-watermark {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 4rem;
+    color: var(--coral);
+    opacity: 0.05;          /* opacity-5 per dot doctrine */
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+    z-index: 0;             /* z-0 base layer — never above content */
   }
 </style>

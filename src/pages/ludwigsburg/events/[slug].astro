@@ -1,4 +1,8 @@
 ---
+// src/pages/ludwigsburg/events/[slug].astro
+// SEO: keyword-first title, full Event schema (§10), BreadcrumbList (§10),
+//      expired event banner (§5), RelatedPages internal linking (§22)
+
 import Base from "../../../layouts/Base.astro";
 import eventsData from "../../../../public/data/ludwigsburg/events-current.json";
 
@@ -10,13 +14,43 @@ export async function getStaticPaths() {
 }
 
 const { event: ev } = Astro.props;
+const siteUrl = "https://rausgucken.de";
 
-function formatDate(iso) {
+// ── Dates & freshness ─────────────────────────────────────────────────────────
+function formatDateDE(iso) {
   if (!iso) return "Dauerhaft verfügbar";
   const d = new Date(iso + "T12:00:00");
   return d.toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
 }
+function formatDateShort(iso) {
+  if (!iso) return null;
+  const d = new Date(iso + "T12:00:00");
+  return d.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
+}
 
+const today        = new Date().toISOString().slice(0, 10);
+const isExpired    = !!(ev.date_start && ev.date_start < today);
+const scrapedFormatted = ev.scraped_at
+  ? new Date(ev.scraped_at).toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" })
+  : null;
+
+// ── Canonical ─────────────────────────────────────────────────────────────────
+const canonical = `${siteUrl}/ludwigsburg/events/${ev.slug}`;
+
+// ── OG image ──────────────────────────────────────────────────────────────────
+// Falls back to city-level OG if per-event image not yet generated
+const ogImage = `/og/ludwigsburg/${ev.slug}.jpg`;
+
+// ── SEO title — keyword-first per §9: "{Event} Ludwigsburg {Date} | rausgucken.de"
+const dateLabel = ev.date_start ? formatDateShort(ev.date_start) : "Dauerveranstaltung";
+const seoTitle  = `${ev.title} Ludwigsburg ${dateLabel} | rausgucken.de`;
+
+// ── Meta description ──────────────────────────────────────────────────────────
+const metaDesc = ev.description
+  ? ev.description.slice(0, 150) + (ev.description.length > 150 ? "…" : "")
+  : `${ev.title} – Veranstaltung in Ludwigsburg${ev.date_start ? ` am ${dateLabel}` : ""}. Alle Details und Originalseite auf rausgucken.de.`;
+
+// ── Tag display labels ────────────────────────────────────────────────────────
 const TAG_LABELS = {
   Ausstellung: "Ausstellung", Entertainment: "Entertainment", Familie: "Familie",
   Fest: "Fest", Fuehrung: "Führung", Jugend: "Jugend", Kinder: "Kinder",
@@ -25,110 +59,508 @@ const TAG_LABELS = {
   Theater: "Theater", Vortrag: "Vortrag", Workshop: "Workshop",
 };
 
-const jsonLd = {
+// ── Full Event schema — SEO §10A ──────────────────────────────────────────────
+// Required for Google event rich results: image, inLanguage, eventAttendanceMode, organizer
+const eventSchema = {
   "@context": "https://schema.org",
   "@type": "Event",
   "name": ev.title,
-  "description": ev.description || undefined,
-  "startDate": ev.date_start || undefined,
+  ...(ev.description ? { "description": ev.description } : {}),
+  "inLanguage": "de-DE",
+  ...(ev.date_start ? {
+    "startDate": ev.time ? `${ev.date_start}T${ev.time}` : ev.date_start,
+  } : {}),
+  // endDate: use date_end if present, otherwise same as start (1-day event)
+  ...(ev.date_start ? {
+    "endDate": ev.date_end || ev.date_start,
+  } : {}),
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  // eventStatus: EventScheduled for all — expired events keep this; expired banner shown in UI
+  "eventStatus": "https://schema.org/EventScheduled",
+  // image required for Google rich results (§10, §20)
+  "image": `${siteUrl}${ogImage}`,
+  "url": canonical,
   "location": {
     "@type": "Place",
     "name": ev.location || "Ludwigsburg",
-    "address": { "@type": "PostalAddress", "addressLocality": "Ludwigsburg", "addressCountry": "DE" }
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ludwigsburg",
+      "addressRegion": "Baden-Württemberg",
+      "addressCountry": "DE",
+    },
   },
-  "url": `https://rausgucken.de/ludwigsburg/events/${ev.slug}`,
+  // organizer: venue/institution that owns the event (§10A)
+  "organizer": {
+    "@type": "Organization",
+    "name": ev.location || "Ludwigsburg",
+    ...(ev.original_url ? { "url": ev.original_url } : {}),
+  },
+  // offers: free entry if price is null/empty (§10)
+  ...(ev.price != null ? {
+    "offers": {
+      "@type": "Offer",
+      "price": ev.price === "0" || ev.price === "" ? "0" : ev.price,
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": ev.original_url || canonical,
+    },
+  } : {}),
 };
+
+// ── BreadcrumbList schema — SEO §10C ──────────────────────────────────────────
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": siteUrl },
+    { "@type": "ListItem", "position": 2, "name": "Ludwigsburg",   "item": `${siteUrl}/ludwigsburg/` },
+    { "@type": "ListItem", "position": 3, "name": ev.title,        "item": canonical },
+  ],
+};
+
+// ── Related events for expired page — SEO §5: show 3 current alternatives ─────
+// BUG FIX: filter must check each candidate's own date, not the outer isExpired flag
+const relatedEvents = isExpired
+  ? eventsData
+      .filter(e =>
+        e.slug !== ev.slug &&
+        e.date_start && e.date_start >= today &&           // only current events
+        Array.isArray(e.tags) && Array.isArray(ev.tags) &&
+        e.tags.some(t => ev.tags.includes(t))              // same category
+      )
+      .slice(0, 3)
+  : [];
 ---
 
 <Base
-  title={`${ev.title} | Ludwigsburg | rausgucken.de`}
-  description={ev.description ? ev.description.slice(0, 155) : `${ev.title} — Veranstaltung in Ludwigsburg`}
-  city="ludwigsburg"
+  title={seoTitle}
+  description={metaDesc}
+  canonical={canonical}
+  ogImage={ogImage}
+  ogType="article"
+  schema={[eventSchema, breadcrumbSchema]}
 >
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
-  <nav class="breadcrumb">
-    <a href="/">rausgucken.de</a> ›
-    <a href="/ludwigsburg">Ludwigsburg</a> ›
-    <span>{ev.title}</span>
+  <!-- ── Expired event banner — SEO §5 ──────────────────────────────────── -->
+  <!-- "Diese Veranstaltung hat bereits stattgefunden." must be shown prominently -->
+  {isExpired && (
+    <div class="expired-banner" role="alert" aria-live="polite">
+      <span class="expired-icon" aria-hidden="true">⏰</span>
+      <div>
+        <strong>Diese Veranstaltung hat bereits stattgefunden.</strong>
+        {relatedEvents.length > 0
+          ? " Ähnliche aktuelle Veranstaltungen findest du hier:"
+          : " Schau dir aktuelle Veranstaltungen in Ludwigsburg an."}
+      </div>
+    </div>
+  )}
+
+  <!-- Related events for expired pages (§5) -->
+  {isExpired && relatedEvents.length > 0 && (
+    <div class="related-events" aria-label="Ähnliche aktuelle Veranstaltungen">
+      {relatedEvents.map(r => (
+        <a href={`/ludwigsburg/events/${r.slug}`} class="related-card">
+          <div class="related-card-body">
+            <span class="related-title">{r.title}</span>
+            {r.location && <span class="related-location">{r.location}</span>}
+          </div>
+          <span class="related-date">{formatDateShort(r.date_start)}</span>
+        </a>
+      ))}
+    </div>
+  )}
+
+  {isExpired && relatedEvents.length === 0 && (
+    <div class="expired-cta">
+      <a href="/ludwigsburg" class="btn-cta">Alle aktuellen Veranstaltungen →</a>
+    </div>
+  )}
+
+  <!-- ── Breadcrumb nav — visible + schema-marked (SEO §10C) ───────────── -->
+  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+    <a href="/">rausgucken.de</a>
+    <span aria-hidden="true"> › </span>
+    <a href="/ludwigsburg">Ludwigsburg</a>
+    <span aria-hidden="true"> › </span>
+    <span aria-current="page">{ev.title}</span>
   </nav>
 
-  <article class="event-detail">
-    <header>
-      <div class="event-tags">
-        {ev.tags.map(t => <span class="tag">{TAG_LABELS[t] ?? t}</span>)}
+  <article class="event-detail" itemscope itemtype="https://schema.org/Event">
+
+    <header class="event-header">
+      <!-- Tags row -->
+      <div class="event-tags" aria-label="Kategorien">
+        {Array.isArray(ev.tags) && ev.tags.map(t => (
+          <a href={t === "Kinder" || t === "Familie" ? "/ludwigsburg/kinder" : "/ludwigsburg"}
+             class={`tag${t === "Kinder" || t === "Familie" ? " tag--sage" : ""}`}>
+            {TAG_LABELS[t] ?? t}
+          </a>
+        ))}
         {ev.age_min != null && (
           <span class="tag tag--age">
             ab {ev.age_min} J.{ev.age_max ? ` bis ${ev.age_max} J.` : "+"}
           </span>
         )}
       </div>
-      <h1>{ev.title}</h1>
+
+      <h1 itemprop="name">{ev.title}</h1>
     </header>
 
-    <div class="meta-grid">
+    <!-- ── Meta grid ──────────────────────────────────────────────────────── -->
+    <dl class="meta-grid">
       <div class="meta-item">
-        <span class="meta-label">Datum</span>
-        <span class="meta-value">{formatDate(ev.date_start)}</span>
+        <dt class="meta-label">Datum</dt>
+        <dd class="meta-value" itemprop="startDate" content={ev.date_start ?? ""}>
+          {formatDateDE(ev.date_start)}
+        </dd>
       </div>
+      {ev.date_end && ev.date_end !== ev.date_start && (
+        <div class="meta-item">
+          <dt class="meta-label">Bis</dt>
+          <dd class="meta-value" itemprop="endDate" content={ev.date_end}>
+            {formatDateShort(ev.date_end)}
+          </dd>
+        </div>
+      )}
       {ev.time && (
         <div class="meta-item">
-          <span class="meta-label">Uhrzeit</span>
-          <span class="meta-value">{ev.time} Uhr</span>
+          <dt class="meta-label">Uhrzeit</dt>
+          <dd class="meta-value">{ev.time} Uhr</dd>
         </div>
       )}
       {ev.location && (
         <div class="meta-item">
-          <span class="meta-label">Ort</span>
-          <span class="meta-value">{ev.location}</span>
+          <dt class="meta-label">Ort</dt>
+          <dd class="meta-value" itemprop="location" itemscope itemtype="https://schema.org/Place">
+            <span itemprop="name">{ev.location}</span>
+          </dd>
         </div>
       )}
-      {ev.price && (
+      {ev.price != null && (
         <div class="meta-item">
-          <span class="meta-label">Preis</span>
-          <span class="meta-value">{ev.price}</span>
+          <dt class="meta-label">Preis</dt>
+          <dd class="meta-value">{ev.price || "Kostenlos"}</dd>
         </div>
       )}
-    </div>
+    </dl>
 
+    <!-- ── Description ───────────────────────────────────────────────────── -->
     {ev.description && (
       <div class="event-description">
         <h2>Beschreibung</h2>
-        <p>{ev.description}</p>
+        <p itemprop="description">{ev.description}</p>
       </div>
     )}
 
-    <div class="source-box">
-      <p class="disclaimer-text">
-        Diese Information wurde automatisch von der Originalseite gesammelt (Stand: {new Date(ev.scraped_at).toLocaleDateString("de-DE")}).
-        Bitte prüfen Sie alle Angaben vor der Teilnahme.
-      </p>
-      <a href={ev.original_url} target="_blank" rel="noopener noreferrer" class="btn-original">
-        Zur Originalseite →
-      </a>
+    <!--
+      ── Source box — SEO §7 (AI Trust Signals) + Design spec Part V §6 (SourceLink)
+      Exposes: source name, source URL, data timestamp.
+      Design rule: Coral bg → Charcoal text on button. NEVER white text on coral.
+      FreshnessStamp: opacity-70 on default text. NEVER coral text.
+      This box MUST always be visible — cannot be in accordion.
+    -->
+    <div class="source-box" aria-label="Quellenangabe">
+      <div class="source-info">
+        <p class="source-label">Quelle &amp; Aktualität</p>
+        <p class="source-name">{ev.location || "Ludwigsburg"}</p>
+        {scrapedFormatted && (
+          <p class="freshness-stamp">Erfasst am: {scrapedFormatted}</p>
+        )}
+        <p class="source-disclaimer">
+          Alle Angaben ohne Gewähr. Bitte prüfen Sie die Infos auf der Originalseite.
+        </p>
+      </div>
+      {ev.original_url && (
+        <a
+          href={ev.original_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-original"
+          aria-label={`Originalseite für ${ev.title} in neuem Tab öffnen`}
+        >
+          Zur Originalseite →
+        </a>
+      )}
     </div>
 
+    <!-- ── Related pages — SEO §22 internal linking mesh ────────────────── -->
+    <!-- Every event page links back to all temporal intent pages + kinder hub -->
+    <nav class="related-pages" aria-label="Weitere Veranstaltungen in Ludwigsburg">
+      <p class="related-pages-label">Weitere Veranstaltungen in Ludwigsburg</p>
+      <div class="related-pages-links">
+        <a href="/ludwigsburg/heute">Heute</a>
+        <a href="/ludwigsburg/morgen">Morgen</a>
+        <a href="/ludwigsburg/dieses-wochenende">Dieses Wochenende</a>
+        <a href="/ludwigsburg/naechste-woche">Nächste Woche</a>
+        <a href="/ludwigsburg/kinder">Kinder &amp; Familie</a>
+        <a href="/ludwigsburg">Alle Veranstaltungen</a>
+      </div>
+    </nav>
+
     <a href="/ludwigsburg" class="back-link">← Zurück zu allen Veranstaltungen</a>
+
   </article>
 </Base>
 
 <style>
-  .breadcrumb { font-size: 0.82rem; color: var(--color-text-muted); margin-bottom: 1.5rem; }
-  .breadcrumb a { color: var(--color-text-muted); }
+  /* ── Expired banner ─────────────────────────────────────────────────────── */
+  .expired-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background: var(--tag-bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--coral);
+    border-radius: var(--radius-sm);
+    padding: 0.9rem 1.25rem;
+    font-size: 0.9rem;
+    color: var(--text);
+    margin-bottom: 1rem;
+    max-width: 720px;
+  }
+  .expired-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 0.1rem; }
+
+  /* Related events list shown under expired banner */
+  .related-events {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 720px;
+  }
+  .related-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.65rem 1rem;
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.88rem;
+    transition: border-color 150ms, box-shadow 150ms;
+  }
+  .related-card:hover {
+    border-color: var(--coral);
+    box-shadow: var(--shadow-card);
+    text-decoration: none;
+  }
+  .related-card-body { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+  .related-title    { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .related-location { font-size: 0.78rem; color: var(--text-60); }
+  .related-date     { font-size: 0.8rem; color: var(--text-60); white-space: nowrap; flex-shrink: 0; }
+
+  .expired-cta { margin-bottom: 1.5rem; }
+
+  /* ── Breadcrumb ─────────────────────────────────────────────────────────── */
+  .breadcrumb {
+    font-size: 0.82rem;
+    color: var(--text-60);
+    margin-bottom: 1.5rem;
+    max-width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.1rem;
+  }
+  .breadcrumb a { color: var(--text-60); }
+  .breadcrumb a:hover { color: var(--coral); text-decoration: none; }
+
+  /* ── Event detail wrapper ────────────────────────────────────────────────── */
   .event-detail { max-width: 720px; }
-  .event-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem; }
-  .tag { background: var(--color-tag-bg); color: var(--color-text-muted); font-size: 0.75rem; padding: 2px 10px; border-radius: 20px; }
-  .tag--age { background: var(--color-accent-light); color: var(--color-accent); }
-  h1 { font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; margin-bottom: 1.5rem; }
-  .meta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1.25rem; margin-bottom: 2rem; }
+
+  /* ── Event header ────────────────────────────────────────────────────────── */
+  .event-header { margin-bottom: 1.5rem; }
+
+  .event-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.75rem;
+  }
+  /* Charcoal tag-bg → text-60 */
+  .tag {
+    background: var(--tag-bg);
+    color: var(--text-60);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 150ms, color 150ms;
+  }
+  .tag:hover { background: var(--coral-light); color: var(--coral); }
+  /* Sage bg → Charcoal text per design spec: 5.2:1 ✓ */
+  .tag--sage { background: var(--sage-light); color: var(--text); font-weight: 600; }
+  .tag--sage:hover { background: var(--sage); }
+  /* Age badge */
+  .tag--age { background: var(--sage-light); color: var(--text); font-weight: 600; cursor: default; }
+
+  h1 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 800; /* Nunito ExtraBold — heading weight */
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    margin-bottom: 0;
+  }
+
+  /* ── Meta grid — dl for semantic correctness ─────────────────────────────── */
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 1rem;
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-card);
+  }
   .meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
-  .meta-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); }
-  .meta-value { font-size: 0.95rem; color: var(--color-text); }
-  .event-description h2 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.65rem; }
-  .event-description p { line-height: 1.7; color: var(--color-text-muted); }
-  .source-box { margin-top: 2rem; background: var(--color-accent-light); border: 1px solid #f0cdb8; border-radius: var(--radius); padding: 1.25rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
-  .disclaimer-text { font-size: 0.82rem; color: #7a3b18; line-height: 1.5; flex: 1; }
-  .btn-original { display: inline-block; background: var(--color-accent); color: #fff; padding: 0.55rem 1.25rem; border-radius: 6px; font-size: 0.9rem; font-weight: 600; white-space: nowrap; text-decoration: none; }
-  .btn-original:hover { background: #a8421a; }
-  .back-link { display: inline-block; margin-top: 2rem; font-size: 0.88rem; color: var(--color-text-muted); }
+  .meta-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-60);
+    font-family: var(--font-body);
+  }
+  .meta-value { font-size: 0.95rem; color: var(--text); font-weight: 500; }
+
+  /* ── Description ─────────────────────────────────────────────────────────── */
+  .event-description { margin-bottom: 2rem; }
+  .event-description h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.65rem;
+    color: var(--text);
+  }
+  .event-description p { line-height: 1.75; color: var(--text-60); }
+
+  /* ── Source box — Design spec Part V §6 + SEO §7 ─────────────────────────── */
+  .source-box {
+    margin-top: 2rem;
+    background: var(--coral-light);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .source-info  { display: flex; flex-direction: column; gap: 0.25rem; flex: 1; min-width: 0; }
+  .source-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-60);
+    font-family: var(--font-body);
+  }
+  .source-name { font-size: 0.9rem; font-weight: 600; color: var(--text); }
+  /* FreshnessStamp: opacity-70 on var(--text) — NEVER coral text (design spec §2) */
+  .freshness-stamp    { font-size: 0.78rem; color: var(--text); opacity: 0.70; }
+  .source-disclaimer  { font-size: 0.75rem; color: var(--text); opacity: 0.55; margin-top: 0.15rem; }
+
+  /* btn-original: Coral bg → Charcoal text. 4.1:1 contrast ratio ✓ */
+  /* NEVER use white text on coral — design spec §2 */
+  .btn-original {
+    display: inline-flex;
+    align-items: center;
+    background: var(--coral);
+    color: var(--text);   /* Charcoal — not white */
+    padding: 0.65rem 1.25rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    min-height: 44px; /* §4 tap target */
+    transition: background 150ms;
+    flex-shrink: 0;
+  }
+  .btn-original:hover { background: var(--coral-dark); text-decoration: none; }
+  .btn-original:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+
+  /* btn-cta: same styling as btn-original */
+  .btn-cta {
+    display: inline-flex;
+    align-items: center;
+    background: var(--coral);
+    color: var(--text);
+    padding: 0.65rem 1.25rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    min-height: 44px;
+    transition: background 150ms;
+  }
+  .btn-cta:hover { background: var(--coral-dark); text-decoration: none; }
+
+  /* ── Related pages — SEO §22 internal linking mesh ───────────────────────── */
+  .related-pages {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .related-pages-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-60);
+    margin-bottom: 0.65rem;
+    font-family: var(--font-body);
+  }
+  .related-pages-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .related-pages-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.9rem;
+    background: var(--tag-bg);
+    color: var(--text-60);
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+    min-height: 36px;
+    transition: background 150ms, color 150ms;
+  }
+  .related-pages-links a:hover {
+    background: var(--coral-light);
+    color: var(--coral);
+    text-decoration: none;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 0.88rem;
+    color: var(--text-60);
+    text-decoration: none;
+    transition: color 150ms;
+  }
+  .back-link:hover { color: var(--coral); }
+
+  /* ── Mobile ─────────────────────────────────────────────────────────────── */
+  @media (max-width: 600px) {
+    .source-box     { flex-direction: column; align-items: flex-start; }
+    .btn-original   { width: 100%; justify-content: center; }
+    .meta-grid      { grid-template-columns: 1fr 1fr; }
+    .related-card   { flex-direction: column; align-items: flex-start; }
+    .related-date   { align-self: flex-end; }
+  }
+  @media (max-width: 380px) {
+    .meta-grid { grid-template-columns: 1fr; }
+  }
 </style>

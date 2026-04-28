@@ -1,114 +1,378 @@
 ---
 // src/layouts/Base.astro
-const { title, description, city } = Astro.props;
+// SEO: lang="de-DE", hreflang, canonical (per-page), OG image, font preload, schema slots
+
+const {
+  title,
+  description,
+  city,
+  canonical: canonicalOverride,   // pass explicit canonical for event/temporal pages
+  ogImage,                        // per-page OG image path e.g. /og/ludwigsburg/heute.jpg
+  ogType = "website",             // "website" for hubs, caller sets "article" for events
+  schema,                         // additional JSON-LD object (Event, BreadcrumbList etc.)
+  noindex = false,                // set true for archive pages past 90 days
+} = Astro.props;
+
 const siteUrl = "https://rausgucken.de";
-const canonical = city ? `${siteUrl}/${city}/` : `${siteUrl}/`;
+
+// Canonical: explicit override takes priority, then city hub, then root
+const canonical = canonicalOverride
+  ? (canonicalOverride.startsWith("http") ? canonicalOverride : `${siteUrl}${canonicalOverride}`)
+  : city
+    ? `${siteUrl}/${city}/`
+    : `${siteUrl}/`;
+
+// OG image: explicit per-page image, else default branded fallback
+const ogImageUrl = ogImage
+  ? `${siteUrl}${ogImage}`
+  : `${siteUrl}/og/default.jpg`;
+
+// WebSite schema — homepage only (§10D)
+const isHomepage = canonical === `${siteUrl}/`;
+const websiteSchema = isHomepage ? {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "rausgucken.de",
+  "url": siteUrl,
+  "inLanguage": "de-DE",
+  "description": "Lokale Veranstaltungen in Ludwigsburg und Umgebung. Kinder, Kultur, Outdoor, kostenlos.",
+} : null;
 ---
 <!DOCTYPE html>
-<html lang="de" id="html-root">
+<!--
+  lang="de-DE" — required for Bing, DuckDuckGo, Ecosia language signals (SEO §8)
+  All schema text in German. No x-default until non-German content exists.
+-->
+<html lang="de-DE" id="html-root">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── Prevent flash of wrong theme — runs before body paints ───────────── -->
+  <script is:inline>
+    (function() {
+      try {
+        const s = localStorage.getItem('rg-theme');
+        const d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (s === 'dark' || (!s && d)) document.getElementById('html-root').classList.add('dark');
+      } catch(e) {}
+    })();
+  </script>
+
+  <!-- ── Core meta ────────────────────────────────────────────────────────── -->
   <title>{title}</title>
   <meta name="description" content={description} />
+  {noindex && <meta name="robots" content="noindex, follow" />}
+
+  <!-- ── Canonical + hreflang (SEO §6, §8) ───────────────────────────────── -->
   <link rel="canonical" href={canonical} />
-  <meta property="og:title" content={title} />
+  <!-- hreflang: site is German-only. No x-default until non-German content exists. -->
+  <link rel="alternate" hreflang="de" href={canonical} />
+
+  <!-- ── Open Graph (SEO §20) ─────────────────────────────────────────────── -->
+  <meta property="og:title"       content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:url" content={canonical} />
-  <meta property="og:type" content="website" />
+  <meta property="og:url"         content={canonical} />
+  <meta property="og:type"        content={ogType} />
+  <meta property="og:image"       content={ogImageUrl} />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale"      content="de_DE" />
+  <meta property="og:site_name"   content="rausgucken.de" />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image"       content={ogImageUrl} />
+
+  <!-- ── Favicon ──────────────────────────────────────────────────────────── -->
   <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+
+  <!-- ── Font preload (SEO §23 Core Web Vitals) ───────────────────────────── -->
+  <!-- Preload only the two weights actually used above the fold -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- font-display:swap is included in the Google Fonts URL via &display=swap -->
+  <link
+    rel="preload"
+    as="style"
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Inter:wght@400;500;600&display=swap"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ── Sitemap reference ────────────────────────────────────────────────── -->
+  <!-- Helps crawlers discover the sitemap index without relying only on robots.txt -->
+
+  <!-- ── Structured data ──────────────────────────────────────────────────── -->
+  {websiteSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  )}
+  {schema && (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  )}
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode tokens ─────────────────────────────────────────────────── */
     :root {
-      --coral:       #FF6F61;
-      --coral-dark:  #e55a4d;
-      --coral-light: rgba(255,111,97,0.10);
-      --sage:        #90BE6D;
-      --offwhite:    #FFFDF9;
-      --charcoal:    #373F51;
-      --charcoal-60: rgba(55,63,81,0.60);
-      --charcoal-10: rgba(55,63,81,0.08);
-      --border:      rgba(55,63,81,0.13);
-      --surface:     #ffffff;
-      --color-bg: var(--offwhite); --color-surface: var(--surface);
-      --color-border: var(--border); --color-text: var(--charcoal);
-      --color-text-muted: var(--charcoal-60); --color-accent: var(--coral);
-      --color-accent-light: var(--coral-light); --color-tag-bg: var(--charcoal-10);
+      --coral:        #FF6F61;
+      --coral-dark:   #e55a4d;
+      --coral-light:  rgba(255,111,97,0.10);
+      --sage:         #90BE6D;
+      --sage-light:   rgba(144,190,109,0.15);
+
+      --bg:           #FFFDF9;
+      --surface:      #ffffff;
+      --surface-card: #ffffff;
+      --border:       rgba(55,63,81,0.12);
+      --border-subtle:rgba(55,63,81,0.07);
+
+      --text:         #373F51;
+      --text-60:      rgba(55,63,81,0.60);
+      --text-30:      rgba(55,63,81,0.30);
+      --tag-bg:       rgba(55,63,81,0.07);
+
+      --shadow-card:  0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+      --shadow-hover: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -2px rgba(0,0,0,0.05);
+
+      /* Backwards-compat aliases */
+      --color-bg: var(--bg); --color-surface: var(--surface);
+      --color-border: var(--border); --color-text: var(--text);
+      --color-text-muted: var(--text-60); --color-accent: var(--coral);
+      --color-accent-light: var(--coral-light); --color-tag-bg: var(--tag-bg);
+
       --font-heading: 'Nunito', sans-serif;
       --font-body:    'Inter', sans-serif;
-      --radius:    14px; --radius-sm: 8px;
-      --shadow-card:  0 4px 6px -1px rgba(0,0,0,0.05),0 2px 4px -1px rgba(0,0,0,0.03);
-      --shadow-hover: 0 10px 15px -3px rgba(0,0,0,0.10),0 4px 6px -2px rgba(0,0,0,0.05);
+      --radius:    14px;
+      --radius-sm: 8px;
+      --transition: transform 200ms cubic-bezier(0.4,0,0.2,1),
+                    box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
     }
-    body { font-family: var(--font-body); background: var(--offwhite); color: var(--charcoal); line-height: 1.6; -webkit-font-smoothing: antialiased; }
-    h1,h2,h3,h4 { font-family: var(--font-heading); color: var(--charcoal); line-height: 1.2; }
+
+    /* ── Dark mode tokens ──────────────────────────────────────────────────── */
+    html.dark {
+      --bg:           #373F51;
+      --surface:      #373F51;
+      --surface-card: #444857;
+      --border:       rgba(255,255,255,0.06);
+      --border-subtle:rgba(255,255,255,0.04);
+      --text:         #FFFDF9;
+      --text-60:      rgba(255,253,249,0.60);
+      --text-30:      rgba(255,253,249,0.30);
+      --tag-bg:       rgba(255,255,255,0.08);
+      --shadow-card:  0 2px 8px rgba(0,0,0,0.22);
+      --shadow-hover: 0 10px 20px rgba(0,0,0,0.35);
+      --coral-light:  rgba(255,111,97,0.15);
+      --sage-light:   rgba(144,190,109,0.12);
+    }
+
+    /* ── Base ──────────────────────────────────────────────────────────────── */
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      transition: background 250ms ease, color 250ms ease;
+    }
+    h1,h2,h3,h4 { font-family: var(--font-heading); color: var(--text); line-height: 1.2; }
     a { color: var(--coral); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    *:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
 
-    .site-header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 1.5rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
-    .site-header-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 1rem; }
+    /* ── Header — z-20 per design spec z-index doctrine ───────────────────── */
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      transition: background 250ms ease;
+    }
+    .site-header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      gap: 1rem;
+    }
     .site-logo { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; }
     .site-logo img { height: 40px; width: 40px; border-radius: 10px; object-fit: cover; }
-    .site-logo-text { font-family: var(--font-heading); font-weight: 800; font-size: 1.25rem; color: var(--charcoal); letter-spacing: -0.02em; }
+    .site-logo-text { font-family: var(--font-heading); font-weight: 800; font-size: 1.25rem; color: var(--text); letter-spacing: -0.02em; }
     .site-logo-text span { color: var(--coral); }
-    .site-nav { display: flex; align-items: center; gap: 1.25rem; }
-    .site-nav > a { font-size: 0.9rem; font-weight: 500; color: var(--charcoal-60); transition: color 150ms; }
-    .site-nav > a:hover { color: var(--coral); text-decoration: none; }
-    .lang-toggle { display: flex; border: 1.5px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
-    .lang-btn { padding: 5px 12px; background: transparent; border: none; cursor: pointer; color: var(--charcoal-60); font-family: var(--font-body); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.05em; transition: background 150ms, color 150ms; }
-    .lang-btn.active { background: var(--coral); color: #fff; }
-    .lang-btn:hover:not(.active) { background: var(--charcoal-10); color: var(--charcoal); }
+    .site-logo:hover { text-decoration: none; }
 
+    .site-nav { display: flex; align-items: center; gap: 1rem; }
+    .site-nav > a { font-size: 0.9rem; font-weight: 500; color: var(--text-60); transition: color 150ms; }
+    .site-nav > a:hover { color: var(--coral); text-decoration: none; }
+
+    .theme-btn {
+      width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--tag-bg);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      cursor: pointer; font-size: 1.1rem;
+      transition: background 150ms, border-color 150ms, transform 150ms;
+      color: var(--text); line-height: 1;
+    }
+    .theme-btn:hover { background: var(--coral-light); border-color: var(--coral); transform: scale(1.05); }
+    .theme-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+    /* ── Main — max-w-explore (1100px) per design spec §3 ─────────────────── */
     main { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; }
 
-    .site-footer { background: var(--surface); border-top: 1px solid var(--border); padding: 2rem 1.5rem; margin-top: 5rem; font-size: 0.82rem; color: var(--charcoal-60); text-align: center; }
-    .site-footer a { color: var(--charcoal-60); }
-    .site-footer a:hover { color: var(--coral); }
-
-    [data-de] { display: inline; } [data-en] { display: none; }
-    html.lang-en [data-de] { display: none; } html.lang-en [data-en] { display: inline; }
-
-    .btn-primary { display: inline-block; background: var(--coral); color: #fff; font-family: var(--font-body); font-weight: 600; font-size: 0.9rem; padding: 0.6rem 1.4rem; border-radius: var(--radius-sm); border: none; cursor: pointer; transition: background 150ms, transform 150ms; text-decoration: none; }
-    .btn-primary:hover { background: var(--coral-dark); transform: translateY(-1px); text-decoration: none; color: #fff; }
+    /* ── Footer — internal linking mesh per SEO §22 ────────────────────────── */
+    .site-footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 1.5rem 2rem;
+      margin-top: 5rem;
+      font-size: 0.82rem;
+      color: var(--text-60);
+      transition: background 250ms ease;
+    }
+    .site-footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+    }
+    .footer-col h4 {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--text-60);
+      margin-bottom: 0.75rem;
+      font-family: var(--font-body);
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.45rem; }
+    .footer-col a { color: var(--text-60); font-size: 0.85rem; }
+    .footer-col a:hover { color: var(--coral); text-decoration: none; }
+    .footer-legal {
+      max-width: 1100px;
+      margin: 2rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text-60);
+      opacity: 0.70;
+    }
+    .footer-legal a { color: var(--text-60); }
   </style>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
       <a href="/" class="site-logo">
-        <img src="/logo.jpg" alt="rausgucken.de" />
+        <img src="/logo.jpg" alt="rausgucken.de Logo" width="40" height="40" />
         <span class="site-logo-text">raus<span>gucken</span>.de</span>
       </a>
-      <nav class="site-nav">
-        <a href="/about"><span data-de>Über uns</span><span data-en>About</span></a>
-        <div class="lang-toggle">
-          <button class="lang-btn active" id="btn-de" onclick="setLang('de')">DE</button>
-          <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
-        </div>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a href="/ludwigsburg">Ludwigsburg</a>
+        <a href="/ludwigsburg/heute">Heute</a>
+        <a href="/ludwigsburg/kinder">Kinder</a>
+        <a href="/about">Über uns</a>
+        <button
+          class="theme-btn"
+          id="theme-toggle"
+          aria-label="Farbschema wechseln: Hell oder Dunkel"
+          title="Hell / Dunkel"
+        >
+          <span id="theme-icon" aria-hidden="true">🌙</span>
+        </button>
       </nav>
     </div>
   </header>
-  <main><slot /></main>
+
+  <main>
+    <slot />
+  </main>
+
+  <!-- Footer: SEO §22 internal linking mesh -->
   <footer class="site-footer">
-    <p>
-      <span data-de>Alle Angaben ohne Gewähr. Veranstaltungsdaten werden automatisch gesammelt. Bitte Infos auf der jeweiligen Originalseite prüfen.</span>
-      <span data-en>All information without guarantee. Event data is collected automatically. Please verify details on the original source page.</span>
+    <div class="site-footer-inner">
+      <div class="footer-col">
+        <h4>Ludwigsburg</h4>
+        <ul>
+          <li><a href="/ludwigsburg">Alle Veranstaltungen</a></li>
+          <li><a href="/ludwigsburg/heute">Heute</a></li>
+          <li><a href="/ludwigsburg/morgen">Morgen</a></li>
+          <li><a href="/ludwigsburg/dieses-wochenende">Dieses Wochenende</a></li>
+          <li><a href="/ludwigsburg/naechste-woche">Nächste Woche</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kategorien</h4>
+        <ul>
+          <li><a href="/ludwigsburg/kinder">Kinder &amp; Familie</a></li>
+          <li><a href="/ludwigsburg/kinder">Führungen</a></li>
+          <li><a href="/ludwigsburg/kinder">Ausstellungen</a></li>
+          <li><a href="/ludwigsburg/kinder">Workshops</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Beliebte Suchen</h4>
+        <ul>
+          <li><a href="/ludwigsburg/heute">Events Ludwigsburg heute</a></li>
+          <li><a href="/ludwigsburg/kinder">Kinderveranstaltungen Ludwigsburg</a></li>
+          <li><a href="/ludwigsburg/dieses-wochenende">Ludwigsburg Wochenende</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>rausgucken.de</h4>
+        <ul>
+          <li><a href="/about">Über uns</a></li>
+          <li><a href="/about">Datenschutz</a></li>
+          <li><a href="/about">Impressum</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      Alle Angaben ohne Gewähr. Veranstaltungsdaten werden automatisch gesammelt.
+      Bitte prüfen Sie alle Infos auf der jeweiligen Originalseite.
       &nbsp;·&nbsp;
-      <a href="/about"><span data-de>Datenschutz &amp; Impressum</span><span data-en>Privacy &amp; Legal</span></a>
-    </p>
+      <a href="/about">Datenschutz &amp; Impressum</a>
+    </div>
   </footer>
+
   <script is:inline>
-    function setLang(lang) {
-      document.getElementById('html-root').className = lang === 'en' ? 'lang-en' : '';
-      document.getElementById('btn-de').classList.toggle('active', lang === 'de');
-      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-      try { localStorage.setItem('rg-lang', lang); } catch(e) {}
-      document.dispatchEvent(new CustomEvent('langchange'));
-    }
-    try { const s = localStorage.getItem('rg-lang'); if (s === 'en') setLang('en'); } catch(e) {}
+    (function() {
+      const root = document.getElementById('html-root');
+      const btn  = document.getElementById('theme-toggle');
+      const icon = document.getElementById('theme-icon');
+      function isDark() { return root.classList.contains('dark'); }
+      function updateIcon() { icon.textContent = isDark() ? '☀️' : '🌙'; }
+      function toggleTheme() {
+        const dark = !isDark();
+        root.classList.toggle('dark', dark);
+        try { localStorage.setItem('rg-theme', dark ? 'dark' : 'light'); } catch(e) {}
+        updateIcon();
+      }
+      updateIcon();
+      btn.addEventListener('click', toggleTheme);
+      try {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('rg-theme')) {
+            root.classList.toggle('dark', e.matches);
+            updateIcon();
+          }
+        });
+      } catch(e) {}
+    })();
   </script>
 </body>
 </html>

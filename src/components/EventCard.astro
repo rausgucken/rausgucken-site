@@ -6,179 +6,265 @@ function formatDate(iso) {
   if (!iso) return null;
   const d = new Date(iso + "T12:00:00");
   return {
-    de: d.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" }),
-    en: d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }),
-    weekday_de: d.toLocaleDateString("de-DE", { weekday: "short" }),
-    weekday_en: d.toLocaleDateString("en-GB", { weekday: "short" }),
-    day: d.getDate(),
-    month_de: d.toLocaleDateString("de-DE", { month: "short" }),
-    month_en: d.toLocaleDateString("en-GB", { month: "short" }),
+    day:     d.getDate(),
+    month:   d.toLocaleDateString("de-DE", { month: "short" }),
+    weekday: d.toLocaleDateString("de-DE", { weekday: "short" }),
+    full:    d.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" }),
   };
 }
 
 const TAG_LABELS = {
-  Ausstellung:   { de: "Ausstellung",  en: "Exhibition" },
-  Entertainment: { de: "Entertainment",en: "Entertainment" },
-  Familie:       { de: "Familie",      en: "Family" },
-  Fest:          { de: "Fest",         en: "Festival" },
-  Fuehrung:      { de: "Führung",      en: "Guided Tour" },
-  Jugend:        { de: "Jugend",       en: "Youth" },
-  Kinder:        { de: "Kinder",       en: "Children" },
-  Kulinarik:     { de: "Kulinarik",    en: "Food & Drink" },
-  Lesung:        { de: "Lesung",       en: "Reading" },
-  Musik:         { de: "Musik",        en: "Music" },
-  Outdoor:       { de: "Outdoor",      en: "Outdoor" },
-  Sport:         { de: "Sport",        en: "Sport" },
-  Sprache:       { de: "Sprache",      en: "Language" },
-  Tanz:          { de: "Tanz",         en: "Dance" },
-  Theater:       { de: "Theater",      en: "Theatre" },
-  Vortrag:       { de: "Vortrag",      en: "Talk" },
-  Workshop:      { de: "Workshop",     en: "Workshop" },
+  Ausstellung: "Ausstellung",   Entertainment: "Entertainment",
+  Familie:     "Familie",       Fest:          "Fest",
+  Fuehrung:    "Führung",       Jugend:        "Jugend",
+  Kinder:      "Kinder",        Kulinarik:     "Kulinarik",
+  Lesung:      "Lesung",        Messe:         "Messe",
+  Musik:       "Musik",         Outdoor:       "Outdoor",
+  Sport:       "Sport",         Sprache:       "Sprache",
+  Tanz:        "Tanz",          Theater:       "Theater",
+  Vortrag:     "Vortrag",       Workshop:      "Workshop",
 };
 
-const dateObj = formatDate(ev.date_start);
+const dateObj    = formatDate(ev.date_start);
 const isStanding = !ev.date_start;
-const locationSlug = (ev.location || "").toLowerCase().replace(/\s+/g, "-").slice(0, 40);
+const isSponsored = ev.sponsored === true;
+
+// Weekday data: comma-separated JS day numbers (0=Sun…6=Sat) for app.js filter
+const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
 ---
 
 <article
-  class:list={["event-card", { "event-card--standing": isStanding, "event-card--new": ev.is_new }]}
+  class:list={[
+    "event-card",
+    { "event-card--standing":  isStanding },
+    { "event-card--new":       ev.is_new },
+    { "event-card--sponsored": isSponsored },
+  ]}
   data-tags={ev.tags.join(",")}
   data-age-min={ev.age_min ?? ""}
   data-age-max={ev.age_max ?? ""}
   data-date={ev.date_start ?? ""}
+  data-weekdays={weekdayAttr}
   data-location={ev.location ?? ""}
 >
-  <a href={`/ludwigsburg/events/${ev.slug}`} class="card-inner" tabindex="0">
+  <!--
+    Focus ring fix: because .event-card has overflow:hidden, a focus ring on the
+    inner <a> gets clipped. Solution: the focus ring is on the <article> via
+    :focus-within, which is not clipped. The inner <a> has outline:none.
+  -->
+  <a
+    href={`/ludwigsburg/events/${ev.slug}`}
+    class="card-link"
+    aria-label={`${ev.title}${dateObj ? `, ${dateObj.full}` : ""}`}
+  >
 
-    <!-- Date badge -->
+    <!-- Date badge (left strip) -->
+    <!-- Coral bg → Charcoal text. 4.1:1 contrast — passes WCAG for large/bold text. -->
     {dateObj ? (
-      <div class="date-badge">
+      <div class="date-badge" aria-hidden="true">
+        <span class="date-weekday">{dateObj.weekday}</span>
         <span class="date-day">{dateObj.day}</span>
-        <span class="date-month"><span data-de>{dateObj.month_de}</span><span data-en>{dateObj.month_en}</span></span>
+        <span class="date-month">{dateObj.month}</span>
       </div>
     ) : (
-      <div class="date-badge date-badge--standing">
-        <span class="date-standing">∞</span>
+      <div class="date-badge date-badge--standing" aria-hidden="true">
+        <span class="date-infinity">∞</span>
+        <span class="date-month">immer</span>
       </div>
     )}
 
-    <!-- Card content -->
+    <!-- Card body -->
     <div class="card-body">
-      {ev.is_new && <span class="badge-new"><span data-de>Neu</span><span data-en>New</span></span>}
 
+      <!-- Tags row -->
       <div class="card-tags">
-        {ev.tags.slice(0, 3).map(t => {
-          const label = TAG_LABELS[t];
-          return label ? (
-            <span class="tag" data-tag={t}>
-              <span data-de>{label.de}</span>
-              <span data-en>{label.en}</span>
-            </span>
-          ) : <span class="tag">{t}</span>;
-        })}
+        <!-- Sponsored badge: visually distinct per design spec Part III §2 -->
+        {isSponsored && <span class="badge-sponsored" aria-label="Anzeige">Anzeige</span>}
+        {ev.is_new && !isSponsored && <span class="badge-new">Neu</span>}
+        {ev.tags.slice(0, 3).map(t => (
+          <span class="tag">{TAG_LABELS[t] ?? t}</span>
+        ))}
         {ev.age_min != null && (
           <span class="tag tag--age">
-            {ev.age_min}–{ev.age_max ?? "99"}+
+            ab {ev.age_min} J.{ev.age_max ? `–${ev.age_max}` : "+"}
           </span>
         )}
       </div>
 
+      <!-- Title — Nunito 700 per design spec §3 -->
       <h3 class="card-title">{ev.title}</h3>
 
+      <!-- Meta: date/time first, then location, then price -->
+      <!-- Design spec Part V §1: "Date and Location MUST appear before the description" -->
       <div class="card-meta">
         {ev.time && (
           <span class="meta-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            {ev.time} <span data-de>Uhr</span>
+            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            {ev.time} Uhr
           </span>
         )}
-        {isStanding && (
+        {isStanding && !ev.time && (
           <span class="meta-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            <span data-de>Regelmäßig</span><span data-en>Regular</span>
+            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Regelmäßig
           </span>
         )}
         {ev.location && (
           <span class="meta-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            {ev.location.replace("Residenzschloss Ludwigsburg","Residenzschloss")}
+            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            {ev.location.replace("Residenzschloss Ludwigsburg", "Residenzschloss LB")}
           </span>
         )}
         {ev.price && (
           <span class="meta-item">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-            {ev.price.split(" ").slice(0,3).join(" ")}
+            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            {ev.price.split(" ").slice(0, 3).join(" ")}
           </span>
         )}
       </div>
 
+      <!-- Description — hidden behind card click, shown on detail page -->
       {ev.description && (
-        <p class="card-desc">{ev.description.slice(0, 100)}{ev.description.length > 100 ? "…" : ""}</p>
+        <p class="card-desc">
+          {ev.description.length > 110
+            ? ev.description.slice(0, 110) + "…"
+            : ev.description}
+        </p>
       )}
+
     </div>
   </a>
 
+  <!-- Card footer: SourceLink + FreshnessStamp -->
   <div class="card-footer">
-    <a href={ev.original_url} target="_blank" rel="noopener noreferrer" class="source-link" onclick="event.stopPropagation()">
-      <span data-de>Originalseite</span><span data-en>Source</span>
-      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    <!--
+      SourceLink — design spec Part V §6:
+      "Cannot be hidden inside an accordion."
+      CTA uses Charcoal text. In dark mode: off-white text, Coral on hover.
+    -->
+    <a
+      href={ev.original_url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="source-link"
+      aria-label={`Originalseite für ${ev.title} öffnen (öffnet in neuem Tab)`}
+      onclick="event.stopPropagation()"
+    >
+      Originalseite
+      <svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
     </a>
-    <span class="disclaimer-micro"><span data-de>Ohne Gewähr</span><span data-en>Unverified</span></span>
+    <!--
+      FreshnessStamp — design spec Part V §2:
+      "Must use default text color with opacity-70. NEVER use Brand Coral text."
+    -->
+    <span class="freshness-stamp" aria-label={`Zuletzt geprüft: ${new Date(ev.scraped_at).toLocaleDateString("de-DE", { day: "numeric", month: "short" })}`}>
+      Geprüft: {new Date(ev.scraped_at).toLocaleDateString("de-DE", { day: "numeric", month: "short" })}
+    </span>
   </div>
 </article>
 
 <style>
+  /* ── Card shell ──────────────────────────────────────────────────────────── */
   .event-card {
-    background: var(--surface);
+    background: var(--surface-card, var(--surface));
     border: 1px solid var(--border);
     border-radius: var(--radius);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     box-shadow: var(--shadow-card);
-    transition: var(--transition);
     position: relative;
-  }
-  .event-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-hover);
-  }
-  .event-card--standing {
-    border-left: 3px solid var(--coral);
+    /* Active Energy: token-driven transition (transform + shadow + filter) */
+    transition: transform 200ms cubic-bezier(0.4,0,0.2,1),
+                box-shadow 200ms cubic-bezier(0.4,0,0.2,1),
+                background 250ms ease;
   }
 
-  .card-inner {
+  /* Active Energy: Lift on hover
+     Wrapped in prefers-reduced-motion per design spec §4 A11y requirement */
+  @media (prefers-reduced-motion: no-preference) {
+    .event-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+  }
+
+  /* Focus ring fix: overflow:hidden clips focus rings on inner <a>.
+     Use :focus-within on the <article> instead — not clipped by overflow. */
+  .event-card:focus-within {
+    outline: 2px solid var(--coral);
+    outline-offset: 0px;
+  }
+
+  .event-card--standing  { border-left: 3px solid var(--coral); }
+
+  /* Sponsored: visually distinct tint + sage border — design spec Part III §2
+     "Must never mimic organic cards" */
+  .event-card--sponsored {
+    border-left: 3px solid var(--sage);
+    background: var(--sage-light);
+  }
+
+  /* ── Card link ──────────────────────────────────────────────────────────── */
+  .card-link {
     display: flex;
-    gap: 0;
     flex: 1;
     text-decoration: none;
     color: inherit;
-    cursor: pointer;
+    min-height: 0;
+    /* Remove native outline — focus ring handled by :focus-within on article */
+    outline: none;
   }
-  .card-inner:hover { text-decoration: none; }
+  .card-link:hover { text-decoration: none; }
 
-  /* Date badge — left strip */
+  /* ── Date badge ─────────────────────────────────────────────────────────── */
+  /* Coral bg → Charcoal text. 4.1:1 ratio — passes WCAG for large/bold text. */
   .date-badge {
     background: var(--coral);
-    color: #fff;
+    color: var(--text);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-width: 58px;
-    padding: 1rem 0.5rem;
     flex-shrink: 0;
-    gap: 2px;
+    padding: 0.75rem 0.4rem;
+    gap: 0;
   }
-  .date-badge--standing { background: var(--charcoal-10); color: var(--charcoal-60); }
-  .date-day { font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem; line-height: 1; }
-  .date-month { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.85; }
-  .date-standing { font-size: 1.4rem; opacity: 0.4; }
+  .date-badge--standing {
+    background: var(--tag-bg);
+    color: var(--text-60);
+  }
+  .date-weekday {
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    opacity: 0.75;
+    margin-bottom: 1px;
+  }
+  .date-day {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .date-month {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    opacity: 0.80;
+  }
+  .date-infinity {
+    font-size: 1.4rem;
+    line-height: 1;
+    opacity: 0.5;
+  }
 
-  /* Card body */
+  /* ── Card body ──────────────────────────────────────────────────────────── */
   .card-body {
-    padding: 0.9rem 1rem 0.7rem;
+    padding: 0.85rem 1rem 0.75rem;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -186,35 +272,55 @@ const locationSlug = (ev.location || "").toLowerCase().replace(/\s+/g, "-").slic
     min-width: 0;
   }
 
+  /* ── Tags ───────────────────────────────────────────────────────────────── */
+  .card-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; align-items: center; }
+
+  .tag {
+    background: var(--tag-bg);
+    color: var(--text-60);
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  /* Sage bg → Charcoal text. 5.2:1 — passes WCAG AA. */
+  .tag--age {
+    background: var(--sage-light);
+    color: var(--text);
+    font-weight: 600;
+  }
+  /* Sage bg → Charcoal text */
   .badge-new {
-    display: inline-block;
     background: var(--sage);
-    color: var(--charcoal);
+    color: var(--text);
     font-size: 0.65rem;
     font-weight: 700;
     padding: 2px 7px;
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    align-self: flex-start;
+  }
+  /* Sponsored badge: distinct from organic "Neu" badge */
+  .badge-sponsored {
+    background: var(--tag-bg);
+    color: var(--text-60);
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 4px;         /* Square-ish, unlike rounded organic tags */
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: 1px solid var(--border);
   }
 
-  .card-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
-  .tag {
-    background: var(--charcoal-10);
-    color: var(--charcoal-60);
-    font-size: 0.71rem;
-    font-weight: 500;
-    padding: 2px 8px;
-    border-radius: 20px;
-  }
-  .tag--age { background: var(--coral-light); color: var(--coral); font-weight: 600; }
-
+  /* ── Title ──────────────────────────────────────────────────────────────── */
+  /* Nunito 700 per design spec §3 typography system */
   .card-title {
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 0.97rem;
-    color: var(--charcoal);
+    color: var(--text);
     line-height: 1.3;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -222,49 +328,74 @@ const locationSlug = (ev.location || "").toLowerCase().replace(/\s+/g, "-").slic
     overflow: hidden;
   }
 
-  .card-meta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-  }
+  /* ── Meta ───────────────────────────────────────────────────────────────── */
+  .card-meta { display: flex; flex-direction: column; gap: 0.2rem; }
   .meta-item {
     display: flex;
     align-items: center;
-    gap: 0.3rem;
+    gap: 0.35rem;
     font-size: 0.78rem;
     font-weight: 500;
-    color: var(--charcoal-60);
+    color: var(--text-60);
   }
-  .meta-item svg { flex-shrink: 0; color: var(--coral); }
+  .meta-item svg { flex-shrink: 0; stroke: var(--coral); }
 
+  /* ── Description ────────────────────────────────────────────────────────── */
   .card-desc {
     font-size: 0.8rem;
-    color: var(--charcoal-60);
+    color: var(--text-60);
     line-height: 1.5;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-top: 0.1rem;
   }
 
-  /* Footer strip */
+  /* ── Card footer ────────────────────────────────────────────────────────── */
   .card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem 0.5rem 1.25rem;
+    padding: 0.5rem 1rem;
     border-top: 1px solid var(--border);
-    background: var(--offwhite);
+    background: rgba(0,0,0,0.02);
   }
+  html.dark .card-footer {
+    background: rgba(255,255,255,0.03);
+  }
+
+  /* SourceLink — design spec Part V §6 */
   .source-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.3rem;
     font-size: 0.75rem;
     font-weight: 600;
-    color: var(--charcoal-60);
-    transition: color 150ms;
+    color: var(--text-60);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: color 150ms, text-decoration-color 150ms;
+    min-height: 44px; /* Minimum tap target per spec §4 */
   }
-  .source-link:hover { color: var(--coral); text-decoration: none; }
-  .disclaimer-micro { font-size: 0.68rem; color: var(--charcoal-60); opacity: 0.6; }
+  .source-link:hover {
+    color: var(--coral);
+    text-decoration-color: var(--coral);
+  }
+  .source-link:focus-visible {
+    outline: 2px solid var(--coral);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  /* Dark mode: off-white text, coral on hover per design spec §6 */
+  html.dark .source-link       { color: var(--text-60); }
+  html.dark .source-link:hover { color: var(--coral); }
+
+  /* FreshnessStamp — design spec Part V §2:
+     "default text color with opacity-70. NEVER use Brand Coral text." */
+  .freshness-stamp {
+    font-size: 0.67rem;
+    color: var(--text);
+    opacity: 0.70;
+  }
 </style>

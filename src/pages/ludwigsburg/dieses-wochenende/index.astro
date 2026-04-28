@@ -1,0 +1,514 @@
+---
+// src/pages/ludwigsburg/dieses-wochenende/index.astro
+// SEO §2: Permanent keyword landing page. Real content. Canonical to itself. Never a redirect.
+// SEO §9: Title includes dynamic weekend date range.
+// SEO §3: Events loaded client-side from this-weekend.json (Tier 2 daily data swap, no Cloudflare build).
+
+import Base from "../../../layouts/Base.astro";
+
+const siteUrl = "https://rausgucken.de";
+const city    = "ludwigsburg";
+
+// Compute this weekend's Saturday + Sunday at build time (SSG)
+const now         = new Date();
+const dayOfWeek   = now.getDay(); // 0=Sun,1=Mon,...,6=Sat
+const daysToSat   = dayOfWeek === 0 ? 6 : (6 - dayOfWeek); // days until next Saturday
+const sat         = new Date(now); sat.setDate(now.getDate() + daysToSat);
+const sun         = new Date(sat); sun.setDate(sat.getDate() + 1);
+
+const fmtShort = (d) => d.toLocaleDateString("de-DE", { day: "numeric", month: "long" });
+const fmtFull  = (d) => d.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
+
+const satDE = fmtShort(sat);
+const sunDE = fmtFull(sun);
+const rangeDE = `${satDE} – ${sunDE}`;
+
+const seoTitle  = `Events Ludwigsburg Wochenende, ${rangeDE} | rausgucken.de`;
+const metaDesc  = `Veranstaltungen in Ludwigsburg dieses Wochenende (${rangeDE}): Ausflüge, Kinder, Kultur, Outdoor – alles auf einen Blick.`;
+const canonical = `${siteUrl}/${city}/dieses-wochenende/`;
+
+// CollectionPage schema — SEO §10B
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `Events Ludwigsburg Wochenende – ${rangeDE}`,
+  "description": metaDesc,
+  "url": canonical,
+  "inLanguage": "de-DE",
+};
+
+// BreadcrumbList schema — SEO §10C
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "rausgucken.de",        "item": siteUrl },
+    { "@type": "ListItem", "position": 2, "name": "Ludwigsburg",          "item": `${siteUrl}/${city}/` },
+    { "@type": "ListItem", "position": 3, "name": "Dieses Wochenende",    "item": canonical },
+  ],
+};
+---
+
+<Base
+  title={seoTitle}
+  description={metaDesc}
+  canonical={canonical}
+  ogImage="/og/ludwigsburg/wochenende.jpg"
+  schema={[collectionSchema, breadcrumbSchema]}
+>
+
+  <!-- Breadcrumb — visible + schema-backed (SEO §10C) -->
+  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+    <a href="/">rausgucken.de</a>
+    <span aria-hidden="true"> › </span>
+    <a href="/ludwigsburg">Ludwigsburg</a>
+    <span aria-hidden="true"> › </span>
+    <span aria-current="page">Dieses Wochenende</span>
+  </nav>
+
+  <div class="page-header">
+    <h1>Events Ludwigsburg dieses Wochenende</h1>
+    <p class="page-subtitle">
+      <span id="event-count-badge" class="count-badge" hidden></span>
+      {rangeDE}
+    </p>
+  </div>
+
+  <!-- Weekend day tabs — Sa / So split for scannability -->
+  <div class="day-tabs" role="tablist" aria-label="Wochenendtag auswählen">
+    <button class="day-tab day-tab--active" role="tab" aria-selected="true"
+            data-day="all" id="tab-all" aria-controls="event-list">
+      Beide Tage
+    </button>
+    <button class="day-tab" role="tab" aria-selected="false"
+            data-day="sat" id="tab-sat" aria-controls="event-list">
+      Samstag <span class="tab-date">{fmtShort(sat)}</span>
+    </button>
+    <button class="day-tab" role="tab" aria-selected="false"
+            data-day="sun" id="tab-sun" aria-controls="event-list">
+      Sonntag <span class="tab-date">{fmtShort(sun)}</span>
+    </button>
+  </div>
+
+  <!-- Event list — loaded client-side from this-weekend.json -->
+  <div id="events-container" aria-live="polite" aria-label="Wochenend-Veranstaltungen" class="events-container">
+    <div class="loading-state" id="loading-state" aria-busy="true">
+      <span class="loading-spinner" aria-hidden="true"></span>
+      Lade Wochenend-Veranstaltungen…
+    </div>
+    <ul class="event-list" id="event-list" hidden aria-label="Veranstaltungen dieses Wochenende"></ul>
+    <div class="empty-state" id="empty-state" hidden>
+      <div class="empty-inner">
+        <p class="empty-icon" aria-hidden="true">🌤️</p>
+        <p class="empty-headline">Dieses Wochenende noch keine Einträge.</p>
+        <p class="empty-body">Schau nächste Woche nochmal vorbei – neue Veranstaltungen werden laufend ergänzt.</p>
+        <div class="empty-ctas">
+          <a href="/ludwigsburg/naechste-woche" class="btn-cta">Nächste Woche →</a>
+          <a href="/ludwigsburg" class="btn-cta btn-cta--ghost">Alle Veranstaltungen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Internal linking mesh — SEO §22 -->
+  <nav class="temporal-nav" aria-label="Andere Zeiträume in Ludwigsburg">
+    <p class="temporal-label">Andere Zeiträume</p>
+    <div class="temporal-links">
+      <a href="/ludwigsburg/heute">Heute</a>
+      <a href="/ludwigsburg/morgen">Morgen</a>
+      <a href="/ludwigsburg/naechste-woche">Nächste Woche</a>
+      <a href="/ludwigsburg/kinder">Kinder &amp; Familie</a>
+      <a href="/ludwigsburg">Alle Veranstaltungen</a>
+    </div>
+  </nav>
+
+</Base>
+
+<!--
+  Client-side fetch from this-weekend.json — Tier 2 daily data swap.
+  Day tabs filter already-loaded data in memory — no second fetch needed.
+-->
+<script>
+(async function () {
+  const listEl    = document.getElementById('event-list');
+  const emptyEl   = document.getElementById('empty-state');
+  const loadingEl = document.getElementById('loading-state');
+  const badgeEl   = document.getElementById('event-count-badge');
+  const tabs      = document.querySelectorAll('.day-tab');
+
+  let allEvents = [];  // full dataset kept in memory for tab filtering
+
+  function escHtml(str) {
+    return String(str ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // Derive this weekend's dates client-side (matches server-computed values)
+  function getWeekendDates() {
+    const now = new Date();
+    const dow = now.getDay();
+    const daysToSat = dow === 0 ? 6 : (6 - dow);
+    const sat = new Date(now); sat.setDate(now.getDate() + daysToSat);
+    const sun = new Date(sat); sun.setDate(sat.getDate() + 1);
+    return {
+      sat: sat.toISOString().slice(0, 10),
+      sun: sun.toISOString().slice(0, 10),
+    };
+  }
+
+  function renderEvents(events) {
+    listEl.innerHTML = '';
+
+    if (!events.length) {
+      listEl.hidden = true;
+      emptyEl.hidden = false;
+      return;
+    }
+
+    emptyEl.hidden = true;
+
+    events.forEach(ev => {
+      const li   = document.createElement('li');
+      const card = document.createElement('a');
+      card.href      = `/ludwigsburg/events/${escHtml(ev.slug)}`;
+      card.className = 'event-row';
+      card.setAttribute('aria-label', escHtml(ev.title));
+
+      // Day badge: Samstag / Sonntag
+      const { sat, sun } = getWeekendDates();
+      const dayLabel = ev.date_start === sat ? 'Sa' : ev.date_start === sun ? 'So' : '';
+
+      const tagsHtml = (ev.tags || []).slice(0, 2)
+        .map(t => `<span class="tag">${escHtml(t)}</span>`).join('');
+
+      card.innerHTML = `
+        <div class="event-row-left">
+          <div class="event-row-top">
+            ${dayLabel ? `<span class="day-badge">${dayLabel}</span>` : ''}
+            ${ev.time ? `<span class="event-row-time">${escHtml(ev.time)} Uhr</span>` : ''}
+          </div>
+          <span class="event-row-title">${escHtml(ev.title)}</span>
+          ${ev.location ? `<span class="event-row-loc">📍 ${escHtml(ev.location)}</span>` : ''}
+        </div>
+        ${tagsHtml ? `<div class="event-row-tags" aria-hidden="true">${tagsHtml}</div>` : ''}
+      `;
+
+      li.appendChild(card);
+      listEl.appendChild(li);
+    });
+
+    listEl.hidden = false;
+  }
+
+  // Tab switching — filters in-memory data
+  function setActiveTab(dayFilter) {
+    const { sat, sun } = getWeekendDates();
+    tabs.forEach(t => {
+      const isActive = t.dataset.day === dayFilter;
+      t.classList.toggle('day-tab--active', isActive);
+      t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+
+    let filtered = allEvents;
+    if (dayFilter === 'sat') filtered = allEvents.filter(e => e.date_start === sat);
+    if (dayFilter === 'sun') filtered = allEvents.filter(e => e.date_start === sun);
+    renderEvents(filtered);
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => setActiveTab(tab.dataset.day));
+  });
+
+  // Initial fetch
+  try {
+    const res  = await fetch('/data/ludwigsburg/this-weekend.json');
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    allEvents = await res.json();
+
+    loadingEl.hidden = true;
+
+    if (!Array.isArray(allEvents) || allEvents.length === 0) {
+      emptyEl.hidden = false;
+      return;
+    }
+
+    if (badgeEl) {
+      badgeEl.textContent = allEvents.length + ' Veranstaltungen';
+      badgeEl.hidden = false;
+    }
+
+    renderEvents(allEvents);  // default: all days
+
+  } catch (err) {
+    loadingEl.setAttribute('aria-busy', 'false');
+    loadingEl.textContent = 'Veranstaltungen konnten nicht geladen werden. Bitte Seite neu laden.';
+  }
+})();
+</script>
+
+<style>
+  /* ── Breadcrumb ─────────────────────────────────────────────────────────── */
+  .breadcrumb {
+    font-size: 0.82rem;
+    color: var(--text-60);
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.1rem;
+  }
+  .breadcrumb a { color: var(--text-60); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--coral); }
+
+  /* ── Page header ─────────────────────────────────────────────────────────── */
+  .page-header { margin-bottom: 1.5rem; max-width: 720px; }
+
+  h1 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 0.4rem;
+  }
+
+  .page-subtitle {
+    color: var(--text-60);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  /* Coral bg → Charcoal text. NEVER white on coral. */
+  .count-badge {
+    display: inline-flex;
+    align-items: center;
+    background: var(--coral);
+    color: var(--text);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  /* ── Day tabs ────────────────────────────────────────────────────────────── */
+  .day-tabs {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+    max-width: 720px;
+    flex-wrap: wrap;
+  }
+
+  .day-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    height: 40px;
+    padding: 0 1rem;
+    background: var(--tag-bg);
+    color: var(--text-60);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 150ms, color 150ms, border-color 150ms;
+    white-space: nowrap;
+  }
+  .day-tab:hover {
+    border-color: var(--coral);
+    color: var(--coral);
+    background: var(--coral-light);
+  }
+  /* Active tab: Coral bg → Charcoal text per design spec button rule */
+  .day-tab--active {
+    background: var(--coral);
+    color: var(--text);
+    border-color: var(--coral);
+  }
+  .day-tab--active:hover {
+    background: var(--coral-dark);
+    color: var(--text);
+  }
+  .day-tab:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+  .tab-date {
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity: 0.75;
+  }
+
+  /* ── Events container ────────────────────────────────────────────────────── */
+  .events-container { max-width: 720px; }
+
+  /* ── Loading state ───────────────────────────────────────────────────────── */
+  .loading-state {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--text-60);
+    font-size: 0.95rem;
+    padding: 2rem 0;
+  }
+  .loading-spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--border);
+    border-top-color: var(--coral);
+    border-radius: 50%;
+    flex-shrink: 0;
+    animation: spin 0.75s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) {
+    .loading-spinner { animation: none; opacity: 0.5; }
+  }
+
+  /* ── Event list ──────────────────────────────────────────────────────────── */
+  .event-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .event-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem 1.1rem;
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--text);
+    box-shadow: var(--shadow-card);
+    transition: transform 200ms cubic-bezier(0.4,0,0.2,1),
+                box-shadow 200ms cubic-bezier(0.4,0,0.2,1),
+                border-color 150ms;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .event-row:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--coral);
+      text-decoration: none;
+    }
+  }
+
+  .event-row-left  { display: flex; flex-direction: column; gap: 0.2rem; min-width: 0; }
+  .event-row-top   { display: flex; align-items: center; gap: 0.45rem; }
+
+  /* Day badge: Sa / So — Sage bg → Charcoal text: 5.2:1 ✓ */
+  .day-badge {
+    display: inline-flex;
+    align-items: center;
+    background: var(--sage-light);
+    color: var(--text);
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 1px 7px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .event-row-time  { font-size: 0.75rem; font-weight: 700; color: var(--coral); }
+  .event-row-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.97rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .event-row-loc  { font-size: 0.78rem; color: var(--text-60); }
+  .event-row-tags { display: flex; gap: 0.3rem; flex-shrink: 0; }
+
+  .tag {
+    background: var(--tag-bg);
+    color: var(--text-60);
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  /* ── Empty state ─────────────────────────────────────────────────────────── */
+  .empty-state { padding: 1rem 0 2rem; }
+  .empty-inner {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+  }
+  .empty-icon     { font-size: 2rem; margin-bottom: 0.75rem; }
+  .empty-headline { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; }
+  .empty-body     { color: var(--text-60); font-size: 0.92rem; margin-bottom: 1.5rem; line-height: 1.6; }
+  .empty-ctas     { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+
+  .btn-cta {
+    display: inline-flex;
+    align-items: center;
+    height: 44px;
+    padding: 0 1.25rem;
+    background: var(--coral);
+    color: var(--text);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: background 150ms;
+  }
+  .btn-cta:hover { background: var(--coral-dark); text-decoration: none; }
+  .btn-cta--ghost { background: var(--tag-bg); color: var(--text-60); }
+  .btn-cta--ghost:hover { background: var(--coral-light); color: var(--coral); }
+
+  /* ── Temporal nav — SEO §22 ─────────────────────────────────────────────── */
+  .temporal-nav {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    max-width: 720px;
+  }
+  .temporal-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-60);
+    margin-bottom: 0.65rem;
+    font-family: var(--font-body);
+  }
+  .temporal-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .temporal-links a {
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 0.9rem;
+    background: var(--tag-bg);
+    color: var(--text-60);
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 150ms, color 150ms;
+  }
+  .temporal-links a:hover { background: var(--coral-light); color: var(--coral); }
+
+  /* ── Mobile ─────────────────────────────────────────────────────────────── */
+  @media (max-width: 600px) {
+    .event-row-tags { display: none; }
+    .event-row-title { white-space: normal; }
+    .day-tab { font-size: 0.8rem; padding: 0 0.75rem; }
+  }
+</style>

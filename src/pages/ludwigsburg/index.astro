@@ -39,6 +39,14 @@ const jsonLd = {
     </p>
   </div>
 
+  <!-- Scraper failure alert — design spec Part III §3: "Silent incompleteness breaks trust" -->
+  {meta.sources_failed && meta.sources_failed.length > 0 && (
+    <div class="sources-warning" role="alert">
+      <strong>⚠ Hinweis:</strong> {meta.sources_failed.length} {meta.sources_failed.length === 1 ? "Quelle" : "Quellen"} derzeit nicht erreichbar — Angaben können unvollständig sein.
+    </div>
+  )}
+
+  <!-- Disclaimer: opacity-70 on default text — design spec §2 "Secondary Text" rule -->
   <aside class="disclaimer-box">
     <strong>Hinweis:</strong> {meta.disclaimer_note || "Alle Angaben ohne Gewähr. Bitte prüfen Sie Infos auf der jeweiligen Originalseite."}
     <a href="/about">Mehr Informationen</a>
@@ -46,10 +54,32 @@ const jsonLd = {
 
   <FilterBar />
 
+  <!-- Empty state shown by app.js when filters return zero results -->
+  <!-- Design spec Part III §1: Practical > Whimsical. Include helpful fallback CTAs. -->
+  <div class="empty-state" id="empty-state" aria-live="polite" hidden>
+    <div class="empty-state-inner">
+      <p class="empty-headline">Keine Treffer für diese Filter.</p>
+      <p class="empty-body">
+        Vielleicht ist heute ein guter Tag, einfach rauszugehen!
+      </p>
+      <div class="empty-ctas">
+        <a href="https://www.schloss-ludwigsburg.de" target="_blank" rel="noopener noreferrer" class="empty-cta">
+          Residenzschloss entdecken →
+        </a>
+        <a href="https://www.ludwigsburg.de/de/stadtleben/freizeit-sport/" target="_blank" rel="noopener noreferrer" class="empty-cta">
+          Freizeit in Ludwigsburg →
+        </a>
+      </div>
+      <button class="empty-reset" id="empty-reset-btn" type="button">
+        Filter zurücksetzen
+      </button>
+    </div>
+  </div>
+
   {dated.length > 0 && (
-    <section>
+    <section id="section-dated">
       <h2 class="section-heading">Kommende Veranstaltungen</h2>
-      <div class="event-grid" id="event-grid">
+      <div class="event-list" id="event-grid">
         {dated.map(ev => (
           <EventCard event={ev} />
         ))}
@@ -58,10 +88,10 @@ const jsonLd = {
   )}
 
   {standing.length > 0 && (
-    <section style="margin-top: 3rem;">
+    <section id="section-standing" style="margin-top: 3rem;">
       <h2 class="section-heading">Dauerveranstaltungen & Führungen</h2>
       <p class="section-note">Diese Angebote finden regelmäßig statt. Termine auf der Originalseite prüfen.</p>
-      <div class="event-grid">
+      <div class="event-list">
         {standing.map(ev => (
           <EventCard event={ev} />
         ))}
@@ -70,8 +100,19 @@ const jsonLd = {
   )}
 
   {events.length === 0 && (
-    <div class="empty-state">
-      <p>Aktuell keine Veranstaltungen verfügbar. Bitte später wieder vorbeischauen.</p>
+    <div class="empty-state empty-state--visible">
+      <div class="empty-state-inner">
+        <p class="empty-headline">Aktuell keine Veranstaltungen verfügbar.</p>
+        <p class="empty-body">Schau bald wieder vorbei — oder geh einfach schon mal raus!</p>
+        <div class="empty-ctas">
+          <a href="https://www.schloss-ludwigsburg.de" target="_blank" rel="noopener noreferrer" class="empty-cta">
+            Residenzschloss entdecken →
+          </a>
+          <a href="https://www.ludwigsburg.de/de/stadtleben/freizeit-sport/" target="_blank" rel="noopener noreferrer" class="empty-cta">
+            Freizeit in Ludwigsburg →
+          </a>
+        </div>
+      </div>
     </div>
   )}
 
@@ -79,14 +120,155 @@ const jsonLd = {
 </Base>
 
 <style>
+  /* ── Page header ─────────────────────────────────────────────────────────── */
   .page-header { margin-bottom: 1.25rem; }
   h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
-  .page-subtitle { color: var(--color-text-muted); font-size: 0.95rem; margin-top: 0.35rem; }
-  .disclaimer-box { background: var(--color-accent-light); border: 1px solid #f0cdb8; border-radius: var(--radius); padding: 0.85rem 1.25rem; font-size: 0.85rem; color: #7a3b18; margin-bottom: 1.5rem; line-height: 1.5; }
-  .disclaimer-box a { color: #7a3b18; font-weight: 600; margin-left: 0.35rem; }
-  .section-heading { font-size: 1.15rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border); }
-  .section-note { font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1rem; margin-top: -0.5rem; }
-  .event-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
-  .empty-state { text-align: center; padding: 4rem 2rem; color: var(--color-text-muted); }
-  @media (max-width: 600px) { .event-grid { grid-template-columns: 1fr; } }
+  .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; }
+
+  /* ── Scraper failure alert ───────────────────────────────────────────────── */
+  /* Non-intrusive. Design spec §2: default text color + opacity. Never coral text. */
+  .sources-warning {
+    background: var(--coral-light);
+    border: 1px solid rgba(255,111,97,0.30);
+    border-radius: var(--radius-sm);
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+    color: var(--text);
+    opacity: 0.85;
+    margin-bottom: 0.85rem;
+  }
+
+  /* ── Disclaimer ─────────────────────────────────────────────────────────── */
+  /* "Secondary Text" rule: change opacity only — never change the color */
+  .disclaimer-box {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.85rem 1.25rem;
+    font-size: 0.85rem;
+    color: var(--text);
+    opacity: 0.70;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  .disclaimer-box a { color: var(--text); font-weight: 600; margin-left: 0.35rem; }
+
+  /* ── Section headings ───────────────────────────────────────────────────── */
+  .section-heading {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    /* Constrain to same 720px as the list */
+    max-width: 720px;
+  }
+  .section-note {
+    font-size: 0.85rem;
+    color: var(--text-60);
+    margin-bottom: 1rem;
+    margin-top: -0.5rem;
+    max-width: 720px;
+  }
+
+  /* ── Event list ─────────────────────────────────────────────────────────── */
+  /* Design spec: Standard Event = vertical list only, max-w-content (720px) */
+  .event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 720px;
+  }
+
+  /* Expired/Stale events — design spec Part III §2 */
+  .event-card--expired { opacity: 0.75; filter: grayscale(50%); }
+
+  /* Sponsored events — design spec Part III §2: visually distinct, never mimic organic */
+  .event-card--sponsored {
+    border-left: 3px solid var(--sage);
+    background: var(--sage-light);
+  }
+
+  /* Dark mode: card-dark shadow */
+  html.dark .event-card {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.22);
+  }
+
+  /* ── Empty state ─────────────────────────────────────────────────────────── */
+  /* Design spec Part III §1: Practical > Whimsical. Include helpful fallback CTAs. */
+  /* Hidden by default — app.js shows/hides via the `hidden` attribute */
+  .empty-state {
+    display: none;
+    max-width: 720px;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  /* When app.js removes `hidden`, or static no-events state */
+  .empty-state:not([hidden]),
+  .empty-state--visible {
+    display: block;
+  }
+  .empty-state-inner {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    box-shadow: var(--shadow-card);
+  }
+  .empty-headline {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .empty-body {
+    font-size: 0.95rem;
+    color: var(--text-60);
+    margin-bottom: 1.5rem;
+  }
+  .empty-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+  }
+  /* CTA links: Coral bg → Charcoal text per design spec §2 "Button" rule */
+  .empty-cta {
+    display: inline-block;
+    background: var(--coral);
+    color: var(--text);       /* Charcoal on Coral — 4.1:1, passes WCAG large text */
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.6rem 1.25rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: background 150ms;
+    min-height: 44px;         /* Minimum tap target */
+    display: inline-flex;
+    align-items: center;
+  }
+  .empty-cta:hover {
+    background: var(--coral-dark);
+    text-decoration: none;
+  }
+  .empty-cta:focus-visible {
+    outline: 2px solid var(--coral);
+    outline-offset: 2px;
+  }
+  /* Reset button: ghost style */
+  .empty-reset {
+    background: transparent;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-60);
+    cursor: pointer;
+    min-height: 44px;
+    transition: border-color 150ms, color 150ms;
+  }
+  .empty-reset:hover { border-color: var(--coral); color: var(--coral); }
+  .empty-reset:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
 </style>
