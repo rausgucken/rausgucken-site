@@ -232,23 +232,10 @@ const schema = [
       </p>
     </section>
 
-    <!-- ── Impressum ──────────────────────────────────────────────────────── -->
-    <section id="impressum" aria-labelledby="impressum-heading">
-      <h2 id="impressum-heading">Impressum</h2>
-      <p class="disclaimer-full">
-        Angaben gemäß § 5 TMG<br />
-        Inhaber: [Ihr Name]<br />
-        Adresse: [Ihre Adresse]<br />
-        E-Mail: [Ihre E-Mail-Adresse]
-      </p>
-      <p class="disclaimer-full" style="margin-top: 0.75rem;">
-        <strong>Haftungsausschluss:</strong> Die auf rausgucken.de angezeigten
-        Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen
-        Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr
-        für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte prüfen
-        Sie alle Angaben auf der jeweiligen Originalseite vor Teilnahme.
-      </p>
-    </section>
+    <!-- ── Impressum — separate page, linked discreetly ────────────────── -->
+    <p class="impressum-link-line">
+      <a href="/impressum">Impressum</a>
+    </p>
 
     <!-- ── Dot doctrine watermark — Tier 2 atmospheric, opacity-5 max ────── -->
     <!-- Design spec Part I.5: EmptyState / About page only. No pattern repetition. -->
@@ -453,6 +440,21 @@ const schema = [
     opacity: 0.70;
     line-height: 1.7;
   }
+
+  /* ── Impressum link — discreet, bottom of page ───────────────────────────── */
+  .impressum-link-line {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 0.78rem;
+  }
+  .impressum-link-line a {
+    color: var(--text-30);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+  }
+  .impressum-link-line a:hover { color: var(--text-60); }
 
   /* ── Dot watermark — design spec Part I.5 Tier 2 atmospheric ────────────── */
   /* max opacity-5 to opacity-8, not behind text, not repeating */
