@@ -1,0 +1,124 @@
+---
+// src/pages/impressum.astro
+// Legal requirement — § 5 TMG + § 18 Abs. 2 MStV
+// Intentionally minimal design, no SEO emphasis (noindex)
+import Base from "../layouts/Base.astro";
+
+const siteUrl   = "https://rausgucken.de";
+const canonical = `${siteUrl}/impressum`;
+---
+
+<Base
+  title="Impressum | rausgucken.de"
+  description="Impressum und Anbieterkennzeichnung gemäß § 5 TMG."
+  canonical={canonical}
+  noindex={true}
+>
+  <div class="impressum-page">
+
+    <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+      <a href="/">rausgucken.de</a> ›
+      <a href="/about">Über uns</a> ›
+      <span aria-current="page">Impressum</span>
+    </nav>
+
+    <h1>Impressum</h1>
+
+    <section aria-labelledby="tmg-heading">
+      <h2 id="tmg-heading">Angaben gemäß § 5 TMG</h2>
+      <p>
+        Akhilesh Sooraj<br />
+        Sudetenstr. 89<br />
+        74321 Bietigheim-Bissingen<br />
+        Deutschland
+      </p>
+    </section>
+
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Kontakt</h2>
+      <p>
+        Telefon: <a href="tel:+4915209620850">+49 152 09620850</a><br />
+        E-Mail: <a href="/about#kontakt">Kontaktformular</a>
+      </p>
+    </section>
+
+    <section aria-labelledby="mstv-heading">
+      <h2 id="mstv-heading">Verantwortlich für den Inhalt</h2>
+      <p>
+        Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:<br />
+        Akhilesh Sooraj<br />
+        Sudetenstr. 89<br />
+        74321 Bietigheim-Bissingen
+      </p>
+    </section>
+
+    <section aria-labelledby="haftung-heading">
+      <h2 id="haftung-heading">Haftungsausschluss</h2>
+      <p>
+        Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch
+        von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt
+        übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität
+        der Daten. Bitte prüfen Sie alle Angaben auf der jeweiligen Originalseite vor
+        der Teilnahme.
+      </p>
+      <p>
+        Diese Seite wird ohne kommerzielle Absicht betrieben. Es werden keine Einnahmen
+        durch Werbung, Affiliate-Links oder sonstige Monetarisierung erzielt.
+      </p>
+    </section>
+
+    <p class="back-link"><a href="/about">← Zurück zu Über uns</a></p>
+
+  </div>
+</Base>
+
+<style>
+  .impressum-page {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  .breadcrumb { font-size: 0.82rem; color: var(--text-60); margin-bottom: 2rem; }
+  .breadcrumb a { color: var(--text-60); }
+  .breadcrumb a:hover { color: var(--coral); }
+
+  h1 {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+  }
+
+  section { margin-bottom: 2rem; }
+
+  h2 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--text-60);
+    margin-bottom: 0.5rem;
+    font-family: var(--font-body);
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: var(--text);
+    line-height: 1.75;
+    opacity: 0.80;
+    margin-bottom: 0.75rem;
+  }
+  p:last-child { margin-bottom: 0; }
+
+  a { color: var(--coral); }
+
+  .back-link {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    opacity: 1;
+  }
+  .back-link a { color: var(--text-60); text-decoration: none; }
+  .back-link a:hover { color: var(--coral); }
+</style>
