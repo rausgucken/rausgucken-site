@@ -78,7 +78,7 @@ fi
 
 # ── 4. Hash check — skip push if data unchanged ────────────────────────────────
 NEW_HASH=$(python3 -c "import json; print(json.load(open('output/$CITY/meta.json'))['data_hash'])")
-LIVE_HASH=$(curl -sf "https://rausgucken.de/data/$CITY/meta.json" \
+LIVE_HASH=$(curl -sf "https://www.rausgucken.de/data/$CITY/meta.json" \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['data_hash'])" 2>/dev/null) \
   || { echo "[deploy] Hash check failed — pushing anyway"; LIVE_HASH=""; }
 
@@ -138,7 +138,7 @@ curl -s -X POST "https://api.indexnow.org/indexnow" \
 echo "[deploy] Waiting 120s for Cloudflare build..."
 sleep 120
 
-LIVE_AFTER=$(curl -sf "https://rausgucken.de/data/$CITY/meta.json" \
+LIVE_AFTER=$(curl -sf "https://www.rausgucken.de/data/$CITY/meta.json" \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['data_hash'])" 2>/dev/null) || LIVE_AFTER=""
 
 if [ "$LIVE_AFTER" = "$NEW_HASH" ]; then
