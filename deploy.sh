@@ -113,7 +113,7 @@ git push origin main
 
 echo "[deploy] PUSH_SUCCESS"
 # ── IndexNow ping (notifies Bing/DuckDuckGo/Ecosia of new content) ─────────────
-INDEXNOW_KEY="0a2c626c0341443ca70f37257d01caca"
+INDEXNOW_KEY="18bbf0b3986e4372beac4e82b7585a6a"
 curl -s -X POST "https://api.indexnow.org/indexnow" \
   -H "Content-Type: application/json" \
   -d "{
