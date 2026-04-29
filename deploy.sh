@@ -117,16 +117,16 @@ INDEXNOW_KEY="18bbf0b3986e4372beac4e82b7585a6a"
 curl -s -X POST "https://api.indexnow.org/indexnow" \
   -H "Content-Type: application/json" \
   -d "{
-    \"host\": \"rausgucken.de\",
+    \"host\": \"www.rausgucken.de\",
     \"key\": \"$INDEXNOW_KEY\",
-    \"keyLocation\": \"https://rausgucken.de/$INDEXNOW_KEY.txt\",
+    \"keyLocation\": \"https://www.rausgucken.de/$INDEXNOW_KEY.txt\",
     \"urlList\": [
-      \"https://rausgucken.de/ludwigsburg/\",
-      \"https://rausgucken.de/ludwigsburg/heute/\",
-      \"https://rausgucken.de/ludwigsburg/morgen/\",
-      \"https://rausgucken.de/ludwigsburg/dieses-wochenende/\",
-      \"https://rausgucken.de/ludwigsburg/naechste-woche/\",
-      \"https://rausgucken.de/ludwigsburg/kinder/\"
+      \"https://www.rausgucken.de/ludwigsburg/\",
+      \"https://www.rausgucken.de/ludwigsburg/heute/\",
+      \"https://www.rausgucken.de/ludwigsburg/morgen/\",
+      \"https://www.rausgucken.de/ludwigsburg/dieses-wochenende/\",
+      \"https://www.rausgucken.de/ludwigsburg/naechste-woche/\",
+      \"https://www.rausgucken.de/ludwigsburg/kinder/\"
     ]
   }" > /dev/null 2>&1 \
   && echo "[deploy] IndexNow ping sent" \
