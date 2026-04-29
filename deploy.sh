@@ -123,9 +123,14 @@ curl -s -X POST "https://api.indexnow.org/indexnow" \
     \"urlList\": [
       \"https://rausgucken.de/ludwigsburg/\",
       \"https://rausgucken.de/ludwigsburg/heute/\",
+      \"https://rausgucken.de/ludwigsburg/morgen/\",
+      \"https://rausgucken.de/ludwigsburg/dieses-wochenende/\",
+      \"https://rausgucken.de/ludwigsburg/naechste-woche/\",
       \"https://rausgucken.de/ludwigsburg/kinder/\"
     ]
-  }" > /dev/null 2>&1 && echo "[deploy] IndexNow ping sent" || echo "[deploy] IndexNow ping failed (non-fatal)"
+  }" > /dev/null 2>&1 \
+  && echo "[deploy] IndexNow ping sent" \
+  || echo "[deploy] IndexNow ping failed (non-fatal)"
 
 
 
