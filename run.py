@@ -23,7 +23,8 @@ STAGES = [
     ("transform", PIPELINE / "transform.py"),
     ("validate",  PIPELINE / "validate.py"),
     ("diff",      PIPELINE / "diff.py"),
-    ("manifest",  PIPELINE / "manifest.py"),
+    ("manifest",      PIPELINE / "manifest.py"),
+    ("filter_subsets", PIPELINE / "filter_subsets.py"),
 ]
 
 
