@@ -112,6 +112,22 @@ git commit -m "data: $CITY $(date +%Y-%m-%d) — $EVENT_COUNT events, $NEW_COUNT
 git push origin main
 
 echo "[deploy] PUSH_SUCCESS"
+# ── IndexNow ping (notifies Bing/DuckDuckGo/Ecosia of new content) ─────────────
+INDEXNOW_KEY="da0bda91f605458ea70b19f5f9443cc7"
+curl -s -X POST "https://api.indexnow.org/indexnow" \
+  -H "Content-Type: application/json" \
+  -d "{
+    \"host\": \"rausgucken.de\",
+    \"key\": \"$INDEXNOW_KEY\",
+    \"keyLocation\": \"https://rausgucken.de/$INDEXNOW_KEY.txt\",
+    \"urlList\": [
+      \"https://rausgucken.de/ludwigsburg/\",
+      \"https://rausgucken.de/ludwigsburg/heute/\",
+      \"https://rausgucken.de/ludwigsburg/kinder/\"
+    ]
+  }" > /dev/null 2>&1 && echo "[deploy] IndexNow ping sent" || echo "[deploy] IndexNow ping failed (non-fatal)"
+
+
 
 # ── 6. Health check (wait for Cloudflare build) ────────────────────────────────
 echo "[deploy] Waiting 120s for Cloudflare build..."
