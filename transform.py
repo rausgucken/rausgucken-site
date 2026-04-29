@@ -126,6 +126,27 @@ def normalise_price(raw: str | None) -> str | None:
     return p or None
 
 
+
+def compute_weekdays(date_start: str | None, date_end: str | None) -> list[int]:
+    """Return list of JS weekday numbers (0=Sun…6=Sat) covered by the event date range.
+    Used by app.js for weekday filtering via data-weekdays attribute on EventCard."""
+    if not date_start:
+        return []  # standing tours have no fixed weekday
+    try:
+        from datetime import date, timedelta
+        d_start = date.fromisoformat(date_start)
+        d_end   = date.fromisoformat(date_end) if date_end else d_start
+        # Cap range at 7 days to avoid huge lists for multi-month events
+        days = min((d_end - d_start).days + 1, 7)
+        weekdays = []
+        for i in range(days):
+            wd = (d_start + timedelta(days=i)).isoweekday() % 7  # isoweekday: Mon=1…Sun=7 → JS: Sun=0…Sat=6
+            if wd not in weekdays:
+                weekdays.append(wd)
+        return sorted(weekdays)
+    except Exception:
+        return []
+
 # ── Transform ─────────────────────────────────────────────────────────────────
 
 def transform(events: list[dict]) -> list[dict]:
@@ -166,6 +187,7 @@ def transform(events: list[dict]) -> list[dict]:
             "source":                ev.get("source", "schloss"),
             "city":                  ev.get("city", "ludwigsburg"),
             "slug":                  slug,
+            "weekdays":              compute_weekdays(date_start, ev.get("date_end")),
             "scraped_at":            ev.get("scraped_at", ""),
             "extraction_confidence": ev.get("extraction_confidence", 1.0),
             "is_new":                True,       # diff.py will correct this
