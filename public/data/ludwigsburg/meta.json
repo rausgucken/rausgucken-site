@@ -1,16 +1,20 @@
 {
-  "scraped_at": "2026-04-26T08:38:06.472376+00:00",
+  "scraped_at": "2026-04-30T12:23:35.166162+00:00",
   "city": "ludwigsburg",
-  "source": "schloss",
-  "event_count": 276,
+  "event_count": 326,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
-    "04_schloss"
+    "labyrinth",
+    "schloss"
   ],
+  "source_counts": {
+    "schloss": 276,
+    "labyrinth": 50
+  },
   "sources_failed": [],
-  "data_hash": "066ab25a85a64759",
+  "data_hash": "63727282bdff2aa4",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 26.04.2026. Bitte Originalseite prüfen.",
-  "pipeline_version": "schloss-poc-v1"
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 30.04.2026. Bitte Originalseite prüfen.",
+  "pipeline_version": "multi-source-v1"
 }
