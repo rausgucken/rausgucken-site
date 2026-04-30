@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # /opt/rausgucken/deploy.sh
-# Full pipeline: scrape → transform → validate → diff → manifest → push → health check
+# Full pipeline: scrape → transform → validate → diff → manifest → push → health check.
 # Run manually or via cron (Saturday 02:00).
 # Requires: .env with all secrets sourced before pipeline stages.
 
