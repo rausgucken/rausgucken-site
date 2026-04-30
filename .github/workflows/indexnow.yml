@@ -1,0 +1,30 @@
+name: IndexNow
+on:
+  push:
+    branches: [main]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping IndexNow
+        run: |
+          HTTP_CODE=$(curl -s -o /tmp/resp.txt -w "%{http_code}" \
+            -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "www.rausgucken.de",
+              "key": "18bbf0b3986e4372beac4e82b7585a6a",
+              "keyLocation": "https://www.rausgucken.de/18bbf0b3986e4372beac4e82b7585a6a.txt",
+              "urlList": [
+                "https://www.rausgucken.de/ludwigsburg/",
+                "https://www.rausgucken.de/ludwigsburg/heute/",
+                "https://www.rausgucken.de/ludwigsburg/morgen/",
+                "https://www.rausgucken.de/ludwigsburg/dieses-wochenende/",
+                "https://www.rausgucken.de/ludwigsburg/naechste-woche/",
+                "https://www.rausgucken.de/ludwigsburg/kinder/"
+              ]
+            }')
+          echo "IndexNow HTTP: $HTTP_CODE"
+          cat /tmp/resp.txt
+          [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "202" ] && echo "✅ Accepted" || echo "❌ Failed"
