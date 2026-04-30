@@ -42,7 +42,7 @@ const canonical = `${siteUrl}/ludwigsburg/events/${ev.slug}`;
 
 // ── OG image ──────────────────────────────────────────────────────────────────
 // Falls back to city-level OG if per-event image not yet generated
-const ogImage = `/og/ludwigsburg/${ev.slug}.jpg`;
+const ogImage = `/og/default.jpg`;
 
 // ── SEO title — keyword-first per §9: "{Event} Ludwigsburg {Date} | rausgucken.de"
 const dateLabel = ev.date_start ? formatDateShort(ev.date_start) : "Dauerveranstaltung";
