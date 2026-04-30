@@ -114,13 +114,16 @@ git push origin main
 echo "[deploy] PUSH_SUCCESS"
 # ── IndexNow ping (notifies Bing/DuckDuckGo/Ecosia of new content) ─────────────
 INDEXNOW_KEY="18bbf0b3986e4372beac4e82b7585a6a"
-curl -s -X POST "https://api.indexnow.org/indexnow" \
-  -H "Content-Type: application/json" \
+
+HTTP_CODE=$(curl -s -o /tmp/indexnow_response.txt -w "%{http_code}" \
+  -X POST "https://api.indexnow.org/indexnow" \
+  -H "Content-Type: application/json; charset=utf-8" \
   -d "{
     \"host\": \"www.rausgucken.de\",
     \"key\": \"$INDEXNOW_KEY\",
     \"keyLocation\": \"https://www.rausgucken.de/$INDEXNOW_KEY.txt\",
     \"urlList\": [
+      \"https://www.rausgucken.de/\",
       \"https://www.rausgucken.de/ludwigsburg/\",
       \"https://www.rausgucken.de/ludwigsburg/heute/\",
       \"https://www.rausgucken.de/ludwigsburg/morgen/\",
@@ -128,10 +131,20 @@ curl -s -X POST "https://api.indexnow.org/indexnow" \
       \"https://www.rausgucken.de/ludwigsburg/naechste-woche/\",
       \"https://www.rausgucken.de/ludwigsburg/kinder/\"
     ]
-  }" \
-  && echo "[deploy] IndexNow ping sent" \
-  || echo "[deploy] IndexNow ping failed (non-fatal)"
+  }")
 
+echo "[deploy] IndexNow HTTP: $HTTP_CODE"
+
+if [ -f /tmp/indexnow_response.txt ]; then
+    echo "[deploy] IndexNow response body:"
+    cat /tmp/indexnow_response.txt
+fi
+
+if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "202" ]; then
+    echo "[deploy] IndexNow accepted"
+else
+    echo "[deploy] IndexNow failed (non-fatal)"
+fi
 
 
 # ── 6. Health check (wait for Cloudflare build) ────────────────────────────────
