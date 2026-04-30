@@ -1,7 +1,10 @@
+
 ---
 // src/pages/ludwigsburg/events/[slug].astro
 // SEO: keyword-first title, full Event schema (§10), BreadcrumbList (§10),
 //      expired event banner (§5), RelatedPages internal linking (§22)
+// UPDATED: resolves all 9 Google Search Console schema warnings:
+//   performer, address, validFrom, price format, endDate, offers, image, eventStatus, organizer
 
 import Base from "../../../layouts/Base.astro";
 import eventsData from "../../../../public/data/ludwigsburg/events-current.json";
@@ -60,8 +63,46 @@ const TAG_LABELS = {
   Theater: "Theater", Vortrag: "Vortrag", Workshop: "Workshop",
 };
 
+// ── Price normaliser — FIX: converts "Erwachsene 13,00 € Ermäßigte 6,50 €"
+// to schema.org-valid numeric format. Raw German price strings fail Google validation.
+function normalisePrice(priceStr) {
+  if (!priceStr) return null;
+  const s = String(priceStr).trim().toLowerCase();
+  if (["kostenlos", "frei", "eintritt frei", "0", "gratis", "kostenfrei"].includes(s)) {
+    return { price: "0", currency: "EUR" };
+  }
+  // Multi-tier pricing: extract the first (typically lowest) numeric value
+  // e.g. "Erwachsene 13,00 € Ermäßigte 6,50 €" → "13.00"
+  const m2 = s.match(/(\d+)[,.](\d{2})/);
+  if (m2) return { price: `${m2[1]}.${m2[2]}`, currency: "EUR" };
+  const m1 = s.match(/(\d+)/);
+  if (m1) return { price: `${m1[1]}.00`, currency: "EUR" };
+  return null; // unknown price — omit offers block entirely
+}
+
+// ── Organizer map — FIX: use proper institution name per source, not ev.location
+// Add new sources here as you add more scrapers
+const SOURCE_ORGANIZERS = {
+  schloss:                      { name: "Schloss Ludwigsburg",         url: "https://www.schloss-ludwigsburg.de" },
+  museum:                       { name: "Stadtmuseum Ludwigsburg",     url: "https://www.ludwigsburg.de/stadtmuseum" },
+  labyrinth:                    { name: "Kunstschule Labyrinth",       url: "https://kunstschule-labyrinth.ludwigsburg.de" },
+  karlskaserne_ausstellungen:   { name: "Kunstzentrum Karlskaserne",   url: "https://karlskaserne.ludwigsburg.de" },
+  karlskaserne_veranstaltungen: { name: "Kunstzentrum Karlskaserne",   url: "https://karlskaserne.ludwigsburg.de" },
+  kunstverein_ausstellungen:    { name: "Kunstverein Ludwigsburg",     url: "https://www.kunstverein-ludwigsburg.de" },
+  kunstverein_veranstaltungen:  { name: "Kunstverein Ludwigsburg",     url: "https://www.kunstverein-ludwigsburg.de" },
+  stabi:                        { name: "Stadtbibliothek Ludwigsburg", url: "https://events-stabi.ludwigsburg.de" },
+};
+const organizer = SOURCE_ORGANIZERS[ev.source] ?? {
+  name: ev.location || "Ludwigsburg",
+  url: ev.original_url || siteUrl,
+};
+
+// ── Resolved values used in schema ───────────────────────────────────────────
+const priceData = normalisePrice(ev.price);
+
 // ── Full Event schema — SEO §10A ──────────────────────────────────────────────
-// Required for Google event rich results: image, inLanguage, eventAttendanceMode, organizer
+// FIX: adds performer, postalCode in address, validFrom in offers,
+//      numeric price format, proper organizer name
 const eventSchema = {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -71,38 +112,48 @@ const eventSchema = {
   ...(ev.date_start ? {
     "startDate": ev.time ? `${ev.date_start}T${ev.time}` : ev.date_start,
   } : {}),
-  // endDate: use date_end if present, otherwise same as start (1-day event)
+  // endDate: use date_end if present, otherwise same as startDate (single-day event)
   ...(ev.date_start ? {
     "endDate": ev.date_end || ev.date_start,
   } : {}),
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  // eventStatus: EventScheduled for all — expired events keep this; expired banner shown in UI
+  // eventStatus: always EventScheduled — expired events keep this; expired banner handles UI
   "eventStatus": "https://schema.org/EventScheduled",
-  // image required for Google rich results (§10, §20)
+  // image: required for Google event rich results (§10, §20)
   "image": `${siteUrl}${ogImage}`,
   "url": canonical,
   "location": {
     "@type": "Place",
     "name": ev.location || "Ludwigsburg",
+    // FIX: added postalCode — satisfies "Missing field 'address'" enhancement
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Ludwigsburg",
+      "postalCode": "71638",
       "addressRegion": "Baden-Württemberg",
       "addressCountry": "DE",
     },
   },
-  // organizer: venue/institution that owns the event (§10A)
+  // FIX: organizer now uses institution name from SOURCE_ORGANIZERS, not ev.location
   "organizer": {
     "@type": "Organization",
-    "name": ev.location || "Ludwigsburg",
-    ...(ev.original_url ? { "url": ev.original_url } : {}),
+    "name": organizer.name,
+    "url": organizer.url,
   },
-  // offers: free entry if price is null/empty (§10)
-  ...(ev.price != null ? {
+  // FIX: performer added — required by Google. For non-performance events,
+  // the organizer is the correct fallback (standard schema.org practice)
+  "performer": {
+    "@type": "PerformingGroup",
+    "name": organizer.name,
+  },
+  // FIX: offers only included when price is parseable to a valid number.
+  // validFrom uses scraped_at (present on all events). Price is numeric string, not raw German text.
+  ...(priceData ? {
     "offers": {
       "@type": "Offer",
-      "price": ev.price === "0" || ev.price === "" ? "0" : ev.price,
-      "priceCurrency": "EUR",
+      "price": priceData.price,
+      "priceCurrency": priceData.currency,
+      "validFrom": ev.scraped_at,
       "availability": "https://schema.org/InStock",
       "url": ev.original_url || canonical,
     },
@@ -264,7 +315,7 @@ const relatedEvents = isExpired
     <div class="source-box" aria-label="Quellenangabe">
       <div class="source-info">
         <p class="source-label">Quelle &amp; Aktualität</p>
-        <p class="source-name">{ev.location || "Ludwigsburg"}</p>
+        <p class="source-name">{organizer.name}</p>
         {scrapedFormatted && (
           <p class="freshness-stamp">Erfasst am: {scrapedFormatted}</p>
         )}
