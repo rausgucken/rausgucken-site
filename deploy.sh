@@ -1,12 +1,7 @@
 #!/usr/bin/env bash
-# /opt/rausgucken/deploy.sh
-# Full pipeline: scrape → transform → validate → diff → manifest → push → health check.
-# Run manually or via cron (Saturday 02:00).
-# Requires: .env with all secrets sourced before pipeline stages.
-
+# /opt/rausgucken-site/deploy.sh
 set -uo pipefail
 
-SCRAPER="/opt/rausgucken"
 SITE="/opt/rausgucken-site"
 LOG_DIR="/var/log/rausgucken"
 LOG="$LOG_DIR/deploy-$(date +%Y-%m-%d).log"
@@ -17,87 +12,49 @@ exec >> "$LOG" 2>&1
 
 echo "===== $(date -Iseconds) START ====="
 
-cd "$SCRAPER"
+cd "$SITE"
 source .venv/bin/activate
-
-# Load secrets — AI_BACKEND, ANTHROPIC_API_KEY, TELEGRAM_BOT_TOKEN, etc.
 set -a; source .env; set +a
 
-# ── 1. Scrape ──────────────────────────────────────────────────────────────────
-echo "[deploy] Stage: scrape"
-python scrapers/ludwigsburg/04_schloss.py || {
-    python -c "
-import os, requests
-token, chat = os.environ.get('TELEGRAM_BOT_TOKEN'), os.environ.get('TELEGRAM_CHAT_ID')
-if token and chat:
-    requests.post(f'https://api.telegram.org/bot{token}/sendMessage',
-        json={'chat_id': chat, 'text': '🔴 DEPLOY ABORTED [ludwigsburg]\n  Reason: Schloss scraper failed', 'parse_mode': 'HTML'}, timeout=10)
-"
-    echo "[deploy] ABORT: scraper failed"
-    exit 1
-}
-
-# ── 2. Pipeline ────────────────────────────────────────────────────────────────
-echo "[deploy] Stage: pipeline"
-
-python pipeline/transform.py --city "$CITY" 2>/dev/null || python pipeline/transform.py
-python pipeline/validate.py  --city "$CITY" 2>/dev/null || python pipeline/validate.py || {
-    python -c "
-import os, requests
-token, chat = os.environ.get('TELEGRAM_BOT_TOKEN'), os.environ.get('TELEGRAM_CHAT_ID')
-if token and chat:
-    requests.post(f'https://api.telegram.org/bot{token}/sendMessage',
-        json={'chat_id': chat, 'text': '🔴 DEPLOY ABORTED [ludwigsburg]\n  Reason: Schema validation failed', 'parse_mode': 'HTML'}, timeout=10)
-"
-    echo "[deploy] ABORT: validation failed"
-    exit 1
-}
-
-python pipeline/diff.py     --city "$CITY" 2>/dev/null || python pipeline/diff.py
-python pipeline/manifest.py --city "$CITY" 2>/dev/null || python pipeline/manifest.py
-
-# ── 3. Low-confidence alert ────────────────────────────────────────────────────
-FLAGGED=$(python3 -c "
-import json, sys
-try:
-    data = json.load(open('output/$CITY/flagged.json'))
-    print(len(data))
-except:
-    print(0)
-")
-
-if [ "$FLAGGED" -gt 0 ]; then
+tg_send() {
+    local msg="$1"
     python3 -c "
 import os, requests
-token, chat = os.environ.get('TELEGRAM_BOT_TOKEN'), os.environ.get('TELEGRAM_CHAT_ID')
+token = os.environ.get('TELEGRAM_BOT_TOKEN')
+chat  = os.environ.get('TELEGRAM_CHAT_ID')
 if token and chat:
     requests.post(f'https://api.telegram.org/bot{token}/sendMessage',
-        json={'chat_id': chat, 'text': f'⚠️ [ludwigsburg] ${FLAGGED} events below confidence threshold\n  Review: output/ludwigsburg/flagged.json', 'parse_mode': 'HTML'}, timeout=10)
-"
-fi
+        json={'chat_id': chat, 'text': '$msg', 'parse_mode': 'HTML'}, timeout=10)
+" 2>/dev/null || true
+}
 
-# ── 4. Hash check — skip push if data unchanged ────────────────────────────────
+echo "[deploy] Stage: scrape"
+python scrape.py || { tg_send "🔴 DEPLOY ABORTED [ludwigsburg] — scrape failed"; exit 1; }
+
+echo "[deploy] Stage: transform"
+python transform.py || { tg_send "🔴 DEPLOY ABORTED [ludwigsburg] — transform failed"; exit 1; }
+
+echo "[deploy] Stage: validate"
+python validate.py || { tg_send "🔴 DEPLOY ABORTED [ludwigsburg] — validation failed"; exit 1; }
+
+echo "[deploy] Stage: diff"
+python diff.py || { tg_send "🔴 DEPLOY ABORTED [ludwigsburg] — diff failed"; exit 1; }
+
+echo "[deploy] Stage: manifest"
+python manifest.py || { tg_send "🔴 DEPLOY ABORTED [ludwigsburg] — manifest failed"; exit 1; }
+
+FLAGGED=$(python3 -c "import json; print(len(json.load(open('output/$CITY/flagged.json'))))" 2>/dev/null || echo 0)
+[ "$FLAGGED" -gt 0 ] && tg_send "⚠️ [ludwigsburg] $FLAGGED events flagged low confidence"
+
 NEW_HASH=$(python3 -c "import json; print(json.load(open('output/$CITY/meta.json'))['data_hash'])")
 LIVE_HASH=$(curl -sf "https://www.rausgucken.de/data/$CITY/meta.json" \
-  | python3 -c "import sys,json; print(json.load(sys.stdin)['data_hash'])" 2>/dev/null) \
-  || { echo "[deploy] Hash check failed — pushing anyway"; LIVE_HASH=""; }
+  | python3 -c "import sys,json; print(json.load(sys.stdin)['data_hash'])" 2>/dev/null) || LIVE_HASH=""
 
 if [ "${LIVE_HASH}" = "$NEW_HASH" ] && [ -n "$LIVE_HASH" ]; then
-    echo "[deploy] Data unchanged (hash $NEW_HASH) — skipping push"
-    # Still notify: confirms cron ran OK
-    python3 -c "
-import os, requests
-token, chat = os.environ.get('TELEGRAM_BOT_TOKEN'), os.environ.get('TELEGRAM_CHAT_ID')
-if token and chat:
-    requests.post(f'https://api.telegram.org/bot{token}/sendMessage',
-        json={'chat_id': chat, 'text': '✅ rausgucken.de [ludwigsburg] — data unchanged, no push needed', 'parse_mode': 'HTML'}, timeout=10)
-"
-    echo "===== $(date -Iseconds) END ====="
-    exit 0
+    echo "[deploy] Data unchanged — skipping push"
+    tg_send "✅ rausgucken.de [ludwigsburg] — data unchanged, no push needed"
+    echo "===== $(date -Iseconds) END ====="; exit 0
 fi
-
-# ── 5. Push to site repo ───────────────────────────────────────────────────────
-echo "[deploy] Stage: push"
 
 EVENT_COUNT=$(python3 -c "import json; print(len(json.load(open('output/$CITY/events-current.json'))))")
 NEW_COUNT=$(python3 -c "import json; print(json.load(open('output/$CITY/changelog.json'))['count_added'])")
@@ -105,49 +62,21 @@ NEW_COUNT=$(python3 -c "import json; print(json.load(open('output/$CITY/changelo
 cp "output/$CITY/events-current.json" "$SITE/public/data/$CITY/"
 cp "output/$CITY/meta.json"           "$SITE/public/data/$CITY/"
 cp "output/$CITY/changelog.json"      "$SITE/public/data/$CITY/"
+cp "output/$CITY/flagged.json"        "$SITE/public/data/$CITY/" 2>/dev/null || true
 
-cd "$SITE"
 git add -A
-git commit -m "data: $CITY $(date +%Y-%m-%d) — $EVENT_COUNT events, $NEW_COUNT new"
+git commit -m "data: $CITY $(date +%Y-%m-%d) — $EVENT_COUNT events, $NEW_COUNT new" || {
+    echo "[deploy] Nothing to commit"; exit 0
+}
 git push origin main
-
 echo "[deploy] PUSH_SUCCESS"
-# ── IndexNow ping (notifies Bing/DuckDuckGo/Ecosia of new content) ─────────────
-INDEXNOW_KEY="18bbf0b3986e4372beac4e82b7585a6a"
 
-HTTP_CODE=$(curl -s -o /tmp/indexnow_response.txt -w "%{http_code}" \
+INDEXNOW_KEY="18bbf0b3986e4372beac4e82b7585a6a"
+curl -s -o /dev/null -w "[deploy] IndexNow HTTP: %{http_code}\n" \
   -X POST "https://api.indexnow.org/indexnow" \
   -H "Content-Type: application/json; charset=utf-8" \
-  -d "{
-    \"host\": \"www.rausgucken.de\",
-    \"key\": \"$INDEXNOW_KEY\",
-    \"keyLocation\": \"https://www.rausgucken.de/$INDEXNOW_KEY.txt\",
-    \"urlList\": [
-      \"https://www.rausgucken.de/\",
-      \"https://www.rausgucken.de/ludwigsburg/\",
-      \"https://www.rausgucken.de/ludwigsburg/heute/\",
-      \"https://www.rausgucken.de/ludwigsburg/morgen/\",
-      \"https://www.rausgucken.de/ludwigsburg/dieses-wochenende/\",
-      \"https://www.rausgucken.de/ludwigsburg/naechste-woche/\",
-      \"https://www.rausgucken.de/ludwigsburg/kinder/\"
-    ]
-  }")
+  -d "{\"host\":\"www.rausgucken.de\",\"key\":\"$INDEXNOW_KEY\",\"keyLocation\":\"https://www.rausgucken.de/$INDEXNOW_KEY.txt\",\"urlList\":[\"https://www.rausgucken.de/\",\"https://www.rausgucken.de/ludwigsburg/\",\"https://www.rausgucken.de/ludwigsburg/heute/\",\"https://www.rausgucken.de/ludwigsburg/kinder/\"]}"
 
-echo "[deploy] IndexNow HTTP: $HTTP_CODE"
-
-if [ -f /tmp/indexnow_response.txt ]; then
-    echo "[deploy] IndexNow response body:"
-    cat /tmp/indexnow_response.txt
-fi
-
-if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "202" ]; then
-    echo "[deploy] IndexNow accepted"
-else
-    echo "[deploy] IndexNow failed (non-fatal)"
-fi
-
-
-# ── 6. Health check (wait for Cloudflare build) ────────────────────────────────
 echo "[deploy] Waiting 120s for Cloudflare build..."
 sleep 120
 
@@ -155,19 +84,11 @@ LIVE_AFTER=$(curl -sf "https://www.rausgucken.de/data/$CITY/meta.json" \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['data_hash'])" 2>/dev/null) || LIVE_AFTER=""
 
 if [ "$LIVE_AFTER" = "$NEW_HASH" ]; then
-    STATUS="✅ rausgucken.de [ludwigsburg] updated\n  $EVENT_COUNT events · $NEW_COUNT new · Health check PASSED"
+    tg_send "✅ rausgucken.de [ludwigsburg] updated — $EVENT_COUNT events, $NEW_COUNT new. Health check PASSED"
+    echo "[deploy] Health check PASSED"
 else
-    STATUS="🔴 HEALTH CHECK FAILED [ludwigsburg]\n  Live hash does not match pushed hash. Check Cloudflare build log."
+    tg_send "🔴 HEALTH CHECK FAILED [ludwigsburg] — check Cloudflare build log"
+    echo "[deploy] Health check FAILED"
 fi
-
-python3 -c "
-import os, requests
-token, chat = os.environ.get('TELEGRAM_BOT_TOKEN'), os.environ.get('TELEGRAM_CHAT_ID')
-msg = '''$STATUS'''
-if token and chat:
-    requests.post(f'https://api.telegram.org/bot{token}/sendMessage',
-        json={'chat_id': chat, 'text': msg, 'parse_mode': 'HTML'}, timeout=10)
-print(msg)
-"
 
 echo "===== $(date -Iseconds) END ====="

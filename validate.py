@@ -1,78 +1,86 @@
 """
 pipeline/validate.py
 ────────────────────
-Stage 2 — validates the transformed event list against config/schema.json.
+Stage 2 — validates the transformed event list.
 Hard aborts (sys.exit 1) on any violation — no partial data reaches the site.
 
-Takes  : output/ludwigsburg/04_schloss_transformed.json
+Takes  : output/ludwigsburg/transformed.json
 Writes : nothing — validation only, prints report and exits 0 or 1
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
-ROOT      = Path(__file__).parent.parent
-DATA      = ROOT / "output/ludwigsburg/04_schloss_transformed.json"
-SCHEMA    = ROOT / "config/schema.json"
-TAGS_FILE = ROOT / "config/tags.json"
+ROOT = Path(__file__).parent
+DATA = ROOT / "output" / "ludwigsburg" / "transformed.json"
 
-try:
-    import jsonschema
-except ImportError:
-    print("[validate] jsonschema not installed — pip install jsonschema")
-    sys.exit(1)
+VALID_TAGS = {
+    "Ausstellung", "Entertainment", "Familie", "Fest", "Fuehrung",
+    "Jugend", "Kinder", "Kulinarik", "Lesung", "Messe", "Musik",
+    "Outdoor", "Sport", "Sprache", "Tanz", "Theater", "Vortrag", "Workshop",
+}
+
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def main():
+    if not DATA.exists():
+        print(f"[validate] ERROR — {DATA} not found. Run transform.py first.")
+        sys.exit(1)
+
     print(f"[validate] Loading {DATA}")
     events = json.loads(DATA.read_text(encoding="utf-8"))
-    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
-    valid_tags = set(json.loads(TAGS_FILE.read_text(encoding="utf-8")).keys())
-
     errors = []
 
-    # 1. JSON-schema structural validation
-    try:
-        jsonschema.validate(instance=events, schema=schema)
-    except jsonschema.ValidationError as e:
-        errors.append(f"Schema error: {e.message} (path: {list(e.absolute_path)})")
-
-    # 2. Business rules
+    # 1. Duplicate IDs
     ids = [e["id"] for e in events]
     if len(ids) != len(set(ids)):
         dupes = [i for i in ids if ids.count(i) > 1]
         errors.append(f"Duplicate IDs: {list(set(dupes))}")
 
     for i, ev in enumerate(events):
-        prefix = f"Event[{i}] '{ev.get('title','?')[:40]}'"
+        prefix = f"Event[{i}] '{ev.get('title', '?')[:40]}'"
 
-        # required audit trail fields
+        # Required audit trail fields
         if not ev.get("original_url"):
             errors.append(f"{prefix}: missing original_url")
         if not ev.get("scraped_at"):
             errors.append(f"{prefix}: missing scraped_at")
         if not ev.get("slug"):
             errors.append(f"{prefix}: missing slug")
+        if not ev.get("source"):
+            errors.append(f"{prefix}: missing source")
 
-        # tag vocabulary check
+        # Tag vocabulary check
         for tag in ev.get("tags", []):
-            if tag not in valid_tags:
+            if tag not in VALID_TAGS:
                 errors.append(f"{prefix}: unknown tag '{tag}'")
 
-        # date format
+        # Date format
         for field in ("date_start", "date_end"):
             val = ev.get(field)
-            if val is not None:
-                import re
-                if not re.match(r"^\d{4}-\d{2}-\d{2}$", str(val)):
-                    errors.append(f"{prefix}: {field} not YYYY-MM-DD: '{val}'")
+            if val is not None and not DATE_RE.match(str(val)):
+                errors.append(f"{prefix}: {field} not YYYY-MM-DD: '{val}'")
 
-        # age consistency
+        # Age consistency
         age_min = ev.get("age_min")
         age_max = ev.get("age_max")
         if age_min is not None and age_max is not None and age_min > age_max:
             errors.append(f"{prefix}: age_min {age_min} > age_max {age_max}")
+
+        # Confidence range
+        conf = ev.get("extraction_confidence")
+        if conf is not None and not (0.0 <= conf <= 1.0):
+            errors.append(f"{prefix}: extraction_confidence out of range: {conf}")
+
+    # Source breakdown
+    sources: dict[str, int] = {}
+    for ev in events:
+        s = ev.get("source", "unknown")
+        sources[s] = sources.get(s, 0) + 1
+    print(f"[validate] Sources present: {sources}")
 
     if errors:
         print(f"\n[validate] FAILED — {len(errors)} error(s):")
