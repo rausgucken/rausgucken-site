@@ -1,0 +1,272 @@
+/*
+ * mobile.css — rausgucken.de mobile optimisation patch
+ *
+ * Place in: src/styles/mobile.css
+ * Import in: src/layouts/Base.astro  →  <style>@import '../styles/mobile.css';</style>
+ * OR add to your global CSS file.
+ *
+ * Philosophy: viewport-width media queries ONLY — no JS user-agent sniffing.
+ * Desktop (≥769px) is completely untouched by this file.
+ * Tested breakpoints: 375px (iPhone SE) · 390px (iPhone 14) · 412px (Pixel 7)
+ */
+
+/* ────────────────────────────────────────────────────────────────
+   FILTER BAR — 2-column grid on mobile, max 40% viewport height
+   ──────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .filter-bar,
+  [data-component="FilterBar"],
+  .filterbar {
+    /* 2-column grid instead of stacked full-width */
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding: 0.625rem 0.75rem;
+
+    /* Cap height so it doesn't dominate the viewport */
+    max-height: 40vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Date range inputs span full width (they need the space) */
+  .filter-bar .date-range,
+  .filter-bar input[type="date"],
+  .filter-bar .filter-dates {
+    grid-column: 1 / -1;
+  }
+
+  /* Each individual filter dropdown */
+  .filter-bar select,
+  .filter-bar .filter-select {
+    width: 100%;
+    font-size: 0.875rem;   /* 14px — readable without zooming */
+    padding: 0.5rem 0.625rem;
+    min-height: 44px;      /* WCAG tap target */
+    border-radius: 0.375rem;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23373F51' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 10px;
+    padding-right: 2rem;
+  }
+
+  /* Search / keyword input spans full width */
+  .filter-bar input[type="text"],
+  .filter-bar input[type="search"] {
+    grid-column: 1 / -1;
+    font-size: 1rem;       /* Prevent iOS auto-zoom (must be ≥16px) */
+    min-height: 44px;
+  }
+
+  /* Filter action buttons */
+  .filter-bar button,
+  .filter-bar .btn {
+    min-height: 44px;
+    min-width: 44px;
+    font-size: 0.875rem;
+  }
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   EVENT CARDS — tighter on small screens
+   ──────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .event-card,
+  [data-component="EventCard"],
+  article.card {
+    padding: 0.875rem 1rem;  /* tighter than desktop */
+    border-radius: 0.5rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .event-card h3,
+  .event-card .card-title {
+    font-size: 1rem;         /* 16px — comfortable reading size */
+    line-height: 1.4;
+    margin-bottom: 0.25rem;
+  }
+
+  .event-card .meta,
+  .event-card .card-meta {
+    font-size: 0.8125rem;    /* 13px */
+    line-height: 1.5;
+  }
+
+  .event-card .description,
+  .event-card .card-description {
+    font-size: 0.875rem;     /* 14px */
+    /* Clamp to 3 lines on mobile to keep cards compact */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .event-card .price,
+  .event-card .card-price {
+    font-size: 0.8125rem;
+    margin-top: 0.25rem;
+  }
+
+  /* Source link — keep it visible but compact */
+  .event-card .source-link,
+  .event-card a[rel="noopener"] {
+    display: inline-block;
+    font-size: 0.8125rem;
+    margin-top: 0.5rem;
+    min-height: 44px;
+    line-height: 44px;
+    padding: 0 0.25rem;
+  }
+
+  /* Disclaimer micro-text */
+  .event-card .disclaimer-micro {
+    font-size: 0.6875rem;   /* 11px */
+    opacity: 0.65;
+    margin-top: 0.25rem;
+  }
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   TAG PILLS — horizontal scroll row, no wrapping
+   ──────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .tags,
+  .tag-list,
+  [data-component="TagList"],
+  .event-card .tags {
+    display: flex;
+    flex-wrap: nowrap;        /* prevent wrapping */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.375rem;
+    padding-bottom: 0.25rem; /* space for scrollbar on Android */
+    /* Hide scrollbar visually but keep functionality */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .tags::-webkit-scrollbar,
+  .tag-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tag,
+  .tag-pill {
+    flex-shrink: 0;           /* never squish — scroll instead */
+    font-size: 0.75rem;       /* 12px */
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    white-space: nowrap;
+  }
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   DATE INPUTS — prevent iOS/Android native picker inconsistencies
+   Replace native date picker with styled select-based approach
+   Note: this styles them consistently; for full control use the
+   JS-based dropdown approach (see APPLY_UPDATES.md notes)
+   ──────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  input[type="date"] {
+    /* Force consistent box model */
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;          /* ≥16px prevents iOS auto-zoom */
+    font-family: inherit;
+    color: inherit;
+    background-color: inherit;
+    min-height: 44px;
+    width: 100%;
+    box-sizing: border-box;
+
+    /* Remove the calendar icon on iOS */
+    -webkit-min-logical-width: calc(100% - 16px);
+  }
+
+  /* Dark mode date input */
+  .dark input[type="date"] {
+    border-color: rgba(255, 255, 255, 0.15);
+    color: #FFFDF9;
+  }
+
+  /* Remove calendar icon in WebKit */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0.6;
+    cursor: pointer;
+    padding: 4px;
+  }
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   STICKY FILTER BAR — cap viewport consumption
+   ──────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .filter-bar-sticky,
+  .sticky-filter,
+  header + .filter-bar,
+  [data-sticky="filter"] {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    /* Cap so it doesn't push events out of view */
+    max-height: 40vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Shadow to indicate stickiness */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   EVENT GRID — single column on mobile
+   ──────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  #event-grid,
+  .event-grid,
+  [data-component="EventGrid"] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding: 0 0.75rem;
+  }
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   GENERAL TYPOGRAPHY FLOOR — prevent text too small to read
+   ──────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;          /* 16px floor */
+  }
+
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+  h3 { font-size: 1.0625rem; }
+
+  /* Prevent iOS tap highlight flash */
+  a, button, select, input {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Ensure all interactive elements meet 44px tap target */
+  a.btn,
+  button,
+  .cta-link {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
