@@ -1,19 +1,25 @@
 {
-  "scraped_at": "2026-05-01T12:56:17.524578+02:00",
+  "scraped_at": "2026-05-01T15:26:26.791484+02:00",
   "city": "ludwigsburg",
-  "event_count": 309,
+  "event_count": 478,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
+    "karlskaserne_ausstellungen",
+    "karlskaserne_veranstaltungen",
     "labyrinth",
+    "museum",
     "schloss"
   ],
   "source_counts": {
+    "museum": 50,
     "schloss": 259,
-    "labyrinth": 50
+    "karlskaserne_veranstaltungen": 115,
+    "labyrinth": 50,
+    "karlskaserne_ausstellungen": 4
   },
   "sources_failed": [],
-  "data_hash": "b6850121f008a78c",
+  "data_hash": "0c9a7cbde69b4621",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 01.05.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-source-v1"
