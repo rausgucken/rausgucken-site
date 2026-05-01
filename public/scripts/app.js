@@ -149,3 +149,29 @@
   // Initial render
   applyFilters();
 })();
+
+// ── Mobile filter toggle ────────────────────────────────────────────────────
+(function () {
+  const btn = document.getElementById('filter-toggle-btn');
+  const bar = document.getElementById('filter-bar');
+  if (!btn || !bar) return;
+
+  // On mobile, start collapsed. On desktop, always open (CSS handles display).
+  function isMobile() { return window.innerWidth <= 700; }
+
+  function syncState() {
+    if (!isMobile()) {
+      bar.classList.remove('is-open');
+      bar.style.display = '';      // let CSS control desktop
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  btn.addEventListener('click', () => {
+    const open = bar.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+
+  window.addEventListener('resize', syncState);
+  syncState();
+})();

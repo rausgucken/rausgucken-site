@@ -16,6 +16,15 @@
     <a href="/ludwigsburg/kinder"           class="shortcut-pill shortcut-pill--sage">Kinder &amp; Familie</a>
   </div>
 
+  <!-- Mobile collapse toggle — hidden on desktop via CSS -->
+  <button class="filter-toggle-btn" id="filter-toggle-btn"
+          aria-expanded="false" aria-controls="filter-bar"
+          type="button">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+    Filter
+    <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+
   <div class="filter-bar" id="filter-bar" role="search" aria-label="Veranstaltungen filtern">
 
     <!-- 1. DATE FROM -->
@@ -233,4 +242,50 @@
   @media (max-width: 380px) {
     .filter-group { flex: 1 1 100%; }
   }
+
+  /* ── Mobile filter toggle ──────────────────────────────────────────────── */
+  .filter-toggle-btn {
+    display: none; /* hidden on desktop */
+  }
+
+  @media (max-width: 700px) {
+    /* Hide filter bar by default on mobile */
+    .filter-bar {
+      display: none;
+    }
+    .filter-bar.is-open {
+      display: flex;
+    }
+
+    /* Show toggle button on mobile */
+    .filter-toggle-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.5rem;
+      background: var(--surface-card);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: left;
+      transition: border-color 150ms;
+    }
+    .filter-toggle-btn:hover { border-color: var(--coral); }
+    .filter-toggle-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+    .filter-toggle-btn .chevron {
+      margin-left: auto;
+      transition: transform 200ms ease;
+    }
+    .filter-toggle-btn[aria-expanded="true"] .chevron {
+      transform: rotate(180deg);
+    }
+  }
+
 </style>
