@@ -117,6 +117,7 @@ import { renderEventCard, injectEventCardStyles } from '/scripts/renderEventCard
     if (sub) sub.textContent = `${data.length} Veranstaltungen · ${sub.textContent}`;
 
     list.hidden = false;
+    list.style.display = "flex";
   } catch(e) {
     loading.textContent = 'Daten konnten nicht geladen werden.';
   }

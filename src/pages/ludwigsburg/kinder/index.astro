@@ -169,6 +169,7 @@ import { renderEventCard, injectEventCardStyles } from '/scripts/renderEventCard
     emptyEl.hidden = true;
     events.forEach(ev => listEl.appendChild(renderEventCard(ev)));
     listEl.hidden = false;
+    listEl.style.display = "flex";
   }
 
   function applyFilter(age) {
