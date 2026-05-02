@@ -135,7 +135,7 @@ import { renderEventCard, injectEventCardStyles } from '/scripts/renderEventCard
 
     data.forEach(ev => listEl.appendChild(renderEventCard(ev)));
     listEl.hidden = false;
-    listEl.style.display = "flex";
+    listEl.style.cssText = "display:flex;flex-direction:column;gap:0.75rem";
 
   } catch (err) {
     loadingEl.setAttribute('aria-busy', 'false');
