@@ -182,13 +182,7 @@ const jsonLd = {
 
   /* ── Event list ─────────────────────────────────────────────────────────── */
   /* Design spec: Standard Event = vertical list only, max-w-content (720px) */
-  .event-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    max-width: 720px;
-    margin: 0 auto;
-  }
+  /* .event-list is defined globally in Base.astro */
 
   /* Expired/Stale events — design spec Part III §2 */
   .event-card--expired { opacity: 0.75; filter: grayscale(50%); }
