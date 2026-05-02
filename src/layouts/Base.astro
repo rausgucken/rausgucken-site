@@ -285,10 +285,12 @@ const websiteSchema = isHomepage ? {
     .footer-legal a { color: var(--text-60); }
 
     /* ── Shared: breadcrumb ────────────────────────────────────────────────── */
+    /* Design rule v2.1: breadcrumb links are navigation, not secondary text.
+       Full-opacity var(--text) required — opacity-70 fails WCAG on dark bg.
+       Only separators and the current page label use reduced opacity. */
     .breadcrumb {
       font-size: 0.82rem;
       color: var(--text);
-      /* No opacity here — children set their own so they don't compound */
       margin-bottom: 1.5rem;
       display: flex;
       align-items: center;
@@ -297,19 +299,17 @@ const websiteSchema = isHomepage ? {
     }
     nav.breadcrumb a {
       color: var(--text);
-      opacity: 0.70;
       text-decoration: underline;
       text-decoration-color: transparent;
-      transition: opacity 150ms, text-decoration-color 150ms;
+      transition: color 150ms, text-decoration-color 150ms;
     }
     nav.breadcrumb a:hover {
-      opacity: 1;
       color: var(--coral);
       text-decoration-color: var(--coral);
       text-decoration: underline;
     }
-    .breadcrumb span[aria-hidden] { opacity: 0.40; }
-    .breadcrumb span[aria-current] { opacity: 1; font-weight: 600; }
+    .breadcrumb span[aria-hidden] { color: var(--text-60); }
+    .breadcrumb span[aria-current] { color: var(--text); font-weight: 600; }
 
     /* ── Shared: page header ───────────────────────────────────────────────── */
     .page-header { margin-bottom: 1.75rem; max-width: 720px; }
