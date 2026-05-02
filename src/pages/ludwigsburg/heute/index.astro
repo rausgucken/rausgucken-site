@@ -96,7 +96,8 @@ const breadcrumbSchema = {
 
   try {
     const res  = await fetch('/data/ludwigsburg/today.json');
-    const data = await res.json();
+    const _raw = await res.json();
+    const data = _raw.events ?? _raw;
 
     loading.hidden = true;
 

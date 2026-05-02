@@ -117,7 +117,8 @@ const breadcrumbSchema = {
   try {
     const res  = await fetch('/data/ludwigsburg/tomorrow.json');
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
+    const _raw = await res.json();
+    const data = _raw.events ?? _raw;
 
     loadingEl.hidden = true;
 

@@ -222,7 +222,8 @@ const breadcrumbSchema = {
   try {
     const res  = await fetch('/data/ludwigsburg/this-weekend.json');
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    allEvents = await res.json();
+    const _raw = await res.json();
+    allEvents = _raw.events ?? _raw;
 
     loadingEl.hidden = true;
 
