@@ -169,6 +169,14 @@ export function renderEventCard(ev) {
  * Injected once per page via injectEventCardStyles().
  */
 const EVENT_CARD_CSS = `
+  .event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
   .event-card {
     background: var(--surface-card, var(--surface));
     border: 1px solid var(--border);
