@@ -235,9 +235,9 @@
   @media (max-width: 700px) {
     .filter-wrapper { top: 64px; }
     .filter-bar { gap: 0.65rem; padding: 0.85rem 1rem; }
-    .filter-group { flex: 1 1 calc(50% - 0.5rem); }
+    .filter-group { flex: 1 1 calc(50% - 0.5rem); min-width: 0; overflow: hidden; }
     select { min-width: 100%; width: 100%; }
-    input[type="date"] { width: 100%; min-width: unset; }
+    input[type="date"] { width: 100%; min-width: 0; }
     .filter-reset { width: 100%; }
   }
   @media (max-width: 380px) {
