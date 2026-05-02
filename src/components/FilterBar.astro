@@ -191,7 +191,7 @@
   }
   select             { min-width: 145px; max-width: 220px; }
   #location-filter   { max-width: 180px; }
-  input[type="date"] { width: 148px; padding: 0 0.6rem; }
+  input[type="date"] { width: 148px; padding: 0 0.6rem; box-sizing: border-box; }
 
   select:focus,
   input[type="date"]:focus {
@@ -234,10 +234,28 @@
   /* ── Mobile ─────────────────────────────────────────────────────────────── */
   @media (max-width: 700px) {
     .filter-wrapper { top: 64px; }
-    .filter-bar { gap: 0.65rem; padding: 0.85rem 1rem; }
-    .filter-group { flex: 1 1 calc(50% - 0.5rem); min-width: 0; }
-    select { min-width: 100%; width: 100%; }
-    input[type="date"] { width: 100%; min-width: 0; }
+    .filter-bar {
+      gap: 0.65rem;
+      padding: 0.85rem 1rem;
+      /* Ensure children cannot overflow the rounded card border */
+      overflow: hidden;
+    }
+    .filter-group {
+      /* Account for gap (0.65rem) in the 50% split so neither column overflows */
+      flex: 1 1 calc(50% - 0.65rem);
+      min-width: 0;
+      /* Prevent the group itself from pushing outside the card */
+      overflow: hidden;
+    }
+    select { min-width: 0; width: 100%; max-width: 100%; }
+    input[type="date"] {
+      /* Override the fixed 148px width set in base styles */
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      /* box-sizing ensures padding is included in the 100% width */
+      box-sizing: border-box;
+    }
     .filter-reset { width: 100%; }
   }
   @media (max-width: 380px) {
