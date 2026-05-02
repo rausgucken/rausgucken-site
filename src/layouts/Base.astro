@@ -339,6 +339,9 @@ const websiteSchema = isHomepage ? {
       border-radius: 20px;
     }
 
+    /* ── Global: ensure [hidden] always wins over display:flex/block etc. ─── */
+    [hidden] { display: none !important; }
+
     /* ── Shared: loading state ─────────────────────────────────────────────── */
     .loading-state {
       display: flex;
