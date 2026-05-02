@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-05-02T21:15:13.704194+02:00",
+  "scraped_at": "2026-05-03T00:32:24.746997+02:00",
   "city": "ludwigsburg",
-  "event_count": 654,
+  "event_count": 651,
   "flagged_count": 0,
   "expired_count": 57,
   "sources_scraped": [
@@ -17,28 +17,28 @@
   "source_counts": {
     "kunstverein_ausstellungen": 6,
     "museum": 50,
-    "schloss": 256,
-    "stabi": 168,
     "karlskaserne_veranstaltungen": 115,
     "labyrinth": 50,
+    "schloss": 254,
+    "stabi": 167,
     "karlskaserne_ausstellungen": 4,
     "kunstverein_veranstaltungen": 5
   },
   "sources_failed": [],
-  "data_hash": "c6cbca173111fd90",
+  "data_hash": "2d1081eacf82a8cc",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 02.05.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 03.05.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-source-v1",
   "quality_report": {
     "regression_pass_rate": null,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "insufficient_data",
-    "runtime_minutes": 16.3,
-    "runtime_delta_vs_baseline": -0.687,
+    "runtime_minutes": 15.8,
+    "runtime_delta_vs_baseline": -0.696,
     "source_health": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-05-02T21:15:13.736766+02:00"
+    "generated_at": "2026-05-03T00:37:24.885658+02:00"
   }
 }
