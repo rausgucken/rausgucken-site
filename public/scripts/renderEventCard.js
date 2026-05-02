@@ -236,6 +236,13 @@ const EVENT_CARD_CSS = `
   html.dark .source-link:hover { color: var(--coral); }
 
   .freshness-stamp { font-size: 0.67rem; color: var(--text); opacity: 0.70; }
+
+  /* Ensure event-list flex layout always wins — injected CSS loads last */
+  .event-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
 `;
 
 let stylesInjected = false;
