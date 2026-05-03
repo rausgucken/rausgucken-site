@@ -1,0 +1,52 @@
+---
+// src/components/Disclaimer.astro
+// Usage:
+//   <Disclaimer />                        — micro (card-level)
+//   <Disclaimer variant="full" />         — full text for /about + footer
+//   <Disclaimer variant="footer" />       — shortened footer version
+
+interface Props {
+  variant?: 'micro' | 'footer' | 'full';
+}
+const { variant = 'micro' } = Astro.props;
+
+const micro  = 'Alle Angaben ohne Gewähr.';
+const footer = 'Alle Angaben ohne Gewähr. Bitte Originalseite prüfen.';
+const full   = `Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch
+von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt
+übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität
+der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite
+(„Originalseite" Link bei jedem Eintrag) bevor Sie teilnehmen.`;
+---
+
+<p class:list={['disclaimer', `disclaimer--${variant}`]}>
+  {variant === 'micro'  && micro}
+  {variant === 'footer' && footer}
+  {variant === 'full'   && full}
+  {variant === 'full' && <a href="/about" class="disclaimer__link">Mehr Informationen</a>}
+</p>
+
+<style>
+  .disclaimer {
+    font-family: var(--font-body, 'Inter', sans-serif);
+    color: #373F51;
+    opacity: 0.7;
+    line-height: 1.5;
+  }
+
+  :global(.dark) .disclaimer {
+    color: #FFFDF9;
+  }
+
+  .disclaimer--micro  { font-size: 11px; }
+  .disclaimer--footer { font-size: 12px; }
+  .disclaimer--full   { font-size: 13px; max-width: 60ch; }
+
+  .disclaimer__link {
+    margin-left: 4px;
+    color: inherit;
+    text-underline-offset: 2px;
+  }
+  .disclaimer__link:hover { opacity: 1; }
+</style>
+

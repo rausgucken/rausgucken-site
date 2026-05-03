@@ -1,0 +1,142 @@
+---
+// src/components/FreshnessStamp.astro
+// Usage:
+//   <FreshnessStamp scrapedAt={meta.scraped_at} />
+//   <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" />
+
+interface Props {
+  scrapedAt: string;       // ISO 8601 string from meta.json or event
+  size?: 'sm' | 'md' | 'lg';
+  showTime?: boolean;
+}
+
+const { scrapedAt, size = 'md', showTime = true } = Astro.props;
+
+const scraped = new Date(scrapedAt);
+const now     = new Date();
+const diffMs  = now.getTime() - scraped.getTime();
+const diffDays = diffMs / (1000 * 60 * 60 * 24);
+
+// Dot state logic
+type DotState = 'today' | 'recent' | 'older';
+let dotState: DotState;
+if (diffDays < 1)      dotState = 'today';
+else if (diffDays < 4) dotState = 'recent';
+else                   dotState = 'older';
+
+// Human-readable label (German)
+let label: string;
+if (diffDays < 1) {
+  const timeStr = scraped.toLocaleTimeString('de-DE', {
+    hour: '2-digit', minute: '2-digit'
+  });
+  label = showTime ? `Zuletzt aktualisiert: Heute, ${timeStr}` : 'Heute aktualisiert';
+} else if (diffDays < 2) {
+  label = 'Zuletzt aktualisiert: Gestern';
+} else if (diffDays < 7) {
+  const days = Math.floor(diffDays);
+  label = `Zuletzt aktualisiert: vor ${days} Tagen`;
+} else {
+  const dateStr = scraped.toLocaleDateString('de-DE', {
+    day: '2-digit', month: '2-digit', year: 'numeric'
+  });
+  label = `Stand: ${dateStr}`;
+}
+
+const sizeClass = size === 'sm' ? 'freshness-stamp--sm'
+                : size === 'lg' ? 'freshness-stamp--lg'
+                : '';
+---
+
+<span class:list={['freshness-stamp', sizeClass]} aria-label={label}>
+  <span class="freshness-stamp__dot" aria-hidden="true">
+    {dotState === 'today'  && <span class="dot dot--today"></span>}
+    {dotState === 'recent' && <span class="dot dot--recent"></span>}
+    {dotState === 'older'  && <span class="dot dot--older"></span>}
+  </span>
+  <span>{label}</span>
+</span>
+
+<style>
+  .freshness-stamp {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-body, 'Inter', sans-serif);
+    font-size: 13px;
+    line-height: 1.4;
+    /* Design system rule: default text color + opacity-70 only. Never Coral. */
+    color: #373F51;           /* text-charcoal */
+    opacity: 0.7;
+  }
+
+  :global(.dark) .freshness-stamp {
+    color: #FFFDF9;           /* text-offwhite */
+  }
+
+  .freshness-stamp--sm { font-size: 12px; }
+  .freshness-stamp--lg { font-size: 14px; }
+
+  .freshness-stamp__dot {
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ● Today — coral fill, subtle pulse */
+  .dot--today {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FF6F61;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .dot--today {
+      animation: freshness-pulse 2.4s ease-out infinite;
+    }
+  }
+
+  @keyframes freshness-pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(255, 111, 97, 0.35); }
+    70%  { box-shadow: 0 0 0 5px rgba(255, 111, 97, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 111, 97, 0); }
+  }
+
+  /* ◐ Recent — half coral */
+  .dot--recent {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #C8C8C8;
+    position: relative;
+  }
+
+  .dot--recent::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 50%; height: 100%;
+    background: #FF6F61;
+  }
+
+  :global(.dark) .dot--recent {
+    background: #666;
+  }
+
+  /* ○ Older — outline ring */
+  .dot--older {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1.5px solid currentColor;
+    opacity: 0.5;
+  }
+</style>
