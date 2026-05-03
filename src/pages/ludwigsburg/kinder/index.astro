@@ -3,13 +3,13 @@ import Base from "../../../layouts/Base.astro";
 import EventCard from "../../../components/EventCard.astro";
 import FilterBar from "../../../components/FilterBar.astro";
 
-import eventsData from "../../../../public/data/ludwigsburg/events-current.json";
+import eventsData from "../../../../public/data/ludwigsburg/kinder.json";
 import metaData from "../../../../public/data/ludwigsburg/meta.json";
 
 const meta = metaData;
 
 // Filter for children's events — tags includes "Kinder" or "Familie"
-const allKinder = (eventsData as any[]).filter((e: any) =>
+
   Array.isArray(e.tags) &&
   (e.tags.includes("Kinder") || e.tags.includes("Familie"))
 );
