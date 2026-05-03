@@ -1,337 +1,188 @@
 ---
-// src/pages/ludwigsburg/kinder/index.astro
-// SEO §2: Permanent category landing page. Canonical to itself. Never a redirect.
-// SEO §9: Keyword-first title with dynamic event count (client-side) and city name.
-// SEO §3: Events loaded client-side from kinder.json (Tier 2 daily data swap).
-// Design: Dot Doctrine — dual-dot (● ·) motif on Familie tag (design-philosophy v2.0 §I.5).
-
 import Base from "../../../layouts/Base.astro";
+import EventCard from "../../../components/EventCard.astro";
+import FilterBar from "../../../components/FilterBar.astro";
 
-const siteUrl = "https://rausgucken.de";
-const city    = "ludwigsburg";
+import eventsData from "../../../../public/data/ludwigsburg/events-current.json";
+import metaData from "../../../../public/data/ludwigsburg/meta.json";
 
-const now     = new Date();
-const todayDE = now.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
+const meta = metaData;
 
-const seoTitle  = `Kinderveranstaltungen Ludwigsburg – Kinder & Familie | rausgucken.de`;
-const metaDesc  = `Kinderveranstaltungen in Ludwigsburg: Workshops, Ausflüge, Spielangebote, Führungen für Familien. Aktuell, lokal, übersichtlich.`;
-const canonical = `${siteUrl}/${city}/kinder/`;
+// Filter for children's events — tags includes "Kinder" or "Familie"
+const allKinder = (eventsData as any[]).filter((e: any) =>
+  Array.isArray(e.tags) &&
+  (e.tags.includes("Kinder") || e.tags.includes("Familie"))
+);
 
-// CollectionPage schema — SEO §10B
-const collectionSchema = {
+const dated    = allKinder.filter((e: any) => e.date_start);
+const standing = allKinder.filter((e: any) => !e.date_start);
+
+const scrapedDate = meta.scraped_at
+  ? new Date(meta.scraped_at).toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" })
+  : "–";
+
+const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": `Kinderveranstaltungen Ludwigsburg – Kinder & Familie`,
-  "description": metaDesc,
-  "url": canonical,
+  "name": "Kinderveranstaltungen in Ludwigsburg",
+  "description": `${allKinder.length} Veranstaltungen für Kinder und Familien in Ludwigsburg – Workshops, Ausstellungen, Führungen und mehr.`,
+  "url": "https://rausgucken.de/ludwigsburg/kinder/",
   "inLanguage": "de-DE",
-};
-
-// BreadcrumbList schema — SEO §10C
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "rausgucken.de",   "item": siteUrl },
-    { "@type": "ListItem", "position": 2, "name": "Ludwigsburg",     "item": `${siteUrl}/${city}/` },
-    { "@type": "ListItem", "position": 3, "name": "Kinder & Familie","item": canonical },
-  ],
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://rausgucken.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Ludwigsburg", "item": "https://rausgucken.de/ludwigsburg/" },
+      { "@type": "ListItem", "position": 3, "name": "Kinder & Familie", "item": "https://rausgucken.de/ludwigsburg/kinder/" }
+    ]
+  }
 };
 ---
 
 <Base
-  title={seoTitle}
-  description={metaDesc}
-  canonical={canonical}
-  ogImage="/og/ludwigsburg/kinder.jpg"
-  schema={[collectionSchema, breadcrumbSchema]}
+  title={`Kinderveranstaltungen Ludwigsburg – ${allKinder.length} Events für Kinder & Familien | rausgucken.de`}
+  description={`${allKinder.length} aktuelle Veranstaltungen für Kinder und Familien in Ludwigsburg. Workshops, Ausstellungen, Führungen und kostenlose Events – lokal, aktuell, übersichtlich.`}
+  city="ludwigsburg"
 >
+  <link rel="canonical" href="https://rausgucken.de/ludwigsburg/kinder/" slot="head-extra" />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
-  <!-- Breadcrumb — visible + schema-backed (SEO §10C) -->
-  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
-    <a href="/">rausgucken.de</a>
-    <span aria-hidden="true"> › </span>
-    <a href="/ludwigsburg">Ludwigsburg</a>
-    <span aria-hidden="true"> › </span>
-    <span aria-current="page">Kinder &amp; Familie</span>
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">rausgucken.de</a></li>
+      <li aria-hidden="true">›</li>
+      <li><a href="/ludwigsburg/">Ludwigsburg</a></li>
+      <li aria-hidden="true">›</li>
+      <li aria-current="page">Kinder & Familie</li>
+    </ol>
   </nav>
 
   <div class="page-header">
-    <div class="page-header-top">
-      <!-- Dual-dot motif: design-philosophy v2.0 §I.5 — Tier 1 functional UI use -->
-      <span class="dual-dot" aria-hidden="true">● ·</span>
-      <h1>Kinderveranstaltungen Ludwigsburg</h1>
+    <div class="page-header-eyebrow">
+      <span class="dot-dual" aria-hidden="true">● ·</span>
+      Kinder & Familie
     </div>
+    <h1>Kinderveranstaltungen in Ludwigsburg</h1>
     <p class="page-subtitle">
-      <span id="event-count-badge" class="count-badge" hidden></span>
-      Kinder, Familie &amp; Entdecken in Ludwigsburg
-    </p>
-    <p class="page-intro">
-      Ausflüge, Workshops, Theateraufführungen und Mitmachaktionen für Kinder und Familien –
-      kuratiert aus Ludwigsburger Veranstaltungsquellen, täglich aktuell.
+      {allKinder.length} Veranstaltungen für Kinder und Familien · Stand: {scrapedDate}
     </p>
   </div>
 
-  <!-- Age-range filter tabs — in-memory, no refetch -->
-  <div class="age-tabs" role="tablist" aria-label="Altersgruppe filtern" id="age-tabs">
-    <button class="age-tab age-tab--active" role="tab" aria-selected="true"  data-age="alle"    id="tab-alle"    aria-controls="event-list">Alle Altersgruppen</button>
-    <button class="age-tab"                 role="tab" aria-selected="false" data-age="kleinkind" id="tab-kleinkind" aria-controls="event-list">Kleinkinder (0–3)</button>
-    <button class="age-tab"                 role="tab" aria-selected="false" data-age="kita"    id="tab-kita"    aria-controls="event-list">Kita &amp; Vorschule (3–6)</button>
-    <button class="age-tab"                 role="tab" aria-selected="false" data-age="grundschule" id="tab-grundschule" aria-controls="event-list">Grundschule (6–10)</button>
-    <button class="age-tab"                 role="tab" aria-selected="false" data-age="familie" id="tab-familie" aria-controls="event-list">Familie ● ·</button>
-  </div>
+  {meta.sources_failed && meta.sources_failed.length > 0 && (
+    <div class="sources-warning" role="alert">
+      <strong>⚠ Hinweis:</strong> {meta.sources_failed.length} {meta.sources_failed.length === 1 ? "Quelle" : "Quellen"} derzeit nicht erreichbar — Angaben können unvollständig sein.
+    </div>
+  )}
 
-  <!-- Event list — loaded client-side from kinder.json -->
-  <div id="events-container" aria-live="polite" aria-label="Kinderveranstaltungen" class="events-container">
-    <div class="loading-state" id="loading-state" aria-busy="true">
-      <span class="loading-spinner" aria-hidden="true"></span>
-      Lade Kinderveranstaltungen…
-    </div>
-    <div class="event-list" id="event-list" hidden aria-label="Kinderveranstaltungen in Ludwigsburg"></div>
-    <div class="empty-state" id="empty-state" hidden>
-      <div class="empty-inner">
-        <p class="empty-icon" aria-hidden="true">🎨</p>
-        <p class="empty-headline">Gerade keine Kinderveranstaltungen eingetragen.</p>
-        <p class="empty-body">Schau bald wieder vorbei – neue Veranstaltungen werden täglich ergänzt.</p>
-        <div class="empty-ctas">
-          <a href="/ludwigsburg/heute" class="btn-cta">Was ist heute los? →</a>
-          <a href="/ludwigsburg" class="btn-cta btn-cta--ghost">Alle Veranstaltungen</a>
-        </div>
+  <aside class="disclaimer-box">
+    <strong>Hinweis:</strong> {meta.disclaimer_note || "Alle Angaben ohne Gewähr. Bitte prüfen Sie Infos auf der jeweiligen Originalseite."}
+    <a href="/about">Mehr Informationen</a>
+  </aside>
+
+  <FilterBar />
+
+  <div class="empty-state" id="empty-state" aria-live="polite" hidden>
+    <div class="empty-state-inner">
+      <p class="empty-headline">Keine Treffer für diese Filter.</p>
+      <p class="empty-body">Vielleicht ist heute ein guter Tag, einfach rauszugehen!</p>
+      <div class="empty-ctas">
+        <a href="/ludwigsburg/heute/" class="empty-cta">Alle heutigen Events →</a>
+        <a href="/ludwigsburg/" class="empty-cta">Alle Veranstaltungen →</a>
       </div>
-    </div>
-    <div class="empty-state" id="empty-filter-state" hidden>
-      <div class="empty-inner empty-inner--slim">
-        <p class="empty-body">Keine Veranstaltungen für diese Altersgruppe gefunden.</p>
-        <button class="btn-cta btn-cta--ghost" id="reset-filter">Alle Altersgruppen anzeigen</button>
-      </div>
+      <button class="empty-reset" id="empty-reset-btn" type="button">
+        Filter zurücksetzen
+      </button>
     </div>
   </div>
 
-  <!-- Internal linking mesh — SEO §22 -->
-  <nav class="temporal-nav" aria-label="Andere Zeiträume in Ludwigsburg">
-    <p class="temporal-label">Andere Zeiträume</p>
-    <div class="temporal-links">
-      <a href="/ludwigsburg/heute">Heute</a>
-      <a href="/ludwigsburg/morgen">Morgen</a>
-      <a href="/ludwigsburg/dieses-wochenende">Dieses Wochenende</a>
-      <a href="/ludwigsburg/naechste-woche">Nächste Woche</a>
-      <a href="/ludwigsburg">Alle Veranstaltungen</a>
+  {dated.length > 0 && (
+    <section id="section-dated">
+      <div id="event-grid" class="event-grid">
+        {dated.map((ev: any) => <EventCard event={ev} />)}
+      </div>
+    </section>
+  )}
+
+  {standing.length > 0 && (
+    <section id="section-standing">
+      <h2 class="section-heading">Dauerausstellungen & laufende Angebote</h2>
+      <div class="event-grid">
+        {standing.map((ev: any) => <EventCard event={ev} />)}
+      </div>
+    </section>
+  )}
+
+  {allKinder.length === 0 && (
+    <div class="empty-state-static">
+      <p>Aktuell keine Kinderveranstaltungen gefunden. Schau bald wieder rein!</p>
+      <a href="/ludwigsburg/" class="empty-cta">Alle Veranstaltungen in Ludwigsburg →</a>
     </div>
+  )}
+
+  <nav class="related-pages" aria-label="Weitere Seiten">
+    <h2 class="related-heading">Weitere Seiten</h2>
+    <ul class="related-links">
+      <li><a href="/ludwigsburg/heute/">Events heute</a></li>
+      <li><a href="/ludwigsburg/morgen/">Events morgen</a></li>
+      <li><a href="/ludwigsburg/dieses-wochenende/">Dieses Wochenende</a></li>
+      <li><a href="/ludwigsburg/naechste-woche/">Nächste Woche</a></li>
+      <li><a href="/ludwigsburg/">Alle Veranstaltungen Ludwigsburg</a></li>
+    </ul>
   </nav>
-
 </Base>
 
-
-<!-- Client-side fetch from kinder.json — Tier 2 daily data swap -->
-<script type="module">
-import { renderEventCard, injectEventCardStyles } from '/scripts/renderEventCard.js';
-
-(async function () {
-  injectEventCardStyles();
-
-  const listEl      = document.getElementById('event-list');
-  const emptyEl     = document.getElementById('empty-state');
-  const loadingEl   = document.getElementById('loading-state');
-  const badgeEl     = document.getElementById('event-count-badge');
-  const tabsEl      = document.getElementById('age-tabs');
-  const resetBtn    = document.getElementById('reset-filter');
-
-  let allEvents = [];
-  let activeAge = 'alle';
-
-  const AGE_KEYWORDS = {
-    kleinkind:   ['kleinkind', 'baby', 'krabbel', '0-3', '0–3', 'ab 0', 'ab 1', 'ab 2'],
-    kita:        ['kita', 'kindergarten', 'vorschule', '3-6', '3–6', 'ab 3', 'ab 4', 'ab 5'],
-    grundschule: ['grundschule', 'schulkind', '6-12', '6–12', 'ab 6', 'ab 7', 'ab 8', 'ab 9', 'ab 10'],
-    familie:     ['familie', 'familien', 'eltern', 'kinder', 'kids'],
-  };
-
-  function eventMatchesAge(ev, age) {
-    if (age === 'alle') return true;
-    const keywords = AGE_KEYWORDS[age] || [];
-    const haystack = [
-      ...(ev.tags || []),
-      ev.title || '',
-      ev.description || '',
-    ].join(' ').toLowerCase();
-    return keywords.some(kw => haystack.includes(kw));
-  }
-
-  function renderEvents(events) {
-    listEl.innerHTML = '';
-
-    if (events.length === 0) {
-      listEl.hidden = true;
-      emptyEl.hidden = false;
-      return;
-    }
-
-    emptyEl.hidden = true;
-    events.forEach(ev => listEl.appendChild(renderEventCard(ev)));
-    listEl.hidden = false;
-    listEl.style.cssText = "display:flex;flex-direction:column;gap:0.75rem";
-  }
-
-  function applyFilter(age) {
-    activeAge = age;
-
-    document.querySelectorAll('.age-tab').forEach(btn => {
-      const isActive = btn.dataset.age === age;
-      btn.classList.toggle('age-tab--active', isActive);
-      btn.setAttribute('aria-selected', String(isActive));
-    });
-
-    const filtered = allEvents.filter(ev => eventMatchesAge(ev, age));
-    renderEvents(filtered);
-
-    if (badgeEl) {
-      const count = filtered.length;
-      badgeEl.textContent = count + ' Veranstaltung' + (count !== 1 ? 'en' : '');
-      badgeEl.hidden = false;
-    }
-  }
-
-  if (tabsEl) {
-    tabsEl.addEventListener('click', e => {
-      const tab = e.target.closest('.age-tab');
-      if (!tab) return;
-      applyFilter(tab.dataset.age);
-    });
-  }
-
-  if (resetBtn) {
-    resetBtn.addEventListener('click', () => applyFilter('alle'));
-  }
-
-  try {
-    const res  = await fetch('/data/ludwigsburg/kinder.json');
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    allEvents = await res.json();
-
-    loadingEl.hidden = true;
-
-    if (!Array.isArray(allEvents) || allEvents.length === 0) {
-      emptyEl.hidden = false;
-      return;
-    }
-
-    if (badgeEl) {
-      badgeEl.textContent = allEvents.length + ' Veranstaltung' + (allEvents.length !== 1 ? 'en' : '');
-      badgeEl.hidden = false;
-    }
-
-    renderEvents(allEvents);
-
-  } catch (err) {
-    loadingEl.setAttribute('aria-busy', 'false');
-    loadingEl.textContent = 'Veranstaltungen konnten nicht geladen werden. Bitte Seite neu laden.';
-  }
-})();
-</script>
-
-
 <style>
-.age-badge {
-    display: inline-flex;
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+  .breadcrumbs a { text-decoration: underline; text-underline-offset: 2px; }
+
+  .page-header-eyebrow {
+    display: flex;
     align-items: center;
-    background: var(--sage, #90BE6D);
-    color: var(--text); /* Charcoal on Sage */
-    font-size: 0.68rem;
-    font-weight: 700;
-    padding: 2px 8px;
-    border-radius: 20px;
-    white-space: nowrap;
-    letter-spacing: 0.01em;
-  }
-
-  /* Dual-dot in Familie badge — subtle nod to brand motif */
-  .age-badge--familie { background: var(--sage, #90BE6D); }
-
-  .tag {
-    background: var(--tag-bg);
-    color: var(--text-60);
-    font-size: 0.7rem;
-    font-weight: 500;
-    padding: 2px 8px;
-    border-radius: 20px;
-    white-space: nowrap;
-  }
-
-  /* ── Empty states ────────────────────────────────────────────────────────── */
-  .empty-state { padding: 1rem 0 2rem; }
-  .empty-inner {
-    background: var(--surface-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 2.5rem 2rem;
-    text-align: center;
-    box-shadow: var(--shadow-card);
-  }
-  .empty-inner--slim { padding: 1.25rem 1.5rem; }
-  .empty-icon        { font-size: 2rem; margin-bottom: 0.75rem; }
-  .empty-headline {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1.1rem;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.7;
     margin-bottom: 0.5rem;
   }
-  .empty-body  { color: var(--text-60); font-size: 0.92rem; margin-bottom: 1.5rem; line-height: 1.6; }
-  .empty-ctas  { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+  .dot-dual { color: var(--brand-coral, #FF6F61); font-size: 0.75rem; letter-spacing: 0.15em; }
 
-  /* Coral bg → Charcoal text — NEVER white on coral */
-  .btn-cta {
-    display: inline-flex;
-    align-items: center;
-    height: 44px;
-    padding: 0 1.25rem;
-    background: var(--coral);
-    color: var(--text);
-    border: none;
-    border-radius: var(--radius-sm);
-    font-weight: 600;
-    font-size: 0.875rem;
-    font-family: var(--font-body);
-    text-decoration: none;
-    cursor: pointer;
-    transition: background 150ms;
-  }
-  .btn-cta:hover { background: var(--coral-dark, #e85d50); text-decoration: none; }
-  .btn-cta--ghost { background: var(--tag-bg); color: var(--text-60); }
-  .btn-cta--ghost:hover { background: var(--coral-light, #fff0ee); color: var(--coral); }
-
-  /* ── Temporal nav — SEO §22 internal linking mesh ───────────────────────── */
-  .temporal-nav {
+  .related-pages {
     margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border);
-    max-width: 720px;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0,0,0,0.08);
   }
-  .temporal-label {
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-60);
-    margin-bottom: 0.65rem;
-    font-family: var(--font-body);
+  :global(.dark) .related-pages { border-top-color: rgba(255,255,255,0.06); }
+  .related-heading { font-size: 0.9rem; font-weight: 600; opacity: 0.6; margin-bottom: 0.75rem; }
+  .related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
-  .temporal-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .temporal-links a {
-    display: inline-flex;
-    align-items: center;
-    height: 36px;
-    padding: 0 0.9rem;
-    background: var(--tag-bg);
-    color: var(--text-60);
-    border-radius: 20px;
-    font-size: 0.82rem;
-    font-weight: 500;
+  .related-links a {
+    font-size: 0.875rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+    opacity: 0.65;
     text-decoration: none;
-    transition: background 150ms, color 150ms;
+    transition: opacity 150ms;
   }
-  .temporal-links a:hover { background: var(--coral-light, #fff0ee); color: var(--coral); }
-
-  /* ── Mobile ─────────────────────────────────────────────────────────────── */
-  @media (max-width: 600px) {
-  }
+  .related-links a:hover { opacity: 1; }
+  .section-heading { font-size: 1.1rem; font-weight: 600; margin: 2.5rem 0 1rem; opacity: 0.8; }
+  .empty-state-static { text-align: center; padding: 3rem 1rem; opacity: 0.7; }
 </style>
