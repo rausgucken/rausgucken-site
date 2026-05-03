@@ -1,6 +1,8 @@
 ---
 // src/components/EventCard.astro
 const { event: ev } = Astro.props;
+import FreshnessStamp from './FreshnessStamp.astro';
+import Disclaimer from './Disclaimer.astro';
 
 function formatDate(iso) {
   if (!iso) return null;
