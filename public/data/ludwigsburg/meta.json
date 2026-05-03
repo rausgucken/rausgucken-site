@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-03T00:32:24.746997+02:00",
+  "scraped_at": "2026-05-03T10:52:12.965007+02:00",
   "city": "ludwigsburg",
   "event_count": 651,
   "flagged_count": 0,
@@ -25,20 +25,50 @@
     "kunstverein_veranstaltungen": 5
   },
   "sources_failed": [],
-  "data_hash": "2d1081eacf82a8cc",
+  "data_hash": "6923af10fe7f72b0",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 03.05.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-source-v1",
+  "source_health": {
+    "museum": 1.0,
+    "schloss": 1.0,
+    "karlskaserne_ausstellungen": 1.0,
+    "karlskaserne_veranstaltungen": 1.0,
+    "kunstverein_ausstellungen": 1.0,
+    "kunstverein_veranstaltungen": 1.0,
+    "stabi": 1.0,
+    "labyrinth": 1.0
+  },
+  "source_event_counts": {
+    "museum": 50,
+    "schloss": 254,
+    "karlskaserne_ausstellungen": 4,
+    "karlskaserne_veranstaltungen": 115,
+    "kunstverein_ausstellungen": 20,
+    "kunstverein_veranstaltungen": 48,
+    "stabi": 167,
+    "labyrinth": 50
+  },
+  "count_drift_warnings": {},
   "quality_report": {
     "regression_pass_rate": null,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
-    "trend": "insufficient_data",
+    "trend": "stable",
     "runtime_minutes": 15.8,
-    "runtime_delta_vs_baseline": -0.696,
-    "source_health": {},
+    "runtime_delta_vs_baseline": -0.012,
+    "source_health": {
+      "museum": 1.0,
+      "schloss": 1.0,
+      "karlskaserne_ausstellungen": 1.0,
+      "karlskaserne_veranstaltungen": 1.0,
+      "kunstverein_ausstellungen": 1.0,
+      "kunstverein_veranstaltungen": 1.0,
+      "stabi": 1.0,
+      "labyrinth": 1.0
+    },
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-05-03T00:37:24.885658+02:00"
+    "status": "healthy",
+    "generated_at": "2026-05-03T10:57:13.126430+02:00"
   }
 }
