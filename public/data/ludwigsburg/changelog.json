@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-03T10:52:12.926180+02:00",
+  "generated_at": "2026-05-03T11:59:47.711332+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "museum",
-    "schloss",
     "stabi",
+    "karlskaserne_veranstaltungen",
     "labyrinth",
-    "karlskaserne_ausstellungen",
     "kunstverein_ausstellungen",
+    "schloss",
     "kunstverein_veranstaltungen",
-    "karlskaserne_veranstaltungen"
+    "museum",
+    "karlskaserne_ausstellungen"
   ],
   "previous_run": null,
   "count_added": 708,
@@ -316,15 +316,15 @@
       "source": "museum"
     },
     {
-      "id": "55aa0c3383618e9f",
+      "id": "34fe17f85587e290",
       "title": "Klassische Schlossführung „Herzog“",
-      "date_start": null,
+      "date_start": "2026-05-14",
       "source": "schloss"
     },
     {
-      "id": "62ae6149244a83c4",
+      "id": "9ac7e96d16a1cc49",
       "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": null,
+      "date_start": "2026-05-14",
       "source": "schloss"
     },
     {
@@ -340,15 +340,15 @@
       "source": "schloss"
     },
     {
-      "id": "1ab4e9fc7e9765ac",
+      "id": "c58aa2615488b993",
       "title": "Klassische Schlossführung in englischer Sprache",
-      "date_start": null,
+      "date_start": "2026-05-14",
       "source": "schloss"
     },
     {
-      "id": "2cb0ded9abbbacec",
+      "id": "2c9ba0cfcbb50a9b",
       "title": "Klassische Führung für Familien",
-      "date_start": null,
+      "date_start": "2026-05-14",
       "source": "schloss"
     },
     {
@@ -358,9 +358,9 @@
       "source": "schloss"
     },
     {
-      "id": "3c2a42a31b2f2bc7",
+      "id": "2991af068c790a6a",
       "title": "„Weil menschlich so viel möglich ist“",
-      "date_start": null,
+      "date_start": "2026-05-08",
       "source": "schloss"
     },
     {
@@ -394,9 +394,9 @@
       "source": "schloss"
     },
     {
-      "id": "27fec74ba03ddae7",
+      "id": "09b978ef5241ddaf",
       "title": "Freier Rundgang",
-      "date_start": null,
+      "date_start": "2026-05-14",
       "source": "schloss"
     },
     {
@@ -4036,18 +4036,6 @@
       "source": "labyrinth"
     },
     {
-      "id": "a1edf15573610f5e",
-      "title": "Ferienworkshop: Pop-Up-Buch für Jugendliche ab 12 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "592e10a996a751df",
-      "title": "Ferienworkshop: Tanztheaterwerkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
       "id": "d0bc5d2f8736dd42",
       "title": "Ferienworkshop: Contemporary Dance für Kinder und Jugendliche von 10-14 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
@@ -4066,6 +4054,24 @@
       "source": "labyrinth"
     },
     {
+      "id": "a1edf15573610f5e",
+      "title": "Ferienworkshop: Pop-Up-Buch für Jugendliche ab 12 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "592e10a996a751df",
+      "title": "Ferienworkshop: Tanztheaterwerkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "48f9171defeca564",
+      "title": "Ferienworkshop: Wer ich mal sein will für Kinder ab 6 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
       "id": "ae9ade9ec9457a51",
       "title": "Ferienworkshop: Abenteuer Manege! für Kinder von 9-12 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
@@ -4078,38 +4084,8 @@
       "source": "labyrinth"
     },
     {
-      "id": "48f9171defeca564",
-      "title": "Ferienworkshop: Wer ich mal sein will für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "7de73bbaebbb7cac",
-      "title": "Ferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
       "id": "a6a866136a50dc4d",
       "title": "Ferienworkshop: Contemporary Kids für Kinder von 6-9 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "0b287a82fb49da32",
-      "title": "Ferienworkshop: Hip-Hop Streetdance Kids für Kinder von 7-9 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "df6e62caae57e551",
-      "title": "Ferienworkshop: Tanztheaterwerkstatt für Kinder von 8-10 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "0a0029bb5d01ac63",
-      "title": "Ferienworkshop: Wollene Wundertiere für Kinder ab 8 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
       "source": "labyrinth"
     },
@@ -4126,6 +4102,24 @@
       "source": "labyrinth"
     },
     {
+      "id": "0b287a82fb49da32",
+      "title": "Ferienworkshop: Hip-Hop Streetdance Kids für Kinder von 7-9 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "df6e62caae57e551",
+      "title": "Ferienworkshop: Tanztheaterwerkstatt für Kinder von 8-10 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "7de73bbaebbb7cac",
+      "title": "Ferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
       "id": "2237c003b99b3c70",
       "title": "Ferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
@@ -4134,6 +4128,12 @@
     {
       "id": "e8bee75f0c2ebe7f",
       "title": "Ferienworkshop: Magisches Licht und Traumhafter Schatten für Kinder ab 6 Jahren in Bietigheim-Bissingen",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "0a0029bb5d01ac63",
+      "title": "Ferienworkshop: Wollene Wundertiere für Kinder ab 8 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
       "source": "labyrinth"
     },
@@ -4192,14 +4192,14 @@
       "source": "labyrinth"
     },
     {
-      "id": "e34d42bc1c7ffa2e",
-      "title": "Workshop: Sadza Batik aus Zimbabwe in Ludwigsburg",
+      "id": "80abe5d0176bb773",
+      "title": "Workshop: Ein Hexenhaus aus Ton in Ludwigsburg",
       "date_start": "2026-06-20",
       "source": "labyrinth"
     },
     {
-      "id": "80abe5d0176bb773",
-      "title": "Workshop: Ein Hexenhaus aus Ton in Ludwigsburg",
+      "id": "e34d42bc1c7ffa2e",
+      "title": "Workshop: Sadza Batik aus Zimbabwe in Ludwigsburg",
       "date_start": "2026-06-20",
       "source": "labyrinth"
     },
@@ -4246,14 +4246,14 @@
       "source": "labyrinth"
     },
     {
-      "id": "9b355bb149b732aa",
-      "title": "Workshop: Till Eulenspiegel als Tonfigur in Ludwigsburg",
+      "id": "a1bd67c9d709e8c1",
+      "title": "Workshop: Zirkus-Spezial für Kinder von 8-12 Jahren in Ludwigsburg",
       "date_start": "2026-07-11",
       "source": "labyrinth"
     },
     {
-      "id": "a1bd67c9d709e8c1",
-      "title": "Workshop: Zirkus-Spezial für Kinder von 8-12 Jahren in Ludwigsburg",
+      "id": "9b355bb149b732aa",
+      "title": "Workshop: Till Eulenspiegel als Tonfigur in Ludwigsburg",
       "date_start": "2026-07-11",
       "source": "labyrinth"
     },
