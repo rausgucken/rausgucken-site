@@ -159,8 +159,8 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
       FreshnessStamp — design spec Part V §2:
       "Must use default text color with opacity-70. NEVER use Brand Coral text."
     -->
-    <span class="freshness-stamp" aria-label={`Zuletzt geprüft: ${new Date(ev.scraped_at).toLocaleDateString("de-DE", { day: "numeric", month: "short" })}`}>
-      Geprüft: {new Date(ev.scraped_at).toLocaleDateString("de-DE", { day: "numeric", month: "short" })}
+    <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
+    <Disclaimer variant="micro" />
     </span>
   </div>
 </article>

@@ -10,8 +10,6 @@ import metaData from "../../../public/data/ludwigsburg/meta.json";
 const events = eventsData;
 const meta = metaData;
 
-const scrapedDate = meta.scraped_at
-  ? new Date(meta.scraped_at).toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" })
   : "–";
 
 const dated    = events.filter(e => e.date_start);
@@ -36,7 +34,7 @@ const jsonLd = {
   <div class="page-header">
     <h1>Veranstaltungen in Ludwigsburg</h1>
     <p class="page-subtitle">
-      {events.length} Veranstaltungen · Stand: {scrapedDate}
+      <FreshnessStamp scrapedAt={meta.scraped_at} />
     </p>
   </div>
 
