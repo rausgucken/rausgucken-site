@@ -81,6 +81,12 @@
   ageFilter.addEventListener("change", applyFilters);
   dateFilter.addEventListener("change", applyFilters);
   resetBtn.addEventListener("click", resetFilters);
+  function trackEvent(name, props) {
+    if (typeof window.plausible === "function") { window.plausible(name, { props: props }); }
+  }
+  ageFilter.addEventListener("change", function() { trackEvent("Age Filter Used", { range: ageFilter.value || "reset" }); });
+  tagFilter.addEventListener("change", function() { trackEvent("Tag Filter Used", { tag: tagFilter.value || "reset" }); });
+
 
   // Initial count
   applyFilters();
