@@ -1,0 +1,191 @@
+---
+import Base from "../../../layouts/Base.astro";
+import EventCard from "../../../components/EventCard.astro";
+import FilterBar from "../../../components/FilterBar.astro";
+
+import eventsData from "../../../../public/data/ludwigsburg/events-current.json";
+import metaData from "../../../../public/data/ludwigsburg/meta.json";
+
+const meta = metaData;
+
+const FREE_VALUES = ["kostenlos", "kostenfrei", "eintritt frei", "freier eintritt", "frei", "gratis", "0"];
+
+const allKostenlos = (eventsData as any[]).filter((e: any) => {
+  const price = e.price;
+  if (price == null || price === "") return true;
+  return FREE_VALUES.includes(String(price).trim().toLowerCase());
+});
+
+const dated    = allKostenlos.filter((e: any) => e.date_start);
+const standing = allKostenlos.filter((e: any) => !e.date_start);
+
+const scrapedDate = meta.scraped_at
+  ? new Date(meta.scraped_at).toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" })
+  : "–";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Kostenlose Veranstaltungen in Ludwigsburg",
+  "description": `${allKostenlos.length} kostenlose Veranstaltungen in Ludwigsburg – Ausstellungen, Führungen, Workshops und mehr. Eintritt frei.`,
+  "url": "https://rausgucken.de/ludwigsburg/kostenlos/",
+  "inLanguage": "de-DE",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://rausgucken.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Ludwigsburg", "item": "https://rausgucken.de/ludwigsburg/" },
+      { "@type": "ListItem", "position": 3, "name": "Kostenlos", "item": "https://rausgucken.de/ludwigsburg/kostenlos/" }
+    ]
+  }
+};
+---
+
+<Base
+  title={`Kostenlose Veranstaltungen Ludwigsburg – ${allKostenlos.length} Events mit freiem Eintritt | rausgucken.de`}
+  description={`${allKostenlos.length} kostenlose Veranstaltungen in Ludwigsburg. Ausstellungen, Führungen, Workshops und mehr – alle mit freiem Eintritt, lokal und aktuell.`}
+  city="ludwigsburg"
+  ogImage="/og/ludwigsburg/kostenlos.jpg"
+>
+  <link rel="canonical" href="https://rausgucken.de/ludwigsburg/kostenlos/" slot="head-extra" />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <!-- Breadcrumbs -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">rausgucken.de</a></li>
+      <li aria-hidden="true">›</li>
+      <li><a href="/ludwigsburg/">Ludwigsburg</a></li>
+      <li aria-hidden="true">›</li>
+      <li aria-current="page">Kostenlos</li>
+    </ol>
+  </nav>
+
+  <div class="page-header">
+    <div class="page-header-eyebrow">
+      <span class="dot-dual" aria-hidden="true">● ·</span>
+      Eintritt frei
+    </div>
+    <h1>Kostenlose Veranstaltungen in Ludwigsburg</h1>
+    <p class="page-subtitle">
+      {allKostenlos.length} Events mit freiem Eintritt · Stand: {scrapedDate}
+    </p>
+  </div>
+
+  {meta.sources_failed && meta.sources_failed.length > 0 && (
+    <div class="sources-warning" role="alert">
+      <strong>⚠ Hinweis:</strong> {meta.sources_failed.length} {meta.sources_failed.length === 1 ? "Quelle" : "Quellen"} derzeit nicht erreichbar — Angaben können unvollständig sein.
+    </div>
+  )}
+
+  <aside class="disclaimer-box">
+    <strong>Hinweis:</strong> {meta.disclaimer_note || "Alle Angaben ohne Gewähr. Bitte prüfen Sie Infos auf der jeweiligen Originalseite."}
+    <a href="/about">Mehr Informationen</a>
+  </aside>
+
+  <FilterBar />
+
+  <div class="empty-state" id="empty-state" aria-live="polite" hidden>
+    <div class="empty-state-inner">
+      <p class="empty-headline">Keine Treffer für diese Filter.</p>
+      <p class="empty-body">Vielleicht ist heute ein guter Tag, einfach rauszugehen!</p>
+      <div class="empty-ctas">
+        <a href="/ludwigsburg/heute/" class="empty-cta">Alle heutigen Events →</a>
+        <a href="/ludwigsburg/" class="empty-cta">Alle Veranstaltungen →</a>
+      </div>
+      <button class="empty-reset" id="empty-reset-btn" type="button">
+        Filter zurücksetzen
+      </button>
+    </div>
+  </div>
+
+  {dated.length > 0 && (
+    <section id="section-dated">
+      <div id="event-grid" class="event-grid">
+        {dated.map((ev: any) => <EventCard event={ev} />)}
+      </div>
+    </section>
+  )}
+
+  {standing.length > 0 && (
+    <section id="section-standing">
+      <h2 class="section-heading">Dauerausstellungen & laufende Angebote</h2>
+      <div class="event-grid">
+        {standing.map((ev: any) => <EventCard event={ev} />)}
+      </div>
+    </section>
+  )}
+
+  {allKostenlos.length === 0 && (
+    <div class="empty-state-static">
+      <p>Aktuell keine kostenlosen Veranstaltungen gefunden. Schau bald wieder rein!</p>
+      <a href="/ludwigsburg/" class="empty-cta">Alle Veranstaltungen in Ludwigsburg →</a>
+    </div>
+  )}
+
+  <nav class="related-pages" aria-label="Weitere Seiten">
+    <h2 class="related-heading">Weitere Seiten</h2>
+    <ul class="related-links">
+      <li><a href="/ludwigsburg/heute/">Events heute</a></li>
+      <li><a href="/ludwigsburg/morgen/">Events morgen</a></li>
+      <li><a href="/ludwigsburg/dieses-wochenende/">Dieses Wochenende</a></li>
+      <li><a href="/ludwigsburg/kinder/">Kinder & Familie</a></li>
+      <li><a href="/ludwigsburg/">Alle Veranstaltungen Ludwigsburg</a></li>
+    </ul>
+  </nav>
+</Base>
+
+<style>
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+  .breadcrumbs a { text-decoration: underline; text-underline-offset: 2px; }
+
+  .page-header-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+  }
+  .dot-dual { color: var(--brand-coral, #FF6F61); font-size: 0.75rem; letter-spacing: 0.15em; }
+
+  .related-pages {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0,0,0,0.08);
+  }
+  :global(.dark) .related-pages { border-top-color: rgba(255,255,255,0.06); }
+  .related-heading { font-size: 0.9rem; font-weight: 600; opacity: 0.6; margin-bottom: 0.75rem; }
+  .related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .related-links a {
+    font-size: 0.875rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+    opacity: 0.65;
+    text-decoration: none;
+    transition: opacity 150ms;
+  }
+  .related-links a:hover { opacity: 1; }
+  .section-heading { font-size: 1.1rem; font-weight: 600; margin: 2.5rem 0 1rem; opacity: 0.8; }
+  .empty-state-static { text-align: center; padding: 3rem 1rem; opacity: 0.7; }
+</style>
