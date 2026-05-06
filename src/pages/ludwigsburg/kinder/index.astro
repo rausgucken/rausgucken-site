@@ -8,7 +8,7 @@ import metaData from "../../../../public/data/ludwigsburg/meta.json";
 
 const meta = metaData;
 
-const allKinder = (eventsData as any[]).filter((e: any) =>
+const allKinder = ((eventsData as any).events as any[]).filter((e: any) =>
   // Filter for children's events — tags includes "Kinder" or "Familie"
 
   Array.isArray(e.tags) &&
