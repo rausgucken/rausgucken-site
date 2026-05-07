@@ -319,9 +319,9 @@ const relatedEvents = isExpired
         {scrapedFormatted && (
           <p class="freshness-stamp">Erfasst am: {scrapedFormatted}</p>
         )}
-        <p class="source-disclaimer">
-          Alle Angaben ohne Gewähr. Bitte prüfen Sie die Infos auf der Originalseite.
-        </p>
+        {ev.source_label && (
+          <p class="source-attribution">Quelle: {ev.source_label}</p>
+        )}
       </div>
       {ev.original_url && (
         <a
