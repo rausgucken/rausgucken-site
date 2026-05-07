@@ -2,7 +2,6 @@
 // src/components/EventCard.astro
 const { event: ev } = Astro.props;
 import FreshnessStamp from './FreshnessStamp.astro';
-import Disclaimer from './Disclaimer.astro';
 
 function formatDate(iso) {
   if (!iso) return null;
@@ -160,8 +159,9 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
       "Must use default text color with opacity-70. NEVER use Brand Coral text."
     -->
     <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
-    <Disclaimer variant="micro" />
-    </span>
+    {ev.source_label && (
+      <span class="source-label">Quelle: {ev.source_label}</span>
+    )}
   </div>
 </article>
 
@@ -399,5 +399,17 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     font-size: 0.67rem;
     color: var(--text);
     opacity: 0.70;
+  }
+
+  /* Source attribution — replaces micro-disclaimer per E-E-A-T spec §14 */
+  .source-attribution {
+    font-size: 0.7rem;
+    color: var(--text-60);
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 0;
   }
 </style>

@@ -1,9 +1,9 @@
 {
-  "scraped_at": "2026-05-03T20:48:31.867408+02:00",
+  "scraped_at": "2026-05-07T18:17:00.844664+02:00",
   "city": "ludwigsburg",
-  "event_count": 651,
+  "event_count": 633,
   "flagged_count": 0,
-  "expired_count": 57,
+  "expired_count": 75,
   "sources_scraped": [
     "karlskaserne_ausstellungen",
     "karlskaserne_veranstaltungen",
@@ -16,18 +16,18 @@
   ],
   "source_counts": {
     "kunstverein_ausstellungen": 6,
-    "museum": 50,
-    "karlskaserne_veranstaltungen": 115,
-    "labyrinth": 50,
-    "schloss": 254,
-    "stabi": 167,
+    "museum": 47,
+    "stabi": 162,
     "karlskaserne_ausstellungen": 4,
+    "karlskaserne_veranstaltungen": 112,
+    "schloss": 251,
+    "labyrinth": 46,
     "kunstverein_veranstaltungen": 5
   },
   "sources_failed": [],
-  "data_hash": "1badefdb96fc9daa",
+  "data_hash": "c53ac7e2336940eb",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 03.05.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 07.05.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-source-v1",
   "source_health": {
     "museum": 1.0,
@@ -49,26 +49,5 @@
     "stabi": 167,
     "labyrinth": 50
   },
-  "count_drift_warnings": {},
-  "quality_report": {
-    "regression_pass_rate": null,
-    "flagged_rate_current": 0.0,
-    "flagged_rate_4week_avg": 0.0,
-    "trend": "stable",
-    "runtime_minutes": 15.8,
-    "runtime_delta_vs_baseline": -0.012,
-    "source_health": {
-      "museum": 1.0,
-      "schloss": 1.0,
-      "karlskaserne_ausstellungen": 1.0,
-      "karlskaserne_veranstaltungen": 1.0,
-      "kunstverein_ausstellungen": 1.0,
-      "kunstverein_veranstaltungen": 1.0,
-      "stabi": 1.0,
-      "labyrinth": 1.0
-    },
-    "quarantined_sources": [],
-    "status": "healthy",
-    "generated_at": "2026-05-03T20:53:32.034668+02:00"
-  }
+  "count_drift_warnings": {}
 }
