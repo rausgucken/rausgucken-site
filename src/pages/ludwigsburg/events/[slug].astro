@@ -43,6 +43,7 @@ const canonical = `${siteUrl}/ludwigsburg/events/${ev.slug}`;
 // ── OG image ──────────────────────────────────────────────────────────────────
 // Falls back to city-level OG if per-event image not yet generated
 const ogImage = `/og/ludwigsburg/${ev.slug}.jpg`;
+const detailImage = `/og/detail/ludwigsburg/${ev.slug}.jpg`;
 
 // ── SEO title — keyword-first per §9: "{Event} Ludwigsburg {Date} | rausgucken.de"
 const dateLabel = ev.date_start ? formatDateShort(ev.date_start) : "Dauerveranstaltung";
@@ -262,7 +263,7 @@ const relatedEvents = isExpired
     <!-- ── Hero image ────────────────────────────────────────────────────── -->
     <div class="event-hero">
       <img
-        src={ogImage}
+        src={detailImage}
         alt={`${ev.title}${ev.location ? ` – ${ev.location}` : ""} in Ludwigsburg`}
         width="720"
         height="380"
@@ -369,21 +370,21 @@ const relatedEvents = isExpired
 
 <style>
       /* ── Hero image ─────────────────────────────────────────────────────────── */
-  .event-hero {
+    .event-hero {
     margin-bottom: 1.75rem;
     border-radius: var(--radius);
     overflow: hidden;
     border: 1px solid var(--border);
-    aspect-ratio: 16 / 7;
+    height: 220px;
     background: var(--tag-bg);
-    max-height: 340px;
   }
-  .hero-img {
+    .hero-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
     display: block;
-    filter: brightness(0.92) contrast(0.97);
+    filter: brightness(0.95);
   }
 
     /* ── Expired banner ─────────────────────────────────────────────────────── */
