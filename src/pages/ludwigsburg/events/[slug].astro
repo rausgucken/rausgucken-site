@@ -374,16 +374,21 @@ const relatedEvents = isExpired
     border-radius: var(--radius);
     overflow: hidden;
     border: 1px solid var(--border);
-    aspect-ratio: 16 / 7;
+    height: 200px;
     background: var(--tag-bg);
-    max-height: 340px;
   }
   .hero-img {
     width: 100%;
-    height: 100%;
+    height: 260px;
     object-fit: cover;
+    object-position: center 20%;
     display: block;
-    filter: brightness(0.92) contrast(0.97);
+    filter: brightness(0.85) contrast(0.95);
+    margin-top: -30px;
+  }
+  @media (min-width: 600px) {
+    .event-hero { height: 240px; }
+    .hero-img   { height: 310px; }
   }
 
     /* ── Expired banner ─────────────────────────────────────────────────────── */
