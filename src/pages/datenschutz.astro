@@ -1,0 +1,295 @@
+---
+// src/pages/datenschutz.astro
+// Datenschutzerklärung — DSGVO-konform
+// Covers: Plausible Analytics (self-hosted), Cloudflare Pages, Formspree contact form,
+//         automated web scraping, Cloudflare Turnstile.
+// noindex: true — legal page, no SEO value, avoids crawl budget waste.
+import Base from "../layouts/Base.astro";
+
+const siteUrl   = "https://rausgucken.de";
+const canonical = `${siteUrl}/datenschutz`;
+---
+
+<Base
+  title="Datenschutzerklärung | rausgucken.de"
+  description="Datenschutzerklärung für rausgucken.de gemäß DSGVO."
+  canonical={canonical}
+  noindex={true}
+>
+  <div class="legal-page">
+
+    <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+      <a href="/">rausgucken.de</a>
+      <span aria-hidden="true"> › </span>
+      <span aria-current="page">Datenschutz</span>
+    </nav>
+
+    <h1>Datenschutzerklärung</h1>
+
+    <p class="intro">
+      Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Diese Erklärung
+      informiert Sie darüber, welche Daten bei der Nutzung von rausgucken.de
+      verarbeitet werden und auf welcher Rechtsgrundlage dies geschieht.
+    </p>
+
+    <!-- 1. Verantwortlicher -->
+    <section aria-labelledby="verantwortlicher-heading">
+      <h2 id="verantwortlicher-heading">1. Verantwortlicher</h2>
+      <p>
+        Verantwortlich für die Datenverarbeitung auf dieser Website ist die im
+        <a href="/impressum">Impressum</a> genannte Person.
+      </p>
+    </section>
+
+    <!-- 2. Hosting -->
+    <section aria-labelledby="hosting-heading">
+      <h2 id="hosting-heading">2. Hosting — Cloudflare Pages</h2>
+      <p>
+        Diese Website wird über <strong>Cloudflare Pages</strong> (Cloudflare, Inc.,
+        101 Townsend St., San Francisco, CA 94107, USA) ausgeliefert. Cloudflare
+        verarbeitet als technischer Dienstleister Verbindungsdaten (IP-Adresse,
+        Zeitstempel, aufgerufene URL) zur Bereitstellung der Seite und zum Schutz
+        vor Missbrauch (DDoS-Abwehr).
+      </p>
+      <p>
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am
+        sicheren und stabilen Betrieb der Website). Es besteht ein
+        Auftragsverarbeitungsvertrag mit Cloudflare. Weitere Informationen:
+        <a href="https://www.cloudflare.com/de-de/privacypolicy/" target="_blank" rel="noopener noreferrer">
+          Cloudflare Datenschutzrichtlinie</a>.
+      </p>
+    </section>
+
+    <!-- 3. Analyse — Plausible -->
+    <section aria-labelledby="analytics-heading">
+      <h2 id="analytics-heading">3. Websiteanalyse — Plausible Analytics</h2>
+      <p>
+        Wir verwenden <strong>Plausible Analytics</strong> zur Analyse des
+        Nutzungsverhaltens auf dieser Website. Plausible ist ein
+        datenschutzfreundliches Analysetool, das:
+      </p>
+      <ul>
+        <li>keine Cookies setzt,</li>
+        <li>keine personenbezogenen Daten erfasst,</li>
+        <li>keine geräteübergreifende Verfolgung durchführt,</li>
+        <li>IP-Adressen nicht speichert.</li>
+      </ul>
+      <p>
+        Die Plausible-Instanz wird <strong>selbst gehostet</strong> unter
+        <code>analytics.rausgucken.de</code> und läuft auf eigener Infrastruktur
+        in Deutschland. Es werden keine Daten an Dritte weitergegeben.
+        Erfasst werden ausschließlich aggregierte, anonyme Metriken wie
+        Seitenaufrufe, verwendete Filter und Verweisquellen.
+      </p>
+      <p>
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
+        der anonymen Nutzungsanalyse zur Verbesserung des Angebots).
+        Ein Opt-out ist nicht erforderlich, da keine personenbezogenen Daten
+        verarbeitet werden. Weitere Informationen:
+        <a href="https://plausible.io/data-policy" target="_blank" rel="noopener noreferrer">
+          Plausible Datenschutzrichtlinie</a>.
+      </p>
+    </section>
+
+    <!-- 4. Kontaktformular -->
+    <section aria-labelledby="kontakt-heading">
+      <h2 id="kontakt-heading">4. Kontaktformular</h2>
+      <p>
+        Das Kontaktformular auf der <a href="/about#kontakt">Über-uns-Seite</a>
+        wird über <strong>Formspree</strong> (Formspree, Inc.) verarbeitet.
+        Wenn Sie das Formular nutzen, werden Ihre Angaben (Name, E-Mail-Adresse,
+        Nachrichteninhalt) an Formspree übertragen und von dort an uns weitergeleitet.
+        Die Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet
+        und nicht an weitere Dritte weitergegeben.
+      </p>
+      <p>
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
+        der Beantwortung von Nutzeranfragen). Weitere Informationen:
+        <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer">
+          Formspree Datenschutzrichtlinie</a>.
+      </p>
+    </section>
+
+    <!-- 5. Spam-Schutz Turnstile -->
+    <section aria-labelledby="turnstile-heading">
+      <h2 id="turnstile-heading">5. Spam-Schutz — Cloudflare Turnstile</h2>
+      <p>
+        Das Kontaktformular ist mit <strong>Cloudflare Turnstile</strong>
+        zum Schutz vor automatisierten Anfragen (Spam) gesichert. Dabei werden
+        technische Signale (z. B. Browser-Umgebung, Interaktionsmuster)
+        verarbeitet, ohne dass ein visuelles CAPTCHA angezeigt wird.
+        Es werden keine personenbezogenen Daten gespeichert.
+      </p>
+      <p>
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse
+        am Schutz vor Missbrauch). Weitere Informationen:
+        <a href="https://www.cloudflare.com/de-de/privacypolicy/" target="_blank" rel="noopener noreferrer">
+          Cloudflare Datenschutzrichtlinie</a>.
+      </p>
+    </section>
+
+    <!-- 6. Veranstaltungsdaten -->
+    <section aria-labelledby="scraping-heading">
+      <h2 id="scraping-heading">6. Automatisierte Datenerfassung (Scraping)</h2>
+      <p>
+        rausgucken.de sammelt Veranstaltungsinformationen automatisiert von
+        öffentlich zugänglichen Websites lokaler Institutionen
+        (Stadtbibliothek, Museen, Kunstzentren u. a.). Diese Daten beziehen
+        sich ausschließlich auf Veranstaltungen und enthalten keine
+        personenbezogenen Daten von Privatpersonen.
+      </p>
+      <p>
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse
+        an der Bereitstellung eines öffentlichen Veranstaltungsüberblicks).
+        Alle angezeigten Informationen werden mit einem Zeitstempel und
+        einem direkten Link zur Originalquelle versehen.
+      </p>
+    </section>
+
+    <!-- 7. Cookies -->
+    <section aria-labelledby="cookies-heading">
+      <h2 id="cookies-heading">7. Cookies</h2>
+      <p>
+        Diese Website setzt <strong>keine Tracking-Cookies</strong>.
+        Es wird ausschließlich ein technisches Cookie zur Speicherung
+        Ihrer Farbschema-Einstellung (Hell/Dunkel) im
+        <code>localStorage</code> Ihres Browsers gesetzt.
+        Dieser Wert verlässt Ihren Browser nicht und wird nicht an
+        Server übertragen.
+      </p>
+    </section>
+
+    <!-- 8. Ihre Rechte -->
+    <section aria-labelledby="rechte-heading">
+      <h2 id="rechte-heading">8. Ihre Rechte</h2>
+      <p>
+        Sie haben gemäß DSGVO das Recht auf Auskunft, Berichtigung, Löschung
+        und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie
+        das Recht auf Datenübertragbarkeit. Da auf rausgucken.de keine
+        personenbezogenen Daten gespeichert werden, entfällt in der Praxis
+        der Großteil dieser Rechte.
+      </p>
+      <p>
+        Bei Fragen zur Datenverarbeitung oder zur Ausübung Ihrer Rechte
+        wenden Sie sich bitte über das
+        <a href="/about#kontakt">Kontaktformular</a> an uns.
+        Sie haben außerdem das Recht, sich bei der zuständigen
+        Datenschutzaufsichtsbehörde zu beschweren.
+      </p>
+    </section>
+
+    <!-- 9. Änderungen -->
+    <section aria-labelledby="aenderungen-heading">
+      <h2 id="aenderungen-heading">9. Änderungen dieser Erklärung</h2>
+      <p>
+        Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen,
+        etwa wenn neue Dienste eingebunden werden. Die jeweils aktuelle Fassung
+        ist unter <a href="/datenschutz">rausgucken.de/datenschutz</a>
+        abrufbar.
+      </p>
+    </section>
+
+    <p class="legal-link-line">
+      <a href="/impressum">Impressum</a>
+      &nbsp;·&nbsp;
+      <a href="/about">Über uns</a>
+    </p>
+
+  </div>
+</Base>
+
+<style>
+  .legal-page {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .breadcrumb {
+    font-size: 0.82rem;
+    color: var(--text-60);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+  }
+  .breadcrumb a { color: var(--text-60); }
+  .breadcrumb a:hover { color: var(--coral); }
+
+  h1 {
+    font-size: clamp(1.7rem, 4vw, 2.2rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    font-size: 0.97rem;
+    color: var(--text-60);
+    line-height: 1.75;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  section:last-of-type { border-bottom: none; }
+
+  h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+  }
+
+  p {
+    font-size: 0.92rem;
+    color: var(--text-60);
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+  }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 0.5rem 0 0.75rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  li {
+    font-size: 0.92rem;
+    color: var(--text-60);
+    line-height: 1.6;
+  }
+
+  code {
+    font-family: monospace;
+    font-size: 0.88rem;
+    background: var(--tag-bg);
+    padding: 1px 5px;
+    border-radius: 4px;
+    color: var(--text);
+  }
+
+  a { color: var(--coral); }
+  a:hover { text-decoration: underline; }
+
+  .legal-link-line {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 0.78rem;
+  }
+  .legal-link-line a {
+    color: var(--text-30);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+  }
+  .legal-link-line a:hover { color: var(--text-60); }
+</style>
