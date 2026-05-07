@@ -239,7 +239,7 @@ const relatedEvents = isExpired
     <span aria-current="page">{ev.title}</span>
   </nav>
 
-  <article class="event-detail" itemscope itemtype="https://schema.org/Event">
+  <article class="event-detail">
 
     <header class="event-header">
       <!-- Tags row -->
@@ -257,7 +257,7 @@ const relatedEvents = isExpired
         )}
       </div>
 
-      <h1 itemprop="name">{ev.title}</h1>
+      <h1>{ev.title}</h1>
     </header>
     
     <!-- ── Hero image ────────────────────────────────────────────────────── -->
@@ -278,14 +278,14 @@ const relatedEvents = isExpired
     <dl class="meta-grid">
       <div class="meta-item">
         <dt class="meta-label">Datum</dt>
-        <dd class="meta-value" itemprop="startDate" content={ev.date_start ?? ""}>
+        <dd class="meta-value" content={ev.date_start ?? ""}>
           {formatDateDE(ev.date_start)}
         </dd>
       </div>
       {ev.date_end && ev.date_end !== ev.date_start && (
         <div class="meta-item">
           <dt class="meta-label">Bis</dt>
-          <dd class="meta-value" itemprop="endDate" content={ev.date_end}>
+          <dd class="meta-value" content={ev.date_end}>
             {formatDateShort(ev.date_end)}
           </dd>
         </div>
@@ -299,8 +299,8 @@ const relatedEvents = isExpired
       {ev.location && (
         <div class="meta-item">
           <dt class="meta-label">Ort</dt>
-          <dd class="meta-value" itemprop="location" itemscope itemtype="https://schema.org/Place">
-            <span itemprop="name">{ev.location}</span>
+          <dd class="meta-value">
+            <span>{ev.location}</span>
           </dd>
         </div>
       )}
@@ -316,7 +316,7 @@ const relatedEvents = isExpired
     {ev.description && (
       <div class="event-description">
         <h2>Beschreibung</h2>
-        <p itemprop="description">{ev.description}</p>
+        <p>{ev.description}</p>
       </div>
     )}
 
