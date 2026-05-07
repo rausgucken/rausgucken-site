@@ -258,21 +258,7 @@ const relatedEvents = isExpired
 
       <h1 itemprop="name">{ev.title}</h1>
     </header>
-
-    <!-- ── Hero image ────────────────────────────────────────────────────── -->
-    <div class="event-hero">
-      <img
-        src={ogImage}
-        alt={`${ev.title}${ev.location ? ` – ${ev.location}` : ""} in Ludwigsburg`}
-        width="720"
-        height="380"
-        loading="eager"
-        decoding="async"
-        class="hero-img"
-        onerror="this.closest('.event-hero').style.display='none'"
-      />
-    </div>
-
+    
     <!-- ── Hero image ────────────────────────────────────────────────────── -->
     <div class="event-hero">
       <img
@@ -382,14 +368,15 @@ const relatedEvents = isExpired
 </Base>
 
 <style>
-  /* ── Hero image ─────────────────────────────────────────────────────────── */
+      /* ── Hero image ─────────────────────────────────────────────────────────── */
   .event-hero {
     margin-bottom: 1.75rem;
     border-radius: var(--radius);
     overflow: hidden;
     border: 1px solid var(--border);
-    aspect-ratio: 1200 / 630;
+    aspect-ratio: 16 / 7;
     background: var(--tag-bg);
+    max-height: 340px;
   }
   .hero-img {
     width: 100%;
