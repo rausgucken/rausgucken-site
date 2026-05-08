@@ -160,7 +160,7 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     -->
     <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
     {ev.source_label && (
-      <span class="source-label">Quelle: {ev.source_label}</span>
+      <span class="source-attribution">Quelle: {ev.source_label}</span>
     )}
   </div>
 </article>
