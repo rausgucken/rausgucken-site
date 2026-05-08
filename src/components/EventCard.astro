@@ -160,7 +160,7 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     -->
     <div class="footer-right"><FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
     {ev.source_label && (
-      <span class="source-attribution">Quelle: {ev.source_label}</span></div>
+      <span class="source-attribution"> · Quelle: {ev.source_label}</span></div>
     )}
   </div>
 </article>
@@ -402,8 +402,9 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
   }
 
   /* Source attribution — replaces micro-disclaimer per E-E-A-T spec §14 */
-  .footer-right { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; }
-  .source-attribution {
+  .footer-right { display: flex; align-items: center; gap: 0; flex-shrink: 0; }
+  .source-attribution { font-size: 12px; color: var(--text); opacity: 0.7; font-family: var(--font-body, 'Inter', sans-serif); white-space: nowrap; }
+  .source-attribution-OLD {
     font-size: 0.7rem;
     color: var(--text-60);
     display: flex;
