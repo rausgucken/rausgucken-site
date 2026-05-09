@@ -1,0 +1,419 @@
+---
+// src/pages/ludwigsburg/erleben/index.astro
+// Guide page: Ludwigsburg erleben — Orte & Tipps
+// Linked from ImportantLinksSidebar and Base.astro footer
+// SEO: FAQPage JSON-LD + internal anchor links to city filter pages
+
+import Base from "../../../layouts/Base.astro";
+import ImportantLinksSidebar from "../../../components/ImportantLinksSidebar.astro";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was kann man in Ludwigsburg mit Kindern unternehmen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Besonders beliebt sind Workshops in der Kunstschule Labyrinth und der Karlskaserne, Führungen im Residenzschloss sowie das Kinderprogramm der Stadtbibliothek Ludwigsburg. Eine aktuelle Übersicht aller Kinderveranstaltungen findet sich auf rausgucken.de/ludwigsburg/kinder/."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welche kostenlosen Veranstaltungen gibt es in Ludwigsburg?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Viele Angebote der Stadtbibliothek und des Kunstvereins Ludwigsburg sind kostenlos oder haben freien Eintritt. Eine aktuelle Übersicht bietet rausgucken.de/ludwigsburg/kostenlos/."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist heute in Ludwigsburg los?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die tagesaktuelle Übersicht aller Veranstaltungen in Ludwigsburg findet sich unter rausgucken.de/ludwigsburg/heute/. Die Daten werden wöchentlich aus den Originalseiten der Veranstalter aktualisiert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was kann man bei Regen in Ludwigsburg machen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stadtbibliothek, Stadtmuseum im MIK, Karlskaserne und Kunstschule Labyrinth bieten regelmäßig Indoor-Programme. Auf rausgucken.de/ludwigsburg/ lassen sich Veranstaltungen nach Ort und Kategorie filtern."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist das Forum am Schlosspark in Ludwigsburg?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das Forum am Schlosspark ist Ludwigsburgs wichtigstes Konzert- und Veranstaltungshaus direkt neben dem Residenzschloss. Es beherbergt das Württembergische Kammerorchester und ist Spielstätte für Konzerte, Theater und Gastspiele."
+      }
+    }
+  ]
+};
+---
+
+<Base
+  title="Ludwigsburg erleben — Kulturorte, Freizeittipps & Veranstaltungen | rausgucken.de"
+  description="Residenzschloss, Karlskaserne, MHP Arena, Stadtbibliothek und mehr — ein Überblick über die wichtigsten Kulturorte und Freizeitangebote in Ludwigsburg."
+  city="ludwigsburg"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="erleben-layout">
+
+    <div class="erleben-main">
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/ludwigsburg/">Ludwigsburg</a>
+        <span aria-hidden="true"> › </span>
+        <span aria-current="page">Erleben</span>
+      </nav>
+
+      <div class="page-header">
+        <h1>Ludwigsburg erleben</h1>
+        <p class="page-subtitle">Kulturorte, Freizeittipps und was die Stadt zu bieten hat</p>
+      </div>
+
+      <p class="intro">
+        Ludwigsburg hat mehr im Angebot, als man auf den ersten Blick vermuten würde.
+        Vom <strong>Residenzschloss</strong> und dem <strong>Blühenden Barock</strong>
+        über die Kunstszene in der <strong>Karlskaserne</strong> bis hin zu
+        Live-Entertainment in der <strong>MHP Arena</strong> — die Stadt ist
+        kulturell dichter besiedelt als ihr Ruf als Beamtenstadt vermuten lässt.
+        Alle aktuellen Veranstaltungen sammelt rausgucken.de wöchentlich aus den
+        Originalseiten der Veranstalter.
+      </p>
+
+      <!-- Quick filter links -->
+      <nav class="filter-links" aria-label="Schnellfilter">
+        <a href="/ludwigsburg/heute/">Heute</a>
+        <a href="/ludwigsburg/dieses-wochenende/">Wochenende</a>
+        <a href="/ludwigsburg/kinder/">Kinder & Familie</a>
+        <a href="/ludwigsburg/kostenlos/">Kostenlos</a>
+        <a href="/ludwigsburg/">Alle Veranstaltungen</a>
+      </nav>
+
+      <!-- Residenzschloss -->
+      <section class="venue-section" id="residenzschloss">
+        <h2>Residenzschloss & Blühender Barock</h2>
+        <p>
+          Das Residenzschloss ist Ludwigsburgs bekanntestes Wahrzeichen und eines der
+          größten erhaltenen Barockschlösser Deutschlands. Der angrenzende Park
+          <strong>Blühender Barock</strong> läuft das ganze Jahr mit wechselnden
+          Ausstellungen und Saisonhighlights. Führungen, Familienformate und
+          der Märchengarten machen das Gelände zum meistbesuchten Ausflugsziel
+          der Region.
+        </p>
+        <p>
+          Das <strong>Forum am Schlosspark</strong> direkt nebenan ist Ludwigsburgs
+          zentrales Konzert- und Veranstaltungshaus — Heimspielstätte des
+          Württembergischen Kammerorchesters und Bühne für Gastspiele, Lesungen
+          und Kulturveranstaltungen.
+        </p>
+        <a href="/ludwigsburg/" class="venue-cta">Aktuelle Veranstaltungen am Schloss →</a>
+      </section>
+
+      <!-- MHP Arena -->
+      <section class="venue-section" id="mhp-arena">
+        <h2>MHP Arena</h2>
+        <p>
+          Die MHP Arena ist die Heimspielstätte der <strong>MHP Riesen Ludwigsburg</strong>
+          und gleichzeitig das größte Live-Entertainment-Venue der Stadt. Das Programm
+          reicht von Basketballspielen über Konzerte und Comedy bis zu Familienveranstaltungen —
+          das Wochenprogramm wechselt regelmäßig.
+        </p>
+        <a href="/ludwigsburg/" class="venue-cta">Aktuelle Veranstaltungen in der MHP Arena →</a>
+      </section>
+
+      <!-- Karlskaserne -->
+      <section class="venue-section" id="karlskaserne">
+        <h2>Kunstzentrum Karlskaserne</h2>
+        <p>
+          Die Karlskaserne ist das kreative Zentrum der Stadt: wechselnde Ausstellungen,
+          offene Ateliers, Workshops und regelmäßige Veranstaltungsabende. Das Gebäude
+          beherbergt mehrere Kulturinstitutionen unter einem Dach — darunter die
+          <strong>Kunstschule Labyrinth</strong>, die Kinder- und Jugend-Workshops
+          in Bildender Kunst, Theater und Zirkus anbietet.
+        </p>
+        <a href="/ludwigsburg/kinder/" class="venue-cta">Kinder-Workshops & Familienangebote →</a>
+      </section>
+
+      <!-- Stadtbibliothek -->
+      <section class="venue-section" id="stadtbibliothek">
+        <h2>Stadtbibliothek Ludwigsburg</h2>
+        <p>
+          Die Stadtbibliothek ist weit mehr als eine Ausleihstelle. Das ganzjährige
+          Programm umfasst Lesestunden für Kinder, Sprachtreffs für Deutschlernende,
+          digitale Workshops und Vortragsreihen. Viele Angebote sind kostenlos oder
+          mit sehr geringem Kostenbeitrag zugänglich.
+        </p>
+        <a href="/ludwigsburg/kostenlos/" class="venue-cta">Kostenlose Veranstaltungen →</a>
+      </section>
+
+      <!-- Stadtmuseum -->
+      <section class="venue-section" id="stadtmuseum">
+        <h2>Stadtmuseum im MIK</h2>
+        <p>
+          Das Stadtmuseum Ludwigsburg zeigt, wie die Barockstadt als Planstadt entstand —
+          mit Dauerausstellung zur Stadtgeschichte und wechselnden Sonderausstellungen.
+          Für Familien gibt es einen interaktiven Mitmachbereich. Führungen für
+          Schulklassen und Gruppen können separat gebucht werden.
+        </p>
+      </section>
+
+      <!-- Kunstverein -->
+      <section class="venue-section" id="kunstverein">
+        <h2>Kunstverein Ludwigsburg</h2>
+        <p>
+          Der Kunstverein zeigt zeitgenössische Kunst in wechselnden Ausstellungen —
+          oft mit direktem Bezug zu regionalen Künstlerinnen und Künstlern.
+          Vernissagen und Finissagen sind meist öffentlich und kostenlos zugänglich.
+        </p>
+        <a href="/ludwigsburg/" class="venue-cta">Aktuelle Ausstellungen →</a>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq-section" aria-label="Häufige Fragen">
+        <h2>Häufig gestellte Fragen</h2>
+
+        <details>
+          <summary>Was kann man in Ludwigsburg mit Kindern unternehmen?</summary>
+          <p>
+            Besonders beliebt sind Workshops in der Kunstschule Labyrinth und der
+            Karlskaserne, Führungen im Residenzschloss sowie das Kinderprogramm der
+            Stadtbibliothek. Alle aktuellen
+            <a href="/ludwigsburg/kinder/">Kinderveranstaltungen in Ludwigsburg</a>
+            findest du gesammelt auf rausgucken.de.
+          </p>
+        </details>
+
+        <details>
+          <summary>Welche kostenlosen Veranstaltungen gibt es in Ludwigsburg?</summary>
+          <p>
+            Viele Angebote der Stadtbibliothek und des Kunstvereins sind kostenlos
+            oder haben freien Eintritt. Eine aktuelle Übersicht bietet die Seite
+            <a href="/ludwigsburg/kostenlos/">Kostenlose Events in Ludwigsburg</a>.
+          </p>
+        </details>
+
+        <details>
+          <summary>Was ist heute in Ludwigsburg los?</summary>
+          <p>
+            Die tagesaktuelle Übersicht findest du unter
+            <a href="/ludwigsburg/heute/">Veranstaltungen in Ludwigsburg heute</a>.
+            Die Daten werden wöchentlich aus den Originalseiten der Veranstalter aktualisiert.
+          </p>
+        </details>
+
+        <details>
+          <summary>Was kann man bei Regen in Ludwigsburg machen?</summary>
+          <p>
+            Stadtbibliothek, Stadtmuseum im MIK, Karlskaserne und Kunstschule Labyrinth
+            bieten regelmäßig Indoor-Programme. Auf
+            <a href="/ludwigsburg/">rausgucken.de/ludwigsburg</a>
+            lassen sich Veranstaltungen nach Ort und Kategorie filtern.
+          </p>
+        </details>
+
+        <details>
+          <summary>Was ist das Forum am Schlosspark?</summary>
+          <p>
+            Das Forum am Schlosspark ist Ludwigsburgs wichtigstes Konzert- und
+            Veranstaltungshaus direkt neben dem Residenzschloss — Heimspielstätte
+            des Württembergischen Kammerorchesters und Bühne für Gastspiele,
+            Theater und Kulturveranstaltungen.
+          </p>
+        </details>
+      </section>
+
+      <!-- Back link -->
+      <p class="back-link">
+        <a href="/ludwigsburg/">← Zurück zu allen Veranstaltungen in Ludwigsburg</a>
+      </p>
+
+    </div><!-- /.erleben-main -->
+
+    <ImportantLinksSidebar />
+
+  </div><!-- /.erleben-layout -->
+
+</Base>
+
+<style>
+  /* ── Layout — mirrors index.astro pattern exactly ────────────────────────── */
+  .erleben-layout { display: block; }
+  .erleben-main   { display: block; max-width: 720px; margin: 0 auto; }
+
+  @media (min-width: 961px) {
+    .erleben-layout :global(.important-links-sidebar) {
+      display: block;
+      position: fixed;
+      top: 160px;
+      left: calc(50% + 384px);
+      width: 200px;
+    }
+  }
+  @media (max-width: 960px) {
+    .erleben-layout :global(.important-links-sidebar) {
+      display: none;
+    }
+  }
+
+  /* ── Breadcrumb ──────────────────────────────────────────────────────────── */
+  .breadcrumb {
+    font-size: 0.82rem;
+    color: var(--text-60);
+    margin-bottom: 1rem;
+  }
+  .breadcrumb a { color: var(--text-60); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--coral); }
+  .breadcrumb span[aria-current] { color: var(--text); }
+
+  /* ── Page header ─────────────────────────────────────────────────────────── */
+  .page-header { margin-bottom: 1.25rem; }
+  h1 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  .page-subtitle {
+    color: var(--text-60);
+    font-size: 0.95rem;
+    margin-top: 0.35rem;
+  }
+
+  /* ── Intro ───────────────────────────────────────────────────────────────── */
+  .intro {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── Quick filter links ──────────────────────────────────────────────────── */
+  .filter-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .filter-links a {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    border: 1.5px solid var(--border);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color 150ms, color 150ms;
+    min-height: 36px;
+    line-height: 1.8;
+  }
+  .filter-links a:hover {
+    border-color: var(--coral);
+    color: var(--coral);
+  }
+
+  /* ── Venue sections ──────────────────────────────────────────────────────── */
+  .venue-section {
+    padding-bottom: 1.75rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .venue-section:last-of-type {
+    border-bottom: none;
+  }
+  .venue-section h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: var(--text);
+  }
+  .venue-section p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+  }
+  .venue-section p:last-of-type { margin-bottom: 0.5rem; }
+  .venue-cta {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--coral);
+    text-decoration: none;
+    margin-top: 0.25rem;
+  }
+  .venue-cta:hover { color: var(--coral-dark); text-decoration: underline; }
+
+  /* ── FAQ section ─────────────────────────────────────────────────────────── */
+  .faq-section {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+  .faq-section h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
+  details {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 0.6rem;
+    overflow: hidden;
+  }
+  details[open] { border-color: var(--coral); }
+  summary {
+    padding: 0.85rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    font-size: 1.1rem;
+    color: var(--text-60);
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+    transition: transform 150ms;
+  }
+  details[open] summary::after {
+    content: "−";
+  }
+  details p {
+    padding: 0 1rem 0.85rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  details a { color: var(--coral); }
+  details a:hover { color: var(--coral-dark); }
+
+  /* ── Back link ───────────────────────────────────────────────────────────── */
+  .back-link {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.88rem;
+  }
+  .back-link a {
+    color: var(--text-60);
+    text-decoration: none;
+  }
+  .back-link a:hover { color: var(--coral); }
+</style>
