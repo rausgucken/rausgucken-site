@@ -158,10 +158,20 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
       FreshnessStamp — design spec Part V §2:
       "Must use default text color with opacity-70. NEVER use Brand Coral text."
     -->
-    <div class="footer-right"><FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
-    {ev.source_label && (
-      <span class="source-attribution">Quelle: {ev.source_label}</span></div>
-    )}
+    <div class="footer-right">
+      <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
+      {ev.source_label && (
+        <a
+          href={ev.original_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="source-attribution"
+          onclick="event.stopPropagation()"
+        >
+          Quelle: {ev.source_label}
+        </a>
+      )}
+    </div>
   </div>
 </article>
 
@@ -401,17 +411,29 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     opacity: 0.70;
   }
 
-  /* Source attribution — replaces micro-disclaimer per E-E-A-T spec §14 */
-  .footer-right { display: flex; align-items: center; gap: 0; flex-shrink: 0; margin-left: auto; }
-  .source-attribution { font-size: 12px; color: var(--text); opacity: 0.7; font-family: var(--font-body, 'Inter', sans-serif); white-space: nowrap; padding-left: 0.6rem; border-left: 1px solid var(--border); margin-left: 0.6rem; }
-  .source-attribution-OLD {
-    font-size: 0.7rem;
-    color: var(--text-60);
+  /* Source attribution — replaces micro-disclaimer per E-E-A-T spec §14
+     Renders as a link: "Quelle: Stadtbibliothek Ludwigsburg" → original_url */
+  .footer-right {
     display: flex;
     align-items: center;
-    gap: 0.2rem;
-    flex-wrap: wrap;
-    flex: 1;
-    min-width: 0;
+    gap: 0;
+    flex-shrink: 0;
+    margin-left: auto;
   }
+  .source-attribution {
+    font-size: 0.72rem;
+    font-family: var(--font-body, 'Inter', sans-serif);
+    color: var(--text-60);
+    white-space: nowrap;
+    padding-left: 0.6rem;
+    border-left: 1px solid var(--border);
+    margin-left: 0.6rem;
+    text-decoration: none;
+    transition: color 150ms;
+  }
+  .source-attribution:hover {
+    color: var(--coral);
+  }
+  html.dark .source-attribution       { color: var(--text-60); }
+  html.dark .source-attribution:hover { color: var(--coral); }
 </style>
