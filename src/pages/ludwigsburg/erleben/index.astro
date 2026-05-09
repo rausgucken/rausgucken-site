@@ -81,11 +81,13 @@ const faqSchema = {
       <p class="intro">
         Ludwigsburg hat mehr im Angebot, als man auf den ersten Blick vermuten würde.
         Vom <strong>Residenzschloss</strong> und dem <strong>Blühenden Barock</strong>
-        über die Kunstszene in der <strong>Karlskaserne</strong> bis hin zu
-        Live-Entertainment in der <strong>MHP Arena</strong> — die Stadt ist
-        kulturell dichter besiedelt als ihr Ruf als Beamtenstadt vermuten lässt.
+        über die Kunstszene in der <strong>Karlskaserne</strong> bis hin zur
+        <strong>Stadtbibliothek</strong> — die Stadt ist kulturell dichter besiedelt
+        als ihr Ruf als Beamtenstadt vermuten lässt.
         Alle aktuellen Veranstaltungen sammelt rausgucken.de wöchentlich aus den
         Originalseiten der Veranstalter.
+        Konzerte und Events in der <strong>MHP Arena</strong> findest du direkt unter
+        <a href="https://mhparena.ludwigsburg.de/start/eventkalender" target="_blank" rel="noopener" class="external-link">mhparena.ludwigsburg.de</a>.
       </p>
 
       <!-- Quick filter links -->
@@ -114,19 +116,7 @@ const faqSchema = {
           Württembergischen Kammerorchesters und Bühne für Gastspiele, Lesungen
           und Kulturveranstaltungen.
         </p>
-        <a href="/ludwigsburg/" class="venue-cta">Aktuelle Veranstaltungen am Schloss →</a>
-      </section>
-
-      <!-- MHP Arena -->
-      <section class="venue-section" id="mhp-arena">
-        <h2>MHP Arena</h2>
-        <p>
-          Die MHP Arena ist die Heimspielstätte der <strong>MHP Riesen Ludwigsburg</strong>
-          und gleichzeitig das größte Live-Entertainment-Venue der Stadt. Das Programm
-          reicht von Basketballspielen über Konzerte und Comedy bis zu Familienveranstaltungen —
-          das Wochenprogramm wechselt regelmäßig.
-        </p>
-        <a href="/ludwigsburg/" class="venue-cta">Aktuelle Veranstaltungen in der MHP Arena →</a>
+        <a href="/ludwigsburg/?source=schloss" class="venue-cta">Aktuelle Veranstaltungen am Schloss →</a>
       </section>
 
       <!-- Karlskaserne -->
@@ -139,7 +129,8 @@ const faqSchema = {
           <strong>Kunstschule Labyrinth</strong>, die Kinder- und Jugend-Workshops
           in Bildender Kunst, Theater und Zirkus anbietet.
         </p>
-        <a href="/ludwigsburg/kinder/" class="venue-cta">Kinder-Workshops & Familienangebote →</a>
+        <a href="/ludwigsburg/?source=karlskaserne_ausstellungen" class="venue-cta">Ausstellungen in der Karlskaserne →</a>
+        <a href="/ludwigsburg/kinder/" class="venue-cta" style="margin-left:1rem">Kinder-Workshops & Familienangebote →</a>
       </section>
 
       <!-- Stadtbibliothek -->
@@ -151,7 +142,8 @@ const faqSchema = {
           digitale Workshops und Vortragsreihen. Viele Angebote sind kostenlos oder
           mit sehr geringem Kostenbeitrag zugänglich.
         </p>
-        <a href="/ludwigsburg/kostenlos/" class="venue-cta">Kostenlose Veranstaltungen →</a>
+        <a href="/ludwigsburg/?source=stabi" class="venue-cta">Veranstaltungen der Stadtbibliothek →</a>
+        <a href="/ludwigsburg/kostenlos/" class="venue-cta" style="margin-left:1rem">Kostenlose Events →</a>
       </section>
 
       <!-- Stadtmuseum -->
@@ -173,7 +165,7 @@ const faqSchema = {
           oft mit direktem Bezug zu regionalen Künstlerinnen und Künstlern.
           Vernissagen und Finissagen sind meist öffentlich und kostenlos zugänglich.
         </p>
-        <a href="/ludwigsburg/" class="venue-cta">Aktuelle Ausstellungen →</a>
+        <a href="/ludwigsburg/?source=kunstverein_ausstellungen" class="venue-cta">Ausstellungen des Kunstvereins →</a>
       </section>
 
       <!-- FAQ -->
@@ -306,18 +298,19 @@ const faqSchema = {
     display: inline-block;
     padding: 0.4rem 0.9rem;
     border-radius: 999px;
-    border: 1.5px solid var(--border);
     font-size: 0.85rem;
     font-weight: 600;
-    color: var(--text);
+    color: var(--charcoal, #373F51);
+    background: var(--coral, #FF6F61);
     text-decoration: none;
-    transition: border-color 150ms, color 150ms;
+    transition: background 150ms, opacity 150ms;
     min-height: 36px;
     line-height: 1.8;
+    border: none;
+    opacity: 0.92;
   }
   .filter-links a:hover {
-    border-color: var(--coral);
-    color: var(--coral);
+    opacity: 1;
   }
 
   /* ── Venue sections ──────────────────────────────────────────────────────── */
@@ -403,6 +396,13 @@ const faqSchema = {
   }
   details a { color: var(--coral); }
   details a:hover { color: var(--coral-dark); }
+
+  /* ── External link ──────────────────────────────────────────────────────── */
+  .external-link {
+    color: var(--coral);
+    text-decoration: underline;
+  }
+  .external-link:hover { opacity: 0.8; }
 
   /* ── Back link ───────────────────────────────────────────────────────────── */
   .back-link {

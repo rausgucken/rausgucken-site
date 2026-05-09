@@ -42,6 +42,7 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     { "event-card--sponsored": isSponsored },
   ]}
   data-tags={ev.tags.join(",")}
+         data-source={ev.source}
   data-age-min={ev.age_min ?? ""}
   data-age-max={ev.age_max ?? ""}
   data-date={ev.date_start ?? ""}
