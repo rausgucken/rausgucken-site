@@ -185,7 +185,15 @@ const jsonLd = {
       display: block;
       position: absolute;
       top: 0;
-      right: 0;
+      /* Push sidebar to the right of the 720px card area.
+         city-layout is inside main (max-width:1100px, padding: 0 24px = 1052px usable).
+         Cards are centered: left edge at (1052-720)/2 = 166px, right edge at 166+720 = 886px.
+         Sidebar right edge = 0 (right of city-layout = right of usable main area).
+         Sidebar left edge = 1052 - 220 = 832px — but that overlaps cards (end at 886px).
+         We need sidebar left >= 730px from city-layout left (720px cards + 10px gap).
+         So: left = 730px, width = 220px (fits within 1052px total). */
+      left: 740px;
+      right: auto;
       width: 220px;
     }
   }
