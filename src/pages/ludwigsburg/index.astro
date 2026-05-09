@@ -162,41 +162,43 @@ const jsonLd = {
   }
   .disclaimer-box a { color: var(--text); font-weight: 600; margin-left: 0.35rem; }
 
-  /* ── Layout: event list centered at 720px, sidebar floats right ─────────── */
-  /* city-layout is just a relative container — no grid, no flex.
-     city-main mirrors filterbar: max-width 720px, margin auto.
-     Sidebar is pulled out of flow and positioned to the right of city-main. */
+  /* ── Layout: flex row, cards + sidebar, centered as a unit ─────────────── */
+  /* filterbar is max-width:720px centered. We match that by centering the
+     flex row which contains 720px cards + gap + 220px sidebar.
+     Total = 720 + 2rem + 220 = ~972px, centered in 1100px main. */
   .city-layout {
-    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .city-main {
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
 
-  /* Sidebar: position relative to the page, right-aligned inside main (1100px).
-     main has 1.5rem (24px) padding each side.
-     We use a negative right margin trick: sidebar sits at right:0 of city-layout,
-     which is inside main (max-width:1100px, padding:0 24px). */
   @media (min-width: 961px) {
+    .city-layout {
+      flex-direction: row;
+      gap: 2rem;
+      align-items: flex-start;
+      /* Align left edge with filterbar: filterbar is max-width 720px margin:auto
+         Inside 1100px main with 24px padding = 1052px usable.
+         Cards left edge: (1052 - 720) / 2 = 166px from left of main content area.
+         We shift the flex row left by same amount so cards start at same x. */
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .city-main {
+      width: 720px;
+      flex-shrink: 0;
+    }
     .city-layout :global(.important-links-sidebar) {
       display: block;
-      position: absolute;
-      top: 0;
-      /* Push sidebar to the right of the 720px card area.
-         city-layout is inside main (max-width:1100px, padding: 0 24px = 1052px usable).
-         Cards are centered: left edge at (1052-720)/2 = 166px, right edge at 166+720 = 886px.
-         Sidebar right edge = 0 (right of city-layout = right of usable main area).
-         Sidebar left edge = 1052 - 220 = 832px — but that overlaps cards (end at 886px).
-         We need sidebar left >= 730px from city-layout left (720px cards + 10px gap).
-         So: left = 730px, width = 220px (fits within 1052px total). */
-      left: 740px;
-      right: auto;
+      flex-shrink: 0;
       width: 220px;
     }
   }
+
   @media (max-width: 960px) {
     .city-layout :global(.important-links-sidebar) {
       display: none;
