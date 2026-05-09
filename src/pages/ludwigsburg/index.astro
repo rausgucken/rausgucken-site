@@ -30,6 +30,16 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 2, "name": "Ludwigsburg", "item": "https://rausgucken.de/ludwigsburg/" },
   ],
 };
+
+// Load featured event for "Unser Tipp der Woche"
+import tipsRaw from '../../../editorial-tips.json';
+const featuredSlug = Object.entries(tipsRaw).find(
+  ([, v]) => typeof v === 'object' && v.featured === true
+)?.[0] ?? null;
+const featuredEvent = featuredSlug
+  ? { ...events.find(e => e.slug === featuredSlug), editorial_tip: tipsRaw[featuredSlug]?.tip }
+  : null;
+
 ---
 
 <Base
@@ -133,7 +143,8 @@ const breadcrumbSchema = {
     </div><!-- /.city-main -->
 
     <!-- Right: sidebar — hidden on mobile, sticky on desktop -->
-    <ImportantLinksSidebar />
+    <FeaturedEvent event={featuredEvent} />
+      <ImportantLinksSidebar />
 
   </div><!-- /.city-layout -->
 

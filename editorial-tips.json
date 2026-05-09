@@ -1,6 +1,10 @@
 {
-  "__instructions__": "Keyed by event slug. Max 200 chars. Plain German. No HTML. Never AI-generated.",
+  "__instructions__": {
+    "tip": "Keyed by event slug. Max 200 chars. Plain German. No HTML. Never AI-generated.",
+    "featured": false
+  },
   "__example__": {
-    "kuerbisausstellung-bluehender-barock-2026-10-09": "Unser Tipp: Lohnt sich besonders am Wochentag — am Wochenende ist der Andrang erheblich."
+    "kuerbisausstellung-bluehender-barock-2026-10-09": "Unser Tipp: Lohnt sich besonders am Wochentag — am Wochenende ist der Andrang erheblich.",
+    "featured": false
   }
 }

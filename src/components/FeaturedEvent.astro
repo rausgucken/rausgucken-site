@@ -1,0 +1,214 @@
+---
+// src/components/FeaturedEvent.astro
+// "Unser Tipp der Woche" — featured event callout
+// Rendered above ImportantLinksSidebar in the right column.
+// Data comes from editorial-tips.json: the entry with featured: true.
+// If no featured entry exists, renders nothing.
+
+const { event } = Astro.props;
+// event: full event object with editorial_tip injected
+
+if (!event) return;
+
+const dateObj = event.date_start ? new Date(event.date_start + "T00:00:00") : null;
+const dateFormatted = dateObj
+  ? dateObj.toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long" })
+  : null;
+---
+
+{event && (
+  <aside
+    class="featured-event-aside"
+    aria-label="Unser Tipp der Woche"
+  >
+    <div class="featured-event-header">
+      <span class="featured-dot" aria-hidden="true">●</span>
+      <span class="featured-label">Unser Tipp der Woche</span>
+    </div>
+
+    <h3 class="featured-title">
+      <a href={`/ludwigsburg/events/${event.slug}`} class="featured-title-link">
+        {event.title}
+      </a>
+    </h3>
+
+    {dateFormatted && (
+      <p class="featured-meta">
+        {dateFormatted}
+        {event.time && <> · {event.time}</>}
+        {event.location && <> · {event.location}</>}
+      </p>
+    )}
+
+    {event.editorial_tip && (
+      <p class="featured-tip">{event.editorial_tip}</p>
+    )}
+
+    
+      href={`/ludwigsburg/events/${event.slug}`}
+      class="featured-cta"
+      aria-label={`Mehr zu: ${event.title}`}
+    >
+      Mehr erfahren →
+    </a>
+
+    <p class="featured-source">
+      Quelle: {event.source_label} —{" "}
+      
+        href={event.original_url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="featured-source-link"
+      >
+        Originalseite prüfen
+      </a>
+    </p>
+  </aside>
+)}
+
+<style>
+  .featured-event-aside {
+    background-color: var(--color-surface-secondary, #ffffff);
+    border-left: 4px solid var(--color-brand-coral, #FF6F61);
+    border-radius: 0.75rem;
+    padding: 1.25rem 1rem 1rem 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+    transition: box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
+  }
+
+  :global(.dark) .featured-event-aside {
+    background-color: var(--color-surface-secondary-dark, #444857);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.22);
+  }
+
+  .featured-event-aside:hover {
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+  }
+
+  .featured-event-header {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .featured-dot {
+    color: var(--color-brand-coral, #FF6F61);
+    font-size: 0.6rem;
+    line-height: 1;
+    /* motion-safe: animate pulse for freshness signal */
+    animation: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .featured-dot {
+      animation: featured-pulse 2s ease-in-out infinite;
+    }
+  }
+
+  @keyframes featured-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  .featured-label {
+    font-family: var(--font-body, "Inter", sans-serif);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-brand-coral, #FF6F61);
+  }
+
+  .featured-title {
+    font-family: var(--font-heading, "Nunito", sans-serif);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 0.4rem 0;
+    color: var(--color-text-charcoal, #373F51);
+  }
+
+  :global(.dark) .featured-title {
+    color: var(--color-text-offwhite, #FFFDF9);
+  }
+
+  .featured-title-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .featured-title-link:hover {
+    text-decoration: underline;
+  }
+
+  .featured-meta {
+    font-size: 0.78rem;
+    margin: 0 0 0.75rem 0;
+    color: var(--color-text-charcoal, #373F51);
+    opacity: 0.7;
+  }
+
+  :global(.dark) .featured-meta {
+    color: var(--color-text-offwhite, #FFFDF9);
+    opacity: 0.7;
+  }
+
+  .featured-tip {
+    font-size: 0.875rem;
+    line-height: 1.55;
+    margin: 0 0 1rem 0;
+    color: var(--color-text-charcoal, #373F51);
+  }
+
+  :global(.dark) .featured-tip {
+    color: var(--color-text-offwhite, #FFFDF9);
+  }
+
+  .featured-cta {
+    display: inline-block;
+    background-color: var(--color-brand-coral, #FF6F61);
+    color: var(--color-text-charcoal, #373F51);
+    font-family: var(--font-body, "Inter", sans-serif);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.45rem 0.9rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: opacity 200ms ease;
+    min-height: 44px;
+    min-width: 44px;
+    line-height: 2.2;
+  }
+
+  .featured-cta:hover {
+    opacity: 0.88;
+  }
+
+  .featured-cta:focus-visible {
+    outline: 2px solid var(--color-brand-coral, #FF6F61);
+    outline-offset: 2px;
+  }
+
+  .featured-source {
+    font-size: 0.7rem;
+    margin: 0.75rem 0 0 0;
+    color: var(--color-text-charcoal, #373F51);
+    opacity: 0.7;
+  }
+
+  :global(.dark) .featured-source {
+    color: var(--color-text-offwhite, #FFFDF9);
+    opacity: 0.7;
+  }
+
+  .featured-source-link {
+    color: inherit;
+    text-decoration: underline;
+  }
+
+  .featured-source-link:hover {
+    opacity: 1;
+  }
+</style>
