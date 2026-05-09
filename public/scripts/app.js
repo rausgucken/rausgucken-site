@@ -234,10 +234,10 @@
   var params = new URLSearchParams(window.location.search);
   var ortParam = params.get('ort');
   if (!ortParam) return;
-  var decoded = decodeURIComponent(ortParam.replace(/\+/g, ' '));
+  var decoded = ortParam.replace(/\+/g, ' ');
   function applyFilter() {
     var sel = document.getElementById('location-filter');
-    if (!sel || sel.options.length <= 1) { setTimeout(applyFilter, 100); return; }
+    if (!sel) return;
     var matched = Array.from(sel.options).find(function(o) {
       return o.value === decoded;
     });
@@ -246,9 +246,11 @@
       sel.dispatchEvent(new Event('change', { bubbles: true }));
     }
   }
+  // Options are populated synchronously — but event listeners attach after
+  // the IIFE completes, so defer one tick with setTimeout 0.
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', applyFilter);
+    document.addEventListener('DOMContentLoaded', function() { setTimeout(applyFilter, 0); });
   } else {
-    applyFilter();
+    setTimeout(applyFilter, 0);
   }
 })();
