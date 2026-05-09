@@ -39,32 +39,11 @@ import links from "../../config/important-links.json";
 </aside>
 
 <style>
-  /* Desktop: absolute-positioned to the right of the 1100px main container.
-     Event content stays naturally centered — sidebar doesn't affect its flow.
-     Hidden on mobile — footer carries the links. */
+  /* Grid places sidebar in its column — just needs sticky behavior */
   .important-links-sidebar {
-    display: none; /* hidden by default (mobile-first) */
-  }
-
-  @media (min-width: 901px) {
-    .important-links-sidebar {
-      display: block;
-      position: absolute;
-      /* Right edge of main (1100px centered in viewport).
-         Main has padding: 2.5rem 1.5rem = 24px sides.
-         Sidebar width: 240px. We position from the right edge of main. */
-      right: 0;
-      top: 0;
-      width: 240px;
-      position: sticky;
-      /* Use float to sit to the right of centered content without shifting it */
-      float: right;
-      clear: right;
-      /* Stick below header (64px) + filterbar (~70px) */
-      top: 140px;
-      /* Pull it up to align with first event card — compensate for page-header above FilterBar */
-      margin-top: 0;
-    }
+    position: sticky;
+    top: 140px; /* below header (64px) + filterbar (~76px) */
+    align-self: start;
   }
 
   .sidebar-heading {

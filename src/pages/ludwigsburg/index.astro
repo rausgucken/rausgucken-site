@@ -162,21 +162,30 @@ const jsonLd = {
   }
   .disclaimer-box a { color: var(--text); font-weight: 600; margin-left: 0.35rem; }
 
-  /* ── Layout: centered content + floating sidebar ─────────────────────────── */
-  /* Event content stays centered at max-w 720px (as before sidebar was added).
-     Sidebar is pulled out of flow via absolute positioning anchored to the
-     right edge of the 1100px <main> container. No grid — no content shift. */
+  /* ── Two-column layout ───────────────────────────────────────────────────── */
+  /* Fixed 720px event column + auto sidebar column, centered as a unit.
+     Events stay at exactly 720px — same as before sidebar was added.
+     Sidebar occupies whatever space remains to the right. */
   .city-layout {
-    position: relative; /* establishes positioning context for sidebar */
+    display: grid;
+    grid-template-columns: 720px 240px;
+    gap: 2rem;
+    align-items: start;
+    /* Center the grid so the 720px column sits where it did before */
+    justify-content: center;
   }
 
-  /* city-main: standard centered content — same as it was before sidebar */
   .city-main {
-    /* no constraints here — .event-list inside handles max-width */
+    min-width: 0;
+    width: 100%;
   }
 
-  /* On mobile: sidebar is hidden — footer carries the links */
-  @media (max-width: 900px) {
+  /* Mobile: single column, sidebar hidden */
+  @media (max-width: 960px) {
+    .city-layout {
+      grid-template-columns: 1fr;
+      justify-content: stretch;
+    }
     .city-layout > :global(.important-links-sidebar) {
       display: none;
     }
@@ -205,24 +214,7 @@ const jsonLd = {
     box-shadow: 0 2px 8px rgba(0,0,0,0.22);
   }
 
-  /* ── Sidebar absolute positioning within .city-layout ───────────────────── */
-  /* main is 1100px centered. Event list is 720px centered.
-     Sidebar sits at the right edge of main, absolutely positioned.
-     This means it doesn't affect the flow of the event content at all. */
-  @media (min-width: 901px) {
-    .city-layout {
-      position: relative;
-      /* min-height prevents layout collapse when event list is short */
-      min-height: 600px;
-    }
-    .city-layout :global(.important-links-sidebar) {
-      display: block !important;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 240px;
-    }
-  }
+  /* Sidebar display controlled by media query in layout block above */
 
   /* ── Empty state ─────────────────────────────────────────────────────────── */
   .empty-state {
