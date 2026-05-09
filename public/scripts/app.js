@@ -231,7 +231,6 @@
 
 // ── ?ort= URL param: pre-select the Ort dropdown on page load ────────────────
 // Targets #location-filter (populated dynamically by app.js from data-location).
-// Must run after app.js populates the select options.
 (function applyOrtParam() {
   var params = new URLSearchParams(window.location.search);
   var ortParam = params.get('ort');
@@ -240,11 +239,9 @@
   function applyFilter() {
     var sel = document.getElementById('location-filter');
     if (!sel || sel.options.length <= 1) {
-      // Options not populated yet — retry
       setTimeout(applyFilter, 100);
       return;
     }
-    // Find exact match first, then partial
     var matched = Array.from(sel.options).find(function(o) {
       return o.value === ortParam;
     }) || Array.from(sel.options).find(function(o) {
