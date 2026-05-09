@@ -9,12 +9,6 @@
 import Base from "../../../layouts/Base.astro";
 import eventsData from "../../../../public/data/ludwigsburg/events-current.json";
 import tipsData from "../../../../editorial-tips.json";
-const editorialTip: string | undefined = (() => {
-  if (!tipsData || typeof tipsData !== "object") return undefined;
-  const tips = tipsData as Record<string, unknown>;
-  const val = tips[ev.slug];
-  return typeof val === "string" && val.length > 0 ? val : undefined;
-})();
 
 export async function getStaticPaths() {
   return eventsData.map(ev => ({
@@ -24,6 +18,12 @@ export async function getStaticPaths() {
 }
 
 const { event: ev } = Astro.props;
+const editorialTip: string | undefined = (() => {
+  if (!tipsData || typeof tipsData !== "object") return undefined;
+  const tips = tipsData as Record<string, unknown>;
+  const val = tips[ev.slug];
+  return typeof val === "string" && val.length > 0 ? val : undefined;
+})();
 const siteUrl = "https://rausgucken.de";
 
 // ── Dates & freshness ─────────────────────────────────────────────────────────
