@@ -2,7 +2,6 @@
 // src/layouts/Base.astro
 // SEO: lang="de-DE", hreflang, canonical (per-page), OG image, font preload, schema slots
 
-import importantLinks from "../config/important-links.json";
 const {
   title,
   description,
@@ -431,23 +430,6 @@ const websiteSchema = isHomepage ? {
         <ul>
           <li><a href="/about">Über uns</a></li>
           <li><a href="/sitemap.xml">Sitemap</a></li>
-        </ul>
-      </div>
-    
-      <div class="footer-col">
-        <h4>Wichtige Links</h4>
-        <ul>
-          {importantLinks.map(link => (
-            <li>
-              {link.external ? (
-                <a href={link.url} target="_blank" rel="nofollow noopener noreferrer">
-                  {link.name}
-                </a>
-              ) : (
-                <a href={link.url}>{link.name}</a>
-              )}
-            </li>
-          ))}
         </ul>
       </div>
     </div>

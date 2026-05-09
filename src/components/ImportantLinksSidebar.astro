@@ -1,0 +1,101 @@
+---
+// src/components/ImportantLinksSidebar.astro
+// SEO strategy §26a: sticky right column on desktop (≥769px), hidden on desktop mobile
+// Mobile: hidden here — identical links rendered in footer-col "Wichtige Links" in Base.astro
+// External links: rel="nofollow noopener noreferrer" mandatory (SEO §26)
+// Internal links: no rel attribute, standard anchor
+
+import links from "../../config/important-links.json";
+---
+
+<aside class="important-links-sidebar" aria-label="Wichtige Links">
+  <h2 class="sidebar-heading">Wichtige Links</h2>
+  <ul class="sidebar-list" role="list">
+    {links.map(link => (
+      <li class="sidebar-item">
+        {link.external ? (
+          <a
+            href={link.url}
+            class="sidebar-link"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            {link.name}
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex-shrink:0;margin-left:3px;opacity:0.5">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+        ) : (
+          <a href={link.url} class="sidebar-link sidebar-link--internal">
+            {link.name} →
+          </a>
+        )}
+        <p class="sidebar-desc">{link.description}</p>
+      </li>
+    ))}
+  </ul>
+</aside>
+
+<style>
+  /* Desktop only — hidden on mobile (parent grid collapses to 1 col) */
+  .important-links-sidebar {
+    /* sizing handled by parent .city-layout grid in index.astro */
+    position: sticky;
+    top: 130px; /* below header (64px) + filterbar (~66px) */
+    align-self: start;
+  }
+
+  .sidebar-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--text-60);
+    font-family: var(--font-body);
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sidebar-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .sidebar-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    line-height: 1.3;
+    transition: color 150ms;
+  }
+  .sidebar-link:hover {
+    color: var(--coral);
+    text-decoration: none;
+  }
+  .sidebar-link--internal {
+    color: var(--coral);
+  }
+  .sidebar-link--internal:hover {
+    color: var(--coral-dark);
+  }
+
+  .sidebar-desc {
+    font-size: 0.78rem;
+    color: var(--text-60);
+    line-height: 1.4;
+  }
+</style>
