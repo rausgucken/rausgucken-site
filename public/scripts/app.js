@@ -230,29 +230,22 @@
 })();
 
 // ── ?ort= URL param: pre-select the Ort dropdown on page load ────────────────
-// Targets #location-filter (populated dynamically by app.js from data-location).
 (function applyOrtParam() {
   var params = new URLSearchParams(window.location.search);
   var ortParam = params.get('ort');
   if (!ortParam) return;
-
+  var decoded = decodeURIComponent(ortParam.replace(/\+/g, ' '));
   function applyFilter() {
     var sel = document.getElementById('location-filter');
-    if (!sel || sel.options.length <= 1) {
-      setTimeout(applyFilter, 100);
-      return;
-    }
+    if (!sel || sel.options.length <= 1) { setTimeout(applyFilter, 100); return; }
     var matched = Array.from(sel.options).find(function(o) {
-      return o.value === ortParam;
-    }) || Array.from(sel.options).find(function(o) {
-      return o.value.toLowerCase().includes(ortParam.toLowerCase());
+      return o.value === decoded;
     });
     if (matched) {
       sel.value = matched.value;
       sel.dispatchEvent(new Event('change', { bubbles: true }));
     }
   }
-
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', applyFilter);
   } else {
