@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-03T20:48:31.830685+02:00",
+  "generated_at": "2026-05-09T02:22:02.014649+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "stabi",
     "museum",
-    "labyrinth",
     "kunstverein_veranstaltungen",
-    "karlskaserne_veranstaltungen",
     "kunstverein_ausstellungen",
-    "schloss",
-    "karlskaserne_ausstellungen"
+    "labyrinth",
+    "karlskaserne_ausstellungen",
+    "karlskaserne_veranstaltungen",
+    "stabi",
+    "schloss"
   ],
   "previous_run": null,
-  "count_added": 708,
+  "count_added": 692,
   "count_removed": 0,
   "added": [
     {
@@ -23,38 +23,8 @@
     },
     {
       "id": "9b37e29cbdb5d035",
-      "title": "Ausstellung RESPEKT! Menschen der Karlshöhe",
+      "title": "Ausstellung Respekt! Menschen der Karlshöhe",
       "date_start": "2026-05-03",
-      "source": "museum"
-    },
-    {
-      "id": "aeb804ddaf310954",
-      "title": "Ausstellungseröffnung Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-05-03",
-      "source": "museum"
-    },
-    {
-      "id": "4d5f72f581a25f65",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-05-05",
-      "source": "museum"
-    },
-    {
-      "id": "46f0fe94fbe4ec27",
-      "title": "Museumspause",
-      "date_start": "2026-05-06",
-      "source": "museum"
-    },
-    {
-      "id": "287e1b0ce223e487",
-      "title": "Offenes Atelier: Zeichnen mit ungewöhnlichen Dingen, Achim Sauter",
-      "date_start": "2026-05-07",
-      "source": "museum"
-    },
-    {
-      "id": "442c84347c13057f",
-      "title": "Werkvortrag Beispielhaftes Bauen",
-      "date_start": "2026-05-07",
       "source": "museum"
     },
     {
@@ -70,6 +40,12 @@
       "source": "museum"
     },
     {
+      "id": "a5524cdc806242b7",
+      "title": "Kuratorinnenführung Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-05-17",
+      "source": "museum"
+    },
+    {
       "id": "5cc480cecb175207",
       "title": "Treff der Museumsfreunde",
       "date_start": "2026-05-20",
@@ -77,7 +53,7 @@
     },
     {
       "id": "6e472c92ae994932",
-      "title": "Ausstellungsrundgang RESPEKT!",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
       "date_start": "2026-05-23",
       "source": "museum"
     },
@@ -95,7 +71,7 @@
     },
     {
       "id": "bef244609f2be13d",
-      "title": "Ausstellungsrundgang RESPEKT!",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
       "date_start": "2026-06-11",
       "source": "museum"
     },
@@ -119,7 +95,7 @@
     },
     {
       "id": "5dda87d97f9a5249",
-      "title": "Ausstellungsrundgang RESPEKT!",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
       "date_start": "2026-06-27",
       "source": "museum"
     },
@@ -161,7 +137,7 @@
     },
     {
       "id": "322bc0e6756e5181",
-      "title": "Ausstellungsrundgang RESPEKT!",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
       "date_start": "2026-07-16",
       "source": "museum"
     },
@@ -173,7 +149,7 @@
     },
     {
       "id": "bd75af93b493f0bd",
-      "title": "Ausstellungsrundgang RESPEKT!",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
       "date_start": "2026-07-25",
       "source": "museum"
     },
@@ -203,7 +179,7 @@
     },
     {
       "id": "36b30bd893cbc9a3",
-      "title": "Ausstellungsrundgang RESPEKT!",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
       "date_start": "2026-08-29",
       "source": "museum"
     },
@@ -316,6 +292,30 @@
       "source": "museum"
     },
     {
+      "id": "11020e1797d08af8",
+      "title": "Museumspause",
+      "date_start": "2026-11-04",
+      "source": "museum"
+    },
+    {
+      "id": "8cfedb157c03fae8",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-05",
+      "source": "museum"
+    },
+    {
+      "id": "7b4a2637daeb836c",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-10",
+      "source": "museum"
+    },
+    {
+      "id": "22597c61629cf289",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-11-11",
+      "source": "museum"
+    },
+    {
       "id": "34fe17f85587e290",
       "title": "Klassische Schlossführung „Herzog“",
       "date_start": "2026-05-14",
@@ -328,37 +328,7 @@
       "source": "schloss"
     },
     {
-      "id": "5d9525d6703190e6",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-05-03",
-      "source": "schloss"
-    },
-    {
-      "id": "b55e2f62785a1e83",
-      "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-05-03",
-      "source": "schloss"
-    },
-    {
-      "id": "c58aa2615488b993",
-      "title": "Klassische Schlossführung in englischer Sprache",
-      "date_start": "2026-05-14",
-      "source": "schloss"
-    },
-    {
-      "id": "2c9ba0cfcbb50a9b",
-      "title": "Klassische Führung für Familien",
-      "date_start": "2026-05-14",
-      "source": "schloss"
-    },
-    {
-      "id": "817a25f855d4fe4f",
-      "title": "Württembergs First Ladies",
-      "date_start": "2026-05-03",
-      "source": "schloss"
-    },
-    {
-      "id": "2991af068c790a6a",
+      "id": "f322d0e465100929",
       "title": "„Weil menschlich so viel möglich ist“",
       "date_start": "2026-05-08",
       "source": "schloss"
@@ -367,6 +337,12 @@
       "id": "4bba3e82629ffc52",
       "title": "Vom Gewölbe zum Genuss",
       "date_start": "2026-05-09",
+      "source": "schloss"
+    },
+    {
+      "id": "c58aa2615488b993",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": "2026-05-14",
       "source": "schloss"
     },
     {
@@ -385,6 +361,12 @@
       "id": "310b529fe2a5e595",
       "title": "Kaleidoskop – Kunst unterwegs",
       "date_start": "2026-05-10",
+      "source": "schloss"
+    },
+    {
+      "id": "2c9ba0cfcbb50a9b",
+      "title": "Klassische Führung für Familien",
+      "date_start": "2026-05-14",
       "source": "schloss"
     },
     {
@@ -1864,30 +1846,6 @@
       "source": "karlskaserne_ausstellungen"
     },
     {
-      "id": "7a18b0b38363bbc0",
-      "title": "Workshop: Eine alte Handtasche aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-05-02",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0fe0a4319f3ead45",
-      "title": "Workshop: Ein Maikäfer aus Ton für Kinder ab 5 Jahren in Ludwigsburg",
-      "date_start": "2026-05-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "9b281e20a1f7df40",
-      "title": "Workshop: Quality-Time für Mütter und Töchter ab 13 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-05-06",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "dd08448f09ac5432",
-      "title": "The Ilan Lev Method",
-      "date_start": "2026-05-08",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
       "id": "951a0948a228934d",
       "title": "Ausstellung: Mixed Realities",
       "date_start": "2026-05-08",
@@ -1984,38 +1942,32 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
+      "id": "3e43280ee6341789",
+      "title": "Ferienworkshop: Lebendige Buchstaben in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "3ba96453e1d231b8",
+      "title": "Ferienworkshop: Abenteuer Manege! für Kinder von 9-12 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
       "id": "cf8d525720f13951",
       "title": "Ferienworkshop: Wer ich mal sein will für Kinder ab 6 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "dab16652575abe64",
-      "title": "Ferienworkshop: Tanztheaterwerkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "6c987ab6214a20a9",
-      "title": "Ferienworkshop: Contemporary Dance für Kinder und Jugendliche von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "2cfb633b01083ae7",
-      "title": "Ferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "e423948d9d194f4f",
+      "id": "0e5fd3fb8bd96179",
       "title": "Ferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "ef98ff51134571af",
-      "title": "Ferienworkshop: Wollene Wundertiere für Kinder ab 8 Jahren in Ludwigsburg",
+      "id": "fc422401c9429d7e",
+      "title": "Ferienworkshop: Tanztheaterwerkstatt für Kinder von 8-10 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
       "source": "karlskaserne_veranstaltungen"
     },
@@ -2032,12 +1984,6 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "6497fe645a41f127",
-      "title": "Ferienworkshop: Peppa Wutz - Deine Welt im Schuhkarton für Kinder ab 4 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
       "id": "f37b20366dea79e4",
       "title": "Ferienworkshop: Malen mit Naturmaterialien für Kinder ab 9 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
@@ -2046,12 +1992,6 @@
     {
       "id": "3e81820c9eb2337d",
       "title": "Ferienworkshop: Hip-Hop Streetdance Kids für Kinder von 7-9 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "fc422401c9429d7e",
-      "title": "Ferienworkshop: Tanztheaterwerkstatt für Kinder von 8-10 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
       "source": "karlskaserne_veranstaltungen"
     },
@@ -2122,7 +2062,7 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "481696e00074ec13",
+      "id": "0312f4f8beecd4e8",
       "title": "Der Märchenkoch",
       "date_start": "2026-06-15",
       "source": "karlskaserne_veranstaltungen"
@@ -2272,7 +2212,7 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "6a78e30b09afb98d",
+      "id": "7fd03e810e85c298",
       "title": "Konrad oder Das Kind aus der Konservenbüchse",
       "date_start": "2026-07-20",
       "source": "karlskaserne_veranstaltungen"
@@ -2290,14 +2230,8 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "59848a84fd53bb8c",
-      "title": "Sommerferienworkshop: Ballett kreativ in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "1aa20cdbd5250257",
-      "title": "Sommerferienworkshop: Wackeldackel, Löwenhocker, Kistenlaster in Bietigheim",
+      "id": "83504cd41962382b",
+      "title": "Sommerferienworkshop: Schule der magischen Tiere in Ludwigsburg",
       "date_start": "2026-07-30",
       "source": "karlskaserne_veranstaltungen"
     },
@@ -2316,12 +2250,6 @@
     {
       "id": "c12c1223105c6b89",
       "title": "Sommerferienworkshop: Die Wunderwelt der Stempel und Schablonen in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "83504cd41962382b",
-      "title": "Sommerferienworkshop: Schule der magischen Tiere in Ludwigsburg",
       "date_start": "2026-07-30",
       "source": "karlskaserne_veranstaltungen"
     },
@@ -2362,14 +2290,8 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "a85d32875ceb29c0",
-      "title": "Sommerferienworkshop: Hip Hop Streetdance Kids in Bietigheim",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "ae6fc01270621b21",
-      "title": "Sommerferienworkshop: Tiergeschichten stempeln in Bietigheim",
+      "id": "9afcf718ba894afa",
+      "title": "Sommerferienworkshop: Stage Time in Ludwigsburg",
       "date_start": "2026-08-03",
       "source": "karlskaserne_veranstaltungen"
     },
@@ -2410,44 +2332,8 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "9afcf718ba894afa",
-      "title": "Sommerferienworkshop: Stage Time in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
       "id": "0424673a41bdd0b6",
       "title": "Sommerferienworkshop: Abenteuer Manege! in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "bc8bf45458568c62",
-      "title": "Sommerferienworkshop: Theaterwerkstatt in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "c7c72184f0ad2e1a",
-      "title": "Sommerferienworkshop: Kunst im Wald in Bietigheim",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "4380d794eca2d487",
-      "title": "Sommerferienworkshop: Contemporary Dance Camp in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "87424ecb92095f4d",
-      "title": "Sommerferienworkshop: Tiere, die es gar nicht gibt! aus Ton in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "4e7fae87f3f6972e",
-      "title": "Sommerferienworkshop: Mondlandung - streng geheim! in Ludwigsburg",
       "date_start": "2026-08-03",
       "source": "karlskaserne_veranstaltungen"
     },
@@ -2464,8 +2350,26 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
+      "id": "bc8bf45458568c62",
+      "title": "Sommerferienworkshop: Theaterwerkstatt in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "4e7fae87f3f6972e",
+      "title": "Sommerferienworkshop: Mondlandung - streng geheim! in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
       "id": "02675cad349f9dcd",
       "title": "Sommerferienworkshop: Hip Hop in Ludwigsburg",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "1f5f6cbf62e8ebc6",
+      "title": "Sommerferienworkshop: Flughafen Schlosshof, bitte melden! in Bietigheim",
       "date_start": "2026-08-31",
       "source": "karlskaserne_veranstaltungen"
     },
@@ -2530,18 +2434,6 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "cc26403a9b289e7f",
-      "title": "Sommerferienworkshop: Talking Stones in Ludwigsburg",
-      "date_start": "2026-09-02",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "11ad84ec32dec5c8",
-      "title": "Sommerferienworkshop: Talking Stones in Ludwigsburg",
-      "date_start": "2026-09-02",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
       "id": "6534bd12286fab54",
       "title": "Sommerferienworkshop: Urban Sketching in Ludwigsburg",
       "date_start": "2026-09-05",
@@ -2550,6 +2442,18 @@
     {
       "id": "764ee1d68189b831",
       "title": "Sommerferienworkshop: Film ab! Vom Storyboard zum Video – ein Ganztagsangebot in Ludwigsburg",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "afa6cda745bad4e6",
+      "title": "Sommerferienworkshop: Ein verwunschener Feuerdrache in Ludwigsburg",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "5b98b3a21fa84faf",
+      "title": "Sommerferienworkshop: Tanztheaterwerkstatt in Ludwigsburg",
       "date_start": "2026-09-07",
       "source": "karlskaserne_veranstaltungen"
     },
@@ -2962,24 +2866,6 @@
       "source": "kunstverein_veranstaltungen"
     },
     {
-      "id": "3142cf0dbef8d0a6",
-      "title": "Maker Zone",
-      "date_start": "2026-05-07",
-      "source": "stabi"
-    },
-    {
-      "id": "488d6e9d863677e9",
-      "title": "Gaming Friday",
-      "date_start": "2026-05-08",
-      "source": "stabi"
-    },
-    {
-      "id": "2e37e11728105e2b",
-      "title": "Internetführerschein",
-      "date_start": "2026-05-08",
-      "source": "stabi"
-    },
-    {
       "id": "6fe28ad3c58cf73d",
       "title": "3D-Drucker-Sprechstunde",
       "date_start": "2026-05-19",
@@ -2989,12 +2875,6 @@
       "id": "632ef4b032eae148",
       "title": "Roboter programmieren: Eltern-Kind-Workshop",
       "date_start": "2026-05-21",
-      "source": "stabi"
-    },
-    {
-      "id": "c352a88e624871e4",
-      "title": "Fridays for Coding",
-      "date_start": "2026-05-22",
       "source": "stabi"
     },
     {
@@ -3016,8 +2896,8 @@
       "source": "stabi"
     },
     {
-      "id": "c2708fe0942662a4",
-      "title": "Gaming Friday",
+      "id": "3d4cf1be4002af6a",
+      "title": "Filmdreh und Setbau im Spiel – Machinima-Workshop mit Luanti",
       "date_start": "2026-06-05",
       "source": "stabi"
     },
@@ -3040,69 +2920,27 @@
       "source": "stabi"
     },
     {
-      "id": "a8a61f08a1d4d1ee",
-      "title": "Maker Zone",
-      "date_start": "2026-06-18",
-      "source": "stabi"
-    },
-    {
-      "id": "d23d61316c88ebac",
-      "title": "Ich bin online und du?",
-      "date_start": "2026-06-19",
-      "source": "stabi"
-    },
-    {
-      "id": "5dd3423e93258aa6",
-      "title": "Fridays for Coding",
-      "date_start": "2026-06-19",
-      "source": "stabi"
-    },
-    {
       "id": "2f05c34a4368e307",
       "title": "Roboter programmieren: Eltern-Kind-Workshop",
       "date_start": "2026-06-25",
       "source": "stabi"
     },
     {
+      "id": "568bfaeb2b2a68ed",
+      "title": "Filme im Spiel erstellen – Machinima-Workshop mit Sims",
+      "date_start": "2026-06-27",
+      "source": "stabi"
+    },
+    {
+      "id": "f835f6259f93d197",
+      "title": "Dein Sound, deine Story - Wie klingt deine Zukunft?",
+      "date_start": "2026-09-08",
+      "source": "stabi"
+    },
+    {
       "id": "0ccc81f23e877f8a",
       "title": "3D-Drucker-Sprechstunde",
       "date_start": "2026-11-24",
-      "source": "stabi"
-    },
-    {
-      "id": "66b9383706f7f4d7",
-      "title": "Internationale Geschichteninsel - Russisch",
-      "date_start": "2026-05-05",
-      "source": "stabi"
-    },
-    {
-      "id": "f608a97263fcc0df",
-      "title": "Bilderbuchstunde",
-      "date_start": "2026-05-06",
-      "source": "stabi"
-    },
-    {
-      "id": "b0773ba3fab779be",
-      "title": "Zwergeninsel",
-      "date_start": "2026-05-07",
-      "source": "stabi"
-    },
-    {
-      "id": "0c9e86c7377613be",
-      "title": "Internationale Geschichteninsel - Spanisch",
-      "date_start": "2026-05-07",
-      "source": "stabi"
-    },
-    {
-      "id": "857f70e8f31c9caa",
-      "title": "Storytime in der Hauptstelle",
-      "date_start": "2026-05-07",
-      "source": "stabi"
-    },
-    {
-      "id": "f8a4d9ec9839bb1f",
-      "title": "Internationale Geschichteninsel - Albanisch",
-      "date_start": "2026-05-08",
       "source": "stabi"
     },
     {
@@ -3199,12 +3037,6 @@
       "id": "3be34dfa628de4ab",
       "title": "Storytime in der Hauptstelle",
       "date_start": "2026-06-11",
-      "source": "stabi"
-    },
-    {
-      "id": "5e70c25b8c70713d",
-      "title": "Internationale Geschichteninsel - Albanisch",
-      "date_start": "2026-06-12",
       "source": "stabi"
     },
     {
@@ -3340,12 +3172,6 @@
       "source": "stabi"
     },
     {
-      "id": "bde2637b77c4a8f1",
-      "title": "Internationale Geschichteninsel - Albanisch",
-      "date_start": "2026-09-18",
-      "source": "stabi"
-    },
-    {
       "id": "a715b7862b202b38",
       "title": "Internationale Geschichteninsel - Türkisch",
       "date_start": "2026-09-24",
@@ -3385,12 +3211,6 @@
       "id": "5f25801fe4ef8fc4",
       "title": "Internationale Geschichteninsel - Spanisch",
       "date_start": "2026-10-08",
-      "source": "stabi"
-    },
-    {
-      "id": "0b36b79c9d55b54f",
-      "title": "Internationale Geschichteninsel - Albanisch",
-      "date_start": "2026-10-09",
       "source": "stabi"
     },
     {
@@ -3442,12 +3262,6 @@
       "source": "stabi"
     },
     {
-      "id": "11ae20088faba623",
-      "title": "Internationale Geschichteninsel - Albanisch",
-      "date_start": "2026-11-06",
-      "source": "stabi"
-    },
-    {
       "id": "052e2387de8f9942",
       "title": "Internationale Geschichteninsel - Türkisch",
       "date_start": "2026-11-12",
@@ -3487,12 +3301,6 @@
       "id": "6b74034211e2ead0",
       "title": "Internationale Geschichteninsel - Spanisch",
       "date_start": "2026-12-03",
-      "source": "stabi"
-    },
-    {
-      "id": "1c5fec5d84cecf59",
-      "title": "Internationale Geschichteninsel - Albanisch",
-      "date_start": "2026-12-04",
       "source": "stabi"
     },
     {
@@ -3592,32 +3400,14 @@
       "source": "stabi"
     },
     {
-      "id": "ca11cb24dc2030e9",
+      "id": "28e88cc493082b88",
       "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-05-06",
-      "source": "stabi"
-    },
-    {
-      "id": "3425cf37afc41c61",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-05-06",
-      "source": "stabi"
-    },
-    {
-      "id": "f5f64443d091aa47",
-      "title": "LeseWerkstatt für Frauen und Mädchen",
-      "date_start": "2026-05-06",
+      "date_start": "2026-05-13",
       "source": "stabi"
     },
     {
       "id": "8eb480d201c88809",
       "title": "Sprechtreff Deutsch",
-      "date_start": "2026-05-13",
-      "source": "stabi"
-    },
-    {
-      "id": "28e88cc493082b88",
-      "title": "Sprechtreff Deutsch - ONLINE",
       "date_start": "2026-05-13",
       "source": "stabi"
     },
@@ -3664,14 +3454,14 @@
       "source": "stabi"
     },
     {
-      "id": "fecd3acaf9f6d8ad",
-      "title": "Sprechtreff Deutsch",
+      "id": "6bb1071322487413",
+      "title": "Sprechtreff Deutsch - ONLINE",
       "date_start": "2026-06-03",
       "source": "stabi"
     },
     {
-      "id": "6bb1071322487413",
-      "title": "Sprechtreff Deutsch - ONLINE",
+      "id": "fecd3acaf9f6d8ad",
+      "title": "Sprechtreff Deutsch",
       "date_start": "2026-06-03",
       "source": "stabi"
     },
@@ -3682,8 +3472,8 @@
       "source": "stabi"
     },
     {
-      "id": "2ae4dd2eb5568abd",
-      "title": "Sprechtreff Deutsch - ONLINE",
+      "id": "14b8f6facaf8504d",
+      "title": "Sprechtreff Deutsch",
       "date_start": "2026-06-10",
       "source": "stabi"
     },
@@ -3694,8 +3484,8 @@
       "source": "stabi"
     },
     {
-      "id": "14b8f6facaf8504d",
-      "title": "Sprechtreff Deutsch",
+      "id": "2ae4dd2eb5568abd",
+      "title": "Sprechtreff Deutsch - ONLINE",
       "date_start": "2026-06-10",
       "source": "stabi"
     },
@@ -3748,14 +3538,14 @@
       "source": "stabi"
     },
     {
-      "id": "f2bd602a59d0e67b",
-      "title": "Sprechtreff Deutsch",
+      "id": "0d3bfc124af67888",
+      "title": "Sprechtreff Deutsch - ONLINE",
       "date_start": "2026-07-15",
       "source": "stabi"
     },
     {
-      "id": "0d3bfc124af67888",
-      "title": "Sprechtreff Deutsch - ONLINE",
+      "id": "f2bd602a59d0e67b",
+      "title": "Sprechtreff Deutsch",
       "date_start": "2026-07-15",
       "source": "stabi"
     },
@@ -3772,26 +3562,26 @@
       "source": "stabi"
     },
     {
-      "id": "8f8b328ff9ba36a9",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-07-29",
-      "source": "stabi"
-    },
-    {
       "id": "5471cb1e27c41d0a",
       "title": "Sprechtreff Deutsch - ONLINE",
       "date_start": "2026-07-29",
       "source": "stabi"
     },
     {
-      "id": "9b2931d161114979",
+      "id": "8f8b328ff9ba36a9",
       "title": "Sprechtreff Deutsch",
-      "date_start": "2026-08-05",
+      "date_start": "2026-07-29",
       "source": "stabi"
     },
     {
       "id": "556d5757744fcb0f",
       "title": "Sprechtreff Deutsch - ONLINE",
+      "date_start": "2026-08-05",
+      "source": "stabi"
+    },
+    {
+      "id": "9b2931d161114979",
+      "title": "Sprechtreff Deutsch",
       "date_start": "2026-08-05",
       "source": "stabi"
     },
@@ -3814,19 +3604,19 @@
       "source": "stabi"
     },
     {
-      "id": "fcbbd2b3e297b6ad",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-08-26",
-      "source": "stabi"
-    },
-    {
       "id": "5a338674c97ff266",
       "title": "Sprechtreff Deutsch",
       "date_start": "2026-08-26",
       "source": "stabi"
     },
     {
-      "id": "6793c4ad03428486",
+      "id": "fcbbd2b3e297b6ad",
+      "title": "Sprechtreff Deutsch - ONLINE",
+      "date_start": "2026-08-26",
+      "source": "stabi"
+    },
+    {
+      "id": "f6354a853661450c",
       "title": "Sprechtreff Deutsch",
       "date_start": "2026-09-02",
       "source": "stabi"
@@ -3877,18 +3667,6 @@
       "id": "fecc334de753351e",
       "title": "Seminar- und Hausarbeiten leicht gemacht",
       "date_start": "2026-05-12",
-      "source": "stabi"
-    },
-    {
-      "id": "a6fd46e9f18b8669",
-      "title": "Storytime in Schlösslesfeld",
-      "date_start": "2026-05-07",
-      "source": "stabi"
-    },
-    {
-      "id": "97681516023226ae",
-      "title": "Storytime in West",
-      "date_start": "2026-05-07",
       "source": "stabi"
     },
     {
@@ -3964,30 +3742,6 @@
       "source": "stabi"
     },
     {
-      "id": "6e05e85324941700",
-      "title": "Workshop: Eine alte Handtasche aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-05-02",
-      "source": "labyrinth"
-    },
-    {
-      "id": "a509baa61aa8b5be",
-      "title": "Workshop: Ein Maikäfer aus Ton für Kinder ab 5 Jahren in Ludwigsburg",
-      "date_start": "2026-05-03",
-      "source": "labyrinth"
-    },
-    {
-      "id": "c477f5bac45158c7",
-      "title": "Workshop: Tonwerkstatt ab 8 Jahren",
-      "date_start": "2026-05-06",
-      "source": "labyrinth"
-    },
-    {
-      "id": "2d87cb029156ad1d",
-      "title": "Workshop: Quality-Time für Mütter und Töchter ab 13 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-05-06",
-      "source": "labyrinth"
-    },
-    {
       "id": "2f16f9aeb1afd531",
       "title": "Workshop: Zirkus und Stelzenlauf für 8-12 Jährige in Ludwigsburg",
       "date_start": "2026-05-09",
@@ -4048,24 +3802,6 @@
       "source": "labyrinth"
     },
     {
-      "id": "592e10a996a751df",
-      "title": "Ferienworkshop: Tanztheaterwerkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "d0bc5d2f8736dd42",
-      "title": "Ferienworkshop: Contemporary Dance für Kinder und Jugendliche von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "5921d902795be486",
-      "title": "Ferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
       "id": "a1edf15573610f5e",
       "title": "Ferienworkshop: Pop-Up-Buch für Jugendliche ab 12 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
@@ -4078,32 +3814,8 @@
       "source": "labyrinth"
     },
     {
-      "id": "3c08cf241e0d9afd",
-      "title": "Ferienworkshop: Kritzelalphabet und Kleckertypographie für Kinder ab 10 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "c854e88a86ce5e56",
-      "title": "Ferienworkshop: Peppa Wutz - Deine Welt im Schuhkarton für Kinder ab 4 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "0a0029bb5d01ac63",
-      "title": "Ferienworkshop: Wollene Wundertiere für Kinder ab 8 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "7de73bbaebbb7cac",
-      "title": "Ferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "df6e62caae57e551",
-      "title": "Ferienworkshop: Tanztheaterwerkstatt für Kinder von 8-10 Jahren in Ludwigsburg",
+      "id": "a6a866136a50dc4d",
+      "title": "Ferienworkshop: Contemporary Kids für Kinder von 6-9 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
       "source": "labyrinth"
     },
@@ -4120,14 +3832,26 @@
       "source": "labyrinth"
     },
     {
+      "id": "df6e62caae57e551",
+      "title": "Ferienworkshop: Tanztheaterwerkstatt für Kinder von 8-10 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "2237c003b99b3c70",
+      "title": "Ferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
       "id": "20304e9a223fa55e",
       "title": "Ferienworkshop: Malen mit Naturmaterialien für Kinder ab 9 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
       "source": "labyrinth"
     },
     {
-      "id": "a6a866136a50dc4d",
-      "title": "Ferienworkshop: Contemporary Kids für Kinder von 6-9 Jahren in Ludwigsburg",
+      "id": "0a0029bb5d01ac63",
+      "title": "Ferienworkshop: Wollene Wundertiere für Kinder ab 8 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
       "source": "labyrinth"
     },
@@ -4258,9 +3982,189 @@
       "source": "labyrinth"
     },
     {
+      "id": "5f5621ee1b8e7755",
+      "title": "Workshop: Zirkus-Spezial für Kinder von 5-7 Jahren",
+      "date_start": "2026-07-11",
+      "source": "labyrinth"
+    },
+    {
       "id": "2e0aba1c0c6c2888",
       "title": "Workshop: Luftakrobatik Spezial für Kinder von 9-16 Jahren in Ludwigsburg",
       "date_start": "2026-07-11",
+      "source": "labyrinth"
+    },
+    {
+      "id": "aaeb743ef2e05b6c",
+      "title": "Workshop: Zirkus-Spezial für Kinder von 8-12 Jahren in Ludwigsburg",
+      "date_start": "2026-07-12",
+      "source": "labyrinth"
+    },
+    {
+      "id": "6389cd44b4b47e65",
+      "title": "Sommerferienworkshop: T-Rex-Alarm in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "labyrinth"
+    },
+    {
+      "id": "9ce617dc8d03f108",
+      "title": "Sommerferienworkshop: Schule der magischen Tiere in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "labyrinth"
+    },
+    {
+      "id": "2645c76af4462aa6",
+      "title": "[Fällt aus!] Ferienworkshop: Tanztheaterwerkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "79b705460640fff3",
+      "title": "[Fällt aus!] Ferienworkshop: Contemporary Dance für Kinder und Jugendliche von 10-14 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "e390519faafcb792",
+      "title": "[Fällt aus!] Ferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "889d973c174446fa",
+      "title": "[Fällt aus!] Ferienworkshop: Peppa Wutz - Deine Welt im Schuhkarton für Kinder ab 4 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "b3db9004c0157bcc",
+      "title": "Einblicke in Lebenswelten im Kontext von Kunst & Theater",
+      "date_start": "2026-06-12",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "cbe161397cbd33d7",
+      "title": "World Wide Knit In Public Day",
+      "date_start": "2026-06-13",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "1aa20cdbd5250257",
+      "title": "Sommerferienworkshop: Wackeldackel, Löwenhocker, Kistenlaster in Bietigheim",
+      "date_start": "2026-07-30",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "ae6fc01270621b21",
+      "title": "Sommerferienworkshop: Tiergeschichten stempeln in Bietigheim",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "87424ecb92095f4d",
+      "title": "Sommerferienworkshop: Tiere, die es gar nicht gibt! aus Ton in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "9bfddd7f15f36743",
+      "title": "Sommerferienworkshop: Stoffkarussell in Ludwigsburg",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "ab5cf9bb741d25b1",
+      "title": "Sommerferienworkshop: Stoffkarussell in Ludwigsburg",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "c352a88e624871e4",
+      "title": "Fridays for Coding",
+      "date_start": "2026-05-22",
+      "source": "stabi"
+    },
+    {
+      "id": "c2708fe0942662a4",
+      "title": "Gaming Friday",
+      "date_start": "2026-06-05",
+      "source": "stabi"
+    },
+    {
+      "id": "a8a61f08a1d4d1ee",
+      "title": "Maker Zone",
+      "date_start": "2026-06-18",
+      "source": "stabi"
+    },
+    {
+      "id": "d23d61316c88ebac",
+      "title": "Ich bin online und du?",
+      "date_start": "2026-06-19",
+      "source": "stabi"
+    },
+    {
+      "id": "5dd3423e93258aa6",
+      "title": "Fridays for Coding",
+      "date_start": "2026-06-19",
+      "source": "stabi"
+    },
+    {
+      "id": "5e70c25b8c70713d",
+      "title": "Internationale Geschichteninsel - Albanisch",
+      "date_start": "2026-06-12",
+      "source": "stabi"
+    },
+    {
+      "id": "bde2637b77c4a8f1",
+      "title": "Internationale Geschichteninsel - Albanisch",
+      "date_start": "2026-09-18",
+      "source": "stabi"
+    },
+    {
+      "id": "0b36b79c9d55b54f",
+      "title": "Internationale Geschichteninsel - Albanisch",
+      "date_start": "2026-10-09",
+      "source": "stabi"
+    },
+    {
+      "id": "11ae20088faba623",
+      "title": "Internationale Geschichteninsel - Albanisch",
+      "date_start": "2026-11-06",
+      "source": "stabi"
+    },
+    {
+      "id": "1c5fec5d84cecf59",
+      "title": "Internationale Geschichteninsel - Albanisch",
+      "date_start": "2026-12-04",
+      "source": "stabi"
+    },
+    {
+      "id": "592e10a996a751df",
+      "title": "[Fällt aus!] Ferienworkshop: Tanztheaterwerkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "d0bc5d2f8736dd42",
+      "title": "[Fällt aus!] Ferienworkshop: Contemporary Dance für Kinder und Jugendliche von 10-14 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "5921d902795be486",
+      "title": "[Fällt aus!] Ferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "3c08cf241e0d9afd",
+      "title": "[Fällt aus!] Ferienworkshop: Kritzelalphabet und Kleckertypographie für Kinder ab 10 Jahren in Bietigheim-Bissingen",
+      "date_start": "2026-05-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "c854e88a86ce5e56",
+      "title": "[Fällt aus!] Ferienworkshop: Peppa Wutz - Deine Welt im Schuhkarton für Kinder ab 4 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
       "source": "labyrinth"
     }
   ],
