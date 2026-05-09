@@ -229,58 +229,36 @@
   });
 })();
 
-
 // ── ?ort= URL param: pre-select the Ort dropdown on page load ────────────────
-// Used by venue CTAs on /ludwigsburg/erleben/ to deep-link to a filtered view.
-// Drives the existing Ort <select> so all count updates and filter logic run
-// through the normal path — no duplicate filtering code.
-// Example: /ludwigsburg/?ort=Stadtbibliothek+Ludwigsburg
+// Targets #location-filter (populated dynamically by app.js from data-location).
+// Must run after app.js populates the select options.
 (function applyOrtParam() {
   var params = new URLSearchParams(window.location.search);
   var ortParam = params.get('ort');
   if (!ortParam) return;
 
-  // Wait for DOM — app.js may load before full render
-  function tryApply() {
-    // Ort select — look for <select> whose id or name contains 'ort' (case-insensitive)
-    // or whose first non-placeholder option values look like venue names.
-    var selects = document.querySelectorAll('select');
-    var ortSelect = null;
-    selects.forEach(function(s) {
-      var id = (s.id || s.name || '').toLowerCase();
-      if (id.includes('ort') || id.includes('location') || id.includes('venue')) {
-        ortSelect = s;
-      }
-      // Fallback: check if any option contains "Stadtbibliothek" (venue name pattern)
-      if (!ortSelect) {
-        var opts = Array.from(s.options);
-        if (opts.some(function(o) { return o.value.includes('Stadtbibliothek') || o.value.includes('Schloss'); })) {
-          ortSelect = s;
-        }
-      }
+  function applyFilter() {
+    var sel = document.getElementById('location-filter');
+    if (!sel || sel.options.length <= 1) {
+      // Options not populated yet — retry
+      setTimeout(applyFilter, 100);
+      return;
+    }
+    // Find exact match first, then partial
+    var matched = Array.from(sel.options).find(function(o) {
+      return o.value === ortParam;
+    }) || Array.from(sel.options).find(function(o) {
+      return o.value.toLowerCase().includes(ortParam.toLowerCase());
     });
-
-    if (!ortSelect) return; // dropdown not rendered yet — handled by DOMContentLoaded below
-
-    // Find an option matching ortParam (exact or partial match)
-    var matched = Array.from(ortSelect.options).find(function(o) {
-      return o.value === ortParam ||
-             o.value.toLowerCase().includes(ortParam.toLowerCase()) ||
-             ortParam.toLowerCase().includes(o.value.toLowerCase().split(' ')[0].toLowerCase());
-    });
-
     if (matched) {
-      ortSelect.value = matched.value;
-      // Fire change event so existing filter handler runs
-      ortSelect.dispatchEvent(new Event('change', { bubbles: true }));
+      sel.value = matched.value;
+      sel.dispatchEvent(new Event('change', { bubbles: true }));
     }
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', tryApply);
+    document.addEventListener('DOMContentLoaded', applyFilter);
   } else {
-    // Small delay to let any async card rendering finish
-    setTimeout(tryApply, 50);
+    applyFilter();
   }
 })();
-
