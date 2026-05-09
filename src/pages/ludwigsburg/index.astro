@@ -162,40 +162,23 @@ const jsonLd = {
   }
   .disclaimer-box a { color: var(--text); font-weight: 600; margin-left: 0.35rem; }
 
-  /* ── Layout: flex row, cards + sidebar, centered as a unit ─────────────── */
-  /* filterbar is max-width:720px centered. We match that by centering the
-     flex row which contains 720px cards + gap + 220px sidebar.
-     Total = 720 + 2rem + 220 = ~972px, centered in 1100px main. */
-  .city-layout {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .city-main {
-    width: 100%;
-  }
+    /* ── Layout ─────────────────────────────────────────────────────────────── */
+  /* Cards and filterbar stay exactly as-is: max-width 720px, margin auto.
+     Sidebar is position:fixed, vertically centered on right side of viewport,
+     appearing just outside the 720px content column. No layout impact. */
+  .city-layout { display: block; }
+  .city-main   { display: block; }
 
   @media (min-width: 961px) {
-    .city-layout {
-      flex-direction: row;
-      gap: 2rem;
-      align-items: flex-start;
-      /* Align left edge with filterbar: filterbar is max-width 720px margin:auto
-         Inside 1100px main with 24px padding = 1052px usable.
-         Cards left edge: (1052 - 720) / 2 = 166px from left of main content area.
-         We shift the flex row left by same amount so cards start at same x. */
-      max-width: 960px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .city-main {
-      width: 720px;
-      flex-shrink: 0;
-    }
     .city-layout :global(.important-links-sidebar) {
       display: block;
-      flex-shrink: 0;
-      width: 220px;
+      position: fixed;
+      top: 160px;
+      /* Place sidebar just to the right of the 720px centered content.
+         Content right edge = 50vw + 360px.
+         Sidebar left edge  = 50vw + 360px + 24px gap. */
+      left: calc(50% + 384px);
+      width: 200px;
     }
   }
 
