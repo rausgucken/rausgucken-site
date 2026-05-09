@@ -21,13 +21,28 @@ const jsonLd = {
   "url": "https://rausgucken.de/ludwigsburg/",
   "numberOfItems": events.length,
 };
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://rausgucken.de" },
+    { "@type": "ListItem", "position": 2, "name": "Ludwigsburg", "item": "https://rausgucken.de/ludwigsburg/" },
+  ],
+};
 ---
 
 <Base
   title="Veranstaltungen Ludwigsburg 2026 – Alle Events & Ausstellungen | rausgucken.de"
   description={`${events.length} aktuelle Veranstaltungen in Ludwigsburg. Ausstellungen, Kinder-Events, kostenlose Angebote und mehr — täglich aktuell, übersichtlich auf einen Blick.`}
   city="ludwigsburg"
+  schema={[jsonLd, breadcrumbSchema]}
 >
+  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+    <a href="https://rausgucken.de">rausgucken.de</a>
+    <span aria-hidden="true"> › </span>
+    <span aria-current="page">Ludwigsburg</span>
+  </nav>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
   <div class="page-header">
