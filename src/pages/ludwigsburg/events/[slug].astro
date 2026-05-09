@@ -105,6 +105,62 @@ const organizer = SOURCE_ORGANIZERS[ev.source] ?? {
   url: ev.original_url || siteUrl,
 };
 
+// ── Calendar export URLs ─────────────────────────────────────────────────────
+function buildGoogleCalendarUrl(ev) {
+  const base = 'https://calendar.google.com/calendar/render?action=TEMPLATE';
+  const fmt = (iso, time) => {
+    if (!iso) return '';
+    if (!time) return iso.replace(/-/g, '');
+    const m = time.match(/(\d{1,2}):(\d{2})/);
+    if (!m) return iso.replace(/-/g, '');
+    return iso.replace(/-/g, '') + 'T' + m[1].padStart(2,'0') + m[2] + '00';
+  };
+  const endM = ev.time ? ev.time.match(/\d{1,2}:\d{2}\s*[-–]\s*(\d{1,2}):(\d{2})/) : null;
+  const endTime = endM ? `${endM[1].padStart(2,'0')}${endM[2]}00` : null;
+  const start = fmt(ev.date_start, ev.time);
+  const endBase = ev.date_end || ev.date_start;
+  const end = endTime
+    ? endBase.replace(/-/g,'') + 'T' + endTime
+    : start;
+  const params = new URLSearchParams({
+    text: ev.title || '',
+    dates: `${start}/${end}`,
+    location: ev.location || 'Ludwigsburg',
+    details: (ev.description || '') + (ev.original_url ? `
+
+Originalseite: ${ev.original_url}` : ''),
+  });
+  return `${base}&${params.toString()}`;
+}
+
+function buildOutlookUrl(ev) {
+  const fmt = (iso, time) => {
+    if (!iso) return '';
+    const m = time ? time.match(/(\d{1,2}):(\d{2})/) : null;
+    if (!m) return iso + 'T00:00:00';
+    return `${iso}T${m[1].padStart(2,'0')}:${m[2]}:00`;
+  };
+  const endM = ev.time ? ev.time.match(/\d{1,2}:\d{2}\s*[-–]\s*(\d{1,2}):(\d{2})/) : null;
+  const endTime = endM ? `${endM[1].padStart(2,'0')}:${endM[2]}:00` : null;
+  const start = fmt(ev.date_start, ev.time);
+  const endBase = ev.date_end || ev.date_start;
+  const end = endTime ? `${endBase}T${endTime}` : start;
+  const params = new URLSearchParams({
+    path: '/calendar/action/compose',
+    rru: 'addevent',
+    subject: ev.title || '',
+    startdt: start,
+    enddt: end,
+    location: ev.location || 'Ludwigsburg',
+    body: ev.description || '',
+  });
+  return `https://outlook.live.com/calendar/0/action/compose?${params.toString()}`;
+}
+
+const googleCalUrl  = buildGoogleCalendarUrl(ev);
+const outlookCalUrl = buildOutlookUrl(ev);
+const icsUrl        = `/ludwigsburg/events/${ev.slug}.ics`;
+
 // ── Resolved values used in schema ───────────────────────────────────────────
 const priceData = normalisePrice(ev.price);
 
@@ -390,334 +446,25 @@ const relatedEvents = isExpired
     <a href="/ludwigsburg" class="back-link">← Zurück zu allen Veranstaltungen</a>
 
   </article>
+<script>
+  const btn = document.getElementById('cal-btn');
+  const menu = btn && btn.nextElementSibling;
+  if (btn && menu) {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', () => {
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        menu.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+</script>
 </Base>
-
-<style>
-      /* ── Hero image ─────────────────────────────────────────────────────────── */
-    .event-hero {
-    margin-bottom: 1.75rem;
-    border-radius: var(--radius);
-    overflow: hidden;
-    border: 1px solid var(--border);
-    height: 220px;
-    background: var(--tag-bg);
-  }
-    .hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    display: block;
-    filter: brightness(0.95);
-  }
-
-    /* ── Expired banner ─────────────────────────────────────────────────────── */
-  .expired-banner {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    background: var(--tag-bg);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--coral);
-    border-radius: var(--radius-sm);
-    padding: 0.9rem 1.25rem;
-    font-size: 0.9rem;
-    color: var(--text);
-    margin-bottom: 1rem;
-    max-width: 720px;
-  }
-  .expired-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 0.1rem; }
-
-  /* Related events list shown under expired banner */
-  .related-events {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-    max-width: 720px;
-  }
-  .related-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.65rem 1rem;
-    background: var(--surface-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    text-decoration: none;
-    color: var(--text);
-    font-size: 0.88rem;
-    transition: border-color 150ms, box-shadow 150ms;
-  }
-  .related-card:hover {
-    border-color: var(--coral);
-    box-shadow: var(--shadow-card);
-    text-decoration: none;
-  }
-  .related-card-body { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
-  .related-title    { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .related-location { font-size: 0.78rem; color: var(--text-60); }
-  .related-date     { font-size: 0.8rem; color: var(--text-60); white-space: nowrap; flex-shrink: 0; }
-
-  .expired-cta { margin-bottom: 1.5rem; }
-
-  /* ── Breadcrumb ─────────────────────────────────────────────────────────── */
-  .breadcrumb {
-    font-size: 0.82rem;
-    color: var(--text-60);
-    margin-bottom: 1.5rem;
-    max-width: 720px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.1rem;
-  }
-  .breadcrumb a { color: var(--text-60); }
-  .breadcrumb a:hover { color: var(--coral); text-decoration: none; }
-
-  /* ── Event detail wrapper ────────────────────────────────────────────────── */
-  .event-detail { max-width: 720px; }
-
-  /* ── Event header ────────────────────────────────────────────────────────── */
-  .event-header { margin-bottom: 1.5rem; }
-
-  .event-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-    margin-bottom: 0.75rem;
-  }
-  /* Charcoal tag-bg → text-60 */
-  .tag {
-    background: var(--tag-bg);
-    color: var(--text-60);
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 3px 10px;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: background 150ms, color 150ms;
-  }
-  .tag:hover { background: var(--coral-light); color: var(--coral); }
-  /* Sage bg → Charcoal text per design spec: 5.2:1 ✓ */
-  .tag--sage { background: var(--sage-light); color: var(--text); font-weight: 600; }
-  .tag--sage:hover { background: var(--sage); }
-  /* Age badge */
-  .tag--age { background: var(--sage-light); color: var(--text); font-weight: 600; cursor: default; }
-
-  h1 {
-    font-size: clamp(1.4rem, 4vw, 2rem);
-    font-weight: 800; /* Nunito ExtraBold — heading weight */
-    letter-spacing: -0.02em;
-    line-height: 1.25;
-    margin-bottom: 0;
-  }
-
-  /* ── Meta grid — dl for semantic correctness ─────────────────────────────── */
-  .meta-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-    gap: 1rem;
-    background: var(--surface-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1.25rem;
-    margin-bottom: 2rem;
-    box-shadow: var(--shadow-card);
-  }
-  .meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
-  .meta-label {
-    font-size: 0.72rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-60);
-    font-family: var(--font-body);
-  }
-  .meta-value { font-size: 0.95rem; color: var(--text); font-weight: 500; }
-
-  /* ── Description ─────────────────────────────────────────────────────────── */
-  .event-description { margin-bottom: 2rem; }
-  .event-description h2 {
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin-bottom: 0.65rem;
-    color: var(--text);
-  }
-  .event-description p { line-height: 1.75; color: var(--text-60); }
-
-  /* ── Source box — Design spec Part V §6 + SEO §7 ─────────────────────────── */
-  .source-box {
-    margin-top: 2rem;
-    background: var(--coral-light);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  .source-info  { display: flex; flex-direction: column; gap: 0.25rem; flex: 1; min-width: 0; }
-  .source-label {
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-60);
-    font-family: var(--font-body);
-  }
-  .source-name { font-size: 0.9rem; font-weight: 600; color: var(--text); }
-  /* FreshnessStamp: opacity-70 on var(--text) — NEVER coral text (design spec §2) */
-  .freshness-stamp    { font-size: 0.78rem; color: var(--text); opacity: 0.70; }
-  .source-disclaimer  { font-size: 0.75rem; color: var(--text); opacity: 0.55; margin-top: 0.15rem; }
-
-  /* btn-original: Coral bg → Charcoal text. 4.1:1 contrast ratio ✓ */
-  /* NEVER use white text on coral — design spec §2 */
-  .btn-original {
-    display: inline-flex;
-    align-items: center;
-    background: var(--coral);
-    color: var(--text);   /* Charcoal — not white */
-    padding: 0.65rem 1.25rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.9rem;
-    font-weight: 600;
-    white-space: nowrap;
-    text-decoration: none;
-    min-height: 44px; /* §4 tap target */
-    transition: background 150ms;
-    flex-shrink: 0;
-  }
-  .btn-original:hover { background: var(--coral-dark); text-decoration: none; }
-  .btn-original:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
-
-  /* ICS calendar export button — secondary style, same tap target */
-  .btn-ics {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    background: var(--surface-card);
-    color: var(--text);
-    border: 1.5px solid var(--border);
-    padding: 0.65rem 1rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.85rem;
-    font-weight: 600;
-    white-space: nowrap;
-    text-decoration: none;
-    min-height: 44px;
-    transition: border-color 150ms, background 150ms;
-    flex-shrink: 0;
-  }
-  .btn-ics:hover { border-color: var(--coral); background: var(--coral-light); text-decoration: none; }
-  .btn-ics:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
-
-  /* btn-cta: same styling as btn-original */
-  .btn-cta {
-    display: inline-flex;
-    align-items: center;
-    background: var(--coral);
-    color: var(--text);
-    padding: 0.65rem 1.25rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-decoration: none;
-    min-height: 44px;
-    transition: background 150ms;
-  }
-  .btn-cta:hover { background: var(--coral-dark); text-decoration: none; }
-
-  /* ── Related pages — SEO §22 internal linking mesh ───────────────────────── */
-  .related-pages {
-    margin-top: 2.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border);
-  }
-  .related-pages-label {
-    font-size: 0.78rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-60);
-    margin-bottom: 0.65rem;
-    font-family: var(--font-body);
-  }
-  .related-pages-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  .related-pages-links a {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.4rem 0.9rem;
-    background: var(--tag-bg);
-    color: var(--text-60);
-    border-radius: 20px;
-    font-size: 0.82rem;
-    font-weight: 500;
-    text-decoration: none;
-    min-height: 36px;
-    transition: background 150ms, color 150ms;
-  }
-  .related-pages-links a:hover {
-    background: var(--coral-light);
-    color: var(--coral);
-    text-decoration: none;
-  }
-
-  .back-link {
-    display: inline-block;
-    margin-top: 2rem;
-    font-size: 0.88rem;
-    color: var(--text-60);
-    text-decoration: none;
-    transition: color 150ms;
-  }
-  .back-link:hover { color: var(--coral); }
-
-  /* ── Mobile ─────────────────────────────────────────────────────────────── */
-  @media (max-width: 600px) {
-    .source-box     { flex-direction: column; align-items: flex-start; }
-    .btn-original   { width: 100%; justify-content: center; }
-    .btn-ics        { width: 100%; justify-content: center; }
-    .meta-grid      { grid-template-columns: 1fr 1fr; }
-    .related-card   { flex-direction: column; align-items: flex-start; }
-    .related-date   { align-self: flex-end; }
-  }
-  @media (max-width: 380px) {
-    .meta-grid { grid-template-columns: 1fr; }
-  }
-
-  /* ── Editorial tip ─────────────────────────────────────────────────────────────────────── */
-  .editorial-tip {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-    background: var(--sage-light, #f0f7ea);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--sage, #90BE6D);
-    border-radius: var(--radius-sm, 6px);
-    padding: 0.9rem 1.1rem;
-    margin-bottom: 2rem;
-    max-width: 720px;
-  }
-  .tip-label {
-    font-size: 0.72rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-60);
-    font-family: var(--font-body);
-  }
-  .tip-text {
-    font-size: 0.9rem;
-    line-height: 1.65;
-    color: var(--text);
-    margin: 0;
-  }
-</style>
