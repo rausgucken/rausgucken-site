@@ -8,6 +8,13 @@
 
 import Base from "../../../layouts/Base.astro";
 import eventsData from "../../../../public/data/ludwigsburg/events-current.json";
+import tipsData from "../../../../editorial-tips.json";
+const editorialTip: string | undefined = (() => {
+  if (!tipsData || typeof tipsData !== "object") return undefined;
+  const tips = tipsData as Record<string, unknown>;
+  const val = tips[ev.slug];
+  return typeof val === "string" && val.length > 0 ? val : undefined;
+})();
 
 export async function getStaticPaths() {
   return eventsData.map(ev => ({
@@ -320,6 +327,14 @@ const relatedEvents = isExpired
       </div>
     )}
 
+    <!-- ── Editorial tip (SEO §13 / E-E-A-T) ────────────────────── -->
+    {editorialTip && (
+      <div class="editorial-tip" role="note" aria-label="Redaktionstipp">
+        <span class="tip-label" aria-hidden="true">💡 Unser Tipp</span>
+        <p class="tip-text">{editorialTip}</p>
+      </div>
+    )}
+
     <!--
       ── Source box — SEO §7 (AI Trust Signals) + Design spec Part V §6 (SourceLink)
       Exposes: source name, source URL, data timestamp.
@@ -570,6 +585,27 @@ const relatedEvents = isExpired
   .btn-original:hover { background: var(--coral-dark); text-decoration: none; }
   .btn-original:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
 
+  /* ICS calendar export button — secondary style, same tap target */
+  .btn-ics {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--surface-card);
+    color: var(--text);
+    border: 1.5px solid var(--border);
+    padding: 0.65rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    min-height: 44px;
+    transition: border-color 150ms, background 150ms;
+    flex-shrink: 0;
+  }
+  .btn-ics:hover { border-color: var(--coral); background: var(--coral-light); text-decoration: none; }
+  .btn-ics:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+
   /* btn-cta: same styling as btn-original */
   .btn-cta {
     display: inline-flex;
@@ -639,11 +675,40 @@ const relatedEvents = isExpired
   @media (max-width: 600px) {
     .source-box     { flex-direction: column; align-items: flex-start; }
     .btn-original   { width: 100%; justify-content: center; }
+    .btn-ics        { width: 100%; justify-content: center; }
     .meta-grid      { grid-template-columns: 1fr 1fr; }
     .related-card   { flex-direction: column; align-items: flex-start; }
     .related-date   { align-self: flex-end; }
   }
   @media (max-width: 380px) {
     .meta-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── Editorial tip ─────────────────────────────────────────────────────────────────────── */
+  .editorial-tip {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    background: var(--sage-light, #f0f7ea);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--sage, #90BE6D);
+    border-radius: var(--radius-sm, 6px);
+    padding: 0.9rem 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 720px;
+  }
+  .tip-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-60);
+    font-family: var(--font-body);
+  }
+  .tip-text {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--text);
+    margin: 0;
   }
 </style>
