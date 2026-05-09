@@ -35,6 +35,7 @@
   const todayStr = new Date().toISOString().slice(0, 10);
   if (dateFrom && !dateFrom.value) dateFrom.value = todayStr;
   // Pre-select location from ?ort= URL param
+  console.log('[ort-debug] search:', window.location.search, 'all options:', Array.from(locationFilter ? locationFilter.options : []).map(o=>o.value));
   if (locationFilter) {
     var _ortParam = new URLSearchParams(window.location.search).get('ort');
     if (_ortParam) {
