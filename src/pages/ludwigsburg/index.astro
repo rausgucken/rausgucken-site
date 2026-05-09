@@ -162,27 +162,21 @@ const jsonLd = {
   }
   .disclaimer-box a { color: var(--text); font-weight: 600; margin-left: 0.35rem; }
 
-  /* ── Two-column layout ───────────────────────────────────────────────────── */
-  /* Desktop: event list (1fr, max 720px) + sidebar (260px) */
-  /* Mobile: single column, sidebar hidden */
+  /* ── Layout: centered content + floating sidebar ─────────────────────────── */
+  /* Event content stays centered at max-w 720px (as before sidebar was added).
+     Sidebar is pulled out of flow via absolute positioning anchored to the
+     right edge of the 1100px <main> container. No grid — no content shift. */
   .city-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 260px;
-    gap: 2.5rem;
-    align-items: start;
+    position: relative; /* establishes positioning context for sidebar */
   }
 
-  /* city-main doesn't need a max-width — the grid column handles it */
+  /* city-main: standard centered content — same as it was before sidebar */
   .city-main {
-    min-width: 0; /* prevent grid blowout */
+    /* no constraints here — .event-list inside handles max-width */
   }
 
-  /* On mobile: collapse to single column, hide sidebar */
+  /* On mobile: sidebar is hidden — footer carries the links */
   @media (max-width: 900px) {
-    .city-layout {
-      grid-template-columns: 1fr;
-    }
-    /* Sidebar hidden on mobile — footer carries the links (SEO §26a) */
     .city-layout > :global(.important-links-sidebar) {
       display: none;
     }
@@ -204,15 +198,30 @@ const jsonLd = {
   }
 
   /* ── Event list — inherits global .event-list from Base.astro ───────────── */
-  /* Override max-width: auto inside the grid column */
-  .city-main :global(.event-list) {
-    max-width: 100%;
-    margin: 0;
-  }
+  /* max-width:720px and margin:0 auto from Base.astro apply naturally — no override needed */
 
   /* ── Dark mode card shadow ──────────────────────────────────────────────── */
   html.dark .event-card {
     box-shadow: 0 2px 8px rgba(0,0,0,0.22);
+  }
+
+  /* ── Sidebar absolute positioning within .city-layout ───────────────────── */
+  /* main is 1100px centered. Event list is 720px centered.
+     Sidebar sits at the right edge of main, absolutely positioned.
+     This means it doesn't affect the flow of the event content at all. */
+  @media (min-width: 901px) {
+    .city-layout {
+      position: relative;
+      /* min-height prevents layout collapse when event list is short */
+      min-height: 600px;
+    }
+    .city-layout :global(.important-links-sidebar) {
+      display: block !important;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 240px;
+    }
   }
 
   /* ── Empty state ─────────────────────────────────────────────────────────── */
