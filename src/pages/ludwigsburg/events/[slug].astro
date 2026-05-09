@@ -418,15 +418,28 @@ const relatedEvents = isExpired
           Zur Originalseite →
         </a>
       )}
-      <a
-        href={`/ludwigsburg/events/${ev.slug}.ics`}
-        download
-        class="btn-ics"
-        aria-label={`${ev.title} zum Kalender hinzufügen`}
-        title="In Kalender exportieren (.ics)"
-      >
-        📅 Zum Kalender
-      </a>
+      <div class="cal-dropdown">
+        <button class="btn-ics" aria-haspopup="true" aria-expanded="false" id="cal-btn">
+          📅 Zum Kalender ▾
+        </button>
+        <ul class="cal-menu" role="menu" aria-labelledby="cal-btn">
+          <li role="none">
+            <a href={googleCalUrl} target="_blank" rel="noopener noreferrer" role="menuitem">
+              Google Calendar
+            </a>
+          </li>
+          <li role="none">
+            <a href={outlookCalUrl} target="_blank" rel="noopener noreferrer" role="menuitem">
+              Outlook
+            </a>
+          </li>
+          <li role="none">
+            <a href={icsUrl} download role="menuitem">
+              Apple / ICS-Datei
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- ── Related pages — SEO §22 internal linking mesh ────────────────── -->
