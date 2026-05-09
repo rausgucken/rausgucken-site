@@ -362,6 +362,15 @@ const relatedEvents = isExpired
           Zur Originalseite →
         </a>
       )}
+      <a
+        href={`/ludwigsburg/events/${ev.slug}.ics`}
+        download
+        class="btn-ics"
+        aria-label={`${ev.title} zum Kalender hinzufügen`}
+        title="In Kalender exportieren (.ics)"
+      >
+        📅 Zum Kalender
+      </a>
     </div>
 
     <!-- ── Related pages — SEO §22 internal linking mesh ────────────────── -->
