@@ -126,9 +126,12 @@ function buildGoogleCalendarUrl(ev) {
     text: ev.title || '',
     dates: `${start}/${end}`,
     location: ev.location || 'Ludwigsburg',
-    details: (ev.description || '') + (ev.original_url ? `
-
-Originalseite: ${ev.original_url}` : ''),
+    details: [
+      ev.description || '',
+      ev.location ? `Adresse: ${ev.location}, Ludwigsburg` : '',
+      ev.original_url ? `Originalseite (bitte vor Teilnahme prüfen): ${ev.original_url}` : '',
+      'Alle Angaben ohne Gewähr – bitte Originalseite prüfen.',
+    ].filter(Boolean).join('\n\n'),
   });
   return `${base}&${params.toString()}`;
 }
@@ -152,7 +155,12 @@ function buildOutlookUrl(ev) {
     startdt: start,
     enddt: end,
     location: ev.location || 'Ludwigsburg',
-    body: ev.description || '',
+    body: [
+      ev.description || '',
+      ev.location ? `Adresse: ${ev.location}, Ludwigsburg` : '',
+      ev.original_url ? `Originalseite (bitte vor Teilnahme prüfen): ${ev.original_url}` : '',
+      'Alle Angaben ohne Gewähr – bitte Originalseite prüfen.',
+    ].filter(Boolean).join('\n\n'),
   });
   return `https://outlook.live.com/calendar/0/action/compose?${params.toString()}`;
 }

@@ -105,7 +105,9 @@ function buildICS(ev) {
   const descParts = [];
   if (ev.description)   descParts.push(ev.description);
   if (ev.price)         descParts.push(`Preis: ${ev.price}`);
-  if (ev.original_url)  descParts.push(`Originalseite: ${ev.original_url}`);
+  if (ev.location)      descParts.push(`Adresse: ${ev.location}\\nLudwigsburg, Baden-Württemberg`);
+  if (ev.original_url)  descParts.push(`Originalseite (bitte vor Teilnahme prüfen): ${ev.original_url}`);
+  descParts.push('Alle Angaben ohne Gewähr – Infos können sich ändern. Bitte Originalseite prüfen.');
   const description = descParts.join('\\n\\n');
 
   // Organizer label (source_label populated by manifest.py)
