@@ -230,11 +230,13 @@
 })();
 
 // ── ?ort= URL param: pre-select the Ort dropdown on page load ────────────────
+// Must run AFTER the IIFE's applyFilters() call on line ~150 which resets state.
+// setTimeout 0 is not enough — use requestAnimationFrame to defer past it.
 (function applyOrtParam() {
   var params = new URLSearchParams(window.location.search);
   var ortParam = params.get('ort');
   if (!ortParam) return;
-  var decoded = ortParam.replace(/\+/g, ' ');
+  var decoded = ortParam.replace(/[+]/g, ' ');
   function applyFilter() {
     var sel = document.getElementById('location-filter');
     if (!sel) return;
@@ -246,11 +248,10 @@
       sel.dispatchEvent(new Event('change', { bubbles: true }));
     }
   }
-  // Options are populated synchronously — but event listeners attach after
-  // the IIFE completes, so defer one tick with setTimeout 0.
+  function defer() { requestAnimationFrame(applyFilter); }
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() { setTimeout(applyFilter, 0); });
+    document.addEventListener('DOMContentLoaded', defer);
   } else {
-    setTimeout(applyFilter, 0);
+    defer();
   }
 })();
