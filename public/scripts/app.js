@@ -34,6 +34,17 @@
   // ── Default: show from today ──────────────────────────────────────────────
   const todayStr = new Date().toISOString().slice(0, 10);
   if (dateFrom && !dateFrom.value) dateFrom.value = todayStr;
+  // Pre-select location from ?ort= URL param
+  if (locationFilter) {
+    var _ortParam = new URLSearchParams(window.location.search).get('ort');
+    if (_ortParam) {
+      var _decoded = _ortParam.replace(/[+]/g, ' ');
+      var _match = Array.from(locationFilter.options).find(function(o) {
+        return o.value === _decoded;
+      });
+      if (_match) locationFilter.value = _match.value;
+    }
+  }
 
   // ── Main filter function ──────────────────────────────────────────────────
   function applyFilters() {
@@ -180,84 +191,3 @@
 // Applied on page load. Enables deep-links from /erleben/ venue CTAs.
 // Example: /ludwigsburg/?source=stabi
 // Clears automatically when user interacts with other filters.
-(function applySourceParam() {
-  var params = new URLSearchParams(window.location.search);
-  var sourceParam = params.get('source');
-  if (!sourceParam) return;
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var cards = document.querySelectorAll('.event-card');
-    var shown = 0;
-    cards.forEach(function (card) {
-      var cardSource = (card.dataset.source || '').toLowerCase();
-      // Match prefix: e.g. ?source=karlskaserne matches karlskaserne_ausstellungen
-      var matches = cardSource === sourceParam || cardSource.startsWith(sourceParam);
-      card.style.display = matches ? '' : 'none';
-      if (matches) shown++;
-    });
-
-    // Update count display if present
-    var countEl = document.getElementById('event-count');
-    if (countEl && shown > 0) {
-      countEl.textContent = shown + ' Veranstaltungen';
-    }
-
-    // Show a dismissible filter indicator
-    var indicator = document.createElement('div');
-    indicator.id = 'source-filter-indicator';
-    indicator.style.cssText = [
-      'display:flex', 'align-items:center', 'gap:0.5rem',
-      'padding:0.4rem 0.9rem', 'border-radius:999px',
-      'background:var(--coral,#FF6F61)', 'color:var(--charcoal,#373F51)',
-      'font-size:0.82rem', 'font-weight:600',
-      'margin-bottom:0.75rem', 'width:fit-content', 'cursor:pointer'
-    ].join(';');
-    indicator.innerHTML = 'Quelle: ' + sourceParam.replace(/_/g, ' ') +
-      ' &nbsp;<span aria-hidden="true" style="font-size:1rem">✕</span>';
-    indicator.title = 'Filter entfernen';
-    indicator.addEventListener('click', function () {
-      cards.forEach(function (c) { c.style.display = ''; });
-      indicator.remove();
-      // Remove param from URL without reload
-      var url = new URL(window.location.href);
-      url.searchParams.delete('source');
-      history.replaceState({}, '', url.toString());
-    });
-
-    var grid = document.getElementById('event-grid');
-    if (grid) grid.parentNode.insertBefore(indicator, grid);
-  });
-})();
-
-// ── ?ort= URL param: pre-select the Ort dropdown on page load ────────────────
-// The main IIFE is synchronous — applyFilters() at line ~150 runs before this.
-// Two rAF frames ensures we run after any queued microtasks/paint.
-(function applyOrtParam() {
-  var params = new URLSearchParams(window.location.search);
-  var ortParam = params.get('ort');
-  if (!ortParam) return;
-  var decoded = ortParam.replace(/[+]/g, ' ');
-  function applyFilter() {
-    var sel = document.getElementById('location-filter');
-    if (!sel) return;
-    var matched = Array.from(sel.options).find(function(o) {
-      return o.value === decoded;
-    });
-    if (matched) {
-      sel.value = matched.value;
-      sel.dispatchEvent(new Event('change', { bubbles: true }));
-    }
-  }
-  // Double rAF: first frame runs after current stack, second after first paint.
-  // This guarantees we run after the IIFE's synchronous applyFilters() call.
-  function defer() {
-    requestAnimationFrame(function() {
-      requestAnimationFrame(applyFilter);
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', defer);
-  } else {
-    defer();
-  }
-})();
