@@ -230,8 +230,8 @@
 })();
 
 // ── ?ort= URL param: pre-select the Ort dropdown on page load ────────────────
-// Must run AFTER the IIFE's applyFilters() call on line ~150 which resets state.
-// setTimeout 0 is not enough — use requestAnimationFrame to defer past it.
+// The main IIFE is synchronous — applyFilters() at line ~150 runs before this.
+// Two rAF frames ensures we run after any queued microtasks/paint.
 (function applyOrtParam() {
   var params = new URLSearchParams(window.location.search);
   var ortParam = params.get('ort');
@@ -248,7 +248,13 @@
       sel.dispatchEvent(new Event('change', { bubbles: true }));
     }
   }
-  function defer() { requestAnimationFrame(applyFilter); }
+  // Double rAF: first frame runs after current stack, second after first paint.
+  // This guarantees we run after the IIFE's synchronous applyFilters() call.
+  function defer() {
+    requestAnimationFrame(function() {
+      requestAnimationFrame(applyFilter);
+    });
+  }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', defer);
   } else {
