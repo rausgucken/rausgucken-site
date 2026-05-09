@@ -162,31 +162,35 @@ const jsonLd = {
   }
   .disclaimer-box a { color: var(--text); font-weight: 600; margin-left: 0.35rem; }
 
-  /* ── Two-column layout ───────────────────────────────────────────────────── */
-  /* Fixed 720px event column + auto sidebar column, centered as a unit.
-     Events stay at exactly 720px — same as before sidebar was added.
-     Sidebar occupies whatever space remains to the right. */
+  /* ── Layout: event list centered at 720px, sidebar floats right ─────────── */
+  /* city-layout is just a relative container — no grid, no flex.
+     city-main mirrors filterbar: max-width 720px, margin auto.
+     Sidebar is pulled out of flow and positioned to the right of city-main. */
   .city-layout {
-    display: grid;
-    grid-template-columns: 720px 240px;
-    gap: 2rem;
-    align-items: start;
-    /* Center the grid so the 720px column sits where it did before */
-    justify-content: center;
+    position: relative;
   }
 
   .city-main {
-    min-width: 0;
-    width: 100%;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  /* Mobile: single column, sidebar hidden */
-  @media (max-width: 960px) {
-    .city-layout {
-      grid-template-columns: 1fr;
-      justify-content: stretch;
+  /* Sidebar: position relative to the page, right-aligned inside main (1100px).
+     main has 1.5rem (24px) padding each side.
+     We use a negative right margin trick: sidebar sits at right:0 of city-layout,
+     which is inside main (max-width:1100px, padding:0 24px). */
+  @media (min-width: 961px) {
+    .city-layout :global(.important-links-sidebar) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 220px;
     }
-    .city-layout > :global(.important-links-sidebar) {
+  }
+  @media (max-width: 960px) {
+    .city-layout :global(.important-links-sidebar) {
       display: none;
     }
   }
@@ -214,7 +218,7 @@ const jsonLd = {
     box-shadow: 0 2px 8px rgba(0,0,0,0.22);
   }
 
-  /* Sidebar display controlled by media query in layout block above */
+
 
   /* ── Empty state ─────────────────────────────────────────────────────────── */
   .empty-state {
