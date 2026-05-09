@@ -270,3 +270,24 @@
     align-items: center;
   }
 }
+
+
+/* ────────────────────────────────────────────────────────────────
+   EVENT DETAIL — source box buttons stack cleanly on mobile
+   ──────────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .source-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .source-box .btn-original,
+  .source-box .cal-dropdown,
+  .source-box .btn-ics {
+    width: 100%;
+    justify-content: center;
+  }
+  .cal-menu {
+    left: 0;
+    right: auto;
+  }
+}
