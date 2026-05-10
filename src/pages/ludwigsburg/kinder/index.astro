@@ -9,8 +9,6 @@ import metaData from "../../../../public/data/ludwigsburg/meta.json";
 const meta = metaData;
 
 const allKinder = ((eventsData as any).events as any[]).filter((e: any) =>
-  // Filter for children's events — tags includes "Kinder" or "Familie"
-
   Array.isArray(e.tags) &&
   (e.tags.includes("Kinder") || e.tags.includes("Familie"))
 );
@@ -49,7 +47,6 @@ const jsonLd = {
   <link rel="canonical" href="https://rausgucken.de/ludwigsburg/kinder/" slot="head-extra" />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
-  <!-- Breadcrumbs -->
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     <ol>
       <li><a href="/">rausgucken.de</a></li>
@@ -140,7 +137,6 @@ const jsonLd = {
 </Base>
 
 <style>
-  /* ── Breadcrumb ─────────────────────────────────────────────────────────── */
   .breadcrumbs ol {
     display: flex;
     flex-wrap: wrap;
@@ -149,14 +145,13 @@ const jsonLd = {
     margin: 0 0 1.5rem;
     padding: 0;
     font-size: 0.85rem;
-    color: var(--text-60);
+    opacity: 0.7;
   }
-  .breadcrumbs a { text-decoration: underline; text-underline-offset: 2px; color: var(--text-60); }
+  .breadcrumbs a { text-decoration: underline; text-underline-offset: 2px; }
 
-  /* ── Page header ─────────────────────────────────────────────────────────── */
-  .page-header { margin-bottom: 1.25rem; max-width: 720px; margin-left: auto; margin-right: auto; }
-  .page-header h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; margin: 0.25rem 0 0.5rem; }
-  .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; }
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { margin: 0.25rem 0 0.5rem; }
+  .page-subtitle { margin: 0; opacity: 0.7; font-size: 0.95rem; }
 
   .page-header-eyebrow {
     display: flex;
@@ -166,55 +161,59 @@ const jsonLd = {
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: var(--text-60);
+    opacity: 0.7;
     margin-bottom: 0.5rem;
   }
-  .dot-dual { color: var(--coral, #FF6F61); font-size: 0.75rem; letter-spacing: 0.15em; }
+  .dot-dual { color: var(--brand-coral, #FF6F61); font-size: 0.75rem; letter-spacing: 0.15em; }
 
-  /* ── Scraper failure alert ───────────────────────────────────────────────── */
-  .sources-warning {
-    background: var(--coral-light);
-    border: 1px solid rgba(255,111,97,0.30);
-    border-radius: var(--radius-sm);
-    padding: 0.7rem 1rem;
-    font-size: 0.85rem;
-    color: var(--text);
-    opacity: 0.85;
-    margin-bottom: 0.85rem;
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* ── Disclaimer ─────────────────────────────────────────────────────────── */
   .disclaimer-box {
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 0.85rem 1.25rem;
     font-size: 0.85rem;
-    color: var(--text);
-    opacity: 0.70;
+    opacity: 0.75;
     margin-bottom: 1.5rem;
-    line-height: 1.5;
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0.75rem 1rem;
+    border-left: 3px solid var(--brand-coral, #FF6F61);
+    background: rgba(255, 111, 97, 0.06);
+    border-radius: 0 6px 6px 0;
   }
-  .disclaimer-box a { color: var(--text); font-weight: 600; margin-left: 0.35rem; }
+  .disclaimer-box a { text-decoration: underline; margin-left: 0.4rem; }
 
-  /* ── Section headings ───────────────────────────────────────────────────── */
-  .section-heading {
-    font-size: 1.15rem;
-    font-weight: 600;
+  .sources-warning {
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
     margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border);
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 6px;
+    background: rgba(255, 193, 7, 0.12);
+    border: 1px solid rgba(255, 193, 7, 0.3);
   }
 
-  /* ── Empty states ────────────────────────────────────────────────────────── */
+  .related-pages {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0,0,0,0.08);
+  }
+  :global(.dark) .related-pages { border-top-color: rgba(255,255,255,0.06); }
+  .related-heading { font-size: 0.9rem; font-weight: 600; opacity: 0.6; margin-bottom: 0.75rem; }
+  .related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .related-links a {
+    font-size: 0.875rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+    opacity: 0.65;
+    text-decoration: none;
+    transition: opacity 150ms;
+  }
+  .related-links a:hover { opacity: 1; }
+  .section-heading { font-size: 1.1rem; font-weight: 600; margin: 2.5rem 0 1rem; opacity: 0.8; }
+  .empty-state-static { text-align: center; padding: 3rem 1rem; opacity: 0.7; }
+
   .empty-state {
     display: none;
     padding: 3rem 1.5rem;
@@ -274,39 +273,4 @@ const jsonLd = {
     transition: border-color 150ms, color 150ms;
   }
   .empty-reset:hover { border-color: var(--coral); color: var(--coral); }
-  .empty-state-static { text-align: center; padding: 3rem 1rem; color: var(--text-60); }
-
-  /* ── Related pages nav ───────────────────────────────────────────────────── */
-  .related-pages {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .related-heading { font-size: 0.9rem; font-weight: 600; color: var(--text-60); margin-bottom: 0.75rem; }
-  .related-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .related-links a {
-    font-size: 0.875rem;
-    padding: 0.35rem 0.75rem;
-    border-radius: 999px;
-    border: 1px solid var(--border);
-    color: var(--text-60);
-    text-decoration: none;
-    transition: border-color 150ms, color 150ms;
-  }
-  .related-links a:hover { border-color: var(--coral); color: var(--coral); }
-
-  html.dark .event-card { box-shadow: 0 2px 8px rgba(0,0,0,0.22); }
-
-  /* ── Layout ─────────────────────────────────────────────────────────────── */
-  .city-main-content { display: block; max-width: 720px; margin-left: auto; margin-right: auto; }
 </style>
