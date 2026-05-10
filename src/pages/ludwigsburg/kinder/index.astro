@@ -44,6 +44,7 @@ const jsonLd = {
   title={`Kinderveranstaltungen Ludwigsburg – ${allKinder.length} Events für Kinder & Familien | rausgucken.de`}
   description={`${allKinder.length} aktuelle Veranstaltungen für Kinder und Familien in Ludwigsburg. Workshops, Ausstellungen, Führungen und kostenlose Events – lokal, aktuell, übersichtlich.`}
   city="ludwigsburg"
+  canonical="https://rausgucken.de/ludwigsburg/kinder/"
 >
   <link rel="canonical" href="https://rausgucken.de/ludwigsburg/kinder/" slot="head-extra" />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
@@ -99,7 +100,7 @@ const jsonLd = {
 
   {dated.length > 0 && (
     <section id="section-dated">
-      <div id="event-grid" class="event-grid">
+      <div id="event-grid" class="event-list">
         {dated.map((ev: any) => <EventCard event={ev} />)}
       </div>
     </section>
@@ -108,7 +109,7 @@ const jsonLd = {
   {standing.length > 0 && (
     <section id="section-standing">
       <h2 class="section-heading">Dauerausstellungen & laufende Angebote</h2>
-      <div class="event-grid">
+      <div class="event-list">
         {standing.map((ev: any) => <EventCard event={ev} />)}
       </div>
     </section>
@@ -134,6 +135,7 @@ const jsonLd = {
 </Base>
 
 <style>
+  /* ── Breadcrumb ─────────────────────────────────────────────────────────── */
   .breadcrumbs ol {
     display: flex;
     flex-wrap: wrap;
@@ -142,9 +144,14 @@ const jsonLd = {
     margin: 0 0 1.5rem;
     padding: 0;
     font-size: 0.85rem;
-    opacity: 0.7;
+    color: var(--text-60);
   }
-  .breadcrumbs a { text-decoration: underline; text-underline-offset: 2px; }
+  .breadcrumbs a { text-decoration: underline; text-underline-offset: 2px; color: var(--text-60); }
+
+  /* ── Page header ─────────────────────────────────────────────────────────── */
+  .page-header { margin-bottom: 1.25rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .page-header h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; margin: 0.25rem 0 0.5rem; }
+  .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; }
 
   .page-header-eyebrow {
     display: flex;
@@ -154,18 +161,126 @@ const jsonLd = {
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    opacity: 0.7;
+    color: var(--text-60);
     margin-bottom: 0.5rem;
   }
-  .dot-dual { color: var(--brand-coral, #FF6F61); font-size: 0.75rem; letter-spacing: 0.15em; }
+  .dot-dual { color: var(--coral, #FF6F61); font-size: 0.75rem; letter-spacing: 0.15em; }
 
+  /* ── Scraper failure alert ───────────────────────────────────────────────── */
+  .sources-warning {
+    background: var(--coral-light);
+    border: 1px solid rgba(255,111,97,0.30);
+    border-radius: var(--radius-sm);
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+    color: var(--text);
+    opacity: 0.85;
+    margin-bottom: 0.85rem;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ── Disclaimer ─────────────────────────────────────────────────────────── */
+  .disclaimer-box {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.85rem 1.25rem;
+    font-size: 0.85rem;
+    color: var(--text);
+    opacity: 0.70;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .disclaimer-box a { color: var(--text); font-weight: 600; margin-left: 0.35rem; }
+
+  /* ── Section headings ───────────────────────────────────────────────────── */
+  .section-heading {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ── Empty states ────────────────────────────────────────────────────────── */
+  .empty-state {
+    display: none;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  .empty-state:not([hidden]) { display: block; }
+  .empty-state-inner {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    box-shadow: var(--shadow-card);
+  }
+  .empty-headline {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .empty-body {
+    font-size: 0.95rem;
+    color: var(--text-60);
+    margin-bottom: 1.5rem;
+  }
+  .empty-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+  }
+  .empty-cta {
+    background: var(--coral);
+    color: var(--text);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.6rem 1.25rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: background 150ms;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .empty-cta:hover { background: var(--coral-dark); }
+  .empty-reset {
+    background: transparent;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-60);
+    cursor: pointer;
+    min-height: 44px;
+    transition: border-color 150ms, color 150ms;
+  }
+  .empty-reset:hover { border-color: var(--coral); color: var(--coral); }
+  .empty-state-static { text-align: center; padding: 3rem 1rem; color: var(--text-60); }
+
+  /* ── Related pages nav ───────────────────────────────────────────────────── */
   .related-pages {
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(0,0,0,0.08);
+    border-top: 1px solid var(--border);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  :global(.dark) .related-pages { border-top-color: rgba(255,255,255,0.06); }
-  .related-heading { font-size: 0.9rem; font-weight: 600; opacity: 0.6; margin-bottom: 0.75rem; }
+  .related-heading { font-size: 0.9rem; font-weight: 600; color: var(--text-60); margin-bottom: 0.75rem; }
   .related-links {
     display: flex;
     flex-wrap: wrap;
@@ -178,12 +293,12 @@ const jsonLd = {
     font-size: 0.875rem;
     padding: 0.35rem 0.75rem;
     border-radius: 999px;
-    border: 1px solid currentColor;
-    opacity: 0.65;
+    border: 1px solid var(--border);
+    color: var(--text-60);
     text-decoration: none;
-    transition: opacity 150ms;
+    transition: border-color 150ms, color 150ms;
   }
-  .related-links a:hover { opacity: 1; }
-  .section-heading { font-size: 1.1rem; font-weight: 600; margin: 2.5rem 0 1rem; opacity: 0.8; }
-  .empty-state-static { text-align: center; padding: 3rem 1rem; opacity: 0.7; }
+  .related-links a:hover { border-color: var(--coral); color: var(--coral); }
+
+  html.dark .event-card { box-shadow: 0 2px 8px rgba(0,0,0,0.22); }
 </style>
