@@ -70,6 +70,17 @@ const websiteSchema = isHomepage ? {
   <!-- hreflang: site is German-only. No x-default until non-German content exists. -->
   <link rel="alternate" hreflang="de" href={canonical} />
 
+  <!-- ── Atom feed autodiscovery (SEO §21) ────────────────────────────────── -->
+  <!-- Feed readers and crawlers discover this automatically. City-scoped only. -->
+  {city === "ludwigsburg" && (
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Veranstaltungen in Ludwigsburg | rausgucken.de"
+      href="https://rausgucken.de/ludwigsburg/feed.xml"
+    />
+  )}
+
   <!-- ── Open Graph (SEO §20) ─────────────────────────────────────────────── -->
   <meta property="og:title"       content={title} />
   <meta property="og:description" content={description} />

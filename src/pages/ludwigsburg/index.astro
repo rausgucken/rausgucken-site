@@ -63,6 +63,13 @@ const featuredEvent = featuredSlug
     <h1>Veranstaltungen in Ludwigsburg</h1>
     <p class="page-subtitle">
       <FreshnessStamp scrapedAt={meta.scraped_at} />
+      <a href="/ludwigsburg/feed.xml" class="feed-link" title="Atom-Feed abonnieren" aria-label="Atom-Feed für Ludwigsburg abonnieren">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <circle cx="6.18" cy="17.82" r="2.18"/>
+          <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
+        </svg>
+        Feed
+      </a>
     </p>
   </div>
 
@@ -200,7 +207,11 @@ const featuredEvent = featuredSlug
   /* ── Page header ─────────────────────────────────────────────────────────── */
   .page-header { margin-bottom: 1.25rem; max-width: 720px; margin-left: auto; margin-right: auto; }
   h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
-  .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; }
+  .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+  .feed-link { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.78rem; font-weight: 600; color: var(--coral); text-decoration: none; opacity: 0.8; transition: opacity 150ms; }
+  .feed-link:hover { opacity: 1; text-decoration: none; }
+  .feed-link:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; border-radius: 2px; }
+  .feed-link svg { flex-shrink: 0; }
 
   /* ── Scraper failure alert ───────────────────────────────────────────────── */
   .sources-warning {

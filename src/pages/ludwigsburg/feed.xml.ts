@@ -1,0 +1,107 @@
+// src/pages/ludwigsburg/feed.xml.ts
+// Atom 1.0 feed for Ludwigsburg events.
+// SEO strategy §21: Atom preferred over RSS 2.0.
+// Generated at build time from events-current.json.
+// Referenced in Base.astro <head> via <link rel="alternate" type="application/atom+xml">.
+
+import eventsRaw from "../../../public/data/ludwigsburg/events-current.json";
+
+const SITE = "https://rausgucken.de";
+const FEED_URL = `${SITE}/ludwigsburg/feed.xml`;
+const CITY_URL = `${SITE}/ludwigsburg/`;
+
+// Escape XML special characters
+function esc(str: string): string {
+  if (!str) return "";
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
+// ISO 8601 with Z suffix for Atom dates
+function toAtomDate(isoStr: string): string {
+  if (!isoStr) return new Date().toISOString();
+  try {
+    return new Date(isoStr).toISOString();
+  } catch {
+    return new Date().toISOString();
+  }
+}
+
+export async function GET() {
+  // Sort by date_start ascending, cap at 100 entries
+  const events = [...(eventsRaw as any[])]
+    .filter((ev) => ev.date_start && ev.slug)
+    .sort((a, b) => (a.date_start > b.date_start ? 1 : -1))
+    .slice(0, 100);
+
+  const updated = events.length > 0
+    ? toAtomDate(events[events.length - 1].scraped_at || events[events.length - 1].date_start)
+    : new Date().toISOString();
+
+  const entries = events.map((ev) => {
+    const url = `${SITE}/ludwigsburg/events/${esc(ev.slug)}/`;
+    const title = esc(ev.title || "Veranstaltung");
+    const summary = esc(ev.description || "");
+    const published = toAtomDate(ev.date_start);
+    const updated_ev = toAtomDate(ev.scraped_at || ev.date_start);
+
+    // Human-readable date for content block
+    const dateLabel = ev.date_start
+      ? new Date(ev.date_start).toLocaleDateString("de-DE", {
+          weekday: "long", day: "numeric", month: "long", year: "numeric",
+        })
+      : "";
+    const timeLine = ev.time ? `\nUhrzeit: ${ev.time}` : "";
+    const locationLine = ev.location ? `\nOrt: ${ev.location}` : "";
+    const priceLine = ev.price ? `\nEintritt: ${ev.price}` : "";
+    const content = esc(
+      [dateLabel + timeLine + locationLine + priceLine, ev.description || ""]
+        .filter(Boolean)
+        .join("\n\n")
+    );
+
+    const sourceLabel = esc(ev.source_label || ev.source || "");
+    const originalUrl = esc(ev.original_url || ev.link || "");
+
+    return `  <entry>
+    <id>${url}</id>
+    <title>${title}</title>
+    <link rel="alternate" type="text/html" href="${url}"/>
+    <published>${published}</published>
+    <updated>${updated_ev}</updated>
+    <summary type="text">${summary}</summary>
+    <content type="text">${content}</content>
+    <author><name>${sourceLabel}</name></author>
+    ${originalUrl ? `<link rel="via" href="${originalUrl}"/>` : ""}
+    ${(ev.tags || []).map((t: string) => `<category term="${esc(t)}"/>`).join("\n    ")}
+  </entry>`;
+  }).join("\n");
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de-DE">
+  <id>${FEED_URL}</id>
+  <title>Veranstaltungen in Ludwigsburg | rausgucken.de</title>
+  <subtitle>Aktuelle Events, Workshops und Ausstellungen in Ludwigsburg – wöchentlich aktualisiert.</subtitle>
+  <link rel="self" type="application/atom+xml" href="${FEED_URL}"/>
+  <link rel="alternate" type="text/html" href="${CITY_URL}"/>
+  <updated>${updated}</updated>
+  <author>
+    <name>rausgucken.de</name>
+    <uri>${SITE}</uri>
+  </author>
+  <rights>Alle Angaben ohne Gewähr. Quellen: Originalseiten der Veranstalter.</rights>
+  <generator uri="${SITE}">rausgucken.de Astro Pipeline</generator>
+${entries}
+</feed>`;
+
+  return new Response(xml, {
+    headers: {
+      "Content-Type": "application/atom+xml; charset=utf-8",
+      "Cache-Control": "public, max-age=3600",
+    },
+  });
+}
