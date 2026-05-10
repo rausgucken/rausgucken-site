@@ -37,6 +37,7 @@ const eventUrl  = `https://rausgucken.de/ludwigsburg/events/${ev.slug}`;
 const shareText = encodeURIComponent(`${ev.title} – ${eventUrl}`);
 const waUrl     = `https://wa.me/?text=${shareText}`;
 const tgUrl     = `https://t.me/share/url?url=${encodeURIComponent(eventUrl)}&text=${encodeURIComponent(ev.title)}`;
+const shareLabel = `${ev.title} teilen`;
 ---
 
 <article
@@ -128,7 +129,7 @@ const tgUrl     = `https://t.me/share/url?url=${encodeURIComponent(eventUrl)}&te
   <!-- Share dropdown: native <details> — zero JS, keyboard accessible -->
   <div class="card-share" onclick="event.stopPropagation()">
     <details class="share-details">
-      <summary class="share-toggle" aria-label={`${ev.title} teilen`}>
+      <summary class="share-toggle" aria-label={shareLabel}>
         <!-- Share icon -->
         <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
         Teilen
