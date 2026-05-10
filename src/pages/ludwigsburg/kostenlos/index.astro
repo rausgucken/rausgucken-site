@@ -96,7 +96,7 @@ const jsonLd = {
 
   {dated.length > 0 && (
     <section id="section-dated">
-      <div id="event-grid" class="event-grid">
+      <div id="event-grid" class="event-list">
         {dated.map((ev: any) => <EventCard event={ev} />)}
       </div>
     </section>
@@ -105,7 +105,7 @@ const jsonLd = {
   {standing.length > 0 && (
     <section id="section-standing">
       <h2 class="section-heading">Dauerausstellungen &amp; laufende Angebote</h2>
-      <div class="event-grid">
+      <div class="event-list">
         {standing.map((ev: any) => <EventCard event={ev} />)}
       </div>
     </section>
