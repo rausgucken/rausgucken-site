@@ -3,18 +3,14 @@ import Base from "../../../layouts/Base.astro";
 import EventCard from "../../../components/EventCard.astro";
 import FilterBar from "../../../components/FilterBar.astro";
 
-import eventsData from "../../../../public/data/ludwigsburg/events-current.json";
+import eventsData from "../../../../public/data/ludwigsburg/kostenlos.json";
 import metaData from "../../../../public/data/ludwigsburg/meta.json";
 
 const meta = metaData;
 
-const FREE_VALUES = ["kostenlos", "kostenfrei", "eintritt frei", "freier eintritt", "frei", "gratis", "0"];
-
-const allKostenlos = (eventsData as any[]).filter((e: any) => {
-  const price = e.price;
-  if (price == null || price === "") return true;
-  return FREE_VALUES.includes(String(price).trim().toLowerCase());
-});
+const allKostenlos = ((eventsData as any).events as any[]).filter((e: any) =>
+  e.price === null || e.price === undefined || String(e.price).trim().toLowerCase() === "kostenlos"
+);
 
 const dated    = allKostenlos.filter((e: any) => e.date_start);
 const standing = allKostenlos.filter((e: any) => !e.date_start);
@@ -27,7 +23,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "Kostenlose Veranstaltungen in Ludwigsburg",
-  "description": `${allKostenlos.length} kostenlose Veranstaltungen in Ludwigsburg – Ausstellungen, Führungen, Workshops und mehr. Eintritt frei.`,
+  "description": `\${allKostenlos.length} kostenlose Veranstaltungen in Ludwigsburg – eintrittsfreie Events, Führungen, Ausstellungen und Mitmach-Angebote.`,
   "url": "https://rausgucken.de/ludwigsburg/kostenlos/",
   "inLanguage": "de-DE",
   "breadcrumb": {
@@ -42,15 +38,13 @@ const jsonLd = {
 ---
 
 <Base
-  title={`Kostenlose Veranstaltungen Ludwigsburg – ${allKostenlos.length} Events mit freiem Eintritt | rausgucken.de`}
-  description={`${allKostenlos.length} kostenlose Veranstaltungen in Ludwigsburg. Ausstellungen, Führungen, Workshops und mehr – alle mit freiem Eintritt, lokal und aktuell.`}
+  title={`Kostenlose Veranstaltungen Ludwigsburg – \${allKostenlos.length} gratis Events | rausgucken.de`}
+  description={`\${allKostenlos.length} kostenlose Veranstaltungen in Ludwigsburg – eintrittsfreie Events, Führungen, Ausstellungen und Mitmach-Angebote. Täglich aktuell, direkt zur Originalseite.`}
   city="ludwigsburg"
-  canonical="https://rausgucken.de/ludwigsburg/kostenlos/"
-  ogImage="/og/ludwigsburg/kostenlos.jpg"
 >
+  <link rel="canonical" href="https://rausgucken.de/ludwigsburg/kostenlos/" slot="head-extra" />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
-  <!-- Breadcrumbs -->
   <nav class="breadcrumbs" aria-label="Breadcrumb">
     <ol>
       <li><a href="/">rausgucken.de</a></li>
@@ -64,11 +58,11 @@ const jsonLd = {
   <div class="page-header">
     <div class="page-header-eyebrow">
       <span class="dot-dual" aria-hidden="true">● ·</span>
-      Eintritt frei
+      Kostenlose Events
     </div>
     <h1>Kostenlose Veranstaltungen in Ludwigsburg</h1>
     <p class="page-subtitle">
-      {allKostenlos.length} Events mit freiem Eintritt · Stand: {scrapedDate}
+      {allKostenlos.length} eintrittsfreie Angebote · Stand: {scrapedDate}
     </p>
   </div>
 
@@ -109,7 +103,7 @@ const jsonLd = {
 
   {standing.length > 0 && (
     <section id="section-standing">
-      <h2 class="section-heading">Dauerausstellungen & laufende Angebote</h2>
+      <h2 class="section-heading">Dauerausstellungen &amp; laufende Angebote</h2>
       <div class="event-grid">
         {standing.map((ev: any) => <EventCard event={ev} />)}
       </div>
@@ -126,10 +120,11 @@ const jsonLd = {
   <nav class="related-pages" aria-label="Weitere Seiten">
     <h2 class="related-heading">Weitere Seiten</h2>
     <ul class="related-links">
+      <li><a href="/ludwigsburg/kinder/">Kinderveranstaltungen Ludwigsburg</a></li>
       <li><a href="/ludwigsburg/heute/">Events heute</a></li>
       <li><a href="/ludwigsburg/morgen/">Events morgen</a></li>
       <li><a href="/ludwigsburg/dieses-wochenende/">Dieses Wochenende</a></li>
-      <li><a href="/ludwigsburg/kinder/">Kinder & Familie</a></li>
+      <li><a href="/ludwigsburg/naechste-woche/">Nächste Woche</a></li>
       <li><a href="/ludwigsburg/">Alle Veranstaltungen Ludwigsburg</a></li>
     </ul>
   </nav>
@@ -147,7 +142,6 @@ const jsonLd = {
     opacity: 0.7;
   }
   .breadcrumbs a { text-decoration: underline; text-underline-offset: 2px; }
-
   .page-header-eyebrow {
     display: flex;
     align-items: center;
@@ -160,7 +154,6 @@ const jsonLd = {
     margin-bottom: 0.5rem;
   }
   .dot-dual { color: var(--brand-coral, #FF6F61); font-size: 0.75rem; letter-spacing: 0.15em; }
-
   .related-pages {
     margin-top: 3rem;
     padding-top: 2rem;

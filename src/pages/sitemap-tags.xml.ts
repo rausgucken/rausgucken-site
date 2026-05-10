@@ -7,8 +7,8 @@ export async function GET() {
   const today   = new Date().toISOString().slice(0, 10);
 
   const tagPages = [
-    { loc: `${siteUrl}/ludwigsburg/kinder/`, priority: "0.9", changefreq: "weekly" },
-    // Future: add /ludwigsburg/kostenlos/, /ludwigsburg/ausstellungen/, etc.
+    { loc: `${siteUrl}/ludwigsburg/kinder/`,    priority: "0.9", changefreq: "weekly" },
+    { loc: `${siteUrl}/ludwigsburg/kostenlos/`, priority: "0.9", changefreq: "weekly" },
   ];
 
   const urls = tagPages
