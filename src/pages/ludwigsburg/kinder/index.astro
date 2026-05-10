@@ -84,6 +84,8 @@ const jsonLd = {
 
   <FilterBar />
 
+  <div class="city-main-content">
+
   <div class="empty-state" id="empty-state" aria-live="polite" hidden>
     <div class="empty-state-inner">
       <p class="empty-headline">Keine Treffer für diese Filter.</p>
@@ -132,6 +134,8 @@ const jsonLd = {
       <li><a href="/ludwigsburg/">Alle Veranstaltungen Ludwigsburg</a></li>
     </ul>
   </nav>
+  </div><!-- /.city-main-content -->
+
   <script src="/scripts/app.js" is:inline></script>
 </Base>
 
@@ -302,4 +306,7 @@ const jsonLd = {
   .related-links a:hover { border-color: var(--coral); color: var(--coral); }
 
   html.dark .event-card { box-shadow: 0 2px 8px rgba(0,0,0,0.22); }
+
+  /* ── Layout ─────────────────────────────────────────────────────────────── */
+  .city-main-content { display: block; max-width: 720px; margin-left: auto; margin-right: auto; }
 </style>

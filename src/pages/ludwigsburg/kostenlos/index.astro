@@ -80,6 +80,8 @@ const jsonLd = {
 
   <FilterBar />
 
+  <div class="city-main-content">
+
   <div class="empty-state" id="empty-state" aria-live="polite" hidden>
     <div class="empty-state-inner">
       <p class="empty-headline">Keine Treffer für diese Filter.</p>
@@ -129,6 +131,8 @@ const jsonLd = {
       <li><a href="/ludwigsburg/">Alle Veranstaltungen Ludwigsburg</a></li>
     </ul>
   </nav>
+  </div><!-- /.city-main-content -->
+
   <script src="/scripts/app.js" is:inline></script>
 </Base>
 
@@ -209,4 +213,8 @@ const jsonLd = {
   .related-links a:hover { opacity: 1; }
   .section-heading { font-size: 1.1rem; font-weight: 600; margin: 2.5rem 0 1rem; opacity: 0.8; }
   .empty-state-static { text-align: center; padding: 3rem 1rem; opacity: 0.7; }
+
+  /* ── Layout — matches main ludwigsburg page ─────────────────────────────── */
+  .city-layout { display: block; }
+  .city-main   { display: block; }
 </style>
