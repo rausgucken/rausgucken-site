@@ -33,13 +33,6 @@ const dateFormatted = event?.date_start
     <a href={"/ludwigsburg/events/" + event.slug} class="featured-cta">
       Mehr erfahren →
     </a>
-
-    <p class="featured-source">
-      Quelle: {event.source_label} —{" "}
-      <a href={event.original_url} target="_blank" rel="noopener noreferrer" class="featured-source-link">
-        Originalseite prüfen
-      </a>
-    </p>
   </aside>
 )}
 
@@ -48,26 +41,26 @@ const dateFormatted = event?.date_start
     background-color: var(--surface-card);
     border-left: 4px solid var(--coral, #FF6F61);
     border-radius: 0.75rem;
-    padding: 1.25rem 1rem 1rem 1rem;
-    margin-bottom: 1.5rem;
+    padding: 0.9rem 0.85rem 0.85rem 0.85rem;
+    margin-bottom: 1.25rem;
     box-shadow: var(--shadow-card);
   }
 
   .featured-event-header {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
-    margin-bottom: 0.6rem;
+    gap: 0.35rem;
+    margin-bottom: 0.45rem;
   }
 
   .featured-dot {
     color: var(--coral, #FF6F61);
-    font-size: 0.6rem;
+    font-size: 0.55rem;
     line-height: 1;
   }
 
   .featured-label {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -75,10 +68,10 @@ const dateFormatted = event?.date_start
   }
 
   .featured-title {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 700;
     line-height: 1.3;
-    margin: 0 0 0.4rem 0;
+    margin: 0 0 0.3rem 0;
     color: var(--text);
   }
 
@@ -92,15 +85,16 @@ const dateFormatted = event?.date_start
   }
 
   .featured-meta {
-    font-size: 0.78rem;
-    margin: 0 0 0.75rem 0;
+    font-size: 0.72rem;
+    margin: 0 0 0.5rem 0;
     color: var(--text-60);
+    line-height: 1.4;
   }
 
   .featured-tip {
-    font-size: 0.875rem;
-    line-height: 1.55;
-    margin: 0 0 1rem 0;
+    font-size: 0.75rem;
+    line-height: 1.45;
+    margin: 0 0 0.75rem 0;
     color: var(--text);
   }
 
@@ -108,25 +102,14 @@ const dateFormatted = event?.date_start
     display: inline-block;
     background-color: var(--coral, #FF6F61);
     color: var(--text-charcoal, #373F51);
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     font-weight: 600;
-    padding: 0.45rem 0.9rem;
-    border-radius: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 0.4rem;
     text-decoration: none;
-    min-height: 44px;
-    line-height: 2.4;
+    min-height: 32px;
+    line-height: 1.8;
   }
 
   .featured-cta:hover { opacity: 0.88; }
-
-  .featured-source {
-    font-size: 0.7rem;
-    margin: 0.75rem 0 0 0;
-    color: var(--text-60);
-  }
-
-  .featured-source-link {
-    color: inherit;
-    text-decoration: underline;
-  }
 </style>
