@@ -10,8 +10,6 @@ type LinkEntry = {
 };
 
 const links: LinkEntry[] = linksJson as LinkEntry[];
-
-// Pre-resolve all URLs — no nullish coalescing in JSX template
 const resolvedLinks = links.map(link => ({
   ...link,
   resolvedUrl: link.url || '#',
@@ -23,27 +21,14 @@ const resolvedLinks = links.map(link => ({
   <ul class="sidebar-list" role="list">
     {resolvedLinks.map((link) => {
       if (link.isHeading) {
-        return (
-          <li class="sidebar-section-heading" role="presentation">
-            {link.name}
-          </li>
-        );
+        return <li class="sidebar-section-heading" role="presentation">{link.name}</li>;
       }
       if (link.external) {
         return (
           <li class="sidebar-item">
-            
-              href={link.resolvedUrl}
-              class="sidebar-link"
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-            >
+            <a href={link.resolvedUrl} class="sidebar-link" target="_blank" rel="nofollow noopener noreferrer">
               {link.name}
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex-shrink:0;margin-left:3px;opacity:0.5">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex-shrink:0;margin-left:3px;opacity:0.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
             {link.description && <p class="sidebar-desc">{link.description}</p>}
           </li>
@@ -51,9 +36,7 @@ const resolvedLinks = links.map(link => ({
       }
       return (
         <li class="sidebar-item">
-          <a href={link.resolvedUrl} class="sidebar-link sidebar-link--internal">
-            {link.name} →
-          </a>
+          <a href={link.resolvedUrl} class="sidebar-link sidebar-link--internal">{link.name} →</a>
           {link.description && <p class="sidebar-desc">{link.description}</p>}
         </li>
       );
