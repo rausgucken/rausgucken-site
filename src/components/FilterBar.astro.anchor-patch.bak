@@ -1,0 +1,310 @@
+---
+// src/components/FilterBar.astro
+// Design spec: sticky z-10, 44px tap targets, filter hierarchy: Date > Location > Category > Age
+// SEO §8: quick-access shortcut pills link to temporal intent pages
+---
+
+<div class="filter-wrapper" id="filter-wrapper">
+
+  <!-- Temporal shortcut pills — SEO §8, internal linking §22 -->
+  <!-- These are real <a> links to indexed intent pages, not JS-only filter triggers -->
+  <div class="filter-shortcuts" aria-label="Schnellauswahl">
+    <a href="/ludwigsburg/heute"            class="shortcut-pill">Heute</a>
+    <a href="/ludwigsburg/morgen"           class="shortcut-pill">Morgen</a>
+    <a href="/ludwigsburg/dieses-wochenende" class="shortcut-pill">Wochenende</a>
+    <a href="/ludwigsburg/naechste-woche"   class="shortcut-pill">Nächste Woche</a>
+    <a href="/ludwigsburg/kinder"           class="shortcut-pill shortcut-pill--sage">Kinder &amp; Familie</a>
+  </div>
+
+  <!-- Mobile collapse toggle — hidden on desktop via CSS -->
+  <button class="filter-toggle-btn" id="filter-toggle-btn"
+          aria-expanded="false" aria-controls="filter-bar"
+          type="button">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+    Filter
+    <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+
+  <div class="filter-bar" id="filter-bar" role="search" aria-label="Veranstaltungen filtern">
+
+    <!-- 1. DATE FROM -->
+    <div class="filter-group">
+      <label for="date-from">Von</label>
+      <input type="date" id="date-from" aria-label="Datum von" />
+    </div>
+
+    <!-- 2. DATE TO -->
+    <div class="filter-group">
+      <label for="date-to">Bis</label>
+      <input type="date" id="date-to" aria-label="Datum bis" />
+    </div>
+
+    <!-- 3. LOCATION — app.js populates options dynamically from card data-location attrs -->
+    <div class="filter-group">
+      <label for="location-filter">Ort</label>
+      <select id="location-filter" aria-label="Ort filtern">
+        <option value="">Alle Orte</option>
+      </select>
+    </div>
+
+    <!-- 4. CATEGORY -->
+    <div class="filter-group">
+      <label for="tag-filter">Kategorie</label>
+      <select id="tag-filter" aria-label="Kategorie filtern">
+        <option value="">Alle Kategorien</option>
+        <option value="Ausstellung">Ausstellung</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Familie">Familie</option>
+        <option value="Fest">Fest</option>
+        <option value="Fuehrung">Führung</option>
+        <option value="Jugend">Jugend</option>
+        <option value="Kinder">Kinder</option>
+        <option value="Kulinarik">Kulinarik</option>
+        <option value="Lesung">Lesung</option>
+        <option value="Musik">Musik</option>
+        <option value="Outdoor">Outdoor</option>
+        <option value="Sport">Sport</option>
+        <option value="Tanz">Tanz</option>
+        <option value="Theater">Theater</option>
+        <option value="Vortrag">Vortrag</option>
+        <option value="Workshop">Workshop</option>
+      </select>
+    </div>
+
+    <!-- 5. AGE GROUP — design spec: must NOT be hidden behind secondary dropdown -->
+    <div class="filter-group">
+      <label for="age-filter">Altersgruppe</label>
+      <select id="age-filter" aria-label="Altersgruppe filtern">
+        <option value="0-99">Alle Altersgruppen</option>
+        <option value="0-3">0–3 Jahre</option>
+        <option value="3-6">3–6 Jahre</option>
+        <option value="6-12">6–12 Jahre</option>
+        <option value="12-17">12–17 Jahre</option>
+        <option value="18-99">Erwachsene (18+)</option>
+      </select>
+    </div>
+
+    <button id="filter-reset" class="filter-reset" type="button" aria-label="Alle Filter zurücksetzen">
+      ✕ Zurücksetzen
+    </button>
+
+    <span class="filter-count" id="filter-count" aria-live="polite" aria-atomic="true"></span>
+
+  </div>
+</div>
+
+<style>
+  /* ── Wrapper — z-10 per design spec z-index doctrine ───────────────────── */
+  .filter-wrapper {
+    position: sticky;
+    top: 64px;
+    z-index: 10;
+    background: var(--bg);
+    padding: 0.75rem 0 0;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px -4px rgba(0,0,0,0.06);
+    transition: background 250ms ease;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ── Shortcut pills — SEO §8, links to real indexed pages ──────────────── */
+  .filter-shortcuts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.65rem;
+  }
+  /* Coral bg → Charcoal text per design spec "Button" rule */
+  .shortcut-pill {
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    padding: 0 0.9rem;
+    background: var(--coral);
+    color: var(--text);        /* Charcoal on Coral — 4.1:1 ✓ */
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 150ms, transform 150ms;
+  }
+  .shortcut-pill:hover {
+    background: var(--coral-dark);
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+  .shortcut-pill:focus-visible {
+    outline: 2px solid var(--coral);
+    outline-offset: 2px;
+  }
+  /* Sage variant for Kinder — Sage bg → Charcoal text, 5.2:1 ✓ */
+  .shortcut-pill--sage {
+    background: var(--sage);
+    color: var(--text);
+  }
+  .shortcut-pill--sage:hover { background: #7aaa58; }
+
+  /* ── Filter bar ─────────────────────────────────────────────────────────── */
+  .filter-bar {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+    align-items: flex-end;
+    box-shadow: var(--shadow-card);
+    transition: background 250ms ease, border-color 250ms ease;
+  }
+
+  .filter-group { display: flex; flex-direction: column; gap: 0.3rem; }
+
+  label {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-60);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  select,
+  input[type="date"] {
+    height: 44px;  /* minimum tap target per design spec §4 */
+    padding: 0 0.75rem;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 500;
+    background: var(--bg);
+    color: var(--text);
+    cursor: pointer;
+    transition: border-color 150ms, background 250ms, color 250ms;
+    appearance: auto;
+    -webkit-appearance: auto;
+    min-width: 0;
+  }
+  select             { min-width: 145px; max-width: 220px; }
+  #location-filter   { max-width: 180px; }
+  input[type="date"] { width: 148px; padding: 0 0.6rem; box-sizing: border-box; }
+
+  select:focus,
+  input[type="date"]:focus {
+    outline: none;
+    border-color: var(--coral);
+    box-shadow: 0 0 0 3px var(--coral-light);
+  }
+  select:hover,
+  input[type="date"]:hover { border-color: var(--coral); }
+
+  html.dark input[type="date"] { color-scheme: dark; }
+
+  .filter-reset {
+    height: 44px;
+    padding: 0 1rem;
+    background: transparent;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-60);
+    cursor: pointer;
+    transition: border-color 150ms, color 150ms, background 150ms;
+    align-self: flex-end;
+    white-space: nowrap;
+  }
+  .filter-reset:hover { border-color: var(--coral); color: var(--coral); background: var(--coral-light); }
+  .filter-reset:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+  .filter-count {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text-60);
+    align-self: flex-end;
+    padding-bottom: 0.6rem;
+    white-space: nowrap;
+  }
+
+  /* ── Mobile ─────────────────────────────────────────────────────────────── */
+  @media (max-width: 700px) {
+    .filter-wrapper { top: 64px; }
+    .filter-bar {
+      gap: 0.65rem;
+      padding: 0.85rem 1rem;
+      /* Ensure children cannot overflow the rounded card border */
+      overflow: hidden;
+    }
+    .filter-group {
+      /* Account for gap (0.65rem) in the 50% split so neither column overflows */
+      flex: 1 1 calc(50% - 0.65rem);
+      min-width: 0;
+      /* Prevent the group itself from pushing outside the card */
+      overflow: hidden;
+    }
+    select { min-width: 0; width: 100%; max-width: 100%; }
+    input[type="date"] {
+      /* Override the fixed 148px width set in base styles */
+      width: 100%;
+      min-width: 0;
+      max-width: 100%;
+      /* box-sizing ensures padding is included in the 100% width */
+      box-sizing: border-box;
+    }
+    .filter-reset { width: 100%; }
+  }
+  @media (max-width: 380px) {
+    .filter-group { flex: 1 1 100%; }
+  }
+
+  /* ── Mobile filter toggle ──────────────────────────────────────────────── */
+  .filter-toggle-btn {
+    display: none; /* hidden on desktop */
+  }
+
+  @media (max-width: 700px) {
+    /* Hide filter bar by default on mobile */
+    .filter-bar {
+      display: none;
+    }
+    .filter-bar.is-open {
+      display: flex;
+    }
+
+    /* Show toggle button on mobile */
+    .filter-toggle-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.5rem;
+      background: var(--surface-card);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: left;
+      transition: border-color 150ms;
+    }
+    .filter-toggle-btn:hover { border-color: var(--coral); }
+    .filter-toggle-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+    .filter-toggle-btn .chevron {
+      margin-left: auto;
+      transition: transform 200ms ease;
+    }
+    .filter-toggle-btn[aria-expanded="true"] .chevron {
+      transform: rotate(180deg);
+    }
+  }
+
+</style>
