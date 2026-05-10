@@ -203,7 +203,7 @@ const placeSchema = {
   .city-layout { display: block; }
   .city-main { display: block; }
   @media (min-width: 961px) {
-    .city-sidebar { display: block; position: fixed; top: 160px; left: calc(50% + 384px); width: 200px; }
+    .city-sidebar { display: block; position: fixed; top: 160px; left: calc(50% + 384px); width: 200px; max-height: calc(100vh - 180px); overflow-y: auto; scrollbar-width: none; }
     .city-sidebar :global(.important-links-sidebar) { display: block; }
   }
   @media (max-width: 960px) { .city-sidebar { display: none; } }
