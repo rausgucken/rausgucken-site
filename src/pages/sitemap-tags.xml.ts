@@ -1,6 +1,5 @@
 // src/pages/sitemap-tags.xml.ts
 // SEO §11: Tag / category hub pages.
-// Add new tag pages here as they are created (e.g. /ludwigsburg/kostenlos/, /ludwigsburg/musik/).
 
 export async function GET() {
   const siteUrl = "https://rausgucken.de";

@@ -1,15 +1,22 @@
 // src/pages/sitemap-cities.xml.ts
-// SEO §11: City landing pages + homepage + about.
-// Add new cities here as they are added to the platform.
+// SEO §11: City landing pages + homepage + about + venue hubs.
 
 export async function GET() {
   const siteUrl = "https://rausgucken.de";
   const today   = new Date().toISOString().slice(0, 10);
 
   const pages = [
-    { loc: `${siteUrl}/`,              priority: "1.0", changefreq: "weekly"  },
-    { loc: `${siteUrl}/ludwigsburg/`,  priority: "1.0", changefreq: "weekly"  },
-    { loc: `${siteUrl}/about`,         priority: "0.5", changefreq: "monthly" },
+    { loc: `${siteUrl}/`,                              priority: "1.0", changefreq: "weekly"  },
+    { loc: `${siteUrl}/ludwigsburg/`,                  priority: "1.0", changefreq: "weekly"  },
+    { loc: `${siteUrl}/about`,                         priority: "0.5", changefreq: "monthly" },
+    { loc: `${siteUrl}/impressum`,                     priority: "0.3", changefreq: "monthly" },
+    { loc: `${siteUrl}/datenschutz`,                   priority: "0.3", changefreq: "monthly" },
+    // Venue hub pages
+    { loc: `${siteUrl}/ludwigsburg/karlskaserne/`,     priority: "0.8", changefreq: "weekly"  },
+    { loc: `${siteUrl}/ludwigsburg/stadtbibliothek/`,  priority: "0.8", changefreq: "weekly"  },
+    { loc: `${siteUrl}/ludwigsburg/residenzschloss/`,  priority: "0.8", changefreq: "weekly"  },
+    { loc: `${siteUrl}/ludwigsburg/labyrinth/`,        priority: "0.8", changefreq: "weekly"  },
+    { loc: `${siteUrl}/ludwigsburg/erleben/`,          priority: "0.7", changefreq: "weekly"  },
   ];
 
   const urls = pages
