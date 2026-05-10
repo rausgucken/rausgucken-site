@@ -4,6 +4,7 @@ import FreshnessStamp from '../../components/FreshnessStamp.astro';
 import EventCard from "../../components/EventCard.astro";
 import FilterBar from "../../components/FilterBar.astro";
 import ImportantLinksSidebar from "../../components/ImportantLinksSidebar.astro";
+import FeaturedEvent from "../../components/FeaturedEvent.astro";
 
 import eventsData from "../../../public/data/ludwigsburg/events-current.json";
 import metaData from "../../../public/data/ludwigsburg/meta.json";
@@ -143,8 +144,10 @@ const featuredEvent = featuredSlug
     </div><!-- /.city-main -->
 
     <!-- Right: sidebar — hidden on mobile, sticky on desktop -->
-    <FeaturedEvent event={featuredEvent} />
+    <div class="city-sidebar">
+      <FeaturedEvent event={featuredEvent} />
       <ImportantLinksSidebar />
+    </div>
 
   </div><!-- /.city-layout -->
 
@@ -196,20 +199,17 @@ const featuredEvent = featuredSlug
   .city-main   { display: block; }
 
   @media (min-width: 961px) {
-    .city-layout :global(.important-links-sidebar) {
+    .city-sidebar {
       display: block;
       position: fixed;
       top: 160px;
-      /* Place sidebar just to the right of the 720px centered content.
-         Content right edge = 50vw + 360px.
-         Sidebar left edge  = 50vw + 360px + 24px gap. */
       left: calc(50% + 384px);
       width: 200px;
     }
   }
 
   @media (max-width: 960px) {
-    .city-layout :global(.important-links-sidebar) {
+    .city-sidebar {
       display: none;
     }
   }
