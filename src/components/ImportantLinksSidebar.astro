@@ -1,6 +1,6 @@
 ---
 // src/components/ImportantLinksSidebar.astro
-// SEO strategy §26a: sticky right column on desktop (≥769px), hidden on desktop mobile
+// SEO strategy §26a: sticky right column on desktop (≥769px), hidden on mobile
 // Mobile: hidden here — identical links rendered in footer-col "Wichtige Links" in Base.astro
 // External links: rel="nofollow noopener noreferrer" mandatory (SEO §26)
 // Internal links: no rel attribute, standard anchor
@@ -12,28 +12,36 @@ import links from "../../config/important-links.json";
   <h2 class="sidebar-heading">Wichtige Links</h2>
   <ul class="sidebar-list" role="list">
     {links.map(link => (
-      <li class="sidebar-item">
-        {link.external ? (
-          <a
-            href={link.url}
-            class="sidebar-link"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-          >
-            {link.name}
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex-shrink:0;margin-left:3px;opacity:0.5">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </a>
-        ) : (
-          <a href={link.url} class="sidebar-link sidebar-link--internal">
-            {link.name} →
-          </a>
-        )}
-        <p class="sidebar-desc">{link.description}</p>
-      </li>
+      link.isHeading ? (
+        <li class="sidebar-section-heading" role="presentation">
+          {link.name}
+        </li>
+      ) : (
+        <li class="sidebar-item">
+          {link.external ? (
+            
+              href={link.url}
+              class="sidebar-link"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              {link.name}
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex-shrink:0;margin-left:3px;opacity:0.5">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </a>
+          ) : (
+            <a href={link.url} class="sidebar-link sidebar-link--internal">
+              {link.name} →
+            </a>
+          )}
+          {link.description && (
+            <p class="sidebar-desc">{link.description}</p>
+          )}
+        </li>
+      )
     ))}
   </ul>
 </aside>
@@ -63,6 +71,24 @@ import links from "../../config/important-links.json";
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+  .sidebar-section-heading {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-60);
+    font-family: var(--font-body);
+    margin-top: 0.25rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    opacity: 0.6;
+  }
+  /* Don't show top border on first heading */
+  .sidebar-list > .sidebar-section-heading:first-child {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
   }
   .sidebar-item {
     display: flex;
