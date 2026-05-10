@@ -195,6 +195,21 @@ html.dark .card-footer{background:rgba(255,255,255,0.03)}
 .site-footer nav{margin-top:0.5rem}
 .site-footer a{color:var(--text-60);text-decoration:none}
 .site-footer a:hover{color:var(--coral)}
+.card-share{padding:0.4rem 1rem;border-top:1px solid var(--border);position:relative}
+.share-details{display:inline-block;position:relative}
+.share-details[open] .share-toggle{color:var(--coral)}
+.share-toggle{display:inline-flex;align-items:center;gap:0.35rem;font-size:0.72rem;font-weight:600;color:var(--text-60);cursor:pointer;list-style:none;padding:0.3rem 0.5rem;border-radius:20px;min-height:32px;transition:color 150ms,background 150ms;user-select:none}
+.share-toggle::-webkit-details-marker{display:none}
+.share-toggle:hover{color:var(--coral);background:var(--tag-bg)}
+.share-menu{position:absolute;bottom:calc(100% + 6px);left:0;z-index:40;background:var(--surface-card,var(--surface));border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 8px 24px rgba(0,0,0,0.14);padding:0.35rem 0;min-width:190px;list-style:none;margin:0}
+.share-item{display:flex;align-items:center;gap:0.55rem;padding:0.45rem 0.9rem;font-size:0.8rem;font-weight:500;color:var(--text);text-decoration:none;transition:background 120ms;white-space:nowrap}
+.share-item:hover{background:var(--tag-bg)}
+.share-item--eu{color:var(--text-60)}
+.share-item--eu:hover{color:var(--text);background:var(--tag-bg)}
+.share-item-meta{margin-left:auto;font-size:0.65rem;font-weight:400;color:var(--text-60);opacity:0.7}
+.share-divider{height:1px;background:var(--border);margin:0.3rem 0}
+.share-label{font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-60);opacity:0.6;padding:0.2rem 0.9rem 0.1rem}
+html.dark .share-menu{box-shadow:0 8px 24px rgba(0,0,0,0.4)}
 </style>
 </body>
 </html>`;
