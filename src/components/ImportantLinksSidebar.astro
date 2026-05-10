@@ -67,9 +67,8 @@ const resolvedLinks = links.map((link, i) => ({
 
 <style>
   .important-links-sidebar {
-    display: none; /* shown via parent media query */
+    display: none;
   }
-
   .sidebar-heading {
     font-size: 0.72rem;
     font-weight: 700;
@@ -81,14 +80,12 @@ const resolvedLinks = links.map((link, i) => ({
     padding-bottom: 0.4rem;
     border-bottom: 1px solid var(--border);
   }
-
   .sidebar-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 0; /* no gap — compact list */
+    gap: 0;
   }
-
   .sidebar-section-heading {
     font-size: 0.65rem;
     font-weight: 700;
@@ -105,13 +102,10 @@ const resolvedLinks = links.map((link, i) => ({
     border-top: none;
     padding-top: 0;
   }
-
-  /* Each item: relative so tooltip can anchor to it */
   .sidebar-item {
     position: relative;
     display: block;
   }
-
   .sidebar-link {
     display: flex;
     align-items: center;
@@ -132,17 +126,13 @@ const resolvedLinks = links.map((link, i) => ({
   .sidebar-link:focus-visible { color: var(--coral); }
   .sidebar-link--internal { color: var(--coral); }
   .sidebar-link--internal:hover { opacity: 0.8; }
-
   .ext-icon {
     flex-shrink: 0;
     opacity: 0.45;
   }
-
-  /* Tooltip — hidden by default, shown on parent hover/focus */
   .sidebar-tooltip {
-    display: none; /* fallback */
+    display: none;
     position: absolute;
-    /* anchor to right of sidebar, opening leftward into page */
     right: calc(100% + 10px);
     top: 0;
     width: 180px;
@@ -156,7 +146,6 @@ const resolvedLinks = links.map((link, i) => ({
     box-shadow: 0 4px 16px rgba(0,0,0,0.18);
     pointer-events: none;
     z-index: 100;
-    /* small right-pointing arrow */
     white-space: normal;
   }
   .sidebar-tooltip::after {
@@ -171,20 +160,16 @@ const resolvedLinks = links.map((link, i) => ({
     border-top: 1px solid var(--border);
     transform: rotate(45deg);
   }
-
-  /* Show tooltip on hover or keyboard focus of parent item */
   .sidebar-item.has-desc:hover .sidebar-tooltip,
   .sidebar-item.has-desc:focus-within .sidebar-tooltip {
     display: block;
   }
-
-  /* Respect reduced motion — no animation, instant show */
   @media (prefers-reduced-motion: no-preference) {
     .sidebar-tooltip {
       opacity: 0;
       transform: translateX(4px);
       transition: opacity 140ms ease, transform 140ms ease;
-      display: block; /* use opacity instead of display for animation */
+      display: block;
       pointer-events: none;
     }
     .sidebar-item.has-desc:hover .sidebar-tooltip,
