@@ -41,6 +41,7 @@ const jsonLd = {
   title={`Kostenlose Veranstaltungen Ludwigsburg – \${allKostenlos.length} gratis Events | rausgucken.de`}
   description={`\${allKostenlos.length} kostenlose Veranstaltungen in Ludwigsburg – eintrittsfreie Events, Führungen, Ausstellungen und Mitmach-Angebote. Täglich aktuell, direkt zur Originalseite.`}
   city="ludwigsburg"
+  canonical="https://rausgucken.de/ludwigsburg/kostenlos/"
 >
   <link rel="canonical" href="https://rausgucken.de/ludwigsburg/kostenlos/" slot="head-extra" />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
@@ -142,6 +143,11 @@ const jsonLd = {
     opacity: 0.7;
   }
   .breadcrumbs a { text-decoration: underline; text-underline-offset: 2px; }
+
+  .page-header { margin-bottom: 1.5rem; }
+  .page-header h1 { margin: 0.25rem 0 0.5rem; }
+  .page-subtitle { margin: 0; opacity: 0.7; font-size: 0.95rem; }
+
   .page-header-eyebrow {
     display: flex;
     align-items: center;
@@ -154,6 +160,27 @@ const jsonLd = {
     margin-bottom: 0.5rem;
   }
   .dot-dual { color: var(--brand-coral, #FF6F61); font-size: 0.75rem; letter-spacing: 0.15em; }
+
+  .disclaimer-box {
+    font-size: 0.85rem;
+    opacity: 0.75;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
+    border-left: 3px solid var(--brand-coral, #FF6F61);
+    background: rgba(255, 111, 97, 0.06);
+    border-radius: 0 6px 6px 0;
+  }
+  .disclaimer-box a { text-decoration: underline; margin-left: 0.4rem; }
+
+  .sources-warning {
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    background: rgba(255, 193, 7, 0.12);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+  }
+
   .related-pages {
     margin-top: 3rem;
     padding-top: 2rem;
