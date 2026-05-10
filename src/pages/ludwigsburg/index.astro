@@ -74,6 +74,43 @@ const featuredEvent = featuredSlug
     <a href="/about">Mehr Informationen</a>
   </aside>
 
+
+  <!-- Editorial intro — collapsed by default. Named entities for E-E-A-T/SEO.
+       Googlebot reads <details> content even when closed. -->
+  <details class="editorial-intro" id="editorial-intro">
+    <summary class="editorial-intro__toggle">
+      Über Ludwigsburg — Kulturorte &amp; Freizeittipps
+    </summary>
+    <div class="editorial-intro__body">
+      <p>
+        Ludwigsburg vereint auf engem Raum einige der kulturell interessantesten Orte
+        Baden-Württembergs. Das <strong>Residenzschloss</strong> und der angrenzende Park
+        <strong>Blühender Barock</strong> zählen zu den meistbesuchten Ausflugszielen der Region —
+        mit Führungen, Familienformaten und dem Märchengarten das ganze Jahr über.
+        Das <strong>Forum am Schlosspark</strong> direkt nebenan ist die Heimspielstätte des
+        Württembergischen Kammerorchesters und Bühne für Konzerte, Lesungen und Gastspiele.
+      </p>
+      <p>
+        Das <strong>Kunstzentrum Karlskaserne</strong> beherbergt wechselnde Ausstellungen,
+        offene Ateliers und regelmäßige Veranstaltungsabende — darunter die
+        <strong>Kunstschule Labyrinth</strong> mit Kinder- und Jugend-Workshops in Bildender
+        Kunst, Theater und Zirkus. Der <strong>Kunstverein Ludwigsburg</strong> zeigt
+        zeitgenössische Kunst mit regionalem Bezug; Vernissagen sind meist kostenlos zugänglich.
+        Das <strong>Stadtmuseum im MIK</strong> erzählt die Geschichte der Barockplanstadt
+        mit interaktivem Mitmachbereich für Familien.
+      </p>
+      <p>
+        Die <strong>Stadtbibliothek Ludwigsburg</strong> bietet weit mehr als Ausleihe:
+        Lesestunden, Sprachtreffs, digitale Workshops und Vortragsreihen — viele davon kostenlos.
+        Für Konzerte, Comedy und Sport ist die <strong>MHP Arena</strong> das größte
+        Live-Entertainment-Venue der Stadt, Heimspielstätte der MHP Riesen Ludwigsburg.
+      </p>
+      <p class="editorial-intro__erleben-link">
+        <a href="/ludwigsburg/erleben/">Alle Kulturorte im Überblick →</a>
+      </p>
+    </div>
+  </details>
+
   <FilterBar />
 
   <!-- Two-column layout: event list left (720px), sidebar right (260px) -->
@@ -316,4 +353,61 @@ const featuredEvent = featuredSlug
   }
   .empty-reset:hover { border-color: var(--coral); color: var(--coral); }
   .empty-reset:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+  /* ── Editorial intro (collapsed) ───────────────────────────────────────── */
+  .editorial-intro {
+    max-width: 720px;
+    margin: 0 auto 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface-card);
+  }
+  .editorial-intro__toggle {
+    padding: 0.75rem 1.1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-60);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    user-select: none;
+  }
+  .editorial-intro__toggle::-webkit-details-marker { display: none; }
+  .editorial-intro__toggle::before {
+    content: "▸";
+    font-size: 0.7rem;
+    transition: transform 150ms;
+    flex-shrink: 0;
+  }
+  details.editorial-intro[open] .editorial-intro__toggle::before {
+    transform: rotate(90deg);
+  }
+  .editorial-intro__toggle:hover { color: var(--text); }
+  .editorial-intro__toggle:focus-visible {
+    outline: 2px solid var(--coral);
+    outline-offset: -2px;
+    border-radius: var(--radius-sm);
+  }
+  .editorial-intro__body {
+    padding: 0 1.1rem 1rem;
+    border-top: 1px solid var(--border);
+  }
+  .editorial-intro__body p {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: var(--text);
+    opacity: 0.85;
+    margin-top: 0.85rem;
+    margin-bottom: 0;
+  }
+  .editorial-intro__body strong { font-weight: 600; opacity: 1; }
+  .editorial-intro__erleben-link a {
+    color: var(--coral);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+  .editorial-intro__erleben-link a:hover { text-decoration: underline; }
 </style>
