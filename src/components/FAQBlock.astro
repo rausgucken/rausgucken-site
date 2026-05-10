@@ -1,0 +1,336 @@
+---
+/**
+ * FAQBlock.astro
+ * Data-driven FAQ for /ludwigsburg/ index page.
+ * All counts and examples come from the live events array — never hardcoded.
+ * Schema.org FAQPage JSON-LD included for rich result eligibility.
+ *
+ * Props:
+ *   events  — the full events array from events-current.json
+ *   today   — ISO date string "YYYY-MM-DD" (passed in so SSG is deterministic)
+ */
+
+const { events, today } = Astro.props;
+
+// ── Q1: Was ist heute los? ────────────────────────────────────────────────
+const todayEvents = events.filter(e => e.date_start === today);
+const todayCount  = todayEvents.length;
+const todayTop3   = todayEvents
+  .filter(e => e.title && e.slug)
+  .slice(0, 3);
+
+// ── Q2: Was gibt es für Kinder? ───────────────────────────────────────────
+const kinderEvents = events.filter(e =>
+  Array.isArray(e.tags) && (e.tags.includes("Kinder") || e.tags.includes("Familie"))
+);
+const kinderCount = kinderEvents.length;
+const kinderTop3  = kinderEvents
+  .filter(e => e.title && e.slug && e.date_start)
+  .slice(0, 3);
+
+// ── Q3: Was kostet nichts? ────────────────────────────────────────────────
+const freeEvents = events.filter(e =>
+  e.price && /kostenlos|frei|gratis|eintritt frei|0[,.]?0*\s*€/i.test(e.price)
+);
+const freeCount = freeEvents.length;
+const freeTop3  = freeEvents
+  .filter(e => e.title && e.slug && e.date_start)
+  .slice(0, 3);
+
+// ── Format date for display ───────────────────────────────────────────────
+function formatShort(iso) {
+  if (!iso) return "";
+  const d = new Date(iso + "T12:00:00");
+  return d.toLocaleDateString("de-DE", { day: "numeric", month: "short" });
+}
+
+// ── Schema.org FAQPage ────────────────────────────────────────────────────
+// Only include questions where we actually have data to answer
+const faqItems = [];
+
+if (todayCount > 0) {
+  faqItems.push({
+    "@type": "Question",
+    "name": "Was ist heute in Ludwigsburg los?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `Heute finden ${todayCount} Veranstaltung${todayCount !== 1 ? "en" : ""} in Ludwigsburg statt.${todayTop3.length > 0 ? " Darunter: " + todayTop3.map(e => e.title).join(", ") + "." : ""} Alle Termine auf rausgucken.de/ludwigsburg/heute/`
+    }
+  });
+}
+
+if (kinderCount > 0) {
+  faqItems.push({
+    "@type": "Question",
+    "name": "Was gibt es für Kinder in Ludwigsburg?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `Aktuell gibt es ${kinderCount} Kinder- und Familienveranstaltung${kinderCount !== 1 ? "en" : ""} in Ludwigsburg.${kinderTop3.length > 0 ? " Zum Beispiel: " + kinderTop3.map(e => e.title).join(", ") + "." : ""} Alle Angebote auf rausgucken.de/ludwigsburg/kinder/`
+    }
+  });
+}
+
+if (freeCount > 0) {
+  faqItems.push({
+    "@type": "Question",
+    "name": "Welche kostenlosen Veranstaltungen gibt es in Ludwigsburg?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `Aktuell sind ${freeCount} Veranstaltung${freeCount !== 1 ? "en" : ""} in Ludwigsburg kostenlos.${freeTop3.length > 0 ? " Zum Beispiel: " + freeTop3.map(e => e.title).join(", ") + "." : ""} Alle kostenlosen Events auf rausgucken.de/ludwigsburg/kostenlos/`
+    }
+  });
+}
+
+const faqSchema = faqItems.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqItems
+} : null;
+---
+
+{faqItems.length > 0 && (
+  <section class="faq-block" aria-label="Häufig gestellte Fragen">
+
+    {faqSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    )}
+
+    <h2 class="faq-heading">Häufige Fragen</h2>
+
+    <div class="faq-list">
+
+      {/* ── Q1: Heute ─────────────────────────────────────────────────── */}
+      {todayCount > 0 && (
+        <details class="faq-item" name="faq-ludwigsburg">
+          <summary class="faq-question">
+            Was ist heute in Ludwigsburg los?
+          </summary>
+          <div class="faq-answer">
+            {todayCount === 0 ? (
+              <p>Heute sind keine Veranstaltungen eingetragen.</p>
+            ) : (
+              <>
+                <p>
+                  Heute finden <strong>{todayCount} Veranstaltung{todayCount !== 1 ? "en" : ""}</strong> in Ludwigsburg statt.
+                </p>
+                {todayTop3.length > 0 && (
+                  <ul class="faq-event-list">
+                    {todayTop3.map(e => (
+                      <li>
+                        <a href={`/ludwigsburg/events/${e.slug}`} class="faq-event-link">
+                          {e.title}
+                        </a>
+                        {e.location && <span class="faq-event-meta"> · {e.location.split(",")[0]}</span>}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                <a href="/ludwigsburg/heute/" class="faq-cta">
+                  Alle heutigen Veranstaltungen →
+                </a>
+              </>
+            )}
+          </div>
+        </details>
+      )}
+
+      {/* ── Q2: Kinder ────────────────────────────────────────────────── */}
+      {kinderCount > 0 && (
+        <details class="faq-item" name="faq-ludwigsburg">
+          <summary class="faq-question">
+            Was gibt es für Kinder in Ludwigsburg?
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Aktuell gibt es <strong>{kinderCount} Kinder- und Familien­veranstaltung{kinderCount !== 1 ? "en" : ""}</strong> in Ludwigsburg — von Workshops und Führungen bis zu Mitmach-Aktionen.
+            </p>
+            {kinderTop3.length > 0 && (
+              <ul class="faq-event-list">
+                {kinderTop3.map(e => (
+                  <li>
+                    <a href={`/ludwigsburg/events/${e.slug}`} class="faq-event-link">
+                      {e.title}
+                    </a>
+                    {e.date_start && <span class="faq-event-meta"> · {formatShort(e.date_start)}</span>}
+                  </li>
+                ))}
+              </ul>
+            )}
+            <a href="/ludwigsburg/kinder/" class="faq-cta">
+              Alle Kinder-Events →
+            </a>
+          </div>
+        </details>
+      )}
+
+      {/* ── Q3: Kostenlos ─────────────────────────────────────────────── */}
+      {freeCount > 0 && (
+        <details class="faq-item" name="faq-ludwigsburg">
+          <summary class="faq-question">
+            Welche kostenlosen Veranstaltungen gibt es in Ludwigsburg?
+          </summary>
+          <div class="faq-answer">
+            <p>
+              Aktuell sind <strong>{freeCount} Veranstaltung{freeCount !== 1 ? "en" : ""}</strong> kostenlos — Eintritt frei oder ohne Anmeldung zugänglich.
+            </p>
+            {freeTop3.length > 0 && (
+              <ul class="faq-event-list">
+                {freeTop3.map(e => (
+                  <li>
+                    <a href={`/ludwigsburg/events/${e.slug}`} class="faq-event-link">
+                      {e.title}
+                    </a>
+                    {e.date_start && <span class="faq-event-meta"> · {formatShort(e.date_start)}</span>}
+                  </li>
+                ))}
+              </ul>
+            )}
+            <a href="/ludwigsburg/kostenlos/" class="faq-cta">
+              Alle kostenlosen Events →
+            </a>
+          </div>
+        </details>
+      )}
+
+    </div>
+  </section>
+)}
+
+<style>
+  .faq-block {
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .faq-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-60);
+    margin-bottom: 0.6rem;
+    padding: 0;
+    border: none;
+  }
+
+  .faq-list {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--surface-card);
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+  }
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-question {
+    padding: 0.85rem 1.1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    user-select: none;
+    /* Min 44px tap target */
+    min-height: 44px;
+  }
+  .faq-question::-webkit-details-marker { display: none; }
+  .faq-question::before {
+    content: "▸";
+    font-size: 0.65rem;
+    color: var(--coral);
+    transition: transform 150ms;
+    flex-shrink: 0;
+  }
+  details.faq-item[open] .faq-question::before {
+    transform: rotate(90deg);
+  }
+  .faq-question:hover { color: var(--coral); }
+  .faq-question:focus-visible {
+    outline: 2px solid var(--coral);
+    outline-offset: -2px;
+  }
+
+  .faq-answer {
+    padding: 0 1.1rem 1rem;
+    border-top: 1px solid var(--border);
+    background: rgba(0,0,0,0.015);
+  }
+  html.dark .faq-answer {
+    background: rgba(255,255,255,0.025);
+  }
+
+  .faq-answer p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text);
+    opacity: 0.85;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .faq-answer strong {
+    font-weight: 700;
+    opacity: 1;
+  }
+
+  .faq-event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .faq-event-list li {
+    font-size: 0.835rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.2rem;
+    flex-wrap: wrap;
+  }
+
+  .faq-event-link {
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: color 150ms, text-decoration-color 150ms;
+  }
+  .faq-event-link:hover {
+    color: var(--coral);
+    text-decoration-color: var(--coral);
+  }
+  .faq-event-link:focus-visible {
+    outline: 2px solid var(--coral);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  .faq-event-meta {
+    font-size: 0.78rem;
+    color: var(--text-60);
+  }
+
+  .faq-cta {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--coral);
+    text-decoration: none;
+    margin-top: 0.25rem;
+    transition: opacity 150ms;
+  }
+  .faq-cta:hover { opacity: 0.75; text-decoration: underline; }
+  .faq-cta:focus-visible {
+    outline: 2px solid var(--coral);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+</style>
