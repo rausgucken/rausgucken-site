@@ -10,9 +10,10 @@ type LinkEntry = {
 };
 
 const links: LinkEntry[] = linksJson as LinkEntry[];
-const resolvedLinks = links.map(link => ({
+const resolvedLinks = links.map((link, i) => ({
   ...link,
   resolvedUrl: link.url || '#',
+  descId: `sidebar-desc-${i}`,
 }));
 ---
 
@@ -23,21 +24,41 @@ const resolvedLinks = links.map(link => ({
       if (link.isHeading) {
         return <li class="sidebar-section-heading" role="presentation">{link.name}</li>;
       }
+
+      const hasDesc = !!link.description;
+
       if (link.external) {
         return (
-          <li class="sidebar-item">
-            <a href={link.resolvedUrl} class="sidebar-link" target="_blank" rel="nofollow noopener noreferrer">
+          <li class={`sidebar-item${hasDesc ? ' has-desc' : ''}`}>
+            
+              href={link.resolvedUrl}
+              class="sidebar-link"
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              aria-describedby={hasDesc ? link.descId : undefined}
+            >
               {link.name}
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" style="flex-shrink:0;margin-left:3px;opacity:0.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" class="ext-icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
-            {link.description && <p class="sidebar-desc">{link.description}</p>}
+            {hasDesc && (
+              <span class="sidebar-tooltip" id={link.descId} role="tooltip">{link.description}</span>
+            )}
           </li>
         );
       }
+
       return (
-        <li class="sidebar-item">
-          <a href={link.resolvedUrl} class="sidebar-link sidebar-link--internal">{link.name} →</a>
-          {link.description && <p class="sidebar-desc">{link.description}</p>}
+        <li class={`sidebar-item${hasDesc ? ' has-desc' : ''}`}>
+          
+            href={link.resolvedUrl}
+            class="sidebar-link sidebar-link--internal"
+            aria-describedby={hasDesc ? link.descId : undefined}
+          >
+            {link.name} →
+          </a>
+          {hasDesc && (
+            <span class="sidebar-tooltip" id={link.descId} role="tooltip">{link.description}</span>
+          )}
         </li>
       );
     })}
@@ -46,63 +67,131 @@ const resolvedLinks = links.map(link => ({
 
 <style>
   .important-links-sidebar {
-    display: none;
+    display: none; /* shown via parent media query */
   }
+
   .sidebar-heading {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.07em;
     color: var(--text-60);
     font-family: var(--font-body);
-    margin-bottom: 0.85rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.4rem;
     border-bottom: 1px solid var(--border);
   }
+
   .sidebar-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0; /* no gap — compact list */
   }
+
   .sidebar-section-heading {
-    font-size: 0.68rem;
+    font-size: 0.65rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-60);
     font-family: var(--font-body);
-    padding-top: 0.75rem;
+    padding: 0.65rem 0 0.3rem;
     border-top: 1px solid var(--border);
     opacity: 0.6;
-    margin-top: 0.25rem;
+    margin-top: 0.15rem;
   }
   .sidebar-list > li.sidebar-section-heading:first-child {
     border-top: none;
     padding-top: 0;
-    margin-top: 0;
   }
+
+  /* Each item: relative so tooltip can anchor to it */
   .sidebar-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
+    position: relative;
+    display: block;
   }
+
   .sidebar-link {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    font-size: 0.875rem;
+    gap: 3px;
+    font-size: 0.82rem;
     font-weight: 600;
     color: var(--text);
     text-decoration: none;
     line-height: 1.3;
+    padding: 0.3rem 0;
     transition: color 150ms;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
   }
-  .sidebar-link:hover { color: var(--coral); text-decoration: none; }
+  .sidebar-link:hover,
+  .sidebar-link:focus-visible { color: var(--coral); }
   .sidebar-link--internal { color: var(--coral); }
-  .sidebar-link--internal:hover { color: var(--coral-dark); }
-  .sidebar-desc {
-    font-size: 0.78rem;
-    color: var(--text-60);
-    line-height: 1.4;
+  .sidebar-link--internal:hover { opacity: 0.8; }
+
+  .ext-icon {
+    flex-shrink: 0;
+    opacity: 0.45;
+  }
+
+  /* Tooltip — hidden by default, shown on parent hover/focus */
+  .sidebar-tooltip {
+    display: none; /* fallback */
+    position: absolute;
+    /* anchor to right of sidebar, opening leftward into page */
+    right: calc(100% + 10px);
+    top: 0;
+    width: 180px;
+    background: var(--surface-card, #2a2f3a);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.55rem 0.7rem;
+    font-size: 0.75rem;
+    line-height: 1.45;
+    color: var(--text);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    pointer-events: none;
+    z-index: 100;
+    /* small right-pointing arrow */
+    white-space: normal;
+  }
+  .sidebar-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: var(--surface-card, #2a2f3a);
+    border-right: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    transform: rotate(45deg);
+  }
+
+  /* Show tooltip on hover or keyboard focus of parent item */
+  .sidebar-item.has-desc:hover .sidebar-tooltip,
+  .sidebar-item.has-desc:focus-within .sidebar-tooltip {
+    display: block;
+  }
+
+  /* Respect reduced motion — no animation, instant show */
+  @media (prefers-reduced-motion: no-preference) {
+    .sidebar-tooltip {
+      opacity: 0;
+      transform: translateX(4px);
+      transition: opacity 140ms ease, transform 140ms ease;
+      display: block; /* use opacity instead of display for animation */
+      pointer-events: none;
+    }
+    .sidebar-item.has-desc:hover .sidebar-tooltip,
+    .sidebar-item.has-desc:focus-within .sidebar-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: auto;
+    }
   }
 </style>
