@@ -1,0 +1,41 @@
+---
+// src/components/EditorialTip.astro
+// SEO §13: "Unser Tipp" callout — renders only when tip is non-null.
+// Never AI-generated. Max 200 chars. Weekly editorial pass via editorial-tips.json.
+// aria-label per spec: "Redaktioneller Hinweis"
+const { tip } = Astro.props;
+if (!tip) return;
+---
+
+<aside class="editorial-tip" role="note" aria-label="Redaktioneller Hinweis">
+  <span class="tip-label" aria-hidden="true">💡 Unser Tipp</span>
+  <p class="tip-text">{tip}</p>
+</aside>
+
+<style>
+  .editorial-tip {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    background: var(--sage-light, #f0f7ea);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--sage, #90BE6D);
+    border-radius: var(--radius-sm, 6px);
+    padding: 0.9rem 1.1rem;
+    max-width: 720px;
+  }
+  .tip-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-60);
+    font-family: var(--font-body);
+  }
+  .tip-text {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--text);
+    margin: 0;
+  }
+</style>
