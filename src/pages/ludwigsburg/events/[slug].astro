@@ -180,6 +180,14 @@ const googleCalUrl  = buildGoogleCalendarUrl(ev);
 const outlookCalUrl = buildOutlookUrl(ev);
 const icsUrl        = `/ludwigsburg/events/${ev.slug}.ics`;
 
+// Share URLs
+const shareEventUrl = `https://rausgucken.de/ludwigsburg/events/${ev.slug}`;
+const shareText     = encodeURIComponent(`${ev.title} – ${shareEventUrl}`);
+const waShareUrl    = `https://wa.me/?text=${shareText}`;
+const tgShareUrl    = `https://t.me/share/url?url=${encodeURIComponent(shareEventUrl)}&text=${encodeURIComponent(ev.title)}`;
+const wireShareUrl  = `https://app.wire.com/share?text=${shareText}`;
+const tgShareText   = encodeURIComponent(ev.title);
+
 // ── Resolved values used in schema ───────────────────────────────────────────
 const priceData = normalisePrice(ev.price);
 
@@ -437,6 +445,29 @@ const relatedEvents = isExpired
           Zur Originalseite →
         </a>
       )}
+      <details class="share-dropdown">
+        <summary class="btn-share" aria-label={`${ev.title} teilen`}>
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Teilen
+        </summary>
+        <ul class="share-menu" role="list">
+          <li><a href={waShareUrl} target="_blank" rel="noopener noreferrer" class="share-item">
+            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a></li>
+          <li><a href={tgShareUrl} target="_blank" rel="noopener noreferrer" class="share-item">
+            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            Telegram
+          </a></li>
+          <li class="share-divider" aria-hidden="true"></li>
+          <li class="share-section-label">EU-Alternativen</li>
+          <li><a href={`https://wa.me/?text=${shareText}`} target="_blank" rel="noopener noreferrer" class="share-item share-item--eu">Wire <span class="share-meta">DE/CH</span></a></li>
+          <li><a href={`https://threema.id/compose?text=${shareText}`} target="_blank" rel="noopener noreferrer" class="share-item share-item--eu">Threema <span class="share-meta">CH</span></a></li>
+          <li><a href={`https://matrix.to/#/?body=${shareText}`} target="_blank" rel="noopener noreferrer" class="share-item share-item--eu">Element <span class="share-meta">Matrix</span></a></li>
+          <li><a href={`https://signal.me/#p=${shareEventUrl}`} target="_blank" rel="noopener noreferrer" class="share-item share-item--eu">Signal <span class="share-meta">US/EU</span></a></li>
+        </ul>
+      </details>
+
       <div class="cal-dropdown">
         <button class="btn-ics" aria-haspopup="true" aria-expanded="false" id="cal-btn">
           📅 Zum Kalender ▾
@@ -792,6 +823,74 @@ const relatedEvents = isExpired
     font-family: var(--font-body);
   }
   .tip-text { font-size: 0.9rem; line-height: 1.65; color: var(--text); margin: 0; }
+
+  /* ── Share dropdown (detail page) ───────────────────────────────────────── */
+  .share-dropdown { position: relative; flex-shrink: 0; }
+  .share-dropdown[open] .btn-share { border-color: var(--coral); color: var(--coral); background: var(--coral-light); }
+
+  .btn-share {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--surface-card);
+    color: var(--text);
+    border: 1.5px solid var(--border);
+    padding: 0.65rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    min-height: 44px;
+    list-style: none;
+    user-select: none;
+    transition: border-color 150ms, background 150ms, color 150ms;
+    font-family: var(--font-body);
+  }
+  .btn-share::-webkit-details-marker { display: none; }
+  .btn-share:hover { border-color: var(--coral); color: var(--coral); background: var(--coral-light); }
+
+  .share-dropdown .share-menu {
+    position: absolute;
+    bottom: calc(100% + 6px);
+    right: 0;
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+    list-style: none;
+    padding: 0.35rem 0;
+    margin: 0;
+    min-width: 200px;
+    z-index: 40;
+  }
+  .share-item {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 120ms;
+  }
+  .share-item:hover { background: var(--tag-bg); text-decoration: none; }
+  .share-item--eu { color: var(--text-60); }
+  .share-item--eu:hover { color: var(--text); background: var(--tag-bg); }
+  .share-meta { margin-left: auto; font-size: 0.68rem; color: var(--text-60); opacity: 0.7; }
+  .share-divider { height: 1px; background: var(--border); margin: 0.3rem 0; }
+  .share-section-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-60);
+    opacity: 0.6;
+    padding: 0.2rem 1rem 0.1rem;
+  }
+  html.dark .share-dropdown .share-menu { box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
 </style>
 
 <script>
