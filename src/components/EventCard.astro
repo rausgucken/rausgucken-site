@@ -30,8 +30,13 @@ const dateObj    = formatDate(ev.date_start);
 const isStanding = !ev.date_start;
 const isSponsored = ev.sponsored === true;
 
-// Weekday data: comma-separated JS day numbers (0=Sun…6=Sat) for app.js filter
 const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
+
+// Share URLs — built at render time, no tracking
+const eventUrl  = `https://rausgucken.de/ludwigsburg/events/${ev.slug}`;
+const shareText = encodeURIComponent(`${ev.title} – ${eventUrl}`);
+const waUrl     = `https://wa.me/?text=${shareText}`;
+const tgUrl     = `https://t.me/share/url?url=${encodeURIComponent(eventUrl)}&text=${encodeURIComponent(ev.title)}`;
 ---
 
 <article
@@ -42,26 +47,18 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     { "event-card--sponsored": isSponsored },
   ]}
   data-tags={ev.tags.join(",")}
-         data-source={ev.source}
+  data-source={ev.source}
   data-age-min={ev.age_min ?? ""}
   data-age-max={ev.age_max ?? ""}
   data-date={ev.date_start ?? ""}
   data-weekdays={weekdayAttr}
   data-location={ev.location ?? ""}
 >
-  <!--
-    Focus ring fix: because .event-card has overflow:hidden, a focus ring on the
-    inner <a> gets clipped. Solution: the focus ring is on the <article> via
-    :focus-within, which is not clipped. The inner <a> has outline:none.
-  -->
-  <a
+  
     href={`/ludwigsburg/events/${ev.slug}`}
     class="card-link"
     aria-label={`${ev.title}${dateObj ? `, ${dateObj.full}` : ""}`}
   >
-
-    <!-- Date badge (left strip) -->
-    <!-- Coral bg → Charcoal text. 4.1:1 contrast — passes WCAG for large/bold text. -->
     {dateObj ? (
       <div class="date-badge" aria-hidden="true">
         <span class="date-weekday">{dateObj.weekday}</span>
@@ -75,12 +72,8 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
       </div>
     )}
 
-    <!-- Card body -->
     <div class="card-body">
-
-      <!-- Tags row -->
       <div class="card-tags">
-        <!-- Sponsored badge: visually distinct per design spec Part III §2 -->
         {isSponsored && <span class="badge-sponsored" aria-label="Anzeige">Anzeige</span>}
         {ev.is_new && !isSponsored && <span class="badge-new">Neu</span>}
         {ev.tags.slice(0, 3).map(t => (
@@ -93,11 +86,8 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
         )}
       </div>
 
-      <!-- Title — Nunito 700 per design spec §3 -->
       <h3 class="card-title">{ev.title}</h3>
 
-      <!-- Meta: date/time first, then location, then price -->
-      <!-- Design spec Part V §1: "Date and Location MUST appear before the description" -->
       <div class="card-meta">
         {ev.time && (
           <span class="meta-item">
@@ -125,7 +115,6 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
         )}
       </div>
 
-      <!-- Description — hidden behind card click, shown on detail page -->
       {ev.description && (
         <p class="card-desc">
           {ev.description.length > 110
@@ -133,18 +122,40 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
             : ev.description}
         </p>
       )}
-
     </div>
   </a>
 
-  <!-- Card footer: SourceLink + FreshnessStamp -->
+  <!-- Share row: below metadata, above footer/source attribution -->
+  <div class="card-share">
+    
+      href={waUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="share-btn share-btn--wa"
+      aria-label={`${ev.title} auf WhatsApp teilen`}
+      onclick="event.stopPropagation()"
+    >
+      <!-- WhatsApp icon -->
+      <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp
+    </a>
+    
+      href={tgUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="share-btn share-btn--tg"
+      aria-label={`${ev.title} auf Telegram teilen`}
+      onclick="event.stopPropagation()"
+    >
+      <!-- Telegram icon -->
+      <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+      Telegram
+    </a>
+  </div>
+
+  <!-- Card footer: SourceLink + FreshnessStamp + source attribution -->
   <div class="card-footer">
-    <!--
-      SourceLink — design spec Part V §6:
-      "Cannot be hidden inside an accordion."
-      CTA uses Charcoal text. In dark mode: off-white text, Coral on hover.
-    -->
-    <a
+    
       href={ev.original_url}
       target="_blank"
       rel="noopener noreferrer"
@@ -155,14 +166,10 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
       Originalseite
       <svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
     </a>
-    <!--
-      FreshnessStamp — design spec Part V §2:
-      "Must use default text color with opacity-70. NEVER use Brand Coral text."
-    -->
     <div class="footer-right">
       <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
       {ev.source_label && (
-        <a
+        
           href={ev.original_url}
           target="_blank"
           rel="noopener noreferrer"
@@ -187,14 +194,11 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     flex-direction: column;
     box-shadow: var(--shadow-card);
     position: relative;
-    /* Active Energy: token-driven transition (transform + shadow + filter) */
     transition: transform 200ms cubic-bezier(0.4,0,0.2,1),
                 box-shadow 200ms cubic-bezier(0.4,0,0.2,1),
                 background 250ms ease;
   }
 
-  /* Active Energy: Lift on hover
-     Wrapped in prefers-reduced-motion per design spec §4 A11y requirement */
   @media (prefers-reduced-motion: no-preference) {
     .event-card:hover {
       transform: translateY(-4px);
@@ -202,17 +206,12 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     }
   }
 
-  /* Focus ring fix: overflow:hidden clips focus rings on inner <a>.
-     Use :focus-within on the <article> instead — not clipped by overflow. */
   .event-card:focus-within {
     outline: 2px solid var(--coral);
     outline-offset: 0px;
   }
 
   .event-card--standing  { border-left: 3px solid var(--coral); }
-
-  /* Sponsored: visually distinct tint + sage border — design spec Part III §2
-     "Must never mimic organic cards" */
   .event-card--sponsored {
     border-left: 3px solid var(--sage);
     background: var(--sage-light);
@@ -225,13 +224,11 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     text-decoration: none;
     color: inherit;
     min-height: 0;
-    /* Remove native outline — focus ring handled by :focus-within on article */
     outline: none;
   }
   .card-link:hover { text-decoration: none; }
 
   /* ── Date badge ─────────────────────────────────────────────────────────── */
-  /* Coral bg → Charcoal text. 4.1:1 ratio — passes WCAG for large/bold text. */
   .date-badge {
     background: var(--coral);
     color: var(--text);
@@ -297,13 +294,11 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     border-radius: 20px;
     white-space: nowrap;
   }
-  /* Sage bg → Charcoal text. 5.2:1 — passes WCAG AA. */
   .tag--age {
     background: var(--sage-light);
     color: var(--text);
     font-weight: 600;
   }
-  /* Sage bg → Charcoal text */
   .badge-new {
     background: var(--sage);
     color: var(--text);
@@ -314,21 +309,19 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     text-transform: uppercase;
     letter-spacing: 0.06em;
   }
-  /* Sponsored badge: distinct from organic "Neu" badge */
   .badge-sponsored {
     background: var(--tag-bg);
     color: var(--text-60);
     font-size: 0.65rem;
     font-weight: 600;
     padding: 2px 7px;
-    border-radius: 4px;         /* Square-ish, unlike rounded organic tags */
+    border-radius: 4px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     border: 1px solid var(--border);
   }
 
   /* ── Title ──────────────────────────────────────────────────────────────── */
-  /* Nunito 700 per design spec §3 typography system */
   .card-title {
     font-family: var(--font-heading);
     font-weight: 700;
@@ -365,6 +358,51 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     margin-top: 0.1rem;
   }
 
+  /* ── Share row ──────────────────────────────────────────────────────────── */
+  .card-share {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.45rem 1rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.3rem 0.65rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 150ms, color 150ms;
+    /* 44px tap target height via min-height on the row + padding */
+    min-height: 28px;
+  }
+
+  /* WhatsApp: green tint on hover */
+  .share-btn--wa {
+    color: #25a244;
+    background: rgba(37, 162, 68, 0.08);
+  }
+  .share-btn--wa:hover {
+    background: rgba(37, 162, 68, 0.16);
+  }
+
+  /* Telegram: blue tint on hover */
+  .share-btn--tg {
+    color: #2aabee;
+    background: rgba(42, 171, 238, 0.08);
+  }
+  .share-btn--tg:hover {
+    background: rgba(42, 171, 238, 0.16);
+  }
+
+  html.dark .share-btn--wa { color: #4cd471; background: rgba(76, 212, 113, 0.10); }
+  html.dark .share-btn--wa:hover { background: rgba(76, 212, 113, 0.20); }
+  html.dark .share-btn--tg { color: #62c8f5; background: rgba(98, 200, 245, 0.10); }
+  html.dark .share-btn--tg:hover { background: rgba(98, 200, 245, 0.20); }
+
   /* ── Card footer ────────────────────────────────────────────────────────── */
   .card-footer {
     display: flex;
@@ -378,7 +416,6 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     background: rgba(255,255,255,0.03);
   }
 
-  /* SourceLink — design spec Part V §6 */
   .source-link {
     display: inline-flex;
     align-items: center;
@@ -389,7 +426,7 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     text-decoration: underline;
     text-decoration-color: transparent;
     transition: color 150ms, text-decoration-color 150ms;
-    min-height: 44px; /* Minimum tap target per spec §4 */
+    min-height: 44px;
   }
   .source-link:hover {
     color: var(--coral);
@@ -400,20 +437,15 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     outline-offset: 2px;
     border-radius: 2px;
   }
-  /* Dark mode: off-white text, coral on hover per design spec §6 */
   html.dark .source-link       { color: var(--text-60); }
   html.dark .source-link:hover { color: var(--coral); }
 
-  /* FreshnessStamp — design spec Part V §2:
-     "default text color with opacity-70. NEVER use Brand Coral text." */
   .freshness-stamp {
     font-size: 0.67rem;
     color: var(--text);
     opacity: 0.70;
   }
 
-  /* Source attribution — replaces micro-disclaimer per E-E-A-T spec §14
-     Renders as a link: "Quelle: Stadtbibliothek Ludwigsburg" → original_url */
   .footer-right {
     display: flex;
     align-items: center;
@@ -432,9 +464,7 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     text-decoration: none;
     transition: color 150ms;
   }
-  .source-attribution:hover {
-    color: var(--coral);
-  }
+  .source-attribution:hover { color: var(--coral); }
   html.dark .source-attribution       { color: var(--text-60); }
   html.dark .source-attribution:hover { color: var(--coral); }
 </style>
