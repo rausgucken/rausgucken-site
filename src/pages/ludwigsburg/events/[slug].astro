@@ -460,8 +460,14 @@ const relatedEvents = isExpired
             Telegram
           </a></li>
           <li class="share-divider" aria-hidden="true"></li>
-          <li class="share-section-label">EU-Alternativen</li>
-          <li><a href={`https://threema.id/compose?text=${shareText}`} target="_blank" rel="noopener noreferrer" class="share-item share-item--eu">Threema <span class="share-meta">CH · App</span></a></li>
+          <li><a href={`https://threema.id/compose?text=${shareText}`} target="_blank" rel="noopener noreferrer" class="share-item">
+            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 100 100" fill="currentColor"><circle cx="50" cy="50" r="50"/><circle cx="50" cy="38" r="10" fill="white"/><circle cx="30" cy="68" r="10" fill="white"/><circle cx="70" cy="68" r="10" fill="white"/></svg>
+            Threema
+          </a></li>
+          <li><button class="share-item share-copy-btn" data-url={shareEventUrl} onclick="navigator.clipboard.writeText(this.dataset.url).then(()=>{var orig=this.innerHTML;this.innerHTML=this.innerHTML.replace(/Link kopieren|Link kopiert!/,'Link kopiert!');setTimeout(()=>{this.innerHTML=orig},2000)})">
+            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+            Link kopieren
+          </button></li>
         </ul>
       </details>
 
@@ -846,6 +852,15 @@ const relatedEvents = isExpired
   }
   .btn-share::-webkit-details-marker { display: none; }
   .btn-share:hover { border-color: var(--coral); color: var(--coral); background: var(--coral-light); }
+  .share-copy-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: var(--font-body);
+    color: var(--text);
+  }
 
   .share-dropdown .share-menu {
     position: absolute;
@@ -874,19 +889,8 @@ const relatedEvents = isExpired
     transition: background 120ms;
   }
   .share-item:hover { background: var(--tag-bg); text-decoration: none; }
-  .share-item--eu { color: var(--text-60); }
-  .share-item--eu:hover { color: var(--text); background: var(--tag-bg); }
   .share-meta { margin-left: auto; font-size: 0.68rem; color: var(--text-60); opacity: 0.7; }
   .share-divider { height: 1px; background: var(--border); margin: 0.3rem 0; }
-  .share-section-label {
-    font-size: 0.62rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-60);
-    opacity: 0.6;
-    padding: 0.2rem 1rem 0.1rem;
-  }
   html.dark .share-dropdown .share-menu { box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
   .share-copy {
     width: 100%;
