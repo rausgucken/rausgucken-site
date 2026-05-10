@@ -461,10 +461,7 @@ const relatedEvents = isExpired
           </a></li>
           <li class="share-divider" aria-hidden="true"></li>
           <li class="share-section-label">EU-Alternativen</li>
-          <li><button class="share-item share-item--eu share-copy" data-url={shareEventUrl} onclick="navigator.clipboard.writeText(this.dataset.url).then(()=>{this.textContent='Link kopiert!';setTimeout(()=>{this.innerHTML='Wire / andere App <span class=share-meta>Link kopieren</span>'},1500)})">Wire / andere App <span class="share-meta">Link kopieren</span></button></li>
-          <li><a href={`https://threema.id/compose?text=${shareText}`} target="_blank" rel="noopener noreferrer" class="share-item share-item--eu">Threema <span class="share-meta">CH</span></a></li>
-          <li><a href={`https://matrix.to/#/?body=${encodeURIComponent(shareEventUrl)}`} target="_blank" rel="noopener noreferrer" class="share-item share-item--eu">Element <span class="share-meta">Matrix</span></a></li>
-          <li><a href={`https://signal.me/#p=${shareEventUrl}`} target="_blank" rel="noopener noreferrer" class="share-item share-item--eu">Signal <span class="share-meta">US/EU</span></a></li>
+          <li><a href={`https://threema.id/compose?text=${shareText}`} target="_blank" rel="noopener noreferrer" class="share-item share-item--eu">Threema <span class="share-meta">CH · App</span></a></li>
         </ul>
       </details>
 
