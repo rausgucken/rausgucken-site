@@ -1,0 +1,181 @@
+---
+// src/components/DaySelector.astro
+// Design spec: v2.1 §V.7
+// Purpose: Temporal filter tab group — filters events to a specific day within a multi-day range.
+// Fixes: unstyled border-box rendering on live site (§V.7 §II.2)
+//
+// Props:
+//   days:      Array<{ label: string; date: string }>
+//              e.g. [{ label: "Beide Tage", date: "all" }, { label: "Sa 9. Mai", date: "2026-05-09" }]
+//   activeDay: string — initially selected date value (defaults to first tab if omitted)
+//
+// Usage example:
+//   <DaySelector
+//     days={[
+//       { label: "Beide Tage",   date: "all"        },
+//       { label: "Sa 9. Mai",    date: "2026-05-09" },
+//       { label: "So 10. Mai",   date: "2026-05-10" },
+//     ]}
+//     activeDay="all"
+//   />
+//
+// Emits custom event "dayselector:change" on window with detail: { date: string }
+
+interface DaySelectorDay {
+  label: string;
+  date: string;
+}
+
+const {
+  days,
+  activeDay: initialActiveDay,
+}: {
+  days: DaySelectorDay[];
+  activeDay?: string;
+} = Astro.props;
+
+const resolvedActive =
+  days.find((d) => d.date === initialActiveDay)?.date ?? days[0]?.date ?? "all";
+---
+
+<div
+  class="day-selector"
+  role="tablist"
+  aria-label="Tag auswählen"
+  data-active={resolvedActive}
+>
+  {days.map((day) => {
+    const isActive = day.date === resolvedActive;
+    return (
+      <button
+        role="tab"
+        aria-selected={isActive ? "true" : "false"}
+        aria-current={isActive ? "true" : undefined}
+        data-day={day.date}
+        class={isActive ? "day-tab day-tab--active" : "day-tab day-tab--inactive"}
+        type="button"
+      >
+        {day.label}
+      </button>
+    );
+  })}
+</div>
+
+<style>
+  /* ── Container ─────────────────────────────────────────────────────────── */
+  .day-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* ── Base tab ─────────────────────────────────────────────────────────── */
+  /* §V.7: min 44×44px tap target, NO borders on any state */
+  .day-tab {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    cursor: pointer;
+
+    min-height: 44px;
+    padding: 0.5rem 1rem;
+
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+
+    border-radius: var(--radius-sm);
+
+    transition:
+      background-color 200ms ease,
+      opacity          200ms ease;
+
+    outline: none;
+  }
+  .day-tab:focus-visible {
+    outline: 2px solid var(--coral);
+    outline-offset: 2px;
+  }
+
+  /* ── Active — §V.7: bg-brand-coral + text-text-charcoal (Button Rule §II.2) */
+  .day-tab--active {
+    background-color: var(--coral);
+    color: var(--text);
+  }
+
+  /* ── Inactive — surface-secondary bg, text at opacity-70 */
+  .day-tab--inactive {
+    background-color: var(--surface-card);
+    color: var(--text);
+    opacity: 0.70;
+  }
+
+  /* ── Inactive hover — lighten bg, opacity → 100% */
+  .day-tab--inactive:hover {
+    opacity: 1;
+    background-color: var(--tag-bg);
+  }
+
+  /* ── Mobile — single scrollable row */
+  @media (max-width: 480px) {
+    .day-selector {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      padding-bottom: 2px;
+    }
+    .day-selector::-webkit-scrollbar { display: none; }
+    .day-tab { flex: 1 0 auto; }
+  }
+</style>
+
+<script>
+  (function () {
+    document.querySelectorAll(".day-selector").forEach((container) => {
+      const tabs = Array.from(container.querySelectorAll(".day-tab"));
+
+      function activate(targetTab) {
+        tabs.forEach((tab) => {
+          const isTarget = tab === targetTab;
+          tab.setAttribute("aria-selected", isTarget ? "true" : "false");
+          if (isTarget) {
+            tab.setAttribute("aria-current", "true");
+          } else {
+            tab.removeAttribute("aria-current");
+          }
+          tab.classList.toggle("day-tab--active",   isTarget);
+          tab.classList.toggle("day-tab--inactive", !isTarget);
+          tab.style.opacity = "";
+        });
+
+        const date = targetTab.dataset.day ?? "all";
+        container.dataset.active = date;
+
+        window.dispatchEvent(
+          new CustomEvent("dayselector:change", {
+            detail: { date },
+            bubbles: true,
+          })
+        );
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => activate(tab));
+
+        tab.addEventListener("keydown", (e) => {
+          const idx = tabs.indexOf(tab);
+          let next;
+          if      (e.key === "ArrowRight") next = tabs[(idx + 1) % tabs.length];
+          else if (e.key === "ArrowLeft")  next = tabs[(idx - 1 + tabs.length) % tabs.length];
+          else if (e.key === "Home")       next = tabs[0];
+          else if (e.key === "End")        next = tabs[tabs.length - 1];
+          if (next) { e.preventDefault(); next.focus(); activate(next); }
+        });
+      });
+    });
+  })();
+</script>
