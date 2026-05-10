@@ -1,17 +1,17 @@
 ---
 // src/components/ImportantLinksSidebar.astro
 // SEO strategy §26a: sticky right column on desktop (≥769px), hidden on mobile
-// Mobile: hidden here — identical links rendered in footer-col "Wichtige Links" in Base.astro
 // External links: rel="nofollow noopener noreferrer" mandatory (SEO §26)
 // Internal links: no rel attribute, standard anchor
 
-import links from "../../config/important-links.json";
+const rawLinks = await import("../../config/important-links.json");
+const links = (rawLinks.default as any[]);
 ---
 
 <aside class="important-links-sidebar" aria-label="Wichtige Links">
   <h2 class="sidebar-heading">Wichtige Links</h2>
   <ul class="sidebar-list" role="list">
-    {links.map(link => (
+    {links.map((link: any) => (
       link.isHeading ? (
         <li class="sidebar-section-heading" role="presentation">
           {link.name}
@@ -47,14 +47,12 @@ import links from "../../config/important-links.json";
 </aside>
 
 <style>
-  /* Shown/hidden and positioned by parent index.astro grid context */
   .important-links-sidebar {
-    display: none; /* default hidden; parent enables on desktop */
+    display: none;
     position: sticky;
     top: 140px;
     align-self: start;
   }
-
   .sidebar-heading {
     font-size: 0.75rem;
     font-weight: 700;
@@ -84,7 +82,6 @@ import links from "../../config/important-links.json";
     border-top: 1px solid var(--border);
     opacity: 0.6;
   }
-  /* Don't show top border on first heading */
   .sidebar-list > .sidebar-section-heading:first-child {
     border-top: none;
     padding-top: 0;
