@@ -202,10 +202,15 @@ const featuredEvent = featuredSlug
     .city-sidebar {
       display: block;
       position: fixed;
-      top: 160px;
+      top: 80px;
       left: calc(50% + 384px);
-      width: 200px;
+      width: 210px;
+      max-height: calc(100vh - 100px);
+      overflow-y: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
     }
+    .city-sidebar::-webkit-scrollbar { display: none; }
     .city-sidebar :global(.important-links-sidebar) {
       display: block;
     }
