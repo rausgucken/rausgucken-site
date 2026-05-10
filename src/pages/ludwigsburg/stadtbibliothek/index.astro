@@ -8,7 +8,7 @@ import metaData from "../../../../public/data/ludwigsburg/meta.json";
 
 const meta = metaData;
 
-const allEvents = ((eventsData as any).events as any[]).filter((e: any) =>
+const allEvents = (eventsData as any[]).filter((e: any) =>
   e.source === "stabi"
 );
 
