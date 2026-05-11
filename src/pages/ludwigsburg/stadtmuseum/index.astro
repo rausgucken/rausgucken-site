@@ -20,14 +20,14 @@ const jsonLd = {
   "@type": "CollectionPage",
   "name": "Stadtmuseum Ludwigsburg \u2013 Aktuelle Ausstellungen & Veranstaltungen",
   "description": `${allEvents.length} aktuelle Veranstaltungen im Stadtmuseum im MIK Ludwigsburg.`,
-  "url": "https://rausgucken.de/ludwigsburg/stadtmuseum/",
+  "url": "https://www.rausgucken.de/ludwigsburg/stadtmuseum/",
   "inLanguage": "de-DE",
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://rausgucken.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Ludwigsburg", "item": "https://rausgucken.de/ludwigsburg/" },
-      { "@type": "ListItem", "position": 3, "name": "Stadtmuseum", "item": "https://rausgucken.de/ludwigsburg/stadtmuseum/" }
+      { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://www.rausgucken.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Ludwigsburg", "item": "https://www.rausgucken.de/ludwigsburg/" },
+      { "@type": "ListItem", "position": 3, "name": "Stadtmuseum", "item": "https://www.rausgucken.de/ludwigsburg/stadtmuseum/" }
     ]
   }
 };
@@ -54,7 +54,7 @@ const placeSchema = {
   title={`Stadtmuseum Ludwigsburg \u2013 ${allEvents.length} aktuelle Ausstellungen & Events | rausgucken.de`}
   description={`${allEvents.length} aktuelle Veranstaltungen im Stadtmuseum im MIK Ludwigsburg. Stadtgeschichte, Sonderausstellungen und kulturelle Angebote f\u00fcr alle \u2013 lokal und aktuell.`}
   city="ludwigsburg"
-  canonical="https://rausgucken.de/ludwigsburg/stadtmuseum/"
+  canonical="https://www.rausgucken.de/ludwigsburg/stadtmuseum/"
   ogImage="/og/ludwigsburg/ausstellungen.jpg"
 >
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

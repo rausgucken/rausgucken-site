@@ -24,14 +24,14 @@ const jsonLd = {
   "@type": "CollectionPage",
   "name": "Stadtbibliothek Ludwigsburg – Veranstaltungen & Kurse",
   "description": `${allEvents.length} aktuelle Veranstaltungen der Stadtbibliothek Ludwigsburg – Lesungen, Workshops, Kinder- und Jugendprogramme.`,
-  "url": "https://rausgucken.de/ludwigsburg/stadtbibliothek/",
+  "url": "https://www.rausgucken.de/ludwigsburg/stadtbibliothek/",
   "inLanguage": "de-DE",
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://rausgucken.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Ludwigsburg", "item": "https://rausgucken.de/ludwigsburg/" },
-      { "@type": "ListItem", "position": 3, "name": "Stadtbibliothek", "item": "https://rausgucken.de/ludwigsburg/stadtbibliothek/" }
+      { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://www.rausgucken.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Ludwigsburg", "item": "https://www.rausgucken.de/ludwigsburg/" },
+      { "@type": "ListItem", "position": 3, "name": "Stadtbibliothek", "item": "https://www.rausgucken.de/ludwigsburg/stadtbibliothek/" }
     ]
   }
 };
@@ -55,7 +55,7 @@ const placeSchema = {
   title={`Veranstaltungen Stadtbibliothek Ludwigsburg – ${allEvents.length} Events & Kurse | rausgucken.de`}
   description={`${allEvents.length} aktuelle Veranstaltungen der Stadtbibliothek Ludwigsburg. Lesungen, Kinder-Workshops, Sprachkurse und digitale Angebote – alle Termine auf einen Blick.`}
   city="ludwigsburg"
-  canonical="https://rausgucken.de/ludwigsburg/stadtbibliothek/"
+  canonical="https://www.rausgucken.de/ludwigsburg/stadtbibliothek/"
   ogImage="/og/ludwigsburg/kinder.jpg"
 >
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

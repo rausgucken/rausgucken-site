@@ -66,7 +66,7 @@ export async function onRequest(context) {
 function buildICS(ev) {
   const now   = utcStamp(new Date());
   const uid   = `${ev.slug}@rausgucken.de`;
-  const site  = 'https://rausgucken.de';
+  const site  = 'https://www.rausgucken.de';
 
   let dtstart, dtend, allDay = false;
 

@@ -2,7 +2,7 @@
 // SEO §11: Venue hub pages — topical authority per institution.
 // Add new venue pages here as they are created.
 export async function GET() {
-  const siteUrl = "https://rausgucken.de";
+  const siteUrl = "https://www.rausgucken.de";
   const today   = new Date().toISOString().slice(0, 10);
   const venuePages = [
     { loc: `${siteUrl}/ludwigsburg/residenzschloss/`, priority: "0.8", changefreq: "weekly" },

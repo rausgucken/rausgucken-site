@@ -24,14 +24,14 @@ const jsonLd = {
   "@type": "CollectionPage",
   "name": "Residenzschloss Ludwigsburg – Führungen, Events & Ausstellungen",
   "description": `${allEvents.length} aktuelle Veranstaltungen im Residenzschloss Ludwigsburg – Führungen, Konzerte, Familienangebote und Sonderausstellungen.`,
-  "url": "https://rausgucken.de/ludwigsburg/residenzschloss/",
+  "url": "https://www.rausgucken.de/ludwigsburg/residenzschloss/",
   "inLanguage": "de-DE",
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://rausgucken.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Ludwigsburg", "item": "https://rausgucken.de/ludwigsburg/" },
-      { "@type": "ListItem", "position": 3, "name": "Residenzschloss", "item": "https://rausgucken.de/ludwigsburg/residenzschloss/" }
+      { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://www.rausgucken.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Ludwigsburg", "item": "https://www.rausgucken.de/ludwigsburg/" },
+      { "@type": "ListItem", "position": 3, "name": "Residenzschloss", "item": "https://www.rausgucken.de/ludwigsburg/residenzschloss/" }
     ]
   }
 };
@@ -59,7 +59,7 @@ const placeSchema = {
   title={`Residenzschloss Ludwigsburg – ${allEvents.length} Führungen, Events & Ausstellungen | rausgucken.de`}
   description={`${allEvents.length} aktuelle Veranstaltungen im Residenzschloss Ludwigsburg. Führungen, Konzerte der Schlossfestspiele, Familienangebote und Sonderausstellungen – alle Termine übersichtlich.`}
   city="ludwigsburg"
-  canonical="https://rausgucken.de/ludwigsburg/residenzschloss/"
+  canonical="https://www.rausgucken.de/ludwigsburg/residenzschloss/"
   ogImage="/og/ludwigsburg/default.jpg"
 >
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

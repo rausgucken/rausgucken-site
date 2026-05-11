@@ -14,7 +14,7 @@
  *   <SEOHead
  *     title="Veranstaltungen in Ludwigsburg | rausgucken.de"
  *     description="142 aktuelle Events in Ludwigsburg. Kinder, Kultur, kostenlos."
- *     canonical="https://rausgucken.de/ludwigsburg/"
+ *     canonical="https://www.rausgucken.de/ludwigsburg/"
  *     ogImage="/og/ludwigsburg/city.jpg"
  *   />
  *
@@ -22,7 +22,7 @@
  *   <SEOHead
  *     title={`Events Ludwigsburg heute (${todayFormatted}) | rausgucken.de`}
  *     description="Was ist heute in Ludwigsburg los?"
- *     canonical="https://rausgucken.de/ludwigsburg/heute/"
+ *     canonical="https://www.rausgucken.de/ludwigsburg/heute/"
  *     ogImage="/og/ludwigsburg/heute.jpg"
  *   />
  *
@@ -30,7 +30,7 @@
  *   <SEOHead
  *     title={`${event.title} | rausgucken.de`}
  *     description={event.description?.slice(0, 155)}
- *     canonical={`https://rausgucken.de/ludwigsburg/events/${event.slug}/`}
+ *     canonical={`https://www.rausgucken.de/ludwigsburg/events/${event.slug}/`}
  *     ogImage={`/og/ludwigsburg/${event.slug}.jpg`}
  *   />
  */
@@ -53,7 +53,7 @@ const {
   schemaJson,
 } = Astro.props;
 
-const SITE_URL = "https://rausgucken.de";
+const SITE_URL = "https://www.rausgucken.de";
 
 // Resolve OG image: prefer provided, fallback to city default, then global fallback
 const resolvedOgImage = ogImage

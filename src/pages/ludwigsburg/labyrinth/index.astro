@@ -24,14 +24,14 @@ const jsonLd = {
   "@type": "CollectionPage",
   "name": "Kunstschule Labyrinth Ludwigsburg – Workshops & Kurse",
   "description": `${allEvents.length} aktuelle Workshops und Kurse der Kunstschule Labyrinth Ludwigsburg für Kinder, Jugendliche und Erwachsene.`,
-  "url": "https://rausgucken.de/ludwigsburg/labyrinth/",
+  "url": "https://www.rausgucken.de/ludwigsburg/labyrinth/",
   "inLanguage": "de-DE",
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://rausgucken.de/" },
-      { "@type": "ListItem", "position": 2, "name": "Ludwigsburg", "item": "https://rausgucken.de/ludwigsburg/" },
-      { "@type": "ListItem", "position": 3, "name": "Kunstschule Labyrinth", "item": "https://rausgucken.de/ludwigsburg/labyrinth/" }
+      { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://www.rausgucken.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Ludwigsburg", "item": "https://www.rausgucken.de/ludwigsburg/" },
+      { "@type": "ListItem", "position": 3, "name": "Kunstschule Labyrinth", "item": "https://www.rausgucken.de/ludwigsburg/labyrinth/" }
     ]
   }
 };
@@ -55,7 +55,7 @@ const placeSchema = {
   title={`Kunstschule Labyrinth Ludwigsburg – ${allEvents.length} Workshops & Kurse | rausgucken.de`}
   description={`${allEvents.length} aktuelle Workshops und Kurse der Kunstschule Labyrinth Ludwigsburg. Kreativangebote für Kinder, Jugendliche und Erwachsene – Ton, Tanz, Zirkus und mehr.`}
   city="ludwigsburg"
-  canonical="https://rausgucken.de/ludwigsburg/labyrinth/"
+  canonical="https://www.rausgucken.de/ludwigsburg/labyrinth/"
   ogImage="/og/ludwigsburg/kinder.jpg"
 >
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

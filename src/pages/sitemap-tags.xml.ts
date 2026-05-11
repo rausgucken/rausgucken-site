@@ -2,7 +2,7 @@
 // SEO §11: Tag / category hub pages.
 
 export async function GET() {
-  const siteUrl = "https://rausgucken.de";
+  const siteUrl = "https://www.rausgucken.de";
   const today   = new Date().toISOString().slice(0, 10);
 
   const tagPages = [

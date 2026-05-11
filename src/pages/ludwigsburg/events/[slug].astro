@@ -35,7 +35,7 @@ const editorialTip: string | undefined = (() => {
   const tip = (val as Record<string, unknown>).tip;
   return typeof tip === "string" && tip.length > 0 ? tip : undefined;
 })();
-const siteUrl = "https://rausgucken.de";
+const siteUrl = "https://www.rausgucken.de";
 
 // ── Dates & freshness ─────────────────────────────────────────────────────────
 function formatDateDE(iso) {
@@ -181,7 +181,7 @@ const outlookCalUrl = buildOutlookUrl(ev);
 const icsUrl        = `/ludwigsburg/events/${ev.slug}.ics`;
 
 // Share URLs
-const shareEventUrl = `https://rausgucken.de/ludwigsburg/events/${ev.slug}`;
+const shareEventUrl = `https://www.rausgucken.de/ludwigsburg/events/${ev.slug}`;
 const shareText     = encodeURIComponent(`${ev.title} – ${shareEventUrl}`);
 const waShareUrl    = `https://wa.me/?text=${shareText}`;
 const tgShareUrl    = `https://t.me/share/url?url=${encodeURIComponent(shareEventUrl)}&text=${encodeURIComponent(ev.title)}`;

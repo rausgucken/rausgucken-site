@@ -4,7 +4,7 @@
 // lastmod = today's date (these pages update daily via data swap).
 
 export async function GET() {
-  const siteUrl = "https://rausgucken.de";
+  const siteUrl = "https://www.rausgucken.de";
   const today   = new Date().toISOString().slice(0, 10);
 
   const temporalPages = [

@@ -2,7 +2,7 @@
 // SEO §11: City landing pages + homepage + about + venue hubs.
 
 export async function GET() {
-  const siteUrl = "https://rausgucken.de";
+  const siteUrl = "https://www.rausgucken.de";
   const today   = new Date().toISOString().slice(0, 10);
 
   const pages = [

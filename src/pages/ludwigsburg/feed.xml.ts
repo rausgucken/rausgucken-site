@@ -6,7 +6,7 @@
 
 import eventsRaw from "../../../public/data/ludwigsburg/events-current.json";
 
-const SITE = "https://rausgucken.de";
+const SITE = "https://www.rausgucken.de";
 const FEED_URL = `${SITE}/ludwigsburg/feed.xml`;
 const CITY_URL = `${SITE}/ludwigsburg/`;
 

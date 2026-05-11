@@ -5,7 +5,7 @@
 import eventsData from "../../public/data/ludwigsburg/events-current.json";
 
 export async function GET() {
-  const siteUrl = "https://rausgucken.de";
+  const siteUrl = "https://www.rausgucken.de";
 
   const cutoff = new Date();
   cutoff.setDate(cutoff.getDate() - 30);

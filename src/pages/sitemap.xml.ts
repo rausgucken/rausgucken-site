@@ -3,7 +3,7 @@
 // Generated at build time (SSG). Submit sitemap.xml to GSC + Bing Webmaster.
 
 export async function GET() {
-  const siteUrl = "https://rausgucken.de";
+  const siteUrl = "https://www.rausgucken.de";
   const now = new Date().toISOString();
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
