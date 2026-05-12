@@ -20,8 +20,9 @@ tomorrow.setDate(now.getDate() + 1);
 const tomorrowDE  = tomorrow.toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
 const canonical   = `${siteUrl}/${city}/morgen/`;
 
-const seoTitle = `Events Ludwigsburg morgen, ${tomorrowDE} | rausgucken.de`;
-const metaDesc = `Alle Veranstaltungen in Ludwigsburg morgen (${tomorrowDE}): Führungen, Ausstellungen, Kinder, Kultur – lokal, aktuell, kostenlos.`;
+const countLabel = events.length > 0 ? `${events.length} ` : "";
+const seoTitle = `${countLabel}Events Ludwigsburg morgen, ${tomorrowDE} | rausgucken.de`;
+const metaDesc = `${countLabel}Veranstaltungen in Ludwigsburg morgen (${tomorrowDE}) — von Ausstellungen im Schloss bis zu Kinder-Workshops. Täglich aktuell, direkt zur Originalseite.`;
 
 const collectionSchema = {
   "@context": "https://schema.org",
