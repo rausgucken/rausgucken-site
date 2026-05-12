@@ -1,27 +1,28 @@
 ---
-// src/pages/ludwigsburg/morgen/index.astro
-// SEO §2: Permanent keyword landing page. Real content. Canonical to itself. Never a redirect.
-// SEO §9: Title includes dynamic date string.
-// SEO §3: Events loaded client-side from tomorrow.json (Tier 2 daily data swap, no Cloudflare build).
-
 import Base from "../../../layouts/Base.astro";
+import FreshnessStamp from '../../../components/FreshnessStamp.astro';
+import EventCard from "../../../components/EventCard.astro";
+import FilterBar from "../../../components/FilterBar.astro";
+
+import subsetData from "../../../../public/data/ludwigsburg/tomorrow.json";
+import metaData from "../../../../public/data/ludwigsburg/meta.json";
+
+const events = subsetData.events ?? [];
+const meta = metaData;
 
 const siteUrl = "https://www.rausgucken.de";
 const city    = "ludwigsburg";
 
-// Dynamic date for title + schema (SEO §9) — rendered at build time (SSG)
-const now        = new Date();
-const tomorrow   = new Date(now);
+const now      = new Date();
+const tomorrow = new Date(now);
 tomorrow.setDate(now.getDate() + 1);
 
 const tomorrowDE  = tomorrow.toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
-const tomorrowISO = tomorrow.toISOString().slice(0, 10);
+const canonical   = `${siteUrl}/${city}/morgen/`;
 
-const seoTitle  = `Events Ludwigsburg morgen, ${tomorrowDE} | rausgucken.de`;
-const metaDesc  = `Alle Veranstaltungen in Ludwigsburg morgen (${tomorrowDE}): Führungen, Ausstellungen, Kinder, Kultur – lokal, aktuell, kostenlos.`;
-const canonical = `${siteUrl}/${city}/morgen/`;
+const seoTitle = `Events Ludwigsburg morgen, ${tomorrowDE} | rausgucken.de`;
+const metaDesc = `Alle Veranstaltungen in Ludwigsburg morgen (${tomorrowDE}): Führungen, Ausstellungen, Kinder, Kultur – lokal, aktuell, kostenlos.`;
 
-// CollectionPage schema — SEO §10B
 const collectionSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -31,7 +32,6 @@ const collectionSchema = {
   "inLanguage": "de-DE",
 };
 
-// BreadcrumbList schema — SEO §10C
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -50,8 +50,6 @@ const breadcrumbSchema = {
   ogImage="/og/ludwigsburg/morgen.jpg"
   schema={[collectionSchema, breadcrumbSchema]}
 >
-
-  <!-- Breadcrumb — visible + schema-backed (SEO §10C) -->
   <nav class="breadcrumb" aria-label="Brotkrumennavigation">
     <a href="/">rausgucken.de</a>
     <span aria-hidden="true"> › </span>
@@ -63,21 +61,22 @@ const breadcrumbSchema = {
   <div class="page-header">
     <h1>Events Ludwigsburg morgen</h1>
     <p class="page-subtitle">
-      <span id="event-count-badge" class="count-badge" hidden></span>
-      {tomorrowDE}
+      {events.length > 0 ? `${events.length} Veranstaltungen · ` : ""}{tomorrowDE}
+      <FreshnessStamp scrapedAt={meta.scraped_at} />
     </p>
   </div>
 
-  <!-- Event list — loaded client-side from tomorrow.json (Tier 2 daily swap) -->
-  <div id="events-container" aria-live="polite" aria-label="Morgige Veranstaltungen" class="events-container">
-    <div class="loading-state" id="loading-state" aria-busy="true">
-      <span class="loading-spinner" aria-hidden="true"></span>
-      Lade morgige Veranstaltungen…
+  <FilterBar />
+
+  <div class="empty-state" id="empty-state" aria-live="polite" hidden></div>
+
+  {events.length > 0 ? (
+    <div class="event-list" id="event-grid">
+      {events.map(ev => <EventCard event={ev} />)}
     </div>
-    <div class="event-list" id="event-list" hidden aria-label="Veranstaltungen morgen"></div>
-    <div class="empty-state" id="empty-state" hidden>
+  ) : (
+    <div class="empty-today">
       <div class="empty-inner">
-        <p class="empty-icon" aria-hidden="true">📅</p>
         <p class="empty-headline">Morgen keine eingetragenen Veranstaltungen.</p>
         <p class="empty-body">Schau doch mal, was dieses Wochenende in Ludwigsburg geboten wird!</p>
         <div class="empty-ctas">
@@ -86,9 +85,8 @@ const breadcrumbSchema = {
         </div>
       </div>
     </div>
-  </div>
+  )}
 
-  <!-- Internal linking mesh — SEO §22 -->
   <nav class="temporal-nav" aria-label="Andere Zeiträume in Ludwigsburg">
     <p class="temporal-label">Andere Zeiträume</p>
     <div class="temporal-links">
@@ -100,116 +98,29 @@ const breadcrumbSchema = {
     </div>
   </nav>
 
+  <script src="/scripts/app.js" is:inline></script>
 </Base>
 
-
-<!-- Client-side fetch from tomorrow.json — Tier 2 daily data swap -->
-<script type="module">
-import { renderEventCard, injectEventCardStyles } from '/scripts/renderEventCard.js';
-
-(async function () {
-  injectEventCardStyles();
-
-  const listEl    = document.getElementById('event-list');
-  const emptyEl   = document.getElementById('empty-state');
-  const loadingEl = document.getElementById('loading-state');
-  const badgeEl   = document.getElementById('event-count-badge');
-
-  try {
-    const res  = await fetch('/data/ludwigsburg/tomorrow.json');
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const _raw = await res.json();
-    const data = _raw.events ?? _raw;
-
-    loadingEl.hidden = true;
-
-    if (!Array.isArray(data) || data.length === 0) {
-      emptyEl.hidden = false;
-      return;
-    }
-
-    if (badgeEl) {
-      badgeEl.textContent = data.length + ' Veranstaltungen';
-      badgeEl.hidden = false;
-    }
-
-    data.forEach(ev => listEl.appendChild(renderEventCard(ev)));
-    listEl.hidden = false;
-    listEl.style.cssText = "display:flex;flex-direction:column;gap:0.75rem";
-
-  } catch (err) {
-    loadingEl.setAttribute('aria-busy', 'false');
-    loadingEl.textContent = 'Veranstaltungen konnten nicht geladen werden. Bitte Seite neu laden.';
-  }
-})();
-</script>
-
-
 <style>
-.empty-state { padding: 1rem 0 2rem; }
-  .empty-inner {
-    background: var(--surface-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 2.5rem 2rem;
-    text-align: center;
-    box-shadow: var(--shadow-card);
-  }
-  .empty-icon     { font-size: 2rem; margin-bottom: 0.75rem; }
-  .empty-headline { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; }
-  .empty-body     { color: var(--text-60); font-size: 0.92rem; margin-bottom: 1.5rem; line-height: 1.6; }
-  .empty-ctas     { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+  .page-header { margin-bottom: 1.25rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+  .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
 
-  .btn-cta {
-    display: inline-flex;
-    align-items: center;
-    height: 44px;
-    padding: 0 1.25rem;
-    background: var(--coral);
-    color: var(--text);
-    border-radius: var(--radius-sm);
-    font-weight: 600;
-    font-size: 0.875rem;
-    text-decoration: none;
-    transition: background 150ms;
-  }
+  html.dark .event-card { box-shadow: 0 2px 8px rgba(0,0,0,0.22); }
+
+  .empty-today { max-width: 720px; padding: 2rem 0; }
+  .empty-inner { background: var(--surface-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem 2rem; text-align: center; }
+  .empty-headline { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; }
+  .empty-body { color: var(--text-60); margin-bottom: 1.5rem; }
+  .empty-ctas { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+  .btn-cta { display: inline-flex; align-items: center; height: 44px; padding: 0 1.25rem; background: var(--coral); color: var(--text); border-radius: var(--radius-sm); font-weight: 600; font-size: 0.875rem; text-decoration: none; transition: background 150ms; }
   .btn-cta:hover { background: var(--coral-dark); text-decoration: none; }
   .btn-cta--ghost { background: var(--tag-bg); color: var(--text-60); }
   .btn-cta--ghost:hover { background: var(--coral-light); color: var(--coral); }
 
-  /* ── Temporal nav — SEO §22 ─────────────────────────────────────────────── */
-  .temporal-nav {
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border);
-    max-width: 720px;
-  }
-  .temporal-label {
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-60);
-    margin-bottom: 0.65rem;
-    font-family: var(--font-body);
-  }
+  .temporal-nav { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); max-width: 720px; }
+  .temporal-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-60); margin-bottom: 0.65rem; }
   .temporal-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .temporal-links a {
-    display: inline-flex;
-    align-items: center;
-    height: 36px;
-    padding: 0 0.9rem;
-    background: var(--tag-bg);
-    color: var(--text-60);
-    border-radius: 20px;
-    font-size: 0.82rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: background 150ms, color 150ms;
-  }
+  .temporal-links a { display: inline-flex; align-items: center; height: 36px; padding: 0 0.85rem; background: var(--tag-bg); color: var(--text-60); border-radius: 20px; font-size: 0.82rem; font-weight: 500; text-decoration: none; transition: background 150ms, color 150ms; }
   .temporal-links a:hover { background: var(--coral-light); color: var(--coral); }
-
-  /* ── Mobile ─────────────────────────────────────────────────────────────── */
-  @media (max-width: 600px) {
-  }
 </style>
