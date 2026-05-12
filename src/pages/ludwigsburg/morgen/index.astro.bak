@@ -1,0 +1,126 @@
+---
+import Base from "../../../layouts/Base.astro";
+import FreshnessStamp from '../../../components/FreshnessStamp.astro';
+import EventCard from "../../../components/EventCard.astro";
+import FilterBar from "../../../components/FilterBar.astro";
+
+import subsetData from "../../../../public/data/ludwigsburg/tomorrow.json";
+import metaData from "../../../../public/data/ludwigsburg/meta.json";
+
+const events = subsetData.events ?? [];
+const meta = metaData;
+
+const siteUrl = "https://www.rausgucken.de";
+const city    = "ludwigsburg";
+
+const now      = new Date();
+const tomorrow = new Date(now);
+tomorrow.setDate(now.getDate() + 1);
+
+const tomorrowDE  = tomorrow.toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+const canonical   = `${siteUrl}/${city}/morgen/`;
+
+const seoTitle = `Events Ludwigsburg morgen, ${tomorrowDE} | rausgucken.de`;
+const metaDesc = `Alle Veranstaltungen in Ludwigsburg morgen (${tomorrowDE}): Führungen, Ausstellungen, Kinder, Kultur – lokal, aktuell, kostenlos.`;
+
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `Events Ludwigsburg morgen – ${tomorrowDE}`,
+  "description": metaDesc,
+  "url": canonical,
+  "inLanguage": "de-DE",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": siteUrl },
+    { "@type": "ListItem", "position": 2, "name": "Ludwigsburg",   "item": `${siteUrl}/${city}/` },
+    { "@type": "ListItem", "position": 3, "name": "Morgen",        "item": canonical },
+  ],
+};
+---
+
+<Base
+  title={seoTitle}
+  description={metaDesc}
+  canonical={canonical}
+  ogImage="/og/ludwigsburg/morgen.jpg"
+  schema={[collectionSchema, breadcrumbSchema]}
+>
+  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+    <a href="/">rausgucken.de</a>
+    <span aria-hidden="true"> › </span>
+    <a href="/ludwigsburg">Ludwigsburg</a>
+    <span aria-hidden="true"> › </span>
+    <span aria-current="page">Morgen</span>
+  </nav>
+
+  <div class="page-header">
+    <h1>Events Ludwigsburg morgen</h1>
+    <p class="page-subtitle">
+      {events.length > 0 ? `${events.length} Veranstaltungen · ` : ""}{tomorrowDE}
+      <FreshnessStamp scrapedAt={meta.scraped_at} />
+    </p>
+  </div>
+
+  <FilterBar />
+
+  <div class="empty-state" id="empty-state" aria-live="polite" hidden></div>
+
+  {events.length > 0 ? (
+    <div class="event-list" id="event-grid">
+      {events.map(ev => <EventCard event={ev} />)}
+    </div>
+  ) : (
+    <div class="empty-today">
+      <div class="empty-inner">
+        <p class="empty-headline">Morgen keine eingetragenen Veranstaltungen.</p>
+        <p class="empty-body">Schau doch mal, was dieses Wochenende in Ludwigsburg geboten wird!</p>
+        <div class="empty-ctas">
+          <a href="/ludwigsburg/dieses-wochenende" class="btn-cta">Wochenende ansehen →</a>
+          <a href="/ludwigsburg" class="btn-cta btn-cta--ghost">Alle Veranstaltungen</a>
+        </div>
+      </div>
+    </div>
+  )}
+
+  <nav class="temporal-nav" aria-label="Andere Zeiträume in Ludwigsburg">
+    <p class="temporal-label">Andere Zeiträume</p>
+    <div class="temporal-links">
+      <a href="/ludwigsburg/heute">Heute</a>
+      <a href="/ludwigsburg/dieses-wochenende">Dieses Wochenende</a>
+      <a href="/ludwigsburg/naechste-woche">Nächste Woche</a>
+      <a href="/ludwigsburg/kinder">Kinder &amp; Familie</a>
+      <a href="/ludwigsburg">Alle Veranstaltungen</a>
+    </div>
+  </nav>
+
+  <script src="/scripts/app.js" is:inline></script>
+</Base>
+
+<style>
+  .page-header { margin-bottom: 1.25rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+  .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+
+  html.dark .event-card { box-shadow: 0 2px 8px rgba(0,0,0,0.22); }
+
+  .empty-today { max-width: 720px; padding: 2rem 0; }
+  .empty-inner { background: var(--surface-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem 2rem; text-align: center; }
+  .empty-headline { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; }
+  .empty-body { color: var(--text-60); margin-bottom: 1.5rem; }
+  .empty-ctas { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+  .btn-cta { display: inline-flex; align-items: center; height: 44px; padding: 0 1.25rem; background: var(--coral); color: var(--text); border-radius: var(--radius-sm); font-weight: 600; font-size: 0.875rem; text-decoration: none; transition: background 150ms; }
+  .btn-cta:hover { background: var(--coral-dark); text-decoration: none; }
+  .btn-cta--ghost { background: var(--tag-bg); color: var(--text-60); }
+  .btn-cta--ghost:hover { background: var(--coral-light); color: var(--coral); }
+
+  .temporal-nav { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); max-width: 720px; }
+  .temporal-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-60); margin-bottom: 0.65rem; }
+  .temporal-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .temporal-links a { display: inline-flex; align-items: center; height: 36px; padding: 0 0.85rem; background: var(--tag-bg); color: var(--text-60); border-radius: 20px; font-size: 0.82rem; font-weight: 500; text-decoration: none; transition: background 150ms, color 150ms; }
+  .temporal-links a:hover { background: var(--coral-light); color: var(--coral); }
+</style>
