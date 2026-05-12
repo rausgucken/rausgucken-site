@@ -19,10 +19,11 @@ const today = new Date().toISOString().split("T")[0];
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "ItemList",
+  "@type": "CollectionPage",
   "name": "Veranstaltungen in Ludwigsburg",
+  "description": `${events.length} aktuelle Veranstaltungen in Ludwigsburg – Ausstellungen, Kinder-Events, kostenlose Angebote und mehr.`,
   "url": "https://www.rausgucken.de/ludwigsburg/",
-  "numberOfItems": events.length,
+  "inLanguage": "de-DE",
 };
 
 const breadcrumbSchema = {
@@ -54,7 +55,6 @@ const featuredEvent = featuredSlug
     <span aria-hidden="true"> › </span>
     <span aria-current="page">Ludwigsburg</span>
   </nav>
-  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
   <div class="page-header">
     <h1>Veranstaltungen in Ludwigsburg</h1>
