@@ -17,6 +17,11 @@ const standing = events.filter(e => !e.date_start);
 
 const today = new Date().toISOString().split("T")[0];
 
+// Dynamic title components — computed at build time from events JSON
+const buildDate = new Date();
+const monthDE = buildDate.toLocaleDateString("de-DE", { month: "long" });
+const yearDE  = buildDate.getFullYear();
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -45,8 +50,8 @@ const featuredEvent = featuredSlug
 ---
 
 <Base
-  title="Veranstaltungen Ludwigsburg 2026 – Alle Events & Ausstellungen | rausgucken.de"
-  description={`${events.length} aktuelle Veranstaltungen in Ludwigsburg. Ausstellungen, Kinder-Events, kostenlose Angebote und mehr — täglich aktuell, übersichtlich auf einen Blick.`}
+  title={`${events.length} Veranstaltungen in Ludwigsburg ${monthDE} ${yearDE} | rausgucken.de`}
+  description={`Entdecke ${events.length} aktuelle Veranstaltungen in Ludwigsburg – Ausstellungen, Konzerte, Workshops und mehr. Täglich aktuell von Residenzschloss bis Stadtbibliothek.`}
   city="ludwigsburg"
   schema={[jsonLd, breadcrumbSchema]}
 >
