@@ -14,11 +14,13 @@
    FILTER BAR — 2-column grid on mobile, max 40% viewport height
    ──────────────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
-  .filter-bar,
-  [data-component="FilterBar"],
-  .filterbar {
-    /* 2-column grid instead of stacked full-width */
-    display: grid !important;
+  /* Only apply grid layout when filter bar is open (toggled).
+     Without .is-open, FilterBar.astro's display:none keeps it collapsed. */
+  .filter-bar.is-open,
+  [data-component="FilterBar"].is-open,
+  .filterbar.is-open {
+    display: flex !important;   /* override the base display:none on mobile */
+    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
     padding: 0.625rem 0.75rem;

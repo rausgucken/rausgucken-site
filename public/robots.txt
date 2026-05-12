@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.rausgucken.de/sitemap.xml
+
+# Block raw data files from crawlers
+Disallow: /data/
