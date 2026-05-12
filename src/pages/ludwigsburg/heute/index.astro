@@ -1,24 +1,26 @@
 ---
-// src/pages/ludwigsburg/heute/index.astro
-// SEO §2: Permanent keyword landing page. Real content. Canonical to itself. Never a redirect.
-// SEO §9: Title includes dynamic date. SEO §3: Data loaded client-side from today.json (Tier 2 model).
-
 import Base from "../../../layouts/Base.astro";
+import FreshnessStamp from '../../../components/FreshnessStamp.astro';
+import EventCard from "../../../components/EventCard.astro";
+import FilterBar from "../../../components/FilterBar.astro";
+
+import subsetData from "../../../../public/data/ludwigsburg/today.json";
+import metaData from "../../../../public/data/ludwigsburg/meta.json";
+
+const events = subsetData.events ?? [];
+const meta = metaData;
 
 const siteUrl = "https://www.rausgucken.de";
 const city    = "ludwigsburg";
 
-// Dynamic date for title (SEO §9)
-const now        = new Date();
-const todayDE    = now.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
-const todayISO   = now.toISOString().slice(0, 10);
+const now     = new Date();
+const todayDE = now.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
+const today   = now.toISOString().split("T")[0];
 
-// SEO §9 title formula: keyword-first, event count from today.json at client load
-const seoTitle   = `Veranstaltungen in Ludwigsburg heute (${todayDE}) | rausgucken.de`;
-const metaDesc   = `Alle Events in Ludwigsburg heute, ${todayDE}. Führungen, Ausstellungen, Kinder, Kultur – lokal, aktuell, übersichtlich.`;
-const canonical  = `${siteUrl}/${city}/heute/`;
+const seoTitle  = `Veranstaltungen in Ludwigsburg heute (${todayDE}) | rausgucken.de`;
+const metaDesc  = `Alle Events in Ludwigsburg heute, ${todayDE}. Führungen, Ausstellungen, Kinder, Kultur – lokal, aktuell, übersichtlich.`;
+const canonical = `${siteUrl}/${city}/heute/`;
 
-// CollectionPage schema — SEO §10B
 const collectionSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -28,7 +30,6 @@ const collectionSchema = {
   "inLanguage": "de-DE",
 };
 
-// BreadcrumbList schema — SEO §10C
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -55,14 +56,27 @@ const breadcrumbSchema = {
 
   <div class="page-header">
     <h1>Events in Ludwigsburg heute</h1>
-    <p class="page-subtitle" id="today-subtitle">{todayDE}</p>
+    <p class="page-subtitle">
+      {events.length > 0 ? `${events.length} Veranstaltungen · ` : ""}{todayDE}
+      <FreshnessStamp scrapedAt={meta.scraped_at} />
+    </p>
   </div>
 
-  <!-- Events rendered client-side from today.json (Tier 2 daily data swap, no build) -->
-  <div id="events-container" aria-live="polite" aria-label="Heutige Veranstaltungen">
-    <div class="loading-state" id="loading-state">Lade heutige Veranstaltungen…</div>
-    <div class="event-list" id="event-list" hidden></div>
-    <div class="empty-today" id="empty-today" hidden>
+  <aside class="disclaimer-box">
+    <strong>Hinweis:</strong> {meta.disclaimer_note || "Alle Angaben ohne Gewähr. Bitte prüfen Sie Infos auf der jeweiligen Originalseite."}
+    <a href="/about">Mehr Informationen</a>
+  </aside>
+
+  <FilterBar />
+
+  <div class="empty-state" id="empty-state" aria-live="polite" hidden></div>
+
+  {events.length > 0 ? (
+    <div class="event-list" id="event-grid">
+      {events.map(ev => <EventCard event={ev} />)}
+    </div>
+  ) : (
+    <div class="empty-today">
       <div class="empty-inner">
         <p class="empty-headline">Heute keine eingetragenen Veranstaltungen.</p>
         <p class="empty-body">Trotzdem lohnt sich ein Ausflug nach Ludwigsburg!</p>
@@ -72,9 +86,8 @@ const breadcrumbSchema = {
         </div>
       </div>
     </div>
-  </div>
+  )}
 
-  <!-- Internal linking mesh — SEO §22 -->
   <nav class="temporal-nav" aria-label="Andere Zeiträume">
     <p class="temporal-label">Andere Zeiträume</p>
     <div class="temporal-links">
@@ -85,59 +98,34 @@ const breadcrumbSchema = {
       <a href="/ludwigsburg">Alle Veranstaltungen</a>
     </div>
   </nav>
+
+  <script src="/scripts/app.js" is:inline></script>
 </Base>
 
-
-<!-- Client-side data fetch from today.json (Tier 2 deployment: no Cloudflare build) -->
-<script type="module">
-import { renderEventCard, injectEventCardStyles } from '/scripts/renderEventCard.js';
-
-(async function() {
-  injectEventCardStyles();
-
-  const list    = document.getElementById('event-list');
-  const empty   = document.getElementById('empty-today');
-  const loading = document.getElementById('loading-state');
-
-  try {
-    const res  = await fetch('/data/ludwigsburg/today.json');
-    const _raw = await res.json();
-    const data = _raw.events ?? _raw;
-
-    loading.hidden = true;
-
-    if (!data || data.length === 0) {
-      empty.hidden = false;
-      return;
-    }
-
-    data.forEach(ev => list.appendChild(renderEventCard(ev)));
-
-    const sub = document.getElementById('today-subtitle');
-    if (sub) sub.textContent = `${data.length} Veranstaltungen · ${sub.textContent}`;
-
-    list.hidden = false;
-    list.style.cssText = "display:flex;flex-direction:column;gap:0.75rem";
-  } catch(e) {
-    loading.textContent = 'Daten konnten nicht geladen werden.';
-  }
-})();
-</script>
-
-
 <style>
+  .page-header { margin-bottom: 1.25rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+  .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+
+  .disclaimer-box {
+    border: 1px solid var(--border); border-radius: var(--radius); padding: 0.85rem 1.25rem;
+    font-size: 0.85rem; color: var(--text); opacity: 0.70; margin-bottom: 1.5rem;
+    line-height: 1.5; max-width: 720px; margin-left: auto; margin-right: auto;
+  }
+  .disclaimer-box a { color: var(--text); font-weight: 600; margin-left: 0.35rem; }
+
+  html.dark .event-card { box-shadow: 0 2px 8px rgba(0,0,0,0.22); }
+
   .empty-today { max-width: 720px; padding: 2rem 0; }
   .empty-inner { background: var(--surface-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem 2rem; text-align: center; }
   .empty-headline { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; }
   .empty-body { color: var(--text-60); margin-bottom: 1.5rem; }
   .empty-ctas { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
-  /* Coral bg → Charcoal text per design spec "Button" rule */
   .btn-cta { display: inline-flex; align-items: center; height: 44px; padding: 0 1.25rem; background: var(--coral); color: var(--text); border-radius: var(--radius-sm); font-weight: 600; font-size: 0.875rem; text-decoration: none; transition: background 150ms; }
   .btn-cta:hover { background: var(--coral-dark); text-decoration: none; }
   .btn-cta--ghost { background: var(--tag-bg); color: var(--text-60); }
   .btn-cta--ghost:hover { background: var(--coral-light); color: var(--coral); }
 
-  /* Temporal nav — SEO §22 */
   .temporal-nav { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); max-width: 720px; }
   .temporal-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-60); margin-bottom: 0.65rem; }
   .temporal-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
