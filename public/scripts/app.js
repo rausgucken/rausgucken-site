@@ -11,18 +11,16 @@
   const emptyResetBtn  = document.getElementById("empty-reset-btn");
   const countEl        = document.getElementById("filter-count");
   const emptyState     = document.getElementById("empty-state");
+  const activeBadge    = document.getElementById("filter-active-badge");
   const cards          = Array.from(document.querySelectorAll(".event-card"));
 
   // ── Populate location dropdown dynamically from card data ─────────────────
-  // Keeps the dropdown always in sync with whatever is in events-current.json
-  // without needing to manually maintain a hardcoded list.
   if (locationFilter) {
     const locations = [...new Set(
       cards
         .map(c => (c.dataset.location || "").trim())
         .filter(Boolean)
     )].sort();
-
     locations.forEach(loc => {
       const opt = document.createElement("option");
       opt.value = loc;
@@ -34,16 +32,37 @@
   // ── Default: show from today ──────────────────────────────────────────────
   const todayStr = new Date().toISOString().slice(0, 10);
   if (dateFrom && !dateFrom.value) dateFrom.value = todayStr;
+
   // Pre-select location from ?ort= URL param
-  console.log('[ort-debug] search:', window.location.search, 'all options:', Array.from(locationFilter ? locationFilter.options : []).map(o=>o.value));
   if (locationFilter) {
-    var _ortParam = new URLSearchParams(window.location.search).get('ort');
+    const _ortParam = new URLSearchParams(window.location.search).get('ort');
     if (_ortParam) {
-      var _decoded = _ortParam.replace(/[+]/g, ' ');
-      var _match = Array.from(locationFilter.options).find(function(o) {
-        return o.value === _decoded;
-      });
+      const _decoded = _ortParam.replace(/[+]/g, ' ');
+      const _match = Array.from(locationFilter.options).find(o => o.value === _decoded);
       if (_match) locationFilter.value = _match.value;
+    }
+  }
+
+  // ── Count active filters (excluding default date-from=today) ──────────────
+  function countActiveFilters() {
+    let count = 0;
+    if (tagFilter      && tagFilter.value)                                count++;
+    if (locationFilter && locationFilter.value)                           count++;
+    if (ageFilter      && ageFilter.value !== "0-99")                     count++;
+    if (dateFrom       && dateFrom.value && dateFrom.value !== todayStr)  count++;
+    if (dateTo         && dateTo.value)                                   count++;
+    return count;
+  }
+
+  // ── Update the active badge on the toggle button ──────────────────────────
+  function updateBadge() {
+    if (!activeBadge) return;
+    const n = countActiveFilters();
+    if (n > 0) {
+      activeBadge.textContent = n;
+      activeBadge.removeAttribute("hidden");
+    } else {
+      activeBadge.setAttribute("hidden", "");
     }
   }
 
@@ -54,7 +73,6 @@
     const fromVal  = dateFrom       ? dateFrom.value       : "";
     const toVal    = dateTo         ? dateTo.value         : "";
 
-    // Age filter: parse "min-max" range string
     let ageMin = 0, ageMax = 99;
     if (ageFilter && ageFilter.value && ageFilter.value !== "0-99") {
       const parts = ageFilter.value.split("-").map(Number);
@@ -65,9 +83,7 @@
     let visible = 0;
 
     cards.forEach(card => {
-
-      // ── 1. Date filter ────────────────────────────────────────────────────
-      // Standing tours (date="") always pass — they have no fixed date.
+      // 1. Date filter
       const cardDate     = card.dataset.date || "";
       const cardWeekdays = (card.dataset.weekdays || "").split(",").filter(Boolean);
       const isStanding   = !cardDate;
@@ -75,69 +91,48 @@
       if (!isStanding && (fromVal || toVal)) {
         if (fromVal && cardDate < fromVal) { card.style.display = "none"; return; }
         if (toVal   && cardDate > toVal)   { card.style.display = "none"; return; }
-
-        // Weekday check: only show if the event's date falls on an operating weekday
-        // JS getDay(): 0=Sun,1=Mon,2=Tue,3=Wed,4=Thu,5=Fri,6=Sat
         if (cardWeekdays.length > 0) {
           const jsDay = String(new Date(cardDate + "T12:00:00").getDay());
-          if (!cardWeekdays.includes(jsDay)) {
-            card.style.display = "none";
-            return;
-          }
+          if (!cardWeekdays.includes(jsDay)) { card.style.display = "none"; return; }
         }
       }
 
-      // ── 2. Location filter ────────────────────────────────────────────────
+      // 2. Location filter
       if (location) {
         const cardLoc = (card.dataset.location || "").trim();
-        if (!cardLoc.includes(location)) {
-          card.style.display = "none";
-          return;
-        }
+        if (!cardLoc.includes(location)) { card.style.display = "none"; return; }
       }
 
-      // ── 3. Category / tag filter ──────────────────────────────────────────
+      // 3. Category / tag filter
       if (tag) {
         const cardTags = (card.dataset.tags || "").split(",").filter(Boolean);
-        if (!cardTags.includes(tag)) {
-          card.style.display = "none";
-          return;
-        }
+        if (!cardTags.includes(tag)) { card.style.display = "none"; return; }
       }
 
-      // ── 4. Age filter — only applied when card has explicit age data ───────
+      // 4. Age filter
       if (ageFilter && ageFilter.value !== "0-99" && card.dataset.ageMin !== "") {
         const cardAgeMin = parseInt(card.dataset.ageMin) || 0;
         const cardAgeMax = card.dataset.ageMax !== "" ? parseInt(card.dataset.ageMax) : 99;
-        if (cardAgeMin > ageMax || cardAgeMax < ageMin) {
-          card.style.display = "none";
-          return;
-        }
+        if (cardAgeMin > ageMax || cardAgeMax < ageMin) { card.style.display = "none"; return; }
       }
 
       card.style.display = "";
       visible++;
     });
 
-    // ── Update count label ────────────────────────────────────────────────────
     if (countEl) {
       countEl.textContent = `${visible} von ${cards.length} Angeboten`;
     }
 
-    // ── Empty state — design spec Part III §1 ─────────────────────────────────
-    // Show when filters are active but return zero results.
-    // Hide when results exist or no filters are set at all.
     if (emptyState) {
-      const filtersActive = tag || location ||
-        (ageFilter && ageFilter.value !== "0-99") ||
-        (fromVal && fromVal !== todayStr) || toVal;
-
-      if (visible === 0 && (cards.length > 0)) {
+      if (visible === 0 && cards.length > 0) {
         emptyState.removeAttribute("hidden");
       } else {
         emptyState.setAttribute("hidden", "");
       }
     }
+
+    updateBadge();
   }
 
   // ── Reset ─────────────────────────────────────────────────────────────────
@@ -155,40 +150,30 @@
     if (el) el.addEventListener("change", applyFilters);
   });
   if (resetBtn)      resetBtn.addEventListener("click", resetFilters);
-  // Empty state reset button wired to same function
   if (emptyResetBtn) emptyResetBtn.addEventListener("click", resetFilters);
 
-  // Initial render
   applyFilters();
 })();
 
-// ── Mobile filter toggle ────────────────────────────────────────────────────
+// ── Filter bar toggle — collapsed by default on all screen sizes ─────────────
 (function () {
   const btn = document.getElementById('filter-toggle-btn');
   const bar = document.getElementById('filter-bar');
   if (!btn || !bar) return;
 
-  // On mobile, start collapsed. On desktop, always open (CSS handles display).
-  function isMobile() { return window.innerWidth <= 700; }
-
-  function syncState() {
-    if (!isMobile()) {
-      bar.classList.remove('is-open');
-      bar.style.display = '';      // let CSS control desktop
+  // bar starts [hidden] via HTML attribute — toggle removes/adds it
+  btn.addEventListener('click', () => {
+    const isOpen = bar.hasAttribute('hidden');
+    if (isOpen) {
+      bar.removeAttribute('hidden');
+      btn.setAttribute('aria-expanded', 'true');
+    } else {
+      bar.setAttribute('hidden', '');
       btn.setAttribute('aria-expanded', 'false');
     }
-  }
-
-  btn.addEventListener('click', () => {
-    const open = bar.classList.toggle('is-open');
-    btn.setAttribute('aria-expanded', String(open));
   });
-
-  window.addEventListener('resize', syncState);
-  syncState();
 })();
 
-// ── ?source= URL param filter ────────────────────────────────────────────────
+// ── ?source= URL param filter ─────────────────────────────────────────────────
 // Applied on page load. Enables deep-links from /erleben/ venue CTAs.
 // Example: /ludwigsburg/?source=stabi
-// Clears automatically when user interacts with other filters.
