@@ -75,6 +75,9 @@ const featuredEvent = featuredSlug
     </p>
   </div>
 
+  <!-- Pagefind search — build-time index, German stemming -->
+  <div id="search" class="pagefind-search-wrap"></div>
+
   <FilterBar />
 
   <div class="city-layout">
@@ -183,6 +186,35 @@ const featuredEvent = featuredSlug
   </div>
 
   <script src="/scripts/app.js" is:inline></script>
+
+  <!-- Pagefind: loaded after build, not present in dev mode -->
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', function() {
+      if (typeof window.__pagefind_loaded === 'undefined' && document.getElementById('search')) {
+        window.__pagefind_loaded = true;
+        var s = document.createElement('script');
+        s.src = '/pagefind/pagefind-ui.js';
+        s.onload = function() {
+          new PagefindUI({
+            element: '#search',
+            showImages: false,
+            resetStyles: false,
+            excerptLength: 15,
+            translations: {
+              placeholder: 'Veranstaltungen suchen…',
+              zero_results: 'Keine Ergebnisse für "[QUERY]"',
+              many_results: '[COUNT] Ergebnisse für "[QUERY]"',
+              one_result: '1 Ergebnis für "[QUERY]"',
+              load_more: 'Mehr laden',
+              searching: 'Suche läuft…',
+            }
+          });
+        };
+        document.head.appendChild(s);
+      }
+    });
+  </script>
 </Base>
 
 <style>
@@ -293,4 +325,32 @@ const featuredEvent = featuredSlug
   .editorial-intro__body strong { font-weight: 600; opacity: 1; }
   .editorial-intro__erleben-link a { color: var(--coral); font-weight: 600; font-size: 0.85rem; text-decoration: none; }
   .editorial-intro__erleben-link a:hover { text-decoration: underline; }
+
+  /* Pagefind search UI overrides — matches rausgucken design tokens */
+  .pagefind-search-wrap {
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+  }
+  .pagefind-ui__search-input {
+    background: var(--surface-card) !important;
+    border: 1.5px solid var(--border) !important;
+    border-radius: var(--radius-sm) !important;
+    color: var(--text) !important;
+    font-family: var(--font-body) !important;
+    font-size: 0.95rem !important;
+  }
+  .pagefind-ui__search-input:focus {
+    border-color: var(--coral) !important;
+    outline: none !important;
+  }
+  .pagefind-ui__search-clear { color: var(--text-60) !important; }
+  .pagefind-ui__result { border-bottom: 1px solid var(--border) !important; }
+  .pagefind-ui__result-title a { color: var(--coral) !important; font-family: var(--font-heading) !important; }
+  .pagefind-ui__result-excerpt { color: var(--text-60) !important; font-size: 0.875rem !important; }
+  .pagefind-ui__button {
+    background: var(--coral) !important;
+    color: var(--text) !important;
+    border-radius: var(--radius-sm) !important;
+    font-weight: 600 !important;
+  }
 </style>
