@@ -110,7 +110,7 @@ export async function renderTemporalPage(context,{dataFile,pageTitle,h1,metaDesc
 </head>
 <body>
 <header class="site-header">
-  <a href="/" class="site-logo" aria-label="rausgucken.de Startseite"><img src="/images/logo.png" alt="rausgucken.de" width="140" height="36" loading="eager"></a>
+  <a href="/" class="site-logo" aria-label="rausgucken.de Startseite"><img src="/logo.png" alt="rausgucken.de Logo" width="40" height="40" loading="eager"><span class="site-logo-text">raus<span style="color:var(--coral)">gucken</span>.de</span></a>
   <nav class="header-nav" aria-label="Hauptnavigation"><a href="/ludwigsburg">Ludwigsburg</a><a href="/about">Über uns</a></nav>
 </header>
 <main class="main-content" id="main-content">
@@ -140,7 +140,7 @@ html.dark{--surface:#373F51;--surface-card:#444857;--border:rgba(255,255,255,0.0
 body{font-family:var(--font-body);background:var(--surface);color:var(--text);line-height:1.6}
 a{color:inherit}
 .site-header{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1.5rem;border-bottom:1px solid var(--border);max-width:1100px;margin:0 auto;width:100%}
-.site-logo img{display:block}
+.site-logo img{display:block}.site-logo{display:flex;align-items:center;gap:0.65rem;text-decoration:none}.site-logo-text{font-family:var(--font-heading);font-weight:800;font-size:1.25rem;color:var(--text);letter-spacing:-0.02em}
 .header-nav{display:flex;gap:1.5rem;font-size:0.875rem;font-weight:500}
 .header-nav a{text-decoration:none;color:var(--text-60)}
 .header-nav a:hover{color:var(--coral)}
