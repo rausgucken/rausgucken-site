@@ -74,11 +74,6 @@ const jsonLd = {
     </div>
   )}
 
-  <aside class="disclaimer-box">
-    <strong>Hinweis:</strong> {meta.disclaimer_note || "Alle Angaben ohne Gewähr. Bitte prüfen Sie Infos auf der jeweiligen Originalseite."}
-    <a href="/about">Mehr Informationen</a>
-  </aside>
-
   <FilterBar />
 
   <div class="city-layout">
@@ -173,21 +168,6 @@ const jsonLd = {
     margin-bottom: 0.5rem;
   }
   .dot-dual { color: var(--brand-coral, #FF6F61); font-size: 0.75rem; letter-spacing: 0.15em; }
-
-  .disclaimer-box {
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 0.85rem 1.25rem;
-    font-size: 0.85rem;
-    color: var(--text);
-    opacity: 0.70;
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .disclaimer-box a { color: var(--text); font-weight: 600; margin-left: 0.35rem; }
 
   .sources-warning {
     font-size: 0.875rem;
