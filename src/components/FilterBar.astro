@@ -30,7 +30,7 @@
       <a href="/ludwigsburg/morgen"            class="shortcut-pill" title="Veranstaltungen in Ludwigsburg morgen">Morgen</a>
       <a href="/ludwigsburg/dieses-wochenende" class="shortcut-pill" title="Events Ludwigsburg dieses Wochenende">Wochenende</a>
       <a href="/ludwigsburg/naechste-woche"    class="shortcut-pill" title="Events Ludwigsburg nächste Woche">Nächste Woche</a>
-      <a href="/ludwigsburg/kinder"            class="shortcut-pill shortcut-pill--sage" title="Kinderveranstaltungen Ludwigsburg">Kinder &amp; Familie</a>
+      <a href="/ludwigsburg/kinder"            class="shortcut-pill shortcut-pill--sage" title="Kinderveranstaltungen Ludwigsburg" aria-label="Kinderveranstaltungen Ludwigsburg"><span class="dual-dot" aria-hidden="true">● ·</span> Kinder &amp; Familie</a>
     </div>
 
     <div class="filter-controls">
@@ -61,7 +61,7 @@
           <option value="">Alle Kategorien</option>
           <option value="Ausstellung">Ausstellung</option>
           <option value="Entertainment">Entertainment</option>
-          <option value="Familie">Familie</option>
+          <option value="Familie">● · Familie</option>
           <option value="Fest">Fest</option>
           <option value="Fuehrung">Führung</option>
           <option value="Jugend">Jugend</option>
@@ -273,5 +273,19 @@
   }
   @media (max-width: 380px) {
     .filter-group { flex: 1 1 100%; }
+  }
+
+  /* ── Dual-dot icon — Familie / Kinder pill ──────────────────────────────── */
+  /* Dot Doctrine: dual-dot = shared presence (family, community) */
+  .dual-dot {
+    font-size: 0.65em;
+    letter-spacing: 0.05em;
+    opacity: 0.85;
+    margin-right: 0.2em;
+    flex-shrink: 0;
+  }
+  /* Ensure shortcut pills meet 44x44px tap target */
+  .shortcut-pill {
+    min-height: 44px;
   }
 </style>
