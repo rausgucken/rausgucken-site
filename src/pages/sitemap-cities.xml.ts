@@ -17,6 +17,9 @@ export async function GET() {
     { loc: `${siteUrl}/ludwigsburg/residenzschloss/`,  priority: "0.8", changefreq: "weekly"  },
     { loc: `${siteUrl}/ludwigsburg/labyrinth/`,        priority: "0.8", changefreq: "weekly"  },
     { loc: `${siteUrl}/ludwigsburg/erleben/`,          priority: "0.7", changefreq: "weekly"  },
+    // Additional cities
+    { loc: `${siteUrl}/tamm/`,                             priority: "0.9", changefreq: "weekly"  },
+    { loc: `${siteUrl}/bietigheim/`,                       priority: "0.9", changefreq: "weekly"  },
   ];
 
   const urls = pages

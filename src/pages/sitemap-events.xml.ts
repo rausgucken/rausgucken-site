@@ -1,8 +1,10 @@
 // src/pages/sitemap-events.xml.ts
-// SEO §11: All active per-event pages with lastmod from scraped_at.
-// Expired events (date_start > 30 days ago) are excluded — moved to sitemap-archive.xml.
+// SEO §11: All active per-event pages across all cities with lastmod from scraped_at.
+// Expired events (date_start > 30 days ago) are excluded.
 
-import eventsData from "../../public/data/ludwigsburg/events-current.json";
+import ludwigsburgEvents from "../../public/data/ludwigsburg/events-current.json";
+import tammEvents from "../../public/data/tamm/events-current.json";
+import bietigheimEvents from "../../public/data/bietigheim/events-current.json";
 
 export async function GET() {
   const siteUrl = "https://www.rausgucken.de";
@@ -11,26 +13,29 @@ export async function GET() {
   cutoff.setDate(cutoff.getDate() - 30);
   const cutoffStr = cutoff.toISOString().slice(0, 10);
 
-  // Active events only (no date = standing/permanent, always included)
-  const activeEvents = (eventsData as any[]).filter(
-    (ev) => !ev.date_start || ev.date_start >= cutoffStr
-  );
+  const cityEvents = [
+    { city: "ludwigsburg", events: ludwigsburgEvents as any[] },
+    { city: "tamm",        events: tammEvents as any[]        },
+    { city: "bietigheim",  events: bietigheimEvents as any[]  },
+  ];
 
-  const urls = activeEvents
-    .map((ev) => {
-      const lastmod = ev.scraped_at
-        ? ev.scraped_at.slice(0, 10)
-        : new Date().toISOString().slice(0, 10);
-      const priority = ev.is_new ? "0.9" : "0.7";
-      return `
+  const urls = cityEvents.flatMap(({ city, events }) =>
+    events
+      .filter((ev) => !ev.date_start || ev.date_start >= cutoffStr)
+      .map((ev) => {
+        const lastmod = ev.scraped_at
+          ? ev.scraped_at.slice(0, 10)
+          : new Date().toISOString().slice(0, 10);
+        const priority = ev.is_new ? "0.9" : "0.7";
+        return `
   <url>
-    <loc>${siteUrl}/ludwigsburg/events/${ev.slug}</loc>
+    <loc>${siteUrl}/${city}/events/${ev.slug}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${priority}</priority>
   </url>`;
-    })
-    .join("");
+      })
+  ).join("");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

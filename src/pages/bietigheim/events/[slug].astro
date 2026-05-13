@@ -1,6 +1,6 @@
 
 ---
-// src/pages/tamm/events/[slug].astro
+// src/pages/bietigheim/events/[slug].astro
 // SEO: keyword-first title, full Event schema (§10), BreadcrumbList (§10),
 //      expired event banner (§5), RelatedPages internal linking (§22)
 // UPDATED: resolves all 9 Google Search Console schema warnings:
@@ -215,7 +215,7 @@ const eventSchema = {
   "url": canonical,
   "location": {
     "@type": "Place",
-    "name": ev.location || "Tamm",
+    "name": ev.location || "Bietigheim-Bissingen",
     // FIX: added postalCode — satisfies "Missing field 'address'" enhancement
     "address": {
       "@type": "PostalAddress",
@@ -303,7 +303,7 @@ const relatedEvents = isExpired
   {isExpired && relatedEvents.length > 0 && (
     <div class="related-events" aria-label="Ähnliche aktuelle Veranstaltungen">
       {relatedEvents.map(r => (
-        <a href={`/tamm/events/${r.slug}`} class="related-card">
+        <a href={`/bietigheim/events/${r.slug}`} class="related-card">
           <div class="related-card-body">
             <span class="related-title">{r.title}</span>
             {r.location && <span class="related-location">{r.location}</span>}
@@ -335,7 +335,7 @@ const relatedEvents = isExpired
       <!-- Tags row -->
       <div class="event-tags" aria-label="Kategorien">
         {Array.isArray(ev.tags) && ev.tags.map(t => (
-          <a href={t === "Kinder" || t === "Familie" ? "/tamm" : "/tamm"}
+          <a href={t === "Kinder" || t === "Familie" ? "/bietigheim" : "/bietigheim"}
              class={`tag${t === "Kinder" || t === "Familie" ? " tag--sage" : ""}`}>
             {TAG_LABELS[t] ?? t}
           </a>
@@ -354,7 +354,7 @@ const relatedEvents = isExpired
     <div class="event-hero">
       <img
         src={detailImage}
-        alt={`${ev.title} – ${ev.location || organizer.name} in Tamm`}
+        alt={`${ev.title} – ${ev.location || organizer.name} in Bietigheim-Bissingen`}
         width="720"
         height="380"
         loading="eager"
