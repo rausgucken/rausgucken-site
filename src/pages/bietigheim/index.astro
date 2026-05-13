@@ -1,0 +1,128 @@
+---
+import Base from "../../layouts/Base.astro";
+import FreshnessStamp from '../../components/FreshnessStamp.astro';
+import EventCard from "../../components/EventCard.astro";
+import FilterBar from "../../components/FilterBar.astro";
+
+import eventsData from "../../../public/data/bietigheim/events-current.json";
+import metaData from "../../../public/data/bietigheim/meta.json";
+
+const events = eventsData;
+const meta = metaData;
+
+const dated    = events.filter(e => e.date_start);
+const standing = events.filter(e => !e.date_start);
+
+const buildDate = new Date();
+const monthDE = buildDate.toLocaleDateString("de-DE", { month: "long" });
+const yearDE  = buildDate.getFullYear();
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Veranstaltungen in Bietigheim-Bissingen",
+  "description": `${events.length} aktuelle Veranstaltungen in Bietigheim – Kultur, Feste und mehr.`,
+  "url": "https://www.rausgucken.de/bietigheim/",
+  "inLanguage": "de-DE",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://www.rausgucken.de" },
+    { "@type": "ListItem", "position": 2, "name": "Bietigheim", "item": "https://www.rausgucken.de/bietigheim/" },
+  ],
+};
+---
+
+<Base
+  title={`${events.length} Veranstaltungen in Bietigheim ${monthDE} ${yearDE} | rausgucken.de`}
+  description={`Entdecke ${events.length} aktuelle Veranstaltungen in Bietigheim-Bissingen – von der Städtischen Galerie bis zum Kronenzentrum.`}
+  city="bietigheim"
+  schema={[jsonLd, breadcrumbSchema]}
+>
+  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+    <a href="https://www.rausgucken.de">rausgucken.de</a>
+    <span aria-hidden="true"> › </span>
+    <span aria-current="page">Bietigheim</span>
+  </nav>
+
+  <div class="page-header">
+    <h1>Veranstaltungen in Bietigheim-Bissingen</h1>
+    <p class="page-subtitle">
+      <FreshnessStamp scrapedAt={meta.scraped_at} />
+    </p>
+  </div>
+
+  <FilterBar />
+
+  <div class="city-layout">
+    <div class="city-main">
+      {dated.length > 0 && (
+        <section id="section-dated">
+          <h2 class="section-heading">Kommende Veranstaltungen</h2>
+          <div class="event-list" id="event-grid">
+            {dated.map((ev) => (
+              <EventCard event={ev} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {events.length === 0 && (
+        <div class="empty-state empty-state--visible">
+          <div class="empty-state-inner">
+            <p class="empty-headline">Aktuell keine Veranstaltungen verfügbar.</p>
+            <p class="empty-body">Schau bald wieder vorbei!</p>
+          </div>
+        </div>
+      )}
+
+      <details class="editorial-intro" id="editorial-intro">
+        <summary class="editorial-intro__toggle">
+          Über Bietigheim — Kultur & Erleben
+        </summary>
+        <div class="editorial-intro__body">
+          <p>
+            Bietigheim-Bissingen besticht durch seine historische Altstadt und ein hochkarätiges Kulturangebot. 
+            Zentrale Anlaufstellen sind das <strong>Kronenzentrum</strong> für Events und die 
+            <strong>Städtische Galerie</strong> für Kunstliebhaber.
+          </p>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <script src="/scripts/app.js" is:inline></script>
+</Base>
+
+<style>
+  .page-header { margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+  .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+  .city-layout { display: block; }
+  .city-main { display: block; }
+  .section-heading {
+    font-size: 1.15rem; font-weight: 600; margin-bottom: 1rem;
+    padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
+    max-width: 720px; margin-left: auto; margin-right: auto;
+  }
+  .empty-state--visible { display: block; padding: 3rem 1.5rem; text-align: center; }
+  .empty-state-inner {
+    background: var(--surface-card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 2.5rem 2rem;
+  }
+  .editorial-intro {
+    max-width: 720px; margin: 2.5rem auto 1.25rem;
+    border: 1px solid var(--border); border-radius: var(--radius);
+    background: var(--surface-card);
+  }
+  .editorial-intro__toggle {
+    padding: 0.75rem 1.1rem; font-size: 0.85rem; font-weight: 600;
+    color: var(--text-60); cursor: pointer; list-style: none;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .editorial-intro__body { padding: 0 1.1rem 1rem; border-top: 1px solid var(--border); }
+  .editorial-intro__body p { font-size: 0.875rem; line-height: 1.65; margin-top: 0.85rem; }
+</style>
