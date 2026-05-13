@@ -354,7 +354,7 @@ const relatedEvents = isExpired
     <div class="event-hero">
       <img
         src={detailImage}
-        alt={`${ev.title}${ev.location ? ` – ${ev.location}` : ""} in Tamm`}
+        alt={`${ev.title} – ${ev.location || organizer.name} in Tamm`}
         width="720"
         height="380"
         loading="eager"

@@ -10,8 +10,7 @@ import metaData from "../../../public/data/bietigheim/meta.json";
 const events = eventsData;
 const meta = metaData;
 
-const dated    = events.filter(e => e.date_start);
-const standing = events.filter(e => !e.date_start);
+const dated    = events.filter((e: any) => e.date_start);
 
 const buildDate = new Date();
 const monthDE = buildDate.toLocaleDateString("de-DE", { month: "long" });
@@ -63,7 +62,7 @@ const breadcrumbSchema = {
         <section id="section-dated">
           <h2 class="section-heading">Kommende Veranstaltungen</h2>
           <div class="event-list" id="event-grid">
-            {dated.map((ev) => (
+            {dated.map((ev: any) => (
               <EventCard event={ev} />
             ))}
           </div>
@@ -85,8 +84,8 @@ const breadcrumbSchema = {
         </summary>
         <div class="editorial-intro__body">
           <p>
-            Bietigheim-Bissingen besticht durch seine historische Altstadt und ein hochkarätiges Kulturangebot. 
-            Zentrale Anlaufstellen sind das <strong>Kronenzentrum</strong> für Events und die 
+            Bietigheim-Bissingen besticht durch seine historische Altstadt und ein hochkarätiges Kulturangebot.
+            Zentrale Anlaufstellen sind das <strong>Kronenzentrum</strong> für Events und die
             <strong>Städtische Galerie</strong> für Kunstliebhaber.
           </p>
         </div>
