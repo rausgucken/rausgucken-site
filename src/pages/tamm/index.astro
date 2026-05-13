@@ -54,10 +54,21 @@ const breadcrumbSchema = {
     <h1>Veranstaltungen in Tamm</h1>
     <p class="page-subtitle">
       <FreshnessStamp scrapedAt={meta.scraped_at} />
+      <a href="/tamm/feed.xml" class="feed-link" title="Atom-Feed abonnieren" aria-label="Atom-Feed für Tamm abonnieren">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <circle cx="6.18" cy="17.82" r="2.18"/>
+          <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
+        </svg>
+        Feed
+      </a>
     </p>
   </div>
 
   <FilterBar />
+
+  <!-- Pagefind search — build-time index, German stemming -->
+  <div id="search" class="pagefind-search-wrap"></div>
+
 
   <div class="city-layout">
     <div class="city-main">
@@ -141,6 +152,45 @@ const breadcrumbSchema = {
   </div>
 
   <script src="/scripts/app.js" is:inline></script>
+
+  <script>
+    if (typeof window.__pagefind_loaded === 'undefined' && document.getElementById('search')) {
+      window.__pagefind_loaded = true;
+      const pf = document.createElement('script');
+      pf.type = 'module';
+      pf.textContent = `
+        import PagefindUI from '/pagefind/pagefind-ui.js';
+        new PagefindUI({
+          element: '#search',
+          showImages: false,
+          translations: {
+            placeholder: 'Veranstaltungen suchen…',
+            zero_results: 'Keine Treffer für "[SEARCH_TERM]".',
+            searching: 'Suche läuft…',
+          },
+          resetStyles: false,
+        });
+      `;
+      document.head.appendChild(pf);
+    }
+  </script>
+
+  <style>
+    .pagefind-search-wrap {
+      max-width: 720px; margin: 0 auto 1.25rem; padding: 0;
+    }
+    .pagefind-ui__search-input {
+      background: var(--surface-card) !important;
+      border: 1.5px solid var(--border) !important;
+      color: var(--text) !important;
+      border-radius: var(--radius) !important;
+    }
+    .pagefind-ui__search-input:focus {
+      border-color: var(--coral) !important;
+      outline: none !important;
+    }
+    .pagefind-ui__search-clear { color: var(--text-60) !important; }
+  </style>
 </Base>
 
 <style>
