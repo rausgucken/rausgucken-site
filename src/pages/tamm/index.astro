@@ -1,0 +1,201 @@
+---
+import Base from "../../layouts/Base.astro";
+import FreshnessStamp from '../../components/FreshnessStamp.astro';
+import EventCard from "../../components/EventCard.astro";
+import FilterBar from "../../components/FilterBar.astro";
+
+import eventsData from "../../../public/data/ludwigsburg/events-current.json";
+import metaData from "../../../public/data/ludwigsburg/meta.json";
+
+const allEvents = eventsData;
+const meta = metaData;
+
+// Filter to Tamm events only
+const events = allEvents.filter((e: any) => e.source === "tamm");
+
+const dated    = events.filter((e: any) => e.date_start);
+const standing = events.filter((e: any) => !e.date_start);
+
+const today = new Date().toISOString().split("T")[0];
+
+const buildDate = new Date();
+const monthDE = buildDate.toLocaleDateString("de-DE", { month: "long" });
+const yearDE  = buildDate.getFullYear();
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Veranstaltungen in Tamm",
+  "description": `${events.length} aktuelle Veranstaltungen in Tamm – Feste, Konzerte, Sport und mehr.`,
+  "url": "https://www.rausgucken.de/tamm/",
+  "inLanguage": "de-DE",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://www.rausgucken.de" },
+    { "@type": "ListItem", "position": 2, "name": "Tamm", "item": "https://www.rausgucken.de/tamm/" },
+  ],
+};
+---
+
+<Base
+  title={`${events.length} Veranstaltungen in Tamm ${monthDE} ${yearDE} | rausgucken.de`}
+  description={`Entdecke ${events.length} aktuelle Veranstaltungen in Tamm – Feste, Konzerte, Sport und mehr. Täglich aktuell von Stadt Tamm.`}
+  city="tamm"
+  schema={[jsonLd, breadcrumbSchema]}
+>
+  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+    <a href="https://www.rausgucken.de">rausgucken.de</a>
+    <span aria-hidden="true"> › </span>
+    <span aria-current="page">Tamm</span>
+  </nav>
+
+  <div class="page-header">
+    <h1>Veranstaltungen in Tamm</h1>
+    <p class="page-subtitle">
+      <FreshnessStamp scrapedAt={meta.scraped_at} />
+    </p>
+  </div>
+
+  <FilterBar />
+
+  <div class="city-layout">
+    <div class="city-main">
+
+      <div class="empty-state" id="empty-state" aria-live="polite" hidden>
+        <div class="empty-state-inner">
+          <p class="empty-headline">Keine Treffer für diese Filter.</p>
+          <p class="empty-body">Vielleicht ist heute ein guter Tag, einfach rauszugehen!</p>
+          <div class="empty-ctas">
+            <a href="https://www.tamm.org/de/kultur-freizeit/veranstaltungskalender" target="_blank" rel="noopener noreferrer" class="empty-cta">
+              Stadt Tamm Kalender →
+            </a>
+            <a href="/ludwigsburg" class="empty-cta">
+              Ludwigsburg entdecken →
+            </a>
+          </div>
+          <button class="empty-reset" id="empty-reset-btn" type="button">
+            Filter zurücksetzen
+          </button>
+        </div>
+      </div>
+
+      {dated.length > 0 && (
+        <section id="section-dated">
+          <h2 class="section-heading">Kommende Veranstaltungen</h2>
+          <div class="event-list" id="event-grid">
+            {dated.map((ev: any) => (
+              <EventCard event={ev} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {standing.length > 0 && (
+        <section id="section-standing" style="margin-top: 3rem;">
+          <h2 class="section-heading">Dauerveranstaltungen</h2>
+          <p class="section-note">Diese Angebote finden regelmäßig statt. Termine auf der Originalseite prüfen.</p>
+          <div class="event-list">
+            {standing.map((ev: any) => (
+              <EventCard event={ev} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {events.length === 0 && (
+        <div class="empty-state empty-state--visible">
+          <div class="empty-state-inner">
+            <p class="empty-headline">Aktuell keine Veranstaltungen verfügbar.</p>
+            <p class="empty-body">Schau bald wieder vorbei — oder geh einfach schon mal raus!</p>
+            <div class="empty-ctas">
+              <a href="https://www.tamm.org/de/kultur-freizeit/veranstaltungskalender" target="_blank" rel="noopener noreferrer" class="empty-cta">
+                Stadt Tamm Kalender →
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <details class="editorial-intro" id="editorial-intro">
+        <summary class="editorial-intro__toggle">
+          Über Tamm — Veranstaltungen &amp; Freizeittipps
+        </summary>
+        <div class="editorial-intro__body">
+          <p>
+            Tamm ist eine lebendige Gemeinde im Landkreis Ludwigsburg mit einem vielfältigen
+            Vereinsleben und regelmäßigen Veranstaltungen. Der <strong>Bürgersaal</strong> und
+            die <strong>Kelter</strong> sind die zentralen Veranstaltungsorte für Konzerte,
+            Feste und kulturelle Angebote. Die <strong>Bartholomäuskirche</strong> ist eines
+            der markantesten Wahrzeichen des Ortes.
+          </p>
+          <p>
+            Tamm bietet mit dem <strong>Rathausplatz</strong> und den umliegenden Vereinsheimen
+            einen starken Gemeinschaftssinn — von Wandergruppen über Musikvereine bis zu
+            Sportveranstaltungen. Viele Events sind kostenlos und für die ganze Familie geeignet.
+          </p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+
+  <script src="/scripts/app.js" is:inline></script>
+</Base>
+
+<style>
+  .page-header { margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+  .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+  .city-layout { display: block; }
+  .city-main { display: block; }
+  .section-heading {
+    font-size: 1.15rem; font-weight: 600; margin-bottom: 1rem;
+    padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
+    max-width: 720px; margin-left: auto; margin-right: auto;
+  }
+  .section-note {
+    font-size: 0.85rem; color: var(--text-60); margin-bottom: 1rem;
+    margin-top: -0.5rem; max-width: 720px; margin-left: auto; margin-right: auto;
+  }
+  .empty-state { display: none; padding: 3rem 1.5rem; text-align: center; }
+  .empty-state:not([hidden]), .empty-state--visible { display: block; }
+  .empty-state-inner {
+    background: var(--surface-card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 2.5rem 2rem; box-shadow: var(--shadow-card);
+  }
+  .empty-headline { font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
+  .empty-body { font-size: 0.95rem; color: var(--text-60); margin-bottom: 1.5rem; }
+  .empty-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-bottom: 1.25rem; }
+  .empty-cta {
+    background: var(--coral); color: var(--text); font-size: 0.875rem; font-weight: 600;
+    padding: 0.6rem 1.25rem; border-radius: var(--radius-sm); text-decoration: none;
+    transition: background 150ms; min-height: 44px; display: inline-flex; align-items: center;
+  }
+  .empty-cta:hover { background: var(--coral-dark); text-decoration: none; }
+  .empty-reset {
+    background: transparent; border: 1.5px solid var(--border); border-radius: var(--radius-sm);
+    padding: 0.5rem 1.25rem; font-size: 0.85rem; font-weight: 600; color: var(--text-60);
+    cursor: pointer; min-height: 44px; transition: border-color 150ms, color 150ms;
+  }
+  .empty-reset:hover { border-color: var(--coral); color: var(--coral); }
+  .editorial-intro {
+    max-width: 720px; margin: 2.5rem auto 1.25rem;
+    border: 1px solid var(--border); border-radius: var(--radius);
+    background: var(--surface-card);
+  }
+  .editorial-intro__toggle {
+    padding: 0.75rem 1.1rem; font-size: 0.85rem; font-weight: 600;
+    color: var(--text-60); cursor: pointer; list-style: none;
+    display: flex; align-items: center; gap: 0.5rem; user-select: none;
+  }
+  .editorial-intro__toggle::-webkit-details-marker { display: none; }
+  .editorial-intro__toggle::before { content: "▸"; font-size: 0.7rem; transition: transform 150ms; flex-shrink: 0; }
+  details.editorial-intro[open] .editorial-intro__toggle::before { transform: rotate(90deg); }
+  .editorial-intro__body { padding: 0 1.1rem 1rem; border-top: 1px solid var(--border); }
+  .editorial-intro__body p { font-size: 0.875rem; line-height: 1.65; color: var(--text); opacity: 0.85; margin-top: 0.85rem; margin-bottom: 0; }
+  .editorial-intro__body strong { font-weight: 600; opacity: 1; }
+</style>
