@@ -1,6 +1,7 @@
 ---
 // src/components/EventCard.astro
 const { event: ev } = Astro.props;
+const city = ev.city || "ludwigsburg";
 import FreshnessStamp from './FreshnessStamp.astro';
 
 function formatDate(iso) {
@@ -52,7 +53,7 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
 >
   
   <a
-    href={`/ludwigsburg/events/${ev.slug}`}
+    href={`/${city}/events/${ev.slug}`}
     class="card-link"
     aria-label={`${ev.title}${dateObj ? `, ${dateObj.full}` : ""}`}
   >
