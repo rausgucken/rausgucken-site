@@ -4,17 +4,14 @@ import FreshnessStamp from '../../components/FreshnessStamp.astro';
 import EventCard from "../../components/EventCard.astro";
 import FilterBar from "../../components/FilterBar.astro";
 
-import eventsData from "../../../public/data/ludwigsburg/events-current.json";
-import metaData from "../../../public/data/ludwigsburg/meta.json";
+import eventsData from "../../../public/data/tamm/events-current.json";
+import metaData from "../../../public/data/tamm/meta.json";
 
-const allEvents = eventsData;
+const events = eventsData;
 const meta = metaData;
 
-// Filter to Tamm events only
-const events = allEvents.filter((e: any) => e.source === "tamm");
-
-const dated    = events.filter((e: any) => e.date_start);
-const standing = events.filter((e: any) => !e.date_start);
+const dated    = events.filter(e => e.date_start);
+const standing = events.filter(e => !e.date_start);
 
 const today = new Date().toISOString().split("T")[0];
 
@@ -87,7 +84,7 @@ const breadcrumbSchema = {
         <section id="section-dated">
           <h2 class="section-heading">Kommende Veranstaltungen</h2>
           <div class="event-list" id="event-grid">
-            {dated.map((ev: any) => (
+            {dated.map((ev) => (
               <EventCard event={ev} />
             ))}
           </div>
@@ -99,7 +96,7 @@ const breadcrumbSchema = {
           <h2 class="section-heading">Dauerveranstaltungen</h2>
           <p class="section-note">Diese Angebote finden regelmäßig statt. Termine auf der Originalseite prüfen.</p>
           <div class="event-list">
-            {standing.map((ev: any) => (
+            {standing.map((ev) => (
               <EventCard event={ev} />
             ))}
           </div>
