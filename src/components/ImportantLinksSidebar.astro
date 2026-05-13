@@ -9,7 +9,8 @@ type LinkEntry = {
   isHeading?: boolean;
 };
 
-const links: LinkEntry[] = linksJson as LinkEntry[];
+const { links: linksProp } = Astro.props;
+const links: LinkEntry[] = (linksProp ?? linksJson) as LinkEntry[];
 const resolvedLinks = links.map((link, i) => ({
   ...link,
   resolvedUrl: link.url || '#',

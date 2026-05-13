@@ -3,15 +3,17 @@ import Base from "../../layouts/Base.astro";
 import FreshnessStamp from '../../components/FreshnessStamp.astro';
 import EventCard from "../../components/EventCard.astro";
 import FilterBar from "../../components/FilterBar.astro";
+import ImportantLinksSidebar from "../../components/ImportantLinksSidebar.astro";
 
 import eventsData from "../../../public/data/tamm/events-current.json";
 import metaData from "../../../public/data/tamm/meta.json";
+import linksData from "../../../config/important-links-tamm.json";
 
 const events = eventsData;
 const meta = metaData;
 
-const dated    = events.filter(e => e.date_start);
-const standing = events.filter(e => !e.date_start);
+const dated    = events.filter((e: any) => e.date_start);
+const standing = events.filter((e: any) => !e.date_start);
 
 const today = new Date().toISOString().split("T")[0];
 
@@ -40,7 +42,7 @@ const breadcrumbSchema = {
 
 <Base
   title={`${events.length} Veranstaltungen in Tamm ${monthDE} ${yearDE} | rausgucken.de`}
-  description={`Entdecke ${events.length} aktuelle Veranstaltungen in Tamm – Feste, Konzerte, Sport und mehr. Täglich aktuell von Stadt Tamm.`}
+  description={`Entdecke ${events.length} aktuelle Veranstaltungen in Tamm – Feste, Konzerte, Sport und mehr. Täglich aktuell von der Gemeinde Tamm.`}
   city="tamm"
   schema={[jsonLd, breadcrumbSchema]}
 >
@@ -54,6 +56,11 @@ const breadcrumbSchema = {
     <h1>Veranstaltungen in Tamm</h1>
     <p class="page-subtitle">
       <FreshnessStamp scrapedAt={meta.scraped_at} />
+      {meta.sources_failed && meta.sources_failed.length > 0 && (
+        <span class="sources-chip" role="alert" title={`Nicht erreichbar: ${meta.sources_failed.join(", ")}`}>
+          ⚠ {meta.sources_failed.length} {meta.sources_failed.length === 1 ? "Quelle" : "Quellen"} fehlen
+        </span>
+      )}
       <a href="/tamm/feed.xml" class="feed-link" title="Atom-Feed abonnieren" aria-label="Atom-Feed für Tamm abonnieren">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <circle cx="6.18" cy="17.82" r="2.18"/>
@@ -64,11 +71,10 @@ const breadcrumbSchema = {
     </p>
   </div>
 
-  <FilterBar />
-
-  <!-- Pagefind search — build-time index, German stemming -->
+  <!-- Pagefind search -->
   <div id="search" class="pagefind-search-wrap"></div>
 
+  <FilterBar />
 
   <div class="city-layout">
     <div class="city-main">
@@ -78,7 +84,7 @@ const breadcrumbSchema = {
           <p class="empty-headline">Keine Treffer für diese Filter.</p>
           <p class="empty-body">Vielleicht ist heute ein guter Tag, einfach rauszugehen!</p>
           <div class="empty-ctas">
-            <a href="https://www.tamm.org/de/kultur-freizeit/veranstaltungskalender" target="_blank" rel="noopener noreferrer" class="empty-cta">
+            <a href="https://www.tamm.de/de/kultur-freizeit/veranstaltungskalender" target="_blank" rel="noopener noreferrer" class="empty-cta">
               Stadt Tamm Kalender →
             </a>
             <a href="/ludwigsburg" class="empty-cta">
@@ -95,7 +101,7 @@ const breadcrumbSchema = {
         <section id="section-dated">
           <h2 class="section-heading">Kommende Veranstaltungen</h2>
           <div class="event-list" id="event-grid">
-            {dated.map((ev) => (
+            {dated.map((ev: any) => (
               <EventCard event={ev} />
             ))}
           </div>
@@ -107,7 +113,7 @@ const breadcrumbSchema = {
           <h2 class="section-heading">Dauerveranstaltungen</h2>
           <p class="section-note">Diese Angebote finden regelmäßig statt. Termine auf der Originalseite prüfen.</p>
           <div class="event-list">
-            {standing.map((ev) => (
+            {standing.map((ev: any) => (
               <EventCard event={ev} />
             ))}
           </div>
@@ -120,7 +126,7 @@ const breadcrumbSchema = {
             <p class="empty-headline">Aktuell keine Veranstaltungen verfügbar.</p>
             <p class="empty-body">Schau bald wieder vorbei — oder geh einfach schon mal raus!</p>
             <div class="empty-ctas">
-              <a href="https://www.tamm.org/de/kultur-freizeit/veranstaltungskalender" target="_blank" rel="noopener noreferrer" class="empty-cta">
+              <a href="https://www.tamm.de/de/kultur-freizeit/veranstaltungskalender" target="_blank" rel="noopener noreferrer" class="empty-cta">
                 Stadt Tamm Kalender →
               </a>
             </div>
@@ -145,104 +151,99 @@ const breadcrumbSchema = {
             einen starken Gemeinschaftssinn — von Wandergruppen über Musikvereine bis zu
             Sportveranstaltungen. Viele Events sind kostenlos und für die ganze Familie geeignet.
           </p>
+          <p>
+            Die <strong>Bücherei Tamm</strong> ist mehr als eine Ausleihstelle — sie ist ein
+            Treffpunkt für die Gemeinde. Aktuell entsteht ein neuer
+            <strong>Freundeskreis der Bücherei Tamm</strong>. Interessierte Tammerinnen und
+            Tammer sind herzlich eingeladen mitzumachen.
+            Informationen unter <a href="https://www.bibliotheks-freundeskreise.de" target="_blank" rel="noopener noreferrer">bibliotheks-freundeskreise.de</a>.
+          </p>
         </div>
       </details>
 
+    </div>
+
+    <div class="city-sidebar">
+      <ImportantLinksSidebar links={linksData} />
     </div>
   </div>
 
   <script src="/scripts/app.js" is:inline></script>
 
-  <script>
-    if (typeof window.__pagefind_loaded === 'undefined' && document.getElementById('search')) {
-      window.__pagefind_loaded = true;
-      const pf = document.createElement('script');
-      pf.type = 'module';
-      pf.textContent = `
-        import PagefindUI from '/pagefind/pagefind-ui.js';
-        new PagefindUI({
-          element: '#search',
-          showImages: false,
-          translations: {
-            placeholder: 'Veranstaltungen suchen…',
-            zero_results: 'Keine Treffer für "[SEARCH_TERM]".',
-            searching: 'Suche läuft…',
-          },
-          resetStyles: false,
-        });
-      `;
-      document.head.appendChild(pf);
-    }
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', function() {
+      if (typeof window.__pagefind_loaded === 'undefined' && document.getElementById('search')) {
+        window.__pagefind_loaded = true;
+        var s = document.createElement('script');
+        s.src = '/pagefind/pagefind-ui.js';
+        s.onload = function() {
+          new PagefindUI({
+            element: '#search',
+            showImages: false,
+            resetStyles: false,
+            excerptLength: 15,
+            translations: {
+              placeholder: 'Veranstaltungen suchen…',
+              zero_results: 'Keine Ergebnisse für "[QUERY]"',
+              many_results: '[COUNT] Ergebnisse für "[QUERY]"',
+              one_result: '1 Ergebnis für "[QUERY]"',
+              load_more: 'Mehr laden',
+              searching: 'Suche läuft…',
+            }
+          });
+        };
+        document.head.appendChild(s);
+      }
+    });
   </script>
-
-  <style>
-    .pagefind-search-wrap {
-      max-width: 720px; margin: 0 auto 1.25rem; padding: 0;
-    }
-    .pagefind-ui__search-input {
-      background: var(--surface-card) !important;
-      border: 1.5px solid var(--border) !important;
-      color: var(--text) !important;
-      border-radius: var(--radius) !important;
-    }
-    .pagefind-ui__search-input:focus {
-      border-color: var(--coral) !important;
-      outline: none !important;
-    }
-    .pagefind-ui__search-clear { color: var(--text-60) !important; }
-  </style>
 </Base>
 
 <style>
   .page-header { margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
   h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
   .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+  .feed-link { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.78rem; font-weight: 600; color: var(--coral); text-decoration: none; opacity: 0.8; transition: opacity 150ms; }
+  .feed-link:hover { opacity: 1; text-decoration: none; }
+  .feed-link svg { flex-shrink: 0; }
+  .sources-chip { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.75rem; font-weight: 600; color: #b45309; background: #fef3c7; border: 1px solid #fde68a; border-radius: 20px; padding: 2px 10px; cursor: default; }
+  html.dark .sources-chip { color: #fbbf24; background: rgba(251,191,36,0.12); border-color: rgba(251,191,36,0.25); }
   .city-layout { display: block; }
   .city-main { display: block; }
-  .section-heading {
-    font-size: 1.15rem; font-weight: 600; margin-bottom: 1rem;
-    padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
-    max-width: 720px; margin-left: auto; margin-right: auto;
+  @media (min-width: 961px) {
+    .city-sidebar { display: block; position: fixed; top: 80px; left: calc(50% + 384px); width: 210px; max-height: calc(100vh - 100px); overflow-y: auto; scrollbar-width: none; -ms-overflow-style: none; }
+    .city-sidebar::-webkit-scrollbar { display: none; }
+    .city-sidebar :global(.important-links-sidebar) { display: block; }
   }
-  .section-note {
-    font-size: 0.85rem; color: var(--text-60); margin-bottom: 1rem;
-    margin-top: -0.5rem; max-width: 720px; margin-left: auto; margin-right: auto;
-  }
+  @media (max-width: 960px) { .city-sidebar { display: none; } }
+  .section-heading { font-size: 1.15rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); max-width: 720px; margin-left: auto; margin-right: auto; }
+  .section-note { font-size: 0.85rem; color: var(--text-60); margin-bottom: 1rem; margin-top: -0.5rem; max-width: 720px; margin-left: auto; margin-right: auto; }
   .empty-state { display: none; padding: 3rem 1.5rem; text-align: center; }
   .empty-state:not([hidden]), .empty-state--visible { display: block; }
-  .empty-state-inner {
-    background: var(--surface-card); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 2.5rem 2rem; box-shadow: var(--shadow-card);
-  }
+  .empty-state-inner { background: var(--surface-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem 2rem; box-shadow: var(--shadow-card); }
   .empty-headline { font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
   .empty-body { font-size: 0.95rem; color: var(--text-60); margin-bottom: 1.5rem; }
   .empty-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-bottom: 1.25rem; }
-  .empty-cta {
-    background: var(--coral); color: var(--text); font-size: 0.875rem; font-weight: 600;
-    padding: 0.6rem 1.25rem; border-radius: var(--radius-sm); text-decoration: none;
-    transition: background 150ms; min-height: 44px; display: inline-flex; align-items: center;
-  }
+  .empty-cta { background: var(--coral); color: var(--text); font-size: 0.875rem; font-weight: 600; padding: 0.6rem 1.25rem; border-radius: var(--radius-sm); text-decoration: none; transition: background 150ms; min-height: 44px; display: inline-flex; align-items: center; }
   .empty-cta:hover { background: var(--coral-dark); text-decoration: none; }
-  .empty-reset {
-    background: transparent; border: 1.5px solid var(--border); border-radius: var(--radius-sm);
-    padding: 0.5rem 1.25rem; font-size: 0.85rem; font-weight: 600; color: var(--text-60);
-    cursor: pointer; min-height: 44px; transition: border-color 150ms, color 150ms;
-  }
+  .empty-reset { background: transparent; border: 1.5px solid var(--border); border-radius: var(--radius-sm); padding: 0.5rem 1.25rem; font-size: 0.85rem; font-weight: 600; color: var(--text-60); cursor: pointer; min-height: 44px; transition: border-color 150ms, color 150ms; }
   .empty-reset:hover { border-color: var(--coral); color: var(--coral); }
-  .editorial-intro {
-    max-width: 720px; margin: 2.5rem auto 1.25rem;
-    border: 1px solid var(--border); border-radius: var(--radius);
-    background: var(--surface-card);
-  }
-  .editorial-intro__toggle {
-    padding: 0.75rem 1.1rem; font-size: 0.85rem; font-weight: 600;
-    color: var(--text-60); cursor: pointer; list-style: none;
-    display: flex; align-items: center; gap: 0.5rem; user-select: none;
-  }
+  .editorial-intro { max-width: 720px; margin: 2.5rem auto 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface-card); }
+  .editorial-intro__toggle { padding: 0.75rem 1.1rem; font-size: 0.85rem; font-weight: 600; color: var(--text-60); cursor: pointer; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none; }
   .editorial-intro__toggle::-webkit-details-marker { display: none; }
   .editorial-intro__toggle::before { content: "▸"; font-size: 0.7rem; transition: transform 150ms; flex-shrink: 0; }
   details.editorial-intro[open] .editorial-intro__toggle::before { transform: rotate(90deg); }
+  .editorial-intro__toggle:hover { color: var(--text); }
   .editorial-intro__body { padding: 0 1.1rem 1rem; border-top: 1px solid var(--border); }
   .editorial-intro__body p { font-size: 0.875rem; line-height: 1.65; color: var(--text); opacity: 0.85; margin-top: 0.85rem; margin-bottom: 0; }
   .editorial-intro__body strong { font-weight: 600; opacity: 1; }
+  .editorial-intro__body a { color: var(--coral); }
+  .pagefind-search-wrap { max-width: 720px; margin: 0 auto 1.5rem; }
+  .pagefind-ui__search-input { background: var(--surface-card) !important; border: 1.5px solid var(--border) !important; border-radius: var(--radius-sm) !important; color: var(--text) !important; font-family: var(--font-body) !important; font-size: 0.95rem !important; }
+  .pagefind-ui__search-input:focus { border-color: var(--coral) !important; outline: none !important; }
+  .pagefind-ui__search-clear { color: var(--text-60) !important; }
+  .pagefind-ui__result { border-bottom: 1px solid var(--border) !important; }
+  .pagefind-ui__result-title a { color: var(--coral) !important; font-family: var(--font-heading) !important; }
+  .pagefind-ui__result-excerpt { color: var(--text-60) !important; font-size: 0.875rem !important; }
+  .pagefind-ui__button { background: var(--coral) !important; color: var(--text) !important; border-radius: var(--radius-sm) !important; font-weight: 600 !important; }
 </style>
