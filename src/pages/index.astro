@@ -241,6 +241,14 @@ const municipalitiesJson = JSON.stringify(municipalities);
 const MUNICIPALITIES = JSON.parse(municipalitiesJson);
 
 const svg          = document.getElementById("landkreis-map");
+
+// Fix fill-rule: SVG inline attr beats CSS, must set via JS
+  if (svg) {
+    svg.querySelectorAll(".muni.covered").forEach(p => {
+      p.setAttribute("fill-rule", "nonzero");
+    });
+  }
+
 const tooltip      = document.getElementById("map-tooltip");
 const noHint       = document.getElementById("no-selection-hint");
 const selBox       = document.getElementById("selected-city-box");
@@ -349,7 +357,6 @@ if (svg) {
     if (!path) return;
     const m = dataMap[path.dataset.cityId];
     if (!m) return;
-    if (m.covered && m.url) { window.location.href = m.url; return; }
     selectCity(m);
   });
 }
@@ -397,7 +404,6 @@ function pickSuggestion(id) {
   const m = dataMap[id];
   if (!m) return;
   suggestions.hidden = true;
-  if (m.covered && m.url) { window.location.href = m.url; return; }
   selectCity(m);
 }
 
