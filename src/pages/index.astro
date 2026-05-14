@@ -186,6 +186,10 @@ const municipalitiesJson = JSON.stringify(municipalities);
     filter: brightness(0.7) !important;
     opacity: 1 !important;
   }
+  .map-container :global(.muni.covered.in-radius) {
+    stroke: #CC3322 !important;
+    stroke-width: 2px !important;
+  }
   .map-container :global(.muni.dimmed) { opacity: 0.12 !important; }
   .map-container :global(.muni.covered) { cursor: pointer; }
   /* Fix multi-subpath cities: evenodd cuts holes, nonzero fills all islands */
@@ -329,6 +333,7 @@ function updateRadius() {
     radiusCityList.innerHTML = "";
     const combinedLink = document.getElementById("radius-combined-link");
     if (combinedLink) combinedLink.hidden = true;
+    if (svg) svg.querySelectorAll(".muni.in-radius").forEach(p => p.classList.remove("in-radius"));
     return;
   }
   const inRadius = MUNICIPALITIES
@@ -341,6 +346,11 @@ function updateRadius() {
     svg.querySelectorAll(".muni").forEach(p => {
       if (p.classList.contains("selected")) return;
       p.classList.toggle("dimmed", !inIds.has(p.dataset.cityId));
+    });
+    // Highlight covered cities within radius with dark border
+    svg.querySelectorAll(".muni.covered").forEach(p => {
+      const inRange = inIds.has(p.dataset.cityId) && !p.classList.contains("selected");
+      p.classList.toggle("in-radius", inRange);
     });
   }
   const covInRadius = inRadius.filter(m => m.covered);
