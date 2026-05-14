@@ -6,8 +6,8 @@ import FilterBar from "../../components/FilterBar.astro";
 import ImportantLinksSidebar from "../../components/ImportantLinksSidebar.astro";
 import FAQBlock from "../../components/FAQBlock.astro";
 
-import eventsData from "../../../public/data/landkreis-ludwigsburg/events-current.json";
-import metaData from "../../../public/data/ludwigsburg/meta.json";
+import eventsData from "../../../../public/data/ludwigsburg/events-current.json";
+import metaData from "../../../../public/data/ludwigsburg/meta.json";
 
 const events = (eventsData as any).events ?? eventsData;
 const meta = metaData;
@@ -40,7 +40,7 @@ const breadcrumbSchema = {
   ],
 };
 
-import tipsRaw from '../../data/editorial-tips.json';
+import tipsRaw from '../../../data/editorial-tips.json';
 const featuredSlug = Object.entries(tipsRaw).find(
   ([, v]) => typeof v === 'object' && v.featured === true
 )?.[0] ?? null;
@@ -53,6 +53,7 @@ const featuredEvent = featuredSlug
   title={`${events.length} Veranstaltungen in Ludwigsburg ${monthDE} ${yearDE} | rausgucken.de`}
   description={`Entdecke ${events.length} aktuelle Veranstaltungen in Ludwigsburg – Ausstellungen, Konzerte, Workshops und mehr. Täglich aktuell von Residenzschloss bis Stadtbibliothek.`}
   city="ludwigsburg"
+  canonical="https://www.rausgucken.de/ludwigsburg/"
   schema={[jsonLd, breadcrumbSchema]}
 >
   <nav class="breadcrumb" aria-label="Brotkrumennavigation">
@@ -62,7 +63,7 @@ const featuredEvent = featuredSlug
   </nav>
 
   <div class="page-header">
-    <h1>Veranstaltungen in Ludwigsburg</h1>
+    <h1>Veranstaltungen in der Stadt Ludwigsburg</h1>
     <p class="page-subtitle">
       <FreshnessStamp scrapedAt={meta.scraped_at} />
       {meta.sources_failed && meta.sources_failed.length > 0 && (
