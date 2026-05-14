@@ -36,6 +36,7 @@ async function init() {
   }
 
   const municipalities = distData.municipalities;
+  window._karteData = municipalities; // expose for click handler
   const covered = municipalities.filter(m => m.covered);
 
   // 2. Load events for all covered cities in parallel
@@ -76,6 +77,10 @@ async function init() {
   }
 
   slider.value = SLIDER_DEFAULT;
+
+  // Add city name labels to SVG
+  addCityLabels(municipalities);
+
   slider.addEventListener("input", debounce(update, 50));
 
   // 4. Wire SVG tooltip
@@ -161,9 +166,10 @@ function initMapClicks() {
     const path = e.target.closest(".muni");
     if (!path) return;
     const cityId = path.dataset.cityId;
-    const block = document.getElementById(`city-block-${cityId}`);
-    if (block) {
-      block.scrollIntoView({ behavior: "smooth", block: "start" });
+    // Find the municipality URL from distances data
+    const muni = window._karteData?.find(m => m.id === cityId);
+    if (muni?.url) {
+      window.location.href = muni.url;
     }
   });
 }
@@ -256,6 +262,48 @@ function updateCounter(municipalities, eventsByCity, radius) {
 
   const stadtText = inRange.length === 1 ? "Stadt" : "Städte";
   el.textContent = `${inRange.length} ${stadtText} · ${totalEvents} Veranstaltungen im Umkreis`;
+}
+
+// ── City name labels ──────────────────────────────────────────────────────────
+
+function addCityLabels(municipalities) {
+  const svg = document.getElementById("landkreis-map");
+  if (!svg) return;
+
+  // Get SVG viewBox to compute coordinate mapping
+  const vb = svg.viewBox.baseVal;
+
+  municipalities.forEach(m => {
+    const path = svg.querySelector(`[data-city-id="${m.id}"]`);
+    if (!path) return;
+
+    // Get bounding box of the path in SVG coordinates
+    try {
+      const bbox = path.getBBox();
+      const cx = bbox.x + bbox.width / 2;
+      const cy = bbox.y + bbox.height / 2;
+
+      const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      text.setAttribute("x", cx);
+      text.setAttribute("y", cy);
+      text.setAttribute("text-anchor", "middle");
+      text.setAttribute("dominant-baseline", "middle");
+      text.setAttribute("font-size", "4.5");
+      text.setAttribute("font-family", "Inter, sans-serif");
+      text.setAttribute("fill", m.covered ? "#FF6F61" : "#64748B");
+      text.setAttribute("pointer-events", "none");
+      text.setAttribute("class", "city-label");
+      // Short name: drop "am Neckar" etc for brevity
+      const shortName = m.name
+        .replace(" am Neckar", "")
+        .replace(" an der Enz", "")
+        .replace("-Bissingen", "");
+      text.textContent = shortName;
+      svg.appendChild(text);
+    } catch(e) {
+      // getBBox can fail for hidden elements
+    }
+  });
 }
 
 // ── Helpers ────────────────────────────────────────────────────────────────────

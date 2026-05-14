@@ -7,7 +7,8 @@
   <title>Landkreis Ludwigsburg – Karte</title>
   <desc>Karte der Gemeinden im Landkreis Ludwigsburg. Hervorgehobene Gemeinden haben Veranstaltungsseiten auf rausgucken.de.</desc>
   <style>
-    .muni { cursor: pointer; transition: opacity 150ms; }
+    .muni { cursor: default; transition: opacity 150ms; }
+    .muni.covered { cursor: pointer; }
     .muni:hover { opacity: 0.85; }
     .muni.in-range.covered { fill: #FF6F61; opacity: 1.0; }
     .muni.out-of-range.covered { fill: #FF6F61; opacity: 0.25; }
