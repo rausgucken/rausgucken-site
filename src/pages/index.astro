@@ -336,9 +336,9 @@ function updateRadius() {
     if (combinedLink) {
       const allCovered = [selectedCity, ...covInRadius].filter(m => m.url);
       if (allCovered.length > 1) {
-        // Link to the selected city page with a note — best we can do without a combined page
+        const total = allCovered.reduce((s,m) => s + (m.event_count||0), 0);
         combinedLink.href = selectedCity.url || "#";
-        combinedLink.textContent = `Alle ${allCovered.reduce((s,m)=>s+m.event_count,0)} Events im Umkreis →`;
+        combinedLink.textContent = `${total} Events in ${allCovered.length} Städten — Alle Städte einzeln anzeigen ↓`;
         combinedLink.hidden = false;
       } else {
         combinedLink.hidden = true;
