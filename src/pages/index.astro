@@ -181,6 +181,9 @@ const municipalitiesJson = JSON.stringify(municipalities);
   }
   .map-container :global(.muni.dimmed) { opacity: 0.12 !important; }
   .map-container :global(.muni.covered) { cursor: pointer; }
+  /* Fix multi-subpath cities: evenodd cuts holes, nonzero fills all islands */
+  .map-container :global(.muni.covered) { fill-rule: nonzero !important; }
+  .map-container :global(.muni.in-range.covered) { fill: #FF6F61 !important; opacity: 1.0 !important; }
   .map-placeholder { height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-60); }
   .map-tooltip {
     position: absolute; pointer-events: none;
