@@ -127,8 +127,9 @@ export function renderEventCard(ev) {
   article.dataset.ageMax   = ev.age_max ?? "";
   article.dataset.date     = ev.date_start ?? "";
 
+  const cityPath = ev.city || "ludwigsburg";
   article.innerHTML = `
-    <a href="/ludwigsburg/events/${esc(slug)}"
+    <a href="/${cityPath}/events/${esc(slug)}"
        class="card-link"
        aria-label="${esc(ariaLabel)}">
 
