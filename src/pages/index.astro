@@ -3,339 +3,148 @@ import Base from "../layouts/Base.astro";
 import { readFileSync } from "fs";
 import { resolve } from "path";
 
-// Read the committed SVG map at build time — inline it so no extra HTTP request
-// and no CORS/loading issues. File is ~280KB but compresses well (Brotli ~40KB).
 let svgMap = "";
 try {
-  const svgPath = resolve("src/assets/landkreis-map.svg");
-  svgMap = readFileSync(svgPath, "utf-8");
+  svgMap = readFileSync(resolve("src/assets/landkreis-map.svg"), "utf-8");
 } catch (e) {
-  // SVG not yet generated — will show empty map container
-  console.warn("[index.astro] landkreis-map.svg not found. Run: python pipeline/generate_svg_map.py");
+  console.warn("[index.astro] landkreis-map.svg not found");
 }
 ---
 
 <Base
   title="rausgucken.de — Veranstaltungen im Landkreis Ludwigsburg"
-  description="Entdecke Events, Führungen, Konzerte und Ausstellungen in Ludwigsburg, Tamm, Bietigheim und Umgebung."
+  description="Entdecke Events, Führungen, Konzerte und Ausstellungen im Landkreis Ludwigsburg."
 >
   <div class="hero">
     <div class="hero-text">
       <h1>Was ist los in deiner Stadt?</h1>
       <p class="hero-sub">
-        Events, Führungen, Konzerte und Ausstellungen im Landkreis Ludwigsburg — alles auf einen Blick.
+        Events im Landkreis Ludwigsburg — wähle deine Stadt auf der Karte.
       </p>
     </div>
 
-    <!-- Counter — updated by karte.js -->
     <p class="karte-counter-wrap">
       <span id="karte-counter" class="karte-counter">Lädt…</span>
     </p>
 
-    <!-- Slider -->
     <div class="slider-wrap">
       <label for="radius-slider" class="slider-label">
-        Umkreis: <strong id="radius-label">30 km</strong>
+        Umkreis ab Ludwigsburg: <strong id="radius-label">30 km</strong>
       </label>
-      <input
-        id="radius-slider"
-        type="range"
-        min="1"
-        max="55"
-        value="30"
-        step="1"
-        class="radius-slider"
-        aria-label="Umkreis in Kilometern"
-      />
+      <input id="radius-slider" type="range" min="1" max="55" value="30" step="1"
+             class="radius-slider" aria-label="Umkreis in Kilometern" />
       <div class="slider-ticks" aria-hidden="true">
-        <span>1 km</span>
-        <span>55 km</span>
+        <span>1 km</span><span>55 km</span>
       </div>
     </div>
 
-    <!-- Map + city blocks side by side on desktop, stacked on mobile -->
-    <div class="karte-layout">
-
-      <!-- SVG map column -->
+    <div class="map-and-list">
       <div class="map-container" role="img" aria-label="Karte des Landkreises Ludwigsburg">
         {svgMap
           ? <Fragment set:html={svgMap} />
           : <div class="map-placeholder">Karte nicht verfügbar</div>
         }
-        <!-- Tooltip — positioned by karte.js -->
         <div id="map-tooltip" class="map-tooltip" hidden></div>
       </div>
 
-
-
-    </div><!-- /.karte-layout -->
-  </div><!-- /.hero -->
+      <div class="city-list-wrap">
+        <p class="city-list-title">Städte im Umkreis</p>
+        <div id="city-list" class="city-list"></div>
+      </div>
+    </div>
+  </div>
 </Base>
 
 <style>
-  /* ── Hero ─────────────────────────────────────────────────────────────────── */
-  .hero { padding: 2.5rem 0 3rem; }
-
-  .hero-text { text-align: center; margin-bottom: 1.5rem; }
+  .hero { padding: 2rem 0 3rem; }
+  .hero-text { text-align: center; margin-bottom: 1.25rem; }
 
   h1 {
     font-family: var(--font-heading);
     font-weight: 800;
-    font-size: clamp(1.9rem, 5vw, 2.8rem);
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
     color: var(--text);
     letter-spacing: -0.03em;
     line-height: 1.1;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem;
   }
+  .hero-sub { font-size: 1rem; color: var(--text-60); max-width: 480px; margin: 0 auto; }
 
-  .hero-sub {
-    font-size: 1.05rem;
-    color: var(--text-60);
-    max-width: 520px;
-    margin: 0 auto;
-  }
-
-  /* ── Counter ──────────────────────────────────────────────────────────────── */
-  .karte-counter-wrap {
-    text-align: center;
-    margin: 0 0 1.25rem;
-  }
-
+  .karte-counter-wrap { text-align: center; margin: 0 0 1rem; }
   .karte-counter {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--text-60);
-    background: var(--tag-bg);
-    padding: 0.3rem 0.85rem;
-    border-radius: 20px;
+    font-size: 0.88rem; font-weight: 600; color: var(--text-60);
+    background: var(--tag-bg); padding: 0.3rem 0.85rem; border-radius: 20px;
   }
 
-  /* ── Slider ───────────────────────────────────────────────────────────────── */
-  .slider-wrap {
-    max-width: 480px;
-    margin: 0 auto 2rem;
-    padding: 0 1rem;
-  }
+  .slider-wrap { max-width: 480px; margin: 0 auto 1.75rem; padding: 0 1rem; }
+  .slider-label { display: block; text-align: center; font-size: 0.88rem; color: var(--text-60); margin-bottom: 0.4rem; }
+  .slider-label strong { color: var(--coral); font-weight: 700; }
+  .radius-slider { width: 100%; accent-color: var(--coral); cursor: pointer; height: 4px; }
+  .slider-ticks { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-60); opacity: 0.6; margin-top: 0.2rem; }
 
-  .slider-label {
-    display: block;
-    text-align: center;
-    font-size: 0.9rem;
-    color: var(--text-60);
-    margin-bottom: 0.5rem;
-  }
-
-  .slider-label strong {
-    color: var(--coral);
-    font-weight: 700;
-  }
-
-  .radius-slider {
-    width: 100%;
-    accent-color: var(--coral);
-    cursor: pointer;
-    height: 4px;
-  }
-
-  .slider-ticks {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.7rem;
-    color: var(--text-60);
-    opacity: 0.6;
-    margin-top: 0.25rem;
-  }
-
-  /* ── Layout ───────────────────────────────────────────────────────────────── */
-  .karte-layout {
+  /* ── Map + list layout ── */
+  .map-and-list {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    align-items: start;
-    max-width: 1100px;
+    grid-template-columns: 1fr 220px;
+    gap: 1.5rem;
+    max-width: 900px;
     margin: 0 auto;
+    align-items: start;
+  }
+  @media (max-width: 680px) {
+    .map-and-list { grid-template-columns: 1fr; }
   }
 
-  @media (max-width: 720px) {
-    .karte-layout {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  /* ── SVG Map ──────────────────────────────────────────────────────────────── */
+  /* ── Map ── */
   .map-container {
+    position: relative;
     border-radius: var(--radius);
-    overflow: hidden;
     border: 1px solid var(--border);
     background: var(--surface);
-    padding: 1rem;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
+    padding: 0.75rem;
   }
+  .map-container :global(svg#landkreis-map) { width: 100%; height: auto; display: block; }
+  .map-container :global(.muni) { transition: opacity 120ms; }
+  .map-container :global(.muni.in-range.covered) { fill: #FF6F61; opacity: 1; }
+  .map-container :global(.muni.in-range.not-covered) { fill: #CBD5E1; opacity: 0.5; }
+  .map-container :global(.muni.out-of-range) { opacity: 0.15; }
+  .map-container :global(.city-label) { font-size: 5px; pointer-events: none; }
 
-  .map-container :global(svg#landkreis-map) {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+  .map-placeholder { height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-60); }
 
-  /* Municipality hover cursor */
-  .map-container :global(.muni) {
-    cursor: pointer;
-  }
-
-  .map-placeholder {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-60);
-    font-size: 0.85rem;
-  }
-
-  /* ── Tooltip ──────────────────────────────────────────────────────────────── */
   .map-tooltip {
-    position: absolute;
-    pointer-events: none;
-    background: var(--surface-card, var(--surface));
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 0.4rem 0.7rem;
-    font-size: 0.78rem;
-    line-height: 1.4;
-    color: var(--text);
-    box-shadow: var(--shadow-card);
-    white-space: nowrap;
-    z-index: 10;
-    max-width: 180px;
+    position: absolute; pointer-events: none;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 6px; padding: 0.4rem 0.7rem;
+    font-size: 0.78rem; line-height: 1.4; color: var(--text);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); white-space: nowrap; z-index: 10;
   }
 
-  /* ── City blocks column ───────────────────────────────────────────────────── */
-  .city-blocks-col {
-    min-height: 200px;
+  /* ── City list ── */
+  .city-list-wrap {
+    position: sticky;
+    top: 80px;
+    max-height: 70vh;
+    overflow-y: auto;
   }
-
-  /* ── Loading state ────────────────────────────────────────────────────────── */
-  .karte-loading {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--text-60);
-    font-size: 0.9rem;
-    padding: 2rem 0;
+  .city-list-title {
+    font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--text-60); margin: 0 0 0.6rem;
   }
-
-  .loading-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--coral);
-    animation: pulse 1.2s ease-in-out infinite;
-    flex-shrink: 0;
+  :global(.city-item) {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
   }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50%       { opacity: 0.4; transform: scale(0.75); }
+  :global(.city-item--coming) { opacity: 0.45; }
+  :global(.city-item-link) {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 0.5rem; text-decoration: none; color: var(--text);
+    border-radius: 4px; padding: 0.15rem 0.3rem; margin: -0.15rem -0.3rem;
   }
-
-  /* ── Empty state ──────────────────────────────────────────────────────────── */
-  :global(.karte-empty) {
-    color: var(--text-60);
-    font-size: 0.9rem;
-    padding: 1.5rem 0;
-  }
-
-  /* ── City block ───────────────────────────────────────────────────────────── */
-  :global(.city-block) {
-    margin-bottom: 2.5rem;
-    scroll-margin-top: 90px;
-  }
-
-  :global(.city-block-header) {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 0.75rem;
-    margin-bottom: 0.85rem;
-    flex-wrap: wrap;
-  }
-
-  :global(.city-block-meta) {
-    display: flex;
-    align-items: baseline;
-    gap: 0.6rem;
-  }
-
-  :global(.city-block-name) {
-    font-family: var(--font-heading);
-    font-weight: 800;
-    font-size: 1.3rem;
-    color: var(--text);
-    margin: 0;
-  }
-
-  :global(.city-block-name a) {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  :global(.city-block-name a:hover) {
-    color: var(--coral);
-  }
-
-  :global(.city-block-distance) {
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--text-60);
-    background: var(--tag-bg);
-    padding: 2px 8px;
-    border-radius: 20px;
-    white-space: nowrap;
-  }
-
-  :global(.city-block-count) {
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--text-60);
-  }
-
-  :global(.city-block-soon) {
-    font-size: 0.75rem;
-    font-weight: 500;
-    color: var(--text-60);
-    background: var(--tag-bg);
-    padding: 2px 8px;
-    border-radius: 20px;
-  }
-
-  :global(.city-block--coming) {
-    opacity: 0.5;
-  }
-
-  :global(.city-block-grid) {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-    margin-bottom: 0.85rem;
-  }
-
-  :global(.city-block-footer) {
-    text-align: right;
-  }
-
-  :global(.city-block-all) {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--coral);
-    text-decoration: none;
-  }
-
-  :global(.city-block-all:hover) {
-    text-decoration: underline;
-  }
+  :global(.city-item-link:hover) { background: var(--tag-bg); color: var(--coral); }
+  :global(.city-item-name) { font-size: 0.88rem; font-weight: 600; }
+  :global(.city-item-meta) { font-size: 0.72rem; color: var(--text-60); white-space: nowrap; }
+  :global(.city-item--covered .city-item-name) { color: var(--coral); }
 </style>
 
 <script type="module" src="/scripts/karte.js"></script>
