@@ -243,29 +243,7 @@ const MUNICIPALITIES = JSON.parse(municipalitiesJson);
 
 const svg          = document.getElementById("landkreis-map");
 
-// Fix covered city fills: clone path, use nonzero fill, insert behind
-  if (svg) {
-    const NS = "http://www.w3.org/2000/svg";
-    svg.querySelectorAll(".muni.covered").forEach(orig => {
-      // Remove old clone if re-running
-      const old = svg.querySelector(`[data-fill-clone="${orig.dataset.cityId}"]`);
-      if (old) old.remove();
-      // Create filled clone
-      const clone = document.createElementNS(NS, "path");
-      clone.setAttribute("d", orig.getAttribute("d"));
-      clone.setAttribute("fill", "#FF6F61");
-      clone.setAttribute("fill-rule", "nonzero");
-      clone.setAttribute("fill-opacity", "1");
-      clone.setAttribute("stroke", "none");
-      clone.setAttribute("data-fill-clone", orig.dataset.cityId);
-      clone.style.pointerEvents = "none";
-      // Insert before original so original stroke shows on top
-      orig.parentNode.insertBefore(clone, orig);
-      // Make original transparent fill, keep stroke
-      orig.setAttribute("fill", "transparent");
-      orig.setAttribute("fill-opacity", "0");
-    });
-  }
+// SVG fills are baked into subpath elements — no JS clone needed
 
 const tooltip      = document.getElementById("map-tooltip");
 const noHint       = document.getElementById("no-selection-hint");
