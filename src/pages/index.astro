@@ -66,18 +66,7 @@ try {
         <div id="map-tooltip" class="map-tooltip" hidden></div>
       </div>
 
-      <!-- City blocks column -->
-      <div class="city-blocks-col">
-        <!-- Loading state -->
-        <div id="karte-loading" class="karte-loading" aria-live="polite">
-          <span class="loading-dot"></span> Veranstaltungen werden geladen…
-        </div>
 
-        <!-- Content injected by karte.js -->
-        <div id="karte-content" hidden>
-          <div id="city-blocks"></div>
-        </div>
-      </div>
 
     </div><!-- /.karte-layout -->
   </div><!-- /.hero -->
@@ -160,7 +149,7 @@ try {
   /* ── Layout ───────────────────────────────────────────────────────────────── */
   .karte-layout {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
     align-items: start;
     max-width: 1100px;
@@ -175,18 +164,16 @@ try {
 
   /* ── SVG Map ──────────────────────────────────────────────────────────────── */
   .map-container {
-    position: sticky;
-    top: 80px;   /* below sticky header */
     border-radius: var(--radius);
     overflow: hidden;
     border: 1px solid var(--border);
     background: var(--surface);
-    padding: 0.5rem;
+    padding: 1rem;
     width: 100%;
-    min-height: 200px;
+    max-width: 700px;
+    margin: 0 auto;
   }
 
-  /* Make the inline SVG fill its container */
   .map-container :global(svg#landkreis-map) {
     width: 100%;
     height: auto;
