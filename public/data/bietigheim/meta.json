@@ -1,20 +1,24 @@
 {
-  "scraped_at": "2026-05-14T05:54:05.603595+02:00",
+  "scraped_at": "2026-05-14T14:37:38.874496+02:00",
   "city": "bietigheim",
-  "event_count": 30,
+  "event_count": 235,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "bietigheim"
   ],
   "source_counts": {
-    "bietigheim": 30
+    "bietigheim": 235
   },
   "sources_failed": [],
-  "data_hash": "a5a986e5239bb973",
+  "data_hash": "a157e54dd0b65669",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 14.05.2026. Bitte Originalseite pruefen.",
   "pipeline_version": "multi-city-v2",
-  "source_health": {},
-  "source_event_counts": {}
+  "source_health": {
+    "bietigheim": 0.77
+  },
+  "source_event_counts": {
+    "bietigheim": 30
+  }
 }
