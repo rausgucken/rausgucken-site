@@ -243,7 +243,7 @@ const MUNICIPALITIES = JSON.parse(municipalitiesJson);
 
 const svg          = document.getElementById("landkreis-map");
 
-// SVG fills are baked into subpath elements — no JS clone needed
+
 
 const tooltip      = document.getElementById("map-tooltip");
 const noHint       = document.getElementById("no-selection-hint");
@@ -294,10 +294,6 @@ function selectCity(m) {
   coveredList.hidden = false;
   if (svg) {
     svg.querySelectorAll(".muni").forEach(p => p.classList.remove("selected", "dimmed"));
-    // Also reset fill on group subpaths
-    svg.querySelectorAll("[data-city-group] path[fill='#FF6F61']").forEach(p => {
-      p.setAttribute("fill-opacity", "1");
-    });
     const el = svg.querySelector("[data-city-id=\"" + m.id + "\"]");
     if (el) el.classList.add("selected");
   }
@@ -354,25 +350,11 @@ function updateRadius() {
 slider.addEventListener("input", updateRadius);
 
 if (svg) {
-  function getCityFromTarget(target) {
-    // Direct .muni path
-    let el = target.closest(".muni");
-    if (el) return dataMap[el.dataset.cityId];
-    // Click overlay rect
-    el = target.closest(".city-click-overlay");
-    if (el) return dataMap[el.dataset.cityId];
-    // Any element inside a city group
-    const grp = target.closest("[data-city-group]");
-    if (grp) {
-      const muni = grp.querySelector(".muni");
-      if (muni) return dataMap[muni.dataset.cityId];
-    }
-    return null;
-  }
-
   svg.addEventListener("mousemove", e => {
-    const m = getCityFromTarget(e.target);
-    if (!m || !tooltip) { if (tooltip) tooltip.hidden = true; return; }
+    const path = e.target.closest(".muni");
+    if (!path || !tooltip) { tooltip.hidden = true; return; }
+    const m = dataMap[path.dataset.cityId];
+    if (!m) { tooltip.hidden = true; return; }
     tooltip.innerHTML = m.covered
       ? "<strong>" + m.name + "</strong><br>" + m.event_count + " Veranstaltungen"
       : "<strong>" + m.name + "</strong><br><em style=\"opacity:.6\">Demnächst</em>";
@@ -383,7 +365,9 @@ if (svg) {
   });
   svg.addEventListener("mouseleave", () => { if (tooltip) tooltip.hidden = true; });
   svg.addEventListener("click", e => {
-    const m = getCityFromTarget(e.target);
+    const path = e.target.closest(".muni");
+    if (!path) return;
+    const m = dataMap[path.dataset.cityId];
     if (!m) return;
     selectCity(m);
   });
