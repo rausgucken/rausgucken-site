@@ -294,6 +294,10 @@ function selectCity(m) {
   coveredList.hidden = false;
   if (svg) {
     svg.querySelectorAll(".muni").forEach(p => p.classList.remove("selected", "dimmed"));
+    // Also reset fill on group subpaths
+    svg.querySelectorAll("[data-city-group] path[fill='#FF6F61']").forEach(p => {
+      p.setAttribute("fill-opacity", "1");
+    });
     const el = svg.querySelector("[data-city-id=\"" + m.id + "\"]");
     if (el) el.classList.add("selected");
   }
@@ -351,7 +355,12 @@ slider.addEventListener("input", updateRadius);
 
 if (svg) {
   svg.addEventListener("mousemove", e => {
-    const path = e.target.closest(".muni");
+    // target may be a filled subpath inside a <g data-city-group>
+    let path = e.target.closest(".muni");
+    if (!path) {
+      const grp = e.target.closest("[data-city-group]");
+      if (grp) path = grp.querySelector(".muni");
+    }
     if (!path || !tooltip) return;
     const m = dataMap[path.dataset.cityId];
     if (!m) { tooltip.hidden = true; return; }
@@ -365,7 +374,11 @@ if (svg) {
   });
   svg.addEventListener("mouseleave", () => { if (tooltip) tooltip.hidden = true; });
   svg.addEventListener("click", e => {
-    const path = e.target.closest(".muni");
+    let path = e.target.closest(".muni");
+    if (!path) {
+      const grp = e.target.closest("[data-city-group]");
+      if (grp) path = grp.querySelector(".muni");
+    }
     if (!path) return;
     const m = dataMap[path.dataset.cityId];
     if (!m) return;
