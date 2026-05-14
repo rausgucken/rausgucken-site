@@ -10,7 +10,6 @@ try {
   console.warn("[index.astro] landkreis-map.svg not found");
 }
 
-// Embed distances at build time — no runtime fetch needed
 let municipalities = [];
 try {
   const raw = readFileSync(resolve("public/data/landkreis-ludwigsburg/distances.json"), "utf-8");
@@ -24,19 +23,38 @@ const municipalitiesJson = JSON.stringify(municipalities);
 
 <Base
   title="rausgucken.de — Veranstaltungen im Landkreis Ludwigsburg"
-  description="Entdecke Events im Landkreis Ludwigsburg — wähle deine Stadt."
+  description="Entdecke Events im Landkreis Ludwigsburg — wähle deine Stadt und deinen Umkreis."
 >
   <div class="hero">
     <div class="hero-text">
       <h1>Was ist los in deiner Stadt?</h1>
-      <p class="hero-sub">Klicke auf eine Stadt in der Karte — oder wähle über den Radius.</p>
+      <p class="hero-sub">Wähle eine Stadt und sieh, welche Events in deiner Nähe stattfinden.</p>
     </div>
 
-    <div class="map-and-list">
+    <!-- Search bar -->
+    <div class="search-wrap">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M13 13L17 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <input
+          id="city-search"
+          type="text"
+          placeholder="Stadt suchen… z.B. Ludwigsburg"
+          autocomplete="off"
+          aria-label="Stadt suchen"
+        />
+        <button id="search-clear" class="search-clear" hidden aria-label="Suche leeren">&#x2715;</button>
+      </div>
+      <ul id="search-suggestions" class="search-suggestions" role="listbox" hidden></ul>
+    </div>
+
+    <div class="map-and-panel">
 
       <!-- Left: map -->
       <div class="map-col">
-        <div class="map-container">
+        <div class="map-container" id="map-container">
           {svgMap
             ? <Fragment set:html={svgMap} />
             : <div class="map-placeholder">Karte nicht verfügbar</div>
@@ -45,40 +63,36 @@ const municipalitiesJson = JSON.stringify(municipalities);
         </div>
       </div>
 
-      <!-- Right: city selector + radius -->
+      <!-- Right: panel -->
       <div class="side-col">
 
-        <!-- Selected city display -->
-        <div id="selected-city-box" class="selected-city-box" hidden>
+        <div id="no-selection-hint" class="hint-box">
+          <div class="hint-arrow">&#8592;</div>
+          <p>Klicke auf eine Stadt in der Karte oder suche oben.</p>
+        </div>
+
+        <div id="selected-city-box" class="selected-box" hidden>
           <p class="selected-label">Ausgewählte Stadt</p>
-          <h2 id="selected-city-name" class="selected-name">—</h2>
-          <a id="selected-city-link" href="#" class="selected-link">Alle Events anzeigen →</a>
+          <h2 id="selected-city-name" class="selected-name">&#8212;</h2>
+          <a id="selected-city-link" href="#" class="go-btn">Alle Events anzeigen &#8594;</a>
         </div>
 
-        <div id="no-selection-hint" class="no-selection-hint">
-          ← Klicke auf eine Stadt in der Karte
-        </div>
-
-        <!-- Radius slider — only makes sense after city selection -->
         <div id="radius-section" class="radius-section" hidden>
-          <label class="slider-label">
-            Umkreis ab <strong id="radius-city-name">—</strong>:
-            <strong id="radius-label" class="radius-val">10 km</strong>
+          <label class="slider-label" for="radius-slider">
+            Umkreis: <strong id="radius-label" class="radius-val">10 km</strong>
           </label>
           <input id="radius-slider" type="range" min="1" max="55" value="10" step="1"
                  class="radius-slider" aria-label="Umkreis in Kilometern" />
           <div class="slider-ticks"><span>1 km</span><span>55 km</span></div>
         </div>
 
-        <!-- Cities in radius -->
         <div id="radius-cities" class="radius-cities" hidden>
-          <p class="radius-cities-title">Städte im Umkreis</p>
-          <div id="city-list"></div>
+          <p class="section-title">Städte im Umkreis mit Events</p>
+          <div id="radius-city-list"></div>
         </div>
 
-        <!-- Default: covered cities list -->
         <div id="covered-list" class="covered-list">
-          <p class="covered-title">Städte mit Veranstaltungen</p>
+          <p class="section-title">Städte mit Veranstaltungen</p>
           <div id="covered-cities"></div>
         </div>
 
@@ -97,7 +111,51 @@ const municipalitiesJson = JSON.stringify(municipalities);
   }
   .hero-sub { font-size: 1rem; color: var(--text-60); max-width: 480px; margin: 0 auto; }
 
-  .map-and-list {
+  .search-wrap {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto 1.5rem;
+  }
+  .search-box {
+    display: flex; align-items: center;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    padding: 0 0.8rem;
+    transition: border-color 150ms;
+  }
+  .search-box:focus-within { border-color: var(--coral); }
+  .search-icon { width: 18px; height: 18px; color: var(--text-60); flex-shrink: 0; margin-right: 0.5rem; }
+  .search-box input {
+    flex: 1; border: none; outline: none; background: transparent;
+    font-size: 1rem; color: var(--text); padding: 0.7rem 0;
+    font-family: var(--font-body);
+  }
+  .search-box input::placeholder { color: var(--text-60); }
+  .search-clear {
+    border: none; background: none; cursor: pointer;
+    color: var(--text-60); font-size: 0.9rem; padding: 0.2rem;
+  }
+  .search-suggestions {
+    position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    z-index: 50; max-height: 260px; overflow-y: auto;
+    list-style: none; margin: 0; padding: 0.4rem 0;
+  }
+  .search-suggestions li {
+    padding: 0.5rem 1rem; cursor: pointer;
+    font-size: 0.9rem; color: var(--text);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .search-suggestions li:hover { background: rgba(0,0,0,0.04); }
+  .city-badge {
+    font-size: 0.72rem; background: var(--coral);
+    color: #fff; border-radius: 4px; padding: 0.1rem 0.4rem;
+    font-weight: 600;
+  }
+
+  .map-and-panel {
     display: grid;
     grid-template-columns: 1fr 260px;
     gap: 1.5rem;
@@ -105,9 +163,8 @@ const municipalitiesJson = JSON.stringify(municipalities);
     margin: 0 auto;
     align-items: start;
   }
-  @media (max-width: 700px) { .map-and-list { grid-template-columns: 1fr; } }
+  @media (max-width: 700px) { .map-and-panel { grid-template-columns: 1fr; } }
 
-  /* Map */
   .map-col { position: sticky; top: 70px; }
   .map-container {
     position: relative;
@@ -117,13 +174,13 @@ const municipalitiesJson = JSON.stringify(municipalities);
     padding: 0.5rem;
   }
   .map-container :global(svg#landkreis-map) { width: 100%; height: auto; display: block; }
-  .map-container :global(.muni) { transition: opacity 150ms, fill 150ms; cursor: pointer; }
-  .map-container :global(.muni.covered) { fill: #FF6F61; opacity: 0.85; }
-  .map-container :global(.muni.not-covered) { fill: #CBD5E1; opacity: 0.45; }
-  .map-container :global(.muni.selected) { fill: #e04a38; opacity: 1; stroke-width: 2; }
-  .map-container :global(.muni.in-radius) { opacity: 1; }
-  .map-container :global(.muni.out-radius) { opacity: 0.15; }
-  .map-container :global(.city-label) { pointer-events: none; }
+  .map-container :global(.muni.selected) {
+    stroke: #e04a38 !important;
+    stroke-width: 2.5px !important;
+    filter: brightness(0.85);
+  }
+  .map-container :global(.muni.dimmed) { opacity: 0.12 !important; }
+  .map-container :global(.muni.covered) { cursor: pointer; }
   .map-placeholder { height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-60); }
   .map-tooltip {
     position: absolute; pointer-events: none;
@@ -133,179 +190,222 @@ const municipalitiesJson = JSON.stringify(municipalities);
     box-shadow: 0 4px 12px rgba(0,0,0,0.12); white-space: nowrap; z-index: 10;
   }
 
-  /* Side panel */
   .side-col { display: flex; flex-direction: column; gap: 1.25rem; }
 
-  .no-selection-hint {
+  .hint-box {
+    display: flex; align-items: flex-start; gap: 0.5rem;
     font-size: 0.88rem; color: var(--text-60);
     padding: 1rem; border: 1px dashed var(--border);
-    border-radius: var(--radius); text-align: center;
+    border-radius: var(--radius);
   }
+  .hint-arrow { font-size: 1.1rem; }
 
-  .selected-city-box {
+  .selected-box {
     background: var(--surface); border: 2px solid var(--coral);
     border-radius: var(--radius); padding: 1rem;
   }
   .selected-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-60); margin: 0 0 0.25rem; }
   .selected-name { font-family: var(--font-heading); font-weight: 800; font-size: 1.4rem; color: var(--text); margin: 0 0 0.6rem; }
-  .selected-link {
+  .go-btn {
     display: inline-block; background: var(--coral); color: #fff;
     font-weight: 700; font-size: 0.88rem; padding: 0.5rem 1rem;
     border-radius: 8px; text-decoration: none;
   }
-  .selected-link:hover { background: #e04a38; }
+  .go-btn:hover { background: #e04a38; }
 
   .radius-section { display: flex; flex-direction: column; gap: 0.4rem; }
   .slider-label { font-size: 0.88rem; color: var(--text-60); }
-  .slider-label strong, .radius-val { color: var(--coral); font-weight: 700; }
+  .radius-val { color: var(--coral); font-weight: 700; }
   .radius-slider { width: 100%; accent-color: var(--coral); cursor: pointer; }
   .slider-ticks { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-60); opacity: 0.6; }
 
-  .radius-cities-title, .covered-title {
+  .section-title {
     font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
     letter-spacing: 0.07em; color: var(--text-60); margin: 0 0 0.5rem;
   }
 
-  :global(.city-item) {
+  :global(.city-row) {
     display: flex; justify-content: space-between; align-items: center;
     padding: 0.45rem 0; border-bottom: 1px solid var(--border);
     font-size: 0.85rem;
   }
-  :global(.city-item a) { color: var(--coral); font-weight: 600; text-decoration: none; }
-  :global(.city-item a:hover) { text-decoration: underline; }
-  :global(.city-item-dist) { font-size: 0.72rem; color: var(--text-60); }
-  :global(.city-item--coming) { opacity: 0.45; }
-  :global(.city-item--coming span) { color: var(--text-60); font-weight: 600; }
+  :global(.city-row a) { color: var(--coral); font-weight: 600; text-decoration: none; }
+  :global(.city-row a:hover) { text-decoration: underline; }
+  :global(.city-row-meta) { font-size: 0.72rem; color: var(--text-60); }
 </style>
 
-<script type="module">
-const MUNICIPALITIES = {municipalitiesJson};
+<script type="module" define:vars={{ municipalitiesJson }}>
+const MUNICIPALITIES = JSON.parse(municipalitiesJson);
 
-const svg = document.getElementById("landkreis-map");
-const tooltip = document.getElementById("map-tooltip");
-const selectedBox = document.getElementById("selected-city-box");
-const noHint = document.getElementById("no-selection-hint");
-const radiusSection = document.getElementById("radius-section");
+const svg          = document.getElementById("landkreis-map");
+const tooltip      = document.getElementById("map-tooltip");
+const noHint       = document.getElementById("no-selection-hint");
+const selBox       = document.getElementById("selected-city-box");
+const selName      = document.getElementById("selected-city-name");
+const selLink      = document.getElementById("selected-city-link");
+const radiusSec    = document.getElementById("radius-section");
 const radiusCities = document.getElementById("radius-cities");
-const coveredList = document.getElementById("covered-list");
-const slider = document.getElementById("radius-slider");
-const sliderLabel = document.getElementById("radius-label");
-const radiusCityName = document.getElementById("radius-city-name");
-const selectedName = document.getElementById("selected-city-name");
-const selectedLink = document.getElementById("selected-city-link");
-const cityListEl = document.getElementById("city-list");
+const coveredList  = document.getElementById("covered-list");
+const slider       = document.getElementById("radius-slider");
+const sliderLabel  = document.getElementById("radius-label");
+const radiusCityList  = document.getElementById("radius-city-list");
 const coveredCitiesEl = document.getElementById("covered-cities");
+const searchInput  = document.getElementById("city-search");
+const searchClear  = document.getElementById("search-clear");
+const suggestions  = document.getElementById("search-suggestions");
 
 const dataMap = Object.fromEntries(MUNICIPALITIES.map(m => [m.id, m]));
 let selectedCity = null;
 
-// Render covered cities list on load
-const covered = MUNICIPALITIES.filter(m => m.covered).sort((a,b) => a.distance_km - b.distance_km);
-coveredCitiesEl.innerHTML = covered.map(m => `
-  <div class="city-item">
-    <a href="${m.url}">${m.name}</a>
-    <span class="city-item-dist">${m.event_count} Events</span>
-  </div>`).join("");
+function dist(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLng/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
 
-// Map interactions
+// Default covered list
+const covered = MUNICIPALITIES.filter(m => m.covered).sort((a,b) => a.distance_km - b.distance_km);
+coveredCitiesEl.innerHTML = covered.map(m =>
+  `<div class="city-row"><a href="${m.url}">${m.name}</a><span class="city-row-meta">${m.event_count} Events</span></div>`
+).join("");
+
+function selectCity(m) {
+  selectedCity = m;
+  selName.textContent = m.name;
+  if (m.covered && m.url) {
+    selLink.href = m.url;
+    selLink.textContent = "Alle " + m.event_count + " Events →";
+    selLink.hidden = false;
+  } else {
+    selLink.hidden = true;
+  }
+  selBox.hidden = false;
+  noHint.hidden = true;
+  radiusSec.hidden = false;
+  coveredList.hidden = false;
+  if (svg) {
+    svg.querySelectorAll(".muni").forEach(p => p.classList.remove("selected", "dimmed"));
+    const el = svg.querySelector("[data-city-id=\"" + m.id + "\"]");
+    if (el) el.classList.add("selected");
+  }
+  updateRadius();
+  searchInput.value = "";
+  suggestions.hidden = true;
+  searchClear.hidden = true;
+}
+
+function updateRadius() {
+  if (!selectedCity) return;
+  const radius = parseInt(slider.value, 10);
+  sliderLabel.textContent = radius + " km";
+  const inRadius = MUNICIPALITIES
+    .map(m => ({ ...m, _d: dist(selectedCity.lat, selectedCity.lng, m.lat, m.lng) }))
+    .filter(m => m._d <= radius && m.id !== selectedCity.id)
+    .sort((a, b) => a._d - b._d);
+  if (svg) {
+    const inIds = new Set(inRadius.map(m => m.id));
+    inIds.add(selectedCity.id);
+    svg.querySelectorAll(".muni").forEach(p => {
+      if (p.classList.contains("selected")) return;
+      p.classList.toggle("dimmed", !inIds.has(p.dataset.cityId));
+    });
+  }
+  const covInRadius = inRadius.filter(m => m.covered);
+  if (covInRadius.length > 0) {
+    radiusCities.hidden = false;
+    radiusCityList.innerHTML = covInRadius.map(m =>
+      `<div class="city-row"><a href="${m.url}">${m.name}</a><span class="city-row-meta">${m._d.toFixed(1)} km &middot; ${m.event_count} Events</span></div>`
+    ).join("");
+  } else {
+    radiusCities.hidden = true;
+    radiusCityList.innerHTML = "";
+  }
+}
+
+slider.addEventListener("input", updateRadius);
+
 if (svg) {
-  // Tooltip
   svg.addEventListener("mousemove", e => {
     const path = e.target.closest(".muni");
     if (!path || !tooltip) return;
     const m = dataMap[path.dataset.cityId];
     if (!m) { tooltip.hidden = true; return; }
     tooltip.innerHTML = m.covered
-      ? `<strong>${m.name}</strong><br>${m.event_count} Veranstaltungen`
-      : `<strong>${m.name}</strong><br><em style="opacity:.6">Demnächst</em>`;
+      ? "<strong>" + m.name + "</strong><br>" + m.event_count + " Veranstaltungen"
+      : "<strong>" + m.name + "</strong><br><em style=\"opacity:.6\">Demnächst</em>";
     tooltip.hidden = false;
     const rect = svg.closest(".map-container").getBoundingClientRect();
     tooltip.style.left = (e.clientX - rect.left + 14) + "px";
     tooltip.style.top  = (e.clientY - rect.top  + 14) + "px";
   });
   svg.addEventListener("mouseleave", () => { if (tooltip) tooltip.hidden = true; });
-
-  // Click → select city
   svg.addEventListener("click", e => {
     const path = e.target.closest(".muni");
     if (!path) return;
     const m = dataMap[path.dataset.cityId];
     if (!m) return;
+    if (m.covered && m.url) { window.location.href = m.url; return; }
     selectCity(m);
   });
 }
 
-function selectCity(m) {
-  selectedCity = m;
-
-  // Update selected box
-  selectedName.textContent = m.name;
-  if (m.covered && m.url) {
-    selectedLink.href = m.url;
-    selectedLink.textContent = `Alle ${m.event_count} Events anzeigen →`;
-    selectedLink.hidden = false;
-  } else {
-    selectedLink.hidden = true;
-  }
-  selectedBox.hidden = false;
-  noHint.hidden = true;
-
-  // Show radius section
-  radiusCityName.textContent = m.name;
-  radiusSection.hidden = false;
-
-  // Highlight selected on map
-  svg.querySelectorAll(".muni").forEach(p => p.classList.remove("selected"));
-  const el = svg.querySelector(`[data-city-id="${m.id}"]`);
-  if (el) el.classList.add("selected");
-
-  // Update radius display
-  updateRadius();
-
-  // Show covered list still
-  coveredList.hidden = false;
+function normalize(s) {
+  return s.toLowerCase()
+    .replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss");
 }
 
-function updateRadius() {
-  if (!selectedCity) return;
-  const radius = parseInt(slider.value, 10);
-  sliderLabel.textContent = `${radius} km`;
+searchInput.addEventListener("input", () => {
+  const q = searchInput.value.trim();
+  searchClear.hidden = q.length === 0;
+  if (q.length < 1) { suggestions.hidden = true; return; }
+  const nq = normalize(q);
+  const matches = MUNICIPALITIES
+    .filter(m => normalize(m.name).includes(nq))
+    .sort((a, b) => {
+      const aS = normalize(a.name).startsWith(nq);
+      const bS = normalize(b.name).startsWith(nq);
+      if (aS !== bS) return aS ? -1 : 1;
+      return a.name.localeCompare(b.name);
+    })
+    .slice(0, 8);
+  if (matches.length === 0) { suggestions.hidden = true; return; }
+  suggestions.innerHTML = matches.map(m =>
+    `<li role="option" data-id="${m.id}">${m.name}${m.covered ? ` <span class="city-badge">${m.event_count} Events</span>` : ` <span style="font-size:.72rem;color:var(--text-60)">Demnächst</span>`}</li>`
+  ).join("");
+  suggestions.hidden = false;
+});
 
-  // Compute distances from selected city
-  const R = 6371;
-  function dist(lat1, lng1, lat2, lng2) {
-    const dLat = (lat2-lat1)*Math.PI/180;
-    const dLng = (lng2-lng1)*Math.PI/180;
-    const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLng/2)**2;
-    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+searchInput.addEventListener("keydown", e => {
+  if (e.key === "Escape") suggestions.hidden = true;
+  if (e.key === "Enter") {
+    const first = suggestions.querySelector("li");
+    if (first) pickSuggestion(first.dataset.id);
   }
+});
 
-  const inRadius = MUNICIPALITIES
-    .map(m => ({ ...m, distFromSelected: dist(selectedCity.lat, selectedCity.lng, m.lat, m.lng) }))
-    .filter(m => m.distFromSelected <= radius && m.id !== selectedCity.id)
-    .sort((a,b) => a.distFromSelected - b.distFromSelected);
+suggestions.addEventListener("click", e => {
+  const li = e.target.closest("li");
+  if (li) pickSuggestion(li.dataset.id);
+});
 
-  // Update map opacity
-  svg.querySelectorAll(".muni").forEach(path => {
-    const cid = path.dataset.cityId;
-    if (cid === selectedCity.id) return; // keep selected style
-    const m = dataMap[cid];
-    if (!m) return;
-    const inR = inRadius.some(x => x.id === cid);
-    path.classList.toggle("in-radius", inR);
-    path.classList.toggle("out-radius", !inR);
-  });
-
-  // Show nearby cities
-  radiusCities.hidden = inRadius.length === 0;
-  cityListEl.innerHTML = inRadius.map(m => `
-    <div class="city-item${m.covered ? "" : " city-item--coming"}">
-      ${m.covered && m.url
-        ? `<a href="${m.url}">${m.name}</a>`
-        : `<span>${m.name}</span>`}
-      <span class="city-item-dist">${m.distFromSelected.toFixed(1)} km</span>
-    </div>`).join("");
+function pickSuggestion(id) {
+  const m = dataMap[id];
+  if (!m) return;
+  suggestions.hidden = true;
+  if (m.covered && m.url) { window.location.href = m.url; return; }
+  selectCity(m);
 }
 
-slider.addEventListener("input", updateRadius);
+searchClear.addEventListener("click", () => {
+  searchInput.value = "";
+  searchClear.hidden = true;
+  suggestions.hidden = true;
+  searchInput.focus();
+});
+
+document.addEventListener("click", e => {
+  if (!e.target.closest(".search-wrap")) suggestions.hidden = true;
+});
 </script>
