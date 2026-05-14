@@ -354,8 +354,9 @@ function updateRadius() {
       const allCovered = [selectedCity, ...covInRadius].filter(m => m.url);
       if (allCovered.length > 1) {
         const total = allCovered.reduce((s,m) => s + (m.event_count||0), 0);
-        combinedLink.href = selectedCity.url || "#";
-        combinedLink.textContent = `${total} Events in ${allCovered.length} Städten — Alle Städte einzeln anzeigen ↓`;
+        const cityIds = allCovered.map(m => m.id).join(",");
+        combinedLink.href = `/landkreis-ludwigsburg/umkreis?cities=${cityIds}`;
+        combinedLink.textContent = `Alle ${total} Events im Umkreis ansehen →`;
         combinedLink.hidden = false;
       } else {
         combinedLink.hidden = true;
@@ -390,10 +391,6 @@ if (svg) {
     if (!path) return;
     const m = dataMap[path.dataset.cityId];
     if (!m) return;
-    if (m.covered && m.url) {
-      window.location.href = m.url;
-      return;
-    }
     selectCity(m);
   });
 }

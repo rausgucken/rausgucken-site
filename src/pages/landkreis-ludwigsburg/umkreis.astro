@@ -1,0 +1,122 @@
+---
+import Base from "../../layouts/Base.astro";
+import { readFileSync } from "fs";
+import { resolve } from "path";
+
+// Read city IDs from URL query param at request time (SSR not available in static,
+// so we read all cities and filter client-side via JS)
+const allCityIds = ["ludwigsburg", "tamm", "bietigheim"];
+const allEvents = {};
+
+for (const city of allCityIds) {
+  try {
+    const raw = readFileSync(resolve(`public/data/${city}/events-current.json`), "utf-8");
+    const parsed = JSON.parse(raw);
+    allEvents[city] = Array.isArray(parsed) ? parsed : (parsed.events || []);
+  } catch (e) {
+    allEvents[city] = [];
+  }
+}
+
+const allEventsJson = JSON.stringify(allEvents);
+---
+
+<Base
+  title="Events im Umkreis — rausgucken.de"
+  description="Alle Events in deinem Umkreis im Landkreis Ludwigsburg"
+>
+  <div class="page-wrap">
+    <div id="page-header">
+      <a href="/" class="back-link">← Zurück zur Karte</a>
+      <h1 id="page-title">Events im Umkreis</h1>
+      <p id="page-sub" class="sub"></p>
+    </div>
+    <div id="events-list" class="events-grid"></div>
+    <div id="empty-state" class="empty" hidden>Keine Events gefunden.</div>
+  </div>
+</Base>
+
+<style>
+  .page-wrap { max-width: 860px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  .back-link { font-size: 0.85rem; color: var(--coral); text-decoration: none; display: inline-block; margin-bottom: 1rem; }
+  h1 { font-family: var(--font-heading); font-weight: 800; font-size: 2rem; margin: 0 0 0.4rem; }
+  .sub { color: var(--text-60); font-size: 0.9rem; margin: 0 0 1.5rem; }
+  .events-grid { display: flex; flex-direction: column; gap: 1rem; }
+  .event-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 1rem 1.25rem;
+    display: flex; flex-direction: column; gap: 0.25rem;
+    text-decoration: none; color: inherit;
+    transition: border-color 150ms;
+  }
+  .event-card:hover { border-color: var(--coral); }
+  .event-meta { font-size: 0.75rem; color: var(--text-60); }
+  .event-title { font-weight: 700; font-size: 1rem; color: var(--text); }
+  .event-city { font-size: 0.75rem; background: var(--coral); color: #fff; border-radius: 4px; padding: 0.1rem 0.4rem; display: inline-block; margin-top: 0.2rem; width: fit-content; }
+  .empty { text-align: center; color: var(--text-60); padding: 3rem 0; }
+</style>
+
+<script type="module" define:vars={{ allEventsJson }}>
+const ALL_EVENTS = JSON.parse(allEventsJson);
+
+// Read which cities to show from URL query param ?cities=ludwigsburg,tamm
+const params = new URLSearchParams(window.location.search);
+const cityParam = params.get("cities");
+const selectedCities = cityParam ? cityParam.split(",").filter(Boolean) : Object.keys(ALL_EVENTS);
+
+// Merge and sort by date
+let merged = [];
+for (const city of selectedCities) {
+  const events = ALL_EVENTS[city] || [];
+  for (const ev of events) {
+    merged.push({ ...ev, _city: city });
+  }
+}
+
+// Sort by start date ascending
+merged.sort((a, b) => {
+  const da = a.start_date || a.date || "";
+  const db = b.start_date || b.date || "";
+  return da.localeCompare(db);
+});
+
+// Filter out past events
+const today = new Date().toISOString().slice(0, 10);
+merged = merged.filter(ev => {
+  const d = ev.start_date || ev.date || "";
+  return !d || d >= today;
+});
+
+// City display names
+const cityNames = { ludwigsburg: "Ludwigsburg", tamm: "Tamm", bietigheim: "Bietigheim-Bissingen" };
+
+// Update header
+const titleEl = document.getElementById("page-title");
+const subEl = document.getElementById("page-sub");
+const displayNames = selectedCities.map(c => cityNames[c] || c).join(", ");
+titleEl.textContent = "Events im Umkreis";
+subEl.textContent = `${merged.length} Events in: ${displayNames}`;
+
+// Render
+const list = document.getElementById("events-list");
+const empty = document.getElementById("empty-state");
+
+if (merged.length === 0) {
+  empty.hidden = false;
+} else {
+  list.innerHTML = merged.map(ev => {
+    const title = ev.title || ev.name || "Event";
+    const date = ev.start_date || ev.date || "";
+    const venue = ev.venue || ev.location || "";
+    const slug = ev.slug || ev.id || "";
+    const city = ev._city;
+    const href = slug ? `/${city}/events/${slug}` : `/${city}`;
+    const dateStr = date ? new Date(date).toLocaleDateString("de-DE", { day: "2-digit", month: "long", year: "numeric" }) : "";
+    return `<a class="event-card" href="${href}">
+      <div class="event-meta">${dateStr}${venue ? " · " + venue : ""}</div>
+      <div class="event-title">${title}</div>
+      <div class="event-city">${cityNames[city] || city}</div>
+    </a>`;
+  }).join("");
+}
+</script>
