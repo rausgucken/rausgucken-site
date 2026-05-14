@@ -1,10 +1,10 @@
 ---
-import Base from "../../../layouts/Base.astro";
-import FreshnessStamp from '../../components/FreshnessStamp.astro';
-import EventCard from "../../components/EventCard.astro";
-import FilterBar from "../../components/FilterBar.astro";
-import ImportantLinksSidebar from "../../components/ImportantLinksSidebar.astro";
-import FAQBlock from "../../components/FAQBlock.astro";
+import Base from "../../../../layouts/Base.astro";
+import FreshnessStamp from '../../../components/FreshnessStamp.astro';
+import EventCard from "../../../components/EventCard.astro";
+import FilterBar from "../../../components/FilterBar.astro";
+import ImportantLinksSidebar from "../../../components/ImportantLinksSidebar.astro";
+import FAQBlock from "../../../components/FAQBlock.astro";
 
 import eventsData from "../../../../public/data/ludwigsburg/events-current.json";
 import metaData from "../../../../public/data/ludwigsburg/meta.json";
@@ -40,7 +40,7 @@ const breadcrumbSchema = {
   ],
 };
 
-import tipsRaw from '../../../data/editorial-tips.json';
+import tipsRaw from '../../../../data/editorial-tips.json';
 const featuredSlug = Object.entries(tipsRaw).find(
   ([, v]) => typeof v === 'object' && v.featured === true
 )?.[0] ?? null;
