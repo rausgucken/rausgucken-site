@@ -11,7 +11,6 @@ const cityNames: Record<string, string> = {
   bietigheim: "Bietigheim-Bissingen",
 };
 
-// Load all events tagged with their city
 type AnyEvent = Record<string, any>;
 const allTagged: AnyEvent[] = [];
 
@@ -24,11 +23,10 @@ for (const city of cityIds) {
       allTagged.push({ ...ev, _city: city, _cityName: cityNames[city] });
     }
   } catch (e) {
-    // city data missing — skip
+    // skip
   }
 }
 
-// Sort by date_start ascending, undated last
 allTagged.sort((a, b) => {
   if (!a.date_start && !b.date_start) return 0;
   if (!a.date_start) return 1;
@@ -36,7 +34,6 @@ allTagged.sort((a, b) => {
   return a.date_start.localeCompare(b.date_start);
 });
 
-const allTaggedJson = JSON.stringify(allTagged);
 const cityNamesJson = JSON.stringify(cityNames);
 ---
 
@@ -45,12 +42,10 @@ const cityNamesJson = JSON.stringify(cityNames);
   description="Alle Events in deinem Umkreis im Landkreis Ludwigsburg"
 >
   <div class="page-wrap">
-    <a href="/" class="back-link">← Zurück zur Karte</a>
+    <a href="/" class="back-link">&#8592; Zurück zur Karte</a>
     <h1 id="page-title">Events im Umkreis</h1>
-    <p id="page-sub" class="sub">Lade Events…</p>
-
+    <p id="page-sub" class="sub">Lade Events&#8230;</p>
     <div id="city-filters" class="city-filters"></div>
-
     <div id="events-container">
       {allTagged.map(ev => (
         <div class="event-wrap" data-city={ev._city} data-date={ev.date_start ?? ""}>
@@ -59,7 +54,6 @@ const cityNamesJson = JSON.stringify(cityNames);
         </div>
       ))}
     </div>
-
     <div id="empty-state" class="empty" hidden>Keine Events für diese Auswahl.</div>
   </div>
 </Base>
@@ -69,7 +63,6 @@ const cityNamesJson = JSON.stringify(cityNames);
   .back-link { font-size: 0.85rem; color: var(--coral); text-decoration: none; display: inline-block; margin-bottom: 1rem; }
   h1 { font-family: var(--font-heading); font-weight: 800; font-size: 2rem; margin: 0 0 0.3rem; }
   .sub { color: var(--text-60); font-size: 0.9rem; margin: 0 0 1.25rem; }
-
   .city-filters { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
   .city-chip {
     border: 2px solid var(--border); border-radius: 20px;
@@ -78,26 +71,21 @@ const cityNamesJson = JSON.stringify(cityNames);
     transition: all 120ms;
   }
   .city-chip.active { border-color: var(--coral); color: var(--coral); background: rgba(255,111,97,0.08); }
-
   .event-wrap { margin-bottom: 0.25rem; }
   .city-tag {
     font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.07em; color: var(--coral);
-    padding: 0.15rem 0; margin-bottom: 0.15rem;
+    letter-spacing: 0.07em; color: var(--coral); padding: 0.15rem 0; margin-bottom: 0.15rem;
   }
   .empty { text-align: center; color: var(--text-60); padding: 3rem 0; }
 </style>
 
-<script type="module" define:vars={{ allTaggedJson, cityNamesJson }}>
-const ALL_EVENTS = JSON.parse(allTaggedJson);
+<script type="module" define:vars={{ cityNamesJson }}>
 const CITY_NAMES = JSON.parse(cityNamesJson);
 
-// Parse ?cities= param
 const params = new URLSearchParams(window.location.search);
 const cityParam = params.get("cities");
 const activeCities = new Set(cityParam ? cityParam.split(",").filter(Boolean) : Object.keys(CITY_NAMES));
 
-// Today filter
 const today = new Date().toISOString().slice(0, 10);
 
 function render() {
@@ -111,22 +99,17 @@ function render() {
     if (show) visible++;
   });
   document.getElementById("empty-state").hidden = visible > 0;
-
-  // Update subtitle
   const names = [...activeCities].map(c => CITY_NAMES[c] || c).join(", ");
-  document.getElementById("page-sub").textContent = `${visible} Events in: ${names}`;
-
-  // Update chips
+  document.getElementById("page-sub").textContent = visible + " Events in: " + names;
   document.querySelectorAll(".city-chip").forEach(chip => {
     chip.classList.toggle("active", activeCities.has(chip.dataset.city));
   });
 }
 
-// Build city filter chips
 const filtersEl = document.getElementById("city-filters");
-const allCities = [...new Set(ALL_EVENTS.map(e => e._city))];
+const allCities = Object.keys(CITY_NAMES);
 filtersEl.innerHTML = allCities.map(city =>
-  `<button class="city-chip${activeCities.has(city) ? " active" : ""}" data-city="${city}">${CITY_NAMES[city] || city}</button>`
+  '<button class="city-chip' + (activeCities.has(city) ? ' active' : '') + '" data-city="' + city + '">' + (CITY_NAMES[city] || city) + '</button>'
 ).join("");
 
 filtersEl.addEventListener("click", e => {
@@ -134,7 +117,7 @@ filtersEl.addEventListener("click", e => {
   if (!chip) return;
   const city = chip.dataset.city;
   if (activeCities.has(city)) {
-    if (activeCities.size > 1) activeCities.delete(city); // keep at least 1
+    if (activeCities.size > 1) activeCities.delete(city);
   } else {
     activeCities.add(city);
   }
