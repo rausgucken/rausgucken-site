@@ -79,9 +79,9 @@ const municipalitiesJson = JSON.stringify(municipalities);
 
         <div id="radius-section" class="radius-section" hidden>
           <label class="slider-label" for="radius-slider">
-            Umkreis: <strong id="radius-label" class="radius-val">10 km</strong>
+            Umkreis: <strong id="radius-label" class="radius-val">0 km</strong>
           </label>
-          <input id="radius-slider" type="range" min="1" max="55" value="10" step="1"
+          <input id="radius-slider" type="range" min="0" max="55" value="0" step="1"
                  class="radius-slider" aria-label="Umkreis in Kilometern" />
           <div class="slider-ticks"><span>1 km</span><span>55 km</span></div>
         </div>
@@ -179,6 +179,12 @@ const municipalitiesJson = JSON.stringify(municipalities);
     stroke: #e04a38 !important;
     stroke-width: 2.5px !important;
     filter: brightness(0.85);
+  }
+  .map-container :global(.muni.covered.selected) {
+    stroke: #000 !important;
+    stroke-width: 2.5px !important;
+    filter: brightness(0.7) !important;
+    opacity: 1 !important;
   }
   .map-container :global(.muni.dimmed) { opacity: 0.12 !important; }
   .map-container :global(.muni.covered) { cursor: pointer; }
@@ -307,6 +313,24 @@ function updateRadius() {
   if (!selectedCity) return;
   const radius = parseInt(slider.value, 10);
   sliderLabel.textContent = radius + " km";
+  if (radius === 0) {
+    // At 0: only selected city visible, hide radius panel
+    if (svg) {
+      svg.querySelectorAll(".muni").forEach(p => {
+        if (p.classList.contains("selected")) return;
+        p.classList.add("dimmed");
+        p.classList.remove("dimmed"); // reset then re-apply below
+      });
+      svg.querySelectorAll(".muni").forEach(p => {
+        p.classList.toggle("dimmed", !p.classList.contains("selected"));
+      });
+    }
+    radiusCities.hidden = true;
+    radiusCityList.innerHTML = "";
+    const combinedLink = document.getElementById("radius-combined-link");
+    if (combinedLink) combinedLink.hidden = true;
+    return;
+  }
   const inRadius = MUNICIPALITIES
     .map(m => ({ ...m, _d: dist(selectedCity.lat, selectedCity.lng, m.lat, m.lng) }))
     .filter(m => m._d <= radius && m.id !== selectedCity.id)
