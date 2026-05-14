@@ -333,7 +333,7 @@ function updateRadius() {
     // Build combined URL: use first covered city as base, add others as query params
     // For now link to a search-style page listing all covered cities
     if (combinedLink) {
-      const allCovered = [selectedCity, ...covInRadius].filter(m => m.covered && m.url);
+      const allCovered = [selectedCity, ...covInRadius].filter(m => m.url);
       if (allCovered.length > 1) {
         // Link to the selected city page with a note — best we can do without a combined page
         combinedLink.href = selectedCity.url || "#";
