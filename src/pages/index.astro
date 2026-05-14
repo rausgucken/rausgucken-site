@@ -324,14 +324,29 @@ function updateRadius() {
     });
   }
   const covInRadius = inRadius.filter(m => m.covered);
+  const combinedLink = document.getElementById("radius-combined-link");
   if (covInRadius.length > 0) {
     radiusCities.hidden = false;
     radiusCityList.innerHTML = covInRadius.map(m =>
       `<div class="city-row"><a href="${m.url}">${m.name}</a><span class="city-row-meta">${m._d.toFixed(1)} km &middot; ${m.event_count} Events</span></div>`
     ).join("");
+    // Build combined URL: use first covered city as base, add others as query params
+    // For now link to a search-style page listing all covered cities
+    if (combinedLink) {
+      const allCovered = [selectedCity, ...covInRadius].filter(m => m.covered && m.url);
+      if (allCovered.length > 1) {
+        // Link to the selected city page with a note — best we can do without a combined page
+        combinedLink.href = selectedCity.url || "#";
+        combinedLink.textContent = `Alle ${allCovered.reduce((s,m)=>s+m.event_count,0)} Events im Umkreis →`;
+        combinedLink.hidden = false;
+      } else {
+        combinedLink.hidden = true;
+      }
+    }
   } else {
     radiusCities.hidden = true;
     radiusCityList.innerHTML = "";
+    if (combinedLink) combinedLink.hidden = true;
   }
 }
 
@@ -357,6 +372,10 @@ if (svg) {
     if (!path) return;
     const m = dataMap[path.dataset.cityId];
     if (!m) return;
+    if (m.covered && m.url) {
+      window.location.href = m.url;
+      return;
+    }
     selectCity(m);
   });
 }
