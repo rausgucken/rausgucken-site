@@ -1,2462 +1,22 @@
 {
-  "generated_at": "2026-05-09T02:22:02.014649+02:00",
+  "generated_at": "2026-05-14T05:54:05.572249+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "museum",
-    "kunstverein_veranstaltungen",
-    "kunstverein_ausstellungen",
-    "labyrinth",
+    "tamm",
     "karlskaserne_ausstellungen",
+    "kunstverein_ausstellungen",
+    "kunstverein_veranstaltungen",
+    "museum",
     "karlskaserne_veranstaltungen",
-    "stabi",
-    "schloss"
+    "bietigheim",
+    "labyrinth",
+    "schloss",
+    "stabi"
   ],
-  "previous_run": null,
-  "count_added": 692,
+  "previous_run": "2026-05-14T00:27:06.701404+02:00",
+  "count_added": 192,
   "count_removed": 0,
   "added": [
-    {
-      "id": "ad7dee7d5aadd1fd",
-      "title": "Ausstellung Beispielhaftes Bauen",
-      "date_start": "2026-04-14",
-      "source": "museum"
-    },
-    {
-      "id": "9b37e29cbdb5d035",
-      "title": "Ausstellung Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-05-03",
-      "source": "museum"
-    },
-    {
-      "id": "47596b97cafe7d62",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-05-13",
-      "source": "museum"
-    },
-    {
-      "id": "bd3157a5bef93e1b",
-      "title": "Internationaler Museumstag",
-      "date_start": "2026-05-17",
-      "source": "museum"
-    },
-    {
-      "id": "a5524cdc806242b7",
-      "title": "Kuratorinnenführung Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-05-17",
-      "source": "museum"
-    },
-    {
-      "id": "5cc480cecb175207",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-05-20",
-      "source": "museum"
-    },
-    {
-      "id": "6e472c92ae994932",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-05-23",
-      "source": "museum"
-    },
-    {
-      "id": "d56824ce04364441",
-      "title": "Museumspause",
-      "date_start": "2026-06-03",
-      "source": "museum"
-    },
-    {
-      "id": "e012adabcdc593ca",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-06-10",
-      "source": "museum"
-    },
-    {
-      "id": "bef244609f2be13d",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-06-11",
-      "source": "museum"
-    },
-    {
-      "id": "688cfd56eb6e4125",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-06-17",
-      "source": "museum"
-    },
-    {
-      "id": "430dd6efd43fe570",
-      "title": "Gastrosophie-Abend",
-      "date_start": "2026-06-25",
-      "source": "museum"
-    },
-    {
-      "id": "9019b77bfec1d57d",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-06-27",
-      "source": "museum"
-    },
-    {
-      "id": "5dda87d97f9a5249",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-06-27",
-      "source": "museum"
-    },
-    {
-      "id": "be93a4eaa0236bc1",
-      "title": "Little America – Fotografie Jürgen Schadeberg",
-      "date_start": "2026-07-01",
-      "source": "museum"
-    },
-    {
-      "id": "f5aa9b258b56eed4",
-      "title": "Museumspause",
-      "date_start": "2026-07-01",
-      "source": "museum"
-    },
-    {
-      "id": "922902880d43eb53",
-      "title": "Vortrag \"Little America\"",
-      "date_start": "2026-07-01",
-      "source": "museum"
-    },
-    {
-      "id": "62e5fbf9f7798c29",
-      "title": "Offenes Atelier: Tee von der Blumenwiese, Sabine Deutscher",
-      "date_start": "2026-07-02",
-      "source": "museum"
-    },
-    {
-      "id": "019a5ee3ca8269f1",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-07-08",
-      "source": "museum"
-    },
-    {
-      "id": "3b6b1f029ab194bd",
-      "title": "Musik im MIK",
-      "date_start": "2026-07-11",
-      "source": "museum"
-    },
-    {
-      "id": "322bc0e6756e5181",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-07-16",
-      "source": "museum"
-    },
-    {
-      "id": "32a2ed5c77b6deba",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-07-25",
-      "source": "museum"
-    },
-    {
-      "id": "bd75af93b493f0bd",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-07-25",
-      "source": "museum"
-    },
-    {
-      "id": "08f9139d5ae61a17",
-      "title": "Museumspause",
-      "date_start": "2026-08-05",
-      "source": "museum"
-    },
-    {
-      "id": "b144e4041940c7e6",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-08-12",
-      "source": "museum"
-    },
-    {
-      "id": "e9f724e34491ab5c",
-      "title": "Ferienworkshop Museumsbuch interaktiv",
-      "date_start": "2026-08-14",
-      "source": "museum"
-    },
-    {
-      "id": "5a4fb2bfb15461ce",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-08-29",
-      "source": "museum"
-    },
-    {
-      "id": "36b30bd893cbc9a3",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-08-29",
-      "source": "museum"
-    },
-    {
-      "id": "2cf17e00cebc4839",
-      "title": "Museumspause",
-      "date_start": "2026-09-02",
-      "source": "museum"
-    },
-    {
-      "id": "3072e194ceb3a7e5",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-09-09",
-      "source": "museum"
-    },
-    {
-      "id": "4b95a93eb3d9e41a",
-      "title": "Tag des Offenen Denkmals",
-      "date_start": "2026-09-13",
-      "source": "museum"
-    },
-    {
-      "id": "0eb88088527d55aa",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-09-16",
-      "source": "museum"
-    },
-    {
-      "id": "3656d6afb3e74b2a",
-      "title": "Offenes Atelier: Origami, Regina Ille-Kopp",
-      "date_start": "2026-09-17",
-      "source": "museum"
-    },
-    {
-      "id": "dca5e31a37f99599",
-      "title": "Gastrosophie-Abend",
-      "date_start": "2026-09-24",
-      "source": "museum"
-    },
-    {
-      "id": "446ec6d91a131e21",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-09-26",
-      "source": "museum"
-    },
-    {
-      "id": "d2e2bd768b8f4084",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-06",
-      "source": "museum"
-    },
-    {
-      "id": "d9cf06509d66fd69",
-      "title": "Museumspause",
-      "date_start": "2026-10-07",
-      "source": "museum"
-    },
-    {
-      "id": "4024a0be2131b61b",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-13",
-      "source": "museum"
-    },
-    {
-      "id": "07db41ff29ee55b2",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-10-14",
-      "source": "museum"
-    },
-    {
-      "id": "3b7350a7a3b4be6e",
-      "title": "Mitmach-Ausstellung flott, flott!",
-      "date_start": "2026-10-17",
-      "source": "museum"
-    },
-    {
-      "id": "a3cb9bcc36e9189c",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-20",
-      "source": "museum"
-    },
-    {
-      "id": "f3795ca573150b02",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-10-21",
-      "source": "museum"
-    },
-    {
-      "id": "2028e51a13967660",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-10-24",
-      "source": "museum"
-    },
-    {
-      "id": "21fdd3639369a597",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-27",
-      "source": "museum"
-    },
-    {
-      "id": "cdf562f9dfbc8970",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-10-31",
-      "source": "museum"
-    },
-    {
-      "id": "1368e1a6aa32cc60",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-03",
-      "source": "museum"
-    },
-    {
-      "id": "11020e1797d08af8",
-      "title": "Museumspause",
-      "date_start": "2026-11-04",
-      "source": "museum"
-    },
-    {
-      "id": "8cfedb157c03fae8",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-11-05",
-      "source": "museum"
-    },
-    {
-      "id": "7b4a2637daeb836c",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-10",
-      "source": "museum"
-    },
-    {
-      "id": "22597c61629cf289",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-11-11",
-      "source": "museum"
-    },
-    {
-      "id": "34fe17f85587e290",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": "2026-05-14",
-      "source": "schloss"
-    },
-    {
-      "id": "9ac7e96d16a1cc49",
-      "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": "2026-05-14",
-      "source": "schloss"
-    },
-    {
-      "id": "f322d0e465100929",
-      "title": "„Weil menschlich so viel möglich ist“",
-      "date_start": "2026-05-08",
-      "source": "schloss"
-    },
-    {
-      "id": "4bba3e82629ffc52",
-      "title": "Vom Gewölbe zum Genuss",
-      "date_start": "2026-05-09",
-      "source": "schloss"
-    },
-    {
-      "id": "c58aa2615488b993",
-      "title": "Klassische Schlossführung in englischer Sprache",
-      "date_start": "2026-05-14",
-      "source": "schloss"
-    },
-    {
-      "id": "3e2dc5b8e65db6bf",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-05-09",
-      "source": "schloss"
-    },
-    {
-      "id": "c7c1be099f7a3ff8",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-05-10",
-      "source": "schloss"
-    },
-    {
-      "id": "310b529fe2a5e595",
-      "title": "Kaleidoskop – Kunst unterwegs",
-      "date_start": "2026-05-10",
-      "source": "schloss"
-    },
-    {
-      "id": "2c9ba0cfcbb50a9b",
-      "title": "Klassische Führung für Familien",
-      "date_start": "2026-05-14",
-      "source": "schloss"
-    },
-    {
-      "id": "965bd5feee7b2e55",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-05-10",
-      "source": "schloss"
-    },
-    {
-      "id": "09b978ef5241ddaf",
-      "title": "Freier Rundgang",
-      "date_start": "2026-05-14",
-      "source": "schloss"
-    },
-    {
-      "id": "04882926dfb89f93",
-      "title": "Der Bühnendekorationsfundus im Schlosstheater Ludwigsburg",
-      "date_start": "2026-05-14",
-      "source": "schloss"
-    },
-    {
-      "id": "960dd25b8d959c7f",
-      "title": "Der Bühnendekorationsfundus im Schlosstheater Ludwigsburg",
-      "date_start": "2026-05-15",
-      "source": "schloss"
-    },
-    {
-      "id": "65256dcffcd6c489",
-      "title": "Der Bühnendekorationsfundus im Schlosstheater Ludwigsburg",
-      "date_start": "2026-05-16",
-      "source": "schloss"
-    },
-    {
-      "id": "1b22e754370a8b9f",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-05-17",
-      "source": "schloss"
-    },
-    {
-      "id": "7e76dee28b5954f5",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-05-23",
-      "source": "schloss"
-    },
-    {
-      "id": "8cde0d58d2e98226",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-05-23",
-      "source": "schloss"
-    },
-    {
-      "id": "39d890c8417ffeb8",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-05-24",
-      "source": "schloss"
-    },
-    {
-      "id": "6783049ba31b83c0",
-      "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-05-24",
-      "source": "schloss"
-    },
-    {
-      "id": "7b2b65ce55ea6322",
-      "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-05-25",
-      "source": "schloss"
-    },
-    {
-      "id": "40c5e8dd31a26bcc",
-      "title": "Treppauf, treppab",
-      "date_start": "2026-05-26",
-      "source": "schloss"
-    },
-    {
-      "id": "a0680f1846c62801",
-      "title": "Der Schatz des Herzogs",
-      "date_start": "2026-05-27",
-      "source": "schloss"
-    },
-    {
-      "id": "2d80406f57dc82f7",
-      "title": "Wer schön sein will, muss leiden",
-      "date_start": "2026-05-28",
-      "source": "schloss"
-    },
-    {
-      "id": "d375389a4f8e8247",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-05-29",
-      "source": "schloss"
-    },
-    {
-      "id": "41f4958de6cb6d3b",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-05-30",
-      "source": "schloss"
-    },
-    {
-      "id": "7c8e5f1febb02f12",
-      "title": "Führung durch das Schlosstheater",
-      "date_start": "2026-05-30",
-      "source": "schloss"
-    },
-    {
-      "id": "f2621ddeca87a2b1",
-      "title": "Sprichwörtern auf der Spur",
-      "date_start": "2026-05-30",
-      "source": "schloss"
-    },
-    {
-      "id": "48862520f39b6a5d",
-      "title": "Vom Schicksal einer Herzogin",
-      "date_start": "2026-05-31",
-      "source": "schloss"
-    },
-    {
-      "id": "f9ac6c26ab4048a8",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-05-31",
-      "source": "schloss"
-    },
-    {
-      "id": "21b42669151b312f",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-05-31",
-      "source": "schloss"
-    },
-    {
-      "id": "9abf598d504b8789",
-      "title": "Tiere im Schloss",
-      "date_start": "2026-06-01",
-      "source": "schloss"
-    },
-    {
-      "id": "c05722c16aaa5e6c",
-      "title": "Wer schön sein will, muss leiden",
-      "date_start": "2026-06-02",
-      "source": "schloss"
-    },
-    {
-      "id": "d81736e02d4c1b5a",
-      "title": "Treppauf, treppab",
-      "date_start": "2026-06-02",
-      "source": "schloss"
-    },
-    {
-      "id": "82fb5c4edf2036e3",
-      "title": "Der Schatz des Herzogs",
-      "date_start": "2026-06-03",
-      "source": "schloss"
-    },
-    {
-      "id": "f59093cb6e0e3039",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-06-04",
-      "source": "schloss"
-    },
-    {
-      "id": "199bc7f062741839",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-06-04",
-      "source": "schloss"
-    },
-    {
-      "id": "009780cca9341c99",
-      "title": "Caché = verborgen",
-      "date_start": "2026-06-05",
-      "source": "schloss"
-    },
-    {
-      "id": "21154b2b11516fa1",
-      "title": "Vom Gewölbe zum Genuss",
-      "date_start": "2026-06-06",
-      "source": "schloss"
-    },
-    {
-      "id": "1e9d9450ad54c972",
-      "title": "Melodic Wine Ludwigsburg",
-      "date_start": "2026-06-06",
-      "source": "schloss"
-    },
-    {
-      "id": "3235510d3b06f677",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-06-07",
-      "source": "schloss"
-    },
-    {
-      "id": "f33b48a364c35fcb",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-06-07",
-      "source": "schloss"
-    },
-    {
-      "id": "113fc947dceb13d3",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-06-07",
-      "source": "schloss"
-    },
-    {
-      "id": "bb9d3b4ed125c563",
-      "title": "Vsevolod Zavidov",
-      "date_start": "2026-06-12",
-      "source": "schloss"
-    },
-    {
-      "id": "6d88d8ace6b73912",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-06-13",
-      "source": "schloss"
-    },
-    {
-      "id": "8586575bb85de5f8",
-      "title": "Ausstellungseröffnung „Hann Trier“",
-      "date_start": "2026-06-13",
-      "source": "schloss"
-    },
-    {
-      "id": "05fcf1d4e98726b3",
-      "title": "Orlando",
-      "date_start": "2026-06-13",
-      "source": "schloss"
-    },
-    {
-      "id": "001015e245f57a40",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-06-14",
-      "source": "schloss"
-    },
-    {
-      "id": "7be40e61b5c42cf3",
-      "title": "Contenance oder die Welt des guten Benehmens",
-      "date_start": "2026-06-14",
-      "source": "schloss"
-    },
-    {
-      "id": "0ec741acab1b51db",
-      "title": "Vom Alltag einer herzoglichen Hofdame",
-      "date_start": "2026-06-14",
-      "source": "schloss"
-    },
-    {
-      "id": "22c8d981d06de116",
-      "title": "Michael Barenboim & Nasmé Ensemble",
-      "date_start": "2026-06-18",
-      "source": "schloss"
-    },
-    {
-      "id": "1f09d9c967d1eb8a",
-      "title": "Lo Speziale",
-      "date_start": "2026-06-19",
-      "source": "schloss"
-    },
-    {
-      "id": "6864147e825659d4",
-      "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-06-20",
-      "source": "schloss"
-    },
-    {
-      "id": "08d006c09b029383",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-06-20",
-      "source": "schloss"
-    },
-    {
-      "id": "662f073b3cf6ee7e",
-      "title": "Hagen Quartett",
-      "date_start": "2026-06-20",
-      "source": "schloss"
-    },
-    {
-      "id": "fa662fe6f4c91f05",
-      "title": "Lo Speziale",
-      "date_start": "2026-06-20",
-      "source": "schloss"
-    },
-    {
-      "id": "90a0f80ebc662e4c",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-06-21",
-      "source": "schloss"
-    },
-    {
-      "id": "f9a718f38bf75165",
-      "title": "Württembergs First Ladies",
-      "date_start": "2026-06-21",
-      "source": "schloss"
-    },
-    {
-      "id": "0ffc7432e85edca8",
-      "title": "Chen Reiss, Sharon Kam und Yael Kareth",
-      "date_start": "2026-06-21",
-      "source": "schloss"
-    },
-    {
-      "id": "e1d4650b8aeecc7c",
-      "title": "Lo Speziale",
-      "date_start": "2026-06-21",
-      "source": "schloss"
-    },
-    {
-      "id": "14bf27d705ac7bbe",
-      "title": "Christian Zacharias",
-      "date_start": "2026-06-23",
-      "source": "schloss"
-    },
-    {
-      "id": "60c9888a92aeb349",
-      "title": "LGT Young Soloists",
-      "date_start": "2026-06-25",
-      "source": "schloss"
-    },
-    {
-      "id": "e2d8d360965e5b19",
-      "title": "Aminta e Fillide",
-      "date_start": "2026-06-26",
-      "source": "schloss"
-    },
-    {
-      "id": "0c3bbf0d8e9943b1",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-06-27",
-      "source": "schloss"
-    },
-    {
-      "id": "efdc35889a4a1781",
-      "title": "Kaffee, Tee und Schokolade",
-      "date_start": "2026-06-27",
-      "source": "schloss"
-    },
-    {
-      "id": "eee60960bd457274",
-      "title": "Asya Fateyeva",
-      "date_start": "2026-06-27",
-      "source": "schloss"
-    },
-    {
-      "id": "91654311bd315df1",
-      "title": "Aminta e Fillide",
-      "date_start": "2026-06-27",
-      "source": "schloss"
-    },
-    {
-      "id": "8d1cc350d509faa0",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-06-28",
-      "source": "schloss"
-    },
-    {
-      "id": "50d4a7124e426531",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-06-28",
-      "source": "schloss"
-    },
-    {
-      "id": "c05a87cc5846b445",
-      "title": "Contenance oder die Welt des guten Benehmens",
-      "date_start": "2026-06-28",
-      "source": "schloss"
-    },
-    {
-      "id": "20d4ec2d18fe8f8c",
-      "title": "Scharoun Ensemble",
-      "date_start": "2026-07-01",
-      "source": "schloss"
-    },
-    {
-      "id": "6fefa8040ff0a337",
-      "title": "Hayato Sumino",
-      "date_start": "2026-07-03",
-      "source": "schloss"
-    },
-    {
-      "id": "a6b34368c654d3ee",
-      "title": "Didone abbandonata",
-      "date_start": "2026-07-03",
-      "source": "schloss"
-    },
-    {
-      "id": "c524fa00e686694c",
-      "title": "Sprichwörtern auf der Spur",
-      "date_start": "2026-07-04",
-      "source": "schloss"
-    },
-    {
-      "id": "aca6284aa944a94e",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-07-04",
-      "source": "schloss"
-    },
-    {
-      "id": "5c4dd06713ff6ec2",
-      "title": "Didone abbandonata",
-      "date_start": "2026-07-04",
-      "source": "schloss"
-    },
-    {
-      "id": "15dde258909d3404",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-07-05",
-      "source": "schloss"
-    },
-    {
-      "id": "182a78c5279fba71",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-07-05",
-      "source": "schloss"
-    },
-    {
-      "id": "61453e1dae40061a",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-07-05",
-      "source": "schloss"
-    },
-    {
-      "id": "8f31530cadf2f7df",
-      "title": "Sharon Kam",
-      "date_start": "2026-07-05",
-      "source": "schloss"
-    },
-    {
-      "id": "253057d841408259",
-      "title": "Didone abbandonata",
-      "date_start": "2026-07-05",
-      "source": "schloss"
-    },
-    {
-      "id": "abad583685f0f456",
-      "title": "Yulianna Avdeeva",
-      "date_start": "2026-07-09",
-      "source": "schloss"
-    },
-    {
-      "id": "72bdae3f8ec661bb",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-07-10",
-      "source": "schloss"
-    },
-    {
-      "id": "e46269c1cdd22223",
-      "title": "Julia Lezhneva",
-      "date_start": "2026-07-10",
-      "source": "schloss"
-    },
-    {
-      "id": "69249d13700293af",
-      "title": "Le Cinesi",
-      "date_start": "2026-07-10",
-      "source": "schloss"
-    },
-    {
-      "id": "ea0f40926a59fffc",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-07-11",
-      "source": "schloss"
-    },
-    {
-      "id": "c2e8160503945ce5",
-      "title": "Caché = verborgen",
-      "date_start": "2026-07-11",
-      "source": "schloss"
-    },
-    {
-      "id": "074fa2920860233d",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-07-11",
-      "source": "schloss"
-    },
-    {
-      "id": "49e8154b076f0d1c",
-      "title": "Il Giardino Armonico",
-      "date_start": "2026-07-11",
-      "source": "schloss"
-    },
-    {
-      "id": "913016067a40a560",
-      "title": "Le Cinesi",
-      "date_start": "2026-07-11",
-      "source": "schloss"
-    },
-    {
-      "id": "0f89dc84893b96cc",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-07-12",
-      "source": "schloss"
-    },
-    {
-      "id": "4d1f859d48375712",
-      "title": "Kleidung, die verführt",
-      "date_start": "2026-07-12",
-      "source": "schloss"
-    },
-    {
-      "id": "48d4e421fd11486f",
-      "title": "Kaffeeklatsch bei Königs",
-      "date_start": "2026-07-12",
-      "source": "schloss"
-    },
-    {
-      "id": "e6d3b4666b599c29",
-      "title": "Julia Lezhneva",
-      "date_start": "2026-07-12",
-      "source": "schloss"
-    },
-    {
-      "id": "55d53403b2e9f235",
-      "title": "Le Cinesi",
-      "date_start": "2026-07-12",
-      "source": "schloss"
-    },
-    {
-      "id": "27ba8d6897724ab3",
-      "title": "Lisa Batiashvili",
-      "date_start": "2026-07-14",
-      "source": "schloss"
-    },
-    {
-      "id": "aff6855388f59ef8",
-      "title": "Ragnhild Hemsing",
-      "date_start": "2026-07-15",
-      "source": "schloss"
-    },
-    {
-      "id": "375649fca9974bc5",
-      "title": "Jonas Palm",
-      "date_start": "2026-07-16",
-      "source": "schloss"
-    },
-    {
-      "id": "d0c190dc9c2aad1a",
-      "title": "The BossHoss",
-      "date_start": "2026-07-24",
-      "source": "schloss"
-    },
-    {
-      "id": "ab714c021dc2a5aa",
-      "title": "Culcha Candela - mit special Guests",
-      "date_start": "2026-07-25",
-      "source": "schloss"
-    },
-    {
-      "id": "c0ef9dcb0c7e537c",
-      "title": "AnnenMayKantereit",
-      "date_start": "2026-07-29",
-      "source": "schloss"
-    },
-    {
-      "id": "3194e9cbf59ea398",
-      "title": "AnnenMayKantereit",
-      "date_start": "2026-07-29",
-      "source": "schloss"
-    },
-    {
-      "id": "86d158ccf9b78a76",
-      "title": "Wincent Weiss",
-      "date_start": "2026-07-30",
-      "source": "schloss"
-    },
-    {
-      "id": "d510e7af4c2beac4",
-      "title": "TREAM",
-      "date_start": "2026-07-31",
-      "source": "schloss"
-    },
-    {
-      "id": "90c3391d68817f5b",
-      "title": "David Garrett",
-      "date_start": "2026-08-02",
-      "source": "schloss"
-    },
-    {
-      "id": "d3640a2bf4c96d97",
-      "title": "Der Schatz des Herzogs",
-      "date_start": "2026-08-12",
-      "source": "schloss"
-    },
-    {
-      "id": "a23c2b5a8484b424",
-      "title": "Wer schön sein will, muss leiden",
-      "date_start": "2026-08-13",
-      "source": "schloss"
-    },
-    {
-      "id": "02f69c91a4b8ef6d",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-08-15",
-      "source": "schloss"
-    },
-    {
-      "id": "49a8eb52aab26b02",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-08-16",
-      "source": "schloss"
-    },
-    {
-      "id": "199f8e3a47ab41ea",
-      "title": "Orient trifft Okzident im Residenzschloss",
-      "date_start": "2026-08-16",
-      "source": "schloss"
-    },
-    {
-      "id": "9eb4347360b0696d",
-      "title": "Tiere im Schloss",
-      "date_start": "2026-08-17",
-      "source": "schloss"
-    },
-    {
-      "id": "ca3ea549a6346a5b",
-      "title": "Treppauf, treppab",
-      "date_start": "2026-08-18",
-      "source": "schloss"
-    },
-    {
-      "id": "5ae8c4d099ba656c",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-08-21",
-      "source": "schloss"
-    },
-    {
-      "id": "13847e521e8da448",
-      "title": "Vom Keller auf den Teller",
-      "date_start": "2026-08-22",
-      "source": "schloss"
-    },
-    {
-      "id": "9e68c4b3b9a8aee8",
-      "title": "Führung durch das Schlosstheater",
-      "date_start": "2026-08-22",
-      "source": "schloss"
-    },
-    {
-      "id": "43e2aedcffa130ce",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-08-22",
-      "source": "schloss"
-    },
-    {
-      "id": "80d0d25ffe1af0fd",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-08-23",
-      "source": "schloss"
-    },
-    {
-      "id": "2059a9f4798a918e",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-08-23",
-      "source": "schloss"
-    },
-    {
-      "id": "828c169a4d0acce0",
-      "title": "Kleidung, die verführt",
-      "date_start": "2026-08-23",
-      "source": "schloss"
-    },
-    {
-      "id": "991c7bebf587de75",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-08-23",
-      "source": "schloss"
-    },
-    {
-      "id": "8ab87f17041b12bd",
-      "title": "Tiere im Schloss",
-      "date_start": "2026-08-24",
-      "source": "schloss"
-    },
-    {
-      "id": "f5d9f08961a9b71b",
-      "title": "Treppauf, treppab",
-      "date_start": "2026-08-25",
-      "source": "schloss"
-    },
-    {
-      "id": "04fb88dec66234d4",
-      "title": "Der Schatz des Herzogs",
-      "date_start": "2026-08-26",
-      "source": "schloss"
-    },
-    {
-      "id": "2e45cc6f49b8714f",
-      "title": "Wer schön sein will, muss leiden",
-      "date_start": "2026-08-27",
-      "source": "schloss"
-    },
-    {
-      "id": "7a022f7546d8d57b",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-08-29",
-      "source": "schloss"
-    },
-    {
-      "id": "4ef99fbe0d5dd1fd",
-      "title": "Kleidung, die verführt",
-      "date_start": "2026-08-29",
-      "source": "schloss"
-    },
-    {
-      "id": "9af0bf721c3ef0df",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-08-29",
-      "source": "schloss"
-    },
-    {
-      "id": "d162847a2b9e9c24",
-      "title": "Fotografieren erlaubt",
-      "date_start": "2026-08-30",
-      "source": "schloss"
-    },
-    {
-      "id": "f7d1c56c0798c9cf",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-08-30",
-      "source": "schloss"
-    },
-    {
-      "id": "c1a361ea6e4ea554",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-08-30",
-      "source": "schloss"
-    },
-    {
-      "id": "685248dbf2eaf9df",
-      "title": "Treppauf, treppab",
-      "date_start": "2026-09-01",
-      "source": "schloss"
-    },
-    {
-      "id": "496f307ad322f613",
-      "title": "Der Schatz des Herzogs",
-      "date_start": "2026-09-02",
-      "source": "schloss"
-    },
-    {
-      "id": "cfac59ec5d2f7d13",
-      "title": "Kleidung, die verführt",
-      "date_start": "2026-09-05",
-      "source": "schloss"
-    },
-    {
-      "id": "7b4eb9e64e6869d0",
-      "title": "Württembergs First Ladies",
-      "date_start": "2026-09-06",
-      "source": "schloss"
-    },
-    {
-      "id": "dd2e1c29112b4cac",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-09-06",
-      "source": "schloss"
-    },
-    {
-      "id": "e7cded53e4164d14",
-      "title": "Tiere im Schloss",
-      "date_start": "2026-09-07",
-      "source": "schloss"
-    },
-    {
-      "id": "c0a776483b81bf7f",
-      "title": "Treppauf, treppab",
-      "date_start": "2026-09-08",
-      "source": "schloss"
-    },
-    {
-      "id": "f61e5d4e1170acdf",
-      "title": "Der Schatz des Herzogs",
-      "date_start": "2026-09-09",
-      "source": "schloss"
-    },
-    {
-      "id": "1a0e400acdcbdb85",
-      "title": "Wer schön sein will, muss leiden",
-      "date_start": "2026-09-10",
-      "source": "schloss"
-    },
-    {
-      "id": "712a838fb0aa3bc2",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-09-11",
-      "source": "schloss"
-    },
-    {
-      "id": "1ffc9c096687ff0b",
-      "title": "Just White & Blue",
-      "date_start": "2026-09-11",
-      "source": "schloss"
-    },
-    {
-      "id": "1af09cf8d178fb9b",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-09-12",
-      "source": "schloss"
-    },
-    {
-      "id": "6a080fd3928b516d",
-      "title": "Führung durch das Schlosstheater",
-      "date_start": "2026-09-12",
-      "source": "schloss"
-    },
-    {
-      "id": "8ef783add45ede91",
-      "title": "Crown of Sound",
-      "date_start": "2026-09-12",
-      "source": "schloss"
-    },
-    {
-      "id": "37efb852fef26379",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-09-12",
-      "source": "schloss"
-    },
-    {
-      "id": "45d880aa2039e537",
-      "title": "Schaurig schön",
-      "date_start": "2026-09-12",
-      "source": "schloss"
-    },
-    {
-      "id": "a86e92eb408517f7",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-09-13",
-      "source": "schloss"
-    },
-    {
-      "id": "f45a3b5259c7c62b",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-09-13",
-      "source": "schloss"
-    },
-    {
-      "id": "41106f75d2ee1c9d",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-09-19",
-      "source": "schloss"
-    },
-    {
-      "id": "e6a41a71c699456f",
-      "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-09-19",
-      "source": "schloss"
-    },
-    {
-      "id": "c0e73c269f6f4287",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-09-20",
-      "source": "schloss"
-    },
-    {
-      "id": "e229aa4c78b06429",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-09-20",
-      "source": "schloss"
-    },
-    {
-      "id": "e52d3999e937d53e",
-      "title": "Sprichwörtern auf der Spur",
-      "date_start": "2026-09-20",
-      "source": "schloss"
-    },
-    {
-      "id": "99fb7ab02f3ff68b",
-      "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-09-20",
-      "source": "schloss"
-    },
-    {
-      "id": "ea0c6a1c1dbc1fb8",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-09-26",
-      "source": "schloss"
-    },
-    {
-      "id": "ddfeb446f625fb08",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-09-26",
-      "source": "schloss"
-    },
-    {
-      "id": "347178345e93b0fe",
-      "title": "Schaurig schön",
-      "date_start": "2026-09-26",
-      "source": "schloss"
-    },
-    {
-      "id": "3c1d370de0fb5b82",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-09-27",
-      "source": "schloss"
-    },
-    {
-      "id": "bbeaa69319ac3097",
-      "title": "Mythos Mätresse",
-      "date_start": "2026-09-27",
-      "source": "schloss"
-    },
-    {
-      "id": "db97e26027695116",
-      "title": "Contenance oder die Welt des guten Benehmens",
-      "date_start": "2026-09-27",
-      "source": "schloss"
-    },
-    {
-      "id": "90d41fa34255a459",
-      "title": "Hidden Rooms",
-      "date_start": "2026-09-27",
-      "source": "schloss"
-    },
-    {
-      "id": "19cddaa36340b64e",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-02",
-      "source": "schloss"
-    },
-    {
-      "id": "6a2f51b24bfdaeab",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-10-03",
-      "source": "schloss"
-    },
-    {
-      "id": "82f6efe1df7aae07",
-      "title": "Sprichwörtern auf der Spur",
-      "date_start": "2026-10-03",
-      "source": "schloss"
-    },
-    {
-      "id": "55f561b212f606d1",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-10-03",
-      "source": "schloss"
-    },
-    {
-      "id": "26afb114df303dde",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-10-04",
-      "source": "schloss"
-    },
-    {
-      "id": "38a11bd0620c3148",
-      "title": "Württembergs First Ladies",
-      "date_start": "2026-10-04",
-      "source": "schloss"
-    },
-    {
-      "id": "0e724a0cb086fdc3",
-      "title": "Zu Diensten des Herzogs",
-      "date_start": "2026-10-04",
-      "source": "schloss"
-    },
-    {
-      "id": "59d9d947771114f6",
-      "title": "Orient trifft Okzident im Residenzschloss",
-      "date_start": "2026-10-04",
-      "source": "schloss"
-    },
-    {
-      "id": "0ecb6ff52b17adf5",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-09",
-      "source": "schloss"
-    },
-    {
-      "id": "44d082ea3f4f627d",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-10-10",
-      "source": "schloss"
-    },
-    {
-      "id": "4d0744569ac30d12",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-10-10",
-      "source": "schloss"
-    },
-    {
-      "id": "f9df6ced3595467c",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-10-10",
-      "source": "schloss"
-    },
-    {
-      "id": "3b984dc73aaa0584",
-      "title": "Schaurig schön",
-      "date_start": "2026-10-10",
-      "source": "schloss"
-    },
-    {
-      "id": "3155248abffc5d89",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-10-11",
-      "source": "schloss"
-    },
-    {
-      "id": "b88fb92bebcac0ea",
-      "title": "Vom Alltag einer herzoglichen Hofdame",
-      "date_start": "2026-10-11",
-      "source": "schloss"
-    },
-    {
-      "id": "81c3ef0e977232d8",
-      "title": "Technik in der Unterwelt",
-      "date_start": "2026-10-11",
-      "source": "schloss"
-    },
-    {
-      "id": "c7cff2bbf98cd638",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-10-23",
-      "source": "schloss"
-    },
-    {
-      "id": "87d9175c1e885cb4",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-23",
-      "source": "schloss"
-    },
-    {
-      "id": "cbe0729d16d507bc",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-10-24",
-      "source": "schloss"
-    },
-    {
-      "id": "1f9c57f13f57df05",
-      "title": "Wasser im Ludwigsburger Schloss",
-      "date_start": "2026-10-24",
-      "source": "schloss"
-    },
-    {
-      "id": "03a423a77af0d5d8",
-      "title": "Sprichwörtern auf der Spur",
-      "date_start": "2026-10-24",
-      "source": "schloss"
-    },
-    {
-      "id": "cef6a0a474c7ce5d",
-      "title": "Vom Keller auf den Teller",
-      "date_start": "2026-10-25",
-      "source": "schloss"
-    },
-    {
-      "id": "2ee8345a2c8b274b",
-      "title": "Caché = verborgen",
-      "date_start": "2026-10-25",
-      "source": "schloss"
-    },
-    {
-      "id": "74c5f549089267dc",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-10-25",
-      "source": "schloss"
-    },
-    {
-      "id": "6931b666f06159c9",
-      "title": "Tiere im Schloss",
-      "date_start": "2026-10-26",
-      "source": "schloss"
-    },
-    {
-      "id": "bbfb78b5eb90c5f7",
-      "title": "Treppauf, treppab",
-      "date_start": "2026-10-27",
-      "source": "schloss"
-    },
-    {
-      "id": "fd299f85b2b56895",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-27",
-      "source": "schloss"
-    },
-    {
-      "id": "502e0d43329f5101",
-      "title": "Der Schatz des Herzogs",
-      "date_start": "2026-10-28",
-      "source": "schloss"
-    },
-    {
-      "id": "9c9d83ff03eb6cde",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-28",
-      "source": "schloss"
-    },
-    {
-      "id": "2f3f873ba99badf6",
-      "title": "Wer schön sein will, muss leiden",
-      "date_start": "2026-10-29",
-      "source": "schloss"
-    },
-    {
-      "id": "c382bc1c8e8fa11c",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-29",
-      "source": "schloss"
-    },
-    {
-      "id": "21396acbee5d6b22",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-30",
-      "source": "schloss"
-    },
-    {
-      "id": "b84a5aa8417b960b",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-10-31",
-      "source": "schloss"
-    },
-    {
-      "id": "b76e7d68f1b39dad",
-      "title": "Schaurig schön",
-      "date_start": "2026-10-31",
-      "source": "schloss"
-    },
-    {
-      "id": "33a70c05acac2ca9",
-      "title": "Schaurig schön",
-      "date_start": "2026-10-31",
-      "source": "schloss"
-    },
-    {
-      "id": "00c4c18a531cbb84",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-11-01",
-      "source": "schloss"
-    },
-    {
-      "id": "417f60b13116a3c6",
-      "title": "Technik in der Unterwelt",
-      "date_start": "2026-11-01",
-      "source": "schloss"
-    },
-    {
-      "id": "61c46af4f2d63081",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-11-06",
-      "source": "schloss"
-    },
-    {
-      "id": "e652fd8a6cd1fdb0",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-11-07",
-      "source": "schloss"
-    },
-    {
-      "id": "a7274a6519aae059",
-      "title": "Kleidung, die verführt",
-      "date_start": "2026-11-08",
-      "source": "schloss"
-    },
-    {
-      "id": "931720f5cb13c400",
-      "title": "Kaiser oder Sonnenkönig?",
-      "date_start": "2026-11-08",
-      "source": "schloss"
-    },
-    {
-      "id": "546d7b74d4adcd0a",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-11-08",
-      "source": "schloss"
-    },
-    {
-      "id": "db062261417554b6",
-      "title": "Von Tod und Auferstehung",
-      "date_start": "2026-11-08",
-      "source": "schloss"
-    },
-    {
-      "id": "984732590eda2a83",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-11-13",
-      "source": "schloss"
-    },
-    {
-      "id": "08b408a27a29d5c8",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-11-14",
-      "source": "schloss"
-    },
-    {
-      "id": "e6bcb9fc341ac9f3",
-      "title": "Schaurig schön",
-      "date_start": "2026-11-14",
-      "source": "schloss"
-    },
-    {
-      "id": "378a2c2d7d01d6bd",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-11-15",
-      "source": "schloss"
-    },
-    {
-      "id": "32c9d42e0c7ccec8",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-11-20",
-      "source": "schloss"
-    },
-    {
-      "id": "e775acdbee6e6f3e",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-11-21",
-      "source": "schloss"
-    },
-    {
-      "id": "9017f8d36d7c62ed",
-      "title": "Führung durch das Schlosstheater",
-      "date_start": "2026-11-21",
-      "source": "schloss"
-    },
-    {
-      "id": "386ee6bd90f4156c",
-      "title": "Kaffee, Tee und Schokolade",
-      "date_start": "2026-11-21",
-      "source": "schloss"
-    },
-    {
-      "id": "9c9281cce7a1ea5d",
-      "title": "Weißes Gold und Glanz der Seide",
-      "date_start": "2026-11-22",
-      "source": "schloss"
-    },
-    {
-      "id": "c9600972e1092b9d",
-      "title": "Caché = verborgen",
-      "date_start": "2026-11-22",
-      "source": "schloss"
-    },
-    {
-      "id": "8a8d315bbb6774d4",
-      "title": "Zu Diensten des Herzogs",
-      "date_start": "2026-11-22",
-      "source": "schloss"
-    },
-    {
-      "id": "4e19341a71d19d1b",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-11-27",
-      "source": "schloss"
-    },
-    {
-      "id": "3f5c79ea8dc14382",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-11-28",
-      "source": "schloss"
-    },
-    {
-      "id": "237cb670b62f0202",
-      "title": "Technik in der Unterwelt",
-      "date_start": "2026-11-28",
-      "source": "schloss"
-    },
-    {
-      "id": "860cca5ebb21d237",
-      "title": "Contenance oder die Welt des guten Benehmens",
-      "date_start": "2026-11-29",
-      "source": "schloss"
-    },
-    {
-      "id": "211607258fdaf4ce",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-11-29",
-      "source": "schloss"
-    },
-    {
-      "id": "2cf302693f39812c",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-12-04",
-      "source": "schloss"
-    },
-    {
-      "id": "36b0f78e21c7fe66",
-      "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-12-05",
-      "source": "schloss"
-    },
-    {
-      "id": "673781fd2e5aa7d6",
-      "title": "Schaurig schön",
-      "date_start": "2026-12-05",
-      "source": "schloss"
-    },
-    {
-      "id": "0f2d9ec45d547e34",
-      "title": "Weißes Gold und Glanz der Seide",
-      "date_start": "2026-12-06",
-      "source": "schloss"
-    },
-    {
-      "id": "94765a480bf169d4",
-      "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-12-06",
-      "source": "schloss"
-    },
-    {
-      "id": "8d10dcec5c401ad4",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-12-11",
-      "source": "schloss"
-    },
-    {
-      "id": "549705f1f64c8afc",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-12-12",
-      "source": "schloss"
-    },
-    {
-      "id": "eb9c0a031253b83e",
-      "title": "Kaffeeklatsch bei Königs",
-      "date_start": "2026-12-12",
-      "source": "schloss"
-    },
-    {
-      "id": "4eb580d36d18b103",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-12-12",
-      "source": "schloss"
-    },
-    {
-      "id": "e18112d33b9435f4",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-12-13",
-      "source": "schloss"
-    },
-    {
-      "id": "57778be1072ecdc4",
-      "title": "Zu Diensten des Herzogs",
-      "date_start": "2026-12-13",
-      "source": "schloss"
-    },
-    {
-      "id": "a2ed84c4dcc50aeb",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-12-18",
-      "source": "schloss"
-    },
-    {
-      "id": "b18e8c24a920a150",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-12-19",
-      "source": "schloss"
-    },
-    {
-      "id": "d5cd560f0d273253",
-      "title": "Schaurig schön",
-      "date_start": "2026-12-19",
-      "source": "schloss"
-    },
-    {
-      "id": "ba27ca0364bb8de9",
-      "title": "Technik in der Unterwelt",
-      "date_start": "2026-12-20",
-      "source": "schloss"
-    },
-    {
-      "id": "036bdd7f49beb812",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-12-20",
-      "source": "schloss"
-    },
-    {
-      "id": "9805c66728306ec4",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-12-20",
-      "source": "schloss"
-    },
-    {
-      "id": "6f47839361ed06ad",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-12-25",
-      "source": "schloss"
-    },
-    {
-      "id": "b9b4bfc9bd32ae84",
-      "title": "Kleidung, die verführt",
-      "date_start": "2026-12-25",
-      "source": "schloss"
-    },
-    {
-      "id": "f4f40bf069d4b297",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-12-26",
-      "source": "schloss"
-    },
-    {
-      "id": "09fd06a47f26e441",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-12-26",
-      "source": "schloss"
-    },
-    {
-      "id": "11af99d14d4222f2",
-      "title": "Mythos Mätresse",
-      "date_start": "2026-12-27",
-      "source": "schloss"
-    },
-    {
-      "id": "85b85ccca8e657fa",
-      "title": "Contenance oder die Welt des guten Benehmens",
-      "date_start": "2026-12-27",
-      "source": "schloss"
-    },
-    {
-      "id": "65b5870ff4005c98",
-      "title": "Hidden Rooms",
-      "date_start": "2026-12-27",
-      "source": "schloss"
-    },
-    {
-      "id": "04bf08d2d63625de",
-      "title": "Die Liebe am Ludwigsburger Hof",
-      "date_start": "2026-12-28",
-      "source": "schloss"
-    },
-    {
-      "id": "8249f73c199f14f9",
-      "title": "Vom Alltag einer herzoglichen Hofdame",
-      "date_start": "2026-12-28",
-      "source": "schloss"
-    },
-    {
-      "id": "b3343695a91413b7",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-12-28",
-      "source": "schloss"
-    },
-    {
-      "id": "e3bed5f06e8e3c45",
-      "title": "Vom Alltag einer herzoglichen Hofdame",
-      "date_start": "2026-12-29",
-      "source": "schloss"
-    },
-    {
-      "id": "8841b73ec851900c",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-12-29",
-      "source": "schloss"
-    },
-    {
-      "id": "56e5f9f2c39043cc",
-      "title": "Vom Alltag einer herzoglichen Hofdame",
-      "date_start": "2026-12-30",
-      "source": "schloss"
-    },
-    {
-      "id": "b9b7a2170808e9b3",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-12-30",
-      "source": "schloss"
-    },
-    {
-      "id": "cf2c6900708d2c63",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-12-31",
-      "source": "schloss"
-    },
-    {
-      "id": "67037ab7bbd6ffaf",
-      "title": "Ausstellung: Mixed Realities",
-      "date_start": "2026-05-08",
-      "source": "karlskaserne_ausstellungen"
-    },
-    {
-      "id": "779f3a87b33d50f9",
-      "title": "Ausstellung: Ich darf das!",
-      "date_start": "2026-06-28",
-      "source": "karlskaserne_ausstellungen"
-    },
-    {
-      "id": "6744bf6f864c6214",
-      "title": "Haake Festival 2026",
-      "date_start": "2026-09-25",
-      "source": "karlskaserne_ausstellungen"
-    },
-    {
-      "id": "8bd87a78bd9ee141",
-      "title": "29. Jugendkunstpreis Baden-Württemberg 2026 \"Zusammen\"",
-      "date_start": "2026-10-09",
-      "source": "karlskaserne_ausstellungen"
-    },
-    {
-      "id": "951a0948a228934d",
-      "title": "Ausstellung: Mixed Realities",
-      "date_start": "2026-05-08",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "788ab0a15dbd2e46",
-      "title": "Workshop: Zirkus und Stelzenlauf für 8-12 Jährige in Ludwigsburg",
-      "date_start": "2026-05-09",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0a41c1e5810b70af",
-      "title": "Wave am Abend",
-      "date_start": "2026-05-09",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "3f4079de47863d94",
-      "title": "Workshop: Zirkus und Stelzenlauf für 5-7 Jährige in Ludwigsburg",
-      "date_start": "2026-05-09",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0e68b6c893f18059",
-      "title": "Urban Dance Show",
-      "date_start": "2026-05-10",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0925eeebd2bcd51c",
-      "title": "Urban Dance Show",
-      "date_start": "2026-05-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "9629b92696edb618",
-      "title": "Feldenkrais Intensiv",
-      "date_start": "2026-05-16",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "126bf93d3c16cf74",
-      "title": "Workshop: Ein Brontosaurus aus Ton für Kinder ab 7 Jahren in Ludwigsburg",
-      "date_start": "2026-05-16",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "d494b6f8e3f57a5e",
-      "title": "Workshop: Talking Stones ab 18 Jahren in Ludwigsburg",
-      "date_start": "2026-05-16",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "313acaec4d45ffe4",
-      "title": "Taiji Qigong",
-      "date_start": "2026-05-17",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "e5c843d80d207b65",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger und Leicht-Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-05-19",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "7d2ca731bebe3f03",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-05-19",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "17cdf8cc54a1ed1e",
-      "title": "Gyrokinesis®",
-      "date_start": "2026-05-22",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "48e74f64093da867",
-      "title": "Workshop: Flower Power ab 18 Jahren in Ludwigsburg",
-      "date_start": "2026-05-23",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "e58a66013dd1cd4b",
-      "title": "Biodanza",
-      "date_start": "2026-05-24",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "3269a59bffe365ea",
-      "title": "Ferienworkshop: Pop-Up-Buch für Jugendliche ab 12 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "3e43280ee6341789",
-      "title": "Ferienworkshop: Lebendige Buchstaben in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "3ba96453e1d231b8",
-      "title": "Ferienworkshop: Abenteuer Manege! für Kinder von 9-12 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "cf8d525720f13951",
-      "title": "Ferienworkshop: Wer ich mal sein will für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0e5fd3fb8bd96179",
-      "title": "Ferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "fc422401c9429d7e",
-      "title": "Ferienworkshop: Tanztheaterwerkstatt für Kinder von 8-10 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0e5fd3fb8bd96179",
-      "title": "Ferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "58535e4dfc5d282c",
-      "title": "Ferienworkshop: Contemporary Kids für Kinder von 6-9 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "f37b20366dea79e4",
-      "title": "Ferienworkshop: Malen mit Naturmaterialien für Kinder ab 9 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "3e81820c9eb2337d",
-      "title": "Ferienworkshop: Hip-Hop Streetdance Kids für Kinder von 7-9 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "f07c678c3d4ce787",
-      "title": "Workshop: Ein Esel aus Ton für Kinder ab 7 Jahren in Ludwigsburg",
-      "date_start": "2026-06-06",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "6af4171c3eb9c9c4",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger und Leicht-Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-06-09",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "9216c0375522848d",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-06-09",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "ff0229ea97eebdc6",
-      "title": "Im Moment - Das reine Vergnügen!",
-      "date_start": "2026-06-12",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "5ff9ea194f8880e9",
-      "title": "Poésie Africaine",
-      "date_start": "2026-06-13",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "5ec5383b73c77e5f",
-      "title": "Workshop: Zirkus und Stelzenlauf für 8-12 Jährige in Ludwigsburg",
-      "date_start": "2026-06-13",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "1bec503753b00ccb",
-      "title": "Workshop: Zirkus und Stelzenlauf für 5-7 Jährige in Ludwigsburg",
-      "date_start": "2026-06-13",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0132977ff451b5a1",
-      "title": "Wave am Morgen",
-      "date_start": "2026-06-14",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "ba9444804cf65ff6",
-      "title": "Der Märchenkoch",
-      "date_start": "2026-06-14",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "5fe1e066716b27a5",
-      "title": "Workshop: Die Margerite - ein Relief aus Ton in Ludwigsburg",
-      "date_start": "2026-06-14",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "232ce8ee8b65bb1b",
-      "title": "Workshop: Eine Taube aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-06-14",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0312f4f8beecd4e8",
-      "title": "Der Märchenkoch",
-      "date_start": "2026-06-15",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0312f4f8beecd4e8",
-      "title": "Der Märchenkoch",
-      "date_start": "2026-06-15",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "e5bb14f54e98d4a5",
-      "title": "The Ilan Lev Method",
-      "date_start": "2026-06-19",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "6509c0063f751533",
-      "title": "Workshop: Ein Hexenhaus aus Ton in Ludwigsburg",
-      "date_start": "2026-06-20",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "f7bb01103c1ab447",
-      "title": "Workshop: Sadza Batik aus Zimbabwe in Ludwigsburg",
-      "date_start": "2026-06-20",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "49d944e0b3022caa",
-      "title": "Gaga/People Classes",
-      "date_start": "2026-06-20",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "4e88e2a3e53fb2e4",
-      "title": "Taiji Qigong",
-      "date_start": "2026-06-21",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "12d6c6e10f846beb",
-      "title": "Klangentspannung",
-      "date_start": "2026-06-21",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "6bf8fbb05e4592f9",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger und Leicht-Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-06-23",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0534ea0a57a29615",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-06-23",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "fea44d0fa9268400",
-      "title": "Gyrokinesis®",
-      "date_start": "2026-06-27",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "b8e94f76c04085b7",
-      "title": "Workshop: Keramikstudio für Erwachsene und Eltern mit Kindern in Ludwigsburg",
-      "date_start": "2026-06-27",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "73237c6b583418a8",
-      "title": "\"Sevillanas\" II",
-      "date_start": "2026-06-28",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "ec5e8a9c6aa93278",
-      "title": "Biodanza",
-      "date_start": "2026-06-28",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "3a55c0643867c54e",
-      "title": "\"Sevillanas\" mit Fächer II",
-      "date_start": "2026-06-28",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "d710001204abc5ee",
-      "title": "Ausstellung: Ich darf das!",
-      "date_start": "2026-06-28",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "890f4c2099a3be52",
-      "title": "Festspiel-Nacht II – Ludwigsburger Schlossfestspiele",
-      "date_start": "2026-07-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "12d5db92fefb843c",
-      "title": "Workshop: Ein Braunbär aus Ton in Ludwigsburg",
-      "date_start": "2026-07-04",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "31d9ad76ecf0972f",
-      "title": "Kreatives Schreiben",
-      "date_start": "2026-07-04",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "76b2fa9ac55464e0",
-      "title": "Workshop: Zirkus-Spezial für Kinder von 8-12 Jahren in Ludwigsburg",
-      "date_start": "2026-07-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "480f69af66e4854e",
-      "title": "Workshop: Till Eulenspiegel als Tonfigur in Ludwigsburg",
-      "date_start": "2026-07-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "6472050311d62675",
-      "title": "Workshop: Zirkus-Spezial für Kinder von 5-7 Jahren",
-      "date_start": "2026-07-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "1aaa101fb5d5583b",
-      "title": "Workshop: Luftakrobatik Spezial für Kinder von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-07-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "3cdafaba41d913b2",
-      "title": "Workshop: Zirkus-Spezial für Kinder von 8-12 Jahren in Ludwigsburg",
-      "date_start": "2026-07-12",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0cc9bddb7cddf752",
-      "title": "Klangentspannung",
-      "date_start": "2026-07-17",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "7fd03e810e85c298",
-      "title": "Konrad oder Das Kind aus der Konservenbüchse",
-      "date_start": "2026-07-20",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "7fd03e810e85c298",
-      "title": "Konrad oder Das Kind aus der Konservenbüchse",
-      "date_start": "2026-07-20",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "dc5ec5cf75efd774",
-      "title": "Sommerferienworkshop: T-Rex-Alarm in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "83504cd41962382b",
-      "title": "Sommerferienworkshop: Schule der magischen Tiere in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "2d548522e603e46a",
-      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "5885d1c194e68dcd",
-      "title": "Sommerferienworkshop: Ein gemauerter Turm aus Ton in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "c12c1223105c6b89",
-      "title": "Sommerferienworkshop: Die Wunderwelt der Stempel und Schablonen in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "6c50bf3264e04cd4",
-      "title": "Sommerferienworkshop: Pferde und magische Einhörner in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0f26cc8442f7e620",
-      "title": "Sommerferienworkshop: Zootiere aus Ton in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0551aca1523b3c9c",
-      "title": "Sommerferienworkshop: Binding journals in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "76d2f6695779a6cb",
-      "title": "Sommerferienworkshop: Geschichten schreiben und illustrieren in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "b47fc8ff5fd85a35",
-      "title": "Sommernachts Open Air Kino",
-      "date_start": "2026-08-01",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "d6695e333beb17ff",
-      "title": "Sommerferienworkshop: Fang den Räuber Hotzenplotz in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "9afcf718ba894afa",
-      "title": "Sommerferienworkshop: Stage Time in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "5df77e31b7cf9f85",
-      "title": "Sommerferienworkshop: Ein Schattentheater – Spiel mit Licht und Schatten in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "894829e66c07ce58",
-      "title": "Sommerferienworkshop: Theaterwerkstatt in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "520c9ebe310b15dd",
-      "title": "Sommerferienworkshop: Kinderrechte kreativ entdecken in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "444ee6f1fcb9999b",
-      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "9c008553d0a00e78",
-      "title": "Sommerferienworkshop: Contemporary Dance Camp in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "2ab67264e360db2d",
-      "title": "Sommerferienworkshop: Die Schule der magischen Tiere in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0424673a41bdd0b6",
-      "title": "Sommerferienworkshop: Abenteuer Manege! in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0f2956f0caaa5ec2",
-      "title": "Sommerferienworkshop: Die Zauberwelt von Harry Potter in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "5c735ff9002f6a17",
-      "title": "Sommerferienworkshop: Malerischer Stop-Motion-Film in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "bc8bf45458568c62",
-      "title": "Sommerferienworkshop: Theaterwerkstatt in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "4e7fae87f3f6972e",
-      "title": "Sommerferienworkshop: Mondlandung - streng geheim! in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "02675cad349f9dcd",
-      "title": "Sommerferienworkshop: Hip Hop in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "1f5f6cbf62e8ebc6",
-      "title": "Sommerferienworkshop: Flughafen Schlosshof, bitte melden! in Bietigheim",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "32caeb66e3ee2f33",
-      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "f40daf94cd4b014a",
-      "title": "Sommerferienworkshop: Commercial Dance in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "81307c9fd5bd6df2",
-      "title": "Sommerferienworkshop: Trickfilm in Stop-Motion-Technik in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "2b46f52b55e56857",
-      "title": "Sommerferienworkshop: Prompt against the silence in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "6d21e3d49e80d3fa",
-      "title": "Sommerferienworkshop: Abenteuer Manege!",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "fd335fd38e05452b",
-      "title": "Sommerferienworkshop: Theaterwerkstatt in Bietigheim",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "f6d4b5c4083667d3",
-      "title": "Sommerferienworkshop: Kunterbunter Meeresgarten in Bietigheim",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "f8303be9171a4423",
-      "title": "Sommerferienworkshop: In Holz hauen und Schnitzen in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "2ec29dc1d7b988a4",
-      "title": "Sommerferienworkshop: Hip Hop in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "70a071f66545b645",
-      "title": "Sommerferienworkshop: Bühne frei! in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "6534bd12286fab54",
-      "title": "Sommerferienworkshop: Urban Sketching in Ludwigsburg",
-      "date_start": "2026-09-05",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "764ee1d68189b831",
-      "title": "Sommerferienworkshop: Film ab! Vom Storyboard zum Video – ein Ganztagsangebot in Ludwigsburg",
-      "date_start": "2026-09-07",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "afa6cda745bad4e6",
-      "title": "Sommerferienworkshop: Ein verwunschener Feuerdrache in Ludwigsburg",
-      "date_start": "2026-09-07",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "5b98b3a21fa84faf",
-      "title": "Sommerferienworkshop: Tanztheaterwerkstatt in Ludwigsburg",
-      "date_start": "2026-09-07",
-      "source": "karlskaserne_veranstaltungen"
-    },
     {
       "id": "360a49a6edc0d42c",
       "title": "2026",
@@ -2540,72 +100,6 @@
       "title": "2013",
       "date_start": "2013-11-17",
       "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "4448b9f7570a871f",
-      "title": "Ronald Cornelissen",
-      "date_start": "2026-04-11",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "412afa2055b9618b",
-      "title": "Aeree Sul",
-      "date_start": "2026-04-11",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "3759b955180af98a",
-      "title": "Petri Ala-Maunus",
-      "date_start": "2026-06-26",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "0ad36e9272d80a81",
-      "title": "Luciano Mazzo",
-      "date_start": "2026-06-26",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "cf4ecc5b82a07c26",
-      "title": "Zimoun",
-      "date_start": "2026-10-02",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "9db237cea1f10715",
-      "title": "Kohler & Lass | Plateaus",
-      "date_start": "2026-10-02",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "dbe0534495561318",
-      "title": "21.05.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
-      "date_start": "2026-05-21",
-      "source": "kunstverein_veranstaltungen"
-    },
-    {
-      "id": "6657f668324078ed",
-      "title": "03.06.2026 - 19:30 Uhr Jazzclub Ludwigsburg x Kunstverein Frank Eberle – Joel Locher | Duo Music Eine Kooperationsveranstaltung mit dem Jazzclub Ludwigsburg. Eintritt frei!",
-      "date_start": "2026-06-03",
-      "source": "kunstverein_veranstaltungen"
-    },
-    {
-      "id": "e0e8c41e6726a85d",
-      "title": "11.06.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
-      "date_start": "2026-06-11",
-      "source": "kunstverein_veranstaltungen"
-    },
-    {
-      "id": "977ab8f55ed7fc87",
-      "title": "17.09.2026 - 19:30 Uhr Jazzclub Ludwigsburg x Kunstverein Les Bons Amis Eine Kooperationsveranstaltung mit dem Jazzclub Ludwigsburg. Eintritt frei!",
-      "date_start": "2026-09-17",
-      "source": "kunstverein_veranstaltungen"
-    },
-    {
-      "id": "6610507bf076caae",
-      "title": "03.12.2026 - 19:30 Uhr Jazzclub Ludwigsburg x Kunstverein DUO - Albe Mayer-Mikosch und Uli Gutscher Eine Kooperationsveranstaltung mit dem Jazzclub Ludwigsburg. Eintritt frei!",
-      "date_start": "2026-12-03",
-      "source": "kunstverein_veranstaltungen"
     },
     {
       "id": "df510b2dff2b7326",
@@ -2866,1306 +360,814 @@
       "source": "kunstverein_veranstaltungen"
     },
     {
-      "id": "6fe28ad3c58cf73d",
-      "title": "3D-Drucker-Sprechstunde",
-      "date_start": "2026-05-19",
-      "source": "stabi"
+      "id": "6398ab5058218a61",
+      "title": "Jahreskonzert",
+      "date_start": "2026-11-14",
+      "source": "tamm"
     },
     {
-      "id": "632ef4b032eae148",
-      "title": "Roboter programmieren: Eltern-Kind-Workshop",
+      "id": "b7805751fea77305",
+      "title": "Himmelfahrt",
+      "date_start": "2026-05-14",
+      "source": "tamm"
+    },
+    {
+      "id": "caed829024e44850",
+      "title": "Christi Himmelfahrt",
+      "date_start": "2026-05-14",
+      "source": "tamm"
+    },
+    {
+      "id": "ed0f36309529bed6",
+      "title": "Vatertagshocketse",
+      "date_start": "2026-05-14",
+      "source": "tamm"
+    },
+    {
+      "id": "04681f7eb0795047",
+      "title": "Jahreshauptversammlung SchÃ¼tzenverein",
+      "date_start": "2026-05-15",
+      "source": "tamm"
+    },
+    {
+      "id": "dd14b815ec9e8a0b",
+      "title": "CafeÂ´Harmonie",
+      "date_start": "2026-05-17",
+      "source": "tamm"
+    },
+    {
+      "id": "19b947033df90f63",
+      "title": "Wanderung",
       "date_start": "2026-05-21",
-      "source": "stabi"
+      "source": "tamm"
     },
     {
-      "id": "021f521fd8402c7c",
-      "title": "Workshop: CAD & 3D-Druck",
-      "date_start": "2026-05-26",
-      "source": "stabi"
-    },
-    {
-      "id": "ebd1ad9dcf5a67d2",
-      "title": "Workshop: Roboter programmieren",
-      "date_start": "2026-05-28",
-      "source": "stabi"
-    },
-    {
-      "id": "96375a239bbc30de",
-      "title": "Online-Workshop: Zeichentrickfilm",
-      "date_start": "2026-06-03",
-      "source": "stabi"
-    },
-    {
-      "id": "3d4cf1be4002af6a",
-      "title": "Filmdreh und Setbau im Spiel – Machinima-Workshop mit Luanti",
-      "date_start": "2026-06-05",
-      "source": "stabi"
-    },
-    {
-      "id": "9eac39f3b41050ea",
-      "title": "MINT meets Krimi: Eine interaktive Detektivgeschichte",
-      "date_start": "2026-06-06",
-      "source": "stabi"
-    },
-    {
-      "id": "ae4b984b92d8bfaa",
-      "title": "IT-Herausforderungen im Alltag meistern",
-      "date_start": "2026-06-12",
-      "source": "stabi"
-    },
-    {
-      "id": "921c3061f65b9a01",
-      "title": "Digitale Medien kreativ",
-      "date_start": "2026-06-16",
-      "source": "stabi"
-    },
-    {
-      "id": "2f05c34a4368e307",
-      "title": "Roboter programmieren: Eltern-Kind-Workshop",
-      "date_start": "2026-06-25",
-      "source": "stabi"
-    },
-    {
-      "id": "568bfaeb2b2a68ed",
-      "title": "Filme im Spiel erstellen – Machinima-Workshop mit Sims",
-      "date_start": "2026-06-27",
-      "source": "stabi"
-    },
-    {
-      "id": "f835f6259f93d197",
-      "title": "Dein Sound, deine Story - Wie klingt deine Zukunft?",
-      "date_start": "2026-09-08",
-      "source": "stabi"
-    },
-    {
-      "id": "0ccc81f23e877f8a",
-      "title": "3D-Drucker-Sprechstunde",
-      "date_start": "2026-11-24",
-      "source": "stabi"
-    },
-    {
-      "id": "79677a48b76889e0",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-05-16",
-      "source": "stabi"
-    },
-    {
-      "id": "32b953051a2323b4",
-      "title": "Internationale Geschichteninsel - Japanisch am Vormittag",
-      "date_start": "2026-05-20",
-      "source": "stabi"
-    },
-    {
-      "id": "f5bac8ef6701575a",
-      "title": "Internationale Geschichteninsel - Türkisch",
-      "date_start": "2026-05-20",
-      "source": "stabi"
-    },
-    {
-      "id": "afd608cfc0a20ce6",
-      "title": "Internationale Geschichteninsel - Arabisch",
-      "date_start": "2026-05-21",
-      "source": "stabi"
-    },
-    {
-      "id": "d9af6b829b7afc28",
-      "title": "KreativWerkstatt - Pflanz' mal was",
+      "id": "3055f84870a2a305",
+      "title": "Keltertreff",
       "date_start": "2026-05-22",
-      "source": "stabi"
+      "source": "tamm"
     },
     {
-      "id": "73f1539c149b652e",
-      "title": "Internationale Geschichteninsel - Französisch",
-      "date_start": "2026-05-22",
-      "source": "stabi"
+      "id": "be27eff9cedec327",
+      "title": "Radtour",
+      "date_start": "2026-05-24",
+      "source": "tamm"
     },
     {
-      "id": "b6104b742133a0c5",
-      "title": "Internationale Geschichteninsel - Chinesisch",
-      "date_start": "2026-05-22",
-      "source": "stabi"
+      "id": "b484f5c0970e264b",
+      "title": "Distrikt-Gottesdienst zu Himmelfahrt",
+      "date_start": "2026-05-25",
+      "source": "tamm"
     },
     {
-      "id": "cd47a81929ff743c",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-05-23",
-      "source": "stabi"
+      "id": "d3dabf870fb01261",
+      "title": "Caritas-Mittagstisch",
+      "date_start": "2026-05-29",
+      "source": "tamm"
     },
     {
-      "id": "6476ba481fe8d3a2",
-      "title": "Comic-Workshop",
-      "date_start": "2026-05-26",
-      "source": "stabi"
-    },
-    {
-      "id": "3b24bca5cb6e9c3b",
-      "title": "Bilderbuchkino am Nachmittag",
-      "date_start": "2026-05-28",
-      "source": "stabi"
-    },
-    {
-      "id": "1a839355f01fbe4a",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-05-30",
-      "source": "stabi"
-    },
-    {
-      "id": "e442d404bb531b35",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-06-06",
-      "source": "stabi"
-    },
-    {
-      "id": "47e4a112507d8fd3",
-      "title": "Internationale Geschichteninsel - Russisch",
-      "date_start": "2026-06-09",
-      "source": "stabi"
-    },
-    {
-      "id": "5b3df88794f72962",
-      "title": "Zwergeninsel",
-      "date_start": "2026-06-11",
-      "source": "stabi"
-    },
-    {
-      "id": "7445d772a95a533f",
-      "title": "Internationale Geschichteninsel - Spanisch",
-      "date_start": "2026-06-11",
-      "source": "stabi"
-    },
-    {
-      "id": "3be34dfa628de4ab",
-      "title": "Storytime in der Hauptstelle",
-      "date_start": "2026-06-11",
-      "source": "stabi"
-    },
-    {
-      "id": "6b958d507e80ee6b",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-06-13",
-      "source": "stabi"
-    },
-    {
-      "id": "23429e9fd1f767d2",
-      "title": "Internationale Geschichteninsel - Türkisch",
-      "date_start": "2026-06-17",
-      "source": "stabi"
-    },
-    {
-      "id": "ee6f94156bc41643",
-      "title": "Bilderbuchkino am Nachmittag",
-      "date_start": "2026-06-18",
-      "source": "stabi"
-    },
-    {
-      "id": "acce3079254aa09a",
-      "title": "Internationale Geschichteninsel - Chinesisch",
-      "date_start": "2026-06-19",
-      "source": "stabi"
-    },
-    {
-      "id": "05e0e1551e38bf1d",
-      "title": "Emmas Einhorn",
-      "date_start": "2026-06-20",
-      "source": "stabi"
-    },
-    {
-      "id": "56d2af979a4ce672",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-06-20",
-      "source": "stabi"
-    },
-    {
-      "id": "836fc288ba0f447c",
-      "title": "Internationale Geschichteninsel - Japanisch",
-      "date_start": "2026-06-23",
-      "source": "stabi"
-    },
-    {
-      "id": "213e35b904087536",
-      "title": "Internationale Geschichteninsel - Arabisch",
-      "date_start": "2026-06-25",
-      "source": "stabi"
-    },
-    {
-      "id": "63837d8f53b65234",
-      "title": "Internationale Geschichteninsel - Französisch",
-      "date_start": "2026-06-26",
-      "source": "stabi"
-    },
-    {
-      "id": "d227188a92f8a828",
-      "title": "Zwergeninsel",
-      "date_start": "2026-07-02",
-      "source": "stabi"
-    },
-    {
-      "id": "6a9863111e9a0d7a",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-07-04",
-      "source": "stabi"
-    },
-    {
-      "id": "b2e9d8b9fbc990cf",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-07-11",
-      "source": "stabi"
-    },
-    {
-      "id": "1956bec19b704e7d",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-07-18",
-      "source": "stabi"
-    },
-    {
-      "id": "da35cf76f0505e39",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-07-25",
-      "source": "stabi"
-    },
-    {
-      "id": "34afadbbedb72483",
-      "title": "Comic-Workshop",
-      "date_start": "2026-07-30",
-      "source": "stabi"
-    },
-    {
-      "id": "b0fd25d874738c93",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-08-01",
-      "source": "stabi"
-    },
-    {
-      "id": "a28b8ba4957bcb87",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-08-08",
-      "source": "stabi"
-    },
-    {
-      "id": "9e941db6f52cdc5f",
-      "title": "KreativWerkstatt - Hej sommar - Sommer in Schweden",
-      "date_start": "2026-08-14",
-      "source": "stabi"
-    },
-    {
-      "id": "d0cdc19734ac8671",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-08-15",
-      "source": "stabi"
-    },
-    {
-      "id": "8dce0aefc7fe038f",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-08-22",
-      "source": "stabi"
-    },
-    {
-      "id": "3e3c0f84db7fb594",
-      "title": "Internationale Geschichteninsel - Russisch",
-      "date_start": "2026-09-15",
-      "source": "stabi"
-    },
-    {
-      "id": "a7735b8c3db78985",
-      "title": "Internationale Geschichteninsel - Spanisch",
-      "date_start": "2026-09-17",
-      "source": "stabi"
-    },
-    {
-      "id": "a715b7862b202b38",
-      "title": "Internationale Geschichteninsel - Türkisch",
-      "date_start": "2026-09-24",
-      "source": "stabi"
-    },
-    {
-      "id": "aac199496f1b9482",
-      "title": "Internationale Geschichteninsel - Französisch",
-      "date_start": "2026-09-25",
-      "source": "stabi"
-    },
-    {
-      "id": "7d86523b8a3f2581",
-      "title": "Internationale Geschichteninsel - Japanisch",
-      "date_start": "2026-09-29",
-      "source": "stabi"
-    },
-    {
-      "id": "fd5099eaeceae004",
-      "title": "Zwergeninsel",
-      "date_start": "2026-10-01",
-      "source": "stabi"
-    },
-    {
-      "id": "e2521d26bb3a4023",
-      "title": "Internationale Geschichteninsel - Arabisch",
-      "date_start": "2026-10-01",
-      "source": "stabi"
-    },
-    {
-      "id": "116f2b457a9695fa",
-      "title": "Internationale Geschichteninsel - Russisch",
-      "date_start": "2026-10-06",
-      "source": "stabi"
-    },
-    {
-      "id": "5f25801fe4ef8fc4",
-      "title": "Internationale Geschichteninsel - Spanisch",
-      "date_start": "2026-10-08",
-      "source": "stabi"
-    },
-    {
-      "id": "cc184232cdf0a05a",
-      "title": "Internationale Geschichteninsel - Türkisch",
-      "date_start": "2026-10-15",
-      "source": "stabi"
-    },
-    {
-      "id": "ebe865930bc5f552",
-      "title": "Internationale Geschichteninsel - Japanisch am Vormittag",
-      "date_start": "2026-10-21",
-      "source": "stabi"
-    },
-    {
-      "id": "d4c453491d6e7c3d",
-      "title": "Internationale Geschichteninsel - Arabisch",
-      "date_start": "2026-10-22",
-      "source": "stabi"
-    },
-    {
-      "id": "68f505f95454d542",
-      "title": "Internationale Geschichteninsel - Französisch",
-      "date_start": "2026-10-23",
-      "source": "stabi"
-    },
-    {
-      "id": "6718a1a32c3e37a6",
-      "title": "KreativWerkstatt - Alles über Geräusche",
-      "date_start": "2026-10-30",
-      "source": "stabi"
-    },
-    {
-      "id": "514d75649a275121",
-      "title": "Internationale Geschichteninsel - Russisch",
-      "date_start": "2026-11-03",
-      "source": "stabi"
-    },
-    {
-      "id": "4319bcc746dffb53",
-      "title": "Zwergeninsel",
-      "date_start": "2026-11-05",
-      "source": "stabi"
-    },
-    {
-      "id": "92223eee24de2c0b",
-      "title": "Internationale Geschichteninsel - Spanisch",
-      "date_start": "2026-11-05",
-      "source": "stabi"
-    },
-    {
-      "id": "052e2387de8f9942",
-      "title": "Internationale Geschichteninsel - Türkisch",
-      "date_start": "2026-11-12",
-      "source": "stabi"
-    },
-    {
-      "id": "0890ad19ce85b6ce",
-      "title": "Internationale Geschichteninsel - Japanisch am Vormittag",
-      "date_start": "2026-11-25",
-      "source": "stabi"
-    },
-    {
-      "id": "581b798420de5448",
-      "title": "Internationale Geschichteninsel - Arabisch",
-      "date_start": "2026-11-26",
-      "source": "stabi"
-    },
-    {
-      "id": "fcbb4ee1c87554eb",
-      "title": "Internationale Geschichteninsel - Französisch",
-      "date_start": "2026-11-27",
-      "source": "stabi"
-    },
-    {
-      "id": "e3077fd7ce875cf7",
-      "title": "Internationale Geschichteninsel - Russisch",
-      "date_start": "2026-12-01",
-      "source": "stabi"
-    },
-    {
-      "id": "8f537afab2cbf78b",
-      "title": "Zwergeninsel",
-      "date_start": "2026-12-03",
-      "source": "stabi"
-    },
-    {
-      "id": "6b74034211e2ead0",
-      "title": "Internationale Geschichteninsel - Spanisch",
-      "date_start": "2026-12-03",
-      "source": "stabi"
-    },
-    {
-      "id": "b2b101e0c430306a",
-      "title": "Internationale Geschichteninsel - Türkisch",
-      "date_start": "2026-12-10",
-      "source": "stabi"
-    },
-    {
-      "id": "447cdf865b789ff9",
-      "title": "KreativWerkstatt - WeihnachtsWerkstatt",
-      "date_start": "2026-12-11",
-      "source": "stabi"
-    },
-    {
-      "id": "cbbac36e15ce3202",
-      "title": "Internationale Geschichteninsel - Japanisch am Vormittag",
-      "date_start": "2026-12-16",
-      "source": "stabi"
-    },
-    {
-      "id": "fc9215e2f8f08125",
-      "title": "Internationale Geschichteninsel - Arabisch",
-      "date_start": "2026-12-17",
-      "source": "stabi"
-    },
-    {
-      "id": "440d6f4bcfe4556d",
-      "title": "Internationale Geschichteninsel - Französisch",
-      "date_start": "2026-12-18",
-      "source": "stabi"
-    },
-    {
-      "id": "6a90fe795a9e18ad",
-      "title": "Literatur am Vormittag",
-      "date_start": "2026-05-13",
-      "source": "stabi"
-    },
-    {
-      "id": "2822078ee4b9dd28",
-      "title": "EN PASSANT",
-      "date_start": "2026-05-16",
-      "source": "stabi"
-    },
-    {
-      "id": "52ecc9b4f03c208e",
-      "title": "LiteraLog - Literarisches Konzert",
-      "date_start": "2026-06-19",
-      "source": "stabi"
-    },
-    {
-      "id": "1a522f68814f783f",
-      "title": "EN PASSANT",
-      "date_start": "2026-06-20",
-      "source": "stabi"
-    },
-    {
-      "id": "402ca65756fb721a",
-      "title": "Literatur am Vormittag",
-      "date_start": "2026-07-08",
-      "source": "stabi"
-    },
-    {
-      "id": "b0ecaf0a1cf4d939",
-      "title": "EN PASSANT",
-      "date_start": "2026-07-11",
-      "source": "stabi"
-    },
-    {
-      "id": "fedf1381822393c4",
-      "title": "Literatur am Vormittag",
-      "date_start": "2026-08-12",
-      "source": "stabi"
-    },
-    {
-      "id": "8d6b342abde6802f",
-      "title": "Literatur am Vormittag",
-      "date_start": "2026-09-09",
-      "source": "stabi"
-    },
-    {
-      "id": "e2de92ab71241e0f",
-      "title": "Literatur am Vormittag",
-      "date_start": "2026-10-14",
-      "source": "stabi"
-    },
-    {
-      "id": "f4afca2afbdb9dd9",
-      "title": "Literatur am Vormittag",
-      "date_start": "2026-11-11",
-      "source": "stabi"
-    },
-    {
-      "id": "bb3db5b1ad228f3d",
-      "title": "Literatur am Vormittag",
-      "date_start": "2026-12-09",
-      "source": "stabi"
-    },
-    {
-      "id": "28e88cc493082b88",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-05-13",
-      "source": "stabi"
-    },
-    {
-      "id": "8eb480d201c88809",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-05-13",
-      "source": "stabi"
-    },
-    {
-      "id": "62d466dce508526e",
-      "title": "LeseWerkstatt für Frauen und Mädchen",
-      "date_start": "2026-05-13",
-      "source": "stabi"
-    },
-    {
-      "id": "8b8b954643e91d00",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-05-20",
-      "source": "stabi"
-    },
-    {
-      "id": "e93acf2286bbe603",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-05-20",
-      "source": "stabi"
-    },
-    {
-      "id": "8a427121e4ff80e1",
-      "title": "LeseWerkstatt für Frauen und Mädchen",
-      "date_start": "2026-05-20",
-      "source": "stabi"
-    },
-    {
-      "id": "533dae5aaaf9dba8",
-      "title": "LeseWerkstatt für Frauen und Mädchen",
-      "date_start": "2026-05-27",
-      "source": "stabi"
-    },
-    {
-      "id": "04a54eaeb8aaad55",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-05-27",
-      "source": "stabi"
-    },
-    {
-      "id": "c46fb123e41e144a",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-05-27",
-      "source": "stabi"
-    },
-    {
-      "id": "6bb1071322487413",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-06-03",
-      "source": "stabi"
-    },
-    {
-      "id": "fecd3acaf9f6d8ad",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-06-03",
-      "source": "stabi"
-    },
-    {
-      "id": "f8c7dc9a528138cf",
-      "title": "LeseWerkstatt für Frauen und Mädchen",
-      "date_start": "2026-06-03",
-      "source": "stabi"
-    },
-    {
-      "id": "14b8f6facaf8504d",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-06-10",
-      "source": "stabi"
-    },
-    {
-      "id": "33a9f394f61aba1b",
-      "title": "LeseWerkstatt für Frauen und Mädchen",
-      "date_start": "2026-06-10",
-      "source": "stabi"
-    },
-    {
-      "id": "2ae4dd2eb5568abd",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-06-10",
-      "source": "stabi"
-    },
-    {
-      "id": "c5aef050fd81e2b0",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-06-17",
-      "source": "stabi"
-    },
-    {
-      "id": "ed27f8643baa6e6a",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-06-17",
-      "source": "stabi"
-    },
-    {
-      "id": "c1c3bc91ee762b35",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-06-24",
-      "source": "stabi"
-    },
-    {
-      "id": "d9a443f121572594",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-06-24",
-      "source": "stabi"
-    },
-    {
-      "id": "7533fad99e46abfc",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-07-01",
-      "source": "stabi"
-    },
-    {
-      "id": "9fb41c746cb3a78e",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-07-01",
-      "source": "stabi"
-    },
-    {
-      "id": "3c1e6a0b63aeb2a5",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-07-08",
-      "source": "stabi"
-    },
-    {
-      "id": "d52a77ed1f37db49",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-07-08",
-      "source": "stabi"
-    },
-    {
-      "id": "0d3bfc124af67888",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-07-15",
-      "source": "stabi"
-    },
-    {
-      "id": "f2bd602a59d0e67b",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-07-15",
-      "source": "stabi"
-    },
-    {
-      "id": "b86453d02bd7898a",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-07-22",
-      "source": "stabi"
-    },
-    {
-      "id": "9aaaf2dd4538385d",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-07-22",
-      "source": "stabi"
-    },
-    {
-      "id": "5471cb1e27c41d0a",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-07-29",
-      "source": "stabi"
-    },
-    {
-      "id": "8f8b328ff9ba36a9",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-07-29",
-      "source": "stabi"
-    },
-    {
-      "id": "556d5757744fcb0f",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-08-05",
-      "source": "stabi"
-    },
-    {
-      "id": "9b2931d161114979",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-08-05",
-      "source": "stabi"
-    },
-    {
-      "id": "e6a7a86f6822cc8f",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-08-12",
-      "source": "stabi"
-    },
-    {
-      "id": "5507e84c587e560a",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-08-19",
-      "source": "stabi"
-    },
-    {
-      "id": "ba0c704bedceaf5e",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-08-19",
-      "source": "stabi"
-    },
-    {
-      "id": "5a338674c97ff266",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-08-26",
-      "source": "stabi"
-    },
-    {
-      "id": "fcbbd2b3e297b6ad",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-08-26",
-      "source": "stabi"
-    },
-    {
-      "id": "f6354a853661450c",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-02",
-      "source": "stabi"
-    },
-    {
-      "id": "fa48d00c06d7dee0",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-09-02",
-      "source": "stabi"
-    },
-    {
-      "id": "f6354a853661450c",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-02",
-      "source": "stabi"
-    },
-    {
-      "id": "ed8a443b2badde4e",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-09",
-      "source": "stabi"
-    },
-    {
-      "id": "962edf3b414c4895",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-09-09",
-      "source": "stabi"
-    },
-    {
-      "id": "d6c9add966356123",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-16",
-      "source": "stabi"
-    },
-    {
-      "id": "621ff67d9e2a1008",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-09-16",
-      "source": "stabi"
-    },
-    {
-      "id": "858552910c75035e",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-23",
-      "source": "stabi"
-    },
-    {
-      "id": "fecc334de753351e",
-      "title": "Seminar- und Hausarbeiten leicht gemacht",
-      "date_start": "2026-05-12",
-      "source": "stabi"
-    },
-    {
-      "id": "179d0761a19c430a",
-      "title": "Bibliotheksfest Schlösslesfeld",
-      "date_start": "2026-05-10",
-      "source": "stabi"
-    },
-    {
-      "id": "a1f48a9b4460e487",
-      "title": "Märchen und Malen",
-      "date_start": "2026-05-12",
-      "source": "stabi"
-    },
-    {
-      "id": "54283f527759af47",
-      "title": "Zwergeninsel in Schlösslesfeld",
-      "date_start": "2026-05-21",
-      "source": "stabi"
-    },
-    {
-      "id": "4db6ff69c715786c",
-      "title": "Märchen und Malen",
-      "date_start": "2026-06-09",
-      "source": "stabi"
-    },
-    {
-      "id": "96764e556af5cbdf",
-      "title": "Storytime in Schlösslesfeld",
-      "date_start": "2026-06-11",
-      "source": "stabi"
-    },
-    {
-      "id": "9d1a8bbc877174c1",
-      "title": "Storytime in West",
-      "date_start": "2026-06-11",
-      "source": "stabi"
-    },
-    {
-      "id": "5724d40030acb193",
-      "title": "Zwergeninsel in Schlösslesfeld",
-      "date_start": "2026-06-18",
-      "source": "stabi"
-    },
-    {
-      "id": "ce5285d71d193eca",
-      "title": "Zwergeninsel in Schlösslesfeld",
-      "date_start": "2026-07-09",
-      "source": "stabi"
-    },
-    {
-      "id": "f05e8379ca6c23d3",
-      "title": "Gratis Comic Tag - Kids und Teens",
-      "date_start": "2026-05-09",
-      "source": "stabi"
-    },
-    {
-      "id": "38efbf56fefe12a1",
-      "title": "Sprachförderung trifft Bibliothek",
-      "date_start": "2026-05-11",
-      "source": "stabi"
-    },
-    {
-      "id": "0463e72a02c01521",
-      "title": "Hinter den Kulissen der Stabi",
-      "date_start": "2026-05-27",
-      "source": "stabi"
-    },
-    {
-      "id": "c08578b6aba3aaf7",
-      "title": "PRIDE Kreativnachmittag",
-      "date_start": "2026-06-26",
-      "source": "stabi"
-    },
-    {
-      "id": "2f16f9aeb1afd531",
-      "title": "Workshop: Zirkus und Stelzenlauf für 8-12 Jährige in Ludwigsburg",
-      "date_start": "2026-05-09",
-      "source": "labyrinth"
-    },
-    {
-      "id": "692aa50261e76c55",
-      "title": "Workshop: Zirkus und Stelzenlauf für 5-7 Jährige in Ludwigsburg",
-      "date_start": "2026-05-09",
-      "source": "labyrinth"
-    },
-    {
-      "id": "dd845b893035eeba",
-      "title": "Workshop: Blumenmalen zum Muttertag für Kinder ab 5 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-05-09",
-      "source": "labyrinth"
-    },
-    {
-      "id": "37a0639d0997b19d",
-      "title": "Workshop: Ein Brontosaurus aus Ton für Kinder ab 7 Jahren in Ludwigsburg",
-      "date_start": "2026-05-16",
-      "source": "labyrinth"
-    },
-    {
-      "id": "90d33e528df399e7",
-      "title": "Workshop: Talking Stones ab 18 Jahren in Ludwigsburg",
-      "date_start": "2026-05-16",
-      "source": "labyrinth"
-    },
-    {
-      "id": "0a0f8588362a29ea",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger und Leicht-Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-05-19",
-      "source": "labyrinth"
-    },
-    {
-      "id": "1e1449a1133ae84a",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-05-19",
-      "source": "labyrinth"
-    },
-    {
-      "id": "86a5c25ee072f559",
-      "title": "Workshop: Flower Power ab 18 Jahren in Ludwigsburg",
-      "date_start": "2026-05-23",
-      "source": "labyrinth"
-    },
-    {
-      "id": "48f9171defeca564",
-      "title": "Ferienworkshop: Wer ich mal sein will für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "52fc27e585522e3d",
-      "title": "Ferienworkshop: Lebendige Buchstaben in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "a1edf15573610f5e",
-      "title": "Ferienworkshop: Pop-Up-Buch für Jugendliche ab 12 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "ae9ade9ec9457a51",
-      "title": "Ferienworkshop: Abenteuer Manege! für Kinder von 9-12 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "a6a866136a50dc4d",
-      "title": "Ferienworkshop: Contemporary Kids für Kinder von 6-9 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "0b287a82fb49da32",
-      "title": "Ferienworkshop: Hip-Hop Streetdance Kids für Kinder von 7-9 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "2237c003b99b3c70",
-      "title": "Ferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "df6e62caae57e551",
-      "title": "Ferienworkshop: Tanztheaterwerkstatt für Kinder von 8-10 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "2237c003b99b3c70",
-      "title": "Ferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "20304e9a223fa55e",
-      "title": "Ferienworkshop: Malen mit Naturmaterialien für Kinder ab 9 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "0a0029bb5d01ac63",
-      "title": "Ferienworkshop: Wollene Wundertiere für Kinder ab 8 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "e8bee75f0c2ebe7f",
-      "title": "Ferienworkshop: Magisches Licht und Traumhafter Schatten für Kinder ab 6 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "00e13e4395425424",
-      "title": "Workshop: Tonwerkstatt ab 6 Jahren",
-      "date_start": "2026-06-03",
-      "source": "labyrinth"
-    },
-    {
-      "id": "850fb87c8d75625c",
-      "title": "Workshop: Ein Esel aus Ton für Kinder ab 7 Jahren in Ludwigsburg",
-      "date_start": "2026-06-06",
-      "source": "labyrinth"
-    },
-    {
-      "id": "4c487cf0df0440cb",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger und Leicht-Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-06-09",
-      "source": "labyrinth"
-    },
-    {
-      "id": "6c38d1738f849f47",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-06-09",
-      "source": "labyrinth"
-    },
-    {
-      "id": "6e0d3b4b8966094e",
-      "title": "Workshop: Zirkus und Stelzenlauf für 8-12 Jährige in Ludwigsburg",
-      "date_start": "2026-06-13",
-      "source": "labyrinth"
-    },
-    {
-      "id": "b4fca41032c7e9e8",
-      "title": "Workshop: Zirkus und Stelzenlauf für 5-7 Jährige in Ludwigsburg",
-      "date_start": "2026-06-13",
-      "source": "labyrinth"
-    },
-    {
-      "id": "5b81da7f1b05ae3c",
-      "title": "Workshop: Die Fußball-WM der Tiere für Kinder ab 7 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-06-13",
-      "source": "labyrinth"
-    },
-    {
-      "id": "b781d2bb523135bb",
-      "title": "Workshop: Die Margerite - ein Relief aus Ton in Ludwigsburg",
+      "id": "5e9ee2b259fbfb2a",
+      "title": "CafeÂ´Harmonie",
       "date_start": "2026-06-14",
-      "source": "labyrinth"
+      "source": "tamm"
     },
     {
-      "id": "55f2ffc7bd240940",
-      "title": "Workshop: Eine Taube aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-06-14",
-      "source": "labyrinth"
+      "id": "d8eec93cbd7ca952",
+      "title": "Wanderung",
+      "date_start": "2026-06-18",
+      "source": "tamm"
     },
     {
-      "id": "e34d42bc1c7ffa2e",
-      "title": "Workshop: Sadza Batik aus Zimbabwe in Ludwigsburg",
-      "date_start": "2026-06-20",
-      "source": "labyrinth"
+      "id": "bfca5e91295a08ed",
+      "title": "Parkplatzfest",
+      "date_start": "2026-06-19",
+      "source": "tamm"
     },
     {
-      "id": "80abe5d0176bb773",
-      "title": "Workshop: Ein Hexenhaus aus Ton in Ludwigsburg",
-      "date_start": "2026-06-20",
-      "source": "labyrinth"
+      "id": "6ba73a22f7355b21",
+      "title": "Keltertreff",
+      "date_start": "2026-06-26",
+      "source": "tamm"
     },
     {
-      "id": "d6a86945968479cd",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger und Leicht-Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-06-23",
-      "source": "labyrinth"
+      "id": "b857f3fd466c2cfb",
+      "title": "Catritas Mittagstisch",
+      "date_start": "2026-06-26",
+      "source": "tamm"
     },
     {
-      "id": "7f16c9253bed8b86",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-06-23",
-      "source": "labyrinth"
+      "id": "2175d9711b2e5527",
+      "title": "Radtour",
+      "date_start": "2026-06-28",
+      "source": "tamm"
     },
     {
-      "id": "3e47abe811be6673",
-      "title": "Workshop: Tonwerkstatt ab 6 Jahren",
-      "date_start": "2026-06-24",
-      "source": "labyrinth"
+      "id": "8f31619491bed854",
+      "title": "Orgelkonzert zum Patrozinium",
+      "date_start": "2026-06-28",
+      "source": "tamm"
     },
     {
-      "id": "71390394813b78dd",
-      "title": "Workshop: Tischkicker in Bietigheim-Bissingen",
-      "date_start": "2026-06-27",
-      "source": "labyrinth"
-    },
-    {
-      "id": "ef3c0232d7e97f14",
-      "title": "Workshop: Keramikstudio für Erwachsene und Eltern mit Kindern in Ludwigsburg",
-      "date_start": "2026-06-27",
-      "source": "labyrinth"
-    },
-    {
-      "id": "48e1077b7a458d64",
-      "title": "Workshop: Tonwerkstatt ab 4 Jahren",
+      "id": "61578896afa84f88",
+      "title": "Blutspende",
       "date_start": "2026-07-01",
-      "source": "labyrinth"
+      "source": "tamm"
     },
     {
-      "id": "3cd7391619800d3a",
-      "title": "Workshop: Ein Braunbär aus Ton in Ludwigsburg",
-      "date_start": "2026-07-04",
-      "source": "labyrinth"
+      "id": "a8616a482fd65fe7",
+      "title": "Gesundheitswanderung",
+      "date_start": "2026-07-08",
+      "source": "tamm"
     },
     {
-      "id": "a1bd67c9d709e8c1",
-      "title": "Workshop: Zirkus-Spezial für Kinder von 8-12 Jahren in Ludwigsburg",
-      "date_start": "2026-07-11",
-      "source": "labyrinth"
-    },
-    {
-      "id": "9b355bb149b732aa",
-      "title": "Workshop: Till Eulenspiegel als Tonfigur in Ludwigsburg",
-      "date_start": "2026-07-11",
-      "source": "labyrinth"
-    },
-    {
-      "id": "5f5621ee1b8e7755",
-      "title": "Workshop: Zirkus-Spezial für Kinder von 5-7 Jahren",
-      "date_start": "2026-07-11",
-      "source": "labyrinth"
-    },
-    {
-      "id": "2e0aba1c0c6c2888",
-      "title": "Workshop: Luftakrobatik Spezial für Kinder von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-07-11",
-      "source": "labyrinth"
-    },
-    {
-      "id": "aaeb743ef2e05b6c",
-      "title": "Workshop: Zirkus-Spezial für Kinder von 8-12 Jahren in Ludwigsburg",
+      "id": "3b25f39c58a328ed",
+      "title": "CafeÂ´Harmonie",
       "date_start": "2026-07-12",
-      "source": "labyrinth"
+      "source": "tamm"
     },
     {
-      "id": "6389cd44b4b47e65",
-      "title": "Sommerferienworkshop: T-Rex-Alarm in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
+      "id": "c35eca1b260e2e86",
+      "title": "Repair-CafÃ¨",
+      "date_start": "2026-07-13",
+      "source": "tamm"
     },
     {
-      "id": "9ce617dc8d03f108",
-      "title": "Sommerferienworkshop: Schule der magischen Tiere in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
+      "id": "19c4f41232bd8d2f",
+      "title": "Hobbygruppe",
+      "date_start": "2026-07-14",
+      "source": "tamm"
     },
     {
-      "id": "2645c76af4462aa6",
-      "title": "[Fällt aus!] Ferienworkshop: Tanztheaterwerkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "bf36388627873a25",
+      "title": "Fleckafest",
+      "date_start": "2026-07-18",
+      "source": "tamm"
     },
     {
-      "id": "79b705460640fff3",
-      "title": "[Fällt aus!] Ferienworkshop: Contemporary Dance für Kinder und Jugendliche von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "b11a610a22b32548",
+      "title": "Ãkumenischer Gottesdient zum Fleckenfest",
+      "date_start": "2026-07-19",
+      "source": "tamm"
     },
     {
-      "id": "e390519faafcb792",
-      "title": "[Fällt aus!] Ferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "98b41da6164fd59b",
+      "title": "Radtour",
+      "date_start": "2026-07-26",
+      "source": "tamm"
     },
     {
-      "id": "889d973c174446fa",
-      "title": "[Fällt aus!] Ferienworkshop: Peppa Wutz - Deine Welt im Schuhkarton für Kinder ab 4 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "3cd9d392d174725c",
+      "title": "Catritas Mittagstisch",
+      "date_start": "2026-07-31",
+      "source": "tamm"
     },
     {
-      "id": "b3db9004c0157bcc",
-      "title": "Einblicke in Lebenswelten im Kontext von Kunst & Theater",
-      "date_start": "2026-06-12",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "0b2109e15c4b2ad7",
+      "title": "Sommerfest Gartenfreunde",
+      "date_start": "2026-08-01",
+      "source": "tamm"
     },
     {
-      "id": "cbe161397cbd33d7",
-      "title": "World Wide Knit In Public Day",
-      "date_start": "2026-06-13",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "acceaaebbfb3feff",
+      "title": "Wanderung",
+      "date_start": "2026-08-02",
+      "source": "tamm"
     },
     {
-      "id": "1aa20cdbd5250257",
-      "title": "Sommerferienworkshop: Wackeldackel, Löwenhocker, Kistenlaster in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "ae6fc01270621b21",
-      "title": "Sommerferienworkshop: Tiergeschichten stempeln in Bietigheim",
+      "id": "7811e47fe29aed26",
+      "title": "FuÃball-Trainingscamp",
       "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
+      "source": "tamm"
     },
     {
-      "id": "87424ecb92095f4d",
-      "title": "Sommerferienworkshop: Tiere, die es gar nicht gibt! aus Ton in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "a63d89a9b2998e70",
+      "title": "Hobbygruppe",
+      "date_start": "2026-08-11",
+      "source": "tamm"
     },
     {
-      "id": "9bfddd7f15f36743",
-      "title": "Sommerferienworkshop: Stoffkarussell in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "63474ae7c6ffda0d",
+      "title": "Gesundheitswanderung",
+      "date_start": "2026-08-12",
+      "source": "tamm"
     },
     {
-      "id": "ab5cf9bb741d25b1",
-      "title": "Sommerferienworkshop: Stoffkarussell in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "b013d69dea641f54",
+      "title": "Adonis",
+      "date_start": "2026-08-15",
+      "source": "tamm"
     },
     {
-      "id": "c352a88e624871e4",
-      "title": "Fridays for Coding",
-      "date_start": "2026-05-22",
-      "source": "stabi"
+      "id": "a177830f7ee5707d",
+      "title": "Wanderwoche",
+      "date_start": "2026-08-16",
+      "source": "tamm"
     },
     {
-      "id": "c2708fe0942662a4",
-      "title": "Gaming Friday",
-      "date_start": "2026-06-05",
-      "source": "stabi"
+      "id": "5efef4c74ffbd676",
+      "title": "Radtour",
+      "date_start": "2026-08-23",
+      "source": "tamm"
     },
     {
-      "id": "a8a61f08a1d4d1ee",
-      "title": "Maker Zone",
-      "date_start": "2026-06-18",
-      "source": "stabi"
+      "id": "21bc271cb76b2a76",
+      "title": "Vollmondwanderung",
+      "date_start": "2026-08-27",
+      "source": "tamm"
     },
     {
-      "id": "d23d61316c88ebac",
-      "title": "Ich bin online und du?",
-      "date_start": "2026-06-19",
-      "source": "stabi"
+      "id": "eb316e302d8efdb7",
+      "title": "Catritas Mittagstisch",
+      "date_start": "2026-08-28",
+      "source": "tamm"
     },
     {
-      "id": "5dd3423e93258aa6",
-      "title": "Fridays for Coding",
-      "date_start": "2026-06-19",
-      "source": "stabi"
+      "id": "0ab5792e48d5b0b4",
+      "title": "Blutspende",
+      "date_start": "2026-09-02",
+      "source": "tamm"
     },
     {
-      "id": "5e70c25b8c70713d",
-      "title": "Internationale Geschichteninsel - Albanisch",
-      "date_start": "2026-06-12",
-      "source": "stabi"
+      "id": "a027a5ce18db762e",
+      "title": "Open-Air-Kino",
+      "date_start": "2026-09-04",
+      "source": "tamm"
     },
     {
-      "id": "bde2637b77c4a8f1",
-      "title": "Internationale Geschichteninsel - Albanisch",
-      "date_start": "2026-09-18",
-      "source": "stabi"
+      "id": "397b6d4190e59b9d",
+      "title": "Wanderung",
+      "date_start": "2026-09-05",
+      "source": "tamm"
     },
     {
-      "id": "0b36b79c9d55b54f",
-      "title": "Internationale Geschichteninsel - Albanisch",
+      "id": "5e834e6911c1be47",
+      "title": "Wanderung",
+      "date_start": "2026-09-06",
+      "source": "tamm"
+    },
+    {
+      "id": "b8cfb30c13c20b49",
+      "title": "Hobbygruppe",
+      "date_start": "2026-09-08",
+      "source": "tamm"
+    },
+    {
+      "id": "48766875b21bcfdd",
+      "title": "Gesundheitswanderung",
+      "date_start": "2026-09-09",
+      "source": "tamm"
+    },
+    {
+      "id": "efcce28f6c94d3f3",
+      "title": "Schinkenschiessen",
+      "date_start": "2026-09-11",
+      "source": "tamm"
+    },
+    {
+      "id": "e14a8199b954977b",
+      "title": "Kinder-tammtamm",
+      "date_start": "2026-09-12",
+      "source": "tamm"
+    },
+    {
+      "id": "12f54320ec40756f",
+      "title": "CafeÂ´Harmonie",
+      "date_start": "2026-09-13",
+      "source": "tamm"
+    },
+    {
+      "id": "0fdb02aadbe9a10b",
+      "title": "Radreise",
+      "date_start": "2026-09-13",
+      "source": "tamm"
+    },
+    {
+      "id": "107e757ac032bc7e",
+      "title": "Repair-CafÃ¨",
+      "date_start": "2026-09-14",
+      "source": "tamm"
+    },
+    {
+      "id": "265d1b75d6ada0dd",
+      "title": "Vortrag WirbelsÃ¤ule",
+      "date_start": "2026-09-16",
+      "source": "tamm"
+    },
+    {
+      "id": "cfb08eb846243ea4",
+      "title": "Keltertreff",
+      "date_start": "2026-09-25",
+      "source": "tamm"
+    },
+    {
+      "id": "463463c83dae6671",
+      "title": "Catritas Mittagstisch",
+      "date_start": "2026-09-25",
+      "source": "tamm"
+    },
+    {
+      "id": "6872b72e70e571f7",
+      "title": "Herbstfest",
+      "date_start": "2026-09-26",
+      "source": "tamm"
+    },
+    {
+      "id": "6c29227be9779668",
+      "title": "Tamm Spielt",
+      "date_start": "2026-09-26",
+      "source": "tamm"
+    },
+    {
+      "id": "d5e1c4829e41664c",
+      "title": "Radtour",
+      "date_start": "2026-09-27",
+      "source": "tamm"
+    },
+    {
+      "id": "cfd5854396469dea",
+      "title": "Erntedankfest",
+      "date_start": "2026-10-05",
+      "source": "tamm"
+    },
+    {
+      "id": "b37d9d5dcbbd8109",
+      "title": "Mobiles Kino",
       "date_start": "2026-10-09",
-      "source": "stabi"
+      "source": "tamm"
     },
     {
-      "id": "11ae20088faba623",
-      "title": "Internationale Geschichteninsel - Albanisch",
+      "id": "93e69d85fae09766",
+      "title": "Aus voller Kehle fÃ¼r die Seele",
+      "date_start": "2026-10-10",
+      "source": "tamm"
+    },
+    {
+      "id": "aa36d177bc82d599",
+      "title": "CafeÂ´Harmonie",
+      "date_start": "2026-10-11",
+      "source": "tamm"
+    },
+    {
+      "id": "2c211b8d4ba028da",
+      "title": "Repair-CafÃ¨",
+      "date_start": "2026-10-12",
+      "source": "tamm"
+    },
+    {
+      "id": "75e5b54800805fb4",
+      "title": "Hobbygruppe",
+      "date_start": "2026-10-13",
+      "source": "tamm"
+    },
+    {
+      "id": "27b773339691f69c",
+      "title": "Gesundheitswanderung",
+      "date_start": "2026-10-14",
+      "source": "tamm"
+    },
+    {
+      "id": "edf4e419bbb63046",
+      "title": "Wanderung",
+      "date_start": "2026-10-15",
+      "source": "tamm"
+    },
+    {
+      "id": "2a4ebb475f095b09",
+      "title": "Konzert YV mit GÃ¤sten",
+      "date_start": "2026-10-17",
+      "source": "tamm"
+    },
+    {
+      "id": "8fc85893cfe193b2",
+      "title": "Konzert Heiter bis Flokig",
+      "date_start": "2026-10-18",
+      "source": "tamm"
+    },
+    {
+      "id": "8343c3e10dc68d0a",
+      "title": "Vortragsabend KPV\\, Landfrauen&VDK",
+      "date_start": "2026-10-22",
+      "source": "tamm"
+    },
+    {
+      "id": "90a86111cdacbe35",
+      "title": "Keltertreff",
+      "date_start": "2026-10-23",
+      "source": "tamm"
+    },
+    {
+      "id": "9d87440ba66d8c59",
+      "title": "80 er Jahr Party",
+      "date_start": "2026-10-24",
+      "source": "tamm"
+    },
+    {
+      "id": "820cc747c7338840",
+      "title": "Radtour",
+      "date_start": "2026-10-25",
+      "source": "tamm"
+    },
+    {
+      "id": "a5f7f80b7af8e712",
+      "title": "Caritas-Mittagstisch",
+      "date_start": "2026-10-30",
+      "source": "tamm"
+    },
+    {
+      "id": "3bc77d51cb3c6bdc",
+      "title": "Halloweendisco",
+      "date_start": "2026-10-31",
+      "source": "tamm"
+    },
+    {
+      "id": "53bf696fdad39ca9",
+      "title": "Ãffentliche Generalprobe u. Jahreskonzert Musikverein",
       "date_start": "2026-11-06",
+      "source": "tamm"
+    },
+    {
+      "id": "2d1a8d2477801d88",
+      "title": "Jahresfeier und Ehrungsabend",
+      "date_start": "2026-11-07",
+      "source": "tamm"
+    },
+    {
+      "id": "1d1759fc3e10e569",
+      "title": "Martinsumzug",
+      "date_start": "2026-11-07",
+      "source": "tamm"
+    },
+    {
+      "id": "eda89e4ec0423143",
+      "title": "Interner Ordensabend",
+      "date_start": "2026-11-08",
+      "source": "tamm"
+    },
+    {
+      "id": "07e510a510af2fe9",
+      "title": "3- Gipfelwanderung",
+      "date_start": "2026-11-08",
+      "source": "tamm"
+    },
+    {
+      "id": "59ea7997467eb124",
+      "title": "CafeÂ´Harmonie",
+      "date_start": "2026-11-08",
+      "source": "tamm"
+    },
+    {
+      "id": "9401de6d82ad420e",
+      "title": "Repair-CafÃ¨",
+      "date_start": "2026-11-09",
+      "source": "tamm"
+    },
+    {
+      "id": "f439e17d44d9dcd8",
+      "title": "Hobbygruppe",
+      "date_start": "2026-11-10",
+      "source": "tamm"
+    },
+    {
+      "id": "c66bde8e4bbcf014",
+      "title": "Blutspende",
+      "date_start": "2026-11-11",
+      "source": "tamm"
+    },
+    {
+      "id": "c3f77b2640721c1e",
+      "title": "Gesundheitswanderung",
+      "date_start": "2026-11-11",
+      "source": "tamm"
+    },
+    {
+      "id": "6af438f0854751d2",
+      "title": "Volkstrauertag mit Gemeindetag",
+      "date_start": "2026-11-15",
+      "source": "tamm"
+    },
+    {
+      "id": "8013936a181a5fcb",
+      "title": "Vortrag Kalzium",
+      "date_start": "2026-11-18",
+      "source": "tamm"
+    },
+    {
+      "id": "71f56d571ee53e8d",
+      "title": "Wanderung",
+      "date_start": "2026-11-19",
+      "source": "tamm"
+    },
+    {
+      "id": "709db5f013717db5",
+      "title": "Reiser Figuren Theater",
+      "date_start": "2026-11-21",
+      "source": "tamm"
+    },
+    {
+      "id": "940ba0a0bd336176",
+      "title": "Weiber-tammtamm",
+      "date_start": "2026-11-21",
+      "source": "tamm"
+    },
+    {
+      "id": "e361b2b8f490e686",
+      "title": "Totengedenken",
+      "date_start": "2026-11-22",
+      "source": "tamm"
+    },
+    {
+      "id": "640a30b4eede1d94",
+      "title": "Ehrungsabend Musikverein",
+      "date_start": "2026-11-22",
+      "source": "tamm"
+    },
+    {
+      "id": "dc14384463c06a50",
+      "title": "Keltertreff",
+      "date_start": "2026-11-27",
+      "source": "tamm"
+    },
+    {
+      "id": "92c42a0fde4aaab2",
+      "title": "Catritas Mittagstisch",
+      "date_start": "2026-11-27",
+      "source": "tamm"
+    },
+    {
+      "id": "341e8533f309c022",
+      "title": "Judas Preist Party",
+      "date_start": "2026-11-28",
+      "source": "tamm"
+    },
+    {
+      "id": "687270f1368ec7f6",
+      "title": "Weihnachtsmarkt",
+      "date_start": "2026-12-05",
+      "source": "tamm"
+    },
+    {
+      "id": "a6b64f1ae9af0ce5",
+      "title": "Nikolauswanderung",
+      "date_start": "2026-12-06",
+      "source": "tamm"
+    },
+    {
+      "id": "d2376cb33c475fa5",
+      "title": "Ãkumenisches Hausgebet im Advent",
+      "date_start": "2026-12-07",
+      "source": "tamm"
+    },
+    {
+      "id": "c058a82bd95eef25",
+      "title": "Hobbygruppe",
+      "date_start": "2026-12-08",
+      "source": "tamm"
+    },
+    {
+      "id": "5239eba41b6da225",
+      "title": "Adventsfeier SchwÃ¤bischer Albverein",
+      "date_start": "2026-12-11",
+      "source": "tamm"
+    },
+    {
+      "id": "5af621b44a255627",
+      "title": "Repair-CafÃ¨",
+      "date_start": "2026-12-14",
+      "source": "tamm"
+    },
+    {
+      "id": "3d51e68e0dff6958",
+      "title": "Gesundheitswanderung",
+      "date_start": "2026-12-16",
+      "source": "tamm"
+    },
+    {
+      "id": "9990e0cbb83b2142",
+      "title": "Caritas-Mittagstisch",
+      "date_start": "2026-12-18",
+      "source": "tamm"
+    },
+    {
+      "id": "efad87ecd2d0ffdf",
+      "title": "Mundstuhl",
+      "date_start": "2026-12-19",
+      "source": "tamm"
+    },
+    {
+      "id": "92d3fbbdf7c85824",
+      "title": "Weihnachtsliederblasen",
+      "date_start": "2026-12-20",
+      "source": "tamm"
+    },
+    {
+      "id": "3a00c277c146f840",
+      "title": "Weihnachtsfeier",
+      "date_start": "2026-12-21",
+      "source": "tamm"
+    },
+    {
+      "id": "391b583183205fd0",
+      "title": "Mobiles Kino",
+      "date_start": "2026-12-22",
+      "source": "tamm"
+    },
+    {
+      "id": "188e5a8afc798b98",
+      "title": "Stadtradeln",
+      "date_start": "2026-07-01",
+      "source": "tamm"
+    },
+    {
+      "id": "aaeb6eb3d82b4c26",
+      "title": "Konsolenspiele für Kinder",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "11951ccffc076adb",
+      "title": "CO₂-Rechner-Sprechstunde",
+      "date_start": "2026-05-20",
+      "source": "bietigheim"
+    },
+    {
+      "id": "d0f15c0270745872",
+      "title": "Reparaturcafé",
+      "date_start": "2026-05-27",
+      "source": "bietigheim"
+    },
+    {
+      "id": "24d546f5ae984e59",
+      "title": "Das Kamishibai",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "24d546f5ae984e59",
+      "title": "Das Kamishibai",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "1ccc54ab5322e1e9",
+      "title": "Hans Pöhnl liest Geschichten vor",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "8f04f2f183b62591",
+      "title": "Langen Nacht der Nachhaltigkeit",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "74cbb00591707665",
+      "title": "Vortrag",
+      "date_start": "2026-06-16",
+      "source": "bietigheim"
+    },
+    {
+      "id": "0a19312e404a46d6",
+      "title": "Kombination aus Führung und Kreativ-Workshop",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "4067aedf05e09a26",
+      "title": "Reparaturcafé",
+      "date_start": "2026-06-24",
+      "source": "bietigheim"
+    },
+    {
+      "id": "e03b7cfe9460e3de",
+      "title": "Sybille Krieger liest englische Geschichten vor",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "c4c0fff8e405ff8d",
+      "title": "Reparaturcafé",
+      "date_start": "2026-07-22",
+      "source": "bietigheim"
+    },
+    {
+      "id": "241ec5d8da2b5a58",
+      "title": "theater en miniature Mit Schauspiel und Figuren präsentiert Ellen Heese das Stück „Wie Findus zu Pettersson kam“ nach dem Bilderbuch von Sven Nordqvist",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "463c5302b4b04b50",
+      "title": "Bilderbücher präsentieren und vorgelesen",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "945565e469eefb3f",
+      "title": "Reparaturcafé",
+      "date_start": "2026-09-30",
+      "source": "bietigheim"
+    },
+    {
+      "id": "c49c9e34c2fea373",
+      "title": "Führung",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "6deace4b03b2f6ee",
+      "title": "Reparaturcafé",
+      "date_start": "2026-10-28",
+      "source": "bietigheim"
+    },
+    {
+      "id": "3eef5082d3982e41",
+      "title": "Märchenerzählung",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "a740b8abd4b2a345",
+      "title": "Reparaturcafé",
+      "date_start": "2026-11-25",
+      "source": "bietigheim"
+    },
+    {
+      "id": "c39d24803315d8d3",
+      "title": "Wortzaubererzählung",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "b6dacd8ac0f6af8c",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-17",
+      "source": "museum"
+    },
+    {
+      "id": "6793c4ad03428486",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-02",
       "source": "stabi"
     },
     {
-      "id": "1c5fec5d84cecf59",
-      "title": "Internationale Geschichteninsel - Albanisch",
-      "date_start": "2026-12-04",
-      "source": "stabi"
+      "id": "e47f4f82d38bc7c5",
+      "title": "Leseprobe und Bastelkurs mit Jim Knopf und der Reise zum Mond",
+      "date_start": null,
+      "source": "bietigheim"
     },
     {
-      "id": "592e10a996a751df",
-      "title": "[Fällt aus!] Ferienworkshop: Tanztheaterwerkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
+      "id": "34f187734c46c16c",
+      "title": "Treffpunkt vor dem Stadtmuseum Hornmoldhaus",
+      "date_start": null,
+      "source": "bietigheim"
     },
     {
-      "id": "d0bc5d2f8736dd42",
-      "title": "[Fällt aus!] Ferienworkshop: Contemporary Dance für Kinder und Jugendliche von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
+      "id": "ec6f07be8c13ac15",
+      "title": "Schon ganz kleine Kinder interessieren sich für Bücher",
+      "date_start": null,
+      "source": "bietigheim"
     },
     {
-      "id": "5921d902795be486",
-      "title": "[Fällt aus!] Ferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
+      "id": "79305984005b09ad",
+      "title": "Krüger Rockt! Die schärfste Rock ’n’ Roll-Band",
+      "date_start": null,
+      "source": "bietigheim"
     },
     {
-      "id": "3c08cf241e0d9afd",
-      "title": "[Fällt aus!] Ferienworkshop: Kritzelalphabet und Kleckertypographie für Kinder ab 10 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
+      "id": "5b9a7a9347b3d522",
+      "title": "Führung in der Ausstellung »UNGLAUBLICH – Zeitgenossische Kunst in den Sphären der Religion«",
+      "date_start": null,
+      "source": "bietigheim"
     },
     {
-      "id": "c854e88a86ce5e56",
-      "title": "[Fällt aus!] Ferienworkshop: Peppa Wutz - Deine Welt im Schuhkarton für Kinder ab 4 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "labyrinth"
+      "id": "401eaec4b6f90881",
+      "title": "Kulinarische Altstadtführung",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "070ccecb6230ff74",
+      "title": "Funcoustic - Zeitreise durch die Musikgeschichte",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "6b48cb90e7a42965",
+      "title": "Treffpunkt vor dem Stadtmuseum Hornmoldhaus",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "ac14e11211a53a75",
+      "title": "Wege zum klimaneutralen Leben",
+      "date_start": null,
+      "source": "bietigheim"
+    },
+    {
+      "id": "2e964513fb441524",
+      "title": "Kulinarische Altstadtführung",
+      "date_start": null,
+      "source": "bietigheim"
     }
   ],
   "removed": []
