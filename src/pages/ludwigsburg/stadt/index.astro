@@ -40,7 +40,7 @@ const breadcrumbSchema = {
   ],
 };
 
-import tipsRaw from '../../data/editorial-tips.json';
+import tipsRaw from '../../../data/editorial-tips.json';
 const featuredSlug = Object.entries(tipsRaw).find(
   ([, v]) => typeof v === 'object' && v.featured === true
 )?.[0] ?? null;
