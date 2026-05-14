@@ -1,24 +1,43 @@
 ---
 import Base from "../../layouts/Base.astro";
+import EventCard from "../../components/EventCard.astro";
 import { readFileSync } from "fs";
 import { resolve } from "path";
 
-// Read city IDs from URL query param at request time (SSR not available in static,
-// so we read all cities and filter client-side via JS)
-const allCityIds = ["ludwigsburg", "tamm", "bietigheim"];
-const allEvents = {};
+const cityIds = ["ludwigsburg", "tamm", "bietigheim"];
+const cityNames: Record<string, string> = {
+  ludwigsburg: "Ludwigsburg",
+  tamm: "Tamm",
+  bietigheim: "Bietigheim-Bissingen",
+};
 
-for (const city of allCityIds) {
+// Load all events tagged with their city
+type AnyEvent = Record<string, any>;
+const allTagged: AnyEvent[] = [];
+
+for (const city of cityIds) {
   try {
     const raw = readFileSync(resolve(`public/data/${city}/events-current.json`), "utf-8");
-    const parsed = JSON.parse(raw);
-    allEvents[city] = Array.isArray(parsed) ? parsed : (parsed.events || []);
+    const parsed: AnyEvent[] = JSON.parse(raw);
+    const arr = Array.isArray(parsed) ? parsed : ((parsed as any).events ?? []);
+    for (const ev of arr) {
+      allTagged.push({ ...ev, _city: city, _cityName: cityNames[city] });
+    }
   } catch (e) {
-    allEvents[city] = [];
+    // city data missing — skip
   }
 }
 
-const allEventsJson = JSON.stringify(allEvents);
+// Sort by date_start ascending, undated last
+allTagged.sort((a, b) => {
+  if (!a.date_start && !b.date_start) return 0;
+  if (!a.date_start) return 1;
+  if (!b.date_start) return -1;
+  return a.date_start.localeCompare(b.date_start);
+});
+
+const allTaggedJson = JSON.stringify(allTagged);
+const cityNamesJson = JSON.stringify(cityNames);
 ---
 
 <Base
@@ -26,97 +45,101 @@ const allEventsJson = JSON.stringify(allEvents);
   description="Alle Events in deinem Umkreis im Landkreis Ludwigsburg"
 >
   <div class="page-wrap">
-    <div id="page-header">
-      <a href="/" class="back-link">← Zurück zur Karte</a>
-      <h1 id="page-title">Events im Umkreis</h1>
-      <p id="page-sub" class="sub"></p>
+    <a href="/" class="back-link">← Zurück zur Karte</a>
+    <h1 id="page-title">Events im Umkreis</h1>
+    <p id="page-sub" class="sub">Lade Events…</p>
+
+    <div id="city-filters" class="city-filters"></div>
+
+    <div id="events-container">
+      {allTagged.map(ev => (
+        <div class="event-wrap" data-city={ev._city} data-date={ev.date_start ?? ""}>
+          <div class="city-tag">{ev._cityName}</div>
+          <EventCard event={ev} />
+        </div>
+      ))}
     </div>
-    <div id="events-list" class="events-grid"></div>
-    <div id="empty-state" class="empty" hidden>Keine Events gefunden.</div>
+
+    <div id="empty-state" class="empty" hidden>Keine Events für diese Auswahl.</div>
   </div>
 </Base>
 
 <style>
-  .page-wrap { max-width: 860px; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  .page-wrap { max-width: 760px; margin: 0 auto; padding: 2rem 1rem 4rem; }
   .back-link { font-size: 0.85rem; color: var(--coral); text-decoration: none; display: inline-block; margin-bottom: 1rem; }
-  h1 { font-family: var(--font-heading); font-weight: 800; font-size: 2rem; margin: 0 0 0.4rem; }
-  .sub { color: var(--text-60); font-size: 0.9rem; margin: 0 0 1.5rem; }
-  .events-grid { display: flex; flex-direction: column; gap: 1rem; }
-  .event-card {
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: var(--radius); padding: 1rem 1.25rem;
-    display: flex; flex-direction: column; gap: 0.25rem;
-    text-decoration: none; color: inherit;
-    transition: border-color 150ms;
+  h1 { font-family: var(--font-heading); font-weight: 800; font-size: 2rem; margin: 0 0 0.3rem; }
+  .sub { color: var(--text-60); font-size: 0.9rem; margin: 0 0 1.25rem; }
+
+  .city-filters { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+  .city-chip {
+    border: 2px solid var(--border); border-radius: 20px;
+    padding: 0.3rem 0.85rem; font-size: 0.8rem; font-weight: 600;
+    cursor: pointer; background: var(--surface); color: var(--text-60);
+    transition: all 120ms;
   }
-  .event-card:hover { border-color: var(--coral); }
-  .event-meta { font-size: 0.75rem; color: var(--text-60); }
-  .event-title { font-weight: 700; font-size: 1rem; color: var(--text); }
-  .event-city { font-size: 0.75rem; background: var(--coral); color: #fff; border-radius: 4px; padding: 0.1rem 0.4rem; display: inline-block; margin-top: 0.2rem; width: fit-content; }
+  .city-chip.active { border-color: var(--coral); color: var(--coral); background: rgba(255,111,97,0.08); }
+
+  .event-wrap { margin-bottom: 0.25rem; }
+  .city-tag {
+    font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.07em; color: var(--coral);
+    padding: 0.15rem 0; margin-bottom: 0.15rem;
+  }
   .empty { text-align: center; color: var(--text-60); padding: 3rem 0; }
 </style>
 
-<script type="module" define:vars={{ allEventsJson }}>
-const ALL_EVENTS = JSON.parse(allEventsJson);
+<script type="module" define:vars={{ allTaggedJson, cityNamesJson }}>
+const ALL_EVENTS = JSON.parse(allTaggedJson);
+const CITY_NAMES = JSON.parse(cityNamesJson);
 
-// Read which cities to show from URL query param ?cities=ludwigsburg,tamm
+// Parse ?cities= param
 const params = new URLSearchParams(window.location.search);
 const cityParam = params.get("cities");
-const selectedCities = cityParam ? cityParam.split(",").filter(Boolean) : Object.keys(ALL_EVENTS);
+const activeCities = new Set(cityParam ? cityParam.split(",").filter(Boolean) : Object.keys(CITY_NAMES));
 
-// Merge and sort by date
-let merged = [];
-for (const city of selectedCities) {
-  const events = ALL_EVENTS[city] || [];
-  for (const ev of events) {
-    merged.push({ ...ev, _city: city });
-  }
-}
-
-// Sort by start date ascending
-merged.sort((a, b) => {
-  const da = a.start_date || a.date || "";
-  const db = b.start_date || b.date || "";
-  return da.localeCompare(db);
-});
-
-// Filter out past events
+// Today filter
 const today = new Date().toISOString().slice(0, 10);
-merged = merged.filter(ev => {
-  const d = ev.start_date || ev.date || "";
-  return !d || d >= today;
+
+function render() {
+  const wraps = document.querySelectorAll(".event-wrap");
+  let visible = 0;
+  wraps.forEach(wrap => {
+    const city = wrap.dataset.city;
+    const date = wrap.dataset.date;
+    const show = activeCities.has(city) && (!date || date >= today);
+    wrap.hidden = !show;
+    if (show) visible++;
+  });
+  document.getElementById("empty-state").hidden = visible > 0;
+
+  // Update subtitle
+  const names = [...activeCities].map(c => CITY_NAMES[c] || c).join(", ");
+  document.getElementById("page-sub").textContent = `${visible} Events in: ${names}`;
+
+  // Update chips
+  document.querySelectorAll(".city-chip").forEach(chip => {
+    chip.classList.toggle("active", activeCities.has(chip.dataset.city));
+  });
+}
+
+// Build city filter chips
+const filtersEl = document.getElementById("city-filters");
+const allCities = [...new Set(ALL_EVENTS.map(e => e._city))];
+filtersEl.innerHTML = allCities.map(city =>
+  `<button class="city-chip${activeCities.has(city) ? " active" : ""}" data-city="${city}">${CITY_NAMES[city] || city}</button>`
+).join("");
+
+filtersEl.addEventListener("click", e => {
+  const chip = e.target.closest(".city-chip");
+  if (!chip) return;
+  const city = chip.dataset.city;
+  if (activeCities.has(city)) {
+    if (activeCities.size > 1) activeCities.delete(city); // keep at least 1
+  } else {
+    activeCities.add(city);
+  }
+  render();
 });
 
-// City display names
-const cityNames = { ludwigsburg: "Ludwigsburg", tamm: "Tamm", bietigheim: "Bietigheim-Bissingen" };
-
-// Update header
-const titleEl = document.getElementById("page-title");
-const subEl = document.getElementById("page-sub");
-const displayNames = selectedCities.map(c => cityNames[c] || c).join(", ");
-titleEl.textContent = "Events im Umkreis";
-subEl.textContent = `${merged.length} Events in: ${displayNames}`;
-
-// Render
-const list = document.getElementById("events-list");
-const empty = document.getElementById("empty-state");
-
-if (merged.length === 0) {
-  empty.hidden = false;
-} else {
-  list.innerHTML = merged.map(ev => {
-    const title = ev.title || ev.name || "Event";
-    const date = ev.start_date || ev.date || "";
-    const venue = ev.venue || ev.location || "";
-    const slug = ev.slug || ev.id || "";
-    const city = ev._city;
-    const href = slug ? `/${city}/events/${slug}` : `/${city}`;
-    const dateStr = date ? new Date(date).toLocaleDateString("de-DE", { day: "2-digit", month: "long", year: "numeric" }) : "";
-    return `<a class="event-card" href="${href}">
-      <div class="event-meta">${dateStr}${venue ? " · " + venue : ""}</div>
-      <div class="event-title">${title}</div>
-      <div class="event-city">${cityNames[city] || city}</div>
-    </a>`;
-  }).join("");
-}
+render();
 </script>
