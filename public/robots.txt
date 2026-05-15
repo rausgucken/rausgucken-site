@@ -1,7 +1,11 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://www.rausgucken.de/sitemap.xml
 
 # Block raw data files from crawlers
 Disallow: /data/
+
+# Block filter/query param URLs (prevent duplicate crawling)
+Disallow: /ludwigsburg/?
+Disallow: /bietigheim/?
+Disallow: /tamm/?
