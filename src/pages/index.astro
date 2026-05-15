@@ -181,37 +181,48 @@ const municipalitiesJson = JSON.stringify(municipalities);
     filter: brightness(0.9);
   }
 
-  /* Base fill for all municipality paths — prevent SVG default black */
+  /* Base fill for all municipality paths — theme aware */
   .map-container :global(.muni) {
-    fill: #4A5568;
+    fill: #CBD5E0;
   }
   html.dark .map-container :global(.muni) {
     fill: #444857;
   }
   .map-container :global(.muni.dimmed) { opacity: 0.25 !important; }
   .map-container :global(.muni.covered) { cursor: pointer; fill-rule: nonzero !important; }
-  /* in-range but no events yet: slightly lighter base */
+  /* in-range but no events yet: theme aware */
   .map-container :global(.muni.in-range.not-covered) {
+    fill: #B0BEC8;
+  }
+  html.dark .map-container :global(.muni.in-range.not-covered) {
     fill: #556070;
   }
-  /* Covered cities with events: light coral, full opacity so it reads correctly */
+  /* Covered cities with events: theme aware */
   .map-container :global(.muni.in-range.covered) {
-    fill: #6B7A8D !important;
+    fill: #A8B8C8 !important;
     opacity: 1 !important;
     stroke: #FF6F61 !important;
     stroke-width: 1.5px !important;
   }
-  /* in-radius: last rule wins — bright coral border, light fill */
-  .map-container :global(.muni.covered.in-radius),
-  html.dark .map-container :global(.muni.covered.in-radius) {
-    fill: #5C6B80 !important;
+  html.dark .map-container :global(.muni.in-range.covered) {
+    fill: #6B7A8D !important;
+  }
+  /* in-radius: last rule wins — theme aware */
+  .map-container :global(.muni.covered.in-radius) {
+    fill: #8FA8C0 !important;
     opacity: 1 !important;
     stroke: #FF6F61 !important;
     stroke-width: 3px !important;
   }
+  html.dark .map-container :global(.muni.covered.in-radius) {
+    fill: #5C6B80 !important;
+  }
   .map-container :global(.city-label) {
-    fill: rgba(255,255,255,0.75) !important;
+    fill: #4A5568 !important;
     font-size: 5.5px !important;
+  }
+  html.dark .map-container :global(.city-label) {
+    fill: rgba(255,255,255,0.75) !important;
   }
   .map-container :global(.muni.in-radius ~ .city-label),
   .map-container :global(.muni.covered .city-label) {
