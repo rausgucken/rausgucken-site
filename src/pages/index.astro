@@ -176,9 +176,11 @@ const municipalitiesJson = JSON.stringify(municipalities);
   }
   .map-container :global(svg#landkreis-map) { width: 100%; height: auto; display: block; }
   .map-container :global(.muni.selected) {
-    stroke: #e04a38 !important;
-    stroke-width: 2px !important;
-    filter: brightness(0.9);
+    fill: #FF6F61 !important;
+    stroke: #c94030 !important;
+    stroke-width: 2.5px !important;
+    opacity: 1 !important;
+    filter: none !important;
   }
 
   /* Base fill for all municipality paths — theme aware */
