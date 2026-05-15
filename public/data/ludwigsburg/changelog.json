@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-05-14T14:37:38.839748+02:00",
+  "generated_at": "2026-05-15T02:19:44.910394+02:00",
   "city": "ludwigsburg",
   "sources": [
     "museum",
-    "kunstverein_veranstaltungen",
-    "karlskaserne_ausstellungen",
-    "kunstverein_ausstellungen",
-    "karlskaserne_veranstaltungen",
     "labyrinth",
-    "schloss",
-    "stabi"
+    "kunstverein_veranstaltungen",
+    "kunstverein_ausstellungen",
+    "stabi",
+    "karlskaserne_veranstaltungen",
+    "karlskaserne_ausstellungen",
+    "schloss"
   ],
-  "previous_run": "2026-05-14T13:14:11.030617+02:00",
-  "count_added": 59,
-  "count_removed": 2,
+  "previous_run": "2026-05-14T21:18:45.443602+02:00",
+  "count_added": 61,
+  "count_removed": 1,
   "added": [
     {
       "id": "360a49a6edc0d42c",
@@ -358,30 +358,36 @@
       "source": "kunstverein_veranstaltungen"
     },
     {
-      "id": "805133553e6599e8",
-      "title": "Sommerferienworkshop: Wackeldackel, Löwenhocker, Kistenlaster in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
+      "id": "67037ab7bbd6ffaf",
+      "title": "Ausstellung: Mixed Realities",
+      "date_start": "2026-05-08",
+      "source": "karlskaserne_ausstellungen"
     },
     {
-      "id": "e2b8004bb94c0e64",
-      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
+      "id": "779f3a87b33d50f9",
+      "title": "Ausstellung: Ich darf das!",
+      "date_start": "2026-06-28",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "6744bf6f864c6214",
+      "title": "Haake Festival 2026",
+      "date_start": "2026-09-25",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "8bd87a78bd9ee141",
+      "title": "29. Jugendkunstpreis Baden-Württemberg 2026 \"Zusammen\"",
+      "date_start": "2026-10-09",
+      "source": "karlskaserne_ausstellungen"
     }
   ],
   "removed": [
     {
-      "id": "6389cd44b4b47e65",
-      "title": "Sommerferienworkshop: T-Rex-Alarm in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
-    },
-    {
-      "id": "9ce617dc8d03f108",
-      "title": "Sommerferienworkshop: Schule der magischen Tiere in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
+      "id": "04882926dfb89f93",
+      "title": "Der Bühnendekorationsfundus im Schlosstheater Ludwigsburg",
+      "date_start": "2026-05-14",
+      "source": "schloss"
     }
   ]
 }
