@@ -181,25 +181,20 @@ const municipalitiesJson = JSON.stringify(municipalities);
     filter: brightness(0.9);
   }
 
-  .map-container :global(.muni.covered.in-radius) {
-    fill: rgba(255, 255, 255, 0.12) !important;
-    opacity: 1 !important;
-    stroke: #FF6F61 !important;
-    stroke-width: 2.5px !important;
-  }
-  html.dark .map-container :global(.muni.covered.in-radius) {
-    fill: rgba(255, 255, 255, 0.08) !important;
-    opacity: 1 !important;
-    stroke: #FF6F61 !important;
-    stroke-width: 2.5px !important;
-  }
   .map-container :global(.muni.dimmed) { opacity: 0.15 !important; }
-  .map-container :global(.muni.covered) { cursor: pointer; }
-  /* Fix multi-subpath cities: evenodd cuts holes, nonzero fills all islands */
-  .map-container :global(.muni.covered) { fill-rule: nonzero !important; }
+  .map-container :global(.muni.covered) { cursor: pointer; fill-rule: nonzero !important; }
+  /* Covered cities with events: very faint tint only */
   .map-container :global(.muni.in-range.covered) {
     fill: #FF6F61 !important;
-    opacity: 0.18 !important;
+    opacity: 0.20 !important;
+  }
+  /* in-radius: LAST so it wins — clear fill, coral border */
+  .map-container :global(.muni.covered.in-radius),
+  html.dark .map-container :global(.muni.covered.in-radius) {
+    fill: rgba(255, 111, 97, 0.15) !important;
+    opacity: 1 !important;
+    stroke: #FF6F61 !important;
+    stroke-width: 3px !important;
   }
   .map-placeholder { height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-60); }
   .map-tooltip {
