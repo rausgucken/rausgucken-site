@@ -182,14 +182,14 @@ const municipalitiesJson = JSON.stringify(municipalities);
   }
 
   .map-container :global(.muni.covered.in-radius) {
-    fill: #FF6F61 !important;
-    opacity: 0.70 !important;
-    stroke: #e04a38 !important;
+    fill: rgba(255, 255, 255, 0.12) !important;
+    opacity: 1 !important;
+    stroke: #FF6F61 !important;
     stroke-width: 2.5px !important;
   }
   html.dark .map-container :global(.muni.covered.in-radius) {
-    fill: #FF6F61 !important;
-    opacity: 0.70 !important;
+    fill: rgba(255, 255, 255, 0.08) !important;
+    opacity: 1 !important;
     stroke: #FF6F61 !important;
     stroke-width: 2.5px !important;
   }
@@ -199,7 +199,7 @@ const municipalitiesJson = JSON.stringify(municipalities);
   .map-container :global(.muni.covered) { fill-rule: nonzero !important; }
   .map-container :global(.muni.in-range.covered) {
     fill: #FF6F61 !important;
-    opacity: 0.45 !important;
+    opacity: 0.18 !important;
   }
   .map-placeholder { height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-60); }
   .map-tooltip {
