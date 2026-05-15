@@ -1,8 +1,74 @@
 ---
 // src/pages/bildnachweis.astro
 import Base from "../layouts/Base.astro";
----
 
+const credits = [
+  {
+    file: "schloss.jpg",
+    label: "Residenzschloss Ludwigsburg",
+    note: "Vorschaubild für: Residenzschloss-Events",
+    author: "Llez",
+    url: "https://commons.wikimedia.org/wiki/File:Ludwigsburg_Palace_11.jpg",
+    license: "CC BY-SA",
+  },
+  {
+    file: "karlskaserne.jpg",
+    label: "Kunstzentrum Karlskaserne",
+    note: "Vorschaubild für: Karlskaserne-Events",
+    author: "Mussklprozz",
+    url: "https://commons.wikimedia.org/wiki/File:LudwigsburgKarlskaserneHauptgeb%C3%A4ude_2023-02.jpg",
+    license: "CC BY-SA 4.0",
+  },
+  {
+    file: "labyrinth.jpg",
+    label: "Kunstschule Labyrinth",
+    note: "Vorschaubild für: Labyrinth-Events",
+    author: "Mussklprozz",
+    url: "https://commons.wikimedia.org/wiki/File:LudwigsburgKarlskaserneHauptgeb%C3%A4ude_2023-02.jpg",
+    license: "CC BY-SA 4.0",
+  },
+  {
+    file: "stadtbibliothek.jpg",
+    label: "Stadtbibliothek Ludwigsburg",
+    note: "Vorschaubild für: Stadtbibliothek-Events",
+    author: "T.stierle",
+    url: "https://commons.wikimedia.org/wiki/File:Sachthemen_und_Romane.jpg",
+    license: "CC BY-SA 4.0",
+  },
+  {
+    file: "stadtmuseum.jpg",
+    label: "Stadtmuseum im MIK / Kunstverein Ludwigsburg",
+    note: "Vorschaubild für: Stadtmuseum- und Kunstverein-Events",
+    author: "Mussklprozz",
+    url: "https://commons.wikimedia.org/wiki/File:MIK_Ludwigsburg_2013-05.jpg",
+    license: "CC BY-SA 3.0",
+  },
+  {
+    file: "ludwigsburg.jpg",
+    label: "Ludwigsburg (Hub-Vorschaubild)",
+    note: "Standardbild für Hub-Seiten und nicht zugeordnete Quellen",
+    author: "Llez",
+    url: "https://commons.wikimedia.org/wiki/File:Ludwigsburg_Palace_11.jpg",
+    license: "CC BY-SA",
+  },
+  {
+    file: "tamm.jpg",
+    label: "Stadt Tamm",
+    note: "Vorschaubild für: Tamm-Events",
+    author: "Ikar.us",
+    url: "https://commons.wikimedia.org/wiki/File:Tamm_Kirche_Stadtmitte.jpg",
+    license: "CC BY 3.0 DE",
+  },
+  {
+    file: "bietigheim.jpg",
+    label: "Bietigheim-Bissingen",
+    note: "Vorschaubild für: Bietigheim-Events",
+    author: "Wikimedia Commons",
+    url: "https://commons.wikimedia.org/",
+    license: "Wikimedia Commons",
+  },
+];
+---
 <Base
   title="Bildnachweis | rausgucken.de"
   description="Bildquellen und Lizenzen der auf rausgucken.de verwendeten Veranstaltungsort-Fotos."
@@ -14,53 +80,26 @@ import Base from "../layouts/Base.astro";
     <span aria-hidden="true">›</span>
     <span aria-current="page">Bildnachweis</span>
   </nav>
-
   <div class="page-header">
     <h1>Bildnachweis</h1>
-    <p class="page-subtitle">Fotos der Veranstaltungsorte, die in unseren Vorschaubildern verwendet werden.</p>
+    <p class="page-subtitle">Fotos der Veranstaltungsorte, die in unseren Vorschaubildern verwendet werden. Alle Bilder stammen von Wikimedia Commons.</p>
   </div>
-
   <div class="credits-grid">
-
-    <div class="credit-card">
-      <img src="/og/venues/schloss.jpg" alt="Residenzschloss Ludwigsburg" class="credit-thumb" />
-      <div class="credit-info">
-        <strong>Residenzschloss Ludwigsburg</strong>
-        <span>Auch verwendet als: Hub-Vorschaubild Ludwigsburg</span>
-        <span>Foto: <a href="https://commons.wikimedia.org/wiki/File:Ludwigsburg_Palace_11.jpg" target="_blank" rel="noopener">Llez</a> / Wikimedia Commons / CC BY-SA</span>
+    {credits.map(c => (
+      <div class="credit-card">
+        <img src={`/og/venues/${c.file}`} alt={c.label} class="credit-thumb" />
+        <div class="credit-info">
+          <strong>{c.label}</strong>
+          <span class="credit-note">{c.note}</span>
+          <span>
+            Foto: <a href={c.url} target="_blank" rel="noopener">{c.author}</a>
+            {" "}/ Wikimedia Commons / {c.license}
+          </span>
+        </div>
       </div>
-    </div>
-
-    <div class="credit-card">
-      <img src="/og/venues/karlskaserne.jpg" alt="Kunstzentrum Karlskaserne Ludwigsburg" class="credit-thumb" />
-      <div class="credit-info">
-        <strong>Kunstzentrum Karlskaserne</strong>
-        <span>Auch verwendet für: Kunstschule Labyrinth</span>
-        <span>Foto: <a href="https://commons.wikimedia.org/wiki/File:LudwigsburgKarlskaserneHauptgeb%C3%A4ude_2023-02.jpg" target="_blank" rel="noopener">Mussklprozz</a> / Wikimedia Commons / CC BY-SA 4.0</span>
-      </div>
-    </div>
-
-    <div class="credit-card">
-      <img src="/og/venues/stadtbibliothek.jpg" alt="Stadtbibliothek Ludwigsburg" class="credit-thumb" />
-      <div class="credit-info">
-        <strong>Stadtbibliothek Ludwigsburg</strong>
-        <span>Foto: <a href="https://commons.wikimedia.org/wiki/File:Sachthemen_und_Romane.jpg" target="_blank" rel="noopener">T.stierle</a> / Wikimedia Commons / CC BY-SA 4.0</span>
-      </div>
-    </div>
-
-    <div class="credit-card">
-      <img src="/og/venues/stadtmuseum.jpg" alt="Stadtmuseum im MIK Ludwigsburg" class="credit-thumb" />
-      <div class="credit-info">
-        <strong>Stadtmuseum im MIK</strong>
-        <span>Auch verwendet für: Kunstverein Ludwigsburg</span>
-        <span>Foto: <a href="https://commons.wikimedia.org/wiki/File:MIK_Ludwigsburg_2013-05.jpg" target="_blank" rel="noopener">Mussklprozz</a> / Wikimedia Commons / CC BY-SA 3.0</span>
-      </div>
-    </div>
-
+    ))}
   </div>
-
 </Base>
-
 <style>
   .credits-grid {
     display: flex;
@@ -68,7 +107,6 @@ import Base from "../layouts/Base.astro";
     gap: 1.25rem;
     max-width: 720px;
   }
-
   .credit-card {
     display: flex;
     gap: 1rem;
@@ -79,7 +117,6 @@ import Base from "../layouts/Base.astro";
     padding: 1rem;
     box-shadow: var(--shadow-card);
   }
-
   .credit-thumb {
     width: 80px;
     height: 80px;
@@ -87,7 +124,6 @@ import Base from "../layouts/Base.astro";
     border-radius: var(--radius-sm);
     flex-shrink: 0;
   }
-
   .credit-info {
     display: flex;
     flex-direction: column;
@@ -95,13 +131,15 @@ import Base from "../layouts/Base.astro";
     font-size: 0.88rem;
     color: var(--text-60);
   }
-
   .credit-info strong {
     font-size: 0.95rem;
     color: var(--text);
     font-family: var(--font-heading);
   }
-
+  .credit-note {
+    font-style: italic;
+    font-size: 0.82rem;
+  }
   .credit-info a {
     color: var(--coral);
   }
