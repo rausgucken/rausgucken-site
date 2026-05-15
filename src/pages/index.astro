@@ -181,17 +181,28 @@ const municipalitiesJson = JSON.stringify(municipalities);
     filter: brightness(0.9);
   }
 
-  .map-container :global(.muni.dimmed) { opacity: 0.15 !important; }
+  /* Base fill for all municipality paths — prevent SVG default black */
+  .map-container :global(.muni) {
+    fill: #4A5568;
+  }
+  html.dark .map-container :global(.muni) {
+    fill: #444857;
+  }
+  .map-container :global(.muni.dimmed) { opacity: 0.25 !important; }
   .map-container :global(.muni.covered) { cursor: pointer; fill-rule: nonzero !important; }
-  /* Covered cities with events: very faint tint only */
+  /* in-range but no events yet: slightly lighter base */
+  .map-container :global(.muni.in-range.not-covered) {
+    fill: #556070;
+  }
+  /* Covered cities with events: faint coral tint */
   .map-container :global(.muni.in-range.covered) {
     fill: #FF6F61 !important;
-    opacity: 0.20 !important;
+    opacity: 0.30 !important;
   }
-  /* in-radius: LAST so it wins — clear fill, coral border */
+  /* in-radius: last rule wins — light coral fill + strong border */
   .map-container :global(.muni.covered.in-radius),
   html.dark .map-container :global(.muni.covered.in-radius) {
-    fill: rgba(255, 111, 97, 0.15) !important;
+    fill: rgba(255, 111, 97, 0.20) !important;
     opacity: 1 !important;
     stroke: #FF6F61 !important;
     stroke-width: 3px !important;
