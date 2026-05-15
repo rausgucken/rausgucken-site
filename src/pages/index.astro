@@ -204,10 +204,18 @@ const municipalitiesJson = JSON.stringify(municipalities);
   /* in-radius: last rule wins — bright coral border, light fill */
   .map-container :global(.muni.covered.in-radius),
   html.dark .map-container :global(.muni.covered.in-radius) {
-    fill: #4A5568 !important;
+    fill: #5C6B80 !important;
     opacity: 1 !important;
     stroke: #FF6F61 !important;
     stroke-width: 3px !important;
+  }
+  .map-container :global(.city-label) {
+    fill: rgba(255,255,255,0.75) !important;
+    font-size: 5.5px !important;
+  }
+  .map-container :global(.muni.in-radius ~ .city-label),
+  .map-container :global(.muni.covered .city-label) {
+    fill: #ffffff !important;
   }
   .map-placeholder { height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-60); }
   .map-tooltip {
