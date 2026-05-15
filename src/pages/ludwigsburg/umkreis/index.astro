@@ -64,13 +64,13 @@ const cityNamesJson = JSON.stringify(cityNames);
   h1 { font-family: var(--font-heading); font-weight: 800; font-size: 2rem; margin: 0 0 0.3rem; }
   .sub { color: var(--text-60); font-size: 0.9rem; margin: 0 0 1.25rem; }
   .city-filters { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
-  .city-chip {
+  :global(.city-chip) {
     border: none; outline: none; appearance: none; -webkit-appearance: none; border-radius: 20px;
     padding: 0.3rem 0.85rem; font-size: 0.8rem; font-weight: 600;
     cursor: pointer; background: var(--surface-secondary, #444857); color: var(--text-60);
     transition: all 120ms;
   }
-  .city-chip.active { background: var(--coral); color: #373F51; }
+  :global(.city-chip.active) { background: var(--coral); color: #373F51; }
   .event-wrap { margin-bottom: 0.25rem; }
   .city-tag {
     font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
