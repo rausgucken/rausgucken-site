@@ -177,25 +177,30 @@ const municipalitiesJson = JSON.stringify(municipalities);
   .map-container :global(svg#landkreis-map) { width: 100%; height: auto; display: block; }
   .map-container :global(.muni.selected) {
     stroke: #e04a38 !important;
-    stroke-width: 2.5px !important;
-    filter: brightness(0.85);
+    stroke-width: 2px !important;
+    filter: brightness(0.9);
   }
 
   .map-container :global(.muni.covered.in-radius) {
-    opacity: 0.85 !important;
+    fill: #FF6F61 !important;
+    opacity: 0.70 !important;
     stroke: #e04a38 !important;
-    stroke-width: 2px !important;
+    stroke-width: 2.5px !important;
   }
   html.dark .map-container :global(.muni.covered.in-radius) {
-    opacity: 0.85 !important;
+    fill: #FF6F61 !important;
+    opacity: 0.70 !important;
     stroke: #FF6F61 !important;
-    stroke-width: 2px !important;
+    stroke-width: 2.5px !important;
   }
-  .map-container :global(.muni.dimmed) { opacity: 0.12 !important; }
+  .map-container :global(.muni.dimmed) { opacity: 0.15 !important; }
   .map-container :global(.muni.covered) { cursor: pointer; }
   /* Fix multi-subpath cities: evenodd cuts holes, nonzero fills all islands */
   .map-container :global(.muni.covered) { fill-rule: nonzero !important; }
-  .map-container :global(.muni.in-range.covered) { fill: #FF6F61 !important; opacity: 0.55 !important; }
+  .map-container :global(.muni.in-range.covered) {
+    fill: #FF6F61 !important;
+    opacity: 0.45 !important;
+  }
   .map-placeholder { height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-60); }
   .map-tooltip {
     position: absolute; pointer-events: none;
