@@ -84,7 +84,7 @@ const featuredEvent = featuredSlug
   <div id="search" class="pagefind-search-wrap"></div>
 
   <FilterBar />
-
+    {featuredEvent && <FeaturedEvent event={featuredEvent} />}
   <div class="city-layout">
     <div class="city-main">
 
