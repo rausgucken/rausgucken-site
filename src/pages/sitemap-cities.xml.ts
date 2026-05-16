@@ -11,6 +11,7 @@ export async function GET() {
     { loc: `${siteUrl}/`,                              priority: "1.0", changefreq: "weekly"  },
     // Landkreis Ludwigsburg umbrella
     { loc: `${siteUrl}/ludwigsburg/`,                  priority: "1.0", changefreq: "weekly"  },
+    { loc: `${siteUrl}/ludwigsburg/stadt/`,            priority: "0.8", changefreq: "weekly"  },
     { loc: `${siteUrl}/ludwigsburg/umkreis/`,          priority: "0.8", changefreq: "weekly"  },
     { loc: `${siteUrl}/ludwigsburg/erleben/`,          priority: "0.7", changefreq: "weekly"  },
     // Stadt-level city pages (flat URLs — canonical SEO)
