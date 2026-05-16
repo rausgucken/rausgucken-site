@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-05-15T02:19:44.942961+02:00",
+  "scraped_at": "2026-05-16T02:23:06.894722+02:00",
   "city": "ludwigsburg",
-  "event_count": 627,
+  "event_count": 626,
   "flagged_count": 0,
   "expired_count": 57,
   "sources_scraped": [
@@ -17,36 +17,57 @@
   "source_counts": {
     "kunstverein_ausstellungen": 6,
     "museum": 50,
-    "karlskaserne_veranstaltungen": 114,
     "karlskaserne_ausstellungen": 4,
-    "schloss": 245,
+    "karlskaserne_veranstaltungen": 114,
+    "schloss": 244,
     "stabi": 147,
     "labyrinth": 50,
     "kunstverein_veranstaltungen": 11
   },
   "sources_failed": [],
-  "data_hash": "df5a45d111f00918",
+  "data_hash": "0fb4050270b1b80b",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 15.05.2026. Bitte Originalseite pruefen.",
+  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 16.05.2026. Bitte Originalseite pruefen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "museum": 1.0,
     "schloss": 1.0,
-    "karlskaserne_ausstellungen": 1.0,
     "karlskaserne_veranstaltungen": 1.0,
     "kunstverein_ausstellungen": 1.0,
     "kunstverein_veranstaltungen": 1.0,
     "stabi": 1.0,
-    "labyrinth": 1.0
+    "labyrinth": 1.0,
+    "karlskaserne_ausstellungen": 1.0
   },
   "source_event_counts": {
     "museum": 50,
-    "schloss": 246,
-    "karlskaserne_ausstellungen": 4,
+    "schloss": 245,
     "karlskaserne_veranstaltungen": 114,
     "kunstverein_ausstellungen": 20,
     "kunstverein_veranstaltungen": 54,
     "stabi": 147,
-    "labyrinth": 50
+    "labyrinth": 50,
+    "karlskaserne_ausstellungen": 4
+  },
+  "quality_report": {
+    "regression_pass_rate": null,
+    "flagged_rate_current": 0.0,
+    "flagged_rate_4week_avg": 0.0,
+    "trend": "stable",
+    "runtime_minutes": 23.1,
+    "runtime_delta_vs_baseline": 0.05,
+    "source_health": {
+      "museum": 1.0,
+      "schloss": 1.0,
+      "karlskaserne_veranstaltungen": 1.0,
+      "kunstverein_ausstellungen": 1.0,
+      "kunstverein_veranstaltungen": 1.0,
+      "stabi": 1.0,
+      "labyrinth": 1.0,
+      "karlskaserne_ausstellungen": 1.0
+    },
+    "quarantined_sources": [],
+    "status": "healthy",
+    "generated_at": "2026-05-16T02:28:07.126687+02:00"
   }
 }

@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-15T02:19:44.910394+02:00",
+  "generated_at": "2026-05-16T02:23:06.862539+02:00",
   "city": "ludwigsburg",
   "sources": [
     "museum",
-    "labyrinth",
-    "kunstverein_veranstaltungen",
+    "schloss",
     "kunstverein_ausstellungen",
-    "stabi",
-    "karlskaserne_veranstaltungen",
     "karlskaserne_ausstellungen",
-    "schloss"
+    "kunstverein_veranstaltungen",
+    "labyrinth",
+    "karlskaserne_veranstaltungen",
+    "stabi"
   ],
-  "previous_run": "2026-05-14T21:18:45.443602+02:00",
-  "count_added": 61,
+  "previous_run": "2026-05-15T02:19:44.942961+02:00",
+  "count_added": 57,
   "count_removed": 1,
   "added": [
     {
@@ -356,37 +356,13 @@
       "title": "13.07.2023 Vernissage Benjamin Von Wong (GREENWASH GENERATION) & Juli Gebhardt (AWAY FROM KEYBOARD)",
       "date_start": "2023-07-13",
       "source": "kunstverein_veranstaltungen"
-    },
-    {
-      "id": "67037ab7bbd6ffaf",
-      "title": "Ausstellung: Mixed Realities",
-      "date_start": "2026-05-08",
-      "source": "karlskaserne_ausstellungen"
-    },
-    {
-      "id": "779f3a87b33d50f9",
-      "title": "Ausstellung: Ich darf das!",
-      "date_start": "2026-06-28",
-      "source": "karlskaserne_ausstellungen"
-    },
-    {
-      "id": "6744bf6f864c6214",
-      "title": "Haake Festival 2026",
-      "date_start": "2026-09-25",
-      "source": "karlskaserne_ausstellungen"
-    },
-    {
-      "id": "8bd87a78bd9ee141",
-      "title": "29. Jugendkunstpreis Baden-Württemberg 2026 \"Zusammen\"",
-      "date_start": "2026-10-09",
-      "source": "karlskaserne_ausstellungen"
     }
   ],
   "removed": [
     {
-      "id": "04882926dfb89f93",
+      "id": "960dd25b8d959c7f",
       "title": "Der Bühnendekorationsfundus im Schlosstheater Ludwigsburg",
-      "date_start": "2026-05-14",
+      "date_start": "2026-05-15",
       "source": "schloss"
     }
   ]
