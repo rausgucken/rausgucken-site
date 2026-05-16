@@ -3,6 +3,7 @@ import Base from "../../../layouts/Base.astro";
 import FreshnessStamp from '../../../components/FreshnessStamp.astro';
 import EventCard from "../../../components/EventCard.astro";
 import FilterBar from "../../../components/FilterBar.astro";
+import DaySelector from "../../../components/DaySelector.astro";
 
 import subsetData from "../../../../public/data/landkreis-ludwigsburg/next-week.json";
 import metaData from "../../../../public/data/ludwigsburg/meta.json";
@@ -28,7 +29,7 @@ const canonical = `${siteUrl}/${city}/naechste-woche/`;
 const seoTitle  = `Events Ludwigsburg nächste Woche, ${rangeDE} | rausgucken.de`;
 const metaDesc  = `Veranstaltungen in Ludwigsburg nächste Woche (${rangeDE}): Kultur, Kinder, Ausstellungen, Führungen – jetzt vorplanen.`;
 
-// Helper: ISO date → JS getDay() value (0=Sun,1=Mon,...,6=Sat)
+// Helper: ISO date string → JS getDay() value (0=So,1=Mo,...,6=Sa)
 function isoToDow(iso: string): number {
   const [y, m, d] = iso.split('-').map(Number);
   return new Date(y, m - 1, d).getDay();
@@ -52,6 +53,20 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 3, "name": "Nächste Woche", "item": canonical },
   ],
 };
+
+// DaySelector tabs — "Alle" + one per weekday
+// data-day stores the JS getDay() value as a string; "all" = show everything
+// DaySelector emits dayselector:change with detail.date = this value
+const days = [
+  { label: "Alle", date: "all" },
+  { label: "Mo",   date: "1"   },
+  { label: "Di",   date: "2"   },
+  { label: "Mi",   date: "3"   },
+  { label: "Do",   date: "4"   },
+  { label: "Fr",   date: "5"   },
+  { label: "Sa",   date: "6"   },
+  { label: "So",   date: "0"   },
+];
 ---
 
 <Base
@@ -77,18 +92,8 @@ const breadcrumbSchema = {
     </p>
   </div>
 
-  <!-- Weekday tabs — filter rendered DOM by data-dow, no re-render -->
-  <!-- data-day matches JS getDay(): 0=So,1=Mo,2=Di,3=Mi,4=Do,5=Fr,6=Sa -->
-  <div class="day-tabs" role="tablist" aria-label="Wochentag auswählen">
-    <button class="day-tab day-tab--active" role="tab" aria-selected="true"  data-day="all" type="button">Alle</button>
-    <button class="day-tab"                 role="tab" aria-selected="false" data-day="1"   type="button">Mo</button>
-    <button class="day-tab"                 role="tab" aria-selected="false" data-day="2"   type="button">Di</button>
-    <button class="day-tab"                 role="tab" aria-selected="false" data-day="3"   type="button">Mi</button>
-    <button class="day-tab"                 role="tab" aria-selected="false" data-day="4"   type="button">Do</button>
-    <button class="day-tab"                 role="tab" aria-selected="false" data-day="5"   type="button">Fr</button>
-    <button class="day-tab"                 role="tab" aria-selected="false" data-day="6"   type="button">Sa</button>
-    <button class="day-tab"                 role="tab" aria-selected="false" data-day="0"   type="button">So</button>
-  </div>
+  <!-- DaySelector component — fires "dayselector:change" on window with detail.date = dow string -->
+  <DaySelector days={days} activeDay="all" />
 
   <FilterBar />
 
@@ -97,7 +102,10 @@ const breadcrumbSchema = {
   {events.length > 0 ? (
     <div class="event-list" id="event-grid">
       {events.map(ev => (
-        <div class="event-day-wrapper" data-dow={ev.date_start ? String(isoToDow(ev.date_start)) : "all"}>
+        <div
+          class="event-day-wrapper"
+          data-dow={ev.date_start ? String(isoToDow(ev.date_start)) : "all"}
+        >
           <EventCard event={ev} />
         </div>
       ))}
@@ -129,33 +137,28 @@ const breadcrumbSchema = {
   <script src="/scripts/app.js" is:inline></script>
 </Base>
 
-<!-- Weekday tab filtering — operates on rendered DOM, no fetch -->
+<!-- Listen for DaySelector's custom event — filter .event-day-wrapper by data-dow -->
 <script is:inline>
 (function () {
-  var tabs = document.querySelectorAll('.day-tab');
-  var wrappers = document.querySelectorAll('.event-day-wrapper');
-
-  function setActiveTab(dayFilter) {
-    tabs.forEach(function (t) {
-      var isActive = t.dataset.day === dayFilter;
-      t.classList.toggle('day-tab--active', isActive);
-      t.setAttribute('aria-selected', isActive ? 'true' : 'false');
-    });
-
-    var visible = 0;
+  function applyDowFilter(dowFilter) {
+    var wrappers = document.querySelectorAll('.event-day-wrapper');
+    var visible  = 0;
     wrappers.forEach(function (w) {
-      var show = dayFilter === 'all' || w.dataset.dow === dayFilter;
+      var show = dowFilter === 'all' || w.dataset.dow === dowFilter;
       w.style.display = show ? '' : 'none';
       if (show) visible++;
     });
-
     var emptyEl = document.getElementById('empty-state');
     if (emptyEl) emptyEl.hidden = visible > 0;
   }
 
-  tabs.forEach(function (tab) {
-    tab.addEventListener('click', function () { setActiveTab(tab.dataset.day); });
+  // DaySelector fires this custom event on window
+  window.addEventListener('dayselector:change', function (e) {
+    applyDowFilter(e.detail.date);
   });
+
+  // Default on load — show all
+  applyDowFilter('all');
 })();
 </script>
 
@@ -164,19 +167,8 @@ const breadcrumbSchema = {
   h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
   .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
 
-  /* Day tabs — Design System §V.7 */
-  .day-tabs { display: flex; flex-wrap: wrap; gap: 0.375rem; margin-bottom: 0; max-width: 720px; margin-left: auto; margin-right: auto; }
-  .day-tab {
-    display: inline-flex; align-items: center; justify-content: center;
-    min-height: 44px; min-width: 44px; padding: 0 0.875rem;
-    border: none; border-radius: var(--radius-sm);
-    background: var(--tag-bg); color: var(--text-60);
-    font-family: var(--font-body); font-size: 0.875rem; font-weight: 500;
-    cursor: pointer; transition: background 200ms, color 200ms;
-  }
-  .day-tab:hover:not(.day-tab--active) { background: var(--coral-light); color: var(--text); }
-  .day-tab--active { background: var(--coral); color: var(--text); font-weight: 600; } /* charcoal on coral — Button Rule */
-  .day-tab:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+  /* DaySelector wrapper spacing */
+  :global(.day-selector) { max-width: 720px; margin: 0 auto 1rem; }
 
   html.dark .event-card { box-shadow: 0 2px 8px rgba(0,0,0,0.22); }
 
@@ -195,8 +187,4 @@ const breadcrumbSchema = {
   .temporal-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
   .temporal-links a { display: inline-flex; align-items: center; height: 36px; padding: 0 0.85rem; background: var(--tag-bg); color: var(--text-60); border-radius: 20px; font-size: 0.82rem; font-weight: 500; text-decoration: none; transition: background 150ms, color 150ms; }
   .temporal-links a:hover { background: var(--coral-light); color: var(--coral); }
-
-  @media (max-width: 600px) {
-    .day-tab { min-width: 38px; padding: 0 0.5rem; font-size: 0.8rem; }
-  }
 </style>
