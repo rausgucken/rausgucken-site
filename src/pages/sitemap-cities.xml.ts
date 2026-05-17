@@ -17,6 +17,7 @@ export async function GET() {
     // Stadt-level city pages (flat URLs — canonical SEO)
     { loc: `${siteUrl}/tamm/`,                         priority: "0.9", changefreq: "weekly"  },
     { loc: `${siteUrl}/bietigheim/`,                   priority: "0.9", changefreq: "weekly"  },
+    { loc: `${siteUrl}/asperg/`,                          priority: "0.9", changefreq: "weekly"  },
     // Static pages
     { loc: `${siteUrl}/about`,                         priority: "0.5", changefreq: "monthly" },
     { loc: `${siteUrl}/impressum`,                     priority: "0.3", changefreq: "monthly" },
