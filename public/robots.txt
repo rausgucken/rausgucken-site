@@ -1,11 +1,10 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.rausgucken.de/sitemap.xml
 
-# Block raw data files from crawlers
+# Block calendar files — not indexable pages
+Disallow: /*.ics$
+
+# Block raw data files
 Disallow: /data/
 
-# Block filter/query param URLs (prevent duplicate crawling)
-Disallow: /ludwigsburg/?
-Disallow: /bietigheim/?
-Disallow: /tamm/?
+Sitemap: https://www.rausgucken.de/sitemap.xml
