@@ -56,7 +56,7 @@ const scrapedFormatted = ev.scraped_at
   : null;
 
 // ── Canonical ─────────────────────────────────────────────────────────────────
-const canonical = `${siteUrl}/asperg/events/${ev.slug}`;
+const canonical = `${siteUrl}/asperg/events/${ev.slug}/`;
 
 // ── OG image ──────────────────────────────────────────────────────────────────
 // Falls back to city-level OG if per-event image not yet generated
@@ -181,7 +181,7 @@ const outlookCalUrl = buildOutlookUrl(ev);
 const icsUrl        = `/asperg/events/${ev.slug}.ics`;
 
 // Share URLs
-const shareEventUrl = `https://www.rausgucken.de/asperg/events/${ev.slug}`;
+const shareEventUrl = `https://www.rausgucken.de/asperg/events/${ev.slug}/`;
 const shareText     = encodeURIComponent(`${ev.title} – ${shareEventUrl}`);
 const waShareUrl    = `https://wa.me/?text=${shareText}`;
 const tgShareUrl    = `https://t.me/share/url?url=${encodeURIComponent(shareEventUrl)}&text=${encodeURIComponent(ev.title)}`;
