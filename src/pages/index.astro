@@ -353,9 +353,9 @@ function selectCity(m) {
   radiusSec.hidden = false;
   coveredList.hidden = false;
   if (svg) {
-    svg.querySelectorAll(".muni").forEach(p => p.classList.remove("selected", "dimmed"));
+    svg.querySelectorAll(".muni").forEach(p => p.classList.remove("selected", "dimmed", "in-radius"));
     const el = svg.querySelector("[data-city-id=\"" + m.id + "\"]");
-    if (el) el.classList.add("selected");
+    if (el) { el.classList.add("selected"); el.classList.remove("in-range"); }
   }
   updateRadius();
   searchInput.value = "";
