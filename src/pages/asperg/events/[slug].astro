@@ -202,7 +202,9 @@ const eventSchema = {
   ...(ev.description ? { "description": ev.description } : {}),
   "inLanguage": "de-DE",
   ...(ev.date_start ? {
-    "startDate": ev.time ? `${ev.date_start}T${ev.time}` : ev.date_start,
+    "startDate": ev.time
+    ? (() => { const m = ev.time.match(/(\d{1,2}):(\d{2})/); return m ? `${ev.date_start}T${m[1].padStart(2,"0")}:${m[2]}` : ev.date_start; })()
+    : ev.date_start,
   } : {}),
   // endDate: use date_end if present, otherwise same as startDate (single-day event)
   ...(ev.date_start ? {
