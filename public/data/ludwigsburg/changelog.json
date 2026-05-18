@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-05-17T20:35:01.283057+02:00",
+  "generated_at": "2026-05-18T02:29:00.383739+02:00",
   "city": "ludwigsburg",
   "sources": [
     "schloss",
-    "stabi",
-    "labyrinth",
-    "kunstverein_ausstellungen",
+    "museum",
     "karlskaserne_veranstaltungen",
+    "kunstverein_ausstellungen",
     "karlskaserne_ausstellungen",
     "kunstverein_veranstaltungen",
-    "museum"
+    "labyrinth",
+    "stabi"
   ],
-  "previous_run": "2026-05-17T19:44:30.999673+02:00",
-  "count_added": 59,
-  "count_removed": 2,
+  "previous_run": "2026-05-17T22:41:02.062277+02:00",
+  "count_added": 70,
+  "count_removed": 16,
   "added": [
     {
       "id": "85292a722893ca5d",
@@ -358,19 +358,71 @@
       "source": "kunstverein_veranstaltungen"
     },
     {
-      "id": "dee560c65b65f510",
-      "title": "Sommerferienworkshop: Wackeldackel, Löwenhocker, Kistenlaster in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
+      "id": "22f9f9b321aa01e3",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-24",
+      "source": "museum"
     },
     {
-      "id": "5dd6210c93d4519d",
-      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
+      "id": "3e6569c50955cf0f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
+      "id": "1be2100766f9975a",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
+      "id": "17afd3d48bcfc7c3",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": null,
+      "source": "schloss"
+    },
+    {
+      "id": "6d9cdd7e1756577f",
+      "title": "Sommerferienworkshop: Zootiere aus Ton in Bietigheim",
       "date_start": "2026-07-30",
-      "source": "labyrinth"
-    }
-  ],
-  "removed": [
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "56413126867c106e",
+      "title": "Sommerferienworkshop: Hip Hop Streetdance Kids in Bietigheim",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "1efd40009fd56e29",
+      "title": "Sommerferienworkshop: Theaterwerkstatt in Bietigheim",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "c8f9473b0720ebd5",
+      "title": "Sommerferienworkshop: Abenteuer Manege! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "04a80dec6ba6d24d",
+      "title": "Sommerferienworkshop: An die Farben - fertig - los! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "10e3f00b491c81e1",
+      "title": "Sommerferienworkshop: Hip-Hop Streetdance in Ludwigsburg",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "031df209e9223600",
+      "title": "Sommerferienworkshop: Theater in der Box in Ludwigsburg",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
     {
       "id": "4c0ca35e5b478de8",
       "title": "Sommerferienworkshop: Die Wunderwelt der Stempel und Schablonen in Ludwigsburg",
@@ -382,6 +434,104 @@
       "title": "Sommerferienworkshop: Schule der magischen Tiere in Ludwigsburg",
       "date_start": "2026-07-30",
       "source": "labyrinth"
+    }
+  ],
+  "removed": [
+    {
+      "id": "4338d42d24902687",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "6157168fe406281e",
+      "title": "Ausstellung Beispielhaftes Bauen",
+      "date_start": "2026-04-14",
+      "source": "museum"
+    },
+    {
+      "id": "fbc74be71cc5ed0a",
+      "title": "Feldenkrais Intensiv",
+      "date_start": "2026-05-16",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "11c7f6dcb2d727e7",
+      "title": "Workshop: Ein Brontosaurus aus Ton für Kinder ab 7 Jahren in Ludwigsburg",
+      "date_start": "2026-05-16",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "2ef3b59b984ba2bb",
+      "title": "Workshop: Ein Brontosaurus aus Ton für Kinder ab 7 Jahren in Ludwigsburg",
+      "date_start": "2026-05-16",
+      "source": "labyrinth"
+    },
+    {
+      "id": "b6743ee44529d30e",
+      "title": "Workshop: Talking Stones ab 18 Jahren in Ludwigsburg",
+      "date_start": "2026-05-16",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "3faf8787e4f6ca05",
+      "title": "Workshop: Talking Stones ab 18 Jahren in Ludwigsburg",
+      "date_start": "2026-05-16",
+      "source": "labyrinth"
+    },
+    {
+      "id": "d3a145cb8b16097d",
+      "title": "Internationaler Museumstag",
+      "date_start": "2026-05-17",
+      "source": "museum"
+    },
+    {
+      "id": "10a5cc6b6ebabf71",
+      "title": "Meine erste Schlossführung",
+      "date_start": "2026-05-17",
+      "source": "schloss"
+    },
+    {
+      "id": "94b631b33eeb87de",
+      "title": "Taiji Qigong",
+      "date_start": "2026-05-17",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "6248f197073a27d3",
+      "title": "Kuratorinnenführung Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-05-17",
+      "source": "museum"
+    },
+    {
+      "id": "9e457b32710cc6ab",
+      "title": "Sommerferienworkshop: T-Rex-Alarm in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "e6dc8438271e14e2",
+      "title": "Sommerferienworkshop: Fang den Räuber Hotzenplotz in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "603fe36ac301102f",
+      "title": "Sommerferienworkshop: Hip Hop Streetdance in Bietigheim",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "f517ee76209c5869",
+      "title": "Sommerferienworkshop: Kunst im Wald in Bietigheim",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "1a5a6213736ba1da",
+      "title": "Sommerferienworkshop: Flughafen Schlosshof, bitte melden! in Bietigheim",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
     }
   ]
 }

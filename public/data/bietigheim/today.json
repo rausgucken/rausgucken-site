@@ -1,32 +1,63 @@
 {
   "subset": "today",
-  "generated_at": "2026-05-17T20:35:01.345964+02:00",
-  "event_count": 1,
+  "generated_at": "2026-05-18T02:29:00.450739+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "ccd8894a4d79c771",
-      "title": "Orgelkonzert",
-      "date_start": "2026-05-17",
+      "id": "f3cec9622191c9a0",
+      "title": "AUSGEBUCHT - Gaming@Bib",
+      "date_start": "2026-05-18",
       "date_end": null,
-      "time": "19:00",
-      "description": "In der Kirche St. Laurentius findet ein Orgelkonzert statt, das die Besucher in die Welt der klassischen Musik einladen wird.",
-      "location": "Kirche St. LaurentiusUhlandplatz 1",
+      "time": "16:00",
+      "description": "In der Otto-Rombach-Bücherei findet eine Lesung über Gaming statt. Der Autor präsentiert seine neue Werkstatt und bespricht die Zukunft von Videospiele.",
+      "location": "Otto-Rombach-BüchereiHauptstr. 19",
       "price": null,
       "age_min": null,
       "age_max": null,
       "tags": [
-        "Musik"
+        "Lesung",
+        "Workshop"
       ],
-      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-konzert/",
-      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-konzert/",
+      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-gamingbib/",
+      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-gamingbib/",
       "source": "bietigheim",
       "city": "bietigheim",
-      "slug": "orgelkonzert-2026-05-17-biet",
+      "slug": "ausgebucht---gamingbib-2026-05-18-biet",
       "weekdays": [
-        0
+        1
       ],
-      "scraped_at": "2026-05-14T11:43:37.285115+00:00",
+      "scraped_at": "2026-05-14T11:43:37.858639+00:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Bietigheim-Bissingen"
+    },
+    {
+      "id": "329c2c0e0cc5d3c3",
+      "title": "„GameDay – analoge Gesellschaftsspiele für 12-17jährige“",
+      "date_start": "2026-05-18",
+      "date_end": null,
+      "time": "17:30",
+      "description": "In diesem Veranstaltungstag spielen Jugendliche zwischen 12 und 17 Jahren verschiedene analoge Gesellschaftsspiele. Der Fokus liegt auf interaktiver Unterhaltung und sozialem Austausch.",
+      "location": "Treffpunkt M.Stuttgarter Str. 76",
+      "price": "Kostenlos",
+      "age_min": 12,
+      "age_max": 17,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-gameday-analoge-gesellschaftsspiele-fuer-12-17jaehrige/",
+      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-gameday-analoge-gesellschaftsspiele-fuer-12-17jaehrige/",
+      "source": "bietigheim",
+      "city": "bietigheim",
+      "slug": "gameday-analoge-gesellschaftsspiele-fuer-12-17jaehrige-2026-05-18-biet",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-05-14T11:43:38.413260+00:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,

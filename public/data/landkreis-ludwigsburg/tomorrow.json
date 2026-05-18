@@ -1,7 +1,7 @@
 {
   "subset": "tomorrow",
-  "generated_at": "2026-05-17T20:35:01.370266+02:00",
-  "event_count": 12,
+  "generated_at": "2026-05-18T02:29:00.473798+02:00",
+  "event_count": 17,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -69,42 +69,6 @@
         6
       ],
       "scraped_at": "2026-05-17T02:00:08.649582+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Residenzschloss Ludwigsburg"
-    },
-    {
-      "id": "4338d42d24902687",
-      "title": "Klassische Schlossführung in englischer Sprache",
-      "date_start": "2026-03-28",
-      "date_end": "2027-03-31",
-      "time": "10:00",
-      "description": "In englischer Sprache werden zwei Führungswegen durch das Residenzschloss Ludwigsburg angeboten: Der \"Herzog\" führt zum Tafelzimmer und dem Appartement des Gründers, wobei Besonderheiten wie das Spiegelkabinett und der Ordenssaal hervorgehoben werden. Alternativ kann man den \"Herzogin\"-Weg mit seinen Kriegsgalerien und Schlosskirche erkunden.",
-      "location": "Residenzschloss Ludwigsburg",
-      "price": "Erwachsene 10,00 € Ermäßigt 5,00 € Familie 25,00 €",
-      "age_min": null,
-      "age_max": null,
-      "tags": [
-        "Fuehrung"
-      ],
-      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zur-gewaehlten-standardfuehrung/klassische-schlossfuehrung-herzogin-in-englischer-sprache-1/9552/1",
-      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zur-gewaehlten-standardfuehrung/klassische-schlossfuehrung-herzogin-in-englischer-sprache-1/9552/1",
-      "source": "schloss",
-      "city": "ludwigsburg",
-      "slug": "klassische-schlossfuehrung-in-englischer-sprache-2026-03-28-schl",
-      "weekdays": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "scraped_at": "2026-05-17T02:00:13.576922+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -365,29 +329,179 @@
       "source_label": "Residenzschloss Ludwigsburg"
     },
     {
-      "id": "f3cec9622191c9a0",
-      "title": "AUSGEBUCHT - Gaming@Bib",
-      "date_start": "2026-05-18",
+      "id": "c86aff462fb33353",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger und Leicht-Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2026-05-19",
       "date_end": null,
-      "time": "16:00",
-      "description": "In der Otto-Rombach-Bücherei findet eine Lesung über Gaming statt. Der Autor präsentiert seine neue Werkstatt und bespricht die Zukunft von Videospiele.",
-      "location": "Otto-Rombach-BüchereiHauptstr. 19",
+      "time": "16.00-18.00 Uhr",
+      "description": "In dieser Workstatt lernen Anfänger und fortgeschrittene Luftakrobatiker grundlegende Techniken am Vertikaltuch. Mit Unterstützung durch erfahrene Dozenten verbessern Teilnehmer ihre Balance und Koordination in körperlichen Übungen.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "24,00 Euro",
+      "age_min": 10,
+      "age_max": null,
+      "tags": [
+        "Workshop",
+        "Entertainment"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523250625713/WorkshopLuftakrobatikWerkstattfrAnfngerundLeichtFortgeschrittenevon916JahreninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523250625713/WorkshopLuftakrobatikWerkstattfrAnfngerundLeichtFortgeschrittenevon916JahreninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "workshop-luftakrobatik-werkstatt-fuer-anfaenger-und-leicht-fortgeschrittene-von-9-16",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-05-08T08:53:20.009936+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne"
+    },
+    {
+      "id": "411d1ed2972d9a94",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger und Leicht-Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2026-05-19",
+      "date_end": null,
+      "time": "16.00-18.00 Uhr",
+      "description": "In dieser Luftakrobatik-Werkstatt lernen Anfänger und leicht Fortgeschrittene grundlegende Techniken. Mit Unterstützung durch erfahrenen Trainers werden körperliche Fähigkeiten und Balance verbessert.",
+      "location": "Kunstschule Labyrinth",
       "price": null,
       "age_min": null,
       "age_max": null,
       "tags": [
-        "Lesung",
         "Workshop"
       ],
-      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-gamingbib/",
-      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-gamingbib/",
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250625713/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250625713/index.html",
+      "source": "labyrinth",
+      "city": "ludwigsburg",
+      "slug": "workshop-luftakrobatik-werkstatt-fuer-anfaenger-und-leicht-fortgeschrittene-von-9-16-3",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-05-08T09:00:39.338607+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstschule Labyrinth"
+    },
+    {
+      "id": "8a9ba17860769a71",
+      "title": "3D-Drucker-Sprechstunde",
+      "date_start": "2026-05-19",
+      "date_end": "2026-05-19",
+      "time": "17:30 - 18:30",
+      "description": "In dieser Sprechstunde können Besucher des 3D-Druckers verstehen und bedienen lernen. Experten bieten praktische Tipps und Helfer stehen zur Verfügung.",
+      "location": "Stadtbibliothek Ludwigsburg",
+      "price": "Kostenlos",
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx68b94fd3c85df.html",
+      "original_url": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx68b94fd3c85df.html",
+      "source": "stabi",
+      "city": "ludwigsburg",
+      "slug": "3d-drucker-sprechstunde-2026-05-19-stab",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-05-08T08:56:17.746988+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtbibliothek Ludwigsburg"
+    },
+    {
+      "id": "e739b1373ca76b86",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2026-05-19",
+      "date_end": null,
+      "time": "18.00-20.00 Uhr",
+      "description": "In dieser Fortgeschrittenenkurs-Werkstatt für Luftakrobatik in Ludwigsburg arbeiten Teilnehmer an neuen Bewegungsabläufen und tänzerischen Elementen am Vertikaltuch, basierend auf vorheriger Kenntnis.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "24,00 Euro",
+      "age_min": 10,
+      "age_max": null,
+      "tags": [
+        "Workshop",
+        "Entertainment"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523250625731/WorkshopLuftakrobatikWerkstattfrFortgeschrittenevon916JahreninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523250625731/WorkshopLuftakrobatikWerkstattfrFortgeschrittenevon916JahreninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "workshop-luftakrobatik-werkstatt-fuer-fortgeschrittene-von-9-16-jahren-in-ludwigsburg",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-05-08T08:53:21.161788+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne"
+    },
+    {
+      "id": "74fdfc767e68482f",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2026-05-19",
+      "date_end": null,
+      "time": "18.00-20.00 Uhr",
+      "description": "In dieser Luftakrobatik-Werkstatt für Fortgeschrittene werden Teilnehmer ihre Fähigkeiten im Fliegen und Balancieren weiter ausbauen. Das Kunstzentrum Karlskaserne bietet ein idealer Rahmen für diese fortgeschrittenen Übungen.",
+      "location": "Kunstschule Labyrinth",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Workshop"
+      ],
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250625731/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250625731/index.html",
+      "source": "labyrinth",
+      "city": "ludwigsburg",
+      "slug": "workshop-luftakrobatik-werkstatt-fuer-fortgeschrittene-von-9-16-jahren-in-ludwigsburg-3",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-05-08T09:00:39.338809+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstschule Labyrinth"
+    },
+    {
+      "id": "4163cd4602c0f05e",
+      "title": "AUSGEBUCHT - Bilderbuchkino",
+      "date_start": "2026-05-19",
+      "date_end": null,
+      "time": "16:00",
+      "description": "In der Otto-Rombach-Bücherei findet ein Bilderbuchkino statt, bei dem Kinder und Erwachsene gemeinsamAnimationsfilme aus Bilderbüchern zu sehen und zu besprechen bekommen.",
+      "location": "Otto-Rombach-BüchereiHauptstr. 19",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-bilderbuchkino-2/",
+      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-bilderbuchkino-2/",
       "source": "bietigheim",
       "city": "bietigheim",
-      "slug": "ausgebucht---gamingbib-2026-05-18-biet",
+      "slug": "ausgebucht---bilderbuchkino-2026-05-19-biet",
       "weekdays": [
-        1
+        2
       ],
-      "scraped_at": "2026-05-14T11:43:37.858639+00:00",
+      "scraped_at": "2026-05-14T11:43:38.985603+00:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
@@ -396,28 +510,58 @@
       "source_label": "Stadt Bietigheim-Bissingen"
     },
     {
-      "id": "329c2c0e0cc5d3c3",
-      "title": "„GameDay – analoge Gesellschaftsspiele für 12-17jährige“",
-      "date_start": "2026-05-18",
+      "id": "8c3940a5a1ae01be",
+      "title": "NEU: kostenloses Angebot für Teenager 12-17 Jahre „Bewegung & Meditation“",
+      "date_start": "2026-05-19",
       "date_end": null,
-      "time": "17:30",
-      "description": "In diesem Veranstaltungstag spielen Jugendliche zwischen 12 und 17 Jahren verschiedene analoge Gesellschaftsspiele. Der Fokus liegt auf interaktiver Unterhaltung und sozialem Austausch.",
-      "location": "Treffpunkt M.Stuttgarter Str. 76",
+      "time": "18:00",
+      "description": "Teilnehmer zwischen 12 und 17 Jahren können an diesem kostenlosen Workshop zur Bewegung und Meditation teilnehmen. Ein professioneller Trainer leitet die Aktivitäten durch.",
+      "location": "Kirche St. LaurentiusUhlandplatz 1",
       "price": "Kostenlos",
-      "age_min": 12,
-      "age_max": 17,
+      "age_min": null,
+      "age_max": null,
       "tags": [
-        "Kinder"
+        "Workshop"
       ],
-      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-gameday-analoge-gesellschaftsspiele-fuer-12-17jaehrige/",
-      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-gameday-analoge-gesellschaftsspiele-fuer-12-17jaehrige/",
+      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-neu-kostenloses-angebot-fuer-teenager-12-17-jahre-bewegung-meditation-fortwaehrender-woechentlicher-kurs-2-2/",
+      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-neu-kostenloses-angebot-fuer-teenager-12-17-jahre-bewegung-meditation-fortwaehrender-woechentlicher-kurs-2-2/",
       "source": "bietigheim",
       "city": "bietigheim",
-      "slug": "gameday-analoge-gesellschaftsspiele-fuer-12-17jaehrige-2026-05-18-biet",
+      "slug": "neu-kostenloses-angebot-fuer-teenager-12-17-jahre-bewegung-meditation-2026-05-19-biet",
       "weekdays": [
-        1
+        2
       ],
-      "scraped_at": "2026-05-14T11:43:38.413260+00:00",
+      "scraped_at": "2026-05-14T11:43:39.546033+00:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Bietigheim-Bissingen"
+    },
+    {
+      "id": "abc856be5bf2c1d7",
+      "title": "Strick mit!",
+      "date_start": "2026-05-19",
+      "date_end": null,
+      "time": "19:30",
+      "description": "In der Lesung lernen Teilnehmer, wie man strickt, und können dabei von einem Experten beraten werden. Alle notwendigen Materialien sind bereitgestellt.",
+      "location": "Otto-Rombach-BüchereiHauptstr. 19",
+      "price": "Kostenlos",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Lesung"
+      ],
+      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-strick-abend/",
+      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-strick-abend/",
+      "source": "bietigheim",
+      "city": "bietigheim",
+      "slug": "strick-mit-2026-05-19-biet",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-05-14T11:43:40.108813+00:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,

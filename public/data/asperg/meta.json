@@ -1,20 +1,25 @@
 {
-  "scraped_at": "2026-05-17T20:35:01.315026+02:00",
+  "scraped_at": "2026-05-18T02:29:00.419011+02:00",
   "city": "asperg",
-  "event_count": 17,
+  "event_count": 15,
   "flagged_count": 0,
-  "expired_count": 7,
+  "expired_count": 9,
   "sources_scraped": [
     "asperg_fuehrungen"
   ],
   "source_counts": {
-    "asperg_fuehrungen": 17
+    "asperg_fuehrungen": 15
   },
   "sources_failed": [],
-  "data_hash": "551ba2f0ac672bd3",
+  "data_hash": "3537029520495114",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 17.05.2026. Bitte Originalseite pruefen.",
+  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 18.05.2026. Bitte Originalseite pruefen.",
   "pipeline_version": "multi-city-v2",
-  "source_health": {},
-  "source_event_counts": {}
+  "source_health": {
+    "asperg_fuehrungen": 0.92
+  },
+  "source_event_counts": {
+    "asperg_fuehrungen": 15
+  },
+  "count_drift_warnings": {}
 }
