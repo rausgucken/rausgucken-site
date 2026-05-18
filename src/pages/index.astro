@@ -383,7 +383,15 @@ function updateRadius() {
     radiusCityList.innerHTML = "";
     const combinedLink = document.getElementById("radius-combined-link");
     if (combinedLink) combinedLink.hidden = true;
-    if (svg) svg.querySelectorAll(".muni.in-radius").forEach(p => p.classList.remove("in-radius"));
+    if (svg) {
+      svg.querySelectorAll(".muni.in-radius").forEach(p => p.classList.remove("in-radius"));
+      // At radius=0: dim uncovered cities, keep covered cities visible with their border
+      svg.querySelectorAll(".muni").forEach(p => {
+        if (p.classList.contains("selected")) return;
+        const isCovered = p.classList.contains("covered");
+        p.classList.toggle("dimmed", !isCovered);
+      });
+    }
     return;
   }
   const inRadius = MUNICIPALITIES
