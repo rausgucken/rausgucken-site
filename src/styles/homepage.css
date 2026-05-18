@@ -1,5 +1,4 @@
-/* Extracted from src/pages/index.astro — scoped layout styles only */
-/* Global overrides (.muni, .city-row, etc.) remain in <style is:global> in index.astro */
+/* src/styles/homepage.css — homepage layout styles for index.astro */
 
 .hero { padding: 2rem 0 3rem; }
 .hero-text { text-align: center; margin-bottom: 1.5rem; }
@@ -37,8 +36,8 @@ h1 {
 }
 .search-suggestions li:hover { background: rgba(0,0,0,0.04); }
 .city-badge {
-  font-size: 0.72rem; background: var(--coral);
-  color: #fff; border-radius: 4px; padding: 0.1rem 0.4rem; font-weight: 600;
+  font-size: 0.72rem; background: var(--coral); color: #fff;
+  border-radius: 4px; padding: 0.1rem 0.4rem; font-weight: 600;
 }
 
 .map-and-panel {
@@ -62,6 +61,7 @@ h1 {
 }
 
 .side-col { display: flex; flex-direction: column; gap: 1.25rem; }
+
 .hint-box {
   display: flex; align-items: flex-start; gap: 0.5rem;
   font-size: 0.88rem; color: var(--text-60);
@@ -69,12 +69,16 @@ h1 {
 }
 .hint-arrow { font-size: 1.1rem; }
 
-.selected-box { background: var(--surface); border: 2px solid var(--coral); border-radius: var(--radius); padding: 1rem; }
+.selected-box {
+  background: var(--surface); border: 2px solid var(--coral);
+  border-radius: var(--radius); padding: 1rem;
+}
 .selected-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-60); margin: 0 0 0.25rem; }
 .selected-name { font-family: var(--font-heading); font-weight: 800; font-size: 1.4rem; color: var(--text); margin: 0 0 0.6rem; }
 .go-btn {
   display: inline-block; background: var(--coral); color: #fff;
-  font-weight: 700; font-size: 0.88rem; padding: 0.5rem 1rem; border-radius: 8px; text-decoration: none;
+  font-weight: 700; font-size: 0.88rem; padding: 0.5rem 1rem;
+  border-radius: 8px; text-decoration: none;
 }
 .go-btn:hover { background: #e04a38; }
 
