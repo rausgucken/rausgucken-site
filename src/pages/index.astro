@@ -352,8 +352,20 @@ function selectCity(m) {
   noHint.hidden = true;
   radiusSec.hidden = false;
   coveredList.hidden = false;
+
   if (svg) {
-    svg.querySelectorAll(".muni").forEach(p => p.classList.remove("selected", "dimmed", "in-radius"));
+    // Reset all: remove selection/dim/radius classes, but restore in-range for covered cities
+    svg.querySelectorAll(".muni").forEach(p => {
+      p.classList.remove("selected", "dimmed", "in-radius");
+      // Re-apply in-range to covered cities so their coral border is preserved
+      const cityId = p.dataset.cityId;
+      const cityData = dataMap[cityId];
+      if (cityData && cityData.covered) {
+        p.classList.add("in-range");
+      } else {
+        p.classList.remove("in-range");
+      }
+    });
     const el = svg.querySelector("[data-city-id=\"" + m.id + "\"]");
     if (el) { el.classList.add("selected"); el.classList.remove("in-range"); }
   }
