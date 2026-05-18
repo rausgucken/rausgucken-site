@@ -31,7 +31,7 @@ export async function GET() {
         const priority = ev.is_new ? "0.9" : "0.7";
         return `
   <url>
-    <loc>${siteUrl}/${city}/events/${ev.slug}</loc>
+    <loc>${siteUrl}/${city}/events/${ev.slug}/</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>${priority}</priority>
