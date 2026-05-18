@@ -103,7 +103,107 @@ const municipalitiesJson = JSON.stringify(municipalities);
 </Base>
 
 <style>
-  @import "../styles/homepage.css";
+  .hero { padding: 2rem 0 3rem; }
+  .hero-text { text-align: center; margin-bottom: 1.5rem; }
+  h1 {
+    font-family: var(--font-heading); font-weight: 800;
+    font-size: clamp(1.8rem, 5vw, 2.6rem); color: var(--text);
+    letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 0.6rem;
+  }
+  .hero-sub { font-size: 1rem; color: var(--text-60); max-width: 480px; margin: 0 auto; }
+
+  .search-wrap { position: relative; max-width: 480px; margin: 0 auto 1.5rem; }
+  .search-box {
+    display: flex; align-items: center;
+    border: 2px solid var(--border); border-radius: 12px;
+    background: var(--surface); padding: 0 0.8rem; transition: border-color 150ms;
+  }
+  .search-box:focus-within { border-color: var(--coral); }
+  .search-icon { width: 18px; height: 18px; color: var(--text-60); flex-shrink: 0; margin-right: 0.5rem; }
+  .search-box input {
+    flex: 1; border: none; outline: none; background: transparent;
+    font-size: 1rem; color: var(--text); padding: 0.7rem 0; font-family: var(--font-body);
+  }
+  .search-box input::placeholder { color: var(--text-60); }
+  .search-clear { border: none; background: none; cursor: pointer; color: var(--text-60); font-size: 0.9rem; padding: 0.2rem; }
+  .search-suggestions {
+    position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    z-index: 50; max-height: 260px; overflow-y: auto;
+    list-style: none; margin: 0; padding: 0.4rem 0;
+  }
+  .search-suggestions li {
+    padding: 0.5rem 1rem; cursor: pointer; font-size: 0.9rem; color: var(--text);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .search-suggestions li:hover { background: rgba(0,0,0,0.04); }
+  .city-badge {
+    font-size: 0.72rem; background: var(--coral); color: #fff;
+    border-radius: 4px; padding: 0.1rem 0.4rem; font-weight: 600;
+  }
+
+  .map-and-panel {
+    display: grid; grid-template-columns: 1fr 260px;
+    gap: 1.5rem; max-width: 960px; margin: 0 auto; align-items: start;
+  }
+  @media (max-width: 700px) { .map-and-panel { grid-template-columns: 1fr; } }
+
+  .map-col { position: sticky; top: 70px; }
+  .map-container {
+    position: relative; border-radius: var(--radius);
+    border: 1px solid var(--border); background: var(--surface); padding: 0.5rem;
+  }
+  .map-container :global(svg#landkreis-map) { width: 100%; height: auto; display: block; }
+  .map-placeholder { height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-60); }
+  .map-tooltip {
+    position: absolute; pointer-events: none;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 6px; padding: 0.35rem 0.65rem;
+    font-size: 0.78rem; line-height: 1.4; color: var(--text);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12); white-space: nowrap; z-index: 10;
+  }
+
+  .side-col { display: flex; flex-direction: column; gap: 1.25rem; }
+
+  .hint-box {
+    display: flex; align-items: flex-start; gap: 0.5rem;
+    font-size: 0.88rem; color: var(--text-60);
+    padding: 1rem; border: 1px dashed var(--border); border-radius: var(--radius);
+  }
+  .hint-arrow { font-size: 1.1rem; }
+
+  .selected-box {
+    background: var(--surface); border: 2px solid var(--coral);
+    border-radius: var(--radius); padding: 1rem;
+  }
+  .selected-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-60); margin: 0 0 0.25rem; }
+  .selected-name { font-family: var(--font-heading); font-weight: 800; font-size: 1.4rem; color: var(--text); margin: 0 0 0.6rem; }
+  .go-btn {
+    display: inline-block; background: var(--coral); color: #fff;
+    font-weight: 700; font-size: 0.88rem; padding: 0.5rem 1rem;
+    border-radius: 8px; text-decoration: none;
+  }
+  .go-btn:hover { background: #e04a38; }
+
+  .radius-section { display: flex; flex-direction: column; gap: 0.4rem; }
+  .slider-label { font-size: 0.88rem; color: var(--text-60); }
+  .radius-val { color: var(--coral); font-weight: 700; }
+  .radius-slider { width: 100%; accent-color: var(--coral); cursor: pointer; }
+  .slider-ticks { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-60); opacity: 0.6; }
+
+  .section-title {
+    font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.07em; color: var(--text-60); margin: 0 0 0.5rem;
+  }
+
+  #radius-combined-link {
+    display: block; background: var(--coral); color: #fff !important;
+    font-weight: 700; font-size: 0.88rem; padding: 0.55rem 1rem;
+    border-radius: 8px; text-decoration: none !important;
+    text-align: center; margin-top: 0.75rem; transition: background 150ms;
+  }
+  #radius-combined-link:hover { background: #e04a38; }
 </style>
 
 <style is:global>
