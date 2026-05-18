@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-18T02:29:00.417147+02:00",
+  "scraped_at": "2026-05-18T23:40:00.676849+02:00",
   "city": "ludwigsburg",
   "event_count": 620,
   "flagged_count": 0,
@@ -25,7 +25,7 @@
     "kunstverein_veranstaltungen": 11
   },
   "sources_failed": [],
-  "data_hash": "ae8f321355c34fc3",
+  "data_hash": "d7de449ec7c78e4d",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 18.05.2026. Bitte Originalseite pruefen.",
   "pipeline_version": "multi-city-v2",
@@ -50,16 +50,16 @@
     "kunstverein_veranstaltungen": 11
   },
   "count_drift_warnings": {
-    "kunstverein_ausstellungen": "Count drift: 6 vs historical avg 20",
-    "kunstverein_veranstaltungen": "Count drift: 11 vs historical avg 54"
+    "kunstverein_ausstellungen": "Count drift: 6 vs historical avg 16",
+    "kunstverein_veranstaltungen": "Count drift: 11 vs historical avg 43"
   },
   "quality_report": {
     "regression_pass_rate": null,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 29.0,
-    "runtime_delta_vs_baseline": 0.318,
+    "runtime_minutes": 47.4,
+    "runtime_delta_vs_baseline": 1.155,
     "source_health": {
       "schloss": 1.0,
       "kunstverein_ausstellungen": 1.0,
@@ -72,6 +72,6 @@
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-05-18T02:34:00.628516+02:00"
+    "generated_at": "2026-05-18T23:45:00.894841+02:00"
   }
 }

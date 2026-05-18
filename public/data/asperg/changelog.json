@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-05-18T02:29:00.384108+02:00",
+  "generated_at": "2026-05-18T23:40:00.643310+02:00",
   "city": "asperg",
   "sources": [
+    "asperg_veranstaltungen",
     "asperg_fuehrungen"
   ],
-  "previous_run": "2026-05-17T22:41:02.063902+02:00",
-  "count_added": 24,
+  "previous_run": "2026-05-18T02:29:00.419011+02:00",
+  "count_added": 79,
   "count_removed": 0,
   "added": [
     {
@@ -69,12 +70,6 @@
       "source": "asperg_fuehrungen"
     },
     {
-      "id": "a341b79ebb911d2f",
-      "title": "Fahrradtour auf dem Keltenweg",
-      "date_start": "2026-06-28",
-      "source": "asperg_fuehrungen"
-    },
-    {
       "id": "01f363d327e998e5",
       "title": "Stadtführung",
       "date_start": "2026-06-28",
@@ -96,12 +91,6 @@
       "id": "10d425a272fda171",
       "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
       "date_start": "2026-07-26",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "bc34f66b032e7bd1",
-      "title": "Abendliche Stadtführung",
-      "date_start": null,
       "source": "asperg_fuehrungen"
     },
     {
@@ -129,28 +118,370 @@
       "source": "asperg_fuehrungen"
     },
     {
-      "id": "5f1657650936c184",
-      "title": "Weinbergführung",
-      "date_start": "2026-10-11",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "ada45e634f2e25d7",
-      "title": "Halloween Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg\"",
-      "date_start": "2025-10-31",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "58ac8249e0e68390",
-      "title": "Geschichte entdecken",
-      "date_start": "2026-11-08",
-      "source": "asperg_fuehrungen"
-    },
-    {
       "id": "36736769b14ffb67",
       "title": "Black stories 2.0 – Tatort vor der Haustür",
       "date_start": "2026-11-15",
       "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "0587da08c649e089",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-05-20",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "bd35bc777330d112",
+      "title": "Vernissage – Bosch Kunstgruppe",
+      "date_start": "2026-05-20",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "e0a54f6574b4cec5",
+      "title": "Theater – 50 Jahr blondes Haar",
+      "date_start": "2026-05-22",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "1512ab6ac46ffbc6",
+      "title": "Quizabend – Cleverle Contest No. 2",
+      "date_start": "2026-05-23",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "be1adf3559643f42",
+      "title": "Liedermacher – Fetzer Duo",
+      "date_start": "2026-05-29",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "2265db78ea6d6a3d",
+      "title": "Liederabend – Johannes Held: Herr Nuss",
+      "date_start": "2026-05-30",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "a7421a587bd159ae",
+      "title": "Geheimplan gegen Deutschland + Opas Heimat",
+      "date_start": "2026-05-31",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "872d103ce41c42a0",
+      "title": "RepairCafe & UpcyclingWerkstatt",
+      "date_start": "2026-06-06",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "fa5151db8c899a95",
+      "title": "Führung „Gut zu Fuß“ - Vom Rathaus zum Schubartturm",
+      "date_start": "2026-06-07",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "8b78955c7696bfe2",
+      "title": "Auftaktveranstaltung zur Jubiläumswoche 50 Jahre Stadtbücherei",
+      "date_start": "2026-06-09",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "fbff2be851c9c314",
+      "title": "Führung - Ein Gang über die schwäbische Bastille",
+      "date_start": "2026-06-14",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "34cf656bc43dcd24",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-06-17",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "087a3d45338bc7af",
+      "title": "50 Jahre Stadtbücherei - Tag der offenen Tür",
+      "date_start": "2026-06-20",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "a6aae9e43a62c028",
+      "title": "Theater – Omelette Surprise",
+      "date_start": "2026-06-27",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "305157e849060bdd",
+      "title": "Fahrradtour auf dem Keltenweg",
+      "date_start": "2026-06-28",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "d2a4ad3781e2348d",
+      "title": "Stadtführung Asperg",
+      "date_start": "2026-06-28",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "c2a32b1b77ef1eca",
+      "title": "Theater – Omelette Surprise",
+      "date_start": "2026-06-28",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "f08b4ab64db6c2e9",
+      "title": "Jam Session – Die Glasperlenspieler",
+      "date_start": "2026-07-03",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "58e910e13de16b47",
+      "title": "RepairCafe & UpcyclingWerkstatt",
+      "date_start": "2026-07-04",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "7480fed7a5ead4fe",
+      "title": "Führung - Ein Gang über die schwäbische Bastille",
+      "date_start": "2026-07-05",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "7162b847ba97ae03",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-07-15",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "77aa552f076edc9b",
+      "title": "Führung „Auf der Flucht“ – Asperger Fluchtgeschichten",
+      "date_start": "2026-07-17",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "d43507fcf9629f8a",
+      "title": "Altpapiersammlung",
+      "date_start": "2026-07-18",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "be62322e1aa7439d",
+      "title": "Gartenfest unter den Apfelbäumen",
+      "date_start": "2026-07-18",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "d29722d7ca35b842",
+      "title": "Gartenfest unter den Apfelbäumen",
+      "date_start": "2026-07-19",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "653e513d662eb62d",
+      "title": "Theater – Omelette Surprise",
+      "date_start": "2026-07-19",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "5fc3608cddb6cbd9",
+      "title": "Gartenfest unter den Apfelbäumen",
+      "date_start": "2026-07-20",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "98b31acdc7981f07",
+      "title": "Stadtfest",
+      "date_start": "2026-07-25",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "18fd0547863b8a7f",
+      "title": "Führung - Ein Gang über die schwäbische Bastille",
+      "date_start": "2026-07-26",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "42e8b9b700375fa4",
+      "title": "Stadtfest",
+      "date_start": "2026-07-26",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "c00f42c763c220db",
+      "title": "RepairCafe & UpcyclingWerkstatt",
+      "date_start": "2026-08-01",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "cfb7a1d4f3285a59",
+      "title": "Abendliche Stadtführung",
+      "date_start": "2026-08-21",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "91c817ac2b98afa9",
+      "title": "RepairCafe & UpcyclingWerkstatt",
+      "date_start": "2026-09-05",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "db20d3b25710e910",
+      "title": "Führung - Ein Gang über die schwäbische Bastille",
+      "date_start": "2026-09-13",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "b789d5a392af004a",
+      "title": "„Geschichte entdecken“ Führung auf dem Hohenasperg",
+      "date_start": "2026-09-13",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "58f9d0028a99db0f",
+      "title": "Führung für Kinder auf dem Hohenasperg",
+      "date_start": "2026-09-13",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "de74dbefbfc55652",
+      "title": "Theater – Omelette Surprise",
+      "date_start": "2026-09-13",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "3b49e9e4b85a50d4",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-09-16",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "62f74ea6e7c3cb7d",
+      "title": "Führung - \"Asperg lecker\"",
+      "date_start": "2026-09-18",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "8a48f3290e3696bf",
+      "title": "Führung „Black stories“ – Asperg’s dunkle Seite",
+      "date_start": "2026-09-20",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "6b7d4ec0b1bdf98e",
+      "title": "Theater – Omelette Surprise",
+      "date_start": "2026-09-26",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "bd40e7e48e387091",
+      "title": "Führung - Ein Gang über die schwäbische Bastille",
+      "date_start": "2026-10-03",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "788588b7deb08ff6",
+      "title": "RepairCafe & UpcyclingWerkstatt",
+      "date_start": "2026-10-03",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "2355691c5cb09536",
+      "title": "Kirbe",
+      "date_start": "2026-10-04",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "ce0aaa619c146173",
+      "title": "Führung \"Deutsch-Französische Begegnungen auf dem Hohenasperg\"",
+      "date_start": "2026-10-11",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "50deb37094b954d0",
+      "title": "„Wengert, Wahn und Weiberzeche“-Weinbergführung",
+      "date_start": "2026-10-11",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "88ec6510698aacd6",
+      "title": "Altpapiersammlung",
+      "date_start": "2026-10-17",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "75bbac78e3e5a190",
+      "title": "Führung Black stories 2.0 – Tatort vor der Haustür\"",
+      "date_start": "2026-10-18",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "28ec23c5f7b2def8",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-10-21",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "d6957269f1478034",
+      "title": "Vortrag \"Leben und Ernährung der Kelten\"",
+      "date_start": "2026-10-22",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "66217c1996642fbb",
+      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
+      "date_start": "2026-10-31",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "8feb50a6d3dbe248",
+      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
+      "date_start": "2026-10-31",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "b484514044fc98ec",
+      "title": "RepairCafe & UpcyclingWerkstatt",
+      "date_start": "2026-11-07",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "099fd204ce66f3be",
+      "title": "„Geschichte entdecken“ Führung auf dem Hohenasperg",
+      "date_start": "2026-11-08",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "827512381b707a98",
+      "title": "Führung „Black stories“ – Asperg’s dunkle Seite",
+      "date_start": "2026-11-08",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "38c571b1e6e63a3f",
+      "title": "Führung „Black stories 2.0 – Tatort vor der Haustür“",
+      "date_start": "2026-11-15",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "37a0c0ac73568a41",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-11-18",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "b93bdf0421a4e401",
+      "title": "Jahreskonzert",
+      "date_start": "2026-11-21",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "de429347bcae860a",
+      "title": "RepairCafe & UpcyclingWerkstatt",
+      "date_start": "2026-12-05",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "1b14be7578c4f3e0",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-12-09",
+      "source": "asperg_veranstaltungen"
     }
   ],
   "removed": []
