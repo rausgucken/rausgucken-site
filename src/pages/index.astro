@@ -299,6 +299,7 @@ const municipalitiesJson = JSON.stringify(municipalities);
 </style>
 
 <script type="module" define:vars={{ municipalitiesJson }}>
+import { dist, normalize } from "../scripts/map-utils.js";
 const MUNICIPALITIES = JSON.parse(municipalitiesJson);
 
 const svg          = document.getElementById("landkreis-map");
@@ -324,13 +325,6 @@ const suggestions  = document.getElementById("search-suggestions");
 const dataMap = Object.fromEntries(MUNICIPALITIES.map(m => [m.id, m]));
 let selectedCity = null;
 
-function dist(lat1, lng1, lat2, lng2) {
-  const R = 6371;
-  const dLat = (lat2 - lat1) * Math.PI / 180;
-  const dLng = (lng2 - lng1) * Math.PI / 180;
-  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLng/2)**2;
-  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-}
 
 // Default covered list
 const covered = MUNICIPALITIES.filter(m => m.covered).sort((a,b) => a.distance_km - b.distance_km);
@@ -477,10 +471,6 @@ if (svg) {
   });
 }
 
-function normalize(s) {
-  return s.toLowerCase()
-    .replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss");
-}
 
 searchInput.addEventListener("input", () => {
   const q = searchInput.value.trim();

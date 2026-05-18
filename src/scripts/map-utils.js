@@ -1,0 +1,30 @@
+// src/scripts/map-utils.js
+// Pure utility functions for the homepage Landkreis map.
+// Stateless — no DOM, no MUNICIPALITIES dependency.
+// Imported by src/pages/index.astro inline script.
+
+/**
+ * Haversine formula — great-circle distance in km between two lat/lng points.
+ */
+export function dist(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(lat1 * Math.PI / 180) *
+    Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLng / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+/**
+ * Lowercase + umlaut folding for fuzzy German city-name search.
+ */
+export function normalize(s) {
+  return s.toLowerCase()
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss");
+}
