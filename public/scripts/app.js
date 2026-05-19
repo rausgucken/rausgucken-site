@@ -177,3 +177,46 @@
 // ── ?source= URL param filter ─────────────────────────────────────────────────
 // Applied on page load. Enables deep-links from /erleben/ venue CTAs.
 // Example: /ludwigsburg/?source=stabi
+
+// ── Plausible custom event tracking ──────────────────────────────────────────
+// Goals tracked: Age Filter Used · Source Link Clicked · Empty State Exit
+// Requires: script.outbound-links.js already loaded in Base.astro (it is).
+// window.plausible() is injected by that script. All calls are silent no-ops
+// if Plausible hasn't loaded (adblocker, dev environment, etc).
+(function () {
+  function track(goal, props) {
+    try {
+      if (typeof window.plausible === 'function') {
+        window.plausible(goal, { props: props || {} });
+      }
+    } catch (e) {}
+  }
+
+  // 1. Age filter — fire on every non-default age selection
+  var ageEl = document.getElementById('age-filter');
+  if (ageEl) {
+    ageEl.addEventListener('change', function () {
+      var val = ageEl.value;
+      if (val && val !== '0-99') {
+        track('Age Filter Used', { range: val });
+      }
+    });
+  }
+
+  // 2. Source link clicks — delegated listener on document
+  // data-source on parent .event-card provides the scraper source ID
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest('.source-link, .source-attribution a');
+    if (!el) return;
+    var card = el.closest('.event-card');
+    var source = (card && card.dataset.source) ? card.dataset.source : 'unknown';
+    track('Source Link Clicked', { source: source });
+  });
+
+  // 3. Empty state exit — user clicks a CTA link out of the no-results block
+  document.addEventListener('click', function (e) {
+    var cta = e.target.closest('.empty-cta');
+    if (!cta) return;
+    track('Empty State Exit', {});
+  });
+})();
