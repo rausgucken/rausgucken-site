@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-05-18T23:40:00.676849+02:00",
+  "scraped_at": "2026-05-19T02:24:27.714988+02:00",
   "city": "ludwigsburg",
-  "event_count": 620,
+  "event_count": 570,
   "flagged_count": 0,
   "expired_count": 57,
   "sources_scraped": [
@@ -10,14 +10,12 @@
     "kunstverein_ausstellungen",
     "kunstverein_veranstaltungen",
     "labyrinth",
-    "museum",
     "schloss",
     "stabi"
   ],
   "source_counts": {
     "schloss": 241,
     "kunstverein_ausstellungen": 6,
-    "museum": 50,
     "karlskaserne_ausstellungen": 4,
     "karlskaserne_veranstaltungen": 113,
     "labyrinth": 50,
@@ -25,14 +23,13 @@
     "kunstverein_veranstaltungen": 11
   },
   "sources_failed": [],
-  "data_hash": "d7de449ec7c78e4d",
+  "data_hash": "465222bb25697f77",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 18.05.2026. Bitte Originalseite pruefen.",
+  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 19.05.2026. Bitte Originalseite pruefen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schloss": 1.0,
     "kunstverein_ausstellungen": 1.0,
-    "museum": 1.0,
     "karlskaserne_ausstellungen": 1.0,
     "karlskaserne_veranstaltungen": 1.0,
     "labyrinth": 1.0,
@@ -42,7 +39,6 @@
   "source_event_counts": {
     "schloss": 241,
     "kunstverein_ausstellungen": 6,
-    "museum": 50,
     "karlskaserne_ausstellungen": 4,
     "karlskaserne_veranstaltungen": 113,
     "labyrinth": 50,
@@ -58,12 +54,11 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 47.4,
-    "runtime_delta_vs_baseline": 1.155,
+    "runtime_minutes": 24.4,
+    "runtime_delta_vs_baseline": 0.109,
     "source_health": {
       "schloss": 1.0,
       "kunstverein_ausstellungen": 1.0,
-      "museum": 1.0,
       "karlskaserne_ausstellungen": 1.0,
       "karlskaserne_veranstaltungen": 1.0,
       "labyrinth": 1.0,
@@ -71,7 +66,7 @@
       "kunstverein_veranstaltungen": 1.0
     },
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-05-18T23:45:00.894841+02:00"
+    "status": "healthy",
+    "generated_at": "2026-05-19T02:29:27.923874+02:00"
   }
 }
