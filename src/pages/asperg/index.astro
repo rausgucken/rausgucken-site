@@ -4,6 +4,7 @@ import FreshnessStamp from '../../components/FreshnessStamp.astro';
 import EventCard from "../../components/EventCard.astro";
 import FilterBar from "../../components/FilterBar.astro";
 import ImportantLinksSidebar from "../../components/ImportantLinksSidebar.astro";
+import FeaturedEvent from "../../components/FeaturedEvent.astro";
 
 import eventsData from "../../../public/data/asperg/events-current.json";
 import metaData from "../../../public/data/asperg/meta.json";
@@ -38,6 +39,14 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 2, "name": "Asperg", "item": "https://www.rausgucken.de/asperg/" },
   ],
 };
+
+import tipsRaw from '../../data/editorial-tips.json';
+const featuredSlug = Object.entries(tipsRaw).find(
+  ([, v]) => typeof v === 'object' && v.featured === true
+)?.[0] ?? null;
+const featuredEvent = featuredSlug
+  ? { ...events.find(e => e.slug === featuredSlug), editorial_tip: tipsRaw[featuredSlug]?.tip }
+  : null;
 ---
 
 <Base
@@ -75,7 +84,7 @@ const breadcrumbSchema = {
   <div id="search" class="pagefind-search-wrap"></div>
 
   <FilterBar />
-
+    {featuredEvent && <FeaturedEvent event={featuredEvent} />}
   <div class="city-layout">
     <div class="city-main">
 

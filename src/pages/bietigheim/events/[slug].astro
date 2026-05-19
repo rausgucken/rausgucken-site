@@ -8,7 +8,7 @@
 
 import Base from "../../../layouts/Base.astro";
 import eventsData from "../../../../public/data/bietigheim/events-current.json";
-const tipsData = {};
+import tipsData from "../../../../src/data/editorial-tips.json";
 
 export async function getStaticPaths() {
   // Deduplicate by slug — keeps first occurrence when multiple events share the same slug
