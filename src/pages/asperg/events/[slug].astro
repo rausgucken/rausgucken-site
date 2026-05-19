@@ -111,6 +111,7 @@ const SOURCE_ORGANIZERS = {
   kunstverein_veranstaltungen:  { name: "Kunstverein Ludwigsburg",     url: "https://www.kunstverein-ludwigsburg.de" },
   stabi:                        { name: "Stadtbibliothek Ludwigsburg", url: "https://events-stabi.ludwigsburg.de" },
   asperg_fuehrungen:            { name: "Museum Hohenasperg",         url: "https://www.museum-hohenasperg.de" },
+  asperg_veranstaltungen:       { name: "Stadt Asperg",               url: "https://www.asperg.de" },
 };
 const organizer = SOURCE_ORGANIZERS[ev.source] ?? {
   name: ev.location || "Ludwigsburg",
@@ -234,12 +235,11 @@ const eventSchema = {
     "name": organizer.name,
     "url": organizer.url,
   },
-  // FIX: performer added — required by Google. For non-performance events,
-  // the organizer is the correct fallback (standard schema.org practice)
-  "performer": {
-    "@type": "PerformingGroup",
-    "name": organizer.name,
-  },
+  // performer: only include for Musik/Theater/Tanz events — omit for führungen/workshops
+  // PerformingGroup on non-performance events causes Google Rich Results warnings
+  ...(Array.isArray(ev.tags) && ev.tags.some(t => ["Musik","Theater","Tanz"].includes(t)) ? {
+    "performer": { "@type": "PerformingGroup", "name": organizer.name },
+  } : {}),
   // FIX: offers only included when price is parseable to a valid number.
   // validFrom uses scraped_at (present on all events). Price is numeric string, not raw German text.
   ...(priceData ? {
@@ -286,6 +286,7 @@ const relatedEvents = isExpired
   ogImage={ogImage}
   ogType="article"
   schema={[eventSchema, breadcrumbSchema]}
+  city="asperg"
 >
 
   <!-- ── Expired event banner — SEO §5 ──────────────────────────────────── -->

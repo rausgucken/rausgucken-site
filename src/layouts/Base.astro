@@ -80,12 +80,12 @@ const websiteSchema = isHomepage ? {
 
   <!-- ── Atom feed autodiscovery (SEO §21) ────────────────────────────────── -->
   <!-- Feed readers and crawlers discover this automatically. City-scoped only. -->
-  {city === "ludwigsburg" && (
+  {city && (
     <link
       rel="alternate"
       type="application/atom+xml"
-      title="Veranstaltungen in Ludwigsburg | rausgucken.de"
-      href="https://www.rausgucken.de/ludwigsburg/feed.xml"
+      title={`Veranstaltungen in ${city.charAt(0).toUpperCase() + city.slice(1)} | rausgucken.de`}
+      href={`https://www.rausgucken.de/${city}/feed.xml`}
     />
   )}
 
