@@ -18,6 +18,8 @@ export async function GET() {
     { loc: `${siteUrl}/tamm/`,                         priority: "0.9", changefreq: "weekly"  },
     { loc: `${siteUrl}/bietigheim/`,                   priority: "0.9", changefreq: "weekly"  },
     { loc: `${siteUrl}/asperg/`,                          priority: "0.9", changefreq: "weekly"  },
+    { loc: `${siteUrl}/markgroeningen/`,                   priority: "0.9", changefreq: "weekly"  },
+    { loc: `${siteUrl}/moeglingen/`,                       priority: "0.9", changefreq: "weekly"  },
     // Static pages
     { loc: `${siteUrl}/about`,                         priority: "0.5", changefreq: "monthly" },
     { loc: `${siteUrl}/impressum`,                     priority: "0.3", changefreq: "monthly" },
