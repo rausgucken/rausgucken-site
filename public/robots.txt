@@ -1,7 +1,11 @@
+# EU DSM Directive Art. 4 rights reservation
+# ai-train=no reserves training rights under EU law regardless of crawl access
+
 User-agent: *
+Content-Signal: search=yes,ai-train=no
 Allow: /
 
-# Block calendar files — not indexable pages
+# Block calendar exports — not indexable pages
 Disallow: /*.ics$
 
 # Block raw data files
