@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-05-20T07:46:06.077503+02:00",
+  "scraped_at": "2026-05-21T02:34:00.358679+02:00",
   "city": "ludwigsburg",
-  "event_count": 565,
+  "event_count": 327,
   "flagged_count": 0,
   "expired_count": 57,
   "sources_scraped": [
@@ -10,63 +10,58 @@
     "kunstverein_ausstellungen",
     "kunstverein_veranstaltungen",
     "labyrinth",
-    "schloss",
     "stabi"
   ],
   "source_counts": {
-    "schloss": 241,
     "kunstverein_ausstellungen": 6,
-    "karlskaserne_ausstellungen": 4,
     "karlskaserne_veranstaltungen": 109,
-    "stabi": 144,
+    "karlskaserne_ausstellungen": 4,
+    "stabi": 147,
     "kunstverein_veranstaltungen": 11,
     "labyrinth": 50
   },
   "sources_failed": [],
-  "data_hash": "90926679eddab3a4",
+  "data_hash": "ff80213bc57307a2",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 20.05.2026. Bitte Originalseite pruefen.",
+  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 21.05.2026. Bitte Originalseite pruefen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "schloss": 1.0,
     "kunstverein_ausstellungen": 1.0,
-    "karlskaserne_ausstellungen": 1.0,
     "karlskaserne_veranstaltungen": 1.0,
+    "karlskaserne_ausstellungen": 1.0,
     "stabi": 1.0,
     "kunstverein_veranstaltungen": 1.0,
     "labyrinth": 1.0
   },
   "source_event_counts": {
-    "schloss": 241,
     "kunstverein_ausstellungen": 6,
-    "karlskaserne_ausstellungen": 4,
     "karlskaserne_veranstaltungen": 109,
-    "stabi": 144,
+    "karlskaserne_ausstellungen": 4,
+    "stabi": 147,
     "kunstverein_veranstaltungen": 11,
     "labyrinth": 50
   },
   "count_drift_warnings": {
-    "kunstverein_ausstellungen": "Count drift: 6 vs historical avg 13",
-    "kunstverein_veranstaltungen": "Count drift: 11 vs historical avg 32"
+    "kunstverein_ausstellungen": "Count drift: 6 vs historical avg 10",
+    "kunstverein_veranstaltungen": "Count drift: 11 vs historical avg 22"
   },
   "quality_report": {
     "regression_pass_rate": null,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 346.1,
-    "runtime_delta_vs_baseline": 14.732,
+    "runtime_minutes": 34.0,
+    "runtime_delta_vs_baseline": 0.545,
     "source_health": {
-      "schloss": 1.0,
       "kunstverein_ausstellungen": 1.0,
-      "karlskaserne_ausstellungen": 1.0,
       "karlskaserne_veranstaltungen": 1.0,
+      "karlskaserne_ausstellungen": 1.0,
       "stabi": 1.0,
       "kunstverein_veranstaltungen": 1.0,
       "labyrinth": 1.0
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-05-20T08:01:06.553075+02:00"
+    "generated_at": "2026-05-21T02:49:00.837065+02:00"
   }
 }
