@@ -1,0 +1,111 @@
+---
+// src/pages/moeglingen/index.astro
+// Möglingen city page — static Astro, rebuilt daily by Cloudflare Pages.
+// Data: public/data/moeglingen/events-current.json (written by filter_subsets.py)
+
+import Base from "../../layouts/Base.astro";
+import EventCard from "../../components/EventCard.astro";
+import FilterBar from "../../components/FilterBar.astro";
+import FreshnessStamp from "../../components/FreshnessStamp.astro";
+import Disclaimer from "../../components/Disclaimer.astro";
+import ImportantLinksSidebar from "../../components/ImportantLinksSidebar.astro";
+import links from "../../../config/important-links-moeglingen.json";
+
+// ── Data loading ──────────────────────────────────────────────────────────────
+const eventsRaw = await import("../../../public/data/moeglingen/events-current.json",
+  { assert: { type: "json" } }).then(m => m.default).catch(() => []);
+
+const meta = await import("../../../public/data/moeglingen/meta.json",
+  { assert: { type: "json" } }).then(m => m.default).catch(() => ({}));
+
+// Split: dated events and standing (no date_start) events
+const dated    = eventsRaw.filter((e: any) => e.date_start);
+const standing = eventsRaw.filter((e: any) => !e.date_start);
+
+const city        = "moeglingen";
+const cityDisplay = "Möglingen";
+const eventCount  = dated.length;
+const scrapedAt   = meta.scraped_at ?? null;
+---
+
+<Base
+  title={`Veranstaltungen in Möglingen | rausgucken.de`}
+  description={`${eventCount} Veranstaltungen in Möglingen – Konzerte, Feste, Workshops und mehr. Täglich aktuell, direkt zur Originalseite.`}
+  city={city}
+  ogImage={`/og/moeglingen/default.jpg`}
+>
+  <!-- Schema.org CollectionPage -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": `Veranstaltungen in ${cityDisplay}`,
+    "description": `${eventCount} Veranstaltungen in ${cityDisplay}`,
+    "url": `https://www.rausgucken.de/${city}/`,
+    "inLanguage": "de-DE",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://www.rausgucken.de/" },
+        { "@type": "ListItem", "position": 2, "name": cityDisplay, "item": `https://www.rausgucken.de/${city}/` }
+      ]
+    }
+  })} />
+
+  <!-- Atom feed autodiscovery -->
+  <link rel="alternate" type="application/atom+xml"
+        href={`/${city}/feed.xml`}
+        title={`rausgucken.de – ${cityDisplay}`}
+        slot="head" />
+
+  <header class="city-header">
+    <h1>Veranstaltungen in {cityDisplay}</h1>
+    <FreshnessStamp scrapedAt={scrapedAt} />
+  </header>
+
+  <!-- Editorial intro — local context for Googlebot + E-E-A-T -->
+  <section class="city-intro">
+    <p>
+      Möglingen ist eine Gemeinde im Landkreis Ludwigsburg mit rund 10.000 Einwohnern,
+      bekannt für ihr aktives Vereinsleben und die zentrale Lage zwischen Ludwigsburg
+      und Kornwestheim. Veranstaltungen finden regelmäßig im <strong>Bürgerhaus
+      Möglingen</strong>, in der <strong>Bibliothek Möglingen</strong> und auf dem
+      <strong>Rathaus-Vorplatz</strong> statt — von Familienfesten über
+      Kulturveranstaltungen bis zu Kursen der Schiller-Volkshochschule.
+    </p>
+    <p>
+      Alle Veranstaltungen werden täglich automatisch vom offiziellen
+      Veranstaltungskalender der Gemeinde übernommen. Angaben ohne Gewähr —
+      bitte die Originalseite prüfen.
+    </p>
+  </section>
+
+  <div class="city-layout">
+    <main class="city-main">
+      <FilterBar city={city} />
+
+      {dated.length === 0 && (
+        <p class="empty-state">Aktuell keine bevorstehenden Veranstaltungen.</p>
+      )}
+
+      <div id="event-grid">
+        {dated.map((ev: any) => <EventCard event={ev} city={city} />)}
+      </div>
+
+      <!-- Standing / recurring events -->
+      {standing.length > 0 && (
+        <section class="standing-events">
+          <h2>Regelmäßige Veranstaltungen</h2>
+          <div id="standing-grid">
+            {standing.map((ev: any) => <EventCard event={ev} city={city} />)}
+          </div>
+        </section>
+      )}
+    </main>
+
+    <aside class="city-sidebar">
+      <ImportantLinksSidebar links={links} />
+    </aside>
+  </div>
+
+  <Disclaimer meta={meta} />
+</Base>
