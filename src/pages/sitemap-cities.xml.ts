@@ -16,6 +16,7 @@ export async function GET() {
     { loc: `${siteUrl}/ludwigsburg/erleben/`,          priority: "0.7", changefreq: "weekly"  },
     // Stadt-level city pages (flat URLs — canonical SEO)
     { loc: `${siteUrl}/tamm/`,                         priority: "0.9", changefreq: "weekly"  },
+    { loc: `${siteUrl}/remseck/`,                       priority: "0.9", changefreq: "weekly"  },
     { loc: `${siteUrl}/bietigheim/`,                   priority: "0.9", changefreq: "weekly"  },
     { loc: `${siteUrl}/asperg/`,                          priority: "0.9", changefreq: "weekly"  },
     { loc: `${siteUrl}/freiberg/`,                       priority: "0.9", changefreq: "weekly"  },

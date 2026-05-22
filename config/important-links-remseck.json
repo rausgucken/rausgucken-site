@@ -1,6 +1,6 @@
 [
   {
-    "name": "Veranstaltungen",
+    "name": "Veranstaltungsorte",
     "url": null,
     "description": null,
     "external": false,
@@ -9,29 +9,39 @@
   {
     "name": "Mediathek im KUBUS",
     "url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
-    "description": "Veranstaltungskalender der Mediathek im KUBUS.",
-    "external": true,
-    "isHeading": false
+    "description": "Veranstaltungen und Lesungen der Mediathek im KUBUS Remseck.",
+    "external": true
   },
   {
-    "name": "Stadt Remseck am Neckar",
-    "url": "https://www.remseck.de",
-    "description": "Offizielle Website der Stadt Remseck am Neckar.",
-    "external": true,
-    "isHeading": false
-  },
-  {
-    "name": "Verkehr & ÖPNV",
+    "name": "Landkreis",
     "url": null,
     "description": null,
     "external": false,
     "isHeading": true
   },
   {
-    "name": "VVS Fahrplanauskunft",
-    "url": "https://www.vvs.de",
-    "description": "Verbundtarif Stuttgart — Bus & S-Bahn nach Remseck.",
-    "external": true,
-    "isHeading": false
+    "name": "Alle Veranstaltungen im Landkreis",
+    "url": "/ludwigsburg/",
+    "description": "Events aus Remseck, Ludwigsburg, Tamm und weiteren Gemeinden.",
+    "external": false
+  },
+  {
+    "name": "Community",
+    "url": null,
+    "description": null,
+    "external": false,
+    "isHeading": true
+  },
+  {
+    "name": "r/ludwigsburg",
+    "url": "https://www.reddit.com/r/ludwigsburg/",
+    "description": "Lokale Community für den Landkreis Ludwigsburg.",
+    "external": true
+  },
+  {
+    "name": "Stadt Remseck am Neckar",
+    "url": "https://www.remseck.de/de/kultur-freizeit/veranstaltungskalender",
+    "description": "Offizieller Veranstaltungskalender der Stadt Remseck am Neckar.",
+    "external": true
   }
 ]

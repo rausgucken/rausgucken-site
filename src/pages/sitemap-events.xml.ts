@@ -4,6 +4,7 @@
 
 import ludwigsburgEvents from "../../public/data/ludwigsburg/events-current.json";
 import tammEvents from "../../public/data/tamm/events-current.json";
+import remseckEvents from "../../public/data/remseck/events-current.json";
 import bietigheimEvents from "../../public/data/bietigheim/events-current.json";
 import aspergEvents from "../../public/data/asperg/events-current.json";
 import kornwestheimEvents from "../../public/data/kornwestheim/events-current.json";
@@ -21,6 +22,7 @@ export async function GET() {
   const cityEvents = [
     { city: "ludwigsburg", events: ludwigsburgEvents as any[] },
     { city: "tamm",        events: tammEvents as any[]        },
+    { city: "remseck",     events: remseckEvents as any[]     },
     { city: "bietigheim",  events: bietigheimEvents as any[]  },
     { city: "asperg",      events: aspergEvents as any[]      },
     { city: "kornwestheim", events: kornwestheimEvents as any[] },
