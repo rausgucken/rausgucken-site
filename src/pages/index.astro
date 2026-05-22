@@ -101,7 +101,17 @@ import Base from "../layouts/Base.astro";
 // Homepage map — vanilla JS, no framework
 // Cities loaded from /data/cities.json at mount time
 
-import { dist, normalize } from "../scripts/map-utils.js";
+// Inlined from map-utils.js — no import needed for plain script
+function dist(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLng/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+function normalize(s) {
+  return s.toLowerCase().replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss");
+}
 
 let CITIES = [];
 let map = null;
