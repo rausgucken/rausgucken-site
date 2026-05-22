@@ -357,6 +357,25 @@ suggestionsEl.addEventListener("click", e => {
   if (li) pickSuggestion(li.dataset.id);
 });
 
+suggestionsEl.addEventListener("mouseover", e => {
+  const li = e.target.closest("li");
+  if (!li) return;
+  suggestionsEl.querySelectorAll("li").forEach(el => {
+    el.style.background = "";
+    el.style.color = "";
+    el.querySelectorAll("span").forEach(s => s.style.color = "");
+  });
+  li.style.background = "rgba(255,111,97,0.18)";
+  li.querySelectorAll("span").forEach(s => s.style.color = "#FF6F61");
+});
+
+suggestionsEl.addEventListener("mouseout", e => {
+  const li = e.target.closest("li");
+  if (!li) return;
+  li.style.background = "";
+  li.querySelectorAll("span").forEach(s => s.style.color = "");
+});
+
 function pickSuggestion(id) {
   const city = CITIES.find(c => c.id === id);
   if (!city) return;
