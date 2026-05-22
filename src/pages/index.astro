@@ -544,6 +544,21 @@ loadLeaflet(() => init());
     text-decoration: underline;
   }
 
+  .sug-notfound { cursor: default; }
+
+  .sug-request-link {
+    flex-shrink: 0;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--coral);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .sug-request-link:hover {
+    text-decoration: underline;
+  }
+
   /* Locate button — below search box */
   .locate-btn {
     display: inline-flex; align-items: center; gap: 0.4rem;
