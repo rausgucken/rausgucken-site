@@ -285,11 +285,15 @@ function updateRadius() {
   }
 
   cityListEl.innerHTML = rows.join("");
-  if (selectedCity.url) {
-    mapCountBadge.innerHTML = selectedCity.event_count > 0
-      ? `<a href="${selectedCity.url}" class="go-btn">Alle ${selectedCity.event_count} Events →</a>`
-      : "";
-  }
+  // Badge: show combined total if multiple cities in radius, else selected city
+  const displayTotal = total > 0 ? total : (selectedCity.event_count || 0);
+  const displayUrl = covInRadius.length > 0 ? "/ludwigsburg/" : (selectedCity.url || "");
+  const displayLabel = covInRadius.length > 0
+    ? `Alle ${displayTotal} Events im Umkreis →`
+    : `Alle ${selectedCity.event_count || 0} Events →`;
+  mapCountBadge.innerHTML = displayUrl && displayTotal > 0
+    ? `<a href="${displayUrl}" class="go-btn">${displayLabel}</a>`
+    : "";
 }
 
 slider.addEventListener("input", updateRadius);

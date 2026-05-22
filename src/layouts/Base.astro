@@ -423,70 +423,7 @@ const websiteSchema = isHomepage ? {
 
   <!-- Footer: SEO §22 internal linking mesh -->
   <footer class="site-footer">
-    <div class="site-footer-inner">
-      <div class="footer-col">
-        <h4>Ludwigsburg</h4>
-        <ul>
-          <li><a href="/ludwigsburg/">Veranstaltungen in Ludwigsburg</a></li>
-          <li><a href="/ludwigsburg/heute/">Veranstaltungen in Ludwigsburg heute</a></li>
-          <li><a href="/ludwigsburg/morgen/">Veranstaltungen in Ludwigsburg morgen</a></li>
-          <li><a href="/ludwigsburg/dieses-wochenende/">Events Ludwigsburg dieses Wochenende</a></li>
-          <li><a href="/ludwigsburg/naechste-woche/">Events Ludwigsburg nächste Woche</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Kategorien</h4>
-        <ul>
-          <li><a href="/ludwigsburg/kinder/">Kinderveranstaltungen Ludwigsburg</a></li>
-          <li><a href="/ludwigsburg/kostenlos/">Kostenlose Events Ludwigsburg</a></li>
-          <li><a href="/ludwigsburg/kinder/">Ausstellungen Ludwigsburg</a></li>
-          <li><a href="/ludwigsburg/erleben/">Alle Kulturorte im Überblick</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Veranstaltungsorte</h4>
-        <ul>
-          <li><a href="/ludwigsburg/residenzschloss/">Residenzschloss Ludwigsburg</a></li>
-          <li><a href="/ludwigsburg/karlskaserne/">Karlskaserne Ludwigsburg</a></li>
-          <li><a href="/ludwigsburg/stadtbibliothek/">Stadtbibliothek Ludwigsburg</a></li>
-          <li><a href="/ludwigsburg/labyrinth/">Kunstschule Labyrinth</a></li>
-          <li><a href="/ludwigsburg/stadtmuseum/">Stadtmuseum Ludwigsburg</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Beliebte Suchen</h4>
-        <ul>
-          <li><a href="/ludwigsburg/heute/">Events Ludwigsburg heute</a></li>
-          <li><a href="/ludwigsburg/kinder/">Kinderveranstaltungen Ludwigsburg</a></li>
-          <li><a href="/ludwigsburg/dieses-wochenende/">Was ist los in Ludwigsburg am Wochenende</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>rausgucken.de</h4>
-        <ul>
-          <li><a href="/about/">Über uns</a></li>
-          <li><a href="/sitemap.xml">Sitemap</a></li>
-        </ul>
-      </div>
-    
-      <div class="footer-col">
-        <h4>Wichtige Links</h4>
-        <ul>
-          {importantLinks.map(link => (
-            <li>
-              {link.external ? (
-                <a href={link.url} target="_blank" rel="nofollow noopener noreferrer">
-                  {link.name}
-                </a>
-              ) : (
-                <a href={link.url}>{link.name}</a>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-    <div class="footer-legal">
+        <div class="footer-legal">
       Alle Angaben ohne Gewähr. Veranstaltungsdaten werden automatisch gesammelt.
       Bitte prüfen Sie alle Infos auf der jeweiligen Originalseite.
       &nbsp;·&nbsp;
