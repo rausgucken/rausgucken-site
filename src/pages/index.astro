@@ -481,6 +481,12 @@ loadLeaflet(() => init());
     background: rgba(255,111,97,0.18);
     border-bottom-color: transparent;
   }
+  .search-suggestions li:hover .sug-name,
+  .search-suggestions li.highlighted .sug-name { color: var(--coral); }
+  .search-suggestions li:hover .sug-type,
+  .search-suggestions li:hover .sug-soon,
+  .search-suggestions li.highlighted .sug-type,
+  .search-suggestions li.highlighted .sug-soon { color: var(--coral); opacity: 0.7; }
   .sug-name { font-size: 0.9rem; color: var(--text); }
   .sug-type { font-size: 0.78rem; color: var(--text-60); }
   .sug-soon { font-size: 0.72rem; color: var(--text-60); }
