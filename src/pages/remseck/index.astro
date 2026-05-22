@@ -1,0 +1,113 @@
+---
+import Base from "../../layouts/Base.astro";
+import FreshnessStamp from '../../components/FreshnessStamp.astro';
+import EventCard from "../../components/EventCard.astro";
+import FilterBar from "../../components/FilterBar.astro";
+import ImportantLinksSidebar from "../../components/ImportantLinksSidebar.astro";
+import FeaturedEvent from "../../components/FeaturedEvent.astro";
+
+import eventsData from "../../../public/data/remseck/events-current.json";
+import metaData from "../../../public/data/remseck/meta.json";
+import linksData from "../../../config/important-links-remseck.json";
+
+const events = eventsData;
+const meta = metaData;
+
+const dated    = events.filter((e: any) => e.date_start);
+const standing = events.filter((e: any) => !e.date_start);
+
+const today = new Date().toISOString().split("T")[0];
+
+const buildDate = new Date();
+const monthDE = buildDate.toLocaleDateString("de-DE", { month: "long" });
+const yearDE  = buildDate.getFullYear();
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Veranstaltungen in Remseck am Neckar",
+  "description": `${events.length} aktuelle Veranstaltungen in Remseck am Neckar – Kultur, Feste und mehr.`,
+  "url": "https://www.rausgucken.de/remseck/",
+  "inLanguage": "de-DE",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://www.rausgucken.de" },
+    { "@type": "ListItem", "position": 2, "name": "Remseck am Neckar", "item": "https://www.rausgucken.de/remseck/" },
+  ],
+};
+
+import tipsRaw from '../../data/editorial-tips.json';
+const featuredSlug = Object.entries(tipsRaw).find(
+  ([, v]) => typeof v === 'object' && v.featured === true
+)?.[0] ?? null;
+const featuredEvent = featuredSlug
+  ? { ...events.find(e => e.slug === featuredSlug), editorial_tip: tipsRaw[featuredSlug]?.tip }
+  : null;
+---
+
+<Base
+  title={`${events.length} Veranstaltungen in Remseck am Neckar ${monthDE} ${yearDE} | rausgucken.de`}
+  description={`Entdecke ${events.length} aktuelle Veranstaltungen in Remseck am Neckar – von der Mediathek im KUBUS bis zum Marktplatz.`}
+  city="remseck"
+  schema={[jsonLd, breadcrumbSchema]}
+>
+  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+    <a href="https://www.rausgucken.de">rausgucken.de</a>
+    <span aria-hidden="true"> › </span>
+    <span aria-current="page">Remseck am Neckar</span>
+  </nav>
+
+  <div class="city-layout">
+    <main class="city-main">
+      <div class="city-header">
+        <h1>Veranstaltungen in Remseck am Neckar</h1>
+        <FreshnessStamp scrapedAt={meta.scraped_at} />
+      </div>
+
+      <p class="city-intro">
+        Remseck am Neckar liegt im Landkreis Ludwigsburg, direkt am Zusammenfluss von Rems und Neckar.
+        Die Mediathek im KUBUS am Marktplatz ist das kulturelle Zentrum der Stadt – mit einem vielfältigen
+        Programm aus Lesungen, Workshops und Veranstaltungen für alle Altersgruppen.
+        Hier findest du alle aktuellen Events in Remseck am Neckar.
+      </p>
+
+      {featuredEvent && <FeaturedEvent event={featuredEvent} city="remseck" />}
+
+      <FilterBar city="remseck" />
+
+      {dated.length === 0 && standing.length === 0 && (
+        <div class="empty-state">
+          <p>Aktuell sind keine Veranstaltungen in Remseck am Neckar eingetragen.</p>
+          <p>Schau bald wieder vorbei – die Daten werden täglich aktualisiert.</p>
+        </div>
+      )}
+
+      {dated.length > 0 && (
+        <div id="event-list">
+          {dated.map((ev: any) => (
+            <EventCard event={ev} city="remseck" />
+          ))}
+        </div>
+      )}
+
+      {standing.length > 0 && (
+        <section class="standing-section">
+          <h2>Regelmäßige Veranstaltungen</h2>
+          <div id="standing-list">
+            {standing.map((ev: any) => (
+              <EventCard event={ev} city="remseck" />
+            ))}
+          </div>
+        </section>
+      )}
+    </main>
+
+    <aside class="city-sidebar">
+      <ImportantLinksSidebar links={linksData} />
+    </aside>
+  </div>
+</Base>
