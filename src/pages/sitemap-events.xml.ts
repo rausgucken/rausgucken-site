@@ -6,6 +6,7 @@ import ludwigsburgEvents from "../../public/data/ludwigsburg/events-current.json
 import tammEvents from "../../public/data/tamm/events-current.json";
 import bietigheimEvents from "../../public/data/bietigheim/events-current.json";
 import aspergEvents from "../../public/data/asperg/events-current.json";
+import kornwestheimEvents from "../../public/data/kornwestheim/events-current.json";
 
 export async function GET() {
   const siteUrl = "https://www.rausgucken.de";
@@ -19,6 +20,7 @@ export async function GET() {
     { city: "tamm",        events: tammEvents as any[]        },
     { city: "bietigheim",  events: bietigheimEvents as any[]  },
     { city: "asperg",      events: aspergEvents as any[]      },
+    { city: "kornwestheim", events: kornwestheimEvents as any[] },
   ];
 
   const urls = cityEvents.flatMap(({ city, events }) =>
