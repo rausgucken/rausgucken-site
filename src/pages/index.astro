@@ -1,472 +1,563 @@
 ---
+// src/pages/index.astro
+// rausgucken.de — Homepage
+// Search-first interface. Static shell — no event data baked in.
+// Leaflet loaded from CDN (no npm install). Cities from /data/cities.json fetched client-side.
+// SEO: page is intentionally content-free — all SEO value is on city/temporal/venue pages.
 import Base from "../layouts/Base.astro";
-import { readFileSync } from "fs";
-import { resolve } from "path";
-
-let svgMap = "";
-try {
-  svgMap = readFileSync(resolve("src/assets/landkreis-map.svg"), "utf-8");
-} catch (e) {
-  console.warn("[index.astro] landkreis-map.svg not found");
-}
-
-let municipalities = [];
-try {
-  const raw = readFileSync(resolve("public/data/landkreis-ludwigsburg/distances.json"), "utf-8");
-  municipalities = JSON.parse(raw).municipalities;
-} catch (e) {
-  console.warn("[index.astro] distances.json not found");
-}
-
-const municipalitiesJson = JSON.stringify(municipalities);
 ---
 
 <Base
-  title="rausgucken.de — Veranstaltungen im Landkreis Ludwigsburg"
-  description="Entdecke Events im Landkreis Ludwigsburg — wähle deine Stadt und deinen Umkreis."
+  title="rausgucken.de — Was ist los in deiner Stadt?"
+  description="Veranstaltungen, Konzerte, Ausstellungen und mehr in deiner Stadt und Umgebung — täglich aktuell."
 >
-  <div class="hero">
-    <div class="hero-text">
+  <div class="home-shell">
+
+    <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+    <header class="hero">
       <h1>Was ist los in deiner Stadt?</h1>
-      <p class="hero-sub">Wähle eine Stadt und sieh, welche Events in deiner Nähe stattfinden.</p>
-    </div>
 
-    <!-- Search bar -->
-    <div class="search-wrap">
-      <div class="search-box">
-        <svg class="search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.8"/>
-          <path d="M13 13L17 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-        </svg>
+      <!-- Search bar -->
+      <div class="search-wrap">
+        <div class="search-box" id="search-box">
+          <svg class="search-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M13 13L17 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <input
+            id="city-search"
+            type="text"
+            placeholder="Stadt oder Landkreis…"
+            autocomplete="off"
+            aria-label="Stadt suchen"
+            aria-autocomplete="list"
+            aria-controls="search-suggestions"
+            aria-expanded="false"
+          />
+          <button id="search-clear" class="search-clear" hidden aria-label="Suche leeren">✕</button>
+          <button id="search-submit" class="search-submit" aria-label="Suchen">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M13 13L17 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+        <ul id="search-suggestions" class="search-suggestions" role="listbox" hidden></ul>
+        <button id="locate-btn" class="locate-btn" type="button">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle cx="10" cy="10" r="3" fill="currentColor"/>
+            <path d="M10 2v2M10 16v2M2 10h2M16 10h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="10" cy="10" r="6.5" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          Standort erkennen
+        </button>
+      </div>
+    </header>
+
+    <!-- ── Map section (revealed after city selection) ───────────────────── -->
+    <section id="map-section" class="map-section" hidden aria-label="Karte mit Veranstaltungsorten">
+
+      <div class="map-header">
+        <div class="map-header-left">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="pin-icon">
+            <circle cx="10" cy="8" r="4" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M10 12v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span id="map-city-label" class="map-city-label">—</span>
+        </div>
+        <span id="map-count-badge" class="map-count-badge"></span>
+      </div>
+
+      <!-- Leaflet map container -->
+      <div id="leaflet-map" class="leaflet-map" aria-label="Karte" aria-hidden="true"></div>
+
+      <!-- Radius slider -->
+      <div class="radius-row">
+        <label for="radius-slider" class="radius-label">
+          Umkreis: <strong id="radius-val" class="radius-val">15 km</strong>
+        </label>
         <input
-          id="city-search"
-          type="text"
-          placeholder="Stadt suchen… z.B. Ludwigsburg"
-          autocomplete="off"
-          aria-label="Stadt suchen"
+          id="radius-slider"
+          type="range"
+          min="2"
+          max="60"
+          value="15"
+          step="1"
+          class="radius-slider"
+          aria-label="Umkreis in Kilometern"
         />
-        <button id="search-clear" class="search-clear" hidden aria-label="Suche leeren">&#x2715;</button>
       </div>
-      <ul id="search-suggestions" class="search-suggestions" role="listbox" hidden></ul>
+
+      <!-- City list below map -->
+      <div id="city-list" class="city-list"></div>
+
+    </section>
+
+    <!-- ── Default: covered cities (no selection yet) ────────────────────── -->
+    <div id="covered-list" class="covered-list">
+      <p class="section-label">Städte mit Veranstaltungen</p>
+      <div id="covered-cities"></div>
     </div>
 
-    <div class="map-and-panel">
-
-      <!-- Left: map -->
-      <div class="map-col">
-        <div class="map-container" id="map-container">
-          {svgMap
-            ? <Fragment set:html={svgMap} />
-            : <div class="map-placeholder">Karte nicht verfügbar</div>
-          }
-          <div id="map-tooltip" class="map-tooltip" hidden></div>
-        </div>
-      </div>
-
-      <!-- Right: panel -->
-      <div class="side-col">
-
-        <div id="no-selection-hint" class="hint-box">
-          <div class="hint-arrow">&#8592;</div>
-          <p>Klicke auf eine Stadt in der Karte oder suche oben.</p>
-        </div>
-
-        <div id="selected-city-box" class="selected-box" hidden>
-          <p class="selected-label">Ausgewählte Stadt</p>
-          <h2 id="selected-city-name" class="selected-name">&#8212;</h2>
-          <a id="selected-city-link" href="#" class="go-btn">Alle Events anzeigen &#8594;</a>
-        </div>
-
-        <div id="radius-section" class="radius-section" hidden>
-          <label class="slider-label" for="radius-slider">
-            Umkreis: <strong id="radius-label" class="radius-val">0 km</strong>
-          </label>
-          <input id="radius-slider" type="range" min="0" max="55" value="0" step="1"
-                 class="radius-slider" aria-label="Umkreis in Kilometern" />
-          <div class="slider-ticks"><span>1 km</span><span>55 km</span></div>
-        </div>
-
-        <div id="radius-cities" class="radius-cities" hidden>
-          <p class="section-title">Städte im Umkreis mit Events</p>
-          <div id="radius-city-list"></div>
-          <a id="radius-combined-link" href="#" class="combined-btn" hidden>Alle Events dieser Städte →</a>
-        </div>
-
-        <div id="covered-list" class="covered-list">
-          <p class="section-title">Städte mit Veranstaltungen</p>
-          <div id="covered-cities"></div>
-        </div>
-
-      </div>
-    </div>
   </div>
 </Base>
 
-<style>
-  .hero { padding: 2rem 0 3rem; }
-  .hero-text { text-align: center; margin-bottom: 1.5rem; }
-  h1 {
-    font-family: var(--font-heading); font-weight: 800;
-    font-size: clamp(1.8rem, 5vw, 2.6rem); color: var(--text);
-    letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 0.6rem;
-  }
-  .hero-sub { font-size: 1rem; color: var(--text-60); max-width: 480px; margin: 0 auto; }
+<!-- Leaflet CSS from CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
+  integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTLSeB68ARYJipY1SQ=="
+  crossorigin="anonymous"
+/>
 
-  .search-wrap { position: relative; max-width: 480px; margin: 0 auto 1.5rem; }
-  .search-box {
-    display: flex; align-items: center;
-    border: 2px solid var(--border); border-radius: 12px;
-    background: var(--surface); padding: 0 0.8rem; transition: border-color 150ms;
-  }
-  .search-box:focus-within { border-color: var(--coral); }
-  .search-icon { width: 18px; height: 18px; color: var(--text-60); flex-shrink: 0; margin-right: 0.5rem; }
-  .search-box input {
-    flex: 1; border: none; outline: none; background: transparent;
-    font-size: 1rem; color: var(--text); padding: 0.7rem 0; font-family: var(--font-body);
-  }
-  .search-box input::placeholder { color: var(--text-60); }
-  .search-clear { border: none; background: none; cursor: pointer; color: var(--text-60); font-size: 0.9rem; padding: 0.2rem; }
-  .search-suggestions {
-    position: absolute; top: calc(100% + 4px); left: 0; right: 0;
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    z-index: 50; max-height: 260px; overflow-y: auto;
-    list-style: none; margin: 0; padding: 0.4rem 0;
-  }
-  .search-suggestions li {
-    padding: 0.5rem 1rem; cursor: pointer; font-size: 0.9rem; color: var(--text);
-    display: flex; justify-content: space-between; align-items: center;
-  }
-  .search-suggestions li:hover { background: rgba(0,0,0,0.04); }
-  .city-badge {
-    font-size: 0.72rem; background: var(--coral); color: #fff;
-    border-radius: 4px; padding: 0.1rem 0.4rem; font-weight: 600;
-  }
+<!-- Leaflet JS from CDN -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"
+  integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWoFvW8V8+FBfLpTHkS8sON5uIz9TjV8YmLjsHJUJMpIFdGExQv3Q=="
+  crossorigin="anonymous"
+  defer
+></script>
 
-  .map-and-panel {
-    display: grid; grid-template-columns: 1fr 260px;
-    gap: 1.5rem; max-width: 960px; margin: 0 auto; align-items: start;
-  }
-  @media (max-width: 700px) { .map-and-panel { grid-template-columns: 1fr; } }
+<script>
+// Homepage map — vanilla JS, no framework
+// Cities loaded from /data/cities.json at mount time
 
-  .map-col { position: sticky; top: 70px; }
-  .map-container {
-    position: relative; border-radius: var(--radius);
-    border: 1px solid var(--border); background: var(--surface); padding: 0.5rem;
-  }
-  .map-container :global(svg#landkreis-map) { width: 100%; height: auto; display: block; }
-  .map-placeholder { height: 300px; display: flex; align-items: center; justify-content: center; color: var(--text-60); }
-  .map-tooltip {
-    position: absolute; pointer-events: none;
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: 6px; padding: 0.35rem 0.65rem;
-    font-size: 0.78rem; line-height: 1.4; color: var(--text);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12); white-space: nowrap; z-index: 10;
-  }
-
-  .side-col { display: flex; flex-direction: column; gap: 1.25rem; }
-
-  .hint-box {
-    display: flex; align-items: flex-start; gap: 0.5rem;
-    font-size: 0.88rem; color: var(--text-60);
-    padding: 1rem; border: 1px dashed var(--border); border-radius: var(--radius);
-  }
-  .hint-arrow { font-size: 1.1rem; }
-
-  .selected-box {
-    background: var(--surface); border: 2px solid var(--coral);
-    border-radius: var(--radius); padding: 1rem;
-  }
-  .selected-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-60); margin: 0 0 0.25rem; }
-  .selected-name { font-family: var(--font-heading); font-weight: 800; font-size: 1.4rem; color: var(--text); margin: 0 0 0.6rem; }
-  .go-btn {
-    display: inline-block; background: var(--coral); color: #fff;
-    font-weight: 700; font-size: 0.88rem; padding: 0.5rem 1rem;
-    border-radius: 8px; text-decoration: none;
-  }
-  .go-btn:hover { background: #e04a38; }
-
-  .radius-section { display: flex; flex-direction: column; gap: 0.4rem; }
-  .slider-label { font-size: 0.88rem; color: var(--text-60); }
-  .radius-val { color: var(--coral); font-weight: 700; }
-  .radius-slider { width: 100%; accent-color: var(--coral); cursor: pointer; }
-  .slider-ticks { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-60); opacity: 0.6; }
-
-  .section-title {
-    font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.07em; color: var(--text-60); margin: 0 0 0.5rem;
-  }
-
-  #radius-combined-link {
-    display: block; background: var(--coral); color: #fff !important;
-    font-weight: 700; font-size: 0.88rem; padding: 0.55rem 1rem;
-    border-radius: 8px; text-decoration: none !important;
-    text-align: center; margin-top: 0.75rem; transition: background 150ms;
-  }
-  #radius-combined-link:hover { background: #e04a38; }
-</style>
-
-<style is:global>
-  .map-container svg#landkreis-map { width: 100%; height: auto; display: block; }
-  .map-container .muni.selected {
-    fill: #FF6F61 !important;
-    stroke: #c94030 !important;
-    stroke-width: 2.5px !important;
-    opacity: 1 !important;
-    filter: none !important;
-  }
-  .map-container .muni { fill: #CBD5E0; }
-  html.dark .map-container .muni { fill: #444857; }
-  .map-container .muni.dimmed { opacity: 0.25 !important; }
-  .map-container .muni.covered { cursor: pointer; fill-rule: nonzero !important; }
-  .map-container .muni.in-range.not-covered { fill: #B0BEC8; }
-  html.dark .map-container .muni.in-range.not-covered { fill: #556070; }
-  .map-container .muni.in-range.covered {
-    fill: #A8B8C8 !important; opacity: 1 !important;
-    stroke: #FF6F61 !important; stroke-width: 1.5px !important;
-  }
-  html.dark .map-container .muni.in-range.covered { fill: #6B7A8D !important; }
-  .map-container .muni.covered.in-radius {
-    fill: #8FA8C0 !important; opacity: 1 !important;
-    stroke: #FF6F61 !important; stroke-width: 3px !important;
-  }
-  html.dark .map-container .muni.covered.in-radius { fill: #5C6B80 !important; }
-  .map-container .city-label { fill: #4A5568 !important; font-size: 5.5px !important; }
-  html.dark .map-container .city-label { fill: rgba(255,255,255,0.75) !important; }
-  .map-container .muni.in-radius ~ .city-label,
-  .map-container .muni.covered .city-label { fill: #ffffff !important; }
-  .city-row {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 0.45rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem;
-  }
-  .city-row a { color: var(--coral); font-weight: 600; text-decoration: none; }
-  .city-row a:hover { text-decoration: underline; }
-  .city-row-meta { font-size: 0.72rem; color: var(--text-60); }
-</style>
-
-<script type="module" define:vars={{ municipalitiesJson }}>
 import { dist, normalize } from "../scripts/map-utils.js";
-const MUNICIPALITIES = JSON.parse(municipalitiesJson);
 
-const svg          = document.getElementById("landkreis-map");
-
-
-
-const tooltip      = document.getElementById("map-tooltip");
-const noHint       = document.getElementById("no-selection-hint");
-const selBox       = document.getElementById("selected-city-box");
-const selName      = document.getElementById("selected-city-name");
-const selLink      = document.getElementById("selected-city-link");
-const radiusSec    = document.getElementById("radius-section");
-const radiusCities = document.getElementById("radius-cities");
-const coveredList  = document.getElementById("covered-list");
-const slider       = document.getElementById("radius-slider");
-const sliderLabel  = document.getElementById("radius-label");
-const radiusCityList  = document.getElementById("radius-city-list");
-const coveredCitiesEl = document.getElementById("covered-cities");
-const searchInput  = document.getElementById("city-search");
-const searchClear  = document.getElementById("search-clear");
-const suggestions  = document.getElementById("search-suggestions");
-
-const dataMap = Object.fromEntries(MUNICIPALITIES.map(m => [m.id, m]));
+let CITIES = [];
+let map = null;
+let radiusCircle = null;
+let markers = {};
 let selectedCity = null;
 
+// ── DOM refs ─────────────────────────────────────────────────────────────────
+const searchInput    = document.getElementById("city-search");
+const searchClear    = document.getElementById("search-clear");
+const searchSubmit   = document.getElementById("search-submit");
+const suggestionsEl  = document.getElementById("search-suggestions");
+const locateBtn      = document.getElementById("locate-btn");
+const mapSection     = document.getElementById("map-section");
+const mapCityLabel   = document.getElementById("map-city-label");
+const mapCountBadge  = document.getElementById("map-count-badge");
+const slider         = document.getElementById("radius-slider");
+const radiusValEl    = document.getElementById("radius-val");
+const cityListEl     = document.getElementById("city-list");
+const coveredList    = document.getElementById("covered-list");
+const coveredCities  = document.getElementById("covered-cities");
 
-// Default covered list
-const covered = MUNICIPALITIES.filter(m => m.covered).sort((a,b) => a.distance_km - b.distance_km);
-coveredCitiesEl.innerHTML = covered.map(m =>
-  `<div class="city-row"><a href="${m.url}">${m.name}</a><span class="city-row-meta">${m.event_count} Events</span></div>`
-).join("");
-
-function selectCity(m) {
-  selectedCity = m;
-  selName.textContent = m.name;
-  if (m.covered && m.url) {
-    selLink.href = m.url;
-    selLink.textContent = "Alle " + m.event_count + " Events →";
-    selLink.hidden = false;
-  } else {
-    selLink.hidden = true;
+// ── Load cities + render default covered list ─────────────────────────────────
+async function init() {
+  try {
+    const res = await fetch("/data/cities.json");
+    CITIES = await res.json();
+  } catch(e) {
+    console.warn("[homepage] Failed to load cities.json", e);
+    return;
   }
-  selBox.hidden = false;
-  noHint.hidden = true;
-  radiusSec.hidden = false;
-  coveredList.hidden = false;
-
-  if (svg) {
-    // Reset all: remove selection/dim/radius classes, but restore in-range for covered cities
-    svg.querySelectorAll(".muni").forEach(p => {
-      p.classList.remove("selected", "dimmed", "in-radius");
-      // Re-apply in-range to covered cities so their coral border is preserved
-      const cityId = p.dataset.cityId;
-      const cityData = dataMap[cityId];
-      if (cityData && cityData.covered) {
-        p.classList.add("in-range");
-      } else {
-        p.classList.remove("in-range");
-      }
-    });
-    const el = svg.querySelector("[data-city-id=\"" + m.id + "\"]");
-    if (el) { el.classList.add("selected"); el.classList.remove("in-range"); }
-  }
-  updateRadius();
-  searchInput.value = "";
-  suggestions.hidden = true;
-  searchClear.hidden = true;
+  renderCoveredList();
 }
 
+function renderCoveredList() {
+  const covered = CITIES.filter(c => c.covered && c.event_count > 0)
+    .sort((a, b) => b.event_count - a.event_count);
+  coveredCities.innerHTML = covered.map(c =>
+    `<div class="city-row">
+      <a href="${c.url}">${c.name}</a>
+      <span class="city-row-meta">${c.event_count} Events</span>
+    </div>`
+  ).join("");
+}
+
+// ── City selection ────────────────────────────────────────────────────────────
+function selectCity(city) {
+  selectedCity = city;
+
+  // Update header
+  mapCityLabel.textContent = city.name + (city.type ? ` · ${city.type}` : "");
+
+  // Show map section, hide default covered list
+  mapSection.hidden = false;
+  coveredList.hidden = true;
+
+  // Smooth scroll
+  mapSection.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  // Init or move map
+  if (!map) {
+    initMap(city);
+  } else {
+    map.setView([city.lat, city.lng], 11);
+  }
+
+  updateRadius();
+  searchInput.value = "";
+  suggestionsEl.hidden = true;
+  searchClear.hidden = true;
+  searchInput.setAttribute("aria-expanded", "false");
+}
+
+// ── Leaflet map init ──────────────────────────────────────────────────────────
+function initMap(city) {
+  // Wait for Leaflet to be available (loaded via defer)
+  if (!window.L) {
+    setTimeout(() => initMap(city), 100);
+    return;
+  }
+  const L = window.L;
+
+  map = L.map("leaflet-map", {
+    center: [city.lat, city.lng],
+    zoom: 11,
+    zoomControl: true,
+    scrollWheelZoom: false,
+  });
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 17,
+  }).addTo(map);
+
+  // Add markers for all covered cities
+  CITIES.filter(c => c.covered).forEach(c => {
+    const isSelected = c.id === city.id;
+    const marker = L.circleMarker([c.lat, c.lng], {
+      radius: isSelected ? 12 : 8,
+      fillColor: isSelected ? "#FF6F61" : "#373F51",
+      color: "#fff",
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 1,
+    }).addTo(map);
+
+    if (c.event_count > 0 || isSelected) {
+      marker.bindTooltip(c.name, {
+        permanent: true,
+        direction: "top",
+        offset: [0, -10],
+        className: "city-tooltip",
+      });
+    }
+
+    marker.on("click", () => selectCity(c));
+    markers[c.id] = marker;
+  });
+}
+
+function updateMarkers(inRadiusIds) {
+  if (!map || !window.L) return;
+  const L = window.L;
+  CITIES.filter(c => c.covered).forEach(c => {
+    const m = markers[c.id];
+    if (!m) return;
+    const isSelected = selectedCity && c.id === selectedCity.id;
+    const inRange = inRadiusIds.has(c.id);
+    m.setStyle({
+      radius: isSelected ? 12 : 8,
+      fillColor: isSelected ? "#FF6F61" : (inRange ? "#373F51" : "#373F51"),
+      fillOpacity: inRange || isSelected ? 1 : 0.2,
+      opacity: inRange || isSelected ? 1 : 0.2,
+    });
+  });
+}
+
+// ── Radius logic ──────────────────────────────────────────────────────────────
 function updateRadius() {
   if (!selectedCity) return;
   const radius = parseInt(slider.value, 10);
-  sliderLabel.textContent = radius + " km";
-  if (radius === 0) {
-    // At 0: only selected city visible, hide radius panel
-    if (svg) {
-      svg.querySelectorAll(".muni").forEach(p => {
-        if (p.classList.contains("selected")) return;
-        p.classList.add("dimmed");
-        p.classList.remove("dimmed"); // reset then re-apply below
-      });
-      svg.querySelectorAll(".muni").forEach(p => {
-        p.classList.toggle("dimmed", !p.classList.contains("selected"));
-      });
-    }
-    radiusCities.hidden = true;
-    radiusCityList.innerHTML = "";
-    const combinedLink = document.getElementById("radius-combined-link");
-    if (combinedLink) combinedLink.hidden = true;
-    if (svg) {
-      svg.querySelectorAll(".muni.in-radius").forEach(p => p.classList.remove("in-radius"));
-      // At radius=0: dim uncovered cities, keep covered cities visible with their border
-      svg.querySelectorAll(".muni").forEach(p => {
-        if (p.classList.contains("selected")) return;
-        const isCovered = p.classList.contains("covered");
-        p.classList.toggle("dimmed", !isCovered);
-      });
-    }
-    return;
+  radiusValEl.textContent = radius + " km";
+
+  // Draw / update radius circle
+  if (map && window.L) {
+    if (radiusCircle) radiusCircle.remove();
+    radiusCircle = window.L.circle([selectedCity.lat, selectedCity.lng], {
+      radius: radius * 1000,
+      color: "#FF6F61",
+      weight: 1.5,
+      opacity: 0.5,
+      fillColor: "#FF6F61",
+      fillOpacity: 0.06,
+    }).addTo(map);
   }
-  const inRadius = MUNICIPALITIES
-    .map(m => ({ ...m, _d: dist(selectedCity.lat, selectedCity.lng, m.lat, m.lng) }))
-    .filter(m => m._d <= radius && m.id !== selectedCity.id)
+
+  // Cities in radius
+  const inRadius = CITIES
+    .map(c => ({ ...c, _d: dist(selectedCity.lat, selectedCity.lng, c.lat, c.lng) }))
+    .filter(c => c.covered && c._d <= radius && c.id !== selectedCity.id)
     .sort((a, b) => a._d - b._d);
-  if (svg) {
-    const inIds = new Set(inRadius.map(m => m.id));
-    inIds.add(selectedCity.id);
-    svg.querySelectorAll(".muni").forEach(p => {
-      if (p.classList.contains("selected")) return;
-      p.classList.toggle("dimmed", !inIds.has(p.dataset.cityId));
-    });
-    // Highlight covered cities within radius with dark border
-    svg.querySelectorAll(".muni.covered").forEach(p => {
-      const inRange = inIds.has(p.dataset.cityId) && !p.classList.contains("selected");
-      p.classList.toggle("in-radius", inRange);
-    });
+
+  const inRadiusIds = new Set([selectedCity.id, ...inRadius.map(c => c.id)]);
+  updateMarkers(inRadiusIds);
+
+  // Update badge
+  const covInRadius = inRadius.filter(c => c.event_count > 0);
+  const total = (selectedCity.event_count || 0) + covInRadius.reduce((s, c) => s + c.event_count, 0);
+  mapCountBadge.textContent = covInRadius.length + 1 > 1
+    ? `${covInRadius.length + 1} Städte im Umkreis`
+    : "";
+
+  // Render city list
+  const rows = [selectedCity, ...inRadius].map(c => {
+    const isSelected = c.id === selectedCity.id;
+    const dist_str = isSelected ? "" : ` · ${c._d ? c._d.toFixed(1) + " km" : ""}`;
+    const evtStr = c.event_count > 0 ? `${c.event_count} Events` : "demnächst";
+    return `<div class="city-row${isSelected ? " city-row--selected" : ""}">
+      <a href="${c.url}">${c.name}</a>
+      <span class="city-row-meta">${evtStr}${dist_str}</span>
+    </div>`;
+  });
+
+  if (total > (selectedCity.event_count || 0) && covInRadius.length > 0) {
+    rows.push(`<a href="/ludwigsburg/" class="combined-btn">Alle ${total} Events im Umkreis →</a>`);
   }
-  const covInRadius = inRadius.filter(m => m.covered);
-  const combinedLink = document.getElementById("radius-combined-link");
-  if (covInRadius.length > 0) {
-    radiusCities.hidden = false;
-    radiusCityList.innerHTML = covInRadius.map(m =>
-      `<div class="city-row"><a href="${m.url}">${m.name}</a><span class="city-row-meta">${m._d.toFixed(1)} km &middot; ${m.event_count} Events</span></div>`
-    ).join("");
-    // Build combined URL: use first covered city as base, add others as query params
-    // For now link to a search-style page listing all covered cities
-    if (combinedLink) {
-      const allCovered = [selectedCity, ...covInRadius].filter(m => m.url);
-      if (allCovered.length > 1) {
-        const total = allCovered.reduce((s,m) => s + (m.event_count||0), 0);
-        const cityIds = allCovered.map(m => m.id).join(",");
-        combinedLink.href = `/ludwigsburg/umkreis?cities=${cityIds}`;
-        combinedLink.textContent = `Alle ${total} Events im Umkreis ansehen →`;
-        combinedLink.hidden = false;
-      } else {
-        combinedLink.hidden = true;
-      }
-    }
-  } else {
-    radiusCities.hidden = true;
-    radiusCityList.innerHTML = "";
-    if (combinedLink) combinedLink.hidden = true;
+
+  cityListEl.innerHTML = rows.join("");
+  if (selectedCity.url) {
+    mapCountBadge.innerHTML = selectedCity.event_count > 0
+      ? `<a href="${selectedCity.url}" class="go-btn">Alle ${selectedCity.event_count} Events →</a>`
+      : "";
   }
 }
 
 slider.addEventListener("input", updateRadius);
 
-if (svg) {
-  svg.addEventListener("mousemove", e => {
-    const path = e.target.closest(".muni");
-    if (!path || !tooltip) { tooltip.hidden = true; return; }
-    const m = dataMap[path.dataset.cityId];
-    if (!m) { tooltip.hidden = true; return; }
-    tooltip.innerHTML = m.covered
-      ? "<strong>" + m.name + "</strong><br>" + m.event_count + " Veranstaltungen"
-      : "<strong>" + m.name + "</strong><br><em style=\"opacity:.6\">Demnächst</em>";
-    tooltip.hidden = false;
-    const rect = svg.closest(".map-container").getBoundingClientRect();
-    tooltip.style.left = (e.clientX - rect.left + 14) + "px";
-    tooltip.style.top  = (e.clientY - rect.top  + 14) + "px";
-  });
-  svg.addEventListener("mouseleave", () => { if (tooltip) tooltip.hidden = true; });
-  svg.addEventListener("click", e => {
-    const path = e.target.closest(".muni");
-    if (!path) return;
-    const m = dataMap[path.dataset.cityId];
-    if (!m) return;
-    selectCity(m);
-  });
-}
-
-
+// ── Search ────────────────────────────────────────────────────────────────────
 searchInput.addEventListener("input", () => {
   const q = searchInput.value.trim();
   searchClear.hidden = q.length === 0;
-  if (q.length < 1) { suggestions.hidden = true; return; }
+  searchInput.setAttribute("aria-expanded", q.length > 0 ? "true" : "false");
+  if (q.length < 1) { suggestionsEl.hidden = true; return; }
   const nq = normalize(q);
-  const matches = MUNICIPALITIES
-    .filter(m => normalize(m.name).includes(nq))
+  const matches = CITIES
+    .filter(c => normalize(c.name).includes(nq))
     .sort((a, b) => {
       const aS = normalize(a.name).startsWith(nq);
       const bS = normalize(b.name).startsWith(nq);
-      if (aS !== bS) return aS ? -1 : 1;
-      return a.name.localeCompare(b.name);
+      return aS === bS ? a.name.localeCompare(b.name) : (aS ? -1 : 1);
     })
     .slice(0, 8);
-  if (matches.length === 0) { suggestions.hidden = true; return; }
-  suggestions.innerHTML = matches.map(m =>
-    `<li role="option" data-id="${m.id}">${m.name}${m.covered ? ` <span class="city-badge">${m.event_count} Events</span>` : ` <span style="font-size:.72rem;color:var(--text-60)">Demnächst</span>`}</li>`
+  if (matches.length === 0) { suggestionsEl.hidden = true; return; }
+  suggestionsEl.innerHTML = matches.map(c =>
+    `<li role="option" data-id="${c.id}">
+      <span class="sug-name">${c.name}<span class="sug-type"> · ${c.type}</span></span>
+      ${c.covered && c.event_count > 0
+        ? `<span class="city-badge">${c.event_count} Events</span>`
+        : `<span class="sug-soon">demnächst</span>`}
+    </li>`
   ).join("");
-  suggestions.hidden = false;
+  suggestionsEl.hidden = false;
 });
 
 searchInput.addEventListener("keydown", e => {
-  if (e.key === "Escape") suggestions.hidden = true;
+  if (e.key === "Escape") { suggestionsEl.hidden = true; searchInput.setAttribute("aria-expanded", "false"); }
   if (e.key === "Enter") {
-    const first = suggestions.querySelector("li");
+    const first = suggestionsEl.querySelector("li");
     if (first) pickSuggestion(first.dataset.id);
   }
 });
 
-suggestions.addEventListener("click", e => {
+searchSubmit.addEventListener("click", () => {
+  const first = suggestionsEl.querySelector("li");
+  if (first) pickSuggestion(first.dataset.id);
+});
+
+suggestionsEl.addEventListener("click", e => {
   const li = e.target.closest("li");
   if (li) pickSuggestion(li.dataset.id);
 });
 
 function pickSuggestion(id) {
-  const m = dataMap[id];
-  if (!m) return;
-  suggestions.hidden = true;
-  selectCity(m);
+  const city = CITIES.find(c => c.id === id);
+  if (!city) return;
+  suggestionsEl.hidden = true;
+  searchInput.setAttribute("aria-expanded", "false");
+  selectCity(city);
 }
 
 searchClear.addEventListener("click", () => {
   searchInput.value = "";
   searchClear.hidden = true;
-  suggestions.hidden = true;
+  suggestionsEl.hidden = true;
   searchInput.focus();
 });
 
 document.addEventListener("click", e => {
-  if (!e.target.closest(".search-wrap")) suggestions.hidden = true;
+  if (!e.target.closest(".search-wrap")) suggestionsEl.hidden = true;
 });
+
+// ── Geolocation ───────────────────────────────────────────────────────────────
+locateBtn.addEventListener("click", () => {
+  if (!navigator.geolocation) return;
+  locateBtn.disabled = true;
+  locateBtn.textContent = "…";
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      const { latitude: lat, longitude: lng } = pos.coords;
+      // Find nearest covered city
+      const nearest = CITIES
+        .filter(c => c.covered)
+        .map(c => ({ ...c, _d: dist(lat, lng, c.lat, c.lng) }))
+        .sort((a, b) => a._d - b._d)[0];
+      locateBtn.disabled = false;
+      locateBtn.innerHTML = `<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="currentColor"/><path d="M10 2v2M10 16v2M2 10h2M16 10h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="10" cy="10" r="6.5" stroke="currentColor" stroke-width="1.5"/></svg> Standort erkennen`;
+      if (nearest) selectCity(nearest);
+    },
+    () => {
+      locateBtn.disabled = false;
+      locateBtn.innerHTML = `<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="3" fill="currentColor"/><path d="M10 2v2M10 16v2M2 10h2M16 10h2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="10" cy="10" r="6.5" stroke="currentColor" stroke-width="1.5"/></svg> Standort erkennen`;
+    }
+  );
+});
+
+// ── Boot ──────────────────────────────────────────────────────────────────────
+init();
 </script>
+
+<style>
+  .home-shell { max-width: 720px; margin: 0 auto; padding: 0; }
+
+  /* Hero */
+  .hero { text-align: center; margin-bottom: 2rem; }
+  .hero h1 {
+    font-family: var(--font-heading); font-weight: 800;
+    font-size: clamp(1.8rem, 5vw, 2.6rem); color: var(--text);
+    letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 1.5rem;
+  }
+
+  /* Search */
+  .search-wrap { position: relative; max-width: 520px; margin: 0 auto; }
+  .search-box {
+    display: flex; align-items: center;
+    border: 2px solid var(--border); border-radius: 14px;
+    background: var(--surface); padding: 0 0.5rem 0 0.9rem;
+    transition: border-color 150ms;
+    box-shadow: var(--shadow-card);
+  }
+  .search-box:focus-within { border-color: var(--coral); }
+  .search-icon { width: 18px; height: 18px; color: var(--text-60); flex-shrink: 0; margin-right: 0.5rem; }
+  .search-box input {
+    flex: 1; border: none; outline: none; background: transparent;
+    font-size: 1rem; color: var(--text); padding: 0.75rem 0; font-family: var(--font-body);
+  }
+  .search-box input::placeholder { color: var(--text-60); }
+  .search-clear {
+    border: none; background: none; cursor: pointer;
+    color: var(--text-60); font-size: 0.9rem; padding: 0.3rem 0.4rem;
+    line-height: 1;
+  }
+  .search-submit {
+    width: 40px; height: 40px; flex-shrink: 0;
+    background: var(--coral); border: none; border-radius: 10px;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    transition: background 150ms;
+  }
+  .search-submit:hover { background: var(--coral-dark); }
+  .search-submit svg { width: 18px; height: 18px; color: #fff; }
+
+  .search-suggestions {
+    position: absolute; top: calc(100% + 6px); left: 0; right: 0;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    z-index: 50; max-height: 280px; overflow-y: auto;
+    list-style: none; margin: 0; padding: 0.4rem 0;
+  }
+  .search-suggestions li {
+    padding: 0.55rem 1rem; cursor: pointer;
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 0.5rem;
+  }
+  .search-suggestions li:hover { background: var(--coral-light); }
+  .sug-name { font-size: 0.9rem; color: var(--text); }
+  .sug-type { font-size: 0.78rem; color: var(--text-60); }
+  .sug-soon { font-size: 0.72rem; color: var(--text-60); }
+  .city-badge {
+    flex-shrink: 0; font-size: 0.72rem; background: var(--coral); color: #fff;
+    border-radius: 4px; padding: 0.1rem 0.45rem; font-weight: 600;
+  }
+
+  /* Locate button — below search box */
+  .locate-btn {
+    display: flex; align-items: center; gap: 0.4rem;
+    margin: 0.6rem auto 0; background: none; border: none;
+    color: var(--text-60); font-size: 0.85rem; font-family: var(--font-body);
+    cursor: pointer; padding: 0.2rem 0.4rem; border-radius: 6px;
+    transition: color 150ms;
+  }
+  .locate-btn:hover { color: var(--coral); }
+  .locate-btn svg { width: 16px; height: 16px; }
+  .locate-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  /* Map section */
+  .map-section { margin-top: 2.5rem; }
+
+  .map-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;
+  }
+  .map-header-left { display: flex; align-items: center; gap: 0.5rem; }
+  .pin-icon { width: 18px; height: 18px; color: var(--coral); flex-shrink: 0; }
+  .map-city-label { font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; color: var(--text); }
+
+  .go-btn {
+    display: inline-block; background: var(--coral); color: #fff !important;
+    font-weight: 700; font-size: 0.82rem; padding: 0.35rem 0.85rem;
+    border-radius: 8px; text-decoration: none !important; white-space: nowrap;
+    transition: background 150ms;
+  }
+  .go-btn:hover { background: var(--coral-dark); text-decoration: none !important; }
+
+  /* Leaflet map */
+  .leaflet-map {
+    height: 340px; border-radius: var(--radius);
+    border: 1px solid var(--border); overflow: hidden;
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Leaflet tooltip override */
+  :global(.city-tooltip) {
+    background: var(--surface) !important; border: 1px solid var(--border) !important;
+    color: var(--text) !important; font-family: var(--font-body) !important;
+    font-size: 0.75rem !important; font-weight: 600 !important;
+    padding: 0.2rem 0.5rem !important; border-radius: 6px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12) !important;
+    white-space: nowrap !important;
+  }
+  :global(.leaflet-tooltip-top.city-tooltip::before) { border-top-color: var(--border) !important; }
+
+  /* Radius */
+  .radius-row { display: flex; align-items: center; gap: 1rem; margin-top: 1rem; }
+  .radius-label { font-size: 0.85rem; color: var(--text-60); white-space: nowrap; flex-shrink: 0; }
+  .radius-val { color: var(--coral); }
+  .radius-slider { flex: 1; accent-color: var(--coral); cursor: pointer; }
+
+  /* City list */
+  .city-list { margin-top: 1rem; }
+  .city-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0.55rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem;
+  }
+  .city-row a { color: var(--coral); font-weight: 600; text-decoration: none; }
+  .city-row a:hover { text-decoration: underline; }
+  .city-row--selected a { color: var(--text); }
+  .city-row-meta { font-size: 0.78rem; color: var(--text-60); }
+  .combined-btn {
+    display: block; margin-top: 0.75rem; text-align: center;
+    background: var(--coral); color: #fff !important;
+    font-weight: 700; font-size: 0.88rem; padding: 0.6rem 1rem;
+    border-radius: 10px; text-decoration: none !important;
+    transition: background 150ms;
+  }
+  .combined-btn:hover { background: var(--coral-dark); }
+
+  /* Default covered list */
+  .covered-list { margin-top: 2rem; }
+  .section-label {
+    font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--text-60); margin-bottom: 0.75rem;
+  }
+
+  @media (max-width: 600px) {
+    .leaflet-map { height: 260px; }
+    .radius-row { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+    .radius-slider { width: 100%; }
+  }
+</style>
