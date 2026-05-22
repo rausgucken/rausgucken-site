@@ -154,7 +154,8 @@ function selectCity(city) {
   // Update header
   mapCityLabel.textContent = city.name + (city.type ? ` · ${city.type}` : "");
 
-  // Show map section, hide default covered list
+  // Show map section, shrink hero
+  document.querySelector(".hero").classList.add("map-active");
   mapSection.hidden = false;
 
   // Smooth scroll
@@ -441,8 +442,17 @@ loadLeaflet(() => init());
 <style>
   .home-shell { max-width: 720px; margin: 0 auto; padding: 0; }
 
-  /* Hero */
-  .hero { text-align: center; margin-bottom: 2rem; }
+  /* Hero — vertically centered before city selected */
+  .home-shell { display: flex; flex-direction: column; }
+  .hero {
+    text-align: center; margin-bottom: 2rem;
+    min-height: calc(100vh - 64px - 80px);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding-bottom: 4rem;
+    transition: min-height 400ms ease;
+  }
+  .hero.map-active { min-height: auto; padding-bottom: 0; }
   .hero h1 {
     font-family: var(--font-heading); font-weight: 800;
     font-size: clamp(1.8rem, 5vw, 2.6rem); color: var(--text);
@@ -515,14 +525,15 @@ loadLeaflet(() => init());
 
   /* Locate button — below search box */
   .locate-btn {
-    display: flex; align-items: center; gap: 0.4rem;
+    display: inline-flex; align-items: center; gap: 0.4rem;
     margin: 0.6rem auto 0; background: none; border: none;
     color: var(--text-60); font-size: 0.85rem; font-family: var(--font-body);
     cursor: pointer; padding: 0.2rem 0.4rem; border-radius: 6px;
-    transition: color 150ms;
+    transition: color 150ms; white-space: nowrap; min-width: 160px;
+    justify-content: center;
   }
   .locate-btn:hover { color: var(--coral); }
-  .locate-btn svg { width: 16px; height: 16px; }
+  .locate-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
   .locate-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
   /* Map section */
