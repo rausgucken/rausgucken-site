@@ -97,7 +97,7 @@ import Base from "../layouts/Base.astro";
   </div>
 </Base>
 
-<script>
+<script is:inline>
 // Homepage map — vanilla JS, no framework
 // Cities loaded from /data/cities.json at mount time
 
@@ -389,14 +389,12 @@ function loadLeaflet(cb) {
   const css = document.createElement("link");
   css.rel = "stylesheet";
   css.href = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css";
-  css.integrity = "sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTLSeB68ARYJipY1SQ==";
-  css.crossOrigin = "anonymous";
+
   document.head.appendChild(css);
   // JS
   const js = document.createElement("script");
   js.src = "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js";
-  js.integrity = "sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWoFvW8V8+FBfLpTHkS8sON5uIz9TjV8YmLjsHJUJMpIFdGExQv3Q==";
-  js.crossOrigin = "anonymous";
+
   js.onload = cb;
   document.head.appendChild(js);
 }
