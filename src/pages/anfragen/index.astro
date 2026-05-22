@@ -1,0 +1,198 @@
+---
+import Base from "../../layouts/Base.astro";
+const siteUrl   = "https://www.rausgucken.de";
+const canonical = `${siteUrl}/anfragen/`;
+---
+
+<Base
+  title="Stadt oder Quelle vorschlagen | rausgucken.de"
+  description="Vermissen Sie Ihre Stadt oder eine Veranstaltungsquelle? Schreiben Sie uns — wir erweitern rausgucken.de laufend."
+  canonical={canonical}
+  noindex={true}
+>
+  <div class="anfragen-page">
+
+    <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+      <a href="/">rausgucken.de</a> › <span aria-current="page">Stadt vorschlagen</span>
+    </nav>
+
+    <h1>Stadt oder Quelle vorschlagen</h1>
+    <p class="intro">
+      Ihre Stadt ist noch nicht dabei? Kennen Sie eine Veranstaltungsseite, die wir
+      aufnehmen sollten? Schreiben Sie uns — wir prüfen jeden Hinweis.
+    </p>
+
+    <section class="form-section" aria-labelledby="form-heading">
+      <h2 id="form-heading">Anfrage senden</h2>
+
+      <div data-fs-success class="fs-success" hidden>
+        <span>✅</span>
+        <p>Danke für Ihren Hinweis! Wir melden uns so schnell wie möglich.</p>
+      </div>
+      <div data-fs-error class="fs-error" hidden></div>
+
+      <form
+        class="contact-form"
+        id="anfragen-form"
+        method="POST"
+        action="https://formspree.io/f/mzdwgdzr"
+        aria-label="Stadt oder Quelle vorschlagen"
+      >
+        <!-- City / institution name -->
+        <div class="form-group">
+          <label for="city-name">Stadt oder Institution <span class="required">*</span></label>
+          <input
+            type="text"
+            id="city-name"
+            name="stadt_oder_institution"
+            placeholder="z. B. Heilbronn, Museum XY"
+            required
+            aria-required="true"
+            autocomplete="off"
+          />
+          <span data-fs-error="stadt_oder_institution" class="field-error"></span>
+        </div>
+
+        <!-- Website URL -->
+        <div class="form-group">
+          <label for="website-url">Website / Veranstaltungsseite</label>
+          <input
+            type="url"
+            id="website-url"
+            name="website_url"
+            placeholder="https://www.beispiel.de/veranstaltungen"
+            autocomplete="off"
+          />
+          <span class="field-hint">Optional — hilft uns, die richtige Seite zu finden</span>
+        </div>
+
+        <!-- Additional sources -->
+        <div class="form-group">
+          <label for="weitere-quellen">Weitere Veranstaltungsquellen</label>
+          <textarea
+            id="weitere-quellen"
+            name="weitere_quellen"
+            rows="3"
+            placeholder="Weitere Links oder Institutionen, die Sie kennen (optional)"
+          ></textarea>
+        </div>
+
+        <!-- Contact (optional) -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="req-name">Ihr Name</label>
+            <input type="text" id="req-name" name="name" placeholder="Optional" autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="req-email">E-Mail</label>
+            <input type="email" id="req-email" name="email" placeholder="Optional — für Rückmeldung" autocomplete="email" />
+            <span data-fs-error="email" class="field-error"></span>
+          </div>
+        </div>
+
+        <!-- Notes -->
+        <div class="form-group">
+          <label for="req-notes">Anmerkungen</label>
+          <textarea
+            id="req-notes"
+            name="anmerkungen"
+            rows="3"
+            placeholder="Gibt es etwas Besonderes, das wir wissen sollten?"
+          ></textarea>
+        </div>
+
+        <!-- Honeypot -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true" />
+        <input type="hidden" name="_subject" value="Neue Stadtanfrage — rausgucken.de" />
+
+        <button type="submit" class="btn-submit" data-fs-submit-btn>
+          Anfrage senden →
+        </button>
+      </form>
+    </section>
+
+    <p class="back-link"><a href="/">← Zurück zur Startseite</a></p>
+  </div>
+
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+  <script is:inline>
+    window.formspree = window.formspree || function() { (formspree.q = formspree.q || []).push(arguments); };
+    document.addEventListener("DOMContentLoaded", function() {
+      formspree('initForm', { formElement: '#anfragen-form', formId: 'mzdwgdzr' });
+      // Pre-fill city from URL param e.g. /anfragen/?stadt=Heilbronn
+      const params = new URLSearchParams(window.location.search);
+      const stadt = params.get("stadt");
+      if (stadt) {
+        const input = document.getElementById("city-name");
+        if (input) input.value = stadt;
+      }
+    });
+  </script>
+</Base>
+
+<style>
+  .anfragen-page { max-width: 640px; margin: 0 auto; }
+
+  .breadcrumb { font-size: 0.82rem; color: var(--text-60); margin-bottom: 2rem; }
+  .breadcrumb a { color: var(--text-60); }
+  .breadcrumb a:hover { color: var(--coral); }
+
+  h1 { font-size: clamp(1.6rem, 4vw, 2rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
+  h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem; }
+
+  .intro { font-size: 0.95rem; color: var(--text-60); line-height: 1.7; margin-bottom: 2rem; }
+
+  .form-section {
+    background: var(--surface-card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow-card);
+    margin-bottom: 2rem;
+  }
+
+  .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+
+  .form-group { display: flex; flex-direction: column; gap: 0.3rem; }
+
+  label { font-size: 0.78rem; font-weight: 600; color: var(--text-60); text-transform: uppercase; letter-spacing: 0.05em; }
+  .required { color: var(--coral); }
+
+  input[type="text"], input[type="email"], input[type="url"], textarea {
+    padding: 0.7rem 0.85rem; border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm); font-family: var(--font-body);
+    font-size: 0.9rem; background: var(--bg); color: var(--text);
+    transition: border-color 150ms; width: 100%; box-sizing: border-box;
+    min-height: 44px;
+  }
+  textarea { min-height: 90px; resize: vertical; }
+  input:focus, textarea:focus { outline: none; border-color: var(--coral); box-shadow: inset 0 0 0 1px var(--coral); }
+
+  .field-hint { font-size: 0.75rem; color: var(--text-30); }
+  .field-error { font-size: 0.78rem; color: #e55a4d; }
+
+  .fs-success {
+    display: flex; align-items: center; gap: 0.75rem;
+    background: var(--sage-light); border: 1px solid var(--sage);
+    border-radius: var(--radius-sm); padding: 1rem; margin-bottom: 1rem;
+    font-size: 0.95rem; color: var(--text);
+  }
+  .fs-error {
+    background: rgba(229,90,77,0.1); border: 1px solid rgba(229,90,77,0.3);
+    border-radius: var(--radius-sm); padding: 0.75rem; margin-bottom: 1rem;
+    font-size: 0.88rem; color: #e55a4d;
+  }
+
+  .btn-submit {
+    align-self: flex-start; display: inline-flex; align-items: center;
+    height: 48px; padding: 0 1.5rem; background: var(--coral); color: var(--text);
+    font-family: var(--font-body); font-size: 0.9rem; font-weight: 600;
+    border: none; border-radius: var(--radius-sm); cursor: pointer; transition: background 150ms;
+  }
+  .btn-submit:hover { background: var(--coral-dark); }
+  .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  .back-link { font-size: 0.88rem; }
+  .back-link a { color: var(--text-60); }
+  .back-link a:hover { color: var(--coral); }
+</style>
