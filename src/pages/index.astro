@@ -93,11 +93,6 @@ import Base from "../layouts/Base.astro";
 
     </section>
 
-    <!-- ── Default: covered cities (no selection yet) ────────────────────── -->
-    <div id="covered-list" class="covered-list">
-      <p class="section-label">Städte mit Veranstaltungen</p>
-      <div id="covered-cities"></div>
-    </div>
 
   </div>
 </Base>
@@ -115,7 +110,6 @@ import Base from "../layouts/Base.astro";
   src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"
   integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWoFvW8V8+FBfLpTHkS8sON5uIz9TjV8YmLjsHJUJMpIFdGExQv3Q=="
   crossorigin="anonymous"
-  defer
 ></script>
 
 <script>
@@ -142,8 +136,7 @@ const mapCountBadge  = document.getElementById("map-count-badge");
 const slider         = document.getElementById("radius-slider");
 const radiusValEl    = document.getElementById("radius-val");
 const cityListEl     = document.getElementById("city-list");
-const coveredList    = document.getElementById("covered-list");
-const coveredCities  = document.getElementById("covered-cities");
+
 
 // ── Load cities + render default covered list ─────────────────────────────────
 async function init() {
@@ -154,19 +147,10 @@ async function init() {
     console.warn("[homepage] Failed to load cities.json", e);
     return;
   }
-  renderCoveredList();
+  // covered list removed
 }
 
-function renderCoveredList() {
-  const covered = CITIES.filter(c => c.covered && c.event_count > 0)
-    .sort((a, b) => b.event_count - a.event_count);
-  coveredCities.innerHTML = covered.map(c =>
-    `<div class="city-row">
-      <a href="${c.url}">${c.name}</a>
-      <span class="city-row-meta">${c.event_count} Events</span>
-    </div>`
-  ).join("");
-}
+
 
 // ── City selection ────────────────────────────────────────────────────────────
 function selectCity(city) {
@@ -177,7 +161,6 @@ function selectCity(city) {
 
   // Show map section, hide default covered list
   mapSection.hidden = false;
-  coveredList.hidden = true;
 
   // Smooth scroll
   mapSection.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -198,9 +181,9 @@ function selectCity(city) {
 
 // ── Leaflet map init ──────────────────────────────────────────────────────────
 function initMap(city) {
-  // Wait for Leaflet to be available (loaded via defer)
+  // Poll until Leaflet is available (CDN load timing)
   if (!window.L) {
-    setTimeout(() => initMap(city), 100);
+    setTimeout(() => initMap(city), 50);
     return;
   }
   const L = window.L;
@@ -548,12 +531,7 @@ init();
   }
   .combined-btn:hover { background: var(--coral-dark); }
 
-  /* Default covered list */
-  .covered-list { margin-top: 2rem; }
-  .section-label {
-    font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.08em; color: var(--text-60); margin-bottom: 0.75rem;
-  }
+
 
   @media (max-width: 600px) {
     .leaflet-map { height: 260px; }
