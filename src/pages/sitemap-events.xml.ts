@@ -7,6 +7,9 @@ import tammEvents from "../../public/data/tamm/events-current.json";
 import bietigheimEvents from "../../public/data/bietigheim/events-current.json";
 import aspergEvents from "../../public/data/asperg/events-current.json";
 import kornwestheimEvents from "../../public/data/kornwestheim/events-current.json";
+import markgroeningenEvents from "../../public/data/markgroeningen/events-current.json";
+import moegligenEvents from "../../public/data/moeglingen/events-current.json";
+import freibergEvents from "../../public/data/freiberg/events-current.json";
 
 export async function GET() {
   const siteUrl = "https://www.rausgucken.de";
@@ -21,6 +24,9 @@ export async function GET() {
     { city: "bietigheim",  events: bietigheimEvents as any[]  },
     { city: "asperg",      events: aspergEvents as any[]      },
     { city: "kornwestheim", events: kornwestheimEvents as any[] },
+    { city: "markgroeningen", events: markgroeningenEvents as any[] },
+    { city: "moeglingen",     events: moegligenEvents as any[]     },
+    { city: "freiberg",       events: freibergEvents as any[]      },
   ];
 
   const urls = cityEvents.flatMap(({ city, events }) =>
