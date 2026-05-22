@@ -120,6 +120,7 @@ const organizer = SOURCE_ORGANIZERS[ev.source] ?? {
 
 // ── Calendar export URLs ─────────────────────────────────────────────────────
 function buildGoogleCalendarUrl(ev) {
+  if (!ev || !ev.date_start) return '';
   const base = 'https://calendar.google.com/calendar/render?action=TEMPLATE';
   const fmt = (iso, time) => {
     if (!iso) return '';
