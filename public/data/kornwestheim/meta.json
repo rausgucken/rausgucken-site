@@ -1,8 +1,25 @@
 {
+  "scraped_at": "2026-05-23T02:41:55.925350+02:00",
   "city": "kornwestheim",
-  "scraped_at": "2026-05-22T05:54:10.974116+00:00",
-  "event_count": 0,
+  "event_count": 188,
+  "flagged_count": 0,
+  "expired_count": 0,
+  "sources_scraped": [
+    "kornwestheim"
+  ],
+  "source_counts": {
+    "kornwestheim": 188
+  },
   "sources_failed": [],
-  "disclaimer": "Alle Angaben ohne Gewähr.",
-  "data_hash": "bootstrap"
+  "data_hash": "c49ea8e13880f03a",
+  "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
+  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 23.05.2026. Bitte Originalseite pruefen.",
+  "pipeline_version": "multi-city-v2",
+  "source_health": {
+    "kornwestheim": 1.0
+  },
+  "source_event_counts": {
+    "kornwestheim": 188
+  },
+  "count_drift_warnings": {}
 }
