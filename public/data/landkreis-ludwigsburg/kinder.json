@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-05-23T06:00:02.006495+02:00",
-  "event_count": 369,
+  "generated_at": "2026-05-24T03:51:05.487474+02:00",
+  "event_count": 374,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -78,37 +78,6 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne"
-    },
-    {
-      "id": "39c5a7453ac735c8",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-05-23",
-      "date_end": null,
-      "time": "10:30 - 11:30 Uhr",
-      "description": "In der Stadtbücherei Asperg werden Geschichten vorgelesen, bei denen die Bilder groß auf dem Leinwandschirm zu sehen sind. Nach der Sitzung können Kinder und Erwachsene gemeinsam malen oder basteln. Samstags um 10:30 Uhr verbindet dies eine kurze literarische Session mit kreativer Aktivität.",
-      "location": "Stadtbücherei Asperg, Asperg",
-      "price": null,
-      "age_min": 4,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Familie"
-      ],
-      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen/zmdetail_43856759/index.html",
-      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen/zmdetail_43856759/index.html",
-      "source": "asperg_veranstaltungen",
-      "city": "asperg",
-      "slug": "bilderbuchkino-2026-05-23-aspe",
-      "weekdays": [
-        6
-      ],
-      "scraped_at": "2026-05-20T02:15:08.921295+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": true,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Asperg"
     },
     {
       "id": "1d66dc6be1790d44",
@@ -310,6 +279,40 @@
       "source_label": "Kunstschule Labyrinth"
     },
     {
+      "id": "999d8a382dfb426c",
+      "title": "[Fällt aus!] Ferienworkshop: Peppa Wutz - Deine Welt im Schuhkarton für Kinder ab 4 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "date_end": "2026-05-29",
+      "time": "09:30-12:30 Uhr",
+      "description": "In diesem Ferienworkshop bauen Kinder ab 4 Jahren gemeinsam mit Erwachsenen eine Welt im Schuhkarton nach dem Muster von Peppa Wutz. Das Kunstzentrum Karlskaserne bietet ein familienfreundliches Format an.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "68,50 Euro",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523250640556/FlltausFerienworkshopPeppaWutzDeineWeltimSchuhkartonfrKinderab4JahreninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523250640556/FlltausFerienworkshopPeppaWutzDeineWeltimSchuhkartonfrKinderab4JahreninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "faellt-aus-ferienworkshop-peppa-wutz---deine-welt-im-schuhkarton-fuer-kinder-ab-4-jahren",
+      "weekdays": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-05-20T02:08:00.683332+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne"
+    },
+    {
       "id": "795751cb7d572166",
       "title": "Ferienworkshop: Malen mit Naturmaterialien für Kinder ab 9 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
@@ -335,42 +338,6 @@
         5
       ],
       "scraped_at": "2026-05-20T02:08:01.848718+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne"
-    },
-    {
-      "id": "81121dbb08ffd922",
-      "title": "Ferienworkshop: Contemporary Kids für Kinder von 6-9 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "date_end": "2026-05-29",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder von 6 bis 9 Jahren die Grundlagen des Contemporary-Tanz. Mit spielerischer Methode entdecken sie Bewegungen und kreativen Ausdruck im Kunstzentrum Karlskaserne.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "68,50 Euro",
-      "age_min": 6,
-      "age_max": null,
-      "tags": [
-        "Kinder",
-        "Tanz",
-        "Workshop",
-        "Familie"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523250640560/FerienworkshopContemporaryKidsfrKindervon69JahreninLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523250640560/FerienworkshopContemporaryKidsfrKindervon69JahreninLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "ferienworkshop-contemporary-kids-fuer-kinder-von-6-9-jahren-in-ludwigsburg-2026-05-26-karl",
-      "weekdays": [
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-05-20T02:07:56.032931+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -480,67 +447,31 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
-      "id": "999d8a382dfb426c",
-      "title": "[Fällt aus!] Ferienworkshop: Peppa Wutz - Deine Welt im Schuhkarton für Kinder ab 4 Jahren in Ludwigsburg",
+      "id": "ffdec424f3a07986",
+      "title": "Ferienworkshop: Wollene Wundertiere für Kinder ab 8 Jahren in Ludwigsburg",
       "date_start": "2026-05-26",
       "date_end": "2026-05-29",
       "time": "09:30-12:30 Uhr",
-      "description": "In diesem Ferienworkshop bauen Kinder ab 4 Jahren gemeinsam mit Erwachsenen eine Welt im Schuhkarton nach dem Muster von Peppa Wutz. Das Kunstzentrum Karlskaserne bietet ein familienfreundliches Format an.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "68,50 Euro",
-      "age_min": 4,
-      "age_max": null,
-      "tags": [
-        "Kinder",
-        "Familie"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523250640556/FlltausFerienworkshopPeppaWutzDeineWeltimSchuhkartonfrKinderab4JahreninLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523250640556/FlltausFerienworkshopPeppaWutzDeineWeltimSchuhkartonfrKinderab4JahreninLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "faellt-aus-ferienworkshop-peppa-wutz---deine-welt-im-schuhkarton-fuer-kinder-ab-4-jahren",
-      "weekdays": [
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-05-20T02:08:00.683332+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne"
-    },
-    {
-      "id": "bb13ea6c6e3f5296",
-      "title": "Ferienworkshop: Magisches Licht und Traumhafter Schatten für Kinder ab 6 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-05-26",
-      "date_end": "2026-05-29",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder ab 6 Jahren das Spiel mit Licht und Schatten. An der Seite einer Dozentin entstehen magische Bilder und Geschichten an der Kunstschule Labyrinth in Bietigheim-Bissingen.",
+      "description": "In diesem Ferienworkshop lernen Kinder ab 8 Jahren, wollebewusst Wundertiere zu formen und zu basteln. Unter Anleitung durch die Künstlerinnen der Kunstzentrum Karlskaserne entstehen einzigartige Werke von Händen junger Talente.",
       "location": "Kunstschule Labyrinth",
       "price": null,
-      "age_min": 6,
+      "age_min": 8,
       "age_max": null,
       "tags": [
-        "Kinder",
-        "Workshop",
-        "Familie"
+        "Kinder"
       ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640553/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640553/index.html",
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640557/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640557/index.html",
       "source": "labyrinth",
       "city": "ludwigsburg",
-      "slug": "ferienworkshop-magisches-licht-und-traumhafter-schatten-fuer-kinder-ab-6-jahren-in",
+      "slug": "ferienworkshop-wollene-wundertiere-fuer-kinder-ab-8-jahren-in-ludwigsburg-2026-05-26-laby",
       "weekdays": [
         2,
         3,
         4,
         5
       ],
-      "scraped_at": "2026-05-22T16:13:59.616867+02:00",
+      "scraped_at": "2026-05-22T16:13:59.618388+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -576,6 +507,110 @@
         5
       ],
       "scraped_at": "2026-05-22T16:13:59.617427+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstschule Labyrinth"
+    },
+    {
+      "id": "90742dfc368e4d25",
+      "title": "[Fällt aus!] Ferienworkshop: Peppa Wutz - Deine Welt im Schuhkarton für Kinder ab 4 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "date_end": "2026-05-29",
+      "time": "09:30-12:30 Uhr",
+      "description": "In diesem Ferienworkshop lernen Kinder ab 4 Jahren, mit Schuhkartons die Figur Peppa Wutz und ihre Welt zu gestalten. Die kreativen Prozesse werden begleitet von Fachleuten.",
+      "location": "Kunstschule Labyrinth",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640556/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640556/index.html",
+      "source": "labyrinth",
+      "city": "ludwigsburg",
+      "slug": "faellt-aus-ferienworkshop-peppa-wutz---deine-welt-im-schuhkarton-fuer-kinder-ab-4-jahren-1",
+      "weekdays": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-05-22T16:13:59.618576+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstschule Labyrinth"
+    },
+    {
+      "id": "2732e1a994a98ea2",
+      "title": "Ferienworkshop: Hip-Hop Streetdance Kids für Kinder von 7-9 Jahren in Ludwigsburg",
+      "date_start": "2026-05-26",
+      "date_end": "2026-05-29",
+      "time": "09:30-12:30 Uhr",
+      "description": "In diesem Workshop lernen Kinder zwischen 7 und 9 Jahren die Grundlagen des Hip-Hop Streetdance. Mit professioneller Betreuung entdecken sie die Bewegungen der Stadt.",
+      "location": "Kunstschule Labyrinth",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640559/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640559/index.html",
+      "source": "labyrinth",
+      "city": "ludwigsburg",
+      "slug": "ferienworkshop-hip-hop-streetdance-kids-fuer-kinder-von-7-9-jahren-in-ludwigsburg-2026-05-1",
+      "weekdays": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-05-22T16:13:59.618177+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstschule Labyrinth"
+    },
+    {
+      "id": "bb13ea6c6e3f5296",
+      "title": "Ferienworkshop: Magisches Licht und Traumhafter Schatten für Kinder ab 6 Jahren in Bietigheim-Bissingen",
+      "date_start": "2026-05-26",
+      "date_end": "2026-05-29",
+      "time": "09:30-12:30 Uhr",
+      "description": "In diesem Workshop lernen Kinder ab 6 Jahren das Spiel mit Licht und Schatten. An der Seite einer Dozentin entstehen magische Bilder und Geschichten an der Kunstschule Labyrinth in Bietigheim-Bissingen.",
+      "location": "Kunstschule Labyrinth",
+      "price": null,
+      "age_min": 6,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640553/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640553/index.html",
+      "source": "labyrinth",
+      "city": "ludwigsburg",
+      "slug": "ferienworkshop-magisches-licht-und-traumhafter-schatten-fuer-kinder-ab-6-jahren-in",
+      "weekdays": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-05-22T16:13:59.616867+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -649,108 +684,6 @@
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": true,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstschule Labyrinth"
-    },
-    {
-      "id": "2732e1a994a98ea2",
-      "title": "Ferienworkshop: Hip-Hop Streetdance Kids für Kinder von 7-9 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "date_end": "2026-05-29",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder zwischen 7 und 9 Jahren die Grundlagen des Hip-Hop Streetdance. Mit professioneller Betreuung entdecken sie die Bewegungen der Stadt.",
-      "location": "Kunstschule Labyrinth",
-      "price": null,
-      "age_min": 4,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Workshop",
-        "Familie"
-      ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640559/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640559/index.html",
-      "source": "labyrinth",
-      "city": "ludwigsburg",
-      "slug": "ferienworkshop-hip-hop-streetdance-kids-fuer-kinder-von-7-9-jahren-in-ludwigsburg-2026-05-1",
-      "weekdays": [
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-05-22T16:13:59.618177+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstschule Labyrinth"
-    },
-    {
-      "id": "ffdec424f3a07986",
-      "title": "Ferienworkshop: Wollene Wundertiere für Kinder ab 8 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "date_end": "2026-05-29",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Ferienworkshop lernen Kinder ab 8 Jahren, wollebewusst Wundertiere zu formen und zu basteln. Unter Anleitung durch die Künstlerinnen der Kunstzentrum Karlskaserne entstehen einzigartige Werke von Händen junger Talente.",
-      "location": "Kunstschule Labyrinth",
-      "price": null,
-      "age_min": 8,
-      "age_max": null,
-      "tags": [
-        "Kinder"
-      ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640557/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640557/index.html",
-      "source": "labyrinth",
-      "city": "ludwigsburg",
-      "slug": "ferienworkshop-wollene-wundertiere-fuer-kinder-ab-8-jahren-in-ludwigsburg-2026-05-26-laby",
-      "weekdays": [
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-05-22T16:13:59.618388+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstschule Labyrinth"
-    },
-    {
-      "id": "90742dfc368e4d25",
-      "title": "[Fällt aus!] Ferienworkshop: Peppa Wutz - Deine Welt im Schuhkarton für Kinder ab 4 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "date_end": "2026-05-29",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Ferienworkshop lernen Kinder ab 4 Jahren, mit Schuhkartons die Figur Peppa Wutz und ihre Welt zu gestalten. Die kreativen Prozesse werden begleitet von Fachleuten.",
-      "location": "Kunstschule Labyrinth",
-      "price": null,
-      "age_min": 4,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Familie"
-      ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640556/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523250640556/index.html",
-      "source": "labyrinth",
-      "city": "ludwigsburg",
-      "slug": "faellt-aus-ferienworkshop-peppa-wutz---deine-welt-im-schuhkarton-fuer-kinder-ab-4-jahren-1",
-      "weekdays": [
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-05-22T16:13:59.618576+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Kunstschule Labyrinth"
@@ -3443,7 +3376,7 @@
       "date_start": "2026-06-25",
       "date_end": "2026-06-25",
       "time": "15:30 - 17:00",
-      "description": "In diesem Workshop lernen Eltern und Kinder, Roboter zu programmieren. Mit CAD-Software und 3D-Druck werden grundlegende Konzepte vermittelt. Der Workshop findet in Ludwigsburg statt.",
+      "description": "In diesem Workshop lernen Kinder und Eltern, wie man Roboter programmieren kann, mit Fokus auf CAD und 3D-Druck. Einzigartige Gelegenheit für Familien, gemeinsam zu kreativ zu sein.",
       "location": "Stadtbibliothek Ludwigsburg",
       "price": "Kostenlos",
       "age_min": 4,
@@ -3461,7 +3394,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-05-22T16:09:33.322603+02:00",
+      "scraped_at": "2026-05-24T02:11:24.356476+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3620,6 +3553,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Mediathek im KUBUS Remseck"
+    },
+    {
+      "id": "691173904c17a73f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-06-27",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder unter Anleitung von Museumsassistenten ihre kreativen Fähigkeiten entfalten. Materialien und Themen basieren auf den Sammlungen des Museums.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806685",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806685",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-06-27-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-05-24T02:00:04.128491+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "0c3c720e54359536",
@@ -5194,6 +5159,38 @@
       "source_label": "Mediathek im KUBUS Remseck"
     },
     {
+      "id": "e03dcd037732fb3b",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-07-25",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder unter Anleitung von Museumsassistenten ihre kreativen Fähigkeiten entfalten. Thema des Tages: Archäologie.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806684",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806684",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-07-25-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-05-24T02:00:04.129763+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
+    },
+    {
       "id": "9ca58150abcb4f04",
       "title": "Bilderbuchsamstag",
       "date_start": "2026-07-25",
@@ -5351,6 +5348,41 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
+      "id": "a7b61c84174ea2e2",
+      "title": "Sommerferienworkshop: Ein gemauerter Turm aus Ton in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "date_end": "2026-08-02",
+      "time": "09:30-12:30 Uhr",
+      "description": "In diesem Workshop lernen Kinder ab 6 Jahren, mit Ton ein gemauerter Turm zu formen. Die Teilnehmer genießen kreative Freude und Unterstützung durch pädagogisch ausgebildete Anwenderinnen im Kunstzentrum Karlskaserne.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "68,50 Euro",
+      "age_min": 6,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167007/SommerferienworkshopEingemauerterTurmausToninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167007/SommerferienworkshopEingemauerterTurmausToninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-ein-gemauerter-turm-aus-ton-in-ludwigsburg-2026-07-30-karl",
+      "weekdays": [
+        0,
+        4,
+        5,
+        6
+      ],
+      "scraped_at": "2026-05-20T02:08:52.339916+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne"
+    },
+    {
       "id": "bc0ef9368844bf11",
       "title": "Sommerferienworkshop: Die Wunderwelt der Stempel und Schablonen in Ludwigsburg",
       "date_start": "2026-07-30",
@@ -5417,73 +5449,71 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
-      "id": "17b49e662773b4b1",
-      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
+      "id": "7c570bb378864aa8",
+      "title": "Sommerferienworkshop: T-Rex-Alarm in Ludwigsburg",
       "date_start": "2026-07-30",
       "date_end": "2026-08-01",
       "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder ab 6 Jahren, farbige Ytong zu modellieren und Skulpturen zu erstellen. Die Veranstaltung richtet sich an Familien und bietet kreative Tätigkeiten im Kunstzentrum Karlskaserne.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "57,00 Euro",
-      "age_min": 6,
-      "age_max": null,
-      "tags": [
-        "Kinder",
-        "Familie",
-        "Workshop"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254146251/SommerferienworkshopFarbigeYtongSkulpturinLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254146251/SommerferienworkshopFarbigeYtongSkulpturinLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-farbige-ytong-skulptur-in-ludwigsburg-2026-07-30-karl",
-      "weekdays": [
-        4,
-        5,
-        6
-      ],
-      "scraped_at": "2026-05-20T02:08:50.889569+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne"
-    },
-    {
-      "id": "a7b61c84174ea2e2",
-      "title": "Sommerferienworkshop: Ein gemauerter Turm aus Ton in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "date_end": "2026-08-02",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder ab 6 Jahren, mit Ton ein gemauerter Turm zu formen. Die Teilnehmer genießen kreative Freude und Unterstützung durch pädagogisch ausgebildete Anwenderinnen im Kunstzentrum Karlskaserne.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "68,50 Euro",
-      "age_min": 6,
-      "age_max": null,
+      "description": "In diesem Workshop lernen Kinder, wie man mit Stift und Farbe ein Tyrannosaurus Rex zeichnet. Das Kunstzentrum Karlskaserne bietet einen kreativen Tag für die Sommerferien an.",
+      "location": "Kunstschule Labyrinth",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
       "tags": [
         "Kinder",
         "Workshop",
         "Familie"
       ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167007/SommerferienworkshopEingemauerterTurmausToninLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167007/SommerferienworkshopEingemauerterTurmausToninLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254138858/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254138858/index.html",
+      "source": "labyrinth",
       "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-ein-gemauerter-turm-aus-ton-in-ludwigsburg-2026-07-30-karl",
+      "slug": "sommerferienworkshop-t-rex-alarm-in-ludwigsburg-2026-07-30-laby",
       "weekdays": [
-        0,
         4,
         5,
         6
       ],
-      "scraped_at": "2026-05-20T02:08:52.339916+02:00",
+      "scraped_at": "2026-05-22T16:13:59.624816+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne"
+      "source_label": "Kunstschule Labyrinth"
+    },
+    {
+      "id": "0d56bc09451119d9",
+      "title": "Sommerferienworkshop: Schule der magischen Tiere in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "date_end": "2026-08-01",
+      "time": "09:30-12:30 Uhr",
+      "description": "In diesem Sommerferienworkshop lernen Kinder im Kunstzentrum Karlskaserne die magischen Tiere kennen. Mit hands On-Aktivitäten entdecken sie die Welt der Fantasie und Kreativität.",
+      "location": "Kunstschule Labyrinth",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254138859/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254138859/index.html",
+      "source": "labyrinth",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-schule-der-magischen-tiere-in-ludwigsburg-2026-07-30-laby",
+      "weekdays": [
+        4,
+        5,
+        6
+      ],
+      "scraped_at": "2026-05-22T16:13:59.624635+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstschule Labyrinth"
     },
     {
       "id": "7cfcc0330bbfc72a",
@@ -5588,41 +5618,6 @@
       "source_label": "Kunstschule Labyrinth"
     },
     {
-      "id": "c4838059d0d6674d",
-      "title": "Sommerferienworkshop: Ein gemauerter Turm aus Ton in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "date_end": "2026-08-02",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder und Jugendliche, einen gemauerten Turm aus Ton zu bauen. Unter Anleitung durch den Dozenten werden sie ihre kreativen Fähigkeiten schult.",
-      "location": "Kunstschule Labyrinth",
-      "price": null,
-      "age_min": 4,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Workshop",
-        "Familie"
-      ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254167007/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254167007/index.html",
-      "source": "labyrinth",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-ein-gemauerter-turm-aus-ton-in-ludwigsburg-2026-07-30-laby",
-      "weekdays": [
-        0,
-        4,
-        5,
-        6
-      ],
-      "scraped_at": "2026-05-22T16:13:59.624307+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstschule Labyrinth"
-    },
-    {
       "id": "4c0ca35e5b478de8",
       "title": "Sommerferienworkshop: Die Wunderwelt der Stempel und Schablonen in Ludwigsburg",
       "date_start": "2026-07-30",
@@ -5657,45 +5652,12 @@
       "source_label": "Kunstschule Labyrinth"
     },
     {
-      "id": "0d56bc09451119d9",
-      "title": "Sommerferienworkshop: Schule der magischen Tiere in Ludwigsburg",
+      "id": "c4838059d0d6674d",
+      "title": "Sommerferienworkshop: Ein gemauerter Turm aus Ton in Ludwigsburg",
       "date_start": "2026-07-30",
-      "date_end": "2026-08-01",
+      "date_end": "2026-08-02",
       "time": "09:30-12:30 Uhr",
-      "description": "In diesem Sommerferienworkshop lernen Kinder im Kunstzentrum Karlskaserne die magischen Tiere kennen. Mit hands On-Aktivitäten entdecken sie die Welt der Fantasie und Kreativität.",
-      "location": "Kunstschule Labyrinth",
-      "price": null,
-      "age_min": 4,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Familie"
-      ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254138859/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254138859/index.html",
-      "source": "labyrinth",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-schule-der-magischen-tiere-in-ludwigsburg-2026-07-30-laby",
-      "weekdays": [
-        4,
-        5,
-        6
-      ],
-      "scraped_at": "2026-05-22T16:13:59.624635+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstschule Labyrinth"
-    },
-    {
-      "id": "7c570bb378864aa8",
-      "title": "Sommerferienworkshop: T-Rex-Alarm in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "date_end": "2026-08-01",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder, wie man mit Stift und Farbe ein Tyrannosaurus Rex zeichnet. Das Kunstzentrum Karlskaserne bietet einen kreativen Tag für die Sommerferien an.",
+      "description": "In diesem Workshop lernen Kinder und Jugendliche, einen gemauerten Turm aus Ton zu bauen. Unter Anleitung durch den Dozenten werden sie ihre kreativen Fähigkeiten schult.",
       "location": "Kunstschule Labyrinth",
       "price": null,
       "age_min": 4,
@@ -5705,17 +5667,18 @@
         "Workshop",
         "Familie"
       ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254138858/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254138858/index.html",
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254167007/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254167007/index.html",
       "source": "labyrinth",
       "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-t-rex-alarm-in-ludwigsburg-2026-07-30-laby",
+      "slug": "sommerferienworkshop-ein-gemauerter-turm-aus-ton-in-ludwigsburg-2026-07-30-laby",
       "weekdays": [
+        0,
         4,
         5,
         6
       ],
-      "scraped_at": "2026-05-22T16:13:59.624816+02:00",
+      "scraped_at": "2026-05-22T16:13:59.624307+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5885,7 +5848,7 @@
       ],
       "scraped_at": "2026-05-23T02:15:04.057254+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -6115,6 +6078,40 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
+      "id": "4b3a0c60963746d2",
+      "title": "Sommerferienworkshop: Contemporary Dance Camp in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "date_end": "2026-08-07",
+      "time": "09:30-12:30 Uhr",
+      "description": "In diesem Contemporary Dance Camp lernen Kinder und Jugendliche ab 10 Jahren verschiedene Tanztechniken. Das Kunstzentrum Karlskaserne bietet ein kreatives Umfeld für die Teilnehmer.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 10,
+      "age_max": null,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167013/SommerferienworkshopContemporaryDanceCampinLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167013/SommerferienworkshopContemporaryDanceCampinLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-contemporary-dance-camp-in-ludwigsburg-2026-08-03-karl",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-05-20T02:09:05.683083+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne"
+    },
+    {
       "id": "ee891b04e633d89b",
       "title": "Sommerferienworkshop: Die Schule der magischen Tiere in Ludwigsburg",
       "date_start": "2026-08-03",
@@ -6143,41 +6140,6 @@
         5
       ],
       "scraped_at": "2026-05-20T02:09:06.881735+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne"
-    },
-    {
-      "id": "2c8c2cc616088433",
-      "title": "Sommerferienworkshop: Ein Schattentheater – Spiel mit Licht und Schatten in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "date_end": "2026-08-07",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder ab 8 Jahren das Schattentheater. Mit Licht und Schatten entstehen spannende Geschichten. Das Kunstzentrum Karlskaserne bietet die Einrichtung an.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 8,
-      "age_max": null,
-      "tags": [
-        "Kinder",
-        "Workshop"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167016/SommerferienworkshopEinSchattentheaterSpielmitLichtundSchatteninLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167016/SommerferienworkshopEinSchattentheaterSpielmitLichtundSchatteninLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-ein-schattentheater-spiel-mit-licht-und-schatten-in-ludwigsburg-2026",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-05-20T02:09:03.052303+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6285,40 +6247,6 @@
         5
       ],
       "scraped_at": "2026-05-20T02:09:00.428986+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne"
-    },
-    {
-      "id": "4b3a0c60963746d2",
-      "title": "Sommerferienworkshop: Contemporary Dance Camp in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "date_end": "2026-08-07",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Contemporary Dance Camp lernen Kinder und Jugendliche ab 10 Jahren verschiedene Tanztechniken. Das Kunstzentrum Karlskaserne bietet ein kreatives Umfeld für die Teilnehmer.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 10,
-      "age_max": null,
-      "tags": [
-        "Kinder"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167013/SommerferienworkshopContemporaryDanceCampinLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167013/SommerferienworkshopContemporaryDanceCampinLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-contemporary-dance-camp-in-ludwigsburg-2026-08-03-karl",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-05-20T02:09:05.683083+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6460,6 +6388,40 @@
       "scraped_at": "2026-05-20T02:09:11.739737+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne"
+    },
+    {
+      "id": "11acdd44ad51d09d",
+      "title": "Sommerferienworkshop: Tiere, die es gar nicht gibt! aus Ton in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "date_end": "2026-08-06",
+      "time": "13:30-16:30 Uhr",
+      "description": "In diesem Workshop lernen Kinder ab 8 Jahre, wie es Tiere gibt, die gar nicht existieren. Mit kreativer Malerei und Handwerkskunst entstehen originelle Kunstwerke unter Anleitung von Fachleuten.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "68,50 Euro",
+      "age_min": 7,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Workshop"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167006/SommerferienworkshopTieredieesgarnichtgibtausToninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167006/SommerferienworkshopTieredieesgarnichtgibtausToninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-tiere-die-es-gar-nicht-gibt-aus-ton-in-ludwigsburg-2026-08-03-karl",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "scraped_at": "2026-05-24T02:09:40.953887+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -6651,6 +6613,37 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg"
+    },
+    {
+      "id": "51a4f0cb4be13889",
+      "title": "Ferienworkshop Museumsbuch interaktiv",
+      "date_start": "2026-08-14",
+      "date_end": null,
+      "time": "10:00–12:00 Uhr",
+      "description": "In diesem interaktiven Ferienworkshop lernen Kinder und Jugendliche das Ludwigsburg Museum im MIK kennenzulernen. Mit verschiedenen Aktivitäten entdecken sie die Sammlungen im Museum auf eine unterhaltsame Weise.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523254372401",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523254372401",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "ferienworkshop-museumsbuch-interaktiv-2026-08-14-muse",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-05-24T02:00:04.130449+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "30d42141902b2bb5",
@@ -7156,6 +7149,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Bietigheim-Bissingen"
+    },
+    {
+      "id": "c48034e537af9ed5",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-08-29",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder unter Anleitung von Museumsleuten verschiedene kreative Arbeiten erledigen.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806683",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806683",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-08-29-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-05-24T02:00:04.130597+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "d4e3ca4741f455b7",
@@ -7716,6 +7741,36 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
+      "id": "412a38bbfbc19241",
+      "title": "Museumspause",
+      "date_start": "2026-09-02",
+      "date_end": null,
+      "time": "12:30–13:00 Uhr",
+      "description": "In diesem Museum bietet eine Pause mit Ausstellungsbetrachtung und interaktiven Stationen Familie und Gruppen Gelegenheit, kunstgeschichtliche Highlights näher zu erkunden.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806673",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806673",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "museumspause-2026-09-02-muse",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-05-24T02:00:04.130772+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
+    },
+    {
       "id": "d9fb4dfdcf49e473",
       "title": "Der Schatz des Herzogs",
       "date_start": "2026-09-02",
@@ -7899,6 +7954,41 @@
       "source_label": "Stadt Tamm"
     },
     {
+      "id": "11ca6706819a72a6",
+      "title": "Sommerferienworkshop: Hip Hop Streetdance Kids in Ludwigsburg",
+      "date_start": "2026-09-07",
+      "date_end": "2026-09-11",
+      "time": "09:30-12:30 Uhr",
+      "description": "In diesem Workshop lernen Kinder ab 8 Jahren Streetdance-Techniken des Hip Hop Stils. Unter Anleitung professioneller Tänzerinnen und -tänzer entdecken sie die Bewegungsmöglichkeiten auf der Karlskaserne.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 8,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Workshop"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139380/SommerferienworkshopHipHopStreetdanceKidsinLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139380/SommerferienworkshopHipHopStreetdanceKidsinLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-hip-hop-streetdance-kids-in-ludwigsburg-2026-09-07-karl",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-05-20T02:09:37.266395+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne"
+    },
+    {
       "id": "cfa7bbd3eb862ce8",
       "title": "Sommerferienworkshop: Ein verwunschener Feuerdrache in Ludwigsburg",
       "date_start": "2026-09-07",
@@ -7961,41 +8051,6 @@
         5
       ],
       "scraped_at": "2026-05-20T02:09:36.110317+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne"
-    },
-    {
-      "id": "11ca6706819a72a6",
-      "title": "Sommerferienworkshop: Hip Hop Streetdance Kids in Ludwigsburg",
-      "date_start": "2026-09-07",
-      "date_end": "2026-09-11",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder ab 8 Jahren Streetdance-Techniken des Hip Hop Stils. Unter Anleitung professioneller Tänzerinnen und -tänzer entdecken sie die Bewegungsmöglichkeiten auf der Karlskaserne.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 8,
-      "age_max": null,
-      "tags": [
-        "Kinder",
-        "Workshop"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139380/SommerferienworkshopHipHopStreetdanceKidsinLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139380/SommerferienworkshopHipHopStreetdanceKidsinLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-hip-hop-streetdance-kids-in-ludwigsburg-2026-09-07-karl",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-05-20T02:09:37.266395+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8661,6 +8716,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Bietigheim-Bissingen"
+    },
+    {
+      "id": "58f9d0028a99db0f",
+      "title": "Führung für Kinder auf dem Hohenasperg",
+      "date_start": "2026-09-13",
+      "date_end": null,
+      "time": "14:00 Uhr",
+      "description": "Kostenlose Führung durch das Tag des offenen Denkmals auf dem Hohenasperg. Treffpunkt Löwentor Hohenasperg, Anmeldung erforderlich.",
+      "location": "Treffpunkt Löwentor Hohenasperg, Asperg",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen/zmdetail_43095190/index.html",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen/zmdetail_43095190/index.html",
+      "source": "asperg_veranstaltungen",
+      "city": "asperg",
+      "slug": "fuehrung-fuer-kinder-auf-dem-hohenasperg-2026-09-13-aspe",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-05-24T02:16:07.564732+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Asperg"
     },
     {
       "id": "02932ee974f626cc",
@@ -9593,6 +9680,39 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Bietigheim-Bissingen"
+    },
+    {
+      "id": "c170b028731594af",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-10-24",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder unter Anleitung von Museumsleuten kunstgeschichtliche Motive malen. Materialien und Führungen sind inklusive.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806682",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806682",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-10-24-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-05-24T02:00:04.133521+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "75f0eea7077d535c",
@@ -10839,6 +10959,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Tamm"
+    },
+    {
+      "id": "3e6569c50955cf0f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-11-28",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder unter Anleitung von Museumsassoziierten verschiedene künstlerische Techniken entdecken und ihre kreativen Fähigkeiten schult.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806681",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806681",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-11-28-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-05-24T02:00:04.134813+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "6bd2c1fc916619d2",
