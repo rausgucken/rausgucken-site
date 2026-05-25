@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-05-24T03:51:05.401050+02:00",
+  "scraped_at": "2026-05-25T03:25:00.126054+02:00",
   "city": "ludwigsburg",
-  "event_count": 622,
+  "event_count": 620,
   "flagged_count": 0,
   "expired_count": 58,
   "sources_scraped": [
@@ -15,7 +15,7 @@
     "stabi"
   ],
   "source_counts": {
-    "schloss": 239,
+    "schloss": 237,
     "kunstverein_ausstellungen": 6,
     "museum": 50,
     "karlskaserne_ausstellungen": 4,
@@ -25,9 +25,9 @@
     "kunstverein_veranstaltungen": 10
   },
   "sources_failed": [],
-  "data_hash": "ec9d495506cebba9",
+  "data_hash": "eb8e2df7f288a1e1",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 24.05.2026. Bitte Originalseite pruefen.",
+  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 25.05.2026. Bitte Originalseite pruefen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schloss": 1.0,
@@ -40,7 +40,7 @@
     "kunstverein_veranstaltungen": 1.0
   },
   "source_event_counts": {
-    "schloss": 239,
+    "schloss": 237,
     "kunstverein_ausstellungen": 6,
     "museum": 50,
     "karlskaserne_ausstellungen": 4,
@@ -55,8 +55,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 111.1,
-    "runtime_delta_vs_baseline": -0.679,
+    "runtime_minutes": 85.0,
+    "runtime_delta_vs_baseline": -0.754,
     "source_health": {
       "schloss": 1.0,
       "kunstverein_ausstellungen": 1.0,
@@ -69,6 +69,6 @@
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-05-24T04:16:06.201273+02:00"
+    "generated_at": "2026-05-25T03:50:00.950778+02:00"
   }
 }
