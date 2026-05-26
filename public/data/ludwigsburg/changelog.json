@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-05-25T03:25:00.086529+02:00",
+  "generated_at": "2026-05-26T03:21:28.640102+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "museum",
-    "schloss",
-    "karlskaserne_ausstellungen",
-    "stabi",
     "kunstverein_ausstellungen",
+    "labyrinth",
+    "museum",
     "karlskaserne_veranstaltungen",
     "kunstverein_veranstaltungen",
-    "labyrinth"
+    "schloss",
+    "karlskaserne_ausstellungen",
+    "stabi"
   ],
-  "previous_run": "2026-05-24T03:51:05.401050+02:00",
-  "count_added": 62,
-  "count_removed": 6,
+  "previous_run": "2026-05-25T03:25:00.126054+02:00",
+  "count_added": 58,
+  "count_removed": 1,
   "added": [
     {
       "id": "85292a722893ca5d",
@@ -362,68 +362,14 @@
       "title": "13.07.2023 Vernissage Benjamin Von Wong (GREENWASH GENERATION) & Juli Gebhardt (AWAY FROM KEYBOARD)",
       "date_start": "2023-07-13",
       "source": "kunstverein_veranstaltungen"
-    },
-    {
-      "id": "17b49e662773b4b1",
-      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "90bbdb6e3bc88484",
-      "title": "Sommerferienworkshop: Contemporary Dance Camp in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "02969fd9df957153",
-      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Bietigheim",
-      "date_start": "2026-09-07",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "fc28c032b76c9800",
-      "title": "Music got the Rhythm",
-      "date_start": "2026-11-04",
-      "source": "karlskaserne_veranstaltungen"
     }
   ],
   "removed": [
     {
-      "id": "cc3b6271d05e3665",
-      "title": "Biodanza",
-      "date_start": "2026-05-24",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "01a70020a88c227b",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-05-24",
-      "source": "schloss"
-    },
-    {
-      "id": "1143aab990280e07",
+      "id": "e80b1a010c5d53d1",
       "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-05-24",
+      "date_start": "2026-05-25",
       "source": "schloss"
-    },
-    {
-      "id": "ba4a876ae6bb35e6",
-      "title": "Ferienworkshop: Hip-Hop Streetdance Kids für Kinder von 7-9 Jahren in Ludwigsburg",
-      "date_start": "2026-05-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "9337c0e99b11c4e8",
-      "title": "Sommerferienworkshop: Theaterwerkstatt in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "1efd40009fd56e29",
-      "title": "Sommerferienworkshop: Theaterwerkstatt in Bietigheim",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
     }
   ]
 }
