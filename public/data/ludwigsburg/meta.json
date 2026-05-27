@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-26T03:21:28.682050+02:00",
+  "scraped_at": "2026-05-27T03:35:10.571743+02:00",
   "city": "ludwigsburg",
   "event_count": 619,
   "flagged_count": 0,
@@ -15,19 +15,19 @@
     "stabi"
   ],
   "source_counts": {
-    "schloss": 236,
+    "schloss": 235,
     "kunstverein_ausstellungen": 6,
     "museum": 50,
     "karlskaserne_ausstellungen": 4,
-    "karlskaserne_veranstaltungen": 107,
+    "karlskaserne_veranstaltungen": 106,
     "labyrinth": 50,
-    "stabi": 156,
+    "stabi": 158,
     "kunstverein_veranstaltungen": 10
   },
   "sources_failed": [],
-  "data_hash": "b6f77e4a981277ce",
+  "data_hash": "d628fc53a7ae3c87",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 26.05.2026. Bitte Originalseite pruefen.",
+  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 27.05.2026. Bitte Originalseite pruefen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schloss": 1.0,
@@ -40,13 +40,13 @@
     "kunstverein_veranstaltungen": 1.0
   },
   "source_event_counts": {
-    "schloss": 236,
+    "schloss": 235,
     "kunstverein_ausstellungen": 6,
     "museum": 50,
     "karlskaserne_ausstellungen": 4,
-    "karlskaserne_veranstaltungen": 107,
+    "karlskaserne_veranstaltungen": 106,
     "labyrinth": 50,
-    "stabi": 156,
+    "stabi": 158,
     "kunstverein_veranstaltungen": 10
   },
   "count_drift_warnings": {},
@@ -55,8 +55,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 81.5,
-    "runtime_delta_vs_baseline": -0.764,
+    "runtime_minutes": 95.2,
+    "runtime_delta_vs_baseline": -0.725,
     "source_health": {
       "schloss": 1.0,
       "kunstverein_ausstellungen": 1.0,
@@ -69,6 +69,6 @@
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-05-26T03:46:29.524783+02:00"
+    "generated_at": "2026-05-27T04:00:11.370628+02:00"
   }
 }

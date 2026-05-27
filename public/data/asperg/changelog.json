@@ -1,20 +1,14 @@
 {
-  "generated_at": "2026-05-26T03:21:28.640359+02:00",
+  "generated_at": "2026-05-27T03:35:10.531664+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
-    "asperg_fuehrungen"
+    "asperg_fuehrungen",
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-05-25T03:25:00.128567+02:00",
+  "previous_run": "2026-05-26T03:21:28.684268+02:00",
   "count_added": 83,
   "count_removed": 0,
   "added": [
-    {
-      "id": "df2fb65f3b7fecca",
-      "title": "Asperg lecker – Stadtführung mit kulturellen und kulinarischen Häppchen",
-      "date_start": null,
-      "source": "asperg_fuehrungen"
-    },
     {
       "id": "e8852c1be0ce91a4",
       "title": "Stadtführung",
@@ -25,6 +19,12 @@
       "id": "cc01189329de5a02",
       "title": "Lost places –führung durch Altasperg",
       "date_start": "2026-04-26",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "facf4a9de3005998",
+      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
+      "date_start": "2026-04-30",
       "source": "asperg_fuehrungen"
     },
     {
@@ -192,6 +192,12 @@
     {
       "id": "62fe987458281678",
       "title": "Bilderbuchkino",
+      "date_start": "2026-06-27",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "00102568d86a2109",
+      "title": "Hocketse im Kirchgarten",
       "date_start": "2026-06-27",
       "source": "asperg_veranstaltungen"
     },
@@ -496,16 +502,10 @@
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "facf4a9de3005998",
-      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
-      "date_start": "2026-04-30",
+      "id": "df2fb65f3b7fecca",
+      "title": "Asperg lecker – Stadtführung mit kulturellen und kulinarischen Häppchen",
+      "date_start": null,
       "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "00102568d86a2109",
-      "title": "Hocketse im Kirchgarten",
-      "date_start": "2026-06-27",
-      "source": "asperg_veranstaltungen"
     }
   ],
   "removed": []

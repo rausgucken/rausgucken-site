@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-05-26T03:21:28.640102+02:00",
+  "generated_at": "2026-05-27T03:35:10.531398+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "kunstverein_ausstellungen",
-    "labyrinth",
+    "stabi",
     "museum",
-    "karlskaserne_veranstaltungen",
-    "kunstverein_veranstaltungen",
     "schloss",
+    "labyrinth",
     "karlskaserne_ausstellungen",
-    "stabi"
+    "karlskaserne_veranstaltungen",
+    "kunstverein_ausstellungen",
+    "kunstverein_veranstaltungen"
   ],
-  "previous_run": "2026-05-25T03:25:00.126054+02:00",
-  "count_added": 58,
-  "count_removed": 1,
+  "previous_run": "2026-05-26T03:21:28.682050+02:00",
+  "count_added": 67,
+  "count_removed": 9,
   "added": [
     {
       "id": "85292a722893ca5d",
@@ -362,14 +362,116 @@
       "title": "13.07.2023 Vernissage Benjamin Von Wong (GREENWASH GENERATION) & Juli Gebhardt (AWAY FROM KEYBOARD)",
       "date_start": "2023-07-13",
       "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "ca0d387448dbcc41",
+      "title": "Festspiel-Nacht I – Ludwigsburger Schlossfestspiele",
+      "date_start": "2026-07-02",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "9337c0e99b11c4e8",
+      "title": "Sommerferienworkshop: Theaterwerkstatt in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "1efd40009fd56e29",
+      "title": "Sommerferienworkshop: Theaterwerkstatt in Bietigheim",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "fd16420407998ea8",
+      "title": "Games-Hackathon",
+      "date_start": "2026-08-31",
+      "source": "stabi"
+    },
+    {
+      "id": "718625a62e42b7eb",
+      "title": "Trickfilmstudio-Camp",
+      "date_start": "2026-10-26",
+      "source": "stabi"
+    },
+    {
+      "id": "07508107c0d5b6c3",
+      "title": "Emmas Einhorn",
+      "date_start": "2026-07-04",
+      "source": "stabi"
+    },
+    {
+      "id": "b046d2d7a414e293",
+      "title": "Hinter den Kulissen der Stabi",
+      "date_start": "2026-06-24",
+      "source": "stabi"
+    },
+    {
+      "id": "efb150992ac74c9a",
+      "title": "Taschen-Häkelkurs",
+      "date_start": "2026-06-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "332d710bee0e7ea5",
+      "title": "Musicalaufführung",
+      "date_start": "2026-06-14",
+      "source": "labyrinth"
     }
   ],
   "removed": [
     {
-      "id": "e80b1a010c5d53d1",
-      "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-05-25",
+      "id": "9b8474d00173dde7",
+      "title": "Workshop: CAD & 3D-Druck",
+      "date_start": "2026-05-26",
+      "source": "stabi"
+    },
+    {
+      "id": "37b35fe7053e7cef",
+      "title": "Comic-Workshop",
+      "date_start": "2026-05-26",
+      "source": "stabi"
+    },
+    {
+      "id": "8d7f5a595d169551",
+      "title": "Treppauf, treppab",
+      "date_start": "2026-05-26",
       "source": "schloss"
+    },
+    {
+      "id": "17b49e662773b4b1",
+      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "0043e11f1099473a",
+      "title": "Sommerferienworkshop: Binding journals in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "labyrinth"
+    },
+    {
+      "id": "03885eedb051f4b7",
+      "title": "Sommerferienworkshop: Geschichten schreiben und illustrieren in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "labyrinth"
+    },
+    {
+      "id": "90bbdb6e3bc88484",
+      "title": "Sommerferienworkshop: Contemporary Dance Camp in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "02969fd9df957153",
+      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "fc28c032b76c9800",
+      "title": "Music got the Rhythm",
+      "date_start": "2026-11-04",
+      "source": "karlskaserne_veranstaltungen"
     }
   ]
 }
