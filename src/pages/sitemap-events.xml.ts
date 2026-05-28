@@ -11,6 +11,7 @@ import kornwestheimEvents from "../../public/data/kornwestheim/events-current.js
 import markgroeningenEvents from "../../public/data/markgroeningen/events-current.json";
 import moegligenEvents from "../../public/data/moeglingen/events-current.json";
 import freibergEvents from "../../public/data/freiberg/events-current.json";
+import sachsenheimEvents from "../../public/data/sachsenheim/events-current.json";
 
 export async function GET() {
   const siteUrl = "https://www.rausgucken.de";
@@ -29,6 +30,7 @@ export async function GET() {
     { city: "markgroeningen", events: markgroeningenEvents as any[] },
     { city: "moeglingen",     events: moegligenEvents as any[]     },
     { city: "freiberg",       events: freibergEvents as any[]      },
+    { city: "sachsenheim",    events: sachsenheimEvents as any[]   },
   ];
 
   const urls = cityEvents.flatMap(({ city, events }) =>

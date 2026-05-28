@@ -23,6 +23,7 @@ export async function GET() {
     { loc: `${siteUrl}/markgroeningen/`,                   priority: "0.9", changefreq: "weekly"  },
     { loc: `${siteUrl}/moeglingen/`,                       priority: "0.9", changefreq: "weekly"  },
     { loc: `${siteUrl}/kornwestheim/`,                     priority: "0.9", changefreq: "weekly"  },
+    { loc: `${siteUrl}/sachsenheim/`,                    priority: "0.9", changefreq: "weekly"  },
     // Static pages
     { loc: `${siteUrl}/about`,                         priority: "0.5", changefreq: "monthly" },
     { loc: `${siteUrl}/impressum`,                     priority: "0.3", changefreq: "monthly" },
