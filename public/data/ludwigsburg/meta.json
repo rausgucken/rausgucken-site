@@ -1,12 +1,13 @@
 {
-  "scraped_at": "2026-05-28T03:18:33.538804+02:00",
+  "scraped_at": "2026-05-28T09:17:13.654680+02:00",
   "city": "ludwigsburg",
-  "event_count": 632,
+  "event_count": 639,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "demokratisches_zentrum",
     "forum_schlosspark",
+    "garnisonmuseum",
     "karlskaserne_ausstellungen",
     "karlskaserne_veranstaltungen",
     "kunstverein_ausstellungen",
@@ -26,10 +27,11 @@
     "stabi": 155,
     "forum_schlosspark": 16,
     "kunstverein_veranstaltungen": 10,
-    "demokratisches_zentrum": 1
+    "demokratisches_zentrum": 1,
+    "garnisonmuseum": 7
   },
   "sources_failed": [],
-  "data_hash": "899f22f32d0f1d07",
+  "data_hash": "7cb2fefd2ded8be9",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 28.05.2026. Bitte Originalseite pruefen.",
   "pipeline_version": "multi-city-v2",
@@ -43,7 +45,8 @@
     "stabi": 1.0,
     "forum_schlosspark": 1.0,
     "kunstverein_veranstaltungen": 1.0,
-    "demokratisches_zentrum": 0.65
+    "demokratisches_zentrum": 0.65,
+    "garnisonmuseum": 1.0
   },
   "source_event_counts": {
     "schloss": 234,
@@ -55,30 +58,8 @@
     "stabi": 155,
     "forum_schlosspark": 16,
     "kunstverein_veranstaltungen": 10,
-    "demokratisches_zentrum": 1
+    "demokratisches_zentrum": 1,
+    "garnisonmuseum": 7
   },
-  "count_drift_warnings": {},
-  "quality_report": {
-    "regression_pass_rate": 1.0,
-    "flagged_rate_current": 0.0,
-    "flagged_rate_4week_avg": 0.0,
-    "trend": "stable",
-    "runtime_minutes": 78.5,
-    "runtime_delta_vs_baseline": -0.773,
-    "source_health": {
-      "schloss": 1.0,
-      "kunstverein_ausstellungen": 1.0,
-      "museum": 1.0,
-      "karlskaserne_ausstellungen": 1.0,
-      "karlskaserne_veranstaltungen": 1.0,
-      "labyrinth": 1.0,
-      "stabi": 1.0,
-      "forum_schlosspark": 1.0,
-      "kunstverein_veranstaltungen": 1.0,
-      "demokratisches_zentrum": 0.65
-    },
-    "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-05-28T03:57:46.827920+02:00"
-  }
+  "count_drift_warnings": {}
 }
