@@ -114,7 +114,7 @@ const SOURCE_ORGANIZERS = {
   kornwestheim_veranstaltungen:       { name: "Stadt Kornwestheim",               url: "https://www.kornwestheim.de" },
 };
 const organizer = SOURCE_ORGANIZERS[ev.source] ?? {
-  name: ev.location || "Ludwigsburg",
+  name: ev.location || "Kornwestheim",
   url: ev.original_url || siteUrl,
 };
 
@@ -142,7 +142,7 @@ function buildGoogleCalendarUrl(ev) {
     location: ev.location || 'Kornwestheim',
     details: [
       ev.description || '',
-      ev.location ? `Adresse: ${ev.location}, Ludwigsburg` : '',
+      ev.location ? `Adresse: ${ev.location}, Kornwestheim` : '',
       ev.original_url ? `Originalseite (bitte vor Teilnahme prüfen): ${ev.original_url}` : '',
       'Alle Angaben ohne Gewähr – bitte Originalseite prüfen.',
     ].filter(Boolean).join('\n\n'),
@@ -171,7 +171,7 @@ function buildOutlookUrl(ev) {
     location: ev.location || 'Kornwestheim',
     body: [
       ev.description || '',
-      ev.location ? `Adresse: ${ev.location}, Ludwigsburg` : '',
+      ev.location ? `Adresse: ${ev.location}, Kornwestheim` : '',
       ev.original_url ? `Originalseite (bitte vor Teilnahme prüfen): ${ev.original_url}` : '',
       'Alle Angaben ohne Gewähr – bitte Originalseite prüfen.',
     ].filter(Boolean).join('\n\n'),
@@ -508,12 +508,8 @@ const relatedEvents = isExpired
     <nav class="related-pages" aria-label="Weitere Veranstaltungen in Kornwestheim">
       <p class="related-pages-label">Weitere Veranstaltungen in Kornwestheim</p>
       <div class="related-pages-links">
-        <a href="/kornwestheim">Heute</a>
-        <a href="/kornwestheim">Morgen</a>
-        <a href="/kornwestheim">Dieses Wochenende</a>
-        <a href="/kornwestheim">Nächste Woche</a>
-        <a href="/kornwestheim">Kinder &amp; Familie</a>
-        <a href="/kornwestheim">Alle Veranstaltungen</a>
+        <a href="/kornwestheim">Alle Veranstaltungen in Kornwestheim</a>
+        <a href="/ludwigsburg/">Landkreis Ludwigsburg</a>
       </div>
     </nav>
 

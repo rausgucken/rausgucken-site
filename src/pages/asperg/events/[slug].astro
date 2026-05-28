@@ -114,7 +114,7 @@ const SOURCE_ORGANIZERS = {
   asperg_veranstaltungen:       { name: "Stadt Asperg",               url: "https://www.asperg.de" },
 };
 const organizer = SOURCE_ORGANIZERS[ev.source] ?? {
-  name: ev.location || "Ludwigsburg",
+  name: ev.location || "Asperg",
   url: ev.original_url || siteUrl,
 };
 
@@ -142,7 +142,7 @@ function buildGoogleCalendarUrl(ev) {
     location: ev.location || 'Asperg',
     details: [
       ev.description || '',
-      ev.location ? `Adresse: ${ev.location}, Ludwigsburg` : '',
+      ev.location ? `Adresse: ${ev.location}, Asperg` : '',
       ev.original_url ? `Originalseite (bitte vor Teilnahme prüfen): ${ev.original_url}` : '',
       'Alle Angaben ohne Gewähr – bitte Originalseite prüfen.',
     ].filter(Boolean).join('\n\n'),
@@ -171,7 +171,7 @@ function buildOutlookUrl(ev) {
     location: ev.location || 'Asperg',
     body: [
       ev.description || '',
-      ev.location ? `Adresse: ${ev.location}, Ludwigsburg` : '',
+      ev.location ? `Adresse: ${ev.location}, Asperg` : '',
       ev.original_url ? `Originalseite (bitte vor Teilnahme prüfen): ${ev.original_url}` : '',
       'Alle Angaben ohne Gewähr – bitte Originalseite prüfen.',
     ].filter(Boolean).join('\n\n'),
@@ -508,12 +508,8 @@ const relatedEvents = isExpired
     <nav class="related-pages" aria-label="Weitere Veranstaltungen in Asperg">
       <p class="related-pages-label">Weitere Veranstaltungen in Asperg</p>
       <div class="related-pages-links">
-        <a href="/asperg">Heute</a>
-        <a href="/asperg">Morgen</a>
-        <a href="/asperg">Dieses Wochenende</a>
-        <a href="/asperg">Nächste Woche</a>
-        <a href="/asperg">Kinder &amp; Familie</a>
-        <a href="/asperg">Alle Veranstaltungen</a>
+        <a href="/asperg">Alle Veranstaltungen in Asperg</a>
+        <a href="/ludwigsburg/">Landkreis Ludwigsburg</a>
       </div>
     </nav>
 

@@ -112,7 +112,7 @@ const SOURCE_ORGANIZERS = {
   stabi:                        { name: "Stadtbibliothek Ludwigsburg", url: "https://events-stabi.ludwigsburg.de" },
 };
 const organizer = SOURCE_ORGANIZERS[ev.source] ?? {
-  name: ev.location || "Ludwigsburg",
+  name: ev.location || "Tamm",
   url: ev.original_url || siteUrl,
 };
 
@@ -140,7 +140,7 @@ function buildGoogleCalendarUrl(ev) {
     location: ev.location || 'Tamm',
     details: [
       ev.description || '',
-      ev.location ? `Adresse: ${ev.location}, Ludwigsburg` : '',
+      ev.location ? `Adresse: ${ev.location}, Tamm` : '',
       ev.original_url ? `Originalseite (bitte vor Teilnahme prüfen): ${ev.original_url}` : '',
       'Alle Angaben ohne Gewähr – bitte Originalseite prüfen.',
     ].filter(Boolean).join('\n\n'),
@@ -169,7 +169,7 @@ function buildOutlookUrl(ev) {
     location: ev.location || 'Tamm',
     body: [
       ev.description || '',
-      ev.location ? `Adresse: ${ev.location}, Ludwigsburg` : '',
+      ev.location ? `Adresse: ${ev.location}, Tamm` : '',
       ev.original_url ? `Originalseite (bitte vor Teilnahme prüfen): ${ev.original_url}` : '',
       'Alle Angaben ohne Gewähr – bitte Originalseite prüfen.',
     ].filter(Boolean).join('\n\n'),
@@ -202,7 +202,9 @@ const eventSchema = {
   ...(ev.description ? { "description": ev.description } : {}),
   "inLanguage": "de-DE",
   ...(ev.date_start ? {
-    "startDate": ev.time ? `${ev.date_start}T${ev.time}` : ev.date_start,
+    "startDate": ev.time
+    ? (() => { const m = ev.time.match(/(\d{1,2}):(\d{2})/); return m ? `${ev.date_start}T${m[1].padStart(2,"0")}:${m[2]}` : ev.date_start; })()
+    : ev.date_start,
   } : {}),
   // endDate: use date_end if present, otherwise same as startDate (single-day event)
   ...(ev.date_start ? {
@@ -504,12 +506,8 @@ const relatedEvents = isExpired
     <nav class="related-pages" aria-label="Weitere Veranstaltungen in Tamm">
       <p class="related-pages-label">Weitere Veranstaltungen in Tamm</p>
       <div class="related-pages-links">
-        <a href="/tamm">Heute</a>
-        <a href="/tamm">Morgen</a>
-        <a href="/tamm">Dieses Wochenende</a>
-        <a href="/tamm">Nächste Woche</a>
-        <a href="/tamm">Kinder &amp; Familie</a>
-        <a href="/tamm">Alle Veranstaltungen</a>
+        <a href="/tamm">Alle Veranstaltungen in Tamm</a>
+        <a href="/ludwigsburg/">Landkreis Ludwigsburg</a>
       </div>
     </nav>
 

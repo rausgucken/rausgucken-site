@@ -114,7 +114,7 @@ const SOURCE_ORGANIZERS = {
   markgroeningen_veranstaltungen: { name: "Stadt Markgröningen",               url: "https://www.asperg.de" },
 };
 const organizer = SOURCE_ORGANIZERS[ev.source] ?? {
-  name: ev.location || "Ludwigsburg",
+  name: ev.location || "Markgröningen",
   url: ev.original_url || siteUrl,
 };
 
@@ -508,12 +508,8 @@ const relatedEvents = isExpired
     <nav class="related-pages" aria-label="Weitere Veranstaltungen in Markgröningen">
       <p class="related-pages-label">Weitere Veranstaltungen in Asperg</p>
       <div class="related-pages-links">
-        <a href="/markgroeningen">Heute</a>
-        <a href="/markgroeningen">Morgen</a>
-        <a href="/markgroeningen">Dieses Wochenende</a>
-        <a href="/markgroeningen">Nächste Woche</a>
-        <a href="/markgroeningen">Kinder &amp; Familie</a>
-        <a href="/markgroeningen">Alle Veranstaltungen</a>
+        <a href="/markgroeningen">Alle Veranstaltungen in Markgröningen</a>
+        <a href="/ludwigsburg/">Landkreis Ludwigsburg</a>
       </div>
     </nav>
 

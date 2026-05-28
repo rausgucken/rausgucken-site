@@ -202,7 +202,9 @@ const eventSchema = {
   ...(ev.description ? { "description": ev.description } : {}),
   "inLanguage": "de-DE",
   ...(ev.date_start ? {
-    "startDate": ev.time ? `${ev.date_start}T${ev.time}` : ev.date_start,
+    "startDate": ev.time
+    ? (() => { const m = ev.time.match(/(\d{1,2}):(\d{2})/); return m ? `${ev.date_start}T${m[1].padStart(2,"0")}:${m[2]}` : ev.date_start; })()
+    : ev.date_start,
   } : {}),
   // endDate: use date_end if present, otherwise same as startDate (single-day event)
   ...(ev.date_start ? {
@@ -504,12 +506,8 @@ const relatedEvents = isExpired
     <nav class="related-pages" aria-label="Weitere Veranstaltungen in Bietigheim-Bissingen">
       <p class="related-pages-label">Weitere Veranstaltungen in Bietigheim-Bissingen</p>
       <div class="related-pages-links">
-        <a href="/bietigheim">Heute</a>
-        <a href="/bietigheim">Morgen</a>
-        <a href="/bietigheim">Dieses Wochenende</a>
-        <a href="/bietigheim">Nächste Woche</a>
-        <a href="/bietigheim">Kinder &amp; Familie</a>
-        <a href="/bietigheim">Alle Veranstaltungen</a>
+        <a href="/bietigheim">Alle Veranstaltungen in Bietigheim-Bissingen</a>
+        <a href="/ludwigsburg/">Landkreis Ludwigsburg</a>
       </div>
     </nav>
 

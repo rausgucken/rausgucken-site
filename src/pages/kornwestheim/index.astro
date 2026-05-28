@@ -5,12 +5,13 @@ import EventCard from "../../components/EventCard.astro";
 import FilterBar from "../../components/FilterBar.astro";
 import ImportantLinksSidebar from "../../components/ImportantLinksSidebar.astro";
 import FeaturedEvent from "../../components/FeaturedEvent.astro";
+import FAQBlock from "../../components/FAQBlock.astro";
 
 import eventsData from "../../../public/data/kornwestheim/events-current.json";
 import metaData from "../../../public/data/kornwestheim/meta.json";
 import linksData from "../../../config/important-links-kornwestheim.json";
 
-const events = eventsData;
+const events = (eventsData as any).events ?? eventsData;
 const meta = metaData;
 
 const dated    = events.filter((e: any) => e.date_start);
@@ -83,7 +84,9 @@ const featuredEvent = featuredSlug
   <div id="search" class="pagefind-search-wrap"></div>
 
   <FilterBar />
-  {featuredEvent && <FeaturedEvent event={featuredEvent} />}
+  <div style="max-width:720px;margin:0 auto 1.25rem;">
+    {featuredEvent && <FeaturedEvent event={featuredEvent} />}
+  </div>
   <div class="city-layout">
     <div class="city-main">
 
