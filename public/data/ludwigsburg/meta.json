@@ -1,10 +1,12 @@
 {
-  "scraped_at": "2026-05-27T03:35:10.571743+02:00",
+  "scraped_at": "2026-05-28T03:18:33.538804+02:00",
   "city": "ludwigsburg",
-  "event_count": 619,
+  "event_count": 632,
   "flagged_count": 0,
-  "expired_count": 58,
+  "expired_count": 0,
   "sources_scraped": [
+    "demokratisches_zentrum",
+    "forum_schlosspark",
     "karlskaserne_ausstellungen",
     "karlskaserne_veranstaltungen",
     "kunstverein_ausstellungen",
@@ -15,19 +17,21 @@
     "stabi"
   ],
   "source_counts": {
-    "schloss": 235,
+    "schloss": 234,
     "kunstverein_ausstellungen": 6,
     "museum": 50,
     "karlskaserne_ausstellungen": 4,
     "karlskaserne_veranstaltungen": 106,
     "labyrinth": 50,
-    "stabi": 158,
-    "kunstverein_veranstaltungen": 10
+    "stabi": 155,
+    "forum_schlosspark": 16,
+    "kunstverein_veranstaltungen": 10,
+    "demokratisches_zentrum": 1
   },
   "sources_failed": [],
-  "data_hash": "d628fc53a7ae3c87",
+  "data_hash": "899f22f32d0f1d07",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 27.05.2026. Bitte Originalseite pruefen.",
+  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 28.05.2026. Bitte Originalseite pruefen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schloss": 1.0,
@@ -37,26 +41,30 @@
     "karlskaserne_veranstaltungen": 1.0,
     "labyrinth": 1.0,
     "stabi": 1.0,
-    "kunstverein_veranstaltungen": 1.0
+    "forum_schlosspark": 1.0,
+    "kunstverein_veranstaltungen": 1.0,
+    "demokratisches_zentrum": 0.65
   },
   "source_event_counts": {
-    "schloss": 235,
+    "schloss": 234,
     "kunstverein_ausstellungen": 6,
     "museum": 50,
     "karlskaserne_ausstellungen": 4,
     "karlskaserne_veranstaltungen": 106,
     "labyrinth": 50,
-    "stabi": 158,
-    "kunstverein_veranstaltungen": 10
+    "stabi": 155,
+    "forum_schlosspark": 16,
+    "kunstverein_veranstaltungen": 10,
+    "demokratisches_zentrum": 1
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": null,
+    "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 95.2,
-    "runtime_delta_vs_baseline": -0.725,
+    "runtime_minutes": 78.5,
+    "runtime_delta_vs_baseline": -0.773,
     "source_health": {
       "schloss": 1.0,
       "kunstverein_ausstellungen": 1.0,
@@ -65,10 +73,12 @@
       "karlskaserne_veranstaltungen": 1.0,
       "labyrinth": 1.0,
       "stabi": 1.0,
-      "kunstverein_veranstaltungen": 1.0
+      "forum_schlosspark": 1.0,
+      "kunstverein_veranstaltungen": 1.0,
+      "demokratisches_zentrum": 0.65
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-05-27T04:00:11.370628+02:00"
+    "generated_at": "2026-05-28T03:57:46.827920+02:00"
   }
 }
