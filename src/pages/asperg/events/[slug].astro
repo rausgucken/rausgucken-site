@@ -245,6 +245,10 @@ const relatedEvents: any[] = isExpired
   ogType="article"
   schema={[eventSchema, breadcrumbSchema]}
 >
+  <link rel="alternate" type="application/atom+xml"
+        href="/asperg/feed.xml"
+        title="rausgucken.de – Asperg"
+        slot="head" />
   <link rel="alternate" type="text/calendar"
         href={icsUrl}
         title={ev.title}
