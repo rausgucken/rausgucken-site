@@ -1,19 +1,19 @@
 ---
 // ============================================================
 // CITY EVENT DETAIL PAGE TEMPLATE — rausgucken.de
-// Copy to: src/pages/{asperg}/events/[slug].astro
+// Copy to: src/pages/{CITY_ID}/events/[slug].astro
 //
 // Replace these tokens (all caps, search & replace):
-//   asperg          → url slug, e.g. "kornwestheim"
-//   Asperg   → display name, e.g. "Kornwestheim" or "Remseck am Neckar"
-//   71679 → 5-digit PLZ, e.g. "74354"
-//   https://www.asperg.de     → fallback organizer URL, e.g. "https://www.kornwestheim.de"
+//   CITY_ID          → url slug, e.g. "kornwestheim"
+//   CITY_NAME_FULL   → display name, e.g. "Kornwestheim" or "Remseck am Neckar"
+//   CITY_POSTAL_CODE → 5-digit PLZ, e.g. "74354"
+//   CITY_WEBSITE     → fallback organizer URL, e.g. "https://www.kornwestheim.de"
 // ============================================================
 import Base from "../../../layouts/Base.astro";
 import tipsData from "../../../data/editorial-tips.json";
 
 export async function getStaticPaths() {
-  const mod = await import("../../../../public/data/asperg/events-current.json",
+  const mod = await import("../../../../public/data/CITY_ID/events-current.json",
     { assert: { type: "json" } });
   const events: any[] = (mod.default as any).events ?? mod.default;
   const seen = new Set<string>();
@@ -25,10 +25,10 @@ export async function getStaticPaths() {
 const { ev } = Astro.props;
 
 // ── City constants — only these change per city ───────────────────────────────
-const city        = "asperg";
-const cityDisplay = "Asperg";
-const postalCode  = "71679";
-const cityWebsite = "https://www.asperg.de";
+const city        = "CITY_ID";
+const cityDisplay = "CITY_NAME_FULL";
+const postalCode  = "CITY_POSTAL_CODE";
+const cityWebsite = "CITY_WEBSITE";
 
 // ── Fixed constants ───────────────────────────────────────────────────────────
 const siteUrl     = "https://www.rausgucken.de";
@@ -225,7 +225,7 @@ const breadcrumbSchema = {
 
 // ── Related events (expired pages only) ──────────────────────────────────────
 const relatedEvents: any[] = isExpired
-  ? (await import("../../../../public/data/asperg/events-current.json",
+  ? (await import("../../../../public/data/CITY_ID/events-current.json",
       { assert: { type: "json" } }).then(m => (m.default as any).events ?? m.default).catch(() => []) as any[])
       .filter((e: any) =>
         e.slug !== ev.slug &&

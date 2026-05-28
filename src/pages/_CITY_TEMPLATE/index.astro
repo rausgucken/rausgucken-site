@@ -1,14 +1,14 @@
 ---
 // ============================================================
 // CITY INDEX PAGE TEMPLATE — rausgucken.de
-// Copy to: src/pages/{freiberg}/index.astro
+// Copy to: src/pages/{CITY_ID}/index.astro
 //
 // Replace these tokens (all caps, search & replace):
-//   freiberg        → url slug, e.g. "kornwestheim"
-//   Freiberg am Neckar → display name, e.g. "Kornwestheim" or "Remseck am Neckar"
-//   von der Stadthalle bis zum Marktplatz → meta description content tags, e.g. "Feste, Konzerte, Kultur und mehr"
-//   https://www.freiberg-an.de/index.php?id=308 → fallback calendar URL for empty state
-//   Stadt Freiberg Kalender → → CTA label, e.g. "Stadt Kornwestheim Kalender →"
+//   CITY_ID        → url slug, e.g. "kornwestheim"
+//   CITY_NAME_FULL → display name, e.g. "Kornwestheim" or "Remseck am Neckar"
+//   CITY_DESC_TAGS → meta description content tags, e.g. "Feste, Konzerte, Kultur und mehr"
+//   CITY_EMPTY_URL → fallback calendar URL for empty state
+//   CITY_EMPTY_LABEL → CTA label, e.g. "Stadt Kornwestheim Kalender →"
 // ============================================================
 import Base from "../../layouts/Base.astro";
 import FreshnessStamp from '../../components/FreshnessStamp.astro';
@@ -18,9 +18,9 @@ import ImportantLinksSidebar from "../../components/ImportantLinksSidebar.astro"
 import FeaturedEvent from "../../components/FeaturedEvent.astro";
 import FAQBlock from "../../components/FAQBlock.astro";
 
-import eventsData from "../../../public/data/freiberg/events-current.json";
-import metaData from "../../../public/data/freiberg/meta.json";
-import linksData from "../../../config/important-links-freiberg.json";
+import eventsData from "../../../public/data/CITY_ID/events-current.json";
+import metaData from "../../../public/data/CITY_ID/meta.json";
+import linksData from "../../../config/important-links-CITY_ID.json";
 
 const events = (eventsData as any).events ?? eventsData;
 const meta = metaData as any;
@@ -35,9 +35,9 @@ const yearDE  = buildDate.getFullYear();
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Veranstaltungen in Freiberg am Neckar",
-  "description": `${(events as any[]).length} aktuelle Veranstaltungen in Freiberg am Neckar – von der Stadthalle bis zum Marktplatz.`,
-  "url": "https://www.rausgucken.de/freiberg/",
+  "name": "Veranstaltungen in CITY_NAME_FULL",
+  "description": `${(events as any[]).length} aktuelle Veranstaltungen in CITY_NAME_FULL – CITY_DESC_TAGS.`,
+  "url": "https://www.rausgucken.de/CITY_ID/",
   "inLanguage": "de-DE",
 };
 
@@ -46,7 +46,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": "https://www.rausgucken.de" },
-    { "@type": "ListItem", "position": 2, "name": "Freiberg am Neckar", "item": "https://www.rausgucken.de/freiberg/" },
+    { "@type": "ListItem", "position": 2, "name": "CITY_NAME_FULL", "item": "https://www.rausgucken.de/CITY_ID/" },
   ],
 };
 
@@ -60,19 +60,19 @@ const featuredEvent = featuredSlug
 ---
 
 <Base
-  title={`${(events as any[]).length} Veranstaltungen in Freiberg am Neckar ${monthDE} ${yearDE} | rausgucken.de`}
-  description={`Entdecke ${(events as any[]).length} aktuelle Veranstaltungen in Freiberg am Neckar – von der Stadthalle bis zum Marktplatz. Täglich aktuell.`}
-  city="freiberg"
+  title={`${(events as any[]).length} Veranstaltungen in CITY_NAME_FULL ${monthDE} ${yearDE} | rausgucken.de`}
+  description={`Entdecke ${(events as any[]).length} aktuelle Veranstaltungen in CITY_NAME_FULL – CITY_DESC_TAGS. Täglich aktuell.`}
+  city="CITY_ID"
   schema={[jsonLd, breadcrumbSchema]}
 >
   <nav class="breadcrumb" aria-label="Brotkrumennavigation">
     <a href="https://www.rausgucken.de">rausgucken.de</a>
     <span aria-hidden="true"> › </span>
-    <span aria-current="page">Freiberg am Neckar</span>
+    <span aria-current="page">CITY_NAME_FULL</span>
   </nav>
 
   <div class="page-header">
-    <h1>Veranstaltungen in Freiberg am Neckar</h1>
+    <h1>Veranstaltungen in CITY_NAME_FULL</h1>
     <p class="page-subtitle">
       <FreshnessStamp scrapedAt={meta.scraped_at} />
       {meta.sources_failed && meta.sources_failed.length > 0 && (
@@ -80,7 +80,7 @@ const featuredEvent = featuredSlug
           ⚠ {meta.sources_failed.length} {meta.sources_failed.length === 1 ? "Quelle" : "Quellen"} fehlen
         </span>
       )}
-      <a href="/freiberg/feed.xml" class="feed-link" title="Atom-Feed abonnieren" aria-label="Atom-Feed für Freiberg am Neckar abonnieren">
+      <a href="/CITY_ID/feed.xml" class="feed-link" title="Atom-Feed abonnieren" aria-label="Atom-Feed für CITY_NAME_FULL abonnieren">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <circle cx="6.18" cy="17.82" r="2.18"/>
           <path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/>
@@ -106,8 +106,8 @@ const featuredEvent = featuredSlug
           <p class="empty-headline">Keine Treffer für diese Filter.</p>
           <p class="empty-body">Vielleicht ist heute ein guter Tag, einfach rauszugehen!</p>
           <div class="empty-ctas">
-            <a href="https://www.freiberg-an.de/index.php?id=308" target="_blank" rel="noopener noreferrer" class="empty-cta">
-              Stadt Freiberg Kalender →
+            <a href="CITY_EMPTY_URL" target="_blank" rel="noopener noreferrer" class="empty-cta">
+              CITY_EMPTY_LABEL
             </a>
             <a href="/ludwigsburg/" class="empty-cta">Ludwigsburg entdecken →</a>
           </div>
@@ -140,8 +140,8 @@ const featuredEvent = featuredSlug
             <p class="empty-headline">Aktuell keine Veranstaltungen verfügbar.</p>
             <p class="empty-body">Schau bald wieder vorbei — oder geh einfach schon mal raus!</p>
             <div class="empty-ctas">
-              <a href="https://www.freiberg-an.de/index.php?id=308" target="_blank" rel="noopener noreferrer" class="empty-cta">
-                Stadt Freiberg Kalender →
+              <a href="CITY_EMPTY_URL" target="_blank" rel="noopener noreferrer" class="empty-cta">
+                CITY_EMPTY_LABEL
               </a>
             </div>
           </div>
@@ -151,11 +151,11 @@ const featuredEvent = featuredSlug
       <!-- Editorial intro — crawlable by Googlebot, collapsed by default -->
       <details class="editorial-intro" id="editorial-intro">
         <summary class="editorial-intro__toggle">
-          Über Freiberg am Neckar — Veranstaltungen &amp; Freizeittipps
+          Über CITY_NAME_FULL — Veranstaltungen &amp; Freizeittipps
         </summary>
         <div class="editorial-intro__body">
           <p>
-            <!-- TODO: 2–3 paragraphs about Freiberg am Neckar.
+            <!-- TODO: 2–3 paragraphs about CITY_NAME_FULL.
                  Mention key venues, landmarks, what makes events here special.
                  Use <strong> for venue/landmark names. -->
           </p>

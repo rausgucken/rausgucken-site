@@ -1,4 +1,15 @@
 ---
+// ============================================================
+// CITY INDEX PAGE TEMPLATE — rausgucken.de
+// Copy to: src/pages/{sachsenheim}/index.astro
+//
+// Replace these tokens (all caps, search & replace):
+//   sachsenheim        → url slug, e.g. "kornwestheim"
+//   Sachsenheim → display name, e.g. "Kornwestheim" or "Remseck am Neckar"
+//   Konzerte, Feste, Kultur und mehr → meta description content tags, e.g. "Feste, Konzerte, Kultur und mehr"
+//   https://www.sachsenheim.de/de/freizeit-tourismus/veranstaltungen → fallback calendar URL for empty state
+//   Stadt Sachsenheim Kalender → → CTA label, e.g. "Stadt Kornwestheim Kalender →"
+// ============================================================
 import Base from "../../layouts/Base.astro";
 import FreshnessStamp from '../../components/FreshnessStamp.astro';
 import EventCard from "../../components/EventCard.astro";
@@ -12,7 +23,7 @@ import metaData from "../../../public/data/sachsenheim/meta.json";
 import linksData from "../../../config/important-links-sachsenheim.json";
 
 const events = (eventsData as any).events ?? eventsData;
-const meta = metaData;
+const meta = metaData as any;
 
 const dated    = (events as any[]).filter((e: any) => e.date_start);
 const standing = (events as any[]).filter((e: any) => !e.date_start);
@@ -50,7 +61,7 @@ const featuredEvent = featuredSlug
 
 <Base
   title={`${(events as any[]).length} Veranstaltungen in Sachsenheim ${monthDE} ${yearDE} | rausgucken.de`}
-  description={`Entdecke Aktuelle Veranstaltungen in Sachsenheim – Konzerte, Feste, Kultur und mehr. Täglich aktuell von der Stadt Sachsenheim.`}
+  description={`Entdecke ${(events as any[]).length} aktuelle Veranstaltungen in Sachsenheim – Konzerte, Feste, Kultur und mehr. Täglich aktuell.`}
   city="sachsenheim"
   schema={[jsonLd, breadcrumbSchema]}
 >
@@ -64,9 +75,9 @@ const featuredEvent = featuredSlug
     <h1>Veranstaltungen in Sachsenheim</h1>
     <p class="page-subtitle">
       <FreshnessStamp scrapedAt={meta.scraped_at} />
-      {(meta as any).sources_failed && (meta as any).sources_failed.length > 0 && (
-        <span class="sources-chip" role="alert" title={`Nicht erreichbar: ${(meta as any).sources_failed.join(", ")}`}>
-          ⚠ {(meta as any).sources_failed.length} {(meta as any).sources_failed.length === 1 ? "Quelle" : "Quellen"} fehlen
+      {meta.sources_failed && meta.sources_failed.length > 0 && (
+        <span class="sources-chip" role="alert" title={`Nicht erreichbar: ${meta.sources_failed.join(", ")}`}>
+          ⚠ {meta.sources_failed.length} {meta.sources_failed.length === 1 ? "Quelle" : "Quellen"} fehlen
         </span>
       )}
       <a href="/sachsenheim/feed.xml" class="feed-link" title="Atom-Feed abonnieren" aria-label="Atom-Feed für Sachsenheim abonnieren">
@@ -79,6 +90,7 @@ const featuredEvent = featuredSlug
     </p>
   </div>
 
+  <!-- Pagefind search — build-time index, German stemming -->
   <div id="search" class="pagefind-search-wrap"></div>
 
   <FilterBar />
@@ -136,25 +148,16 @@ const featuredEvent = featuredSlug
         </div>
       )}
 
+      <!-- Editorial intro — crawlable by Googlebot, collapsed by default -->
       <details class="editorial-intro" id="editorial-intro">
         <summary class="editorial-intro__toggle">
           Über Sachsenheim — Veranstaltungen &amp; Freizeittipps
         </summary>
         <div class="editorial-intro__body">
           <p>
-            Sachsenheim ist eine Stadt im Landkreis Ludwigsburg mit rund 17.000 Einwohnern.
-            Die Stadt umfasst mehrere Ortsteile — darunter Großsachsenheim, Kleinsachsenheim
-            und Hohenhaslach — mit einem vielfältigen Vereins- und Kulturleben.
-          </p>
-          <p>
-            Das <strong>Kulturhaus Sachsenheim</strong> ist der zentrale Veranstaltungsort
-            für Konzerte, Theater und Feste. Die <strong>Stadtbücherei Sachsenheim</strong>
-            ergänzt das Angebot mit Lesungen und Familienveranstaltungen.
-          </p>
-          <p>
-            Alle Veranstaltungen werden täglich automatisch vom offiziellen
-            Veranstaltungskalender der Stadt übernommen. Angaben ohne Gewähr —
-            bitte die Originalseite prüfen.
+            <!-- TODO: 2–3 paragraphs about Sachsenheim.
+                 Mention key venues, landmarks, what makes events here special.
+                 Use <strong> for venue/landmark names. -->
           </p>
         </div>
       </details>
@@ -169,6 +172,8 @@ const featuredEvent = featuredSlug
   </div>
 
   <script src="/scripts/app.js" is:inline></script>
+
+  <!-- Pagefind: loaded after build, not present in dev mode -->
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
   <script is:inline>
     window.addEventListener('DOMContentLoaded', function() {
@@ -199,14 +204,20 @@ const featuredEvent = featuredSlug
 </Base>
 
 <style>
+  .breadcrumb { font-size: 0.82rem; color: var(--text-60); margin-bottom: 1.25rem; max-width: 720px; margin-left: auto; margin-right: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 0.1rem; }
+  .breadcrumb a { color: var(--text-60); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--coral); }
+
   .page-header { margin-bottom: 1rem; max-width: 720px; margin-left: auto; margin-right: auto; }
   h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
   .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
   .feed-link { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.78rem; font-weight: 600; color: var(--coral); text-decoration: none; opacity: 0.8; transition: opacity 150ms; }
   .feed-link:hover { opacity: 1; text-decoration: none; }
+  .feed-link:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; border-radius: 2px; }
   .feed-link svg { flex-shrink: 0; }
   .sources-chip { display: inline-flex; align-items: center; gap: 0.3rem; font-size: 0.75rem; font-weight: 600; color: #b45309; background: #fef3c7; border: 1px solid #fde68a; border-radius: 20px; padding: 2px 10px; cursor: default; }
   html.dark .sources-chip { color: #fbbf24; background: rgba(251,191,36,0.12); border-color: rgba(251,191,36,0.25); }
+
   .city-layout { display: block; }
   .city-main { display: block; }
   @media (min-width: 961px) {
@@ -215,8 +226,12 @@ const featuredEvent = featuredSlug
     .city-sidebar :global(.important-links-sidebar) { display: block; }
   }
   @media (max-width: 960px) { .city-sidebar { display: none; } }
+
   .section-heading { font-size: 1.15rem; font-weight: 600; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); max-width: 720px; margin-left: auto; margin-right: auto; }
   .section-note { font-size: 0.85rem; color: var(--text-60); margin-bottom: 1rem; margin-top: -0.5rem; max-width: 720px; margin-left: auto; margin-right: auto; }
+
+  html.dark .event-card { box-shadow: 0 2px 8px rgba(0,0,0,0.22); }
+
   .empty-state { display: none; padding: 3rem 1.5rem; text-align: center; }
   .empty-state:not([hidden]), .empty-state--visible { display: block; }
   .empty-state-inner { background: var(--surface-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2.5rem 2rem; box-shadow: var(--shadow-card); }
@@ -225,18 +240,23 @@ const featuredEvent = featuredSlug
   .empty-ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-bottom: 1.25rem; }
   .empty-cta { background: var(--coral); color: var(--text); font-size: 0.875rem; font-weight: 600; padding: 0.6rem 1.25rem; border-radius: var(--radius-sm); text-decoration: none; transition: background 150ms; min-height: 44px; display: inline-flex; align-items: center; }
   .empty-cta:hover { background: var(--coral-dark); text-decoration: none; }
+  .empty-cta:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
   .empty-reset { background: transparent; border: 1.5px solid var(--border); border-radius: var(--radius-sm); padding: 0.5rem 1.25rem; font-size: 0.85rem; font-weight: 600; color: var(--text-60); cursor: pointer; min-height: 44px; transition: border-color 150ms, color 150ms; }
   .empty-reset:hover { border-color: var(--coral); color: var(--coral); }
+  .empty-reset:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
   .editorial-intro { max-width: 720px; margin: 2.5rem auto 1.25rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface-card); }
   .editorial-intro__toggle { padding: 0.75rem 1.1rem; font-size: 0.85rem; font-weight: 600; color: var(--text-60); cursor: pointer; list-style: none; display: flex; align-items: center; gap: 0.5rem; user-select: none; }
   .editorial-intro__toggle::-webkit-details-marker { display: none; }
   .editorial-intro__toggle::before { content: "▸"; font-size: 0.7rem; transition: transform 150ms; flex-shrink: 0; }
   details.editorial-intro[open] .editorial-intro__toggle::before { transform: rotate(90deg); }
   .editorial-intro__toggle:hover { color: var(--text); }
+  .editorial-intro__toggle:focus-visible { outline: 2px solid var(--coral); outline-offset: -2px; border-radius: var(--radius-sm); }
   .editorial-intro__body { padding: 0 1.1rem 1rem; border-top: 1px solid var(--border); }
   .editorial-intro__body p { font-size: 0.875rem; line-height: 1.65; color: var(--text); opacity: 0.85; margin-top: 0.85rem; margin-bottom: 0; }
   .editorial-intro__body strong { font-weight: 600; opacity: 1; }
   .editorial-intro__body a { color: var(--coral); }
+
   .pagefind-search-wrap { max-width: 720px; margin: 0 auto 1.5rem; }
   .pagefind-ui__search-input { background: var(--surface-card) !important; border: 1.5px solid var(--border) !important; border-radius: var(--radius-sm) !important; color: var(--text) !important; font-family: var(--font-body) !important; font-size: 0.95rem !important; }
   .pagefind-ui__search-input:focus { border-color: var(--coral) !important; outline: none !important; }
@@ -245,7 +265,4 @@ const featuredEvent = featuredSlug
   .pagefind-ui__result-title a { color: var(--coral) !important; font-family: var(--font-heading) !important; }
   .pagefind-ui__result-excerpt { color: var(--text-60) !important; font-size: 0.875rem !important; }
   .pagefind-ui__button { background: var(--coral) !important; color: var(--text) !important; border-radius: var(--radius-sm) !important; font-weight: 600 !important; }
-  .breadcrumb { font-size: 0.82rem; color: var(--text-60); margin-bottom: 1.25rem; max-width: 720px; margin-left: auto; margin-right: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 0.1rem; }
-  .breadcrumb a { color: var(--text-60); text-decoration: none; }
-  .breadcrumb a:hover { color: var(--coral); }
 </style>
