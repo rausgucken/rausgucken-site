@@ -1,0 +1,198 @@
+---
+// src/pages/sachsenheim/events/[slug].astro
+// Per-event detail pages for Sachsenheim — static, rebuilt daily.
+
+import Base from "../../../layouts/Base.astro";
+import EditorialTip from "../../../components/EditorialTip.astro";
+
+export async function getStaticPaths() {
+  const events = await import("../../../../public/data/sachsenheim/events-current.json",
+    { assert: { type: "json" } }).then(m => m.default).catch(() => []);
+  return events.map((ev: any) => ({
+    params: { slug: ev.slug },
+    props:  { ev },
+  }));
+}
+
+const { ev } = Astro.props;
+const city        = "sachsenheim";
+const cityDisplay = "Sachsenheim";
+const siteUrl     = "https://www.rausgucken.de";
+const ogImage     = `/og/${city}/${ev.slug}.jpg`;
+const ogImageAbs  = `${siteUrl}${ogImage}`;
+const detailImage = `/og/detail/${city}/${ev.slug}.jpg`;
+
+const dateFormatted = ev.date_start
+  ? new Date(ev.date_start).toLocaleDateString("de-DE", {
+      weekday: "long", year: "numeric", month: "long", day: "numeric",
+    })
+  : "Regelmäßig";
+---
+
+<Base
+  title={`${ev.title} – ${cityDisplay} | rausgucken.de`}
+  description={ev.description ?? `${ev.title} in ${cityDisplay} — ${dateFormatted}.`}
+  city={city}
+  ogImage={ogImage}
+  canonical={`${siteUrl}/${city}/events/${ev.slug}/`}
+>
+  <!-- Event JSON-LD (required for Google rich results) -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": ev.title,
+    "startDate": ev.date_start ?? undefined,
+    "endDate": ev.date_end ?? ev.date_start ?? undefined,
+    "inLanguage": "de-DE",
+    "image": [ogImageAbs],
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": ev.is_booked_out
+      ? "https://schema.org/EventSoldOut"
+      : "https://schema.org/EventScheduled",
+    "location": ev.location ? {
+      "@type": "Place",
+      "name": ev.location,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": cityDisplay,
+        "addressCountry": "DE",
+      }
+    } : undefined,
+    "organizer": {
+      "@type": "Organization",
+      "name": ev.source_label ?? "Gemeinde Sachsenheim",
+      "url": ev.original_url,
+    },
+    "offers": ev.price ? {
+      "@type": "Offer",
+      "price": ev.price.toLowerCase().includes("kostenlos") ? "0" : undefined,
+      "priceCurrency": "EUR",
+      "availability": ev.is_booked_out
+        ? "https://schema.org/SoldOut"
+        : "https://schema.org/InStock",
+      "description": ev.price,
+    } : undefined,
+    "description": ev.description ?? undefined,
+    "url": `${siteUrl}/${city}/events/${ev.slug}/`,
+  })} />
+
+  <!-- BreadcrumbList -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "rausgucken.de",  "item": `${siteUrl}/` },
+      { "@type": "ListItem", "position": 2, "name": cityDisplay,      "item": `${siteUrl}/${city}/` },
+      { "@type": "ListItem", "position": 3, "name": ev.title,         "item": `${siteUrl}/${city}/events/${ev.slug}/` },
+    ],
+  })} />
+
+  <!-- ICS calendar link -->
+  <link rel="alternate" type="text/calendar"
+        href={`/${city}/events/${ev.slug}.ics`}
+        title={ev.title}
+        slot="head" />
+
+  <article class="event-detail">
+    <!-- Hero image -->
+    <div class="event-detail__hero">
+      <img
+        src={detailImage}
+        alt={`${ev.title} – ${ev.location ?? cityDisplay} in ${cityDisplay}`}
+        width="1200" height="630"
+        loading="eager"
+        onerror="this.style.display='none'"
+      />
+    </div>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">rausgucken.de</a>
+      <span aria-hidden="true"> › </span>
+      <a href={`/${city}/`}>{cityDisplay}</a>
+      <span aria-hidden="true"> › </span>
+      <span aria-current="page">{ev.title}</span>
+    </nav>
+
+    <header class="event-detail__header">
+      <h1>{ev.title}</h1>
+      {ev.is_new && <span class="badge badge--new">Neu</span>}
+      {ev.is_booked_out && <span class="badge badge--booked">Ausgebucht</span>}
+    </header>
+
+    <dl class="event-detail__meta">
+      {ev.date_start && (
+        <>
+          <dt>Datum</dt>
+          <dd>{dateFormatted}</dd>
+        </>
+      )}
+      {ev.time && (
+        <>
+          <dt>Uhrzeit</dt>
+          <dd>{ev.time}</dd>
+        </>
+      )}
+      {ev.location && (
+        <>
+          <dt>Ort</dt>
+          <dd>{ev.location}</dd>
+        </>
+      )}
+      {ev.price && (
+        <>
+          <dt>Preis</dt>
+          <dd>{ev.price}</dd>
+        </>
+      )}
+      {(ev.age_min != null || ev.age_max != null) && (
+        <>
+          <dt>Alter</dt>
+          <dd>
+            {ev.age_min != null && ev.age_max != null
+              ? `${ev.age_min}–${ev.age_max} Jahre`
+              : ev.age_min != null
+                ? `ab ${ev.age_min} Jahren`
+                : `bis ${ev.age_max} Jahre`}
+          </dd>
+        </>
+      )}
+      {ev.tags?.length > 0 && (
+        <>
+          <dt>Kategorie</dt>
+          <dd class="event-detail__tags">
+            {ev.tags.map((t: string) => <span class="tag">{t}</span>)}
+          </dd>
+        </>
+      )}
+    </dl>
+
+    {ev.description && (
+      <section class="event-detail__description">
+        <p>{ev.description}</p>
+      </section>
+    )}
+
+    <EditorialTip tip={ev.editorial_tip} />
+
+    <footer class="event-detail__footer">
+      <p class="source-attribution">
+        Quelle: {ev.source_label ?? "Gemeinde Sachsenheim"} —{" "}
+        <a href={ev.original_url} target="_blank" rel="noopener noreferrer">
+          Originalseite prüfen ↗
+        </a>
+      </p>
+      <p class="event-detail__scraped">
+        Stand: {new Date(ev.scraped_at).toLocaleDateString("de-DE")}
+      </p>
+      <a class="btn btn--ics"
+         href={`/${city}/events/${ev.slug}.ics`}
+         download>
+        📅 In Kalender speichern (.ics)
+      </a>
+      <a class="btn btn--back" href={`/${city}/`}>
+        ← Alle Veranstaltungen in {cityDisplay}
+      </a>
+    </footer>
+  </article>
+</Base>
