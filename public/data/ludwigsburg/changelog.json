@@ -1,69 +1,131 @@
 {
-  "generated_at": "2026-05-28T03:18:33.495133+02:00",
+  "generated_at": "2026-05-29T05:04:23.040236+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "labyrinth",
-    "stabi",
-    "demokratisches_zentrum",
-    "karlskaserne_veranstaltungen",
-    "kunstverein_veranstaltungen",
+    "forum_schlosspark",
     "karlskaserne_ausstellungen",
-    "museum",
-    "kunstverein_ausstellungen",
+    "karlskaserne_veranstaltungen",
+    "demokratisches_zentrum",
+    "garnisonmuseum",
+    "stabi",
     "schloss",
-    "forum_schlosspark"
+    "labyrinth",
+    "kunstverein_ausstellungen",
+    "kunstverein_veranstaltungen"
   ],
-  "previous_run": "2026-05-28T01:58:00.669129+02:00",
-  "count_added": 20,
-  "count_removed": 7,
+  "previous_run": "2026-05-28T17:40:11.937877+02:00",
+  "count_added": 7,
+  "count_removed": 56,
   "added": [
     {
-      "id": "9358f4850d9efd9e",
-      "title": "Fest der Kinderrechte",
-      "date_start": "2026-06-28",
-      "source": "karlskaserne_ausstellungen"
-    },
-    {
-      "id": "a85dd148c198cd14",
-      "title": "Fest der Kinderrechte",
-      "date_start": "2026-06-28",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "aef1483879683520",
-      "title": "HEISS AUF LESEN",
-      "date_start": "2026-07-14",
+      "id": "4bcda368c2b2467b",
+      "title": "Storytime in West",
+      "date_start": "2026-09-24",
       "source": "stabi"
     },
     {
-      "id": "55a23adedea315ab",
-      "title": "Sister Act",
-      "date_start": "2026-05-29",
-      "source": "forum_schlosspark"
+      "id": "8bbe06fdf4102fe0",
+      "title": "Storytime in West",
+      "date_start": "2026-10-15",
+      "source": "stabi"
     },
     {
-      "id": "c9182c65c0abd55a",
-      "title": "FESTSPIEL-ERÖFFNUNG – NABUCCO",
-      "date_start": "2026-06-14",
-      "source": "forum_schlosspark"
+      "id": "24b24233a62c2050",
+      "title": "Storytime in West",
+      "date_start": "2026-11-12",
+      "source": "stabi"
     },
     {
-      "id": "fd79e1da7050359e",
-      "title": "BALLET NACIONAL DE ESPAÑA",
-      "date_start": "2026-06-19",
-      "source": "forum_schlosspark"
+      "id": "e8ec810da6f2ebc7",
+      "title": "Storytime in West",
+      "date_start": "2026-12-10",
+      "source": "stabi"
     },
     {
-      "id": "ac48e5c939fd3072",
-      "title": "BALLET NACIONAL DE ESPAÑA",
-      "date_start": "2026-06-20",
-      "source": "forum_schlosspark"
+      "id": "5e012f0afde9b9cc",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": null,
+      "source": "schloss"
     },
     {
-      "id": "dde6ae08477c0a6b",
-      "title": "PHILHARMONIX",
-      "date_start": "2026-06-21",
+      "id": "0043e11f1099473a",
+      "title": "Sommerferienworkshop: Binding journals in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "labyrinth"
+    },
+    {
+      "id": "1e7b4b2a9dfffe3c",
+      "title": "PABLO FERRÁNDEZ & MANFRED HONECK",
+      "date_start": "2026-06-26",
       "source": "forum_schlosspark"
+    }
+  ],
+  "removed": [
+    {
+      "id": "f2d072ce4584b2b4",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "7c82aba616f7a699",
+      "title": "Ausstellung Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-05-03",
+      "source": "museum"
+    },
+    {
+      "id": "aebd87305f2f7bae",
+      "title": "Workshop: Roboter programmieren",
+      "date_start": "2026-05-28",
+      "source": "stabi"
+    },
+    {
+      "id": "4efb6466d9e2ba9a",
+      "title": "Wer schön sein will, muss leiden",
+      "date_start": "2026-05-28",
+      "source": "schloss"
+    },
+    {
+      "id": "2c174becabe0fe9e",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-05-28",
+      "source": "stabi"
+    },
+    {
+      "id": "f90ae7797a395aff",
+      "title": "Museumspause",
+      "date_start": "2026-06-03",
+      "source": "museum"
+    },
+    {
+      "id": "efb150992ac74c9a",
+      "title": "Taschen-Häkelkurs",
+      "date_start": "2026-06-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "bff2378eb082564e",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-06-10",
+      "source": "museum"
+    },
+    {
+      "id": "945e88777b891a76",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-06-11",
+      "source": "museum"
+    },
+    {
+      "id": "a83f200afe175482",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2026-06-17",
+      "source": "museum"
+    },
+    {
+      "id": "73d6a1a915b409b4",
+      "title": "Gastrosophie-Abend",
+      "date_start": "2026-06-25",
+      "source": "museum"
     },
     {
       "id": "13d54e1ef398299a",
@@ -72,114 +134,268 @@
       "source": "forum_schlosspark"
     },
     {
-      "id": "549610838092a467",
-      "title": "ANASTASIA KOBEKINA & KAMMERORCHESTER BASEL",
-      "date_start": "2026-06-28",
-      "source": "forum_schlosspark"
+      "id": "691173904c17a73f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-06-27",
+      "source": "museum"
     },
     {
-      "id": "212458c0f368b54b",
-      "title": "LES BALLETS DE MONTE-CARLO",
-      "date_start": "2026-07-24",
-      "source": "forum_schlosspark"
+      "id": "7ff033032127df4b",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-06-27",
+      "source": "museum"
     },
     {
-      "id": "14d1709cedd190bb",
-      "title": "LES BALLETS DE MONTE-CARLO",
+      "id": "650ef2c04fb838df",
+      "title": "Little America – Fotografie Jürgen Schadeberg",
+      "date_start": "2026-07-01",
+      "source": "museum"
+    },
+    {
+      "id": "4685c6bd35a6a4c2",
+      "title": "Museumspause",
+      "date_start": "2026-07-01",
+      "source": "museum"
+    },
+    {
+      "id": "9d142bd8d3c097eb",
+      "title": "Vortrag \"Little America\"",
+      "date_start": "2026-07-01",
+      "source": "museum"
+    },
+    {
+      "id": "ed37d6dc04039758",
+      "title": "Offenes Atelier: Tee von der Blumenwiese, Sabine Deutscher",
+      "date_start": "2026-07-02",
+      "source": "museum"
+    },
+    {
+      "id": "7c1a1baefcc024f6",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-07-08",
+      "source": "museum"
+    },
+    {
+      "id": "b6aeee1a8e6bce6a",
+      "title": "Musik im MIK",
+      "date_start": "2026-07-11",
+      "source": "museum"
+    },
+    {
+      "id": "2aadcf04324bb79a",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-07-16",
+      "source": "museum"
+    },
+    {
+      "id": "e03dcd037732fb3b",
+      "title": "Werkstatt für Kinder",
       "date_start": "2026-07-25",
-      "source": "forum_schlosspark"
+      "source": "museum"
     },
     {
-      "id": "0e46709edf6a6e33",
-      "title": "HILARY HAHN & OMER MEIR WELLBER",
-      "date_start": "2026-07-26",
-      "source": "forum_schlosspark"
+      "id": "ac517db39d41b08c",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-07-25",
+      "source": "museum"
     },
     {
-      "id": "c6c9cfd98a1e5a04",
-      "title": "V01CES//B0D1EZ – 18 Uhr",
-      "date_start": "2026-07-30",
-      "source": "forum_schlosspark"
-    },
-    {
-      "id": "bd0304179c1c41c4",
-      "title": "V01CES//B0D1EZ – 21 Uhr",
-      "date_start": "2026-07-30",
-      "source": "forum_schlosspark"
-    },
-    {
-      "id": "9a7adf303c90afa0",
-      "title": "FESTSPIEL-FINALE – María Dueñas & European Union Youth Orchestra",
+      "id": "84515f699269c9bc",
+      "title": "Museumspause",
       "date_start": "2026-08-05",
-      "source": "forum_schlosspark"
+      "source": "museum"
     },
     {
-      "id": "3a8578e896db5232",
-      "title": "Dschungelbuch – das Musical",
-      "date_start": "2026-12-27",
-      "source": "forum_schlosspark"
+      "id": "146f8552056cda36",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-08-12",
+      "source": "museum"
     },
     {
-      "id": "499286371720c410",
-      "title": "Dschungelbuch – das Musical",
-      "date_start": "2026-12-28",
-      "source": "forum_schlosspark"
+      "id": "51a4f0cb4be13889",
+      "title": "Ferienworkshop Museumsbuch interaktiv",
+      "date_start": "2026-08-14",
+      "source": "museum"
     },
     {
-      "id": "a424676372bc8b84",
-      "title": "Der große LORIOT-Abend",
-      "date_start": "2027-04-05",
-      "source": "forum_schlosspark"
+      "id": "c48034e537af9ed5",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-08-29",
+      "source": "museum"
     },
     {
-      "id": "715060d0b98bd9e2",
-      "title": "Queer-Musik Bingo",
-      "date_start": "2026-06-12",
-      "source": "demokratisches_zentrum"
-    }
-  ],
-  "removed": [
-    {
-      "id": "9eda0a152eac483c",
-      "title": "Hinter den Kulissen der Stabi",
-      "date_start": "2026-05-27",
-      "source": "stabi"
+      "id": "a8cbbcf36745b299",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-08-29",
+      "source": "museum"
     },
     {
-      "id": "4358fd7d264a1916",
-      "title": "Der Schatz des Herzogs",
-      "date_start": "2026-05-27",
-      "source": "schloss"
+      "id": "412a38bbfbc19241",
+      "title": "Museumspause",
+      "date_start": "2026-09-02",
+      "source": "museum"
     },
     {
-      "id": "e43b96e8558457f9",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-05-27",
-      "source": "stabi"
+      "id": "33db71f4708977da",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-09-09",
+      "source": "museum"
     },
     {
-      "id": "6c86207956741bed",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-05-27",
-      "source": "stabi"
+      "id": "da91c6d4fe2f0d58",
+      "title": "Tag des Offenen Denkmals",
+      "date_start": "2026-09-13",
+      "source": "museum"
     },
     {
-      "id": "ddd6c1cb745297b4",
-      "title": "LeseWerkstatt für Frauen und Mädchen",
-      "date_start": "2026-05-27",
-      "source": "stabi"
+      "id": "1da712de65240f53",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2026-09-16",
+      "source": "museum"
     },
     {
-      "id": "1c119569683a4dd9",
-      "title": "Ausstellung: Ich darf das!",
-      "date_start": "2026-06-28",
-      "source": "karlskaserne_ausstellungen"
+      "id": "937f51ce6917680b",
+      "title": "Offenes Atelier: Origami, Regina Ille-Kopp",
+      "date_start": "2026-09-17",
+      "source": "museum"
     },
     {
-      "id": "4c7e60442b427b37",
-      "title": "Ausstellung: Ich darf das!",
-      "date_start": "2026-06-28",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "a321ac78d9c91527",
+      "title": "Gastrosophie-Abend",
+      "date_start": "2026-09-24",
+      "source": "museum"
+    },
+    {
+      "id": "5f0f28478d262af4",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-09-26",
+      "source": "museum"
+    },
+    {
+      "id": "1ad591165ba69227",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-06",
+      "source": "museum"
+    },
+    {
+      "id": "10574e50c47e9a2d",
+      "title": "Museumspause",
+      "date_start": "2026-10-07",
+      "source": "museum"
+    },
+    {
+      "id": "d47a92c5185c1929",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-13",
+      "source": "museum"
+    },
+    {
+      "id": "50d1b8bcae088f0f",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-10-14",
+      "source": "museum"
+    },
+    {
+      "id": "fffeb549fd24639b",
+      "title": "Mitmach-Ausstellung flott, flott!",
+      "date_start": "2026-10-17",
+      "source": "museum"
+    },
+    {
+      "id": "5beb0ee8eb08f214",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-20",
+      "source": "museum"
+    },
+    {
+      "id": "2c0921e304b82ec4",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2026-10-21",
+      "source": "museum"
+    },
+    {
+      "id": "c170b028731594af",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-10-24",
+      "source": "museum"
+    },
+    {
+      "id": "33c73002bed4f546",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-27",
+      "source": "museum"
+    },
+    {
+      "id": "19b34a6bd1f128f7",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-10-31",
+      "source": "museum"
+    },
+    {
+      "id": "744c68f84155ddb4",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-03",
+      "source": "museum"
+    },
+    {
+      "id": "cc3cacc7ccb69d7b",
+      "title": "Museumspause",
+      "date_start": "2026-11-04",
+      "source": "museum"
+    },
+    {
+      "id": "746f98c5fe1bfba3",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-05",
+      "source": "museum"
+    },
+    {
+      "id": "503013994c307868",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-10",
+      "source": "museum"
+    },
+    {
+      "id": "d8b7431bc4a684b1",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-11-11",
+      "source": "museum"
+    },
+    {
+      "id": "3a07be9ff60f3ffd",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-17",
+      "source": "museum"
+    },
+    {
+      "id": "22f9f9b321aa01e3",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-24",
+      "source": "museum"
+    },
+    {
+      "id": "3e6569c50955cf0f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
+      "id": "1be2100766f9975a",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
+      "id": "ceffd17f4f8fa9ec",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-01",
+      "source": "museum"
+    },
+    {
+      "id": "0200632eb9bc01e9",
+      "title": "Museumspause",
+      "date_start": "2026-12-02",
+      "source": "museum"
     }
   ]
 }

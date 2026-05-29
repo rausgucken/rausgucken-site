@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-05-28T09:17:13.723119+02:00",
-  "event_count": 3,
+  "generated_at": "2026-05-29T06:00:01.878466+02:00",
+  "event_count": 4,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -29,6 +29,36 @@
       ],
       "scraped_at": "2026-05-22T02:19:57.765482+02:00",
       "extraction_confidence": 0.75,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Markgröningen"
+    },
+    {
+      "id": "4dc50be7ececf40c",
+      "title": "Marktplatzabend",
+      "date_start": "2026-07-16",
+      "date_end": null,
+      "time": "17:30 Uhr",
+      "description": "Ein Familienfreundlicher Abend auf dem Marktplatz feiert das Gemeindeleben mit传统中文： \n<|im_start|><|im_start|>user\n请用标准的德语重写。",
+      "location": "Marktplatz",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.markgroeningen.de/kultur-tourismus/veranstaltungskalender/5170/marktplatzabend",
+      "original_url": "https://www.markgroeningen.de/kultur-tourismus/veranstaltungskalender/5170/marktplatzabend",
+      "source": "markgroeningen",
+      "city": "markgroeningen",
+      "slug": "marktplatzabend-2026-07-16-mark",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-05-29T02:20:41.581581+02:00",
+      "extraction_confidence": 0.85,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
