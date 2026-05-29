@@ -1,37 +1,33 @@
 // src/pages/sitemap-events.xml.ts
 // SEO §11: All active per-event pages across all cities with lastmod from scraped_at.
 // Expired events (date_start > 30 days ago) are excluded.
-
-import ludwigsburgEvents from "../../public/data/ludwigsburg/events-current.json";
-import tammEvents from "../../public/data/tamm/events-current.json";
-import remseckEvents from "../../public/data/remseck/events-current.json";
-import bietigheimEvents from "../../public/data/bietigheim/events-current.json";
-import aspergEvents from "../../public/data/asperg/events-current.json";
-import kornwestheimEvents from "../../public/data/kornwestheim/events-current.json";
-import markgroeningenEvents from "../../public/data/markgroeningen/events-current.json";
-import moegligenEvents from "../../public/data/moeglingen/events-current.json";
-import freibergEvents from "../../public/data/freiberg/events-current.json";
-import sachsenheimEvents from "../../public/data/sachsenheim/events-current.json";
+// Cities derived dynamically from public/data/cities.json — do not hardcode imports.
+import { readFileSync } from "fs";
+import { join } from "path";
 
 export async function GET() {
   const siteUrl = "https://www.rausgucken.de";
-
   const cutoff = new Date();
   cutoff.setDate(cutoff.getDate() - 30);
   const cutoffStr = cutoff.toISOString().slice(0, 10);
 
-  const cityEvents = [
-    { city: "ludwigsburg", events: ludwigsburgEvents as any[] },
-    { city: "tamm",        events: tammEvents as any[]        },
-    { city: "remseck",     events: remseckEvents as any[]     },
-    { city: "bietigheim",  events: bietigheimEvents as any[]  },
-    { city: "asperg",      events: aspergEvents as any[]      },
-    { city: "kornwestheim", events: kornwestheimEvents as any[] },
-    { city: "markgroeningen", events: markgroeningenEvents as any[] },
-    { city: "moeglingen",     events: moegligenEvents as any[]     },
-    { city: "freiberg",       events: freibergEvents as any[]      },
-    { city: "sachsenheim",    events: sachsenheimEvents as any[]   },
-  ];
+  // Load covered cities from registry at build time
+  const citiesPath = join(process.cwd(), "public", "data", "cities.json");
+  const citiesData: Array<{ id: string; covered: boolean }> =
+    JSON.parse(readFileSync(citiesPath, "utf-8"));
+  const coveredCities = citiesData.filter(c => c.covered).map(c => c.id);
+
+  // Load events for each city — skip cities whose events file doesn't exist yet
+  const cityEvents: Array<{ city: string; events: any[] }> = [];
+  for (const city of coveredCities) {
+    const eventsPath = join(process.cwd(), "public", "data", city, "events-current.json");
+    try {
+      const events = JSON.parse(readFileSync(eventsPath, "utf-8"));
+      cityEvents.push({ city, events });
+    } catch {
+      // City in cities.json but events file not yet present — skip silently
+    }
+  }
 
   const urls = cityEvents.flatMap(({ city, events }) =>
     events
