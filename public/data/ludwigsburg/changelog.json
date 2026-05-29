@@ -1,72 +1,23 @@
 {
-  "generated_at": "2026-05-29T05:04:23.040236+02:00",
+  "generated_at": "2026-05-29T10:41:41.805278+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "forum_schlosspark",
-    "karlskaserne_ausstellungen",
-    "karlskaserne_veranstaltungen",
-    "demokratisches_zentrum",
-    "garnisonmuseum",
-    "stabi",
     "schloss",
-    "labyrinth",
+    "demokratisches_zentrum",
     "kunstverein_ausstellungen",
-    "kunstverein_veranstaltungen"
+    "stabi",
+    "museum",
+    "labyrinth",
+    "forum_schlosspark",
+    "kunstverein_veranstaltungen",
+    "garnisonmuseum",
+    "karlskaserne_veranstaltungen",
+    "karlskaserne_ausstellungen"
   ],
-  "previous_run": "2026-05-28T17:40:11.937877+02:00",
-  "count_added": 7,
-  "count_removed": 56,
+  "previous_run": "2026-05-29T05:04:23.081261+02:00",
+  "count_added": 51,
+  "count_removed": 1,
   "added": [
-    {
-      "id": "4bcda368c2b2467b",
-      "title": "Storytime in West",
-      "date_start": "2026-09-24",
-      "source": "stabi"
-    },
-    {
-      "id": "8bbe06fdf4102fe0",
-      "title": "Storytime in West",
-      "date_start": "2026-10-15",
-      "source": "stabi"
-    },
-    {
-      "id": "24b24233a62c2050",
-      "title": "Storytime in West",
-      "date_start": "2026-11-12",
-      "source": "stabi"
-    },
-    {
-      "id": "e8ec810da6f2ebc7",
-      "title": "Storytime in West",
-      "date_start": "2026-12-10",
-      "source": "stabi"
-    },
-    {
-      "id": "5e012f0afde9b9cc",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": null,
-      "source": "schloss"
-    },
-    {
-      "id": "0043e11f1099473a",
-      "title": "Sommerferienworkshop: Binding journals in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
-    },
-    {
-      "id": "1e7b4b2a9dfffe3c",
-      "title": "PABLO FERRÁNDEZ & MANFRED HONECK",
-      "date_start": "2026-06-26",
-      "source": "forum_schlosspark"
-    }
-  ],
-  "removed": [
-    {
-      "id": "f2d072ce4584b2b4",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": "2026-03-28",
-      "source": "schloss"
-    },
     {
       "id": "7c82aba616f7a699",
       "title": "Ausstellung Respekt! Menschen der Karlshöhe",
@@ -74,34 +25,10 @@
       "source": "museum"
     },
     {
-      "id": "aebd87305f2f7bae",
-      "title": "Workshop: Roboter programmieren",
-      "date_start": "2026-05-28",
-      "source": "stabi"
-    },
-    {
-      "id": "4efb6466d9e2ba9a",
-      "title": "Wer schön sein will, muss leiden",
-      "date_start": "2026-05-28",
-      "source": "schloss"
-    },
-    {
-      "id": "2c174becabe0fe9e",
-      "title": "Bilderbuchkino am Nachmittag",
-      "date_start": "2026-05-28",
-      "source": "stabi"
-    },
-    {
       "id": "f90ae7797a395aff",
       "title": "Museumspause",
       "date_start": "2026-06-03",
       "source": "museum"
-    },
-    {
-      "id": "efb150992ac74c9a",
-      "title": "Taschen-Häkelkurs",
-      "date_start": "2026-06-08",
-      "source": "labyrinth"
     },
     {
       "id": "bff2378eb082564e",
@@ -126,12 +53,6 @@
       "title": "Gastrosophie-Abend",
       "date_start": "2026-06-25",
       "source": "museum"
-    },
-    {
-      "id": "13d54e1ef398299a",
-      "title": "SHEKU KANNEH-MASON & MANFRED HONECK",
-      "date_start": "2026-06-26",
-      "source": "forum_schlosspark"
     },
     {
       "id": "691173904c17a73f",
@@ -396,6 +317,20 @@
       "title": "Museumspause",
       "date_start": "2026-12-02",
       "source": "museum"
+    },
+    {
+      "id": "f2d072ce4584b2b4",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    }
+  ],
+  "removed": [
+    {
+      "id": "5e012f0afde9b9cc",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": null,
+      "source": "schloss"
     }
   ]
 }
