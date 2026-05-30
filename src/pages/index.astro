@@ -279,13 +279,13 @@ function updateRadius() {
   });
 
   if (total > (selectedCity.event_count || 0) && covInRadius.length > 0) {
-    rows.push(`<a href="${selectedCity.url || '/ludwigsburg/'}" class="combined-btn">Alle ${total} Events im Umkreis →</a>`);
+    rows.push(`<a href="${selectedCity.url}" class="combined-btn">Alle ${total} Events im Umkreis →</a>`);
   }
 
   cityListEl.innerHTML = rows.join("");
   // Badge: show combined total if multiple cities in radius, else selected city
   const displayTotal = total > 0 ? total : (selectedCity.event_count || 0);
-  const displayUrl = covInRadius.length > 0 ? (selectedCity.url || "/ludwigsburg/") : (selectedCity.url || "");
+  const displayUrl = selectedCity.url || "";
   const displayLabel = covInRadius.length > 0
     ? `Alle ${displayTotal} Events im Umkreis →`
     : `Alle ${selectedCity.event_count || 0} Events →`;
