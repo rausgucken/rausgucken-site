@@ -202,9 +202,25 @@ const eventSchema = {
   ...(ev.description ? { "description": ev.description } : {}),
   "inLanguage": "de-DE",
   ...(ev.date_start ? {
-    "startDate": ev.time
-    ? (() => { const m = ev.time.match(/(\d{1,2}):(\d{2})/); return m ? `${ev.date_start}T${m[1].padStart(2,"0")}:${m[2]}` : ev.date_start; })()
-    : ev.date_start,
+    "startDate": (() => {
+      // Append Europe/Berlin timezone offset (CET +01:00 / CEST +02:00) per Google recommendation
+      // DST in Germany: last Sunday in March → last Sunday in October
+      function berlinOffset(dateStr) {
+        const d = new Date(dateStr + "T12:00:00Z");
+        const year = d.getUTCFullYear();
+        // Last Sunday in March
+        const dstStart = new Date(Date.UTC(year, 2, 31));
+        dstStart.setUTCDate(31 - dstStart.getUTCDay());
+        // Last Sunday in October
+        const dstEnd = new Date(Date.UTC(year, 9, 31));
+        dstEnd.setUTCDate(31 - dstEnd.getUTCDay());
+        return d >= dstStart && d < dstEnd ? "+02:00" : "+01:00";
+      }
+      const tz = berlinOffset(ev.date_start);
+      if (!ev.time) return `${ev.date_start}T00:00:00${tz}`;
+      const m = ev.time.match(/(\d{1,2}):(\d{2})/);
+      return m ? `${ev.date_start}T${m[1].padStart(2,"0")}:${m[2]}:00${tz}` : `${ev.date_start}T00:00:00${tz}`;
+    })(),
   } : {}),
   // endDate: use date_end if present, otherwise same as startDate (single-day event)
   ...(ev.date_start ? {
