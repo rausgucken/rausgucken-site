@@ -190,7 +190,7 @@ function initMap(city) {
   }).addTo(map);
 
   // Add markers for all covered cities
-  CITIES.filter(c => c.covered).forEach(c => {
+  CITIES.filter(c => c.covered && !c.id.startsWith("landkreis-")).forEach(c => {
     const isSelected = c.id === city.id;
     const marker = L.circleMarker([c.lat, c.lng], {
       radius: isSelected ? 12 : 8,
@@ -254,7 +254,7 @@ function updateRadius() {
   // Cities in radius
   const inRadius = CITIES
     .map(c => ({ ...c, _d: dist(selectedCity.lat, selectedCity.lng, c.lat, c.lng) }))
-    .filter(c => c.covered && c._d <= radius && c.id !== selectedCity.id)
+    .filter(c => c.covered && c._d <= radius && c.id !== selectedCity.id && !c.id.startsWith("landkreis-"))
     .sort((a, b) => a._d - b._d);
 
   const inRadiusIds = new Set([selectedCity.id, ...inRadius.map(c => c.id)]);
