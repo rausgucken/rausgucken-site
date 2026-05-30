@@ -22,7 +22,8 @@ export async function GET() {
   for (const city of coveredCities) {
     const eventsPath = join(process.cwd(), "public", "data", city, "events-current.json");
     try {
-      const events = JSON.parse(readFileSync(eventsPath, "utf-8"));
+      const raw = JSON.parse(readFileSync(eventsPath, "utf-8"));
+      const events = Array.isArray(raw) ? raw : (raw.events || []);
       cityEvents.push({ city, events });
     } catch {
       // City in cities.json but events file not yet present — skip silently
