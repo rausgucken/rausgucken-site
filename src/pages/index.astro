@@ -262,7 +262,13 @@ function updateRadius() {
 
   // Update badge
   const covInRadius = inRadius.filter(c => c.event_count > 0);
-  const total = (selectedCity.event_count || 0) + covInRadius.reduce((s, c) => s + c.event_count, 0);
+  // If selectedCity is a Landkreis hub, its event_count already aggregates all members.
+  // Use only member city sum to avoid double-counting.
+  const isLandkreis = selectedCity.type === "Landkreis";
+  const memberSum = covInRadius.reduce((s, c) => s + (c.event_count || 0), 0);
+  const total = isLandkreis
+    ? memberSum
+    : (selectedCity.event_count || 0) + memberSum;
   mapCountBadge.textContent = covInRadius.length + 1 > 1
     ? `${covInRadius.length + 1} Städte im Umkreis`
     : "";
@@ -272,8 +278,10 @@ function updateRadius() {
     const isSelected = c.id === selectedCity.id;
     const dist_str = isSelected ? "" : ` · ${c._d ? c._d.toFixed(1) + " km" : ""}`;
     const evtStr = c.event_count > 0 ? `${c.event_count} Events` : "demnächst";
+    // Add type label to disambiguate e.g. "Ludwigsburg · Stadt" vs "Ludwigsburg · Landkreis"
+    const typeLabel = c.type ? `<span class="city-row-type"> · ${c.type}</span>` : "";
     return `<div class="city-row${isSelected ? " city-row--selected" : ""}">
-      <a href="${c.url}">${c.name}</a>
+      <a href="${c.url}">${c.name}${typeLabel}</a>
       <span class="city-row-meta">${evtStr}${dist_str}</span>
     </div>`;
   });
@@ -284,7 +292,11 @@ function updateRadius() {
 
   cityListEl.innerHTML = rows.join("");
   // Badge: show combined total if multiple cities in radius, else selected city
-  const displayTotal = total > 0 ? total : (selectedCity.event_count || 0);
+  // For Landkreis: displayTotal is the aggregated Landkreis event_count (accurate hub count)
+  // For Stadt/Gemeinde: displayTotal is the computed total across radius
+  const displayTotal = isLandkreis
+    ? (selectedCity.event_count || 0)
+    : (total > 0 ? total : (selectedCity.event_count || 0));
   const displayUrl = selectedCity.url || "";
   const displayLabel = covInRadius.length > 0
     ? `Alle ${displayTotal} Events im Umkreis →`
@@ -622,6 +634,7 @@ loadLeaflet(() => init());
     padding: 0.55rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem;
   }
   .city-row a { color: var(--coral); font-weight: 600; text-decoration: none; }
+  .city-row-type { font-weight: 400; font-size: 0.78rem; color: var(--text-60); }
   .city-row a:hover { text-decoration: underline; }
   .city-row--selected a { color: var(--text); }
   .city-row-meta { font-size: 0.78rem; color: var(--text-60); }
