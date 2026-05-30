@@ -33,7 +33,6 @@ const cityWebsite = "https://www.kornwestheim.de";
 // ── Fixed constants ───────────────────────────────────────────────────────────
 const siteUrl     = "https://www.rausgucken.de";
 const ogImage     = `/og/${city}/${ev.slug}.jpg`;
-const detailImage = `/og/kornwestheim/${ev.slug}.jpg`;
 const canonical   = `${siteUrl}/${city}/events/${ev.slug}/`;
 const icsUrl      = `/${city}/events/${ev.slug}.ics`;
 
@@ -344,7 +343,7 @@ const relatedEvents: any[] = isExpired
     <!-- ── Hero image ─────────────────────────────────────────────────────── -->
     <div class="event-hero">
       <img
-        src={detailImage}
+        src={ogImage}
         alt={`${ev.title} – ${ev.location ?? cityDisplay} in ${cityDisplay}`}
         width="720" height="380"
         loading="eager" decoding="async"
