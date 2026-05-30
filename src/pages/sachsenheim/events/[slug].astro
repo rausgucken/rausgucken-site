@@ -197,7 +197,20 @@ const eventSchema = {
       return m ? `${ev.date_start}T${m[1].padStart(2, "0")}:${m[2]}:00${tz}` : `${ev.date_start}T00:00:00${tz}`;
     })(),
   } : {}),
-  ...(ev.date_start ? { "endDate": ev.date_end || ev.date_start } : {}),
+  ...(ev.date_start ? { "endDate": (() => {
+      function berlinOffset(dateStr) {
+        const d = new Date(dateStr + "T12:00:00Z");
+        const year = d.getUTCFullYear();
+        const dstStart = new Date(Date.UTC(year, 2, 31));
+        dstStart.setUTCDate(31 - dstStart.getUTCDay());
+        const dstEnd = new Date(Date.UTC(year, 9, 31));
+        dstEnd.setUTCDate(31 - dstEnd.getUTCDay());
+        return d >= dstStart && d < dstEnd ? "+02:00" : "+01:00";
+      }
+      const endBase = ev.date_end || ev.date_start;
+      const tz = berlinOffset(endBase);
+      return `${endBase}T23:59:00${tz}`;
+    })() } : {}),
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "eventStatus": "https://schema.org/EventScheduled",
   "image": `${siteUrl}${ogImage}`,
