@@ -55,7 +55,7 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
   <a
     href={`/${city}/events/${ev.slug}`}
     class="card-link"
-    aria-label={`${ev.title}${dateObj ? `, ${dateObj.full}` : ""}`}
+    aria-label={`${ev.title}${dateObj ? `, ${dateObj.full}` : ""}${ev.location ? ` – ${ev.location}` : ""}`}
   >
     {dateObj ? (
       <div class="date-badge" aria-hidden="true">
