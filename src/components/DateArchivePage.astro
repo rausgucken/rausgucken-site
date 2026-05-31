@@ -1,0 +1,166 @@
+---
+// src/components/DateArchivePage.astro
+// Shared logic for all city date archive pages: /{city}/YYYY-MM-DD/
+// Single source of truth — edit here to update all cities simultaneously.
+// Props:
+//   cityId    — e.g. "ludwigsburg"
+//   cityName  — e.g. "Ludwigsburg"
+//   dateStr   — ISO date e.g. "2026-06-14"
+//   events    — all events for the city (component filters to this date)
+//   scrapedAt — from meta.json
+//   links     — from config/important-links-{city}.json (loaded in wrapper)
+import Base                 from "../layouts/Base.astro";
+import EventCard            from "./EventCard.astro";
+import FreshnessStamp       from "./FreshnessStamp.astro";
+import FilterBar            from "./FilterBar.astro";
+import ImportantLinksSidebar from "./ImportantLinksSidebar.astro";
+
+const { cityId, cityName, dateStr, events, scrapedAt, links } = Astro.props;
+
+const siteUrl = "https://www.rausgucken.de";
+
+// Filter: event spans this date if date_start <= dateStr <= (date_end ?? date_start)
+const dayEvents = (events as any[]).filter((ev: any) => {
+  if (!ev.date_start) return false;
+  const end = ev.date_end ?? ev.date_start;
+  return ev.date_start <= dateStr && dateStr <= end;
+});
+
+// German date formatting
+const [year, month, day] = dateStr.split("-").map(Number);
+const dateObj     = new Date(year, month - 1, day);
+const dateDE      = dateObj.toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+const dateDEShort = dateObj.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
+
+const canonical = `${siteUrl}/${cityId}/${dateStr}/`;
+const seoTitle  = `Veranstaltungen in ${cityName} am ${dateDEShort} | rausgucken.de`;
+const metaDesc  = `${dayEvents.length > 0 ? dayEvents.length + " Veranstaltung" + (dayEvents.length === 1 ? "" : "en") : "Events"} in ${cityName} am ${dateDEShort}. Ausstellungen, Führungen, Konzerte, Workshops – täglich aktuell auf rausgucken.de.`;
+
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": `Veranstaltungen in ${cityName} – ${dateDEShort}`,
+  "description": metaDesc,
+  "url": canonical,
+  "inLanguage": "de-DE",
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": siteUrl },
+    { "@type": "ListItem", "position": 2, "name": cityName,        "item": `${siteUrl}/${cityId}/` },
+    { "@type": "ListItem", "position": 3, "name": dateDEShort,     "item": canonical },
+  ],
+};
+---
+
+<Base
+  title={seoTitle}
+  description={metaDesc}
+  canonical={canonical}
+  schema={[collectionSchema, breadcrumbSchema]}
+  city={cityId}
+>
+  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+    <a href="/">rausgucken.de</a> ›
+    <a href={`/${cityId}/`}>{cityName}</a> ›
+    <span aria-current="page">{dateDEShort}</span>
+  </nav>
+
+  <div class="page-header">
+    <h1>Events in {cityName}<br /><span class="date-label">{dateDE}</span></h1>
+    <p class="page-subtitle">
+      {dayEvents.length > 0
+        ? `${dayEvents.length} Veranstaltung${dayEvents.length === 1 ? "" : "en"} · `
+        : ""}
+      <FreshnessStamp scrapedAt={scrapedAt} />
+    </p>
+  </div>
+
+  <FilterBar />
+
+  <div class="city-layout">
+    <div class="city-main">
+
+      <div class="empty-state" id="empty-state" aria-live="polite" hidden></div>
+
+      {dayEvents.length > 0 ? (
+        <div class="event-list" id="event-grid">
+          {dayEvents.map((ev: any) => <EventCard event={ev} />)}
+        </div>
+      ) : (
+        <div class="empty-day">
+          <div class="empty-inner">
+            <p class="empty-headline">Keine Veranstaltungen für diesen Tag eingetragen.</p>
+            <p class="empty-body">Schau auf der Stadtseite nach weiteren Terminen.</p>
+            <div class="empty-ctas">
+              <a href={`/${cityId}/heute/`} class="btn-cta">Heute in {cityName}</a>
+              <a href={`/${cityId}/`}       class="btn-cta btn-cta--ghost">Alle Veranstaltungen</a>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <nav class="temporal-nav" aria-label="Andere Zeiträume">
+        <p class="temporal-label">Andere Zeiträume</p>
+        <div class="temporal-links">
+          <a href={`/${cityId}/heute/`}>Heute</a>
+          <a href={`/${cityId}/morgen/`}>Morgen</a>
+          <a href={`/${cityId}/dieses-wochenende/`}>Dieses Wochenende</a>
+          <a href={`/${cityId}/naechste-woche/`}>Nächste Woche</a>
+          <a href={`/${cityId}/`}>Alle Veranstaltungen</a>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="city-sidebar">
+      {links && <ImportantLinksSidebar links={links} />}
+    </div>
+  </div>
+
+  <script src="/scripts/app.js" is:inline></script>
+</Base>
+
+<style>
+  .breadcrumb { font-size:0.82rem; color:var(--text-60); margin-bottom:1.25rem; max-width:720px; margin-left:auto; margin-right:auto; display:flex; flex-wrap:wrap; align-items:center; gap:0.1rem; }
+  .breadcrumb a { color:var(--text-60); text-decoration:none; }
+  .breadcrumb a:hover { color:var(--coral); }
+
+  .page-header { margin-bottom:1.25rem; max-width:720px; margin-left:auto; margin-right:auto; }
+  h1 { font-size:clamp(1.5rem,4vw,2rem); font-weight:700; letter-spacing:-0.02em; line-height:1.25; }
+  .date-label { color:var(--coral); font-size:0.9em; }
+  .page-subtitle { color:var(--text-60); font-size:0.95rem; margin-top:0.35rem; display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap; }
+
+  .city-layout { display:block; }
+  .city-main   { display:block; }
+  @media (min-width:961px) {
+    .city-sidebar { display:block; position:fixed; top:80px; left:calc(50% + 384px); width:210px; max-height:calc(100vh - 100px); overflow-y:auto; scrollbar-width:none; -ms-overflow-style:none; }
+    .city-sidebar::-webkit-scrollbar { display:none; }
+    .city-sidebar :global(.important-links-sidebar) { display:block; }
+  }
+  @media (max-width:960px) { .city-sidebar { display:none; } }
+
+  .empty-state { display:none; padding:3rem 1.5rem; text-align:center; }
+  .empty-state:not([hidden]) { display:block; }
+
+  .empty-day { max-width:720px; padding:2rem 0; }
+  .empty-inner { background:var(--surface-card); border:1px solid var(--border); border-radius:var(--radius); padding:2.5rem 2rem; text-align:center; }
+  .empty-headline { font-family:var(--font-heading); font-weight:700; font-size:1.1rem; margin-bottom:0.5rem; }
+  .empty-body { color:var(--text-60); margin-bottom:1.5rem; }
+  .empty-ctas { display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap; }
+  .btn-cta { display:inline-flex; align-items:center; height:44px; padding:0 1.25rem; background:var(--coral); color:var(--text); border-radius:var(--radius-sm); font-weight:600; font-size:0.875rem; text-decoration:none; transition:background 150ms; }
+  .btn-cta:hover { background:var(--coral-dark); text-decoration:none; }
+  .btn-cta--ghost { background:var(--tag-bg); color:var(--text-60); }
+  .btn-cta--ghost:hover { background:var(--coral-light); color:var(--coral); }
+
+  .temporal-nav { margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--border); max-width:720px; }
+  .temporal-label { font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-60); margin-bottom:0.65rem; }
+  .temporal-links { display:flex; flex-wrap:wrap; gap:0.5rem; }
+  .temporal-links a { display:inline-flex; align-items:center; height:36px; padding:0 0.85rem; background:var(--tag-bg); color:var(--text-60); border-radius:20px; font-size:0.82rem; font-weight:500; text-decoration:none; transition:background 150ms,color 150ms; }
+  .temporal-links a:hover { background:var(--coral-light); color:var(--coral); }
+
+  html.dark .event-card { box-shadow:0 2px 8px rgba(0,0,0,0.22); }
+</style>
