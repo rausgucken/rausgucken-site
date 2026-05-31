@@ -1,26 +1,23 @@
 // src/pages/sitemap-tags.xml.ts
-// SEO §11: Tag / category hub pages.
+// Tag landing pages for all 18 approved tags — /ludwigsburg/tags/{tag}/
 
 export async function GET() {
   const siteUrl = "https://www.rausgucken.de";
   const today   = new Date().toISOString().slice(0, 10);
 
-  const tagPages = [
-    { loc: `${siteUrl}/ludwigsburg/kinder/`,    priority: "0.9", changefreq: "weekly" },
-    { loc: `${siteUrl}/ludwigsburg/kostenlos/`, priority: "0.9", changefreq: "weekly" },
+  const TAGS = [
+    "Ausstellung", "Entertainment", "Familie", "Fest", "Fuehrung",
+    "Jugend", "Kinder", "Kulinarik", "Lesung", "Messe", "Musik",
+    "Outdoor", "Sport", "Sprache", "Tanz", "Theater", "Vortrag", "Workshop",
   ];
 
-  const urls = tagPages
-    .map(
-      (p) => `
+  const urls = TAGS.map(tag => `
   <url>
-    <loc>${p.loc}</loc>
+    <loc>${siteUrl}/ludwigsburg/tags/${tag}/</loc>
     <lastmod>${today}</lastmod>
-    <changefreq>${p.changefreq}</changefreq>
-    <priority>${p.priority}</priority>
-  </url>`
-    )
-    .join("");
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>`).join("");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
