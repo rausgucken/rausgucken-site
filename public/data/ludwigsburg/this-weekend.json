@@ -1,8 +1,8 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-05-30T06:00:01.310685+02:00",
-  "event_count": 17,
-  "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
+  "generated_at": "2026-05-31T06:00:01.247467+02:00",
+  "event_count": 14,
+  "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
       "id": "f2d072ce4584b2b4",
@@ -109,6 +109,42 @@
       "scraped_at": "2026-05-27T23:50:53.355359+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "23fc3c1c77f2a028",
+      "title": "Klassische Schlossführung „Herzogin“",
+      "date_start": "2026-03-28",
+      "date_end": "2027-03-31",
+      "time": "10:00",
+      "description": "In dieser Führung durch das Residenzschloss Ludwigsburg erkunden Sie die Räumlichkeiten des Appartements der Herzogin. Entdecken Sie den Vorraum, das Empfangszimmer und das Schlafgemach, die normalerweise von ihrer Schwiegertochter Henriette Marie bewohnt wurden.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 10,00 € Ermäßigt 5,00 € Familie 25,00 €",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zur-gewaehlten-standardfuehrung/klassische-schlossfuehrung-herzogin/2724/1",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zur-gewaehlten-standardfuehrung/klassische-schlossfuehrung-herzogin/2724/1",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "klassische-schlossfuehrung-herzogin-2026-03-28-schl",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scraped_at": "2026-05-31T02:00:06.202589+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -366,128 +402,6 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Forum am Schlosspark Ludwigsburg"
-    },
-    {
-      "id": "9be68b30bc62d356",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-05-30",
-      "date_end": null,
-      "time": "11:00",
-      "description": "In diesem Rundgang durch das Residenzschloss Ludwigsburg entdecken Sie Heizgänge, geheime Kellergewölbe und versteckte Innenhöfe. Mit Führer Mike Mack erleben Sie die Geschichte hinter den prächtigen Kulissen. Ein besonderes Highlight ist der original erhaltene Dachstuhl. Anmeldung erforderlich.",
-      "location": "Residenzschloss Ludwigsburg",
-      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
-      "age_min": null,
-      "age_max": null,
-      "tags": [
-        "Fuehrung"
-      ],
-      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/blick-hinter-die-kulissen/9344/769797",
-      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/blick-hinter-die-kulissen/9344/769797",
-      "source": "schloss",
-      "city": "ludwigsburg",
-      "slug": "blick-hinter-die-kulissen-2026-05-30-schl",
-      "weekdays": [
-        6
-      ],
-      "scraped_at": "2026-05-27T23:50:45.290451+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Residenzschloss Ludwigsburg"
-    },
-    {
-      "id": "1355e08668047dd3",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-05-30",
-      "date_end": "2026-05-30",
-      "time": "11:00 - 11:45",
-      "description": "In der Kinderbibliothek von Ludwigsburg warten jede Woche neue Geschichten auf die Besucher. Ehrenamtliche Vorleserinnen erzählen für Kinder und Erwachsene vorbeigehende Geschichten jeden Samstagabend. Eintritt ist kostenlos.",
-      "location": "Stadtbibliothek Ludwigsburg",
-      "price": "Kostenlos",
-      "age_min": 4,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Lesung",
-        "Familie"
-      ],
-      "link": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx693acc1706cbb.html",
-      "original_url": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx693acc1706cbb.html",
-      "source": "stabi",
-      "city": "ludwigsburg",
-      "slug": "bilderbuchsamstag-2026-05-30-stab",
-      "weekdays": [
-        6
-      ],
-      "scraped_at": "2026-05-20T02:10:51.430185+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadtbibliothek Ludwigsburg"
-    },
-    {
-      "id": "b54f5b88c716ab64",
-      "title": "Führung durch das Schlosstheater",
-      "date_start": "2026-05-30",
-      "date_end": null,
-      "time": "13:30",
-      "description": "In dieser Führung durch das Schlosstheater von Mike Mack erfahren Sie den kulturellen Reichtum des 18. Jahrhunderts, von der historischen Bühne bis ins Depot und Theatermuseum. Ein einzigartiges Einblickserlebnis in die besterhaltene Schlossanlage.",
-      "location": "Residenzschloss Ludwigsburg",
-      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
-      "age_min": null,
-      "age_max": null,
-      "tags": [
-        "Fuehrung"
-      ],
-      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/fuehrung-durch-das-schlosstheater/9345/769810",
-      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/fuehrung-durch-das-schlosstheater/9345/769810",
-      "source": "schloss",
-      "city": "ludwigsburg",
-      "slug": "fuehrung-durch-das-schlosstheater-2026-05-30-schl",
-      "weekdays": [
-        6
-      ],
-      "scraped_at": "2026-05-21T23:39:49.658170+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Residenzschloss Ludwigsburg"
-    },
-    {
-      "id": "ad8c4ed6324efb37",
-      "title": "Sprichwörtern auf der Spur",
-      "date_start": "2026-05-30",
-      "date_end": null,
-      "time": "15:00",
-      "description": "In diesem Rundgang durch das Residenzschloss Ludwigsburg erkunden Teilnehmer mit Larissa Ruta oder Kerstin Frisch M. A. die Geschichte hinter berühmten Sprichwörtern. Der spätnachmittägliche Besuch umfasst 75 Minuten und kombiniert Wissenswertes mit Vergnügen.",
-      "location": "Residenzschloss Ludwigsburg",
-      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
-      "age_min": null,
-      "age_max": null,
-      "tags": [
-        "Fuehrung"
-      ],
-      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/sprichwoertern-auf-der-spur/9338/769719",
-      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/sprichwoertern-auf-der-spur/9338/769719",
-      "source": "schloss",
-      "city": "ludwigsburg",
-      "slug": "sprichwoertern-auf-der-spur-2026-05-30-schl",
-      "weekdays": [
-        6
-      ],
-      "scraped_at": "2026-05-21T23:39:53.004149+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Residenzschloss Ludwigsburg"
     },
     {
       "id": "c4542c1d73479476",
