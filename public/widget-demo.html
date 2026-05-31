@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veranstaltungs-Widget einbetten | rausgucken.de</title>
+  <meta name="description" content="Betten Sie aktuelle Veranstaltungen aus Ludwigsburg und Umgebung kostenlos auf Ihrer Website ein.">
+  <link rel="canonical" href="https://www.rausgucken.de/widget-demo.html">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    :root{--coral:#FF6F61;--text:#373F51;--text60:rgba(55,63,81,0.60);--bg:#FFFDF9;--border:rgba(55,63,81,0.10);--surface:#fff;--code-bg:#f4f1eb;}
+    body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;}
+    .nav{display:flex;align-items:center;gap:10px;padding:14px 24px;border-bottom:1px solid var(--border);background:var(--bg);}
+    .nav-logo{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--text);}
+    .nav-logo svg{width:28px;height:28px;}
+    .nav-wordmark{font-size:17px;font-weight:800;}
+    .nav-wordmark span{color:var(--coral);}
+    .hero{max-width:780px;margin:0 auto;padding:56px 24px 40px;text-align:center;}
+    .hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(255,111,97,0.10);color:var(--coral);border-radius:100px;font-size:12px;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;padding:4px 12px;margin-bottom:20px;}
+    .hero h1{font-size:clamp(26px,5vw,42px);font-weight:800;line-height:1.2;margin-bottom:16px;}
+    .hero h1 span{color:var(--coral);}
+    .hero-sub{font-size:16px;color:var(--text60);line-height:1.6;max-width:560px;margin:0 auto 32px;}
+    .container{max-width:900px;margin:0 auto;padding:0 24px;}
+    .section{margin:48px 0;}
+    .section-label{font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--coral);margin-bottom:8px;}
+    .section h2{font-size:22px;font-weight:800;margin-bottom:12px;}
+    .section p{font-size:15px;color:var(--text60);line-height:1.6;margin-bottom:20px;}
+    .code-block{background:var(--code-bg);border:1px solid var(--border);border-radius:10px;padding:18px 20px;position:relative;overflow-x:auto;}
+    .code-block pre{font-family:'Courier New',monospace;font-size:13px;line-height:1.55;color:#2d3142;white-space:pre;}
+    .copy-btn{position:absolute;top:10px;right:10px;background:var(--coral);color:#fff;border:none;border-radius:6px;font-family:'Nunito',sans-serif;font-size:12px;font-weight:700;padding:5px 12px;cursor:pointer;transition:background 0.15s;}
+    .copy-btn:hover{background:#e55a4d;}
+    .copy-btn.copied{background:#4caf7d;}
+    .demo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;margin-top:24px;}
+    .demo-item h3{font-size:14px;font-weight:800;margin-bottom:12px;}
+    .options-table{width:100%;border-collapse:collapse;font-size:14px;}
+    .options-table th{text-align:left;font-size:11px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--text60);padding:8px 12px;border-bottom:1px solid var(--border);}
+    .options-table td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;}
+    .options-table tr:last-child td{border-bottom:none;}
+    .options-table code{font-family:'Courier New',monospace;font-size:12px;background:var(--code-bg);border-radius:4px;padding:1px 5px;color:var(--coral);}
+    .perks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:20px;}
+    .perk{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 18px;}
+    .perk-icon{font-size:22px;margin-bottom:8px;}
+    .perk h3{font-size:14px;font-weight:800;margin-bottom:4px;}
+    .perk p{font-size:13px;color:var(--text60);line-height:1.4;}
+    .footer{border-top:1px solid var(--border);padding:24px;text-align:center;font-size:13px;color:var(--text60);}
+    .footer a{color:var(--coral);text-decoration:none;font-weight:700;}
+    .footer a:hover{text-decoration:underline;}
+    hr{border:none;border-top:1px solid var(--border);margin:40px 0;}
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <a class="nav-logo" href="https://www.rausgucken.de/" target="_blank" rel="noopener">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+      <circle cx="62" cy="98" r="32" fill="#FF6F61"/>
+      <circle cx="114" cy="114" r="16" fill="#FF6F61"/>
+      <path d="M75 36 L124 36 L124 85" fill="none" stroke="#FF6F61" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="nav-wordmark">raus<span>gucken</span>.de</span>
+  </a>
+</nav>
+<div class="hero">
+  <div class="hero-badge"><svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="#FF6F61"/></svg>Kostenlos &amp; Einfach</div>
+  <h1>Veranstaltungen auf Ihrer<br><span>Website einbetten</span></h1>
+  <p class="hero-sub">Zeigen Sie aktuelle Events aus Ludwigsburg und Umgebung direkt auf Ihrer Vereins- oder Gemeindewebsite &#8212; automatisch aktuell, ohne Pflegeaufwand.</p>
+</div>
+<div class="container">
+  <div class="perks">
+    <div class="perk"><div class="perk-icon">&#x1F504;</div><h3>Immer aktuell</h3><p>Veranstaltungen werden t&#228;glich automatisch aktualisiert. Kein manueller Aufwand.</p></div>
+    <div class="perk"><div class="perk-icon">&#x1F3AF;</div><h3>Gefiltert nach Thema</h3><p>Nur Kinder-Events, nur F&#252;hrungen &#8212; Sie w&#228;hlen, was erscheint.</p></div>
+    <div class="perk"><div class="perk-icon">&#x1F4B6;</div><h3>V&#246;llig kostenlos</h3><p>Keine Anmeldung, kein API-Key, keine Kosten. Code kopieren und einf&#252;gen.</p></div>
+    <div class="perk"><div class="perk-icon">&#x1F4D0;</div><h3>Passt sich an</h3><p>Automatisch responsive. Hell- und Dunkel-Design verf&#252;gbar.</p></div>
+  </div>
+  <hr>
+  <div class="section">
+    <div class="section-label">Schnellstart</div>
+    <h2>In 2 Minuten eingebettet</h2>
+    <p>Kopieren Sie diesen Code und f&#252;gen Sie ihn in Ihren Seitenquelltext ein.</p>
+    <div class="code-block">
+      <button class="copy-btn" onclick="copyCode(this,'code-basic')">Kopieren</button>
+      <pre id="code-basic">&lt;!-- rausgucken.de Veranstaltungs-Widget --&gt;
+&lt;div data-rausgucken-city="ludwigsburg"
+     data-rausgucken-limit="5"&gt;&lt;/div&gt;
+&lt;script src="https://www.rausgucken.de/widget.js" async&gt;&lt;/script&gt;</pre>
+    </div>
+  </div>
+  <hr>
+  <div class="section">
+    <div class="section-label">Live-Vorschau</div>
+    <h2>So sieht es aus</h2>
+    <div class="demo-grid">
+      <div class="demo-item"><h3>Ludwigsburg &#8212; alle Events</h3><div data-rausgucken-city="ludwigsburg" data-rausgucken-limit="4"></div></div>
+      <div class="demo-item"><h3>Nur Kinder &amp; Familie</h3><div data-rausgucken-city="ludwigsburg" data-rausgucken-limit="4" data-rausgucken-tags="Kinder,Familie"></div></div>
+    </div>
+    <div style="margin-top:32px" class="demo-grid">
+      <div class="demo-item"><h3>Bietigheim-Bissingen</h3><div data-rausgucken-city="bietigheim" data-rausgucken-limit="4"></div></div>
+      <div class="demo-item"><h3>Dunkles Design</h3><div data-rausgucken-city="tamm" data-rausgucken-limit="4" data-rausgucken-theme="dark"></div></div>
+    </div>
+  </div>
+  <hr>
+  <div class="section">
+    <div class="section-label">Fertige Code-Snippets</div>
+    <h2>F&#252;r Ihren Anwendungsfall</h2>
+    <p><strong>Elternblog / Familienverein:</strong></p>
+    <div class="code-block">
+      <button class="copy-btn" onclick="copyCode(this,'code-kinder')">Kopieren</button>
+      <pre id="code-kinder">&lt;div data-rausgucken-city="ludwigsburg"
+     data-rausgucken-limit="5"
+     data-rausgucken-tags="Kinder,Familie,Workshop"&gt;&lt;/div&gt;
+&lt;script src="https://www.rausgucken.de/widget.js" async&gt;&lt;/script&gt;</pre>
+    </div>
+    <p style="margin-top:24px"><strong>Heimatverein / Kulturverein:</strong></p>
+    <div class="code-block">
+      <button class="copy-btn" onclick="copyCode(this,'code-kultur')">Kopieren</button>
+      <pre id="code-kultur">&lt;div data-rausgucken-city="ludwigsburg"
+     data-rausgucken-limit="5"
+     data-rausgucken-tags="Ausstellung,Fuehrung,Lesung,Vortrag"&gt;&lt;/div&gt;
+&lt;script src="https://www.rausgucken.de/widget.js" async&gt;&lt;/script&gt;</pre>
+    </div>
+    <p style="margin-top:24px"><strong>Gesamter Landkreis:</strong></p>
+    <div class="code-block">
+      <button class="copy-btn" onclick="copyCode(this,'code-lk')">Kopieren</button>
+      <pre id="code-lk">&lt;div data-rausgucken-city="landkreis-ludwigsburg"
+     data-rausgucken-limit="6"&gt;&lt;/div&gt;
+&lt;script src="https://www.rausgucken.de/widget.js" async&gt;&lt;/script&gt;</pre>
+    </div>
+  </div>
+  <hr>
+  <div class="section">
+    <div class="section-label">Konfiguration</div>
+    <h2>Alle Einstellungen</h2>
+    <table class="options-table">
+      <thead><tr><th>Attribut</th><th>Werte</th><th>Beschreibung</th></tr></thead>
+      <tbody>
+        <tr><td><code>data-rausgucken-city</code></td><td><code>ludwigsburg</code> <code>bietigheim</code> <code>tamm</code> <code>asperg</code> <code>landkreis-ludwigsburg</code></td><td>Welche Stadt (Pflichtfeld)</td></tr>
+        <tr><td><code>data-rausgucken-limit</code></td><td>1&#8211;20 (Standard: 5)</td><td>Anzahl der Events</td></tr>
+        <tr><td><code>data-rausgucken-tags</code></td><td>Kommagetrennt</td><td>Nur Events mit diesen Tags.<br>Verf&#252;gbar: <code>Kinder</code> <code>Familie</code> <code>Musik</code> <code>Ausstellung</code> <code>Fuehrung</code> <code>Workshop</code> <code>Vortrag</code> <code>Lesung</code> <code>Theater</code> <code>Tanz</code> <code>Fest</code> <code>Outdoor</code> <code>Sport</code></td></tr>
+        <tr><td><code>data-rausgucken-theme</code></td><td><code>light</code> <code>dark</code></td><td>Farbschema</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <hr>
+  <div class="section">
+    <div class="section-label">H&#228;ufige Fragen</div>
+    <h2>Was Sie wissen sollten</h2>
+    <p><strong>Kostet das etwas?</strong><br>Nein. Das Widget ist kostenlos. Keine Anmeldung erforderlich.</p>
+    <p><strong>Werden die Daten aktuell gehalten?</strong><br>Ja. rausgucken.de aktualisiert t&#228;glich automatisch. Das Widget zeigt immer den aktuellen Stand.</p>
+    <p><strong>Verlangsamt das Widget meine Website?</strong><br>Das Script l&#228;dt <code>async</code> &#8212; es blockiert nie das Laden Ihrer Seite.</p>
+    <p><strong>Darf ich das Widget verwenden?</strong><br>Ja, f&#252;r nichtkommerzielle Websites. Der &#8222;Powered by rausgucken.de&#8220;-Hinweis muss sichtbar bleiben.</p>
+    <p style="margin-top:20px"><a href="https://www.rausgucken.de/about/" target="_blank" rel="noopener">Kontakt &#252;ber die About-Seite &#8594;</a></p>
+  </div>
+</div>
+<footer class="footer">
+  <p><a href="https://www.rausgucken.de/">rausgucken.de</a> &#183; <a href="https://www.rausgucken.de/impressum/">Impressum</a> &#183; <a href="https://www.rausgucken.de/datenschutz/">Datenschutz</a></p>
+</footer>
+<script src="/widget.js"></script>
+<script>
+function copyCode(btn,id){
+  var text=document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(function(){
+    btn.textContent='\u2713 Kopiert!';btn.classList.add('copied');
+    setTimeout(function(){btn.textContent='Kopieren';btn.classList.remove('copied');},2000);
+  });
+}
+</script>
+</body>
+</html>
