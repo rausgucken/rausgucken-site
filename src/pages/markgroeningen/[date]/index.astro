@@ -8,10 +8,13 @@ import { join }         from "path";
 import DateArchivePage   from "../../../components/DateArchivePage.astro";
 
 export async function getStaticPaths() {
-  // Rolling 30-day window from build date — only dates with ≥1 event get a page.
+  // Window: past 7 days + next 30 days.
+  // Past pages stay alive (no 404) but get noindex once date has passed.
+  // This prevents Google from hitting 404s on previously indexed pages.
   const today  = new Date();
+  const todayStr = today.toISOString().split("T")[0];
   const window: string[] = [];
-  for (let i = 0; i < 30; i++) {
+  for (let i = -7; i < 30; i++) {
     const d = new Date(today);
     d.setDate(today.getDate() + i);
     window.push(d.toISOString().split("T")[0]);
@@ -47,12 +50,12 @@ export async function getStaticPaths() {
     )
     .map(dateStr => ({
       params: { date: dateStr },
-      props:  { allEvents, scrapedAt, links },
+      props:  { allEvents, scrapedAt, links, isPast: dateStr < todayStr },
     }));
 }
 
-const { date }                      = Astro.params;
-const { allEvents, scrapedAt, links } = Astro.props;
+const { date }                               = Astro.params;
+const { allEvents, scrapedAt, links, isPast } = Astro.props;
 ---
 
 <DateArchivePage
@@ -62,4 +65,5 @@ const { allEvents, scrapedAt, links } = Astro.props;
   events={allEvents}
   scrapedAt={scrapedAt}
   links={links}
+  noindex={isPast}
 />

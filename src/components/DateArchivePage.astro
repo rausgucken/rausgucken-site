@@ -15,7 +15,7 @@ import FreshnessStamp       from "./FreshnessStamp.astro";
 import FilterBar            from "./FilterBar.astro";
 import ImportantLinksSidebar from "./ImportantLinksSidebar.astro";
 
-const { cityId, cityName, dateStr, events, scrapedAt, links } = Astro.props;
+const { cityId, cityName, dateStr, events, scrapedAt, links, noindex = false } = Astro.props;
 
 const siteUrl = "https://www.rausgucken.de";
 
@@ -62,6 +62,7 @@ const breadcrumbSchema = {
   canonical={canonical}
   schema={[collectionSchema, breadcrumbSchema]}
   city={cityId}
+  noindex={noindex}
 >
   <nav class="breadcrumb" aria-label="Brotkrumennavigation">
     <a href="/">rausgucken.de</a> ›
