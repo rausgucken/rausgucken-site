@@ -41,6 +41,11 @@ const TAG_LABELS: Record<string, string> = {
 
 // ── Static path generation — one path per tag ────────────────────────────────
 export function getStaticPaths() {
+  const TAGS = [
+    "Ausstellung", "Entertainment", "Familie", "Fest", "Fuehrung",
+    "Jugend", "Kinder", "Kulinarik", "Lesung", "Messe", "Musik",
+    "Outdoor", "Sport", "Sprache", "Tanz", "Theater", "Vortrag", "Workshop",
+  ];
   return TAGS.map((tag) => ({ params: { tag } }));
 }
 
