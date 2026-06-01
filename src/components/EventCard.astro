@@ -427,22 +427,23 @@ const _showRegular = isStanding && !ev.time;
       try { localStorage.setItem('rg-saved', JSON.stringify(arr)); } catch {}
     }
 
-    // Restore button state — runs after DOM ready to catch all cards
-    function restoreMerkenState() {
-      document.querySelectorAll('.merken-btn').forEach(btn => {
-        const slug = btn.dataset.slug;
-        const saved = getSaved();
-        const isSaved = saved.some(e => e.slug === slug);
-        btn.setAttribute('aria-pressed', String(isSaved));
-        btn.querySelector('.merken-label').textContent = isSaved ? 'Gemerkt' : 'Merken';
-      });
+    // Restore button state — debounced global so only last card's IIFE triggers it
+    // Each EventCard runs this IIFE; debounce ensures one restore pass after all cards render
+    if (!window._rgRestoreScheduled) {
+      window._rgRestoreScheduled = true;
+      window._rgRestoreMerken = function() {
+        const saved = JSON.parse(localStorage.getItem('rg-saved') || '[]');
+        document.querySelectorAll('.merken-btn').forEach(btn => {
+          const isSaved = saved.some(e => e.slug === btn.dataset.slug);
+          btn.setAttribute('aria-pressed', String(isSaved));
+          btn.querySelector('.merken-label').textContent = isSaved ? 'Gemerkt' : 'Merken';
+        });
+      };
+      window.addEventListener('rg:saved-changed', window._rgRestoreMerken);
     }
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', restoreMerkenState);
-    } else {
-      restoreMerkenState();
-    }
-    window.addEventListener('rg:saved-changed', restoreMerkenState);
+    // Schedule restore — each card resets the timer; fires 50ms after last card
+    clearTimeout(window._rgRestoreTimer);
+    window._rgRestoreTimer = setTimeout(window._rgRestoreMerken, 50);
 
     document.querySelectorAll('.merken-btn').forEach(btn => {
       btn.addEventListener('click', function() {
