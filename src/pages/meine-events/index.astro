@@ -1,0 +1,415 @@
+---
+// src/pages/meine-events/index.astro
+// Saved events page — reads from localStorage client-side only.
+// No server data, no cookies, no GDPR issues. noindex: true.
+import Base from "../../layouts/Base.astro";
+---
+
+<Base
+  title="Meine Events – Gespeicherte Veranstaltungen | rausgucken.de"
+  description="Deine gespeicherten Veranstaltungen auf rausgucken.de. Merke Events und erhalte Erinnerungen."
+  canonical="/meine-events/"
+  noindex={true}
+>
+  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+    <a href="https://www.rausgucken.de">rausgucken.de</a>
+    <span aria-hidden="true"> › </span>
+    <span aria-current="page">Meine Events</span>
+  </nav>
+
+  <div class="page-header" style="max-width:720px;margin-left:auto;margin-right:auto;">
+    <h1>Meine Events</h1>
+    <p class="page-subtitle">
+      <span id="saved-count-badge" class="count-badge">0</span>
+      gespeicherte Veranstaltungen
+    </p>
+  </div>
+
+  <!-- Notification opt-in banner -->
+  <div id="notif-banner" class="notif-banner" hidden role="region" aria-label="Erinnerungen aktivieren">
+    <div class="notif-banner-inner">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/>
+      </svg>
+      <div class="notif-banner-text">
+        <strong>Erinnerungen aktivieren?</strong>
+        <span>Wir erinnern dich am Vorabend deiner gespeicherten Events.</span>
+      </div>
+      <button id="notif-allow-btn" class="empty-cta empty-cta--sm">Aktivieren</button>
+      <button id="notif-dismiss-btn" class="empty-reset empty-reset--sm" aria-label="Schließen">Nein danke</button>
+    </div>
+  </div>
+
+  <!-- Notification status message -->
+  <div id="notif-status" class="notif-status" hidden></div>
+
+  <!-- Empty state -->
+  <div id="empty-state" class="empty-state" hidden>
+    <div class="empty-state-inner">
+      <p class="empty-headline">Noch nichts gespeichert</p>
+      <p class="empty-body">
+        Tippe auf <strong>Merken</strong> bei einer Veranstaltung, um sie hier zu speichern
+        und eine Erinnerung zu erhalten.
+      </p>
+      <div class="empty-ctas">
+        <a href="/ludwigsburg/" class="empty-cta">Veranstaltungen entdecken →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Saved list -->
+  <section id="saved-section" hidden>
+    <h2 class="section-heading">Gespeicherte Veranstaltungen</h2>
+    <div class="event-list" id="saved-list" aria-live="polite" aria-label="Gespeicherte Veranstaltungen"></div>
+    <div class="clear-row">
+      <button id="clear-all-btn" class="empty-reset">Alle löschen</button>
+    </div>
+  </section>
+
+</Base>
+
+<style>
+  /* Notification banner — matches .sources-chip palette but wider */
+  .notif-banner {
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+    background: var(--coral-light);
+    border: 1px solid var(--coral);
+    border-radius: var(--radius);
+    padding: 0.85rem 1.1rem;
+  }
+  .notif-banner-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .notif-banner-inner > svg { flex-shrink: 0; color: var(--coral); }
+  .notif-banner-text {
+    flex: 1;
+    min-width: 160px;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .notif-banner-text span { color: var(--text-60); }
+
+  .notif-status {
+    max-width: 720px;
+    margin: 0 auto 1.25rem;
+    padding: 0.7rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    background: var(--sage-light);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .notif-status--error {
+    background: rgba(229,90,77,0.08);
+    color: #e55a4d;
+    border-color: rgba(229,90,77,0.2);
+  }
+
+  /* Reuse city-page empty-state pattern exactly */
+  .empty-state { display: none; padding: 3rem 1.5rem; text-align: center; }
+  .empty-state:not([hidden]) { display: block; }
+  .empty-state-inner {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    box-shadow: var(--shadow-card);
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .empty-headline {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .empty-body {
+    font-size: 0.95rem;
+    color: var(--text-60);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  .empty-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+  .empty-cta {
+    background: var(--coral);
+    color: var(--text);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.6rem 1.25rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    transition: background 150ms;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .empty-cta:hover { background: var(--coral-dark); text-decoration: none; }
+  .empty-cta:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+  .empty-cta--sm { min-height: 36px; padding: 0.45rem 0.9rem; font-size: 0.82rem; }
+
+  .empty-reset {
+    background: transparent;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-60);
+    cursor: pointer;
+    min-height: 44px;
+    font-family: var(--font-body);
+    transition: border-color 150ms, color 150ms;
+  }
+  .empty-reset:hover { border-color: var(--coral); color: var(--coral); }
+  .empty-reset:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+  .empty-reset--sm { min-height: 36px; padding: 0.4rem 0.85rem; font-size: 0.8rem; }
+
+  /* Section heading — matches .section-heading in city pages */
+  .section-heading {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clear-row {
+    max-width: 720px;
+    margin: 1.25rem auto 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .clear-row .empty-reset:hover { border-color: #e55a4d; color: #e55a4d; }
+
+  /* Saved event card */
+  .saved-card {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.85rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    box-shadow: var(--shadow-card);
+    transition: transform 200ms cubic-bezier(0.4,0,0.2,1),
+                box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .saved-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+  }
+
+  .saved-card-date {
+    background: var(--coral);
+    color: var(--text);
+    border-radius: var(--radius-sm);
+    min-width: 48px;
+    text-align: center;
+    padding: 0.45rem 0.5rem;
+    flex-shrink: 0;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  .saved-card-date .date-month-label {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    opacity: 0.8;
+    margin-top: 2px;
+  }
+  .saved-card-date.no-date {
+    background: var(--tag-bg);
+    color: var(--text-60);
+    font-size: 1.3rem;
+  }
+  .saved-card-date.is-past { opacity: 0.45; }
+
+  .saved-card-body { flex: 1; min-width: 0; }
+  .saved-card-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text);
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 150ms;
+  }
+  .saved-card-title:hover { color: var(--coral); }
+  .saved-card-meta {
+    font-size: 0.78rem;
+    color: var(--text-60);
+    margin-top: 0.2rem;
+  }
+
+  .saved-card-remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-30);
+    padding: 0.4rem;
+    border-radius: var(--radius-sm);
+    transition: color 150ms, background 150ms;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    min-width: 36px;
+    min-height: 36px;
+    justify-content: center;
+  }
+  .saved-card-remove:hover { color: #e55a4d; background: rgba(229,90,77,0.08); }
+  .saved-card-remove:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+</style>
+
+<script>
+  const STORAGE_KEY       = 'rg-saved';
+  const NOTIF_DISMISS_KEY = 'rg-notif-dismissed';
+
+  function getSaved() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch { return []; }
+  }
+  function setSaved(arr) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); } catch {}
+  }
+
+  function formatDate(iso) {
+    const d = new Date(iso + 'T12:00:00');
+    return {
+      day:     d.getDate(),
+      month:   d.toLocaleDateString('de-DE', { month: 'short' }),
+      weekday: d.toLocaleDateString('de-DE', { weekday: 'short' }),
+      full:    d.toLocaleDateString('de-DE', { day: 'numeric', month: 'long' }),
+      isPast:  d < new Date(new Date().setHours(0,0,0,0)),
+    };
+  }
+
+  function renderList() {
+    const saved   = getSaved();
+    const list    = document.getElementById('saved-list');
+    const section = document.getElementById('saved-section');
+    const empty   = document.getElementById('empty-state');
+    const badge   = document.getElementById('saved-count-badge');
+
+    badge.textContent = String(saved.length);
+    section.hidden = saved.length === 0;
+    empty.hidden   = saved.length > 0;
+
+    if (saved.length === 0) { list.innerHTML = ''; return; }
+
+    // Sort: upcoming first (no date → end)
+    const sorted = [...saved].sort((a, b) => {
+      if (!a.date_start && !b.date_start) return 0;
+      if (!a.date_start) return 1;
+      if (!b.date_start) return -1;
+      return a.date_start.localeCompare(b.date_start);
+    });
+
+    list.innerHTML = sorted.map(ev => {
+      let dateHtml;
+      if (ev.date_start) {
+        const d = formatDate(ev.date_start);
+        dateHtml = `<div class="saved-card-date${d.isPast ? ' is-past' : ''}">${d.day}<span class="date-month-label">${d.month}</span></div>`;
+      } else {
+        dateHtml = `<div class="saved-card-date no-date">∞</div>`;
+      }
+      const metaText = ev.date_start
+        ? (() => { const d = formatDate(ev.date_start); return `${d.weekday}, ${d.full}`; })()
+        : 'Regelmäßig';
+      const safeTitle = ev.title.replace(/"/g, '&quot;');
+
+      return `<div class="saved-card" data-slug="${ev.slug}">
+        ${dateHtml}
+        <div class="saved-card-body">
+          <a class="saved-card-title" href="${ev.url || '#'}">${ev.title}</a>
+          <div class="saved-card-meta">${metaText}</div>
+        </div>
+        <button class="saved-card-remove" data-slug="${ev.slug}" aria-label="Merken aufheben: ${safeTitle}" title="Entfernen">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>`;
+    }).join('');
+
+    list.querySelectorAll('.saved-card-remove').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const slug = btn.dataset.slug;
+        setSaved(getSaved().filter(e => e.slug !== slug));
+        window.dispatchEvent(new CustomEvent('rg:saved-changed', { detail: { slug, saved: false } }));
+        renderList();
+        maybeShowBanner();
+      });
+    });
+  }
+
+  function maybeShowBanner() {
+    const banner    = document.getElementById('notif-banner');
+    const dismissed = localStorage.getItem(NOTIF_DISMISS_KEY);
+    const granted   = typeof Notification !== 'undefined' && Notification.permission === 'granted';
+    banner.hidden   = !!dismissed || getSaved().length === 0 || granted;
+  }
+
+  function showStatus(msg, isError = false) {
+    const el = document.getElementById('notif-status');
+    el.textContent = msg;
+    el.className   = 'notif-status' + (isError ? ' notif-status--error' : '');
+    el.hidden      = false;
+  }
+
+  // Init
+  renderList();
+  maybeShowBanner();
+
+  document.getElementById('clear-all-btn').addEventListener('click', () => {
+    if (!confirm('Alle gespeicherten Events löschen?')) return;
+    setSaved([]);
+    renderList();
+    document.getElementById('notif-banner').hidden = true;
+  });
+
+  document.getElementById('notif-allow-btn').addEventListener('click', async () => {
+    if (!('Notification' in window)) {
+      showStatus('Dein Browser unterstützt keine Benachrichtigungen.', true);
+      return;
+    }
+    const perm = await Notification.requestPermission();
+    document.getElementById('notif-banner').hidden = true;
+    localStorage.setItem(NOTIF_DISMISS_KEY, '1');
+    if (perm === 'granted') {
+      showStatus('✅ Erinnerungen aktiviert! Du wirst am Vorabend deiner gespeicherten Events benachrichtigt.');
+    } else {
+      showStatus('Benachrichtigungen nicht erlaubt. Du kannst sie jederzeit in den Browser-Einstellungen aktivieren.', true);
+    }
+  });
+
+  document.getElementById('notif-dismiss-btn').addEventListener('click', () => {
+    document.getElementById('notif-banner').hidden = true;
+    localStorage.setItem(NOTIF_DISMISS_KEY, '1');
+  });
+
+  window.addEventListener('rg:saved-changed', () => { renderList(); maybeShowBanner(); });
+</script>

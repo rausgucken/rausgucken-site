@@ -333,9 +333,11 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
   /* ── Card footer ────────────────────────────────────────────────────────── */
   .card-footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem;
+    gap: 0.25rem 0;
+    padding: 0.4rem 1rem;
     border-top: 1px solid var(--border);
     background: rgba(0,0,0,0.02);
   }
@@ -353,7 +355,8 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     text-decoration: underline;
     text-decoration-color: transparent;
     transition: color 150ms, text-decoration-color 150ms;
-    min-height: 44px;
+    min-height: 36px;
+    white-space: nowrap;
   }
   .source-link:hover {
     color: var(--coral);
@@ -378,7 +381,7 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     align-items: center;
     gap: 0;
     flex-shrink: 0;
-    margin-left: auto;
+    /* On narrow screens, let it wrap below the source-link */
   }
   .source-attribution {
     font-size: 0.72rem;
@@ -394,4 +397,91 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
   .source-attribution:hover { color: var(--coral); }
   html.dark .source-attribution       { color: var(--text-60); }
   html.dark .source-attribution:hover { color: var(--coral); }
+
+  /* ── Merken button ───────────────────────────────────────────────────────── */
+  .merken-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    min-height: 36px;
+    border-radius: var(--radius-sm);
+    color: var(--text-60);
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: var(--font-body);
+    transition: color 150ms, background 150ms;
+    flex-shrink: 0;
+  }
+  .merken-btn:hover {
+    color: var(--coral);
+    background: var(--coral-light);
+  }
+  .merken-btn:focus-visible {
+    outline: 2px solid var(--coral);
+    outline-offset: 2px;
+  }
+  .merken-btn[aria-pressed="true"] .merken-icon {
+    fill: var(--coral);
+    stroke: var(--coral);
+  }
+  .merken-btn[aria-pressed="true"] .merken-label {
+    color: var(--coral);
+  }
+  .merken-btn[aria-pressed="true"] {
+    color: var(--coral);
+  }
 </style>
+
+<script is:inline>
+  // Merken: save/unsave events in localStorage
+  // Key: 'rg-saved' → JSON array of {slug, title, date_start, city, url}
+  // Runs for each EventCard on page load to restore saved state.
+  (function() {
+    function getSaved() {
+      try { return JSON.parse(localStorage.getItem('rg-saved') || '[]'); } catch { return []; }
+    }
+    function setSaved(arr) {
+      try { localStorage.setItem('rg-saved', JSON.stringify(arr)); } catch {}
+    }
+
+    // Restore button state on load
+    document.querySelectorAll('.merken-btn').forEach(btn => {
+      const slug = btn.dataset.slug;
+      const saved = getSaved();
+      const isSaved = saved.some(e => e.slug === slug);
+      btn.setAttribute('aria-pressed', String(isSaved));
+      btn.querySelector('.merken-label').textContent = isSaved ? 'Gemerkt' : 'Merken';
+
+      btn.addEventListener('click', function() {
+        const slug = this.dataset.slug;
+        const card = this.closest('.event-card');
+        // Gather event data from card's data attributes + nearby DOM
+        const title = card.querySelector('.card-title')?.textContent?.trim() || '';
+        const date  = card.dataset.date || null;
+        const city  = card.querySelector('.card-link')?.href?.split('/')[3] || '';
+        const url   = card.querySelector('.card-link')?.href || '';
+
+        let saved = getSaved();
+        const idx = saved.findIndex(e => e.slug === slug);
+        const nowSaved = idx === -1;
+
+        if (nowSaved) {
+          saved.push({ slug, title, date_start: date, city, url });
+        } else {
+          saved.splice(idx, 1);
+        }
+        setSaved(saved);
+
+        this.setAttribute('aria-pressed', String(nowSaved));
+        this.querySelector('.merken-label').textContent = nowSaved ? 'Gemerkt' : 'Merken';
+
+        // Dispatch event so /meine-events/ page can react without reload
+        window.dispatchEvent(new CustomEvent('rg:saved-changed', { detail: { slug, saved: nowSaved } }));
+      });
+    });
+  })();
+</script>
