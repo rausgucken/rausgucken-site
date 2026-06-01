@@ -478,7 +478,7 @@ const _showRegular = isStanding && !ev.time;
         if (localStorage.getItem('rg-push-enabled') === '1') {
           const uuid = localStorage.getItem('rg-uuid');
           if (uuid) {
-            const slugs = JSON.parse(localStorage.getItem('rg-saved-events') || '[]').map(e => e.slug).filter(Boolean);
+            const slugs = JSON.parse(localStorage.getItem('rg-saved') || '[]').map(e => e.slug).filter(Boolean);
             fetch('https://push.rausgucken.de/update-saved', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },

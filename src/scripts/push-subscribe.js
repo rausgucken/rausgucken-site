@@ -40,7 +40,7 @@ function getOrCreateUUID() {
 
 function getSavedSlugs() {
   try {
-    const saved = JSON.parse(localStorage.getItem('rg-saved-events') || '[]');
+    const saved = JSON.parse(localStorage.getItem('rg-saved') || '[]');
     return saved.map(e => e.slug).filter(Boolean);
   } catch {
     return [];
