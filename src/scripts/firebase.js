@@ -3,12 +3,12 @@ import { getMessaging, getToken, onMessage } from "firebase/messaging";
 
 // Firebase client config — these are public/safe to commit (security via Firebase Rules)
 const firebaseConfig = {
-  apiKey: "AIzaSyDmJjhP7Al4Hn54rf2X6LkINtIuLINld8A",
-  authDomain: "rausgucken-notification.firebaseapp.com",
-  projectId: "rausgucken-notification",
-  storageBucket: "rausgucken-notification.firebasestorage.app",
-  messagingSenderId: "204790417960",
-  appId: "1:204790417960:web:06547f098c630e9e4fc31d"
+  apiKey:            import.meta.env.PUBLIC_FIREBASE_API_KEY,
+  authDomain:        import.meta.env.PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId:         import.meta.env.PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket:     import.meta.env.PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId:             import.meta.env.PUBLIC_FIREBASE_APP_ID,
 };
 
 export const firebaseApp = initializeApp(firebaseConfig);
