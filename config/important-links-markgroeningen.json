@@ -1,41 +1,59 @@
 [
   {
-    "section": "Veranstaltungsorte",
-    "links": [
-      {
-        "label": "Stadt Markgröningen — Veranstaltungen",
-        "url": "https://www.markgroeningen.de/de/erleben/veranstaltungen"
-      },
-      {
-        "label": "Stadtkirche Markgröningen",
-        "url": "https://www.markgroeningen.de/de/erleben/sehenswuerdigkeiten"
-      },
-      {
-        "label": "Schäferlauf Markgröningen",
-        "url": "https://www.schaeferlauf.de"
-      }
-    ]
+    "name": "Veranstaltungsorte",
+    "url": null,
+    "description": null,
+    "external": false,
+    "isHeading": true
   },
   {
-    "section": "Landkreis",
-    "links": [
-      {
-        "label": "Alle Veranstaltungen im Landkreis",
-        "url": "/landkreis-ludwigsburg"
-      }
-    ]
+    "name": "Stadt Markgröningen — Veranstaltungen",
+    "url": "https://www.markgroeningen.de/de/erleben/veranstaltungen",
+    "description": "Offizielle Veranstaltungsseite der Stadt Markgröningen.",
+    "external": true
   },
   {
-    "section": "Community",
-    "links": [
-      {
-        "label": "r/ludwigsburg",
-        "url": "https://www.reddit.com/r/ludwigsburg/"
-      },
-      {
-        "label": "Ludwigsburg entdecken",
-        "url": "/ludwigsburg"
-      }
-    ]
+    "name": "Stadtkirche Markgröningen",
+    "url": "https://www.markgroeningen.de/de/erleben/sehenswuerdigkeiten",
+    "description": "Sehenswürdigkeiten und Veranstaltungen rund um die Stadtkirche.",
+    "external": true
+  },
+  {
+    "name": "Schäferlauf Markgröningen",
+    "url": "https://www.schaeferlauf.de",
+    "description": "Das traditionsreiche Schäferlauf-Fest in Markgröningen.",
+    "external": true
+  },
+  {
+    "name": "Landkreis",
+    "url": null,
+    "description": null,
+    "external": false,
+    "isHeading": true
+  },
+  {
+    "name": "Alle Veranstaltungen im Landkreis",
+    "url": "/landkreis-ludwigsburg/",
+    "description": "Events aus Markgröningen, Ludwigsburg und weiteren Gemeinden.",
+    "external": false
+  },
+  {
+    "name": "Community",
+    "url": null,
+    "description": null,
+    "external": false,
+    "isHeading": true
+  },
+  {
+    "name": "r/ludwigsburg",
+    "url": "https://www.reddit.com/r/ludwigsburg/",
+    "description": "Lokale Community für den Landkreis Ludwigsburg.",
+    "external": true
+  },
+  {
+    "name": "Stadt Markgröningen",
+    "url": "https://www.markgroeningen.de/",
+    "description": "Offizielle Website der Stadt Markgröningen.",
+    "external": true
   }
 ]
