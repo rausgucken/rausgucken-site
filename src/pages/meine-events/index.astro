@@ -405,17 +405,29 @@ import Base from "../../layouts/Base.astro";
   });
 
   document.getElementById('notif-allow-btn').addEventListener('click', async () => {
-    if (!('Notification' in window)) {
+    if (!('Notification' in window) || !('serviceWorker' in navigator)) {
       showStatus('Dein Browser unterstützt keine Benachrichtigungen.', true);
       return;
     }
-    const perm = await Notification.requestPermission();
-    document.getElementById('notif-banner').hidden = true;
-    localStorage.setItem(NOTIF_DISMISS_KEY, '1');
-    if (perm === 'granted') {
+    const btn = document.getElementById('notif-allow-btn');
+    btn.disabled = true;
+    btn.textContent = '…';
+    try {
+      const { subscribePush } = await import('/src/scripts/push-subscribe.js');
+      await subscribePush();
+      document.getElementById('notif-banner').hidden = true;
+      localStorage.setItem(NOTIF_DISMISS_KEY, '1');
       showStatus('✅ Erinnerungen aktiviert! Du wirst am Vorabend deiner gespeicherten Events benachrichtigt.');
-    } else {
-      showStatus('Benachrichtigungen nicht erlaubt. Du kannst sie jederzeit in den Browser-Einstellungen aktivieren.', true);
+    } catch (e) {
+      btn.disabled = false;
+      btn.textContent = 'Aktivieren';
+      if (e.message === 'Permission denied') {
+        document.getElementById('notif-banner').hidden = true;
+        localStorage.setItem(NOTIF_DISMISS_KEY, '1');
+        showStatus('Benachrichtigungen nicht erlaubt. Du kannst sie jederzeit in den Browser-Einstellungen aktivieren.', true);
+      } else {
+        showStatus('Fehler beim Aktivieren: ' + e.message, true);
+      }
     }
   });
 
