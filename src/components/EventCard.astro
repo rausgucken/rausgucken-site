@@ -449,7 +449,7 @@ const _showRegular = isStanding && !ev.time;
         const nowSaved = idx === -1;
 
         if (nowSaved) {
-          saved.push({ slug, title, date_start: date, city, url });
+          saved.push({ slug, title, date_start: date, city, url, _src: 'local' });
 
           // Notify native Capacitor code to subscribe to FCM hardware topic
           if (window.Capacitor) {
