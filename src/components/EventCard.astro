@@ -123,24 +123,12 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     </div>
   </a>
 
-  <!-- Card footer: 2-line layout. Merken + Quelle / Freshness -->
+  <!-- Card footer: single row. FreshnessStamp + Quelle left, Merken right -->
   <div class="card-footer">
-    <div class="footer-line1">
-      <button
-        class="merken-btn"
-        data-slug={ev.slug}
-        aria-label={`Veranstaltung merken: ${ev.title}`}
-        aria-pressed="false"
-        title="Merken"
-        onclick="event.stopPropagation()"
-      >
-        <svg class="merken-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
-        </svg>
-        <span class="merken-label">Merken</span>
-      </button>
+    <div class="footer-left">
+      <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
       {ev.source_label && (
-        <a
+        
           href={ev.original_url}
           target="_blank"
           rel="noopener noreferrer"
@@ -151,9 +139,19 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
         </a>
       )}
     </div>
-    <div class="footer-line2">
-      <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
-    </div>
+    <button
+      class="merken-btn"
+      data-slug={ev.slug}
+      aria-label={`Veranstaltung merken: ${ev.title}`}
+      aria-pressed="false"
+      title="Merken"
+      onclick="event.stopPropagation()"
+    >
+      <svg class="merken-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+      </svg>
+      <span class="merken-label">Merken</span>
+    </button>
   </div>
 </article>
 
@@ -337,22 +335,24 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
   /* ── Card footer ────────────────────────────────────────────────────────── */
   .card-footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.3rem 0.5rem 0.3rem 0.75rem;
     border-top: 1px solid var(--border);
     background: rgba(0,0,0,0.02);
+    min-height: 38px;
   }
   html.dark .card-footer { background: rgba(255,255,255,0.03); }
 
-  .footer-line1 {
+  .footer-left {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0.3rem 0.6rem 0.2rem 0.4rem;
-    min-height: 36px;
-    gap: 0.4rem;
-  }
-  .footer-line2 {
-    padding: 0 0.75rem 0.35rem 0.75rem;
+    gap: 0.5rem;
+    min-width: 0;
+    overflow: hidden;
+    flex: 1;
   }
 
   .source-attribution {
@@ -365,6 +365,8 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     overflow: hidden;
     text-overflow: ellipsis;
     min-width: 0;
+    border-left: 1px solid var(--border);
+    padding-left: 0.5rem;
   }
   .source-attribution:hover { color: var(--coral); }
   html.dark .source-attribution { color: var(--text-60); }
@@ -374,6 +376,7 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     font-size: 0.67rem;
     color: var(--text);
     opacity: 0.70;
+    flex-shrink: 0;
   }
 
   /* ── Merken button ───────────────────────────────────────────────────────── */
@@ -415,51 +418,65 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
 </style>
 
 <script is:inline>
-  // Merken: save/unsave events in localStorage
-  // Key: 'rg-saved' → JSON array of {slug, title, date_start, city, url}
-  // Runs for each EventCard on page load to restore saved state.
-  (function() {
-    function getSaved() {
-      try { return JSON.parse(localStorage.getItem('rg-saved') || '[]'); } catch { return []; }
-    }
-    function setSaved(arr) {
-      try { localStorage.setItem('rg-saved', JSON.stringify(arr)); } catch {}
-    }
+(function() {
+  // Merken: localStorage key 'rg-saved' → [{slug,title,date_start,city,url}]
+  // Uses event delegation on document — works for all cards regardless of render order.
+  // Guard: only register once even if EventCard is included multiple times.
+  if (window.__rgMerkenInit) return;
+  window.__rgMerkenInit = true;
 
-    // Restore button state on load
-    document.querySelectorAll('.merken-btn').forEach(btn => {
-      const slug = btn.dataset.slug;
-      const saved = getSaved();
-      const isSaved = saved.some(e => e.slug === slug);
-      btn.setAttribute('aria-pressed', String(isSaved));
-      btn.querySelector('.merken-label').textContent = isSaved ? 'Gemerkt' : 'Merken';
+  function getSaved() {
+    try { return JSON.parse(localStorage.getItem('rg-saved') || '[]'); } catch { return []; }
+  }
+  function setSaved(arr) {
+    try { localStorage.setItem('rg-saved', JSON.stringify(arr)); } catch {}
+  }
 
-      btn.addEventListener('click', function() {
-        const slug = this.dataset.slug;
-        const card = this.closest('.event-card');
-        // Gather event data from card's data attributes + nearby DOM
-        const title = card.querySelector('.card-title')?.textContent?.trim() || '';
-        const date  = card.dataset.date || null;
-        const city  = card.querySelector('.card-link')?.href?.split('/')[3] || '';
-        const url   = card.querySelector('.card-link')?.href || '';
+  function syncBtn(btn) {
+    var slug = btn.dataset.slug;
+    var isSaved = getSaved().some(function(e) { return e.slug === slug; });
+    btn.setAttribute('aria-pressed', String(isSaved));
+    var label = btn.querySelector('.merken-label');
+    if (label) label.textContent = isSaved ? 'Gemerkt' : 'Merken';
+  }
 
-        let saved = getSaved();
-        const idx = saved.findIndex(e => e.slug === slug);
-        const nowSaved = idx === -1;
+  // Sync all buttons on load
+  function syncAll() {
+    document.querySelectorAll('.merken-btn').forEach(syncBtn);
+  }
 
-        if (nowSaved) {
-          saved.push({ slug, title, date_start: date, city, url });
-        } else {
-          saved.splice(idx, 1);
-        }
-        setSaved(saved);
+  // Event delegation: single listener on document
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.merken-btn');
+    if (!btn) return;
+    e.stopPropagation();
 
-        this.setAttribute('aria-pressed', String(nowSaved));
-        this.querySelector('.merken-label').textContent = nowSaved ? 'Gemerkt' : 'Merken';
+    var slug  = btn.dataset.slug;
+    var card  = btn.closest('.event-card');
+    var title = card ? (card.querySelector('.card-title') || {}).textContent || '' : '';
+    title = title.trim();
+    var date  = card ? card.dataset.date || null : null;
+    var link  = card ? card.querySelector('.card-link') : null;
+    var url   = link ? link.href : '';
+    var parts = url.split('/');
+    var city  = parts.length > 3 ? parts[3] : '';
 
-        // Dispatch event so /meine-events/ page can react without reload
-        window.dispatchEvent(new CustomEvent('rg:saved-changed', { detail: { slug, saved: nowSaved } }));
-      });
-    });
-  })();
+    var arr     = getSaved();
+    var idx     = arr.findIndex(function(e) { return e.slug === slug; });
+    var nowSaved = idx === -1;
+    if (nowSaved) { arr.push({ slug: slug, title: title, date_start: date, city: city, url: url }); }
+    else { arr.splice(idx, 1); }
+    setSaved(arr);
+
+    btn.setAttribute('aria-pressed', String(nowSaved));
+    var label = btn.querySelector('.merken-label');
+    if (label) label.textContent = nowSaved ? 'Gemerkt' : 'Merken';
+
+    window.dispatchEvent(new CustomEvent('rg:saved-changed', { detail: { slug: slug, saved: nowSaved } }));
+  });
+
+  // Sync on load and whenever saved state changes from /meine-events/
+  syncAll();
+  window.addEventListener('rg:saved-changed', syncAll);
+})();
 </script>
