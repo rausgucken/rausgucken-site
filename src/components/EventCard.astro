@@ -33,24 +33,24 @@ const isSponsored = ev.sponsored === true;
 
 const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
 
+const _showNew     = ev.is_new && !isSponsored;
+const _showAge     = ev.age_min != null;
+const _ageText     = ev.age_min != null ? ("ab " + ev.age_min + " J." + (ev.age_max ? "–" + ev.age_max : "+")) : "";
+const _tag0        = ev.tags[0] ? (TAG_LABELS[ev.tags[0]] || ev.tags[0]) : null;
+const _tag1        = ev.tags[1] ? (TAG_LABELS[ev.tags[1]] || ev.tags[1]) : null;
+const _tag2        = ev.tags[2] ? (TAG_LABELS[ev.tags[2]] || ev.tags[2]) : null;
+const _locShort    = ev.location ? ev.location.replace("Residenzschloss Ludwigsburg", "Residenzschloss LB") : null;
+const _showRegular = isStanding && !ev.time;
+const _svgClock    = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>';
+const _svgCal      = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
+const _svgPin      = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>';
+const _svgEuro     = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>';
+const _priceShort  = ev.price ? ev.price.split(" ").slice(0,3).join(" ") : null;
+const _timeHtml    = ev.time    ? (_svgClock + ev.time)        : null;
+const _regularHtml = _showRegular ? (_svgCal + "Regelmäßig") : null;
+const _locHtml     = _locShort  ? (_svgPin  + _locShort)       : null;
+const _priceHtml   = _priceShort ? (_svgEuro + _priceShort)    : null;
 
-const showNew = ev.is_new && !isSponsored;
-const showRegular = isStanding && !ev.time;
-const showAge = ev.age_min != null;
-const _ageDisplay = ev.age_min != null ? ("ab " + ev.age_min + " J." + (ev.age_max ? "–" + ev.age_max : "+")) : null;
-const _svgClock = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>';
-const _svgCal = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
-const _svgPin = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>';
-const _svgEuro = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>';
-const _locationShort = ev.location ? ev.location.replace("Residenzschloss Ludwigsburg", "Residenzschloss LB") : null;
-const _timeHtml = ev.time ? (_svgClock + ev.time) : null;
-const _regularHtml = showRegular ? (_svgCal + "Regelmäßig") : null;
-const _locationHtml = _locationShort ? (_svgPin + _locationShort) : null;
-const _priceHtml = ev.price ? (_svgEuro + ev.price.split(" ").slice(0,3).join(" ")) : null;
-const _tags = ev.tags.slice(0, 3);
-const _tag0 = _tags[0] ? (TAG_LABELS[_tags[0]] || _tags[0]) : null;
-const _tag1 = _tags[1] ? (TAG_LABELS[_tags[1]] || _tags[1]) : null;
-const _tag2 = _tags[2] ? (TAG_LABELS[_tags[2]] || _tags[2]) : null;
 ---
 
 <article
@@ -90,20 +90,40 @@ const _tag2 = _tags[2] ? (TAG_LABELS[_tags[2]] || _tags[2]) : null;
     <div class="card-body">
       <div class="card-tags">
         {isSponsored && <span class="badge-sponsored" aria-label="Anzeige">Anzeige</span>}
-        {showNew && <span class="badge-new">Neu</span>}
+        {_showNew && <span class="badge-new">Neu</span>}
         {_tag0 && <span class="tag">{_tag0}</span>}
         {_tag1 && <span class="tag">{_tag1}</span>}
         {_tag2 && <span class="tag">{_tag2}</span>}
-        {showAge && <span class="tag tag--age">{_ageDisplay}</span>}
+        {_showAge && <span class="tag tag--age">{_ageText}</span>}
       </div>
 
       <h3 class="card-title">{ev.title}</h3>
 
       <div class="card-meta">
-        {_timeHtml && <span class="meta-item" set:html={_timeHtml} />}
-        {_regularHtml && <span class="meta-item" set:html={_regularHtml} />}
-        {_locationHtml && <span class="meta-item" set:html={_locationHtml} />}
-        {_priceHtml && <span class="meta-item" set:html={_priceHtml} />}
+        {ev.time && (
+          <span class="meta-item">
+            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            {ev.time}
+          </span>
+        )}
+        {isStanding && !ev.time && (
+          <span class="meta-item">
+            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Regelmäßig
+          </span>
+        )}
+        {ev.location && (
+          <span class="meta-item">
+            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            {ev.location.replace("Residenzschloss Ludwigsburg", "Residenzschloss LB")}
+          </span>
+        )}
+        {ev.price && (
+          <span class="meta-item">
+            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            {ev.price.split(" ").slice(0, 3).join(" ")}
+          </span>
+        )}
       </div>
 
       {ev.description && (
@@ -116,12 +136,24 @@ const _tag2 = _tags[2] ? (TAG_LABELS[_tags[2]] || _tags[2]) : null;
     </div>
   </a>
 
-  <!-- Card footer: single row. FreshnessStamp + Quelle left, Merken right -->
+  <!-- Card footer: 2-line layout. Merken + Quelle / Freshness -->
   <div class="card-footer">
-    <div class="footer-left">
-      <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
+    <div class="footer-line1">
+      <button
+        class="merken-btn"
+        data-slug={ev.slug}
+        aria-label={`Veranstaltung merken: ${ev.title}`}
+        aria-pressed="false"
+        title="Merken"
+        onclick="event.stopPropagation()"
+      >
+        <svg class="merken-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+        </svg>
+        <span class="merken-label">Merken</span>
+      </button>
       {ev.source_label && (
-        
+        <a
           href={ev.original_url}
           target="_blank"
           rel="noopener noreferrer"
@@ -132,19 +164,9 @@ const _tag2 = _tags[2] ? (TAG_LABELS[_tags[2]] || _tags[2]) : null;
         </a>
       )}
     </div>
-    <button
-      class="merken-btn"
-      data-slug={ev.slug}
-      aria-label={`Veranstaltung merken: ${ev.title}`}
-      aria-pressed="false"
-      title="Merken"
-      onclick="event.stopPropagation()"
-    >
-      <svg class="merken-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
-      </svg>
-      <span class="merken-label">Merken</span>
-    </button>
+    <div class="footer-line2">
+      <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
+    </div>
   </div>
 </article>
 
@@ -328,24 +350,22 @@ const _tag2 = _tags[2] ? (TAG_LABELS[_tags[2]] || _tags[2]) : null;
   /* ── Card footer ────────────────────────────────────────────────────────── */
   .card-footer {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding: 0.3rem 0.5rem 0.3rem 0.75rem;
+    flex-direction: column;
     border-top: 1px solid var(--border);
     background: rgba(0,0,0,0.02);
-    min-height: 38px;
   }
   html.dark .card-footer { background: rgba(255,255,255,0.03); }
 
-  .footer-left {
+  .footer-line1 {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    min-width: 0;
-    overflow: hidden;
-    flex: 1;
+    justify-content: space-between;
+    padding: 0.3rem 0.6rem 0.2rem 0.4rem;
+    min-height: 36px;
+    gap: 0.4rem;
+  }
+  .footer-line2 {
+    padding: 0 0.75rem 0.35rem 0.75rem;
   }
 
   .source-attribution {
@@ -358,8 +378,6 @@ const _tag2 = _tags[2] ? (TAG_LABELS[_tags[2]] || _tags[2]) : null;
     overflow: hidden;
     text-overflow: ellipsis;
     min-width: 0;
-    border-left: 1px solid var(--border);
-    padding-left: 0.5rem;
   }
   .source-attribution:hover { color: var(--coral); }
   html.dark .source-attribution { color: var(--text-60); }
@@ -369,7 +387,6 @@ const _tag2 = _tags[2] ? (TAG_LABELS[_tags[2]] || _tags[2]) : null;
     font-size: 0.67rem;
     color: var(--text);
     opacity: 0.70;
-    flex-shrink: 0;
   }
 
   /* ── Merken button ───────────────────────────────────────────────────────── */
@@ -411,65 +428,51 @@ const _tag2 = _tags[2] ? (TAG_LABELS[_tags[2]] || _tags[2]) : null;
 </style>
 
 <script is:inline>
-(function() {
-  // Merken: localStorage key 'rg-saved' → [{slug,title,date_start,city,url}]
-  // Uses event delegation on document — works for all cards regardless of render order.
-  // Guard: only register once even if EventCard is included multiple times.
-  if (window.__rgMerkenInit) return;
-  window.__rgMerkenInit = true;
+  // Merken: save/unsave events in localStorage
+  // Key: 'rg-saved' → JSON array of {slug, title, date_start, city, url}
+  // Runs for each EventCard on page load to restore saved state.
+  (function() {
+    function getSaved() {
+      try { return JSON.parse(localStorage.getItem('rg-saved') || '[]'); } catch { return []; }
+    }
+    function setSaved(arr) {
+      try { localStorage.setItem('rg-saved', JSON.stringify(arr)); } catch {}
+    }
 
-  function getSaved() {
-    try { return JSON.parse(localStorage.getItem('rg-saved') || '[]'); } catch { return []; }
-  }
-  function setSaved(arr) {
-    try { localStorage.setItem('rg-saved', JSON.stringify(arr)); } catch {}
-  }
+    // Restore button state on load
+    document.querySelectorAll('.merken-btn').forEach(btn => {
+      const slug = btn.dataset.slug;
+      const saved = getSaved();
+      const isSaved = saved.some(e => e.slug === slug);
+      btn.setAttribute('aria-pressed', String(isSaved));
+      btn.querySelector('.merken-label').textContent = isSaved ? 'Gemerkt' : 'Merken';
 
-  function syncBtn(btn) {
-    var slug = btn.dataset.slug;
-    var isSaved = getSaved().some(function(e) { return e.slug === slug; });
-    btn.setAttribute('aria-pressed', String(isSaved));
-    var label = btn.querySelector('.merken-label');
-    if (label) label.textContent = isSaved ? 'Gemerkt' : 'Merken';
-  }
+      btn.addEventListener('click', function() {
+        const slug = this.dataset.slug;
+        const card = this.closest('.event-card');
+        // Gather event data from card's data attributes + nearby DOM
+        const title = card.querySelector('.card-title')?.textContent?.trim() || '';
+        const date  = card.dataset.date || null;
+        const city  = card.querySelector('.card-link')?.href?.split('/')[3] || '';
+        const url   = card.querySelector('.card-link')?.href || '';
 
-  // Sync all buttons on load
-  function syncAll() {
-    document.querySelectorAll('.merken-btn').forEach(syncBtn);
-  }
+        let saved = getSaved();
+        const idx = saved.findIndex(e => e.slug === slug);
+        const nowSaved = idx === -1;
 
-  // Event delegation: single listener on document
-  document.addEventListener('click', function(e) {
-    var btn = e.target.closest('.merken-btn');
-    if (!btn) return;
-    e.stopPropagation();
+        if (nowSaved) {
+          saved.push({ slug, title, date_start: date, city, url });
+        } else {
+          saved.splice(idx, 1);
+        }
+        setSaved(saved);
 
-    var slug  = btn.dataset.slug;
-    var card  = btn.closest('.event-card');
-    var title = card ? (card.querySelector('.card-title') || {}).textContent || '' : '';
-    title = title.trim();
-    var date  = card ? card.dataset.date || null : null;
-    var link  = card ? card.querySelector('.card-link') : null;
-    var url   = link ? link.href : '';
-    var parts = url.split('/');
-    var city  = parts.length > 3 ? parts[3] : '';
+        this.setAttribute('aria-pressed', String(nowSaved));
+        this.querySelector('.merken-label').textContent = nowSaved ? 'Gemerkt' : 'Merken';
 
-    var arr     = getSaved();
-    var idx     = arr.findIndex(function(e) { return e.slug === slug; });
-    var nowSaved = idx === -1;
-    if (nowSaved) { arr.push({ slug: slug, title: title, date_start: date, city: city, url: url }); }
-    else { arr.splice(idx, 1); }
-    setSaved(arr);
-
-    btn.setAttribute('aria-pressed', String(nowSaved));
-    var label = btn.querySelector('.merken-label');
-    if (label) label.textContent = nowSaved ? 'Gemerkt' : 'Merken';
-
-    window.dispatchEvent(new CustomEvent('rg:saved-changed', { detail: { slug: slug, saved: nowSaved } }));
-  });
-
-  // Sync on load and whenever saved state changes from /meine-events/
-  syncAll();
-  window.addEventListener('rg:saved-changed', syncAll);
-})();
+        // Dispatch event so /meine-events/ page can react without reload
+        window.dispatchEvent(new CustomEvent('rg:saved-changed', { detail: { slug, saved: nowSaved } }));
+      });
+    });
+  })();
 </script>
