@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-06-01T06:34:44.838844+02:00",
-  "event_count": 137,
+  "generated_at": "2026-06-01T16:00:58.038102+02:00",
+  "event_count": 158,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -66,6 +66,38 @@
         1
       ],
       "scraped_at": "2026-05-21T23:39:59.348868+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "5581170fde25a38a",
+      "title": "Wer schön sein will, muss leiden",
+      "date_start": "2026-06-02",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In dieser Familienführung im Modemuseum des Residenzschlosses Ludwigsburg erkunden Kinder und Erwachsene gemeinsam den Aufwand hinter der Schönheit in früheren Zeiten. Das Schlossteam leitet die Besucher durch prächtige Räume. Anmeldung erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770185",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770185",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "wer-schoen-sein-will-muss-leiden-2026-06-02-schl",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T11:51:21.485035+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1082,6 +1114,38 @@
       "source_label": "Demokratisches Zentrum Ludwigsburg"
     },
     {
+      "id": "691173904c17a73f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-06-27",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder ihre kreativen Fähigkeiten entfalten. Mitunter unter Anleitung von Museumsassistenten basteln und malen sie an exklusiven Objekten der Sammlung.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806685",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806685",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-06-27-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-01T11:51:08.772682+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
+    },
+    {
       "id": "0c3c720e54359536",
       "title": "Workshop: Keramikstudio für Erwachsene und Eltern mit Kindern in Ludwigsburg",
       "date_start": "2026-06-27",
@@ -1539,6 +1603,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Kunstschule Labyrinth"
+    },
+    {
+      "id": "e03dcd037732fb3b",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-07-25",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder ihre kreativen Fähigkeiten entfalten. Mit Unterstützung durch einen Fachmann basteln und malen sie unter dem Motivieren einer erfahrenen Lehrkraft.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806684",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806684",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-07-25-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-01T11:51:08.773939+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "9ca58150abcb4f04",
@@ -2339,42 +2435,6 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
-      "id": "08c2426ec3c063d6",
-      "title": "Sommerferienworkshop: Abenteuer Manege! in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "date_end": "2026-08-07",
-      "time": "13:30-16:30 Uhr",
-      "description": "In diesem Workshop entdecken Kinder und Jugendliche das Abenteuer der Manege. Mit verschiedenen kreativen Aktivitäten lernen sie über Reitkunst und Pferdepflege. Ein erfinderischer Tag im Kunstzentrum Karlskaserne.",
-      "location": "Kunstschule Labyrinth",
-      "price": "80,00 Euro",
-      "age_min": 4,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Workshop",
-        "Familie"
-      ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254167004/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254167004/index.html",
-      "source": "labyrinth",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-abenteuer-manege-in-ludwigsburg-2026-08-03-laby",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-06-01T02:11:15.409224+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstschule Labyrinth"
-    },
-    {
       "id": "603fe36ac301102f",
       "title": "Sommerferienworkshop: Hip Hop Streetdance in Bietigheim",
       "date_start": "2026-08-03",
@@ -2524,10 +2584,11 @@
       "location": "Kunstzentrum Karlskaserne",
       "price": "80,00 Euro",
       "age_min": 8,
-      "age_max": null,
+      "age_max": 12,
       "tags": [
         "Kinder",
-        "Workshop"
+        "Workshop",
+        "Familie"
       ],
       "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167009/SommerferienworkshopDieZauberweltvonHarryPotterinLudwigsburg.html",
       "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167009/SommerferienworkshopDieZauberweltvonHarryPotterinLudwigsburg.html",
@@ -2616,6 +2677,69 @@
       "source_label": "Stadtbibliothek Ludwigsburg"
     },
     {
+      "id": "1e170a74ce03d546",
+      "title": "Der Schatz des Herzogs",
+      "date_start": "2026-08-12",
+      "date_end": null,
+      "time": "14:00",
+      "description": "In dieser Veranstaltung suchen Kinder den Schatz des Herzogs Carl Alexander aus dem Jahr 1734. Mit Rätseln und Geheimnissen führt sie durch das Residenzschloss Ludwigsburg, begleitet von einem erfahrenen Guide. Eine spurensuche für alle, die Abenteuer lieben.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770246",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770246",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "der-schatz-des-herzogs-2026-08-12-schl",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-06-01T11:53:33.816991+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "bf91fc6c78e8f9c1",
+      "title": "Wer schön sein will, muss leiden",
+      "date_start": "2026-08-13",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In dieser Familienführung im Modemuseum des Residenzschlosses Ludwigsburg erkunden Kinder mit ihren Erwachsenenbegleitern die Herausforderungen hinter märchenhafter Schönheit. Ein besonderer Fokus liegt auf der Pracht und dem Aufwand früherer Jahrhunderte. Anmeldung bei Sonderführungen erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770186",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770186",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "wer-schoen-sein-will-muss-leiden-2026-08-13-schl",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-01T11:53:39.292320+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
       "id": "886674379408d31b",
       "title": "KreativWerkstatt - Hej sommar - Sommer in Schweden",
       "date_start": "2026-08-14",
@@ -2645,6 +2769,37 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg"
+    },
+    {
+      "id": "51a4f0cb4be13889",
+      "title": "Ferienworkshop Museumsbuch interaktiv",
+      "date_start": "2026-08-14",
+      "date_end": null,
+      "time": "10:00–12:00 Uhr",
+      "description": "Dieser Ferienworkshop bietet Kinder und Jugendliche die Möglichkeit, das Ludwigsburg Museum im MIK interaktiv zu entdecken. Mit verschiedenen Aktivitäten lernen sie mehr über Kunst und Geschichte in einem hands-on-Erlebnis.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523254372401",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523254372401",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "ferienworkshop-museumsbuch-interaktiv-2026-08-14-muse",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-01T11:51:08.774640+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "30d42141902b2bb5",
@@ -2679,6 +2834,69 @@
       "source_label": "Stadtbibliothek Ludwigsburg"
     },
     {
+      "id": "005223f76fc8beba",
+      "title": "Tiere im Schloss",
+      "date_start": "2026-08-17",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In diesem Familienrundgang durch das Barockschloss Ludwigsburg entdecken Besucher eine magische Tierwelt. Geheimnisse um Löwen, Adler und andere nicht-menschliche Bewohner lüftet ein erfahrenes Schlossteam.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/tiere-im-schloss/9364/770193",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/tiere-im-schloss/9364/770193",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "tiere-im-schloss-2026-08-17-schl",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-06-01T11:53:45.088936+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "56fac27e90397852",
+      "title": "Treppauf, treppab",
+      "date_start": "2026-08-18",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In dieser Führung durch die Treppenhäuser des Residenzschlosses Ludwigsburg entdecken Kinder und Erwachsene verborgene Wege und ehrfurchtgebietende Stufen. Ein Blick von einer neuen Seite auf das Schloss. Anmeldung erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770236",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770236",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "treppauf-treppab-2026-08-18-schl",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T11:53:46.388814+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
       "id": "47fa58ced1983f7d",
       "title": "Bilderbuchsamstag",
       "date_start": "2026-08-22",
@@ -2708,6 +2926,164 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg"
+    },
+    {
+      "id": "0e6769df106e20f3",
+      "title": "Tiere im Schloss",
+      "date_start": "2026-08-24",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In diesem familienfreundlichen Rundgang durch das Barockschloss Ludwigsburg entdecken Besucher eine magische Tierwelt. Geheimnisse um geflügelte und flauschige Bewohner lüftet ein fachkundiges Schlossteam.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/tiere-im-schloss/9364/770194",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/tiere-im-schloss/9364/770194",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "tiere-im-schloss-2026-08-24-schl",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-06-01T11:54:00.991566+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "a75a1fe17773d252",
+      "title": "Treppauf, treppab",
+      "date_start": "2026-08-25",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In dieser Führung durch das Residenzschloss Ludwigsburg erkunden Kinder und Erwachsene die geheimen Stiegen und prächtigen Treppenhäuser. Das Schlossteam führt auf einer Stunde langen Tour die Besucher durch die vielen Stockwerke, von königlichen Empfangsräumen bis hin zu versteckten Dienstbotengängen.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770237",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770237",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "treppauf-treppab-2026-08-25-schl",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T11:54:02.754359+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "c2cd02efdc5d29e8",
+      "title": "Der Schatz des Herzogs",
+      "date_start": "2026-08-26",
+      "date_end": null,
+      "time": "14:00",
+      "description": "In diesem Abenteuer durch das Residenzschloss Ludwigsburg suchen Kinder nach dem Schatz des Herzogs Carl Alexander. Mit Rätseln und Geheimnissen werden sie durch die historischen Räume geführt, von der Eingangshalle bis zum Schlafzimmer. Ein kreativer Spaziergang für Familien mit Kindern.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770247",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770247",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "der-schatz-des-herzogs-2026-08-26-schl",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-06-01T11:54:06.398113+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "01db2569a5ada2e6",
+      "title": "Wer schön sein will, muss leiden",
+      "date_start": "2026-08-27",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In dieser Familienführung im Modemuseum des Residenzschlosses Ludwigsburg erkunden Kinder mit ihren Erwachsenenbegleitern den Aufwand dahinter, um in früheren Zeiten schön zu sein. Eine reservierte Anmeldung ist empfohlen.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770187",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770187",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "wer-schoen-sein-will-muss-leiden-2026-08-27-schl",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-01T11:54:07.745414+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "c48034e537af9ed5",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-08-29",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder ihre kreativen Fähigkeiten entfalten. Mitunter begleitet von einem Museumsdozenten, basteln und malen sie unterderabadung.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806683",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806683",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-08-29-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-01T11:51:08.774786+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "d4e3ca4741f455b7",
@@ -2993,6 +3369,40 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
+      "id": "7f9e3803bf319b8f",
+      "title": "Sommerferienworkshop: In Holz hauen und Schnitzen in Ludwigsburg",
+      "date_start": "2026-08-31",
+      "date_end": "2026-09-04",
+      "time": "13:30-16:30 Uhr",
+      "description": "In diesem Sommerferienworkshop lernen Kinder ab 8 Jahren das Holzschliff und -schnitzen. Unter Anleitung erfahren sie die Techniken dieser alten Handwerkskunst. Das Kunstzentrum Karlskaserne bietet ein ideales Lernumfeld an.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 8,
+      "age_max": null,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149658/SommerferienworkshopInHolzhauenundSchnitzeninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149658/SommerferienworkshopInHolzhauenundSchnitzeninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-in-holz-hauen-und-schnitzen-in-ludwigsburg-2026-08-31-karl",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-01T02:05:31.038139+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne"
+    },
+    {
       "id": "de02c688e83aab05",
       "title": "Sommerferienworkshop: Bühne frei! in Ludwigsburg",
       "date_start": "2026-08-31",
@@ -3029,38 +3439,36 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
-      "id": "7f9e3803bf319b8f",
-      "title": "Sommerferienworkshop: In Holz hauen und Schnitzen in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "date_end": "2026-09-04",
-      "time": "13:30-16:30 Uhr",
-      "description": "In diesem Sommerferienworkshop lernen Kinder ab 8 Jahren das Holzschliff und -schnitzen. Unter Anleitung erfahren sie die Techniken dieser alten Handwerkskunst. Das Kunstzentrum Karlskaserne bietet ein ideales Lernumfeld an.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 8,
-      "age_max": null,
+      "id": "93b6096865699f94",
+      "title": "Treppauf, treppab",
+      "date_start": "2026-09-01",
+      "date_end": null,
+      "time": "14:30",
+      "description": "Diese Führung führt durch die Stockwerke des Residenzschlosses Ludwigsburg, entdeckend die vielfältigen Treppenhäuser und Stiegen. Für Kinder und Erwachsene einzigartig – das Schloss von einer neuen Seite kenneln sie lernen. Anmeldung bei Sonderführungen erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
       "tags": [
-        "Kinder"
+        "Fuehrung",
+        "Kinder",
+        "Familie"
       ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149658/SommerferienworkshopInHolzhauenundSchnitzeninLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149658/SommerferienworkshopInHolzhauenundSchnitzeninLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770238",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770238",
+      "source": "schloss",
       "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-in-holz-hauen-und-schnitzen-in-ludwigsburg-2026-08-31-karl",
+      "slug": "treppauf-treppab-2026-09-01-schl",
       "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
+        2
       ],
-      "scraped_at": "2026-06-01T02:05:31.038139+02:00",
+      "scraped_at": "2026-06-01T11:54:20.663321+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne"
+      "source_label": "Residenzschloss Ludwigsburg"
     },
     {
       "id": "fb57d8d5e43463e1",
@@ -3095,6 +3503,37 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne"
+    },
+    {
+      "id": "d9fb4dfdcf49e473",
+      "title": "Der Schatz des Herzogs",
+      "date_start": "2026-09-02",
+      "date_end": null,
+      "time": "14:00",
+      "description": "In dieser Veranstaltung erkunden Kinder die Residenz des Herzogs Carl Alexander aus dem Jahr 1734. Sie müssen Rätsel lösen und Geheimnisse lüften, um den verlorenen Schatz zu finden. Die Suche beginnt an der Schlosstür und führt durch verschiedene Räume bis ins Schlafzimmer.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770248",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770248",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "der-schatz-des-herzogs-2026-09-02-schl",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-06-01T11:54:22.043588+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
     },
     {
       "id": "e53dcf053fd08a2c",
@@ -3585,6 +4024,132 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
+      "id": "05def27e8e0a6991",
+      "title": "Tiere im Schloss",
+      "date_start": "2026-09-07",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In diesem familienfreundlichen Rundgang durch das Barockschloss Ludwigsburg entdecken Besucher die magischen und flauschigen Bewohner der Tierwelt. Geheimnisse um Löwen, Adler und sogar ein Zauberpferd lüften sich in verschiedenen Räumen der Residenz.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/tiere-im-schloss/9364/770195",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/tiere-im-schloss/9364/770195",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "tiere-im-schloss-2026-09-07-schl",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-06-01T11:54:28.799653+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "694269efdf18e6b3",
+      "title": "Treppauf, treppab",
+      "date_start": "2026-09-08",
+      "date_end": null,
+      "time": "14:30",
+      "description": "Diese Führung führt durch die Stockwerke des Residenzschlosses Ludwigsburg und enthüllt verborgene Stiegen und ehrfurchtgebietende Treppenhäuser. Ideal für Kinder und Erwachsene, um das Schloss von einer neuen Seite kennenzulernen. Anmeldung erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770239",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770239",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "treppauf-treppab-2026-09-08-schl",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T11:54:30.149971+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "d39fe0f6a2cca2f9",
+      "title": "Der Schatz des Herzogs",
+      "date_start": "2026-09-09",
+      "date_end": null,
+      "time": "14:00",
+      "description": "In diesem Familienabenteuer durch das Residenzschloss Ludwigsburg lernen Kinder mit dem Schlossteam die Wohnung des Herzogs Carl Alexander 1734 zu suchen. Durch Rätsel und Geheimnisse führt man zur verborgenen Schatzkammer. Ideal für Erwachsene und Kinder ab 6 Jahren.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 6,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770249",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770249",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "der-schatz-des-herzogs-2026-09-09-schl",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-06-01T11:54:31.459654+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "ab00ad9d1137b9c7",
+      "title": "Wer schön sein will, muss leiden",
+      "date_start": "2026-09-10",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In dieser Familienführung im Modemuseum des Residenzschlosses Ludwigsburg erkunden Kinder mit ihren Erwachsenenbegleitern die Hintergründe zur Schönheit in früheren Zeiten. Einzelheiten zu Anmeldung unter Hotline +49(0)71 41. 18 64 00 oder info@schloss-ludwigshburg.de.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770188",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770188",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "wer-schoen-sein-will-muss-leiden-2026-09-10-schl",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-01T11:54:34.740497+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
       "id": "4bcda368c2b2467b",
       "title": "Storytime in West",
       "date_start": "2026-09-24",
@@ -3645,6 +4210,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg"
+    },
+    {
+      "id": "8f9a9ad1ace964ca",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-10-02",
+      "date_end": null,
+      "time": "20:00",
+      "description": "Bei dieser Abendführung durch das beleuchtete Residenzschloss Ludwigsburg erwachen die Porträts der Schlossbewohner scheinbar zum Leben. Ein eindrucksvoller Spaziergang durch prachtvolle Räume, ideal für Kinder und Erwachsene. Anmeldung erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/nachts-im-schloss/9365/770214",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/nachts-im-schloss/9365/770214",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "nachts-im-schloss-2026-10-02-schl",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-01T11:55:15.039208+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
     },
     {
       "id": "02a112209f9473b8",
@@ -3929,6 +4526,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "c170b028731594af",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-10-24",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK lernen Kinder unter Anleitung von Museumsleuten verschiedene künstlerische Techniken. Materialien und Tools sind bereitgestellt.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806682",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806682",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-10-24-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-01T11:51:08.777737+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "ddef881670ec912c",
@@ -4303,6 +4932,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg"
+    },
+    {
+      "id": "3e6569c50955cf0f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-11-28",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt des Ludwigsburger Museums im MIK können Kinder ihre kreativen Fähigkeiten entfalten. Mitunternimmt und Materialien sind bereitgestellt.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806681",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806681",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-11-28-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-01T11:51:08.779033+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "e8ec810da6f2ebc7",

@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-06-01T06:34:44.860117+02:00",
-  "event_count": 293,
+  "generated_at": "2026-06-01T16:00:58.062720+02:00",
+  "event_count": 329,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -66,6 +66,38 @@
         1
       ],
       "scraped_at": "2026-05-21T23:39:59.348868+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "5581170fde25a38a",
+      "title": "Wer schön sein will, muss leiden",
+      "date_start": "2026-06-02",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In dieser Familienführung im Modemuseum des Residenzschlosses Ludwigsburg erkunden Kinder und Erwachsene gemeinsam den Aufwand hinter der Schönheit in früheren Zeiten. Das Schlossteam leitet die Besucher durch prächtige Räume. Anmeldung erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770185",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770185",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "wer-schoen-sein-will-muss-leiden-2026-06-02-schl",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T11:51:21.485035+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -515,6 +547,37 @@
       "source_label": "Gemeinde Möglingen"
     },
     {
+      "id": "ee72d85f01839538",
+      "title": "Hochberger Bücherfreunde",
+      "date_start": "2026-06-11",
+      "date_end": null,
+      "time": "15:00 – 16:00 Uhr",
+      "description": "In der Ortsbücherei Hochberg laden Kinder ab 4 Jahren ein, sich in spannende Bilderbuchwelten zu tauchen. Danach basteln sie kreativ nach den Geschichten, entwerfen fantasievolle Figuren und kleine Kunstwerke, die sie mit nach Hause nehmen können.",
+      "location": "Ortsbücherei Hochberg",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "hochberger-buecherfreunde-2026-06-11-rems",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
+    },
+    {
       "id": "8977ec949e655a63",
       "title": "Bücher-Minis",
       "date_start": "2026-06-12",
@@ -887,6 +950,36 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Remseck am Neckar"
+    },
+    {
+      "id": "93eadc1fa41bec83",
+      "title": "Marktplatzfest",
+      "date_start": "2026-06-13",
+      "date_end": null,
+      "time": "15:00 – 19:00 Uhr",
+      "description": "Von 15 bis 19 Uhr ist die Mediathek im KUBUS geöffnet, wo ihr Medien ausleihen und zurückgeben könnt. Ebenfalls von 15 bis 17 Uhr findet hier Bastelkunst statt. Bitte nehmt keine eigenen Speisen oder Getränke mit.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 0,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "marktplatzfest-2026-06-13-rems",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
     },
     {
       "id": "5b0ec4f0ff8c2121",
@@ -1648,6 +1741,38 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
+      "id": "53223766ff778186",
+      "title": "Offene Bilderbuchshow",
+      "date_start": "2026-06-23",
+      "date_end": null,
+      "time": "16:00 – 16:30 Uhr",
+      "description": "In dieser offenen Bilderbuchshow in der Mediathek im KUBUS können Kinder und Familien gemeinsam Geschichten entdecken und Lieblingsbücher finden. Ideal für kleine Zuhörer und alle, die Freude am Vorlesen haben.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": 10,
+      "tags": [
+        "Kinder",
+        "Familie",
+        "Lesung"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "offene-bilderbuchshow-2026-06-23-rems",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
+    },
+    {
       "id": "3884dd621bd83a8f",
       "title": "Workshop: Tonwerkstatt ab 6 Jahren",
       "date_start": "2026-06-24",
@@ -1864,6 +1989,37 @@
       "source_label": "Stadt Tamm"
     },
     {
+      "id": "6c0e5f2c71686874",
+      "title": "Game Day",
+      "date_start": "2026-06-26",
+      "date_end": null,
+      "time": "15:00 – 17:30 Uhr",
+      "description": "In der Mediathek im KUBUS kann man ab 6 Jahren gaming genießen. Im 3. OG kann man sich einfach so einen Controller gegen Pfand ausleihen und loslegen. Bitte bringe unter 16-jährigen Kindern eine unterschriebene Einwilligungserklärung mit. Die Teilnahme ist kostenlos.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 6,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "game-day-2026-06-26-rems",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
+    },
+    {
       "id": "ab15dc89bfabf3a7",
       "title": "Regenbogenbrunch",
       "date_start": "2026-06-27",
@@ -1892,6 +2048,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Demokratisches Zentrum Ludwigsburg"
+    },
+    {
+      "id": "691173904c17a73f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-06-27",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder ihre kreativen Fähigkeiten entfalten. Mitunter unter Anleitung von Museumsassistenten basteln und malen sie an exklusiven Objekten der Sammlung.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806685",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806685",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-06-27-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-01T11:51:08.772682+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "0c3c720e54359536",
@@ -2875,6 +3063,43 @@
       "source_label": "Stadt Kornwestheim"
     },
     {
+      "id": "f5ce01081a21884a",
+      "title": "Heiss auf Lesen",
+      "date_start": "2026-07-13",
+      "date_end": "2026-09-12",
+      "time": "15:00 – 13:00 Uhr",
+      "description": "In der Mediathek im KUBUS startet die Sommerleseaktion HEISS AUF LESEN für Kinder zwischen 6 und 14 Jahren. Teilnehmende Kinder lesen aus dem exklusiven Bestand und melden sich an, um bei der Abschlussparty Preislosen zu gewinnen.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 6,
+      "age_max": 14,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "heiss-auf-lesen-2026-07-13-rems",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
+    },
+    {
       "id": "904db3318137213f",
       "title": "Hobbygruppe",
       "date_start": "2026-07-14",
@@ -2903,6 +3128,37 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Tamm"
+    },
+    {
+      "id": "da0069150ba11403",
+      "title": "Offene Bilderbuchshow",
+      "date_start": "2026-07-14",
+      "date_end": null,
+      "time": "16:00 – 16:30 Uhr",
+      "description": "In dieser offenen Bilderbuchshow entdecken Kinder und Familien gemeinsam neue Lieblingsbücher. Die bunte Welt der Geschichten wird zum Erlebnis unter der Leitung von Vorlasern für kleine Zuhörer.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": 10,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "offene-bilderbuchshow-2026-07-14-rems",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
     },
     {
       "id": "4dc50be7ececf40c",
@@ -3182,6 +3438,36 @@
       "source_label": "Stadt Kornwestheim"
     },
     {
+      "id": "f4b45780f55a2523",
+      "title": "Hochberger Bücherfreunde",
+      "date_start": "2026-07-23",
+      "date_end": null,
+      "time": "15:00 – 16:00 Uhr",
+      "description": "In der Ortsbücherei Hochberg laden kleine Geschichtenfans ein, sich in spannende Bilderbuchwelten zu tauchen und danach kreativ zu basteln. Jedes Kind nimmt etwas Selbstgemachtes mit nach Hause.",
+      "location": "Ortsbücherei Hochberg",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "hochberger-buecherfreunde-2026-07-23-rems",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
+    },
+    {
       "id": "d697c0c9584bea20",
       "title": "Rathaushoffest",
       "date_start": "2026-07-24",
@@ -3238,6 +3524,69 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Möglingen"
+    },
+    {
+      "id": "82d375397aa81bce",
+      "title": "Game Day",
+      "date_start": "2026-07-24",
+      "date_end": null,
+      "time": "15:00 – 17:30 Uhr",
+      "description": "In der Mediathek im KUBUS kann man ab 6 Jahren Gaming genießen. Im 3. OG gibt es Controller gegen Pfand auszuleihen. Für Kinder unter 16 Jahren ist eine unterschriebene Einwilligungserklärung erforderlich. Die Teilnahme ist kostenlos.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 6,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "game-day-2026-07-24-rems",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
+    },
+    {
+      "id": "e03dcd037732fb3b",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-07-25",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder ihre kreativen Fähigkeiten entfalten. Mit Unterstützung durch einen Fachmann basteln und malen sie unter dem Motivieren einer erfahrenen Lehrkraft.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806684",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806684",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-07-25-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-01T11:51:08.773939+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "9ca58150abcb4f04",
@@ -4284,42 +4633,6 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
-      "id": "08c2426ec3c063d6",
-      "title": "Sommerferienworkshop: Abenteuer Manege! in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "date_end": "2026-08-07",
-      "time": "13:30-16:30 Uhr",
-      "description": "In diesem Workshop entdecken Kinder und Jugendliche das Abenteuer der Manege. Mit verschiedenen kreativen Aktivitäten lernen sie über Reitkunst und Pferdepflege. Ein erfinderischer Tag im Kunstzentrum Karlskaserne.",
-      "location": "Kunstschule Labyrinth",
-      "price": "80,00 Euro",
-      "age_min": 4,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Workshop",
-        "Familie"
-      ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254167004/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/16172667/zmdetail_523254167004/index.html",
-      "source": "labyrinth",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-abenteuer-manege-in-ludwigsburg-2026-08-03-laby",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-06-01T02:11:15.409224+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstschule Labyrinth"
-    },
-    {
       "id": "603fe36ac301102f",
       "title": "Sommerferienworkshop: Hip Hop Streetdance in Bietigheim",
       "date_start": "2026-08-03",
@@ -4469,10 +4782,11 @@
       "location": "Kunstzentrum Karlskaserne",
       "price": "80,00 Euro",
       "age_min": 8,
-      "age_max": null,
+      "age_max": 12,
       "tags": [
         "Kinder",
-        "Workshop"
+        "Workshop",
+        "Familie"
       ],
       "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167009/SommerferienworkshopDieZauberweltvonHarryPotterinLudwigsburg.html",
       "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167009/SommerferienworkshopDieZauberweltvonHarryPotterinLudwigsburg.html",
@@ -4623,6 +4937,37 @@
       "source_label": "Stadt Tamm"
     },
     {
+      "id": "1e170a74ce03d546",
+      "title": "Der Schatz des Herzogs",
+      "date_start": "2026-08-12",
+      "date_end": null,
+      "time": "14:00",
+      "description": "In dieser Veranstaltung suchen Kinder den Schatz des Herzogs Carl Alexander aus dem Jahr 1734. Mit Rätseln und Geheimnissen führt sie durch das Residenzschloss Ludwigsburg, begleitet von einem erfahrenen Guide. Eine spurensuche für alle, die Abenteuer lieben.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770246",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770246",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "der-schatz-des-herzogs-2026-08-12-schl",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-06-01T11:53:33.816991+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
       "id": "d7731b169d5fb085",
       "title": "Gesundheitswanderung",
       "date_start": "2026-08-12",
@@ -4651,6 +4996,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Tamm"
+    },
+    {
+      "id": "bf91fc6c78e8f9c1",
+      "title": "Wer schön sein will, muss leiden",
+      "date_start": "2026-08-13",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In dieser Familienführung im Modemuseum des Residenzschlosses Ludwigsburg erkunden Kinder mit ihren Erwachsenenbegleitern die Herausforderungen hinter märchenhafter Schönheit. Ein besonderer Fokus liegt auf der Pracht und dem Aufwand früherer Jahrhunderte. Anmeldung bei Sonderführungen erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770186",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770186",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "wer-schoen-sein-will-muss-leiden-2026-08-13-schl",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-01T11:53:39.292320+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
     },
     {
       "id": "886674379408d31b",
@@ -4682,6 +5059,37 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg"
+    },
+    {
+      "id": "51a4f0cb4be13889",
+      "title": "Ferienworkshop Museumsbuch interaktiv",
+      "date_start": "2026-08-14",
+      "date_end": null,
+      "time": "10:00–12:00 Uhr",
+      "description": "Dieser Ferienworkshop bietet Kinder und Jugendliche die Möglichkeit, das Ludwigsburg Museum im MIK interaktiv zu entdecken. Mit verschiedenen Aktivitäten lernen sie mehr über Kunst und Geschichte in einem hands-on-Erlebnis.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523254372401",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523254372401",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "ferienworkshop-museumsbuch-interaktiv-2026-08-14-muse",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-01T11:51:08.774640+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "30d42141902b2bb5",
@@ -4782,6 +5190,69 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Tamm"
+    },
+    {
+      "id": "005223f76fc8beba",
+      "title": "Tiere im Schloss",
+      "date_start": "2026-08-17",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In diesem Familienrundgang durch das Barockschloss Ludwigsburg entdecken Besucher eine magische Tierwelt. Geheimnisse um Löwen, Adler und andere nicht-menschliche Bewohner lüftet ein erfahrenes Schlossteam.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/tiere-im-schloss/9364/770193",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/tiere-im-schloss/9364/770193",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "tiere-im-schloss-2026-08-17-schl",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-06-01T11:53:45.088936+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "56fac27e90397852",
+      "title": "Treppauf, treppab",
+      "date_start": "2026-08-18",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In dieser Führung durch die Treppenhäuser des Residenzschlosses Ludwigsburg entdecken Kinder und Erwachsene verborgene Wege und ehrfurchtgebietende Stufen. Ein Blick von einer neuen Seite auf das Schloss. Anmeldung erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770236",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770236",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "treppauf-treppab-2026-08-18-schl",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T11:53:46.388814+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
     },
     {
       "id": "effff87c692532e4",
@@ -4908,6 +5379,132 @@
       "source_label": "Stadt Tamm"
     },
     {
+      "id": "0e6769df106e20f3",
+      "title": "Tiere im Schloss",
+      "date_start": "2026-08-24",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In diesem familienfreundlichen Rundgang durch das Barockschloss Ludwigsburg entdecken Besucher eine magische Tierwelt. Geheimnisse um geflügelte und flauschige Bewohner lüftet ein fachkundiges Schlossteam.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/tiere-im-schloss/9364/770194",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/tiere-im-schloss/9364/770194",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "tiere-im-schloss-2026-08-24-schl",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-06-01T11:54:00.991566+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "a75a1fe17773d252",
+      "title": "Treppauf, treppab",
+      "date_start": "2026-08-25",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In dieser Führung durch das Residenzschloss Ludwigsburg erkunden Kinder und Erwachsene die geheimen Stiegen und prächtigen Treppenhäuser. Das Schlossteam führt auf einer Stunde langen Tour die Besucher durch die vielen Stockwerke, von königlichen Empfangsräumen bis hin zu versteckten Dienstbotengängen.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770237",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770237",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "treppauf-treppab-2026-08-25-schl",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T11:54:02.754359+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "c2cd02efdc5d29e8",
+      "title": "Der Schatz des Herzogs",
+      "date_start": "2026-08-26",
+      "date_end": null,
+      "time": "14:00",
+      "description": "In diesem Abenteuer durch das Residenzschloss Ludwigsburg suchen Kinder nach dem Schatz des Herzogs Carl Alexander. Mit Rätseln und Geheimnissen werden sie durch die historischen Räume geführt, von der Eingangshalle bis zum Schlafzimmer. Ein kreativer Spaziergang für Familien mit Kindern.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770247",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770247",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "der-schatz-des-herzogs-2026-08-26-schl",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-06-01T11:54:06.398113+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "01db2569a5ada2e6",
+      "title": "Wer schön sein will, muss leiden",
+      "date_start": "2026-08-27",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In dieser Familienführung im Modemuseum des Residenzschlosses Ludwigsburg erkunden Kinder mit ihren Erwachsenenbegleitern den Aufwand dahinter, um in früheren Zeiten schön zu sein. Eine reservierte Anmeldung ist empfohlen.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770187",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770187",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "wer-schoen-sein-will-muss-leiden-2026-08-27-schl",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-01T11:54:07.745414+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
       "id": "cae1b102b10df67b",
       "title": "Vollmondwanderung",
       "date_start": "2026-08-27",
@@ -4999,6 +5596,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Tamm"
+    },
+    {
+      "id": "c48034e537af9ed5",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-08-29",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder ihre kreativen Fähigkeiten entfalten. Mitunter begleitet von einem Museumsdozenten, basteln und malen sie unterderabadung.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806683",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806683",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-08-29-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-01T11:51:08.774786+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "d4e3ca4741f455b7",
@@ -5284,6 +5913,40 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
+      "id": "7f9e3803bf319b8f",
+      "title": "Sommerferienworkshop: In Holz hauen und Schnitzen in Ludwigsburg",
+      "date_start": "2026-08-31",
+      "date_end": "2026-09-04",
+      "time": "13:30-16:30 Uhr",
+      "description": "In diesem Sommerferienworkshop lernen Kinder ab 8 Jahren das Holzschliff und -schnitzen. Unter Anleitung erfahren sie die Techniken dieser alten Handwerkskunst. Das Kunstzentrum Karlskaserne bietet ein ideales Lernumfeld an.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 8,
+      "age_max": null,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149658/SommerferienworkshopInHolzhauenundSchnitzeninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149658/SommerferienworkshopInHolzhauenundSchnitzeninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-in-holz-hauen-und-schnitzen-in-ludwigsburg-2026-08-31-karl",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-01T02:05:31.038139+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne"
+    },
+    {
       "id": "de02c688e83aab05",
       "title": "Sommerferienworkshop: Bühne frei! in Ludwigsburg",
       "date_start": "2026-08-31",
@@ -5320,38 +5983,36 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
-      "id": "7f9e3803bf319b8f",
-      "title": "Sommerferienworkshop: In Holz hauen und Schnitzen in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "date_end": "2026-09-04",
-      "time": "13:30-16:30 Uhr",
-      "description": "In diesem Sommerferienworkshop lernen Kinder ab 8 Jahren das Holzschliff und -schnitzen. Unter Anleitung erfahren sie die Techniken dieser alten Handwerkskunst. Das Kunstzentrum Karlskaserne bietet ein ideales Lernumfeld an.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 8,
-      "age_max": null,
+      "id": "93b6096865699f94",
+      "title": "Treppauf, treppab",
+      "date_start": "2026-09-01",
+      "date_end": null,
+      "time": "14:30",
+      "description": "Diese Führung führt durch die Stockwerke des Residenzschlosses Ludwigsburg, entdeckend die vielfältigen Treppenhäuser und Stiegen. Für Kinder und Erwachsene einzigartig – das Schloss von einer neuen Seite kenneln sie lernen. Anmeldung bei Sonderführungen erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
       "tags": [
-        "Kinder"
+        "Fuehrung",
+        "Kinder",
+        "Familie"
       ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149658/SommerferienworkshopInHolzhauenundSchnitzeninLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149658/SommerferienworkshopInHolzhauenundSchnitzeninLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770238",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770238",
+      "source": "schloss",
       "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-in-holz-hauen-und-schnitzen-in-ludwigsburg-2026-08-31-karl",
+      "slug": "treppauf-treppab-2026-09-01-schl",
       "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
+        2
       ],
-      "scraped_at": "2026-06-01T02:05:31.038139+02:00",
+      "scraped_at": "2026-06-01T11:54:20.663321+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne"
+      "source_label": "Residenzschloss Ludwigsburg"
     },
     {
       "id": "fb57d8d5e43463e1",
@@ -5386,6 +6047,37 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne"
+    },
+    {
+      "id": "d9fb4dfdcf49e473",
+      "title": "Der Schatz des Herzogs",
+      "date_start": "2026-09-02",
+      "date_end": null,
+      "time": "14:00",
+      "description": "In dieser Veranstaltung erkunden Kinder die Residenz des Herzogs Carl Alexander aus dem Jahr 1734. Sie müssen Rätsel lösen und Geheimnisse lüften, um den verlorenen Schatz zu finden. Die Suche beginnt an der Schlosstür und führt durch verschiedene Räume bis ins Schlafzimmer.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770248",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770248",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "der-schatz-des-herzogs-2026-09-02-schl",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-06-01T11:54:22.043588+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
     },
     {
       "id": "f56191bc5fad7828",
@@ -5996,6 +6688,69 @@
       "source_label": "Kunstzentrum Karlskaserne"
     },
     {
+      "id": "05def27e8e0a6991",
+      "title": "Tiere im Schloss",
+      "date_start": "2026-09-07",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In diesem familienfreundlichen Rundgang durch das Barockschloss Ludwigsburg entdecken Besucher die magischen und flauschigen Bewohner der Tierwelt. Geheimnisse um Löwen, Adler und sogar ein Zauberpferd lüften sich in verschiedenen Räumen der Residenz.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/tiere-im-schloss/9364/770195",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/tiere-im-schloss/9364/770195",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "tiere-im-schloss-2026-09-07-schl",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-06-01T11:54:28.799653+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
+      "id": "694269efdf18e6b3",
+      "title": "Treppauf, treppab",
+      "date_start": "2026-09-08",
+      "date_end": null,
+      "time": "14:30",
+      "description": "Diese Führung führt durch die Stockwerke des Residenzschlosses Ludwigsburg und enthüllt verborgene Stiegen und ehrfurchtgebietende Treppenhäuser. Ideal für Kinder und Erwachsene, um das Schloss von einer neuen Seite kennenzulernen. Anmeldung erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770239",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/treppauf-treppab/9366/770239",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "treppauf-treppab-2026-09-08-schl",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T11:54:30.149971+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
       "id": "eebe3c0123875472",
       "title": "Hobbygruppe",
       "date_start": "2026-09-08",
@@ -6026,6 +6781,37 @@
       "source_label": "Stadt Tamm"
     },
     {
+      "id": "d39fe0f6a2cca2f9",
+      "title": "Der Schatz des Herzogs",
+      "date_start": "2026-09-09",
+      "date_end": null,
+      "time": "14:00",
+      "description": "In diesem Familienabenteuer durch das Residenzschloss Ludwigsburg lernen Kinder mit dem Schlossteam die Wohnung des Herzogs Carl Alexander 1734 zu suchen. Durch Rätsel und Geheimnisse führt man zur verborgenen Schatzkammer. Ideal für Erwachsene und Kinder ab 6 Jahren.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 6,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770249",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/der-schatz-des-herzogs/9367/770249",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "der-schatz-des-herzogs-2026-09-09-schl",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-06-01T11:54:31.459654+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
+    },
+    {
       "id": "d461d86ee43c45f8",
       "title": "Gesundheitswanderung",
       "date_start": "2026-09-09",
@@ -6054,6 +6840,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Tamm"
+    },
+    {
+      "id": "ab00ad9d1137b9c7",
+      "title": "Wer schön sein will, muss leiden",
+      "date_start": "2026-09-10",
+      "date_end": null,
+      "time": "14:30",
+      "description": "In dieser Familienführung im Modemuseum des Residenzschlosses Ludwigsburg erkunden Kinder mit ihren Erwachsenenbegleitern die Hintergründe zur Schönheit in früheren Zeiten. Einzelheiten zu Anmeldung unter Hotline +49(0)71 41. 18 64 00 oder info@schloss-ludwigshburg.de.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770188",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/wer-schoen-sein-will-muss-leiden/9363/770188",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "wer-schoen-sein-will-muss-leiden-2026-09-10-schl",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-01T11:54:34.740497+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
     },
     {
       "id": "b59b1d5460ce587c",
@@ -6372,6 +7190,38 @@
       "source_label": "Stadt Remseck am Neckar"
     },
     {
+      "id": "80f2cb95aa891cb9",
+      "title": "Offene Bilderbuchshow",
+      "date_start": "2026-09-22",
+      "date_end": null,
+      "time": "16:00 – 16:30 Uhr",
+      "description": "In der offenen Bilderbuchshow entdecken Kinder und Familien gemeinsam spannende Geschichten und liebevoll ausgewählte Bilderbücher. Mit viel Mitmachmöglichkeiten und Platz zum Staunen bietet die Show ein besonderes Erlebnis für alle Altersgruppen.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": 10,
+      "tags": [
+        "Kinder",
+        "Familie",
+        "Entertainment"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "offene-bilderbuchshow-2026-09-22-rems",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
+    },
+    {
       "id": "4bcda368c2b2467b",
       "title": "Storytime in West",
       "date_start": "2026-09-24",
@@ -6495,6 +7345,37 @@
       "source_label": "Stadt Tamm"
     },
     {
+      "id": "850e93add57f3b7b",
+      "title": "Game Day",
+      "date_start": "2026-09-25",
+      "date_end": null,
+      "time": "15:00 – 17:30 Uhr",
+      "description": "In der Mediathek im KUBUS können Kinder und Erwachsene ab 6 Jahren spielen und lernen, wie man Gaming-fähig ist. Im 3. OG kann jeder sich einen Controller gegen Pfand ausleihen. Bitte bringt unter 16-jährige eine unterschriebene Einwilligungserklärung mit.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 6,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "game-day-2026-09-25-rems",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
+    },
+    {
       "id": "2431900eaf686fba",
       "title": "Herbstfest",
       "date_start": "2026-09-26",
@@ -6590,6 +7471,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Tamm"
+    },
+    {
+      "id": "8f9a9ad1ace964ca",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-10-02",
+      "date_end": null,
+      "time": "20:00",
+      "description": "Bei dieser Abendführung durch das beleuchtete Residenzschloss Ludwigsburg erwachen die Porträts der Schlossbewohner scheinbar zum Leben. Ein eindrucksvoller Spaziergang durch prachtvolle Räume, ideal für Kinder und Erwachsene. Anmeldung erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/nachts-im-schloss/9365/770214",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/nachts-im-schloss/9365/770214",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "nachts-im-schloss-2026-10-02-schl",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-01T11:55:15.039208+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg"
     },
     {
       "id": "eed8a51abeb1e21a",
@@ -6933,6 +7846,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Tamm"
+    },
+    {
+      "id": "0c294b461bf40baf",
+      "title": "Offene Bilderbuchshow",
+      "date_start": "2026-10-13",
+      "date_end": null,
+      "time": "16:00 – 16:30 Uhr",
+      "description": "In der offenen Bilderbuchshow erfahren Kinder und Familien gemeinsam spannende Geschichten. Mit ausgewählten Büchern und viel Mitmach possibilité wird jede Show ein besonderes Erlebnis für Große und Kleine gleichermaßen.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": 10,
+      "tags": [
+        "Kinder",
+        "Familie",
+        "Entertainment"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "offene-bilderbuchshow-2026-10-13-rems",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
     },
     {
       "id": "cc4fdae3b72a9397",
@@ -7336,6 +8281,38 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Tamm"
+    },
+    {
+      "id": "c170b028731594af",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-10-24",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK lernen Kinder unter Anleitung von Museumsleuten verschiedene künstlerische Techniken. Materialien und Tools sind bereitgestellt.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806682",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806682",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-10-24-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-01T11:51:08.777737+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
     },
     {
       "id": "75f0eea7077d535c",
@@ -8182,6 +9159,68 @@
       "source_label": "Stadt Bietigheim-Bissingen"
     },
     {
+      "id": "a5b667b441489298",
+      "title": "Game Day",
+      "date_start": "2026-11-13",
+      "date_end": null,
+      "time": "15:00 – 17:30 Uhr",
+      "description": "In der Mediathek im KUBUS können Kinder und Erwachsene ab 6 Jahren freie Gaming-Sessions genießen. Im 3. Obergeschoss der Bibliothek kann jeder spontan einen Controller ausleihen. Bitte bringt Kinder unter 16 Jahre eine Einwilligungserklärung mit. Die Teilnahme ist kostenlos.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 6,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "game-day-2026-11-13-rems",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
+    },
+    {
+      "id": "6065124fe74f8434",
+      "title": "Offene Bilderbuchshow",
+      "date_start": "2026-11-17",
+      "date_end": null,
+      "time": "16:00 – 16:30 Uhr",
+      "description": "In der offenen Bilderbuchshow erleben Kinder und Familien gemeinsam spannende Geschichten und entdecken neue Lieblingsbücher. Mit liebevoll ausgewählten Büchern und viel Mitmach possibilité wird jedes Erlebnis ein besonderer Moment.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": 10,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "offene-bilderbuchshow-2026-11-17-rems",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
+    },
+    {
       "id": "4767a2de6e2ed5da",
       "title": "Vortrag Kalzium",
       "date_start": "2026-11-18",
@@ -8521,6 +9560,38 @@
       "source_label": "Stadt Tamm"
     },
     {
+      "id": "3e6569c50955cf0f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-11-28",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt des Ludwigsburger Museums im MIK können Kinder ihre kreativen Fähigkeiten entfalten. Mitunternimmt und Materialien sind bereitgestellt.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806681",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806681",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-11-28-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-01T11:51:08.779033+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK"
+    },
+    {
       "id": "6bd2c1fc916619d2",
       "title": "Judas Preist Party",
       "date_start": "2026-11-28",
@@ -8674,6 +9745,37 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Tamm"
+    },
+    {
+      "id": "ea3e5db6b0bb2efc",
+      "title": "Offene Bilderbuchshow",
+      "date_start": "2026-12-08",
+      "date_end": null,
+      "time": "16:00 – 16:30 Uhr",
+      "description": "In der offenen Bilderbuchshow bei der Mediathek im KUBUS tauchen Kinder und Familien in die bunte Welt der Geschichten ein. Mit liebevoll ausgewählten Büchern und spannenden Abenteuern genießen alle das Mitmachen und Entdecken neuer Lieblingsbücher.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": 10,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "offene-bilderbuchshow-2026-12-08-rems",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
     },
     {
       "id": "e8ec810da6f2ebc7",
@@ -8954,6 +10056,37 @@
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Tamm"
+    },
+    {
+      "id": "218f95e6c7beaf50",
+      "title": "Game Day",
+      "date_start": "2026-12-18",
+      "date_end": null,
+      "time": "15:00 – 17:30 Uhr",
+      "description": "In der Mediathek im KUBUS kann man ab 6 Jahren gaming genießen. Im 3. OG können Kinder und Jugendliche sich gegen Pfand einen Controller ausleihen. Ein unterschriebenes Einwilligungsschreiben ist für minderjährige Teilnehmer erforderlich. Die Aktivität ist kostenlos.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 6,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "game-day-2026-12-18-rems",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-01T14:10:21.727657+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck"
     },
     {
       "id": "5ff4ef85052befdc",

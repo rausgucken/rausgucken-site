@@ -120,6 +120,10 @@ async function networkFirst(req, cacheName) {
 async function staleWhileRevalidate(req, cacheName) {
   const cache  = await caches.open(cacheName);
   const cached = await cache.match(req);
-  const fresh  = fetch(req).then(r => { if (r.ok) cache.put(req, r.clone()); return r; }).catch(() => null);
-  return cached || fresh;
+  const freshPromise = fetch(req).then(r => { if (r.ok) cache.put(req, r.clone()); return r; }).catch(() => null);
+  // Always return cached immediately if available; fresh updates cache in background.
+  // If no cache, await fresh — but guard against null (network failure + no cache).
+  if (cached) { freshPromise; return cached; }
+  const fresh = await freshPromise;
+  return fresh || new Response('', { status: 503 });
 }

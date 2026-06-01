@@ -307,6 +307,19 @@ import Base from "../../layouts/Base.astro";
     };
   }
 
+  function sanitise(str) {
+    // Basic XSS guard for localStorage-sourced strings injected into innerHTML
+    const d = document.createElement('div');
+    d.appendChild(document.createTextNode(str || ''));
+    return d.innerHTML;
+  }
+  function sanitiseUrl(url) {
+    // Only allow https:// and / relative URLs
+    if (!url) return '#';
+    if (url.startsWith('/') || url.startsWith('https://')) return url;
+    return '#';
+  }
+
   function renderList() {
     const saved   = getSaved();
     const list    = document.getElementById('saved-list');
@@ -339,12 +352,12 @@ import Base from "../../layouts/Base.astro";
       const metaText = ev.date_start
         ? (() => { const d = formatDate(ev.date_start); return `${d.weekday}, ${d.full}`; })()
         : 'Regelmäßig';
-      const safeTitle = ev.title.replace(/"/g, '&quot;');
+      const safeTitle = sanitise(ev.title);
 
       return `<div class="saved-card" data-slug="${ev.slug}">
         ${dateHtml}
         <div class="saved-card-body">
-          <a class="saved-card-title" href="${ev.url || '#'}">${ev.title}</a>
+          <a class="saved-card-title" href="${sanitiseUrl(ev.url)}">${sanitise(ev.title)}</a>
           <div class="saved-card-meta">${metaText}</div>
         </div>
         <button class="saved-card-remove" data-slug="${ev.slug}" aria-label="Merken aufheben: ${safeTitle}" title="Entfernen">

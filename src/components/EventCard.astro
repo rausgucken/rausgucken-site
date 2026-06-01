@@ -16,7 +16,7 @@ function formatDate(iso) {
 }
 
 const TAG_LABELS = {
-  Ausstellung: "Ausstellung",   Entertainment: "Entertainment",
+  Ausstellung: "Ausstellung",  Entertainment: "Entertainment",
   Familie:     "Familie",       Fest:          "Fest",
   Fuehrung:    "Führung",       Jugend:        "Jugend",
   Kinder:      "Kinder",        Kulinarik:     "Kulinarik",
@@ -33,23 +33,14 @@ const isSponsored = ev.sponsored === true;
 
 const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
 
-const _showNew     = ev.is_new && !isSponsored;
-const _showAge     = ev.age_min != null;
-const _ageText     = ev.age_min != null ? ("ab " + ev.age_min + " J." + (ev.age_max ? "–" + ev.age_max : "+")) : "";
+const _showNew    = ev.is_new && !isSponsored;
+const _showAge    = ev.age_min != null;
+const _ageText    = ev.age_min != null ? ("ab " + ev.age_min + " J." + (ev.age_max ? "–" + ev.age_max : "+")) : "";
 const _tag0        = ev.tags[0] ? (TAG_LABELS[ev.tags[0]] || ev.tags[0]) : null;
 const _tag1        = ev.tags[1] ? (TAG_LABELS[ev.tags[1]] || ev.tags[1]) : null;
 const _tag2        = ev.tags[2] ? (TAG_LABELS[ev.tags[2]] || ev.tags[2]) : null;
 const _locShort    = ev.location ? ev.location.replace("Residenzschloss Ludwigsburg", "Residenzschloss LB") : null;
 const _showRegular = isStanding && !ev.time;
-const _svgClock    = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>';
-const _svgCal      = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
-const _svgPin      = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>';
-const _svgEuro     = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>';
-const _priceShort  = ev.price ? ev.price.split(" ").slice(0,3).join(" ") : null;
-const _timeHtml    = ev.time    ? (_svgClock + ev.time)        : null;
-const _regularHtml = _showRegular ? (_svgCal + "Regelmäßig") : null;
-const _locHtml     = _locShort  ? (_svgPin  + _locShort)       : null;
-const _priceHtml   = _priceShort ? (_svgEuro + _priceShort)    : null;
 
 ---
 
@@ -68,7 +59,7 @@ const _priceHtml   = _priceShort ? (_svgEuro + _priceShort)    : null;
   data-weekdays={weekdayAttr}
   data-location={ev.location ?? ""}
 >
-  
+
   <a
     href={`/${city}/events/${ev.slug}`}
     class="card-link"
@@ -136,7 +127,6 @@ const _priceHtml   = _priceShort ? (_svgEuro + _priceShort)    : null;
     </div>
   </a>
 
-  <!-- Card footer: 2-line layout. Merken + Quelle / Freshness -->
   <div class="card-footer">
     <div class="footer-line1">
       <button
@@ -345,8 +335,6 @@ const _priceHtml   = _priceShort ? (_svgEuro + _priceShort)    : null;
     margin-top: 0.1rem;
   }
 
-
-
   /* ── Card footer ────────────────────────────────────────────────────────── */
   .card-footer {
     display: flex;
@@ -462,8 +450,22 @@ const _priceHtml   = _priceShort ? (_svgEuro + _priceShort)    : null;
 
         if (nowSaved) {
           saved.push({ slug, title, date_start: date, city, url });
+
+          // Notify native Capacitor code to subscribe to FCM hardware topic
+          if (window.Capacitor) {
+            window.dispatchEvent(new CustomEvent('fcm:subscribe', { detail: { topic: `event_${slug}` } }));
+          } else {
+            console.log(`Web simulation: Subscribed to topic event_${slug}`);
+          }
         } else {
           saved.splice(idx, 1);
+
+          // Notify native Capacitor code to unsubscribe from FCM hardware topic
+          if (window.Capacitor) {
+            window.dispatchEvent(new CustomEvent('fcm:unsubscribe', { detail: { topic: `event_${slug}` } }));
+          } else {
+            console.log(`Web simulation: Unsubscribed from topic event_${slug}`);
+          }
         }
         setSaved(saved);
 
