@@ -27,6 +27,9 @@ const meta = metaData as any;
 
 const dated    = (events as any[]).filter((e: any) => e.date_start);
 const standing = (events as any[]).filter((e: any) => !e.date_start);
+const INITIAL_LIMIT = 200;
+const datedInitial  = dated.slice(0, INITIAL_LIMIT);
+const datedRest     = dated.slice(INITIAL_LIMIT);
 
 const buildDate = new Date();
 const monthDE = buildDate.toLocaleDateString("de-DE", { month: "long" });
@@ -124,12 +127,66 @@ const featuredEvent = featuredSlug
         <section id="section-dated">
           <h2 class="section-heading">Kommende Veranstaltungen</h2>
           <div class="event-list" id="event-grid">
-            {dated.map((ev: any) => <EventCard event={ev} />)}
+            {datedInitial.map((ev: any) => <EventCard event={ev} />)}
           </div>
         </section>
       )}
 
-      {standing.length > 0 && (
+      
+      {datedRest.length > 0 && (
+        <div id="load-more-container" style="text-align:center; margin: 1.5rem 0;">
+          <button id="load-more-btn" style="
+            background: var(--coral); color: #fff; border: none; border-radius: 8px;
+            padding: 0.75rem 2rem; font-size: 1rem; cursor: pointer; font-family: var(--font-body);
+          ">
+            Weitere {datedRest.length} Veranstaltungen laden
+          </button>
+          <script type="application/json" id="events-rest" set:html={JSON.stringify(datedRest)} />
+          <script is:inline>
+            document.getElementById('load-more-btn')?.addEventListener('click', function() {
+              const container = document.getElementById('load-more-container');
+              const grid      = document.querySelector('#section-dated .event-grid');
+              if (!grid) return;
+              fetch('/data/remseck/events-current.json')
+                .then(r => r.json())
+                .then(function(data) {
+                  const allEvents = data.events ?? data;
+                  const shown = new Set(
+                    Array.from(document.querySelectorAll('.merken-btn')).map(b => b.dataset.slug)
+                  );
+                  const remaining = allEvents.filter(e => e.date_start && !shown.has(e.slug));
+                  remaining.forEach(function(ev) {
+                    const tags  = (ev.tags || []).map(t => '<span class="tag">' + t + '</span>').join('');
+                    const price = ev.price ? '<span class="card-price">' + ev.price + '</span>' : '';
+                    const html  = `<article class="event-card" data-date="${ev.date_start||''}" data-tags="${(ev.tags||[]).join(',')}" data-age-min="${ev.age_min??''}" data-age-max="${ev.age_max??''}">
+                      <div class="card-body">
+                        <div class="card-meta-top"><span class="card-date">${ev.date_start||'∞'}</span>${ev.time ? '<span class="card-time"> · '+ev.time+'</span>' : ''}</div>
+                        <h3 class="card-title"><a class="card-link" href="/${ev.city||'remseck'}/events/${ev.slug}">${ev.title||''}</a></h3>
+                        ${ev.location ? '<p class="card-location">📍 '+ev.location+'</p>' : ''}
+                        ${ev.description ? '<p class="card-description">'+ev.description.slice(0,120)+'…</p>' : ''}
+                        <div class="card-tags">${tags}</div>
+                        ${price}
+                        <div class="card-footer"><span class="card-source">Quelle: ${ev.source_label||''}</span>
+                          <button class="merken-btn" data-slug="${ev.slug}" aria-pressed="false">
+                            <span class="merken-icon">🔖</span><span class="merken-label">Merken</span>
+                          </button>
+                        </div>
+                      </div>
+                    </article>`;
+                    const wrapper = document.createElement('div');
+                    wrapper.innerHTML = html;
+                    grid.appendChild(wrapper.firstElementChild);
+                  });
+                  container.remove();
+                  clearTimeout(window._rgRestoreTimer);
+                  window._rgRestoreTimer = setTimeout(window._rgRestoreMerken, 50);
+                });
+            });
+          </script>
+        </div>
+      )}
+
+{standing.length > 0 && (
         <section id="section-standing" style="margin-top: 3rem;">
           <h2 class="section-heading">Dauerveranstaltungen</h2>
           <p class="section-note">Diese Angebote finden regelmäßig statt. Termine auf der Originalseite prüfen.</p>
