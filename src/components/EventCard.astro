@@ -475,7 +475,17 @@ const _showRegular = isStanding && !ev.time;
         // Dispatch event so /meine-events/ page can react without reload
         window.dispatchEvent(new CustomEvent('rg:saved-changed', { detail: { slug, saved: nowSaved } }));
         // Sync slug list to push backend (no-op if push not enabled)
-        import('/src/scripts/push-subscribe.js').then(m => m.postUpdateSaved()).catch(() => {});
+        if (localStorage.getItem('rg-push-enabled') === '1') {
+          const uuid = localStorage.getItem('rg-uuid');
+          if (uuid) {
+            const slugs = JSON.parse(localStorage.getItem('rg-saved-events') || '[]').map(e => e.slug).filter(Boolean);
+            fetch('https://push.rausgucken.de/update-saved', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ uuid, saved_slugs: slugs })
+            }).catch(() => {});
+          }
+        }
       });
     });
   })();

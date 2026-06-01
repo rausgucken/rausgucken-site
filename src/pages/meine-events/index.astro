@@ -438,6 +438,11 @@ import Base from "../../layouts/Base.astro";
 
   window.addEventListener('rg:saved-changed', () => { renderList(); maybeShowBanner(); });
 
+  // Expose postUpdateSaved globally so EventCard can call it without dynamic import
+  import('/src/scripts/push-subscribe.js').then(m => {
+    window.__rgPostUpdateSaved = m.postUpdateSaved;
+  }).catch(() => {});
+
   // DEBUG reset — visit /meine-events/?reset-push to clear push localStorage
   if (window.location.search.includes('reset-push')) {
     localStorage.removeItem('rg-notif-dismissed');
