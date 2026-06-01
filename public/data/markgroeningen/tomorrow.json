@@ -1,8 +1,8 @@
 {
   "subset": "tomorrow",
-  "generated_at": "2026-05-30T04:45:31.527604+02:00",
-  "event_count": 7,
-  "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
+  "generated_at": "2026-06-01T06:34:44.843133+02:00",
+  "event_count": 8,
+  "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
       "id": "b6a1b8dd0afd0b17",
@@ -133,6 +133,40 @@
         6
       ],
       "scraped_at": "2026-05-22T02:19:54.580255+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Markgröningen"
+    },
+    {
+      "id": "e454c43d7cb3cfda",
+      "title": "Bildungswerkstatt Markgröningen",
+      "date_start": "2026-02-27",
+      "date_end": "2026-07-10",
+      "time": "08:30 - 12:00 Uhr",
+      "description": "In der Bildungswerkstatt Markgröningen bietet die Schiller-Volkshochschule kulturelle und bildungsmäßige Aktivitäten an. Teilnehmer genießen den formativen Prozess in der Begegnungsstätte von Montag bis Freitag zwischen 08:30 und 12:00 Uhr.",
+      "location": "Begegnungsstätte",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.markgroeningen.de/kultur-tourismus/veranstaltungskalender/5010/bildungswerkstatt-markgroeningen",
+      "original_url": "https://www.markgroeningen.de/kultur-tourismus/veranstaltungskalender/5010/bildungswerkstatt-markgroeningen",
+      "source": "markgroeningen",
+      "city": "markgroeningen",
+      "slug": "bildungswerkstatt-markgroeningen-2026-02-27-mark",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scraped_at": "2026-05-31T02:21:38.217923+02:00",
       "extraction_confidence": 0.75,
       "is_new": true,
       "is_booked_out": false,

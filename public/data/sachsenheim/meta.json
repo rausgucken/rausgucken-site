@@ -1,33 +1,33 @@
 {
-  "scraped_at": "2026-05-30T04:45:31.470318+02:00",
+  "scraped_at": "2026-06-01T06:34:44.794473+02:00",
   "city": "sachsenheim",
-  "event_count": 38,
+  "event_count": 19,
   "flagged_count": 0,
-  "expired_count": 12,
+  "expired_count": 7,
   "sources_scraped": [
     "sachsenheim_kultur",
     "sachsenheim_library",
     "sachsenheim_museum"
   ],
   "source_counts": {
-    "sachsenheim_kultur": 17,
-    "sachsenheim_library": 18,
-    "sachsenheim_museum": 3
+    "sachsenheim_kultur": 14,
+    "sachsenheim_library": 3,
+    "sachsenheim_museum": 2
   },
   "sources_failed": [],
-  "data_hash": "e5d9b8b871187769",
-  "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von oeffentlich zugaenglichen Webseiten gesammelt. Trotz groestmoeglicher Sorgfalt uebernehmen wir keine Gewaehr fuer die Richtigkeit, Vollstaendigkeit oder Aktualitaet der Daten. Bitte ueberpruefen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewaehr. Stand: 30.05.2026. Bitte Originalseite pruefen.",
+  "data_hash": "82e05d97536158e2",
+  "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 01.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "sachsenheim_kultur": 0.91,
-    "sachsenheim_library": 0.91,
-    "sachsenheim_museum": 0.81
+    "sachsenheim_library": 0.93,
+    "sachsenheim_museum": 0.99
   },
   "source_event_counts": {
-    "sachsenheim_kultur": 17,
-    "sachsenheim_library": 18,
-    "sachsenheim_museum": 3
+    "sachsenheim_kultur": 14,
+    "sachsenheim_library": 3,
+    "sachsenheim_museum": 2
   },
   "count_drift_warnings": {}
 }
