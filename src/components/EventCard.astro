@@ -123,23 +123,24 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     </div>
   </a>
 
-  <!-- Card footer: SourceLink + FreshnessStamp + source attribution -->
+  <!-- Card footer: 2-line layout. Merken + Quelle / Freshness -->
   <div class="card-footer">
-    <a
-      href={ev.original_url}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="source-link"
-      aria-label={`Originalseite für ${ev.title} öffnen (öffnet in neuem Tab)`}
-      onclick="event.stopPropagation()"
-    >
-      Originalseite
-      <svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-    </a>
-    <div class="footer-right">
-      <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
+    <div class="footer-line1">
+      <button
+        class="merken-btn"
+        data-slug={ev.slug}
+        aria-label={`Veranstaltung merken: ${ev.title}`}
+        aria-pressed="false"
+        title="Merken"
+        onclick="event.stopPropagation()"
+      >
+        <svg class="merken-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+        </svg>
+        <span class="merken-label">Merken</span>
+      </button>
       {ev.source_label && (
-        <a
+        
           href={ev.original_url}
           target="_blank"
           rel="noopener noreferrer"
@@ -149,6 +150,9 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
           Quelle: {ev.source_label}
         </a>
       )}
+    </div>
+    <div class="footer-line2">
+      <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
     </div>
   </div>
 </article>
@@ -333,70 +337,44 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
   /* ── Card footer ────────────────────────────────────────────────────────── */
   .card-footer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.25rem 0;
-    padding: 0.4rem 1rem;
+    flex-direction: column;
     border-top: 1px solid var(--border);
     background: rgba(0,0,0,0.02);
   }
-  html.dark .card-footer {
-    background: rgba(255,255,255,0.03);
+  html.dark .card-footer { background: rgba(255,255,255,0.03); }
+
+  .footer-line1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0.6rem 0.2rem 0.4rem;
+    min-height: 36px;
+    gap: 0.4rem;
+  }
+  .footer-line2 {
+    padding: 0 0.75rem 0.35rem 0.75rem;
   }
 
-  .source-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    font-size: 0.75rem;
-    font-weight: 600;
+  .source-attribution {
+    font-size: 0.72rem;
+    font-family: var(--font-body, 'Inter', sans-serif);
     color: var(--text-60);
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: color 150ms, text-decoration-color 150ms;
-    min-height: 36px;
+    text-decoration: none;
+    transition: color 150ms;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
   }
-  .source-link:hover {
-    color: var(--coral);
-    text-decoration-color: var(--coral);
-  }
-  .source-link:focus-visible {
-    outline: 2px solid var(--coral);
-    outline-offset: 2px;
-    border-radius: 2px;
-  }
-  html.dark .source-link       { color: var(--text-60); }
-  html.dark .source-link:hover { color: var(--coral); }
+  .source-attribution:hover { color: var(--coral); }
+  html.dark .source-attribution { color: var(--text-60); }
+  html.dark .source-attribution:hover { color: var(--coral); }
 
   .freshness-stamp {
     font-size: 0.67rem;
     color: var(--text);
     opacity: 0.70;
   }
-
-  .footer-right {
-    display: flex;
-    align-items: center;
-    gap: 0;
-    flex-shrink: 0;
-    /* On narrow screens, let it wrap below the source-link */
-  }
-  .source-attribution {
-    font-size: 0.72rem;
-    font-family: var(--font-body, 'Inter', sans-serif);
-    color: var(--text-60);
-    white-space: nowrap;
-    padding-left: 0.6rem;
-    border-left: 1px solid var(--border);
-    margin-left: 0.6rem;
-    text-decoration: none;
-    transition: color 150ms;
-  }
-  .source-attribution:hover { color: var(--coral); }
-  html.dark .source-attribution       { color: var(--text-60); }
-  html.dark .source-attribution:hover { color: var(--coral); }
 
   /* ── Merken button ───────────────────────────────────────────────────────── */
   .merken-btn {
