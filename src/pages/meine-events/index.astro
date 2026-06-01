@@ -437,4 +437,12 @@ import Base from "../../layouts/Base.astro";
   });
 
   window.addEventListener('rg:saved-changed', () => { renderList(); maybeShowBanner(); });
+
+  // DEBUG reset — visit /meine-events/?reset-push to clear push localStorage
+  if (window.location.search.includes('reset-push')) {
+    localStorage.removeItem('rg-notif-dismissed');
+    localStorage.removeItem('rg-push-enabled');
+    localStorage.removeItem('rg-fcm-token');
+    window.location.href = '/meine-events/';
+  }
 </script>
