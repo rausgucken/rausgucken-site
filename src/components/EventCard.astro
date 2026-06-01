@@ -34,6 +34,35 @@ const isSponsored = ev.sponsored === true;
 const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
 
 
+const showNew = ev.is_new && !isSponsored;
+const showRegular = isStanding && !ev.time;
+const _svgClock = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>';
+const _svgCal = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
+const _svgPin = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>';
+const _svgEuro = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>';
+const _locationShort = ev.location ? ev.location.replace("Residenzschloss Ludwigsburg", "Residenzschloss LB") : null;
+const _timeHtml = ev.time ? _svgClock + ev.time : null;
+const _regularHtml = showRegular ? (_svgCal + "Regelmäßig") : null;
+const _locationHtml = _locationShort ? (_svgPin + _locationShort) : null;
+const _priceHtml = ev.price ? (_svgEuro + ev.price.split(" ").slice(0,3).join(" ")) : null;
+
+const showNew = ev.is_new && !isSponsored;
+const showRegular = isStanding && !ev.time;
+const showAge = ev.age_min != null;
+const _ageDisplay = ev.age_min != null ? ("ab " + ev.age_min + " J." + (ev.age_max ? "–" + ev.age_max : "+")) : null;
+const _svgClock = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>';
+const _svgCal = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
+const _svgPin = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>';
+const _svgEuro = '<svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>';
+const _locationShort = ev.location ? ev.location.replace("Residenzschloss Ludwigsburg", "Residenzschloss LB") : null;
+const _timeHtml = ev.time ? (_svgClock + ev.time) : null;
+const _regularHtml = showRegular ? (_svgCal + "Regelmäßig") : null;
+const _locationHtml = _locationShort ? (_svgPin + _locationShort) : null;
+const _priceHtml = ev.price ? (_svgEuro + ev.price.split(" ").slice(0,3).join(" ")) : null;
+const _tags = ev.tags.slice(0, 3);
+const _tag0 = _tags[0] ? (TAG_LABELS[_tags[0]] || _tags[0]) : null;
+const _tag1 = _tags[1] ? (TAG_LABELS[_tags[1]] || _tags[1]) : null;
+const _tag2 = _tags[2] ? (TAG_LABELS[_tags[2]] || _tags[2]) : null;
 ---
 
 <article
@@ -73,44 +102,20 @@ const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
     <div class="card-body">
       <div class="card-tags">
         {isSponsored && <span class="badge-sponsored" aria-label="Anzeige">Anzeige</span>}
-        {ev.is_new && !isSponsored && <span class="badge-new">Neu</span>}
-        {ev.tags.slice(0, 3).map(t => (
-          <span class="tag">{TAG_LABELS[t] ?? t}</span>
-        ))}
-        {ev.age_min != null && (
-          <span class="tag tag--age">
-            ab {ev.age_min} J.{ev.age_max ? `–${ev.age_max}` : "+"}
-          </span>
-        )}
+        {showNew && <span class="badge-new">Neu</span>}
+        {_tag0 && <span class="tag">{_tag0}</span>}
+        {_tag1 && <span class="tag">{_tag1}</span>}
+        {_tag2 && <span class="tag">{_tag2}</span>}
+        {showAge && <span class="tag tag--age">{_ageDisplay}</span>}
       </div>
 
       <h3 class="card-title">{ev.title}</h3>
 
       <div class="card-meta">
-        {ev.time && (
-          <span class="meta-item">
-            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            {ev.time}
-          </span>
-        )}
-        {isStanding && !ev.time && (
-          <span class="meta-item">
-            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            Regelmäßig
-          </span>
-        )}
-        {ev.location && (
-          <span class="meta-item">
-            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            {ev.location.replace("Residenzschloss Ludwigsburg", "Residenzschloss LB")}
-          </span>
-        )}
-        {ev.price && (
-          <span class="meta-item">
-            <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-            {ev.price.split(" ").slice(0, 3).join(" ")}
-          </span>
-        )}
+        {_timeHtml && <span class="meta-item" set:html={_timeHtml} />}
+        {_regularHtml && <span class="meta-item" set:html={_regularHtml} />}
+        {_locationHtml && <span class="meta-item" set:html={_locationHtml} />}
+        {_priceHtml && <span class="meta-item" set:html={_priceHtml} />}
       </div>
 
       {ev.description && (
