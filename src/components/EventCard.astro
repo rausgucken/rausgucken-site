@@ -427,14 +427,24 @@ const _showRegular = isStanding && !ev.time;
       try { localStorage.setItem('rg-saved', JSON.stringify(arr)); } catch {}
     }
 
-    // Restore button state on load
-    document.querySelectorAll('.merken-btn').forEach(btn => {
-      const slug = btn.dataset.slug;
-      const saved = getSaved();
-      const isSaved = saved.some(e => e.slug === slug);
-      btn.setAttribute('aria-pressed', String(isSaved));
-      btn.querySelector('.merken-label').textContent = isSaved ? 'Gemerkt' : 'Merken';
+    // Restore button state — runs after DOM ready to catch all cards
+    function restoreMerkenState() {
+      document.querySelectorAll('.merken-btn').forEach(btn => {
+        const slug = btn.dataset.slug;
+        const saved = getSaved();
+        const isSaved = saved.some(e => e.slug === slug);
+        btn.setAttribute('aria-pressed', String(isSaved));
+        btn.querySelector('.merken-label').textContent = isSaved ? 'Gemerkt' : 'Merken';
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', restoreMerkenState);
+    } else {
+      restoreMerkenState();
+    }
+    window.addEventListener('rg:saved-changed', restoreMerkenState);
 
+    document.querySelectorAll('.merken-btn').forEach(btn => {
       btn.addEventListener('click', function() {
         const slug = this.dataset.slug;
         const card = this.closest('.event-card');
