@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-06-01T16:00:57.982363+02:00",
+  "scraped_at": "2026-06-02T04:11:54.666793+02:00",
   "city": "ludwigsburg",
-  "event_count": 576,
+  "event_count": 580,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -18,30 +18,30 @@
     "stabi"
   ],
   "source_counts": {
-    "schloss": 224,
+    "schloss": 228,
     "kunstverein_ausstellungen": 6,
     "museum": 50,
     "forum_schlosspark": 16,
     "kunstverein_veranstaltungen": 10,
     "stabi": 156,
-    "labyrinth": 9,
-    "karlskaserne_veranstaltungen": 93,
+    "labyrinth": 10,
+    "karlskaserne_veranstaltungen": 92,
     "demokratisches_zentrum": 2,
     "garnisonmuseum": 7,
     "karlskaserne_ausstellungen": 3
   },
   "sources_failed": [],
-  "data_hash": "7f85bc02caa14351",
+  "data_hash": "b48b4ae0a0ce41d8",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 01.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 02.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 316.5,
-    "runtime_delta_vs_baseline": 0.768,
+    "runtime_minutes": 131.9,
+    "runtime_delta_vs_baseline": -0.263,
     "source_health": {
       "schloss": 1.0,
       "kunstverein_ausstellungen": 1.0,
@@ -49,7 +49,7 @@
       "forum_schlosspark": 1.0,
       "kunstverein_veranstaltungen": 1.0,
       "stabi": 1.0,
-      "labyrinth": 0.96,
+      "labyrinth": 1.0,
       "karlskaserne_veranstaltungen": 1.0,
       "demokratisches_zentrum": 0.95,
       "garnisonmuseum": 1.0,
@@ -58,6 +58,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-06-01T16:17:17.005704+02:00"
+    "generated_at": "2026-06-02T04:25:20.375815+02:00"
   }
 }
