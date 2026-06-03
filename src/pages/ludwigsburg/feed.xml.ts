@@ -1,16 +1,17 @@
 // src/pages/ludwigsburg/feed.xml.ts
-// Atom 1.0 feed for Ludwigsburg events.
+// Atom 1.0 feed for Ludwigsburg events — app-backbone ready.
+// Namespaces: media (Yahoo MRSS), rg (rausgucken custom fields)
 // SEO strategy §21: Atom preferred over RSS 2.0.
 // Generated at build time from events-current.json.
-// Referenced in Base.astro <head> via <link rel="alternate" type="application/atom+xml">.
+// ARCHITECTURE §16: entry <link> points to rausgucken.de canonical URL (not original_url).
 
 import eventsRaw from "../../../public/data/ludwigsburg/events-current.json";
 
-const SITE = "https://www.rausgucken.de";
-const FEED_URL = `${SITE}/ludwigsburg/feed.xml`;
-const CITY_URL = `${SITE}/ludwigsburg/`;
+const SITE     = "https://www.rausgucken.de";
+const CITY_ID  = "ludwigsburg";
+const FEED_URL = `${SITE}/${CITY_ID}/feed.xml`;
+const CITY_URL = `${SITE}/${CITY_ID}/`;
 
-// Escape XML special characters
 function esc(str: string): string {
   if (!str) return "";
   return str
@@ -21,18 +22,13 @@ function esc(str: string): string {
     .replace(/'/g, "&apos;");
 }
 
-// ISO 8601 with Z suffix for Atom dates
 function toAtomDate(isoStr: string): string {
   if (!isoStr) return new Date().toISOString();
-  try {
-    return new Date(isoStr).toISOString();
-  } catch {
-    return new Date().toISOString();
-  }
+  try { return new Date(isoStr).toISOString(); }
+  catch { return new Date().toISOString(); }
 }
 
 export async function GET() {
-  // Sort by date_start ascending, cap at 100 entries
   const events = [...(eventsRaw as any[])]
     .filter((ev) => ev.date_start && ev.slug)
     .sort((a, b) => (a.date_start > b.date_start ? 1 : -1))
@@ -43,29 +39,36 @@ export async function GET() {
     : new Date().toISOString();
 
   const entries = events.map((ev) => {
-    const url = `${SITE}/ludwigsburg/events/${esc(ev.slug)}/`;
-    const title = esc(ev.title || "Veranstaltung");
-    const summary = esc(ev.description || "");
-    const published = toAtomDate(ev.date_start);
+    const url        = `${SITE}/${CITY_ID}/events/${esc(ev.slug)}/`;
+    const title      = esc(ev.title || "Veranstaltung");
+    const summary    = esc(ev.description || "");
+    const published  = toAtomDate(ev.date_start);
     const updated_ev = toAtomDate(ev.scraped_at || ev.date_start);
+    const ogImage    = `${SITE}/og/${CITY_ID}/${esc(ev.slug)}.jpg`;
 
-    // Human-readable date for content block
-    const dateLabel = ev.date_start
+    const dateLabel    = ev.date_start
       ? new Date(ev.date_start).toLocaleDateString("de-DE", {
           weekday: "long", day: "numeric", month: "long", year: "numeric",
         })
       : "";
-    const timeLine = ev.time ? `\nUhrzeit: ${ev.time}` : "";
-    const locationLine = ev.location ? `\nOrt: ${ev.location}` : "";
-    const priceLine = ev.price ? `\nEintritt: ${ev.price}` : "";
+    const timeLine     = ev.time     ? `\nUhrzeit: ${ev.time}`     : "";
+    const locationLine = ev.location ? `\nOrt: ${ev.location}`     : "";
+    const priceLine    = ev.price    ? `\nEintritt: ${ev.price}`   : "";
     const content = esc(
       [dateLabel + timeLine + locationLine + priceLine, ev.description || ""]
-        .filter(Boolean)
-        .join("\n\n")
+        .filter(Boolean).join("\n\n")
     );
 
     const sourceLabel = esc(ev.source_label || ev.source || "");
     const originalUrl = esc(ev.original_url || ev.link || "");
+
+    const categoryTags = (ev.tags || [])
+      .map((t: string) => `<category term="${esc(t)}"/>`)
+      .join("\n    ");
+
+    const rgPrice  = ev.price   != null ? `<rg:price>${esc(String(ev.price))}</rg:price>`   : "";
+    const rgAgeMin = ev.age_min != null ? `<rg:age_min>${ev.age_min}</rg:age_min>`           : "";
+    const rgAgeMax = ev.age_max != null ? `<rg:age_max>${ev.age_max}</rg:age_max>`           : "";
 
     return `  <entry>
     <id>${url}</id>
@@ -77,24 +80,33 @@ export async function GET() {
     <content type="text">${content}</content>
     <author><name>${sourceLabel}</name></author>
     ${originalUrl ? `<link rel="via" href="${originalUrl}"/>` : ""}
-    ${(ev.tags || []).map((t: string) => `<category term="${esc(t)}"/>`).join("\n    ")}
+    <media:thumbnail url="${ogImage}"/>
+    ${categoryTags}
+    <rg:city>${CITY_ID}</rg:city>
+    ${rgPrice}
+    ${rgAgeMin}
+    ${rgAgeMax}
+    ${originalUrl ? `<rg:original_url>${originalUrl}</rg:original_url>` : ""}
   </entry>`;
   }).join("\n");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de-DE">
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:media="http://search.yahoo.com/mrss/"
+      xmlns:rg="https://www.rausgucken.de/feed-schema/1.0"
+      xml:lang="de-DE">
   <id>${FEED_URL}</id>
   <title>Veranstaltungen in Ludwigsburg | rausgucken.de</title>
-  <subtitle>Aktuelle Events, Workshops und Ausstellungen in Ludwigsburg – wöchentlich aktualisiert.</subtitle>
+  <subtitle>Aktuelle Events, Workshops und Ausstellungen in Ludwigsburg – täglich aktualisiert.</subtitle>
   <link rel="self" type="application/atom+xml" href="${FEED_URL}"/>
   <link rel="alternate" type="text/html" href="${CITY_URL}"/>
   <updated>${updated}</updated>
   <author>
     <name>rausgucken.de</name>
-    <uri>${SITE}</uri>
+    <uri>https://www.rausgucken.de</uri>
   </author>
   <rights>Alle Angaben ohne Gewähr. Quellen: Originalseiten der Veranstalter.</rights>
-  <generator uri="${SITE}">rausgucken.de Astro Pipeline</generator>
+  <generator uri="https://www.rausgucken.de">rausgucken.de Astro Pipeline</generator>
 ${entries}
 </feed>`;
 
