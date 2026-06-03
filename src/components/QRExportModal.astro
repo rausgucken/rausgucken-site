@@ -1,0 +1,661 @@
+---
+// src/components/QRExportModal.astro
+// QR export/import for rg-saved localStorage events.
+// Export: encodes saved array as QR. Import: camera scan → preview → confirm.
+// No server, no accounts, no GDPR surface.
+---
+
+<!-- Export/Import trigger bar -->
+<div class="qr-transfer-bar">
+  <button class="qr-transfer-btn" id="qr-export-open" type="button" aria-label="Gespeicherte Events als QR-Code exportieren">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="3" y="3" width="7" height="7" rx="1"/>
+      <rect x="14" y="3" width="7" height="7" rx="1"/>
+      <rect x="3" y="14" width="7" height="7" rx="1"/>
+      <rect x="5" y="5" width="3" height="3" fill="currentColor" stroke="none"/>
+      <rect x="16" y="5" width="3" height="3" fill="currentColor" stroke="none"/>
+      <rect x="5" y="16" width="3" height="3" fill="currentColor" stroke="none"/>
+      <circle cx="17.5" cy="17.5" r="1.5" fill="currentColor" stroke="none"/>
+      <rect x="14" y="14" width="3" height="3" fill="currentColor" stroke="none"/>
+    </svg>
+    Auf neues Gerät übertragen
+  </button>
+  <button class="qr-transfer-btn qr-transfer-btn--secondary" id="qr-import-open" type="button" aria-label="Events von anderem Gerät importieren">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+      <circle cx="12" cy="13" r="3"/>
+    </svg>
+    QR-Code scannen
+  </button>
+</div>
+
+<!-- ── EXPORT MODAL ─────────────────────────────────────────────────────── -->
+<div id="qr-export-modal" class="qr-tm-modal" role="dialog" aria-modal="true" aria-labelledby="qr-export-title" hidden>
+  <div class="qr-tm-backdrop" id="qr-export-backdrop"></div>
+  <div class="qr-tm-box">
+    <div class="qr-tm-header">
+      <span id="qr-export-title" class="qr-tm-title">Events übertragen</span>
+      <button class="qr-tm-close" id="qr-export-close" aria-label="Schließen">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <p class="qr-tm-desc">
+      Scanne diesen QR-Code mit deinem neuen Gerät auf der Meine-Events-Seite,
+      um alle gespeicherten Events zu übertragen.
+    </p>
+
+    <div class="qr-tm-canvas-wrap" id="qr-export-canvas"></div>
+
+    <p class="qr-tm-hint" id="qr-export-hint"></p>
+
+    <p class="qr-tm-note">
+      Der QR-Code enthält ausschließlich deine gespeicherten Events —
+      keine persönlichen Daten, kein Account erforderlich.
+    </p>
+  </div>
+</div>
+
+<!-- ── IMPORT MODAL ─────────────────────────────────────────────────────── -->
+<div id="qr-import-modal" class="qr-tm-modal" role="dialog" aria-modal="true" aria-labelledby="qr-import-title" hidden>
+  <div class="qr-tm-backdrop" id="qr-import-backdrop"></div>
+  <div class="qr-tm-box">
+    <div class="qr-tm-header">
+      <span id="qr-import-title" class="qr-tm-title">QR-Code scannen</span>
+      <button class="qr-tm-close" id="qr-import-close" aria-label="Schließen">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Camera view -->
+    <div id="qr-scanner-wrap" class="qr-scanner-wrap">
+      <video id="qr-video" class="qr-video" playsinline muted autoplay></video>
+      <canvas id="qr-scan-canvas" class="qr-scan-canvas" aria-hidden="true"></canvas>
+      <div class="qr-scan-overlay">
+        <div class="qr-scan-frame"></div>
+      </div>
+      <p class="qr-scan-hint">Halte die Kamera auf den QR-Code</p>
+    </div>
+
+    <!-- Preview (shown after successful decode, before confirm) -->
+    <div id="qr-import-preview" class="qr-import-preview" hidden>
+      <div class="qr-preview-counts" id="qr-preview-counts"></div>
+      <div class="qr-preview-list" id="qr-preview-list"></div>
+      <div class="qr-preview-actions">
+        <button class="qr-preview-confirm" id="qr-import-confirm" type="button">
+          Importieren
+        </button>
+        <button class="qr-preview-cancel" id="qr-import-retry" type="button">
+          Erneut scannen
+        </button>
+      </div>
+    </div>
+
+    <!-- Success state -->
+    <div id="qr-import-success" class="qr-import-success" hidden>
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#90BE6D" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+      <p id="qr-import-success-msg"></p>
+    </div>
+
+    <!-- Error state -->
+    <p id="qr-import-error" class="qr-import-error" hidden></p>
+  </div>
+</div>
+
+<script lang="ts">
+import QRCodeStyling from "qr-code-styling";
+
+// ── Logo ────────────────────────────────────────────────────────────────────
+const LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <rect width="160" height="160" rx="24" fill="white"/>
+  <circle cx="62" cy="98" r="32" fill="#FF6F61"/>
+  <circle cx="114" cy="114" r="16" fill="#FF6F61"/>
+  <path d="M 75 36 L 124 36 L 124 85" fill="none" stroke="#FF6F61" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
+const LOGO_URL = `data:image/svg+xml;base64,${btoa(LOGO_SVG)}`;
+
+// ── localStorage helpers ────────────────────────────────────────────────────
+const STORAGE_KEY = 'rg-saved';
+function getSaved(): any[] {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch { return []; }
+}
+function setSaved(arr: any[]) {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); } catch {}
+}
+
+// ── Payload encoding ────────────────────────────────────────────────────────
+// Prefix so we know it's an rg-saved QR and not some other QR
+const RG_PREFIX = 'rg-saved:';
+
+function encodePayload(saved: any[]): string {
+  // Compact: only the fields we need to reconstruct the saved list
+  const compact = saved.map(ev => ({
+    s: ev.slug,
+    t: ev.title,
+    d: ev.date_start || null,
+    c: ev.city,
+    u: ev.url,
+  }));
+  return RG_PREFIX + JSON.stringify(compact);
+}
+
+function decodePayload(raw: string): any[] | null {
+  if (!raw.startsWith(RG_PREFIX)) return null;
+  try {
+    const compact = JSON.parse(raw.slice(RG_PREFIX.length));
+    if (!Array.isArray(compact)) return null;
+    // Expand back to full saved event shape
+    return compact.map((c: any) => ({
+      slug:       c.s,
+      title:      c.t,
+      date_start: c.d || null,
+      city:       c.c,
+      url:        c.u,
+    }));
+  } catch { return null; }
+}
+
+// ── Date helpers ────────────────────────────────────────────────────────────
+function isExpired(dateStr: string | null): boolean {
+  if (!dateStr) return false; // standing events never expire
+  return new Date(dateStr + 'T23:59:59') < new Date();
+}
+
+function formatDateShort(iso: string | null): string {
+  if (!iso) return 'Regelmäßig';
+  const d = new Date(iso + 'T12:00:00');
+  return d.toLocaleDateString('de-DE', { day: 'numeric', month: 'short' });
+}
+
+// ── EXPORT ──────────────────────────────────────────────────────────────────
+const exportOpenBtn  = document.getElementById('qr-export-open')    as HTMLButtonElement;
+const exportModal    = document.getElementById('qr-export-modal')   as HTMLDivElement;
+const exportBackdrop = document.getElementById('qr-export-backdrop') as HTMLDivElement;
+const exportClose    = document.getElementById('qr-export-close')   as HTMLButtonElement;
+const exportCanvas   = document.getElementById('qr-export-canvas')  as HTMLDivElement;
+const exportHint     = document.getElementById('qr-export-hint')    as HTMLParagraphElement;
+
+let qrExportInstance: InstanceType<typeof QRCodeStyling> | null = null;
+
+function openExportModal() {
+  const saved = getSaved();
+
+  if (saved.length === 0) {
+    alert('Keine gespeicherten Events zum Übertragen.');
+    return;
+  }
+
+  const upcoming = saved.filter(ev => !isExpired(ev.date_start)).length;
+  const expired  = saved.length - upcoming;
+
+  exportHint.textContent =
+    `${saved.length} Event${saved.length !== 1 ? 's' : ''}` +
+    (expired > 0 ? ` (${upcoming} bevorstehend, ${expired} vergangen)` : ' bevorstehend');
+
+  exportModal.hidden = false;
+  document.body.style.overflow = 'hidden';
+  exportClose.focus();
+
+  // Re-generate QR on every open (saved list may have changed)
+  exportCanvas.innerHTML = '';
+  const payload = encodePayload(saved);
+
+  qrExportInstance = new QRCodeStyling({
+    width:  260,
+    height: 260,
+    type:   'canvas',
+    data:   payload,
+    image:  LOGO_URL,
+    dotsOptions:         { color: '#373F51', type: 'rounded' },
+    cornersSquareOptions:{ color: '#FF6F61', type: 'extra-rounded' },
+    cornersDotOptions:   { color: '#FF6F61' },
+    backgroundOptions:   { color: '#ffffff' },
+    imageOptions:        { crossOrigin: 'anonymous', margin: 6, imageSize: 0.28 },
+    qrOptions:           { errorCorrectionLevel: 'H' },
+  });
+  qrExportInstance.append(exportCanvas);
+}
+
+function closeExportModal() {
+  exportModal.hidden = true;
+  document.body.style.overflow = '';
+  exportOpenBtn.focus();
+}
+
+exportOpenBtn.addEventListener('click',  openExportModal);
+exportClose.addEventListener('click',   closeExportModal);
+exportBackdrop.addEventListener('click', closeExportModal);
+
+// ── IMPORT ──────────────────────────────────────────────────────────────────
+const importOpenBtn   = document.getElementById('qr-import-open')     as HTMLButtonElement;
+const importModal     = document.getElementById('qr-import-modal')    as HTMLDivElement;
+const importBackdrop  = document.getElementById('qr-import-backdrop') as HTMLDivElement;
+const importClose     = document.getElementById('qr-import-close')    as HTMLButtonElement;
+const scannerWrap     = document.getElementById('qr-scanner-wrap')    as HTMLDivElement;
+const videoEl         = document.getElementById('qr-video')           as HTMLVideoElement;
+const scanCanvas      = document.getElementById('qr-scan-canvas')     as HTMLCanvasElement;
+const previewEl       = document.getElementById('qr-import-preview')  as HTMLDivElement;
+const previewCounts   = document.getElementById('qr-preview-counts')  as HTMLDivElement;
+const previewList     = document.getElementById('qr-preview-list')    as HTMLDivElement;
+const confirmBtn      = document.getElementById('qr-import-confirm')  as HTMLButtonElement;
+const retryBtn        = document.getElementById('qr-import-retry')    as HTMLButtonElement;
+const successEl       = document.getElementById('qr-import-success')  as HTMLDivElement;
+const successMsg      = document.getElementById('qr-import-success-msg') as HTMLParagraphElement;
+const errorEl         = document.getElementById('qr-import-error')    as HTMLParagraphElement;
+
+let stream: MediaStream | null = null;
+let scanRAF: number = 0;
+let decodedEvents: any[] | null = null;
+
+// jsQR bundled via npm — no CDN dependency
+import jsQRLib from 'jsqr';
+let jsQR: ((data: Uint8ClampedArray, width: number, height: number) => { data: string } | null) | null = jsQRLib;
+
+async function ensureJsQR() {
+  // already loaded at module init — no-op
+}
+
+function resetImportUI() {
+  scannerWrap.hidden = false;
+  previewEl.hidden   = true;
+  successEl.hidden   = true;
+  errorEl.hidden     = true;
+  decodedEvents      = null;
+}
+
+async function startCamera() {
+  resetImportUI();
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({
+      video: { facingMode: 'environment', width: { ideal: 640 }, height: { ideal: 480 } }
+    });
+    videoEl.srcObject = stream;
+    await videoEl.play();
+    scanLoop();
+  } catch (err: any) {
+    showImportError('Kamera nicht verfügbar: ' + (err.message || err));
+  }
+}
+
+function stopCamera() {
+  cancelAnimationFrame(scanRAF);
+  if (stream) {
+    stream.getTracks().forEach(t => t.stop());
+    stream = null;
+  }
+  videoEl.srcObject = null;
+}
+
+function scanLoop() {
+  if (!jsQR || videoEl.readyState < videoEl.HAVE_ENOUGH_DATA) {
+    scanRAF = requestAnimationFrame(scanLoop);
+    return;
+  }
+  const ctx = scanCanvas.getContext('2d', { willReadFrequently: true })!;
+  scanCanvas.width  = videoEl.videoWidth;
+  scanCanvas.height = videoEl.videoHeight;
+  ctx.drawImage(videoEl, 0, 0);
+  const img  = ctx.getImageData(0, 0, scanCanvas.width, scanCanvas.height);
+  const code = jsQR(img.data, img.width, img.height);
+
+  if (code?.data) {
+    const decoded = decodePayload(code.data);
+    if (decoded) {
+      stopCamera();
+      showPreview(decoded);
+      return;
+    }
+  }
+  scanRAF = requestAnimationFrame(scanLoop);
+}
+
+function showPreview(events: any[]) {
+  decodedEvents = events;
+  const today    = new Date();
+  today.setHours(0, 0, 0, 0);
+  const upcoming = events.filter(ev => !isExpired(ev.date_start));
+  const expired  = events.filter(ev => ev.date_start && isExpired(ev.date_start));
+
+  // Count summary
+  previewCounts.innerHTML =
+    `<div class="qr-preview-stat qr-preview-stat--upcoming">
+       <span class="qr-preview-num">${upcoming.length}</span>
+       <span class="qr-preview-label">bevorstehend</span>
+     </div>` +
+    (expired.length > 0
+      ? `<div class="qr-preview-stat qr-preview-stat--expired">
+           <span class="qr-preview-num">${expired.length}</span>
+           <span class="qr-preview-label">vergangen</span>
+         </div>`
+      : '');
+
+  // Event list (max 8 shown)
+  const display = [...upcoming, ...expired].slice(0, 8);
+  previewList.innerHTML = display.map(ev => {
+    const past = isExpired(ev.date_start);
+    return `<div class="qr-preview-item${past ? ' qr-preview-item--past' : ''}">
+      <span class="qr-preview-date">${formatDateShort(ev.date_start)}</span>
+      <span class="qr-preview-title">${sanitise(ev.title)}</span>
+    </div>`;
+  }).join('') +
+  (events.length > 8
+    ? `<div class="qr-preview-more">+ ${events.length - 8} weitere</div>`
+    : '');
+
+  // Update confirm button label
+  confirmBtn.textContent = upcoming.length === 0
+    ? `${events.length} Event${events.length !== 1 ? 's' : ''} importieren`
+    : `${upcoming.length} bevorstehend${upcoming.length !== 1 ? 'e' : 'en'} importieren`;
+
+  scannerWrap.hidden = true;
+  previewEl.hidden   = false;
+}
+
+function sanitise(str: string): string {
+  const d = document.createElement('div');
+  d.appendChild(document.createTextNode(str || ''));
+  return d.innerHTML;
+}
+
+function showImportError(msg: string) {
+  stopCamera();
+  scannerWrap.hidden = true;
+  errorEl.textContent = msg;
+  errorEl.hidden = false;
+}
+
+function doImport() {
+  if (!decodedEvents) return;
+
+  // Merge: add events not already saved (by slug)
+  const existing   = getSaved();
+  const existingSlugs = new Set(existing.map((e: any) => e.slug));
+  const toAdd      = decodedEvents.filter(ev => !existingSlugs.has(ev.slug));
+  const merged     = [...existing, ...toAdd];
+  setSaved(merged);
+
+  // Notify other components
+  window.dispatchEvent(new CustomEvent('rg:saved-changed'));
+
+  // Show success
+  previewEl.hidden = true;
+  successMsg.textContent =
+    toAdd.length > 0
+      ? `${toAdd.length} neues Event${toAdd.length !== 1 ? 's' : ''} importiert. Gesamt: ${merged.length}.`
+      : 'Alle Events bereits gespeichert – nichts Neues importiert.';
+  successEl.hidden = false;
+}
+
+async function openImportModal() {
+  importModal.hidden = false;
+  document.body.style.overflow = 'hidden';
+  importClose.focus();
+  resetImportUI();
+
+  await ensureJsQR().catch(() => {
+    showImportError('jsQR konnte nicht geladen werden. Bitte versuche es später erneut.');
+  });
+  await startCamera();
+}
+
+function closeImportModal() {
+  stopCamera();
+  importModal.hidden = true;
+  document.body.style.overflow = '';
+  importOpenBtn.focus();
+  resetImportUI();
+}
+
+importOpenBtn.addEventListener('click',  openImportModal);
+importClose.addEventListener('click',   closeImportModal);
+importBackdrop.addEventListener('click', closeImportModal);
+confirmBtn.addEventListener('click', doImport);
+retryBtn.addEventListener('click', async () => {
+  resetImportUI();
+  await startCamera();
+});
+
+// Keyboard: Escape closes whichever modal is open
+document.addEventListener('keydown', (e) => {
+  if (e.key !== 'Escape') return;
+  if (!exportModal.hidden) closeExportModal();
+  if (!importModal.hidden) closeImportModal();
+});
+</script>
+
+<style>
+  /* ── Transfer bar ──────────────────────────────────────────────────────── */
+  .qr-transfer-bar {
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+  .qr-transfer-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    height: 40px;
+    padding: 0 1rem;
+    background: var(--tag-bg);
+    color: var(--text-60);
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    font-size: 0.84rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 150ms, color 150ms, border-color 150ms;
+    min-height: 44px;
+  }
+  .qr-transfer-btn:hover {
+    background: var(--coral-light);
+    color: var(--coral);
+    border-color: var(--coral);
+  }
+  .qr-transfer-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+  .qr-transfer-btn--secondary { background: transparent; }
+
+  /* ── Shared modal chrome ───────────────────────────────────────────────── */
+  .qr-tm-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .qr-tm-modal[hidden] { display: none; }
+
+  .qr-tm-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(2px);
+  }
+
+  .qr-tm-box {
+    position: relative;
+    background: var(--surface-card);
+    border-radius: var(--radius, 12px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .qr-tm-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .qr-tm-title {
+    font-family: var(--font-heading, inherit);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text);
+  }
+  .qr-tm-close {
+    display: flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px;
+    background: var(--tag-bg); border: none; border-radius: 50%;
+    color: var(--text-60); cursor: pointer; transition: background 150ms;
+    flex-shrink: 0;
+  }
+  .qr-tm-close:hover { background: var(--coral-light); color: var(--coral); }
+  .qr-tm-close:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+  .qr-tm-desc {
+    font-size: 0.84rem;
+    color: var(--text-60);
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+    width: 100%;
+  }
+  .qr-tm-hint {
+    font-size: 0.82rem;
+    color: var(--coral);
+    font-weight: 600;
+    margin: 0;
+  }
+  .qr-tm-note {
+    font-size: 0.75rem;
+    color: var(--text-30);
+    text-align: center;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  /* ── Export canvas ─────────────────────────────────────────────────────── */
+  .qr-tm-canvas-wrap {
+    width: 260px; height: 260px;
+    border-radius: 12px; overflow: hidden;
+    background: #fff;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .qr-tm-canvas-wrap canvas { display: block; width: 260px !important; height: 260px !important; }
+
+  /* ── Scanner ───────────────────────────────────────────────────────────── */
+  .qr-scanner-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000;
+  }
+  .qr-video {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .qr-scan-canvas { display: none; } /* off-screen processing */
+
+  .qr-scan-overlay {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    pointer-events: none;
+  }
+  .qr-scan-frame {
+    width: 60%; aspect-ratio: 1;
+    border: 2.5px solid var(--coral);
+    border-radius: 8px;
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.35);
+  }
+  .qr-scan-hint {
+    position: absolute; bottom: 0.75rem; left: 0; right: 0;
+    text-align: center;
+    font-size: 0.78rem; color: rgba(255,255,255,0.85);
+    margin: 0;
+  }
+
+  /* ── Import preview ────────────────────────────────────────────────────── */
+  .qr-import-preview { width: 100%; }
+
+  .qr-preview-counts {
+    display: flex; gap: 0.75rem; justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .qr-preview-stat {
+    display: flex; flex-direction: column; align-items: center;
+    padding: 0.6rem 1.25rem;
+    border-radius: var(--radius-sm, 8px);
+    border: 1px solid var(--border);
+    min-width: 90px;
+  }
+  .qr-preview-stat--upcoming { background: var(--sage-light); border-color: var(--sage); }
+  .qr-preview-stat--expired  { background: var(--tag-bg); }
+  .qr-preview-num   { font-size: 1.6rem; font-weight: 800; font-family: var(--font-heading); color: var(--text); line-height: 1; }
+  .qr-preview-label { font-size: 0.72rem; color: var(--text-60); margin-top: 0.2rem; }
+
+  .qr-preview-list {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm, 8px);
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  .qr-preview-item {
+    display: flex; align-items: center; gap: 0.6rem;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border-subtle);
+    font-size: 0.82rem;
+  }
+  .qr-preview-item:last-child { border-bottom: none; }
+  .qr-preview-item--past { opacity: 0.45; }
+  .qr-preview-date  { min-width: 52px; color: var(--text-60); flex-shrink: 0; }
+  .qr-preview-title { color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .qr-preview-more  {
+    padding: 0.4rem 0.75rem; font-size: 0.78rem; color: var(--text-60);
+    background: var(--tag-bg); text-align: center;
+  }
+
+  .qr-preview-actions { display: flex; gap: 0.6rem; width: 100%; }
+  .qr-preview-confirm {
+    flex: 1;
+    background: var(--coral); color: var(--text);
+    border: none; border-radius: var(--radius-sm, 8px);
+    padding: 0.65rem 1rem; font-size: 0.875rem; font-weight: 700;
+    cursor: pointer; font-family: inherit; min-height: 44px;
+    transition: background 150ms;
+  }
+  .qr-preview-confirm:hover { background: var(--coral-dark); }
+  .qr-preview-confirm:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+  .qr-preview-cancel {
+    background: transparent; border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm, 8px); padding: 0.6rem 1rem;
+    font-size: 0.84rem; font-weight: 600; color: var(--text-60);
+    cursor: pointer; font-family: inherit; min-height: 44px;
+    transition: border-color 150ms, color 150ms;
+  }
+  .qr-preview-cancel:hover { border-color: var(--coral); color: var(--coral); }
+  .qr-preview-cancel:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+  /* ── Success / Error ───────────────────────────────────────────────────── */
+  .qr-import-success {
+    display: flex; flex-direction: column; align-items: center; gap: 0.75rem;
+    padding: 1rem 0; text-align: center;
+  }
+  .qr-import-success p { font-size: 0.9rem; color: var(--text); margin: 0; line-height: 1.5; }
+  .qr-import-error {
+    font-size: 0.875rem; color: #e55a4d; text-align: center;
+    background: rgba(229,90,77,0.06); border: 1px solid rgba(229,90,77,0.2);
+    border-radius: var(--radius-sm, 8px); padding: 0.75rem 1rem; width: 100%; margin: 0;
+  }
+</style>

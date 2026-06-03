@@ -23,6 +23,7 @@ tomorrow.setDate(now.getDate() + 1);
 const tomorrowDE  = tomorrow.toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
 const pageLabel = "Morgen in Ludwigsburg";
 const canonical   = `${siteUrl}/${city}/morgen/`;
+const feedUrl     = "/ludwigsburg/feed.xml";
 
 const countLabel = events.length > 0 ? `${events.length} ` : "";
 const seoTitle = `${countLabel}Events Ludwigsburg morgen, ${tomorrowDE} | rausgucken.de`;
