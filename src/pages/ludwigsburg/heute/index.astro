@@ -20,6 +20,7 @@ const today   = now.toISOString().split("T")[0];
 
 const seoTitle  = `Veranstaltungen in Ludwigsburg heute (${todayDE}) | rausgucken.de`;
 const metaDesc  = `Alle Events in Ludwigsburg heute, ${todayDE}. Führungen, Ausstellungen, Kinder, Kultur – lokal, aktuell, übersichtlich.`;
+const pageLabel = "Heute in Ludwigsburg";
 const canonical = `${siteUrl}/${city}/heute/`;
 
 const collectionSchema = {
@@ -64,8 +65,20 @@ const breadcrumbSchema = {
   </div>
 
 
+
   <div class="collection-actions">
-    <QRModal url={canonical} label="Heute in Ludwigsburg" />
+    <QRModal url={canonical} label={pageLabel} />
+    
+      class="action-btn"
+      href={`${canonical}events.ics`}
+      download
+      aria-label="Alle Veranstaltungen als Kalender exportieren"
+    >
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+      </svg>
+      ICS
+    </a>
   </div>
 
   <FilterBar />
@@ -104,12 +117,34 @@ const breadcrumbSchema = {
 </Base>
 
 <style>
+
   .collection-actions {
     max-width: 720px;
     margin: 0 auto 1rem auto;
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     flex-wrap: wrap;
+  }
+  .action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    height: 36px;
+    padding: 0 0.85rem;
+    background: var(--tag-bg);
+    color: var(--text-60);
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 150ms, color 150ms;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+  .action-btn:hover {
+    background: var(--coral-light);
+    color: var(--coral);
   }
 
   .page-header { margin-bottom: 1.25rem; max-width: 720px; margin-left: auto; margin-right: auto; }

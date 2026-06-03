@@ -26,6 +26,7 @@ const fmtShort = (d: Date) => d.toLocaleDateString("de-DE", { day: "numeric", mo
 const fmtFull  = (d: Date) => d.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
 
 const rangeDE   = `${fmtShort(mon)} – ${fmtFull(sun)}`;
+const pageLabel = "Nächste Woche in Ludwigsburg";
 const canonical = `${siteUrl}/${city}/naechste-woche/`;
 const seoTitle  = `Events Ludwigsburg nächste Woche, ${rangeDE} | rausgucken.de`;
 const metaDesc  = `Veranstaltungen in Ludwigsburg nächste Woche (${rangeDE}): Kultur, Kinder, Ausstellungen, Führungen – jetzt vorplanen.`;
@@ -96,8 +97,20 @@ const days = [
   <!-- DaySelector component — fires "dayselector:change" on window with detail.date = dow string -->
   <DaySelector days={days} activeDay="all" />
 
+
   <div class="collection-actions">
-    <QRModal url={canonical} label="Nächste Woche in Ludwigsburg" />
+    <QRModal url={canonical} label={pageLabel} />
+    
+      class="action-btn"
+      href={`${canonical}events.ics`}
+      download
+      aria-label="Alle Veranstaltungen als Kalender exportieren"
+    >
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+      </svg>
+      ICS
+    </a>
   </div>
 
   <FilterBar />
@@ -168,12 +181,34 @@ const days = [
 </script>
 
 <style>
+
   .collection-actions {
     max-width: 720px;
     margin: 0 auto 1rem auto;
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     flex-wrap: wrap;
+  }
+  .action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    height: 36px;
+    padding: 0 0.85rem;
+    background: var(--tag-bg);
+    color: var(--text-60);
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 150ms, color 150ms;
+    font-family: inherit;
+    white-space: nowrap;
+  }
+  .action-btn:hover {
+    background: var(--coral-light);
+    color: var(--coral);
   }
 
   .page-header { margin-bottom: 1.25rem; max-width: 720px; margin-left: auto; margin-right: auto; }
