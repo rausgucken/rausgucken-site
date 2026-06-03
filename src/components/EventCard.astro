@@ -448,7 +448,7 @@ const _showRegular = isStanding && !ev.time;
     // Bind click listeners once after all cards render — guarded to prevent
     // duplicate bindings from is:inline running once per EventCard instance.
     if (!window._rgClicksBound) {
-      window._rgClicksBound = false; // will be set true after first bind
+
       const _origRestore = window._rgRestoreMerken;
       window._rgRestoreMerken = function() {
         _origRestore && _origRestore();
