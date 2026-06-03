@@ -1,0 +1,273 @@
+---
+// src/components/QRModal.astro
+// Reusable QR code modal for collection/temporal pages.
+// Usage: <QRModal url={canonical} label="Heute in Ludwigsburg" />
+// Props:
+//   url   — the URL to encode (absolute)
+//   label — short description shown in modal header
+const { url, label } = Astro.props;
+---
+
+<!-- QR Button — triggers modal -->
+<button
+  class="qr-btn"
+  id="qr-open-btn"
+  aria-label="QR-Code für diese Seite anzeigen"
+  data-qr-url={url}
+  data-qr-label={label}
+>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <!-- QR icon: four corner squares + center dot -->
+    <rect x="3" y="3" width="7" height="7" rx="1"/>
+    <rect x="14" y="3" width="7" height="7" rx="1"/>
+    <rect x="3" y="14" width="7" height="7" rx="1"/>
+    <rect x="5" y="5" width="3" height="3" fill="currentColor" stroke="none"/>
+    <rect x="16" y="5" width="3" height="3" fill="currentColor" stroke="none"/>
+    <rect x="5" y="16" width="3" height="3" fill="currentColor" stroke="none"/>
+    <circle cx="17.5" cy="17.5" r="1.5" fill="currentColor" stroke="none"/>
+    <line x1="14" y1="14" x2="14" y2="14"/>
+    <rect x="14" y="14" width="3" height="3" fill="currentColor" stroke="none"/>
+  </svg>
+  QR-Code
+</button>
+
+<!-- Modal overlay -->
+<div id="qr-modal" class="qr-modal" role="dialog" aria-modal="true" aria-labelledby="qr-modal-title" hidden>
+  <div class="qr-modal-backdrop" id="qr-modal-backdrop"></div>
+  <div class="qr-modal-box">
+    <div class="qr-modal-header">
+      <span id="qr-modal-title" class="qr-modal-label"></span>
+      <button class="qr-modal-close" id="qr-close-btn" aria-label="Schließen">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="qr-modal-canvas-wrap" id="qr-canvas-wrap">
+      <!-- qr-code-styling renders here -->
+    </div>
+
+    <p class="qr-modal-hint">Scannen zum Teilen dieser Seite</p>
+
+    <a class="qr-modal-url" id="qr-modal-url" href="#" target="_blank" rel="noopener"></a>
+  </div>
+</div>
+
+<script>
+import QRCodeStyling from "qr-code-styling";
+
+// ── Logo SVG as data URL (inline — no external fetch) ──────────────────────
+const LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <rect width="160" height="160" rx="24" fill="white"/>
+  <circle cx="62" cy="98" r="32" fill="#FF6F61"/>
+  <circle cx="114" cy="114" r="16" fill="#FF6F61"/>
+  <path d="M 75 36 L 124 36 L 124 85" fill="none" stroke="#FF6F61" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
+const LOGO_URL = `data:image/svg+xml;base64,${btoa(LOGO_SVG)}`;
+
+// ── State ───────────────────────────────────────────────────────────────────
+let qrInstance: InstanceType<typeof QRCodeStyling> | null = null;
+let rendered = false;
+
+// ── Elements ────────────────────────────────────────────────────────────────
+const openBtn    = document.getElementById("qr-open-btn")    as HTMLButtonElement;
+const modal      = document.getElementById("qr-modal")       as HTMLDivElement;
+const backdrop   = document.getElementById("qr-modal-backdrop") as HTMLDivElement;
+const closeBtn   = document.getElementById("qr-close-btn")   as HTMLButtonElement;
+const canvasWrap = document.getElementById("qr-canvas-wrap") as HTMLDivElement;
+const titleEl    = document.getElementById("qr-modal-title") as HTMLSpanElement;
+const urlEl      = document.getElementById("qr-modal-url")   as HTMLAnchorElement;
+
+const pageUrl   = openBtn.dataset.qrUrl   ?? window.location.href;
+const pageLabel = openBtn.dataset.qrLabel ?? document.title;
+
+// ── Open ────────────────────────────────────────────────────────────────────
+function openModal() {
+  titleEl.textContent = pageLabel;
+  urlEl.textContent   = pageUrl.replace("https://", "");
+  urlEl.href          = pageUrl;
+
+  modal.hidden = false;
+  document.body.style.overflow = "hidden";
+  closeBtn.focus();
+
+  // Render QR once, reuse on subsequent opens
+  if (!rendered) {
+    qrInstance = new QRCodeStyling({
+      width:  280,
+      height: 280,
+      type:   "canvas",
+      data:   pageUrl,
+      image:  LOGO_URL,
+      dotsOptions: {
+        color: "#373F51",   // charcoal — high contrast on white
+        type:  "rounded",
+      },
+      cornersSquareOptions: {
+        color: "#FF6F61",   // coral corner squares
+        type:  "extra-rounded",
+      },
+      cornersDotOptions: {
+        color: "#FF6F61",
+      },
+      backgroundOptions: {
+        color: "#ffffff",
+      },
+      imageOptions: {
+        crossOrigin:   "anonymous",
+        margin:        6,
+        imageSize:     0.3,
+      },
+      qrOptions: {
+        errorCorrectionLevel: "H",   // high — needed when logo covers ~30%
+      },
+    });
+    qrInstance.append(canvasWrap);
+    rendered = true;
+  }
+}
+
+// ── Close ───────────────────────────────────────────────────────────────────
+function closeModal() {
+  modal.hidden = true;
+  document.body.style.overflow = "";
+  openBtn.focus();
+}
+
+// ── Events ──────────────────────────────────────────────────────────────────
+openBtn.addEventListener("click", openModal);
+closeBtn.addEventListener("click", closeModal);
+backdrop.addEventListener("click", closeModal);
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !modal.hidden) closeModal();
+});
+</script>
+
+<style>
+  /* ── QR Button ─────────────────────────────────────────────────────────── */
+  .qr-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    height: 36px;
+    padding: 0 0.85rem;
+    background: var(--tag-bg);
+    color: var(--text-60);
+    border: none;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 150ms, color 150ms;
+    font-family: inherit;
+  }
+  .qr-btn:hover {
+    background: var(--coral-light);
+    color: var(--coral);
+  }
+  .qr-btn:focus-visible {
+    outline: 2px solid var(--coral);
+    outline-offset: 2px;
+  }
+
+  /* ── Modal overlay ─────────────────────────────────────────────────────── */
+  .qr-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .qr-modal[hidden] { display: none; }
+
+  .qr-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+  }
+
+  /* ── Modal box ─────────────────────────────────────────────────────────── */
+  .qr-modal-box {
+    position: relative;
+    background: var(--surface-card);
+    border-radius: var(--radius, 12px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .qr-modal-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .qr-modal-label {
+    font-family: var(--font-heading, inherit);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text);
+  }
+
+  .qr-modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--tag-bg);
+    border: none;
+    border-radius: 50%;
+    color: var(--text-60);
+    cursor: pointer;
+    transition: background 150ms;
+    flex-shrink: 0;
+  }
+  .qr-modal-close:hover { background: var(--coral-light); color: var(--coral); }
+  .qr-modal-close:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+  /* ── Canvas wrapper ────────────────────────────────────────────────────── */
+  .qr-modal-canvas-wrap {
+    width: 280px;
+    height: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* qr-code-styling injects a canvas — make it fill the wrapper */
+  .qr-modal-canvas-wrap canvas {
+    display: block;
+    width: 280px !important;
+    height: 280px !important;
+  }
+
+  .qr-modal-hint {
+    font-size: 0.8rem;
+    color: var(--text-60);
+    margin: 0;
+  }
+
+  .qr-modal-url {
+    font-size: 0.75rem;
+    color: var(--coral);
+    word-break: break-all;
+    text-align: center;
+    text-decoration: none;
+  }
+  .qr-modal-url:hover { text-decoration: underline; }
+</style>

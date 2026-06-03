@@ -3,6 +3,8 @@ import Base from "../../../layouts/Base.astro";
 import FreshnessStamp from '../../../components/FreshnessStamp.astro';
 import EventCard from "../../../components/EventCard.astro";
 import FilterBar from "../../../components/FilterBar.astro";
+import QRModal from "../../../components/QRModal.astro";
+import QRModal from "../../../components/QRModal.astro";
 
 import subsetData from "../../../../public/data/landkreis-ludwigsburg/tomorrow.json";
 import metaData from "../../../../public/data/ludwigsburg/meta.json";
@@ -67,6 +69,14 @@ const breadcrumbSchema = {
     </p>
   </div>
 
+  <div class="collection-actions">
+    <QRModal url={canonical} label={`Morgen in Ludwigsburg – ${tomorrowDE}`} />
+  </div>
+
+  <div class="collection-actions">
+    <QRModal url={canonical} label={`Morgen in Ludwigsburg – ${tomorrowDE}`} />
+  </div>
+
   <FilterBar />
 
   <div class="empty-state" id="empty-state" aria-live="polite" hidden></div>
@@ -103,6 +113,22 @@ const breadcrumbSchema = {
 </Base>
 
 <style>
+  .collection-actions {
+    max-width: 720px;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .collection-actions {
+    max-width: 720px;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
   .page-header { margin-bottom: 1.25rem; max-width: 720px; margin-left: auto; margin-right: auto; }
   h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
   .page-subtitle { color: var(--text-60); font-size: 0.95rem; margin-top: 0.35rem; display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
