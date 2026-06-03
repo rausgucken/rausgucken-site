@@ -262,6 +262,34 @@ const websiteSchema = isHomepage ? {
     .theme-btn:hover { background: var(--coral-light); border-color: var(--coral); transform: scale(1.05); }
     .theme-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
 
+    .nav-saved-link {
+      display: flex; align-items: center; gap: 0.4rem;
+      font-size: 0.875rem; font-weight: 600;
+      color: var(--text-60); text-decoration: none;
+      padding: 0.4rem 0.75rem;
+      border-radius: var(--radius-sm);
+      border: 1.5px solid var(--border);
+      transition: color 150ms, border-color 150ms, background 150ms;
+      min-height: 44px;
+      position: relative;
+    }
+    .nav-saved-link:hover {
+      color: var(--coral); border-color: var(--coral);
+      background: var(--coral-light); text-decoration: none;
+    }
+    .nav-saved-link svg { flex-shrink: 0; }
+    .nav-saved-text { white-space: nowrap; }
+    .nav-saved-badge {
+      position: absolute; top: -6px; right: -6px;
+      background: var(--coral); color: var(--text);
+      font-size: 0.6rem; font-weight: 700;
+      min-width: 17px; height: 17px;
+      border-radius: 20px; padding: 0 4px;
+      display: flex; align-items: center; justify-content: center;
+      line-height: 1;
+    }
+    @media (max-width: 480px) { .nav-saved-text { display: none; } }
+
     /* ── Main — max-w-explore (1100px) per design spec §3 ─────────────────── */
     main { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem; min-height: calc(100vh - 64px - 80px); }
 
@@ -405,6 +433,11 @@ const websiteSchema = isHomepage ? {
         <span class="site-logo-text">raus<span>gucken</span>.de</span>
       </a>
       <div class="site-nav">
+        <a href="/meine-events/" class="nav-saved-link" aria-label="Meine gespeicherten Events">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <span class="nav-saved-text">Meine Events</span>
+          <span id="nav-saved-badge" class="nav-saved-badge" hidden>0</span>
+        </a>
         <button
           class="theme-btn"
           id="theme-toggle"
@@ -473,6 +506,27 @@ const websiteSchema = isHomepage ? {
           .catch(err => console.warn('[SW] registration failed:', err));
       });
     }
+  </script>
+
+  <script is:inline>
+    // Update "Meine Events" nav badge from localStorage
+    (function() {
+      function updateSavedBadge() {
+        try {
+          const saved = JSON.parse(localStorage.getItem('rg-saved') || '[]');
+          const badge = document.getElementById('nav-saved-badge');
+          if (!badge) return;
+          if (saved.length > 0) {
+            badge.textContent = saved.length > 9 ? '9+' : String(saved.length);
+            badge.hidden = false;
+          } else {
+            badge.hidden = true;
+          }
+        } catch(e) {}
+      }
+      updateSavedBadge();
+      window.addEventListener('rg:saved-changed', updateSavedBadge);
+    })();
   </script>
 </body>
 </html>
