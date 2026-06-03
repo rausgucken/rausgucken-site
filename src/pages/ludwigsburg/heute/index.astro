@@ -5,6 +5,7 @@ import EventCard from "../../../components/EventCard.astro";
 import FilterBar from "../../../components/FilterBar.astro";
 import QRModal from "../../../components/QRModal.astro";
 import ICSButton from "../../../components/ICSButton.astro";
+import ShareBar from "../../../components/ShareBar.astro";
 
 import subsetData from "../../../../public/data/landkreis-ludwigsburg/today.json";
 import metaData from "../../../../public/data/ludwigsburg/meta.json";
@@ -23,6 +24,7 @@ const seoTitle  = `Veranstaltungen in Ludwigsburg heute (${todayDE}) | rausgucke
 const metaDesc  = `Alle Events in Ludwigsburg heute, ${todayDE}. Führungen, Ausstellungen, Kinder, Kultur – lokal, aktuell, übersichtlich.`;
 const pageLabel = "Heute in Ludwigsburg";
 const canonical = `${siteUrl}/${city}/heute/`;
+const feedUrl   = "/ludwigsburg/feed.xml";
 
 const collectionSchema = {
   "@context": "https://schema.org",
@@ -70,6 +72,7 @@ const breadcrumbSchema = {
   <div class="collection-actions">
     <QRModal url={canonical} label={pageLabel} />
     <ICSButton events={events} label={pageLabel} />
+    <ShareBar feedUrl={feedUrl} shareUrl={canonical} shareTitle={pageLabel} />
   </div>
 
   <FilterBar />

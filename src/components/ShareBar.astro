@@ -1,0 +1,111 @@
+---
+// ShareBar.astro
+// Props: feedUrl (relative), shareUrl (absolute), shareTitle (string)
+// Renders: RSS link + Web Share button + PWA install button
+// Web Share: uses navigator.share with fallback copy-to-clipboard
+// PWA install: only visible when browser fires beforeinstallprompt
+const { feedUrl, shareUrl, shareTitle } = Astro.props;
+---
+
+<!-- RSS button — always visible -->
+
+  href={feedUrl}
+  class="action-btn"
+  aria-label="Atom-Feed abonnieren"
+  title="Atom-Feed abonnieren"
+  rel="alternate"
+  type="application/atom+xml"
+>
+  <svg width="14" height="14" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+    <circle cx="4" cy="16" r="2" fill="currentColor"/>
+    <path d="M2 9a9 9 0 0 1 9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M2 4a14 14 0 0 1 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </svg>
+  RSS
+</a>
+
+<!-- Web Share button — shown by JS if navigator.share available -->
+<button
+  type="button"
+  class="action-btn"
+  id="rg-share-btn"
+  aria-label="Seite teilen"
+  title="Seite teilen"
+  style="display:none"
+  data-url={shareUrl}
+  data-title={shareTitle}
+>
+  <svg width="14" height="14" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+    <circle cx="15" cy="4"  r="2" stroke="currentColor" stroke-width="1.8"/>
+    <circle cx="15" cy="16" r="2" stroke="currentColor" stroke-width="1.8"/>
+    <circle cx="4"  cy="10" r="2" stroke="currentColor" stroke-width="1.8"/>
+    <line x1="13.2" y1="5.1"  x2="5.8" y2="9"   stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="5.8"  y1="11"   x2="13.2" y2="14.9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  </svg>
+  Teilen
+</button>
+
+<!-- PWA install button — shown by JS only when installable -->
+<button
+  type="button"
+  class="action-btn"
+  id="rg-install-btn"
+  aria-label="App installieren"
+  title="Zum Startbildschirm hinzufügen"
+  style="display:none"
+>
+  <svg width="14" height="14" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+    <path d="M10 3v10M6 9l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M3 15v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  </svg>
+  Installieren
+</button>
+
+<script>
+  // Web Share
+  const shareBtn = document.getElementById('rg-share-btn');
+  if (shareBtn && navigator.share) {
+    shareBtn.style.display = 'inline-flex';
+    shareBtn.addEventListener('click', async () => {
+      try {
+        await navigator.share({
+          title: shareBtn.dataset.title,
+          url:   shareBtn.dataset.url,
+        });
+      } catch (e) {
+        // AbortError = user cancelled — no fallback needed
+        if (e.name !== 'AbortError') {
+          // Fallback: copy to clipboard
+          try {
+            await navigator.clipboard.writeText(shareBtn.dataset.url);
+            const orig = shareBtn.textContent.trim();
+            shareBtn.textContent = '✓ Kopiert';
+            setTimeout(() => { shareBtn.innerHTML = `<svg width="14" height="14" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="15" cy="4" r="2" stroke="currentColor" stroke-width="1.8"/><circle cx="15" cy="16" r="2" stroke="currentColor" stroke-width="1.8"/><circle cx="4" cy="10" r="2" stroke="currentColor" stroke-width="1.8"/><line x1="13.2" y1="5.1" x2="5.8" y2="9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><line x1="5.8" y1="11" x2="13.2" y2="14.9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg> Teilen`; }, 2000);
+          } catch {}
+        }
+      }
+    });
+  }
+
+  // PWA Install
+  const installBtn = document.getElementById('rg-install-btn');
+  let deferredPrompt = null;
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    if (installBtn) installBtn.style.display = 'inline-flex';
+  });
+  if (installBtn) {
+    installBtn.addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      if (outcome === 'accepted') installBtn.style.display = 'none';
+    });
+  }
+  window.addEventListener('appinstalled', () => {
+    if (installBtn) installBtn.style.display = 'none';
+    deferredPrompt = null;
+  });
+</script>

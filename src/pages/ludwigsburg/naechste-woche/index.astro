@@ -5,6 +5,7 @@ import EventCard from "../../../components/EventCard.astro";
 import FilterBar from "../../../components/FilterBar.astro";
 import QRModal from "../../../components/QRModal.astro";
 import ICSButton from "../../../components/ICSButton.astro";
+import ShareBar from "../../../components/ShareBar.astro";
 import DaySelector from "../../../components/DaySelector.astro";
 
 import subsetData from "../../../../public/data/landkreis-ludwigsburg/next-week.json";
@@ -29,6 +30,7 @@ const fmtFull  = (d: Date) => d.toLocaleDateString("de-DE", { day: "numeric", mo
 const rangeDE   = `${fmtShort(mon)} – ${fmtFull(sun)}`;
 const pageLabel = "Nächste Woche in Ludwigsburg";
 const canonical = `${siteUrl}/${city}/naechste-woche/`;
+const feedUrl   = "/ludwigsburg/feed.xml";
 const seoTitle  = `Events Ludwigsburg nächste Woche, ${rangeDE} | rausgucken.de`;
 const metaDesc  = `Veranstaltungen in Ludwigsburg nächste Woche (${rangeDE}): Kultur, Kinder, Ausstellungen, Führungen – jetzt vorplanen.`;
 
@@ -102,6 +104,7 @@ const days = [
   <div class="collection-actions">
     <QRModal url={canonical} label={pageLabel} />
     <ICSButton events={events} label={pageLabel} />
+    <ShareBar feedUrl={feedUrl} shareUrl={canonical} shareTitle={pageLabel} />
   </div>
 
   <FilterBar />

@@ -5,6 +5,7 @@ import EventCard from "../../../components/EventCard.astro";
 import FilterBar from "../../../components/FilterBar.astro";
 import QRModal from "../../../components/QRModal.astro";
 import ICSButton from "../../../components/ICSButton.astro";
+import ShareBar from "../../../components/ShareBar.astro";
 
 import subsetData from "../../../../public/data/landkreis-ludwigsburg/tomorrow.json";
 import metaData from "../../../../public/data/ludwigsburg/meta.json";
@@ -75,6 +76,7 @@ const breadcrumbSchema = {
   <div class="collection-actions">
     <QRModal url={canonical} label={pageLabel} />
     <ICSButton events={events} label={pageLabel} />
+    <ShareBar feedUrl={feedUrl} shareUrl={canonical} shareTitle={pageLabel} />
   </div>
 
   <FilterBar />

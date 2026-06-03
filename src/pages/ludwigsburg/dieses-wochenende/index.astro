@@ -5,6 +5,7 @@ import EventCard from "../../../components/EventCard.astro";
 import FilterBar from "../../../components/FilterBar.astro";
 import QRModal from "../../../components/QRModal.astro";
 import ICSButton from "../../../components/ICSButton.astro";
+import ShareBar from "../../../components/ShareBar.astro";
 import DaySelector from "../../../components/DaySelector.astro";
 
 import subsetData from "../../../../public/data/landkreis-ludwigsburg/this-weekend.json";
@@ -35,6 +36,7 @@ const rangeDE = `${satDE} – ${sunDE}`;
 
 const pageLabel = "Dieses Wochenende in Ludwigsburg";
 const canonical = `${siteUrl}/${city}/dieses-wochenende/`;
+const feedUrl   = "/ludwigsburg/feed.xml";
 const seoTitle  = `Events Ludwigsburg Wochenende, ${rangeDE} | rausgucken.de`;
 const metaDesc  = `Veranstaltungen in Ludwigsburg dieses Wochenende (${rangeDE}): Ausflüge, Kinder, Kultur, Outdoor – alles auf einen Blick.`;
 
@@ -95,6 +97,7 @@ const days = [
   <div class="collection-actions">
     <QRModal url={canonical} label={pageLabel} />
     <ICSButton events={events} label={pageLabel} />
+    <ShareBar feedUrl={feedUrl} shareUrl={canonical} shareTitle={pageLabel} />
   </div>
 
   <FilterBar />
