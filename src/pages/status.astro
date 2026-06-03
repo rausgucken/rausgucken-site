@@ -9,7 +9,7 @@ import Base from "../layouts/Base.astro";
 ---
 
 <Base
-  title="Pipeline Status | rausgucken.de"
+  title="Datenstatus | rausgucken.de"
   description="Internes Dashboard: Quellen-Gesundheit, Scraper-Status und Abdeckung im Landkreis Ludwigsburg."
   canonical="/status"
   noindex={true}
@@ -17,11 +17,11 @@ import Base from "../layouts/Base.astro";
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <a href="/">rausgucken.de</a>
     <span aria-hidden="true">›</span>
-    <span aria-current="page">Pipeline Status</span>
+    <span aria-current="page">Datenstatus</span>
   </nav>
 
   <div class="page-header">
-    <h1>Pipeline Status</h1>
+    <h1>Datenstatus</h1>
     <p class="page-subtitle">Quellen-Gesundheit · Abdeckung · Letzte Aktualisierung</p>
     <div class="header-meta">
       <span id="last-updated" class="meta-chip">Lade…</span>
@@ -276,7 +276,7 @@ async function loadDashboard() {
     return;
   }
   const cities = Array.isArray(citiesRaw) ? citiesRaw : (citiesRaw.cities || []);
-  const covered = cities.filter(c => c.covered);
+  const covered = cities.filter(c => c.covered && c.type !== 'Landkreis');
 
   // 2. Fetch meta.json for each covered city in parallel
   const metaResults = await Promise.all(
