@@ -1,7 +1,4 @@
 ---
-// src/components/ICSButton.astro
-// Portable ICS export button — pill style matching QR-Code button.
-// Usage: <ICSButton events={events} label={pageLabel} />
 const { events, label } = Astro.props;
 const uid = Math.random().toString(36).slice(2, 8);
 ---
@@ -17,7 +14,7 @@ const uid = Math.random().toString(36).slice(2, 8);
   </svg>
   ICS
 </button>
-<script type="application/json" data-ics-data={uid} aria-hidden="true" set:text={JSON.stringify(events)} />
+<div data-ics-data={uid} aria-hidden="true" style="display:none" set:text={JSON.stringify(events)} />
 <script type="module">
 import { generateCollectionICS } from "/scripts/ics-export.js";
 document.querySelectorAll("[data-ics-btn]").forEach(btn => {
@@ -51,75 +48,6 @@ document.querySelectorAll("[data-ics-btn]").forEach(btn => {
     cursor: pointer;
     transition: background 150ms, color 150ms;
   }
-  .ics-btn:hover {
-    background: var(--coral-light);
-    color: var(--coral);
-  }
-  .ics-btn:focus-visible {
-    outline: 2px solid var(--coral);
-    outline-offset: 2px;
-  }
-</style>
-ENDOFFILEcat > /opt/rausgucken-site/src/components/ICSButton.astro << 'ENDOFFILE'
----
-// src/components/ICSButton.astro
-// Portable ICS export button — pill style matching QR-Code button.
-// Usage: <ICSButton events={events} label={pageLabel} />
-const { events, label } = Astro.props;
-const uid = Math.random().toString(36).slice(2, 8);
----
-<button
-  class="action-btn ics-btn"
-  type="button"
-  data-ics-btn={uid}
-  data-label={label}
-  aria-label="Alle Veranstaltungen als Kalender exportieren"
->
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-    <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-  </svg>
-  ICS
-</button>
-<script type="application/json" data-ics-data={uid} aria-hidden="true" set:text={JSON.stringify(events)} />
-<script type="module">
-import { generateCollectionICS } from "/scripts/ics-export.js";
-document.querySelectorAll("[data-ics-btn]").forEach(btn => {
-  if (btn._icsWired) return;
-  btn._icsWired = true;
-  btn.addEventListener("click", () => {
-    const uid = btn.dataset.icsBtn;
-    const dataEl = document.querySelector(`[data-ics-data="${uid}"]`);
-    const events = dataEl ? JSON.parse(dataEl.textContent || "[]") : [];
-    const label = btn.dataset.label || "Veranstaltungen";
-    if (!events.length) { alert("Keine Veranstaltungen zum Exportieren."); return; }
-    generateCollectionICS(events, label);
-  });
-});
-</script>
-<style>
-  .ics-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    height: 36px;
-    padding: 0 0.85rem;
-    background: var(--tag-bg);
-    color: var(--text-60);
-    border-radius: 20px;
-    border: none;
-    font-size: 0.82rem;
-    font-weight: 500;
-    font-family: inherit;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: background 150ms, color 150ms;
-  }
-  .ics-btn:hover {
-    background: var(--coral-light);
-    color: var(--coral);
-  }
-  .ics-btn:focus-visible {
-    outline: 2px solid var(--coral);
-    outline-offset: 2px;
-  }
+  .ics-btn:hover { background: var(--coral-light); color: var(--coral); }
+  .ics-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
 </style>
