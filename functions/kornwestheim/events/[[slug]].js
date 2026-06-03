@@ -47,7 +47,10 @@ function buildICS(ev) {
   const lines = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//rausgucken.de//Event Calendar//DE','CALSCALE:GREGORIAN','METHOD:PUBLISH',`X-WR-CALNAME:${escICS(ev.title||'Veranstaltung')}`,'X-WR-TIMEZONE:Europe/Berlin','BEGIN:VEVENT',`UID:${uid}`,`DTSTAMP:${now}Z`,allDay?`DTSTART;VALUE=DATE:${dtstart}`:`DTSTART;TZID=Europe/Berlin:${dtstart}`,allDay?`DTEND;VALUE=DATE:${dtend}`:`DTEND;TZID=Europe/Berlin:${dtend}`,fold(`SUMMARY:${escICS(ev.title||'')}`)];
   if (description) lines.push(fold(`DESCRIPTION:${escICS(description)}`));
   if (ev.location) lines.push(fold(`LOCATION:${escICS(ev.location)}`));
-  if (ev.original_url) lines.push(`URL:${ev.original_url}`);
+  // URL: points to rausgucken.de deep link (canonical_url set by manifest.py)
+  // Original source URL is already in DESCRIPTION for user reference
+  const eventUrl = ev.canonical_url || `https://www.rausgucken.de/kornwestheim/events/${ev.slug}`;
+  lines.push(`URL:${eventUrl}`);
   lines.push(`ORGANIZER;CN=${escICS(orgName)}:mailto:noreply@rausgucken.de`);
   lines.push(`X-ALT-DESC;FMTTYPE=text/html:<a href="${site}/kornwestheim/events/${ev.slug}">Auf rausgucken.de ansehen</a>`);
   lines.push('END:VEVENT','END:VCALENDAR');

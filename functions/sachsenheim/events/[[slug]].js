@@ -135,7 +135,10 @@ function buildICS(ev) {
 
   if (description) lines.push(fold(`DESCRIPTION:${escICS(description)}`));
   if (ev.location)  lines.push(fold(`LOCATION:${escICS(ev.location)}`));
-  if (ev.original_url) lines.push(`URL:${ev.original_url}`);
+  // URL: points to rausgucken.de deep link (canonical_url set by manifest.py)
+  // Original source URL is already in DESCRIPTION for user reference
+  const eventUrl = ev.canonical_url || `https://www.rausgucken.de/sachsenheim/events/${ev.slug}`;
+  lines.push(`URL:${eventUrl}`);
 
   lines.push(`ORGANIZER;CN=${escICS(orgName)}:mailto:noreply@rausgucken.de`);
   lines.push(

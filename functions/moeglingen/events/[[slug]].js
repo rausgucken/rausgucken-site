@@ -92,7 +92,9 @@ export async function onRequest({ request, env }) {
     ev.location ? `LOCATION:${escICS(ev.location)}` : null,
     ev.description ? `DESCRIPTION:${escICS(ev.description)}` : null,
     ev.price ? `COMMENT:Preis: ${escICS(ev.price)}` : null,
-    `URL:${ev.original_url}`,
+    // URL: points to rausgucken.de deep link (canonical_url set by manifest.py)
+    // Original source URL is already in DESCRIPTION for user reference
+    `URL:${ev.canonical_url || 'https://www.rausgucken.de/moeglingen/events/' + ev.slug}`,
     `ORGANIZER;CN=${escICS(ev.source_label ?? "Gemeinde Möglingen")}:MAILTO:info@moeglingen.de`,
     "END:VEVENT",
     "END:VCALENDAR",
