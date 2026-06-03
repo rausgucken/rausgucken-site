@@ -34,8 +34,25 @@ if (btn) {
 
 <style>
   .ics-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    height: 36px;
+    padding: 0 0.85rem;
+    background: var(--tag-bg);
+    color: var(--text-60);
+    border-radius: 20px;
     border: none;
+    font-size: 0.82rem;
+    font-weight: 500;
+    font-family: inherit;
+    white-space: nowrap;
     cursor: pointer;
+    transition: background 150ms, color 150ms;
+  }
+  .ics-btn:hover {
+    background: var(--coral-light);
+    color: var(--coral);
   }
   .ics-btn:focus-visible {
     outline: 2px solid var(--coral);
