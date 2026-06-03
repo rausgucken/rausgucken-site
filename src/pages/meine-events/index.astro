@@ -66,6 +66,25 @@ import Base from "../../layouts/Base.astro";
     </div>
   </section>
 
+
+  <!-- Filter preferences reset panel -->
+  <section class="pref-panel" aria-label="Filtereinstellungen">
+    <h2 class="section-heading" style="margin-top:2.5rem;">Filtereinstellungen</h2>
+    <div class="pref-panel-inner">
+      <div class="pref-status" id="pref-status"></div>
+      <p class="pref-desc">
+        Deine bevorzugten Filtereinstellungen (Kategorie, Altersgruppe) werden automatisch
+        gespeichert und beim nächsten Besuch wiederhergestellt.
+      </p>
+      <div class="pref-row" id="pref-display">
+        <!-- populated by JS -->
+      </div>
+      <button id="pref-reset-btn" class="empty-reset pref-reset-btn" type="button">
+        Filtereinstellungen zurücksetzen
+      </button>
+    </div>
+  </section>
+
 </Base>
 
 <style>
@@ -283,6 +302,57 @@ import Base from "../../layouts/Base.astro";
   }
   .saved-card-remove:hover { color: #e55a4d; background: rgba(229,90,77,0.08); }
   .saved-card-remove:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+  /* ── Filter preferences panel ───────────────────────────────────────────── */
+  .pref-panel { max-width: 720px; margin: 0 auto; }
+  .pref-panel-inner {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-card);
+  }
+  .pref-desc {
+    font-size: 0.875rem;
+    color: var(--text-60);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  .pref-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    min-height: 28px;
+  }
+  .pref-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    height: 28px;
+    padding: 0 0.75rem;
+    background: var(--coral-light);
+    border: 1px solid var(--coral);
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .pref-chip--empty {
+    background: var(--tag-bg);
+    border-color: var(--border);
+    color: var(--text-60);
+    font-weight: 400;
+  }
+  .pref-reset-btn { margin-top: 0; }
+  .pref-status {
+    font-size: 0.82rem;
+    color: var(--sage);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    min-height: 1.2em;
+    transition: opacity 300ms;
+  }
 </style>
 
 <script>
@@ -449,5 +519,58 @@ import Base from "../../layouts/Base.astro";
     localStorage.removeItem('rg-push-enabled');
     localStorage.removeItem('rg-fcm-token');
     window.location.href = '/meine-events/';
+  }
+
+  // ── Filter preferences management ────────────────────────────────────────
+  const PREF_TAGS = 'rg-pref-tags';
+  const PREF_AGE  = 'rg-pref-age';
+
+  const TAG_LABELS = {
+    'Ausstellung': 'Ausstellung', 'Entertainment': 'Entertainment',
+    'Familie': 'Familie', 'Fest': 'Fest', 'Fuehrung': 'Führung',
+    'Jugend': 'Jugend', 'Kinder': 'Kinder', 'Kulinarik': 'Kulinarik',
+    'Lesung': 'Lesung', 'Messe': 'Messe', 'Musik': 'Musik',
+    'Outdoor': 'Outdoor', 'Sport': 'Sport', 'Sprache': 'Sprache',
+    'Tanz': 'Tanz', 'Theater': 'Theater', 'Vortrag': 'Vortrag',
+    'Workshop': 'Workshop',
+  };
+  const AGE_LABELS = {
+    '0-3': '0–3 Jahre', '3-6': '3–6 Jahre', '6-12': '6–12 Jahre',
+    '12-17': '12–17 Jahre', '18-99': 'Erwachsene (18+)',
+  };
+
+  function renderPrefDisplay() {
+    const display = document.getElementById('pref-display');
+    if (!display) return;
+    let chips = [];
+    try {
+      const tag = localStorage.getItem(PREF_TAGS);
+      const age = localStorage.getItem(PREF_AGE);
+      if (tag) chips.push(`<span class="pref-chip">🏷 ${TAG_LABELS[tag] || tag}</span>`);
+      if (age) chips.push(`<span class="pref-chip">👶 ${AGE_LABELS[age] || age}</span>`);
+    } catch (e) {}
+    if (chips.length === 0) {
+      display.innerHTML = '<span class="pref-chip pref-chip--empty">Keine gespeicherten Einstellungen</span>';
+    } else {
+      display.innerHTML = chips.join('');
+    }
+  }
+
+  renderPrefDisplay();
+
+  const prefResetBtn = document.getElementById('pref-reset-btn');
+  if (prefResetBtn) {
+    prefResetBtn.addEventListener('click', () => {
+      try {
+        localStorage.removeItem(PREF_TAGS);
+        localStorage.removeItem(PREF_AGE);
+      } catch (e) {}
+      renderPrefDisplay();
+      const status = document.getElementById('pref-status');
+      if (status) {
+        status.textContent = '✓ Filtereinstellungen zurückgesetzt';
+        setTimeout(() => { status.textContent = ''; }, 3000);
+      }
+    });
   }
 </script>

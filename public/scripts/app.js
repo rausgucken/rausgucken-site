@@ -33,6 +33,50 @@
   const todayStr = new Date().toISOString().slice(0, 10);
   if (dateFrom && !dateFrom.value) dateFrom.value = todayStr;
 
+  // ── Saved preferences — restore on load ──────────────────────────────────
+  // Keys: rg-pref-tags, rg-pref-age
+  // radius (rg-pref-radius) is stored but managed by homepage map; FilterBar
+  // does not have a radius control so we skip it here.
+  const PREF_TAGS = 'rg-pref-tags';
+  const PREF_AGE  = 'rg-pref-age';
+
+  function savePrefs() {
+    try {
+      if (tagFilter) {
+        if (tagFilter.value) {
+          localStorage.setItem(PREF_TAGS, tagFilter.value);
+        } else {
+          localStorage.removeItem(PREF_TAGS);
+        }
+      }
+      if (ageFilter) {
+        if (ageFilter.value && ageFilter.value !== '0-99') {
+          localStorage.setItem(PREF_AGE, ageFilter.value);
+        } else {
+          localStorage.removeItem(PREF_AGE);
+        }
+      }
+    } catch (e) {}
+  }
+
+  function restorePrefs() {
+    try {
+      const savedTag = localStorage.getItem(PREF_TAGS);
+      const savedAge = localStorage.getItem(PREF_AGE);
+      if (tagFilter && savedTag) {
+        // Only restore if option exists in select
+        const match = Array.from(tagFilter.options).find(o => o.value === savedTag);
+        if (match) tagFilter.value = savedTag;
+      }
+      if (ageFilter && savedAge) {
+        const match = Array.from(ageFilter.options).find(o => o.value === savedAge);
+        if (match) ageFilter.value = savedAge;
+      }
+    } catch (e) {}
+  }
+
+
+
   // Pre-select location from ?ort= URL param
   if (locationFilter) {
     const _ortParam = new URLSearchParams(window.location.search).get('ort');
@@ -136,22 +180,32 @@
   }
 
   // ── Reset ─────────────────────────────────────────────────────────────────
-  function resetFilters() {
+  function resetFilters(clearPrefs) {
     if (tagFilter)      tagFilter.value      = "";
     if (ageFilter)      ageFilter.value      = "0-99";
     if (locationFilter) locationFilter.value = "";
     if (dateFrom)       dateFrom.value       = todayStr;
     if (dateTo)         dateTo.value         = "";
+    if (clearPrefs) {
+      try {
+        localStorage.removeItem(PREF_TAGS);
+        localStorage.removeItem(PREF_AGE);
+      } catch (e) {}
+    } else {
+      savePrefs();
+    }
     applyFilters();
   }
 
   // ── Event listeners ───────────────────────────────────────────────────────
   [tagFilter, ageFilter, locationFilter, dateFrom, dateTo].forEach(el => {
-    if (el) el.addEventListener("change", applyFilters);
+    if (el) el.addEventListener("change", function() { applyFilters(); savePrefs(); });
   });
-  if (resetBtn)      resetBtn.addEventListener("click", resetFilters);
-  if (emptyResetBtn) emptyResetBtn.addEventListener("click", resetFilters);
+  if (resetBtn)      resetBtn.addEventListener("click", function() { resetFilters(false); });
+  if (emptyResetBtn) emptyResetBtn.addEventListener("click", function() { resetFilters(false); });
 
+  // Restore saved preferences before first filter run
+  restorePrefs();
   applyFilters();
 })();
 
