@@ -1,0 +1,615 @@
+---
+// src/pages/status.astro
+// Pipeline & coverage status dashboard — reads cities.json + meta.json client-side.
+// Handles both meta.json schemas:
+//   - New: source_health inside quality_report (post quality_report.py run)
+//   - Legacy: source_health top-level (before quality_report.py ran for that city)
+// No build-time data — all fetched at runtime from /data/*.
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="Pipeline Status | rausgucken.de"
+  description="Internes Dashboard: Quellen-Gesundheit, Scraper-Status und Abdeckung im Landkreis Ludwigsburg."
+  canonical="/status"
+  noindex={true}
+>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">rausgucken.de</a>
+    <span aria-hidden="true">›</span>
+    <span aria-current="page">Pipeline Status</span>
+  </nav>
+
+  <div class="page-header">
+    <h1>Pipeline Status</h1>
+    <p class="page-subtitle">Quellen-Gesundheit · Abdeckung · Letzte Aktualisierung</p>
+    <div class="header-meta">
+      <span id="last-updated" class="meta-chip">Lade…</span>
+      <span id="total-events" class="meta-chip">Lade…</span>
+      <button id="refresh-btn" class="refresh-btn" aria-label="Aktualisieren">↻ Aktualisieren</button>
+    </div>
+  </div>
+
+  <!-- Landkreis summary bar -->
+  <div class="lk-bar" id="lk-bar">
+    <div class="lk-stat"><span class="lk-num" id="lk-total">—</span><span class="lk-label">Events gesamt</span></div>
+    <div class="lk-stat"><span class="lk-num" id="lk-cities">—</span><span class="lk-label">Städte aktiv</span></div>
+    <div class="lk-stat"><span class="lk-num" id="lk-sources">—</span><span class="lk-label">Quellen</span></div>
+    <div class="lk-stat"><span class="lk-num" id="lk-warnings">—</span><span class="lk-label">Warnungen</span></div>
+  </div>
+
+  <!-- City cards grid -->
+  <div class="cities-grid" id="cities-grid" aria-live="polite" aria-label="Städte Status">
+    <div class="loading-state">
+      <span class="loading-dot"></span>
+      <span>Lade Daten…</span>
+    </div>
+  </div>
+
+</Base>
+
+<script>
+// ── Helpers ──────────────────────────────────────────────────────────────────
+
+function getSourceHealth(meta) {
+  // Handle both schemas:
+  // New:    meta.quality_report.source_health
+  // Legacy: meta.source_health (top-level)
+  const qr = meta.quality_report || {};
+  return qr.source_health || meta.source_health || {};
+}
+
+function getCountDrift(meta) {
+  const qr = meta.quality_report || {};
+  return qr.count_drift_warnings || meta.count_drift_warnings || {};
+}
+
+function getQuarantined(meta) {
+  const qr = meta.quality_report || {};
+  return qr.quarantined_sources || [];
+}
+
+function getFlaggedRate(meta) {
+  const qr = meta.quality_report || {};
+  return qr.flagged_rate_current ?? null;
+}
+
+function getRuntimeDelta(meta) {
+  const qr = meta.quality_report || {};
+  return qr.runtime_delta_vs_baseline ?? null;
+}
+
+function getStatus(meta) {
+  const qr = meta.quality_report || {};
+  return qr.status || null;
+}
+
+function healthColor(score) {
+  if (score === null || score === undefined) return 'var(--text-30)';
+  if (score >= 0.85) return 'var(--sage)';
+  if (score >= 0.65) return '#f5a623';
+  return '#e53e3e';
+}
+
+function healthLabel(score) {
+  if (score === null || score === undefined) return '—';
+  if (score >= 0.85) return 'OK';
+  if (score >= 0.65) return 'Warn';
+  return 'Krit.';
+}
+
+function formatDate(isoStr) {
+  if (!isoStr) return '—';
+  try {
+    return new Date(isoStr).toLocaleString('de-DE', {
+      day: '2-digit', month: '2-digit', year: 'numeric',
+      hour: '2-digit', minute: '2-digit'
+    });
+  } catch { return isoStr; }
+}
+
+function pct(n) {
+  if (n === null || n === undefined) return '—';
+  return (n * 100).toFixed(0) + '%';
+}
+
+// ── Fetch helpers ─────────────────────────────────────────────────────────────
+
+async function fetchJSON(url) {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
+
+// ── Render source health table for one city ───────────────────────────────────
+
+function renderSourceRows(sourceHealth, countDrift, quarantined) {
+  const entries = Object.entries(sourceHealth);
+  if (!entries.length) return '<p class="no-sources">Keine Quelldaten</p>';
+
+  return `
+    <table class="source-table" aria-label="Quellen-Gesundheit">
+      <thead>
+        <tr>
+          <th>Quelle</th>
+          <th>Score</th>
+          <th>Status</th>
+          <th>Drift</th>
+          <th>Quarantäne</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${entries.map(([src, score]) => {
+          const hasDrift = src in countDrift;
+          const isQuarantined = quarantined.includes(src);
+          const color = healthColor(score);
+          return `
+            <tr class="${isQuarantined ? 'row-quarantine' : hasDrift ? 'row-drift' : ''}">
+              <td class="src-name">${src}</td>
+              <td>
+                <span class="score-pill" style="--pill-color:${color}">
+                  ${typeof score === 'number' ? score.toFixed(2) : '—'}
+                </span>
+              </td>
+              <td style="color:${color};font-weight:600">${healthLabel(score)}</td>
+              <td>${hasDrift ? '<span class="badge badge-warn">⚠ Drift</span>' : '<span class="badge badge-ok">—</span>'}</td>
+              <td>${isQuarantined ? '<span class="badge badge-crit">🔒 Quarantäne</span>' : '<span class="badge badge-ok">—</span>'}</td>
+            </tr>
+          `;
+        }).join('')}
+      </tbody>
+    </table>
+  `;
+}
+
+// ── Render one city card ──────────────────────────────────────────────────────
+
+function renderCityCard(city, meta) {
+  if (!meta) {
+    return `
+      <div class="city-card city-card--error">
+        <div class="city-card-header">
+          <h2 class="city-name">${city.name}</h2>
+          <span class="status-dot status-dot--unknown" aria-label="Unbekannt"></span>
+        </div>
+        <p class="error-msg">meta.json nicht verfügbar</p>
+      </div>
+    `;
+  }
+
+  const sourceHealth = getSourceHealth(meta);
+  const countDrift   = getCountDrift(meta);
+  const quarantined  = getQuarantined(meta);
+  const flaggedRate  = getFlaggedRate(meta);
+  const runtimeDelta = getRuntimeDelta(meta);
+  const status       = getStatus(meta);
+  const failed       = meta.sources_failed || [];
+
+  // Overall city health: worst source score
+  const scores = Object.values(sourceHealth).filter(v => typeof v === 'number');
+  const worstScore = scores.length ? Math.min(...scores) : null;
+  const hasIssues = failed.length > 0 || quarantined.length > 0 ||
+                    (worstScore !== null && worstScore < 0.65);
+  const hasWarnings = !hasIssues && (
+    (worstScore !== null && worstScore < 0.85) ||
+    Object.keys(countDrift).length > 0 ||
+    (flaggedRate !== null && flaggedRate > 0.15)
+  );
+
+  const dotClass = hasIssues ? 'status-dot--critical'
+                 : hasWarnings ? 'status-dot--warning'
+                 : 'status-dot--ok';
+  const dotLabel = hasIssues ? 'Kritisch' : hasWarnings ? 'Warnung' : 'OK';
+
+  const schemaNote = meta.quality_report
+    ? '' 
+    : '<span class="schema-note" title="Älteres meta.json-Schema ohne quality_report-Block">legacy schema</span>';
+
+  return `
+    <div class="city-card ${hasIssues ? 'city-card--critical' : hasWarnings ? 'city-card--warning' : ''}">
+      <div class="city-card-header">
+        <div class="city-card-title">
+          <h2 class="city-name">
+            <a href="${city.url}" target="_blank" rel="noopener">${city.name}</a>
+          </h2>
+          ${schemaNote}
+        </div>
+        <span class="status-dot ${dotClass}" aria-label="${dotLabel}" title="${dotLabel}"></span>
+      </div>
+
+      <div class="city-meta-row">
+        <span class="meta-pill">${meta.event_count ?? '—'} Events</span>
+        ${meta.flagged_count ? `<span class="meta-pill meta-pill--warn">${meta.flagged_count} flagged</span>` : ''}
+        ${failed.length ? `<span class="meta-pill meta-pill--crit">${failed.length} Quelle(n) fehlt</span>` : ''}
+        ${quarantined.length ? `<span class="meta-pill meta-pill--crit">🔒 ${quarantined.length} Quarantäne</span>` : ''}
+      </div>
+
+      <div class="city-stats">
+        <div class="stat">
+          <span class="stat-label">Aktualisiert</span>
+          <span class="stat-val">${formatDate(meta.scraped_at)}</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Flagged Rate</span>
+          <span class="stat-val ${flaggedRate !== null && flaggedRate > 0.25 ? 'val-crit' : flaggedRate !== null && flaggedRate > 0.15 ? 'val-warn' : ''}">${pct(flaggedRate)}</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Runtime Δ</span>
+          <span class="stat-val ${runtimeDelta !== null && runtimeDelta > 0.30 ? 'val-crit' : runtimeDelta !== null && runtimeDelta > 0.15 ? 'val-warn' : ''}">${runtimeDelta !== null ? (runtimeDelta >= 0 ? '+' : '') + pct(runtimeDelta) : '—'}</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Pipeline</span>
+          <span class="stat-val">${meta.pipeline_version ?? '—'}</span>
+        </div>
+      </div>
+
+      ${failed.length ? `
+        <div class="alert-row alert-row--crit">
+          <strong>Fehler:</strong> ${failed.join(', ')}
+        </div>` : ''}
+
+      ${Object.keys(countDrift).length ? `
+        <div class="alert-row alert-row--warn">
+          <strong>Count Drift:</strong> ${Object.keys(countDrift).join(', ')}
+        </div>` : ''}
+
+      <details class="source-details">
+        <summary>Quellen-Gesundheit (${Object.keys(sourceHealth).length})</summary>
+        ${renderSourceRows(sourceHealth, countDrift, quarantined)}
+      </details>
+    </div>
+  `;
+}
+
+// ── Main ──────────────────────────────────────────────────────────────────────
+
+async function loadDashboard() {
+  const grid = document.getElementById('cities-grid');
+  grid.innerHTML = '<div class="loading-state"><span class="loading-dot"></span><span>Lade Daten…</span></div>';
+
+  // 1. Fetch cities.json
+  const citiesRaw = await fetchJSON('/data/cities.json');
+  if (!citiesRaw) {
+    grid.innerHTML = '<div class="error-state">⚠ cities.json nicht erreichbar</div>';
+    return;
+  }
+  const cities = Array.isArray(citiesRaw) ? citiesRaw : (citiesRaw.cities || []);
+  const covered = cities.filter(c => c.covered);
+
+  // 2. Fetch meta.json for each covered city in parallel
+  const metaResults = await Promise.all(
+    covered.map(c => fetchJSON(`/data/${c.id}/meta.json`))
+  );
+
+  // 3. Compute summary stats
+  let totalEvents = 0;
+  let totalSources = 0;
+  let totalWarnings = 0;
+
+  metaResults.forEach((meta, i) => {
+    if (!meta) return;
+    totalEvents += meta.event_count || 0;
+    const sh = getSourceHealth(meta);
+    totalSources += Object.keys(sh).length;
+    const failed = meta.sources_failed || [];
+    const quarantined = getQuarantined(meta);
+    const scores = Object.values(sh).filter(v => typeof v === 'number');
+    const hasIssue = failed.length > 0 || quarantined.length > 0 ||
+                     scores.some(s => s < 0.85);
+    if (hasIssue) totalWarnings++;
+  });
+
+  // Also fetch landkreis meta for total
+  const lkMeta = await fetchJSON('/data/landkreis-ludwigsburg/meta.json');
+  const lkTotal = lkMeta ? (lkMeta.event_count || totalEvents) : totalEvents;
+
+  // 4. Update summary bar
+  document.getElementById('lk-total').textContent = lkTotal.toLocaleString('de-DE');
+  document.getElementById('lk-cities').textContent = covered.length;
+  document.getElementById('lk-sources').textContent = totalSources;
+  document.getElementById('lk-warnings').textContent = totalWarnings;
+
+  // 5. Update header meta
+  const mostRecent = metaResults
+    .filter(Boolean)
+    .map(m => m.scraped_at)
+    .filter(Boolean)
+    .sort()
+    .pop();
+  document.getElementById('last-updated').textContent =
+    mostRecent ? 'Stand: ' + formatDate(mostRecent) : 'Zeitstempel unbekannt';
+  document.getElementById('total-events').textContent =
+    totalEvents.toLocaleString('de-DE') + ' Events';
+
+  // 6. Render city cards — warnings/critical first, then alphabetical
+  const cityData = covered.map((city, i) => ({ city, meta: metaResults[i] }));
+  cityData.sort((a, b) => {
+    const scoreA = a.meta ? (getQuarantined(a.meta).length > 0 || (a.meta.sources_failed||[]).length > 0 ? 0 : 1) : 0;
+    const scoreB = b.meta ? (getQuarantined(b.meta).length > 0 || (b.meta.sources_failed||[]).length > 0 ? 0 : 1) : 0;
+    if (scoreA !== scoreB) return scoreA - scoreB;
+    return a.city.name.localeCompare(b.city.name, 'de');
+  });
+
+  grid.innerHTML = cityData.map(({ city, meta }) => renderCityCard(city, meta)).join('');
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', loadDashboard);
+document.getElementById('refresh-btn')?.addEventListener('click', loadDashboard);
+</script>
+
+<style>
+  /* ── Layout ──────────────────────────────────────────────────────────────── */
+  .breadcrumb { font-size: 0.82rem; color: var(--text-60); margin-bottom: 2rem; }
+  .breadcrumb a { color: var(--text-60); }
+  .breadcrumb a:hover { color: var(--coral); }
+
+  .page-header { margin-bottom: 1.75rem; }
+  h1 {
+    font-size: clamp(1.7rem, 4vw, 2.2rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 0.3rem;
+  }
+  .page-subtitle { font-size: 0.92rem; color: var(--text-60); margin-bottom: 0.85rem; }
+
+  .header-meta {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .meta-chip {
+    font-size: 0.78rem;
+    background: var(--tag-bg);
+    color: var(--text-60);
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+  }
+
+  .refresh-btn {
+    font-size: 0.78rem;
+    background: transparent;
+    color: var(--coral);
+    border: 1px solid var(--coral);
+    border-radius: 999px;
+    padding: 0.2rem 0.75rem;
+    cursor: pointer;
+    transition: background 120ms;
+    min-height: 28px;
+  }
+  .refresh-btn:hover { background: var(--coral-light); }
+  .refresh-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+  /* ── Landkreis summary bar ───────────────────────────────────────────────── */
+  .lk-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-card);
+  }
+  @media (max-width: 540px) { .lk-bar { grid-template-columns: repeat(2, 1fr); } }
+
+  .lk-stat { display: flex; flex-direction: column; gap: 0.2rem; }
+  .lk-num {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1;
+  }
+  .lk-label { font-size: 0.72rem; color: var(--text-60); text-transform: uppercase; letter-spacing: 0.06em; }
+
+  /* ── City grid ───────────────────────────────────────────────────────────── */
+  .cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.25rem;
+  }
+  @media (max-width: 480px) { .cities-grid { grid-template-columns: 1fr; } }
+
+  /* ── City card ───────────────────────────────────────────────────────────── */
+  .city-card {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    transition: box-shadow 150ms;
+  }
+  .city-card:hover { box-shadow: var(--shadow-hover); }
+  .city-card--warning { border-left: 3px solid #f5a623; }
+  .city-card--critical { border-left: 3px solid #e53e3e; }
+  .city-card--error {
+    border-left: 3px solid var(--border);
+    opacity: 0.6;
+  }
+
+  .city-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .city-card-title { display: flex; flex-direction: column; gap: 0.2rem; }
+
+  .city-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+  }
+  .city-name a { color: var(--text); text-decoration: none; }
+  .city-name a:hover { color: var(--coral); }
+
+  .schema-note {
+    font-size: 0.68rem;
+    color: var(--text-30);
+    font-style: italic;
+  }
+
+  /* Status dot */
+  .status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+  .status-dot--ok       { background: var(--sage); box-shadow: 0 0 0 3px rgba(144,190,109,0.2); }
+  .status-dot--warning  { background: #f5a623;     box-shadow: 0 0 0 3px rgba(245,166,35,0.2); }
+  .status-dot--critical { background: #e53e3e;     box-shadow: 0 0 0 3px rgba(229,62,62,0.2); }
+  .status-dot--unknown  { background: var(--border); }
+
+  /* Meta pills row */
+  .city-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .meta-pill {
+    font-size: 0.72rem;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    background: var(--tag-bg);
+    color: var(--text-60);
+    border: 1px solid var(--border-subtle);
+  }
+  .meta-pill--warn { background: rgba(245,166,35,0.12); color: #b37a00; border-color: rgba(245,166,35,0.3); }
+  .meta-pill--crit { background: rgba(229,62,62,0.10);  color: #c53030; border-color: rgba(229,62,62,0.25); }
+
+  /* Stats grid */
+  .city-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+  }
+  .stat { display: flex; flex-direction: column; gap: 0.1rem; }
+  .stat-label { font-size: 0.68rem; color: var(--text-30); text-transform: uppercase; letter-spacing: 0.05em; }
+  .stat-val   { font-size: 0.85rem; color: var(--text); font-weight: 600; }
+  .val-warn   { color: #b37a00; }
+  .val-crit   { color: #c53030; }
+
+  /* Alert rows */
+  .alert-row {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.65rem;
+    border-radius: var(--radius-sm);
+    line-height: 1.5;
+  }
+  .alert-row--warn { background: rgba(245,166,35,0.10); color: #7a5500; }
+  .alert-row--crit { background: rgba(229,62,62,0.08);  color: #9b2c2c; }
+  .alert-row strong { font-weight: 700; }
+
+  /* Source details */
+  .source-details {
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 0.75rem;
+  }
+  .source-details summary {
+    font-size: 0.8rem;
+    color: var(--text-60);
+    cursor: pointer;
+    user-select: none;
+    padding: 0.2rem 0;
+    list-style: none;
+  }
+  .source-details summary::-webkit-details-marker { display: none; }
+  .source-details summary::before { content: '▶ '; font-size: 0.65rem; color: var(--coral); }
+  .source-details[open] summary::before { content: '▼ '; }
+  .source-details summary:hover { color: var(--text); }
+
+  /* Source table */
+  .source-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.78rem;
+    margin-top: 0.65rem;
+  }
+  .source-table th {
+    text-align: left;
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--text-30);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.3rem 0.5rem 0.3rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .source-table td {
+    padding: 0.35rem 0.5rem 0.35rem 0;
+    color: var(--text-60);
+    border-bottom: 1px solid var(--border-subtle);
+    vertical-align: middle;
+  }
+  .source-table tr:last-child td { border-bottom: none; }
+  .source-table tr.row-quarantine { background: rgba(229,62,62,0.04); }
+  .source-table tr.row-drift      { background: rgba(245,166,35,0.04); }
+  .src-name { color: var(--text); font-weight: 600; font-family: var(--font-heading); }
+
+  .score-pill {
+    display: inline-block;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    background: color-mix(in srgb, var(--pill-color) 15%, transparent);
+    color: var(--pill-color);
+    border: 1px solid color-mix(in srgb, var(--pill-color) 30%, transparent);
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: 0.68rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+  .badge-ok   { color: var(--text-30); }
+  .badge-warn { background: rgba(245,166,35,0.12); color: #7a5500; }
+  .badge-crit { background: rgba(229,62,62,0.10);  color: #9b2c2c; }
+
+  .no-sources { font-size: 0.8rem; color: var(--text-30); margin: 0.5rem 0 0; }
+  .error-msg  { font-size: 0.85rem; color: var(--text-30); margin: 0; }
+
+  /* ── Loading / error states ──────────────────────────────────────────────── */
+  .loading-state {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    grid-column: 1 / -1;
+    color: var(--text-60);
+    font-size: 0.9rem;
+    padding: 2rem 0;
+  }
+  .error-state {
+    grid-column: 1 / -1;
+    color: #c53030;
+    font-size: 0.9rem;
+    padding: 2rem 0;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.3; }
+  }
+  .loading-dot {
+    width: 8px; height: 8px;
+    background: var(--coral);
+    border-radius: 50%;
+    animation: pulse 1.2s ease-in-out infinite;
+  }
+</style>
