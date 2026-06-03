@@ -125,7 +125,7 @@ async function fetchJSON(url) {
 
 // ── Render source health table for one city ───────────────────────────────────
 
-function renderSourceRows(sourceHealth, countDrift, quarantined, meta.source_counts || {}) {
+function renderSourceRows(sourceHealth, countDrift, quarantined, sourceCounts) {
   const entries = Object.entries(sourceHealth);
   if (!entries.length) return '<p class="no-sources">Keine Quelldaten</p>';
 
