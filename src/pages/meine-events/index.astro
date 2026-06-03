@@ -3,6 +3,7 @@
 // Saved events page — reads from localStorage client-side only.
 // No server data, no cookies, no GDPR issues. noindex: true.
 import Base from "../../layouts/Base.astro";
+import QRExportModal from "../../components/QRExportModal.astro";
 ---
 
 <Base
@@ -56,6 +57,9 @@ import Base from "../../layouts/Base.astro";
       </div>
     </div>
   </div>
+
+  <!-- QR transfer (export/import) -->
+  <QRExportModal />
 
   <!-- Saved list -->
   <section id="saved-section" hidden>
