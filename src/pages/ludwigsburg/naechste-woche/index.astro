@@ -4,7 +4,7 @@ import FreshnessStamp from '../../../components/FreshnessStamp.astro';
 import EventCard from "../../../components/EventCard.astro";
 import FilterBar from "../../../components/FilterBar.astro";
 import QRModal from "../../../components/QRModal.astro";
-import ICSButton from "../../../components/ICSButton.astro";
+import CalendarButton from "../../../components/CalendarButton.astro";
 import DaySelector from "../../../components/DaySelector.astro";
 
 import subsetData from "../../../../public/data/landkreis-ludwigsburg/next-week.json";
@@ -101,7 +101,7 @@ const days = [
 
   <div class="collection-actions">
     <QRModal url={canonical} label={pageLabel} />
-    <ICSButton events={events} label={pageLabel} />
+    <CalendarButton events={events} label={pageLabel} />
   </div>
 
   <FilterBar />

@@ -1,0 +1,72 @@
+---
+// src/components/CalendarButton.astro
+// Collection-page calendar dropdown. Same visual as detail page cal button.
+// Single option: client-side ICS download for all events on the page.
+// Usage: <CalendarButton events={events} label={pageLabel} />
+const { events, label } = Astro.props;
+---
+
+<div class="cal-dropdown">
+  <button class="btn-ics" aria-haspopup="true" aria-expanded="false" id="cal-btn-collection" data-label={label}>
+    📅 Zum Kalender ▾
+  </button>
+  <ul class="cal-menu" role="menu" aria-labelledby="cal-btn-collection">
+    <li role="none">
+      <button class="cal-menu-btn" id="cal-ics-download" role="menuitem" type="button">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M16 2v4M8 2v4M3 9h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8 14h3m0 0v3m0-3l3-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        ICS-Datei herunterladen
+      </button>
+    </li>
+  </ul>
+</div>
+
+<script type="application/json" id="cal-events-data" aria-hidden="true" set:text={JSON.stringify(events)} />
+
+<script type="module">
+import { generateCollectionICS } from "/scripts/ics-export.js";
+
+const btn  = document.getElementById("cal-btn-collection");
+const menu = btn && btn.nextElementSibling;
+
+if (btn && menu) {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const open = menu.classList.toggle("open");
+    btn.setAttribute("aria-expanded", String(open));
+  });
+  document.addEventListener("click", () => {
+    menu.classList.remove("open");
+    btn.setAttribute("aria-expanded", "false");
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      menu.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+    }
+  });
+}
+
+const dlBtn = document.getElementById("cal-ics-download");
+if (dlBtn) {
+  dlBtn.addEventListener("click", () => {
+    const dataEl = document.getElementById("cal-events-data");
+    const events = dataEl ? JSON.parse(dataEl.textContent || "[]") : [];
+    const label  = document.getElementById("cal-btn-collection")?.dataset.label || "Veranstaltungen";
+    generateCollectionICS(events, label);
+    const menu = document.getElementById("cal-btn-collection")?.nextElementSibling;
+    if (menu) { menu.classList.remove("open"); }
+  });
+}
+</script>
+
+<style>
+  .cal-dropdown { position: relative; flex-shrink: 0; }
+  .btn-ics { display: inline-flex; align-items: center; gap: 0.35rem; background: var(--surface-card); color: var(--text); border: 1.5px solid var(--border); padding: 0.65rem 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600; white-space: nowrap; cursor: pointer; min-height: 44px; transition: border-color 150ms, background 150ms; font-family: var(--font-body); }
+  .btn-ics:hover { border-color: var(--coral); background: var(--coral-light); }
+  .btn-ics:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+  .cal-menu { display: none; position: absolute; top: calc(100% + 6px); left: 0; background: var(--surface-card); border: 1px solid var(--border); border-radius: var(--radius-sm); box-shadow: var(--shadow-card); list-style: none; padding: 0.35rem 0; margin: 0; min-width: 210px; z-index: 40; }
+  .cal-menu.open { display: block; }
+  .cal-menu li { padding: 0; }
+  .cal-menu-btn { display: flex; align-items: center; gap: 0.55rem; padding: 0.55rem 1rem; font-size: 0.88rem; color: var(--text); background: none; border: none; cursor: pointer; white-space: nowrap; width: 100%; font-family: inherit; text-align: left; }
+  .cal-menu-btn:hover { background: var(--coral-light); color: var(--coral); }
+</style>
