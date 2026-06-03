@@ -125,7 +125,7 @@ async function fetchJSON(url) {
 
 // ── Render source health table for one city ───────────────────────────────────
 
-function renderSourceRows(sourceHealth, countDrift, quarantined) {
+function renderSourceRows(sourceHealth, countDrift, quarantined, meta.source_counts || {}) {
   const entries = Object.entries(sourceHealth);
   if (!entries.length) return '<p class="no-sources">Keine Quelldaten</p>';
 
@@ -134,6 +134,7 @@ function renderSourceRows(sourceHealth, countDrift, quarantined) {
       <thead>
         <tr>
           <th>Quelle</th>
+          <th>Events</th>
           <th>Score</th>
           <th>Status</th>
           <th>Drift</th>
@@ -148,6 +149,7 @@ function renderSourceRows(sourceHealth, countDrift, quarantined) {
           return `
             <tr class="${isQuarantined ? 'row-quarantine' : hasDrift ? 'row-drift' : ''}">
               <td class="src-name">${src}</td>
+              <td class="src-count">${sourceCounts[src] ?? '—'}</td>
               <td>
                 <span class="score-pill" style="--pill-color:${color}">
                   ${typeof score === 'number' ? score.toFixed(2) : '—'}
@@ -257,7 +259,7 @@ function renderCityCard(city, meta) {
 
       <details class="source-details">
         <summary>Quellen-Gesundheit (${Object.keys(sourceHealth).length})</summary>
-        ${renderSourceRows(sourceHealth, countDrift, quarantined)}
+        ${renderSourceRows(sourceHealth, countDrift, quarantined, meta.source_counts || {})}
       </details>
     </div>
   `;
@@ -612,4 +614,8 @@ document.getElementById('refresh-btn')?.addEventListener('click', loadDashboard)
     border-radius: 50%;
     animation: pulse 1.2s ease-in-out infinite;
   }
+</style>
+
+<style>
+  .src-count { color: var(--text-60); font-variant-numeric: tabular-nums; }
 </style>
