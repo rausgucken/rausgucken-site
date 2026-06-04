@@ -360,6 +360,92 @@ import QRExportModal from "../../components/QRExportModal.astro";
     min-height: 1.2em;
     transition: opacity 300ms;
   }
+
+  /* ── EventCard-identical styles for saved cards ─────────────────────── */
+  #saved-list { display: flex; flex-direction: column; gap: 0.75rem; max-width: 720px; margin: 0 auto; }
+
+  #saved-list .event-card {
+    background: var(--surface-card, var(--surface));
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-card);
+    position: relative;
+    transition: transform 200ms cubic-bezier(0.4,0,0.2,1), box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #saved-list .event-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+  }
+  #saved-list .event-card--standing { border-left: 3px solid var(--coral); }
+
+  #saved-list .card-link {
+    display: flex; flex: 1; text-decoration: none; color: inherit; outline: none;
+  }
+  #saved-list .card-link:hover { text-decoration: none; }
+
+  #saved-list .date-badge {
+    background: var(--coral); color: var(--text);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-width: 58px; flex-shrink: 0; padding: 0.75rem 0.4rem;
+  }
+  #saved-list .date-badge--standing { background: var(--tag-bg); color: var(--text-60); }
+  #saved-list .date-weekday {
+    font-size: 0.6rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.07em; opacity: 0.75; margin-bottom: 1px;
+  }
+  #saved-list .date-day {
+    font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem; line-height: 1;
+  }
+  #saved-list .date-month {
+    font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.07em; opacity: 0.80;
+  }
+  #saved-list .date-infinity { font-size: 1.4rem; line-height: 1; opacity: 0.5; }
+
+  #saved-list .card-body {
+    padding: 0.85rem 1rem 0.75rem; flex: 1;
+    display: flex; flex-direction: column; gap: 0.4rem; min-width: 0;
+  }
+  #saved-list .card-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; align-items: center; }
+  #saved-list .tag {
+    background: var(--tag-bg); color: var(--text-60);
+    font-size: 0.7rem; font-weight: 500; padding: 2px 8px; border-radius: 20px; white-space: nowrap;
+  }
+  #saved-list .card-title {
+    font-family: var(--font-heading); font-weight: 700; font-size: 0.97rem;
+    color: var(--text); line-height: 1.3;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  #saved-list .card-meta { display: flex; flex-direction: column; gap: 0.2rem; }
+  #saved-list .meta-item {
+    display: flex; align-items: center; gap: 0.35rem;
+    font-size: 0.78rem; font-weight: 500; color: var(--text-60);
+  }
+  #saved-list .meta-item svg { flex-shrink: 0; stroke: var(--coral); }
+
+  #saved-list .card-footer {
+    display: flex; flex-direction: column;
+    border-top: 1px solid var(--border);
+    background: rgba(0,0,0,0.02);
+  }
+  html.dark #saved-list .card-footer { background: rgba(255,255,255,0.03); }
+  #saved-list .footer-line1 {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.3rem 0.6rem 0.3rem 0.4rem; min-height: 36px; gap: 0.4rem;
+  }
+  #saved-list .merken-btn {
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    background: none; border: none; cursor: pointer;
+    padding: 0.25rem 0.5rem; min-height: 36px;
+    border-radius: var(--radius-sm);
+    color: var(--text-60); font-size: 0.75rem; font-weight: 600;
+    font-family: var(--font-body);
+    transition: color 150ms, background 150ms; flex-shrink: 0;
+  }
+  #saved-list .merken-btn:hover { color: #e55a4d; background: rgba(229,90,77,0.08); }
+  #saved-list .merken-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
 </style>
 
 <script>
