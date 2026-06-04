@@ -578,13 +578,19 @@ async function enrichEvents(events) {
       for (const [slug, fallback] of Object.entries(slugMap)) {
         const real = bySlug[slug];
         if (real) {
-          // Build a saved-event shaped object from real data
+          // Build a complete saved-event object from real data
           enriched.push({
-            slug:       real.slug,
-            title:      real.title,
-            date_start: real.date_start || null,
-            city:       real.city || city,
-            url:        `/${real.city || city}/events/${real.slug}`,
+            slug:         real.slug,
+            title:        real.title,
+            date_start:   real.date_start   || null,
+            date_end:     real.date_end      || null,
+            time:         real.time          || null,
+            location:     real.location      || null,
+            price:        real.price         || null,
+            tags:         real.tags          || [],
+            source_label: real.source_label  || null,
+            city:         real.city          || city,
+            url:          `/${real.city || city}/events/${real.slug}`,
           });
         } else {
           // Not found in current JSON (may have expired) — keep fallback
