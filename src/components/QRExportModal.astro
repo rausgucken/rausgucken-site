@@ -133,10 +133,17 @@ function setSaved(arr) {
 const RG_PREFIX = 'rg-saved:';
 
 function encodePayload(saved) {
-  // Ultra-minimal: "rg-saved:city|slug,city|slug,..."
-  // No JSON, no quotes, no brackets — maximum QR density savings
-  const pairs = saved.map(ev => (ev.city || 'ludwigsburg') + '|' + ev.slug);
-  return RG_PREFIX + pairs.join(',');
+  // Filter to upcoming only — no point transferring past events
+  const upcoming = saved.filter(ev => !isExpired(ev.date_start));
+  // Chunk into pages of 10 — keeps QR scannable at any list size
+  const CHUNK = 10;
+  const pages = [];
+  for (let i = 0; i < upcoming.length; i += CHUNK) {
+    const chunk = upcoming.slice(i, i + CHUNK);
+    const pairs = chunk.map(ev => (ev.city || 'ludwigsburg') + '|' + ev.slug);
+    pages.push(RG_PREFIX + pairs.join(','));
+  }
+  return pages; // array of page strings, one QR per page
 }
 
 function decodePayload(raw) {
@@ -325,7 +332,11 @@ function scanLoop() {
     const decoded = decodePayload(code.data);
     if (decoded) {
       stopCamera();
-      showPreview(decoded);
+      // Accumulate pages — merge by slug to avoid dupes
+      const existing = decodedEvents || [];
+      const existingSlugs = new Set(existing.map(e => e.slug));
+      const merged = [...existing, ...decoded.filter(e => !existingSlugs.has(e.slug))];
+      showPreview(merged);
       return;
     }
   }
@@ -369,6 +380,8 @@ function showPreview(events) {
   confirmBtn.textContent = upcoming.length === 0
     ? `${events.length} Event${events.length !== 1 ? 's' : ''} importieren`
     : `${upcoming.length} bevorstehend${upcoming.length !== 1 ? 'e' : 'en'} importieren`;
+  // Retry button: offer "next page" scan if multi-page export likely
+  retryBtn.textContent = 'Weitere Seite scannen';
 
   scannerWrap.hidden = true;
   previewEl.hidden   = false;
@@ -434,7 +447,10 @@ importClose.addEventListener('click',   closeImportModal);
 importBackdrop.addEventListener('click', closeImportModal);
 confirmBtn.addEventListener('click', doImport);
 retryBtn.addEventListener('click', async () => {
+  // Keep accumulated events if any, just restart camera for next page
+  const accumulated = decodedEvents;
   resetImportUI();
+  decodedEvents = accumulated; // restore after reset
   await startCamera();
 });
 
