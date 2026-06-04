@@ -615,8 +615,8 @@ import QRExportModal from "../../components/QRExportModal.astro";
     border: 1px solid var(--border);
     border-radius: var(--radius);
     overflow: hidden;
-    display: grid;
-    grid-template-rows: 1fr auto;
+    display: flex;
+    flex-direction: column;
     box-shadow: var(--shadow-card);
     position: relative;
     transition: transform 200ms cubic-bezier(0.4,0,0.2,1), box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
@@ -627,14 +627,14 @@ import QRExportModal from "../../components/QRExportModal.astro";
   #saved-list .event-card--standing { border-left: 3px solid var(--coral); }
 
   #saved-list .card-link {
-    display: flex; text-decoration: none; color: inherit; outline: none;
+    display: flex; flex: 1; text-decoration: none; color: inherit; outline: none;
   }
   #saved-list .card-link:hover { text-decoration: none; }
 
   #saved-list .date-badge {
     background: var(--coral); color: var(--text);
     display: flex; flex-direction: column; align-items: center; justify-content: center;
-    min-width: 58px; flex-shrink: 0; padding: 0.75rem 0.4rem;
+    min-width: 58px; flex-shrink: 0; padding: 0.75rem 0.4rem; align-self: stretch;
   }
   #saved-list .date-badge--standing { background: var(--tag-bg); color: var(--text-60); }
   #saved-list .date-weekday {
@@ -676,7 +676,6 @@ import QRExportModal from "../../components/QRExportModal.astro";
     border-top: 1px solid var(--border);
     background: var(--surface-card, var(--surface));
     padding-bottom: 0.2rem;
-    width: 100%;
   }
   html.dark #saved-list .card-footer { background: rgba(255,255,255,0.03); }
   #saved-list .footer-line1 {

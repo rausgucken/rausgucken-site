@@ -517,7 +517,7 @@ const websiteSchema = isHomepage ? {
           const badge = document.getElementById('nav-saved-badge');
           if (!badge) return;
           if (saved.length > 0) {
-            badge.textContent = saved.length > 9 ? '9+' : String(saved.length);
+            badge.textContent = saved.length > 99 ? '99+' : String(saved.length);
             badge.hidden = false;
           } else {
             badge.hidden = true;
