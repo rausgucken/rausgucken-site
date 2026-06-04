@@ -108,7 +108,7 @@
   </div>
 </div>
 
-<script lang="ts">
+<script>
 
 // ── Logo ────────────────────────────────────────────────────────────────────
 const LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
@@ -121,10 +121,10 @@ const LOGO_URL = `data:image/svg+xml;base64,${btoa(LOGO_SVG)}`;
 
 // ── localStorage helpers ────────────────────────────────────────────────────
 const STORAGE_KEY = 'rg-saved';
-function getSaved(): any[] {
+function getSaved() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch { return []; }
 }
-function setSaved(arr: any[]) {
+function setSaved(arr) {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); } catch {}
 }
 
@@ -132,7 +132,7 @@ function setSaved(arr: any[]) {
 // Prefix so we know it's an rg-saved QR and not some other QR
 const RG_PREFIX = 'rg-saved:';
 
-function encodePayload(saved: any[]): string {
+function encodePayload(saved) {
   // Compact: only the fields we need to reconstruct the saved list
   const compact = saved.map(ev => ({
     s: ev.slug,
@@ -144,13 +144,13 @@ function encodePayload(saved: any[]): string {
   return RG_PREFIX + JSON.stringify(compact);
 }
 
-function decodePayload(raw: string): any[] | null {
+function decodePayload(raw) {
   if (!raw.startsWith(RG_PREFIX)) return null;
   try {
     const compact = JSON.parse(raw.slice(RG_PREFIX.length));
     if (!Array.isArray(compact)) return null;
     // Expand back to full saved event shape
-    return compact.map((c: any) => ({
+    return compact.map((c) => ({
       slug:       c.s,
       title:      c.t,
       date_start: c.d || null,
@@ -161,26 +161,26 @@ function decodePayload(raw: string): any[] | null {
 }
 
 // ── Date helpers ────────────────────────────────────────────────────────────
-function isExpired(dateStr: string | null): boolean {
+function isExpired(dateStr) {
   if (!dateStr) return false; // standing events never expire
   return new Date(dateStr + 'T23:59:59') < new Date();
 }
 
-function formatDateShort(iso: string | null): string {
+function formatDateShort(iso) {
   if (!iso) return 'Regelmäßig';
   const d = new Date(iso + 'T12:00:00');
   return d.toLocaleDateString('de-DE', { day: 'numeric', month: 'short' });
 }
 
 // ── EXPORT ──────────────────────────────────────────────────────────────────
-const exportOpenBtn  = document.getElementById('qr-export-open')    as HTMLButtonElement;
-const exportModal    = document.getElementById('qr-export-modal')   as HTMLDivElement;
-const exportBackdrop = document.getElementById('qr-export-backdrop') as HTMLDivElement;
-const exportClose    = document.getElementById('qr-export-close')   as HTMLButtonElement;
-const exportCanvas   = document.getElementById('qr-export-canvas')  as HTMLDivElement;
-const exportHint     = document.getElementById('qr-export-hint')    as HTMLParagraphElement;
+const exportOpenBtn  = document.getElementById('qr-export-open');
+const exportModal    = document.getElementById('qr-export-modal');
+const exportBackdrop = document.getElementById('qr-export-backdrop');
+const exportClose    = document.getElementById('qr-export-close');
+const exportCanvas   = document.getElementById('qr-export-canvas');
+const exportHint     = document.getElementById('qr-export-hint');
 
-let qrExportInstance: any = null;
+let qrExportInstance = null;
 
 async function openExportModal() {
   const saved = getSaved();
@@ -233,33 +233,33 @@ exportClose.addEventListener('click',   closeExportModal);
 exportBackdrop.addEventListener('click', closeExportModal);
 
 // ── IMPORT ──────────────────────────────────────────────────────────────────
-const importOpenBtn   = document.getElementById('qr-import-open')     as HTMLButtonElement;
-const importModal     = document.getElementById('qr-import-modal')    as HTMLDivElement;
-const importBackdrop  = document.getElementById('qr-import-backdrop') as HTMLDivElement;
-const importClose     = document.getElementById('qr-import-close')    as HTMLButtonElement;
-const scannerWrap     = document.getElementById('qr-scanner-wrap')    as HTMLDivElement;
-const videoEl         = document.getElementById('qr-video')           as HTMLVideoElement;
-const scanCanvas      = document.getElementById('qr-scan-canvas')     as HTMLCanvasElement;
-const previewEl       = document.getElementById('qr-import-preview')  as HTMLDivElement;
-const previewCounts   = document.getElementById('qr-preview-counts')  as HTMLDivElement;
-const previewList     = document.getElementById('qr-preview-list')    as HTMLDivElement;
-const confirmBtn      = document.getElementById('qr-import-confirm')  as HTMLButtonElement;
-const retryBtn        = document.getElementById('qr-import-retry')    as HTMLButtonElement;
-const successEl       = document.getElementById('qr-import-success')  as HTMLDivElement;
-const successMsg      = document.getElementById('qr-import-success-msg') as HTMLParagraphElement;
-const errorEl         = document.getElementById('qr-import-error')    as HTMLParagraphElement;
+const importOpenBtn   = document.getElementById('qr-import-open');
+const importModal     = document.getElementById('qr-import-modal');
+const importBackdrop  = document.getElementById('qr-import-backdrop');
+const importClose     = document.getElementById('qr-import-close');
+const scannerWrap     = document.getElementById('qr-scanner-wrap');
+const videoEl         = document.getElementById('qr-video');
+const scanCanvas      = document.getElementById('qr-scan-canvas');
+const previewEl       = document.getElementById('qr-import-preview');
+const previewCounts   = document.getElementById('qr-preview-counts');
+const previewList     = document.getElementById('qr-preview-list');
+const confirmBtn      = document.getElementById('qr-import-confirm');
+const retryBtn        = document.getElementById('qr-import-retry');
+const successEl       = document.getElementById('qr-import-success');
+const successMsg      = document.getElementById('qr-import-success-msg');
+const errorEl         = document.getElementById('qr-import-error');
 
-let stream: MediaStream | null = null;
-let scanRAF: number = 0;
-let decodedEvents: any[] | null = null;
+let stream = null;
+let scanRAF = 0;
+let decodedEvents = null;
 
 // jsQR bundled via npm — no CDN dependency
-let jsQR: ((data: Uint8ClampedArray, width: number, height: number) => { data: string } | null) | null = null;
+let jsQR = null;
 
 async function ensureJsQR() {
   if (!jsQR) {
     const mod = await import('jsqr');
-    jsQR = (mod.default || mod) as any;
+    jsQR = (mod.default || mod);
   }
 }
 
@@ -280,7 +280,7 @@ async function startCamera() {
     videoEl.srcObject = stream;
     await videoEl.play();
     scanLoop();
-  } catch (err: any) {
+  } catch (err) {
     showImportError('Kamera nicht verfügbar: ' + (err.message || err));
   }
 }
@@ -299,7 +299,7 @@ function scanLoop() {
     scanRAF = requestAnimationFrame(scanLoop);
     return;
   }
-  const ctx = scanCanvas.getContext('2d', { willReadFrequently: true })!;
+  const ctx = scanCanvas.getContext('2d', { willReadFrequently: true });
   scanCanvas.width  = videoEl.videoWidth;
   scanCanvas.height = videoEl.videoHeight;
   ctx.drawImage(videoEl, 0, 0);
@@ -317,7 +317,7 @@ function scanLoop() {
   scanRAF = requestAnimationFrame(scanLoop);
 }
 
-function showPreview(events: any[]) {
+function showPreview(events) {
   decodedEvents = events;
   const today    = new Date();
   today.setHours(0, 0, 0, 0);
@@ -359,13 +359,13 @@ function showPreview(events: any[]) {
   previewEl.hidden   = false;
 }
 
-function sanitise(str: string): string {
+function sanitise(str) {
   const d = document.createElement('div');
   d.appendChild(document.createTextNode(str || ''));
   return d.innerHTML;
 }
 
-function showImportError(msg: string) {
+function showImportError(msg) {
   stopCamera();
   scannerWrap.hidden = true;
   errorEl.textContent = msg;
@@ -377,7 +377,7 @@ function doImport() {
 
   // Merge: add events not already saved (by slug)
   const existing   = getSaved();
-  const existingSlugs = new Set(existing.map((e: any) => e.slug));
+  const existingSlugs = new Set(existing.map((e) => e.slug));
   const toAdd      = decodedEvents.filter(ev => !existingSlugs.has(ev.slug));
   const merged     = [...existing, ...toAdd];
   setSaved(merged);
