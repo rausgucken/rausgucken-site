@@ -51,6 +51,13 @@
 
     <p class="qr-tm-hint" id="qr-export-hint"></p>
 
+    <!-- 6-digit transfer code -->
+    <div class="qr-code-display">
+      <span class="qr-code-label">oder Code eingeben</span>
+      <span class="qr-code-number" id="qr-export-code">……</span>
+      <span class="qr-code-ttl" id="qr-export-status"></span>
+    </div>
+
     <p class="qr-tm-note">Keine persönlichen Daten, kein Account erforderlich.</p>
   </div>
 </div>
@@ -102,13 +109,29 @@
 
     <!-- Error state -->
     <p id="qr-import-error" class="qr-import-error" hidden></p>
+
+    <!-- Manual code entry fallback -->
+    <div id="qr-code-entry" class="qr-code-entry" hidden>
+      <p class="qr-code-entry-label">Code vom anderen Gerät eingeben:</p>
+      <div class="qr-code-entry-row">
+        <input id="qr-code-input" class="qr-code-input" type="text"
+               inputmode="numeric" maxlength="7" placeholder="000 000"
+               autocomplete="off" />
+        <button id="qr-code-submit" class="qr-code-submit" type="button">Bestätigen</button>
+      </div>
+      <p id="qr-code-error" class="qr-code-error" hidden></p>
+    </div>
   </div>
 </div>
 
 <script>
-
-// ── localStorage helpers ─────────────────────────────────────────────────────
+// ── Config ───────────────────────────────────────────────────────────────────
+const PUSH_URL    = 'https://push.rausgucken.de';
+const BASE_URL    = 'https://www.rausgucken.de/meine-events/';
+const CHUNK_SIZE  = 10;
 const STORAGE_KEY = 'rg-saved';
+
+// ── localStorage ─────────────────────────────────────────────────────────────
 function getSaved() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch { return []; }
 }
@@ -116,7 +139,7 @@ function setSaved(arr) {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); } catch {}
 }
 
-// ── Date helpers ─────────────────────────────────────────────────────────────
+// ── Helpers ───────────────────────────────────────────────────────────────────
 function isExpired(dateStr) {
   if (!dateStr) return false;
   return new Date(dateStr + 'T23:59:59') < new Date();
@@ -131,24 +154,23 @@ function sanitise(str) {
   return d.innerHTML;
 }
 
-// ── Payload: real HTTPS URL so phone camera opens browser directly ───────────
-// Format: https://www.rausgucken.de/meine-events/?import=city|slug,city|slug
-const BASE_URL   = 'https://www.rausgucken.de/meine-events/';
-const CHUNK_SIZE = 10;
-
-function encodePages(saved) {
+// ── Payload encoding ──────────────────────────────────────────────────────────
+// "city|slug,city|slug,..." — upcoming events only, chunked
+function buildPayloadChunks(saved) {
   const upcoming = saved.filter(ev => !isExpired(ev.date_start));
   if (!upcoming.length) return [];
-  const pages = [];
+  const chunks = [];
   for (let i = 0; i < upcoming.length; i += CHUNK_SIZE) {
-    const pairs = upcoming.slice(i, i + CHUNK_SIZE)
-      .map(ev => (ev.city || 'ludwigsburg') + '|' + ev.slug);
-    pages.push(BASE_URL + '?import=' + encodeURIComponent(pairs.join(',')));
+    chunks.push(
+      upcoming.slice(i, i + CHUNK_SIZE)
+        .map(ev => (ev.city || 'ludwigsburg') + '|' + ev.slug)
+        .join(',')
+    );
   }
-  return pages;
+  return chunks;
 }
 
-function decodeImportParam(raw) {
+function decodePayloadString(raw) {
   if (!raw) return null;
   try {
     return raw.split(',').map(pair => {
@@ -162,7 +184,7 @@ function decodeImportParam(raw) {
   } catch { return null; }
 }
 
-// ── Load libraries via script tag (reliable in Astro, no ESM issues) ─────────
+// ── Script loader ─────────────────────────────────────────────────────────────
 function loadScript(src) {
   return new Promise((resolve, reject) => {
     if (document.querySelector(`script[src="${src}"]`)) { resolve(); return; }
@@ -172,62 +194,115 @@ function loadScript(src) {
   });
 }
 
-// qrcode.js CDN — renders to <canvas> when given a canvas element
-const QRCODEJS_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
-// jsQR CDN — pure browser build, no ESM/CJS issues
-const JSQR_CDN     = 'https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js';
+// ── QR generation using qrcode-generator (tiny, reliable, canvas output) ─────
+const QR_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
 
-// ── EXPORT ───────────────────────────────────────────────────────────────────
+function renderQRToCanvas(text, canvasEl) {
+  // qrcode.js needs a fresh wrapper div each time
+  const wrapper = document.createElement('div');
+  wrapper.style.cssText = 'position:absolute;left:-9999px';
+  document.body.appendChild(wrapper);
+
+  return new Promise(resolve => {
+    const qr = new window.QRCode(wrapper, {
+      text,
+      width: 256, height: 256,
+      colorDark: '#000000', colorLight: '#ffffff',
+      correctLevel: window.QRCode.CorrectLevel.M,
+    });
+    // qrcode.js renders async via setTimeout internally
+    setTimeout(() => {
+      const img = wrapper.querySelector('img') || wrapper.querySelector('canvas');
+      const ctx = canvasEl.getContext('2d');
+      canvasEl.width = 256; canvasEl.height = 256;
+      if (img && img.tagName === 'IMG') {
+        const i = new Image();
+        i.onload = () => { ctx.drawImage(i, 0, 0, 256, 256); document.body.removeChild(wrapper); resolve(); };
+        i.src = img.src;
+      } else if (img && img.tagName === 'CANVAS') {
+        ctx.drawImage(img, 0, 0, 256, 256);
+        document.body.removeChild(wrapper);
+        resolve();
+      } else {
+        document.body.removeChild(wrapper);
+        resolve();
+      }
+    }, 200);
+  });
+}
+
+// ── EXPORT modal ──────────────────────────────────────────────────────────────
 const exportOpenBtn  = document.getElementById('qr-export-open');
 const exportModal    = document.getElementById('qr-export-modal');
 const exportBackdrop = document.getElementById('qr-export-backdrop');
 const exportClose    = document.getElementById('qr-export-close');
 const exportCanvas   = document.getElementById('qr-export-canvas');
+const exportCodeEl   = document.getElementById('qr-export-code');
 const exportHint     = document.getElementById('qr-export-hint');
+const exportStatus   = document.getElementById('qr-export-status');
 
-let qrPages   = [];
+let qrChunks  = [];
 let qrPageIdx = 0;
 
-function renderQRPage(idx) {
-  exportCanvas.innerHTML = '';
+async function renderExportPage(idx) {
+  exportCanvas.style.opacity = '0.3';
+  exportCodeEl.textContent   = '……';
+  exportStatus.textContent   = '';
 
-  // Create a dedicated canvas element for qrcode.js
-  const canvas = document.createElement('canvas');
-  exportCanvas.appendChild(canvas);
+  const chunk = qrChunks[idx];
+  const total = qrChunks.length;
 
-  new window.QRCode(canvas, {
-    text:         qrPages[idx],
-    width:        260,
-    height:       260,
-    colorDark:    '#000000',
-    colorLight:   '#ffffff',
-    correctLevel: window.QRCode.CorrectLevel.M,
-  });
+  // 1. Get/create a transfer code from push backend
+  let code = '------';
+  let qrUrl = BASE_URL + '?import=' + encodeURIComponent(chunk);
+  try {
+    const res = await fetch(PUSH_URL + '/transfer/create', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ payload: chunk }),
+    });
+    if (res.ok) {
+      const data = await res.json();
+      code  = data.code;
+      qrUrl = BASE_URL + '?code=' + code; // shorter URL = simpler QR
+    }
+  } catch {
+    // Fallback: encode full payload in URL (longer QR but still works)
+    exportStatus.textContent = 'Offline-Modus — QR direkt scannen';
+  }
 
-  const total = qrPages.length;
+  // 2. Render QR
+  await renderQRToCanvas(qrUrl, exportCanvas);
+  exportCanvas.style.opacity = '1';
+
+  // 3. Show code
+  exportCodeEl.textContent = code !== '------'
+    ? code.slice(0,3) + ' ' + code.slice(3)  // "482 931" formatting
+    : '—';
+
+  // 4. Page nav
   if (total > 1) {
     exportHint.innerHTML =
-      `<button id="qr-prev" style="background:none;border:none;cursor:pointer;color:var(--coral);font-size:1.2rem;padding:0 8px;opacity:${idx===0?0.3:1}" ${idx===0?'disabled':''}>&#9664;</button>` +
-      `<span style="font-size:0.82rem;color:var(--text-60)">Seite&nbsp;${idx+1}&nbsp;von&nbsp;${total}</span>` +
-      `<button id="qr-next" style="background:none;border:none;cursor:pointer;color:var(--coral);font-size:1.2rem;padding:0 8px;opacity:${idx===total-1?0.3:1}" ${idx===total-1?'disabled':''}>&#9654;</button>`;
-    document.getElementById('qr-prev').addEventListener('click', () => {
-      if (qrPageIdx > 0) { qrPageIdx--; renderQRPage(qrPageIdx); }
+      `<button id="qr-prev" style="background:none;border:none;cursor:pointer;color:var(--coral);font-size:1.1rem;padding:0 8px;opacity:${idx===0?0.3:1}" ${idx===0?'disabled':''}>&#9664;</button>` +
+      `Seite&nbsp;${idx+1}&nbsp;von&nbsp;${total}` +
+      `<button id="qr-next" style="background:none;border:none;cursor:pointer;color:var(--coral);font-size:1.1rem;padding:0 8px;opacity:${idx===total-1?0.3:1}" ${idx===total-1?'disabled':''}>&#9654;</button>`;
+    document.getElementById('qr-prev')?.addEventListener('click', () => {
+      if (qrPageIdx > 0) { qrPageIdx--; renderExportPage(qrPageIdx); }
     });
-    document.getElementById('qr-next').addEventListener('click', () => {
-      if (qrPageIdx < qrPages.length - 1) { qrPageIdx++; renderQRPage(qrPageIdx); }
+    document.getElementById('qr-next')?.addEventListener('click', () => {
+      if (qrPageIdx < qrChunks.length - 1) { qrPageIdx++; renderExportPage(qrPageIdx); }
     });
   } else {
-    exportHint.textContent = '';
+    exportHint.textContent = 'Gültig für 10 Minuten';
   }
 }
 
 async function openExportModal() {
   const saved    = getSaved();
   const upcoming = saved.filter(ev => !isExpired(ev.date_start));
-
   if (!upcoming.length) {
     alert(saved.length
-      ? 'Alle gespeicherten Events sind vergangen — nichts zu übertragen.'
+      ? 'Alle gespeicherten Events sind vergangen.'
       : 'Keine gespeicherten Events zum Übertragen.');
     return;
   }
@@ -235,14 +310,16 @@ async function openExportModal() {
   exportModal.hidden = false;
   document.body.style.overflow = 'hidden';
   exportClose.focus();
-  exportCanvas.innerHTML = '';
-  exportHint.textContent = '';
+  exportCanvas.style.opacity = '0.3';
+  exportCodeEl.textContent   = '……';
+  exportHint.textContent     = '';
+  exportStatus.textContent   = '';
 
-  qrPages   = encodePages(saved);
+  qrChunks  = buildPayloadChunks(saved);
   qrPageIdx = 0;
 
-  await loadScript(QRCODEJS_CDN);
-  renderQRPage(0);
+  await loadScript(QR_CDN);
+  await renderExportPage(0);
 }
 
 function closeExportModal() {
@@ -255,30 +332,67 @@ exportOpenBtn.addEventListener('click',  openExportModal);
 exportClose.addEventListener('click',   closeExportModal);
 exportBackdrop.addEventListener('click', closeExportModal);
 
-// ── IMPORT via URL ?import= param (phone camera scan) ────────────────────────
-function handleImportParam() {
+// ── IMPORT via URL params (phone camera or code entry) ────────────────────────
+async function handleImportParams() {
   const params = new URLSearchParams(window.location.search);
-  const raw    = params.get('import');
-  if (!raw) return;
-  const events = decodeImportParam(decodeURIComponent(raw));
-  if (!events || !events.length) return;
   window.history.replaceState({}, '', window.location.pathname);
-  openImportPreview(events);
+
+  // Short code path: ?code=482931
+  const code = params.get('code');
+  if (code) {
+    try {
+      const res = await fetch(PUSH_URL + '/transfer/' + code);
+      if (res.ok) {
+        const data   = await res.json();
+        const events = decodePayloadString(data.payload);
+        if (events?.length) { openImportPreview(events); return; }
+      } else {
+        // Show code entry with error
+        openCodeEntry('Code nicht gefunden oder abgelaufen.');
+        return;
+      }
+    } catch {
+      openCodeEntry('Verbindung fehlgeschlagen.');
+      return;
+    }
+  }
+
+  // Direct payload path: ?import=city|slug,...  (fallback for offline)
+  const raw = params.get('import');
+  if (raw) {
+    const events = decodePayloadString(decodeURIComponent(raw));
+    if (events?.length) { openImportPreview(events); return; }
+  }
 }
 
 function openImportPreview(events) {
-  decodedEvents = events;
+  decodedEvents      = events;
   importModal.hidden = false;
   document.body.style.overflow = 'hidden';
-  scannerWrap.hidden = true;
-  errorEl.hidden     = true;
-  successEl.hidden   = true;
-  retryBtn.hidden    = true;
+  scannerWrap.hidden  = true;
+  codeEntryEl.hidden  = true;
+  errorEl.hidden      = true;
+  successEl.hidden    = true;
+  retryBtn.hidden     = true;
   renderPreview(events);
   previewEl.hidden = false;
 }
 
-// ── IMPORT via in-app camera ──────────────────────────────────────────────────
+function openCodeEntry(errorMsg) {
+  importModal.hidden = false;
+  document.body.style.overflow = 'hidden';
+  scannerWrap.hidden  = true;
+  previewEl.hidden    = true;
+  successEl.hidden    = true;
+  errorEl.hidden      = true;
+  codeEntryEl.hidden  = false;
+  if (errorMsg) {
+    codeErrorEl.textContent = errorMsg;
+    codeErrorEl.hidden = false;
+  }
+}
+
+// ── IMPORT modal ──────────────────────────────────────────────────────────────
 const importOpenBtn  = document.getElementById('qr-import-open');
 const importModal    = document.getElementById('qr-import-modal');
 const importBackdrop = document.getElementById('qr-import-backdrop');
@@ -294,19 +408,22 @@ const retryBtn       = document.getElementById('qr-import-retry');
 const successEl      = document.getElementById('qr-import-success');
 const successMsg     = document.getElementById('qr-import-success-msg');
 const errorEl        = document.getElementById('qr-import-error');
+const codeEntryEl    = document.getElementById('qr-code-entry');
+const codeInputEl    = document.getElementById('qr-code-input');
+const codeSubmitEl   = document.getElementById('qr-code-submit');
+const codeErrorEl    = document.getElementById('qr-code-error');
 
 let stream        = null;
 let scanRAF       = 0;
 let decodedEvents = null;
-let jsQRfn        = null; // window.jsQR after CDN load
 
 function resetImportUI(keepAccumulated) {
-  scannerWrap.hidden = false;
-  previewEl.hidden   = true;
-  successEl.hidden   = true;
-  errorEl.hidden     = true;
-  retryBtn.hidden    = false;
-  retryBtn.textContent = 'Weitere Seite scannen';
+  scannerWrap.hidden  = false;
+  previewEl.hidden    = true;
+  successEl.hidden    = true;
+  errorEl.hidden      = true;
+  codeEntryEl.hidden  = true;
+  retryBtn.hidden     = false;
   if (!keepAccumulated) decodedEvents = null;
 }
 
@@ -319,7 +436,9 @@ async function startCamera() {
     await videoEl.play();
     scanLoop();
   } catch (err) {
-    showImportError('Kamera nicht verfügbar: ' + (err.message || err));
+    // Camera failed — show code entry as fallback
+    scannerWrap.hidden = true;
+    codeEntryEl.hidden = false;
   }
 }
 
@@ -329,8 +448,9 @@ function stopCamera() {
   videoEl.srcObject = null;
 }
 
+const JSQR_CDN = 'https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js';
+
 function scanLoop() {
-  // jsQR loaded via CDN script tag → available as window.jsQR
   if (!window.jsQR || videoEl.readyState < videoEl.HAVE_ENOUGH_DATA) {
     scanRAF = requestAnimationFrame(scanLoop);
     return;
@@ -344,17 +464,15 @@ function scanLoop() {
 
   if (code?.data) {
     try {
-      const url    = new URL(code.data);
-      const raw    = url.searchParams.get('import');
-      const decoded = raw ? decodeImportParam(decodeURIComponent(raw)) : null;
-      if (decoded && decoded.length) {
+      const url = new URL(code.data);
+      // Handle both ?code= and ?import= in scanned URL
+      const shortCode = url.searchParams.get('code');
+      const rawImport = url.searchParams.get('import');
+      if (shortCode || rawImport) {
         stopCamera();
-        const existing   = decodedEvents || [];
-        const existSlugs = new Set(existing.map(e => e.slug));
-        const merged     = [...existing, ...decoded.filter(e => !existSlugs.has(e.slug))];
-        renderPreview(merged);
-        scannerWrap.hidden = true;
-        previewEl.hidden   = false;
+        // Re-use handleImportParams logic via URL push
+        window.history.pushState({}, '', '?code=' + (shortCode || '') + (rawImport ? '&import=' + rawImport : ''));
+        handleImportParams();
         return;
       }
     } catch {}
@@ -389,13 +507,6 @@ function renderPreview(events) {
   confirmBtn.textContent = `${upcoming.length} Event${upcoming.length !== 1 ? 's' : ''} übernehmen`;
 }
 
-function showImportError(msg) {
-  stopCamera();
-  scannerWrap.hidden  = true;
-  errorEl.textContent = msg;
-  errorEl.hidden      = false;
-}
-
 function doImport() {
   if (!decodedEvents) return;
   const existing   = getSaved();
@@ -410,13 +521,42 @@ function doImport() {
   successEl.hidden = false;
 }
 
+async function submitCode() {
+  const code = (codeInputEl.value || '').replace(/\s/g, '').trim();
+  if (code.length !== 6) {
+    codeErrorEl.textContent = 'Bitte 6-stelligen Code eingeben.';
+    codeErrorEl.hidden = false;
+    return;
+  }
+  codeSubmitEl.disabled   = true;
+  codeSubmitEl.textContent = '…';
+  codeErrorEl.hidden       = true;
+  try {
+    const res = await fetch(PUSH_URL + '/transfer/' + code);
+    if (!res.ok) throw new Error('not found');
+    const data   = await res.json();
+    const events = decodePayloadString(data.payload);
+    if (!events?.length) throw new Error('empty');
+    codeEntryEl.hidden = true;
+    openImportPreview(events);
+  } catch {
+    codeErrorEl.textContent = 'Code nicht gefunden oder abgelaufen.';
+    codeErrorEl.hidden      = false;
+  } finally {
+    codeSubmitEl.disabled    = false;
+    codeSubmitEl.textContent = 'Bestätigen';
+  }
+}
+
 async function openImportModal() {
   importModal.hidden = false;
   document.body.style.overflow = 'hidden';
   importClose.focus();
   resetImportUI(false);
-  // Load jsQR via script tag — avoids ESM/CJS dynamic import issues in Astro
-  await loadScript(JSQR_CDN).catch(() => showImportError('jsQR konnte nicht geladen werden.'));
+  await loadScript(JSQR_CDN).catch(() => {
+    scannerWrap.hidden = true;
+    codeEntryEl.hidden = false;
+  });
   await startCamera();
 }
 
@@ -436,14 +576,15 @@ retryBtn.addEventListener('click', async () => {
   resetImportUI(true);
   await startCamera();
 });
+codeSubmitEl?.addEventListener('click', submitCode);
+codeInputEl?.addEventListener('keydown', e => { if (e.key === 'Enter') submitCode(); });
 document.addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
-  if (!exportModal.hidden) closeExportModal();
-  if (!importModal.hidden) closeImportModal();
+  if (!exportModal?.hidden) closeExportModal();
+  if (!importModal?.hidden) closeImportModal();
 });
 
-// Run on page load — handles phone camera scan → browser open → auto import
-handleImportParam();
+handleImportParams();
 </script>
 
 <style>
@@ -670,6 +811,44 @@ handleImportParam();
     padding: 1rem 0; text-align: center;
   }
   .qr-import-success p { font-size: 0.9rem; color: var(--text); margin: 0; line-height: 1.5; }
+  /* ── Transfer code display (export) ───────────────────────────────────── */
+  .qr-code-display {
+    display: flex; flex-direction: column; align-items: center; gap: 0.3rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--tag-bg);
+    border: 1.5px dashed var(--border);
+    border-radius: var(--radius-sm, 8px);
+    width: 100%;
+  }
+  .qr-code-label { font-size: 0.75rem; color: var(--text-60); }
+  .qr-code-number {
+    font-size: 2rem; font-weight: 800; letter-spacing: 0.15em;
+    font-family: var(--font-heading, monospace); color: var(--text);
+    line-height: 1;
+  }
+  .qr-code-ttl { font-size: 0.72rem; color: var(--text-30); }
+
+  /* ── Code entry (import fallback) ──────────────────────────────────────── */
+  .qr-code-entry { width: 100%; display: flex; flex-direction: column; gap: 0.6rem; }
+  .qr-code-entry-label { font-size: 0.84rem; color: var(--text-60); margin: 0; text-align: center; }
+  .qr-code-entry-row { display: flex; gap: 0.5rem; }
+  .qr-code-input {
+    flex: 1; height: 44px; padding: 0 0.75rem;
+    border: 1.5px solid var(--border); border-radius: var(--radius-sm, 8px);
+    background: var(--surface); color: var(--text);
+    font-size: 1.4rem; font-weight: 700; letter-spacing: 0.2em;
+    text-align: center; font-family: monospace;
+  }
+  .qr-code-input:focus { outline: 2px solid var(--coral); border-color: var(--coral); }
+  .qr-code-submit {
+    height: 44px; padding: 0 1rem;
+    background: var(--coral); color: var(--text);
+    border: none; border-radius: var(--radius-sm, 8px);
+    font-size: 0.875rem; font-weight: 700; cursor: pointer; font-family: inherit;
+  }
+  .qr-code-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+  .qr-code-error { font-size: 0.8rem; color: #e55a4d; margin: 0; text-align: center; }
+
   .qr-import-error {
     font-size: 0.875rem; color: #e55a4d; text-align: center;
     background: rgba(229,90,77,0.06); border: 1px solid rgba(229,90,77,0.2);
