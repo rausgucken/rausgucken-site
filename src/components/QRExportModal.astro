@@ -136,10 +136,10 @@ function encodePayload(saved) {
   // Compact: only the fields we need to reconstruct the saved list
   const compact = saved.map(ev => ({
     s: ev.slug,
-    t: ev.title,
+    t: (ev.title || '').slice(0, 50),
     d: ev.date_start || null,
     c: ev.city,
-    u: ev.url,
+    u: ev.url ? ev.url.replace('https://www.rausgucken.de', '') : ev.url,
   }));
   return RG_PREFIX + JSON.stringify(compact);
 }
@@ -226,7 +226,7 @@ async function openExportModal() {
     cornersDotOptions:   { color: '#FF6F61' },
     backgroundOptions:   { color: '#ffffff' },
     imageOptions:        { crossOrigin: 'anonymous', margin: 6, imageSize: 0.28 },
-    qrOptions:           { errorCorrectionLevel: 'H' },
+    qrOptions:           { errorCorrectionLevel: 'L' },
   });
   qrExportInstance.append(exportCanvas);
 }
