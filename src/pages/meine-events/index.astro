@@ -158,14 +158,14 @@ import QRExportModal from "../../components/QRExportModal.astro";
   #saved-list .card-footer {
     display: flex; flex-direction: column;
     border-top: 1px solid var(--border);
-    background: rgba(0,0,0,0.02);
+    background: var(--surface-card, var(--surface));
     padding-bottom: 0.2rem;
-    padding-left: 58px;
+    width: 100%;
   }
   html.dark #saved-list .card-footer { background: rgba(255,255,255,0.03); }
   #saved-list .footer-line1 {
     display: flex; align-items: center; justify-content: space-between;
-    padding: 0.3rem 0.6rem 0.35rem 66px; min-height: 36px; gap: 0.4rem;
+    padding: 0.3rem 0.6rem 0.35rem 1rem; min-height: 36px; gap: 0.4rem;
   }
   #saved-list .merken-btn {
     display: inline-flex; align-items: center; gap: 0.3rem;
