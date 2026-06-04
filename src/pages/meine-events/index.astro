@@ -696,6 +696,64 @@ import QRExportModal from "../../components/QRExportModal.astro";
   const actionCount = document.getElementById('action-bar-count');
   const gcalHint    = document.getElementById('gcal-hint');
 
+
+  // ── Inline ICS generation (no server, no external import) ───────────────
+  function pad2(n) { return String(n).padStart(2, '0'); }
+  function toIcalDate(iso) { return iso ? iso.replace(/-/g, '') : null; }
+  function foldLine(line) {
+    if (line.length <= 75) return line;
+    const chunks = [];
+    let i = 0;
+    while (i < line.length) { chunks.push(line.slice(i, i + (i === 0 ? 75 : 74))); i += (i === 0 ? 75 : 74); }
+    return chunks.join('
+ ');
+  }
+  function escIcal(str) {
+    return String(str || '').replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n').replace(/\r/g,'');
+  }
+  function buildVEvent(ev) {
+    const lines = ['BEGIN:VEVENT'];
+    const now = new Date();
+    const dtstamp = `${now.getUTCFullYear()}${pad2(now.getUTCMonth()+1)}${pad2(now.getUTCDate())}T${pad2(now.getUTCHours())}${pad2(now.getUTCMinutes())}${pad2(now.getUTCSeconds())}Z`;
+    lines.push(`UID:rg-${ev.slug||ev.id||Math.random().toString(36).slice(2)}@rausgucken.de`);
+    lines.push(`DTSTAMP:${dtstamp}`);
+    const dtstart = toIcalDate(ev.date_start);
+    if (dtstart) {
+      lines.push(`DTSTART;VALUE=DATE:${dtstart}`);
+      const base = ev.date_end || ev.date_start;
+      const endD = new Date(base + 'T12:00:00');
+      endD.setDate(endD.getDate() + 1);
+      lines.push(`DTEND;VALUE=DATE:${endD.getFullYear()}${pad2(endD.getMonth()+1)}${pad2(endD.getDate())}`);
+    }
+    if (ev.title)    lines.push(foldLine(`SUMMARY:${escIcal(ev.title)}`));
+    if (ev.location) lines.push(foldLine(`LOCATION:${escIcal(ev.location)}`));
+    const desc = [ev.time, ev.description, ev.price ? `Preis: ${ev.price}` : null, ev.source_label ? `Quelle: ${ev.source_label}` : null].filter(Boolean).join('\n');
+    if (desc) lines.push(foldLine(`DESCRIPTION:${escIcal(desc)}`));
+    const url = ev.canonical_url || ev.url || (ev.slug && ev.city ? `https://www.rausgucken.de/${ev.city}/events/${ev.slug}` : null);
+    if (url) lines.push(foldLine(`URL:${url}`));
+    lines.push('END:VEVENT');
+    return lines.join('\r\n');
+  }
+  function generateCollectionICS(events, label) {
+    const exportable = events.filter(ev => ev.date_start);
+    if (!exportable.length) { alert('Keine datierten Veranstaltungen zum Exportieren.'); return; }
+    const cal = [
+      'BEGIN:VCALENDAR','VERSION:2.0',
+      `PRODID:-//rausgucken.de//Events//DE`,
+      `X-WR-CALNAME:${escIcal(label)}`,
+      'X-WR-TIMEZONE:Europe/Berlin','CALSCALE:GREGORIAN','METHOD:PUBLISH',
+      ...exportable.map(buildVEvent),
+      'END:VCALENDAR'
+    ].join('\r\n');
+    const blob = new Blob([cal], { type: 'text/calendar;charset=utf-8' });
+    const burl = URL.createObjectURL(blob);
+    const fname = label.replace(/[^\w\s-]/g,'').replace(/\s+/g,'-').toLowerCase();
+    const a = document.createElement('a');
+    a.href = burl; a.download = `${fname}.ics`;
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(burl);
+  }
+
   function updateActionBar() {
     const saved = getSaved();
     const dated = saved.filter(ev => ev.date_start);
@@ -708,14 +766,12 @@ import QRExportModal from "../../components/QRExportModal.astro";
   document.getElementById('ics-export-btn').addEventListener('click', async () => {
     const saved = getSaved().filter(ev => ev.date_start);
     if (saved.length === 0) { alert('Keine datierten Events zum Exportieren.'); return; }
-    const { generateCollectionICS } = await import('/scripts/ics-export.js');
     generateCollectionICS(saved, 'Meine Events – rausgucken.de');
   });
 
   document.getElementById('gcal-export-btn').addEventListener('click', async () => {
     const saved = getSaved().filter(ev => ev.date_start);
     if (saved.length === 0) { alert('Keine datierten Events zum Exportieren.'); return; }
-    const { generateCollectionICS } = await import('/scripts/ics-export.js');
     generateCollectionICS(saved, 'Meine Events – rausgucken.de');
     window.open('https://calendar.google.com/calendar/r/settings/export', '_blank', 'noopener');
     if (gcalHint) gcalHint.hidden = false;
