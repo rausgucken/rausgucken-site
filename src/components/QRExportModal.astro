@@ -212,18 +212,25 @@ function renderQRToCanvas(text, canvasEl) {
         type:   'canvas',
         data:   text,
         qrOptions: {
-          errorCorrectionLevel: 'M',
+          errorCorrectionLevel: 'H',  // H required for logo overlay — more redundancy
+        },
+        image: 'data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Ccircle cx='62' cy='98' r='32' fill='%23FF6F61'/%3E%3Ccircle cx='114' cy='114' r='16' fill='%23FF6F61'/%3E%3Cpath d='M 75 36 L 124 36 L 124 85' fill='none' stroke='%23FF6F61' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E',
+        imageOptions: {
+          crossOrigin:   'anonymous',
+          margin:        4,
+          imageSize:     0.3,          // 30% of QR = visible but scannable
+          hideBackgroundDots: true,    // clear dots behind logo for readability
         },
         dotsOptions: {
-          color:    '#FF6F61',   // coral dots
-          type:     'rounded',   // rounded modules — brand feel
+          color:    '#FF6F61',
+          type:     'rounded',
         },
         cornersSquareOptions: {
-          color: '#373F51',      // charcoal corner squares
+          color: '#373F51',
           type:  'extra-rounded',
         },
         cornersDotOptions: {
-          color: '#FF6F61',      // coral corner dots
+          color: '#FF6F61',
           type:  'dot',
         },
         backgroundOptions: {
