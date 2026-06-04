@@ -42,19 +42,16 @@
       </button>
     </div>
 
-    <p class="qr-tm-desc">
-      Scanne diesen QR-Code mit deinem neuen Gerät auf der Meine-Events-Seite,
-      um alle gespeicherten Events zu übertragen.
+        <p class="qr-tm-desc">
+      Scanne diesen QR-Code mit der Kamera deines neuen Geräts.
+      Die Meine-Events-Seite öffnet sich automatisch mit einer Importvorschau.
     </p>
 
     <div class="qr-tm-canvas-wrap" id="qr-export-canvas"></div>
 
     <p class="qr-tm-hint" id="qr-export-hint"></p>
 
-    <p class="qr-tm-note">
-      Der QR-Code enthält ausschließlich deine gespeicherten Events —
-      keine persönlichen Daten, kein Account erforderlich.
-    </p>
+    <p class="qr-tm-note">Keine persönlichen Daten, kein Account erforderlich.</p>
   </div>
 </div>
 
@@ -110,15 +107,6 @@
 
 <script>
 
-// ── Logo ────────────────────────────────────────────────────────────────────
-const LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
-  <rect width="160" height="160" rx="24" fill="white"/>
-  <circle cx="62" cy="98" r="32" fill="#FF6F61"/>
-  <circle cx="114" cy="114" r="16" fill="#FF6F61"/>
-  <path d="M 75 36 L 124 36 L 124 85" fill="none" stroke="#FF6F61" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>`;
-const LOGO_URL = `data:image/svg+xml;base64,${btoa(LOGO_SVG)}`;
-
 // ── localStorage helpers ─────────────────────────────────────────────────────
 const STORAGE_KEY = 'rg-saved';
 function getSaved() {
@@ -135,44 +123,34 @@ function isExpired(dateStr) {
 }
 function formatDateShort(iso) {
   if (!iso) return 'Regelmäßig';
-  const d = new Date(iso + 'T12:00:00');
-  return d.toLocaleDateString('de-DE', { day: 'numeric', month: 'short' });
+  return new Date(iso + 'T12:00:00').toLocaleDateString('de-DE', { day: 'numeric', month: 'short' });
 }
 
 // ── Payload encoding ─────────────────────────────────────────────────────────
-// Format: "rg-saved:city|slug,city|slug,..."
-// Upcoming events only. Chunked to 10 per page for scannable QR size.
-const RG_PREFIX = 'rg-saved:';
+// QR encodes a real HTTPS URL — phone camera opens it directly in browser.
+// Data passed as ?import= param. Meine Events page reads it on load.
+// Format: https://www.rausgucken.de/meine-events/?import=city|slug,city|slug,...
+const BASE_URL   = 'https://www.rausgucken.de/meine-events/';
 const CHUNK_SIZE = 10;
 
 function encodePages(saved) {
   const upcoming = saved.filter(ev => !isExpired(ev.date_start));
-  if (upcoming.length === 0) return [];
+  if (!upcoming.length) return [];
   const pages = [];
   for (let i = 0; i < upcoming.length; i += CHUNK_SIZE) {
-    const chunk = upcoming.slice(i, i + CHUNK_SIZE);
-    const pairs = chunk.map(ev => (ev.city || 'ludwigsburg') + '|' + ev.slug);
-    pages.push(RG_PREFIX + pairs.join(','));
+    const pairs = upcoming.slice(i, i + CHUNK_SIZE)
+      .map(ev => (ev.city || 'ludwigsburg') + '|' + ev.slug);
+    // encodeURIComponent so URL is valid; page decodes it
+    pages.push(BASE_URL + '?import=' + encodeURIComponent(pairs.join(',')));
   }
   return pages;
 }
 
-function decodePayload(raw) {
-  if (!raw || !raw.startsWith(RG_PREFIX)) return null;
+function decodeImportParam(raw) {
+  // raw = "city|slug,city|slug,..."
+  if (!raw) return null;
   try {
-    const payload = raw.slice(RG_PREFIX.length).trim();
-    if (!payload) return null;
-    // Legacy JSON fallback
-    if (payload.startsWith('[')) {
-      const compact = JSON.parse(payload);
-      if (!Array.isArray(compact)) return null;
-      return compact.map(c => ({
-        slug: c.s, title: c.s, date_start: null,
-        city: c.c, url: '/' + c.c + '/events/' + c.s,
-      }));
-    }
-    // Pipe-delimited: "city|slug,city|slug"
-    return payload.split(',').map(pair => {
+    return raw.split(',').map(pair => {
       const sep = pair.indexOf('|');
       if (sep === -1) return null;
       const city = pair.slice(0, sep).trim();
@@ -183,6 +161,17 @@ function decodePayload(raw) {
   } catch { return null; }
 }
 
+// ── Load plain qrcode library ────────────────────────────────────────────────
+async function ensureQRLib() {
+  if (window.QRCode) return;
+  await new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
+    s.onload = resolve; s.onerror = reject;
+    document.head.appendChild(s);
+  });
+}
+
 // ── EXPORT ───────────────────────────────────────────────────────────────────
 const exportOpenBtn  = document.getElementById('qr-export-open');
 const exportModal    = document.getElementById('qr-export-modal');
@@ -191,43 +180,26 @@ const exportClose    = document.getElementById('qr-export-close');
 const exportCanvas   = document.getElementById('qr-export-canvas');
 const exportHint     = document.getElementById('qr-export-hint');
 
-let qrPages = [];
+let qrPages   = [];
 let qrPageIdx = 0;
-let qrExportInstance = null;
-
-async function ensureQRLib() {
-  if (window.QRCodeStyling) return;
-  await new Promise((resolve, reject) => {
-    const s = document.createElement('script');
-    s.src = 'https://unpkg.com/qr-code-styling@1.6.0/lib/qr-code-styling.js';
-    s.onload = resolve; s.onerror = reject;
-    document.head.appendChild(s);
-  });
-}
 
 function renderQRPage(idx) {
   exportCanvas.innerHTML = '';
-  const QRCodeStyling = window.QRCodeStyling;
-  qrExportInstance = new QRCodeStyling({
-    width: 260, height: 260, type: 'canvas',
-    data: qrPages[idx],
-    image: LOGO_URL,
-    dotsOptions:         { color: '#373F51', type: 'rounded' },
-    cornersSquareOptions:{ color: '#FF6F61', type: 'extra-rounded' },
-    cornersDotOptions:   { color: '#FF6F61' },
-    backgroundOptions:   { color: '#ffffff' },
-    imageOptions:        { crossOrigin: 'anonymous', margin: 6, imageSize: 0.28 },
-    qrOptions:           { errorCorrectionLevel: 'M' },
+  new window.QRCode(exportCanvas, {
+    text:         qrPages[idx],
+    width:        260,
+    height:       260,
+    colorDark:    '#000000',
+    colorLight:   '#ffffff',
+    correctLevel: window.QRCode.CorrectLevel.M,
   });
-  qrExportInstance.append(exportCanvas);
 
-  // Page indicator + nav
   const total = qrPages.length;
   if (total > 1) {
     exportHint.innerHTML =
-      `<button id="qr-prev" style="background:none;border:none;cursor:pointer;color:var(--coral);font-size:1.2rem;padding:0 6px;opacity:${idx===0?0.3:1}" ${idx===0?'disabled':''}>&#9664;</button>` +
-      `<span style="font-size:0.82rem;color:var(--text-60)">Seite ${idx+1} von ${total}</span>` +
-      `<button id="qr-next" style="background:none;border:none;cursor:pointer;color:var(--coral);font-size:1.2rem;padding:0 6px;opacity:${idx===total-1?0.3:1}" ${idx===total-1?'disabled':''}>&#9654;</button>`;
+      `<button id="qr-prev" style="background:none;border:none;cursor:pointer;color:var(--coral);font-size:1.2rem;padding:0 8px;opacity:${idx===0?0.3:1}" ${idx===0?'disabled':''}>&#9664;</button>` +
+      `<span style="font-size:0.82rem;color:var(--text-60)">Seite&nbsp;${idx+1}&nbsp;von&nbsp;${total}</span>` +
+      `<button id="qr-next" style="background:none;border:none;cursor:pointer;color:var(--coral);font-size:1.2rem;padding:0 8px;opacity:${idx===total-1?0.3:1}" ${idx===total-1?'disabled':''}>&#9654;</button>`;
     document.getElementById('qr-prev').addEventListener('click', () => {
       if (qrPageIdx > 0) { qrPageIdx--; renderQRPage(qrPageIdx); }
     });
@@ -240,11 +212,11 @@ function renderQRPage(idx) {
 }
 
 async function openExportModal() {
-  const saved = getSaved();
+  const saved    = getSaved();
   const upcoming = saved.filter(ev => !isExpired(ev.date_start));
 
-  if (upcoming.length === 0) {
-    alert(saved.length > 0
+  if (!upcoming.length) {
+    alert(saved.length
       ? 'Alle gespeicherten Events sind vergangen — nichts zu übertragen.'
       : 'Keine gespeicherten Events zum Übertragen.');
     return;
@@ -253,11 +225,10 @@ async function openExportModal() {
   exportModal.hidden = false;
   document.body.style.overflow = 'hidden';
   exportClose.focus();
-
   exportCanvas.innerHTML = '';
-  exportHint.textContent = `${upcoming.length} bevorstehende${upcoming.length !== 1 ? ' Events' : 's Event'} werden übertragen`;
+  exportHint.textContent = '';
 
-  qrPages = encodePages(saved);
+  qrPages   = encodePages(saved);
   qrPageIdx = 0;
 
   await ensureQRLib();
@@ -270,11 +241,73 @@ function closeExportModal() {
   exportOpenBtn.focus();
 }
 
-exportOpenBtn.addEventListener('click', openExportModal);
-exportClose.addEventListener('click', closeExportModal);
+exportOpenBtn.addEventListener('click',  openExportModal);
+exportClose.addEventListener('click',   closeExportModal);
 exportBackdrop.addEventListener('click', closeExportModal);
 
-// ── IMPORT ───────────────────────────────────────────────────────────────────
+// ── IMPORT via URL param ─────────────────────────────────────────────────────
+// Phone camera scans QR → opens https://rausgucken.de/meine-events/?import=...
+// This runs on page load and triggers the import preview automatically.
+function handleImportParam() {
+  const params = new URLSearchParams(window.location.search);
+  const raw    = params.get('import');
+  if (!raw) return;
+
+  const events = decodeImportParam(decodeURIComponent(raw));
+  if (!events || !events.length) return;
+
+  // Clean URL without reloading
+  const cleanUrl = window.location.pathname;
+  window.history.replaceState({}, '', cleanUrl);
+
+  // Show import preview modal immediately
+  showImportPreview(events);
+}
+
+function showImportPreview(events) {
+  // Reuse import modal but skip camera — go straight to preview
+  const importModal    = document.getElementById('qr-import-modal');
+  const scannerWrap    = document.getElementById('qr-scanner-wrap');
+  const previewEl      = document.getElementById('qr-import-preview');
+  const previewCounts  = document.getElementById('qr-preview-counts');
+  const previewList    = document.getElementById('qr-preview-list');
+  const confirmBtn     = document.getElementById('qr-import-confirm');
+  const retryBtn       = document.getElementById('qr-import-retry');
+
+  decodedEvents = events;
+
+  const upcoming = events.filter(ev => !isExpired(ev.date_start));
+  const expired  = events.filter(ev => ev.date_start && isExpired(ev.date_start));
+
+  previewCounts.innerHTML =
+    `<div class="qr-preview-stat qr-preview-stat--upcoming">
+       <span class="qr-preview-num">${upcoming.length}</span>
+       <span class="qr-preview-label">bevorstehend</span>
+     </div>` +
+    (expired.length
+      ? `<div class="qr-preview-stat qr-preview-stat--expired">
+           <span class="qr-preview-num">${expired.length}</span>
+           <span class="qr-preview-label">vergangen</span>
+         </div>` : '');
+
+  previewList.innerHTML = [...upcoming, ...expired].slice(0, 8).map(ev =>
+    `<div class="qr-preview-item${isExpired(ev.date_start) ? ' qr-preview-item--past' : ''}">
+       <span class="qr-preview-date">${formatDateShort(ev.date_start)}</span>
+       <span class="qr-preview-title">${sanitise(ev.title)}</span>
+     </div>`
+  ).join('') +
+  (events.length > 8 ? `<div class="qr-preview-more">+ ${events.length - 8} weitere</div>` : '');
+
+  confirmBtn.textContent = `${upcoming.length} Event${upcoming.length !== 1 ? 's' : ''} übernehmen`;
+  retryBtn.hidden        = true; // no camera retry needed for URL import
+
+  importModal.hidden = false;
+  scannerWrap.hidden = true;
+  previewEl.hidden   = false;
+  document.body.style.overflow = 'hidden';
+}
+
+// ── IMPORT via in-app camera (manual) ───────────────────────────────────────
 const importOpenBtn  = document.getElementById('qr-import-open');
 const importModal    = document.getElementById('qr-import-modal');
 const importBackdrop = document.getElementById('qr-import-backdrop');
@@ -291,16 +324,15 @@ const successEl      = document.getElementById('qr-import-success');
 const successMsg     = document.getElementById('qr-import-success-msg');
 const errorEl        = document.getElementById('qr-import-error');
 
-let stream = null;
-let scanRAF = 0;
+let stream        = null;
+let scanRAF       = 0;
 let decodedEvents = null;
-let jsQR = null;
+let jsQR          = null;
 
 async function ensureJsQR() {
-  if (!jsQR) {
-    const mod = await import('jsqr');
-    jsQR = (mod.default || mod);
-  }
+  if (jsQR) return;
+  const mod = await import('jsqr');
+  jsQR = mod.default || mod;
 }
 
 function resetImportUI(keepAccumulated) {
@@ -308,6 +340,7 @@ function resetImportUI(keepAccumulated) {
   previewEl.hidden   = true;
   successEl.hidden   = true;
   errorEl.hidden     = true;
+  retryBtn.hidden    = false;
   if (!keepAccumulated) decodedEvents = null;
 }
 
@@ -343,16 +376,20 @@ function scanLoop() {
   const code = jsQR(img.data, img.width, img.height);
 
   if (code?.data) {
-    const decoded = decodePayload(code.data);
-    if (decoded) {
-      stopCamera();
-      // Accumulate across pages — merge by slug
-      const existing = decodedEvents || [];
-      const existingSlugs = new Set(existing.map(e => e.slug));
-      const merged = [...existing, ...decoded.filter(e => !existingSlugs.has(e.slug))];
-      showPreview(merged);
-      return;
-    }
+    // Extract ?import= param from scanned URL
+    try {
+      const url    = new URL(code.data);
+      const raw    = url.searchParams.get('import');
+      const decoded = raw ? decodeImportParam(decodeURIComponent(raw)) : null;
+      if (decoded) {
+        stopCamera();
+        const existing   = decodedEvents || [];
+        const existSlugs = new Set(existing.map(e => e.slug));
+        const merged     = [...existing, ...decoded.filter(e => !existSlugs.has(e.slug))];
+        showPreview(merged);
+        return;
+      }
+    } catch {}
   }
   scanRAF = requestAnimationFrame(scanLoop);
 }
@@ -367,26 +404,23 @@ function showPreview(events) {
        <span class="qr-preview-num">${upcoming.length}</span>
        <span class="qr-preview-label">bevorstehend</span>
      </div>` +
-    (expired.length > 0
+    (expired.length
       ? `<div class="qr-preview-stat qr-preview-stat--expired">
            <span class="qr-preview-num">${expired.length}</span>
            <span class="qr-preview-label">vergangen</span>
-         </div>`
-      : '');
+         </div>` : '');
 
-  const display = [...upcoming, ...expired].slice(0, 8);
-  previewList.innerHTML = display.map(ev => {
-    const past = isExpired(ev.date_start);
-    return `<div class="qr-preview-item${past ? ' qr-preview-item--past' : ''}">
-      <span class="qr-preview-date">${formatDateShort(ev.date_start)}</span>
-      <span class="qr-preview-title">${sanitise(ev.title)}</span>
-    </div>`;
-  }).join('') +
+  previewList.innerHTML = [...upcoming, ...expired].slice(0, 8).map(ev =>
+    `<div class="qr-preview-item${isExpired(ev.date_start) ? ' qr-preview-item--past' : ''}">
+       <span class="qr-preview-date">${formatDateShort(ev.date_start)}</span>
+       <span class="qr-preview-title">${sanitise(ev.title)}</span>
+     </div>`
+  ).join('') +
   (events.length > 8 ? `<div class="qr-preview-more">+ ${events.length - 8} weitere</div>` : '');
 
-  confirmBtn.textContent = `${upcoming.length} Event${upcoming.length !== 1 ? 's' : ''} importieren`;
+  confirmBtn.textContent = `${upcoming.length} Event${upcoming.length !== 1 ? 's' : ''} übernehmen`;
   retryBtn.textContent   = 'Weitere Seite scannen';
-
+  retryBtn.hidden        = false;
   scannerWrap.hidden = true;
   previewEl.hidden   = false;
 }
@@ -406,16 +440,15 @@ function showImportError(msg) {
 
 function doImport() {
   if (!decodedEvents) return;
-  const existing      = getSaved();
-  const existingSlugs = new Set(existing.map(e => e.slug));
-  const toAdd         = decodedEvents.filter(ev => !existingSlugs.has(ev.slug));
-  const merged        = [...existing, ...toAdd];
-  setSaved(merged);
+  const existing   = getSaved();
+  const existSlugs = new Set(existing.map(e => e.slug));
+  const toAdd      = decodedEvents.filter(ev => !existSlugs.has(ev.slug));
+  setSaved([...existing, ...toAdd]);
   window.dispatchEvent(new CustomEvent('rg:saved-changed'));
-  previewEl.hidden    = true;
-  successMsg.textContent = toAdd.length > 0
-    ? `${toAdd.length} neues Event${toAdd.length !== 1 ? 's' : ''} importiert. Gesamt: ${merged.length}.`
-    : 'Alle Events bereits gespeichert – nichts Neues importiert.';
+  previewEl.hidden = true;
+  successMsg.textContent = toAdd.length
+    ? `${toAdd.length} neues Event${toAdd.length !== 1 ? 's' : ''} importiert.`
+    : 'Alle Events bereits gespeichert.';
   successEl.hidden = false;
 }
 
@@ -424,9 +457,7 @@ async function openImportModal() {
   document.body.style.overflow = 'hidden';
   importClose.focus();
   resetImportUI(false);
-  await ensureJsQR().catch(() => {
-    showImportError('jsQR konnte nicht geladen werden.');
-  });
+  await ensureJsQR().catch(() => showImportError('jsQR konnte nicht geladen werden.'));
   await startCamera();
 }
 
@@ -438,19 +469,22 @@ function closeImportModal() {
   resetImportUI(false);
 }
 
-importOpenBtn.addEventListener('click', openImportModal);
-importClose.addEventListener('click', closeImportModal);
+importOpenBtn.addEventListener('click',  openImportModal);
+importClose.addEventListener('click',   closeImportModal);
 importBackdrop.addEventListener('click', closeImportModal);
 confirmBtn.addEventListener('click', doImport);
 retryBtn.addEventListener('click', async () => {
-  resetImportUI(true); // keep accumulated events
+  resetImportUI(true);
   await startCamera();
 });
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
   if (!exportModal.hidden) closeExportModal();
   if (!importModal.hidden) closeImportModal();
 });
+
+// ── Auto-import on page load if ?import= param present ──────────────────────
+handleImportParam();
 </script>
 
 <style>
