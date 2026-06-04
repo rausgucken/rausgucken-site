@@ -194,64 +194,66 @@ function loadScript(src) {
   });
 }
 
-// ── QR generation using qrcode-generator (tiny, reliable, canvas output) ─────
-const QR_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
+// ── QR generation using qr-code-styling (branded, rounded dots) ─────────────
+const QR_CDN = 'https://cdn.jsdelivr.net/npm/qr-code-styling@1.6.0/lib/qr-code-styling.js';
 
 function renderQRToCanvas(text, canvasEl) {
+  // qr-code-styling renders into a wrapper div as an <svg> or <canvas>
+  // We use type:'canvas', then copy it onto our target canvas
   const wrapper = document.createElement('div');
   wrapper.style.cssText = 'position:fixed;left:-9999px;top:-9999px;width:256px;height:256px;';
   document.body.appendChild(wrapper);
 
   return new Promise(resolve => {
     try {
-      new window.QRCode(wrapper, {
-        text,
-        width: 256, height: 256,
-        colorDark: '#000000', colorLight: '#ffffff',
-        correctLevel: window.QRCode.CorrectLevel.M,
+      const qrCode = new window.QRCodeStyling({
+        width:  256,
+        height: 256,
+        type:   'canvas',
+        data:   text,
+        qrOptions: {
+          errorCorrectionLevel: 'M',
+        },
+        dotsOptions: {
+          color:    '#FF6F61',   // coral dots
+          type:     'rounded',   // rounded modules — brand feel
+        },
+        cornersSquareOptions: {
+          color: '#373F51',      // charcoal corner squares
+          type:  'extra-rounded',
+        },
+        cornersDotOptions: {
+          color: '#FF6F61',      // coral corner dots
+          type:  'dot',
+        },
+        backgroundOptions: {
+          color: '#ffffff',
+        },
       });
+      qrCode.append(wrapper);
     } catch(e) {
+      console.warn('[QR] qr-code-styling failed:', e);
       document.body.removeChild(wrapper);
       resolve(); return;
     }
 
+    // Poll for the canvas to appear
     let attempts = 0;
     const poll = () => {
       const srcCanvas = wrapper.querySelector('canvas');
-      const srcImg    = wrapper.querySelector('img');
       attempts++;
-
       if (srcCanvas && srcCanvas.width > 0) {
         const ctx = canvasEl.getContext('2d');
-        canvasEl.width = 256; canvasEl.height = 256;
+        canvasEl.width  = 256;
+        canvasEl.height = 256;
         ctx.drawImage(srcCanvas, 0, 0, 256, 256);
         document.body.removeChild(wrapper);
         resolve(); return;
       }
-
-      if (srcImg && srcImg.complete && srcImg.naturalWidth > 0) {
-        const ctx = canvasEl.getContext('2d');
-        canvasEl.width = 256; canvasEl.height = 256;
-        ctx.drawImage(srcImg, 0, 0, 256, 256);
-        document.body.removeChild(wrapper);
-        resolve(); return;
-      }
-
-      if (srcImg && !srcImg.complete) {
-        srcImg.onload = () => {
-          const ctx = canvasEl.getContext('2d');
-          canvasEl.width = 256; canvasEl.height = 256;
-          ctx.drawImage(srcImg, 0, 0, 256, 256);
-          document.body.removeChild(wrapper);
-          resolve();
-        };
-        return;
-      }
-
-      if (attempts < 20) { setTimeout(poll, 100); }
+      if (attempts < 30) { setTimeout(poll, 100); }
       else { document.body.removeChild(wrapper); resolve(); }
     };
-    setTimeout(poll, 50);
+    setTimeout(poll, 100);
   });
 }
 
