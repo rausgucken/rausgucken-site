@@ -188,180 +188,83 @@ function loadScript(src) {
   });
 }
 
-// ── QR generation: qrcode-generator (matrix data) + custom canvas drawing ───
-const QR_CDN = 'https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js';
-
-// ── Custom branded QR renderer ───────────────────────────────────────────────
-// Uses qrcode-generator for the data matrix, then draws everything manually
-// on canvas: coral rounded dots, charcoal extra-rounded corner squares,
-// and the rausgucken mark (L-corner + 2 dots) painted into the center zone.
-
-const CORAL    = '#FF6F61';
-const CHARCOAL = '#373F51';
-const BG       = '#ffffff';
-const SIZE     = 256;
-
-// Draw a rounded rectangle path
-function rrect(ctx, x, y, w, h, r) {
-  r = Math.min(r, w / 2, h / 2);
-  ctx.beginPath();
-  ctx.moveTo(x + r, y);
-  ctx.lineTo(x + w - r, y);
-  ctx.arcTo(x + w, y, x + w, y + r, r);
-  ctx.lineTo(x + w, y + h - r);
-  ctx.arcTo(x + w, y + h, x + w - r, y + h, r);
-  ctx.lineTo(x + r, y + h);
-  ctx.arcTo(x, y + h, x, y + h - r, r);
-  ctx.lineTo(x, y + r);
-  ctx.arcTo(x, y, x + r, y, r);
-  ctx.closePath();
-}
-
-// Draw the 3 finder patterns (corner squares) in charcoal
-function drawFinder(ctx, col, row, cellSize) {
-  const x = col * cellSize;
-  const y = row * cellSize;
-  const outer = cellSize * 7;
-  const inner = cellSize * 3;
-  const gap   = cellSize;
-
-  // Outer square
-  ctx.fillStyle = CHARCOAL;
-  rrect(ctx, x, y, outer, outer, cellSize * 1.5);
-  ctx.fill();
-
-  // White cutout
-  ctx.fillStyle = BG;
-  rrect(ctx, x + gap, y + gap, outer - gap * 2, outer - gap * 2, cellSize * 0.8);
-  ctx.fill();
-
-  // Inner dot
-  ctx.fillStyle = CHARCOAL;
-  rrect(ctx, x + gap * 2, y + gap * 2, inner, inner, cellSize * 0.8);
-  ctx.fill();
-}
-
-// Draw rausgucken mark into center zone
-// mark fits within a square of size markSize at offset (ox, oy)
-function drawBrand(ctx, ox, oy, markSize) {
-  const s = markSize / 160; // scale factor — logo viewBox is 0 0 160 160
-
-  ctx.save();
-  ctx.translate(ox, oy);
-
-  // White background circle so dots behind are hidden
-  ctx.fillStyle = BG;
-  ctx.beginPath();
-  ctx.arc(markSize / 2, markSize / 2, markSize / 2, 0, Math.PI * 2);
-  ctx.fill();
-
-  ctx.fillStyle = CORAL;
-  ctx.strokeStyle = CORAL;
-
-  // Large circle (cx=62 cy=98 r=32)
-  ctx.beginPath();
-  ctx.arc(62 * s, 98 * s, 32 * s, 0, Math.PI * 2);
-  ctx.fill();
-
-  // Small circle (cx=114 cy=114 r=16)
-  ctx.beginPath();
-  ctx.arc(114 * s, 114 * s, 16 * s, 0, Math.PI * 2);
-  ctx.fill();
-
-  // L-corner path: M75,36 L124,36 L124,85
-  ctx.lineWidth   = 12 * s;
-  ctx.lineCap     = 'round';
-  ctx.lineJoin    = 'round';
-  ctx.strokeStyle = CORAL;
-  ctx.beginPath();
-  ctx.moveTo(75 * s, 36 * s);
-  ctx.lineTo(124 * s, 36 * s);
-  ctx.lineTo(124 * s, 85 * s);
-  ctx.stroke();
-
-  ctx.restore();
-}
+// ── QR generation using qr-code-styling (branded, rounded dots) ─────────────
+const QR_CDN = 'https://cdn.jsdelivr.net/npm/qr-code-styling@1.6.0/lib/qr-code-styling.js';
 
 function renderQRToCanvas(text, canvasEl) {
+  // qr-code-styling renders into a wrapper div as an <svg> or <canvas>
+  // We use type:'canvas', then copy it onto our target canvas
+  const wrapper = document.createElement('div');
+  wrapper.style.cssText = 'position:fixed;left:-9999px;top:-9999px;width:256px;height:256px;';
+  document.body.appendChild(wrapper);
+
   return new Promise(resolve => {
     try {
-      // Generate QR matrix using qrcode-generator
-      const qr = window.qrcode(0, 'H'); // type 0 = auto, H = high error correction
-      qr.addData(text);
-      qr.make();
+      const _svgLogo = [
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">',
+        '<circle cx="62" cy="98" r="32" fill="#FF6F61"/>',
+        '<circle cx="114" cy="114" r="16" fill="#FF6F61"/>',
+        '<path d="M 75 36 L 124 36 L 124 85" fill="none" stroke="#FF6F61"',
+        ' stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>',
+        '</svg>'
+      ].join('');
+      const _logoUrl = 'data:image/svg+xml,' + encodeURIComponent(_svgLogo);
 
-      const modules   = qr.getModuleCount(); // e.g. 33 for a typical URL
-      const padding   = 2;                   // quiet zone in cells
-      const totalCells = modules + padding * 2;
-      const cellSize  = SIZE / totalCells;
-
-      const ctx = canvasEl.getContext('2d');
-      canvasEl.width  = SIZE;
-      canvasEl.height = SIZE;
-
-      // Background
-      ctx.fillStyle = BG;
-      ctx.fillRect(0, 0, SIZE, SIZE);
-
-      // Finder pattern positions (top-left col/row in module coords)
-      const finderPositions = [
-        [0, 0],
-        [modules - 7, 0],
-        [0, modules - 7],
-      ];
-      const finderCells = new Set();
-      for (const [fc, fr] of finderPositions) {
-        for (let dr = 0; dr < 7; dr++) {
-          for (let dc = 0; dc < 7; dc++) {
-            finderCells.add((fr + dr) + ',' + (fc + dc));
-          }
-        }
-      }
-
-      // Center logo zone — skip dots here, draw brand instead
-      const logoSize   = Math.floor(modules * 0.28); // 28% of matrix
-      const logoStart  = Math.floor((modules - logoSize) / 2);
-      const logoEnd    = logoStart + logoSize;
-      const logoCells  = new Set();
-      for (let r = logoStart; r < logoEnd; r++) {
-        for (let c = logoStart; c < logoEnd; c++) {
-          logoCells.add(r + ',' + c);
-        }
-      }
-
-      // Draw regular dots
-      ctx.fillStyle = CORAL;
-      for (let row = 0; row < modules; row++) {
-        for (let col = 0; col < modules; col++) {
-          if (!qr.isDark(row, col)) continue;
-          const key = row + ',' + col;
-          if (finderCells.has(key)) continue; // drawn separately
-          if (logoCells.has(key))   continue; // logo zone
-
-          const x = (col + padding) * cellSize;
-          const y = (row + padding) * cellSize;
-          const r = cellSize * 0.38;
-          rrect(ctx, x + 0.5, y + 0.5, cellSize - 1, cellSize - 1, r);
-          ctx.fill();
-        }
-      }
-
-      // Draw finder patterns
-      for (const [fc, fr] of finderPositions) {
-        drawFinder(ctx, fc + padding, fr + padding, cellSize);
-      }
-
-      // Draw brand mark in center zone
-      const logoPixelX = (logoStart + padding) * cellSize;
-      const logoPixelY = (logoStart + padding) * cellSize;
-      const logoPixelSize = logoSize * cellSize;
-      drawBrand(ctx, logoPixelX, logoPixelY, logoPixelSize);
-
-      resolve();
+      const qrCode = new window.QRCodeStyling({
+        width:  256,
+        height: 256,
+        type:   'canvas',
+        data:   text,
+        qrOptions: {
+          errorCorrectionLevel: 'H',
+        },
+        image: _logoUrl,
+        imageOptions: {
+          crossOrigin:        'anonymous',
+          margin:             6,
+          imageSize:          0.22,
+          hideBackgroundDots: true,
+        },
+        dotsOptions: {
+          color:    '#FF6F61',
+          type:     'rounded',
+        },
+        cornersSquareOptions: {
+          color: '#373F51',
+          type:  'extra-rounded',
+        },
+        cornersDotOptions: {
+          color: '#FF6F61',
+          type:  'dot',
+        },
+        backgroundOptions: {
+          color: '#ffffff',
+        },
+      });
+      qrCode.append(wrapper);
     } catch(e) {
-      console.warn('[QR] custom render failed:', e);
-      resolve();
+      console.warn('[QR] qr-code-styling failed:', e);
+      document.body.removeChild(wrapper);
+      resolve(); return;
     }
+
+    // Poll for the canvas to appear
+    let attempts = 0;
+    const poll = () => {
+      const srcCanvas = wrapper.querySelector('canvas');
+      attempts++;
+      if (srcCanvas && srcCanvas.width > 0) {
+        const ctx = canvasEl.getContext('2d');
+        canvasEl.width  = 256;
+        canvasEl.height = 256;
+        ctx.drawImage(srcCanvas, 0, 0, 256, 256);
+        document.body.removeChild(wrapper);
+        resolve(); return;
+      }
+      if (attempts < 30) { setTimeout(poll, 100); }
+      else { document.body.removeChild(wrapper); resolve(); }
+    };
+    setTimeout(poll, 100);
   });
 }
 
