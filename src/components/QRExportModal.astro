@@ -136,10 +136,7 @@ function encodePayload(saved) {
   // Compact: only the fields we need to reconstruct the saved list
   const compact = saved.map(ev => ({
     s: ev.slug,
-    t: (ev.title || '').slice(0, 50),
-    d: ev.date_start || null,
     c: ev.city,
-    u: ev.url ? ev.url.replace('https://www.rausgucken.de', '') : ev.url,
   }));
   return RG_PREFIX + JSON.stringify(compact);
 }
@@ -152,10 +149,10 @@ function decodePayload(raw) {
     // Expand back to full saved event shape
     return compact.map((c) => ({
       slug:       c.s,
-      title:      c.t,
-      date_start: c.d || null,
+      title:      c.s,
+      date_start: null,
       city:       c.c,
-      url:        c.u,
+      url:        '/' + c.c + '/events/' + c.s,
     }));
   } catch { return null; }
 }
