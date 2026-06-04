@@ -20,13 +20,7 @@
     </svg>
     Auf neues Gerät übertragen
   </button>
-  <button class="qr-transfer-btn qr-transfer-btn--secondary" id="qr-import-open" type="button" aria-label="Events von anderem Gerät importieren">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
-      <circle cx="12" cy="13" r="3"/>
-    </svg>
-    QR-Code scannen
-  </button>
+
 </div>
 
 <!-- ── EXPORT MODAL ─────────────────────────────────────────────────────── -->
@@ -226,10 +220,10 @@ function renderQRToCanvas(text, canvasEl) {
         },
         image: _logoUrl,
         imageOptions: {
-          crossOrigin:   'anonymous',
-          margin:        4,
-          imageSize:     0.3,          // 30% of QR = visible but scannable
-          hideBackgroundDots: true,    // clear dots behind logo for readability
+          crossOrigin:        'anonymous',
+          margin:             6,
+          imageSize:          0.22,
+          hideBackgroundDots: true,
         },
         dotsOptions: {
           color:    '#FF6F61',
