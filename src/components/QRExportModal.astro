@@ -661,11 +661,11 @@ function closeImportModal() {
   stopCamera();
   importModal.hidden = true;
   document.body.style.overflow = '';
-  importOpenBtn.focus();
+  if (importOpenBtn) importOpenBtn.focus();
   resetImportUI(false);
 }
 
-importOpenBtn.addEventListener('click',  openImportModal);
+if (importOpenBtn) importOpenBtn.addEventListener('click',  openImportModal);
 importClose.addEventListener('click',   closeImportModal);
 importBackdrop.addEventListener('click', closeImportModal);
 confirmBtn.addEventListener('click', doImport);
