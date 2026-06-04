@@ -133,27 +133,36 @@ function setSaved(arr) {
 const RG_PREFIX = 'rg-saved:';
 
 function encodePayload(saved) {
-  // Compact: only the fields we need to reconstruct the saved list
-  const compact = saved.map(ev => ({
-    s: ev.slug,
-    c: ev.city,
-  }));
-  return RG_PREFIX + JSON.stringify(compact);
+  // Ultra-minimal: "rg-saved:city|slug,city|slug,..."
+  // No JSON, no quotes, no brackets — maximum QR density savings
+  const pairs = saved.map(ev => (ev.city || 'ludwigsburg') + '|' + ev.slug);
+  return RG_PREFIX + pairs.join(',');
 }
 
 function decodePayload(raw) {
   if (!raw.startsWith(RG_PREFIX)) return null;
   try {
-    const compact = JSON.parse(raw.slice(RG_PREFIX.length));
-    if (!Array.isArray(compact)) return null;
-    // Expand back to full saved event shape
-    return compact.map((c) => ({
-      slug:       c.s,
-      title:      c.s,
-      date_start: null,
-      city:       c.c,
-      url:        '/' + c.c + '/events/' + c.s,
-    }));
+    const payload = raw.slice(RG_PREFIX.length).trim();
+    if (!payload) return null;
+    // Support both new pipe-delimited format and legacy JSON fallback
+    if (payload.startsWith('[')) {
+      // Legacy JSON fallback
+      const compact = JSON.parse(payload);
+      if (!Array.isArray(compact)) return null;
+      return compact.map((c) => ({
+        slug: c.s, title: c.s, date_start: null,
+        city: c.c, url: '/' + c.c + '/events/' + c.s,
+      }));
+    }
+    // New pipe-delimited: "city|slug,city|slug"
+    return payload.split(',').map(pair => {
+      const sep = pair.indexOf('|');
+      if (sep === -1) return null;
+      const city = pair.slice(0, sep).trim();
+      const slug = pair.slice(sep + 1).trim();
+      if (!city || !slug) return null;
+      return { slug, title: slug, date_start: null, city, url: '/' + city + '/events/' + slug };
+    }).filter(Boolean);
   } catch { return null; }
 }
 
@@ -223,7 +232,7 @@ async function openExportModal() {
     cornersDotOptions:   { color: '#FF6F61' },
     backgroundOptions:   { color: '#ffffff' },
     imageOptions:        { crossOrigin: 'anonymous', margin: 6, imageSize: 0.28 },
-    qrOptions:           { errorCorrectionLevel: 'L' },
+    qrOptions:           { errorCorrectionLevel: 'M' },
   });
   qrExportInstance.append(exportCanvas);
 }
