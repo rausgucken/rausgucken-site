@@ -1,97 +1,155 @@
-// public/scripts/ics-export.js
-// Client-side ICS generation for collection/temporal pages.
-// Call: generateCollectionICS(events, label)
+/**
+ * ics-export.js
+ * Client-side ICS / iCalendar generation for rausgucken.de
+ * Exports: generateCollectionICS(events, label)
+ *
+ * Usage:
+ *   import { generateCollectionICS } from '/scripts/ics-export.js';
+ *   generateCollectionICS(events, 'Heute in Ludwigsburg');
+ *
+ * Triggers a browser download — no server round-trip.
+ */
 
-function icsEscape(str) {
-  if (!str) return "";
-  return String(str)
-    .replace(/\\/g, "\\\\")
-    .replace(/;/g, "\\;")
-    .replace(/,/g, "\\,")
-    .replace(/\n/g, "\\n")
-    .replace(/\r/g, "");
+/**
+ * Pad a number to 2 digits.
+ */
+function pad(n) { return String(n).padStart(2, '0'); }
+
+/**
+ * Convert ISO date string (YYYY-MM-DD) to iCal DATE value (YYYYMMDD).
+ * Returns null if input is falsy.
+ */
+function toIcalDate(iso) {
+  if (!iso) return null;
+  return iso.replace(/-/g, '');
 }
 
-function icsFold(line) {
+/**
+ * Fold long iCal lines at 75 octets per RFC 5545.
+ */
+function foldLine(line) {
   if (line.length <= 75) return line;
-  let out = "";
-  while (line.length > 75) {
-    out += line.slice(0, 75) + "\r\n ";
-    line = line.slice(75);
+  const chunks = [];
+  let i = 0;
+  while (i < line.length) {
+    chunks.push(line.slice(i, i + (i === 0 ? 75 : 74)));
+    i += (i === 0 ? 75 : 74);
   }
-  out += line;
-  return out;
+  return chunks.join('\r\n ');
 }
 
-function buildDt(dateStr, timeStr) {
-  if (!dateStr) return null;
-  const datePart = dateStr.replace(/-/g, "");
-  const timeMatch = timeStr ? timeStr.match(/(\d{1,2}):(\d{2})/) : null;
-  if (!timeMatch) {
-    return { dtstart: "DTSTART;VALUE=DATE:" + datePart, dtend: "DTEND;VALUE=DATE:" + datePart };
+/**
+ * Escape iCal TEXT values (commas, semicolons, backslashes, newlines).
+ */
+function escapeText(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/\\/g, '\\\\')
+    .replace(/;/g,  '\\;')
+    .replace(/,/g,  '\\,')
+    .replace(/\n/g, '\\n')
+    .replace(/\r/g, '');
+}
+
+/**
+ * Build a VEVENT block from a rausgucken event object.
+ */
+function buildVEvent(ev) {
+  const lines = [];
+
+  lines.push('BEGIN:VEVENT');
+
+  // UID — stable across exports
+  lines.push(`UID:rg-${ev.slug || ev.id || Math.random().toString(36).slice(2)}@rausgucken.de`);
+
+  // Timestamps
+  const now = new Date();
+  const dtstamp = `${now.getUTCFullYear()}${pad(now.getUTCMonth()+1)}${pad(now.getUTCDate())}T${pad(now.getUTCHours())}${pad(now.getUTCMinutes())}${pad(now.getUTCSeconds())}Z`;
+  lines.push(`DTSTAMP:${dtstamp}`);
+
+  // Date handling — DATE-only (no timezone) for all-day events
+  const dtstart = toIcalDate(ev.date_start);
+  const dtend   = toIcalDate(ev.date_end || ev.date_start);
+
+  if (dtstart) {
+    lines.push(`DTSTART;VALUE=DATE:${dtstart}`);
+    // DTEND in iCal is exclusive — add one day for single-day events
+    if (dtend) {
+      const endDate = new Date(dtend.slice(0,4) + '-' + dtend.slice(4,6) + '-' + dtend.slice(6,8));
+      endDate.setDate(endDate.getDate() + 1);
+      const dtendExcl = `${endDate.getFullYear()}${pad(endDate.getMonth()+1)}${pad(endDate.getDate())}`;
+      lines.push(`DTEND;VALUE=DATE:${dtendExcl}`);
+    }
   }
-  const hh = String(timeMatch[1]).padStart(2, "0");
-  const mm = timeMatch[2];
-  const endMatch = timeStr.match(/[-\u2013]\s*(\d{1,2}):(\d{2})/);
-  let dtend;
-  if (endMatch) {
-    dtend = "DTEND:" + datePart + "T" + String(endMatch[1]).padStart(2,"0") + endMatch[2] + "00";
-  } else {
-    dtend = "DTEND:" + datePart + "T" + String(parseInt(hh,10)+1).padStart(2,"0") + mm + "00";
+
+  // Summary
+  if (ev.title) lines.push(foldLine(`SUMMARY:${escapeText(ev.title)}`));
+
+  // Location
+  if (ev.location) lines.push(foldLine(`LOCATION:${escapeText(ev.location)}`));
+
+  // Description — combine time, description, price, source
+  const descParts = [];
+  if (ev.time)        descParts.push(ev.time);
+  if (ev.description) descParts.push(ev.description);
+  if (ev.price)       descParts.push(`Preis: ${ev.price}`);
+  if (ev.source_label) descParts.push(`Quelle: ${ev.source_label}`);
+  if (descParts.length > 0) {
+    lines.push(foldLine(`DESCRIPTION:${escapeText(descParts.join('\\n'))}`));
   }
-  return { dtstart: "DTSTART:" + datePart + "T" + hh + mm + "00", dtend };
+
+  // URL — canonical rausgucken.de link
+  const url = ev.canonical_url || ev.url || (ev.slug && ev.city ? `https://www.rausgucken.de/${ev.city}/events/${ev.slug}` : null);
+  if (url) lines.push(foldLine(`URL:${url}`));
+
+  // X-COST custom field
+  if (ev.price) lines.push(foldLine(`X-COST:${escapeText(ev.price)}`));
+
+  lines.push('END:VEVENT');
+  return lines.join('\r\n');
 }
 
-function buildUID(ev) {
-  const base = ev.canonical_url || ev.slug || ev.title || Math.random().toString(36);
-  return base.replace(/^https?:\/\/(www\.)?/, "").replace(/\//g, "-") + "@rausgucken.de";
-}
-
-function dtstamp() {
-  return new Date().toISOString().replace(/[-:]/g,"").split(".")[0] + "Z";
-}
-
-function toVevent(ev) {
-  const dt = buildDt(ev.date_start, ev.time);
-  if (!dt) return null;
-  const lines = [
-    "BEGIN:VEVENT",
-    icsFold("UID:" + buildUID(ev)),
-    "DTSTAMP:" + dtstamp(),
-    icsFold(dt.dtstart),
-    icsFold(dt.dtend),
-    icsFold("SUMMARY:" + icsEscape(ev.title)),
-  ];
-  if (ev.location)      lines.push(icsFold("LOCATION:"    + icsEscape(ev.location)));
-  if (ev.description)   lines.push(icsFold("DESCRIPTION:" + icsEscape(ev.description)));
-  if (ev.canonical_url) lines.push(icsFold("URL:"         + ev.canonical_url));
-  if (ev.price && ev.price !== "Kostenlos") lines.push(icsFold("X-COST:" + icsEscape(ev.price)));
-  lines.push("END:VEVENT");
-  return lines.join("\r\n");
-}
-
+/**
+ * Generate and trigger download of a .ics file for a collection of events.
+ *
+ * @param {object[]} events  - Array of rausgucken event objects
+ * @param {string}   label   - Calendar name + filename base (e.g. "Heute in Ludwigsburg")
+ */
 export function generateCollectionICS(events, label) {
   if (!events || events.length === 0) {
-    alert("Keine Veranstaltungen zum Exportieren.");
+    alert('Keine Veranstaltungen zum Exportieren.');
     return;
   }
-  const vevents = events.map(toVevent).filter(Boolean).join("\r\n");
-  const cal = [
-    "BEGIN:VCALENDAR",
-    "VERSION:2.0",
-    "PRODID:-//rausgucken.de//Collection Export//DE",
-    icsFold("X-WR-CALNAME:" + icsEscape(label)),
-    "X-WR-TIMEZONE:Europe/Berlin",
-    "CALSCALE:GREGORIAN",
-    "METHOD:PUBLISH",
-    vevents,
-    "END:VCALENDAR",
-  ].join("\r\n");
-  const blob = new Blob([cal], { type: "text/calendar;charset=utf-8" });
+
+  // Filter out events without a date (standing events without dates are skipped)
+  const exportable = events.filter(ev => ev.date_start);
+
+  if (exportable.length === 0) {
+    alert('Keine datierten Veranstaltungen zum Exportieren.');
+    return;
+  }
+
+  const calLines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    `PRODID:-//rausgucken.de//Events//DE`,
+    `X-WR-CALNAME:${escapeText(label)}`,
+    'X-WR-TIMEZONE:Europe/Berlin',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    ...exportable.map(buildVEvent),
+    'END:VCALENDAR',
+  ];
+
+  const blob = new Blob([calLines.join('\r\n')], { type: 'text/calendar;charset=utf-8' });
   const url  = URL.createObjectURL(blob);
-  const a    = document.createElement("a");
-  a.href     = url;
-  a.download = label.toLowerCase().replace(/\s+/g,"-").replace(/[^a-z0-9-]/g,"") + ".ics";
+
+  // Filename: sanitise label for filesystem
+  const filename = label.replace(/[^a-zA-Z0-9äöüÄÖÜß\s-]/g, '').replace(/\s+/g, '-').toLowerCase();
+
+  const a   = document.createElement('a');
+  a.href    = url;
+  a.download = `${filename}.ics`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
