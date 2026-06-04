@@ -690,6 +690,45 @@ import QRExportModal from "../../components/QRExportModal.astro";
       }
     });
   }
+
+  // ── Action bar — ICS export + Google Calendar ────────────────────────────
+  const actionBar   = document.getElementById('saved-action-bar');
+  const actionCount = document.getElementById('action-bar-count');
+  const gcalHint    = document.getElementById('gcal-hint');
+
+  function updateActionBar() {
+    const saved = getSaved();
+    const dated = saved.filter(ev => ev.date_start);
+    actionBar.hidden = saved.length === 0;
+    actionCount.textContent = dated.length > 0
+      ? `${dated.length} Termin${dated.length !== 1 ? 'e' : ''}`
+      : '';
+  }
+
+  document.getElementById('ics-export-btn').addEventListener('click', async () => {
+    const saved = getSaved().filter(ev => ev.date_start);
+    if (saved.length === 0) { alert('Keine datierten Events zum Exportieren.'); return; }
+    const { generateCollectionICS } = await import('/scripts/ics-export.js');
+    generateCollectionICS(saved, 'Meine Events – rausgucken.de');
+  });
+
+  document.getElementById('gcal-export-btn').addEventListener('click', async () => {
+    const saved = getSaved().filter(ev => ev.date_start);
+    if (saved.length === 0) { alert('Keine datierten Events zum Exportieren.'); return; }
+    const { generateCollectionICS } = await import('/scripts/ics-export.js');
+    generateCollectionICS(saved, 'Meine Events – rausgucken.de');
+    window.open('https://calendar.google.com/calendar/r/settings/export', '_blank', 'noopener');
+    if (gcalHint) gcalHint.hidden = false;
+  });
+
+  if (document.getElementById('gcal-hint-close')) {
+    document.getElementById('gcal-hint-close').addEventListener('click', () => {
+      gcalHint.hidden = true;
+    });
+  }
+
+  window.addEventListener('rg:saved-changed', updateActionBar);
+  updateActionBar();
 </script>
 
 <style is:global>
