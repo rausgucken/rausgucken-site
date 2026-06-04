@@ -206,15 +206,25 @@ function renderQRToCanvas(text, canvasEl) {
 
   return new Promise(resolve => {
     try {
+      const _svgLogo = [
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">',
+        '<circle cx="62" cy="98" r="32" fill="#FF6F61"/>',
+        '<circle cx="114" cy="114" r="16" fill="#FF6F61"/>',
+        '<path d="M 75 36 L 124 36 L 124 85" fill="none" stroke="#FF6F61"',
+        ' stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>',
+        '</svg>'
+      ].join('');
+      const _logoUrl = 'data:image/svg+xml,' + encodeURIComponent(_svgLogo);
+
       const qrCode = new window.QRCodeStyling({
         width:  256,
         height: 256,
         type:   'canvas',
         data:   text,
         qrOptions: {
-          errorCorrectionLevel: 'H',  // H required for logo overlay — more redundancy
+          errorCorrectionLevel: 'H',
         },
-        image: 'data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Ccircle cx='62' cy='98' r='32' fill='%23FF6F61'/%3E%3Ccircle cx='114' cy='114' r='16' fill='%23FF6F61'/%3E%3Cpath d='M 75 36 L 124 36 L 124 85' fill='none' stroke='%23FF6F61' stroke-width='12' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E',
+        image: _logoUrl,
         imageOptions: {
           crossOrigin:   'anonymous',
           margin:        4,
