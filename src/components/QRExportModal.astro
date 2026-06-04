@@ -534,11 +534,17 @@ function renderPreview(events) {
   confirmBtn.textContent = `${upcoming.length} Event${upcoming.length !== 1 ? 's' : ''} übernehmen`;
 }
 
-function doImport() {
+async function doImport() {
   if (!decodedEvents) return;
+  confirmBtn.disabled = true;
+  confirmBtn.textContent = '…';
+
+  // Enrich: fetch real event data so date_start, title etc. are correct
+  const enriched = await enrichEvents(decodedEvents);
+
   const existing   = getSaved();
   const existSlugs = new Set(existing.map(e => e.slug));
-  const toAdd      = decodedEvents.filter(ev => !existSlugs.has(ev.slug));
+  const toAdd      = enriched.filter(ev => !existSlugs.has(ev.slug));
   setSaved([...existing, ...toAdd]);
   window.dispatchEvent(new CustomEvent('rg:saved-changed'));
   previewEl.hidden = true;
@@ -546,6 +552,51 @@ function doImport() {
     ? `${toAdd.length} neues Event${toAdd.length !== 1 ? 's' : ''} importiert.`
     : 'Alle Events bereits gespeichert.';
   successEl.hidden = false;
+  confirmBtn.disabled = false;
+}
+
+// Fetch real event objects from events-current.json for each slug+city pair
+async function enrichEvents(events) {
+  // Group by city to minimise fetches
+  const byCitySlug = {};
+  for (const ev of events) {
+    const city = ev.city || 'ludwigsburg';
+    if (!byCitySlug[city]) byCitySlug[city] = {};
+    byCitySlug[city][ev.slug] = ev;
+  }
+
+  const enriched = [];
+  for (const [city, slugMap] of Object.entries(byCitySlug)) {
+    try {
+      const res = await fetch(`/data/${city}/events-current.json`);
+      if (!res.ok) throw new Error('fetch failed');
+      const data = await res.json();
+      // Support both array and landkreis wrapper {events:[...]}
+      const evList = Array.isArray(data) ? data : (data.events || []);
+      const bySlug = {};
+      for (const ev of evList) { bySlug[ev.slug] = ev; }
+      for (const [slug, fallback] of Object.entries(slugMap)) {
+        const real = bySlug[slug];
+        if (real) {
+          // Build a saved-event shaped object from real data
+          enriched.push({
+            slug:       real.slug,
+            title:      real.title,
+            date_start: real.date_start || null,
+            city:       real.city || city,
+            url:        `/${real.city || city}/events/${real.slug}`,
+          });
+        } else {
+          // Not found in current JSON (may have expired) — keep fallback
+          enriched.push(fallback);
+        }
+      }
+    } catch {
+      // Fetch failed — keep originals for this city
+      for (const ev of Object.values(slugMap)) enriched.push(ev);
+    }
+  }
+  return enriched;
 }
 
 async function submitCode() {
