@@ -681,7 +681,12 @@ document.addEventListener('keydown', e => {
   if (!importModal?.hidden) closeImportModal();
 });
 
-handleImportParams();
+// Run after DOM is ready — elements must exist before openImportPreview touches them
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', handleImportParams);
+} else {
+  handleImportParams();
+}
 </script>
 
 <style>
