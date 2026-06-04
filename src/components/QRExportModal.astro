@@ -109,7 +109,6 @@
 </div>
 
 <script lang="ts">
-import QRCodeStyling from 'qr-code-styling';
 
 // ── Logo ────────────────────────────────────────────────────────────────────
 const LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
@@ -181,9 +180,9 @@ const exportClose    = document.getElementById('qr-export-close')   as HTMLButto
 const exportCanvas   = document.getElementById('qr-export-canvas')  as HTMLDivElement;
 const exportHint     = document.getElementById('qr-export-hint')    as HTMLParagraphElement;
 
-let qrExportInstance: InstanceType<typeof QRCodeStyling> | null = null;
+let qrExportInstance: any = null;
 
-function openExportModal() {
+async function openExportModal() {
   const saved = getSaved();
 
   if (saved.length === 0) {
@@ -206,6 +205,7 @@ function openExportModal() {
   exportCanvas.innerHTML = '';
   const payload = encodePayload(saved);
 
+  const { default: QRCodeStyling } = await import('qr-code-styling');
   qrExportInstance = new QRCodeStyling({
     width:  260,
     height: 260,
