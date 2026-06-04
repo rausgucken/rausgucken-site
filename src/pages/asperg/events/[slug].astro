@@ -59,7 +59,7 @@ function formatDateShort(iso: string | null) {
 }
 
 const today            = new Date().toISOString().slice(0, 10);
-const isExpired        = !!(ev.date_start && ev.date_start < today);
+const isExpired        = !!(ev.date_end ? ev.date_end < today : ev.date_start && ev.date_start < today);
 const scrapedFormatted = ev.scraped_at
   ? new Date(ev.scraped_at).toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" })
   : null;
