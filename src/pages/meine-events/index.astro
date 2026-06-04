@@ -705,8 +705,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
     const chunks = [];
     let i = 0;
     while (i < line.length) { chunks.push(line.slice(i, i + (i === 0 ? 75 : 74))); i += (i === 0 ? 75 : 74); }
-    return chunks.join('
- ');
+    return chunks.join('\r\n ');
   }
   function escIcal(str) {
     return String(str || '').replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n').replace(/\r/g,'');
