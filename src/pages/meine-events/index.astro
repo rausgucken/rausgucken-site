@@ -29,25 +29,47 @@ import QRExportModal from "../../components/QRExportModal.astro";
   <!-- ── Saved Events Action Bar ───────────────────────────────────────────── -->
   <div id="saved-action-bar" class="collection-actions" hidden>
 
-    <!-- ICS download — opens Apple Calendar directly on iOS/macOS, importable everywhere -->
-    <button type="button" id="ics-export-btn" class="action-btn" aria-label="Alle Events als Kalender-Datei herunterladen">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/>
-        <line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-        <polyline points="8 14 10 16 16 12"/>
-      </svg>
-      <span>Apple / Outlook (.ics)</span>
-    </button>
-
-    <!-- Google Calendar — imports the downloaded .ics via Google's import page -->
-    <button type="button" id="gcal-export-btn" class="action-btn" aria-label="In Google Kalender importieren">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/>
-        <line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-        <line x1="12" y1="14" x2="12" y2="20"/><polyline points="9 17 12 20 15 17"/>
-      </svg>
-      <span>Google Kalender</span>
-    </button>
+    <!-- QR transfer pill — rendered by QRExportModal below, but we need a slot placeholder -->
+    <!-- Calendar export pill with dropdown -->
+    <div class="cal-dropdown-wrap" id="cal-dropdown-wrap">
+      <button type="button" id="cal-dropdown-btn" class="action-btn" aria-label="Kalender-Export" aria-haspopup="true" aria-expanded="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="18" rx="2"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+          <line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        <span>Kalender exportieren</span>
+        <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
+      <div class="cal-dropdown" id="cal-dropdown" hidden role="menu">
+        <button type="button" id="ics-export-btn" class="cal-dropdown-item" role="menuitem">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+            <polyline points="8 14 10 16 16 12"/>
+          </svg>
+          Apple / Outlook (.ics)
+          <span class="cal-dropdown-hint">direkt importieren</span>
+        </button>
+        <button type="button" id="gcal-export-btn" class="cal-dropdown-item" role="menuitem">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+            <line x1="12" y1="14" x2="12" y2="20"/>
+            <polyline points="9 17 12 20 15 17"/>
+          </svg>
+          Google Kalender
+          <span class="cal-dropdown-hint">.ics laden → Kalender → Importieren</span>
+        </button>
+      </div>
+    </div>
 
     <span class="action-bar-label" id="action-bar-count"></span>
   </div>
@@ -404,35 +426,93 @@ import QRExportModal from "../../components/QRExportModal.astro";
     display: flex;
     gap: 0.5rem;
     align-items: center;
+    flex-wrap: wrap;
   }
   .action-btn {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    background: var(--surface-card);
+    background: var(--tag-bg);
     border: 1.5px solid var(--border);
-    border-radius: var(--radius-sm);
-    padding: 0.45rem 0.9rem;
-    font-size: 0.82rem;
+    border-radius: 20px;
+    padding: 0 1rem;
+    height: 40px;
+    font-size: 0.84rem;
     font-weight: 600;
     font-family: var(--font-body);
-    color: var(--text);
+    color: var(--text-60);
     cursor: pointer;
     min-height: 44px;
     text-decoration: none;
-    transition: border-color 150ms, background 150ms;
+    transition: border-color 150ms, background 150ms, color 150ms;
+    white-space: nowrap;
   }
   .action-btn:hover {
     border-color: var(--coral);
     background: var(--coral-light);
+    color: var(--coral);
     text-decoration: none;
   }
   .action-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+  .action-btn .chevron { transition: transform 150ms; flex-shrink: 0; }
+  .action-btn[aria-expanded="true"] .chevron { transform: rotate(180deg); }
+  .action-btn[aria-expanded="true"] {
+    border-color: var(--coral);
+    background: var(--coral-light);
+    color: var(--coral);
+  }
   .action-bar-label {
     font-size: 0.78rem;
     color: var(--text-60);
     margin-left: 0.25rem;
   }
+
+  /* Calendar dropdown */
+  .cal-dropdown-wrap {
+    position: relative;
+  }
+  .cal-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    background: var(--surface-card);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius, 12px);
+    box-shadow: var(--shadow-hover);
+    min-width: 240px;
+    z-index: 30;
+    overflow: hidden;
+  }
+  .cal-dropdown[hidden] { display: none; }
+  .cal-dropdown-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--border-subtle);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text);
+    text-align: left;
+    transition: background 120ms;
+  }
+  .cal-dropdown-item:last-child { border-bottom: none; }
+  .cal-dropdown-item:hover { background: var(--coral-light); }
+  .cal-dropdown-item:focus-visible { outline: 2px solid var(--coral); outline-offset: -2px; }
+  .cal-dropdown-item svg { flex-shrink: 0; margin-top: 1px; stroke: var(--coral); }
+  .cal-dropdown-hint {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--text-60);
+    margin-top: 1px;
+  }
+
   .gcal-hint {
     max-width: 720px;
     margin: -0.5rem auto 1rem;
@@ -760,12 +840,37 @@ import QRExportModal from "../../components/QRExportModal.astro";
     actionCount.textContent = dated.length > 0
       ? `${dated.length} Termin${dated.length !== 1 ? 'e' : ''}`
       : '';
+    // Move QR transfer bar into action bar as first child (idempotent)
+    const qrBar = document.querySelector('.qr-transfer-bar');
+    if (qrBar && actionBar && !actionBar.contains(qrBar)) {
+      actionBar.insertBefore(qrBar, actionBar.firstChild);
+    }
   }
+
+  // ── Calendar dropdown toggle ──────────────────────────────────────────────
+  const calBtn      = document.getElementById('cal-dropdown-btn');
+  const calDropdown = document.getElementById('cal-dropdown');
+
+  calBtn.addEventListener('click', () => {
+    const open = calDropdown.hidden === false;
+    calDropdown.hidden = open;
+    calBtn.setAttribute('aria-expanded', String(!open));
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if (!document.getElementById('cal-dropdown-wrap').contains(e.target)) {
+      calDropdown.hidden = true;
+      calBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
 
   document.getElementById('ics-export-btn').addEventListener('click', async () => {
     const saved = getSaved().filter(ev => ev.date_start);
     if (saved.length === 0) { alert('Keine datierten Events zum Exportieren.'); return; }
     generateCollectionICS(saved, 'Meine Events – rausgucken.de');
+    calDropdown.hidden = true;
+    calBtn.setAttribute('aria-expanded', 'false');
   });
 
   document.getElementById('gcal-export-btn').addEventListener('click', async () => {
@@ -773,6 +878,8 @@ import QRExportModal from "../../components/QRExportModal.astro";
     if (saved.length === 0) { alert('Keine datierten Events zum Exportieren.'); return; }
     generateCollectionICS(saved, 'Meine Events – rausgucken.de');
     window.open('https://calendar.google.com/calendar/r/settings/export', '_blank', 'noopener');
+    calDropdown.hidden = true;
+    calBtn.setAttribute('aria-expanded', 'false');
     if (gcalHint) gcalHint.hidden = false;
   });
 

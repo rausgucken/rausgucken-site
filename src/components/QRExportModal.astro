@@ -693,9 +693,9 @@ if (document.readyState === 'loading') {
   /* ── Transfer bar ──────────────────────────────────────────────────────── */
   .qr-transfer-bar {
     max-width: 720px;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 0;
     display: flex;
-    gap: 0.6rem;
+    gap: 0.5rem;
     flex-wrap: wrap;
   }
   .qr-transfer-btn {
@@ -714,6 +714,7 @@ if (document.readyState === 'loading') {
     font-family: inherit;
     transition: background 150ms, color 150ms, border-color 150ms;
     min-height: 44px;
+    white-space: nowrap;
   }
   .qr-transfer-btn:hover {
     background: var(--coral-light);
