@@ -205,7 +205,16 @@ async function openExportModal() {
   exportCanvas.innerHTML = '';
   const payload = encodePayload(saved);
 
-  const { default: QRCodeStyling } = await import('qr-code-styling');
+  if (!window.QRCodeStyling) {
+    await new Promise((resolve, reject) => {
+      const s = document.createElement('script');
+      s.src = 'https://cdnjs.cloudflare.com/ajax/libs/qr-code-styling/1.6.0/qr-code-styling.js';
+      s.onload = resolve;
+      s.onerror = reject;
+      document.head.appendChild(s);
+    });
+  }
+  const QRCodeStyling = window.QRCodeStyling;
   qrExportInstance = new QRCodeStyling({
     width:  260,
     height: 260,
