@@ -109,7 +109,6 @@
 </div>
 
 <script lang="ts">
-import QRCodeStyling from "qr-code-styling";
 
 // ── Logo ────────────────────────────────────────────────────────────────────
 const LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
@@ -254,11 +253,13 @@ let scanRAF: number = 0;
 let decodedEvents: any[] | null = null;
 
 // jsQR bundled via npm — no CDN dependency
-import jsQRLib from 'jsqr';
-let jsQR: ((data: Uint8ClampedArray, width: number, height: number) => { data: string } | null) | null = jsQRLib;
+let jsQR: ((data: Uint8ClampedArray, width: number, height: number) => { data: string } | null) | null = null;
 
 async function ensureJsQR() {
-  // already loaded at module init — no-op
+  if (!jsQR) {
+    const mod = await import('jsqr');
+    jsQR = (mod.default || mod) as any;
+  }
 }
 
 function resetImportUI() {

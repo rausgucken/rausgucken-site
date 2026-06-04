@@ -420,48 +420,54 @@ import QRExportModal from "../../components/QRExportModal.astro";
 
     list.innerHTML = sorted.map(ev => {
       const d = ev.date_start ? formatDate(ev.date_start) : null;
-      const safeTitle = sanitise(ev.title);
+      const safeTitle = sanitise(ev.title || '');
       const safeUrl   = sanitiseUrl(ev.url);
+      const cityLabel = ev.city ? ev.city.charAt(0).toUpperCase() + ev.city.slice(1) : '';
 
       const dateBadge = d
-        ? `<div class="saved-card-date">
+        ? `<div class="date-badge" aria-hidden="true">
              <span class="date-weekday">${d.weekday}</span>
              <span class="date-day">${d.day}</span>
              <span class="date-month">${d.month}</span>
            </div>`
-        : `<div class="saved-card-date no-date">
+        : `<div class="date-badge date-badge--standing" aria-hidden="true">
              <span class="date-infinity">∞</span>
              <span class="date-month">immer</span>
            </div>`;
 
-      const calIcon = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
+      const iconCal = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
+      const iconPin = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>`;
+      const iconX   = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>`;
       const dateText = d ? `${d.weekday}, ${d.full}` : 'Regelmäßig';
 
-      return `<div class="saved-card${d && d.isPast ? ' is-past' : ''}" data-slug="${sanitise(ev.slug)}">
-        <a class="saved-card-link" href="${safeUrl}" aria-label="${safeTitle}">
+      return `<article class="event-card${d && d.isPast ? ' event-card--standing' : ''}" data-slug="${sanitise(ev.slug || '')}">
+        <a class="card-link" href="${safeUrl}"
+           aria-label="${safeTitle}${d ? ', ' + d.full : ''}${cityLabel ? ' – ' + sanitise(cityLabel) : ''}">
           ${dateBadge}
-          <div class="saved-card-body">
-            <div class="saved-card-title">${safeTitle}</div>
-            <div class="saved-card-meta">
-              <span class="saved-meta-item">${calIcon}${dateText}</span>
+          <div class="card-body">
+            <div class="card-tags">
+              ${d && d.isPast ? '<span class="tag" style="background:rgba(229,90,77,0.08);color:#e55a4d;">Vergangen</span>' : ''}
+            </div>
+            <h3 class="card-title">${safeTitle}</h3>
+            <div class="card-meta">
+              <span class="meta-item">${iconCal}${sanitise(dateText)}</span>
+              ${cityLabel ? `<span class="meta-item">${iconPin}${sanitise(cityLabel)}</span>` : ''}
             </div>
           </div>
         </a>
-        <div class="saved-card-footer">
-          <span class="saved-meta-item" style="font-size:0.72rem;color:var(--text-60);padding:0 0.25rem;">
-            ${ev.city ? sanitise(ev.city.charAt(0).toUpperCase() + ev.city.slice(1)) : ''}
-          </span>
-          <button class="saved-card-remove" data-slug="${sanitise(ev.slug)}" aria-label="Merken aufheben: ${safeTitle}">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-            </svg>
-            Entfernen
-          </button>
+        <div class="card-footer">
+          <div class="footer-line1">
+            <span style="font-size:0.72rem;color:var(--text-60);padding:0 0.25rem;">${sanitise(cityLabel)}</span>
+            <button class="merken-btn saved-remove-btn" data-slug="${sanitise(ev.slug || '')}"
+                    aria-label="Merken aufheben: ${safeTitle}">
+              ${iconX} <span class="merken-label">Entfernen</span>
+            </button>
+          </div>
         </div>
-      </div>`;
+      </article>`;
     }).join('');
 
-    list.querySelectorAll('.saved-card-remove').forEach(btn => {
+    list.querySelectorAll('.saved-remove-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         const slug = btn.dataset.slug;
         setSaved(getSaved().filter(e => e.slug !== slug));
