@@ -47,7 +47,7 @@
       Die Meine-Events-Seite öffnet sich automatisch mit einer Importvorschau.
     </p>
 
-    <div class="qr-tm-canvas-wrap" id="qr-export-canvas"></div>
+    <div class="qr-tm-canvas-wrap"><canvas id="qr-export-canvas" width="256" height="256"></canvas></div>
 
     <p class="qr-tm-hint" id="qr-export-hint"></p>
 
@@ -198,36 +198,60 @@ function loadScript(src) {
 const QR_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js';
 
 function renderQRToCanvas(text, canvasEl) {
-  // qrcode.js needs a fresh wrapper div each time
   const wrapper = document.createElement('div');
-  wrapper.style.cssText = 'position:absolute;left:-9999px';
+  wrapper.style.cssText = 'position:fixed;left:-9999px;top:-9999px;width:256px;height:256px;';
   document.body.appendChild(wrapper);
 
   return new Promise(resolve => {
-    const qr = new window.QRCode(wrapper, {
-      text,
-      width: 256, height: 256,
-      colorDark: '#000000', colorLight: '#ffffff',
-      correctLevel: window.QRCode.CorrectLevel.M,
-    });
-    // qrcode.js renders async via setTimeout internally
-    setTimeout(() => {
-      const img = wrapper.querySelector('img') || wrapper.querySelector('canvas');
-      const ctx = canvasEl.getContext('2d');
-      canvasEl.width = 256; canvasEl.height = 256;
-      if (img && img.tagName === 'IMG') {
-        const i = new Image();
-        i.onload = () => { ctx.drawImage(i, 0, 0, 256, 256); document.body.removeChild(wrapper); resolve(); };
-        i.src = img.src;
-      } else if (img && img.tagName === 'CANVAS') {
-        ctx.drawImage(img, 0, 0, 256, 256);
+    try {
+      new window.QRCode(wrapper, {
+        text,
+        width: 256, height: 256,
+        colorDark: '#000000', colorLight: '#ffffff',
+        correctLevel: window.QRCode.CorrectLevel.M,
+      });
+    } catch(e) {
+      document.body.removeChild(wrapper);
+      resolve(); return;
+    }
+
+    let attempts = 0;
+    const poll = () => {
+      const srcCanvas = wrapper.querySelector('canvas');
+      const srcImg    = wrapper.querySelector('img');
+      attempts++;
+
+      if (srcCanvas && srcCanvas.width > 0) {
+        const ctx = canvasEl.getContext('2d');
+        canvasEl.width = 256; canvasEl.height = 256;
+        ctx.drawImage(srcCanvas, 0, 0, 256, 256);
         document.body.removeChild(wrapper);
-        resolve();
-      } else {
-        document.body.removeChild(wrapper);
-        resolve();
+        resolve(); return;
       }
-    }, 200);
+
+      if (srcImg && srcImg.complete && srcImg.naturalWidth > 0) {
+        const ctx = canvasEl.getContext('2d');
+        canvasEl.width = 256; canvasEl.height = 256;
+        ctx.drawImage(srcImg, 0, 0, 256, 256);
+        document.body.removeChild(wrapper);
+        resolve(); return;
+      }
+
+      if (srcImg && !srcImg.complete) {
+        srcImg.onload = () => {
+          const ctx = canvasEl.getContext('2d');
+          canvasEl.width = 256; canvasEl.height = 256;
+          ctx.drawImage(srcImg, 0, 0, 256, 256);
+          document.body.removeChild(wrapper);
+          resolve();
+        };
+        return;
+      }
+
+      if (attempts < 20) { setTimeout(poll, 100); }
+      else { document.body.removeChild(wrapper); resolve(); }
+    };
+    setTimeout(poll, 50);
   });
 }
 
@@ -253,7 +277,7 @@ async function renderExportPage(idx) {
   const total = qrChunks.length;
 
   // 1. Get/create a transfer code from push backend
-  let code = '------';
+  let code = null;
   let qrUrl = BASE_URL + '?import=' + encodeURIComponent(chunk);
   try {
     const res = await fetch(PUSH_URL + '/transfer/create', {
@@ -264,10 +288,13 @@ async function renderExportPage(idx) {
     if (res.ok) {
       const data = await res.json();
       code  = data.code;
-      qrUrl = BASE_URL + '?code=' + code; // shorter URL = simpler QR
+      qrUrl = BASE_URL + '?code=' + code;
+    } else {
+      console.warn('[QR] transfer/create returned', res.status);
+      exportStatus.textContent = 'Offline-Modus — QR direkt scannen';
     }
-  } catch {
-    // Fallback: encode full payload in URL (longer QR but still works)
+  } catch(e) {
+    console.warn('[QR] transfer/create failed:', e);
     exportStatus.textContent = 'Offline-Modus — QR direkt scannen';
   }
 
@@ -276,8 +303,8 @@ async function renderExportPage(idx) {
   exportCanvas.style.opacity = '1';
 
   // 3. Show code
-  exportCodeEl.textContent = code !== '------'
-    ? code.slice(0,3) + ' ' + code.slice(3)  // "482 931" formatting
+  exportCodeEl.textContent = code
+    ? code.slice(0,3) + ' ' + code.slice(3)
     : '—';
 
   // 4. Page nav
@@ -707,7 +734,7 @@ handleImportParams();
     background: #fff;
     display: flex; align-items: center; justify-content: center;
   }
-  .qr-tm-canvas-wrap canvas { display: block; width: 260px !important; height: 260px !important; }
+  .qr-tm-canvas-wrap canvas { display: block; width: 256px !important; height: 256px !important; image-rendering: pixelated; }
 
   /* ── Scanner ───────────────────────────────────────────────────────────── */
   .qr-scanner-wrap {
