@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-03T05:25:38.158154+02:00",
+  "generated_at": "2026-06-05T05:35:52.740788+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
+    "asperg_veranstaltungen",
     "glasperlenspiel",
-    "asperg_veranstaltungen"
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-06-02T10:08:39.472066+02:00",
-  "count_added": 81,
+  "previous_run": "2026-06-04T13:26:14.837087+02:00",
+  "count_added": 85,
   "count_removed": 0,
   "added": [
     {
@@ -127,6 +127,12 @@
     {
       "id": "872d103ce41c42a0",
       "title": "RepairCafe & UpcyclingWerkstatt",
+      "date_start": "2026-06-06",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "e80c0d356efc4fb5",
+      "title": "Feuerwehrfest der Feuerwehr Asperg",
       "date_start": "2026-06-06",
       "source": "asperg_veranstaltungen"
     },
@@ -491,9 +497,27 @@
       "source": "glasperlenspiel"
     },
     {
+      "id": "8976b421559c9988",
+      "title": "Theaterabend - Warum hat man dieses Leben",
+      "date_start": "2026-07-17",
+      "source": "glasperlenspiel"
+    },
+    {
       "id": "738e5166b390a760",
       "title": "unschaf",
       "date_start": "2026-09-11",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "f126d6eb4e576f5a",
+      "title": "LeseKonzert Marlene Dietrich",
+      "date_start": "2026-09-20",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "0c54e24e974e645d",
+      "title": "Romantik Pur",
+      "date_start": "2026-06-07",
       "source": "glasperlenspiel"
     }
   ],

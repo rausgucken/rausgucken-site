@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-03T05:25:38.159733+02:00",
+  "generated_at": "2026-06-05T05:35:52.741672+02:00",
   "city": "sachsenheim",
   "sources": [
     "sachsenheim_kultur",
-    "sachsenheim_museum",
-    "sachsenheim_library"
+    "sachsenheim_library",
+    "sachsenheim_museum"
   ],
-  "previous_run": "2026-06-02T10:08:39.479503+02:00",
+  "previous_run": "2026-06-04T13:26:14.845459+02:00",
   "count_added": 26,
   "count_removed": 0,
   "added": [
@@ -56,6 +56,12 @@
       "id": "96937df3cefd9a4e",
       "title": "Öffentliche Führung – „Alles für die Katz!?“ Künstler sehen Katzen",
       "date_start": "2026-05-17",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "5b580c9675317fe3",
+      "title": "Offener Gesprächskreis Demenz",
+      "date_start": null,
       "source": "sachsenheim_kultur"
     },
     {
@@ -159,12 +165,6 @@
       "title": "Öffentliche Führung – „Alles für die Katz!?“ Künstler sehen Katzen",
       "date_start": "2026-09-27",
       "source": "sachsenheim_museum"
-    },
-    {
-      "id": "5b580c9675317fe3",
-      "title": "Offener Gesprächskreis Demenz",
-      "date_start": null,
-      "source": "sachsenheim_kultur"
     }
   ],
   "removed": []

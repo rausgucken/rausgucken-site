@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-06-03T11:06:20.686560+02:00",
+  "scraped_at": "2026-06-05T05:35:52.782360+02:00",
   "city": "asperg",
-  "event_count": 73,
+  "event_count": 77,
   "flagged_count": 0,
   "expired_count": 8,
   "sources_scraped": [
@@ -10,24 +10,24 @@
     "glasperlenspiel"
   ],
   "source_counts": {
-    "asperg_veranstaltungen": 60,
+    "asperg_veranstaltungen": 61,
     "asperg_fuehrungen": 11,
-    "glasperlenspiel": 2
+    "glasperlenspiel": 5
   },
   "sources_failed": [],
-  "data_hash": "91a2594b31c8bdfa",
+  "data_hash": "1612c2f6f3c8e137",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 03.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 05.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "asperg_veranstaltungen": 1.0,
     "asperg_fuehrungen": 0.88,
-    "glasperlenspiel": 0.89
+    "glasperlenspiel": 0.91
   },
   "source_event_counts": {
-    "asperg_veranstaltungen": 60,
+    "asperg_veranstaltungen": 61,
     "asperg_fuehrungen": 11,
-    "glasperlenspiel": 2
+    "glasperlenspiel": 5
   },
   "count_drift_warnings": {}
 }

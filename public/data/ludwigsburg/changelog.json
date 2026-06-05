@@ -1,52 +1,78 @@
 {
-  "generated_at": "2026-06-03T05:25:38.157925+02:00",
+  "generated_at": "2026-06-05T05:35:52.740604+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "kunstverein_ausstellungen",
-    "demokratisches_zentrum",
-    "garnisonmuseum",
     "karlskaserne_veranstaltungen",
     "stabi",
-    "forum_schlosspark",
-    "museum",
-    "schloss",
-    "labyrinth",
+    "karlskaserne_ausstellungen",
     "kunstverein_veranstaltungen",
-    "karlskaserne_ausstellungen"
+    "demokratisches_zentrum",
+    "garnisonmuseum",
+    "schloss",
+    "museum",
+    "forum_schlosspark",
+    "kunstverein_ausstellungen",
+    "labyrinth"
   ],
-  "previous_run": "2026-06-02T10:08:39.469650+02:00",
-  "count_added": 18,
-  "count_removed": 9,
+  "previous_run": "2026-06-04T13:26:14.834542+02:00",
+  "count_added": 7,
+  "count_removed": 13,
   "added": [
     {
-      "id": "bec160e4a17244a5",
-      "title": "Kleine Prinzessinnen und Prinzen – große Regeln",
-      "date_start": "2026-11-21",
-      "source": "schloss"
+      "id": "a6439166304ac087",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-08",
+      "source": "museum"
     },
     {
-      "id": "71f3c3fc124c71d5",
-      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
+      "id": "7cfcc0330bbfc72a",
+      "title": "Sommerferienworkshop: Ballett kreativ in Bietigheim",
       "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
+      "source": "labyrinth"
     },
     {
-      "id": "9669620cdd829c87",
-      "title": "Sommerferienworkshop: Tiere, die es gar nicht gibt! aus Ton in Ludwigsburg",
+      "id": "dee560c65b65f510",
+      "title": "Sommerferienworkshop: Wackeldackel, Löwenhocker, Kistenlaster in Bietigheim",
+      "date_start": "2026-07-30",
+      "source": "labyrinth"
+    },
+    {
+      "id": "3c82353c1812e8c8",
+      "title": "Sommerferienworkshop: Zootiere aus Ton in Bietigheim",
+      "date_start": "2026-07-30",
+      "source": "labyrinth"
+    },
+    {
+      "id": "fb0371f7089bcfa0",
+      "title": "Sommerferienworkshop: Kunst im Wald in Bietigheim",
       "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
+      "source": "labyrinth"
     },
     {
-      "id": "dd2f05a1b9d6b282",
-      "title": "Sommerferienworkshop: Trickfilm in Stop-Motion-Technik in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "01e5a789121f8551",
+      "title": "Sommerferienworkshop: Hip Hop Streetdance in Bietigheim",
+      "date_start": "2026-08-03",
+      "source": "labyrinth"
     },
     {
-      "id": "3742085fdfbe6a6c",
-      "title": "Sommerferienworkshop: Prompt against the silence in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "df429daf48a0b9fc",
+      "title": "Petri Ala-Maunus | History an Utopia of a Landscape",
+      "date_start": "2026-06-26",
+      "source": "kunstverein_ausstellungen"
+    }
+  ],
+  "removed": [
+    {
+      "id": "e5e98c845e2d9951",
+      "title": "Ronald Cornelissen",
+      "date_start": "2026-04-11",
+      "source": "kunstverein_ausstellungen"
+    },
+    {
+      "id": "fd8e1591431127d3",
+      "title": "Aeree Sul",
+      "date_start": "2026-04-11",
+      "source": "kunstverein_ausstellungen"
     },
     {
       "id": "ba303ee285dd2597",
@@ -55,132 +81,64 @@
       "source": "kunstverein_veranstaltungen"
     },
     {
-      "id": "32d86720745d5d66",
-      "title": "09.07.2026 - 19:00 Uhr Künstler*innen-Stammtisch Altes Schulhaus Alt-Hoheneck Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Altes Schulhaus Alt-Hoheneck Keine Anmeldung erforderlich – einfach kommen!",
-      "date_start": "2026-07-09",
-      "source": "kunstverein_veranstaltungen"
-    },
-    {
-      "id": "8d8179a172cafe71",
-      "title": "12.11.2026 - 19:00 Uhr Künstler*innen-Stammtisch Altes Schulhaus Alt-Hoheneck Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Altes Schulhaus Alt-Hoheneck Keine Anmeldung erforderlich – einfach kommen!",
-      "date_start": "2026-11-12",
-      "source": "kunstverein_veranstaltungen"
-    },
-    {
-      "id": "0b7a9765630f5362",
-      "title": "Workshop: Comics zeichnen",
-      "date_start": "2026-08-04",
-      "source": "stabi"
-    },
-    {
-      "id": "7b38d33c216b0df0",
-      "title": "Workshop: Trickfilme gestalten",
-      "date_start": "2026-08-04",
-      "source": "stabi"
-    },
-    {
-      "id": "cbad36c84077954c",
-      "title": "Workshop: CAD & 3D-Druck",
-      "date_start": "2026-08-11",
-      "source": "stabi"
-    },
-    {
-      "id": "76f5842e7e10c0ed",
-      "title": "Workshop: Roboter programmieren",
-      "date_start": "2026-08-19",
-      "source": "stabi"
-    },
-    {
-      "id": "78e5fa4ff32da14c",
-      "title": "Roboter programmieren: Eltern-Kind-Workshop",
-      "date_start": "2026-08-27",
-      "source": "stabi"
-    },
-    {
-      "id": "558397077451405c",
-      "title": "Roboter programmieren: Eltern-Kind-Workshop",
-      "date_start": "2026-09-24",
-      "source": "stabi"
-    },
-    {
-      "id": "a5acc0c151bcdc89",
-      "title": "Roboter programmieren: Eltern-Kind-Workshop",
-      "date_start": "2026-11-19",
-      "source": "stabi"
-    },
-    {
-      "id": "b8285a88906eea60",
-      "title": "Spiel mit!: Spiel des Jahres 2026",
-      "date_start": "2026-11-26",
-      "source": "stabi"
-    },
-    {
-      "id": "73d63b228f945a9a",
-      "title": "Spiel mit!: Kennerspiel des Jahres 2026",
-      "date_start": "2026-12-03",
-      "source": "stabi"
-    },
-    {
-      "id": "d50c1eb62a007435",
-      "title": "Roboter programmieren: Eltern-Kind-Workshop",
-      "date_start": "2026-12-10",
-      "source": "stabi"
-    }
-  ],
-  "removed": [
-    {
-      "id": "5581170fde25a38a",
-      "title": "Wer schön sein will, muss leiden",
-      "date_start": "2026-06-02",
-      "source": "schloss"
-    },
-    {
-      "id": "57f9ab7e90d44558",
-      "title": "Treppauf, treppab",
-      "date_start": "2026-06-02",
-      "source": "schloss"
-    },
-    {
-      "id": "be39b7d4cebcc949",
-      "title": "03.06.2026 - 19:30 Uhr Jazzclub Ludwigsburg x Kunstverein Frank Eberle – Joel Locher | Duo Music Eine Kooperationsveranstaltung mit dem Jazzclub Ludwigsburg. Eintritt frei!",
+      "id": "9cbadb84d3c6267f",
+      "title": "Online-Workshop: Zeichentrickfilm",
       "date_start": "2026-06-03",
-      "source": "kunstverein_veranstaltungen"
+      "source": "stabi"
     },
     {
-      "id": "92e5f212fc5eb58f",
-      "title": "09.07.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
-      "date_start": "2026-07-09",
-      "source": "kunstverein_veranstaltungen"
+      "id": "f90ae7797a395aff",
+      "title": "Museumspause",
+      "date_start": "2026-06-03",
+      "source": "museum"
     },
     {
-      "id": "17b49e662773b4b1",
-      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "739b184e2286a2d6",
+      "title": "Der Schatz des Herzogs",
+      "date_start": "2026-06-03",
+      "source": "schloss"
     },
     {
-      "id": "11acdd44ad51d09d",
-      "title": "Sommerferienworkshop: Tiere, die es gar nicht gibt! aus Ton in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "ada8e350e5c3b8cf",
+      "title": "Workshop: Tonwerkstatt ab 6 Jahren",
+      "date_start": "2026-06-03",
+      "source": "labyrinth"
     },
     {
-      "id": "435e9005ceed1ab8",
-      "title": "Sommerferienworkshop: Trickfilm in Stop-Motion-Technik in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "d0e857b9b28a068d",
+      "title": "Sprechtreff Deutsch - ONLINE",
+      "date_start": "2026-06-03",
+      "source": "stabi"
     },
     {
-      "id": "d6a915d58c1dfc0f",
-      "title": "Sommerferienworkshop: Prompt against the silence in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "3e927fd93b795417",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-06-03",
+      "source": "stabi"
     },
     {
-      "id": "320ed017d3a977f0",
-      "title": "12.11.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
-      "date_start": "2026-11-12",
-      "source": "kunstverein_veranstaltungen"
+      "id": "e2eb2ebefa93b867",
+      "title": "LeseWerkstatt für Frauen und Mädchen",
+      "date_start": "2026-06-03",
+      "source": "stabi"
+    },
+    {
+      "id": "f3efd1207181b303",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-06-04",
+      "source": "schloss"
+    },
+    {
+      "id": "714867cacfd8ffaa",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-06-04",
+      "source": "schloss"
+    },
+    {
+      "id": "7b1c71a5d7281748",
+      "title": "Petri Ala-Maunus",
+      "date_start": "2026-06-26",
+      "source": "kunstverein_ausstellungen"
     }
   ]
 }
