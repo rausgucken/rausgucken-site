@@ -10,7 +10,6 @@ export async function GET() {
     { loc: `${siteUrl}/ludwigsburg/stadtbibliothek/`, priority: "0.8", changefreq: "weekly" },
     { loc: `${siteUrl}/ludwigsburg/labyrinth/`,       priority: "0.8", changefreq: "weekly" },
     { loc: `${siteUrl}/ludwigsburg/stadtmuseum/`,     priority: "0.8", changefreq: "weekly" },
-    { loc: `${siteUrl}/ludwigsburg/erleben/`,         priority: "0.7", changefreq: "weekly" },
   ];
   const urls = venuePages
     .map(
