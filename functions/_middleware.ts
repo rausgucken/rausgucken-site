@@ -27,5 +27,10 @@ export const onRequest: PagesFunction = async (context) => {
     return Response.redirect(newUrl.toString(), 301);
   }
 
+  // Enforce trailing slash on all paths (except files with extensions)
+  if (!url.pathname.endsWith('/') && !url.pathname.match(/\.[a-zA-Z0-9]+$/)) {
+    const newUrl = new URL(url.pathname + '/' + url.search, url.origin);
+    return Response.redirect(newUrl.toString(), 301);
+  }
   return context.next();
 };
