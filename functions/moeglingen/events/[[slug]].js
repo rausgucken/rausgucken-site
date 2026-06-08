@@ -7,12 +7,13 @@
 // Usage: GET /moeglingen/events/{slug}.ics
 // Rollback: remove this file — static Astro pages are unaffected.
 
-export async function onRequest({ request, env }) {
+export async function onRequest(context) {
+  const { request, env } = context;
   const url = new URL(request.url);
 
   // Only handle .ics requests — pass everything else to static Astro
   if (!url.pathname.endsWith(".ics")) {
-    return;   // undefined → CF Pages serves the static asset
+    return context.next();  // pass through to static Astro page
   }
 
   // Extract slug: strip /moeglingen/events/ prefix and .ics suffix
