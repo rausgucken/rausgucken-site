@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-06T16:05:40.226115+02:00",
+  "scraped_at": "2026-06-08T05:34:22.469055+02:00",
   "city": "boennigheim",
   "event_count": 52,
   "flagged_count": 0,
@@ -13,13 +13,21 @@
   "sources_failed": [],
   "data_hash": "d4811bce84355c63",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 06.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 08.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
-  "source_health": {
-    "boennigheim_stadtkalender": 1.0
-  },
-  "source_event_counts": {
-    "boennigheim_stadtkalender": 52
-  },
-  "count_drift_warnings": {}
+  "quality_report": {
+    "regression_pass_rate": 1.0,
+    "flagged_rate_current": 0.0,
+    "flagged_rate_4week_avg": null,
+    "trend": "insufficient_data",
+    "runtime_minutes": 204.2,
+    "runtime_delta_vs_baseline": 0.141,
+    "source_health": {
+      "boennigheim_stadtkalender": 1.0
+    },
+    "count_drift_warnings": {},
+    "quarantined_sources": [],
+    "status": "healthy",
+    "generated_at": "2026-06-08T05:52:16.022275+02:00"
+  }
 }

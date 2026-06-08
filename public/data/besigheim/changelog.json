@@ -1,23 +1,676 @@
 {
-  "generated_at": "2026-06-05T05:35:52.740604+02:00",
+  "generated_at": "2026-06-08T05:24:11.401882+02:00",
   "city": "ludwigsburg",
   "sources": [
     "karlskaserne_veranstaltungen",
-    "stabi",
-    "karlskaserne_ausstellungen",
-    "kunstverein_veranstaltungen",
-    "demokratisches_zentrum",
-    "garnisonmuseum",
     "schloss",
-    "museum",
     "forum_schlosspark",
-    "kunstverein_ausstellungen",
-    "labyrinth"
+    "stabi",
+    "garnisonmuseum",
+    "demokratisches_zentrum",
+    "labyrinth",
+    "musikhalle_lb"
   ],
-  "previous_run": "2026-06-04T13:26:14.834542+02:00",
-  "count_added": 7,
-  "count_removed": 13,
+  "previous_run": "2026-06-08T04:51:20.867764+02:00",
+  "count_added": 29,
+  "count_removed": 82,
   "added": [
+    {
+      "id": "a85dd148c198cd14",
+      "title": "Fest der Kinderrechte",
+      "date_start": "2026-06-28",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "3f61a26cabda4807",
+      "title": "Sommerferienworkshop: Abenteuer Manege! in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "2f3d4a7c7d5221e5",
+      "title": "Haake Festival 2026",
+      "date_start": "2026-09-25",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "a81bdf09841b76da",
+      "title": "29. Jugendkunstpreis Baden-Württemberg 2026 \"Zusammen\"",
+      "date_start": "2026-10-09",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "2fa4a44a741cff7f",
+      "title": "Candlelight: Taylor Swift",
+      "date_start": "2026-06-13",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "d261d938cd4488fd",
+      "title": "Candlelight: Rock Klassiker",
+      "date_start": "2026-06-13",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "b66749a3de1b0d84",
+      "title": "kapelle17",
+      "date_start": "2026-06-19",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "b31da829c43a4e69",
+      "title": "MIKIO",
+      "date_start": "2026-06-26",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "98b215b40f2242d9",
+      "title": "V-Lady & her Gang",
+      "date_start": "2026-07-03",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "abf4c22e04cae927",
+      "title": "Peter Lehel Quartet",
+      "date_start": "2026-07-10",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "f245bfbbb459ee5b",
+      "title": "Uli Binetsch Fusion 4",
+      "date_start": "2026-07-17",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "d63c827fa69591b9",
+      "title": "Blu(e)siana 2026 - all star blues",
+      "date_start": "2026-09-11",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "9e343a145271f825",
+      "title": "South Quartett",
+      "date_start": "2026-09-18",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "395cf811387239e4",
+      "title": "September",
+      "date_start": "2026-09-25",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "d9a0cfe6979cc292",
+      "title": "Cole’s Business",
+      "date_start": "2026-10-02",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "985620c4d73fc908",
+      "title": "Blank Page",
+      "date_start": "2026-10-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "d25bcc8d852b2c9c",
+      "title": "Jasmin Bayer Trio",
+      "date_start": "2026-10-16",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "1d738bc9b84ae906",
+      "title": "Rudelsingen",
+      "date_start": "2026-10-22",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "3aa8a9d870feac01",
+      "title": "Ruth Sabadino & Band feat. Werner Acker",
+      "date_start": "2026-10-23",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "7ae0e15628fb8223",
+      "title": "Session – Test the Jazz 68",
+      "date_start": "2026-11-06",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "be08bd62e6eb3c2e",
+      "title": "Lilly Thornton Band",
+      "date_start": "2026-11-13",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "5b1cad60c33f76b7",
+      "title": "MXDMCN The New Organ Trio",
+      "date_start": "2026-11-20",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "35ef3eece8675b3a",
+      "title": "Thomas Siffling Quintett – City Lights",
+      "date_start": "2026-11-27",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "6fa118ba4f79f02c",
+      "title": "Uni Big Band Stuttgart",
+      "date_start": "2026-12-04",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "1c6fd5d869975d7d",
+      "title": "Ull Möck Electrio",
+      "date_start": "2026-12-11",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "b59b0292384ca755",
+      "title": "VIVALDI - Die vier Jahreszeiten",
+      "date_start": "2026-12-15",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "d78f5f3afe81c887",
+      "title": "Lorenzo Petrocca Quartet",
+      "date_start": "2026-12-18",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "02745b1358f2d403",
+      "title": "Sommerferienworkshop: Tiergeschichten stempeln in Bietigheim",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "4d3efac45577d15e",
+      "title": "Sommerferienworkshop: Kunterbunter Meeresgarten in Bietigheim",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    }
+  ],
+  "removed": [
+    {
+      "id": "7c82aba616f7a699",
+      "title": "Ausstellung Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-05-03",
+      "source": "museum"
+    },
+    {
+      "id": "55a23adedea315ab",
+      "title": "Sister Act",
+      "date_start": "2026-05-29",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "f2c0016204ac7e3a",
+      "title": "Filmdreh und Setbau im Spiel – Machinima-Workshop mit Luanti",
+      "date_start": "2026-06-05",
+      "source": "stabi"
+    },
+    {
+      "id": "2b7b8d3b3b443e20",
+      "title": "Gaming Friday",
+      "date_start": "2026-06-05",
+      "source": "stabi"
+    },
+    {
+      "id": "440b8911134430ce",
+      "title": "Caché = verborgen",
+      "date_start": "2026-06-05",
+      "source": "schloss"
+    },
+    {
+      "id": "896c258f74bfc353",
+      "title": "MINT meets Krimi: Eine interaktive Detektivgeschichte",
+      "date_start": "2026-06-06",
+      "source": "stabi"
+    },
+    {
+      "id": "46f28d3d20ed10ab",
+      "title": "Vom Gewölbe zum Genuss",
+      "date_start": "2026-06-06",
+      "source": "schloss"
+    },
+    {
+      "id": "219fb320bcb2e076",
+      "title": "Bilderbuchsamstag",
+      "date_start": "2026-06-06",
+      "source": "stabi"
+    },
+    {
+      "id": "9b17bb499acf8a32",
+      "title": "Workshop: Ein Esel aus Ton für Kinder ab 7 Jahren in Ludwigsburg",
+      "date_start": "2026-06-06",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "def0a5e04e667ff5",
+      "title": "Melodic Wine Ludwigsburg",
+      "date_start": "2026-06-06",
+      "source": "schloss"
+    },
+    {
+      "id": "cebfdf93662edf1f",
+      "title": "Meine erste Schlossführung",
+      "date_start": "2026-06-07",
+      "source": "schloss"
+    },
+    {
+      "id": "3e244c700ef745d2",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-06-07",
+      "source": "schloss"
+    },
+    {
+      "id": "8b31366535edc837",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-06-07",
+      "source": "schloss"
+    },
+    {
+      "id": "bff2378eb082564e",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-06-10",
+      "source": "museum"
+    },
+    {
+      "id": "3a145b8ab4bb16d8",
+      "title": "11.06.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-06-11",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "945e88777b891a76",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-06-11",
+      "source": "museum"
+    },
+    {
+      "id": "a83f200afe175482",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2026-06-17",
+      "source": "museum"
+    },
+    {
+      "id": "73d6a1a915b409b4",
+      "title": "Gastrosophie-Abend",
+      "date_start": "2026-06-25",
+      "source": "museum"
+    },
+    {
+      "id": "b29129e4abe8a453",
+      "title": "Luciano Mazzo",
+      "date_start": "2026-06-26",
+      "source": "kunstverein_ausstellungen"
+    },
+    {
+      "id": "df429daf48a0b9fc",
+      "title": "Petri Ala-Maunus | History an Utopia of a Landscape",
+      "date_start": "2026-06-26",
+      "source": "kunstverein_ausstellungen"
+    },
+    {
+      "id": "691173904c17a73f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-06-27",
+      "source": "museum"
+    },
+    {
+      "id": "7ff033032127df4b",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-06-27",
+      "source": "museum"
+    },
+    {
+      "id": "9358f4850d9efd9e",
+      "title": "Fest der Kinderrechte",
+      "date_start": "2026-06-28",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "650ef2c04fb838df",
+      "title": "Little America – Fotografie Jürgen Schadeberg",
+      "date_start": "2026-07-01",
+      "source": "museum"
+    },
+    {
+      "id": "4685c6bd35a6a4c2",
+      "title": "Museumspause",
+      "date_start": "2026-07-01",
+      "source": "museum"
+    },
+    {
+      "id": "9d142bd8d3c097eb",
+      "title": "Vortrag \"Little America\"",
+      "date_start": "2026-07-01",
+      "source": "museum"
+    },
+    {
+      "id": "ed37d6dc04039758",
+      "title": "Offenes Atelier: Tee von der Blumenwiese, Sabine Deutscher",
+      "date_start": "2026-07-02",
+      "source": "museum"
+    },
+    {
+      "id": "7c1a1baefcc024f6",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-07-08",
+      "source": "museum"
+    },
+    {
+      "id": "32d86720745d5d66",
+      "title": "09.07.2026 - 19:00 Uhr Künstler*innen-Stammtisch Altes Schulhaus Alt-Hoheneck Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Altes Schulhaus Alt-Hoheneck Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-07-09",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "b6aeee1a8e6bce6a",
+      "title": "Musik im MIK",
+      "date_start": "2026-07-11",
+      "source": "museum"
+    },
+    {
+      "id": "2aadcf04324bb79a",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-07-16",
+      "source": "museum"
+    },
+    {
+      "id": "e03dcd037732fb3b",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-07-25",
+      "source": "museum"
+    },
+    {
+      "id": "ac517db39d41b08c",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-07-25",
+      "source": "museum"
+    },
+    {
+      "id": "6d9cdd7e1756577f",
+      "title": "Sommerferienworkshop: Zootiere aus Ton in Bietigheim",
+      "date_start": "2026-07-30",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "08c2426ec3c063d6",
+      "title": "Sommerferienworkshop: Abenteuer Manege! in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "labyrinth"
+    },
+    {
+      "id": "84515f699269c9bc",
+      "title": "Museumspause",
+      "date_start": "2026-08-05",
+      "source": "museum"
+    },
+    {
+      "id": "146f8552056cda36",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-08-12",
+      "source": "museum"
+    },
+    {
+      "id": "d19448f369528203",
+      "title": "13.08.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-08-13",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "51a4f0cb4be13889",
+      "title": "Ferienworkshop Museumsbuch interaktiv",
+      "date_start": "2026-08-14",
+      "source": "museum"
+    },
+    {
+      "id": "c48034e537af9ed5",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-08-29",
+      "source": "museum"
+    },
+    {
+      "id": "a8cbbcf36745b299",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-08-29",
+      "source": "museum"
+    },
+    {
+      "id": "28a5712aa3d23bcf",
+      "title": "Sommerferienworkshop: Bühne frei! in Bietigheim",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "412a38bbfbc19241",
+      "title": "Museumspause",
+      "date_start": "2026-09-02",
+      "source": "museum"
+    },
+    {
+      "id": "04a80dec6ba6d24d",
+      "title": "Sommerferienworkshop: An die Farben - fertig - los! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "33db71f4708977da",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-09-09",
+      "source": "museum"
+    },
+    {
+      "id": "278e40f118d888a9",
+      "title": "10.09.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-09-10",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "da91c6d4fe2f0d58",
+      "title": "Tag des Offenen Denkmals",
+      "date_start": "2026-09-13",
+      "source": "museum"
+    },
+    {
+      "id": "1da712de65240f53",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2026-09-16",
+      "source": "museum"
+    },
+    {
+      "id": "937f51ce6917680b",
+      "title": "Offenes Atelier: Origami, Regina Ille-Kopp",
+      "date_start": "2026-09-17",
+      "source": "museum"
+    },
+    {
+      "id": "5fabfc91b15454d2",
+      "title": "17.09.2026 - 19:30 Uhr Jazzclub Ludwigsburg x Kunstverein Les Bons Amis Eine Kooperationsveranstaltung mit dem Jazzclub Ludwigsburg. Eintritt frei!",
+      "date_start": "2026-09-17",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "a321ac78d9c91527",
+      "title": "Gastrosophie-Abend",
+      "date_start": "2026-09-24",
+      "source": "museum"
+    },
+    {
+      "id": "778b66783e085b80",
+      "title": "Haake Festival 2026",
+      "date_start": "2026-09-25",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "5f0f28478d262af4",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-09-26",
+      "source": "museum"
+    },
+    {
+      "id": "6f946ca5a815342c",
+      "title": "Zimoun",
+      "date_start": "2026-10-02",
+      "source": "kunstverein_ausstellungen"
+    },
+    {
+      "id": "e2c4748b0c75eea3",
+      "title": "Kohler & Lass | Plateaus",
+      "date_start": "2026-10-02",
+      "source": "kunstverein_ausstellungen"
+    },
+    {
+      "id": "1ad591165ba69227",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-06",
+      "source": "museum"
+    },
+    {
+      "id": "10574e50c47e9a2d",
+      "title": "Museumspause",
+      "date_start": "2026-10-07",
+      "source": "museum"
+    },
+    {
+      "id": "5ab192944bc97e86",
+      "title": "29. Jugendkunstpreis Baden-Württemberg 2026 \"Zusammen\"",
+      "date_start": "2026-10-09",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "d47a92c5185c1929",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-13",
+      "source": "museum"
+    },
+    {
+      "id": "50d1b8bcae088f0f",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-10-14",
+      "source": "museum"
+    },
+    {
+      "id": "2185c51e5683694c",
+      "title": "15.10.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-10-15",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "fffeb549fd24639b",
+      "title": "Mitmach-Ausstellung flott, flott!",
+      "date_start": "2026-10-17",
+      "source": "museum"
+    },
+    {
+      "id": "5beb0ee8eb08f214",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-20",
+      "source": "museum"
+    },
+    {
+      "id": "2c0921e304b82ec4",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2026-10-21",
+      "source": "museum"
+    },
+    {
+      "id": "c170b028731594af",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-10-24",
+      "source": "museum"
+    },
+    {
+      "id": "33c73002bed4f546",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-27",
+      "source": "museum"
+    },
+    {
+      "id": "19b34a6bd1f128f7",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-10-31",
+      "source": "museum"
+    },
+    {
+      "id": "744c68f84155ddb4",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-03",
+      "source": "museum"
+    },
+    {
+      "id": "cc3cacc7ccb69d7b",
+      "title": "Museumspause",
+      "date_start": "2026-11-04",
+      "source": "museum"
+    },
+    {
+      "id": "746f98c5fe1bfba3",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-05",
+      "source": "museum"
+    },
+    {
+      "id": "503013994c307868",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-10",
+      "source": "museum"
+    },
+    {
+      "id": "d8b7431bc4a684b1",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-11-11",
+      "source": "museum"
+    },
+    {
+      "id": "8d8179a172cafe71",
+      "title": "12.11.2026 - 19:00 Uhr Künstler*innen-Stammtisch Altes Schulhaus Alt-Hoheneck Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Altes Schulhaus Alt-Hoheneck Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-11-12",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "3a07be9ff60f3ffd",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-17",
+      "source": "museum"
+    },
+    {
+      "id": "22f9f9b321aa01e3",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-24",
+      "source": "museum"
+    },
+    {
+      "id": "3e6569c50955cf0f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
+      "id": "1be2100766f9975a",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
+      "id": "ceffd17f4f8fa9ec",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-01",
+      "source": "museum"
+    },
+    {
+      "id": "0200632eb9bc01e9",
+      "title": "Museumspause",
+      "date_start": "2026-12-02",
+      "source": "museum"
+    },
+    {
+      "id": "5d8d68db59922e1f",
+      "title": "03.12.2026 - 19:30 Uhr Jazzclub Ludwigsburg x Kunstverein DUO - Albe Mayer-Mikosch und Uli Gutscher Eine Kooperationsveranstaltung mit dem Jazzclub Ludwigsburg. Eintritt frei!",
+      "date_start": "2026-12-03",
+      "source": "kunstverein_veranstaltungen"
+    },
     {
       "id": "a6439166304ac087",
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
@@ -25,120 +678,10 @@
       "source": "museum"
     },
     {
-      "id": "7cfcc0330bbfc72a",
-      "title": "Sommerferienworkshop: Ballett kreativ in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
-    },
-    {
-      "id": "dee560c65b65f510",
-      "title": "Sommerferienworkshop: Wackeldackel, Löwenhocker, Kistenlaster in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
-    },
-    {
-      "id": "3c82353c1812e8c8",
-      "title": "Sommerferienworkshop: Zootiere aus Ton in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
-    },
-    {
-      "id": "fb0371f7089bcfa0",
-      "title": "Sommerferienworkshop: Kunst im Wald in Bietigheim",
-      "date_start": "2026-08-03",
-      "source": "labyrinth"
-    },
-    {
-      "id": "01e5a789121f8551",
-      "title": "Sommerferienworkshop: Hip Hop Streetdance in Bietigheim",
-      "date_start": "2026-08-03",
-      "source": "labyrinth"
-    },
-    {
-      "id": "df429daf48a0b9fc",
-      "title": "Petri Ala-Maunus | History an Utopia of a Landscape",
-      "date_start": "2026-06-26",
-      "source": "kunstverein_ausstellungen"
-    }
-  ],
-  "removed": [
-    {
-      "id": "e5e98c845e2d9951",
-      "title": "Ronald Cornelissen",
-      "date_start": "2026-04-11",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "fd8e1591431127d3",
-      "title": "Aeree Sul",
-      "date_start": "2026-04-11",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "ba303ee285dd2597",
-      "title": "03.06.2026 - 19:30 Uhr Jazzclub Ludwigsburg x Kunstverein Frank Eberle – Yaron Stavi | Duo Music Eine Kooperationsveranstaltung mit dem Jazzclub Ludwigsburg. Eintritt frei!",
-      "date_start": "2026-06-03",
+      "id": "34e4f89d7220d7d9",
+      "title": "10.12.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-12-10",
       "source": "kunstverein_veranstaltungen"
-    },
-    {
-      "id": "9cbadb84d3c6267f",
-      "title": "Online-Workshop: Zeichentrickfilm",
-      "date_start": "2026-06-03",
-      "source": "stabi"
-    },
-    {
-      "id": "f90ae7797a395aff",
-      "title": "Museumspause",
-      "date_start": "2026-06-03",
-      "source": "museum"
-    },
-    {
-      "id": "739b184e2286a2d6",
-      "title": "Der Schatz des Herzogs",
-      "date_start": "2026-06-03",
-      "source": "schloss"
-    },
-    {
-      "id": "ada8e350e5c3b8cf",
-      "title": "Workshop: Tonwerkstatt ab 6 Jahren",
-      "date_start": "2026-06-03",
-      "source": "labyrinth"
-    },
-    {
-      "id": "d0e857b9b28a068d",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-06-03",
-      "source": "stabi"
-    },
-    {
-      "id": "3e927fd93b795417",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-06-03",
-      "source": "stabi"
-    },
-    {
-      "id": "e2eb2ebefa93b867",
-      "title": "LeseWerkstatt für Frauen und Mädchen",
-      "date_start": "2026-06-03",
-      "source": "stabi"
-    },
-    {
-      "id": "f3efd1207181b303",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-06-04",
-      "source": "schloss"
-    },
-    {
-      "id": "714867cacfd8ffaa",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-06-04",
-      "source": "schloss"
-    },
-    {
-      "id": "7b1c71a5d7281748",
-      "title": "Petri Ala-Maunus",
-      "date_start": "2026-06-26",
-      "source": "kunstverein_ausstellungen"
     }
   ]
 }

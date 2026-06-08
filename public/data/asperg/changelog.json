@@ -1,525 +1,316 @@
 {
-  "generated_at": "2026-06-05T05:35:52.740788+02:00",
-  "city": "asperg",
+  "generated_at": "2026-06-08T01:16:36.460004+02:00",
+  "city": "ludwigsburg",
   "sources": [
-    "asperg_veranstaltungen",
-    "glasperlenspiel",
-    "asperg_fuehrungen"
+    "schloss",
+    "labyrinth",
+    "stabi",
+    "museum",
+    "karlskaserne_veranstaltungen",
+    "demokratisches_zentrum",
+    "forum_schlosspark",
+    "musikhalle_lb",
+    "garnisonmuseum"
   ],
-  "previous_run": "2026-06-04T13:26:14.837087+02:00",
-  "count_added": 85,
-  "count_removed": 0,
+  "previous_run": "2026-06-07T23:55:32.696601+02:00",
+  "count_added": 26,
+  "count_removed": 23,
   "added": [
     {
-      "id": "df2fb65f3b7fecca",
-      "title": "Asperg lecker – Stadtführung mit kulturellen und kulinarischen Häppchen",
-      "date_start": null,
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "e8852c1be0ce91a4",
-      "title": "Stadtführung",
-      "date_start": "2026-04-19",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "cc01189329de5a02",
-      "title": "Lost places –führung durch Altasperg",
-      "date_start": "2026-04-26",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "facf4a9de3005998",
-      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
-      "date_start": "2026-04-30",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "69e61ca48f5f6308",
-      "title": "Asperg lecker – Stadtführung mit kulturellen und kulinarischen Häppchen",
-      "date_start": "2026-05-08",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "a1d3caa2ddd5bcd2",
-      "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
-      "date_start": "2026-05-10",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "b9bcebddbb7ed948",
-      "title": "Int. Museumstag „Geschichte entdecken“ - Führung",
-      "date_start": "2026-05-17",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "4c133ece691db010",
-      "title": "Weinbergführung",
-      "date_start": "2026-05-17",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "21b68e03fd010efa",
-      "title": "Gut zu Fuß",
-      "date_start": "2026-06-07",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "7943577b1d807506",
-      "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
-      "date_start": "2026-06-14",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "01f363d327e998e5",
-      "title": "Stadtführung",
+      "id": "a85dd148c198cd14",
+      "title": "Fest der Kinderrechte",
       "date_start": "2026-06-28",
-      "source": "asperg_fuehrungen"
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "c794da088fe3c73b",
-      "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
-      "date_start": "2026-07-05",
-      "source": "asperg_fuehrungen"
+      "id": "2f3d4a7c7d5221e5",
+      "title": "Haake Festival 2026",
+      "date_start": "2026-09-25",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "9da9ca9c1a7476e8",
-      "title": "Auf der Flucht – Asperger Fluchtgeschichten",
-      "date_start": null,
-      "source": "asperg_fuehrungen"
+      "id": "a81bdf09841b76da",
+      "title": "29. Jugendkunstpreis Baden-Württemberg 2026 \"Zusammen\"",
+      "date_start": "2026-10-09",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "10d425a272fda171",
-      "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
-      "date_start": "2026-07-26",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "52178d60414209cc",
-      "title": "Black stories – Asperg's dunkle Seite",
-      "date_start": null,
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "ee6de72c50e669dd",
-      "title": "Gefängnis-Geschichten vom Hohenasperg",
-      "date_start": "2026-09-27",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "8852b65c7ff4a9cb",
-      "title": "Tag der dt. Einheit - Ein Gang über die schwäbische Bastille",
-      "date_start": "2025-10-03",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "c588a60b9c50366f",
-      "title": "Deutsch-Französische Begegnungen",
-      "date_start": "2026-10-11",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "36736769b14ffb67",
-      "title": "Black stories 2.0 – Tatort vor der Haustür",
-      "date_start": "2026-11-15",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "872d103ce41c42a0",
-      "title": "RepairCafe & UpcyclingWerkstatt",
-      "date_start": "2026-06-06",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "e80c0d356efc4fb5",
-      "title": "Feuerwehrfest der Feuerwehr Asperg",
-      "date_start": "2026-06-06",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "fa5151db8c899a95",
-      "title": "Führung „Gut zu Fuß“ - Vom Rathaus zum Schubartturm",
-      "date_start": "2026-06-07",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "ee6b61ce41a6b932",
-      "title": "Festabend \"50 Jahre Stadtbücherei\"",
-      "date_start": "2026-06-09",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "42008e24546d7055",
-      "title": "Jubiläumswochen \"50 Jahre Stadtbücherei\"",
-      "date_start": "2026-06-09",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "e856505b9554254d",
-      "title": "Bilderbuchkino",
+      "id": "2fa4a44a741cff7f",
+      "title": "Candlelight: Taylor Swift",
       "date_start": "2026-06-13",
-      "source": "asperg_veranstaltungen"
+      "source": "musikhalle_lb"
     },
     {
-      "id": "fbff2be851c9c314",
-      "title": "Führung - Ein Gang über die schwäbische Bastille",
-      "date_start": "2026-06-14",
-      "source": "asperg_veranstaltungen"
+      "id": "d261d938cd4488fd",
+      "title": "Candlelight: Rock Klassiker",
+      "date_start": "2026-06-13",
+      "source": "musikhalle_lb"
     },
     {
-      "id": "34cf656bc43dcd24",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-06-17",
-      "source": "asperg_veranstaltungen"
+      "id": "b66749a3de1b0d84",
+      "title": "kapelle17",
+      "date_start": "2026-06-19",
+      "source": "musikhalle_lb"
     },
     {
-      "id": "788a59f9bd973f74",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-06-20",
-      "source": "asperg_veranstaltungen"
+      "id": "b31da829c43a4e69",
+      "title": "MIKIO",
+      "date_start": "2026-06-26",
+      "source": "musikhalle_lb"
     },
     {
-      "id": "15de645607eb471f",
-      "title": "Bücherei-Fest \"50 Jahre Stadtbücherei\"",
-      "date_start": "2026-06-20",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "62fe987458281678",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-06-27",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "00102568d86a2109",
-      "title": "Hocketse im Kirchgarten",
-      "date_start": "2026-06-27",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "a6aae9e43a62c028",
-      "title": "Theater – Omelette Surprise",
-      "date_start": "2026-06-27",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "305157e849060bdd",
-      "title": "Fahrradtour auf dem Keltenweg",
-      "date_start": "2026-06-28",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "d2a4ad3781e2348d",
-      "title": "Stadtführung Asperg",
-      "date_start": "2026-06-28",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "c2a32b1b77ef1eca",
-      "title": "Theater – Omelette Surprise",
-      "date_start": "2026-06-28",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "f08b4ab64db6c2e9",
-      "title": "Jam Session – Die Glasperlenspieler",
+      "id": "98b215b40f2242d9",
+      "title": "V-Lady & her Gang",
       "date_start": "2026-07-03",
-      "source": "asperg_veranstaltungen"
+      "source": "musikhalle_lb"
     },
     {
-      "id": "777e1bf515b8d79e",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-07-04",
-      "source": "asperg_veranstaltungen"
+      "id": "abf4c22e04cae927",
+      "title": "Peter Lehel Quartet",
+      "date_start": "2026-07-10",
+      "source": "musikhalle_lb"
     },
     {
-      "id": "58e910e13de16b47",
-      "title": "RepairCafe & UpcyclingWerkstatt",
-      "date_start": "2026-07-04",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "7480fed7a5ead4fe",
-      "title": "Führung - Ein Gang über die schwäbische Bastille",
-      "date_start": "2026-07-05",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "345b9ace364d3b8f",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-07-11",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "c97c9299ae993a2c",
-      "title": "Start HEISS AUF LESEN 2026",
-      "date_start": "2026-07-14",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "7162b847ba97ae03",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-07-15",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "77aa552f076edc9b",
-      "title": "Führung „Auf der Flucht“ – Asperger Fluchtgeschichten",
+      "id": "f245bfbbb459ee5b",
+      "title": "Uli Binetsch Fusion 4",
       "date_start": "2026-07-17",
-      "source": "asperg_veranstaltungen"
+      "source": "musikhalle_lb"
     },
     {
-      "id": "d43507fcf9629f8a",
-      "title": "Altpapiersammlung",
-      "date_start": "2026-07-18",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "be62322e1aa7439d",
-      "title": "Gartenfest unter den Apfelbäumen",
-      "date_start": "2026-07-18",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "d29722d7ca35b842",
-      "title": "Gartenfest unter den Apfelbäumen",
-      "date_start": "2026-07-19",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "653e513d662eb62d",
-      "title": "Theater – Omelette Surprise",
-      "date_start": "2026-07-19",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "5fc3608cddb6cbd9",
-      "title": "Gartenfest unter den Apfelbäumen",
-      "date_start": "2026-07-20",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "98b31acdc7981f07",
-      "title": "Stadtfest",
-      "date_start": "2026-07-25",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "18fd0547863b8a7f",
-      "title": "Führung - Ein Gang über die schwäbische Bastille",
-      "date_start": "2026-07-26",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "42e8b9b700375fa4",
-      "title": "Stadtfest",
-      "date_start": "2026-07-26",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "c00f42c763c220db",
-      "title": "RepairCafe & UpcyclingWerkstatt",
-      "date_start": "2026-08-01",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "cfb7a1d4f3285a59",
-      "title": "Abendliche Stadtführung",
-      "date_start": "2026-08-21",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "91c817ac2b98afa9",
-      "title": "RepairCafe & UpcyclingWerkstatt",
-      "date_start": "2026-09-05",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "db20d3b25710e910",
-      "title": "Führung - Ein Gang über die schwäbische Bastille",
-      "date_start": "2026-09-13",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "b789d5a392af004a",
-      "title": "„Geschichte entdecken“ Führung auf dem Hohenasperg",
-      "date_start": "2026-09-13",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "58f9d0028a99db0f",
-      "title": "Führung für Kinder auf dem Hohenasperg",
-      "date_start": "2026-09-13",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "de74dbefbfc55652",
-      "title": "Theater – Omelette Surprise",
-      "date_start": "2026-09-13",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "3b49e9e4b85a50d4",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-09-16",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "62f74ea6e7c3cb7d",
-      "title": "Führung - \"Asperg lecker\"",
-      "date_start": "2026-09-18",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "8a48f3290e3696bf",
-      "title": "Führung „Black stories“ – Asperg’s dunkle Seite",
-      "date_start": "2026-09-20",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "6b7d4ec0b1bdf98e",
-      "title": "Theater – Omelette Surprise",
-      "date_start": "2026-09-26",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "bd40e7e48e387091",
-      "title": "Führung - Ein Gang über die schwäbische Bastille",
-      "date_start": "2026-10-03",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "788588b7deb08ff6",
-      "title": "RepairCafe & UpcyclingWerkstatt",
-      "date_start": "2026-10-03",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "2355691c5cb09536",
-      "title": "Kirbe",
-      "date_start": "2026-10-04",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "ce0aaa619c146173",
-      "title": "Führung \"Deutsch-Französische Begegnungen auf dem Hohenasperg\"",
-      "date_start": "2026-10-11",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "50deb37094b954d0",
-      "title": "„Wengert, Wahn und Weiberzeche“-Weinbergführung",
-      "date_start": "2026-10-11",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "88ec6510698aacd6",
-      "title": "Altpapiersammlung",
-      "date_start": "2026-10-17",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "75bbac78e3e5a190",
-      "title": "Führung Black stories 2.0 – Tatort vor der Haustür\"",
-      "date_start": "2026-10-18",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "28ec23c5f7b2def8",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-10-21",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "d6957269f1478034",
-      "title": "Vortrag \"Leben und Ernährung der Kelten\"",
-      "date_start": "2026-10-22",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "8feb50a6d3dbe248",
-      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
-      "date_start": "2026-10-31",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "b484514044fc98ec",
-      "title": "RepairCafe & UpcyclingWerkstatt",
-      "date_start": "2026-11-07",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "099fd204ce66f3be",
-      "title": "„Geschichte entdecken“ Führung auf dem Hohenasperg",
-      "date_start": "2026-11-08",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "827512381b707a98",
-      "title": "Führung „Black stories“ – Asperg’s dunkle Seite",
-      "date_start": "2026-11-08",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "79a1e350e534f45a",
-      "title": "Hohenasperg „Black stories 2.0 – Tatort vor der Haustür“",
-      "date_start": "2026-11-15",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "37a0c0ac73568a41",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-11-18",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "b93bdf0421a4e401",
-      "title": "Jahreskonzert",
-      "date_start": "2026-11-21",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "de429347bcae860a",
-      "title": "RepairCafe & UpcyclingWerkstatt",
-      "date_start": "2026-12-05",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "1b14be7578c4f3e0",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-12-09",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "a81cb1714ea3fc17",
-      "title": "Humorfest mit Ernst Mantel und Werner Koczwara",
-      "date_start": null,
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "8976b421559c9988",
-      "title": "Theaterabend - Warum hat man dieses Leben",
-      "date_start": "2026-07-17",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "738e5166b390a760",
-      "title": "unschaf",
+      "id": "d63c827fa69591b9",
+      "title": "Blu(e)siana 2026 - all star blues",
       "date_start": "2026-09-11",
-      "source": "glasperlenspiel"
+      "source": "musikhalle_lb"
     },
     {
-      "id": "f126d6eb4e576f5a",
-      "title": "LeseKonzert Marlene Dietrich",
-      "date_start": "2026-09-20",
-      "source": "glasperlenspiel"
+      "id": "9e343a145271f825",
+      "title": "South Quartett",
+      "date_start": "2026-09-18",
+      "source": "musikhalle_lb"
     },
     {
-      "id": "0c54e24e974e645d",
-      "title": "Romantik Pur",
-      "date_start": "2026-06-07",
-      "source": "glasperlenspiel"
+      "id": "395cf811387239e4",
+      "title": "September",
+      "date_start": "2026-09-25",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "d9a0cfe6979cc292",
+      "title": "Cole’s Business",
+      "date_start": "2026-10-02",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "985620c4d73fc908",
+      "title": "Blank Page",
+      "date_start": "2026-10-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "d25bcc8d852b2c9c",
+      "title": "Jasmin Bayer Trio",
+      "date_start": "2026-10-16",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "1d738bc9b84ae906",
+      "title": "Rudelsingen",
+      "date_start": "2026-10-22",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "3aa8a9d870feac01",
+      "title": "Ruth Sabadino & Band feat. Werner Acker",
+      "date_start": "2026-10-23",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "7ae0e15628fb8223",
+      "title": "Session – Test the Jazz 68",
+      "date_start": "2026-11-06",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "be08bd62e6eb3c2e",
+      "title": "Lilly Thornton Band",
+      "date_start": "2026-11-13",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "5b1cad60c33f76b7",
+      "title": "MXDMCN The New Organ Trio",
+      "date_start": "2026-11-20",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "35ef3eece8675b3a",
+      "title": "Thomas Siffling Quintett – City Lights",
+      "date_start": "2026-11-27",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "6fa118ba4f79f02c",
+      "title": "Uni Big Band Stuttgart",
+      "date_start": "2026-12-04",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "1c6fd5d869975d7d",
+      "title": "Ull Möck Electrio",
+      "date_start": "2026-12-11",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "b59b0292384ca755",
+      "title": "VIVALDI - Die vier Jahreszeiten",
+      "date_start": "2026-12-15",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "d78f5f3afe81c887",
+      "title": "Lorenzo Petrocca Quartet",
+      "date_start": "2026-12-18",
+      "source": "musikhalle_lb"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "f2c0016204ac7e3a",
+      "title": "Filmdreh und Setbau im Spiel – Machinima-Workshop mit Luanti",
+      "date_start": "2026-06-05",
+      "source": "stabi"
+    },
+    {
+      "id": "2b7b8d3b3b443e20",
+      "title": "Gaming Friday",
+      "date_start": "2026-06-05",
+      "source": "stabi"
+    },
+    {
+      "id": "440b8911134430ce",
+      "title": "Caché = verborgen",
+      "date_start": "2026-06-05",
+      "source": "schloss"
+    },
+    {
+      "id": "896c258f74bfc353",
+      "title": "MINT meets Krimi: Eine interaktive Detektivgeschichte",
+      "date_start": "2026-06-06",
+      "source": "stabi"
+    },
+    {
+      "id": "46f28d3d20ed10ab",
+      "title": "Vom Gewölbe zum Genuss",
+      "date_start": "2026-06-06",
+      "source": "schloss"
+    },
+    {
+      "id": "219fb320bcb2e076",
+      "title": "Bilderbuchsamstag",
+      "date_start": "2026-06-06",
+      "source": "stabi"
+    },
+    {
+      "id": "def0a5e04e667ff5",
+      "title": "Melodic Wine Ludwigsburg",
+      "date_start": "2026-06-06",
+      "source": "schloss"
+    },
+    {
+      "id": "3a145b8ab4bb16d8",
+      "title": "11.06.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-06-11",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "b29129e4abe8a453",
+      "title": "Luciano Mazzo",
+      "date_start": "2026-06-26",
+      "source": "kunstverein_ausstellungen"
+    },
+    {
+      "id": "df429daf48a0b9fc",
+      "title": "Petri Ala-Maunus | History an Utopia of a Landscape",
+      "date_start": "2026-06-26",
+      "source": "kunstverein_ausstellungen"
+    },
+    {
+      "id": "9358f4850d9efd9e",
+      "title": "Fest der Kinderrechte",
+      "date_start": "2026-06-28",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "32d86720745d5d66",
+      "title": "09.07.2026 - 19:00 Uhr Künstler*innen-Stammtisch Altes Schulhaus Alt-Hoheneck Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Altes Schulhaus Alt-Hoheneck Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-07-09",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "d19448f369528203",
+      "title": "13.08.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-08-13",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "278e40f118d888a9",
+      "title": "10.09.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-09-10",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "5fabfc91b15454d2",
+      "title": "17.09.2026 - 19:30 Uhr Jazzclub Ludwigsburg x Kunstverein Les Bons Amis Eine Kooperationsveranstaltung mit dem Jazzclub Ludwigsburg. Eintritt frei!",
+      "date_start": "2026-09-17",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "778b66783e085b80",
+      "title": "Haake Festival 2026",
+      "date_start": "2026-09-25",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "6f946ca5a815342c",
+      "title": "Zimoun",
+      "date_start": "2026-10-02",
+      "source": "kunstverein_ausstellungen"
+    },
+    {
+      "id": "e2c4748b0c75eea3",
+      "title": "Kohler & Lass | Plateaus",
+      "date_start": "2026-10-02",
+      "source": "kunstverein_ausstellungen"
+    },
+    {
+      "id": "5ab192944bc97e86",
+      "title": "29. Jugendkunstpreis Baden-Württemberg 2026 \"Zusammen\"",
+      "date_start": "2026-10-09",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "2185c51e5683694c",
+      "title": "15.10.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-10-15",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "8d8179a172cafe71",
+      "title": "12.11.2026 - 19:00 Uhr Künstler*innen-Stammtisch Altes Schulhaus Alt-Hoheneck Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Altes Schulhaus Alt-Hoheneck Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-11-12",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "5d8d68db59922e1f",
+      "title": "03.12.2026 - 19:30 Uhr Jazzclub Ludwigsburg x Kunstverein DUO - Albe Mayer-Mikosch und Uli Gutscher Eine Kooperationsveranstaltung mit dem Jazzclub Ludwigsburg. Eintritt frei!",
+      "date_start": "2026-12-03",
+      "source": "kunstverein_veranstaltungen"
+    },
+    {
+      "id": "34e4f89d7220d7d9",
+      "title": "10.12.2026 - 19:00 Uhr Künstler*innen-Stammtisch Offener Austausch Wer: Alle Künstler*innen und Kunstinteressierte Wo: 19.00 Uhr im Brückenhaus Keine Anmeldung erforderlich – einfach kommen!",
+      "date_start": "2026-12-10",
+      "source": "kunstverein_veranstaltungen"
+    }
+  ]
 }

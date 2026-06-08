@@ -1,39 +1,39 @@
 {
-  "scraped_at": "2026-06-05T05:35:52.782360+02:00",
+  "scraped_at": "2026-06-08T04:02:32.843901+02:00",
   "city": "asperg",
-  "event_count": 77,
+  "event_count": 73,
   "flagged_count": 0,
-  "expired_count": 8,
+  "expired_count": 7,
   "sources_scraped": [
     "asperg_fuehrungen",
     "asperg_veranstaltungen",
     "glasperlenspiel"
   ],
   "source_counts": {
-    "asperg_veranstaltungen": 61,
+    "asperg_veranstaltungen": 58,
     "asperg_fuehrungen": 11,
-    "glasperlenspiel": 5
+    "glasperlenspiel": 4
   },
   "sources_failed": [],
-  "data_hash": "1612c2f6f3c8e137",
+  "data_hash": "3c3c130ea9dc6f7d",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 05.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 08.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 215.9,
-    "runtime_delta_vs_baseline": 0.206,
+    "runtime_minutes": 204.2,
+    "runtime_delta_vs_baseline": 0.141,
     "source_health": {
       "asperg_veranstaltungen": 1.0,
-      "asperg_fuehrungen": 0.88,
-      "glasperlenspiel": 0.91
+      "asperg_fuehrungen": 0.91,
+      "glasperlenspiel": 0.92
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-06-05T05:48:55.404317+02:00"
+    "status": "healthy",
+    "generated_at": "2026-06-08T05:52:15.953046+02:00"
   }
 }
