@@ -36,7 +36,7 @@ export async function onRequest(context) {
   const event = events.find(e => e.slug === slug);
   if (!event) {
     return new Response('Event not found', {
-      status: 404,
+      status: 410,
       headers: { 'Content-Type': 'text/plain; charset=utf-8' },
     });
   }
