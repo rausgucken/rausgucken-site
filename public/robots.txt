@@ -5,8 +5,6 @@ User-agent: *
 Content-Signal: search=yes,ai-train=no
 Allow: /
 
-# Block calendar exports — not indexable pages
-Disallow: /*.ics
 
 # Block raw data files
 Disallow: /data/
