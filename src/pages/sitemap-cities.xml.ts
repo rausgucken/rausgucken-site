@@ -34,9 +34,9 @@ export async function GET() {
   }));
 
   const staticFooter = [
-    { loc: `${siteUrl}/about`,                         priority: "0.5", changefreq: "monthly" },
-    { loc: `${siteUrl}/impressum`,                     priority: "0.3", changefreq: "monthly" },
-    { loc: `${siteUrl}/datenschutz`,                   priority: "0.3", changefreq: "monthly" },
+    { loc: `${siteUrl}/about/`,                         priority: "0.5", changefreq: "monthly" },
+    { loc: `${siteUrl}/impressum/`,                     priority: "0.3", changefreq: "monthly" },
+    { loc: `${siteUrl}/datenschutz/`,                   priority: "0.3", changefreq: "monthly" },
   ];
 
   const pages = [...staticPages, ...cityPages, ...staticFooter];

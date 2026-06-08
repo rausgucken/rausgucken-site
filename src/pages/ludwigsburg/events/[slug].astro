@@ -308,7 +308,7 @@ const relatedEvents: any[] = isExpired
   {isExpired && relatedEvents.length > 0 && (
     <div class="related-events" aria-label="Ähnliche aktuelle Veranstaltungen">
       {relatedEvents.map((r: any) => (
-        <a href={`/${city}/events/${r.slug}`} class="related-card">
+        <a href={`/${city}/events/${r.slug}/`} class="related-card">
           <div class="related-card-body">
             <span class="related-title">{r.title}</span>
             {r.location && <span class="related-location">{r.location}</span>}
