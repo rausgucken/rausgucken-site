@@ -1,36 +1,54 @@
 {
-  "scraped_at": "2026-06-08T05:34:22.141894+02:00",
+  "scraped_at": "2026-06-09T09:38:38.837880+02:00",
   "city": "ludwigsburg",
-  "event_count": 64,
+  "event_count": 529,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
-    "museum",
-    "sachsenheim_kultur"
+    "demokratisches_zentrum",
+    "forum_schlosspark",
+    "garnisonmuseum",
+    "karlskaserne_veranstaltungen",
+    "labyrinth",
+    "musikhalle_lb",
+    "schloss",
+    "stabi"
   ],
   "source_counts": {
-    "museum": 50,
-    "sachsenheim_kultur": 14
+    "schloss": 218,
+    "stabi": 158,
+    "karlskaserne_veranstaltungen": 93,
+    "demokratisches_zentrum": 2,
+    "labyrinth": 13,
+    "musikhalle_lb": 23,
+    "garnisonmuseum": 7,
+    "forum_schlosspark": 15
   },
   "sources_failed": [],
-  "data_hash": "775d3e184bd2de06",
+  "data_hash": "8db9ac58b8a4e0c3",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 08.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 09.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 204.2,
-    "runtime_delta_vs_baseline": 0.141,
+    "runtime_minutes": 458.6,
+    "runtime_delta_vs_baseline": 1.562,
     "source_health": {
-      "museum": 1.0,
-      "sachsenheim_kultur": 0.73
+      "schloss": 1.0,
+      "stabi": 1.0,
+      "karlskaserne_veranstaltungen": 1.0,
+      "demokratisches_zentrum": 0.95,
+      "labyrinth": 1.0,
+      "musikhalle_lb": 1.0,
+      "garnisonmuseum": 1.0,
+      "forum_schlosspark": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-06-08T05:52:16.168063+02:00"
+    "generated_at": "2026-06-09T09:50:10.394201+02:00"
   }
 }
