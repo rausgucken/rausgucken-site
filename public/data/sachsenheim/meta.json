@@ -1,39 +1,25 @@
 {
-  "scraped_at": "2026-06-05T05:35:52.792518+02:00",
+  "scraped_at": "2026-06-10T09:04:12.767393+02:00",
   "city": "sachsenheim",
-  "event_count": 19,
+  "event_count": 5,
   "flagged_count": 0,
-  "expired_count": 7,
+  "expired_count": 3,
   "sources_scraped": [
-    "sachsenheim_kultur",
-    "sachsenheim_library",
-    "sachsenheim_museum"
+    "sachsenheim_kultur"
   ],
   "source_counts": {
-    "sachsenheim_kultur": 16,
-    "sachsenheim_library": 2,
-    "sachsenheim_museum": 1
+    "sachsenheim_kultur": 5
   },
   "sources_failed": [],
-  "data_hash": "5657d976c493787d",
+  "data_hash": "da56ab1152a0f820",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 05.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 10.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
-  "quality_report": {
-    "regression_pass_rate": 1.0,
-    "flagged_rate_current": 0.0,
-    "flagged_rate_4week_avg": 0.0,
-    "trend": "stable",
-    "runtime_minutes": 458.6,
-    "runtime_delta_vs_baseline": 1.562,
-    "source_health": {
-      "sachsenheim_kultur": 0.91,
-      "sachsenheim_library": 0.97,
-      "sachsenheim_museum": 0.97
-    },
-    "count_drift_warnings": {},
-    "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-06-09T09:50:10.476946+02:00"
-  }
+  "source_health": {
+    "sachsenheim_kultur": 0.98
+  },
+  "source_event_counts": {
+    "sachsenheim_kultur": 5
+  },
+  "count_drift_warnings": {}
 }

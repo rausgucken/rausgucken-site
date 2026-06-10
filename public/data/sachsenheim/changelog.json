@@ -1,397 +1,92 @@
 {
-  "generated_at": "2026-06-09T09:23:24.684829+02:00",
+  "generated_at": "2026-06-10T09:04:12.740333+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "museum",
+    "sachsenheim_museum",
+    "sachsenheim_library",
     "sachsenheim_kultur"
   ],
-  "previous_run": "2026-06-08T05:54:10.333246+02:00",
-  "count_added": 64,
+  "previous_run": "2026-06-10T08:14:38.801466+02:00",
+  "count_added": 13,
   "count_removed": 0,
   "added": [
     {
-      "id": "7c82aba616f7a699",
-      "title": "Ausstellung Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-05-03",
-      "source": "museum"
-    },
-    {
-      "id": "bff2378eb082564e",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-06-10",
-      "source": "museum"
-    },
-    {
-      "id": "945e88777b891a76",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-06-11",
-      "source": "museum"
-    },
-    {
-      "id": "a83f200afe175482",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-06-17",
-      "source": "museum"
-    },
-    {
-      "id": "73d6a1a915b409b4",
-      "title": "Gastrosophie-Abend",
-      "date_start": "2026-06-25",
-      "source": "museum"
-    },
-    {
-      "id": "691173904c17a73f",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-06-27",
-      "source": "museum"
-    },
-    {
-      "id": "7ff033032127df4b",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-06-27",
-      "source": "museum"
-    },
-    {
-      "id": "650ef2c04fb838df",
-      "title": "Little America – Fotografie Jürgen Schadeberg",
-      "date_start": "2026-07-01",
-      "source": "museum"
-    },
-    {
-      "id": "4685c6bd35a6a4c2",
-      "title": "Museumspause",
-      "date_start": "2026-07-01",
-      "source": "museum"
-    },
-    {
-      "id": "9d142bd8d3c097eb",
-      "title": "Vortrag \"Little America\"",
-      "date_start": "2026-07-01",
-      "source": "museum"
-    },
-    {
-      "id": "ed37d6dc04039758",
-      "title": "Offenes Atelier: Tee von der Blumenwiese, Sabine Deutscher",
-      "date_start": "2026-07-02",
-      "source": "museum"
-    },
-    {
-      "id": "7c1a1baefcc024f6",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-07-08",
-      "source": "museum"
-    },
-    {
-      "id": "b6aeee1a8e6bce6a",
-      "title": "Musik im MIK",
-      "date_start": "2026-07-11",
-      "source": "museum"
-    },
-    {
-      "id": "2aadcf04324bb79a",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-07-16",
-      "source": "museum"
-    },
-    {
-      "id": "e03dcd037732fb3b",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-07-25",
-      "source": "museum"
-    },
-    {
-      "id": "ac517db39d41b08c",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-07-25",
-      "source": "museum"
-    },
-    {
-      "id": "84515f699269c9bc",
-      "title": "Museumspause",
-      "date_start": "2026-08-05",
-      "source": "museum"
-    },
-    {
-      "id": "146f8552056cda36",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-08-12",
-      "source": "museum"
-    },
-    {
-      "id": "51a4f0cb4be13889",
-      "title": "Ferienworkshop Museumsbuch interaktiv",
-      "date_start": "2026-08-14",
-      "source": "museum"
-    },
-    {
-      "id": "c48034e537af9ed5",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-08-29",
-      "source": "museum"
-    },
-    {
-      "id": "a8cbbcf36745b299",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-08-29",
-      "source": "museum"
-    },
-    {
-      "id": "412a38bbfbc19241",
-      "title": "Museumspause",
-      "date_start": "2026-09-02",
-      "source": "museum"
-    },
-    {
-      "id": "33db71f4708977da",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-09-09",
-      "source": "museum"
-    },
-    {
-      "id": "da91c6d4fe2f0d58",
-      "title": "Tag des Offenen Denkmals",
-      "date_start": "2026-09-13",
-      "source": "museum"
-    },
-    {
-      "id": "1da712de65240f53",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-09-16",
-      "source": "museum"
-    },
-    {
-      "id": "937f51ce6917680b",
-      "title": "Offenes Atelier: Origami, Regina Ille-Kopp",
-      "date_start": "2026-09-17",
-      "source": "museum"
-    },
-    {
-      "id": "a321ac78d9c91527",
-      "title": "Gastrosophie-Abend",
-      "date_start": "2026-09-24",
-      "source": "museum"
-    },
-    {
-      "id": "5f0f28478d262af4",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-09-26",
-      "source": "museum"
-    },
-    {
-      "id": "1ad591165ba69227",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-06",
-      "source": "museum"
-    },
-    {
-      "id": "10574e50c47e9a2d",
-      "title": "Museumspause",
-      "date_start": "2026-10-07",
-      "source": "museum"
-    },
-    {
-      "id": "d47a92c5185c1929",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-13",
-      "source": "museum"
-    },
-    {
-      "id": "50d1b8bcae088f0f",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-10-14",
-      "source": "museum"
-    },
-    {
-      "id": "fffeb549fd24639b",
-      "title": "Mitmach-Ausstellung flott, flott!",
-      "date_start": "2026-10-17",
-      "source": "museum"
-    },
-    {
-      "id": "5beb0ee8eb08f214",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-20",
-      "source": "museum"
-    },
-    {
-      "id": "2c0921e304b82ec4",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-10-21",
-      "source": "museum"
-    },
-    {
-      "id": "c170b028731594af",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-10-24",
-      "source": "museum"
-    },
-    {
-      "id": "33c73002bed4f546",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-27",
-      "source": "museum"
-    },
-    {
-      "id": "19b34a6bd1f128f7",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-10-31",
-      "source": "museum"
-    },
-    {
-      "id": "744c68f84155ddb4",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-03",
-      "source": "museum"
-    },
-    {
-      "id": "cc3cacc7ccb69d7b",
-      "title": "Museumspause",
-      "date_start": "2026-11-04",
-      "source": "museum"
-    },
-    {
-      "id": "746f98c5fe1bfba3",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-11-05",
-      "source": "museum"
-    },
-    {
-      "id": "503013994c307868",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-10",
-      "source": "museum"
-    },
-    {
-      "id": "d8b7431bc4a684b1",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-11-11",
-      "source": "museum"
-    },
-    {
-      "id": "3a07be9ff60f3ffd",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-17",
-      "source": "museum"
-    },
-    {
-      "id": "22f9f9b321aa01e3",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-24",
-      "source": "museum"
-    },
-    {
-      "id": "3e6569c50955cf0f",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-11-28",
-      "source": "museum"
-    },
-    {
-      "id": "1be2100766f9975a",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-11-28",
-      "source": "museum"
-    },
-    {
-      "id": "ceffd17f4f8fa9ec",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-01",
-      "source": "museum"
-    },
-    {
-      "id": "0200632eb9bc01e9",
-      "title": "Museumspause",
-      "date_start": "2026-12-02",
-      "source": "museum"
-    },
-    {
-      "id": "a6439166304ac087",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-08",
-      "source": "museum"
-    },
-    {
-      "id": "60a4d1f99c0384ec",
-      "title": "Mit Fernlichteffekt durch die Geschichte!",
-      "date_start": null,
+      "id": "b1a09be40f4beef3",
+      "title": "Führung, Stadtmuseum Nachts im Museum",
+      "date_start": "2026-01-30",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "856e851ad518568f",
-      "title": "Veni, vidi, vici! | „Gold und Glamour“ in Sachsenheim!",
-      "date_start": null,
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "149fea51445eaf60",
+      "id": "d344737d54eed94d",
       "title": "Tanznachmittag",
-      "date_start": null,
+      "date_start": "2026-03-24",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "920eb36e650194d2",
+      "id": "34d45a5061e9504b",
+      "title": "Tanznachmittag",
+      "date_start": "2026-04-14",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "7d174049d395d9b5",
       "title": "Rollator-Training",
-      "date_start": null,
+      "date_start": "2026-05-09",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "27e3c1405e9ceb9d",
-      "title": "Zu Gast bei Rittern und Geistern",
-      "date_start": null,
+      "id": "b01fef8cc818d6d8",
+      "title": "Tanznachmittag",
+      "date_start": "2026-05-12",
+      "source": "sachsenheim_library"
+    },
+    {
+      "id": "4c16b496e6f342b7",
+      "title": "Führung, Zu Gast bei Rittern und Geistern",
+      "date_start": "2026-05-17",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "98d3bdb45229af48",
+      "id": "3abf7be0c3e0727b",
       "title": "Öffentliche Führung – „Alles für die Katz!?“ Künstler sehen Katzen",
-      "date_start": null,
+      "date_start": "2026-05-17",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "ced558ead6d05659",
-      "title": "Offener Gesprächskreis Demenz",
-      "date_start": null,
+      "id": "e6e2c28a66d4772d",
+      "title": "Rollator-Training",
+      "date_start": "2026-06-12",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "f7494db6efbcab21",
-      "title": "Bürgerinfoveranstaltung: Glasfaserausbau in Kleinsachsenheim",
-      "date_start": null,
+      "id": "2609326c25396c8b",
+      "title": "Führung, Persönlichkeiten im Blick",
+      "date_start": "2026-06-12",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "1d3875efc8b87913",
-      "title": "„Franz Hopf: Pfarrer, Demokrat, Journalist“",
-      "date_start": null,
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "85e2d6b051dc344d",
-      "title": "Zur Rebblüte in die Weinberge",
-      "date_start": null,
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "e5bc7fa0b6a9ab47",
+      "id": "4bc3cd7182904b9e",
       "title": "Kindererlebnisnachmittag: Mein Lieblingstier Katze",
-      "date_start": null,
+      "date_start": "2026-06-13",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "16b1a0ebbf75d425",
-      "title": "„Fremde Heimat Sachsenheim – Integration nach 1945“",
-      "date_start": null,
+      "id": "1d6d9d3f8af86f61",
+      "title": "Tanznachmittag",
+      "date_start": "2026-06-16",
+      "source": "sachsenheim_library"
+    },
+    {
+      "id": "96b7189dfaac7ccb",
+      "title": "Rollator-Training",
+      "date_start": "2026-06-26",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "8a6782f5f27923d4",
-      "title": "Online-Vortrag: PV-Altanlagen – So lohnt sich Ihre Anlage weiterhin",
-      "date_start": null,
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "42bc3b5ff1060cfd",
-      "title": "„Geschichte(n) aus unserem Land“",
-      "date_start": null,
-      "source": "sachsenheim_kultur"
+      "id": "adab84336aa12a1e",
+      "title": "Führung, Franz Hopf: Pfarrer, Demokrat, Journalist",
+      "date_start": "2026-06-12",
+      "source": "sachsenheim_library"
     }
   ],
   "removed": []
