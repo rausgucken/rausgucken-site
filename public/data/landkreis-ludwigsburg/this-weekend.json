@@ -1,6 +1,6 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-06-11T06:16:54.058118+02:00",
+  "generated_at": "2026-06-11T10:50:24.531473+02:00",
   "event_count": 73,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
@@ -1706,7 +1706,7 @@
       "weekdays": [],
       "scraped_at": "2026-06-10T02:00:20.772299+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -1900,7 +1900,7 @@
       "canonical_url": "https://www.rausgucken.de/kornwestheim/events/oeffentliche-fuehrung-am-wochenende-2026-06-14-korn"
     },
     {
-      "id": "d99d022d27ec5b37",
+      "id": "70283cac13a726f4",
       "title": "Öffentliche Führung mit Kulinarik: „Fremde Heimat Sachsenheim – Integration nach 1945“",
       "date_start": "2026-06-14",
       "date_end": null,
@@ -1919,7 +1919,9 @@
       "source": "sachsenheim_kultur",
       "city": "sachsenheim",
       "slug": "oeffentliche-fuehrung-mit-kulinarik-fremde-heimat-sachsenheim-integration-nach-1945-2026",
-      "weekdays": [],
+      "weekdays": [
+        0
+      ],
       "scraped_at": "2026-06-11T02:01:59.923853+02:00",
       "extraction_confidence": 0.9,
       "is_new": true,

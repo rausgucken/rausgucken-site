@@ -1,15 +1,21 @@
 {
-  "generated_at": "2026-06-11T03:46:18.722441+02:00",
+  "generated_at": "2026-06-11T10:15:26.053035+02:00",
   "city": "asperg",
   "sources": [
     "glasperlenspiel",
-    "asperg_fuehrungen",
-    "asperg_veranstaltungen"
+    "asperg_veranstaltungen",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-06-10T06:39:45.532234+02:00",
+  "previous_run": "2026-06-11T03:46:18.745283+02:00",
   "count_added": 11,
-  "count_removed": 2,
+  "count_removed": 0,
   "added": [
+    {
+      "id": "df2fb65f3b7fecca",
+      "title": "Asperg lecker – Stadtführung mit kulturellen und kulinarischen Häppchen",
+      "date_start": "2026-03-27",
+      "source": "asperg_fuehrungen"
+    },
     {
       "id": "e8852c1be0ce91a4",
       "title": "Stadtführung",
@@ -20,6 +26,12 @@
       "id": "cc01189329de5a02",
       "title": "Lost places –führung durch Altasperg",
       "date_start": "2026-04-26",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "9c68fcfc451dc118",
+      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
+      "date_start": "2026-04-30",
       "source": "asperg_fuehrungen"
     },
     {
@@ -53,42 +65,17 @@
       "source": "asperg_fuehrungen"
     },
     {
-      "id": "231abe09aa38e41b",
-      "title": "Asperg lecker – Stadtführung mit kulturellen und kulinarischen Häppchen",
-      "date_start": "2026-09-18",
-      "source": "asperg_fuehrungen"
-    },
-    {
       "id": "8852b65c7ff4a9cb",
       "title": "Tag der dt. Einheit - Ein Gang über die schwäbische Bastille",
       "date_start": "2025-10-03",
       "source": "asperg_fuehrungen"
     },
     {
-      "id": "8976b421559c9988",
-      "title": "Theaterabend - Warum hat man dieses Leben",
-      "date_start": "2026-07-17",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "110adbd4010b2ed7",
-      "title": "Konzert mit emisa",
-      "date_start": "2026-06-14",
+      "id": "01dc658fc15dce37",
+      "title": "Humorfest mit Ernst Mantel und Werner Koczwara",
+      "date_start": "2026-06-09",
       "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "1d365bee1e91d8f7",
-      "title": "Jubiläumswochen \"50 Jahre Stadtbücherei\"",
-      "date_start": "2026-06-09",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "8e93c55e9a2f31c1",
-      "title": "Festabend \"50 Jahre Stadtbücherei\"",
-      "date_start": "2026-06-09",
-      "source": "asperg_veranstaltungen"
-    }
-  ]
+  "removed": []
 }

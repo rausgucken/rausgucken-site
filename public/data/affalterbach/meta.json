@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-11T05:52:53.893260+02:00",
+  "scraped_at": "2026-06-11T10:46:01.164261+02:00",
   "city": "affalterbach",
   "event_count": 59,
   "flagged_count": 0,
@@ -18,16 +18,16 @@
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
-    "flagged_rate_4week_avg": null,
+    "flagged_rate_4week_avg": 0.0,
     "trend": "insufficient_data",
-    "runtime_minutes": 256.9,
-    "runtime_delta_vs_baseline": 0.435,
+    "runtime_minutes": 148.3,
+    "runtime_delta_vs_baseline": -0.172,
     "source_health": {
       "affalterbach_stadt": 0.99
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-06-11T06:35:41.210923+02:00"
+    "generated_at": "2026-06-11T11:01:36.840954+02:00"
   }
 }
