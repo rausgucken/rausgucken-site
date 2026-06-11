@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-06-09T09:38:38.837880+02:00",
+  "scraped_at": "2026-06-11T06:16:53.934935+02:00",
   "city": "ludwigsburg",
-  "event_count": 529,
+  "event_count": 590,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -10,34 +10,37 @@
     "garnisonmuseum",
     "karlskaserne_veranstaltungen",
     "labyrinth",
+    "museum",
     "musikhalle_lb",
     "schloss",
     "stabi"
   ],
   "source_counts": {
     "schloss": 218,
-    "stabi": 158,
-    "karlskaserne_veranstaltungen": 93,
+    "museum": 50,
+    "stabi": 156,
+    "karlskaserne_veranstaltungen": 92,
     "demokratisches_zentrum": 2,
-    "labyrinth": 13,
+    "labyrinth": 14,
     "musikhalle_lb": 23,
     "garnisonmuseum": 7,
-    "forum_schlosspark": 15
+    "forum_schlosspark": 28
   },
   "sources_failed": [],
-  "data_hash": "8db9ac58b8a4e0c3",
+  "data_hash": "1c5c0bf345dee4f5",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 09.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 11.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 458.6,
-    "runtime_delta_vs_baseline": 1.562,
+    "runtime_minutes": 256.9,
+    "runtime_delta_vs_baseline": 0.435,
     "source_health": {
       "schloss": 1.0,
+      "museum": 1.0,
       "stabi": 1.0,
       "karlskaserne_veranstaltungen": 1.0,
       "demokratisches_zentrum": 0.95,
@@ -49,6 +52,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-06-09T09:50:10.394201+02:00"
+    "generated_at": "2026-06-11T06:35:41.436692+02:00"
   }
 }

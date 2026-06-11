@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-09T08:46:23.517798+02:00",
+  "scraped_at": "2026-06-11T04:38:49.213662+02:00",
   "city": "remseck",
   "event_count": 26,
   "flagged_count": 0,
@@ -15,15 +15,15 @@
   "sources_failed": [],
   "data_hash": "0f475d792c39e2ca",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 09.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 11.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 458.6,
-    "runtime_delta_vs_baseline": 1.562,
+    "runtime_minutes": 256.9,
+    "runtime_delta_vs_baseline": 0.435,
     "source_health": {
       "remseck_mediathek": 1.0,
       "remseck_stadt": 1.0
@@ -31,6 +31,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-06-09T09:50:10.456519+02:00"
+    "generated_at": "2026-06-11T06:35:41.501017+02:00"
   }
 }
