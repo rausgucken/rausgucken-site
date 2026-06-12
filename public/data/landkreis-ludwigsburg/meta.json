@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-06-12T04:45:20.955619+02:00",
+  "scraped_at": "2026-06-12T22:44:54.725797+02:00",
   "city": "landkreis-ludwigsburg",
-  "event_count": 2415,
+  "event_count": 2603,
   "cities": [
     "ludwigsburg",
     "bietigheim",
@@ -19,10 +19,14 @@
     "gerlingen",
     "grossbottwar",
     "affalterbach",
-    "benningen"
+    "marbach",
+    "benningen",
+    "vaihingen"
   ],
-  "sources_failed": [],
-  "data_hash": "c372dc6a03013468",
+  "sources_failed": [
+    "korntal-muenchingen"
+  ],
+  "data_hash": "53ee119a3d94f158",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "disclaimer_note": "Alle Angaben ohne Gewähr. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2"
