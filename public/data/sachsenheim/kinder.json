@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-06-11T10:44:11.532793+02:00",
-  "event_count": 1,
+  "generated_at": "2026-06-12T04:19:55.150933+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -28,12 +28,41 @@
       ],
       "scraped_at": "2026-06-11T07:55:27.007628+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Sachsenheim – Kulturprogramm",
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/erzaehl-cafe-2026-06-22-sach"
+    },
+    {
+      "id": "fb2d0e2c721647d0",
+      "title": "Spaziererei",
+      "date_start": "2026-06-23",
+      "date_end": null,
+      "time": "10:00 - 11:30 Uhr",
+      "description": "In Kooperation mit dem Kinderhaus Pfiffikus bietet die Mensa eine Spaziererei für alle Altersgruppen an. Mit Schwätzle, Hefezopf und Liedern genießt man die frische Luft an der Natur. Ein Walk & Talk für Familien und Freunde. Treffpunkt und Startpunkt werden separat angezeigt.",
+      "location": "Mensa, Oberriexinger Straße 35, 74343 Sachsenheim",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Spaziererei-event-appointment6044",
+      "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Spaziererei-event-appointment6044",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "spaziererei-2026-06-23t100000-europeberlin-sach",
+      "weekdays": [],
+      "scraped_at": "2026-06-12T02:01:46.568711+02:00",
+      "extraction_confidence": 0.92,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/spaziererei-2026-06-23t100000-europeberlin-sach"
     }
   ]
 }

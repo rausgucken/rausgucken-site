@@ -1,12 +1,32 @@
 {
-  "generated_at": "2026-06-11T10:24:11.908585+02:00",
+  "generated_at": "2026-06-12T03:59:11.512489+02:00",
   "city": "besigheim",
   "sources": [
     "besigheim_stadt"
   ],
-  "previous_run": "2026-06-11T04:55:57.226261+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-06-11T10:24:11.930833+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "ba8220728f88fa62",
+      "title": "Mitgliederversammlung",
+      "date_start": "2026-10-10",
+      "source": "besigheim_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "6da0c2563038b396",
+      "title": "Bingo-Spielenachmittag",
+      "date_start": "2026-06-11",
+      "source": "besigheim_stadt"
+    },
+    {
+      "id": "1c5eff78203db818",
+      "title": "MCB - Besigheimer Feier-Abend",
+      "date_start": "2026-06-11",
+      "source": "besigheim_stadt"
+    }
+  ]
 }
