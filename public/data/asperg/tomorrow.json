@@ -1,40 +1,99 @@
 {
   "subset": "tomorrow",
-  "generated_at": "2026-06-12T06:00:01.416723+02:00",
-  "event_count": 1,
+  "generated_at": "2026-06-13T06:00:01.140951+02:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "4005bab35c4a0971",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-06-13",
+      "id": "7943577b1d807506",
+      "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
+      "date_start": "2026-06-14",
       "date_end": null,
-      "time": "10:30 - 11:30 Uhr",
-      "description": "In der Stadtbücherei Asperg werden Geschichten vorgelesen, wobei die Bilderrahmen groß auf Leinwand projiziert werden. Nach der Vorlesung können Kinder und Erwachsene gemeinsam malen oder basteln. Samstags um 10:30 Uhr bieten sich ein bis zwei Geschichten an, geeignet für Zuschauer ab 4 Jahren.",
-      "location": "Stadtbücherei Asperg, Asperg",
-      "price": null,
-      "age_min": 4,
-      "age_max": 12,
+      "time": "14:00 Uhr",
+      "description": "In dieser Kostümführung durch die historische Festung von Hohenasperg lebt der Ort im 18. Jahrhundert wieder auf. Führer Friedrich Wilhelm Beyhl begleitet Sie in die Vergangenheit.",
+      "location": "Hohenasperg vor dem Festungstor",
+      "price": "13,- Euro pro Person",
+      "age_min": null,
+      "age_max": null,
       "tags": [
-        "Kinder",
-        "Familie"
+        "Fuehrung"
       ],
-      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=43856762",
-      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=43856762",
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/fuehrungen",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/fuehrungen",
+      "source": "asperg_fuehrungen",
+      "city": "asperg",
+      "slug": "ein-gang-ueber-die-schwaebische-bastille---kostuemfuehrung-2026-06-14-aspe",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-06-13T02:00:02.681955+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Museum Hohenasperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/ein-gang-ueber-die-schwaebische-bastille---kostuemfuehrung-2026-06-14-aspe"
+    },
+    {
+      "id": "b5245ebbda4f1a65",
+      "title": "Führung - Ein Gang über die schwäbische Bastille",
+      "date_start": "2026-06-14",
+      "date_end": null,
+      "time": "14:00 Uhr",
+      "description": "In dieser Führung durch das historische Löwentor Hohenasperg erfährt man interessante Tatsachen über dieses oft als \"schwäbische Bastille\" bezeichnete Stadtteiltor. Begleitet wird der Spaziergang von Marius Hubel.",
+      "location": "Treffpunkt Löwentor Hohenasperg, Asperg",
+      "price": "13,00 Euro",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung"
+      ],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=43094917",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=43094917",
       "source": "asperg_veranstaltungen",
       "city": "asperg",
-      "slug": "bilderbuchkino-2026-06-13-aspe",
+      "slug": "fuehrung---ein-gang-ueber-die-schwaebische-bastille-2026-06-14-aspe",
       "weekdays": [
-        6
+        0
       ],
-      "scraped_at": "2026-06-07T06:46:58.711283+02:00",
+      "scraped_at": "2026-06-13T02:00:15.623857+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Asperg",
-      "canonical_url": "https://www.rausgucken.de/asperg/events/bilderbuchkino-2026-06-13-aspe"
+      "canonical_url": "https://www.rausgucken.de/asperg/events/fuehrung---ein-gang-ueber-die-schwaebische-bastille-2026-06-14-aspe"
+    },
+    {
+      "id": "110adbd4010b2ed7",
+      "title": "Konzert mit emisa",
+      "date_start": "2026-06-14",
+      "date_end": null,
+      "time": "19:00 Uhr",
+      "description": "In diesem Konzert verbindet die syrisch-deutsche Sängerin, Songwriterin und Toningenieurin emisa verschiedene musikalische Einflüsse zu einer faszinierenden Leistung.",
+      "location": "Glasperlenspiel Asperg",
+      "price": "15,00 Euro",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Musik"
+      ],
+      "link": "https://glasperlenspiel.de/juni-2026",
+      "original_url": "https://glasperlenspiel.de/juni-2026",
+      "source": "glasperlenspiel",
+      "city": "asperg",
+      "slug": "konzert-mit-emisa-2026-06-14t190000-europeberlin-glas",
+      "weekdays": [],
+      "scraped_at": "2026-06-13T02:00:20.180187+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Glasperlenspiel Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/konzert-mit-emisa-2026-06-14t190000-europeberlin-glas"
     }
   ]
 }
