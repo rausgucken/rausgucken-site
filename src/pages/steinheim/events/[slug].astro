@@ -1,0 +1,594 @@
+---
+// ============================================================
+// CITY EVENT DETAIL PAGE TEMPLATE — rausgucken.de
+// Copy to: src/pages/{steinheim}/events/[slug].astro
+//
+// Replace these tokens (all caps, search & replace):
+//   steinheim          → url slug, e.g. "kornwestheim"
+//   Steinheim an der Murr   → display name, e.g. "Kornwestheim" or "Remseck am Neckar"
+//   71711 → 5-digit PLZ, e.g. "74354"
+//   https://www.stadt-steinheim.de     → fallback organizer URL, e.g. "https://www.kornwestheim.de"
+// ============================================================
+import Base from "../../../layouts/Base.astro";
+import tipsData from "../../../data/editorial-tips.json";
+
+export async function getStaticPaths() {
+  const mod = await import("../../../../public/data/steinheim/events-current.json",
+    { assert: { type: "json" } });
+  const events: any[] = (mod.default as any).events ?? mod.default;
+  const seen = new Set<string>();
+  return events
+    .filter(ev => { if (seen.has(ev.slug)) return false; seen.add(ev.slug); return true; })
+    .map(ev => ({ params: { slug: ev.slug }, props: { ev } }));
+}
+
+const { ev } = Astro.props;
+
+// ── City constants — only these change per city ───────────────────────────────
+const city        = "steinheim";
+const cityDisplay = "Steinheim an der Murr";
+const postalCode  = "71711";
+const cityWebsite = "https://www.stadt-steinheim.de";
+
+// ── Fixed constants ───────────────────────────────────────────────────────────
+const siteUrl     = "https://www.rausgucken.de";
+const ogImage     = `/og/${city}/${ev.slug}.jpg`;
+const canonical   = `${siteUrl}/${city}/events/${ev.slug}/`;
+const icsUrl      = `/${city}/events/${ev.slug}.ics`;
+
+// ── Editorial tip ─────────────────────────────────────────────────────────────
+const editorialTip: string | undefined = (() => {
+  if (!tipsData || typeof tipsData !== "object") return undefined;
+  const tips = tipsData as Record<string, unknown>;
+  const val = tips[ev.slug];
+  if (!val || typeof val !== "object") return undefined;
+  const tip = (val as Record<string, unknown>).tip;
+  return typeof tip === "string" && tip.length > 0 ? tip : undefined;
+})();
+
+// ── Date helpers ──────────────────────────────────────────────────────────────
+function formatDateDE(iso: string | null) {
+  if (!iso) return "Dauerhaft verfügbar";
+  const d = new Date(iso + "T12:00:00");
+  return d.toLocaleDateString("de-DE", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+}
+function formatDateShort(iso: string | null) {
+  if (!iso) return null;
+  const d = new Date(iso + "T12:00:00");
+  return d.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
+}
+
+const today            = new Date().toISOString().slice(0, 10);
+const isExpired        = !!(ev.date_end ? ev.date_end < today : ev.date_start && ev.date_start < today);
+const scrapedFormatted = ev.scraped_at
+  ? new Date(ev.scraped_at).toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" })
+  : null;
+
+// ── SEO ───────────────────────────────────────────────────────────────────────
+const dateLabel = ev.date_start ? formatDateShort(ev.date_start) : "Dauerveranstaltung";
+const MAX       = 45;
+const truncated = ev.title.length > MAX ? ev.title.slice(0, MAX).trimEnd() + "…" : ev.title;
+const seoTitle  = `${truncated} ${cityDisplay} ${dateLabel} | rausgucken.de`;
+const metaDesc  = ev.description
+  ? ev.description.slice(0, 150) + (ev.description.length > 150 ? "…" : "")
+  : `${ev.title} – Veranstaltung in ${cityDisplay}${ev.date_start ? ` am ${dateLabel}` : ""}. Alle Details und Originalseite auf rausgucken.de.`;
+
+// ── Tag labels ────────────────────────────────────────────────────────────────
+const TAG_LABELS: Record<string, string> = {
+  Ausstellung: "Ausstellung", Entertainment: "Entertainment", Familie: "Familie",
+  Fest: "Fest", Fuehrung: "Führung", Jugend: "Jugend", Kinder: "Kinder",
+  Kulinarik: "Kulinarik", Lesung: "Lesung", Messe: "Messe", Musik: "Musik",
+  Outdoor: "Outdoor", Sport: "Sport", Sprache: "Sprache", Tanz: "Tanz",
+  Theater: "Theater", Vortrag: "Vortrag", Workshop: "Workshop",
+};
+
+// ── Price normaliser ──────────────────────────────────────────────────────────
+function normalisePrice(priceStr: string | null) {
+  if (!priceStr) return null;
+  const s = String(priceStr).trim().toLowerCase();
+  if (["kostenlos", "frei", "eintritt frei", "0", "gratis", "kostenfrei"].includes(s))
+    return { price: "0", currency: "EUR" };
+  const m2 = s.match(/(\d+)[,.](\d{2})/);
+  if (m2) return { price: `${m2[1]}.${m2[2]}`, currency: "EUR" };
+  const m1 = s.match(/(\d+)/);
+  if (m1) return { price: `${m1[1]}.00`, currency: "EUR" };
+  return null;
+}
+
+// ── Organizer ─────────────────────────────────────────────────────────────────
+// source_label is populated by manifest.py for all sources — use it as primary.
+// Falls back to ev.location then cityDisplay.
+const organizer = {
+  name: ev.source_label ?? ev.location ?? cityDisplay,
+  url:  ev.original_url ?? cityWebsite,
+};
+
+// ── Calendar helpers ──────────────────────────────────────────────────────────
+function buildGoogleCalendarUrl(e: any) {
+  if (!e?.date_start) return "";
+  const base = "https://calendar.google.com/calendar/render?action=TEMPLATE";
+  const fmt = (iso: string, time: string | null) => {
+    if (!iso) return "";
+    const m = time ? time.match(/(\d{1,2}):(\d{2})/) : null;
+    if (!m) return iso.replace(/-/g, "");
+    return iso.replace(/-/g, "") + "T" + m[1].padStart(2, "0") + m[2] + "00";
+  };
+  const endM    = e.time ? e.time.match(/\d{1,2}:\d{2}\s*[-–]\s*(\d{1,2}):(\d{2})/) : null;
+  const endTime = endM ? `${endM[1].padStart(2, "0")}${endM[2]}00` : null;
+  const start   = fmt(e.date_start, e.time);
+  const endBase = e.date_end || e.date_start;
+  const end     = endTime ? endBase.replace(/-/g, "") + "T" + endTime : start;
+  const params  = new URLSearchParams({
+    text: e.title || "",
+    dates: `${start}/${end}`,
+    location: e.location || cityDisplay,
+    details: [
+      e.description || "",
+      e.location ? `Adresse: ${e.location}, ${cityDisplay}` : "",
+      e.original_url ? `Originalseite (bitte vor Teilnahme prüfen): ${e.original_url}` : "",
+      "Alle Angaben ohne Gewähr – bitte Originalseite prüfen.",
+    ].filter(Boolean).join("\n\n"),
+  });
+  return `${base}&${params.toString()}`;
+}
+
+function buildOutlookUrl(e: any) {
+  const fmt = (iso: string, time: string | null) => {
+    if (!iso) return "";
+    const m = time ? time.match(/(\d{1,2}):(\d{2})/) : null;
+    if (!m) return iso + "T00:00:00";
+    return `${iso}T${m[1].padStart(2, "0")}:${m[2]}:00`;
+  };
+  const endM    = e.time ? e.time.match(/\d{1,2}:\d{2}\s*[-–]\s*(\d{1,2}):(\d{2})/) : null;
+  const endTime = endM ? `${endM[1].padStart(2, "0")}:${endM[2]}:00` : null;
+  const start   = fmt(e.date_start, e.time);
+  const endBase = e.date_end || e.date_start;
+  const end     = endTime ? `${endBase}T${endTime}` : start;
+  const params  = new URLSearchParams({
+    path: "/calendar/action/compose", rru: "addevent",
+    subject: e.title || "",
+    startdt: start, enddt: end,
+    location: e.location || cityDisplay,
+    body: [
+      e.description || "",
+      e.location ? `Adresse: ${e.location}, ${cityDisplay}` : "",
+      e.original_url ? `Originalseite (bitte vor Teilnahme prüfen): ${e.original_url}` : "",
+      "Alle Angaben ohne Gewähr – bitte Originalseite prüfen.",
+    ].filter(Boolean).join("\n\n"),
+  });
+  return `https://outlook.live.com/calendar/0/action/compose?${params.toString()}`;
+}
+
+const googleCalUrl  = buildGoogleCalendarUrl(ev);
+const outlookCalUrl = buildOutlookUrl(ev);
+
+// ── Share URLs ────────────────────────────────────────────────────────────────
+const shareEventUrl = canonical;
+const shareText     = encodeURIComponent(`${ev.title} – ${shareEventUrl}`);
+const waShareUrl    = `https://wa.me/?text=${shareText}`;
+const tgShareUrl    = `https://t.me/share/url?url=${encodeURIComponent(shareEventUrl)}&text=${encodeURIComponent(ev.title)}`;
+
+// ── Schema.org ────────────────────────────────────────────────────────────────
+const priceData = normalisePrice(ev.price);
+
+const eventSchema = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": ev.title,
+  ...(ev.description ? { "description": ev.description } : {}),
+  "inLanguage": "de-DE",
+  ...(ev.date_start ? {
+    "startDate": (() => {
+      // Append Europe/Berlin timezone offset (CET +01:00 / CEST +02:00) per Google recommendation
+      // DST in Germany: last Sunday in March → last Sunday in October
+      function berlinOffset(dateStr) {
+        const d = new Date(dateStr + "T12:00:00Z");
+        const year = d.getUTCFullYear();
+        const dstStart = new Date(Date.UTC(year, 2, 31));
+        dstStart.setUTCDate(31 - dstStart.getUTCDay());
+        const dstEnd = new Date(Date.UTC(year, 9, 31));
+        dstEnd.setUTCDate(31 - dstEnd.getUTCDay());
+        return d >= dstStart && d < dstEnd ? "+02:00" : "+01:00";
+      }
+      const tz = berlinOffset(ev.date_start);
+      if (!ev.time) return `${ev.date_start}T00:00:00${tz}`;
+      const m = ev.time.match(/(\d{1,2}):(\d{2})/);
+      return m ? `${ev.date_start}T${m[1].padStart(2, "0")}:${m[2]}:00${tz}` : `${ev.date_start}T00:00:00${tz}`;
+    })(),
+  } : {}),
+  ...(ev.date_start ? { "endDate": (() => {
+      function berlinOffset(dateStr) {
+        const d = new Date(dateStr + "T12:00:00Z");
+        const year = d.getUTCFullYear();
+        const dstStart = new Date(Date.UTC(year, 2, 31));
+        dstStart.setUTCDate(31 - dstStart.getUTCDay());
+        const dstEnd = new Date(Date.UTC(year, 9, 31));
+        dstEnd.setUTCDate(31 - dstEnd.getUTCDay());
+        return d >= dstStart && d < dstEnd ? "+02:00" : "+01:00";
+      }
+      const endBase = ev.date_end || ev.date_start;
+      const tz = berlinOffset(endBase);
+      return `${endBase}T23:59:00${tz}`;
+    })() } : {}),
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "image": `${siteUrl}${ogImage}`,
+  "url": canonical,
+  "location": {
+    "@type": "Place",
+    "name": ev.location || cityDisplay,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": cityDisplay,
+      "postalCode": postalCode,
+      "addressRegion": "Baden-Württemberg",
+      "addressCountry": "DE",
+    },
+  },
+  "organizer": { "@type": "Organization", "name": organizer.name, "url": organizer.url },
+  "performer": { "@type": "PerformingGroup", "name": organizer.name },
+  ...(priceData ? {
+    "offers": {
+      "@type": "Offer",
+      "price": priceData.price,
+      "priceCurrency": priceData.currency,
+      "validFrom": ev.scraped_at,
+      "availability": "https://schema.org/InStock",
+      "url": ev.original_url || canonical,
+    },
+  } : {}),
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "rausgucken.de", "item": siteUrl },
+    { "@type": "ListItem", "position": 2, "name": cityDisplay,     "item": `${siteUrl}/${city}/` },
+    { "@type": "ListItem", "position": 3, "name": ev.title,        "item": canonical },
+  ],
+};
+
+// ── Related events (expired pages only) ──────────────────────────────────────
+const relatedEvents: any[] = isExpired
+  ? (await import("../../../../public/data/steinheim/events-current.json",
+      { assert: { type: "json" } }).then(m => (m.default as any).events ?? m.default).catch(() => []) as any[])
+      .filter((e: any) =>
+        e.slug !== ev.slug &&
+        e.date_start && e.date_start >= today &&
+        Array.isArray(e.tags) && Array.isArray(ev.tags) &&
+        e.tags.some((t: string) => ev.tags.includes(t))
+      )
+      .slice(0, 3)
+  : [];
+---
+
+<Base
+  title={seoTitle}
+  description={metaDesc}
+  canonical={canonical}
+  ogImage={ogImage}
+  ogType="article"
+  schema={[eventSchema, breadcrumbSchema]}
+  noindex={isExpired}
+>
+  <link rel="alternate" type="application/atom+xml"
+        href="/steinheim/feed.xml"
+        title="rausgucken.de – Steinheim an der Murr"
+        slot="head" />
+  <link rel="alternate" type="text/calendar"
+        href={icsUrl}
+        title={ev.title}
+        slot="head" />
+
+  <!-- ── Expired banner ────────────────────────────────────────────────────── -->
+  {isExpired && (
+    <div class="expired-banner" role="alert" aria-live="polite">
+      <span class="expired-icon" aria-hidden="true">⏰</span>
+      <div>
+        <strong>Diese Veranstaltung hat bereits stattgefunden.</strong>
+        {relatedEvents.length > 0
+          ? " Ähnliche aktuelle Veranstaltungen findest du hier:"
+          : ` Schau dir aktuelle Veranstaltungen in ${cityDisplay} an.`}
+      </div>
+    </div>
+  )}
+
+  {isExpired && relatedEvents.length > 0 && (
+    <div class="related-events" aria-label="Ähnliche aktuelle Veranstaltungen">
+      {relatedEvents.map((r: any) => (
+        <a href={`/${city}/events/${r.slug}/`} class="related-card">
+          <div class="related-card-body">
+            <span class="related-title">{r.title}</span>
+            {r.location && <span class="related-location">{r.location}</span>}
+          </div>
+          <span class="related-date">{formatDateShort(r.date_start)}</span>
+        </a>
+      ))}
+    </div>
+  )}
+
+  {isExpired && relatedEvents.length === 0 && (
+    <div class="expired-cta">
+      <a href={`/${city}/`} class="btn-cta">Alle aktuellen Veranstaltungen →</a>
+    </div>
+  )}
+
+  <!-- ── Breadcrumb ─────────────────────────────────────────────────────────── -->
+  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+    <a href="/">rausgucken.de</a>
+    <span aria-hidden="true"> › </span>
+    <a href={`/${city}/`}>{cityDisplay}</a>
+    <span aria-hidden="true"> › </span>
+    <span aria-current="page">{ev.title}</span>
+  </nav>
+
+  <article class="event-detail">
+    <header class="event-header">
+      <div class="event-tags" aria-label="Kategorien">
+        {Array.isArray(ev.tags) && ev.tags.map((t: string) => (
+          <a href={`/${city}/`}
+             class={`tag${t === "Kinder" || t === "Familie" ? " tag--sage" : ""}`}>
+            {TAG_LABELS[t] ?? t}
+          </a>
+        ))}
+        {ev.age_min != null && (
+          <span class="tag tag--age">
+            ab {ev.age_min} J.{ev.age_max ? ` bis ${ev.age_max} J.` : "+"}
+          </span>
+        )}
+      </div>
+      <h1>{ev.title}</h1>
+    </header>
+
+    <!-- ── Hero image ─────────────────────────────────────────────────────── -->
+    <div class="event-hero">
+      <img
+        src={ogImage}
+        alt={`${ev.title} – ${ev.location ?? cityDisplay} in ${cityDisplay}`}
+        width="720" height="380"
+        loading="eager" decoding="async"
+        class="hero-img"
+        onerror="this.closest('.event-hero').style.display='none'"
+      />
+    </div>
+
+    <!-- ── Meta grid ──────────────────────────────────────────────────────── -->
+    <dl class="meta-grid">
+      <div class="meta-item">
+        <dt class="meta-label">Datum</dt>
+        <dd class="meta-value" content={ev.date_start ?? ""}>{formatDateDE(ev.date_start)}</dd>
+      </div>
+      {ev.date_end && ev.date_end !== ev.date_start && (
+        <div class="meta-item">
+          <dt class="meta-label">Bis</dt>
+          <dd class="meta-value" content={ev.date_end}>{formatDateShort(ev.date_end)}</dd>
+        </div>
+      )}
+      {ev.time && (
+        <div class="meta-item">
+          <dt class="meta-label">Uhrzeit</dt>
+          <dd class="meta-value">{ev.time} Uhr</dd>
+        </div>
+      )}
+      {ev.location && (
+        <div class="meta-item">
+          <dt class="meta-label">Ort</dt>
+          <dd class="meta-value">{ev.location}</dd>
+        </div>
+      )}
+      {ev.price != null && (
+        <div class="meta-item">
+          <dt class="meta-label">Preis</dt>
+          <dd class="meta-value">{ev.price || "Kostenlos"}</dd>
+        </div>
+      )}
+    </dl>
+
+    <!-- ── Description ────────────────────────────────────────────────────── -->
+    {ev.description && (
+      <div class="event-description">
+        <h2>Beschreibung</h2>
+        <p>{ev.description}</p>
+      </div>
+    )}
+
+    <!-- ── Editorial tip ──────────────────────────────────────────────────── -->
+    {editorialTip && (
+      <div class="editorial-tip" role="note" aria-label="Redaktionstipp">
+        <span class="tip-label" aria-hidden="true">💡 Unser Tipp</span>
+        <p class="tip-text">{editorialTip}</p>
+      </div>
+    )}
+
+    <!-- ── Source box ─────────────────────────────────────────────────────── -->
+    <div class="source-box" aria-label="Quellenangabe">
+      <div class="source-info">
+        <p class="source-label">Quelle &amp; Aktualität</p>
+        <p class="source-name">{organizer.name}</p>
+        {scrapedFormatted && <p class="freshness-stamp">Erfasst am: {scrapedFormatted}</p>}
+        <p class="source-disclaimer">Alle Angaben ohne Gewähr — bitte Originalseite prüfen.</p>
+      </div>
+      {ev.original_url && (
+        <a href={ev.original_url} target="_blank" rel="noopener noreferrer"
+           class="btn-original"
+           aria-label={`Originalseite für ${ev.title} in neuem Tab öffnen`}>
+          Zur Originalseite →
+        </a>
+      )}
+
+      <!-- Share dropdown -->
+      <details class="share-dropdown">
+        <summary class="btn-share" aria-label={`${ev.title} teilen`}>
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Teilen
+        </summary>
+        <ul class="share-menu" role="list">
+          <li><a href={waShareUrl} target="_blank" rel="noopener noreferrer" class="share-item">
+            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a></li>
+          <li><a href={tgShareUrl} target="_blank" rel="noopener noreferrer" class="share-item">
+            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            Telegram
+          </a></li>
+          <li><a href={`https://threema.id/compose?text=${shareText}`} target="_blank" rel="noopener noreferrer" class="share-item">
+            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 2a8 8 0 110 16A8 8 0 0112 4zm0 3a3 3 0 00-3 3v1H8v5h8v-5h-1V10a3 3 0 00-3-3zm0 1.5a1.5 1.5 0 011.5 1.5v1h-3V10A1.5 1.5 0 0112 8.5z"/></svg>
+            Threema
+          </a></li>
+          <li><button class="share-item share-copy-btn" data-url={shareEventUrl}
+            onclick="navigator.clipboard.writeText(this.dataset.url).then(()=>{var orig=this.innerHTML;this.innerHTML=this.innerHTML.replace(/Link kopieren|Link kopiert!/,'Link kopiert!');setTimeout(()=>{this.innerHTML=orig},2000)})">
+            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+            Link kopieren
+          </button></li>
+        </ul>
+      </details>
+
+      <!-- Calendar dropdown -->
+      <div class="cal-dropdown">
+        <button class="btn-ics" aria-haspopup="true" aria-expanded="false" id="cal-btn">
+          📅 Zum Kalender ▾
+        </button>
+        <ul class="cal-menu" role="menu" aria-labelledby="cal-btn">
+          <li role="none">
+            <a href={googleCalUrl} target="_blank" rel="noopener noreferrer" role="menuitem">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M16 2v4M8 2v4M3 9h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="7" y="13" width="4" height="4" rx="0.5" fill="#4285F4"/><rect x="13" y="13" width="4" height="4" rx="0.5" fill="#34A853"/></svg>
+              Google Calendar
+            </a>
+          </li>
+          <li role="none">
+            <a href={outlookCalUrl} target="_blank" rel="noopener noreferrer" role="menuitem">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="4" width="20" height="16" rx="2" fill="#0078D4"/><path d="M2 8l10 7 10-7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Outlook
+            </a>
+          </li>
+          <li role="none">
+            <a href={icsUrl} download rel="nofollow" role="menuitem">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M16 2v4M8 2v4M3 9h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8 14h3m0 0v3m0-3l3-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Apple / ICS-Datei
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ── Related pages nav ───────────────────────────────────────────────── -->
+    <nav class="related-pages" aria-label={`Weitere Veranstaltungen in ${cityDisplay}`}>
+      <p class="related-pages-label">Weitere Veranstaltungen in {cityDisplay}</p>
+      <div class="related-pages-links">
+        <a href={`/${city}/`}>Alle Veranstaltungen in {cityDisplay}</a>
+        <a href="/ludwigsburg/">Landkreis Ludwigsburg</a>
+      </div>
+    </nav>
+
+    <a href={`/${city}/`} class="back-link">← Zurück zu allen Veranstaltungen</a>
+  </article>
+
+<style>
+  .event-hero { margin-bottom: 1.75rem; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); height: 220px; background: var(--tag-bg); }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; filter: brightness(0.95); }
+
+  .expired-banner { display: flex; align-items: flex-start; gap: 0.75rem; background: var(--tag-bg); border: 1px solid var(--border); border-left: 3px solid var(--coral); border-radius: var(--radius-sm); padding: 0.9rem 1.25rem; font-size: 0.9rem; color: var(--text); margin-bottom: 1rem; max-width: 720px; }
+  .expired-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 0.1rem; }
+  .related-events { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem; max-width: 720px; }
+  .related-card { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; padding: 0.65rem 1rem; background: var(--surface-card); border: 1px solid var(--border); border-radius: var(--radius-sm); text-decoration: none; color: var(--text); font-size: 0.88rem; transition: border-color 150ms, box-shadow 150ms; }
+  .related-card:hover { border-color: var(--coral); box-shadow: var(--shadow-card); text-decoration: none; }
+  .related-card-body { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+  .related-title { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .related-location { font-size: 0.78rem; color: var(--text-60); }
+  .related-date { font-size: 0.8rem; color: var(--text-60); white-space: nowrap; flex-shrink: 0; }
+  .expired-cta { margin-bottom: 1.5rem; }
+
+  .breadcrumb { font-size: 0.82rem; color: var(--text-60); margin-bottom: 1.5rem; max-width: 720px; display: flex; flex-wrap: wrap; align-items: center; gap: 0.1rem; }
+  .breadcrumb a { color: var(--text-60); }
+  .breadcrumb a:hover { color: var(--coral); text-decoration: none; }
+
+  .event-detail { max-width: 720px; }
+  .event-header { margin-bottom: 1.5rem; }
+  .event-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.75rem; }
+  .tag { background: var(--tag-bg); color: var(--text-60); font-size: 0.75rem; font-weight: 500; padding: 3px 10px; border-radius: 20px; text-decoration: none; transition: background 150ms, color 150ms; }
+  .tag:hover { background: var(--coral-light); color: var(--coral); }
+  .tag--sage { background: var(--sage-light); color: var(--text); font-weight: 600; }
+  .tag--sage:hover { background: var(--sage); }
+  .tag--age { background: var(--sage-light); color: var(--text); font-weight: 600; cursor: default; }
+  h1 { font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.25; margin-bottom: 0; }
+
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1rem; background: var(--surface-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; margin-bottom: 2rem; box-shadow: var(--shadow-card); }
+  .meta-item { display: flex; flex-direction: column; gap: 0.2rem; }
+  .meta-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-60); font-family: var(--font-body); }
+  .meta-value { font-size: 0.95rem; color: var(--text); font-weight: 500; }
+
+  .event-description { margin-bottom: 2rem; }
+  .event-description h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.65rem; color: var(--text); }
+  .event-description p { line-height: 1.75; color: var(--text-60); }
+
+  .editorial-tip { display: flex; flex-direction: column; gap: 0.35rem; background: var(--sage-light, #f0f7ea); border: 1px solid var(--border); border-left: 3px solid var(--sage, #90BE6D); border-radius: var(--radius-sm, 6px); padding: 0.9rem 1.1rem; margin-bottom: 2rem; max-width: 720px; }
+  .tip-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-60); font-family: var(--font-body); }
+  .tip-text { font-size: 0.9rem; line-height: 1.65; color: var(--text); margin: 0; }
+
+  .source-box { margin-top: 2rem; background: var(--coral-light); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .source-info { display: flex; flex-direction: column; gap: 0.25rem; flex: 1; min-width: 0; }
+  .source-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-60); font-family: var(--font-body); }
+  .source-name { font-size: 0.9rem; font-weight: 600; color: var(--text); }
+  .freshness-stamp { font-size: 0.78rem; color: var(--text); opacity: 0.70; }
+  .source-disclaimer { font-size: 0.75rem; color: var(--text); opacity: 0.55; margin-top: 0.15rem; }
+  .btn-original { display: inline-flex; align-items: center; background: var(--coral); color: var(--text); padding: 0.65rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; white-space: nowrap; text-decoration: none; min-height: 44px; transition: background 150ms; flex-shrink: 0; }
+  .btn-original:hover { background: var(--coral-dark); text-decoration: none; }
+  .btn-original:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+
+  .share-dropdown { position: relative; flex-shrink: 0; }
+  .share-dropdown[open] .btn-share { border-color: var(--coral); color: var(--coral); background: var(--coral-light); }
+  .btn-share { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--surface-card); color: var(--text); border: 1.5px solid var(--border); padding: 0.65rem 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600; white-space: nowrap; cursor: pointer; min-height: 44px; list-style: none; user-select: none; transition: border-color 150ms, background 150ms, color 150ms; font-family: var(--font-body); }
+  .btn-share::-webkit-details-marker { display: none; }
+  .btn-share:hover { border-color: var(--coral); color: var(--coral); background: var(--coral-light); }
+  .share-copy-btn { width: 100%; background: none; border: none; cursor: pointer; text-align: left; font-family: var(--font-body); color: var(--text); }
+  .share-dropdown .share-menu { position: absolute; bottom: calc(100% + 6px); right: 0; background: var(--surface-card); border: 1px solid var(--border); border-radius: var(--radius-sm); box-shadow: 0 8px 24px rgba(0,0,0,0.14); list-style: none; padding: 0.35rem 0; margin: 0; min-width: 200px; z-index: 40; }
+  html.dark .share-dropdown .share-menu { box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+  .share-item { display: flex; align-items: center; gap: 0.55rem; padding: 0.5rem 1rem; font-size: 0.85rem; font-weight: 500; color: var(--text); text-decoration: none; white-space: nowrap; transition: background 120ms; }
+  .share-item:hover { background: var(--tag-bg); text-decoration: none; }
+
+  .cal-dropdown { position: relative; flex-shrink: 0; }
+  .btn-ics { display: inline-flex; align-items: center; gap: 0.35rem; background: var(--surface-card); color: var(--text); border: 1.5px solid var(--border); padding: 0.65rem 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 600; white-space: nowrap; cursor: pointer; min-height: 44px; transition: border-color 150ms, background 150ms; font-family: var(--font-body); }
+  .btn-ics:hover { border-color: var(--coral); background: var(--coral-light); }
+  .btn-ics:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+  .cal-menu { display: none; position: absolute; bottom: calc(100% + 6px); right: 0; background: var(--surface-card); border: 1px solid var(--border); border-radius: var(--radius-sm); box-shadow: var(--shadow-card); list-style: none; padding: 0.35rem 0; margin: 0; min-width: 170px; z-index: 40; }
+  .cal-menu.open { display: block; }
+  .cal-menu li { padding: 0; }
+  .cal-menu a { display: flex; align-items: center; gap: 0.55rem; padding: 0.55rem 1rem; font-size: 0.88rem; color: var(--text); text-decoration: none; white-space: nowrap; }
+  .cal-menu a:hover { background: var(--coral-light); color: var(--coral); }
+
+  .btn-cta { display: inline-flex; align-items: center; background: var(--coral); color: var(--text); padding: 0.65rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.9rem; font-weight: 600; text-decoration: none; min-height: 44px; transition: background 150ms; }
+  .btn-cta:hover { background: var(--coral-dark); text-decoration: none; }
+
+  .related-pages { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+  .related-pages-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-60); margin-bottom: 0.65rem; font-family: var(--font-body); }
+  .related-pages-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .related-pages-links a { display: inline-flex; align-items: center; padding: 0.4rem 0.9rem; background: var(--tag-bg); color: var(--text-60); border-radius: 20px; font-size: 0.82rem; font-weight: 500; text-decoration: none; min-height: 36px; transition: background 150ms, color 150ms; }
+  .related-pages-links a:hover { background: var(--coral-light); color: var(--coral); text-decoration: none; }
+
+  .back-link { display: inline-block; margin-top: 2rem; font-size: 0.88rem; color: var(--text-60); text-decoration: none; transition: color 150ms; }
+  .back-link:hover { color: var(--coral); }
+</style>
+
+<script>
+  const btn = document.getElementById('cal-btn');
+  const menu = btn && btn.nextElementSibling;
+  if (btn && menu) {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', () => {
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        menu.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+</script>
+</Base>

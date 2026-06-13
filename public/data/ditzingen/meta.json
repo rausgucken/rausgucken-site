@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-06-12T04:25:17.282388+02:00",
+  "scraped_at": "2026-06-13T05:41:26.243763+02:00",
   "city": "ditzingen",
-  "event_count": 425,
+  "event_count": 421,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -10,27 +10,27 @@
   ],
   "source_counts": {
     "ditzingen_stadt": 146,
-    "ditzingen_treffpunkt_adler": 279
+    "ditzingen_treffpunkt_adler": 275
   },
   "sources_failed": [],
-  "data_hash": "0ab1c649de859750",
+  "data_hash": "e6850b9a4225f3cf",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 12.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 13.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 165.3,
-    "runtime_delta_vs_baseline": -0.077,
+    "runtime_minutes": 450.7,
+    "runtime_delta_vs_baseline": 1.518,
     "source_health": {
       "ditzingen_stadt": 1.0,
       "ditzingen_treffpunkt_adler": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "healthy",
-    "generated_at": "2026-06-12T04:56:46.260518+02:00"
+    "status": "critical",
+    "generated_at": "2026-06-13T10:03:07.049770+02:00"
   }
 }

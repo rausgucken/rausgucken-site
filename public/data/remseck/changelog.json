@@ -1,20 +1,33 @@
 {
-  "generated_at": "2026-06-12T03:51:18.283232+02:00",
+  "generated_at": "2026-06-13T04:37:13.773169+02:00",
   "city": "remseck",
   "sources": [
-    "remseck_stadt",
-    "remseck_mediathek"
+    "remseck_mediathek",
+    "remseck_stadt"
   ],
-  "previous_run": "2026-06-11T10:15:27.013118+02:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-06-12T03:51:18.303128+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "cf1aa606b30ef4f8",
+      "title": "Open-Air Poetry Slam",
+      "date_start": "2026-07-24",
+      "source": "remseck_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "ee72d85f01839538",
-      "title": "Hochberger Bücherfreunde",
-      "date_start": "2026-06-11",
-      "source": "remseck_mediathek"
+      "id": "ab4ec4ae53d0f9a5",
+      "title": "Remsecker Marktplatzfest",
+      "date_start": "2026-06-12",
+      "source": "remseck_stadt"
+    },
+    {
+      "id": "122f4cf9bbfebd68",
+      "title": "Open-Air Poetry Slam",
+      "date_start": "2026-07-24",
+      "source": "remseck_stadt"
     }
   ]
 }

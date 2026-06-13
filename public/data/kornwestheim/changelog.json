@@ -1,50 +1,33 @@
 {
-  "generated_at": "2026-06-12T04:25:16.833125+02:00",
+  "generated_at": "2026-06-13T05:41:25.398533+02:00",
   "city": "kornwestheim",
   "sources": [
     "kornwestheim",
-    "das_k_buecherei",
-    "das_k_spielplan"
+    "das_k_spielplan",
+    "das_k_buecherei"
   ],
-  "previous_run": "2026-06-11T10:46:01.946564+02:00",
-  "count_added": 0,
-  "count_removed": 6,
-  "added": [],
+  "previous_run": "2026-06-12T04:25:16.855666+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "8b49c4158d9a6a18",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-07-03",
+      "source": "kornwestheim"
+    }
+  ],
   "removed": [
     {
-      "id": "e3363533bfe4e078",
-      "title": "Nachbarschaftscafé",
-      "date_start": "2026-06-11",
+      "id": "f683d25717bb3dac",
+      "title": "Ausstellung \"Marion Eichmann – The Paper Code\"",
+      "date_start": "2026-06-12",
       "source": "kornwestheim"
     },
     {
-      "id": "ceb99e07321dad2e",
-      "title": "Smartphone - Einführungskurs",
-      "date_start": "2026-06-11",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "2fcf96c486c1be88",
-      "title": "Verwaltungs- und Finanzausschuss (VFA)",
-      "date_start": "2026-06-11",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "8c975bc2c64cbde3",
-      "title": "Kornwestheim tanzt!",
-      "date_start": "2026-06-11",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "5bb55ad7f8059b84",
-      "title": "Kaffeetreff",
-      "date_start": "2026-06-11",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "1285685a1f7d9c19",
-      "title": "WM-Eröffnung am Stadtgarten",
-      "date_start": "2026-06-11",
+      "id": "fa84a15633b01cb6",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-07-03",
       "source": "kornwestheim"
     }
   ]

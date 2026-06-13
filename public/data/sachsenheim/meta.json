@@ -1,36 +1,39 @@
 {
-  "scraped_at": "2026-06-12T04:19:55.123845+02:00",
+  "scraped_at": "2026-06-13T05:32:05.707157+02:00",
   "city": "sachsenheim",
-  "event_count": 13,
+  "event_count": 21,
   "flagged_count": 0,
-  "expired_count": 0,
+  "expired_count": 11,
   "sources_scraped": [
     "sachsenheim_kultur",
-    "sachsenheim_library"
+    "sachsenheim_library",
+    "sachsenheim_museum"
   ],
   "source_counts": {
-    "sachsenheim_kultur": 12,
-    "sachsenheim_library": 1
+    "sachsenheim_kultur": 17,
+    "sachsenheim_library": 2,
+    "sachsenheim_museum": 2
   },
   "sources_failed": [],
-  "data_hash": "8ed1e4876018b7b2",
+  "data_hash": "b0b24dfbeb5e65b5",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 12.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 13.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 165.3,
-    "runtime_delta_vs_baseline": -0.077,
+    "runtime_minutes": 450.7,
+    "runtime_delta_vs_baseline": 1.518,
     "source_health": {
-      "sachsenheim_kultur": 0.95,
-      "sachsenheim_library": 0.97
+      "sachsenheim_kultur": 0.92,
+      "sachsenheim_library": 0.97,
+      "sachsenheim_museum": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "healthy",
-    "generated_at": "2026-06-12T04:56:46.475501+02:00"
+    "status": "critical",
+    "generated_at": "2026-06-13T10:03:07.307969+02:00"
   }
 }
