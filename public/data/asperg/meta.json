@@ -1,39 +1,39 @@
 {
-  "scraped_at": "2026-06-13T03:48:59.100456+02:00",
+  "scraped_at": "2026-06-15T22:03:37.683111+02:00",
   "city": "asperg",
-  "event_count": 72,
+  "event_count": 71,
   "flagged_count": 0,
-  "expired_count": 11,
+  "expired_count": 13,
   "sources_scraped": [
     "asperg_fuehrungen",
     "asperg_veranstaltungen",
     "glasperlenspiel"
   ],
   "source_counts": {
-    "asperg_veranstaltungen": 56,
-    "asperg_fuehrungen": 10,
-    "glasperlenspiel": 6
+    "asperg_veranstaltungen": 54,
+    "asperg_fuehrungen": 9,
+    "glasperlenspiel": 8
   },
   "sources_failed": [],
-  "data_hash": "a3f92b2b11c9d57c",
+  "data_hash": "0fb54f8745d7e20c",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 13.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 15.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "quality_report": {
-    "regression_pass_rate": 0.0,
+    "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 450.7,
-    "runtime_delta_vs_baseline": 1.518,
+    "runtime_minutes": 522.7,
+    "runtime_delta_vs_baseline": 1.92,
     "source_health": {
       "asperg_veranstaltungen": 1.0,
-      "asperg_fuehrungen": 0.98,
-      "glasperlenspiel": 0.95
+      "asperg_fuehrungen": 0.93,
+      "glasperlenspiel": 0.94
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "critical",
-    "generated_at": "2026-06-13T10:03:06.879990+02:00"
+    "status": "warning",
+    "generated_at": "2026-06-16T02:50:06.277783+02:00"
   }
 }

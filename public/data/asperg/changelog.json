@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-13T03:48:59.078969+02:00",
+  "generated_at": "2026-06-15T22:03:37.660845+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
     "asperg_veranstaltungen",
+    "asperg_fuehrungen",
     "glasperlenspiel"
   ],
-  "previous_run": "2026-06-12T03:44:23.490654+02:00",
-  "count_added": 11,
-  "count_removed": 0,
+  "previous_run": "2026-06-15T07:18:07.003457+02:00",
+  "count_added": 15,
+  "count_removed": 3,
   "added": [
     {
       "id": "df2fb65f3b7fecca",
@@ -71,11 +71,54 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "a53063345b384a1d",
+      "title": "Kabarett von HG. Butzko",
+      "date_start": "2026-07-04",
+      "source": "glasperlenspiel"
+    },
+    {
       "id": "01dc658fc15dce37",
       "title": "Humorfest mit Ernst Mantel und Werner Koczwara",
       "date_start": "2026-06-09",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "7d6dc66af3cd45a5",
+      "title": "Colors of Soul",
+      "date_start": "2026-09-13",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "b7f697cc95abc371",
+      "title": "Abenteuerreise der Tiere",
+      "date_start": "2026-09-20",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "9a7db249eb373750",
+      "title": "Konzert mit emisa",
+      "date_start": "2026-06-14",
+      "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "4005bab35c4a0971",
+      "title": "Bilderbuchkino",
+      "date_start": "2026-06-13",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "b5245ebbda4f1a65",
+      "title": "Führung - Ein Gang über die schwäbische Bastille",
+      "date_start": "2026-06-14",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "110adbd4010b2ed7",
+      "title": "Konzert mit emisa",
+      "date_start": "2026-06-14",
+      "source": "glasperlenspiel"
+    }
+  ]
 }

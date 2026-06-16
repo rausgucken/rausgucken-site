@@ -1,33 +1,26 @@
 {
-  "generated_at": "2026-06-13T04:37:13.773169+02:00",
+  "generated_at": "2026-06-15T23:37:17.643794+02:00",
   "city": "remseck",
   "sources": [
-    "remseck_mediathek",
-    "remseck_stadt"
+    "remseck_stadt",
+    "remseck_mediathek"
   ],
-  "previous_run": "2026-06-12T03:51:18.303128+02:00",
-  "count_added": 1,
+  "previous_run": "2026-06-15T02:19:07.243770+02:00",
+  "count_added": 0,
   "count_removed": 2,
-  "added": [
-    {
-      "id": "cf1aa606b30ef4f8",
-      "title": "Open-Air Poetry Slam",
-      "date_start": "2026-07-24",
-      "source": "remseck_stadt"
-    }
-  ],
+  "added": [],
   "removed": [
     {
-      "id": "ab4ec4ae53d0f9a5",
+      "id": "350dfbc4886f914c",
       "title": "Remsecker Marktplatzfest",
-      "date_start": "2026-06-12",
+      "date_start": "2026-06-13",
       "source": "remseck_stadt"
     },
     {
-      "id": "122f4cf9bbfebd68",
-      "title": "Open-Air Poetry Slam",
-      "date_start": "2026-07-24",
-      "source": "remseck_stadt"
+      "id": "93eadc1fa41bec83",
+      "title": "Marktplatzfest",
+      "date_start": "2026-06-13",
+      "source": "remseck_mediathek"
     }
   ]
 }
