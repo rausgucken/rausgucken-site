@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-15T22:03:37.660845+02:00",
+  "generated_at": "2026-06-16T06:08:29.636993+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
+    "glasperlenspiel",
     "asperg_fuehrungen",
-    "glasperlenspiel"
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-06-15T07:18:07.003457+02:00",
-  "count_added": 15,
-  "count_removed": 3,
+  "previous_run": "2026-06-15T22:03:37.683111+02:00",
+  "count_added": 13,
+  "count_removed": 0,
   "added": [
     {
       "id": "df2fb65f3b7fecca",
@@ -65,33 +65,21 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "7943577b1d807506",
+      "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
+      "date_start": "2026-06-14",
+      "source": "asperg_fuehrungen"
+    },
+    {
       "id": "8852b65c7ff4a9cb",
       "title": "Tag der dt. Einheit - Ein Gang über die schwäbische Bastille",
       "date_start": "2025-10-03",
       "source": "asperg_fuehrungen"
     },
     {
-      "id": "a53063345b384a1d",
-      "title": "Kabarett von HG. Butzko",
-      "date_start": "2026-07-04",
-      "source": "glasperlenspiel"
-    },
-    {
       "id": "01dc658fc15dce37",
       "title": "Humorfest mit Ernst Mantel und Werner Koczwara",
       "date_start": "2026-06-09",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "7d6dc66af3cd45a5",
-      "title": "Colors of Soul",
-      "date_start": "2026-09-13",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "b7f697cc95abc371",
-      "title": "Abenteuerreise der Tiere",
-      "date_start": "2026-09-20",
       "source": "glasperlenspiel"
     },
     {
@@ -101,24 +89,5 @@
       "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "4005bab35c4a0971",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-06-13",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "b5245ebbda4f1a65",
-      "title": "Führung - Ein Gang über die schwäbische Bastille",
-      "date_start": "2026-06-14",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "110adbd4010b2ed7",
-      "title": "Konzert mit emisa",
-      "date_start": "2026-06-14",
-      "source": "glasperlenspiel"
-    }
-  ]
+  "removed": []
 }

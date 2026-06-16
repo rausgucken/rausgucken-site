@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-16T01:30:15.013916+02:00",
+  "scraped_at": "2026-06-16T07:00:44.762642+02:00",
   "city": "sachsenheim",
   "event_count": 16,
   "flagged_count": 0,
@@ -10,12 +10,12 @@
     "sachsenheim_museum"
   ],
   "source_counts": {
-    "sachsenheim_library": 12,
-    "sachsenheim_kultur": 2,
+    "sachsenheim_kultur": 10,
+    "sachsenheim_library": 4,
     "sachsenheim_museum": 2
   },
   "sources_failed": [],
-  "data_hash": "882d46406218b468",
+  "data_hash": "648d55cbf24f6cb5",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 16.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
@@ -24,16 +24,16 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 522.7,
-    "runtime_delta_vs_baseline": 1.92,
+    "runtime_minutes": 370.6,
+    "runtime_delta_vs_baseline": 1.07,
     "source_health": {
-      "sachsenheim_library": 0.95,
-      "sachsenheim_kultur": 0.97,
+      "sachsenheim_kultur": 0.94,
+      "sachsenheim_library": 0.97,
       "sachsenheim_museum": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-06-16T02:50:06.658035+02:00"
+    "generated_at": "2026-06-16T08:24:36.103271+02:00"
   }
 }
