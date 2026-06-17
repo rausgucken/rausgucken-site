@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-16T07:00:44.742756+02:00",
+  "generated_at": "2026-06-17T03:54:14.714441+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
     "sachsenheim_museum",
+    "sachsenheim_library",
     "sachsenheim_kultur"
   ],
-  "previous_run": "2026-06-16T01:30:15.013916+02:00",
-  "count_added": 22,
-  "count_removed": 8,
+  "previous_run": "2026-06-16T07:00:44.762642+02:00",
+  "count_added": 16,
+  "count_removed": 1,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -23,18 +23,6 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "d344737d54eed94d",
-      "title": "Tanznachmittag",
-      "date_start": "2026-03-24",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "595b7954ee6c7bc8",
-      "title": "Tanznachmittag",
-      "date_start": "2026-04-14",
-      "source": "sachsenheim_library"
-    },
-    {
       "id": "98876af6517b17e8",
       "title": "Rollator-Training",
       "date_start": "2026-05-08",
@@ -44,12 +32,6 @@
       "id": "2b3f4b3eb5a432cf",
       "title": "Rollator-Training",
       "date_start": "2026-05-09",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "fbc19e44735d49c3",
-      "title": "Tanznachmittag",
-      "date_start": "2026-05-12",
       "source": "sachsenheim_kultur"
     },
     {
@@ -83,42 +65,6 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "b92ac0e7b996521a",
-      "title": "Feierabend-Jodeln",
-      "date_start": "2026-06-22",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "6b42e1b741d3e5a5",
-      "title": "Feierabend-Jodeln",
-      "date_start": "2026-06-22",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "0307fa61a13a5a35",
-      "title": "Feierabend-Jodeln",
-      "date_start": "2026-06-22",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "34d086336149e9ae",
-      "title": "Online-Vortrag: PV-Altanlagen – So lohnt sich Ihre Anlage weiterhin",
-      "date_start": "2026-06-23",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "90a565891b58c5f6",
-      "title": "Aktion MITEINANDER - EINFACH SINGEN am Vormittag",
-      "date_start": "2026-06-24",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "65904901e513a549",
-      "title": "FamilienSingen",
-      "date_start": "2026-06-24",
-      "source": "sachsenheim_kultur"
-    },
-    {
       "id": "c4edeab95960feb0",
       "title": "Rollator-Training",
       "date_start": "2026-05-08",
@@ -131,66 +77,42 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "a40391afb9127260",
-      "title": "5. Aktion MITEINANDER 'Gemeinsam aus der Einsamkeit'",
-      "date_start": "2026-06-22",
+      "id": "79ed7a0d72753b62",
+      "title": "Aktion MITEINANDER - TANZEN QUERBEET - Volkstanz international",
+      "date_start": "2026-06-24",
       "source": "sachsenheim_kultur"
     },
+    {
+      "id": "11fcb3a2495b05ad",
+      "title": "Spaziererei",
+      "date_start": "2026-06-25",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "ef115eebafcac3f2",
+      "title": "FamilienSingen",
+      "date_start": "2026-06-26",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "96b7189dfaac7ccb",
+      "title": "Rollator-Training",
+      "date_start": "2026-06-26",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "a71dfb1f30ac49c1",
+      "title": "Aktion MITEINANDER - TANZEN QUERBEET",
+      "date_start": "2026-06-24",
+      "source": "sachsenheim_library"
+    }
+  ],
+  "removed": [
     {
       "id": "50a0e736c3087fc9",
       "title": "Tanznachmittag",
       "date_start": "2026-06-16",
       "source": "sachsenheim_kultur"
-    }
-  ],
-  "removed": [
-    {
-      "id": "1d6d9d3f8af86f61",
-      "title": "Tanznachmittag",
-      "date_start": "2026-06-16",
-      "source": "sachsenheim_library"
-    },
-    {
-      "id": "f1a0d10e463a6701",
-      "title": "5. Aktion MITEINANDER 'Gemeinsam aus der Einsamkeit'",
-      "date_start": "2026-06-22",
-      "source": "sachsenheim_library"
-    },
-    {
-      "id": "ce79e689525a89bd",
-      "title": "Feierabend-Jodeln",
-      "date_start": "2026-06-22",
-      "source": "sachsenheim_library"
-    },
-    {
-      "id": "da5c37a51be9f872",
-      "title": "Feierabend-Jodeln",
-      "date_start": "2026-06-22",
-      "source": "sachsenheim_library"
-    },
-    {
-      "id": "c6e3f3ed4235509f",
-      "title": "Feierabend-Jodeln",
-      "date_start": "2026-06-22",
-      "source": "sachsenheim_library"
-    },
-    {
-      "id": "d5fae5ae51908d7c",
-      "title": "Online-Vortrag: PV-Altanlagen – So lohnt sich Ihre Anlage weiterhin",
-      "date_start": "2026-06-23",
-      "source": "sachsenheim_library"
-    },
-    {
-      "id": "7abe6200efab252a",
-      "title": "Aktion MITEINANDER - EINFACH SINGEN am Vormittag",
-      "date_start": "2026-06-24",
-      "source": "sachsenheim_library"
-    },
-    {
-      "id": "495d9dfba6936041",
-      "title": "FamilienSingen",
-      "date_start": "2026-06-24",
-      "source": "sachsenheim_library"
     }
   ]
 }

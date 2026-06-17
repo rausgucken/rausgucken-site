@@ -1,12 +1,831 @@
 {
-  "generated_at": "2026-06-16T08:10:36.803976+02:00",
+  "generated_at": "2026-06-17T04:30:07.471041+02:00",
   "city": "ditzingen",
   "sources": [
+    "ditzingen_stadt",
     "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-06-16T02:36:09.675373+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-06-16T08:10:36.841462+02:00",
+  "count_added": 134,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "478fd0acaf84511f",
+      "title": "Konzert",
+      "date_start": "2026-10-18",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "8eaff7e81a687eb3",
+      "title": "Fasnetparty",
+      "date_start": "2027-01-30",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "3973a1ee4f5237a5",
+      "title": "Blutspende",
+      "date_start": "2026-06-26",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "117cb92c0ab591a2",
+      "title": "Blutspende",
+      "date_start": "2026-11-13",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "435eed28970de59d",
+      "title": "Blutspende",
+      "date_start": "2027-01-22",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "f15a1a569b546cc5",
+      "title": "Kreativabend für Frauen",
+      "date_start": "2026-11-13",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "a5de17d6f01fc24f",
+      "title": "Vorlesezeit",
+      "date_start": "2026-06-30",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "eca39dda502673a7",
+      "title": "Vorlesezeit",
+      "date_start": "2026-07-28",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "5e65f732e517ba71",
+      "title": "Vorlesezeit",
+      "date_start": "2026-09-29",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "73c6b18c7ae97f2d",
+      "title": "Vorlesezeit",
+      "date_start": "2026-10-27",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "52a25da95e14af9d",
+      "title": "Vorlesezeit",
+      "date_start": "2026-11-24",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "cf9f713c2890f330",
+      "title": "Vorlesezeit",
+      "date_start": "2026-12-15",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "c570971f4ffd2c36",
+      "title": "Vorlesezeit",
+      "date_start": "2026-06-27",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "634abc70dc8bd1b0",
+      "title": "Vorlesezeit",
+      "date_start": "2026-07-11",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "c44a81d81a14f63c",
+      "title": "Vorlesezeit",
+      "date_start": "2026-07-25",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "fdfe018a52a9019f",
+      "title": "Jazz in Town Vol. 4 - The Music of Miles Davis – Kind of Blue and More!",
+      "date_start": "2026-10-14",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "4f8220352965ba3d",
+      "title": "Heimerdinger Büchergespräch",
+      "date_start": "2026-10-21",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "f49b7061f62a1253",
+      "title": "Familien-Samstag in der Stadtteilbibliothek Heimerdingen",
+      "date_start": "2026-11-07",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "34e0a8722f190119",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-06-25",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "a33a500744f75b81",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-07-09",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "38f81bf8b0832505",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-07-23",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "e306c0ebcd815ab7",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-09-03",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "c330badb99f43205",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "5f61e968f18c88f8",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-10-01",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "eb070319fe7aa25a",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-10-15",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "b7d38c5b911138e3",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-10-29",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "f6469f251fcca317",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-11-12",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "96a08e42f2647098",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-11-26",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "7efdd541702727dc",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-12-10",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "cf83e1ea2c1e5c6f",
+      "title": "Vorlesezeit für Kinder von 4 bis 6 Jahren",
+      "date_start": "2026-06-25",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "616184e2404ef934",
+      "title": "Vorlesezeit für Kinder von 4 bis 6 Jahren",
+      "date_start": "2026-07-09",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "ea9240fa0398cb13",
+      "title": "Vorlesezeit für Kinder von 4 bis 6 Jahren",
+      "date_start": "2026-07-23",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "8b357472e3c21ce9",
+      "title": "Vorlesezeit",
+      "date_start": "2026-06-24",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "9416e92e8b3fc00d",
+      "title": "Vorlesezeit",
+      "date_start": "2026-07-22",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "83c863fd042778e9",
+      "title": "Vorlesezeit",
+      "date_start": "2026-09-30",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "ea1d10a48d1dd07d",
+      "title": "Vorlesezeit",
+      "date_start": "2026-10-28",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "245a542ca8e933ad",
+      "title": "Vorlesezeit",
+      "date_start": "2026-11-25",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "b7e105832a196e40",
+      "title": "Vorlesezeit",
+      "date_start": "2026-12-16",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "0f0f0a386c20e5a4",
+      "title": "Hirschlander Flöhe - privater Stadtteilflohmarkt",
+      "date_start": "2026-06-21",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "b74ca08c741e1a60",
+      "title": "Gaumenfreuden aus Persien",
+      "date_start": "2026-06-27",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "e8a112def33e5d6a",
+      "title": "Spicy Honey Chicken",
+      "date_start": "2026-06-25",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "8c10dfe29dc44c89",
+      "title": "Encaustic - Wachs auf Servietten",
+      "date_start": "2026-06-20",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "70a20d34d6cc5fc2",
+      "title": "Politik.Live – Spaziergang",
+      "date_start": "2026-07-24",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "024b9a96f524574f",
+      "title": "English Book Club",
+      "date_start": "2026-06-18",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "5ae3c4694e7ad2f0",
+      "title": "Sommerserenade mit anschließender Hocketse",
+      "date_start": "2026-06-26",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "e7fab30831756732",
+      "title": "Liederkranz-Sommerfest",
+      "date_start": "2026-06-27",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "4e038a396849a914",
+      "title": "Tag der offenen Tür der Jugendmusikschule",
+      "date_start": "2026-06-27",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "61e08c573187748a",
+      "title": "Jede Menge Tasten",
+      "date_start": "2026-06-20",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "1a695e81d4095143",
+      "title": "Musik zur Marktzeit mit dem Orchester Jugendmusikschule",
+      "date_start": "2026-07-04",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "ea627b262a875385",
+      "title": "Line-Dance - Tanz dich glücklich!",
+      "date_start": "2026-06-18",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "bd6b13a1e69b0d62",
+      "title": "Hirschlander Feuerwehrhocketse",
+      "date_start": "2026-06-20",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "7f757521b74804cc",
+      "title": "Musik zur Marktzeit X",
+      "date_start": "2026-06-20",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "598cdf03d85169fd",
+      "title": "Wir kommen groß raus: Konzert der GioCoro Kinderkantorei",
+      "date_start": "2026-06-26",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "5be468ca2c2c39d0",
+      "title": "Ausstellung \"Jahreszeiten\" - Hiroko Tsubaki",
+      "date_start": "2026-03-06",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "16fedec5e48ad7ad",
+      "title": "Musicalaufführungen im Jubiläumsjahr",
+      "date_start": "2026-10-21",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "c8807893486b65a8",
+      "title": "Weihnachtskonzert im Jubiläumsjahr",
+      "date_start": "2026-12-17",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "68b19c42762ed3a6",
+      "title": "Schulfest Theodor-Heuglin- Schule - 60 Jahre unterwegs",
+      "date_start": "2026-06-27",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "5e2b69b6e22f6775",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-06-28",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "9a6acfd2ad142d72",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-07-12",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "70eee3d171e40e61",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-07-26",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "4e261ee241caee39",
+      "title": "Charity Bike Cup 2026",
+      "date_start": "2026-10-03",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "c5a5e9827c338666",
+      "title": "Vernissage zur Sonderausstellung \"50 Jahre Große Kreisstadt Ditzingen\"",
+      "date_start": "2026-10-18",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "b9f8e5370a9d2263",
+      "title": "Vernissage und Ausstellung Kunst mit Kindern",
+      "date_start": "2026-06-20",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "046a7ad378c43d43",
+      "title": "Historischer Stadtrundgang - 50 Jahre Große Kreisstadt: Dorf – Stadt - Große Kreisstadt",
+      "date_start": "2026-10-10",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "e05e5198e0e5fe78",
+      "title": "Sommerferienprogramm der Kinder- und Jugendarbeit",
+      "date_start": "2026-08-17",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "bdc881a49410ca19",
+      "title": "KlangFarben-Konzert \"Fields of Gold\"",
+      "date_start": "2026-07-12",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "140450e7d91d65b1",
+      "title": "Kommunale Ferienbetreuung Ditziland Sommerferien 2026",
+      "date_start": "2026-08-24",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "74055a2c3bc2f0fd",
+      "title": "Auf der Wiese ist was los - ein buntes Liederprogramm mit Christof und Vladi Altmann für Kinder von 4 bis 9 Jahren",
+      "date_start": "2026-07-02",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "ed2dcbd170547d90",
+      "title": "Die Natur und WIR - eine Ausstellung mit Kindern der Doris Leibinger Grundschule",
+      "date_start": "2026-06-19",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "8719217691d7a488",
+      "title": "Eine Ausstellung von Daniel Schuster",
+      "date_start": "2026-09-18",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "cb3da821030e5d21",
+      "title": "Unsere Natur - unsere Umwelt - unsere Kunst - Mitgliederausstellung des Kunstverein Ditzingen e.V.",
+      "date_start": "2026-08-07",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "80caad9c8292022f",
+      "title": "Jubiläumsausstellung von BUND e.V. Ditzingen in Kooperation mit dem Kunstverein Ditzingen e.V.",
+      "date_start": "2026-09-12",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "0a6fac81bff5933f",
+      "title": "Musik Inklusive Alle",
+      "date_start": "2026-07-06",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "ae18ea9dbb494368",
+      "title": "Musik Inklusive Alle",
+      "date_start": "2026-09-21",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "4e111bd2af7a5887",
+      "title": "Zeltcafe",
+      "date_start": "2026-08-21",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "707f452b374be399",
+      "title": "Schöckinger Dorffest",
+      "date_start": "2026-07-11",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "23988172e6a6f6d5",
+      "title": "\"Lückenleben\": Mein Mann\\, der Alzheimer\\, die Konventionen und ich - eine Lesung mit Katrin Seyfert",
+      "date_start": "2026-09-25",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "78b9bb0a2d320bfe",
+      "title": "Herausforderung Demenz - Ein Vortrag im Rahmen der Woche der Demenz im Landkreis Ludwigsburg",
+      "date_start": "2026-09-24",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "b3010243249db6b5",
+      "title": "Picknick-Konzert",
+      "date_start": "2026-07-23",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "7e124b4e79c557a1",
+      "title": "STADTRADELN 2026",
+      "date_start": "2026-07-01",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "b4d228fe9d848883",
+      "title": "Rückpass in die Zukunft - Ein Fußballturnier nach den Regeln von 1863",
+      "date_start": "2026-09-26",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "33ab2a971e9680d1",
+      "title": "Gedenken für anonym beigesetzte Verstorbene",
+      "date_start": "2026-08-16",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "dc0452beec81fc40",
+      "title": "Rundgang zur Entwicklung des Ditzinger Friedhofs",
+      "date_start": "2026-09-13",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "3597ace3bbdf58a7",
+      "title": "Herbstzeit ist Kinozeit - gleicher Ort\\, anderer Film\\, neue Uhrzeit!",
+      "date_start": "2026-09-28",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "ef0ebde3ab9da7db",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-09-27",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "8643f2d99230595f",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-10-11",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "d8492e1ef85f4886",
+      "title": "Tischtennis Grundschulmeisterschaften",
+      "date_start": "2026-07-04",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "5a51f3452d796b8c",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-11-08",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "a4e19efce7e20a25",
+      "title": "Café Masche - gemeinsam kreativ sein im inklusiven Strickcafé",
+      "date_start": "2026-07-01",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "c9065fadd66f1972",
+      "title": "Café Masche - gemeinsam kreativ sein im inklusiven Strickcafé",
+      "date_start": "2026-08-05",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "a224f00a37b0cbf1",
+      "title": "Vernissage und Sonderausstellung \"Beute\\, Bestie\\, bester Freund - Zum Zusammenleben von Menschen und Tier\"",
+      "date_start": "2026-07-03",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "93422c118c2c2ce0",
+      "title": "Nadelspiel und Kaffeeklatsch",
+      "date_start": "2026-09-15",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "6f85fc526010c865",
+      "title": "Spieletreff",
+      "date_start": "2026-07-08",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "12a13d5a0534331a",
+      "title": "Spieletreff",
+      "date_start": "2026-08-12",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "d67c993995619fe4",
+      "title": "Spieletreff",
+      "date_start": "2026-09-09",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "fe4501732b3942e1",
+      "title": "Wortcafé",
+      "date_start": "2026-07-14",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "7ac46db474eb1e37",
+      "title": "Wortcafé",
+      "date_start": "2026-09-22",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "679160fd2899bb1d",
+      "title": "Gismo Graf Trio feat. Cheyenne",
+      "date_start": "2026-09-26",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "a268269bb7a0a413",
+      "title": "VERNISSAGE. SONJA ONTRUP-WENDEL  - FARBENFROH",
+      "date_start": "2026-09-11",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "eb9ff8a26ad58b36",
+      "title": "Ausstellung. SONJA ONTRUP-WENDEL  - FARBENFROH",
+      "date_start": "2026-09-11",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "8b47f2eebbc53c22",
+      "title": "Wohnzimmerkonzert: THE FAB SOUTH - Touched by Soul",
+      "date_start": "2026-07-25",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "ef5275070b2083c6",
+      "title": "BAR&BAND-Abend mit Volker Lohn alias VOLO",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "92dc48095f353194",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-11-22",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "e12d0b210f4977be",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-12-06",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "19d99eb97e7255b2",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-12-20",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "8f0d4c5cc915a13e",
+      "title": "5. Inklusionstennistag beim TC Ditzingen",
+      "date_start": "2026-09-27",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "429ec33ecc16f876",
+      "title": "6. Treppenhäppchen",
+      "date_start": "2026-07-04",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "df6afd6b1600524f",
+      "title": "Musik zur Marktzeit XI - Sommerliche Klänge",
+      "date_start": "2026-07-04",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "0254818c9739dc42",
+      "title": "24. Sommernachtskonzert",
+      "date_start": "2026-07-11",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "34fb03ddc63e3ecf",
+      "title": "3. Ditzinger Kulturnacht - Programm Konstanzer Kirche",
+      "date_start": "2026-09-19",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "1d9a8fa1e4ba9a50",
+      "title": "Musik zur Marktzeit XII - Junge Meister",
+      "date_start": "2026-09-26",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "e0e724ceeaff6771",
+      "title": "Open-Air-Kinonacht auf dem Laien: Der Teufel trägt Prada 2",
+      "date_start": "2026-07-17",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "5aa40ad2fc6114c8",
+      "title": "3. Kulturnacht am Laien",
+      "date_start": "2026-09-19",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "1cc587fd4ab2bc6f",
+      "title": "Besonderer Wochenmarkt - \"Sommerlust\"",
+      "date_start": "2026-07-04",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "cf715345092de0bc",
+      "title": "Musik unter der Linde",
+      "date_start": "2026-07-20",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "28ca3890b9287013",
+      "title": "Musik unter der Linde",
+      "date_start": "2026-07-06",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "1f64392f13473a28",
+      "title": "Musik unter der Linde",
+      "date_start": "2026-08-03",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "2dd1299fc68e883f",
+      "title": "English Book Club",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "958f1e9e810db3a1",
+      "title": "English Book Club",
+      "date_start": "2026-10-15",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "c325a0c9b3b99497",
+      "title": "English Book Club",
+      "date_start": "2026-11-19",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "9678be48dab09b0a",
+      "title": "Vorlesezeit für Kinder von 4 bis 6 Jahren",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "fe2fefdd9c911451",
+      "title": "Vorlesezeit für Kinder von 4 bis 6 Jahren",
+      "date_start": "2026-10-01",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "ad67f1b1305e876d",
+      "title": "Vorlesezeit für Kinder von 4 bis 6 Jahren",
+      "date_start": "2026-10-15",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "0a64e72cb93dbb2f",
+      "title": "Vorlesezeit für Kinder von 4 bis 6 Jahren",
+      "date_start": "2026-11-05",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "7ba1730ab4ed9626",
+      "title": "Vorlesezeit für Kinder von 4 bis 6 Jahren",
+      "date_start": "2026-11-19",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "ac4fcc7cc3d29e17",
+      "title": "Vorlesezeit für Kinder von 4 bis 6 Jahren",
+      "date_start": "2026-12-03",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "72f6fba4809bc3ea",
+      "title": "Vorlesezeit für Kinder von 4 bis 6 Jahren",
+      "date_start": "2026-12-17",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "387db4e21476373b",
+      "title": "Die Geschichte von Heinrich \"Heinz\" Ungerer",
+      "date_start": "2026-06-25",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "a2a52d4a592f62dc",
+      "title": "Die Geschichte von Heinrich \"Heinz\" Ungerer",
+      "date_start": "2026-07-16",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "718abc9f8e617343",
+      "title": "Die Geschichte von Heinrich \"Heinz\" Ungerer",
+      "date_start": "2026-09-10",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "060827303eafa704",
+      "title": "Die Geschichte von Heinrich \"Heinz\" Ungerer",
+      "date_start": "2026-10-22",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "e7259926ca5881d2",
+      "title": "Die Geschichte von Heinrich \"Heinz\" Ungerer",
+      "date_start": "2026-11-19",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "95b97ad08f825916",
+      "title": "Krämermarkt",
+      "date_start": "2026-07-14",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "401f55d0c7d458b1",
+      "title": "25 Jahre THS Förderverein - Gemeinsammehr erreichen!",
+      "date_start": "2026-06-27",
+      "source": "ditzingen_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "0b22b9f9f3b39e66",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-06-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5febf34dd9b00b30",
+      "title": "Skatgruppen",
+      "date_start": "2026-06-16",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ]
 }

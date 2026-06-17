@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-06-16T08:10:36.397789+02:00",
+  "scraped_at": "2026-06-17T06:50:26.730149+02:00",
   "city": "ludwigsburg",
-  "event_count": 733,
+  "event_count": 699,
   "flagged_count": 0,
   "expired_count": 3,
   "sources_scraped": [
@@ -9,7 +9,6 @@
     "demokratisches_zentrum",
     "forum_schlosspark",
     "garnisonmuseum",
-    "karlskaserne_ausstellungen",
     "karlskaserne_veranstaltungen",
     "kunstverein_ausstellungen",
     "kunstverein_veranstaltungen",
@@ -21,33 +20,32 @@
     "stabi"
   ],
   "source_counts": {
-    "schloss": 212,
-    "ludwigsburg_stadt": 45,
+    "schloss": 179,
+    "ludwigsburg_stadt": 44,
     "museum": 50,
     "blueba": 55,
     "stabi": 179,
-    "karlskaserne_veranstaltungen": 82,
+    "karlskaserne_veranstaltungen": 83,
     "forum_schlosspark": 50,
     "garnisonmuseum": 4,
     "labyrinth": 22,
     "kunstverein_ausstellungen": 4,
     "musikhalle_lb": 20,
     "demokratisches_zentrum": 1,
-    "karlskaserne_ausstellungen": 1,
     "kunstverein_veranstaltungen": 8
   },
   "sources_failed": [],
-  "data_hash": "dbf5d64181348101",
+  "data_hash": "78d1ca871fe28b00",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 16.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 17.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 370.6,
-    "runtime_delta_vs_baseline": 1.07,
+    "runtime_minutes": 290.4,
+    "runtime_delta_vs_baseline": 0.622,
     "source_health": {
       "schloss": 1.0,
       "ludwigsburg_stadt": 1.0,
@@ -61,12 +59,11 @@
       "kunstverein_ausstellungen": 1.0,
       "musikhalle_lb": 1.0,
       "demokratisches_zentrum": 0.92,
-      "karlskaserne_ausstellungen": 0.8,
       "kunstverein_veranstaltungen": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-06-16T08:24:35.997479+02:00"
+    "generated_at": "2026-06-17T07:04:30.990048+02:00"
   }
 }

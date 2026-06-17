@@ -1,14 +1,58 @@
 {
-  "generated_at": "2026-06-16T07:07:05.094169+02:00",
+  "generated_at": "2026-06-17T04:47:46.111931+02:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_buecherei",
     "das_k_spielplan",
+    "das_k_buecherei",
     "kornwestheim"
   ],
-  "previous_run": "2026-06-16T01:35:34.889988+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-06-16T07:07:05.116480+02:00",
+  "count_added": 2,
+  "count_removed": 5,
+  "added": [
+    {
+      "id": "b757c5d74b446e87",
+      "title": "Letzte Hilfe Kurs",
+      "date_start": "2026-07-21",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "debbb2e931762122",
+      "title": "Frühstücksführung",
+      "date_start": "2026-10-09",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "6525823cc96e3fe5",
+      "title": "Medienberatung für Hilfesuchende - Dienstagvormittags",
+      "date_start": "2026-06-16",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "7d214232a2cd992d",
+      "title": "Offene Sprechstunde mit der Verwaltungsspitze",
+      "date_start": "2026-06-16",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "722af771001765df",
+      "title": "Kaffeetreff - Bingo",
+      "date_start": "2026-06-16",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "db4ef3d7d7441b0f",
+      "title": "Stricken, Häkeln, Plaudern",
+      "date_start": "2026-06-16",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "abb4ca8217c6f61f",
+      "title": "BürgerDIALOG",
+      "date_start": "2026-06-19",
+      "source": "kornwestheim"
+    }
+  ]
 }

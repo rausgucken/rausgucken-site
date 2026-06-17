@@ -1,36 +1,35 @@
 {
-  "generated_at": "2026-06-16T08:10:36.361603+02:00",
+  "generated_at": "2026-06-17T06:50:26.695043+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "karlskaserne_veranstaltungen",
-    "kunstverein_veranstaltungen",
-    "museum",
+    "schloss",
     "stabi",
+    "forum_schlosspark",
     "garnisonmuseum",
-    "ludwigsburg_stadt",
-    "demokratisches_zentrum",
+    "karlskaserne_veranstaltungen",
     "kunstverein_ausstellungen",
     "musikhalle_lb",
     "labyrinth",
-    "karlskaserne_ausstellungen",
-    "forum_schlosspark",
     "blueba",
-    "schloss"
+    "museum",
+    "kunstverein_veranstaltungen",
+    "ludwigsburg_stadt",
+    "demokratisches_zentrum"
   ],
-  "previous_run": "2026-06-16T02:36:09.233157+02:00",
-  "count_added": 5,
-  "count_removed": 2,
+  "previous_run": "2026-06-16T08:10:36.397789+02:00",
+  "count_added": 13,
+  "count_removed": 44,
   "added": [
     {
-      "id": "2c8c2cc616088433",
-      "title": "Sommerferienworkshop: Ein Schattentheater – Spiel mit Licht und Schatten in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "774e28dff670baba",
+      "title": "„Weil menschlich so viel möglich ist“",
+      "date_start": "2026-05-08",
+      "source": "schloss"
     },
     {
-      "id": "d4e3ca4741f455b7",
-      "title": "Sommerferienworkshop: Hip Hop in Ludwigsburg",
-      "date_start": "2026-08-31",
+      "id": "a85dd148c198cd14",
+      "title": "Fest der Kinderrechte",
+      "date_start": "2026-06-28",
       "source": "karlskaserne_veranstaltungen"
     },
     {
@@ -50,20 +49,320 @@
       "title": "Veranstaltung am 2026-06-14",
       "date_start": "2026-06-14",
       "source": "garnisonmuseum"
+    },
+    {
+      "id": "fe028ab25d8c130b",
+      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "b73b1e694752628d",
+      "title": "XR/VR-Initiative",
+      "date_start": "2026-07-07",
+      "source": "stabi"
+    },
+    {
+      "id": "1bec37830ed76fa6",
+      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "labyrinth"
+    },
+    {
+      "id": "96140f5fd6c3e274",
+      "title": "Hagen Quartett – Ludwigsburger Schlossfestspiele",
+      "date_start": "2026-06-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "ee928cdc2be60b97",
+      "title": "Lo Speziale – Ludwigsburger Schlossfestspiele",
+      "date_start": "2026-06-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "de1893d1356724c8",
+      "title": "Grand Classic Ballet - Schwanensee jenseits der Bühne",
+      "date_start": "2026-06-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "27443a55b70d4f0d",
+      "title": "...Pistes, Pisten... von Penda Diouf",
+      "date_start": "2026-06-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "575480ed519d8358",
+      "title": "Konzert Wartungsfrei",
+      "date_start": "2026-06-20",
+      "source": "ludwigsburg_stadt"
     }
   ],
   "removed": [
     {
-      "id": "e346d89a4f2d6323",
-      "title": "Sommerferienworkshop: Ein Schattentheater – Spiel mit Licht und Schatten in Ludwigsburg",
-      "date_start": "2026-08-03",
+      "id": "ed4730c198a77603",
+      "title": "„Weil menschlich so viel möglich ist“",
+      "date_start": "2026-05-08",
+      "source": "schloss"
+    },
+    {
+      "id": "34ff62038b2a156e",
+      "title": "Studenten-Theater | das Markusevangelium",
+      "date_start": "2026-06-15",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "ee6954ec39693f65",
+      "title": "Ganzkörpertraining im Freien - Fit in den Frühling",
+      "date_start": "2026-06-16",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "645ceeac9ac7f24e",
+      "title": "XR/VR-Initiative",
+      "date_start": "2026-06-16",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "152032554fe8bbf7",
+      "title": "Café mit Herz",
+      "date_start": "2026-06-16",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "b74f4ccd03560f8f",
+      "title": "Vortrag \"Auf den Straßen von Ludwigsburg - Simanowizstraße\"",
+      "date_start": "2026-06-16",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "d596e1c0f1505934",
+      "title": "Digitale Medien kreativ",
+      "date_start": "2026-06-16",
+      "source": "stabi"
+    },
+    {
+      "id": "bd80a2ed54b3a6cd",
+      "title": "Digitale Hilfe im Mehrgenerationenhaus",
+      "date_start": "2026-06-16",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "9358f4850d9efd9e",
+      "title": "Fest der Kinderrechte",
+      "date_start": "2026-06-28",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "02969fd9df957153",
+      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "8f203b8cb80830d7",
+      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Bietigheim",
+      "date_start": "2026-09-07",
       "source": "labyrinth"
     },
     {
-      "id": "c722ad4749753c6c",
-      "title": "Sommerferienworkshop: Hip Hop in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "5748806c46aaa4c0",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-04",
+      "source": "schloss"
+    },
+    {
+      "id": "ce3c44c8f5b589b9",
+      "title": "Jubel, Trubel, Heiterkeit",
+      "date_start": "2026-12-05",
+      "source": "schloss"
+    },
+    {
+      "id": "42512ac1cc8bc28f",
+      "title": "Schaurig schön",
+      "date_start": "2026-12-05",
+      "source": "schloss"
+    },
+    {
+      "id": "d4c515764ea8a075",
+      "title": "Weißes Gold und Glanz der Seide",
+      "date_start": "2026-12-06",
+      "source": "schloss"
+    },
+    {
+      "id": "5296727f937ed4c5",
+      "title": "Jubel, Trubel, Heiterkeit",
+      "date_start": "2026-12-06",
+      "source": "schloss"
+    },
+    {
+      "id": "f1008c4eba1109ce",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-11",
+      "source": "schloss"
+    },
+    {
+      "id": "a2cb46c240959113",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-12-12",
+      "source": "schloss"
+    },
+    {
+      "id": "4d87c5ca09c94979",
+      "title": "Kaffeeklatsch bei Königs",
+      "date_start": "2026-12-12",
+      "source": "schloss"
+    },
+    {
+      "id": "fc597c0382e4160c",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-12-12",
+      "source": "schloss"
+    },
+    {
+      "id": "cdd90fbb9816bfa8",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-12-13",
+      "source": "schloss"
+    },
+    {
+      "id": "172f3ecb05be2ebf",
+      "title": "Zu Diensten des Herzogs",
+      "date_start": "2026-12-13",
+      "source": "schloss"
+    },
+    {
+      "id": "fc51076473883fb5",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-18",
+      "source": "schloss"
+    },
+    {
+      "id": "424e359f069a919f",
+      "title": "Etikette und Intrigen",
+      "date_start": "2026-12-19",
+      "source": "schloss"
+    },
+    {
+      "id": "d0f91dc233070913",
+      "title": "Schaurig schön",
+      "date_start": "2026-12-19",
+      "source": "schloss"
+    },
+    {
+      "id": "eed6bc16185af3b4",
+      "title": "Technik in der Unterwelt",
+      "date_start": "2026-12-20",
+      "source": "schloss"
+    },
+    {
+      "id": "873519c2ec98a0da",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-12-20",
+      "source": "schloss"
+    },
+    {
+      "id": "0c1eb95416e95798",
+      "title": "Etikette und Intrigen",
+      "date_start": "2026-12-20",
+      "source": "schloss"
+    },
+    {
+      "id": "32fc9d1e6f95d3c2",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-12-25",
+      "source": "schloss"
+    },
+    {
+      "id": "c33a0ce87d913b46",
+      "title": "Kleidung, die verführt",
+      "date_start": "2026-12-25",
+      "source": "schloss"
+    },
+    {
+      "id": "f32a62fb2cce3a60",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-12-26",
+      "source": "schloss"
+    },
+    {
+      "id": "713d6fcdd7929a1b",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-12-26",
+      "source": "schloss"
+    },
+    {
+      "id": "536ae97f9d68c6e8",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-12-26",
+      "source": "schloss"
+    },
+    {
+      "id": "2e2521bd12a44211",
+      "title": "Mythos Mätresse",
+      "date_start": "2026-12-27",
+      "source": "schloss"
+    },
+    {
+      "id": "0158a96c63eb8b6f",
+      "title": "Contenance oder die Welt des guten Benehmens",
+      "date_start": "2026-12-27",
+      "source": "schloss"
+    },
+    {
+      "id": "28210a998749579d",
+      "title": "Hidden Rooms",
+      "date_start": "2026-12-27",
+      "source": "schloss"
+    },
+    {
+      "id": "b0d321edb3776c57",
+      "title": "Die Liebe am Ludwigsburger Hof",
+      "date_start": "2026-12-28",
+      "source": "schloss"
+    },
+    {
+      "id": "9a0bc03a8f7a209b",
+      "title": "Vom Alltag einer herzoglichen Hofdame",
+      "date_start": "2026-12-28",
+      "source": "schloss"
+    },
+    {
+      "id": "a38669a50887eb1e",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-28",
+      "source": "schloss"
+    },
+    {
+      "id": "0835c6aaf9f72eb7",
+      "title": "Vom Alltag einer herzoglichen Hofdame",
+      "date_start": "2026-12-29",
+      "source": "schloss"
+    },
+    {
+      "id": "9430e1a43fd3b307",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-29",
+      "source": "schloss"
+    },
+    {
+      "id": "79d398bcd6053f29",
+      "title": "Vom Alltag einer herzoglichen Hofdame",
+      "date_start": "2026-12-30",
+      "source": "schloss"
+    },
+    {
+      "id": "0297efbcab5a82de",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-30",
+      "source": "schloss"
+    },
+    {
+      "id": "2782e54aa547001c",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-12-31",
+      "source": "schloss"
     }
   ]
 }
