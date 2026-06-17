@@ -1,9 +1,85 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-06-16T08:10:36.874535+02:00",
-  "event_count": 12,
+  "generated_at": "2026-06-17T06:00:01.324265+02:00",
+  "event_count": 29,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
+    {
+      "id": "ed2dcbd170547d90",
+      "title": "Die Natur und WIR - eine Ausstellung mit Kindern der Doris Leibinger Grundschule",
+      "date_start": "2026-06-19",
+      "date_end": "2026-07-18",
+      "time": null,
+      "description": "Eine Ausstellung präsentiert die Arbeiten von Kindern der Doris Leibinger Grundschule. Sie explore.naturundwir.de zeigt ihre Beobachtungen und Visionen der Natur in verschiedenen Formaten an.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Ausstellung"
+      ],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=43585492",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=43585492",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "die-natur-und-wir---eine-ausstellung-mit-kindern-der-doris-leibinger-grundschule-2026-06",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387850+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/die-natur-und-wir---eine-ausstellung-mit-kindern-der-doris-leibinger-grundschule-2026-06"
+    },
+    {
+      "id": "b9f8e5370a9d2263",
+      "title": "Vernissage und Ausstellung Kunst mit Kindern",
+      "date_start": "2026-06-20",
+      "date_end": "2026-07-25",
+      "time": null,
+      "description": "In dieser Vernissage und Ausstellung lernen Kinder und Erwachsene gemeinsam verschiedene Kunsttechniken. Ein Dozent unterstützt die Teilnehmer bei der Entdeckung von kreativen Möglichkeiten.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Ausstellung",
+        "Familie"
+      ],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=42660181",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=42660181",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "vernissage-und-ausstellung-kunst-mit-kindern-2026-06-20-ditz",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387822+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/vernissage-und-ausstellung-kunst-mit-kindern-2026-06-20-ditz"
+    },
     {
       "id": "aad24a2713e5af45",
       "title": "Wandern ab 60",
@@ -26,7 +102,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-16T02:02:33.560157+02:00",
+      "scraped_at": "2026-06-17T02:03:10.659799+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -55,7 +131,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-06-16T02:02:33.560165+02:00",
+      "scraped_at": "2026-06-17T02:03:10.659805+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -84,7 +160,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-06-16T02:02:33.560169+02:00",
+      "scraped_at": "2026-06-17T02:03:10.659809+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -113,7 +189,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-06-16T02:02:33.560176+02:00",
+      "scraped_at": "2026-06-17T02:03:10.659814+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -142,7 +218,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-16T02:02:33.560183+02:00",
+      "scraped_at": "2026-06-17T02:03:10.659819+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -150,6 +226,39 @@
       "editorial_tip": null,
       "source_label": "Treffpunkt Adler Ditzingen",
       "canonical_url": "https://www.rausgucken.de/ditzingen/events/fotogruppe-2026-06-24-ditz"
+    },
+    {
+      "id": "8b357472e3c21ce9",
+      "title": "Vorlesezeit",
+      "date_start": "2026-06-24",
+      "date_end": null,
+      "time": "15:00 – 15:30 Uhr",
+      "description": "In dieser Veranstaltung finden Kinder und Erwachsene gemeinsam einladende Geschichten vor. Ein lebendiger Textreise begleitet die Teilnehmer durch verschiedene Altersgruppen.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Lesung",
+        "Familie"
+      ],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=37191146",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=37191146",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "vorlesezeit-2026-06-24-ditz",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387673+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/vorlesezeit-2026-06-24-ditz"
     },
     {
       "id": "413698e789333721",
@@ -171,7 +280,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-16T02:02:33.560201+02:00",
+      "scraped_at": "2026-06-17T02:03:10.659833+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -200,7 +309,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-16T02:02:33.560207+02:00",
+      "scraped_at": "2026-06-17T02:03:10.659837+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -229,7 +338,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-16T02:02:33.560222+02:00",
+      "scraped_at": "2026-06-17T02:03:10.659849+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -260,7 +369,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-16T02:02:33.560231+02:00",
+      "scraped_at": "2026-06-17T02:03:10.659855+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -291,7 +400,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-16T02:02:33.560238+02:00",
+      "scraped_at": "2026-06-17T02:03:10.659859+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -299,6 +408,130 @@
       "editorial_tip": null,
       "source_label": "Treffpunkt Adler Ditzingen",
       "canonical_url": "https://www.rausgucken.de/ditzingen/events/besprechung---schwaebischer-albverein-schwaebischer-albverein-ditzingen-2026-06-25-ditz"
+    },
+    {
+      "id": "cf83e1ea2c1e5c6f",
+      "title": "Vorlesezeit für Kinder von 4 bis 6 Jahren",
+      "date_start": "2026-06-25",
+      "date_end": null,
+      "time": "16:00 – 16:30 Uhr",
+      "description": "In dieser Veranstaltung lernen Kinder zwischen 4 und 6 Jahren das Lesen durch interaktive Geschichten und Worte. Ein begabter Erzähler unterstützt die Teilnehmer in der Entdeckung der Welt des Schreibens.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Lesung",
+        "Familie"
+      ],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=37191130",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=37191130",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "vorlesezeit-fuer-kinder-von-4-bis-6-jahren-2026-06-25-ditz",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387655+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/vorlesezeit-fuer-kinder-von-4-bis-6-jahren-2026-06-25-ditz"
+    },
+    {
+      "id": "34e0a8722f190119",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-06-25",
+      "date_end": null,
+      "time": "16:30 – 17:30 Uhr",
+      "description": "In diesem Leseklub wird gemeinsam ein ausgewähltes Buch gelesen und besprochen. Die Veranstaltung ist offen für alle Interessierten, unabhängig von ihrem Hintergrund.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=34532347",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=34532347",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "lea-leseklub---alle-mit-dabei-2026-06-25-ditz",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387612+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/lea-leseklub---alle-mit-dabei-2026-06-25-ditz"
+    },
+    {
+      "id": "387db4e21476373b",
+      "title": "Die Geschichte von Heinrich \"Heinz\" Ungerer",
+      "date_start": "2026-06-25",
+      "date_end": null,
+      "time": "17:00 – 18:30 Uhr",
+      "description": "Ein Vortrag erzählt die lebendige Geschichte des ditzinger Bürgers Heinrich \"Heinz\" Ungerer, basierend auf Erinnerungen und Dokumenten.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Vortrag"
+      ],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=44056711",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=44056711",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "die-geschichte-von-heinrich-heinz-ungerer-2026-06-25-ditz",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-17T02:03:10.388061+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/die-geschichte-von-heinrich-heinz-ungerer-2026-06-25-ditz"
+    },
+    {
+      "id": "e8a112def33e5d6a",
+      "title": "Spicy Honey Chicken",
+      "date_start": "2026-06-25",
+      "date_end": null,
+      "time": "18:00 – 22:00 Uhr",
+      "description": "In diesem Workshop lernen Teilnehmer, how to prepare spiced honey chicken. Alle Zutaten und Anweisungen werden bereitgestellt.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Workshop"
+      ],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=39374141",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=39374141",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "spicy-honey-chicken-2026-06-25-ditz",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387702+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/spicy-honey-chicken-2026-06-25-ditz"
     },
     {
       "id": "5fe4838c790dfafc",
@@ -320,7 +553,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-16T02:02:33.560246+02:00",
+      "scraped_at": "2026-06-17T02:03:10.659865+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -351,7 +584,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-16T02:02:33.560256+02:00",
+      "scraped_at": "2026-06-17T02:03:10.659872+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -359,6 +592,305 @@
       "editorial_tip": null,
       "source_label": "Treffpunkt Adler Ditzingen",
       "canonical_url": "https://www.rausgucken.de/ditzingen/events/rummikub-2026-06-26-ditz"
+    },
+    {
+      "id": "3973a1ee4f5237a5",
+      "title": "Blutspende",
+      "date_start": "2026-06-26",
+      "date_end": null,
+      "time": "14:30 – 19:30 Uhr",
+      "description": "In Ditzingen findet eine Blutspende statt, bei der sich volontierende Helfer mit dem Lebensspendernachbar zusammenfinden.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=14660767",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=14660767",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "blutspende-2026-06-26-ditz",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387348+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/blutspende-2026-06-26-ditz"
+    },
+    {
+      "id": "598cdf03d85169fd",
+      "title": "Wir kommen groß raus: Konzert der GioCoro Kinderkantorei",
+      "date_start": "2026-06-26",
+      "date_end": null,
+      "time": "18:00 – 19:00 Uhr",
+      "description": "In diesem Konzert präsentiert die GioCoro Kinderkantorei ihre musikalischen Fähigkeiten. Das Ereignis findet in Ditzingen statt und bietet ein fesselndes Orchesterprogramm für alle Altersgruppen.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Musik"
+      ],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=42067950",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=42067950",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "wir-kommen-gross-raus-konzert-der-giocoro-kinderkantorei-2026-06-26-ditz",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387771+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/wir-kommen-gross-raus-konzert-der-giocoro-kinderkantorei-2026-06-26-ditz"
+    },
+    {
+      "id": "5ae3c4694e7ad2f0",
+      "title": "Sommerserenade mit anschließender Hocketse",
+      "date_start": "2026-06-26",
+      "date_end": null,
+      "time": "19:00 Uhr",
+      "description": "In der Sennenwiese in Ditzingen findet eine Sommerserenade statt, gefolgt von einer Hocketse. Das Programm kombiniert traditionelle Sommertagevents mit kulinarischem Genuss.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Kulinarik"
+      ],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=41990426",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=41990426",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "sommerserenade-mit-anschliessender-hocketse-2026-06-26-ditz",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387729+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/sommerserenade-mit-anschliessender-hocketse-2026-06-26-ditz"
+    },
+    {
+      "id": "e7fab30831756732",
+      "title": "Liederkranz-Sommerfest",
+      "date_start": "2026-06-27",
+      "date_end": "2026-06-28",
+      "time": null,
+      "description": "In Ditzingen findet der Liederkranz-Sommerfest eine Zusammenkunft von Musikfreunden statt. Mit Programmen und Gesängen feiern die Mitglieder den Sommertag in gemütlicher Runde.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=41990435",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=41990435",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "liederkranz-sommerfest-2026-06-27-ditz",
+      "weekdays": [
+        0,
+        6
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387733+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/liederkranz-sommerfest-2026-06-27-ditz"
+    },
+    {
+      "id": "4e038a396849a914",
+      "title": "Tag der offenen Tür der Jugendmusikschule",
+      "date_start": "2026-06-27",
+      "date_end": null,
+      "time": "10:00 – 13:00 Uhr",
+      "description": "In dieser Veranstaltung bietet die Jugendmusikschule Ditzingen Einblicke in ihre Anlage und veranstaltet Workshops für Interessenten aller Altersgruppen.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=42019504",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=42019504",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "tag-der-offenen-tuer-der-jugendmusikschule-2026-06-27-ditz",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387738+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/tag-der-offenen-tuer-der-jugendmusikschule-2026-06-27-ditz"
+    },
+    {
+      "id": "c570971f4ffd2c36",
+      "title": "Vorlesezeit",
+      "date_start": "2026-06-27",
+      "date_end": null,
+      "time": "10:30 – 11:00 Uhr",
+      "description": "In dieser Veranstaltung laden wir Leser und Zuhörer ein, sich in eine Welt von Geschichten zu versetzen. Mit einer ausgewählten Palette von Texten bietet die Vorlesezeit eine einladende Atmosphäre für alle Altersgruppen.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Lesung"
+      ],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=24551898",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=24551898",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "vorlesezeit-2026-06-27-ditz",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387577+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/vorlesezeit-2026-06-27-ditz"
+    },
+    {
+      "id": "68b19c42762ed3a6",
+      "title": "Schulfest Theodor-Heuglin- Schule - 60 Jahre unterwegs",
+      "date_start": "2026-06-27",
+      "date_end": null,
+      "time": "12:00 – 16:00 Uhr",
+      "description": "In diesem Schulfest feiern Schüler und Gastgeber der Theodor-Heuglin-Schule in Ditzingen ihr 60-jähriges Jubiläum mit diversen Aktivitäten.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=42227679",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=42227679",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "schulfest-theodor-heuglin--schule---60-jahre-unterwegs-2026-06-27-ditz",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387800+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/schulfest-theodor-heuglin--schule---60-jahre-unterwegs-2026-06-27-ditz"
+    },
+    {
+      "id": "401f55d0c7d458b1",
+      "title": "25 Jahre THS Förderverein - Gemeinsammehr erreichen!",
+      "date_start": "2026-06-27",
+      "date_end": null,
+      "time": "12:00 – 16:00 Uhr",
+      "description": "In einer Sperrmüllverwertungsanlage in Ditzingen feiert der THS Förderverein sein 25-jähriges Jubiläum mit einem Tag der offenen Tür und diversen Aktivitäten.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=44489977",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=44489977",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "25-jahre-ths-foerderverein---gemeinsammehr-erreichen-2026-06-27-ditz",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-17T02:03:10.388079+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/25-jahre-ths-foerderverein---gemeinsammehr-erreichen-2026-06-27-ditz"
+    },
+    {
+      "id": "b74ca08c741e1a60",
+      "title": "Gaumenfreuden aus Persien",
+      "date_start": "2026-06-27",
+      "date_end": null,
+      "time": "16:00 – 22:00 Uhr",
+      "description": "In diesem Geschmacksduett entdecken Sie die Reize persischer Speisen. Ein Experte führt Sie durch kulinarisches Erlebnis vom Anfang bis zum Abschluss.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Kulinarik"
+      ],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=39372854",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=39372854",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "gaumenfreuden-aus-persien-2026-06-27-ditz",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387699+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/gaumenfreuden-aus-persien-2026-06-27-ditz"
+    },
+    {
+      "id": "5e2b69b6e22f6775",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-06-28",
+      "date_end": null,
+      "time": "19:15 – 22:00 Uhr",
+      "description": "In diesem Schwimmbad bietet sich Frauen eine abendliche Umkleide und Schwimmangelegenheiten. Alle Teilnehmerinnen genießen ein entspanntes Training in einer geschlossenen Umgebung.",
+      "location": "Ditzingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=42270437",
+      "original_url": "https://www.ditzingen.de/freizeit-kultur/veranstaltungen?c7-item=42270437",
+      "source": "ditzingen_stadt",
+      "city": "ditzingen",
+      "slug": "frauenschwimmen-2026-06-28-ditz",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-06-17T02:03:10.387803+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ditzingen",
+      "canonical_url": "https://www.rausgucken.de/ditzingen/events/frauenschwimmen-2026-06-28-ditz"
     }
   ]
 }

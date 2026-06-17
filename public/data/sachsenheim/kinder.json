@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-06-16T07:00:44.790382+02:00",
-  "event_count": 2,
+  "generated_at": "2026-06-17T06:00:01.431110+02:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,7 +26,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-16T02:02:21.812853+02:00",
+      "scraped_at": "2026-06-17T02:02:08.635302+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -58,14 +58,47 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-16T02:02:09.920151+02:00",
+      "scraped_at": "2026-06-17T02:01:56.146147+02:00",
       "extraction_confidence": 0.9,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Sachsenheim – Kulturprogramm",
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/familiensingen-2026-06-24-sach"
+    },
+    {
+      "id": "ef115eebafcac3f2",
+      "title": "FamilienSingen",
+      "date_start": "2026-06-26",
+      "date_end": null,
+      "time": "14:30 - 15:30 Uhr",
+      "description": "In diesem FamilienSingen lernen Kinder ab 5 Jahren und Erwachsene gemeinsam mit Musik zu spielen. Mit Unterstützung durch eine erziehungsberechtigte Bezugsperson genießen alle die Freude am Singen in einer generations-übergreifenden Veranstaltung.",
+      "location": "Café L’ink Karl-Heinz-Lüth-Str. 6, 74343 Großsachsenheim",
+      "price": "Kostenlos",
+      "age_min": 5,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie",
+        "Musik"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-EINFACH-SINGEN-FamilienSingen-event-appointment6061",
+      "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-EINFACH-SINGEN-FamilienSingen-event-appointment6061",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "familiensingen-2026-06-26-sach",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-17T02:01:58.509533+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/familiensingen-2026-06-26-sach"
     }
   ]
 }
