@@ -1,10 +1,10 @@
 ---
 // ============================================================
 // CITY EVENT DETAIL PAGE TEMPLATE — rausgucken.de
-// Copy to: src/pages/{kirchheim_neckar}/events/[slug].astro
+// Copy to: src/pages/{kirchheim-neckar}/events/[slug].astro
 //
 // Replace these tokens (all caps, search & replace):
-//   kirchheim_neckar          → url slug, e.g. "kornwestheim"
+//   kirchheim-neckar          → url slug, e.g. "kornwestheim"
 //   Kirchheim am Neckar   → display name, e.g. "Kornwestheim" or "Remseck am Neckar"
 //   74366 → 5-digit PLZ, e.g. "74354"
 //   https://www.kirchheim-neckar.de     → fallback organizer URL, e.g. "https://www.kornwestheim.de"
@@ -13,7 +13,7 @@ import Base from "../../../layouts/Base.astro";
 import tipsData from "../../../data/editorial-tips.json";
 
 export async function getStaticPaths() {
-  const mod = await import("../../../../public/data/kirchheim_neckar/events-current.json",
+  const mod = await import("../../../../public/data/kirchheim-neckar/events-current.json",
     { assert: { type: "json" } });
   const events: any[] = (mod.default as any).events ?? mod.default;
   const seen = new Set<string>();
@@ -25,7 +25,7 @@ export async function getStaticPaths() {
 const { ev } = Astro.props;
 
 // ── City constants — only these change per city ───────────────────────────────
-const city        = "kirchheim_neckar";
+const city        = "kirchheim-neckar";
 const cityDisplay = "Kirchheim am Neckar";
 const postalCode  = "74366";
 const cityWebsite = "https://www.kirchheim-neckar.de";
@@ -251,7 +251,7 @@ const breadcrumbSchema = {
 
 // ── Related events (expired pages only) ──────────────────────────────────────
 const relatedEvents: any[] = isExpired
-  ? (await import("../../../../public/data/kirchheim_neckar/events-current.json",
+  ? (await import("../../../../public/data/kirchheim-neckar/events-current.json",
       { assert: { type: "json" } }).then(m => (m.default as any).events ?? m.default).catch(() => []) as any[])
       .filter((e: any) =>
         e.slug !== ev.slug &&
@@ -273,7 +273,7 @@ const relatedEvents: any[] = isExpired
   noindex={isExpired}
 >
   <link rel="alternate" type="application/atom+xml"
-        href="/kirchheim_neckar/feed.xml"
+        href="/kirchheim-neckar/feed.xml"
         title="rausgucken.de – Kirchheim am Neckar"
         slot="head" />
   <link rel="alternate" type="text/calendar"

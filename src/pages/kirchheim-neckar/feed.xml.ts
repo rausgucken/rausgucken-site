@@ -1,16 +1,16 @@
-// src/pages/kirchheim_neckar/feed.xml.ts
+// src/pages/kirchheim-neckar/feed.xml.ts
 // Atom 1.0 feed for Kirchheim am Neckar events — app-backbone ready.
 // Namespaces: media (Yahoo MRSS), rg (rausgucken custom fields)
 // SEO strategy §21: Atom preferred over RSS 2.0.
 // Generated at build time from events-current.json.
 // ARCHITECTURE §16: entry <link> points to rausgucken.de canonical URL (not original_url).
 
-import eventsRaw from "../../../public/data/kirchheim_neckar/events-current.json";
+import eventsRaw from "../../../public/data/kirchheim-neckar/events-current.json";
 
 const SITE     = "https://www.rausgucken.de";
-const kirchheim_neckar  = "kirchheim_neckar";
-const FEED_URL = `${SITE}/${kirchheim_neckar}/feed.xml`;
-const CITY_URL = `${SITE}/${kirchheim_neckar}/`;
+const kirchheim-neckar  = "kirchheim-neckar";
+const FEED_URL = `${SITE}/${kirchheim-neckar}/feed.xml`;
+const CITY_URL = `${SITE}/${kirchheim-neckar}/`;
 
 function esc(str: string): string {
   if (!str) return "";
@@ -39,12 +39,12 @@ export async function GET() {
     : new Date().toISOString();
 
   const entries = events.map((ev) => {
-    const url        = `${SITE}/${kirchheim_neckar}/events/${esc(ev.slug)}/`;
+    const url        = `${SITE}/${kirchheim-neckar}/events/${esc(ev.slug)}/`;
     const title      = esc(ev.title || "Veranstaltung");
     const summary    = esc(ev.description || "");
     const published  = toAtomDate(ev.date_start);
     const updated_ev = toAtomDate(ev.scraped_at || ev.date_start);
-    const ogImage    = `${SITE}/og/${kirchheim_neckar}/${esc(ev.slug)}.jpg`;
+    const ogImage    = `${SITE}/og/${kirchheim-neckar}/${esc(ev.slug)}.jpg`;
 
     const dateLabel    = ev.date_start
       ? new Date(ev.date_start).toLocaleDateString("de-DE", {
@@ -82,7 +82,7 @@ export async function GET() {
     ${originalUrl ? `<link rel="via" href="${originalUrl}"/>` : ""}
     <media:thumbnail url="${ogImage}"/>
     ${categoryTags}
-    <rg:city>${kirchheim_neckar}</rg:city>
+    <rg:city>${kirchheim-neckar}</rg:city>
     ${rgPrice}
     ${rgAgeMin}
     ${rgAgeMax}

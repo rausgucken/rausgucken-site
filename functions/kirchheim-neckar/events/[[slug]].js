@@ -1,13 +1,13 @@
 /**
  * Cloudflare Pages Function — TEMPLATE
- * Copy to functions/kirchheim_neckar/events/[[slug]].js when adding a new city.
+ * Copy to functions/kirchheim-neckar/events/[[slug]].js when adding a new city.
  * Replace all tokens before use:
- *   kirchheim_neckar        → URL slug, e.g. kornwestheim
+ *   kirchheim-neckar        → URL slug, e.g. kornwestheim
  *   Kirchheim am Neckar → display name, e.g. Kornwestheim
  *
- * Route: /kirchheim_neckar/events/*.ics
+ * Route: /kirchheim-neckar/events/*.ics
  *
- * Only activates for .ics requests. All other /kirchheim_neckar/events/* requests
+ * Only activates for .ics requests. All other /kirchheim-neckar/events/* requests
  * fall through to the static Astro-generated HTML page.
  *
  * Reads events-current.json via ASSETS binding — no external fetch, no build step.
@@ -26,7 +26,7 @@ export async function onRequest(context) {
     return context.next();
   }
 
-  // /kirchheim_neckar/events/some-event-slug.ics -> some-event-slug
+  // /kirchheim-neckar/events/some-event-slug.ics -> some-event-slug
   const slug = url.pathname.replace(/\.ics$/, '').split('/').filter(Boolean).pop();
   if (!slug) {
     return new Response('Not found', { status: 404 });
@@ -35,7 +35,7 @@ export async function onRequest(context) {
   // Load events via ASSETS binding
   let events;
   try {
-    const dataUrl = new URL('/data/kirchheim_neckar/events-current.json', url.origin);
+    const dataUrl = new URL('/data/kirchheim-neckar/events-current.json', url.origin);
     const res = await context.env.ASSETS.fetch(new Request(dataUrl.toString()));
     if (!res.ok) throw new Error(`ASSETS fetch ${res.status}`);
     events = await res.json();
@@ -143,12 +143,12 @@ function buildICS(ev) {
   if (ev.location)  lines.push(fold(`LOCATION:${escICS(ev.location)}`));
   // URL: points to rausgucken.de deep link (canonical_url set by manifest.py)
   // Original source URL is already in DESCRIPTION for user reference
-  const eventUrl = ev.canonical_url || `https://www.rausgucken.de/kirchheim_neckar/events/${ev.slug}`;
+  const eventUrl = ev.canonical_url || `https://www.rausgucken.de/kirchheim-neckar/events/${ev.slug}`;
   lines.push(`URL:${eventUrl}`);
 
   lines.push(`ORGANIZER;CN=${escICS(orgName)}:mailto:noreply@rausgucken.de`);
   lines.push(
-    `X-ALT-DESC;FMTTYPE=text/html:<a href="${site}/kirchheim_neckar/events/${ev.slug}">` +
+    `X-ALT-DESC;FMTTYPE=text/html:<a href="${site}/kirchheim-neckar/events/${ev.slug}">` +
     `Auf rausgucken.de ansehen</a>`
   );
 
