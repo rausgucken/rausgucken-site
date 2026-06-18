@@ -152,7 +152,8 @@
     "url": "/stuttgart/",
     "feed_url": "/stuttgart/feed.xml",
     "event_count": 0,
-    "_note": "Staging city — data collected but no Astro page yet"
+    "_note": "Staging city — data collected but no Astro page yet",
+    "tier": "large"
   },
   {
     "id": "besigheim",
@@ -268,7 +269,8 @@
     "covered": true,
     "url": "/vaihingen/",
     "feed_url": "/vaihingen/feed.xml",
-    "event_count": 95
+    "event_count": 95,
+    "tier": "medium"
   },
   {
     "id": "steinheim",
@@ -280,7 +282,8 @@
     "covered": true,
     "url": "/steinheim/",
     "feed_url": "/steinheim/feed.xml",
-    "event_count": 20
+    "event_count": 20,
+    "tier": "small"
   },
   {
     "id": "schwieberdingen",
@@ -292,7 +295,8 @@
     "covered": true,
     "url": "/schwieberdingen/",
     "feed_url": "/schwieberdingen/feed.xml",
-    "event_count": 36
+    "event_count": 36,
+    "tier": "small"
   },
   {
     "id": "mundelsheim",
@@ -496,7 +500,8 @@
     "covered": true,
     "url": "/korntal-muenchingen/",
     "feed_url": "/korntal-muenchingen/feed.xml",
-    "event_count": 83
+    "event_count": 83,
+    "tier": "medium"
   },
   {
     "id": "kirchheim_neckar",
@@ -508,6 +513,7 @@
     "covered": true,
     "url": "/kirchheim_neckar/",
     "feed_url": "/kirchheim_neckar/feed.xml",
-    "event_count": 115
+    "event_count": 115,
+    "tier": "small"
   }
 ]
