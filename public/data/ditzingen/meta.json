@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-06-17T04:30:07.497902+02:00",
+  "scraped_at": "2026-06-18T03:41:35.133341+02:00",
   "city": "ditzingen",
-  "event_count": 404,
+  "event_count": 407,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,28 +9,37 @@
     "ditzingen_treffpunkt_adler"
   ],
   "source_counts": {
-    "ditzingen_stadt": 134,
-    "ditzingen_treffpunkt_adler": 270
+    "ditzingen_stadt": 139,
+    "ditzingen_treffpunkt_adler": 268
   },
   "sources_failed": [],
-  "data_hash": "98757885b21cf76b",
+  "data_hash": "98448eda3dbc1660",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 17.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 18.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
+  "source_health": {
+    "ditzingen_stadt": 1.0,
+    "ditzingen_treffpunkt_adler": 1.0
+  },
+  "source_event_counts": {
+    "ditzingen_stadt": 139,
+    "ditzingen_treffpunkt_adler": 268
+  },
+  "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 290.4,
-    "runtime_delta_vs_baseline": 0.622,
+    "runtime_minutes": 616.4,
+    "runtime_delta_vs_baseline": 2.444,
     "source_health": {
       "ditzingen_stadt": 1.0,
       "ditzingen_treffpunkt_adler": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-06-17T07:04:30.837109+02:00"
+    "status": "critical",
+    "generated_at": "2026-06-18T12:31:41.468209+02:00"
   }
 }

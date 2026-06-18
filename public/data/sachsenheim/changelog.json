@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-17T03:54:14.714441+02:00",
+  "generated_at": "2026-06-18T03:33:47.242986+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_museum",
     "sachsenheim_library",
+    "sachsenheim_museum",
     "sachsenheim_kultur"
   ],
-  "previous_run": "2026-06-16T07:00:44.762642+02:00",
-  "count_added": 16,
-  "count_removed": 1,
+  "previous_run": "2026-06-17T03:54:14.735284+02:00",
+  "count_added": 12,
+  "count_removed": 2,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -77,42 +77,24 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "79ed7a0d72753b62",
-      "title": "Aktion MITEINANDER - TANZEN QUERBEET - Volkstanz international",
-      "date_start": "2026-06-24",
+      "id": "1894dc5c43b854f8",
+      "title": "Gastrittner und Geistern",
+      "date_start": "2026-06-21",
       "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "11fcb3a2495b05ad",
-      "title": "Spaziererei",
-      "date_start": "2026-06-25",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "ef115eebafcac3f2",
-      "title": "FamilienSingen",
-      "date_start": "2026-06-26",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "96b7189dfaac7ccb",
-      "title": "Rollator-Training",
-      "date_start": "2026-06-26",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "a71dfb1f30ac49c1",
-      "title": "Aktion MITEINANDER - TANZEN QUERBEET",
-      "date_start": "2026-06-24",
-      "source": "sachsenheim_library"
     }
   ],
   "removed": [
     {
-      "id": "50a0e736c3087fc9",
-      "title": "Tanznachmittag",
-      "date_start": "2026-06-16",
+      "id": "2cf2858f77cb4052",
+      "title": "Führung durch Geschichte und Gebäude des Wasserschlosses Großsachsenheim",
+      "date_start": "2026-06-21",
       "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "8e4ac42a01505303",
+      "title": "Führung, Zu Gast bei Rittern und Geistern",
+      "date_start": "2026-06-21",
+      "source": "sachsenheim_library"
     }
   ]
 }

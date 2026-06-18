@@ -1,36 +1,78 @@
 {
-  "generated_at": "2026-06-17T06:50:26.695043+02:00",
+  "generated_at": "2026-06-18T12:16:22.532193+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "schloss",
-    "stabi",
     "forum_schlosspark",
+    "kunstverein_ausstellungen",
+    "ludwigsburg_stadt",
+    "musikhalle_lb",
+    "karlskaserne_ausstellungen",
+    "schloss",
+    "blueba",
+    "demokratisches_zentrum",
+    "stabi",
     "garnisonmuseum",
     "karlskaserne_veranstaltungen",
-    "kunstverein_ausstellungen",
-    "musikhalle_lb",
-    "labyrinth",
-    "blueba",
-    "museum",
     "kunstverein_veranstaltungen",
-    "ludwigsburg_stadt",
-    "demokratisches_zentrum"
+    "labyrinth"
   ],
-  "previous_run": "2026-06-16T08:10:36.397789+02:00",
-  "count_added": 13,
-  "count_removed": 44,
+  "previous_run": "2026-06-17T06:50:26.730149+02:00",
+  "count_added": 74,
+  "count_removed": 76,
   "added": [
     {
-      "id": "774e28dff670baba",
+      "id": "dbdd29dc20c93ac8",
       "title": "„Weil menschlich so viel möglich ist“",
       "date_start": "2026-05-08",
       "source": "schloss"
     },
     {
-      "id": "a85dd148c198cd14",
+      "id": "9358f4850d9efd9e",
       "title": "Fest der Kinderrechte",
       "date_start": "2026-06-28",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "114eec39122d22e7",
+      "title": "Sommerferienworkshop: Theaterwerkstatt in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "labyrinth"
+    },
+    {
+      "id": "778b66783e085b80",
+      "title": "Haake Festival 2026",
+      "date_start": "2026-09-25",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "e556ed9db1b900c2",
+      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "labyrinth"
+    },
+    {
+      "id": "77589430e61eb6c6",
+      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Ludwigsburg",
+      "date_start": "2026-08-31",
       "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "e346d89a4f2d6323",
+      "title": "Sommerferienworkshop: Ein Schattentheater – Spiel mit Licht und Schatten in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "labyrinth"
+    },
+    {
+      "id": "3138cfca9cdae5ac",
+      "title": "Sommerferienworkshop: Kinderrechte kreativ entdecken in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "labyrinth"
+    },
+    {
+      "id": "0b140e1c9f922807",
+      "title": "Sommerferienworkshop: Tiere, die es gar nicht gibt! aus Ton in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "labyrinth"
     },
     {
       "id": "14272bc6ad282edd",
@@ -49,122 +91,6 @@
       "title": "Veranstaltung am 2026-06-14",
       "date_start": "2026-06-14",
       "source": "garnisonmuseum"
-    },
-    {
-      "id": "fe028ab25d8c130b",
-      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Bietigheim",
-      "date_start": "2026-09-07",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "b73b1e694752628d",
-      "title": "XR/VR-Initiative",
-      "date_start": "2026-07-07",
-      "source": "stabi"
-    },
-    {
-      "id": "1bec37830ed76fa6",
-      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Bietigheim",
-      "date_start": "2026-09-07",
-      "source": "labyrinth"
-    },
-    {
-      "id": "96140f5fd6c3e274",
-      "title": "Hagen Quartett – Ludwigsburger Schlossfestspiele",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "ee928cdc2be60b97",
-      "title": "Lo Speziale – Ludwigsburger Schlossfestspiele",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "de1893d1356724c8",
-      "title": "Grand Classic Ballet - Schwanensee jenseits der Bühne",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "27443a55b70d4f0d",
-      "title": "...Pistes, Pisten... von Penda Diouf",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "575480ed519d8358",
-      "title": "Konzert Wartungsfrei",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "ed4730c198a77603",
-      "title": "„Weil menschlich so viel möglich ist“",
-      "date_start": "2026-05-08",
-      "source": "schloss"
-    },
-    {
-      "id": "34ff62038b2a156e",
-      "title": "Studenten-Theater | das Markusevangelium",
-      "date_start": "2026-06-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "ee6954ec39693f65",
-      "title": "Ganzkörpertraining im Freien - Fit in den Frühling",
-      "date_start": "2026-06-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "645ceeac9ac7f24e",
-      "title": "XR/VR-Initiative",
-      "date_start": "2026-06-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "152032554fe8bbf7",
-      "title": "Café mit Herz",
-      "date_start": "2026-06-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b74f4ccd03560f8f",
-      "title": "Vortrag \"Auf den Straßen von Ludwigsburg - Simanowizstraße\"",
-      "date_start": "2026-06-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "d596e1c0f1505934",
-      "title": "Digitale Medien kreativ",
-      "date_start": "2026-06-16",
-      "source": "stabi"
-    },
-    {
-      "id": "bd80a2ed54b3a6cd",
-      "title": "Digitale Hilfe im Mehrgenerationenhaus",
-      "date_start": "2026-06-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "9358f4850d9efd9e",
-      "title": "Fest der Kinderrechte",
-      "date_start": "2026-06-28",
-      "source": "karlskaserne_ausstellungen"
-    },
-    {
-      "id": "02969fd9df957153",
-      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Bietigheim",
-      "date_start": "2026-09-07",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "8f203b8cb80830d7",
-      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Bietigheim",
-      "date_start": "2026-09-07",
-      "source": "labyrinth"
     },
     {
       "id": "5748806c46aaa4c0",
@@ -363,6 +289,638 @@
       "title": "Zwischen List und Lust",
       "date_start": "2026-12-31",
       "source": "schloss"
+    },
+    {
+      "id": "dc5bf0ce5abf2bac",
+      "title": "Gaga/People Classes",
+      "date_start": "2026-07-11",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "25e6960e89f10fe8",
+      "title": "Feldenkrais Intensiv",
+      "date_start": "2026-07-11",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "31d0f3a3f2c311c2",
+      "title": "The Ilan Lev Method",
+      "date_start": "2026-07-17",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "990de2af72dd3e36",
+      "title": "Klangentspannung",
+      "date_start": "2026-07-17",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "510e7c79ffbb4158",
+      "title": "Wave am Abend",
+      "date_start": "2026-07-25",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "fc0ccc010f920986",
+      "title": "Biodanza",
+      "date_start": "2026-07-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "c8f9473b0720ebd5",
+      "title": "Sommerferienworkshop: Abenteuer Manege! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "04a80dec6ba6d24d",
+      "title": "Sommerferienworkshop: An die Farben - fertig - los! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "9acc072033c5c0ea",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-07-16",
+      "source": "stabi"
+    },
+    {
+      "id": "392a2c23456dcd95",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-08-20",
+      "source": "stabi"
+    },
+    {
+      "id": "414014dbe04de0d0",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-09-17",
+      "source": "stabi"
+    },
+    {
+      "id": "70c22a94f27e6441",
+      "title": "Storytime in der Hauptstelle",
+      "date_start": "2026-09-24",
+      "source": "stabi"
+    },
+    {
+      "id": "78acb672f336d76c",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-10-15",
+      "source": "stabi"
+    },
+    {
+      "id": "7d19066ba268a34b",
+      "title": "Bilderbuchsamstag auf Achse im MIK",
+      "date_start": "2026-11-14",
+      "source": "stabi"
+    },
+    {
+      "id": "747126df459bddd1",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-11-19",
+      "source": "stabi"
+    },
+    {
+      "id": "707d81e29cdd418f",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-12-10",
+      "source": "stabi"
+    },
+    {
+      "id": "d7458cea8efaf209",
+      "title": "Bilderbuchsamstag auf Achse im MIK",
+      "date_start": "2026-12-12",
+      "source": "stabi"
+    },
+    {
+      "id": "2ba8b56a8415ebf0",
+      "title": "Bilderbuchsamstag auf Achse im MIK",
+      "date_start": "2027-02-13",
+      "source": "stabi"
+    },
+    {
+      "id": "2cd0e74f2e94153a",
+      "title": "Bilderbuchsamstag auf Achse im MIK",
+      "date_start": "2027-03-13",
+      "source": "stabi"
+    },
+    {
+      "id": "c77c9fae60ca5ddb",
+      "title": "Bilderbuchsamstag auf Achse im MIK",
+      "date_start": "2027-04-03",
+      "source": "stabi"
+    },
+    {
+      "id": "fa01f595680c02e3",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-02",
+      "source": "stabi"
+    },
+    {
+      "id": "e794fbe0cacfe31e",
+      "title": "Hann Trier Ausstellungs-Eröffnung – Ludwigsburger Schlossfestspiele",
+      "date_start": "2026-06-13",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "4bcec2687f08a2da",
+      "title": "LAUFMAMALAUF",
+      "date_start": "2026-06-15",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "cad300b75497cec1",
+      "title": "Ritmo y Pasión - Tanzen unter den Sternen",
+      "date_start": "2026-06-18",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "e434671ae7e916c4",
+      "title": "Emmas Einhorn",
+      "date_start": "2026-06-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2515196bde5531c7",
+      "title": "Internationales Straßenmusikfestival im Blühenden Barock",
+      "date_start": "2026-06-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "27f162f5c5c88719",
+      "title": "Sommerkonzert: Benefizmatinee der Hochschulmusik PH Ludwigsburg",
+      "date_start": "2026-06-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5547e8f1bdc2a522",
+      "title": "Kinderkino: Die Schatzsuche im Blaumeisental",
+      "date_start": "2026-06-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c4b557612e38802d",
+      "title": "Opportunity",
+      "date_start": "2027-01-15",
+      "source": "musikhalle_lb"
+    }
+  ],
+  "removed": [
+    {
+      "id": "7c82aba616f7a699",
+      "title": "Ausstellung Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-05-03",
+      "source": "museum"
+    },
+    {
+      "id": "774e28dff670baba",
+      "title": "„Weil menschlich so viel möglich ist“",
+      "date_start": "2026-05-08",
+      "source": "schloss"
+    },
+    {
+      "id": "3b7bec84fa2118a6",
+      "title": "Mitmachen, Austauschen und Spaß haben - Studierende laden zu aktiven Begegnungsnachmittagen ein",
+      "date_start": "2026-06-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "33f8337d75570f52",
+      "title": "Workshop: Tonwerkstatt ab 4 Jahren",
+      "date_start": "2026-06-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "0e83abae36620cde",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-06-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "27494888c1550304",
+      "title": "Sprechtreff Deutsch - ONLINE",
+      "date_start": "2026-06-17",
+      "source": "stabi"
+    },
+    {
+      "id": "9dada54822f6f8f5",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-06-17",
+      "source": "stabi"
+    },
+    {
+      "id": "3fcd3d83bf58a3b7",
+      "title": "Kräuterführung",
+      "date_start": "2026-06-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "46c033d2e64d93ab",
+      "title": "Internationale Geschichteninsel - Türkisch",
+      "date_start": "2026-06-17",
+      "source": "stabi"
+    },
+    {
+      "id": "4eccba23a04513db",
+      "title": "Internationale Geschichteninsel auf Türkisch",
+      "date_start": "2026-06-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a83f200afe175482",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2026-06-17",
+      "source": "museum"
+    },
+    {
+      "id": "b733079fa6f2fd47",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2026-06-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "1990f553e7a0d50b",
+      "title": "DIE Tour, die glücklich macht - eine philosophische Erlebnis-Tour",
+      "date_start": "2026-06-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "53d2c0feca4b77ce",
+      "title": "LKZ-Firmenlauf 2026",
+      "date_start": "2026-06-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "73d6a1a915b409b4",
+      "title": "Gastrosophie-Abend",
+      "date_start": "2026-06-25",
+      "source": "museum"
+    },
+    {
+      "id": "691173904c17a73f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-06-27",
+      "source": "museum"
+    },
+    {
+      "id": "7ff033032127df4b",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-06-27",
+      "source": "museum"
+    },
+    {
+      "id": "a85dd148c198cd14",
+      "title": "Fest der Kinderrechte",
+      "date_start": "2026-06-28",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "650ef2c04fb838df",
+      "title": "Little America – Fotografie Jürgen Schadeberg",
+      "date_start": "2026-07-01",
+      "source": "museum"
+    },
+    {
+      "id": "4685c6bd35a6a4c2",
+      "title": "Museumspause",
+      "date_start": "2026-07-01",
+      "source": "museum"
+    },
+    {
+      "id": "9d142bd8d3c097eb",
+      "title": "Vortrag \"Little America\"",
+      "date_start": "2026-07-01",
+      "source": "museum"
+    },
+    {
+      "id": "ed37d6dc04039758",
+      "title": "Offenes Atelier: Tee von der Blumenwiese, Sabine Deutscher",
+      "date_start": "2026-07-02",
+      "source": "museum"
+    },
+    {
+      "id": "d8b2c9429724d9e7",
+      "title": "Sprechtreff Deutsch - ONLINE",
+      "date_start": "2026-07-08",
+      "source": "stabi"
+    },
+    {
+      "id": "7c1a1baefcc024f6",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-07-08",
+      "source": "museum"
+    },
+    {
+      "id": "b6aeee1a8e6bce6a",
+      "title": "Musik im MIK",
+      "date_start": "2026-07-11",
+      "source": "museum"
+    },
+    {
+      "id": "2aadcf04324bb79a",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-07-16",
+      "source": "museum"
+    },
+    {
+      "id": "e03dcd037732fb3b",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-07-25",
+      "source": "museum"
+    },
+    {
+      "id": "ac517db39d41b08c",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-07-25",
+      "source": "museum"
+    },
+    {
+      "id": "72e10c8ed44a49e9",
+      "title": "Sommerferienworkshop: Ballett kreativ in Bietigheim",
+      "date_start": "2026-07-30",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "030c78503db7e3f5",
+      "title": "Sommerferienworkshop: Wackeldackel, Löwenhocker, Kistenlaster in Bietigheim",
+      "date_start": "2026-07-30",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "2c8c2cc616088433",
+      "title": "Sommerferienworkshop: Ein Schattentheater – Spiel mit Licht und Schatten in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "9337c0e99b11c4e8",
+      "title": "Sommerferienworkshop: Theaterwerkstatt in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "d783d583a2b270bf",
+      "title": "Sommerferienworkshop: Kinderrechte kreativ entdecken in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "477b214e45de9a1e",
+      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "9669620cdd829c87",
+      "title": "Sommerferienworkshop: Tiere, die es gar nicht gibt! aus Ton in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "84515f699269c9bc",
+      "title": "Museumspause",
+      "date_start": "2026-08-05",
+      "source": "museum"
+    },
+    {
+      "id": "146f8552056cda36",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-08-12",
+      "source": "museum"
+    },
+    {
+      "id": "51a4f0cb4be13889",
+      "title": "Ferienworkshop Museumsbuch interaktiv",
+      "date_start": "2026-08-14",
+      "source": "museum"
+    },
+    {
+      "id": "c48034e537af9ed5",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-08-29",
+      "source": "museum"
+    },
+    {
+      "id": "a8cbbcf36745b299",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-08-29",
+      "source": "museum"
+    },
+    {
+      "id": "bcd3d44ef3e2a897",
+      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Ludwigsburg",
+      "date_start": "2026-08-31",
+      "source": "labyrinth"
+    },
+    {
+      "id": "1efd40009fd56e29",
+      "title": "Sommerferienworkshop: Theaterwerkstatt in Bietigheim",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "412a38bbfbc19241",
+      "title": "Museumspause",
+      "date_start": "2026-09-02",
+      "source": "museum"
+    },
+    {
+      "id": "c81ce9fdfb461c7c",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-02",
+      "source": "stabi"
+    },
+    {
+      "id": "3742c059e0d5d8e7",
+      "title": "Sommerferienworkshop: Einfach magisch - Zaubersprüche und Zaubertränke aller Art in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "33db71f4708977da",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-09-09",
+      "source": "museum"
+    },
+    {
+      "id": "da91c6d4fe2f0d58",
+      "title": "Tag des Offenen Denkmals",
+      "date_start": "2026-09-13",
+      "source": "museum"
+    },
+    {
+      "id": "1da712de65240f53",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2026-09-16",
+      "source": "museum"
+    },
+    {
+      "id": "937f51ce6917680b",
+      "title": "Offenes Atelier: Origami, Regina Ille-Kopp",
+      "date_start": "2026-09-17",
+      "source": "museum"
+    },
+    {
+      "id": "a321ac78d9c91527",
+      "title": "Gastrosophie-Abend",
+      "date_start": "2026-09-24",
+      "source": "museum"
+    },
+    {
+      "id": "2f3d4a7c7d5221e5",
+      "title": "Haake Festival 2026",
+      "date_start": "2026-09-25",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "5f0f28478d262af4",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-09-26",
+      "source": "museum"
+    },
+    {
+      "id": "1ad591165ba69227",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-06",
+      "source": "museum"
+    },
+    {
+      "id": "10574e50c47e9a2d",
+      "title": "Museumspause",
+      "date_start": "2026-10-07",
+      "source": "museum"
+    },
+    {
+      "id": "d47a92c5185c1929",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-13",
+      "source": "museum"
+    },
+    {
+      "id": "50d1b8bcae088f0f",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-10-14",
+      "source": "museum"
+    },
+    {
+      "id": "fffeb549fd24639b",
+      "title": "Mitmach-Ausstellung flott, flott!",
+      "date_start": "2026-10-17",
+      "source": "museum"
+    },
+    {
+      "id": "5beb0ee8eb08f214",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-20",
+      "source": "museum"
+    },
+    {
+      "id": "2c0921e304b82ec4",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2026-10-21",
+      "source": "museum"
+    },
+    {
+      "id": "c170b028731594af",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-10-24",
+      "source": "museum"
+    },
+    {
+      "id": "33c73002bed4f546",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-27",
+      "source": "museum"
+    },
+    {
+      "id": "19b34a6bd1f128f7",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-10-31",
+      "source": "museum"
+    },
+    {
+      "id": "744c68f84155ddb4",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-03",
+      "source": "museum"
+    },
+    {
+      "id": "cc3cacc7ccb69d7b",
+      "title": "Museumspause",
+      "date_start": "2026-11-04",
+      "source": "museum"
+    },
+    {
+      "id": "746f98c5fe1bfba3",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-05",
+      "source": "museum"
+    },
+    {
+      "id": "503013994c307868",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-10",
+      "source": "museum"
+    },
+    {
+      "id": "d8b7431bc4a684b1",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-11-11",
+      "source": "museum"
+    },
+    {
+      "id": "3a07be9ff60f3ffd",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-17",
+      "source": "museum"
+    },
+    {
+      "id": "22f9f9b321aa01e3",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-24",
+      "source": "museum"
+    },
+    {
+      "id": "3e6569c50955cf0f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
+      "id": "1be2100766f9975a",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
+      "id": "ceffd17f4f8fa9ec",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-01",
+      "source": "museum"
+    },
+    {
+      "id": "0200632eb9bc01e9",
+      "title": "Museumspause",
+      "date_start": "2026-12-02",
+      "source": "museum"
+    },
+    {
+      "id": "a6439166304ac087",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-08",
+      "source": "museum"
+    },
+    {
+      "id": "d3a73fb64cac0f86",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-12-09",
+      "source": "museum"
+    },
+    {
+      "id": "712623bc24124a9c",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-15",
+      "source": "museum"
     }
   ]
 }
