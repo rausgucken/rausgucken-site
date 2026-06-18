@@ -15,8 +15,18 @@ export const onRequest: PagesFunction = async (context) => {
     return Response.redirect("https://www.rausgucken.de" + redirect, 301);
   }
 
-  // Redirect *.pages.dev → www.rausgucken.de
+  // Block crawlers on *.pages.dev + redirect to www
   if (url.hostname.endsWith(".pages.dev")) {
+    // Serve noindex header before redirecting — prevents crawlers indexing pages.dev
+    if (context.request.headers.get("user-agent")?.match(/googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot/i)) {
+      return new Response("Moved", {
+        status: 301,
+        headers: {
+          "Location": new URL(url.pathname + url.search, "https://www.rausgucken.de").toString(),
+          "X-Robots-Tag": "noindex, nofollow",
+        }
+      });
+    }
     const newUrl = new URL(url.pathname + url.search, "https://www.rausgucken.de");
     return Response.redirect(newUrl.toString(), 301);
   }
