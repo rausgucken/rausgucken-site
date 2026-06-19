@@ -9,8 +9,8 @@ import eventsRaw from "../../../public/data/marbach/events-current.json";
 
 const SITE     = "https://www.rausgucken.de";
 const marbach  = "marbach";
-const FEED_URL = `${SITE}/${marbach}/feed.xml`;
-const CITY_URL = `${SITE}/${marbach}/`;
+const FEED_URL = `${SITE}/${CITY_ID}/feed.xml`;
+const CITY_URL = `${SITE}/${CITY_ID}/`;
 
 function esc(str: string): string {
   if (!str) return "";
@@ -39,12 +39,12 @@ export async function GET() {
     : new Date().toISOString();
 
   const entries = events.map((ev) => {
-    const url        = `${SITE}/${marbach}/events/${esc(ev.slug)}/`;
+    const url        = `${SITE}/${CITY_ID}/events/${esc(ev.slug)}/`;
     const title      = esc(ev.title || "Veranstaltung");
     const summary    = esc(ev.description || "");
     const published  = toAtomDate(ev.date_start);
     const updated_ev = toAtomDate(ev.scraped_at || ev.date_start);
-    const ogImage    = `${SITE}/og/${marbach}/${esc(ev.slug)}.jpg`;
+    const ogImage    = `${SITE}/og/${CITY_ID}/${esc(ev.slug)}.jpg`;
 
     const dateLabel    = ev.date_start
       ? new Date(ev.date_start).toLocaleDateString("de-DE", {
@@ -82,7 +82,7 @@ export async function GET() {
     ${originalUrl ? `<link rel="via" href="${originalUrl}"/>` : ""}
     <media:thumbnail url="${ogImage}"/>
     ${categoryTags}
-    <rg:city>${marbach}</rg:city>
+    <rg:city>${CITY_ID}</rg:city>
     ${rgPrice}
     ${rgAgeMin}
     ${rgAgeMax}
