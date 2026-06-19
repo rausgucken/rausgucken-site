@@ -8,7 +8,7 @@
 import eventsRaw from "../../../public/data/besigheim/events-current.json";
 
 const SITE     = "https://www.rausgucken.de";
-const besigheim  = "besigheim";
+const CITY_ID = "besigheim";
 const FEED_URL = `${SITE}/${CITY_ID}/feed.xml`;
 const CITY_URL = `${SITE}/${CITY_ID}/`;
 

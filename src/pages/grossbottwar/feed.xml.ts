@@ -8,7 +8,7 @@
 import eventsRaw from "../../../public/data/grossbottwar/events-current.json";
 
 const SITE     = "https://www.rausgucken.de";
-const grossbottwar  = "grossbottwar";
+const CITY_ID = "grossbottwar";
 const FEED_URL = `${SITE}/${CITY_ID}/feed.xml`;
 const CITY_URL = `${SITE}/${CITY_ID}/`;
 

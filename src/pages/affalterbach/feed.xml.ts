@@ -8,7 +8,7 @@
 import eventsRaw from "../../../public/data/affalterbach/events-current.json";
 
 const SITE     = "https://www.rausgucken.de";
-const affalterbach  = "affalterbach";
+const CITY_ID = "affalterbach";
 const FEED_URL = `${SITE}/${CITY_ID}/feed.xml`;
 const CITY_URL = `${SITE}/${CITY_ID}/`;
 

@@ -8,7 +8,7 @@
 import eventsRaw from "../../../public/data/benningen/events-current.json";
 
 const SITE     = "https://www.rausgucken.de";
-const benningen  = "benningen";
+const CITY_ID = "benningen";
 const FEED_URL = `${SITE}/${CITY_ID}/feed.xml`;
 const CITY_URL = `${SITE}/${CITY_ID}/`;
 

@@ -8,7 +8,7 @@
 import eventsRaw from "../../../public/data/ditzingen/events-current.json";
 
 const SITE     = "https://www.rausgucken.de";
-const ditzingen  = "ditzingen";
+const CITY_ID = "ditzingen";
 const FEED_URL = `${SITE}/${CITY_ID}/feed.xml`;
 const CITY_URL = `${SITE}/${CITY_ID}/`;
 

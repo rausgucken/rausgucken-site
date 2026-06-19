@@ -8,7 +8,7 @@
 import eventsRaw from "../../../public/data/marbach/events-current.json";
 
 const SITE     = "https://www.rausgucken.de";
-const marbach  = "marbach";
+const CITY_ID = "marbach";
 const FEED_URL = `${SITE}/${CITY_ID}/feed.xml`;
 const CITY_URL = `${SITE}/${CITY_ID}/`;
 
