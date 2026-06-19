@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-06-19T06:00:01.621121+02:00",
-  "event_count": 8,
+  "generated_at": "2026-06-19T08:19:06.631962+02:00",
+  "event_count": 9,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -27,7 +27,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-18T02:04:31.449568+02:00",
+      "scraped_at": "2026-06-19T02:04:25.661784+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -58,7 +58,7 @@
       "city": "marbach",
       "slug": "vorlesestunde-fuer-kinder-2026-07-01t1430000200-marb",
       "weekdays": [],
-      "scraped_at": "2026-06-18T02:04:49.245531+02:00",
+      "scraped_at": "2026-06-19T02:04:38.661035+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -91,7 +91,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-18T02:05:17.124757+02:00",
+      "scraped_at": "2026-06-19T02:05:11.664517+02:00",
       "extraction_confidence": 0.9,
       "is_new": false,
       "is_booked_out": false,
@@ -123,7 +123,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-18T02:05:26.989202+02:00",
+      "scraped_at": "2026-06-19T02:05:19.101442+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -154,9 +154,9 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-18T02:05:51.079899+02:00",
+      "scraped_at": "2026-06-19T02:05:48.352018+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -187,9 +187,9 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-18T02:06:16.460207+02:00",
+      "scraped_at": "2026-06-19T02:06:16.133640+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -220,9 +220,9 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-18T02:06:28.631180+02:00",
+      "scraped_at": "2026-06-19T02:06:29.463702+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -251,14 +251,46 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-18T02:06:36.278774+02:00",
+      "scraped_at": "2026-06-19T02:06:36.761189+02:00",
       "extraction_confidence": 0.92,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Marbach am Neckar",
       "canonical_url": "https://www.rausgucken.de/marbach/events/festwochenende-zum-jubilaeum-125-jahre-cvjm-marbach---festgottesdienst-und-public-viewing"
+    },
+    {
+      "id": "d78c867884996191",
+      "title": "Festwochenende zum Jubiläum 125 Jahre CVJM Marbach",
+      "date_start": "2026-07-18",
+      "date_end": "2026-07-19",
+      "time": null,
+      "description": "In diesem Jubiläumsjahr feiern wir 125 Jahre Geschichte des CVJM Marbach e.V. mit einem großen Festwochenende auf dem Festplatz Poppenweilerstraße. Von Freitag bis Sonntag bieten wir Veranstaltungen für die ganze Familie an, um das besondere Erbe zu feiern.",
+      "location": "Festplatz Poppenweilerstraße",
+      "price": null,
+      "age_min": 5,
+      "age_max": 12,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.schillerstadt-marbach.de/touristik-kultur/veranstaltungskalender/veranstaltungskalender/calendar/07/19/event/tx_cal_phpicalendar/festwochenende-zum-jubilaeum-125-jahre-cvjm-marbach/?no_cache=1&cHash=38686fa215d52e283d23304e89646851",
+      "original_url": "https://www.schillerstadt-marbach.de/touristik-kultur/veranstaltungskalender/veranstaltungskalender/calendar/07/19/event/tx_cal_phpicalendar/festwochenende-zum-jubilaeum-125-jahre-cvjm-marbach/?no_cache=1&cHash=38686fa215d52e283d23304e89646851",
+      "source": "marbach_stadt",
+      "city": "marbach",
+      "slug": "festwochenende-zum-jubilaeum-125-jahre-cvjm-marbach-2026-07-18-marb",
+      "weekdays": [
+        0,
+        6
+      ],
+      "scraped_at": "2026-06-19T02:06:42.370708+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Marbach am Neckar",
+      "canonical_url": "https://www.rausgucken.de/marbach/events/festwochenende-zum-jubilaeum-125-jahre-cvjm-marbach-2026-07-18-marb"
     }
   ]
 }
