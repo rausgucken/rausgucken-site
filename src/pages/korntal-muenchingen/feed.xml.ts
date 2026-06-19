@@ -82,7 +82,7 @@ export async function GET() {
     ${originalUrl ? `<link rel="via" href="${originalUrl}"/>` : ""}
     <media:thumbnail url="${ogImage}"/>
     ${categoryTags}
-    <rg:city>${korntal-muenchingen}</rg:city>
+    <rg:city>${CITY_ID}</rg:city>
     ${rgPrice}
     ${rgAgeMin}
     ${rgAgeMax}
