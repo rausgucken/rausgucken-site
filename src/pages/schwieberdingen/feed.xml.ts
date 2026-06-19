@@ -8,9 +8,9 @@
 import eventsRaw from "../../../public/data/schwieberdingen/events-current.json";
 
 const SITE     = "https://www.rausgucken.de";
-const schwieberdingen  = "schwieberdingen";
-const FEED_URL = `${SITE}/${schwieberdingen}/feed.xml`;
-const CITY_URL = `${SITE}/${schwieberdingen}/`;
+const CITY_ID = "schwieberdingen";
+const FEED_URL = `${SITE}/${CITY_ID}/feed.xml`;
+const CITY_URL = `${SITE}/${CITY_ID}/`;
 
 function esc(str: string): string {
   if (!str) return "";
@@ -39,12 +39,12 @@ export async function GET() {
     : new Date().toISOString();
 
   const entries = events.map((ev) => {
-    const url        = `${SITE}/${schwieberdingen}/events/${esc(ev.slug)}/`;
+    const url        = `${SITE}/${CITY_ID}/events/${esc(ev.slug)}/`;
     const title      = esc(ev.title || "Veranstaltung");
     const summary    = esc(ev.description || "");
     const published  = toAtomDate(ev.date_start);
     const updated_ev = toAtomDate(ev.scraped_at || ev.date_start);
-    const ogImage    = `${SITE}/og/${schwieberdingen}/${esc(ev.slug)}.jpg`;
+    const ogImage    = `${SITE}/og/${CITY_ID}/${esc(ev.slug)}.jpg`;
 
     const dateLabel    = ev.date_start
       ? new Date(ev.date_start).toLocaleDateString("de-DE", {

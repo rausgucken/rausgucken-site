@@ -8,9 +8,9 @@
 import eventsRaw from "../../../public/data/korntal-muenchingen/events-current.json";
 
 const SITE     = "https://www.rausgucken.de";
-const korntal-muenchingen  = "korntal-muenchingen";
-const FEED_URL = `${SITE}/${korntal-muenchingen}/feed.xml`;
-const CITY_URL = `${SITE}/${korntal-muenchingen}/`;
+const CITY_ID = "korntal-muenchingen";
+const FEED_URL = `${SITE}/${CITY_ID}/feed.xml`;
+const CITY_URL = `${SITE}/${CITY_ID}/`;
 
 function esc(str: string): string {
   if (!str) return "";
@@ -39,12 +39,12 @@ export async function GET() {
     : new Date().toISOString();
 
   const entries = events.map((ev) => {
-    const url        = `${SITE}/${korntal-muenchingen}/events/${esc(ev.slug)}/`;
+    const url        = `${SITE}/${CITY_ID}/events/${esc(ev.slug)}/`;
     const title      = esc(ev.title || "Veranstaltung");
     const summary    = esc(ev.description || "");
     const published  = toAtomDate(ev.date_start);
     const updated_ev = toAtomDate(ev.scraped_at || ev.date_start);
-    const ogImage    = `${SITE}/og/${korntal-muenchingen}/${esc(ev.slug)}.jpg`;
+    const ogImage    = `${SITE}/og/${CITY_ID}/${esc(ev.slug)}.jpg`;
 
     const dateLabel    = ev.date_start
       ? new Date(ev.date_start).toLocaleDateString("de-DE", {
