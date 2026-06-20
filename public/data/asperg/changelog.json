@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-19T03:21:58.045750+02:00",
+  "generated_at": "2026-06-20T03:16:45.061243+02:00",
   "city": "asperg",
   "sources": [
+    "asperg_fuehrungen",
     "glasperlenspiel",
-    "asperg_veranstaltungen",
-    "asperg_fuehrungen"
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-06-18T03:24:29.094316+02:00",
+  "previous_run": "2026-06-19T03:21:58.066853+02:00",
   "count_added": 13,
   "count_removed": 0,
   "added": [
@@ -14,6 +14,12 @@
       "id": "df2fb65f3b7fecca",
       "title": "Asperg lecker – Stadtführung mit kulturellen und kulinarischen Häppchen",
       "date_start": "2026-03-27",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "e8852c1be0ce91a4",
+      "title": "Stadtführung",
+      "date_start": "2026-04-19",
       "source": "asperg_fuehrungen"
     },
     {
@@ -81,12 +87,6 @@
       "title": "Konzert mit emisa",
       "date_start": "2026-06-14",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "e8852c1be0ce91a4",
-      "title": "Stadtführung",
-      "date_start": "2026-04-19",
-      "source": "asperg_fuehrungen"
     }
   ],
   "removed": []

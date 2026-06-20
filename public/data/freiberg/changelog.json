@@ -1,24 +1,31 @@
 {
-  "generated_at": "2026-06-19T03:21:58.442943+02:00",
+  "generated_at": "2026-06-20T03:19:11.210617+02:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-06-18T03:24:29.499933+02:00",
-  "count_added": 0,
-  "count_removed": 2,
-  "added": [],
-  "removed": [
+  "previous_run": "2026-06-19T03:21:58.466778+02:00",
+  "count_added": 2,
+  "count_removed": 1,
+  "added": [
     {
-      "id": "5a08adff016cffc0",
-      "title": "Walking/Lauftreff",
-      "date_start": "2026-06-18",
+      "id": "bb4b6293d0260528",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-01-20",
       "source": "freiberg_veranstaltungen"
     },
     {
-      "id": "33473cd71caca887",
-      "title": "Gesundheitswandern- Waldbaden- Sitz Yoga",
-      "date_start": "2026-06-18",
+      "id": "3ad4fcedf244cfa4",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-01-20",
+      "source": "freiberg_veranstaltungen"
+    }
+  ],
+  "removed": [
+    {
+      "id": "84961b2e0bc4da2b",
+      "title": "BfB Repair Cafe",
+      "date_start": "2026-06-19",
       "source": "freiberg_veranstaltungen"
     }
   ]
