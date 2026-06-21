@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-06-20T04:54:01.130686+02:00",
+  "generated_at": "2026-06-21T04:23:57.268383+02:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-06-19T04:59:27.238311+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-06-20T04:54:01.151173+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "9d15df35d62fe737",
+      "title": "Erste-Hilfe-Kurs",
+      "date_start": "2026-09-26",
+      "source": "affalterbach_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "f2a53f73982592ce",
+      "title": "Erste-Hilfe-Kurs",
+      "date_start": "2026-06-20",
+      "source": "affalterbach_stadt"
+    }
+  ]
 }

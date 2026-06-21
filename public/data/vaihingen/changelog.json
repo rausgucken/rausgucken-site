@@ -1,24 +1,31 @@
 {
-  "generated_at": "2026-06-20T08:40:58.571217+02:00",
+  "generated_at": "2026-06-21T07:49:28.056468+02:00",
   "city": "vaihingen",
   "sources": [
     "vaihingen_stadt"
   ],
-  "previous_run": "2026-06-19T10:27:21.277449+02:00",
-  "count_added": 0,
+  "previous_run": "2026-06-20T08:40:58.592788+02:00",
+  "count_added": 1,
   "count_removed": 2,
-  "added": [],
+  "added": [
+    {
+      "id": "ac642615f0484806",
+      "title": "Friedensminute",
+      "date_start": "2026-06-27",
+      "source": "vaihingen_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "1a1d9fad36351723",
-      "title": "Den (Augen)Blick sehen!",
-      "date_start": "2026-06-19",
+      "id": "9b748082a3d1aa7a",
+      "title": "Faires Frühstück vor dem Weltladen",
+      "date_start": "2026-06-20",
       "source": "vaihingen_stadt"
     },
     {
-      "id": "c04a8313be977a80",
-      "title": "Jazz auf der Enz",
-      "date_start": "2026-06-19",
+      "id": "d42c261b42e3ff48",
+      "title": "Friedensminute",
+      "date_start": "2026-06-20",
       "source": "vaihingen_stadt"
     }
   ]

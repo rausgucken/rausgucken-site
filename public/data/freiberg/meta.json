@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-06-20T03:19:11.234728+02:00",
+  "scraped_at": "2026-06-21T03:19:18.558064+02:00",
   "city": "freiberg",
-  "event_count": 252,
+  "event_count": 248,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "freiberg_veranstaltungen"
   ],
   "source_counts": {
-    "freiberg_veranstaltungen": 252
+    "freiberg_veranstaltungen": 248
   },
   "sources_failed": [],
-  "data_hash": "d113d1ad035ed798",
+  "data_hash": "5b20ca196a50572f",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 20.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 21.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "freiberg_veranstaltungen": 0.97
   },
   "source_event_counts": {
-    "freiberg_veranstaltungen": 252
+    "freiberg_veranstaltungen": 248
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 414.3,
-    "runtime_delta_vs_baseline": 1.315,
+    "runtime_minutes": 363.9,
+    "runtime_delta_vs_baseline": 1.033,
     "source_health": {
       "freiberg_veranstaltungen": 0.97
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "critical",
-    "generated_at": "2026-06-20T09:08:25.774516+02:00"
+    "generated_at": "2026-06-21T08:17:31.206198+02:00"
   }
 }
