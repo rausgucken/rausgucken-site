@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-21T03:17:51.133714+02:00",
+  "generated_at": "2026-06-22T03:16:20.969918+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
     "glasperlenspiel",
+    "asperg_fuehrungen",
     "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-06-20T03:16:45.082369+02:00",
-  "count_added": 14,
-  "count_removed": 3,
+  "previous_run": "2026-06-21T03:17:51.155164+02:00",
+  "count_added": 13,
+  "count_removed": 0,
   "added": [
     {
       "id": "df2fb65f3b7fecca",
@@ -87,32 +87,7 @@
       "title": "Konzert mit emisa",
       "date_start": "2026-06-14",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "a61eeea3a8927a55",
-      "title": "Gruppe Live - Die Shadows im 50er-Jahre-Sound",
-      "date_start": "2027-06-20",
-      "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "bef45fc183e6b825",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-06-20",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "f64554b52991008a",
-      "title": "Bücherei-Fest \"50 Jahre Stadtbücherei\"",
-      "date_start": "2026-06-20",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "01edb6e00a404653",
-      "title": "Gruppe Live - The Shadows Sound",
-      "date_start": "2026-06-20",
-      "source": "glasperlenspiel"
-    }
-  ]
+  "removed": []
 }

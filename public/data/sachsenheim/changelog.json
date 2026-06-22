@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-21T04:15:36.171187+02:00",
+  "generated_at": "2026-06-22T03:55:00.606997+02:00",
   "city": "sachsenheim",
   "sources": [
+    "sachsenheim_museum",
     "sachsenheim_library",
-    "sachsenheim_kultur",
-    "sachsenheim_museum"
+    "sachsenheim_kultur"
   ],
-  "previous_run": "2026-06-20T04:16:40.348433+02:00",
-  "count_added": 13,
-  "count_removed": 1,
+  "previous_run": "2026-06-21T04:15:36.191727+02:00",
+  "count_added": 15,
+  "count_removed": 5,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -77,6 +77,32 @@
       "source": "sachsenheim_library"
     },
     {
+      "id": "53c91e0f44d321f1",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-26",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "fc878008b0edd839",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-22",
+      "source": "sachsenheim_library"
+    },
+    {
+      "id": "71580c45fe2bbf8f",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-22",
+      "source": "sachsenheim_library"
+    },
+    {
+      "id": "191129490f82baa8",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-22",
+      "source": "sachsenheim_library"
+    }
+  ],
+  "removed": [
+    {
       "id": "c5b58bf8874a169d",
       "title": "Führung, Heute, 21.06.2026",
       "date_start": "2026-06-21",
@@ -87,13 +113,23 @@
       "title": "Führung, Zu Gast bei Rittern und Geistern",
       "date_start": "2026-06-21",
       "source": "sachsenheim_library"
-    }
-  ],
-  "removed": [
+    },
     {
-      "id": "1894dc5c43b854f8",
-      "title": "Gastrittner und Geistern",
-      "date_start": "2026-06-21",
+      "id": "6b42e1b741d3e5a5",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-22",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "1229a31fd22a6daa",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-22",
+      "source": "sachsenheim_library"
+    },
+    {
+      "id": "0307fa61a13a5a35",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-22",
       "source": "sachsenheim_kultur"
     }
   ]

@@ -1,284 +1,78 @@
 {
-  "generated_at": "2026-06-21T08:03:54.746568+02:00",
+  "generated_at": "2026-06-22T07:57:00.738821+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "schloss",
-    "kunstverein_ausstellungen",
-    "karlskaserne_ausstellungen",
-    "blueba",
-    "stabi",
-    "garnisonmuseum",
-    "demokratisches_zentrum",
-    "forum_schlosspark",
     "museum",
-    "labyrinth",
-    "ludwigsburg_stadt",
+    "schloss",
+    "blueba",
+    "karlskaserne_ausstellungen",
     "kunstverein_veranstaltungen",
     "karlskaserne_veranstaltungen",
+    "stabi",
+    "forum_schlosspark",
+    "kunstverein_ausstellungen",
+    "demokratisches_zentrum",
+    "garnisonmuseum",
+    "labyrinth",
+    "ludwigsburg_stadt",
     "musikhalle_lb"
   ],
-  "previous_run": "2026-06-20T08:54:21.555272+02:00",
-  "count_added": 20,
-  "count_removed": 26,
+  "previous_run": "2026-06-21T08:03:54.782823+02:00",
+  "count_added": 21,
+  "count_removed": 31,
   "added": [
     {
-      "id": "4838bb2472b0ffe7",
+      "id": "d5e0721abfcd09c5",
       "title": "„Weil menschlich so viel möglich ist“",
       "date_start": "2026-05-08",
       "source": "schloss"
     },
     {
-      "id": "9669620cdd829c87",
-      "title": "Sommerferienworkshop: Tiere, die es gar nicht gibt! aus Ton in Ludwigsburg",
+      "id": "9337c0e99b11c4e8",
+      "title": "Sommerferienworkshop: Theaterwerkstatt in Ludwigsburg",
       "date_start": "2026-08-03",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "5c49b1853b732f74",
+      "id": "d783d583a2b270bf",
+      "title": "Sommerferienworkshop: Kinderrechte kreativ entdecken in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "477b214e45de9a1e",
+      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "7f9e3803bf319b8f",
       "title": "Sommerferienworkshop: In Holz hauen und Schnitzen in Ludwigsburg",
       "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "22540ebd0cd7eb15",
+      "title": "Sommerferienworkshop: Binding journals in Ludwigsburg",
+      "date_start": "2026-07-30",
       "source": "labyrinth"
     },
     {
-      "id": "72e10c8ed44a49e9",
-      "title": "Sommerferienworkshop: Ballett kreativ in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "1efdc41d77666db4",
+      "title": "Sommerferienworkshop: Hip-Hop Streetdance in Ludwigsburg",
+      "date_start": "2026-09-07",
+      "source": "labyrinth"
     },
     {
-      "id": "6e62c21195939264",
-      "title": "STUTTGARTER PHILHARMONIKER",
-      "date_start": "2027-05-09",
-      "source": "forum_schlosspark"
-    },
-    {
-      "id": "905f633b7efbcdef",
-      "title": "Internationale Geschichteninsel auf Arabisch",
-      "date_start": "2026-06-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "bf61fa121c5a18b1",
-      "title": "Hi.Francky - AfterWork Donnerstag",
-      "date_start": "2026-06-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "77ecc10142bdc55d",
-      "title": "After-Work-Jazz and Fun",
-      "date_start": "2026-06-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "e3fea083a16fb696",
-      "title": "Gastrosophie-Abend",
-      "date_start": "2026-06-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "8b897d0c82b28e67",
-      "title": "Stories & Flavors",
-      "date_start": "2026-06-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "da9b9deaafcf158f",
-      "title": "LGT Young Soloists – Ludwigsburger Schlossfestspiele",
-      "date_start": "2026-06-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "f66c397df2154158",
-      "title": "Filmklassiker von Wim Wenders (4): Paris, Texas",
-      "date_start": "2026-06-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "0920eb519ac3f698",
-      "title": "Vortrag \"Digitale Gesundheitskompetenz\"",
+      "id": "0f9d70f1947cd21c",
+      "title": "PABLO FERRÁNDEZ & MANFRED HONECK",
       "date_start": "2026-06-26",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "f6e86be1cef49649",
-      "title": "Digitale Hilfe für ältere Menschen in Schlösslesfeld",
+      "id": "6f365959e616bcc1",
+      "title": "MIKIO",
       "date_start": "2026-06-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "5488be0868a8636c",
-      "title": "\"Einfach heiraten\" - die Pop-Up-Hochzeit",
-      "date_start": "2026-06-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "3f5ddd3282c573a6",
-      "title": "Internationale Geschichteninsel auf Französisch",
-      "date_start": "2026-06-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "f585624e74f6417d",
-      "title": "PRIDE Kreativnachmittag",
-      "date_start": "2026-06-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "654a4de8b048ccc7",
-      "title": "Internationale Geschichteninsel auf Portugiesisch",
-      "date_start": "2026-06-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "0a485566f436dd4a",
-      "title": "Space Saloon",
-      "date_start": "2026-06-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "57565c5396c2e5b3",
-      "title": "Bader, Ärzte, Apotheker - eine heilsame Erlebnis-Tour",
-      "date_start": "2026-06-26",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "32c583a6cf8d0232",
-      "title": "„Weil menschlich so viel möglich ist“",
-      "date_start": "2026-05-08",
-      "source": "schloss"
-    },
-    {
-      "id": "61e51216fc42a270",
-      "title": "Im Reich der Feen beim Naturerlebnis Neckar",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4f43cfbb1e0b1126",
-      "title": "Bilderbuchsamstag in der Stadtbibliothek",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "e434671ae7e916c4",
-      "title": "Emmas Einhorn",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "8ccb98adcee55e94",
-      "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-06-20",
-      "source": "schloss"
-    },
-    {
-      "id": "65245cf5a8d930a1",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-06-20",
-      "source": "stabi"
-    },
-    {
-      "id": "b4318dc1e079aed3",
-      "title": "Emmas Einhorn",
-      "date_start": "2026-06-20",
-      "source": "stabi"
-    },
-    {
-      "id": "32937a7b6acab952",
-      "title": "Gaga/People Classes",
-      "date_start": "2026-06-20",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "34ff47af80712f9d",
-      "title": "Genussführung: Ludwigsburger Versucherle",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "6e379b2428d85255",
-      "title": "SWLB Familientag",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "94a104b2f0cad4f3",
-      "title": "EN PASSANT",
-      "date_start": "2026-06-20",
-      "source": "stabi"
-    },
-    {
-      "id": "d8877459979fa682",
-      "title": "Kunterbuntes Kinderfest",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "df113072ae9d38e2",
-      "title": "Kinderkino: Die Schatzsuche im Blaumeisental",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "2331588adefe822e",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "5b923c8cdaa37ba4",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-06-20",
-      "source": "schloss"
-    },
-    {
-      "id": "ac48e5c939fd3072",
-      "title": "BALLET NACIONAL DE ESPAÑA",
-      "date_start": "2026-06-20",
-      "source": "forum_schlosspark"
-    },
-    {
-      "id": "7801f24d5311ece2",
-      "title": "Hagen Quartett",
-      "date_start": "2026-06-20",
-      "source": "schloss"
-    },
-    {
-      "id": "81b65aeb96ce13b9",
-      "title": "Lo Speziale",
-      "date_start": "2026-06-20",
-      "source": "schloss"
-    },
-    {
-      "id": "96140f5fd6c3e274",
-      "title": "Hagen Quartett – Ludwigsburger Schlossfestspiele",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "ee928cdc2be60b97",
-      "title": "Lo Speziale – Ludwigsburger Schlossfestspiele",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "575480ed519d8358",
-      "title": "Konzert Wartungsfrei",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "de1893d1356724c8",
-      "title": "Grand Classic Ballet - Schwanensee jenseits der Bühne",
-      "date_start": "2026-06-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "27443a55b70d4f0d",
-      "title": "...Pistes, Pisten... von Penda Diouf",
-      "date_start": "2026-06-20",
       "source": "ludwigsburg_stadt"
     },
     {
@@ -288,16 +82,258 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "0b140e1c9f922807",
-      "title": "Sommerferienworkshop: Tiere, die es gar nicht gibt! aus Ton in Ludwigsburg",
+      "id": "1efd40009fd56e29",
+      "title": "Sommerferienworkshop: Theaterwerkstatt in Bietigheim",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "4d3efac45577d15e",
+      "title": "Sommerferienworkshop: Kunterbunter Meeresgarten in Bietigheim",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "58f7cdbb5d945edd",
+      "title": "ALPENSINFONIE – DEUTSCHE STAATSPHILHARMONIE",
+      "date_start": "2027-05-14",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "4ba2846554310782",
+      "title": "Märchenerzählerin",
+      "date_start": "2026-08-28",
+      "source": "blueba"
+    },
+    {
+      "id": "f20fc7ea9f6afa36",
+      "title": "Aminta e Fillide – Ludwigsburger Schlossfestspiele",
+      "date_start": "2026-06-26",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "191e690b3515c284",
+      "title": "Feuerwehrfest Neckarweihingen",
+      "date_start": "2026-06-26",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "95e48fe70cc6d33c",
+      "title": "Workshop: Tischkicker in Bietigheim-Bissingen",
+      "date_start": "2026-06-27",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "d442e06331c6da86",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-06-27",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c3f6f661f2358ce2",
+      "title": "Bilderbuchsamstag in der Stadtbibliothek",
+      "date_start": "2026-06-27",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "7541aa03e6f6bbb3",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-06-27",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "66bfe493f250cabc",
+      "title": "Marktplatzfest",
+      "date_start": "2026-06-27",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "4838bb2472b0ffe7",
+      "title": "„Weil menschlich so viel möglich ist“",
+      "date_start": "2026-05-08",
+      "source": "schloss"
+    },
+    {
+      "id": "ebd52bc5f29c3d84",
+      "title": "Internationales Strassenmusikfestival*",
+      "date_start": "2026-06-20",
+      "source": "blueba"
+    },
+    {
+      "id": "2515196bde5531c7",
+      "title": "Internationales Straßenmusikfestival im Blühenden Barock",
+      "date_start": "2026-06-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "7beace9c4f181d75",
+      "title": "Workshop: Ein Hexenhaus aus Ton in Ludwigsburg",
+      "date_start": "2026-06-20",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "0cf35f6c08a9fbe0",
+      "title": "Workshop: Batik und Shibori – Farbe, Stoff und Muster in Ludwigsburg",
+      "date_start": "2026-06-20",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "60ba30031de0454d",
+      "title": "Meine erste Schlossführung",
+      "date_start": "2026-06-21",
+      "source": "schloss"
+    },
+    {
+      "id": "9554f8afb4cef03a",
+      "title": "Taiji Qigong",
+      "date_start": "2026-06-21",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "f6dbbda851be60c0",
+      "title": "Kasernenspaziergang ostwärts der Stuttgarter Straße",
+      "date_start": "2026-06-21",
+      "source": "garnisonmuseum"
+    },
+    {
+      "id": "fba53a357e6eced4",
+      "title": "Veranstaltung am 2026-06-21",
+      "date_start": "2026-06-21",
+      "source": "garnisonmuseum"
+    },
+    {
+      "id": "27f162f5c5c88719",
+      "title": "Sommerkonzert: Benefizmatinee der Hochschulmusik PH Ludwigsburg",
+      "date_start": "2026-06-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "af742a55b0f9e859",
+      "title": "Württembergs First Ladies",
+      "date_start": "2026-06-21",
+      "source": "schloss"
+    },
+    {
+      "id": "a8dd0c4e319c6182",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-06-21",
+      "source": "schloss"
+    },
+    {
+      "id": "5547e8f1bdc2a522",
+      "title": "Kinderkino: Die Schatzsuche im Blaumeisental",
+      "date_start": "2026-06-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "8e7a0d2c9fe12a86",
+      "title": "Diarium",
+      "date_start": "2026-06-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "dde6ae08477c0a6b",
+      "title": "PHILHARMONIX",
+      "date_start": "2026-06-21",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "8e4337d214af388e",
+      "title": "Chen Reiss, Sharon Kam und Yael Kareth",
+      "date_start": "2026-06-21",
+      "source": "schloss"
+    },
+    {
+      "id": "75c9f0e5f32f19ab",
+      "title": "...Pistes, Pisten... von Penda Diouf",
+      "date_start": "2026-06-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "18e12e1dea49dd1c",
+      "title": "Lo Speziale",
+      "date_start": "2026-06-21",
+      "source": "schloss"
+    },
+    {
+      "id": "b0cb4eeda76cbc26",
+      "title": "Lo Speziale – Ludwigsburger Schlossfestspiele",
+      "date_start": "2026-06-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "51c5e41462fe88b7",
+      "title": "Chen Reiss, Sharon Kam, Yael Kareth – Ludwigsburger Schlossfestspiele",
+      "date_start": "2026-06-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "1e7b4b2a9dfffe3c",
+      "title": "PABLO FERRÁNDEZ & MANFRED HONECK",
+      "date_start": "2026-06-26",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "b31da829c43a4e69",
+      "title": "MIKIO",
+      "date_start": "2026-06-26",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "c8df0c0a6925172c",
+      "title": "Sommerferienworkshop: Binding journals in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "e556ed9db1b900c2",
+      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Ludwigsburg",
       "date_start": "2026-08-03",
       "source": "labyrinth"
     },
     {
-      "id": "7f9e3803bf319b8f",
+      "id": "3138cfca9cdae5ac",
+      "title": "Sommerferienworkshop: Kinderrechte kreativ entdecken in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "labyrinth"
+    },
+    {
+      "id": "114eec39122d22e7",
+      "title": "Sommerferienworkshop: Theaterwerkstatt in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "source": "labyrinth"
+    },
+    {
+      "id": "5c49b1853b732f74",
       "title": "Sommerferienworkshop: In Holz hauen und Schnitzen in Ludwigsburg",
       "date_start": "2026-08-31",
+      "source": "labyrinth"
+    },
+    {
+      "id": "c8f9473b0720ebd5",
+      "title": "Sommerferienworkshop: Abenteuer Manege! in Bietigheim",
+      "date_start": "2026-09-07",
       "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "04a80dec6ba6d24d",
+      "title": "Sommerferienworkshop: An die Farben - fertig - los! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "10e3f00b491c81e1",
+      "title": "Sommerferienworkshop: Hip-Hop Streetdance in Ludwigsburg",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "70ac0d2f5d820d30",
+      "title": "Märchenerzählerin",
+      "date_start": "2026-09-26",
+      "source": "blueba"
     }
   ]
 }
