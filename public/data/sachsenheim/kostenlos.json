@@ -1,7 +1,7 @@
 {
   "subset": "kostenlos",
-  "generated_at": "2026-06-21T06:00:02.298769+02:00",
-  "event_count": 15,
+  "generated_at": "2026-06-22T06:00:01.607483+02:00",
+  "event_count": 16,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,7 +26,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-21T02:02:41.956632+02:00",
+      "scraped_at": "2026-06-22T02:02:35.748822+02:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
@@ -41,12 +41,13 @@
       "date_start": "2026-06-22",
       "date_end": null,
       "time": "14:30 - 16:30 Uhr",
-      "description": "Im ERZÄHL-CAFÉ teilen Geschichten aus den 50er Jahren. Erwachsene und Familien genießen kreative Erzählungen im inklusiven Café L´ink.",
-      "location": "Café L´ink, Karl-Heinz-Lüth-Straße 6, 74343 Sachsenheim",
+      "description": "Im ERZÄHL-CAFÉ teilen Geschichten aus den 50er Jahren. Erwachsene und Kinder genießen gemeinsam ein inklusives Caféprogramm, moderiert von Fachleuten.",
+      "location": "inklusives Café L'ink, Karl-Heinz-Lüth-Straße 6, 74343 Sachsenheim",
       "price": "Kostenlos",
       "age_min": 4,
-      "age_max": null,
+      "age_max": 12,
       "tags": [
+        "Kinder",
         "Familie"
       ],
       "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-ERZAeHL-CAFE-im-inklusiven-Cafe-L-ink-event-appointment6026",
@@ -57,7 +58,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-21T02:03:01.556307+02:00",
+      "scraped_at": "2026-06-22T02:02:55.504369+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -72,7 +73,7 @@
       "date_start": "2026-06-22",
       "date_end": null,
       "time": "16:30 - 17:00 Uhr",
-      "description": "Im Pflegeheim Sonnenfeld in Großsachsenheim findet das Feierabend-Jodeln statt. Einladung für alle, um nach der Arbeitszeit zusammen zu jodeln und gute Laune zu verbreiten. Keine Vorkenntnisse erforderlich.",
+      "description": "Im Pflegeheim Sonnenfeld in Großsachsenheim findet das Feierabend-Jodeln statt. Alle Interessierten können sich spontan einfinden, um gemeinsam zu jodeln und gute Laune zu verbreiten. Keine Vorkenntnisse erforderlich.",
       "location": "Pflegeheim Sonnenfeld, Großsachsenheim",
       "price": "Kostenlos",
       "age_min": null,
@@ -86,8 +87,8 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-21T02:02:36.802563+02:00",
-      "extraction_confidence": 0.85,
+      "scraped_at": "2026-06-22T02:02:30.604659+02:00",
+      "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
@@ -96,26 +97,57 @@
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/feierabend-jodeln-2026-06-22-sach"
     },
     {
-      "id": "6b42e1b741d3e5a5",
+      "id": "fc878008b0edd839",
       "title": "Feierabend-Jodeln",
       "date_start": "2026-06-22",
       "date_end": null,
       "time": "17:30 - 18:00 Uhr",
-      "description": "In dieser Veranstaltung treffen sich Alle nach der Arbeit an schönen Flecken im Stadtgebiet zum Feierabend-Jodeln. Keine Vorkenntnisse erforderlich, einfach mitkommen und ausprobieren. Für die Seele und gute Laune gedacht.",
+      "description": "Im Kelter Hohenhaslach findet das Feierabend-Jodeln statt. Alle sind willkommen, um ohne Vorkenntnisse gemeinsam zu jodeln und gute Laune zu verbreiten. Ein entspannter Abend für die ganze Familie.",
       "location": "Kelter Hohenhaslach",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6038",
+      "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6038",
+      "source": "sachsenheim_library",
+      "city": "sachsenheim",
+      "slug": "feierabend-jodeln-2026-06-22-sach-3",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-06-22T02:02:57.119750+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtbücherei Sachsenheim",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/feierabend-jodeln-2026-06-22-sach-3"
+    },
+    {
+      "id": "a62d20ad0494da12",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-22",
+      "date_end": null,
+      "time": "18:30 - 19:00 Uhr",
+      "description": "Im Bahnhöfle Spielberg trafen wir uns zur Feierabend-Jodeln-Aktion. Alle sind willkommen – ob mit oder ohne Jodeldenken. Ein entspannter Moment für die Seele und das Gemüt. Keine Vorkenntnisse nötig, einfach mitmachen.",
+      "location": "Bahnhöfle Spielberg, Treffpunkt",
       "price": "Kostenlos",
       "age_min": null,
       "age_max": null,
       "tags": [],
-      "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6038",
-      "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6038",
+      "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6039",
+      "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6039",
       "source": "sachsenheim_kultur",
       "city": "sachsenheim",
       "slug": "feierabend-jodeln-2026-06-22-sach-1",
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-21T02:02:37.829318+02:00",
+      "scraped_at": "2026-06-22T02:02:32.665043+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -125,89 +157,64 @@
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/feierabend-jodeln-2026-06-22-sach-1"
     },
     {
-      "id": "a62d20ad0494da12",
+      "id": "71580c45fe2bbf8f",
       "title": "Feierabend-Jodeln",
       "date_start": "2026-06-22",
       "date_end": null,
       "time": "18:30 - 19:00 Uhr",
-      "description": "Im Bahnhöfle Spielberg in Sachsenheim trafen wir uns für ein Feierabend-Jodeln. Für Anfänger geeignet, brauchen Sie keine Vorkenntnisse. Ein unverbindlicher Abend mit guten Launeigenschaften.",
+      "description": "In der Bahnhöfle Spielberg, Sachsenheim, trafen wir uns für ein Feierabend-Jodeln. Alle sind willkommen – keine Vorkenntnisse nötig. Einladung zum Entspannen und Spaß in einem familienfreundlichen Umfeld.",
       "location": "Bahnhöfle Spielberg, Sachsenheim",
       "price": "Kostenlos",
-      "age_min": null,
+      "age_min": 4,
       "age_max": null,
-      "tags": [],
-      "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6039",
-      "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6039",
-      "source": "sachsenheim_kultur",
-      "city": "sachsenheim",
-      "slug": "feierabend-jodeln-2026-06-22-sach-2",
-      "weekdays": [
-        1
+      "tags": [
+        "Familie"
       ],
-      "scraped_at": "2026-06-21T02:02:38.857910+02:00",
-      "extraction_confidence": 0.75,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Sachsenheim – Kulturprogramm",
-      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/feierabend-jodeln-2026-06-22-sach-2"
-    },
-    {
-      "id": "1229a31fd22a6daa",
-      "title": "Feierabend-Jodeln",
-      "date_start": "2026-06-22",
-      "date_end": null,
-      "time": "18:30 - 19:00 Uhr",
-      "description": "In dieser Entspannungspause treffen sich Erwachsene an verschiedenen Stellen im Stadtgebiet für ein Feierabend-Jodeln. Keine Vorkenntnisse erforderlich, einfach mitzuhelfen und die Stimmung zu heben.",
-      "location": "Bahnhöfle Spielberg",
-      "price": "Kostenlos",
-      "age_min": null,
-      "age_max": null,
-      "tags": [],
       "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6039",
       "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6039",
       "source": "sachsenheim_library",
       "city": "sachsenheim",
-      "slug": "feierabend-jodeln-2026-06-22t183000-europeberlin-sach",
-      "weekdays": [],
-      "scraped_at": "2026-06-21T02:03:04.005855+02:00",
-      "extraction_confidence": 0.85,
-      "is_new": false,
+      "slug": "feierabend-jodeln-2026-06-22-sach-4",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-06-22T02:02:57.917208+02:00",
+      "extraction_confidence": 0.72,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadtbücherei Sachsenheim",
-      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/feierabend-jodeln-2026-06-22t183000-europeberlin-sach"
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/feierabend-jodeln-2026-06-22-sach-4"
     },
     {
-      "id": "0307fa61a13a5a35",
+      "id": "191129490f82baa8",
       "title": "Feierabend-Jodeln",
       "date_start": "2026-06-22",
       "date_end": null,
       "time": "19:30 - 20:00 Uhr",
-      "description": "Im Dorfmitte Ochsenbach trafen wir uns für ein Feierabend-Jodeln, eine abendliche Aktion ohne Vorkenntnisse. Alle sind willkommen, um die Seele zu beruhigen und gute Laune zu verbreiten.",
-      "location": "Dorfmitte Ochsenbach",
+      "description": "Im Dorfmitte Ochsenbach trafen wir uns für ein Feierabend-Jodeln. Alle sind willkommen, ohne Vorkenntnisse. Ein ausprobieren für die Seele und gute Laune.",
+      "location": "Dorfmitte Ochsenbach, Sachsenheim",
       "price": "Kostenlos",
       "age_min": null,
       "age_max": null,
       "tags": [],
       "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6040",
       "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6040",
-      "source": "sachsenheim_kultur",
+      "source": "sachsenheim_library",
       "city": "sachsenheim",
-      "slug": "feierabend-jodeln-2026-06-22-sach-3",
+      "slug": "feierabend-jodeln-2026-06-22-sach-5",
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-21T02:02:39.898203+02:00",
-      "extraction_confidence": 0.85,
-      "is_new": false,
+      "scraped_at": "2026-06-22T02:02:58.715439+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Stadt Sachsenheim – Kulturprogramm",
-      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/feierabend-jodeln-2026-06-22-sach-3"
+      "source_label": "Stadtbücherei Sachsenheim",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/feierabend-jodeln-2026-06-22-sach-5"
     },
     {
       "id": "b57e679399437da3",
@@ -227,7 +234,7 @@
       "city": "sachsenheim",
       "slug": "spaziererei-2026-06-23t100000-europeberlin-sach",
       "weekdays": [],
-      "scraped_at": "2026-06-21T02:03:05.617768+02:00",
+      "scraped_at": "2026-06-22T02:02:59.532100+02:00",
       "extraction_confidence": 0.92,
       "is_new": false,
       "is_booked_out": false,
@@ -258,7 +265,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-21T02:02:43.989634+02:00",
+      "scraped_at": "2026-06-22T02:02:37.782246+02:00",
       "extraction_confidence": 0.9,
       "is_new": false,
       "is_booked_out": false,
@@ -290,7 +297,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-21T02:02:45.061963+02:00",
+      "scraped_at": "2026-06-22T02:02:38.807011+02:00",
       "extraction_confidence": 0.9,
       "is_new": false,
       "is_booked_out": false,
@@ -322,7 +329,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-21T02:02:46.144008+02:00",
+      "scraped_at": "2026-06-22T02:02:39.888750+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -353,7 +360,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-21T02:03:09.679572+02:00",
+      "scraped_at": "2026-06-22T02:03:03.618559+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -382,7 +389,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-21T02:02:47.149332+02:00",
+      "scraped_at": "2026-06-22T02:02:40.886659+02:00",
       "extraction_confidence": 0.9,
       "is_new": false,
       "is_booked_out": false,
@@ -415,7 +422,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-21T02:02:48.188556+02:00",
+      "scraped_at": "2026-06-22T02:02:41.917427+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -446,7 +453,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-21T02:02:49.244976+02:00",
+      "scraped_at": "2026-06-22T02:02:42.934191+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -454,6 +461,35 @@
       "editorial_tip": null,
       "source_label": "Stadt Sachsenheim – Kulturprogramm",
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/rollator-training-2026-06-26-sach"
+    },
+    {
+      "id": "53c91e0f44d321f1",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-26",
+      "date_end": null,
+      "time": "16:15 - 16:45 Uhr",
+      "description": "In der Dorfmitte Häfnerhaslach trafen wir uns für das \"Feierabend-Jodeln\". Alle sind willkommen, ohne Vorkenntnisse notwendig. Ein entspannter Moment zur Entspannung und zum Lachen.",
+      "location": "Dorfmitte Häfnerhaslach",
+      "price": "Kostenlos",
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6041",
+      "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6041",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "feierabend-jodeln-2026-06-26-sach",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-22T02:02:43.951037+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/feierabend-jodeln-2026-06-26-sach"
     }
   ]
 }
