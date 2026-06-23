@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-22T03:55:00.606997+02:00",
+  "generated_at": "2026-06-23T07:50:05.144988+02:00",
   "city": "sachsenheim",
   "sources": [
     "sachsenheim_museum",
     "sachsenheim_library",
     "sachsenheim_kultur"
   ],
-  "previous_run": "2026-06-21T04:15:36.191727+02:00",
-  "count_added": 15,
-  "count_removed": 5,
+  "previous_run": "2026-06-22T03:55:00.626807+02:00",
+  "count_added": 16,
+  "count_removed": 6,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -77,19 +77,51 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "53c91e0f44d321f1",
+      "id": "6b42e1b741d3e5a5",
       "title": "Feierabend-Jodeln",
-      "date_start": "2026-06-26",
+      "date_start": "2026-06-22",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "fc878008b0edd839",
+      "id": "0307fa61a13a5a35",
       "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-22",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "803e649d14c7c710",
+      "title": "5. Aktion MITEINANDER 'Gemeinsam aus der Einsamkeit'",
+      "date_start": "2026-06-22",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "f401e1ce61b9272c",
+      "title": "PV-Altanlagen – So lohnt sich Ihre Anlage weiterhin",
+      "date_start": "2026-06-23",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "c79728d0bd3abe52",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-26",
+      "source": "sachsenheim_kultur"
+    }
+  ],
+  "removed": [
+    {
+      "id": "a40391afb9127260",
+      "title": "5. Aktion MITEINANDER 'Gemeinsam aus der Einsamkeit'",
+      "date_start": "2026-06-22",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "7d84531a39d7961f",
+      "title": "ERZÄHL-CAFÉ",
       "date_start": "2026-06-22",
       "source": "sachsenheim_library"
     },
     {
-      "id": "71580c45fe2bbf8f",
+      "id": "fc878008b0edd839",
       "title": "Feierabend-Jodeln",
       "date_start": "2026-06-22",
       "source": "sachsenheim_library"
@@ -99,37 +131,17 @@
       "title": "Feierabend-Jodeln",
       "date_start": "2026-06-22",
       "source": "sachsenheim_library"
-    }
-  ],
-  "removed": [
-    {
-      "id": "c5b58bf8874a169d",
-      "title": "Führung, Heute, 21.06.2026",
-      "date_start": "2026-06-21",
-      "source": "sachsenheim_kultur"
     },
     {
-      "id": "258f69f93e36596c",
-      "title": "Führung, Zu Gast bei Rittern und Geistern",
-      "date_start": "2026-06-21",
+      "id": "b57e679399437da3",
+      "title": "Spaziererei",
+      "date_start": "2026-06-23",
       "source": "sachsenheim_library"
     },
     {
-      "id": "6b42e1b741d3e5a5",
-      "title": "Feierabend-Jodeln",
-      "date_start": "2026-06-22",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "1229a31fd22a6daa",
-      "title": "Feierabend-Jodeln",
-      "date_start": "2026-06-22",
-      "source": "sachsenheim_library"
-    },
-    {
-      "id": "0307fa61a13a5a35",
-      "title": "Feierabend-Jodeln",
-      "date_start": "2026-06-22",
+      "id": "34d086336149e9ae",
+      "title": "Online-Vortrag: PV-Altanlagen – So lohnt sich Ihre Anlage weiterhin",
+      "date_start": "2026-06-23",
       "source": "sachsenheim_kultur"
     }
   ]

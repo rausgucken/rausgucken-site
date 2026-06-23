@@ -1,20 +1,63 @@
 {
-  "generated_at": "2026-06-22T04:01:22.617397+02:00",
+  "generated_at": "2026-06-23T08:00:27.689567+02:00",
   "city": "kornwestheim",
   "sources": [
+    "das_k_buecherei",
     "kornwestheim",
-    "das_k_spielplan",
-    "das_k_buecherei"
+    "das_k_spielplan"
   ],
-  "previous_run": "2026-06-21T04:15:37.069819+02:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-06-22T04:01:22.639368+02:00",
+  "count_added": 6,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "eef76c5a87cfb817",
+      "title": "Gitarrenpicknick",
+      "date_start": "2026-07-10",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "8255228187432723",
+      "title": "Musiknacht Open",
+      "date_start": "2026-07-28",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "b37d74b5f38613fa",
+      "title": "Musiknacht Open",
+      "date_start": "2026-08-04",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "51f96e41c5819be4",
+      "title": "Musiknacht Open",
+      "date_start": "2026-08-11",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "617e746a99c7fb04",
+      "title": "Musiknacht Open",
+      "date_start": "2026-08-18",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "174f97995366d409",
+      "title": "Musiknacht Open",
+      "date_start": "2026-08-25",
+      "source": "kornwestheim"
+    }
+  ],
   "removed": [
     {
-      "id": "6e40e74239cc7b81",
-      "title": "Ausstellung \"Marion Eichmann – The Paper Code\"",
-      "date_start": "2026-06-21",
+      "id": "0c902e1c50712429",
+      "title": "Kaffeetreff",
+      "date_start": "2026-06-22",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "4d0bb3afec2d85ca",
+      "title": "Gitarrenpicknick",
+      "date_start": "2026-07-10",
       "source": "kornwestheim"
     }
   ]

@@ -1,7 +1,7 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-06-23T06:00:01.505569+02:00",
-  "event_count": 7,
+  "generated_at": "2026-06-23T07:03:07.211753+02:00",
+  "event_count": 9,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -22,7 +22,7 @@
       "city": "freiberg",
       "slug": "freiberger-wochenmarkt-2026-06-27t0700000200-frei",
       "weekdays": [],
-      "scraped_at": "2026-06-22T02:00:03.742377+02:00",
+      "scraped_at": "2026-06-23T02:00:03.922604+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -51,7 +51,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-22T02:00:03.742681+02:00",
+      "scraped_at": "2026-06-23T02:00:03.922915+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -78,7 +78,7 @@
       "city": "freiberg",
       "slug": "insektenwiesenspaziergang-2026-06-27t090000-europeberlin-frei",
       "weekdays": [],
-      "scraped_at": "2026-06-22T02:00:03.743214+02:00",
+      "scraped_at": "2026-06-23T02:00:03.923418+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -86,6 +86,35 @@
       "editorial_tip": null,
       "source_label": "Stadt Freiberg am Neckar",
       "canonical_url": "https://www.rausgucken.de/freiberg/events/insektenwiesenspaziergang-2026-06-27t090000-europeberlin-frei"
+    },
+    {
+      "id": "513602bc69444701",
+      "title": "Landschaftspflegeeinsatz im Naturschutzgebiet Füllmenbacher Hofberg",
+      "date_start": "2026-06-27",
+      "date_end": null,
+      "time": "09:00 - 18:00 Uhr",
+      "description": "In diesem Landschaftspflegeeinsatz im Naturschutzgebiet Füllmenbacher Hofberg helfen freiwillige Helferinnen und Helfer zur Erhaltung der artenreichen Trockenrasenflächen bei Sternenfels-Diefenbach. Der Schwäbische Albverein organisiert den Einsatz, der am Beginn 9 Uhr in der Hütte am Hofberg startet.",
+      "location": "Hütte am Hofberg, Naturschutzgebiet Füllmenbacher Hofberg, Sternenfels-Diefenbach",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.freiberg-an.de/index.php?id=308&publish%5BcalendarViewType%5D=classic#event58991675",
+      "original_url": "https://www.freiberg-an.de/index.php?id=308&publish%5BcalendarViewType%5D=classic#event58991675",
+      "source": "freiberg_veranstaltungen",
+      "city": "freiberg",
+      "slug": "landschaftspflegeeinsatz-im-naturschutzgebiet-fuellmenbacher-hofberg-2026-06-27-frei",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-23T02:00:02.907206+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Freiberg am Neckar",
+      "canonical_url": "https://www.rausgucken.de/freiberg/events/landschaftspflegeeinsatz-im-naturschutzgebiet-fuellmenbacher-hofberg-2026-06-27-frei"
     },
     {
       "id": "9e18c6aee89c291e",
@@ -105,7 +134,7 @@
       "city": "freiberg",
       "slug": "textil-reparaturwerkstatt-kittelflickerei-2026-06-27t150000-europeberlin-frei",
       "weekdays": [],
-      "scraped_at": "2026-06-22T02:00:03.743565+02:00",
+      "scraped_at": "2026-06-23T02:00:03.923707+02:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
@@ -134,7 +163,7 @@
       "city": "freiberg",
       "slug": "der-teufel-traegt-prada-2-2026-06-27t203000-europeberlin-frei",
       "weekdays": [],
-      "scraped_at": "2026-06-22T02:00:03.743919+02:00",
+      "scraped_at": "2026-06-23T02:00:03.924062+02:00",
       "extraction_confidence": 0.86,
       "is_new": false,
       "is_booked_out": false,
@@ -144,33 +173,65 @@
       "canonical_url": "https://www.rausgucken.de/freiberg/events/der-teufel-traegt-prada-2-2026-06-27t203000-europeberlin-frei"
     },
     {
-      "id": "7aef8ea0423cc145",
-      "title": "Tageswanderung im Naturpark Neckartal - Odenwald Rundwanderung",
+      "id": "92f86e620098a515",
+      "title": "Tageswanderung im Naturpark Neckartal - Odenwald",
       "date_start": "2026-06-28",
       "date_end": null,
       "time": null,
-      "description": "In dieser Tageswanderung durch den Naturpark Neckartal–Odenwald queren Sie die Orte Mosbach, Nüstenbach und Lohrbach. Mit einem Umfang von 15 km bietet sie eine anregende Wanderzeit von 4½ bis 5 Stunden. Empfehlenswert sind feste Schuhe, Kopfbedeckung und Wanderstöcke.",
+      "description": "Rundwanderung im Naturpark Neckartal - Odenwald bietet einen Ausflug durch die Landschaft. Organisiert vom Schwäbischer Albverein.",
       "location": "Freiberg Abfahrt, Naturpark Neckartal - Odenwald",
       "price": null,
       "age_min": null,
       "age_max": null,
       "tags": [],
-      "link": "https://www.freiberg-an.de/index.php?id=308&publish%5BcalendarViewType%5D=classic#event58971331",
-      "original_url": "https://www.freiberg-an.de/index.php?id=308&publish%5BcalendarViewType%5D=classic#event58971331",
+      "link": "https://www.freiberg-an.de/index.php?id=308&publish%5BcalendarViewType%5D=classic#event58991685",
+      "original_url": "https://www.freiberg-an.de/index.php?id=308&publish%5BcalendarViewType%5D=classic#event58991685",
       "source": "freiberg_veranstaltungen",
       "city": "freiberg",
-      "slug": "tageswanderung-im-naturpark-neckartal---odenwald-rundwanderung-2026-06-28-frei",
+      "slug": "tageswanderung-im-naturpark-neckartal---odenwald-2026-06-28-frei",
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-22T02:00:04.621605+02:00",
-      "extraction_confidence": 0.7,
-      "is_new": false,
+      "scraped_at": "2026-06-23T02:00:04.821439+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Freiberg am Neckar",
-      "canonical_url": "https://www.rausgucken.de/freiberg/events/tageswanderung-im-naturpark-neckartal---odenwald-rundwanderung-2026-06-28-frei"
+      "canonical_url": "https://www.rausgucken.de/freiberg/events/tageswanderung-im-naturpark-neckartal---odenwald-2026-06-28-frei"
+    },
+    {
+      "id": "80be79bdb73ed9a0",
+      "title": "Freiberger Mobilitätstage",
+      "date_start": "2026-06-28",
+      "date_end": null,
+      "time": "10:00 - 17:00 Uhr",
+      "description": "Am Marktplatz in Freiberg a. N. findet die Ausstellung elektrischer Fahrzeuge statt, begleitet von Informationen zur zukünftigen Mobilität. Stadtrundfahrten mit dem Bürgerbus und Angebote für E-Autos werden vorgestellt.",
+      "location": "Marktplatz, Freiberg a. N., gesperrte Banater Straße",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Ausstellung"
+      ],
+      "link": "https://www.freiberg-an.de/index.php?id=308&publish%5BcalendarViewType%5D=classic#event58991682",
+      "original_url": "https://www.freiberg-an.de/index.php?id=308&publish%5BcalendarViewType%5D=classic#event58991682",
+      "source": "freiberg_veranstaltungen",
+      "city": "freiberg",
+      "slug": "freiberger-mobilitaetstage-2026-06-28-frei",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-06-23T02:00:04.822023+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Freiberg am Neckar",
+      "canonical_url": "https://www.rausgucken.de/freiberg/events/freiberger-mobilitaetstage-2026-06-28-frei"
     },
     {
       "id": "4d9ee17ae04e2e24",
@@ -194,7 +255,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-22T02:00:04.622034+02:00",
+      "scraped_at": "2026-06-23T02:00:04.822439+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
