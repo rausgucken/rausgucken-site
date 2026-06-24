@@ -1,44 +1,40 @@
 {
-  "scraped_at": "2026-06-23T11:22:59.742814+02:00",
+  "scraped_at": "2026-06-24T12:37:44.416907+02:00",
   "city": "schwieberdingen",
-  "event_count": 22,
+  "event_count": 29,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "schwieberdingen_gemeinde"
   ],
   "source_counts": {
-    "schwieberdingen_gemeinde": 22
+    "schwieberdingen_gemeinde": 29
   },
   "sources_failed": [],
-  "data_hash": "741a3a89509626c6",
+  "data_hash": "fbf03da9b5498731",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 23.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 24.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schwieberdingen_gemeinde": 0.93
   },
   "source_event_counts": {
-    "schwieberdingen_gemeinde": 22
+    "schwieberdingen_gemeinde": 29
   },
-  "count_drift_warnings": {
-    "schwieberdingen_gemeinde": "Count drift: 22 vs historical avg 40"
-  },
+  "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 0.0,
-    "flagged_rate_current": 0.0,
+    "regression_pass_rate": 1.0,
+    "flagged_rate_current": 0.237,
     "flagged_rate_4week_avg": 0.0,
-    "trend": "stable",
-    "runtime_minutes": 652.8,
-    "runtime_delta_vs_baseline": 2.647,
+    "trend": "spike",
+    "runtime_minutes": 849.3,
+    "runtime_delta_vs_baseline": 3.745,
     "source_health": {
       "schwieberdingen_gemeinde": 0.93
     },
-    "count_drift_warnings": {
-      "schwieberdingen_gemeinde": "Count drift: 22 vs historical avg 40"
-    },
+    "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "critical",
-    "generated_at": "2026-06-23T13:06:40.318942+02:00"
+    "status": "warning",
+    "generated_at": "2026-06-24T16:41:10.500200+02:00"
   }
 }

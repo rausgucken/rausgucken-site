@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-06-23T08:40:07.603011+02:00",
+  "generated_at": "2026-06-24T15:51:02.939552+02:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-06-22T04:02:47.872178+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-06-24T08:38:40.036250+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "976f1be9fd3dc7e2",
+      "title": "Serenadenkonzert 50 Jahre Posaunenchor",
+      "date_start": "2026-07-25",
+      "source": "affalterbach_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "460b596ef950a03c",
+      "title": "Serenadenkonzert",
+      "date_start": "2026-07-25",
+      "source": "affalterbach_stadt"
+    }
+  ]
 }

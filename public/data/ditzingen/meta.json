@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-06-23T07:55:26.589365+02:00",
+  "scraped_at": "2026-06-24T15:51:01.314462+02:00",
   "city": "ditzingen",
-  "event_count": 392,
+  "event_count": 388,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,37 +9,37 @@
     "ditzingen_treffpunkt_adler"
   ],
   "source_counts": {
-    "ditzingen_stadt": 132,
-    "ditzingen_treffpunkt_adler": 260
+    "ditzingen_stadt": 131,
+    "ditzingen_treffpunkt_adler": 257
   },
   "sources_failed": [],
-  "data_hash": "36d979fe835e0ef0",
+  "data_hash": "fee5b12d500821aa",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 23.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 24.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "ditzingen_stadt": 1.0,
     "ditzingen_treffpunkt_adler": 1.0
   },
   "source_event_counts": {
-    "ditzingen_stadt": 132,
-    "ditzingen_treffpunkt_adler": 260
+    "ditzingen_stadt": 131,
+    "ditzingen_treffpunkt_adler": 257
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 0.0,
+    "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 652.8,
-    "runtime_delta_vs_baseline": 2.647,
+    "runtime_minutes": 849.3,
+    "runtime_delta_vs_baseline": 3.745,
     "source_health": {
       "ditzingen_stadt": 1.0,
       "ditzingen_treffpunkt_adler": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "critical",
-    "generated_at": "2026-06-23T13:06:40.018744+02:00"
+    "status": "warning",
+    "generated_at": "2026-06-24T16:41:09.907058+02:00"
   }
 }
