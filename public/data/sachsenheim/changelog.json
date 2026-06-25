@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-24T14:38:32.920276+02:00",
+  "generated_at": "2026-06-25T05:03:54.245126+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_kultur",
+    "sachsenheim_library",
     "sachsenheim_museum",
-    "sachsenheim_library"
+    "sachsenheim_kultur"
   ],
-  "previous_run": "2026-06-24T08:29:04.120600+02:00",
-  "count_added": 22,
-  "count_removed": 6,
+  "previous_run": "2026-06-24T14:38:32.945302+02:00",
+  "count_added": 20,
+  "count_removed": 4,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -89,36 +89,6 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "4cebfb745befe415",
-      "title": "FamilienSingen Heute",
-      "date_start": "2026-06-24",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "47c1f905e287a5aa",
-      "title": "5. Aktion MITEINANDER 'Gemeinsam aus der Einsamkeit'",
-      "date_start": "2026-06-22",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "35603d08342baf14",
-      "title": "Geschichte(n) aus unserem Land",
-      "date_start": "2026-06-26",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "50a46e19d9720434",
-      "title": "Rollator-Training",
-      "date_start": "2026-06-27",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "0d67c464b99b1406",
-      "title": "Öffentliche Führung – „Alles für die Katz!?“ Künstler sehen Katzen",
-      "date_start": "2026-06-28",
-      "source": "sachsenheim_kultur"
-    },
-    {
       "id": "c4edeab95960feb0",
       "title": "Rollator-Training",
       "date_start": "2026-05-08",
@@ -137,48 +107,54 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "b9de78bb4e04f316",
-      "title": "Aktion MITEINANDER - TANZEN QUERBEET - Volkstanz international",
-      "date_start": "2026-06-24",
-      "source": "sachsenheim_library"
-    }
-  ],
-  "removed": [
-    {
-      "id": "803e649d14c7c710",
-      "title": "5. Aktion MITEINANDER 'Gemeinsam aus der Einsamkeit'",
-      "date_start": "2026-06-22",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "f401e1ce61b9272c",
-      "title": "PV-Altanlagen – So lohnt sich Ihre Anlage weiterhin",
-      "date_start": "2026-06-23",
-      "source": "sachsenheim_kultur"
-    },
-    {
       "id": "65904901e513a549",
       "title": "FamilienSingen",
       "date_start": "2026-06-24",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "79ed7a0d72753b62",
-      "title": "Aktion MITEINANDER - TANZEN QUERBEET - Volkstanz international",
+      "id": "5333101920f562ee",
+      "title": "Spaziererei Heute",
+      "date_start": "2026-06-25",
+      "source": "sachsenheim_library"
+    },
+    {
+      "id": "cd54e07cf6e6f1f4",
+      "title": "Kleinhöflefest",
+      "date_start": "2026-07-04",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "3f3e1b9e8bc62a91",
+      "title": "4. Jazz & Wein Open-Air",
+      "date_start": "2026-07-04",
+      "source": "sachsenheim_kultur"
+    }
+  ],
+  "removed": [
+    {
+      "id": "90a565891b58c5f6",
+      "title": "Aktion MITEINANDER - EINFACH SINGEN am Vormittag",
       "date_start": "2026-06-24",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "a71dfb1f30ac49c1",
-      "title": "Aktion MITEINANDER - TANZEN QUERBEET",
+      "id": "4cebfb745befe415",
+      "title": "FamilienSingen Heute",
+      "date_start": "2026-06-24",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "b9de78bb4e04f316",
+      "title": "Aktion MITEINANDER - TANZEN QUERBEET - Volkstanz international",
       "date_start": "2026-06-24",
       "source": "sachsenheim_library"
     },
     {
-      "id": "9e0738d238dc1861",
-      "title": "Öffentliche Führung – „Alles für die Katz!?“ Künstler sehen Katzen",
-      "date_start": "2026-06-28",
-      "source": "sachsenheim_museum"
+      "id": "11fcb3a2495b05ad",
+      "title": "Spaziererei",
+      "date_start": "2026-06-25",
+      "source": "sachsenheim_kultur"
     }
   ]
 }

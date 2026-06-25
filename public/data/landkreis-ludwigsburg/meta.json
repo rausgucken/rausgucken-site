@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-06-25T07:42:09.301839+02:00",
+  "scraped_at": "2026-06-25T13:39:36.995445+02:00",
   "city": "landkreis-ludwigsburg",
-  "event_count": 3358,
+  "event_count": 3426,
   "cities": [
     "ludwigsburg",
     "bietigheim",
@@ -28,11 +28,14 @@
     "murr",
     "ingersheim",
     "erdmannhausen",
+    "loechgau",
     "korntal-muenchingen",
     "kirchheim-neckar"
   ],
-  "sources_failed": [],
-  "data_hash": "c0ff1935f2d11cdc",
+  "sources_failed": [
+    "oberriexingen"
+  ],
+  "data_hash": "aff7f4f6b44a60b8",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "disclaimer_note": "Alle Angaben ohne Gewähr. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2"

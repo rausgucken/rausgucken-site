@@ -1,9 +1,9 @@
 {
-  "scraped_at": "2026-06-24T19:46:30.515575+02:00",
+  "scraped_at": "2026-06-25T13:39:36.869143+02:00",
   "city": "ludwigsburg",
-  "event_count": 745,
+  "event_count": 743,
   "flagged_count": 0,
-  "expired_count": 0,
+  "expired_count": 2,
   "sources_scraped": [
     "blueba",
     "demokratisches_zentrum",
@@ -21,25 +21,25 @@
     "stabi"
   ],
   "source_counts": {
-    "schloss": 200,
-    "ludwigsburg_stadt": 48,
+    "schloss": 58,
+    "ludwigsburg_stadt": 44,
     "museum": 50,
     "blueba": 54,
-    "stabi": 193,
-    "garnisonmuseum": 4,
+    "stabi": 189,
     "kunstverein_ausstellungen": 4,
-    "labyrinth": 32,
-    "karlskaserne_veranstaltungen": 79,
+    "labyrinth": 154,
+    "karlskaserne_veranstaltungen": 107,
     "demokratisches_zentrum": 1,
     "karlskaserne_ausstellungen": 3,
     "forum_schlosspark": 49,
     "musikhalle_lb": 20,
-    "kunstverein_veranstaltungen": 8
+    "kunstverein_veranstaltungen": 8,
+    "garnisonmuseum": 2
   },
   "sources_failed": [],
-  "data_hash": "6f1810d01cf010a0",
+  "data_hash": "2a56078c411354d2",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 24.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 25.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schloss": 1.0,
@@ -47,7 +47,6 @@
     "museum": 1.0,
     "blueba": 1.0,
     "stabi": 1.0,
-    "garnisonmuseum": 0.92,
     "kunstverein_ausstellungen": 1.0,
     "labyrinth": 1.0,
     "karlskaserne_veranstaltungen": 1.0,
@@ -55,39 +54,42 @@
     "karlskaserne_ausstellungen": 1.0,
     "forum_schlosspark": 1.0,
     "musikhalle_lb": 1.0,
-    "kunstverein_veranstaltungen": 1.0
+    "kunstverein_veranstaltungen": 1.0,
+    "garnisonmuseum": 0.76
   },
   "source_event_counts": {
-    "schloss": 200,
-    "ludwigsburg_stadt": 48,
+    "schloss": 58,
+    "ludwigsburg_stadt": 44,
     "museum": 50,
     "blueba": 54,
-    "stabi": 193,
-    "garnisonmuseum": 4,
+    "stabi": 189,
     "kunstverein_ausstellungen": 4,
-    "labyrinth": 32,
-    "karlskaserne_veranstaltungen": 79,
+    "labyrinth": 154,
+    "karlskaserne_veranstaltungen": 107,
     "demokratisches_zentrum": 1,
     "karlskaserne_ausstellungen": 3,
     "forum_schlosspark": 49,
     "musikhalle_lb": 20,
-    "kunstverein_veranstaltungen": 8
+    "kunstverein_veranstaltungen": 8,
+    "garnisonmuseum": 2
   },
-  "count_drift_warnings": {},
+  "count_drift_warnings": {
+    "schloss": "Count drift: 58 vs historical avg 202",
+    "garnisonmuseum": "Count drift: 2 vs historical avg 4"
+  },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 712.7,
-    "runtime_delta_vs_baseline": 2.982,
+    "runtime_minutes": 699.6,
+    "runtime_delta_vs_baseline": 2.908,
     "source_health": {
       "schloss": 1.0,
       "ludwigsburg_stadt": 1.0,
       "museum": 1.0,
       "blueba": 1.0,
       "stabi": 1.0,
-      "garnisonmuseum": 0.92,
       "kunstverein_ausstellungen": 1.0,
       "labyrinth": 1.0,
       "karlskaserne_veranstaltungen": 1.0,
@@ -95,11 +97,15 @@
       "karlskaserne_ausstellungen": 1.0,
       "forum_schlosspark": 1.0,
       "musikhalle_lb": 1.0,
-      "kunstverein_veranstaltungen": 1.0
+      "kunstverein_veranstaltungen": 1.0,
+      "garnisonmuseum": 0.76
     },
-    "count_drift_warnings": {},
+    "count_drift_warnings": {
+      "schloss": "Count drift: 58 vs historical avg 202",
+      "garnisonmuseum": "Count drift: 2 vs historical avg 4"
+    },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-06-24T20:00:04.282762+02:00"
+    "generated_at": "2026-06-25T13:53:57.798725+02:00"
   }
 }
