@@ -1,25 +1,40 @@
 {
-  "scraped_at": "2026-06-25T22:14:18.299412+02:00",
+  "scraped_at": "2026-06-26T11:35:58.171254+02:00",
   "city": "oberriexingen",
-  "event_count": 46,
+  "event_count": 54,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "oberriexingen_stadt"
   ],
   "source_counts": {
-    "oberriexingen_stadt": 46
+    "oberriexingen_stadt": 54
   },
   "sources_failed": [],
-  "data_hash": "45d08e0b85a899e2",
+  "data_hash": "57e288dafc8e9774",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 25.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 26.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "oberriexingen_stadt": 0.96
   },
   "source_event_counts": {
-    "oberriexingen_stadt": 46
+    "oberriexingen_stadt": 54
   },
-  "count_drift_warnings": {}
+  "count_drift_warnings": {},
+  "quality_report": {
+    "regression_pass_rate": 0.0,
+    "flagged_rate_current": 0.0,
+    "flagged_rate_4week_avg": null,
+    "trend": "insufficient_data",
+    "runtime_minutes": 705.0,
+    "runtime_delta_vs_baseline": 2.939,
+    "source_health": {
+      "oberriexingen_stadt": 0.96
+    },
+    "count_drift_warnings": {},
+    "quarantined_sources": [],
+    "status": "critical",
+    "generated_at": "2026-06-26T13:59:10.552960+02:00"
+  }
 }

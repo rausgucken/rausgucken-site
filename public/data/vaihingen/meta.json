@@ -1,40 +1,40 @@
 {
-  "scraped_at": "2026-06-25T11:10:55.427619+02:00",
+  "scraped_at": "2026-06-26T12:23:25.625623+02:00",
   "city": "vaihingen",
-  "event_count": 93,
+  "event_count": 87,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "vaihingen_stadt"
   ],
   "source_counts": {
-    "vaihingen_stadt": 93
+    "vaihingen_stadt": 87
   },
   "sources_failed": [],
-  "data_hash": "1423b4118b114dbe",
+  "data_hash": "77b73ac9fc0d9dd1",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 25.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 26.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "vaihingen_stadt": 0.98
   },
   "source_event_counts": {
-    "vaihingen_stadt": 93
+    "vaihingen_stadt": 87
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 699.6,
-    "runtime_delta_vs_baseline": 2.908,
+    "runtime_minutes": 705.0,
+    "runtime_delta_vs_baseline": 2.939,
     "source_health": {
       "vaihingen_stadt": 0.98
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-06-25T13:53:58.026304+02:00"
+    "status": "critical",
+    "generated_at": "2026-06-26T13:59:10.697319+02:00"
   }
 }

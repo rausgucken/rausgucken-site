@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-06-26T06:00:02.134713+02:00",
-  "event_count": 11,
+  "generated_at": "2026-06-26T11:35:58.199267+02:00",
+  "event_count": 14,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,14 +26,45 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-25T20:42:58.146590+02:00",
+      "scraped_at": "2026-06-26T02:07:10.788868+02:00",
       "extraction_confidence": 0.75,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Oberriexingen",
       "canonical_url": "https://www.rausgucken.de/oberriexingen/events/tag-der-offenen-tuer---grundschule-2026-06-26-ober"
+    },
+    {
+      "id": "063dc85e323b0def",
+      "title": "Seniorentreff",
+      "date_start": "2026-07-08",
+      "date_end": null,
+      "time": null,
+      "description": "In der Pizzeria Da Enzo bietet das Goldene Oktober ein Seniorentreff an. Anläßlich des Mittwochs, 08. Juli, laden die Teilnehmer zu einem familienfreundlichen Treffen ein.",
+      "location": "Pizzeria Da Enzo, Hauptstraße, Oberriexingen",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/seniorentreff-55/",
+      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/seniorentreff-55/",
+      "source": "oberriexingen_stadt",
+      "city": "oberriexingen",
+      "slug": "seniorentreff-2026-07-08-ober",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-06-26T02:07:15.166390+02:00",
+      "extraction_confidence": 0.65,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Oberriexingen",
+      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/seniorentreff-2026-07-08-ober"
     },
     {
       "id": "907592a0785cb939",
@@ -57,9 +88,9 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-25T20:43:10.001888+02:00",
+      "scraped_at": "2026-06-26T02:07:23.416146+02:00",
       "extraction_confidence": 0.75,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -88,9 +119,9 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-25T20:43:11.475445+02:00",
+      "scraped_at": "2026-06-26T02:07:24.872030+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -120,14 +151,46 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-25T20:43:13.664097+02:00",
+      "scraped_at": "2026-06-26T02:07:27.045872+02:00",
       "extraction_confidence": 0.65,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Oberriexingen",
       "canonical_url": "https://www.rausgucken.de/oberriexingen/events/seniorentreff-2026-09-09-ober"
+    },
+    {
+      "id": "a514706ad109c08e",
+      "title": "Einschulung",
+      "date_start": "2026-09-17",
+      "date_end": null,
+      "time": null,
+      "description": "Für die Einschulung der Kinder in der Grundschule wird ein familienfreundlicher Tag geplant. An der Theodor-Storm-Straße in Oberriexingen erwarten Eltern und Kinder eine präparierte Einweisung ins Schulalltagsgewand.",
+      "location": "Grundschule, Theodor-Storm-Straße, Oberriexingen",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/einschulung/",
+      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/einschulung/",
+      "source": "oberriexingen_stadt",
+      "city": "oberriexingen",
+      "slug": "einschulung-2026-09-17-ober",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-06-26T02:07:28.504733+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Oberriexingen",
+      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/einschulung-2026-09-17-ober"
     },
     {
       "id": "a079bc227abf541d",
@@ -152,9 +215,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-25T20:43:20.282855+02:00",
+      "scraped_at": "2026-06-26T02:07:33.612133+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -184,9 +247,9 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-25T20:43:24.071643+02:00",
+      "scraped_at": "2026-06-26T02:07:37.382506+02:00",
       "extraction_confidence": 0.65,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -220,14 +283,45 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-25T20:43:33.920888+02:00",
+      "scraped_at": "2026-06-26T02:07:44.676934+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Oberriexingen",
       "canonical_url": "https://www.rausgucken.de/oberriexingen/events/jugendbegegnung-in-ennery-2026-10-26-ober"
+    },
+    {
+      "id": "43da2d925541fc48",
+      "title": "Martinsritt",
+      "date_start": "2026-11-06",
+      "date_end": null,
+      "time": null,
+      "description": "Ein Martinsritt im Sportplatz bietet eine Möglichkeit für Teilnehmer, sich in einer familienfreundlichen Umgebung zu bewegen und mit anderen zusammenzukommen. Organisiert vom Ökumenischen Arbeitskreis.",
+      "location": "Sportplatz",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/martinsritt-6/",
+      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/martinsritt-6/",
+      "source": "oberriexingen_stadt",
+      "city": "oberriexingen",
+      "slug": "martinsritt-2026-11-06-ober",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-26T02:07:46.989291+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Oberriexingen",
+      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/martinsritt-2026-11-06-ober"
     },
     {
       "id": "d678c17ff8dea93b",
@@ -252,9 +346,9 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-25T20:43:44.929213+02:00",
+      "scraped_at": "2026-06-26T02:07:54.980688+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -284,9 +378,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-25T20:43:50.889050+02:00",
+      "scraped_at": "2026-06-26T02:08:00.946340+02:00",
       "extraction_confidence": 0.75,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -315,9 +409,9 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-25T20:43:55.295853+02:00",
+      "scraped_at": "2026-06-26T02:08:06.533548+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -346,9 +440,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-25T20:43:57.364350+02:00",
+      "scraped_at": "2026-06-26T02:08:07.992238+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,

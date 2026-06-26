@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-25T05:03:54.265245+02:00",
+  "scraped_at": "2026-06-26T05:21:12.574982+02:00",
   "city": "sachsenheim",
   "event_count": 11,
   "flagged_count": 0,
@@ -10,47 +10,45 @@
     "sachsenheim_museum"
   ],
   "source_counts": {
-    "sachsenheim_library": 1,
-    "sachsenheim_kultur": 9,
+    "sachsenheim_kultur": 8,
+    "sachsenheim_library": 2,
     "sachsenheim_museum": 1
   },
   "sources_failed": [],
-  "data_hash": "ac755155fcb6abd9",
+  "data_hash": "c698e79351c46f92",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 25.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 26.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "sachsenheim_library": 0.97,
-    "sachsenheim_kultur": 0.98,
+    "sachsenheim_kultur": 0.99,
+    "sachsenheim_library": 0.99,
     "sachsenheim_museum": 1.0
   },
   "source_event_counts": {
-    "sachsenheim_library": 1,
-    "sachsenheim_kultur": 9,
+    "sachsenheim_kultur": 8,
+    "sachsenheim_library": 2,
     "sachsenheim_museum": 1
   },
   "count_drift_warnings": {
-    "sachsenheim_library": "Count drift: 1 vs historical avg 3",
     "sachsenheim_museum": "Count drift: 1 vs historical avg 2"
   },
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 699.6,
-    "runtime_delta_vs_baseline": 2.908,
+    "runtime_minutes": 705.0,
+    "runtime_delta_vs_baseline": 2.939,
     "source_health": {
-      "sachsenheim_library": 0.97,
-      "sachsenheim_kultur": 0.98,
+      "sachsenheim_kultur": 0.99,
+      "sachsenheim_library": 0.99,
       "sachsenheim_museum": 1.0
     },
     "count_drift_warnings": {
-      "sachsenheim_library": "Count drift: 1 vs historical avg 3",
       "sachsenheim_museum": "Count drift: 1 vs historical avg 2"
     },
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-06-25T13:53:57.943401+02:00"
+    "status": "critical",
+    "generated_at": "2026-06-26T13:59:10.614750+02:00"
   }
 }

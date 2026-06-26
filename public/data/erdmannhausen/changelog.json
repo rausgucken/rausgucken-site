@@ -1,31 +1,32 @@
 {
-  "generated_at": "2026-06-25T10:20:39.550475+02:00",
+  "generated_at": "2026-06-26T10:24:27.241696+02:00",
   "city": "erdmannhausen",
   "sources": [
     "erdmannhausen_stadt"
   ],
-  "previous_run": "2026-06-24T22:31:33.313608+02:00",
-  "count_added": 3,
-  "count_removed": 0,
+  "previous_run": "2026-06-25T10:20:39.571296+02:00",
+  "count_added": 2,
+  "count_removed": 1,
   "added": [
     {
-      "id": "3d27590ed6129828",
-      "title": "Kaffeetreffen",
-      "date_start": "2026-09-02",
+      "id": "1b800b1aea16dfbe",
+      "title": "OGV Sommerfest (entfällt Temperaturbedingt) und ökum. Erntebittgottesdienst",
+      "date_start": "2026-06-28",
       "source": "erdmannhausen_stadt"
     },
     {
-      "id": "85d8f2efc25c54bd",
-      "title": "Erdmannhäuser Weindorf",
-      "date_start": "2026-10-02",
-      "source": "erdmannhausen_stadt"
-    },
-    {
-      "id": "75d1e532bc68b2df",
-      "title": "GSV Kinderweihnachtsfeier",
-      "date_start": "2026-12-11",
+      "id": "dadeb5de087d5231",
+      "title": "VR - Cup und 11m Turnier",
+      "date_start": "2026-10-03",
       "source": "erdmannhausen_stadt"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "8f2113bb2d795f99",
+      "title": "OGV Sommerfest und ökum. Erntebittgottesdienst",
+      "date_start": "2026-06-28",
+      "source": "erdmannhausen_stadt"
+    }
+  ]
 }

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-25T05:03:54.245126+02:00",
+  "generated_at": "2026-06-26T05:21:12.555116+02:00",
   "city": "sachsenheim",
   "sources": [
     "sachsenheim_library",
     "sachsenheim_museum",
     "sachsenheim_kultur"
   ],
-  "previous_run": "2026-06-24T14:38:32.945302+02:00",
-  "count_added": 20,
+  "previous_run": "2026-06-25T05:03:54.265245+02:00",
+  "count_added": 21,
   "count_removed": 4,
   "added": [
     {
@@ -89,6 +89,12 @@
       "source": "sachsenheim_kultur"
     },
     {
+      "id": "65904901e513a549",
+      "title": "FamilienSingen",
+      "date_start": "2026-06-24",
+      "source": "sachsenheim_kultur"
+    },
+    {
       "id": "c4edeab95960feb0",
       "title": "Rollator-Training",
       "date_start": "2026-05-08",
@@ -107,11 +113,31 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "65904901e513a549",
-      "title": "FamilienSingen",
-      "date_start": "2026-06-24",
+      "id": "f9e95e90e91600d9",
+      "title": "FamilienSingen Heute",
+      "date_start": "2026-06-26",
       "source": "sachsenheim_kultur"
     },
+    {
+      "id": "bbedb13797c0fb1b",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-26",
+      "source": "sachsenheim_library"
+    },
+    {
+      "id": "d4349694b2f8a14c",
+      "title": "Sommerkonzert Classic Open-Air",
+      "date_start": "2026-07-05",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "35876a75c0047a13",
+      "title": "Rollator-Training",
+      "date_start": "2026-06-26",
+      "source": "sachsenheim_library"
+    }
+  ],
+  "removed": [
     {
       "id": "5333101920f562ee",
       "title": "Spaziererei Heute",
@@ -119,41 +145,21 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "cd54e07cf6e6f1f4",
-      "title": "Kleinhöflefest",
-      "date_start": "2026-07-04",
+      "id": "ef115eebafcac3f2",
+      "title": "FamilienSingen",
+      "date_start": "2026-06-26",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "3f3e1b9e8bc62a91",
-      "title": "4. Jazz & Wein Open-Air",
-      "date_start": "2026-07-04",
-      "source": "sachsenheim_kultur"
-    }
-  ],
-  "removed": [
-    {
-      "id": "90a565891b58c5f6",
-      "title": "Aktion MITEINANDER - EINFACH SINGEN am Vormittag",
-      "date_start": "2026-06-24",
+      "id": "53c91e0f44d321f1",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-26",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "4cebfb745befe415",
-      "title": "FamilienSingen Heute",
-      "date_start": "2026-06-24",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "b9de78bb4e04f316",
-      "title": "Aktion MITEINANDER - TANZEN QUERBEET - Volkstanz international",
-      "date_start": "2026-06-24",
-      "source": "sachsenheim_library"
-    },
-    {
-      "id": "11fcb3a2495b05ad",
-      "title": "Spaziererei",
-      "date_start": "2026-06-25",
+      "id": "35603d08342baf14",
+      "title": "Geschichte(n) aus unserem Land",
+      "date_start": "2026-06-26",
       "source": "sachsenheim_kultur"
     }
   ]
