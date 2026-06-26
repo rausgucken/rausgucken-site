@@ -1,37 +1,163 @@
 {
   "subset": "today",
-  "generated_at": "2026-06-25T06:00:01.928208+02:00",
-  "event_count": 1,
+  "generated_at": "2026-06-26T06:00:02.139435+02:00",
+  "event_count": 5,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "5333101920f562ee",
-      "title": "Spaziererei Heute",
-      "date_start": "2026-06-25",
+      "id": "f9e95e90e91600d9",
+      "title": "FamilienSingen Heute",
+      "date_start": "2026-06-26",
       "date_end": null,
-      "time": "14:30 - 16:30 Uhr",
-      "description": "Eine Spaziererei mit Schwätzle, Hefezopf und Liedern bietet Bewegung und Unterhaltung im Freien. An verschiedenen Treffpunkten starten wir gemeinsam auf dem Weg zur frischen Luft. Ein Walk & Talk für alle Altersgruppen.",
-      "location": "Treffpunkt: Kleeblatt Pflegeheim Kleinsachsenheim anschließend Spielplatz Torweinbergweg",
+      "time": "14:30 - 15:30 Uhr",
+      "description": "In diesem FamilienSingen lernen Kinder ab 5 Jahren und Erwachsene gemeinsam verschiedene Lieder. Das Angebot ist generations-übergreifend und inklusiv, mit Barrierefreiheit im Veranstaltungsort Café L’ink.",
+      "location": "Café L’ink, Karl-Heinz-Lüth-Str. 6, 74343 Großsachsenheim",
+      "price": "Kostenlos",
+      "age_min": 5,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie",
+        "Workshop"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-EINFACH-SINGEN-FamilienSingen-event-appointment6061",
+      "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-EINFACH-SINGEN-FamilienSingen-event-appointment6061",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "familiensingen-heute-2026-06-26-sach",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-26T02:02:24.538628+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/familiensingen-heute-2026-06-26-sach"
+    },
+    {
+      "id": "96b7189dfaac7ccb",
+      "title": "Rollator-Training",
+      "date_start": "2026-06-26",
+      "date_end": null,
+      "time": "15:00 - 17:00 Uhr",
+      "description": "In diesem Workshop lernen Teilnehmer, wie sie ihren Rollator gut einsetzen können. Das Haus der Senioren bietet eine kostenlose Veranstaltung an, um die Selbstständigkeit der Teilnehmer zu fördern.",
+      "location": "Haus der Senioren, Schloßgartenstraße 7, 74343 Sachsenheim",
+      "price": "Kostenlos",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Workshop"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Rollator-Training-event-appointment5823",
+      "original_url": "https://www.sachsenheim.de/termin/Rollator-Training-event-appointment5823",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "rollator-training-2026-06-26-sach",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-26T02:02:25.569694+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/rollator-training-2026-06-26-sach"
+    },
+    {
+      "id": "35876a75c0047a13",
+      "title": "Rollator-Training",
+      "date_start": "2026-06-26",
+      "date_end": null,
+      "time": "15:00 - 17:00 Uhr",
+      "description": "In diesem Workshop lernen Teilnehmer, wie sie ihren Rollator effektiv einsetzen können. Das Training fördert die Selbstständigkeit und wird kostenfrei angeboten.",
+      "location": "Haus der Senoren, Schloßgartenstraße 7, 74343 Sachsenheim",
+      "price": "Kostenlos",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Workshop"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Rollator-Training-event-appointment5823",
+      "original_url": "https://www.sachsenheim.de/termin/Rollator-Training-event-appointment5823",
+      "source": "sachsenheim_library",
+      "city": "sachsenheim",
+      "slug": "rollator-training-2026-06-26-sach-1",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-26T02:02:50.310915+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtbücherei Sachsenheim",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/rollator-training-2026-06-26-sach-1"
+    },
+    {
+      "id": "bbedb13797c0fb1b",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-26",
+      "date_end": null,
+      "time": "16:15 - 16:45 Uhr",
+      "description": "Im Dorfmitte Häfnerhaslach findet das \"Feierabend-Jodeln\" statt. Alle sind willkommen, um ohne Vorkenntnisse gemeinsam Jodelpartien zu erleben und gute Laune zu verbreiten.",
+      "location": "Dorfmitte Häfnerhaslach",
       "price": "Kostenlos",
       "age_min": null,
       "age_max": null,
       "tags": [],
-      "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Spaziererei-event-appointment6050",
-      "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Spaziererei-event-appointment6050",
+      "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6041",
+      "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6041",
       "source": "sachsenheim_library",
       "city": "sachsenheim",
-      "slug": "spaziererei-heute-2026-06-25-sach-1",
+      "slug": "feierabend-jodeln-2026-06-26-sach-2",
       "weekdays": [
-        4
+        5
       ],
-      "scraped_at": "2026-06-25T02:03:05.344525+02:00",
+      "scraped_at": "2026-06-26T02:02:51.117264+02:00",
       "extraction_confidence": 0.85,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadtbücherei Sachsenheim",
-      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/spaziererei-heute-2026-06-25-sach-1"
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/feierabend-jodeln-2026-06-26-sach-2"
+    },
+    {
+      "id": "c79728d0bd3abe52",
+      "title": "Feierabend-Jodeln",
+      "date_start": "2026-06-26",
+      "date_end": null,
+      "time": "18:00 - 18:30 Uhr",
+      "description": "Im Feierabend-Jodeln auf der Terrasse Café CLEMENT Großsachsenheim teilen sich Erwachsene und Familien ihre Jodelskillz oder entdecken neue. Keine Vorkenntnisse nötig, einfach mitzumachen und Spaß zu haben.",
+      "location": "Terrasse Café CLEMENT Großsachsenheim",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6042",
+      "original_url": "https://www.sachsenheim.de/termin/Aktion-MITEINANDER-Feierabend-Jodeln-event-appointment6042",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "feierabend-jodeln-2026-06-26-sach-1",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-26T02:02:27.601354+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/feierabend-jodeln-2026-06-26-sach-1"
     }
   ]
 }

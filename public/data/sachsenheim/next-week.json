@@ -1,7 +1,7 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-06-25T06:00:01.928726+02:00",
-  "event_count": 2,
+  "generated_at": "2026-06-26T06:00:02.139705+02:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -27,9 +27,9 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-25T02:02:48.720715+02:00",
+      "scraped_at": "2026-06-26T02:02:31.688669+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -59,14 +59,46 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-25T02:02:49.816720+02:00",
+      "scraped_at": "2026-06-26T02:02:32.734979+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/4-jazz-wein-open-air-2026-07-04-sach"
+    },
+    {
+      "id": "d4349694b2f8a14c",
+      "title": "Sommerkonzert Classic Open-Air",
+      "date_start": "2026-07-05",
+      "date_end": null,
+      "time": "18:00 - 20:00 Uhr",
+      "description": "Inmitten von Sachsenheim veranstaltet die \"sueddeutsche kammersinfonie bietigheim\" ihr jährliches Sommerkonzert. Unter der Leitung von Peter Wallinger spielt das Orchester klassische Werke im ästhetischen Innenhof des Wasserschlosses, umgeben von historischem Charme und moderner Kultur.",
+      "location": "Rathaus - Wasserschloss, Äußerer Schloßhof 5, 74343 Sachsenheim",
+      "price": "18 € / Abendkasse 22 €",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Musik",
+        "Fuehrung"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Sommerkonzert-Classic-Open-Air-event-appointment5201",
+      "original_url": "https://www.sachsenheim.de/termin/Sommerkonzert-Classic-Open-Air-event-appointment5201",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "sommerkonzert-classic-open-air-2026-07-05-sach",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-06-26T02:02:33.783332+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Sachsenheim – Kulturprogramm",
-      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/4-jazz-wein-open-air-2026-07-04-sach"
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/sommerkonzert-classic-open-air-2026-07-05-sach"
     }
   ]
 }
