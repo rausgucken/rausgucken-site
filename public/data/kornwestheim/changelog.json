@@ -1,32 +1,39 @@
 {
-  "generated_at": "2026-06-26T05:25:07.111987+02:00",
+  "generated_at": "2026-06-27T05:46:31.009154+02:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_buecherei",
+    "kornwestheim",
     "das_k_spielplan",
-    "kornwestheim"
+    "das_k_buecherei"
   ],
-  "previous_run": "2026-06-25T05:09:20.038133+02:00",
-  "count_added": 0,
+  "previous_run": "2026-06-26T05:25:07.134258+02:00",
+  "count_added": 1,
   "count_removed": 3,
-  "added": [],
+  "added": [
+    {
+      "id": "62f2f2c1086700f3",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-10-02",
+      "source": "kornwestheim"
+    }
+  ],
   "removed": [
     {
-      "id": "26644fe7bdbfc424",
-      "title": "Nachbarschaftscafé",
-      "date_start": "2026-06-25",
+      "id": "b4218c766c4ecd72",
+      "title": "Ausstellung \"Marion Eichmann – The Paper Code\"",
+      "date_start": "2026-06-26",
       "source": "kornwestheim"
     },
     {
-      "id": "9196feeec7e241d8",
-      "title": "Café Auszeit für pflegende Angehörige",
-      "date_start": "2026-06-25",
+      "id": "92bb806b4fb1f6c0",
+      "title": "Öffentliche Kuratorinnenführung",
+      "date_start": "2026-06-26",
       "source": "kornwestheim"
     },
     {
-      "id": "a21f9d42d8c2f9de",
-      "title": "Kaffeetreff - Spielenachmittag",
-      "date_start": "2026-06-25",
+      "id": "168b293eb982896a",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-10-02",
       "source": "kornwestheim"
     }
   ]

@@ -1,26 +1,25 @@
 {
-  "generated_at": "2026-06-26T04:43:50.657277+02:00",
+  "generated_at": "2026-06-27T04:36:15.155105+02:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-06-25T04:39:43.459663+02:00",
-  "count_added": 1,
-  "count_removed": 1,
+  "previous_run": "2026-06-26T04:43:50.681472+02:00",
+  "count_added": 2,
+  "count_removed": 0,
   "added": [
     {
-      "id": "f9802c2d0a14c0b5",
-      "title": "Bürger-Café",
-      "date_start": "2027-01-26",
+      "id": "cde60c7c49d707c9",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-01-27",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "cc75eb45a71ff6c4",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-01-27",
       "source": "freiberg_veranstaltungen"
     }
   ],
-  "removed": [
-    {
-      "id": "611c1ed22e8c7d41",
-      "title": "Walking/Lauftreff",
-      "date_start": "2026-06-25",
-      "source": "freiberg_veranstaltungen"
-    }
-  ]
+  "removed": []
 }

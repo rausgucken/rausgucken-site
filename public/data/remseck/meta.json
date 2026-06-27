@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-06-26T04:43:51.750517+02:00",
+  "scraped_at": "2026-06-27T04:36:16.267728+02:00",
   "city": "remseck",
-  "event_count": 21,
+  "event_count": 20,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,21 +9,21 @@
     "remseck_stadt"
   ],
   "source_counts": {
-    "remseck_mediathek": 13,
-    "remseck_stadt": 8
+    "remseck_stadt": 8,
+    "remseck_mediathek": 12
   },
   "sources_failed": [],
-  "data_hash": "22a939457239cfcb",
+  "data_hash": "c18cbf71c8f0dadd",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 26.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 27.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "remseck_mediathek": 1.0,
-    "remseck_stadt": 1.0
+    "remseck_stadt": 1.0,
+    "remseck_mediathek": 1.0
   },
   "source_event_counts": {
-    "remseck_mediathek": 13,
-    "remseck_stadt": 8
+    "remseck_stadt": 8,
+    "remseck_mediathek": 12
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -31,15 +31,15 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 705.0,
-    "runtime_delta_vs_baseline": 2.939,
+    "runtime_minutes": 530.6,
+    "runtime_delta_vs_baseline": 1.964,
     "source_health": {
-      "remseck_mediathek": 1.0,
-      "remseck_stadt": 1.0
+      "remseck_stadt": 1.0,
+      "remseck_mediathek": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "critical",
-    "generated_at": "2026-06-26T13:59:10.594386+02:00"
+    "generated_at": "2026-06-27T11:04:36.646692+02:00"
   }
 }
