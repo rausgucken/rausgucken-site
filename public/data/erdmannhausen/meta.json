@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-06-27T08:48:17.476305+02:00",
+  "scraped_at": "2026-06-28T09:33:49.340627+02:00",
   "city": "erdmannhausen",
-  "event_count": 82,
+  "event_count": 80,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "erdmannhausen_stadt"
   ],
   "source_counts": {
-    "erdmannhausen_stadt": 82
+    "erdmannhausen_stadt": 80
   },
   "sources_failed": [],
-  "data_hash": "61377c93b1487f1f",
+  "data_hash": "9d464b21a142e214",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 27.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 28.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "erdmannhausen_stadt": 0.97
   },
   "source_event_counts": {
-    "erdmannhausen_stadt": 82
+    "erdmannhausen_stadt": 80
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 530.6,
-    "runtime_delta_vs_baseline": 1.964,
+    "runtime_minutes": 552.3,
+    "runtime_delta_vs_baseline": 2.085,
     "source_health": {
       "erdmannhausen_stadt": 0.97
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "critical",
-    "generated_at": "2026-06-27T11:04:36.264346+02:00"
+    "generated_at": "2026-06-28T11:26:37.911916+02:00"
   }
 }
