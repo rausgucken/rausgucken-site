@@ -1,43 +1,32 @@
 {
-  "generated_at": "2026-06-28T06:00:57.311787+02:00",
+  "generated_at": "2026-06-29T06:04:31.155009+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_treffpunkt_adler",
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-06-27T05:39:29.629154+02:00",
-  "count_added": 0,
-  "count_removed": 5,
-  "added": [],
+  "previous_run": "2026-06-28T06:00:57.338200+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "d33b759f94fec8ca",
+      "title": "HEISS AUF LESEN - Start der Sommerleseclubaktion",
+      "date_start": "2026-07-10",
+      "source": "ditzingen_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "4e038a396849a914",
-      "title": "Tag der offenen Tür der Jugendmusikschule",
+      "id": "e7fab30831756732",
+      "title": "Liederkranz-Sommerfest",
       "date_start": "2026-06-27",
       "source": "ditzingen_stadt"
     },
     {
-      "id": "c570971f4ffd2c36",
-      "title": "Vorlesezeit",
-      "date_start": "2026-06-27",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "68b19c42762ed3a6",
-      "title": "Schulfest Theodor-Heuglin- Schule - 60 Jahre unterwegs",
-      "date_start": "2026-06-27",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "45dfdd78d6b2a501",
-      "title": "ABSAGE - 25 Jahre THS Förderverein - Gemeinsam mehr erreichen!",
-      "date_start": "2026-06-27",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "b74ca08c741e1a60",
-      "title": "Gaumenfreuden aus Persien",
-      "date_start": "2026-06-27",
+      "id": "5e2b69b6e22f6775",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-06-28",
       "source": "ditzingen_stadt"
     }
   ]

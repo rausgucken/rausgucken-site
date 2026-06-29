@@ -1,33 +1,33 @@
 {
-  "scraped_at": "2026-06-28T04:32:47.115646+02:00",
+  "scraped_at": "2026-06-29T13:59:56.923337+02:00",
   "city": "asperg",
-  "event_count": 85,
+  "event_count": 82,
   "flagged_count": 0,
-  "expired_count": 14,
+  "expired_count": 18,
   "sources_scraped": [
     "asperg_fuehrungen",
     "asperg_veranstaltungen",
     "glasperlenspiel"
   ],
   "source_counts": {
-    "asperg_veranstaltungen": 48,
-    "asperg_fuehrungen": 8,
-    "glasperlenspiel": 29
+    "asperg_veranstaltungen": 45,
+    "glasperlenspiel": 30,
+    "asperg_fuehrungen": 7
   },
   "sources_failed": [],
-  "data_hash": "f352081d222ac9f8",
+  "data_hash": "0e5d226f80a3b105",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 28.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 29.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "asperg_veranstaltungen": 1.0,
-    "asperg_fuehrungen": 0.9,
-    "glasperlenspiel": 0.94
+    "glasperlenspiel": 0.94,
+    "asperg_fuehrungen": 0.85
   },
   "source_event_counts": {
-    "asperg_veranstaltungen": 48,
-    "asperg_fuehrungen": 8,
-    "glasperlenspiel": 29
+    "asperg_veranstaltungen": 45,
+    "glasperlenspiel": 30,
+    "asperg_fuehrungen": 7
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -35,16 +35,16 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 552.3,
-    "runtime_delta_vs_baseline": 2.085,
+    "runtime_minutes": 719.9,
+    "runtime_delta_vs_baseline": 3.022,
     "source_health": {
       "asperg_veranstaltungen": 1.0,
-      "asperg_fuehrungen": 0.9,
-      "glasperlenspiel": 0.94
+      "glasperlenspiel": 0.94,
+      "asperg_fuehrungen": 0.85
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "critical",
-    "generated_at": "2026-06-28T11:26:37.782237+02:00"
+    "generated_at": "2026-06-29T14:14:29.434182+02:00"
   }
 }

@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "source": "oberstenfeld_veranstaltungen",
+    "city": "oberstenfeld",
+    "scraped_at": "2026-06-29T11:39:11.408938+02:00",
+    "original_url": "https://www.oberstenfeld.de/termin/Ehrenamtsfest-event-appointment4223",
+    "link": "https://www.oberstenfeld.de/termin/Ehrenamtsfest-event-appointment4223",
+    "extraction_confidence": 1.0,
+    "tags": [],
+    "is_booked_out": false,
+    "sponsored": false,
+    "title": "Ehrenamtsfest",
+    "date_start": "2026-07-03",
+    "date_end": null,
+    "time": "19:00 Uhr",
+    "description": "In diesem Ehrenamtsfest feiern ehrenamtliche Mitarbeiter ihre Dienstjahre. Mit典型示例代码：\n```python\n# 这里是一个简单的Python示例，展示如何根据给定的模板生成描述文本。\ndef generate_event_description(title, location):\n    description = f\"{title} wird in {location} feiern.\"\n    return description\n\n# 示例数据\ntitle = \"Ehrenamtsfest\"\nlocation = \"Oberstenfeld\"\n\n# 生成描述\nevent_description = generate_event_description(title, location)\nprint(event_description)\n```\n\n输出的描述文本为：\n```\nEhrenamtsfest wird in Oberstenfeld feiern.\n```",
+    "location": "Oberstenfeld",
+    "price": null,
+    "age_min": null,
+    "age_max": null,
+    "source_label": "Gemeinde Oberstenfeld",
+    "_content_hash": "ffa33b5c2eb91550b17a3b33cbff12cb",
+    "confidence_detail": {
+      "date": 1.0,
+      "age": 1.0,
+      "tags": 1.0,
+      "price": 1.0,
+      "overall": 1.0
+    },
+    "_flag_reason": "non_latin_script_in_description"
+  }
+]

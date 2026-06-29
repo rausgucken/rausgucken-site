@@ -1,30 +1,40 @@
 {
-  "scraped_at": "2026-06-28T08:56:15.233407+02:00",
+  "scraped_at": "2026-06-29T11:19:44.464507+02:00",
   "city": "oberstenfeld",
-  "event_count": 0,
+  "event_count": 55,
   "flagged_count": 0,
-  "expired_count": 24,
-  "sources_scraped": [],
-  "source_counts": {},
+  "expired_count": 44,
+  "sources_scraped": [
+    "oberstenfeld_veranstaltungen"
+  ],
+  "source_counts": {
+    "oberstenfeld_veranstaltungen": 55
+  },
   "sources_failed": [],
-  "data_hash": "4f53cda18c2baa0c",
+  "data_hash": "280e77e38ed7250b",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 28.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 29.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
-  "source_health": {},
-  "source_event_counts": {},
+  "source_health": {
+    "oberstenfeld_veranstaltungen": 1.0
+  },
+  "source_event_counts": {
+    "oberstenfeld_veranstaltungen": 55
+  },
   "count_drift_warnings": {},
   "quality_report": {
     "regression_pass_rate": 0.0,
-    "flagged_rate_current": 0.0,
+    "flagged_rate_current": 0.018,
     "flagged_rate_4week_avg": 0.0,
-    "trend": "insufficient_data",
-    "runtime_minutes": 552.3,
-    "runtime_delta_vs_baseline": 2.085,
-    "source_health": {},
+    "trend": "stable",
+    "runtime_minutes": 719.9,
+    "runtime_delta_vs_baseline": 3.022,
+    "source_health": {
+      "oberstenfeld_veranstaltungen": 1.0
+    },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "critical",
-    "generated_at": "2026-06-28T11:26:38.258081+02:00"
+    "generated_at": "2026-06-29T14:14:29.908958+02:00"
   }
 }

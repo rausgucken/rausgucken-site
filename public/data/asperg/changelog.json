@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-28T04:32:47.094355+02:00",
+  "generated_at": "2026-06-29T13:59:56.902150+02:00",
   "city": "asperg",
   "sources": [
-    "glasperlenspiel",
     "asperg_fuehrungen",
-    "asperg_veranstaltungen"
+    "asperg_veranstaltungen",
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-06-27T04:33:51.807920+02:00",
-  "count_added": 15,
-  "count_removed": 3,
+  "previous_run": "2026-06-28T04:32:47.115646+02:00",
+  "count_added": 19,
+  "count_removed": 4,
   "added": [
     {
       "id": "df2fb65f3b7fecca",
@@ -95,30 +95,60 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "b63dd683e2a9f0ea",
-      "title": "Theaterstück Omelette Surprise",
+      "id": "a341b79ebb911d2f",
+      "title": "Fahrradtour auf dem Keltenweg",
       "date_start": "2026-06-28",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "c9025fee0817e42b",
+      "title": "Popmusiker Justice - Solopfad",
+      "date_start": "2026-09-25",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "6966af02e9f1353c",
+      "title": "Jazz-Veranstaltung mit Gerhard Volz, Stefan Zenner und Didi Eckmaier",
+      "date_start": "2026-10-23",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "71608f4c7a4d16ad",
+      "title": "Jens Heckermann - Kauz",
+      "date_start": "2026-12-11",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "f5b342876ed04254",
+      "title": "Theaterstück Omelette Surprise",
+      "date_start": "2026-06-27",
       "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "d3528ff249760e91",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-06-27",
+      "id": "4ec4388857ebf987",
+      "title": "Fahrradtour auf dem Keltenweg",
+      "date_start": "2026-06-28",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "97d094bba14325e4",
-      "title": "Hocketse im Kirchgarten",
-      "date_start": "2026-06-27",
+      "id": "d1a08821fc9e1b7e",
+      "title": "Stadtführung Asperg",
+      "date_start": "2026-06-28",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "191a1e383c747443",
+      "id": "f7868236718589e8",
       "title": "Theater – Omelette Surprise",
-      "date_start": "2026-06-27",
+      "date_start": "2026-06-28",
       "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "42c65c571d040aeb",
+      "title": "Vergnügtes Spiel mit Jupiter",
+      "date_start": "2026-06-28",
+      "source": "glasperlenspiel"
     }
   ]
 }

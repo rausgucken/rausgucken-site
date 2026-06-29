@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-06-29T06:00:01.719448+02:00",
-  "event_count": 256,
+  "generated_at": "2026-06-29T11:25:03.173860+02:00",
+  "event_count": 265,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -34,7 +34,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:00:17.438715+02:00",
+      "scraped_at": "2026-06-29T02:00:50.103832+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -74,7 +74,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:05:51.744805+02:00",
+      "scraped_at": "2026-06-29T02:05:50.601959+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -108,7 +108,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-28T02:14:50.703781+02:00",
+      "scraped_at": "2026-06-29T02:14:37.266482+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -142,46 +142,14 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-28T02:14:50.705924+02:00",
+      "scraped_at": "2026-06-29T02:14:37.268794+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/kinderoper-2026-07-03-ludw"
-    },
-    {
-      "id": "a57f8605d0749943",
-      "title": "Große Weinbergtour: Steil gehen und genießen - Wanderung mit Weinverkostung",
-      "date_start": "2026-07-03",
-      "date_end": null,
-      "time": "16:15 Uhr",
-      "description": "In dieser Tour durch den Weinberg steigen Sie an steilen Pfaden. An der Haltestelle genießen Sie eine Weinkostprobe mit der Familie Höhne. Ideal für Erwachsene, die den Weinbergen und deren Geschichten näherkommen wollen.",
-      "location": "Heldenschmiede",
-      "price": null,
-      "age_min": 4,
-      "age_max": null,
-      "tags": [
-        "Fuehrung",
-        "Familie"
-      ],
-      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523254974526/index.html",
-      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523254974526/index.html",
-      "source": "ludwigsburg_stadt",
-      "city": "ludwigsburg",
-      "slug": "grosse-weinbergtour-steil-gehen-und-geniessen---wanderung-mit-weinverkostung-2026-07-03",
-      "weekdays": [
-        5
-      ],
-      "scraped_at": "2026-06-28T02:14:50.706736+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": true,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Ludwigsburg",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/grosse-weinbergtour-steil-gehen-und-geniessen---wanderung-mit-weinverkostung-2026-07-03"
     },
     {
       "id": "59ad80d2fdf51e9f",
@@ -208,7 +176,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:28.061549+02:00",
+      "scraped_at": "2026-06-29T02:06:28.167941+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -216,6 +184,38 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-ein-braunbaer-aus-ton-in-ludwigsburg-2026-07-04-karl"
+    },
+    {
+      "id": "c4fa95358adc80ed",
+      "title": "Emmas Einhorn",
+      "date_start": "2026-07-04",
+      "date_end": null,
+      "time": "14 bis 15 Uhr",
+      "description": "In der Reithalle des Kunstzentrums Karlskaserne präsentiert Emma ihr Einhorn. Kreatives Malen und handwerkliche Arbeiten für Kinder und Erwachsene.",
+      "location": "Reithalle, Kunstzentrum Karlskaserne",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://events-stabi.ludwigsburg.de/",
+      "original_url": "https://events-stabi.ludwigsburg.de/",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "emmas-einhorn-2026-07-04-ludw",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-29T02:14:37.273104+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/emmas-einhorn-2026-07-04-ludw"
     },
     {
       "id": "07508107c0d5b6c3",
@@ -241,7 +241,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.416511+02:00",
+      "scraped_at": "2026-06-29T02:09:13.341406+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -275,7 +275,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:35.974963+02:00",
+      "scraped_at": "2026-06-29T02:06:35.422352+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -310,7 +310,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:34.846348+02:00",
+      "scraped_at": "2026-06-29T02:06:34.340897+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -343,7 +343,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.416734+02:00",
+      "scraped_at": "2026-06-29T02:09:13.341637+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -374,7 +374,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:49.298156+02:00",
+      "scraped_at": "2026-06-29T02:14:36.067125+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -407,7 +407,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:33.719211+02:00",
+      "scraped_at": "2026-06-29T02:06:33.327233+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -441,7 +441,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:06:32.611363+02:00",
+      "scraped_at": "2026-06-29T02:06:32.280290+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -475,7 +475,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-28T02:06:37.079651+02:00",
+      "scraped_at": "2026-06-29T02:06:36.499189+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -507,7 +507,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.417073+02:00",
+      "scraped_at": "2026-06-29T02:09:13.341968+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -539,7 +539,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-28T02:06:42.760708+02:00",
+      "scraped_at": "2026-06-29T02:06:41.761049+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -571,7 +571,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-28T02:14:33.149412+02:00",
+      "scraped_at": "2026-06-29T02:14:21.891158+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -579,6 +579,39 @@
       "editorial_tip": null,
       "source_label": "Kunstschule Labyrinth",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-tonwerkstatt-ab-8-jahren-2026-07-22-laby"
+    },
+    {
+      "id": "e03dcd037732fb3b",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-07-25",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder ihre kreativen Fähigkeiten entfalten. Mitunterariuschen Anleitungen von Museumsdozenten basteln und malen sie Kunstwerke.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806684",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806684",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-07-25-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-29T02:00:03.895443+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/werkstatt-fuer-kinder-2026-07-25-muse"
     },
     {
       "id": "9ca58150abcb4f04",
@@ -604,7 +637,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.417182+02:00",
+      "scraped_at": "2026-06-29T02:09:13.342074+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -639,7 +672,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:46.079473+02:00",
+      "scraped_at": "2026-06-29T02:06:44.946101+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -647,75 +680,6 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-t-rex-alarm-in-ludwigsburg-2026-07-30-karl"
-    },
-    {
-      "id": "72e10c8ed44a49e9",
-      "title": "Sommerferienworkshop: Ballett kreativ in Bietigheim",
-      "date_start": "2026-07-30",
-      "date_end": "2026-08-01",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Sommerferienworkshop lernen Kinder ab 6 Jahren das Ballett kreativ zu tanzen. Unter Anleitung von professionellen Tänzerinnen und -tänzern profitieren die Teilnehmer von einer vielfältigen Tänzerin-Workshop-Konzeption in der Kunstschule Labyrinth, Bietigheim-Bissingen.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "57,00 Euro",
-      "age_min": 6,
-      "age_max": null,
-      "tags": [
-        "Kinder",
-        "Tanz",
-        "Workshop",
-        "Familie"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523253566001/SommerferienworkshopBallettkreativinBietigheim.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523253566001/SommerferienworkshopBallettkreativinBietigheim.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-ballett-kreativ-in-bietigheim-2026-07-30-karl",
-      "weekdays": [
-        4,
-        5,
-        6
-      ],
-      "scraped_at": "2026-06-28T02:06:47.090325+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-ballett-kreativ-in-bietigheim-2026-07-30-karl"
-    },
-    {
-      "id": "030c78503db7e3f5",
-      "title": "Sommerferienworkshop: Wackeldackel, Löwenhocker, Kistenlaster in Bietigheim",
-      "date_start": "2026-07-30",
-      "date_end": "2026-08-01",
-      "time": "09:30-12:30 Uhr",
-      "description": "Dieser Sommerferienworkshop bietet Kindern zwischen 7 und 12 Jahren die Möglichkeit, Wackeldackel, Löwenhocker und Kistenlaster zu basteln. Unter der Leitung von Fachleuten entstehen kreative Kunstwerke in einer familienfreundlichen Umgebung.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "57,00 Euro",
-      "age_min": 7,
-      "age_max": null,
-      "tags": [
-        "Familie"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254157303/AUSGEBUCHTSommerferienworkshopWackeldackelLwenhockerKistenlasterinBietigheim.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254157303/AUSGEBUCHTSommerferienworkshopWackeldackelLwenhockerKistenlasterinBietigheim.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-wackeldackel-loewenhocker-kistenlaster-in-bietigheim-2026-07-30-karl",
-      "weekdays": [
-        4,
-        5,
-        6
-      ],
-      "scraped_at": "2026-06-28T02:06:48.158949+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-wackeldackel-loewenhocker-kistenlaster-in-bietigheim-2026-07-30-karl"
     },
     {
       "id": "71f3c3fc124c71d5",
@@ -743,7 +707,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:49.266103+02:00",
+      "scraped_at": "2026-06-29T02:06:45.948071+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -779,7 +743,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:50.362200+02:00",
+      "scraped_at": "2026-06-29T02:06:47.009956+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -814,7 +778,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:51.424185+02:00",
+      "scraped_at": "2026-06-29T02:06:48.020963+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -849,7 +813,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:52.483914+02:00",
+      "scraped_at": "2026-06-29T02:06:49.071017+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -884,7 +848,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:53.564432+02:00",
+      "scraped_at": "2026-06-29T02:06:50.078511+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -918,7 +882,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:54.601035+02:00",
+      "scraped_at": "2026-06-29T02:06:51.168069+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -953,7 +917,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:55.694529+02:00",
+      "scraped_at": "2026-06-29T02:06:52.202033+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -988,7 +952,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:06:56.828005+02:00",
+      "scraped_at": "2026-06-29T02:06:53.254153+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1020,7 +984,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:49.298440+02:00",
+      "scraped_at": "2026-06-29T02:14:36.067407+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1053,7 +1017,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.417412+02:00",
+      "scraped_at": "2026-06-29T02:09:13.342284+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1089,7 +1053,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:01.414423+02:00",
+      "scraped_at": "2026-06-29T02:06:57.666807+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1099,26 +1063,26 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-tiergeschichten-stempeln-in-bietigheim-2026-08-03-karl"
     },
     {
-      "id": "2c8c2cc616088433",
-      "title": "Sommerferienworkshop: Ein Schattentheater – Spiel mit Licht und Schatten in Ludwigsburg",
+      "id": "e6dc8438271e14e2",
+      "title": "Sommerferienworkshop: Fang den Räuber Hotzenplotz in Ludwigsburg",
       "date_start": "2026-08-03",
       "date_end": "2026-08-07",
       "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder ab 8 Jahren das Schattentheater. Mit Licht und Schatten entstehen spannende Geschichten. Erleichtert wird der kreative Prozess durch die Unterstützung eines Dozenten.",
+      "description": "In diesem Workshop lernen Kinder ab 4 Jahren, Fang den Räuber Hotzenplotz zu spielen. Mit der Unterstützung des Kunstzentrums Karlskaserne entfalten sie ihre kreativen Fähigkeiten und genießen die Sommersonate.",
       "location": "Kunstzentrum Karlskaserne",
       "price": "80,00 Euro",
-      "age_min": 8,
-      "age_max": 12,
+      "age_min": 4,
+      "age_max": null,
       "tags": [
         "Kinder",
         "Workshop",
         "Familie"
       ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167016/SommerferienworkshopEinSchattentheaterSpielmitLichtundSchatteninLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167016/SommerferienworkshopEinSchattentheaterSpielmitLichtundSchatteninLudwigsburg.html",
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167015/SommerferienworkshopFangdenRuberHotzenplotzinLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167015/SommerferienworkshopFangdenRuberHotzenplotzinLudwigsburg.html",
       "source": "karlskaserne_veranstaltungen",
       "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-ein-schattentheater-spiel-mit-licht-und-schatten-in-ludwigsburg-2026",
+      "slug": "sommerferienworkshop-fang-den-raeuber-hotzenplotz-in-ludwigsburg-2026-08-03-karl",
       "weekdays": [
         1,
         2,
@@ -1126,36 +1090,35 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:02.513732+02:00",
+      "scraped_at": "2026-06-29T02:06:58.736840+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-ein-schattentheater-spiel-mit-licht-und-schatten-in-ludwigsburg-2026"
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-fang-den-raeuber-hotzenplotz-in-ludwigsburg-2026-08-03-karl"
     },
     {
-      "id": "9337c0e99b11c4e8",
-      "title": "Sommerferienworkshop: Theaterwerkstatt in Ludwigsburg",
+      "id": "56413126867c106e",
+      "title": "Sommerferienworkshop: Hip Hop Streetdance Kids in Bietigheim",
       "date_start": "2026-08-03",
       "date_end": "2026-08-07",
       "time": "09:30-12:30 Uhr",
-      "description": "In der Theaterwerkstatt lernen Kinder ab 6 Jahren unter professioneller Anleitung neue Bühnenfertigkeiten. Mit kreativen Aufgaben und spielerischen Übungen entdecken sie das Potential des Dramas.",
+      "description": "In diesem Workshop lernen Kinder ab 8 Jahren Hip Hop Streetdance-Basics. Die Tänzerinnen und Tänzer der Kunstschule Labyrinth leiten die Kids durch kreative Bewegungsübungen und freuen sich auf gemeinsame Choreografien.",
       "location": "Kunstzentrum Karlskaserne",
       "price": "80,00 Euro",
-      "age_min": 6,
-      "age_max": 12,
+      "age_min": 8,
+      "age_max": null,
       "tags": [
         "Kinder",
-        "Familie",
-        "Fuehrung"
+        "Workshop"
       ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167011/SommerferienworkshopTheaterwerkstattinLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167011/SommerferienworkshopTheaterwerkstattinLudwigsburg.html",
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139368/SommerferienworkshopHipHopStreetdanceKidsinBietigheim.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139368/SommerferienworkshopHipHopStreetdanceKidsinBietigheim.html",
       "source": "karlskaserne_veranstaltungen",
       "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-theaterwerkstatt-in-ludwigsburg-2026-08-03-karl",
+      "slug": "sommerferienworkshop-hip-hop-streetdance-kids-in-bietigheim-2026-08-03-karl",
       "weekdays": [
         1,
         2,
@@ -1163,14 +1126,14 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:03.649379+02:00",
+      "scraped_at": "2026-06-29T02:06:59.877591+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-theaterwerkstatt-in-ludwigsburg-2026-08-03-karl"
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-hip-hop-streetdance-kids-in-bietigheim-2026-08-03-karl"
     },
     {
       "id": "d783d583a2b270bf",
@@ -1200,7 +1163,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:04.772004+02:00",
+      "scraped_at": "2026-06-29T02:07:00.982942+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1237,7 +1200,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:05.892242+02:00",
+      "scraped_at": "2026-06-29T02:07:02.081458+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1273,7 +1236,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:07.222120+02:00",
+      "scraped_at": "2026-06-29T02:07:03.156610+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1310,7 +1273,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:08.309625+02:00",
+      "scraped_at": "2026-06-29T02:07:04.220665+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1320,26 +1283,26 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-die-schule-der-magischen-tiere-in-ludwigsburg-2026-08-03-karl"
     },
     {
-      "id": "e6dc8438271e14e2",
-      "title": "Sommerferienworkshop: Fang den Räuber Hotzenplotz in Ludwigsburg",
+      "id": "e346d89a4f2d6323",
+      "title": "Sommerferienworkshop: Ein Schattentheater – Spiel mit Licht und Schatten in Ludwigsburg",
       "date_start": "2026-08-03",
       "date_end": "2026-08-07",
       "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder ab 4 Jahren, Fang den Räuber Hotzenplotz zu spielen. Mit der Unterstützung des Kunstzentrums Karlskaserne entfalten sie ihre kreativen Fähigkeiten und genießen die Sommersonate.",
+      "description": "In diesem Workshop lernen Kinder und Jugendliche, Schattentheater zu erstellen und durchzuführen. Mit Fingerspielen und Leinwandfiguren spielen sie mit Licht und Schatten. Ein kreativer Sommertag im Kunstzentrum Karlskaserne.",
       "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
+      "price": null,
       "age_min": 4,
-      "age_max": null,
+      "age_max": 12,
       "tags": [
         "Kinder",
         "Workshop",
         "Familie"
       ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167015/SommerferienworkshopFangdenRuberHotzenplotzinLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167015/SommerferienworkshopFangdenRuberHotzenplotzinLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286851/zmdetail_523254167016/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286851/zmdetail_523254167016/index.html",
+      "source": "labyrinth",
       "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-fang-den-raeuber-hotzenplotz-in-ludwigsburg-2026-08-03-karl",
+      "slug": "sommerferienworkshop-ein-schattentheater-spiel-mit-licht-und-schatten-in-ludwigsburg-2026",
       "weekdays": [
         1,
         2,
@@ -1347,50 +1310,14 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:10.681343+02:00",
+      "scraped_at": "2026-06-29T02:14:21.891873+02:00",
       "extraction_confidence": 1.0,
-      "is_new": false,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-fang-den-raeuber-hotzenplotz-in-ludwigsburg-2026-08-03-karl"
-    },
-    {
-      "id": "56413126867c106e",
-      "title": "Sommerferienworkshop: Hip Hop Streetdance Kids in Bietigheim",
-      "date_start": "2026-08-03",
-      "date_end": "2026-08-07",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder ab 8 Jahren Hip Hop Streetdance-Basics. Die Tänzerinnen und Tänzer der Kunstschule Labyrinth leiten die Kids durch kreative Bewegungsübungen und freuen sich auf gemeinsame Choreografien.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 8,
-      "age_max": null,
-      "tags": [
-        "Kinder",
-        "Workshop"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139368/SommerferienworkshopHipHopStreetdanceKidsinBietigheim.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139368/SommerferienworkshopHipHopStreetdanceKidsinBietigheim.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-hip-hop-streetdance-kids-in-bietigheim-2026-08-03-karl",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-06-28T02:07:11.704662+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-hip-hop-streetdance-kids-in-bietigheim-2026-08-03-karl"
+      "source_label": "Kunstschule Labyrinth",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-ein-schattentheater-spiel-mit-licht-und-schatten-in-ludwigsburg-2026"
     },
     {
       "id": "30a0f796fc5c71cc",
@@ -1420,7 +1347,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:33.150303+02:00",
+      "scraped_at": "2026-06-29T02:14:21.892063+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1457,7 +1384,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:09.578600+02:00",
+      "scraped_at": "2026-06-29T02:07:05.327741+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1489,7 +1416,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-28T02:09:18.417523+02:00",
+      "scraped_at": "2026-06-29T02:09:13.342389+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1524,7 +1451,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:12.795548+02:00",
+      "scraped_at": "2026-06-29T02:07:06.420442+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1532,116 +1459,6 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-kunst-im-wald-in-bietigheim-2026-08-03-karl"
-    },
-    {
-      "id": "9669620cdd829c87",
-      "title": "Sommerferienworkshop: Tiere, die es gar nicht gibt! aus Ton in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "date_end": "2026-08-06",
-      "time": "13:30-16:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder ab 8 Jahre, wie es Tiere gibt, die gar nicht existieren. Mit Farbe und Fantasie entstehen ungewöhnliche Tierwelt-Szenen unter Anleitung von Künstlern am Kunstzentrum Karlskaserne.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "68,50 Euro",
-      "age_min": 7,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Workshop",
-        "Familie"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167006/AUSGEBUCHTSommerferienworkshopTieredieesgarnichtgibtausToninLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167006/AUSGEBUCHTSommerferienworkshopTieredieesgarnichtgibtausToninLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-tiere-die-es-gar-nicht-gibt-aus-ton-in-ludwigsburg-2026-08-03-karl",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "scraped_at": "2026-06-28T02:07:15.014886+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-tiere-die-es-gar-nicht-gibt-aus-ton-in-ludwigsburg-2026-08-03-karl"
-    },
-    {
-      "id": "5050938fefbf32b6",
-      "title": "Sommerferienworkshop: Mondlandung - streng geheim! in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "date_end": "2026-08-07",
-      "time": "13:30-16:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder ab 8 Jahre, wie man mit Papier und Farben einen Mondlandungsszenen erstellt. Die Teilnehmer entdecken künstlerische Techniken unter der Leitung eines erfahrenen Künstlers.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 7,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Workshop",
-        "Familie"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167005/SommerferienworkshopMondlandungstrenggeheiminLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167005/SommerferienworkshopMondlandungstrenggeheiminLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-mondlandung---streng-geheim-in-ludwigsburg-2026-08-03-karl",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-06-28T02:07:16.055109+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-mondlandung---streng-geheim-in-ludwigsburg-2026-08-03-karl"
-    },
-    {
-      "id": "3c19c04591ed9f84",
-      "title": "Sommerferienworkshop: Die Zauberwelt von Harry Potter in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "date_end": "2026-08-07",
-      "time": "13:30-16:30 Uhr",
-      "description": "In diesem Workshop entdecken Kinder ab 8 Jahren die Zauberwelt von Harry Potter. Mit der Unterstützung eines Dozenten erkunden sie magische Figuren und Geschichten im Kunstzentrum Karlskaserne.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 8,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Workshop",
-        "Familie"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167009/SommerferienworkshopDieZauberweltvonHarryPotterinLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167009/SommerferienworkshopDieZauberweltvonHarryPotterinLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-die-zauberwelt-von-harry-potter-in-ludwigsburg-2026-08-03-karl",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-06-28T02:07:17.136706+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-die-zauberwelt-von-harry-potter-in-ludwigsburg-2026-08-03-karl"
     },
     {
       "id": "3bbc8faa070c98d5",
@@ -1671,7 +1488,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:18.175138+02:00",
+      "scraped_at": "2026-06-29T02:07:07.457849+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1679,6 +1496,43 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-malerischer-stop-motion-film-in-ludwigsburg-2026-08-03-karl"
+    },
+    {
+      "id": "02561da226812c1a",
+      "title": "Sommerferienworkshop: Theaterwerkstatt in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "date_end": "2026-08-07",
+      "time": "13:30-16:30 Uhr",
+      "description": "In dieser Theaterwerkstatt lernen Kinder und Jugendliche ab 12 Jahren die Grundlagen des Theaterspiels. Sie entfalten ihre kreativen Fähigkeiten unter der Leitung von professionellen Künstlern im Kunstzentrum Karlskaserne.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 12,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Fuehrung",
+        "Familie"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167002/AUSGEBUCHTSommerferienworkshopTheaterwerkstattinLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254167002/AUSGEBUCHTSommerferienworkshopTheaterwerkstattinLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-theaterwerkstatt-in-ludwigsburg-2026-08-03-karl",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-29T02:07:08.690729+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-theaterwerkstatt-in-ludwigsburg-2026-08-03-karl"
     },
     {
       "id": "3f61a26cabda4807",
@@ -1707,7 +1561,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:20.321329+02:00",
+      "scraped_at": "2026-06-29T02:07:09.936048+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1743,7 +1597,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:21.355994+02:00",
+      "scraped_at": "2026-06-29T02:07:10.958611+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1751,6 +1605,80 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-hip-hop-streetdance-in-bietigheim-2026-08-03-karl"
+    },
+    {
+      "id": "78c0064e3db4e101",
+      "title": "Sommerferienworkshop: Mondlandung - streng geheim! in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "date_end": "2026-08-07",
+      "time": "13:30-16:30 Uhr",
+      "description": "In diesem Workshop lernen Kinder und Jugendliche, wie man mit Papierflieger Raumfahrtrealitäten erforscht. Erlebnisreiche Tätigkeiten im Kunstzentrum Karlskaserne in Ludwigsburg.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286851/zmdetail_523254167005/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286851/zmdetail_523254167005/index.html",
+      "source": "labyrinth",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-mondlandung---streng-geheim-in-ludwigsburg-2026-08-03-laby",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-29T02:14:21.892436+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstschule Labyrinth",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-mondlandung---streng-geheim-in-ludwigsburg-2026-08-03-laby"
+    },
+    {
+      "id": "74a0ab5c4a9637e0",
+      "title": "Sommerferienworkshop: Die Zauberwelt von Harry Potter in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "date_end": "2026-08-07",
+      "time": "13:30-16:30 Uhr",
+      "description": "In diesem Workshop entdecken Kinder und Jugendliche die magische Welt von Harry Potter. Mit hands On-Aktivitäten und unter Anleitung eines erfahrenen Dozenten verbringen sie eine faszinierende Sommertagstageszeit im Kunstzentrum Karlskaserne.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286851/zmdetail_523254167009/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286851/zmdetail_523254167009/index.html",
+      "source": "labyrinth",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-die-zauberwelt-von-harry-potter-in-ludwigsburg-2026-08-03-laby",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-29T02:14:21.892601+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstschule Labyrinth",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-die-zauberwelt-von-harry-potter-in-ludwigsburg-2026-08-03-laby"
     },
     {
       "id": "f9e563c768261a84",
@@ -1779,7 +1707,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:33.151015+02:00",
+      "scraped_at": "2026-06-29T02:14:21.892761+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1787,6 +1715,41 @@
       "editorial_tip": null,
       "source_label": "Kunstschule Labyrinth",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-kunst-im-wald-in-bietigheim-2026-08-03-laby"
+    },
+    {
+      "id": "0b140e1c9f922807",
+      "title": "Sommerferienworkshop: Tiere, die es gar nicht gibt! aus Ton in Ludwigsburg",
+      "date_start": "2026-08-03",
+      "date_end": "2026-08-06",
+      "time": "13:30-16:30 Uhr",
+      "description": "In diesem Sommerferienworkshop erforschen Kinder und Jugendliche fiktive Tierweltbewohner. Mitunter menschliche Charaktere, manchmal magische Wesen – die Fantasie ist der Maßstab für diese kreativen Entdeckungen.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286851/zmdetail_523254167006/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286851/zmdetail_523254167006/index.html",
+      "source": "labyrinth",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-tiere-die-es-gar-nicht-gibt-aus-ton-in-ludwigsburg-2026-08-03-laby",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "scraped_at": "2026-06-29T02:14:21.892939+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": true,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstschule Labyrinth",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-tiere-die-es-gar-nicht-gibt-aus-ton-in-ludwigsburg-2026-08-03-laby"
     },
     {
       "id": "60393084281ad42c",
@@ -1816,7 +1779,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:34.184805+02:00",
+      "scraped_at": "2026-06-29T02:14:22.713286+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1848,7 +1811,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-28T02:14:33.151600+02:00",
+      "scraped_at": "2026-06-29T02:14:21.893367+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1881,7 +1844,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.417634+02:00",
+      "scraped_at": "2026-06-29T02:09:13.342502+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1912,7 +1875,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:49.298601+02:00",
+      "scraped_at": "2026-06-29T02:14:36.067554+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1944,7 +1907,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-28T02:14:49.298632+02:00",
+      "scraped_at": "2026-06-29T02:14:36.067584+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1973,7 +1936,7 @@
       "city": "ludwigsburg",
       "slug": "mission-spuernase-110826---120826-stab",
       "weekdays": [],
-      "scraped_at": "2026-06-28T02:09:18.417747+02:00",
+      "scraped_at": "2026-06-29T02:09:13.342611+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2005,7 +1968,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-28T02:01:40.745159+02:00",
+      "scraped_at": "2026-06-29T02:01:40.425826+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2038,7 +2001,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:01:42.133300+02:00",
+      "scraped_at": "2026-06-29T02:01:41.760885+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2070,7 +2033,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-28T02:09:18.417862+02:00",
+      "scraped_at": "2026-06-29T02:09:13.342718+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2078,6 +2041,40 @@
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/kreativwerkstatt---hej-sommar---sommer-in-schweden-2026-08-14-stab"
+    },
+    {
+      "id": "51a4f0cb4be13889",
+      "title": "Ferienworkshop Museumsbuch interaktiv",
+      "date_start": "2026-08-14",
+      "date_end": null,
+      "time": "10:00–12:00 Uhr",
+      "description": "Im Ferienworkshop \"Museumsbuch interaktiv\" lernen Kinder und Jugendliche, das Ludwigsburg Museum im MIK zu entdecken. Mit interaktiven Aktivitäten und spielerischem Lernen verbindet der Workshop die Ausstellung mit einem eigenen Museumbuch.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Ausstellung",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523254372401",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523254372401",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "ferienworkshop-museumsbuch-interaktiv-2026-08-14-muse",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-06-29T02:00:03.896178+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/ferienworkshop-museumsbuch-interaktiv-2026-08-14-muse"
     },
     {
       "id": "8b2099eb08aaa97f",
@@ -2101,7 +2098,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:49.298690+02:00",
+      "scraped_at": "2026-06-29T02:14:36.067644+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2134,7 +2131,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.417976+02:00",
+      "scraped_at": "2026-06-29T02:09:13.342832+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2166,7 +2163,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-28T02:01:51.163222+02:00",
+      "scraped_at": "2026-06-29T02:01:50.967658+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2198,7 +2195,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-06-28T02:09:18.418088+02:00",
+      "scraped_at": "2026-06-29T02:09:13.342939+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2231,7 +2228,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-06-28T02:01:52.460710+02:00",
+      "scraped_at": "2026-06-29T02:01:52.226106+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2263,7 +2260,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:18.418204+02:00",
+      "scraped_at": "2026-06-29T02:09:13.343048+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2295,7 +2292,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.418316+02:00",
+      "scraped_at": "2026-06-29T02:09:13.343153+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2327,7 +2324,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-28T02:02:06.956206+02:00",
+      "scraped_at": "2026-06-29T02:02:07.647987+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2360,7 +2357,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-06-28T02:02:08.338301+02:00",
+      "scraped_at": "2026-06-29T02:02:08.961054+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2392,7 +2389,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-28T02:02:09.815951+02:00",
+      "scraped_at": "2026-06-29T02:02:10.290141+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2425,7 +2422,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:02:13.242917+02:00",
+      "scraped_at": "2026-06-29T02:02:11.569650+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2459,7 +2456,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:16.641674+02:00",
+      "scraped_at": "2026-06-29T02:09:11.617406+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2467,6 +2464,39 @@
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/roboter-programmieren-eltern-kind-workshop-2026-08-27-stab"
+    },
+    {
+      "id": "c48034e537af9ed5",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-08-29",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder ihre kreativen Fähigkeiten entfalten. Mitunterernährer Animateur führen sie durch verschiedene Handwerkskunstprojekte.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806683",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806683",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-08-29-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-29T02:00:03.896331+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/werkstatt-fuer-kinder-2026-08-29-muse"
     },
     {
       "id": "260a110a0e8af56a",
@@ -2490,7 +2520,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:49.298863+02:00",
+      "scraped_at": "2026-06-29T02:14:36.067830+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2498,115 +2528,6 @@
       "editorial_tip": null,
       "source_label": "Bluehendes Barock Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/maerchenerzaehlerin-2026-08-29-blue"
-    },
-    {
-      "id": "28a5712aa3d23bcf",
-      "title": "Sommerferienworkshop: Bühne frei! in Bietigheim",
-      "date_start": "2026-08-31",
-      "date_end": "2026-09-04",
-      "time": "09:30-12:30 Uhr",
-      "description": null,
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 6,
-      "age_max": null,
-      "tags": [
-        "Familie"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139372/SommerferienworkshopBhnefreiinBietigheim.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139372/SommerferienworkshopBhnefreiinBietigheim.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-buehne-frei-in-bietigheim-2026-08-31-karl",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-06-28T02:07:26.791182+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-buehne-frei-in-bietigheim-2026-08-31-karl"
-    },
-    {
-      "id": "77589430e61eb6c6",
-      "title": "Sommerferienworkshop: Fantastische Zirkuswelt! in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "date_end": "2026-09-04",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Sommerferienworkshop entdecken Kinder ab 6 Jahren die magische Welt des Zirkus. Mit Kreativität und Freiheit gestalten sie ihre eigenen Zirkuskreationen unter der Leitung erfahrener Pädagogen.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 6,
-      "age_max": null,
-      "tags": [
-        "Kinder",
-        "Tanz",
-        "Familie"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149660/SommerferienworkshopFantastischeZirkusweltinLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149660/SommerferienworkshopFantastischeZirkusweltinLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-fantastische-zirkuswelt-in-ludwigsburg-2026-08-31-karl",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-06-28T02:07:27.886318+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-fantastische-zirkuswelt-in-ludwigsburg-2026-08-31-karl"
-    },
-    {
-      "id": "dd2f05a1b9d6b282",
-      "title": "Sommerferienworkshop: Trickfilm in Stop-Motion-Technik in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "date_end": "2026-09-04",
-      "time": "09:30-12:30 Uhr",
-      "description": "In diesem Sommerferienworkshop lernen Kinder ab 10 Jahren die Technik des Stop-Motion-Filmens. Mit Unterstützung durch Erwachsene entstehen kurze Trickfilme im Kunstzentrum Karlskaserne in Ludwigsburg.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 10,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Workshop",
-        "Familie"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149664/AUSGEBUCHTSommerferienworkshopTrickfilminStopMotionTechnikinLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149664/AUSGEBUCHTSommerferienworkshopTrickfilminStopMotionTechnikinLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-trickfilm-in-stop-motion-technik-in-ludwigsburg-2026-08-31-karl",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-06-28T02:07:30.099304+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-trickfilm-in-stop-motion-technik-in-ludwigsburg-2026-08-31-karl"
     },
     {
       "id": "6b3776e4cd54362d",
@@ -2636,7 +2557,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:31.157886+02:00",
+      "scraped_at": "2026-06-29T02:07:16.291988+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2672,7 +2593,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:32.196754+02:00",
+      "scraped_at": "2026-06-29T02:07:17.346463+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2680,6 +2601,78 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-prompt-against-the-silence-in-ludwigsburg-2026-08-31-karl"
+    },
+    {
+      "id": "28a5712aa3d23bcf",
+      "title": "Sommerferienworkshop: Bühne frei! in Bietigheim",
+      "date_start": "2026-08-31",
+      "date_end": "2026-09-04",
+      "time": "09:30-12:30 Uhr",
+      "description": null,
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 6,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139372/SommerferienworkshopBhnefreiinBietigheim.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139372/SommerferienworkshopBhnefreiinBietigheim.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-buehne-frei-in-bietigheim-2026-08-31-karl",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-29T02:07:19.663013+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-buehne-frei-in-bietigheim-2026-08-31-karl"
+    },
+    {
+      "id": "dd2f05a1b9d6b282",
+      "title": "Sommerferienworkshop: Trickfilm in Stop-Motion-Technik in Ludwigsburg",
+      "date_start": "2026-08-31",
+      "date_end": "2026-09-04",
+      "time": "09:30-12:30 Uhr",
+      "description": "In diesem Sommerferienworkshop lernen Kinder ab 10 Jahren die Technik des Stop-Motion-Filmens. Mit Unterstützung durch Erwachsene entstehen kurze Trickfilme im Kunstzentrum Karlskaserne in Ludwigsburg.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 10,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149664/AUSGEBUCHTSommerferienworkshopTrickfilminStopMotionTechnikinLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149664/AUSGEBUCHTSommerferienworkshopTrickfilminStopMotionTechnikinLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-trickfilm-in-stop-motion-technik-in-ludwigsburg-2026-08-31-karl",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-29T02:07:20.745191+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-trickfilm-in-stop-motion-technik-in-ludwigsburg-2026-08-31-karl"
     },
     {
       "id": "e3833dcdf25248f6",
@@ -2708,7 +2701,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:33.151991+02:00",
+      "scraped_at": "2026-06-29T02:14:21.893778+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2718,26 +2711,26 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-flughafen-schlosshof-bitte-melden-in-bietigheim-2026-08-31-laby"
     },
     {
-      "id": "da2ed622fd4079b4",
+      "id": "bcb32533abf43d98",
       "title": "Sommerferienworkshop: Commercial Dance in Ludwigsburg",
       "date_start": "2026-08-31",
       "date_end": "2026-09-04",
       "time": "09:30-15:30 Uhr",
-      "description": "In diesem Sommerferienworkshop lernen Kinder ab 12 Jahre Commercial Dance. Das Kunstzentrum Karlskaserne bietet eine einzigartige Möglichkeit, Tanzkünste zu erlernen und auszubauen.",
+      "description": "In diesem Workshop lernen Kinder und Jugendliche, kommerzielle Tanzstile zu meistern. Unter Anleitung erfahrener Tänzer finden sie ihren Rhythmus auf der Leinwand.",
       "location": "Kunstzentrum Karlskaserne",
-      "price": "160,00 Euro",
-      "age_min": 12,
+      "price": null,
+      "age_min": 4,
       "age_max": 12,
       "tags": [
         "Kinder",
         "Workshop",
         "Familie"
       ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149659/SommerferienworkshopCommercialDanceinLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149659/SommerferienworkshopCommercialDanceinLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286934/zmdetail_523254149659/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286934/zmdetail_523254149659/index.html",
+      "source": "labyrinth",
       "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-commercial-dance-in-ludwigsburg-2026-08-31-karl",
+      "slug": "sommerferienworkshop-commercial-dance-in-ludwigsburg-2026-08-31-laby",
       "weekdays": [
         1,
         2,
@@ -2745,14 +2738,14 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:29.014562+02:00",
+      "scraped_at": "2026-06-29T02:14:23.467110+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-commercial-dance-in-ludwigsburg-2026-08-31-karl"
+      "source_label": "Kunstschule Labyrinth",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-commercial-dance-in-ludwigsburg-2026-08-31-laby"
     },
     {
       "id": "207c8a28d89e7f2a",
@@ -2781,7 +2774,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:33.297721+02:00",
+      "scraped_at": "2026-06-29T02:07:21.811764+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2789,6 +2782,41 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-abenteuer-manege-2026-08-31-karl"
+    },
+    {
+      "id": "7f9e3803bf319b8f",
+      "title": "Sommerferienworkshop: In Holz hauen und Schnitzen in Ludwigsburg",
+      "date_start": "2026-08-31",
+      "date_end": "2026-09-04",
+      "time": "13:30-16:30 Uhr",
+      "description": "In diesem Sommerferienworkshop lernen Kinder und Jugendliche ab 8 Jahren das Holzschliff und -schnitzen. Unter Anleitung erfahren sie die Techniken dieser alten Handwerkskunst und schaffen eigene Kunstwerke.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 8,
+      "age_max": null,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149658/SommerferienworkshopInHolzhauenundSchnitzeninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149658/SommerferienworkshopInHolzhauenundSchnitzeninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-in-holz-hauen-und-schnitzen-in-ludwigsburg-2026-08-31-karl",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-29T02:07:24.981664+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-in-holz-hauen-und-schnitzen-in-ludwigsburg-2026-08-31-karl"
     },
     {
       "id": "c722ad4749753c6c",
@@ -2818,9 +2846,9 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:36.976802+02:00",
+      "scraped_at": "2026-06-29T02:07:27.194288+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -2856,7 +2884,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:38.117659+02:00",
+      "scraped_at": "2026-06-29T02:07:28.254847+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2864,41 +2892,6 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-buehne-frei-in-ludwigsburg-2026-08-31-karl"
-    },
-    {
-      "id": "7f9e3803bf319b8f",
-      "title": "Sommerferienworkshop: In Holz hauen und Schnitzen in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "date_end": "2026-09-04",
-      "time": "13:30-16:30 Uhr",
-      "description": "In diesem Sommerferienworkshop lernen Kinder und Jugendliche ab 8 Jahren das Holzschliff und -schnitzen. Unter Anleitung erfahren sie die Techniken dieser alten Handwerkskunst und schaffen eigene Kunstwerke.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 8,
-      "age_max": null,
-      "tags": [
-        "Kinder"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149658/SommerferienworkshopInHolzhauenundSchnitzeninLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254149658/SommerferienworkshopInHolzhauenundSchnitzeninLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-in-holz-hauen-und-schnitzen-in-ludwigsburg-2026-08-31-karl",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-06-28T02:07:34.688821+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": true,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-in-holz-hauen-und-schnitzen-in-ludwigsburg-2026-08-31-karl"
     },
     {
       "id": "284750ae3f2da388",
@@ -2927,7 +2920,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:34.185170+02:00",
+      "scraped_at": "2026-06-29T02:14:22.713680+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2935,6 +2928,78 @@
       "editorial_tip": null,
       "source_label": "Kunstschule Labyrinth",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-theaterwerkstatt-in-bietigheim-2026-08-31-laby"
+    },
+    {
+      "id": "1efd40009fd56e29",
+      "title": "Sommerferienworkshop: Theaterwerkstatt in Bietigheim",
+      "date_start": "2026-08-31",
+      "date_end": "2026-09-04",
+      "time": "13:30-16:30 Uhr",
+      "description": "In der Theaterwerkstatt lernen Kinder ab 10 Jahren die Grundlagen des Schauspielens. Mit Unterstützung durch professionelle Künstler entfalten sie ihre kreativen Fähigkeiten in verschiedenen Aufgabenstellungen.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 10,
+      "age_max": null,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139374/SommerferienworkshopTheaterwerkstattinBietigheim.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139374/SommerferienworkshopTheaterwerkstattinBietigheim.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-theaterwerkstatt-in-bietigheim-2026-08-31-karl",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-29T02:07:22.852955+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-theaterwerkstatt-in-bietigheim-2026-08-31-karl"
+    },
+    {
+      "id": "4d3efac45577d15e",
+      "title": "Sommerferienworkshop: Kunterbunter Meeresgarten in Bietigheim",
+      "date_start": "2026-08-31",
+      "date_end": "2026-09-04",
+      "time": "13:30-16:30 Uhr",
+      "description": "In diesem Workshop lernen Kinder ab 4 Jahren zusammen mit Erwachsenen, wie sie einen farbenfrohen Meeresgarten aus Papier herstellen. Die Kunstschule Labyrinth bietet ein familienfreundliches Kreativeregen.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie",
+        "Workshop"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139373/SommerferienworkshopKunterbunterMeeresgarteninBietigheim.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254139373/SommerferienworkshopKunterbunterMeeresgarteninBietigheim.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-kunterbunter-meeresgarten-in-bietigheim-2026-08-31-karl",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-29T02:07:23.880980+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-kunterbunter-meeresgarten-in-bietigheim-2026-08-31-karl"
     },
     {
       "id": "93b6096865699f94",
@@ -2960,7 +3025,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-06-28T02:02:23.449689+02:00",
+      "scraped_at": "2026-06-29T02:02:23.459809+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2995,7 +3060,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:39.208093+02:00",
+      "scraped_at": "2026-06-29T02:07:29.280078+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3027,7 +3092,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-28T02:02:26.949595+02:00",
+      "scraped_at": "2026-06-29T02:02:24.742000+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3060,7 +3125,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:07:40.282213+02:00",
+      "scraped_at": "2026-06-29T02:07:30.359403+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3097,7 +3162,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:42.441991+02:00",
+      "scraped_at": "2026-06-29T02:07:32.927953+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3134,7 +3199,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:43.794663+02:00",
+      "scraped_at": "2026-06-29T02:07:34.089562+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3171,7 +3236,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:44.872736+02:00",
+      "scraped_at": "2026-06-29T02:07:35.179410+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3208,7 +3273,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:45.955894+02:00",
+      "scraped_at": "2026-06-29T02:07:36.374441+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3244,7 +3309,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:47.216906+02:00",
+      "scraped_at": "2026-06-29T02:07:37.420637+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3280,7 +3345,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:54.951907+02:00",
+      "scraped_at": "2026-06-29T02:07:45.065779+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3317,7 +3382,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:32.186403+02:00",
+      "scraped_at": "2026-06-29T02:14:21.096914+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": true,
@@ -3354,7 +3419,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:33.152369+02:00",
+      "scraped_at": "2026-06-29T02:14:21.894151+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": true,
@@ -3390,7 +3455,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:41.347468+02:00",
+      "scraped_at": "2026-06-29T02:07:31.798113+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3426,7 +3491,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:48.338839+02:00",
+      "scraped_at": "2026-06-29T02:07:38.526246+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3434,43 +3499,6 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-theaterwerkstatt-in-ludwigsburg-2026-09-07-karl"
-    },
-    {
-      "id": "c9a4c6f3b2e7b7c3",
-      "title": "Sommerferienworkshop: Ein elefantastischer Giraffenstuhl",
-      "date_start": "2026-09-07",
-      "date_end": "2026-09-11",
-      "time": "13:30-16:30 Uhr",
-      "description": "In diesem Workshop lernen Kinder ab 8 Jahren das Malen von Giraffen auf Leinwänden. Mit Farben und Pinseln entstehen farbenfrohe Kunstwerke unter Anleitung eines Dozenten.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 8,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Workshop",
-        "Familie"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254138856/SommerferienworkshopEinelefantastischerGiraffenstuhl.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254138856/SommerferienworkshopEinelefantastischerGiraffenstuhl.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "sommerferienworkshop-ein-elefantastischer-giraffenstuhl-2026-09-07-karl",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-06-28T02:07:49.446801+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-ein-elefantastischer-giraffenstuhl-2026-09-07-karl"
     },
     {
       "id": "04a80dec6ba6d24d",
@@ -3499,7 +3527,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:50.596156+02:00",
+      "scraped_at": "2026-06-29T02:07:39.699731+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3536,7 +3564,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:51.709354+02:00",
+      "scraped_at": "2026-06-29T02:07:40.869830+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3575,7 +3603,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:52.821531+02:00",
+      "scraped_at": "2026-06-29T02:07:41.879200+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3612,7 +3640,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:07:53.873290+02:00",
+      "scraped_at": "2026-06-29T02:07:42.920728+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3620,6 +3648,43 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-bayala---dein-magisches-elfenabenteuer-2026-09-07-karl"
+    },
+    {
+      "id": "c9a4c6f3b2e7b7c3",
+      "title": "Sommerferienworkshop: Ein elefantastischer Giraffenstuhl",
+      "date_start": "2026-09-07",
+      "date_end": "2026-09-11",
+      "time": "13:30-16:30 Uhr",
+      "description": "In diesem Workshop lernen Kinder ab 8 Jahren das Malen von Giraffen auf Leinwänden. Mit Farben und Pinseln entstehen farbenfrohe Kunstwerke unter Anleitung eines Dozenten.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 8,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254138856/SommerferienworkshopEinelefantastischerGiraffenstuhl.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523254138856/SommerferienworkshopEinelefantastischerGiraffenstuhl.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "sommerferienworkshop-ein-elefantastischer-giraffenstuhl-2026-09-07-karl",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-29T02:07:43.981321+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sommerferienworkshop-ein-elefantastischer-giraffenstuhl-2026-09-07-karl"
     },
     {
       "id": "ef6f889b0462c675",
@@ -3649,7 +3714,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:32.186916+02:00",
+      "scraped_at": "2026-06-29T02:14:21.097251+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3685,7 +3750,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:34.186074+02:00",
+      "scraped_at": "2026-06-29T02:14:22.714546+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3717,7 +3782,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-28T02:02:32.152078+02:00",
+      "scraped_at": "2026-06-29T02:02:32.140023+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3750,7 +3815,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-06-28T02:02:33.480358+02:00",
+      "scraped_at": "2026-06-29T02:02:33.985103+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3782,7 +3847,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-28T02:02:34.827098+02:00",
+      "scraped_at": "2026-06-29T02:02:35.316203+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3815,7 +3880,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:02:36.163501+02:00",
+      "scraped_at": "2026-06-29T02:02:36.589537+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3846,7 +3911,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:49.299099+02:00",
+      "scraped_at": "2026-06-29T02:14:36.068062+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3877,7 +3942,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-28T02:14:49.299156+02:00",
+      "scraped_at": "2026-06-29T02:14:36.068120+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3910,7 +3975,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:16.642037+02:00",
+      "scraped_at": "2026-06-29T02:09:11.617762+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3942,7 +4007,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:18.419130+02:00",
+      "scraped_at": "2026-06-29T02:09:13.343953+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3974,7 +4039,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-28T02:09:18.419820+02:00",
+      "scraped_at": "2026-06-29T02:09:13.344626+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4007,7 +4072,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:08:00.505472+02:00",
+      "scraped_at": "2026-06-29T02:07:50.595352+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4041,7 +4106,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:08:01.617037+02:00",
+      "scraped_at": "2026-06-29T02:07:51.806744+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4075,7 +4140,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:32.187154+02:00",
+      "scraped_at": "2026-06-29T02:14:21.097500+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4107,7 +4172,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-28T02:09:18.420182+02:00",
+      "scraped_at": "2026-06-29T02:09:13.344985+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4141,7 +4206,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:08:03.772252+02:00",
+      "scraped_at": "2026-06-29T02:07:53.975739+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4175,7 +4240,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:08:04.878123+02:00",
+      "scraped_at": "2026-06-29T02:07:55.070658+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4210,7 +4275,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.325283+02:00",
+      "scraped_at": "2026-06-29T02:14:20.263068+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4243,7 +4308,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:24.481202+02:00",
+      "scraped_at": "2026-06-29T02:09:19.444993+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4275,7 +4340,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:18.420413+02:00",
+      "scraped_at": "2026-06-29T02:09:13.345204+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4308,7 +4373,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-28T02:09:24.481351+02:00",
+      "scraped_at": "2026-06-29T02:09:19.445123+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4342,7 +4407,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:08:08.081895+02:00",
+      "scraped_at": "2026-06-29T02:07:58.340698+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4373,7 +4438,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-28T02:14:49.299489+02:00",
+      "scraped_at": "2026-06-29T02:14:36.068453+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4406,7 +4471,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:24.481474+02:00",
+      "scraped_at": "2026-06-29T02:09:19.445235+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4438,7 +4503,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-28T02:09:18.420894+02:00",
+      "scraped_at": "2026-06-29T02:09:13.345668+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4471,7 +4536,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:08:11.545034+02:00",
+      "scraped_at": "2026-06-29T02:08:01.617584+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4479,6 +4544,39 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-ein-nasenaffe-aus-ton-fuer-kinder-ab-7-jahren-in-ludwigsburg-2026-10-24-karl"
+    },
+    {
+      "id": "c170b028731594af",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-10-24",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In der Werkstatt am Ludwigsburg Museum im MIK können Kinder ihre kreativen Fähigkeiten entfalten. Mitunter之举翻译成英文：\n\nIn the workshop at the Ludwigsburg Museum im MIK, children can unleash their creative skills.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806682",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806682",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-10-24-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-29T02:00:03.899425+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/werkstatt-fuer-kinder-2026-10-24-muse"
     },
     {
       "id": "196a57118035af59",
@@ -4504,7 +4602,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-28T02:08:12.655469+02:00",
+      "scraped_at": "2026-06-29T02:08:02.661783+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4541,7 +4639,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:08:19.587756+02:00",
+      "scraped_at": "2026-06-29T02:08:10.438430+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4577,7 +4675,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:08:20.748190+02:00",
+      "scraped_at": "2026-06-29T02:08:11.595526+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4613,7 +4711,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:08:21.806349+02:00",
+      "scraped_at": "2026-06-29T02:08:12.672650+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4650,7 +4748,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:08:22.904003+02:00",
+      "scraped_at": "2026-06-29T02:08:13.786651+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4687,7 +4785,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:08:24.016569+02:00",
+      "scraped_at": "2026-06-29T02:08:14.883422+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4723,7 +4821,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:08:25.103372+02:00",
+      "scraped_at": "2026-06-29T02:08:15.963066+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4759,7 +4857,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:32.187737+02:00",
+      "scraped_at": "2026-06-29T02:14:21.098110+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4796,7 +4894,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:31.325545+02:00",
+      "scraped_at": "2026-06-29T02:14:20.263323+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4804,6 +4902,43 @@
       "editorial_tip": null,
       "source_label": "Kunstschule Labyrinth",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/herbstferienworkshop-fang-den-raeuber-hotzenplotz-ab-4-jahren-in-bietigheim-bissingen"
+    },
+    {
+      "id": "54afb91bf5571d01",
+      "title": "Herbstferienworkshop: Fang den Räuber Hotzenplotz ab 4 Jahren in Bietigheim-Bissingen",
+      "date_start": "2026-10-26",
+      "date_end": "2026-10-30",
+      "time": "13:30 -16:30 Uhr",
+      "description": "In diesem Workshop lernen Kinder ab 4 Jahren, den Räuber Hotzenplotz im Kunstschulgelände von Bietigheim-Bissingen zu fangen. Mit spielerischen Aktivitäten fördern die Künstlerinnen und Lehrkräfte kreatives Denken und Motorik.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255373958/HerbstferienworkshopFangdenRuberHotzenplotzab4JahreninBietigheimBissingen.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255373958/HerbstferienworkshopFangdenRuberHotzenplotzab4JahreninBietigheimBissingen.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "herbstferienworkshop-fang-den-raeuber-hotzenplotz-ab-4-jahren-in-bietigheim-bissingen-1",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-29T02:08:04.813637+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/herbstferienworkshop-fang-den-raeuber-hotzenplotz-ab-4-jahren-in-bietigheim-bissingen-1"
     },
     {
       "id": "eef98d510e0b052a",
@@ -4833,7 +4968,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:08:13.752651+02:00",
+      "scraped_at": "2026-06-29T02:08:03.734431+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4841,42 +4976,6 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/herbstferienworkshop-geschichten-schreiben-und-illustrieren-fuer-kinder-von-8-10-jahren"
-    },
-    {
-      "id": "85508465f7e619db",
-      "title": "Herbstferienworkshop: Tanztheaterwerkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "date_end": "2026-10-30",
-      "time": "13:30-16:30 Uhr",
-      "description": "In dieser Tanztheaterwerkstatt lernen Kinder von 10 bis 14 Jahren die Grundlagen des Tanztheaters. Mit kreativen Übungen entstehen gemeinsam kurze Theaterstücke.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": "80,00 Euro",
-      "age_min": 10,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Familie"
-      ],
-      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255395819/HerbstferienworkshopTanztheaterwerkstattfrKindervon1014JahreninLudwigsburg.html",
-      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255395819/HerbstferienworkshopTanztheaterwerkstattfrKindervon1014JahreninLudwigsburg.html",
-      "source": "karlskaserne_veranstaltungen",
-      "city": "ludwigsburg",
-      "slug": "herbstferienworkshop-tanztheaterwerkstatt-fuer-kinder-von-10-14-jahren-in-ludwigsburg",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-06-28T02:08:14.906364+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstzentrum Karlskaserne",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/herbstferienworkshop-tanztheaterwerkstatt-fuer-kinder-von-10-14-jahren-in-ludwigsburg"
     },
     {
       "id": "9f12e5eb04ca2fab",
@@ -4906,7 +5005,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:08:16.051817+02:00",
+      "scraped_at": "2026-06-29T02:08:05.935915+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4943,7 +5042,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:08:17.122470+02:00",
+      "scraped_at": "2026-06-29T02:08:07.036844+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4979,7 +5078,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:08:18.483925+02:00",
+      "scraped_at": "2026-06-29T02:08:08.067886+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4987,6 +5086,42 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/herbstferienworkshop-hip-hop-streetdance-fuer-kinder-ab-10-jahren-in-ludwigsburg-2026-10"
+    },
+    {
+      "id": "85508465f7e619db",
+      "title": "Herbstferienworkshop: Tanztheaterwerkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "date_end": "2026-10-30",
+      "time": "13:30-16:30 Uhr",
+      "description": "In dieser Tanztheaterwerkstatt lernen Kinder von 10 bis 14 Jahren die Grundlagen des Tanztheaters. Mit kreativen Übungen entstehen gemeinsam kurze Theaterstücke.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "80,00 Euro",
+      "age_min": 10,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255395819/HerbstferienworkshopTanztheaterwerkstattfrKindervon1014JahreninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255395819/HerbstferienworkshopTanztheaterwerkstattfrKindervon1014JahreninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "herbstferienworkshop-tanztheaterwerkstatt-fuer-kinder-von-10-14-jahren-in-ludwigsburg",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-29T02:08:09.153166+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/herbstferienworkshop-tanztheaterwerkstatt-fuer-kinder-von-10-14-jahren-in-ludwigsburg"
     },
     {
       "id": "ddef881670ec912c",
@@ -5011,7 +5146,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-28T02:03:56.862564+02:00",
+      "scraped_at": "2026-06-29T02:03:57.859706+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5044,7 +5179,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-06-28T02:03:58.146978+02:00",
+      "scraped_at": "2026-06-29T02:03:59.160156+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5076,7 +5211,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-06-28T02:04:01.285401+02:00",
+      "scraped_at": "2026-06-29T02:04:04.328067+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5109,7 +5244,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:04:03.990941+02:00",
+      "scraped_at": "2026-06-29T02:04:06.930024+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5141,7 +5276,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-28T02:09:18.421120+02:00",
+      "scraped_at": "2026-06-29T02:09:13.345897+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5174,7 +5309,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-28T02:08:26.118373+02:00",
+      "scraped_at": "2026-06-29T02:08:17.071956+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5182,6 +5317,39 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-ein-sparschwein-aus-ton-fuer-kinder-ab-6-jahren-in-ludwigsburg-2026-11-01-karl"
+    },
+    {
+      "id": "ff8a62da5898c693",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2026-11-03",
+      "date_end": null,
+      "time": "18:00-20:00 Uhr",
+      "description": "In dieser Luftakrobatik-Werkstatt für Fortgeschrittene lernen Kinder ab 10 Jahre neue Fähigkeiten im Zirkus. Mit professioneller Betreuung können sie sich in einer kreativen Umgebung weiterentwickeln. Veranstaltet vom Kunstzentrum Karlskaserne.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "24,00 Euro",
+      "age_min": 10,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Tanz",
+        "Workshop"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255411051/WorkshopLuftakrobatikWerkstattfrFortgeschrittenevon916JahreninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255411051/WorkshopLuftakrobatikWerkstattfrFortgeschrittenevon916JahreninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "workshop-luftakrobatik-werkstatt-fuer-fortgeschrittene-von-9-16-jahren-in-ludwigsburg-12",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-06-29T02:08:19.361290+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-luftakrobatik-werkstatt-fuer-fortgeschrittene-von-9-16-jahren-in-ludwigsburg-12"
     },
     {
       "id": "a22b3db45b14b0a2",
@@ -5206,7 +5374,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:18.421480+02:00",
+      "scraped_at": "2026-06-29T02:09:13.346230+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5239,7 +5407,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-28T02:04:17.886331+02:00",
+      "scraped_at": "2026-06-29T02:04:19.831099+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5256,7 +5424,7 @@
       "time": "09:30-13:30 Uhr",
       "description": "In dieser Workshop-Funktion lernen Kinder zwischen 5 und 7 Jahren die Grundlagen des Zirkus- und Stelzenlaufs. Mit der Begleitung eines erfahrenen Workshopsachers werden sie ihre Balance und Koordination verbessern.",
       "location": "Kunstzentrum Karlskaserne",
-      "price": null,
+      "price": "39,00 Euro",
       "age_min": 4,
       "age_max": 12,
       "tags": [
@@ -5273,7 +5441,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.325667+02:00",
+      "scraped_at": "2026-06-29T02:14:20.263443+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5312,7 +5480,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:35.589162+02:00",
+      "scraped_at": "2026-06-29T02:14:24.131396+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5344,7 +5512,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:18.421715+02:00",
+      "scraped_at": "2026-06-29T02:09:13.346455+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5378,7 +5546,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.325786+02:00",
+      "scraped_at": "2026-06-29T02:14:20.263557+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5411,7 +5579,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:33.155005+02:00",
+      "scraped_at": "2026-06-29T02:14:21.896758+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5419,6 +5587,38 @@
       "editorial_tip": null,
       "source_label": "Kunstschule Labyrinth",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-ein-hirschkopf-aus-ton-fuer-kinder-ab-8-jahren-in-ludwigsburg-2026-11-14-laby"
+    },
+    {
+      "id": "48eda5404372f7f9",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2026-11-14",
+      "date_end": null,
+      "time": "14 bis 15 Uhr",
+      "description": "In diesem Familienprogramm wird durch das Ludwigsburger Museum im MIK geführt. Kinder und Erwachsene genießen Geschichten aus Bilderbüchern auf der Zugfahrt. Eine fachkundige Guide begleitet die Gruppe.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523255465757",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523255465757",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "bilderbuchsamstag-auf-achse-2026-11-14-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-29T02:00:03.900512+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/bilderbuchsamstag-auf-achse-2026-11-14-muse"
     },
     {
       "id": "7d19066ba268a34b",
@@ -5444,7 +5644,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.421942+02:00",
+      "scraped_at": "2026-06-29T02:09:13.346669+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5476,7 +5676,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:18.422054+02:00",
+      "scraped_at": "2026-06-29T02:09:13.346779+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5509,7 +5709,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:16.642855+02:00",
+      "scraped_at": "2026-06-29T02:09:11.618568+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5542,7 +5742,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:32.188084+02:00",
+      "scraped_at": "2026-06-29T02:14:21.098464+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5576,7 +5776,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:33.155121+02:00",
+      "scraped_at": "2026-06-29T02:14:21.896878+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5609,7 +5809,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:32.187974+02:00",
+      "scraped_at": "2026-06-29T02:14:21.098356+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5643,7 +5843,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.325905+02:00",
+      "scraped_at": "2026-06-29T02:14:20.263671+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5651,6 +5851,39 @@
       "editorial_tip": null,
       "source_label": "Kunstschule Labyrinth",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-ein-bunt-gemalter-weihnachtsengel-fuer-kinder-ab-4-jahren-in-bietigheim"
+    },
+    {
+      "id": "3e6569c50955cf0f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-11-28",
+      "date_end": null,
+      "time": "10:30–12:00 Uhr",
+      "description": "In dieser Werkstatt lernen Kinder im Ludwigsburg Museum im MIK verschiedene Künstlerhandwerke und technische Prozesse kennen. Mit Fingerspitzengefühl und unter Anleitung erfahren sie den funkelnden Funken des Schaffens.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806681",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806681",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "werkstatt-fuer-kinder-2026-11-28-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-29T02:00:03.900885+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/werkstatt-fuer-kinder-2026-11-28-muse"
     },
     {
       "id": "2a6e1fbcaf330cd2",
@@ -5677,7 +5910,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:35.589282+02:00",
+      "scraped_at": "2026-06-29T02:14:24.131535+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5711,7 +5944,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.326025+02:00",
+      "scraped_at": "2026-06-29T02:14:20.263795+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5744,7 +5977,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:32.188192+02:00",
+      "scraped_at": "2026-06-29T02:14:21.098585+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5777,7 +6010,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-28T02:14:32.188458+02:00",
+      "scraped_at": "2026-06-29T02:14:21.098861+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5810,7 +6043,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:16.643655+02:00",
+      "scraped_at": "2026-06-29T02:09:11.619392+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5842,7 +6075,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-06-28T02:09:18.423236+02:00",
+      "scraped_at": "2026-06-29T02:09:13.347955+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5874,7 +6107,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-06-28T02:09:18.423342+02:00",
+      "scraped_at": "2026-06-29T02:09:13.348079+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5908,7 +6141,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:32.188726+02:00",
+      "scraped_at": "2026-06-29T02:14:21.099118+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5942,7 +6175,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.326139+02:00",
+      "scraped_at": "2026-06-29T02:14:20.263912+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -5950,6 +6183,37 @@
       "editorial_tip": null,
       "source_label": "Kunstschule Labyrinth",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-ein-bunt-gemalter-weihnachtsengel-fuer-kinder-ab-4-jahren-in-bietigheim-1"
+    },
+    {
+      "id": "772817fe51854b17",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2026-12-12",
+      "date_end": null,
+      "time": "14 bis 15 Uhr",
+      "description": "In diesem Familienprogramm bietet das Ludwigsburg Museum im MIK Einblicke in die Welt der Bilderbücher. Besuchende können samstags Entdeckungsfahrten durch exponierte Sammlungen und persönliche Geschichten erleben.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523255465756",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523255465756",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "bilderbuchsamstag-auf-achse-2026-12-12-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-29T02:00:03.901829+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/bilderbuchsamstag-auf-achse-2026-12-12-muse"
     },
     {
       "id": "d7458cea8efaf209",
@@ -5975,7 +6239,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.423564+02:00",
+      "scraped_at": "2026-06-29T02:09:13.348296+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6009,7 +6273,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:33.155474+02:00",
+      "scraped_at": "2026-06-29T02:14:21.897210+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6019,23 +6283,23 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-zirkus--und-stelzenlaufwerkstatt-fuer-kinder-von-8-12-jahren-in-ludwigsburg-2026-3"
     },
     {
-      "id": "1e2c76db8766ce11",
+      "id": "f872f0777057bde3",
       "title": "Workshop: Vater und Kind in Ludwigsburg",
       "date_start": "2027-01-23",
       "date_end": "2027-02-27",
       "time": "09:30-12:30 Uhr",
-      "description": "In diesem Workshop im Kunstzentrum Karlskaserne lernen Väter und Kinder gemeinsam, farbenfrohe Gemälde zu malen. Unter Anleitung durch einen erfahrenen Dozenten entstehen einzigartige Kunstwerke.",
+      "description": "In diesem Workshop lernen Väter und Kinder gemeinsam, wie man Skulpturen aus Papier bastelt. Das Kunstzentrum Karlskaserne bietet ein familienfreundliches Arbeitsumfeld mit nützlichen Materialien.",
       "location": "Kunstzentrum Karlskaserne",
       "price": null,
       "age_min": 4,
       "age_max": 12,
       "tags": [
         "Kinder",
-        "Workshop",
-        "Familie"
+        "Familie",
+        "Workshop"
       ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286951/zmdetail_523255399805/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286951/zmdetail_523255399805/index.html",
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286951/zmdetail_523255578257/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286951/zmdetail_523255578257/index.html",
       "source": "labyrinth",
       "city": "ludwigsburg",
       "slug": "workshop-vater-und-kind-in-ludwigsburg-2027-01-23-laby",
@@ -6048,9 +6312,9 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:35.589430+02:00",
+      "scraped_at": "2026-06-29T02:14:24.131671+02:00",
       "extraction_confidence": 1.0,
-      "is_new": false,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -6082,7 +6346,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.326256+02:00",
+      "scraped_at": "2026-06-29T02:14:20.264190+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6116,7 +6380,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:32.188834+02:00",
+      "scraped_at": "2026-06-29T02:14:21.099224+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6153,7 +6417,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:32.189170+02:00",
+      "scraped_at": "2026-06-29T02:14:21.099574+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6190,7 +6454,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:32.189284+02:00",
+      "scraped_at": "2026-06-29T02:14:21.099690+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6198,6 +6462,43 @@
       "editorial_tip": null,
       "source_label": "Kunstschule Labyrinth",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/faschingsferienworkshop-tierisch-gross---koepfe-mit-charakter-fuer-kinder-von-7-10-jahren"
+    },
+    {
+      "id": "3720c50d00f8f817",
+      "title": "Faschingsferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "date_end": "2027-02-12",
+      "time": "09:30-12:30 Uhr",
+      "description": "In dieser Ferienwoche lernen Kinder und Jugendliche im Alter von 7 bis 12 Jahren die Kunst des Stelzenlaufs. Unter der Leitung von Fachleuten verbessern sie ihre Balance und Koordination in abenteuerlichen Übungen.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Tanz",
+        "Familie"
+      ],
+      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286802/zmdetail_523255496955/index.html",
+      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286802/zmdetail_523255496955/index.html",
+      "source": "labyrinth",
+      "city": "ludwigsburg",
+      "slug": "faschingsferienworkshop-stelzenlauf-ferienwerkstatt-fuer-kinder-und-jugendliche-von-7-12",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-06-29T02:14:21.099813+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstschule Labyrinth",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/faschingsferienworkshop-stelzenlauf-ferienwerkstatt-fuer-kinder-und-jugendliche-von-7-12"
     },
     {
       "id": "29dc6c686d9c0010",
@@ -6228,7 +6529,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:34.187088+02:00",
+      "scraped_at": "2026-06-29T02:14:22.715552+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6236,43 +6537,6 @@
       "editorial_tip": null,
       "source_label": "Kunstschule Labyrinth",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/faschingsferienworkshop-theater-werkstatt-fuer-kinder-von-10-14-jahren-in-ludwigsburg"
-    },
-    {
-      "id": "76b59894977548ef",
-      "title": "Faschingsferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "date_end": "2027-02-12",
-      "time": "09:30-12:30 Uhr",
-      "description": "In dieser Ferienwoche lernen Kinder und Jugendliche im Alter von 7 bis 12 Jahren die Kunst des Stelzenlaufs. Unter der Leitung von Fachleuten verbessern sie ihre Balance und Koordination in abenteuerlichen Übungen.",
-      "location": "Kunstzentrum Karlskaserne",
-      "price": null,
-      "age_min": 4,
-      "age_max": 12,
-      "tags": [
-        "Kinder",
-        "Tanz",
-        "Familie"
-      ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286988/zmdetail_523255496955/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286988/zmdetail_523255496955/index.html",
-      "source": "labyrinth",
-      "city": "ludwigsburg",
-      "slug": "faschingsferienworkshop-stelzenlauf-ferienwerkstatt-fuer-kinder-und-jugendliche-von-7-12",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "scraped_at": "2026-06-28T02:14:39.014722+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstschule Labyrinth",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/faschingsferienworkshop-stelzenlauf-ferienwerkstatt-fuer-kinder-und-jugendliche-von-7-12"
     },
     {
       "id": "676fc69021d03a90",
@@ -6301,7 +6565,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:42.030417+02:00",
+      "scraped_at": "2026-06-29T02:14:29.419641+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6338,7 +6602,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:42.030535+02:00",
+      "scraped_at": "2026-06-29T02:14:29.419756+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6374,7 +6638,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:42.030660+02:00",
+      "scraped_at": "2026-06-29T02:14:29.419882+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6411,7 +6675,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:32.188943+02:00",
+      "scraped_at": "2026-06-29T02:14:21.099343+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6448,7 +6712,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:32.189059+02:00",
+      "scraped_at": "2026-06-29T02:14:21.099461+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6484,7 +6748,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:34.186856+02:00",
+      "scraped_at": "2026-06-29T02:14:22.715325+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6521,7 +6785,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:34.186973+02:00",
+      "scraped_at": "2026-06-29T02:14:22.715438+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6556,7 +6820,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:42.030153+02:00",
+      "scraped_at": "2026-06-29T02:14:29.419354+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6593,7 +6857,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:42.030298+02:00",
+      "scraped_at": "2026-06-29T02:14:29.419507+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6601,6 +6865,38 @@
       "editorial_tip": null,
       "source_label": "Kunstschule Labyrinth",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/faschingsferienworkshop-dein-look-dein-kostuem-fuer-kinder-von-8-11-jahren-in-ludwigsburg"
+    },
+    {
+      "id": "9d8ff67588d6e2b0",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2027-02-13",
+      "date_end": null,
+      "time": "14 bis 15 Uhr",
+      "description": "In diesem Familienprogramm werden Kinder und Erwachsene einladen, durch die Sammlung von Bilderbuchszenen zu reisen. Führerin gibt wortwörtliche Leben den Geschichten der Gemälde.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523255465755",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523255465755",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "bilderbuchsamstag-auf-achse-2027-02-13-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-29T02:00:03.902140+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/bilderbuchsamstag-auf-achse-2027-02-13-muse"
     },
     {
       "id": "2ba8b56a8415ebf0",
@@ -6627,7 +6923,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.424145+02:00",
+      "scraped_at": "2026-06-29T02:09:13.348887+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6661,7 +6957,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:39.014884+02:00",
+      "scraped_at": "2026-06-29T02:14:26.803398+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6693,7 +6989,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-06-28T02:14:34.187528+02:00",
+      "scraped_at": "2026-06-29T02:14:22.716003+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6727,7 +7023,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.326542+02:00",
+      "scraped_at": "2026-06-29T02:14:20.264346+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6761,7 +7057,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.326681+02:00",
+      "scraped_at": "2026-06-29T02:14:20.264477+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6794,7 +7090,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.424255+02:00",
+      "scraped_at": "2026-06-29T02:09:13.348996+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6827,7 +7123,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:37.945331+02:00",
+      "scraped_at": "2026-06-29T02:14:25.518173+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6860,7 +7156,7 @@
         3,
         4
       ],
-      "scraped_at": "2026-06-28T02:14:34.188326+02:00",
+      "scraped_at": "2026-06-29T02:14:22.716831+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6893,7 +7189,7 @@
         3,
         4
       ],
-      "scraped_at": "2026-06-28T02:14:34.188431+02:00",
+      "scraped_at": "2026-06-29T02:14:22.716942+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6928,7 +7224,7 @@
         3,
         4
       ],
-      "scraped_at": "2026-06-28T02:14:39.015008+02:00",
+      "scraped_at": "2026-06-29T02:14:26.803555+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6962,7 +7258,7 @@
         3,
         4
       ],
-      "scraped_at": "2026-06-28T02:14:43.140100+02:00",
+      "scraped_at": "2026-06-29T02:14:30.343668+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -6995,7 +7291,7 @@
         3,
         4
       ],
-      "scraped_at": "2026-06-28T02:14:43.140225+02:00",
+      "scraped_at": "2026-06-29T02:14:30.343795+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7029,7 +7325,7 @@
         3,
         4
       ],
-      "scraped_at": "2026-06-28T02:14:43.140339+02:00",
+      "scraped_at": "2026-06-29T02:14:30.343911+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7063,7 +7359,7 @@
         3,
         4
       ],
-      "scraped_at": "2026-06-28T02:14:34.188207+02:00",
+      "scraped_at": "2026-06-29T02:14:22.716707+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7096,7 +7392,7 @@
         3,
         4
       ],
-      "scraped_at": "2026-06-28T02:14:34.188093+02:00",
+      "scraped_at": "2026-06-29T02:14:22.716593+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7130,7 +7426,7 @@
         3,
         4
       ],
-      "scraped_at": "2026-06-28T02:14:43.139711+02:00",
+      "scraped_at": "2026-06-29T02:14:30.343280+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7164,7 +7460,7 @@
         3,
         4
       ],
-      "scraped_at": "2026-06-28T02:14:43.139860+02:00",
+      "scraped_at": "2026-06-29T02:14:30.343425+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7197,7 +7493,7 @@
         3,
         4
       ],
-      "scraped_at": "2026-06-28T02:14:43.139983+02:00",
+      "scraped_at": "2026-06-29T02:14:30.343545+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7231,7 +7527,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:34.188651+02:00",
+      "scraped_at": "2026-06-29T02:14:22.717157+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7267,7 +7563,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:39.015121+02:00",
+      "scraped_at": "2026-06-29T02:14:26.803672+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7303,7 +7599,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:43.140789+02:00",
+      "scraped_at": "2026-06-29T02:14:30.344341+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7339,7 +7635,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:43.140898+02:00",
+      "scraped_at": "2026-06-29T02:14:30.344454+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7375,7 +7671,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:43.141019+02:00",
+      "scraped_at": "2026-06-29T02:14:30.344561+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7411,7 +7707,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:34.188764+02:00",
+      "scraped_at": "2026-06-29T02:14:22.717270+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7447,7 +7743,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:31.326806+02:00",
+      "scraped_at": "2026-06-29T02:14:20.264598+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7483,7 +7779,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:34.188545+02:00",
+      "scraped_at": "2026-06-29T02:14:22.717050+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7519,7 +7815,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:43.140453+02:00",
+      "scraped_at": "2026-06-29T02:14:30.344021+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7555,7 +7851,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:43.140567+02:00",
+      "scraped_at": "2026-06-29T02:14:30.344127+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7591,7 +7887,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:43.140680+02:00",
+      "scraped_at": "2026-06-29T02:14:30.344234+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7625,7 +7921,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:09:18.424364+02:00",
+      "scraped_at": "2026-06-29T02:09:13.349105+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7664,7 +7960,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:35.589719+02:00",
+      "scraped_at": "2026-06-29T02:14:24.131952+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7698,7 +7994,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.326940+02:00",
+      "scraped_at": "2026-06-29T02:14:20.264727+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7731,7 +8027,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:37.945488+02:00",
+      "scraped_at": "2026-06-29T02:14:25.518335+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7765,7 +8061,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:39.015706+02:00",
+      "scraped_at": "2026-06-29T02:14:26.804248+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7798,7 +8094,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-06-28T02:14:45.513855+02:00",
+      "scraped_at": "2026-06-29T02:14:32.560749+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7832,7 +8128,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.327073+02:00",
+      "scraped_at": "2026-06-29T02:14:20.264857+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7865,7 +8161,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:37.945618+02:00",
+      "scraped_at": "2026-06-29T02:14:25.518470+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7900,7 +8196,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:31.327187+02:00",
+      "scraped_at": "2026-06-29T02:14:20.264973+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7934,7 +8230,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:39.016152+02:00",
+      "scraped_at": "2026-06-29T02:14:26.804701+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -7969,7 +8265,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.030259+02:00",
+      "scraped_at": "2026-06-29T02:14:31.009542+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8005,7 +8301,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.030404+02:00",
+      "scraped_at": "2026-06-29T02:14:31.009654+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8040,7 +8336,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.030554+02:00",
+      "scraped_at": "2026-06-29T02:14:31.009779+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8076,7 +8372,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.030688+02:00",
+      "scraped_at": "2026-06-29T02:14:31.009900+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8112,7 +8408,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.030797+02:00",
+      "scraped_at": "2026-06-29T02:14:31.010008+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8148,7 +8444,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.030921+02:00",
+      "scraped_at": "2026-06-29T02:14:31.010119+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8183,7 +8479,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:34.821680+02:00",
+      "scraped_at": "2026-06-29T02:14:23.467817+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8219,7 +8515,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:39.015928+02:00",
+      "scraped_at": "2026-06-29T02:14:26.804475+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8255,7 +8551,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.029545+02:00",
+      "scraped_at": "2026-06-29T02:14:31.008866+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8291,7 +8587,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.029701+02:00",
+      "scraped_at": "2026-06-29T02:14:31.009014+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8327,7 +8623,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.029830+02:00",
+      "scraped_at": "2026-06-29T02:14:31.009135+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8363,7 +8659,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.029965+02:00",
+      "scraped_at": "2026-06-29T02:14:31.009253+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8399,7 +8695,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.030125+02:00",
+      "scraped_at": "2026-06-29T02:14:31.009422+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8436,7 +8732,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.031172+02:00",
+      "scraped_at": "2026-06-29T02:14:31.010361+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8473,7 +8769,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-06-28T02:14:44.031049+02:00",
+      "scraped_at": "2026-06-29T02:14:31.010243+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8507,7 +8803,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.327304+02:00",
+      "scraped_at": "2026-06-29T02:14:20.265091+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8540,7 +8836,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-28T02:14:31.327420+02:00",
+      "scraped_at": "2026-06-29T02:14:20.265206+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8575,7 +8871,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.327551+02:00",
+      "scraped_at": "2026-06-29T02:14:20.265347+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8608,7 +8904,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-28T02:14:37.945841+02:00",
+      "scraped_at": "2026-06-29T02:14:25.518696+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8641,7 +8937,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-06-28T02:14:37.945732+02:00",
+      "scraped_at": "2026-06-29T02:14:25.518584+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8674,7 +8970,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:37.945963+02:00",
+      "scraped_at": "2026-06-29T02:14:25.518901+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8708,7 +9004,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:35.589849+02:00",
+      "scraped_at": "2026-06-29T02:14:24.132085+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8742,7 +9038,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.327684+02:00",
+      "scraped_at": "2026-06-29T02:14:20.265481+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8776,7 +9072,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:37.946112+02:00",
+      "scraped_at": "2026-06-29T02:14:25.519056+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8809,7 +9105,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:37.946250+02:00",
+      "scraped_at": "2026-06-29T02:14:25.519195+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -8844,7 +9140,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-06-28T02:14:31.327808+02:00",
+      "scraped_at": "2026-06-29T02:14:20.265608+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
