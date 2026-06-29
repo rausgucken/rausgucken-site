@@ -1,7 +1,7 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-06-28T10:17:16.330751+02:00",
-  "event_count": 2,
+  "generated_at": "2026-06-29T06:00:01.745740+02:00",
+  "event_count": 4,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -42,36 +42,93 @@
       "canonical_url": "https://www.rausgucken.de/oberriexingen/events/stadtradeln-2026-07-01-ober"
     },
     {
-      "id": "188e777b16d4624f",
-      "title": "Theaterspaziergang 'Die Mutprobe'",
-      "date_start": "2026-07-03",
+      "id": "063dc85e323b0def",
+      "title": "Seniorentreff",
+      "date_start": "2026-07-08",
       "date_end": null,
       "time": null,
-      "description": "In diesem Theaterspaziergang durch die Straßen von Pulverdingen erleben Sie \"Die Mutprobe\". Ein lokales Theater verleiht dem klassischen Stück eine neue Dimension mit lebendigen Aufführungen und interaktiven Elementen.",
-      "location": "Pulverdingen",
+      "description": "In der Pizzeria Da Enzo bietet das Goldene Oktober ein Seniorentreff an. Anläßlich des Mittwochs, 08. Juli, laden die Teilnehmer zu einem familienfreundlichen Treffen ein.",
+      "location": "Pizzeria Da Enzo, Hauptstraße, Oberriexingen",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/seniorentreff-55/",
+      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/seniorentreff-55/",
+      "source": "oberriexingen_stadt",
+      "city": "oberriexingen",
+      "slug": "seniorentreff-2026-07-08-ober",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-06-28T02:07:23.908005+02:00",
+      "extraction_confidence": 0.65,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Oberriexingen",
+      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/seniorentreff-2026-07-08-ober"
+    },
+    {
+      "id": "699eabac98b521b3",
+      "title": "Jubiläumsfeier '50 Jahre Kindergarten'",
+      "date_start": "2026-07-11",
+      "date_end": null,
+      "time": null,
+      "description": "In Anlass des 50-jährigen Jubiläums feiert der Kindergarten seine Geschichte und Traditionen mit Gästen aller Altersgruppen.",
+      "location": "Kindergarten",
       "price": null,
       "age_min": null,
       "age_max": null,
-      "tags": [
-        "Fuehrung",
-        "Theater"
-      ],
-      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/theaterspaziergang-die-mutprobe/",
-      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/theaterspaziergang-die-mutprobe/",
+      "tags": [],
+      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/jubilaeumsfeier-50-jahre-kindergarten/",
+      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/jubilaeumsfeier-50-jahre-kindergarten/",
       "source": "oberriexingen_stadt",
       "city": "oberriexingen",
-      "slug": "theaterspaziergang-die-mutprobe-2026-07-03-ober",
+      "slug": "jubilaeumsfeier-50-jahre-kindergarten-2026-07-11-ober",
       "weekdays": [
-        5
+        6
       ],
-      "scraped_at": "2026-06-28T02:07:23.155355+02:00",
+      "scraped_at": "2026-06-28T02:07:24.635837+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Oberriexingen",
-      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/theaterspaziergang-die-mutprobe-2026-07-03-ober"
+      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/jubilaeumsfeier-50-jahre-kindergarten-2026-07-11-ober"
+    },
+    {
+      "id": "5275ce129c7e66a0",
+      "title": "Sommerfest",
+      "date_start": "2026-07-11",
+      "date_end": null,
+      "time": null,
+      "description": "Ein Sommerfest im Feuerwehrmagazin bietet Freude und Gemeinschaft. Die Freiwillige Feuerwehr Oberriexingen lädt zu diesem Ereignis ein, das den Sommertag bereichern wird.",
+      "location": "Feuerwehrmagazin",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/sommerfest-9/",
+      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/sommerfest-9/",
+      "source": "oberriexingen_stadt",
+      "city": "oberriexingen",
+      "slug": "sommerfest-2026-07-11-ober",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-06-28T02:07:25.364328+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Oberriexingen",
+      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/sommerfest-2026-07-11-ober"
     }
   ]
 }
