@@ -1,25 +1,37 @@
 {
-  "generated_at": "2026-06-29T06:08:29.765530+02:00",
+  "generated_at": "2026-06-30T06:25:22.723259+02:00",
   "city": "gerlingen",
   "sources": [
     "gerlingen_stadt"
   ],
-  "previous_run": "2026-06-28T06:10:37.182716+02:00",
-  "count_added": 1,
-  "count_removed": 1,
+  "previous_run": "2026-06-29T06:08:29.786952+02:00",
+  "count_added": 2,
+  "count_removed": 2,
   "added": [
     {
-      "id": "1bbf6485a119b4fd",
-      "title": "Wochenmarkt",
-      "date_start": "2026-10-10",
+      "id": "557f283d389d21c8",
+      "title": "Sommerfest",
+      "date_start": "2026-07-04",
+      "source": "gerlingen_stadt"
+    },
+    {
+      "id": "eb5799f42fb1f63f",
+      "title": "Marktplatzgespräch mit dem Bürgermeister",
+      "date_start": "2026-07-11",
       "source": "gerlingen_stadt"
     }
   ],
   "removed": [
     {
-      "id": "5c4f5ef5ba0e0c93",
-      "title": "Vortrag 50 Jahre Partnerschaft",
-      "date_start": "2026-06-28",
+      "id": "d945906f2e5f5174",
+      "title": "Vorlesung für Kinder",
+      "date_start": "2026-10-09",
+      "source": "gerlingen_stadt"
+    },
+    {
+      "id": "1bbf6485a119b4fd",
+      "title": "Wochenmarkt",
+      "date_start": "2026-10-10",
       "source": "gerlingen_stadt"
     }
   ]

@@ -1,9 +1,9 @@
 {
-  "scraped_at": "2026-06-29T13:59:56.923337+02:00",
+  "scraped_at": "2026-06-30T12:50:36.074165+02:00",
   "city": "asperg",
-  "event_count": 82,
+  "event_count": 81,
   "flagged_count": 0,
-  "expired_count": 18,
+  "expired_count": 15,
   "sources_scraped": [
     "asperg_fuehrungen",
     "asperg_veranstaltungen",
@@ -11,13 +11,13 @@
   ],
   "source_counts": {
     "asperg_veranstaltungen": 45,
-    "glasperlenspiel": 30,
+    "glasperlenspiel": 29,
     "asperg_fuehrungen": 7
   },
   "sources_failed": [],
-  "data_hash": "0e5d226f80a3b105",
+  "data_hash": "f8d6f1f9f7c01e0b",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 29.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 30.06.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "asperg_veranstaltungen": 1.0,
@@ -26,7 +26,7 @@
   },
   "source_event_counts": {
     "asperg_veranstaltungen": 45,
-    "glasperlenspiel": 30,
+    "glasperlenspiel": 29,
     "asperg_fuehrungen": 7
   },
   "count_drift_warnings": {},
@@ -35,8 +35,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 719.9,
-    "runtime_delta_vs_baseline": 3.022,
+    "runtime_minutes": 650.6,
+    "runtime_delta_vs_baseline": 2.635,
     "source_health": {
       "asperg_veranstaltungen": 1.0,
       "glasperlenspiel": 0.94,
@@ -45,6 +45,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "critical",
-    "generated_at": "2026-06-29T14:14:29.434182+02:00"
+    "generated_at": "2026-06-30T13:05:03.204522+02:00"
   }
 }

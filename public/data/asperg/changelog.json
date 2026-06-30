@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-29T13:59:56.902150+02:00",
+  "generated_at": "2026-06-30T12:50:36.046490+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
     "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-06-28T04:32:47.115646+02:00",
-  "count_added": 19,
-  "count_removed": 4,
+  "previous_run": "2026-06-29T13:59:56.923337+02:00",
+  "count_added": 16,
+  "count_removed": 2,
   "added": [
     {
       "id": "df2fb65f3b7fecca",
@@ -26,12 +26,6 @@
       "id": "cc01189329de5a02",
       "title": "Lost places –führung durch Altasperg",
       "date_start": "2026-04-26",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "9c68fcfc451dc118",
-      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
-      "date_start": "2026-04-30",
       "source": "asperg_fuehrungen"
     },
     {
@@ -71,16 +65,22 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "a341b79ebb911d2f",
+      "title": "Fahrradtour auf dem Keltenweg",
+      "date_start": "2026-06-28",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "01f363d327e998e5",
+      "title": "Stadtführung",
+      "date_start": "2026-06-28",
+      "source": "asperg_fuehrungen"
+    },
+    {
       "id": "8852b65c7ff4a9cb",
       "title": "Tag der dt. Einheit - Ein Gang über die schwäbische Bastille",
       "date_start": "2025-10-03",
       "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "01dc658fc15dce37",
-      "title": "Humorfest mit Ernst Mantel und Werner Koczwara",
-      "date_start": "2026-06-09",
-      "source": "glasperlenspiel"
     },
     {
       "id": "cb7d4d5e64cac6fd",
@@ -89,65 +89,35 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "9a7db249eb373750",
-      "title": "Konzert mit emisa",
-      "date_start": "2026-06-14",
+      "id": "01dc658fc15dce37",
+      "title": "Humorfest mit Ernst Mantel und Werner Koczwara",
+      "date_start": "2026-06-09",
       "source": "glasperlenspiel"
     },
     {
-      "id": "a341b79ebb911d2f",
-      "title": "Fahrradtour auf dem Keltenweg",
-      "date_start": "2026-06-28",
+      "id": "facf4a9de3005998",
+      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
+      "date_start": "2026-04-30",
       "source": "asperg_fuehrungen"
     },
     {
-      "id": "c9025fee0817e42b",
-      "title": "Popmusiker Justice - Solopfad",
-      "date_start": "2026-09-25",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "6966af02e9f1353c",
-      "title": "Jazz-Veranstaltung mit Gerhard Volz, Stefan Zenner und Didi Eckmaier",
-      "date_start": "2026-10-23",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "71608f4c7a4d16ad",
-      "title": "Jens Heckermann - Kauz",
-      "date_start": "2026-12-11",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "f5b342876ed04254",
-      "title": "Theaterstück Omelette Surprise",
-      "date_start": "2026-06-27",
+      "id": "9932cfe05ba5ea22",
+      "title": "Ehepaar Lore und Harry",
+      "date_start": "2026-10-04",
       "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "4ec4388857ebf987",
-      "title": "Fahrradtour auf dem Keltenweg",
-      "date_start": "2026-06-28",
-      "source": "asperg_veranstaltungen"
+      "id": "557d265dbaf204c8",
+      "title": "improvisationsreiche Jazz-Abende",
+      "date_start": "2027-06-05",
+      "source": "glasperlenspiel"
     },
     {
-      "id": "d1a08821fc9e1b7e",
-      "title": "Stadtführung Asperg",
-      "date_start": "2026-06-28",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "f7868236718589e8",
-      "title": "Theater – Omelette Surprise",
-      "date_start": "2026-06-28",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "42c65c571d040aeb",
-      "title": "Vergnügtes Spiel mit Jupiter",
-      "date_start": "2026-06-28",
+      "id": "a61eeea3a8927a55",
+      "title": "Gruppe Live - Die Shadows im 50er-Jahre-Sound",
+      "date_start": "2027-06-20",
       "source": "glasperlenspiel"
     }
   ]

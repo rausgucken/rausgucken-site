@@ -1,20 +1,51 @@
 {
-  "generated_at": "2026-06-29T05:39:34.327365+02:00",
+  "generated_at": "2026-06-30T05:28:19.785408+02:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_buecherei",
     "kornwestheim",
-    "das_k_spielplan"
+    "das_k_spielplan",
+    "das_k_buecherei"
   ],
-  "previous_run": "2026-06-28T06:00:56.853780+02:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-06-29T05:39:34.349810+02:00",
+  "count_added": 2,
+  "count_removed": 4,
+  "added": [
+    {
+      "id": "a4704c1de54cc7a8",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-08-07",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "b31f8d55420dcca1",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-09-04",
+      "source": "kornwestheim"
+    }
+  ],
   "removed": [
     {
-      "id": "e70ec11dcbf3d6b6",
-      "title": "Ausstellung \"Marion Eichmann – The Paper Code\"",
-      "date_start": "2026-06-28",
+      "id": "1c523a4187a53c6f",
+      "title": "Ü60-Nachmittag",
+      "date_start": "2026-06-29",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "460fc252fccce0b3",
+      "title": "Kaffeetreff",
+      "date_start": "2026-06-29",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "212ebc0e09060848",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-08-07",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "5f31e5b86347c830",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-09-04",
       "source": "kornwestheim"
     }
   ]
