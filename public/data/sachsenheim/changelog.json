@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-30T06:19:11.010467+02:00",
+  "generated_at": "2026-07-01T05:12:59.609624+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_museum",
     "sachsenheim_kultur",
-    "sachsenheim_library"
+    "sachsenheim_library",
+    "sachsenheim_museum"
   ],
-  "previous_run": "2026-06-29T05:57:50.071531+02:00",
-  "count_added": 9,
-  "count_removed": 1,
+  "previous_run": "2026-06-30T06:19:11.030594+02:00",
+  "count_added": 7,
+  "count_removed": 0,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -51,26 +51,7 @@
       "title": "Führung, Zu Gast bei Rittern und Geistern",
       "date_start": "2026-05-17",
       "source": "sachsenheim_library"
-    },
-    {
-      "id": "6a6a837fbc6c9f80",
-      "title": "Öffentliche Führung – „Alles für die Katz!?“ Künstler sehen Katzen",
-      "date_start": "2026-09-27",
-      "source": "sachsenheim_museum"
-    },
-    {
-      "id": "91f9891d39b83e86",
-      "title": "Sachsenheimer Schlossnächte",
-      "date_start": "2026-07-17",
-      "source": "sachsenheim_kultur"
     }
   ],
-  "removed": [
-    {
-      "id": "c249d87497786cc1",
-      "title": "Öffentliche Führung – „Alles für die Katz!?“ Künstler sehen Katzen",
-      "date_start": "2026-09-27",
-      "source": "sachsenheim_kultur"
-    }
-  ]
+  "removed": []
 }

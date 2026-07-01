@@ -1,41 +1,15 @@
 {
-  "generated_at": "2026-06-30T05:28:19.785408+02:00",
+  "generated_at": "2026-07-01T05:12:58.501667+02:00",
   "city": "kornwestheim",
   "sources": [
+    "das_k_buecherei",
     "kornwestheim",
-    "das_k_spielplan",
-    "das_k_buecherei"
+    "das_k_spielplan"
   ],
-  "previous_run": "2026-06-29T05:39:34.349810+02:00",
+  "previous_run": "2026-06-30T05:28:19.807470+02:00",
   "count_added": 2,
   "count_removed": 4,
   "added": [
-    {
-      "id": "a4704c1de54cc7a8",
-      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
-      "date_start": "2026-08-07",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "b31f8d55420dcca1",
-      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
-      "date_start": "2026-09-04",
-      "source": "kornwestheim"
-    }
-  ],
-  "removed": [
-    {
-      "id": "1c523a4187a53c6f",
-      "title": "Ü60-Nachmittag",
-      "date_start": "2026-06-29",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "460fc252fccce0b3",
-      "title": "Kaffeetreff",
-      "date_start": "2026-06-29",
-      "source": "kornwestheim"
-    },
     {
       "id": "212ebc0e09060848",
       "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
@@ -44,6 +18,32 @@
     },
     {
       "id": "5f31e5b86347c830",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-09-04",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "5efd331c1abd8c68",
+      "title": "Medienberatung für Hilfesuchende - Dienstagvormittags",
+      "date_start": "2026-06-30",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "a92b6a7b568aca65",
+      "title": "Kaffeetreff - Bingo",
+      "date_start": "2026-06-30",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "a4704c1de54cc7a8",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-08-07",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "b31f8d55420dcca1",
       "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
       "date_start": "2026-09-04",
       "source": "kornwestheim"

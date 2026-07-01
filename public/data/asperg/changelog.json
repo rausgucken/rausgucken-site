@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-30T12:50:36.046490+02:00",
+  "generated_at": "2026-07-01T11:17:35.585982+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
+    "asperg_fuehrungen",
     "glasperlenspiel",
-    "asperg_fuehrungen"
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-06-29T13:59:56.923337+02:00",
+  "previous_run": "2026-06-30T12:50:36.074165+02:00",
   "count_added": 16,
-  "count_removed": 2,
+  "count_removed": 0,
   "added": [
     {
       "id": "df2fb65f3b7fecca",
@@ -26,6 +26,12 @@
       "id": "cc01189329de5a02",
       "title": "Lost places –führung durch Altasperg",
       "date_start": "2026-04-26",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "facf4a9de3005998",
+      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
+      "date_start": "2026-04-30",
       "source": "asperg_fuehrungen"
     },
     {
@@ -95,30 +101,11 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "facf4a9de3005998",
-      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
-      "date_start": "2026-04-30",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "9932cfe05ba5ea22",
+      "id": "c3dc5fd9b4a40562",
       "title": "Ehepaar Lore und Harry",
-      "date_start": "2026-10-04",
+      "date_start": "2026-12-13",
       "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "557d265dbaf204c8",
-      "title": "improvisationsreiche Jazz-Abende",
-      "date_start": "2027-06-05",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "a61eeea3a8927a55",
-      "title": "Gruppe Live - Die Shadows im 50er-Jahre-Sound",
-      "date_start": "2027-06-20",
-      "source": "glasperlenspiel"
-    }
-  ]
+  "removed": []
 }

@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-30T09:23:13.018398+02:00",
+  "scraped_at": "2026-07-01T08:56:11.997447+02:00",
   "city": "eberdingen",
   "event_count": 14,
   "flagged_count": 0,
@@ -11,9 +11,9 @@
     "eberdingen_veranstaltungen": 14
   },
   "sources_failed": [],
-  "data_hash": "419bbfabda38456d",
+  "data_hash": "9c29079672412666",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 30.06.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 01.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "eberdingen_veranstaltungen": 0.96
@@ -25,16 +25,16 @@
   "quality_report": {
     "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
-    "flagged_rate_4week_avg": null,
+    "flagged_rate_4week_avg": 0.0,
     "trend": "insufficient_data",
-    "runtime_minutes": 650.6,
-    "runtime_delta_vs_baseline": 2.635,
+    "runtime_minutes": 562.5,
+    "runtime_delta_vs_baseline": 2.142,
     "source_health": {
       "eberdingen_veranstaltungen": 0.96
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "critical",
-    "generated_at": "2026-06-30T13:05:03.331605+02:00"
+    "generated_at": "2026-07-01T11:36:21.936811+02:00"
   }
 }
