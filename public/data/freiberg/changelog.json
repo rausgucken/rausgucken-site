@@ -1,42 +1,31 @@
 {
-  "generated_at": "2026-07-02T05:14:42.732147+02:00",
+  "generated_at": "2026-07-03T05:21:50.073816+02:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-07-01T05:12:57.718635+02:00",
-  "count_added": 0,
-  "count_removed": 5,
-  "added": [],
+  "previous_run": "2026-07-02T05:14:42.756094+02:00",
+  "count_added": 2,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "df207b548553e0fd",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-02-03",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "8049ac2b7c8562cd",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-02-03",
+      "source": "freiberg_veranstaltungen"
+    }
+  ],
   "removed": [
     {
-      "id": "2f5539a18868e51f",
-      "title": "Freiberger Wochenmarkt",
-      "date_start": "2026-07-01",
-      "source": "freiberg_veranstaltungen"
-    },
-    {
-      "id": "fffa6e92226d9930",
-      "title": "DRK-Tanzkreis 60+",
-      "date_start": "2026-07-01",
-      "source": "freiberg_veranstaltungen"
-    },
-    {
-      "id": "c5192fdb05bf57a8",
-      "title": "Kaffee für alle Freibergerinnen und Freiberger",
-      "date_start": "2026-07-01",
-      "source": "freiberg_veranstaltungen"
-    },
-    {
-      "id": "92177635201f184d",
-      "title": "Maltreff",
-      "date_start": "2026-07-01",
-      "source": "freiberg_veranstaltungen"
-    },
-    {
-      "id": "a0aee7ec4ae4c3b4",
-      "title": "ADFC Feierabendtour",
-      "date_start": "2026-07-01",
+      "id": "d810557b275b1cbf",
+      "title": "ADFC Radtreff",
+      "date_start": "2026-07-02",
       "source": "freiberg_veranstaltungen"
     }
   ]

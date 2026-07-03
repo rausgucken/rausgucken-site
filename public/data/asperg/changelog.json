@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-02T10:54:47.005576+02:00",
+  "generated_at": "2026-07-03T11:43:21.205213+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
     "asperg_fuehrungen",
+    "asperg_veranstaltungen",
     "glasperlenspiel"
   ],
-  "previous_run": "2026-07-01T11:17:35.608127+02:00",
-  "count_added": 15,
-  "count_removed": 0,
+  "previous_run": "2026-07-02T10:54:47.026927+02:00",
+  "count_added": 17,
+  "count_removed": 1,
   "added": [
     {
       "id": "df2fb65f3b7fecca",
@@ -99,7 +99,26 @@
       "title": "Humorfest mit Ernst Mantel und Werner Koczwara",
       "date_start": "2026-06-09",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "e5714bd6885d08a9",
+      "title": "Krämermarkt",
+      "date_start": "2026-07-22",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "961bae5bbbdc8898",
+      "title": "Hobbykunstmarkt",
+      "date_start": "2026-10-04",
+      "source": "asperg_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "6258e1d54ceac3b7",
+      "title": "improvisationsreiche Jazz-Abende",
+      "date_start": "2026-12-04",
+      "source": "glasperlenspiel"
+    }
+  ]
 }

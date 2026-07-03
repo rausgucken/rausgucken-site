@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-02T06:02:35.270559+02:00",
+  "generated_at": "2026-07-03T06:18:32.796931+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
+    "sachsenheim_museum",
     "sachsenheim_kultur",
-    "sachsenheim_museum"
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-07-01T05:12:59.629977+02:00",
-  "count_added": 7,
-  "count_removed": 0,
+  "previous_run": "2026-07-02T06:02:35.290903+02:00",
+  "count_added": 9,
+  "count_removed": 3,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -51,7 +51,38 @@
       "title": "Führung, Zu Gast bei Rittern und Geistern",
       "date_start": "2026-05-17",
       "source": "sachsenheim_library"
+    },
+    {
+      "id": "67de2582a0a1ee35",
+      "title": "Feuerwehr Infoabend - Wir stellen uns vor",
+      "date_start": "2026-07-06",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "95b0698a091c6565",
+      "title": "2. Sitzung des Zweckverbandes Eichwald",
+      "date_start": "2026-07-27",
+      "source": "sachsenheim_kultur"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "47db4b1ebe70dcc2",
+      "title": "Sachsenheimer Klopferlestag",
+      "date_start": "2026-09-13",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "927b35fa6573a29d",
+      "title": "Krämermarkt",
+      "date_start": "2026-09-21",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "b2cbfe1116fa45e5",
+      "title": "Krämermarkt",
+      "date_start": "2026-09-21",
+      "source": "sachsenheim_library"
+    }
+  ]
 }
