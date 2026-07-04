@@ -23,18 +23,18 @@
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 617.2,
-    "runtime_delta_vs_baseline": 2.448,
+    "runtime_minutes": 553.4,
+    "runtime_delta_vs_baseline": 2.092,
     "source_health": {
       "loechgau_gemeinde": 0.96
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-07-03T12:30:07.375238+02:00"
+    "status": "critical",
+    "generated_at": "2026-07-04T11:25:48.599249+02:00"
   }
 }

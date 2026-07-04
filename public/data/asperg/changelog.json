@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-03T11:43:21.205213+02:00",
+  "generated_at": "2026-07-04T11:01:30.759626+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
+    "glasperlenspiel",
     "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-07-02T10:54:47.026927+02:00",
-  "count_added": 17,
-  "count_removed": 1,
+  "previous_run": "2026-07-03T11:43:21.226246+02:00",
+  "count_added": 16,
+  "count_removed": 2,
   "added": [
     {
       "id": "df2fb65f3b7fecca",
@@ -101,9 +101,17 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "e5714bd6885d08a9",
-      "title": "Krämermarkt",
-      "date_start": "2026-07-22",
+      "id": "ed3935ab415a98c5",
+      "title": "Physik in Hollywood II",
+      "date_start": "2026-11-08",
+      "source": "glasperlenspiel"
+    }
+  ],
+  "removed": [
+    {
+      "id": "fc43c58210d1364f",
+      "title": "Jam Session – Die Glasperlenspieler",
+      "date_start": "2026-07-03",
       "source": "asperg_veranstaltungen"
     },
     {
@@ -111,14 +119,6 @@
       "title": "Hobbykunstmarkt",
       "date_start": "2026-10-04",
       "source": "asperg_veranstaltungen"
-    }
-  ],
-  "removed": [
-    {
-      "id": "6258e1d54ceac3b7",
-      "title": "improvisationsreiche Jazz-Abende",
-      "date_start": "2026-12-04",
-      "source": "glasperlenspiel"
     }
   ]
 }
