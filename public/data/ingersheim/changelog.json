@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-07-04T08:42:58.724562+02:00",
+  "generated_at": "2026-07-05T08:30:13.636223+02:00",
   "city": "ingersheim",
   "sources": [
     "ingersheim_gemeinde"
   ],
-  "previous_run": "2026-07-03T08:32:27.709974+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-07-04T08:42:58.745077+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "be2234e05f105094",
+      "title": "Sommerabschluss",
+      "date_start": "2026-07-15",
+      "source": "ingersheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "318b4bb878f9fb9e",
+      "title": "Repair-Café",
+      "date_start": "2026-07-04",
+      "source": "ingersheim_gemeinde"
+    }
+  ]
 }

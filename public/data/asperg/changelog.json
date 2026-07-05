@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-04T11:01:30.759626+02:00",
+  "generated_at": "2026-07-05T10:43:12.424571+02:00",
   "city": "asperg",
   "sources": [
+    "asperg_fuehrungen",
     "glasperlenspiel",
-    "asperg_veranstaltungen",
-    "asperg_fuehrungen"
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-07-03T11:43:21.226246+02:00",
-  "count_added": 16,
-  "count_removed": 2,
+  "previous_run": "2026-07-04T11:01:30.781108+02:00",
+  "count_added": 17,
+  "count_removed": 3,
   "added": [
     {
       "id": "df2fb65f3b7fecca",
@@ -101,24 +101,36 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "ed3935ab415a98c5",
-      "title": "Physik in Hollywood II",
-      "date_start": "2026-11-08",
+      "id": "961bae5bbbdc8898",
+      "title": "Hobbykunstmarkt",
+      "date_start": "2026-10-04",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "5bd50ec3222bd8d5",
+      "title": "Kabarettabend mit HG Butzko",
+      "date_start": "2026-07-04",
       "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "fc43c58210d1364f",
-      "title": "Jam Session – Die Glasperlenspieler",
-      "date_start": "2026-07-03",
+      "id": "8b5002def19f0add",
+      "title": "Bilderbuchkino",
+      "date_start": "2026-07-04",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "961bae5bbbdc8898",
-      "title": "Hobbykunstmarkt",
-      "date_start": "2026-10-04",
+      "id": "c8c10bfc6aa857e7",
+      "title": "RepairCafe & UpcyclingWerkstatt",
+      "date_start": "2026-07-04",
       "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "a53063345b384a1d",
+      "title": "Kabarett von HG. Butzko",
+      "date_start": "2026-07-04",
+      "source": "glasperlenspiel"
     }
   ]
 }

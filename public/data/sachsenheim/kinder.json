@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-07-05T06:00:01.509251+02:00",
-  "event_count": 3,
+  "generated_at": "2026-07-05T06:19:22.051828+02:00",
+  "event_count": 4,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -27,7 +27,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-04T02:03:15.229301+02:00",
+      "scraped_at": "2026-07-05T02:05:58.236830+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -59,7 +59,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-04T02:03:32.557022+02:00",
+      "scraped_at": "2026-07-05T02:06:22.638325+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -92,7 +92,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-07-04T02:03:34.333615+02:00",
+      "scraped_at": "2026-07-05T02:06:25.071821+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -100,6 +100,38 @@
       "editorial_tip": null,
       "source_label": "Stadtbücherei Sachsenheim",
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/wein-am-schloss-2026-09-11-sach-1"
+    },
+    {
+      "id": "47db4b1ebe70dcc2",
+      "title": "Sachsenheimer Klopferlestag",
+      "date_start": "2026-09-13",
+      "date_end": null,
+      "time": "13:00 - 18:00 Uhr",
+      "description": "Inmitten des idyllischen Schlossgartens Großsachsenheim findet das Familienfest \"Sachsenheimer Klopferlestag\" statt. Von 13:00 bis 18:00 Uhr lockt ein buntes Programm mit vielen Highlights für alle Altersgruppen.",
+      "location": "Schlossgarten Großsachsenheim, 74343 Sachsenheim",
+      "price": null,
+      "age_min": 0,
+      "age_max": null,
+      "tags": [
+        "Familie",
+        "Fest"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Sachsenheimer-Klopferlestag-event-appointment5379",
+      "original_url": "https://www.sachsenheim.de/termin/Sachsenheimer-Klopferlestag-event-appointment5379",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "sachsenheimer-klopferlestag-2026-09-13-sach",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-07-05T02:06:02.455710+02:00",
+      "extraction_confidence": 0.95,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/sachsenheimer-klopferlestag-2026-09-13-sach"
     }
   ]
 }

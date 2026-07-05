@@ -1,7 +1,7 @@
 {
   "subset": "tomorrow",
-  "generated_at": "2026-07-05T06:00:01.458551+02:00",
-  "event_count": 1,
+  "generated_at": "2026-07-05T10:48:22.861972+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,14 +26,45 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-04T02:15:51.662932+02:00",
+      "scraped_at": "2026-07-05T02:16:16.786621+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/kostuemfuehrung-nedd-ganz-saubr-2026-07-06-ludw"
+    },
+    {
+      "id": "c7153293c4b958c0",
+      "title": "NTL Gospel Choir",
+      "date_start": "2026-07-06",
+      "date_end": null,
+      "time": "19:30 - 22:00 Uhr",
+      "description": "In der Evangelischen Wolfgangkirche bietet das NTL Gospel Choir ein einzigartiges Konzert an, kombiniert aus leidenschaftlicher Gesangsausübung und inspirierender Musik.",
+      "location": "Ev. Wolfgangkirche",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Musik"
+      ],
+      "link": "http://www.ntl-gospel-choir.de",
+      "original_url": "http://www.ntl-gospel-choir.de",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "ntl-gospel-choir-2026-07-06-ludw",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-07-05T02:16:16.787069+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Ludwigsburg",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/kostuemfuehrung-nedd-ganz-saubr-2026-07-06-ludw"
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/ntl-gospel-choir-2026-07-06-ludw"
     }
   ]
 }
