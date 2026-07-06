@@ -21,5 +21,20 @@
   "source_event_counts": {
     "freudental_gemeinde": 35
   },
-  "count_drift_warnings": {}
+  "count_drift_warnings": {},
+  "quality_report": {
+    "regression_pass_rate": 1.0,
+    "flagged_rate_current": 0.0,
+    "flagged_rate_4week_avg": null,
+    "trend": "insufficient_data",
+    "runtime_minutes": 591.1,
+    "runtime_delta_vs_baseline": 2.302,
+    "source_health": {
+      "freudental_gemeinde": 0.99
+    },
+    "count_drift_warnings": {},
+    "quarantined_sources": [],
+    "status": "warning",
+    "generated_at": "2026-07-06T12:13:58.255537+02:00"
+  }
 }

@@ -1,18 +1,24 @@
 {
-  "generated_at": "2026-07-05T09:11:08.542088+02:00",
+  "generated_at": "2026-07-06T09:03:49.611883+02:00",
   "city": "hemmingen",
   "sources": [
     "hemmingen_gemeinde"
   ],
-  "previous_run": "2026-07-04T09:27:29.526906+02:00",
+  "previous_run": "2026-07-05T09:11:08.563315+02:00",
   "count_added": 0,
-  "count_removed": 1,
+  "count_removed": 2,
   "added": [],
   "removed": [
     {
-      "id": "a4920851b39525e1",
-      "title": "Warentauschtag",
+      "id": "7afeec5de275173a",
+      "title": "Gemeindefreizeit",
       "date_start": "2026-07-03",
+      "source": "hemmingen_gemeinde"
+    },
+    {
+      "id": "da787032ba20ac6b",
+      "title": "Gemeindefest",
+      "date_start": "2026-07-05",
       "source": "hemmingen_gemeinde"
     }
   ]

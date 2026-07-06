@@ -1,69 +1,99 @@
 {
-  "generated_at": "2026-07-05T05:19:59.236079+02:00",
+  "generated_at": "2026-07-06T05:20:27.058557+02:00",
   "city": "kornwestheim",
   "sources": [
+    "das_k_buecherei",
     "das_k_spielplan",
-    "kornwestheim",
-    "das_k_buecherei"
+    "kornwestheim"
   ],
-  "previous_run": "2026-07-04T06:43:46.590527+02:00",
-  "count_added": 4,
-  "count_removed": 5,
+  "previous_run": "2026-07-05T05:19:59.259901+02:00",
+  "count_added": 6,
+  "count_removed": 8,
   "added": [
     {
-      "id": "95f98e3a126f4883",
-      "title": "LesefantenClub",
-      "date_start": "2026-09-24",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "7af06317d03cf260",
-      "title": "Der kleine Erdvogel",
+      "id": "3a3d0924e13261bb",
+      "title": "Galeriekonzert",
       "date_start": "2027-01-10",
       "source": "kornwestheim"
     },
     {
-      "id": "2bb7f863adcc142e",
-      "title": "Sommerfest im Schafhof",
-      "date_start": "2026-07-25",
+      "id": "bca002fc84ed3a9d",
+      "title": "Theatersport",
+      "date_start": "2027-01-15",
       "source": "kornwestheim"
     },
     {
-      "id": "dcf34e8c91e81be5",
+      "id": "53ba1133473e6615",
+      "title": "Heimsuchung",
+      "date_start": "2027-01-18",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "889f79e87328acef",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2027-01-10",
+      "date_start": "2027-01-15",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "daa601368e2579fe",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2027-01-16",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "de73c7e7491f1d7b",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2027-01-17",
       "source": "kornwestheim"
     }
   ],
   "removed": [
     {
-      "id": "7d4c74bc7ac67df1",
+      "id": "0b317621b6a0edd5",
       "title": "Ausstellung \"Marion Eichmann – The Paper Code\"",
-      "date_start": "2026-07-04",
+      "date_start": "2026-07-05",
       "source": "kornwestheim"
     },
     {
-      "id": "0202501dde183d01",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht\"",
-      "date_start": "2026-07-04",
+      "id": "6f395d609f32df4b",
+      "title": "Kostenloser Qigong-Workshop",
+      "date_start": "2026-07-05",
       "source": "kornwestheim"
     },
     {
-      "id": "4a35cdca46b3b808",
+      "id": "10cae18bf61f50bb",
       "title": "Begegnungscafé auf dem Friedhof",
-      "date_start": "2026-07-04",
+      "date_start": "2026-07-05",
       "source": "kornwestheim"
     },
     {
-      "id": "04378d5719ae8eb7",
-      "title": "LesefantenClub",
-      "date_start": "2026-09-24",
-      "source": "das_k_buecherei"
+      "id": "6e05655c3e3717f7",
+      "title": "Öffentliche Sonntagsführung",
+      "date_start": "2026-07-05",
+      "source": "kornwestheim"
     },
     {
-      "id": "2831e81f57bc0e9c",
-      "title": "Der kleine Erdvogel",
+      "id": "cbfbbc3921bc827c",
+      "title": "Finissage mit Dialogführung",
+      "date_start": "2026-07-05",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "268f92793bad2dd4",
+      "title": "Galeriekonzert",
       "date_start": "2027-01-10",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "d02c442bcc3e7a2e",
+      "title": "Theatersport",
+      "date_start": "2027-01-15",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "28d811e6265b70c2",
+      "title": "Heimsuchung",
+      "date_start": "2027-01-18",
       "source": "das_k_spielplan"
     }
   ]

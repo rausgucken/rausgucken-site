@@ -1,40 +1,40 @@
 {
-  "scraped_at": "2026-07-05T06:32:20.045254+02:00",
+  "scraped_at": "2026-07-06T06:21:01.415301+02:00",
   "city": "affalterbach",
-  "event_count": 54,
+  "event_count": 53,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "affalterbach_stadt"
   ],
   "source_counts": {
-    "affalterbach_stadt": 54
+    "affalterbach_stadt": 53
   },
   "sources_failed": [],
-  "data_hash": "078893e4409e821d",
+  "data_hash": "bb1c21b8e86ae38a",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 05.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 06.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "affalterbach_stadt": 0.99
   },
   "source_event_counts": {
-    "affalterbach_stadt": 54
+    "affalterbach_stadt": 53
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 0.0,
+    "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 528.4,
-    "runtime_delta_vs_baseline": 1.952,
+    "runtime_minutes": 591.1,
+    "runtime_delta_vs_baseline": 2.302,
     "source_health": {
       "affalterbach_stadt": 0.99
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "critical",
-    "generated_at": "2026-07-05T11:00:11.962725+02:00"
+    "status": "warning",
+    "generated_at": "2026-07-06T12:13:57.983104+02:00"
   }
 }

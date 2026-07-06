@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-07-05T05:19:59.259901+02:00",
+  "scraped_at": "2026-07-06T05:20:27.082584+02:00",
   "city": "kornwestheim",
-  "event_count": 219,
+  "event_count": 217,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -10,14 +10,14 @@
     "kornwestheim"
   ],
   "source_counts": {
-    "kornwestheim": 192,
+    "kornwestheim": 193,
     "das_k_buecherei": 3,
-    "das_k_spielplan": 24
+    "das_k_spielplan": 21
   },
   "sources_failed": [],
-  "data_hash": "d0106569a2e594a4",
+  "data_hash": "66d4d38f6f1925a9",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 05.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 06.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "kornwestheim": 1.0,
@@ -25,18 +25,18 @@
     "das_k_spielplan": 1.0
   },
   "source_event_counts": {
-    "kornwestheim": 192,
+    "kornwestheim": 193,
     "das_k_buecherei": 3,
-    "das_k_spielplan": 24
+    "das_k_spielplan": 21
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 0.0,
+    "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 528.4,
-    "runtime_delta_vs_baseline": 1.952,
+    "runtime_minutes": 591.1,
+    "runtime_delta_vs_baseline": 2.302,
     "source_health": {
       "kornwestheim": 1.0,
       "das_k_buecherei": 1.0,
@@ -44,7 +44,7 @@
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "critical",
-    "generated_at": "2026-07-05T11:00:12.302725+02:00"
+    "status": "warning",
+    "generated_at": "2026-07-06T12:13:58.441058+02:00"
   }
 }
