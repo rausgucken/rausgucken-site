@@ -1,37 +1,75 @@
 {
-  "generated_at": "2026-07-06T05:20:27.058557+02:00",
+  "generated_at": "2026-07-07T06:00:37.597671+02:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_buecherei",
     "das_k_spielplan",
+    "das_k_buecherei",
     "kornwestheim"
   ],
-  "previous_run": "2026-07-05T05:19:59.259901+02:00",
-  "count_added": 6,
-  "count_removed": 8,
+  "previous_run": "2026-07-06T05:20:27.082584+02:00",
+  "count_added": 7,
+  "count_removed": 6,
   "added": [
     {
-      "id": "3a3d0924e13261bb",
-      "title": "Galeriekonzert",
-      "date_start": "2027-01-10",
+      "id": "a4704c1de54cc7a8",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-08-07",
       "source": "kornwestheim"
     },
     {
-      "id": "bca002fc84ed3a9d",
-      "title": "Theatersport",
-      "date_start": "2027-01-15",
+      "id": "62f2f2c1086700f3",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-10-02",
       "source": "kornwestheim"
     },
     {
-      "id": "53ba1133473e6615",
+      "id": "28d811e6265b70c2",
       "title": "Heimsuchung",
       "date_start": "2027-01-18",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "f96cfb4574951b29",
+      "title": "Ferienspaß im Alfred-Kercher-Sportbad!",
+      "date_start": "2026-07-15",
       "source": "kornwestheim"
     },
     {
-      "id": "889f79e87328acef",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2027-01-15",
+      "id": "b4b1287f51dadf47",
+      "title": "Busausfahrt zum Baumwipfelpfad nach Bad Wildbad",
+      "date_start": "2026-07-15",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "c51081fc95ef70be",
+      "title": "Ferienspaß im Alfred-Kercher-Sportbad!",
+      "date_start": "2026-08-01",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "f20fa48557586889",
+      "title": "Ferienspaß im Alfred-Kercher-Sportbad!",
+      "date_start": "2026-08-08",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "94ea6579371172de",
+      "title": "Kaffeetreff - Kocher Oldie Treff",
+      "date_start": "2026-07-06",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "212ebc0e09060848",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-08-07",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "168b293eb982896a",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-10-02",
       "source": "kornwestheim"
     },
     {
@@ -45,56 +83,12 @@
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
       "date_start": "2027-01-17",
       "source": "kornwestheim"
-    }
-  ],
-  "removed": [
-    {
-      "id": "0b317621b6a0edd5",
-      "title": "Ausstellung \"Marion Eichmann – The Paper Code\"",
-      "date_start": "2026-07-05",
-      "source": "kornwestheim"
     },
     {
-      "id": "6f395d609f32df4b",
-      "title": "Kostenloser Qigong-Workshop",
-      "date_start": "2026-07-05",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "10cae18bf61f50bb",
-      "title": "Begegnungscafé auf dem Friedhof",
-      "date_start": "2026-07-05",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "6e05655c3e3717f7",
-      "title": "Öffentliche Sonntagsführung",
-      "date_start": "2026-07-05",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "cbfbbc3921bc827c",
-      "title": "Finissage mit Dialogführung",
-      "date_start": "2026-07-05",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "268f92793bad2dd4",
-      "title": "Galeriekonzert",
-      "date_start": "2027-01-10",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "d02c442bcc3e7a2e",
-      "title": "Theatersport",
-      "date_start": "2027-01-15",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "28d811e6265b70c2",
+      "id": "53ba1133473e6615",
       "title": "Heimsuchung",
       "date_start": "2027-01-18",
-      "source": "das_k_spielplan"
+      "source": "kornwestheim"
     }
   ]
 }

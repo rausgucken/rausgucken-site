@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-06T10:59:53.918605+02:00",
+  "generated_at": "2026-07-07T10:56:21.188075+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
     "asperg_fuehrungen",
+    "asperg_veranstaltungen",
     "glasperlenspiel"
   ],
-  "previous_run": "2026-07-05T10:43:12.446043+02:00",
-  "count_added": 16,
+  "previous_run": "2026-07-06T10:59:53.945591+02:00",
+  "count_added": 19,
   "count_removed": 1,
   "added": [
     {
@@ -83,6 +83,12 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "c794da088fe3c73b",
+      "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
+      "date_start": "2026-07-05",
+      "source": "asperg_fuehrungen"
+    },
+    {
       "id": "8852b65c7ff4a9cb",
       "title": "Tag der dt. Einheit - Ein Gang über die schwäbische Bastille",
       "date_start": "2025-10-03",
@@ -105,13 +111,25 @@
       "title": "Humorfest mit Ernst Mantel und Werner Koczwara",
       "date_start": "2026-06-09",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "28d12f949da62643",
+      "title": "Blutspendeaktion DRK",
+      "date_start": "2026-07-20",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "c58fafca91273453",
+      "title": "Führung „Black stories“ – Asperg’s dunkle Seite",
+      "date_start": "2026-11-08",
+      "source": "asperg_veranstaltungen"
     }
   ],
   "removed": [
     {
-      "id": "adb35263417f0ee5",
-      "title": "Führung - Ein Gang über die schwäbische Bastille",
-      "date_start": "2026-07-05",
+      "id": "f6bba2e542c1946b",
+      "title": "Führung „Black stories“ – Asperg’s dunkle Seite",
+      "date_start": "2026-11-08",
       "source": "asperg_veranstaltungen"
     }
   ]

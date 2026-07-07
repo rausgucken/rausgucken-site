@@ -1,14 +1,13 @@
 {
-  "generated_at": "2026-07-06T06:20:49.721368+02:00",
+  "generated_at": "2026-07-07T06:22:14.899196+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_kultur",
-    "sachsenheim_museum",
-    "sachsenheim_library"
+    "sachsenheim_library",
+    "sachsenheim_kultur"
   ],
-  "previous_run": "2026-07-05T06:19:22.023737+02:00",
-  "count_added": 7,
-  "count_removed": 1,
+  "previous_run": "2026-07-06T06:20:49.741383+02:00",
+  "count_added": 9,
+  "count_removed": 2,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -47,18 +46,36 @@
       "source": "sachsenheim_kultur"
     },
     {
+      "id": "c249d87497786cc1",
+      "title": "Öffentliche Führung – „Alles für die Katz!?“ Künstler sehen Katzen",
+      "date_start": "2026-09-27",
+      "source": "sachsenheim_kultur"
+    },
+    {
       "id": "7863010f44a7a5a4",
       "title": "Führung, Zu Gast bei Rittern und Geistern",
       "date_start": "2026-05-17",
       "source": "sachsenheim_library"
+    },
+    {
+      "id": "1f54aba41e24d8c1",
+      "title": "Spiegelei und Blaubeerlameile",
+      "date_start": "2026-10-01",
+      "source": "sachsenheim_kultur"
     }
   ],
   "removed": [
     {
-      "id": "d4349694b2f8a14c",
-      "title": "Sommerkonzert Classic Open-Air",
-      "date_start": "2026-07-05",
+      "id": "67de2582a0a1ee35",
+      "title": "Feuerwehr Infoabend - Wir stellen uns vor",
+      "date_start": "2026-07-06",
       "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "6a6a837fbc6c9f80",
+      "title": "Öffentliche Führung – „Alles für die Katz!?“ Künstler sehen Katzen",
+      "date_start": "2026-09-27",
+      "source": "sachsenheim_museum"
     }
   ]
 }

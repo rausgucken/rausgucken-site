@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-07-06T05:20:27.481264+02:00",
+  "scraped_at": "2026-07-07T06:26:12.371189+02:00",
   "city": "markgroeningen",
-  "event_count": 128,
+  "event_count": 126,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "markgroeningen"
   ],
   "source_counts": {
-    "markgroeningen": 128
+    "markgroeningen": 126
   },
   "sources_failed": [],
-  "data_hash": "cfe73c0acd3d71c1",
+  "data_hash": "aab9b87ee9a23ca6",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 06.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 07.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "markgroeningen": 0.99
   },
   "source_event_counts": {
-    "markgroeningen": 128
+    "markgroeningen": 126
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 591.1,
-    "runtime_delta_vs_baseline": 2.302,
+    "runtime_minutes": 545.1,
+    "runtime_delta_vs_baseline": 2.045,
     "source_health": {
       "markgroeningen": 0.99
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-07-06T12:13:58.557824+02:00"
+    "generated_at": "2026-07-07T11:15:56.226130+02:00"
   }
 }
