@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-07T10:56:21.188075+02:00",
+  "generated_at": "2026-07-08T11:00:58.673043+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
     "asperg_veranstaltungen",
+    "asperg_fuehrungen",
     "glasperlenspiel"
   ],
-  "previous_run": "2026-07-06T10:59:53.945591+02:00",
-  "count_added": 19,
+  "previous_run": "2026-07-07T10:56:21.213270+02:00",
+  "count_added": 21,
   "count_removed": 1,
   "added": [
     {
@@ -32,12 +32,6 @@
       "id": "facf4a9de3005998",
       "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
       "date_start": "2026-04-30",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "fd7e0d9b35f7bd2c",
-      "title": "Asperg lecker – Stadtführung mit kulturellen und kulinarischen Häppchen",
-      "date_start": "2026-05-08",
       "source": "asperg_fuehrungen"
     },
     {
@@ -113,23 +107,41 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "28d12f949da62643",
-      "title": "Blutspendeaktion DRK",
-      "date_start": "2026-07-20",
+      "id": "ba9d495cc3c7c0d1",
+      "title": "Stadtführung mit kulturellen und kulinarischen Häppchen",
+      "date_start": "2026-05-08",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "1c6ad3d7d99bdd15",
+      "title": "Halloween Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
+      "date_start": "2025-10-31",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "393f62563f52a4c0",
+      "title": "Gefängnis Geschichten",
+      "date_start": "2026-09-27",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "c58fafca91273453",
-      "title": "Führung „Black stories“ – Asperg’s dunkle Seite",
-      "date_start": "2026-11-08",
+      "id": "0318c1a63ebe0fff",
+      "title": "Gruselige Kinderführung an Halloween",
+      "date_start": "2026-10-31",
       "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "af64c9be35ed4492",
+      "title": "Barbara Mergenthaler und Katharina Reich: Mascha Kaléko - Philosophie der Lyrik",
+      "date_start": "2026-11-01",
+      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "f6bba2e542c1946b",
-      "title": "Führung „Black stories“ – Asperg’s dunkle Seite",
-      "date_start": "2026-11-08",
+      "id": "4d49575f6fc09ea2",
+      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
+      "date_start": "2026-10-31",
       "source": "asperg_veranstaltungen"
     }
   ]

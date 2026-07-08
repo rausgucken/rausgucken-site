@@ -1,7 +1,7 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-07-08T06:00:01.614616+02:00",
-  "event_count": 3,
+  "generated_at": "2026-07-08T08:21:05.994592+02:00",
+  "event_count": 4,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,7 +26,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-07T02:06:49.415724+02:00",
+      "scraped_at": "2026-07-08T02:06:42.984642+02:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -55,7 +55,7 @@
       "city": "steinheim",
       "slug": "neubuergerbegruessung-2026-07-15t1830000200-stei",
       "weekdays": [],
-      "scraped_at": "2026-07-07T02:06:56.962070+02:00",
+      "scraped_at": "2026-07-08T02:06:54.667206+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -84,7 +84,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-07-07T02:06:59.675291+02:00",
+      "scraped_at": "2026-07-08T02:06:55.964851+02:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -92,6 +92,35 @@
       "editorial_tip": null,
       "source_label": "Stadt Steinheim an der Murr",
       "canonical_url": "https://www.rausgucken.de/steinheim/events/hoepfigheimer-schlosshof-kino-2026-07-16-stei"
+    },
+    {
+      "id": "00f18c86a4259a8d",
+      "title": "Open-Air-Kino",
+      "date_start": "2026-07-16",
+      "date_end": null,
+      "time": "17:00 – 22:00 Uhr",
+      "description": "Im Schloßhof Höpfigheim bietet sich ein Open-Air-Kino mit Feiern und Geselligkeit an.",
+      "location": "Schloßhof Höpfigheim",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.stadt-steinheim.de/kultur-sport/veranstaltungen/1722/beschreibung-fehlt-bewirtung-open-air-kino-in-hoepfigheim-feuerwehr-steinheim",
+      "original_url": "https://www.stadt-steinheim.de/kultur-sport/veranstaltungen/1722/beschreibung-fehlt-bewirtung-open-air-kino-in-hoepfigheim-feuerwehr-steinheim",
+      "source": "steinheim_stadt",
+      "city": "steinheim",
+      "slug": "open-air-kino-2026-07-16-stei",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-07-08T02:06:58.735475+02:00",
+      "extraction_confidence": 0.65,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Steinheim an der Murr",
+      "canonical_url": "https://www.rausgucken.de/steinheim/events/open-air-kino-2026-07-16-stei"
     }
   ]
 }

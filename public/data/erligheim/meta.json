@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-07T09:01:54.380457+02:00",
+  "scraped_at": "2026-07-08T09:00:36.998558+02:00",
   "city": "erligheim",
   "event_count": 28,
   "flagged_count": 0,
@@ -11,9 +11,9 @@
     "erligheim_gemeinde": 28
   },
   "sources_failed": [],
-  "data_hash": "e0d0a180acb5ff35",
+  "data_hash": "f5b398d4dc3c47ed",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 07.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 08.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "erligheim_gemeinde": 0.96
@@ -26,15 +26,15 @@
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
-    "trend": "insufficient_data",
-    "runtime_minutes": 545.1,
-    "runtime_delta_vs_baseline": 2.045,
+    "trend": "stable",
+    "runtime_minutes": 554.8,
+    "runtime_delta_vs_baseline": 2.099,
     "source_health": {
       "erligheim_gemeinde": 0.96
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-07-07T11:15:55.923412+02:00"
+    "generated_at": "2026-07-08T11:25:49.231503+02:00"
   }
 }

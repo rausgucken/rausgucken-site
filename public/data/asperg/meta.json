@@ -1,23 +1,23 @@
 {
-  "scraped_at": "2026-07-07T10:56:21.213270+02:00",
+  "scraped_at": "2026-07-08T11:00:58.694120+02:00",
   "city": "asperg",
-  "event_count": 79,
+  "event_count": 81,
   "flagged_count": 0,
-  "expired_count": 17,
+  "expired_count": 18,
   "sources_scraped": [
     "asperg_fuehrungen",
     "asperg_veranstaltungen",
     "glasperlenspiel"
   ],
   "source_counts": {
-    "glasperlenspiel": 29,
-    "asperg_veranstaltungen": 44,
+    "glasperlenspiel": 30,
+    "asperg_veranstaltungen": 45,
     "asperg_fuehrungen": 6
   },
   "sources_failed": [],
-  "data_hash": "6fd8da674824365d",
+  "data_hash": "c47209b7a879ee79",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 07.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 08.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "glasperlenspiel": 0.94,
@@ -25,8 +25,8 @@
     "asperg_fuehrungen": 0.81
   },
   "source_event_counts": {
-    "glasperlenspiel": 29,
-    "asperg_veranstaltungen": 44,
+    "glasperlenspiel": 30,
+    "asperg_veranstaltungen": 45,
     "asperg_fuehrungen": 6
   },
   "count_drift_warnings": {},
@@ -35,8 +35,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 545.1,
-    "runtime_delta_vs_baseline": 2.045,
+    "runtime_minutes": 554.8,
+    "runtime_delta_vs_baseline": 2.099,
     "source_health": {
       "glasperlenspiel": 0.94,
       "asperg_veranstaltungen": 1.0,
@@ -45,6 +45,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-07-07T11:15:55.749694+02:00"
+    "generated_at": "2026-07-08T11:25:49.062573+02:00"
   }
 }
