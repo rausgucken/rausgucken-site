@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-08T11:00:58.673043+02:00",
+  "generated_at": "2026-07-09T10:55:28.348817+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
     "asperg_fuehrungen",
+    "asperg_veranstaltungen",
     "glasperlenspiel"
   ],
-  "previous_run": "2026-07-07T10:56:21.213270+02:00",
-  "count_added": 21,
+  "previous_run": "2026-07-08T11:00:58.694120+02:00",
+  "count_added": 19,
   "count_removed": 1,
   "added": [
     {
@@ -32,6 +32,12 @@
       "id": "facf4a9de3005998",
       "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
       "date_start": "2026-04-30",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "ba9d495cc3c7c0d1",
+      "title": "Stadtführung mit kulturellen und kulinarischen Häppchen",
+      "date_start": "2026-05-08",
       "source": "asperg_fuehrungen"
     },
     {
@@ -89,6 +95,18 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "1c6ad3d7d99bdd15",
+      "title": "Halloween Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
+      "date_start": "2025-10-31",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "f41d95e9fb23ce3e",
+      "title": "Gruselige Kinderführung an Halloween",
+      "date_start": "2026-10-31",
+      "source": "asperg_veranstaltungen"
+    },
+    {
       "id": "cb7d4d5e64cac6fd",
       "title": "Ausstellung",
       "date_start": "2026-11-22",
@@ -105,42 +123,12 @@
       "title": "Humorfest mit Ernst Mantel und Werner Koczwara",
       "date_start": "2026-06-09",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "ba9d495cc3c7c0d1",
-      "title": "Stadtführung mit kulturellen und kulinarischen Häppchen",
-      "date_start": "2026-05-08",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "1c6ad3d7d99bdd15",
-      "title": "Halloween Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
-      "date_start": "2025-10-31",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "393f62563f52a4c0",
-      "title": "Gefängnis Geschichten",
-      "date_start": "2026-09-27",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "0318c1a63ebe0fff",
-      "title": "Gruselige Kinderführung an Halloween",
-      "date_start": "2026-10-31",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "af64c9be35ed4492",
-      "title": "Barbara Mergenthaler und Katharina Reich: Mascha Kaléko - Philosophie der Lyrik",
-      "date_start": "2026-11-01",
-      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "4d49575f6fc09ea2",
-      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
+      "id": "0318c1a63ebe0fff",
+      "title": "Gruselige Kinderführung an Halloween",
       "date_start": "2026-10-31",
       "source": "asperg_veranstaltungen"
     }

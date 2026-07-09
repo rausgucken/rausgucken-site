@@ -1,7 +1,7 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-07-09T06:00:01.530138+02:00",
-  "event_count": 2,
+  "generated_at": "2026-07-09T08:58:30.300563+02:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -24,7 +24,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-07-08T02:06:41.997463+02:00",
+      "scraped_at": "2026-07-09T02:06:10.914159+02:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
@@ -53,7 +53,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-07-08T02:06:46.493680+02:00",
+      "scraped_at": "2026-07-09T02:06:13.583019+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -61,6 +61,37 @@
       "editorial_tip": null,
       "source_label": "Stadt Vaihingen an der Enz",
       "canonical_url": "https://www.rausgucken.de/vaihingen/events/kraemermarkt-2026-07-15-vaih"
+    },
+    {
+      "id": "76db4ee8df630c0e",
+      "title": "Den (Augen)Blick sehen!",
+      "date_start": "2026-07-17",
+      "date_end": null,
+      "time": "13:00 - 17:00 Uhr",
+      "description": "In der Veranstaltung \"Den (Augen)Blick sehen!\" laden Sie ein, die Ausstellung im KUNSTWERK zu entdecken. Von 13:00 bis 17:00 Uhr können Sie Kunstwerke in einem neuen Licht betrachten.",
+      "location": "KUNSTWERK",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Ausstellung"
+      ],
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/1913/den-augenblick-sehen",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/1913/den-augenblick-sehen",
+      "source": "vaihingen_stadt",
+      "city": "vaihingen",
+      "slug": "den-augenblick-sehen-2026-07-17-vaih",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-07-09T02:06:18.219357+02:00",
+      "extraction_confidence": 0.65,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Vaihingen an der Enz",
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/den-augenblick-sehen-2026-07-17-vaih"
     }
   ]
 }

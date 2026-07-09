@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-07-08T06:12:05.210536+02:00",
+  "scraped_at": "2026-07-09T06:12:50.618410+02:00",
   "city": "ditzingen",
-  "event_count": 360,
+  "event_count": 366,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,21 +9,21 @@
     "ditzingen_treffpunkt_adler"
   ],
   "source_counts": {
-    "ditzingen_stadt": 112,
-    "ditzingen_treffpunkt_adler": 248
+    "ditzingen_stadt": 111,
+    "ditzingen_treffpunkt_adler": 255
   },
   "sources_failed": [],
-  "data_hash": "26458b7b2f1162d0",
+  "data_hash": "405818102cb8577e",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 08.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 09.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "ditzingen_stadt": 1.0,
     "ditzingen_treffpunkt_adler": 1.0
   },
   "source_event_counts": {
-    "ditzingen_stadt": 112,
-    "ditzingen_treffpunkt_adler": 248
+    "ditzingen_stadt": 111,
+    "ditzingen_treffpunkt_adler": 255
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -31,8 +31,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 554.8,
-    "runtime_delta_vs_baseline": 2.099,
+    "runtime_minutes": 556.1,
+    "runtime_delta_vs_baseline": 2.107,
     "source_health": {
       "ditzingen_stadt": 1.0,
       "ditzingen_treffpunkt_adler": 1.0
@@ -40,6 +40,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-07-08T11:25:49.169028+02:00"
+    "generated_at": "2026-07-09T11:27:59.984976+02:00"
   }
 }
