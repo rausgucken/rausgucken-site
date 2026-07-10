@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-09T09:06:28.426626+02:00",
+  "scraped_at": "2026-07-10T08:51:24.033659+02:00",
   "city": "hessigheim",
   "event_count": 56,
   "flagged_count": 0,
@@ -11,9 +11,9 @@
     "hessigheim_gemeinde": 56
   },
   "sources_failed": [],
-  "data_hash": "d21ca436471e4404",
+  "data_hash": "c8bc527a0f4a7091",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 09.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 10.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "hessigheim_gemeinde": 0.95
@@ -23,18 +23,18 @@
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 556.1,
-    "runtime_delta_vs_baseline": 2.107,
+    "runtime_minutes": 534.3,
+    "runtime_delta_vs_baseline": 1.985,
     "source_health": {
       "hessigheim_gemeinde": 0.95
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-07-09T11:28:00.174503+02:00"
+    "status": "critical",
+    "generated_at": "2026-07-10T11:05:09.578763+02:00"
   }
 }

@@ -1,7 +1,7 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-07-10T06:00:02.028898+02:00",
-  "event_count": 22,
+  "generated_at": "2026-07-10T10:54:18.397648+02:00",
+  "event_count": 27,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,9 +26,9 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-09T02:15:31.199063+02:00",
+      "scraped_at": "2026-07-10T02:15:13.772558+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -55,7 +55,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-07-09T02:09:55.904783+02:00",
+      "scraped_at": "2026-07-10T02:09:44.118233+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -84,14 +84,74 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-07-09T02:15:31.199210+02:00",
+      "scraped_at": "2026-07-10T02:15:13.772690+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/bewegungsgruppe-hat-plaetze-frei-2026-07-14-ludw"
+    },
+    {
+      "id": "5892b36081c71654",
+      "title": "Der Gott des Gemetzels",
+      "date_start": "2026-07-14",
+      "date_end": "2026-07-26",
+      "time": "19 Uhr",
+      "description": "Im Theatergarten nimmt man an der Faszination eines Kämpfers teil, der das Schwert als sein göttliches Werkzeug benutzt. Ein spannendes Theaterstück ohne spezifische Zeitangaben oder Werbung.",
+      "location": "Theatergarten",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "http://www.theatersommer.net",
+      "original_url": "http://www.theatersommer.net",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "der-gott-des-gemetzels-2026-07-14-ludw",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-07-10T02:15:13.772792+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Ludwigsburg",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/bewegungsgruppe-hat-plaetze-frei-2026-07-14-ludw"
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/der-gott-des-gemetzels-2026-07-14-ludw"
+    },
+    {
+      "id": "10595078ddd34b18",
+      "title": "LUDWIGSBURGER VÄTERGRUPPE",
+      "date_start": "2026-07-14",
+      "date_end": null,
+      "time": "19:00 bis 21:00 Uhr",
+      "description": "In der Ludwigsburger Vätergruppe treten Väter und Erzieher zusammen, um Themen des Familienlebens und der Kindererziehung zu besprechen. Das Treffen findet im Haus Edith Stein statt.",
+      "location": "Haus Edith Stein, Kath. Bildungswerk Ludwigsburg e.V.",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.der-lebensberater.net/vaetergruppe-ludwigsburg",
+      "original_url": "https://www.der-lebensberater.net/vaetergruppe-ludwigsburg",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "ludwigsburger-vaetergruppe-2026-07-14-ludw",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-07-10T02:15:13.773241+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/ludwigsburger-vaetergruppe-2026-07-14-ludw"
     },
     {
       "id": "436247bad0ae402b",
@@ -113,7 +173,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-07-09T02:01:08.093051+02:00",
+      "scraped_at": "2026-07-10T02:00:49.813371+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -121,6 +181,35 @@
       "editorial_tip": null,
       "source_label": "Residenzschloss Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/lisa-batiashvili-2026-07-14-schl"
+    },
+    {
+      "id": "9e9376577bd7dc86",
+      "title": "Lisa Batiashvili – Ludwigsburger Schlossfestspiele",
+      "date_start": "2026-07-14",
+      "date_end": null,
+      "time": "20:00 Uhr",
+      "description": "In den Ludwigsburger Schlossfestspielen tritt die Cellistin Lisa Batiashvili auf. Mit ihrer Spielkunst verzaubert sie Zuschauer in der historischen Umgebung des Schlosses.",
+      "location": "Ludwigsburg",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://schlossfestspiele.de/veranstaltungen/lisa-batiashvili/",
+      "original_url": "https://schlossfestspiele.de/veranstaltungen/lisa-batiashvili/",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "lisa-batiashvili-ludwigsburger-schlossfestspiele-2026-07-14-ludw",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-07-10T02:15:13.773563+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/lisa-batiashvili-ludwigsburger-schlossfestspiele-2026-07-14-ludw"
     },
     {
       "id": "efeaa2ead8871298",
@@ -144,7 +233,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-07-09T02:09:54.197696+02:00",
+      "scraped_at": "2026-07-10T02:09:42.546534+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -152,6 +241,37 @@
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/internetfuehrerschein-2026-07-15-stab"
+    },
+    {
+      "id": "7c6412718cfe4030",
+      "title": "Internetführerschein",
+      "date_start": "2026-07-15",
+      "date_end": null,
+      "time": "15:30 bis 17 Uhr",
+      "description": "In der Stadtbibliothek im Kulturzentrum findet ein Workshop statt, bei dem Teilnehmer grundlegende Kenntnisse zum Surfen im Internet erwerben. Mit praktischen Übungen und Unterstützung von Fachleuten bereiten sich Anfänger auf die digitale Welt vor.",
+      "location": "Stadtbibliothek im Kulturzentrum",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Workshop"
+      ],
+      "link": "https://events-stabi.ludwigsburg.de",
+      "original_url": "https://events-stabi.ludwigsburg.de",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "internetfuehrerschein-2026-07-15-ludw",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-07-10T02:15:13.773912+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/internetfuehrerschein-2026-07-15-ludw"
     },
     {
       "id": "ea56b9028e4583a3",
@@ -175,7 +295,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-07-09T02:10:00.321843+02:00",
+      "scraped_at": "2026-07-10T02:09:48.400853+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -204,7 +324,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-07-09T02:10:00.321979+02:00",
+      "scraped_at": "2026-07-10T02:09:48.400993+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -233,7 +353,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-07-09T02:15:29.338150+02:00",
+      "scraped_at": "2026-07-10T02:15:11.931583+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -262,7 +382,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-07-09T02:15:29.338184+02:00",
+      "scraped_at": "2026-07-10T02:15:11.931618+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -293,7 +413,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-07-09T02:01:09.377760+02:00",
+      "scraped_at": "2026-07-10T02:00:51.107752+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -324,7 +444,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-07-09T02:09:55.904907+02:00",
+      "scraped_at": "2026-07-10T02:09:44.118358+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -332,6 +452,38 @@
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/bilderbuchkino-am-nachmittag-2026-07-16-stab"
+    },
+    {
+      "id": "2aadcf04324bb79a",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-07-16",
+      "date_end": null,
+      "time": "17:00–18:00 Uhr",
+      "description": "In diesem Rundgang durch die Ausstellung \"Respekt! Menschen der Karlshöhe\" werden die Lebensweisen und Arbeiten von Einheimischen vorgestellt. Besuchen Sie das Ludwigsburger Museum im MIK für ein tiefgreifendes Verständnis der Gemeinschaft.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Ausstellung"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523252796206",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523252796206",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "ausstellungsrundgang-respekt-menschen-der-karlshoehe-2026-07-16-muse",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-07-10T02:00:03.564127+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/ausstellungsrundgang-respekt-menschen-der-karlshoehe-2026-07-16-muse"
     },
     {
       "id": "6493afe699d06ffd",
@@ -353,7 +505,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-07-09T02:01:10.641024+02:00",
+      "scraped_at": "2026-07-10T02:00:52.386874+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -385,7 +537,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-07-09T02:06:39.568906+02:00",
+      "scraped_at": "2026-07-10T02:06:30.454594+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -414,7 +566,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-07-09T02:06:40.900233+02:00",
+      "scraped_at": "2026-07-10T02:06:31.874985+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -443,7 +595,7 @@
       "city": "ludwigsburg",
       "slug": "uli-binetsch-fusion-4-17072026-musi",
       "weekdays": [],
-      "scraped_at": "2026-07-09T02:15:32.084152+02:00",
+      "scraped_at": "2026-07-10T02:15:14.496752+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -475,7 +627,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-07-09T02:09:55.905027+02:00",
+      "scraped_at": "2026-07-10T02:09:44.118476+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -508,7 +660,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-07-09T02:15:30.248360+02:00",
+      "scraped_at": "2026-07-10T02:15:12.827379+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -537,7 +689,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-09T02:15:30.248394+02:00",
+      "scraped_at": "2026-07-10T02:15:12.827411+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -568,7 +720,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-09T02:06:42.228953+02:00",
+      "scraped_at": "2026-07-10T02:06:33.160087+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -599,7 +751,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-09T02:15:30.248427+02:00",
+      "scraped_at": "2026-07-10T02:15:12.827448+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -631,7 +783,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-09T02:15:30.248461+02:00",
+      "scraped_at": "2026-07-10T02:15:12.827483+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -662,7 +814,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-09T02:15:30.248494+02:00",
+      "scraped_at": "2026-07-10T02:15:12.827518+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,

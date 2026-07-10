@@ -1,40 +1,40 @@
 {
-  "scraped_at": "2026-07-09T09:28:27.606159+02:00",
+  "scraped_at": "2026-07-10T09:12:38.481640+02:00",
   "city": "hemmingen",
-  "event_count": 103,
+  "event_count": 102,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "hemmingen_gemeinde"
   ],
   "source_counts": {
-    "hemmingen_gemeinde": 103
+    "hemmingen_gemeinde": 102
   },
   "sources_failed": [],
-  "data_hash": "eb7bc4803f1032ac",
+  "data_hash": "203b4e932d3abb06",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 09.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 10.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "hemmingen_gemeinde": 0.99
   },
   "source_event_counts": {
-    "hemmingen_gemeinde": 103
+    "hemmingen_gemeinde": 102
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 556.1,
-    "runtime_delta_vs_baseline": 2.107,
+    "runtime_minutes": 534.3,
+    "runtime_delta_vs_baseline": 1.985,
     "source_health": {
       "hemmingen_gemeinde": 0.99
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-07-09T11:28:00.153708+02:00"
+    "status": "critical",
+    "generated_at": "2026-07-10T11:05:09.558132+02:00"
   }
 }

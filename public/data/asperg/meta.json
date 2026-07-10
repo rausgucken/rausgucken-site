@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-07-09T10:55:28.369975+02:00",
+  "scraped_at": "2026-07-10T10:42:31.836660+02:00",
   "city": "asperg",
-  "event_count": 81,
+  "event_count": 83,
   "flagged_count": 0,
   "expired_count": 18,
   "sources_scraped": [
@@ -11,13 +11,13 @@
   ],
   "source_counts": {
     "glasperlenspiel": 30,
-    "asperg_veranstaltungen": 45,
+    "asperg_veranstaltungen": 47,
     "asperg_fuehrungen": 6
   },
   "sources_failed": [],
-  "data_hash": "ff172153a3c90f3d",
+  "data_hash": "acd66a7b541e2cce",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 09.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 10.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "glasperlenspiel": 0.94,
@@ -26,17 +26,17 @@
   },
   "source_event_counts": {
     "glasperlenspiel": 30,
-    "asperg_veranstaltungen": 45,
+    "asperg_veranstaltungen": 47,
     "asperg_fuehrungen": 6
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 556.1,
-    "runtime_delta_vs_baseline": 2.107,
+    "runtime_minutes": 534.3,
+    "runtime_delta_vs_baseline": 1.985,
     "source_health": {
       "glasperlenspiel": 0.94,
       "asperg_veranstaltungen": 1.0,
@@ -44,7 +44,7 @@
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-07-09T11:27:59.877849+02:00"
+    "status": "critical",
+    "generated_at": "2026-07-10T11:05:09.284448+02:00"
   }
 }
