@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-10T10:42:31.815472+02:00",
+  "generated_at": "2026-07-11T10:29:36.849249+02:00",
   "city": "asperg",
   "sources": [
+    "asperg_fuehrungen",
     "glasperlenspiel",
-    "asperg_veranstaltungen",
-    "asperg_fuehrungen"
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-07-09T10:55:28.369975+02:00",
-  "count_added": 24,
-  "count_removed": 4,
+  "previous_run": "2026-07-10T10:42:31.836660+02:00",
+  "count_added": 22,
+  "count_removed": 2,
   "added": [
     {
       "id": "df2fb65f3b7fecca",
@@ -38,6 +38,12 @@
       "id": "ba9d495cc3c7c0d1",
       "title": "Stadtführung mit kulturellen und kulinarischen Häppchen",
       "date_start": "2026-05-08",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "a1d3caa2ddd5bcd2",
+      "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
+      "date_start": "2026-05-10",
       "source": "asperg_fuehrungen"
     },
     {
@@ -95,6 +101,12 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "0318c1a63ebe0fff",
+      "title": "Gruselige Kinderführung an Halloween",
+      "date_start": "2026-10-31",
+      "source": "asperg_veranstaltungen"
+    },
+    {
       "id": "cb7d4d5e64cac6fd",
       "title": "Ausstellung",
       "date_start": "2026-11-22",
@@ -113,71 +125,35 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "a1d3caa2ddd5bcd2",
-      "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
-      "date_start": "2026-05-10",
-      "source": "asperg_fuehrungen"
+      "id": "a34d49fd94566031",
+      "title": "Jazz-Abende",
+      "date_start": "2026-12-04",
+      "source": "glasperlenspiel"
     },
     {
-      "id": "eca247ecc7b09f93",
-      "title": "Krämermarkt 22.07.2026",
-      "date_start": "2026-07-22",
-      "source": "asperg_veranstaltungen"
+      "id": "a63e01afafc5485b",
+      "title": "Blues-Programm von Christof Altmann",
+      "date_start": "2026-12-13",
+      "source": "glasperlenspiel"
     },
     {
-      "id": "590a9faba2849d9a",
-      "title": "Fahrradtour auf dem Keltenweg",
-      "date_start": "2026-08-16",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "4fb9886a3e976243",
-      "title": "Führung - Ein Gang über die schwäbische Bastille",
-      "date_start": "2026-10-03",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "c39102d91baddb60",
-      "title": "Führung durch die Weinberge am Hohenasperg",
-      "date_start": "2026-10-11",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "fb52eb802f246b9c",
-      "title": "Führung „Black stories“ – Asperg’s dunkle Seite",
-      "date_start": "2026-11-08",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "c182310cd9a12793",
-      "title": "Black Stories 2.0",
-      "date_start": "2026-11-15",
-      "source": "asperg_veranstaltungen"
+      "id": "ac07e275f4e11d09",
+      "title": "Humorfest mit Ernst Mantel und Werner Koczwara",
+      "date_start": "2026-07-10",
+      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "e5714bd6885d08a9",
-      "title": "Krämermarkt",
-      "date_start": "2026-07-22",
-      "source": "asperg_veranstaltungen"
+      "id": "a81cb1714ea3fc17",
+      "title": "Humorfest mit Ernst Mantel und Werner Koczwara",
+      "date_start": "2026-07-10",
+      "source": "glasperlenspiel"
     },
     {
-      "id": "2b360616360ad79c",
-      "title": "Führung - Ein Gang über die schwäbische Bastille",
-      "date_start": "2026-10-03",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "4b3b602cf1bf11ca",
-      "title": "„Wengert, Wahn und Weiberzeche“-Weinbergführung",
-      "date_start": "2026-10-11",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "c58fafca91273453",
-      "title": "Führung „Black stories“ – Asperg’s dunkle Seite",
-      "date_start": "2026-11-08",
+      "id": "f41d95e9fb23ce3e",
+      "title": "Gruselige Kinderführung an Halloween",
+      "date_start": "2026-10-31",
       "source": "asperg_veranstaltungen"
     }
   ]

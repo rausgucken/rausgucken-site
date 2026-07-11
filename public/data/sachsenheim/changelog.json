@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-10T06:12:56.111426+02:00",
+  "generated_at": "2026-07-11T06:24:11.329876+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-07-09T06:10:52.590463+02:00",
-  "count_added": 8,
-  "count_removed": 0,
+  "previous_run": "2026-07-10T06:12:56.131965+02:00",
+  "count_added": 9,
+  "count_removed": 1,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -56,7 +56,20 @@
       "title": "Führung, Zu Gast bei Rittern und Geistern",
       "date_start": "2026-05-17",
       "source": "sachsenheim_library"
+    },
+    {
+      "id": "809446d4e34ed5d5",
+      "title": "Zu Gast bei Rittern und Geistern",
+      "date_start": "2026-10-03",
+      "source": "sachsenheim_kultur"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "45c75bb9f4f266fc",
+      "title": "Wein-Erlebnisfahrt mit dem Planwagen",
+      "date_start": "2026-07-10",
+      "source": "sachsenheim_kultur"
+    }
+  ]
 }
