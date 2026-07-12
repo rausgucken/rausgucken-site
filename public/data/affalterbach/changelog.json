@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-07-11T06:33:48.271233+02:00",
+  "generated_at": "2026-07-12T06:09:45.255494+02:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-07-10T06:19:02.135617+02:00",
-  "count_added": 0,
+  "previous_run": "2026-07-11T06:33:48.291629+02:00",
+  "count_added": 2,
   "count_removed": 1,
-  "added": [],
+  "added": [
+    {
+      "id": "c377f14706ab5b2d",
+      "title": "Straßenfest",
+      "date_start": "2026-07-12",
+      "source": "affalterbach_stadt"
+    },
+    {
+      "id": "f9660c3ba9afa9d8",
+      "title": "Kameradschaftsabend",
+      "date_start": "2026-08-14",
+      "source": "affalterbach_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "caf5f723042ead50",
-      "title": "Kameradschaftsabend",
-      "date_start": "2026-07-10",
+      "id": "e7d9c129e0b4dfe2",
+      "title": "Straßenfest",
+      "date_start": "2026-07-11",
       "source": "affalterbach_stadt"
     }
   ]

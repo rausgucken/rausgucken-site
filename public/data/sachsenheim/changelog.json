@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-11T06:24:11.329876+02:00",
+  "generated_at": "2026-07-12T06:09:20.842571+02:00",
   "city": "sachsenheim",
   "sources": [
     "sachsenheim_kultur",
     "sachsenheim_library"
   ],
-  "previous_run": "2026-07-10T06:12:56.131965+02:00",
-  "count_added": 9,
-  "count_removed": 1,
+  "previous_run": "2026-07-11T06:24:11.349867+02:00",
+  "count_added": 11,
+  "count_removed": 0,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -58,18 +58,23 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "809446d4e34ed5d5",
-      "title": "Zu Gast bei Rittern und Geistern",
-      "date_start": "2026-10-03",
+      "id": "2ce125c72958b7c8",
+      "title": "Kochkurs für Erwachsene: Schlemmen wie bei den Kelten, im alten Rom und bei Ritter Hermann von Sachsenheim",
+      "date_start": "2026-10-04",
       "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "b7c684681b4d5d92",
+      "title": "Offener Gesprächskreis Demenz",
+      "date_start": "2026-10-06",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "a98905a579cf9e84",
+      "title": "Zeitreise zum Schmecken und Schnuppern",
+      "date_start": "2026-10-04",
+      "source": "sachsenheim_library"
     }
   ],
-  "removed": [
-    {
-      "id": "45c75bb9f4f266fc",
-      "title": "Wein-Erlebnisfahrt mit dem Planwagen",
-      "date_start": "2026-07-10",
-      "source": "sachsenheim_kultur"
-    }
-  ]
+  "removed": []
 }
