@@ -1,17 +1,17 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-07-12T08:35:44.312300+02:00",
-  "event_count": 2,
+  "generated_at": "2026-07-13T06:00:01.387053+02:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "2876a4dba75d19c7",
-      "title": "FrauenZeit",
-      "date_start": "2026-07-15",
+      "id": "1c58b37a7748ba02",
+      "title": "Kameradschaftsveranstaltung",
+      "date_start": "2026-07-25",
       "date_end": null,
-      "time": "19:30 - 21:30 Uhr",
+      "time": null,
       "description": null,
-      "location": "Ev. Gemeindehaus",
+      "location": null,
       "price": null,
       "age_min": null,
       "age_max": null,
@@ -20,47 +20,76 @@
       "original_url": "https://www.hessigheim.de/veranstaltungen/?seite=1",
       "source": "hessigheim_gemeinde",
       "city": "hessigheim",
-      "slug": "frauenzeit-2026-07-15-hess",
+      "slug": "kameradschaftsveranstaltung-2026-07-25-hess",
       "weekdays": [
-        3
+        6
       ],
-      "scraped_at": "2026-07-12T02:09:16.535426+02:00",
-      "extraction_confidence": 0.85,
-      "is_new": false,
+      "scraped_at": "2026-07-12T02:09:16.535547+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Hessigheim",
-      "canonical_url": "https://www.rausgucken.de/hessigheim/events/frauenzeit-2026-07-15-hess"
+      "canonical_url": "https://www.rausgucken.de/hessigheim/events/kameradschaftsveranstaltung-2026-07-25-hess"
     },
     {
-      "id": "cb2c877e98b660dd",
-      "title": "Christophorusfest",
-      "date_start": "2026-07-19",
+      "id": "c49901c0ef432b05",
+      "title": "Altpapiersammlung",
+      "date_start": "2026-07-25",
       "date_end": null,
-      "time": null,
+      "time": "09:00 - 12:00 Uhr",
       "description": null,
-      "location": "Kelter Gemmrigheim",
+      "location": "Dreschschuppengelände",
       "price": null,
       "age_min": null,
       "age_max": null,
       "tags": [],
-      "link": "https://www.hessigheim.de/veranstaltungen/?seite=1",
-      "original_url": "https://www.hessigheim.de/veranstaltungen/?seite=1",
+      "link": "https://www.hessigheim.de/veranstaltungen/?seite=2",
+      "original_url": "https://www.hessigheim.de/veranstaltungen/?seite=2",
       "source": "hessigheim_gemeinde",
       "city": "hessigheim",
-      "slug": "christophorusfest-2026-07-19-hess",
+      "slug": "altpapiersammlung-2026-07-25-hess",
       "weekdays": [
-        0
+        6
       ],
-      "scraped_at": "2026-07-12T02:09:16.535515+02:00",
+      "scraped_at": "2026-07-12T02:09:17.610515+02:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Hessigheim",
-      "canonical_url": "https://www.rausgucken.de/hessigheim/events/christophorusfest-2026-07-19-hess"
+      "canonical_url": "https://www.rausgucken.de/hessigheim/events/altpapiersammlung-2026-07-25-hess"
+    },
+    {
+      "id": "1b1f1b498528494e",
+      "title": "KiKi-Sommerfest",
+      "date_start": "2026-07-26",
+      "date_end": null,
+      "time": "12:00 - 12:00 Uhr",
+      "description": null,
+      "location": null,
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.hessigheim.de/veranstaltungen/?seite=2",
+      "original_url": "https://www.hessigheim.de/veranstaltungen/?seite=2",
+      "source": "hessigheim_gemeinde",
+      "city": "hessigheim",
+      "slug": "kiki-sommerfest-2026-07-26-hess",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-07-12T02:09:17.610571+02:00",
+      "extraction_confidence": 0.65,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Hessigheim",
+      "canonical_url": "https://www.rausgucken.de/hessigheim/events/kiki-sommerfest-2026-07-26-hess"
     }
   ]
 }

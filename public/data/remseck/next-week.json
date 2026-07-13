@@ -1,7 +1,7 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-07-12T06:00:01.897093+02:00",
-  "event_count": 3,
+  "generated_at": "2026-07-13T06:00:01.481625+02:00",
+  "event_count": 6,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -33,7 +33,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-07-12T02:04:34.038441+02:00",
+      "scraped_at": "2026-07-13T02:03:06.768355+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -68,7 +68,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-07-12T02:04:34.038441+02:00",
+      "scraped_at": "2026-07-13T02:03:06.768355+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -78,16 +78,49 @@
       "canonical_url": "https://www.rausgucken.de/remseck/events/blind-date-mit-einem-buch-2026-07-13-rems"
     },
     {
-      "id": "da0069150ba11403",
-      "title": "Offene Bilderbuchshow",
-      "date_start": "2026-07-14",
+      "id": "f4b45780f55a2523",
+      "title": "Hochberger Bücherfreunde",
+      "date_start": "2026-07-23",
       "date_end": null,
-      "time": "16:00 – 16:30 Uhr",
-      "description": "In der Mediathek im KUBUS bietet sich eine offene Bilderbuchshow an, ideal für Kinder zwischen 4 und 10 Jahren und ihre Familien. Entdecken Sie gemeinsam neue Lieblingsbücher und genießen Sie die bunte Welt der Geschichten.",
-      "location": "Mediathek im KUBUS",
+      "time": "15:00 – 16:00 Uhr",
+      "description": "In der Ortsbücherei Hochberg lernen Kinder ab 4 Jahren, gemeinsam mit spannenden Geschichten zu basteln. Nach dem Vorlesen entstehen fantasievolle Figuren und Kunstwerke, die jedes Kind mit nach Hause nimmt.",
+      "location": "Ortsbücherei Hochberg",
       "price": "Kostenlos",
       "age_min": 4,
-      "age_max": 10,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Lesung",
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "hochberger-buecherfreunde-2026-07-23-rems",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-07-13T02:03:06.768355+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck",
+      "canonical_url": "https://www.rausgucken.de/remseck/events/hochberger-buecherfreunde-2026-07-23-rems"
+    },
+    {
+      "id": "82d375397aa81bce",
+      "title": "Game Day",
+      "date_start": "2026-07-24",
+      "date_end": null,
+      "time": "15:00 – 17:30 Uhr",
+      "description": "In der Mediathek im KUBUS können Kinder und Erwachsene ab 6 Jahren freie Spielezeit genießen. Im 3. OG kann jeder sich einfach einen Controller ausleihen. Bitte bringt unter 16-jährigen Teilnehmern eine unterschriebene Einwilligungserklärung mit. Die Aktivität ist kostenlos.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 6,
+      "age_max": null,
       "tags": [
         "Kinder",
         "Familie"
@@ -96,18 +129,79 @@
       "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
       "source": "remseck_mediathek",
       "city": "remseck",
-      "slug": "offene-bilderbuchshow-2026-07-14-rems",
+      "slug": "game-day-2026-07-24-rems",
       "weekdays": [
-        2
+        5
       ],
-      "scraped_at": "2026-07-12T02:04:34.038441+02:00",
+      "scraped_at": "2026-07-13T02:03:06.768355+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Mediathek im KUBUS Remseck",
-      "canonical_url": "https://www.rausgucken.de/remseck/events/offene-bilderbuchshow-2026-07-14-rems"
+      "canonical_url": "https://www.rausgucken.de/remseck/events/game-day-2026-07-24-rems"
+    },
+    {
+      "id": "cf1aa606b30ef4f8",
+      "title": "Open-Air Poetry Slam",
+      "date_start": "2026-07-24",
+      "date_end": null,
+      "time": "19:00 - 21:00 Uhr",
+      "description": "Im Freien entfaltet sich dieser Poetry Slam an der Neckarseite. Teilnehmer und Zuschauer genießen kreative Texte in einer offenen Atmosphäre am Remsecker Neckarstrand.",
+      "location": "Neckarstrand, Remseck am Neckar",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.stadt-remseck.de/Kulturveranstaltungen-im-Ueberblick/Open-Air-Poetry-Slam-event-appointment16472",
+      "original_url": "https://www.stadt-remseck.de/Kulturveranstaltungen-im-Ueberblick/Open-Air-Poetry-Slam-event-appointment16472",
+      "source": "remseck_stadt",
+      "city": "remseck",
+      "slug": "open-air-poetry-slam-2026-07-24-rems",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-07-13T02:03:12.288822+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Remseck am Neckar",
+      "canonical_url": "https://www.rausgucken.de/remseck/events/open-air-poetry-slam-2026-07-24-rems"
+    },
+    {
+      "id": "444cbff8b3cc0290",
+      "title": "Weiße Nacht",
+      "date_start": "2026-07-25",
+      "date_end": null,
+      "time": "17:00 - 23:00 Uhr",
+      "description": "In der Weißen Nacht entdecken Sie den Neckarstrand in Remseck am Neckar. Genießen Sie kulinarische Leckerbissen und live Musik im Freien während dieser abendlichen Veranstaltung.",
+      "location": "Neckarstrand, Remseck am Neckar",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Musik",
+        "Kulinarik"
+      ],
+      "link": "https://www.stadt-remseck.de/Kulturveranstaltungen-im-Ueberblick/Weisse-Nacht-event-appointment15079",
+      "original_url": "https://www.stadt-remseck.de/Kulturveranstaltungen-im-Ueberblick/Weisse-Nacht-event-appointment15079",
+      "source": "remseck_stadt",
+      "city": "remseck",
+      "slug": "weisse-nacht-2026-07-25-rems",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-07-13T02:03:14.130502+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Remseck am Neckar",
+      "canonical_url": "https://www.rausgucken.de/remseck/events/weisse-nacht-2026-07-25-rems"
     }
   ]
 }

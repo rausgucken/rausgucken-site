@@ -1,39 +1,104 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-07-12T06:17:23.568614+02:00",
-  "event_count": 1,
+  "generated_at": "2026-07-13T06:00:01.366742+02:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "811ffdb2610e7c6c",
-      "title": "Die Schokokids mit 'The Bänd'",
-      "date_start": "2026-07-12",
+      "id": "5e71cb7930bc4c57",
+      "title": "Wochenmarkt",
+      "date_start": "2026-07-18",
       "date_end": null,
-      "time": "15:00 Uhr",
-      "description": "In der Jugendmusikschule Gerlingen gibt es eine Konzertveranstaltung mit dem Musiktrio \"The Bänd\". Die Schokokids präsentieren ihre musikalischen Talente in einer familienfreundlichen Umgebung.",
-      "location": "Jugendmusikschule Gerlingen",
+      "time": null,
+      "description": "Im Wochenmarkt auf dem Rathausplatz finden Sie eine Vielfalt an Familienfreundlichen Standorten und Unterhaltungsangeboten. Ein典型问题: 提取关键信息并重写描述，使其更加简洁明了。\n\n原始描述：在市政广场举行的周末市场提供各种家庭友好的摊位和娱乐项目。\n\n提取的关键信息包括：\n- 事件名称：周末市场\n- 地点：市政广场\n- 特点：家庭友好、娱乐项目\n\n简化后的描述：在市政广场的周末市场，家庭可以享受多样化的娱乐活动。",
+      "location": "Rathausplatz",
       "price": null,
       "age_min": 4,
       "age_max": null,
       "tags": [
         "Familie"
       ],
-      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523254969014/DieSchokokidsmitTheBnd.html?nodeID=523254969014",
-      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523254969014/DieSchokokidsmitTheBnd.html?nodeID=523254969014",
+      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523252461827/Wochenmarkt.html?nodeID=523252461827",
+      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523252461827/Wochenmarkt.html?nodeID=523252461827",
       "source": "gerlingen_stadt",
       "city": "gerlingen",
-      "slug": "die-schokokids-mit-the-baend-2026-07-12-gerl",
+      "slug": "wochenmarkt-2026-07-18-gerl",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-07-12T02:05:59.722532+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Gerlingen",
+      "canonical_url": "https://www.rausgucken.de/gerlingen/events/wochenmarkt-2026-07-18-gerl"
+    },
+    {
+      "id": "8dbe1f0963adfff1",
+      "title": "Klassenmusizieren - Live In Concert",
+      "date_start": "2026-07-19",
+      "date_end": null,
+      "time": null,
+      "description": "In diesem Konzert präsentiert eine Schule ihre musikalischen Talente live auf der Bühne der Stadthalle. Ein einzigartiges Familienereignis mit klassischer und moderner Musik.",
+      "location": "Stadthalle",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie",
+        "Musik"
+      ],
+      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523255271511/KlassenmusizierenLiveInConcert.html?nodeID=523255271511",
+      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523255271511/KlassenmusizierenLiveInConcert.html?nodeID=523255271511",
+      "source": "gerlingen_stadt",
+      "city": "gerlingen",
+      "slug": "klassenmusizieren---live-in-concert-2026-07-19-gerl",
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-12T02:05:59.722481+02:00",
+      "scraped_at": "2026-07-12T02:05:59.722535+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Gerlingen",
+      "canonical_url": "https://www.rausgucken.de/gerlingen/events/klassenmusizieren---live-in-concert-2026-07-19-gerl"
+    },
+    {
+      "id": "620c9b707f7b9023",
+      "title": "Führung mit Workshop: Ich packe meinen Koffer",
+      "date_start": "2026-07-19",
+      "date_end": null,
+      "time": "16:00 Uhr",
+      "description": "In dieser Führungsworkshop-Kombination lernen Sie im Stadtmuseum Gerlingen über die Geschichte der Reisekultur. Mit praktischen Aktivitäten packen Sie Ihren Koffer und erfahren kulinarische und kulturelle Highlights entlang des Weges.",
+      "location": "Stadtmuseum Gerlingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Workshop",
+        "Kulinarik"
+      ],
+      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523255520954/FhrungmitWorkshopIchpackemeinenKoffer.html?nodeID=523255520954",
+      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523255520954/FhrungmitWorkshopIchpackemeinenKoffer.html?nodeID=523255520954",
+      "source": "gerlingen_stadt",
+      "city": "gerlingen",
+      "slug": "fuehrung-mit-workshop-ich-packe-meinen-koffer-2026-07-19-gerl",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-07-12T02:05:59.722538+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Gerlingen",
-      "canonical_url": "https://www.rausgucken.de/gerlingen/events/die-schokokids-mit-the-baend-2026-07-12-gerl"
+      "canonical_url": "https://www.rausgucken.de/gerlingen/events/fuehrung-mit-workshop-ich-packe-meinen-koffer-2026-07-19-gerl"
     }
   ]
 }

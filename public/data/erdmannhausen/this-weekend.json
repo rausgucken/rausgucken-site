@@ -1,39 +1,68 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-07-12T07:58:01.770567+02:00",
-  "event_count": 1,
+  "generated_at": "2026-07-13T06:00:01.349418+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "239de3c3889c7d52",
-      "title": "Jahreskonzert Akkordeon-Orchester Erdmannhausen e.V.",
-      "date_start": "2026-07-12",
-      "date_end": null,
-      "time": "17:00 - 17:00 Uhr",
+      "id": "e4ab57f52fca3bd2",
+      "title": "Fleckenpokal",
+      "date_start": "2026-07-17",
+      "date_end": "2026-07-19",
+      "time": null,
       "description": null,
-      "location": "Evang. Gemeindehaus",
+      "location": "Brezelarena",
       "price": null,
       "age_min": null,
       "age_max": null,
-      "tags": [
-        "Musik"
-      ],
+      "tags": [],
       "link": "https://www.erdmannhausen.de/sport-kultur-freizeit/veranstaltungen",
       "original_url": "https://www.erdmannhausen.de/sport-kultur-freizeit/veranstaltungen",
       "source": "erdmannhausen_stadt",
       "city": "erdmannhausen",
-      "slug": "jahreskonzert-akkordeon-orchester-erdmannhausen-ev-2026-07-12-erdm",
+      "slug": "fleckenpokal-2026-07-17-erdm",
       "weekdays": [
-        0
+        0,
+        5,
+        6
       ],
-      "scraped_at": "2026-07-12T02:08:56.848619+02:00",
-      "extraction_confidence": 1.0,
+      "scraped_at": "2026-07-12T02:08:56.848664+02:00",
+      "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Erdmannhausen",
-      "canonical_url": "https://www.rausgucken.de/erdmannhausen/events/jahreskonzert-akkordeon-orchester-erdmannhausen-ev-2026-07-12-erdm"
+      "canonical_url": "https://www.rausgucken.de/erdmannhausen/events/fleckenpokal-2026-07-17-erdm"
+    },
+    {
+      "id": "0adfd8c5f81e46bb",
+      "title": "Dixielandfrühschoppen",
+      "date_start": "2026-07-19",
+      "date_end": null,
+      "time": "11:00 - 11:00 Uhr",
+      "description": null,
+      "location": "Halle auf der Schray",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.erdmannhausen.de/sport-kultur-freizeit/veranstaltungen",
+      "original_url": "https://www.erdmannhausen.de/sport-kultur-freizeit/veranstaltungen",
+      "source": "erdmannhausen_stadt",
+      "city": "erdmannhausen",
+      "slug": "dixielandfruehschoppen-2026-07-19-erdm",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-07-12T02:08:56.848707+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Erdmannhausen",
+      "canonical_url": "https://www.rausgucken.de/erdmannhausen/events/dixielandfruehschoppen-2026-07-19-erdm"
     }
   ]
 }

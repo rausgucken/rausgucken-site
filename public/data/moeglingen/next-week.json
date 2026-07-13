@@ -1,39 +1,72 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-07-12T06:00:01.883820+02:00",
-  "event_count": 1,
+  "generated_at": "2026-07-13T06:00:01.466609+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "9b3c9ddb3aff658a",
-      "title": "Sommerleseaktion",
-      "date_start": "2026-07-14",
+      "id": "8a2d5f039da3ac9a",
+      "title": "Vorlesestart",
+      "date_start": "2026-07-22",
       "date_end": null,
-      "time": null,
-      "description": "In der Sommerleseaktion für Kinder zwischen 7 und 12 Jahren fördern die Bibliothek Möglingen das Lesen unterhaltsam und ermutigend.",
+      "time": "15:30 Uhr",
+      "description": "In der Bibliothek Möglingen finden Kinder ab 3 Jahren mit einer erwachsenen Begleitung Vorlesestart. Eine Auswahl an Büchern bereitet den kleinen Leserinnen und Lesern auf die Welt des Schreibens vor.",
       "location": "Bibliothek Möglingen",
       "price": null,
-      "age_min": 7,
-      "age_max": 12,
+      "age_min": 3,
+      "age_max": null,
       "tags": [
-        "Kinder"
+        "Kinder",
+        "Lesung",
+        "Familie"
       ],
-      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4379",
-      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4379",
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4356",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4356",
       "source": "moeglingen",
       "city": "moeglingen",
-      "slug": "sommerleseaktion-2026-07-14-moeg",
+      "slug": "vorlesestart-2026-07-22-moeg",
       "weekdays": [
-        2
+        3
       ],
-      "scraped_at": "2026-07-12T02:04:33.246364+02:00",
-      "extraction_confidence": 0.95,
+      "scraped_at": "2026-07-13T02:02:44.981033+02:00",
+      "extraction_confidence": 0.9,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Möglingen",
-      "canonical_url": "https://www.rausgucken.de/moeglingen/events/sommerleseaktion-2026-07-14-moeg"
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/vorlesestart-2026-07-22-moeg"
+    },
+    {
+      "id": "097b0899bc958d21",
+      "title": "Gaming-Treff",
+      "date_start": "2026-07-24",
+      "date_end": null,
+      "time": "15:30 - 16:15 Uhr",
+      "description": "In der Bibliothek Möglingen findet ein Gaming-Treff für Kinder im Alter von 8 bis 12 Jahren statt.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 8,
+      "age_max": 12,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4349",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4349",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "gaming-treff-2026-07-24-moeg",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-07-13T02:02:44.981156+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/gaming-treff-2026-07-24-moeg"
     }
   ]
 }
