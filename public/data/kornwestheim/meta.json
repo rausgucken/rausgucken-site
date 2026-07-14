@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-13T06:04:57.545011+02:00",
+  "scraped_at": "2026-07-14T05:52:48.412604+02:00",
   "city": "kornwestheim",
   "event_count": 228,
   "flagged_count": 0,
@@ -15,9 +15,9 @@
     "das_k_spielplan": 28
   },
   "sources_failed": [],
-  "data_hash": "05508627042b8fc3",
+  "data_hash": "81e138c66e512a99",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 13.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 14.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "kornwestheim": 1.0,
@@ -31,12 +31,12 @@
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 494.9,
-    "runtime_delta_vs_baseline": 1.765,
+    "runtime_minutes": 517.0,
+    "runtime_delta_vs_baseline": 1.888,
     "source_health": {
       "kornwestheim": 1.0,
       "das_k_buecherei": 1.0,
@@ -44,7 +44,7 @@
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-07-13T10:26:54.214565+02:00"
+    "status": "critical",
+    "generated_at": "2026-07-14T10:48:44.764859+02:00"
   }
 }

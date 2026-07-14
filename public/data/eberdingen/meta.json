@@ -1,40 +1,40 @@
 {
-  "scraped_at": "2026-07-13T07:46:58.850033+02:00",
+  "scraped_at": "2026-07-14T08:07:23.632076+02:00",
   "city": "eberdingen",
-  "event_count": 9,
+  "event_count": 13,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "eberdingen_veranstaltungen"
   ],
   "source_counts": {
-    "eberdingen_veranstaltungen": 9
+    "eberdingen_veranstaltungen": 13
   },
   "sources_failed": [],
-  "data_hash": "415dd9ed06438030",
+  "data_hash": "288061e43f54539b",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 13.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 14.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "eberdingen_veranstaltungen": 0.94
+    "eberdingen_veranstaltungen": 0.95
   },
   "source_event_counts": {
-    "eberdingen_veranstaltungen": 9
+    "eberdingen_veranstaltungen": 13
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 494.9,
-    "runtime_delta_vs_baseline": 1.765,
+    "runtime_minutes": 517.0,
+    "runtime_delta_vs_baseline": 1.888,
     "source_health": {
-      "eberdingen_veranstaltungen": 0.94
+      "eberdingen_veranstaltungen": 0.95
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-07-13T10:26:53.954859+02:00"
+    "status": "critical",
+    "generated_at": "2026-07-14T10:48:44.511521+02:00"
   }
 }

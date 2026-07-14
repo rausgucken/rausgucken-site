@@ -1,40 +1,40 @@
 {
-  "scraped_at": "2026-07-13T05:59:14.041890+02:00",
+  "scraped_at": "2026-07-14T06:01:54.032508+02:00",
   "city": "besigheim",
-  "event_count": 197,
+  "event_count": 194,
   "flagged_count": 0,
-  "expired_count": 0,
+  "expired_count": 1,
   "sources_scraped": [
     "besigheim_stadt"
   ],
   "source_counts": {
-    "besigheim_stadt": 197
+    "besigheim_stadt": 194
   },
   "sources_failed": [],
-  "data_hash": "f65a16e8895230e2",
+  "data_hash": "2bcaf3b300bb943a",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 13.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 14.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "besigheim_stadt": 0.96
   },
   "source_event_counts": {
-    "besigheim_stadt": 197
+    "besigheim_stadt": 194
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 494.9,
-    "runtime_delta_vs_baseline": 1.765,
+    "runtime_minutes": 517.0,
+    "runtime_delta_vs_baseline": 1.888,
     "source_health": {
       "besigheim_stadt": 0.96
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-07-13T10:26:53.866644+02:00"
+    "status": "critical",
+    "generated_at": "2026-07-14T10:48:44.424841+02:00"
   }
 }

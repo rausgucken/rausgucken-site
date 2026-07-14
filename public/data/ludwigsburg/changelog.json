@@ -1,25 +1,63 @@
 {
-  "generated_at": "2026-07-13T10:14:56.607590+02:00",
+  "generated_at": "2026-07-14T10:36:59.441871+02:00",
   "city": "ludwigsburg",
   "sources": [
     "kunstverein_ausstellungen",
-    "labyrinth",
-    "stabi",
-    "musikhalle_lb",
-    "garnisonmuseum",
     "forum_schlosspark",
-    "karlskaserne_veranstaltungen",
-    "ludwigsburg_stadt",
+    "museum",
     "schloss",
-    "kunstverein_veranstaltungen",
-    "karlskaserne_ausstellungen",
+    "musikhalle_lb",
+    "ludwigsburg_stadt",
+    "labyrinth",
     "blueba",
-    "museum"
+    "karlskaserne_ausstellungen",
+    "kunstverein_veranstaltungen",
+    "karlskaserne_veranstaltungen",
+    "garnisonmuseum",
+    "stabi"
   ],
-  "previous_run": "2026-07-12T10:32:21.888896+02:00",
-  "count_added": 78,
-  "count_removed": 36,
+  "previous_run": "2026-07-13T10:14:56.646898+02:00",
+  "count_added": 6,
+  "count_removed": 6,
   "added": [
+    {
+      "id": "11932095b678154b",
+      "title": "„Weil menschlich so viel möglich ist“",
+      "date_start": "2026-05-08",
+      "source": "schloss"
+    },
+    {
+      "id": "9f12e5eb04ca2fab",
+      "title": "Herbstferienworkshop: Das magische Königreich für Kinder von 6-10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "4da77d9107c21b5d",
+      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 5-7 Jahren in Ludwigsburg",
+      "date_start": "2026-11-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "33db71f4708977da",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-09-09",
+      "source": "museum"
+    },
+    {
+      "id": "e5930b81ea6b2002",
+      "title": "Venezianischer Maskenball",
+      "date_start": "2026-09-03",
+      "source": "schloss"
+    },
+    {
+      "id": "c81ce9fdfb461c7c",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-02",
+      "source": "stabi"
+    }
+  ],
+  "removed": [
     {
       "id": "01650d0eed14deaa",
       "title": "„Weil menschlich so viel möglich ist“",
@@ -27,683 +65,33 @@
       "source": "schloss"
     },
     {
-      "id": "8608497d4e604c4c",
-      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
+      "id": "06f6e8cc8a2f749f",
+      "title": "Insta was? Einstieg in die Welt der Reels, Postings und Stories",
+      "date_start": "2026-07-13",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "4cdb3505b68e302f",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-11-10",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "9b5ff81cf5f2f83f",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-07-22",
+      "source": "stabi"
     },
     {
-      "id": "d84f7628a03df709",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-11-10",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "ca7a5b54ee4417b8",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren",
-      "date_start": "2027-01-19",
-      "source": "labyrinth"
-    },
-    {
-      "id": "73892524751c971b",
-      "title": "Osterferienworkshop: Abenteuer Manege! für Kinder von 9-12 Jahren in Ludwigsburg",
-      "date_start": "2027-03-30",
-      "source": "labyrinth"
-    },
-    {
-      "id": "235cdf88bb58087d",
-      "title": "Osterferienworkshop: Kreativ in der Linoldruckwerkstatt für Jugendliche von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2027-03-30",
-      "source": "labyrinth"
-    },
-    {
-      "id": "3f30e6b959aacec1",
-      "title": "Sommerferienworkshop: Film ab! Vom Storyboard zum Video – ein Ganztagsangebot in Ludwigsburg",
-      "date_start": "2026-09-07",
-      "source": "labyrinth"
-    },
-    {
-      "id": "b6d3444ea040ce2e",
-      "title": "Workshop: Mini Kunst Lab für Kinder von 1-2 Jahren und Mütter, Väter, Begleitpersonen in Ludwigsburg",
-      "date_start": "2026-11-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "aceff7aac2bafccb",
-      "title": "Pfingstferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Ludwigsburg",
-      "date_start": "2027-05-18",
-      "source": "labyrinth"
-    },
-    {
-      "id": "abbecef40181346b",
-      "title": "Pfingstferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Bietigheim-Bissingen",
-      "date_start": "2027-05-24",
-      "source": "labyrinth"
-    },
-    {
-      "id": "7c82aba616f7a699",
-      "title": "Ausstellung Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-05-03",
-      "source": "museum"
-    },
-    {
-      "id": "650ef2c04fb838df",
-      "title": "Little America – Fotografie Jürgen Schadeberg",
-      "date_start": "2026-07-01",
-      "source": "museum"
-    },
-    {
-      "id": "2aadcf04324bb79a",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-07-16",
-      "source": "museum"
-    },
-    {
-      "id": "e03dcd037732fb3b",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-07-25",
-      "source": "museum"
-    },
-    {
-      "id": "ac517db39d41b08c",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-07-25",
-      "source": "museum"
-    },
-    {
-      "id": "84515f699269c9bc",
-      "title": "Museumspause",
-      "date_start": "2026-08-05",
-      "source": "museum"
-    },
-    {
-      "id": "146f8552056cda36",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-08-12",
-      "source": "museum"
-    },
-    {
-      "id": "51a4f0cb4be13889",
-      "title": "Ferienworkshop Museumsbuch interaktiv",
-      "date_start": "2026-08-14",
-      "source": "museum"
-    },
-    {
-      "id": "c48034e537af9ed5",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-08-29",
-      "source": "museum"
-    },
-    {
-      "id": "a8cbbcf36745b299",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-08-29",
-      "source": "museum"
-    },
-    {
-      "id": "412a38bbfbc19241",
-      "title": "Museumspause",
+      "id": "fa01f595680c02e3",
+      "title": "Sprechtreff Deutsch",
       "date_start": "2026-09-02",
-      "source": "museum"
+      "source": "stabi"
     },
     {
-      "id": "da91c6d4fe2f0d58",
-      "title": "Tag des Offenen Denkmals",
-      "date_start": "2026-09-13",
-      "source": "museum"
-    },
-    {
-      "id": "1da712de65240f53",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-09-16",
-      "source": "museum"
-    },
-    {
-      "id": "937f51ce6917680b",
-      "title": "Offenes Atelier: Origami, Regina Ille-Kopp",
-      "date_start": "2026-09-17",
-      "source": "museum"
-    },
-    {
-      "id": "a321ac78d9c91527",
-      "title": "Gastrosophie-Abend",
-      "date_start": "2026-09-24",
-      "source": "museum"
-    },
-    {
-      "id": "5f0f28478d262af4",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-09-26",
-      "source": "museum"
-    },
-    {
-      "id": "1ad591165ba69227",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-06",
-      "source": "museum"
-    },
-    {
-      "id": "10574e50c47e9a2d",
-      "title": "Museumspause",
-      "date_start": "2026-10-07",
-      "source": "museum"
-    },
-    {
-      "id": "d47a92c5185c1929",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-13",
-      "source": "museum"
-    },
-    {
-      "id": "50d1b8bcae088f0f",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-10-14",
-      "source": "museum"
-    },
-    {
-      "id": "fffeb549fd24639b",
-      "title": "Mitmach-Ausstellung flott, flott!",
-      "date_start": "2026-10-17",
-      "source": "museum"
-    },
-    {
-      "id": "5beb0ee8eb08f214",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-20",
-      "source": "museum"
-    },
-    {
-      "id": "2c0921e304b82ec4",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-10-21",
-      "source": "museum"
-    },
-    {
-      "id": "c170b028731594af",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-10-24",
-      "source": "museum"
-    },
-    {
-      "id": "33c73002bed4f546",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-27",
-      "source": "museum"
-    },
-    {
-      "id": "19b34a6bd1f128f7",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-10-31",
-      "source": "museum"
-    },
-    {
-      "id": "744c68f84155ddb4",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-03",
-      "source": "museum"
-    },
-    {
-      "id": "cc3cacc7ccb69d7b",
-      "title": "Museumspause",
-      "date_start": "2026-11-04",
-      "source": "museum"
-    },
-    {
-      "id": "746f98c5fe1bfba3",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-11-05",
-      "source": "museum"
-    },
-    {
-      "id": "503013994c307868",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-10",
-      "source": "museum"
-    },
-    {
-      "id": "d8b7431bc4a684b1",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-11-11",
-      "source": "museum"
-    },
-    {
-      "id": "48eda5404372f7f9",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2026-11-14",
-      "source": "museum"
-    },
-    {
-      "id": "fbefa5096d00bf96",
-      "title": "Stadtspaziergang zu Christian Friedrich Daniel Schubart",
-      "date_start": "2026-11-14",
-      "source": "museum"
-    },
-    {
-      "id": "3a07be9ff60f3ffd",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-17",
-      "source": "museum"
-    },
-    {
-      "id": "22f9f9b321aa01e3",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-24",
-      "source": "museum"
-    },
-    {
-      "id": "3e6569c50955cf0f",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-11-28",
-      "source": "museum"
-    },
-    {
-      "id": "1be2100766f9975a",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-11-28",
-      "source": "museum"
-    },
-    {
-      "id": "ceffd17f4f8fa9ec",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-01",
-      "source": "museum"
-    },
-    {
-      "id": "0200632eb9bc01e9",
-      "title": "Museumspause",
-      "date_start": "2026-12-02",
-      "source": "museum"
-    },
-    {
-      "id": "a6439166304ac087",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-08",
-      "source": "museum"
-    },
-    {
-      "id": "d3a73fb64cac0f86",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-12-09",
-      "source": "museum"
-    },
-    {
-      "id": "772817fe51854b17",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2026-12-12",
-      "source": "museum"
-    },
-    {
-      "id": "712623bc24124a9c",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-15",
-      "source": "museum"
-    },
-    {
-      "id": "731d87843648da13",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-22",
-      "source": "museum"
-    },
-    {
-      "id": "9d8ff67588d6e2b0",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2027-02-13",
-      "source": "museum"
-    },
-    {
-      "id": "a1dbffe5920531f4",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2027-03-13",
-      "source": "museum"
-    },
-    {
-      "id": "557f572ab46b1d46",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2027-04-03",
-      "source": "museum"
-    },
-    {
-      "id": "1efd40009fd56e29",
-      "title": "Sommerferienworkshop: Theaterwerkstatt in Bietigheim",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "c8f9473b0720ebd5",
-      "title": "Sommerferienworkshop: Abenteuer Manege! in Bietigheim",
-      "date_start": "2026-09-07",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "04a80dec6ba6d24d",
-      "title": "Sommerferienworkshop: An die Farben - fertig - los! in Bietigheim",
-      "date_start": "2026-09-07",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "54afb91bf5571d01",
-      "title": "Herbstferienworkshop: Fang den Räuber Hotzenplotz ab 4 Jahren in Bietigheim-Bissingen",
+      "id": "8502df4b8b8ecdeb",
+      "title": "Herbstferienworkshop: Das magische Königreich für Kinder von 6-10 Jahren in Ludwigsburg",
       "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "fc28c032b76c9800",
-      "title": "Music got the Rhythm",
-      "date_start": "2026-11-04",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "6140c30cfc563bd9",
-      "title": "Workshop: Luftakrobatik-Werkstatt Spezial für Kinder und Jugendliche von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2027-07-10",
       "source": "labyrinth"
     },
     {
-      "id": "cd0b057b8f70d333",
-      "title": "Monrepos Open Air I – Ludwigsburger Schlossfestspiele",
-      "date_start": "2026-07-17",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "37b23d72ad7c466e",
-      "title": "Sommerfest der KITA \"Unsere Champions\"",
-      "date_start": "2026-07-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "87da6f998a18a210",
-      "title": "Tischtennis Stadtpokal Ludwigsburg 2026",
-      "date_start": "2026-07-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "f675a0429067708a",
-      "title": "100 Jahre Eingemeindungsfeier Hoheneck",
-      "date_start": "2026-07-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "2c9b050e1f93a991",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-07-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "3960fa6dbd60bdb8",
-      "title": "Emil und die Detektive",
-      "date_start": "2026-07-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7fa4343a1b1493f5",
-      "title": "Genussführung: MärchenZauber & WeinGenuss",
-      "date_start": "2026-07-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "df0d6504afe310bb",
-      "title": "Der Gott des Gemetzels",
-      "date_start": "2026-07-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "26306d8c908be2f0",
-      "title": "»Der Freischütz«",
-      "date_start": "2026-07-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "23ad09447e64a3a0",
-      "title": "Bader, Ärzte, Apotheker - eine heilsame Erlebnis-Tour",
-      "date_start": "2026-07-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "ba6fdca43df5c081",
-      "title": "Monrepos Open Air II – Ludwigsburger Schlossfestspiele",
-      "date_start": "2026-07-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "9794d33971ce1bb7",
-      "title": "100 Jahre Eingemeindung Hoheneck",
-      "date_start": "2026-07-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "0ed09a9b743dc3e6",
-      "title": "Tischtennis Stadtpokal Ludwigsburg 2026",
-      "date_start": "2026-07-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "c24e37593a886750",
-      "title": "Gott im Park",
-      "date_start": "2026-07-19",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "256092c7b23331a9",
-      "title": "„Weil menschlich so viel möglich ist“",
-      "date_start": "2026-05-08",
-      "source": "schloss"
-    },
-    {
-      "id": "81fdabebec860f6b",
-      "title": "Sauna Themenwoche",
-      "date_start": "2026-07-07",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "69014966b1547c20",
-      "title": "Workshop: Luftakrobatik Spezial für Kinder von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-07-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "09270115e44c304e",
-      "title": "Workshop: Zirkus-Spezial für Kinder von 5-7 Jahren",
-      "date_start": "2026-07-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "9d4a40d0af546bd3",
-      "title": "[Fällt aus!] Workshop: Till Eulenspiegel als Tonfigur in Ludwigsburg",
-      "date_start": "2026-07-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "25e6960e89f10fe8",
-      "title": "Feldenkrais Intensiv",
-      "date_start": "2026-07-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "fe8ce70aa65b736c",
-      "title": "PETS - Messe rund ums Tier",
-      "date_start": "2026-07-11",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "8372a80a42cdef6c",
-      "title": "Workshop: Zirkus-Spezial für Kinder von 8-12 Jahren in Ludwigsburg",
-      "date_start": "2026-07-12",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "9d9b979cc37cc2d3",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-07-12",
-      "source": "schloss"
-    },
-    {
-      "id": "a460238c24232b76",
-      "title": "Naturerlebnis Neckar",
-      "date_start": "2026-07-12",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7fe050478249b1f9",
-      "title": "Kleidung, die verführt",
-      "date_start": "2026-07-12",
-      "source": "schloss"
-    },
-    {
-      "id": "64eaece7ccc6b391",
-      "title": "Imker-Sommerfest",
-      "date_start": "2026-07-12",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "15c7bddd58a045dd",
-      "title": "Kasperletheater im Märchengarten",
-      "date_start": "2026-07-12",
-      "source": "blueba"
-    },
-    {
-      "id": "7f413125d6b92bab",
-      "title": "Kaffeeklatsch bei Königs",
-      "date_start": "2026-07-12",
-      "source": "schloss"
-    },
-    {
-      "id": "2a0d7ece37f5dca4",
-      "title": "Von diebischen Elstern und listigen Gaunern",
-      "date_start": "2026-07-12",
-      "source": "schloss"
-    },
-    {
-      "id": "d6d0e43c83f30f35",
-      "title": "Emil und die Detektive",
-      "date_start": "2026-07-12",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "1ab1c4365198485d",
-      "title": "Auf Sand gebaut",
-      "date_start": "2026-07-12",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "6bc7c1eee5dfe11d",
-      "title": "Genussführung: ANGEZAPFT in Ludwigsburg",
-      "date_start": "2026-07-12",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "e255d3d00575f1af",
-      "title": "Julia Lezhneva",
-      "date_start": "2026-07-12",
-      "source": "schloss"
-    },
-    {
-      "id": "26ee812a9f881031",
-      "title": "Le Cinesi",
-      "date_start": "2026-07-12",
-      "source": "schloss"
-    },
-    {
-      "id": "3c4986916f7d6594",
-      "title": "Julia Lezhneva – Ludwigsburger Schlossfestspiele",
-      "date_start": "2026-07-12",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "ea375f7dec469781",
-      "title": "Le Cinesi – Ludwigsburger Schlossfestspiele",
-      "date_start": "2026-07-12",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "71f3c3fc124c71d5",
-      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "f517ee76209c5869",
-      "title": "Sommerferienworkshop: Kunst im Wald in Bietigheim",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "603fe36ac301102f",
-      "title": "Sommerferienworkshop: Hip Hop Streetdance in Bietigheim",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "3742c059e0d5d8e7",
-      "title": "Sommerferienworkshop: Einfach magisch - Zaubersprüche und Zaubertränke aller Art in Bietigheim",
-      "date_start": "2026-09-07",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "4041d9923d03c4c8",
-      "title": "Sommerferienworkshop: Film ab! Vom Storyboard zum Video – ein Ganztagsangebot in Ludwigsburg",
-      "date_start": "2026-09-07",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "cfc72384a266308b",
-      "title": "Herbstferienworkshop: König Peter und Prinzessin Lila aus Ton für Kinder ab 7 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "3f492120d95cd106",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-11-10",
-      "source": "labyrinth"
-    },
-    {
-      "id": "1499774355cb8ac8",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-11-10",
-      "source": "labyrinth"
-    },
-    {
-      "id": "cf94fc4cfcc8a0f4",
-      "title": "Workshop: Mini Kunst Lab für Kinder von 1-2 Jahren und Mütter, Väter, Begleitpersonen in Ludwigsburg",
-      "date_start": "2026-11-11",
-      "source": "labyrinth"
-    },
-    {
-      "id": "a335a62b6c2ff53a",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren",
-      "date_start": "2027-01-19",
-      "source": "labyrinth"
-    },
-    {
-      "id": "87a1682d3dab4103",
-      "title": "Osterferienworkshop: Kreativ in der Linoldruckwerkstatt für Jugendliche von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2027-03-30",
-      "source": "labyrinth"
-    },
-    {
-      "id": "39d09a207b4fd6b5",
-      "title": "Osterferienworkshop: Abenteuer Manege! für Kinder von 9-12 Jahren in Ludwigsburg",
-      "date_start": "2027-03-30",
-      "source": "labyrinth"
-    },
-    {
-      "id": "a1b206b52ecbea30",
-      "title": "Pfingstferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Ludwigsburg",
-      "date_start": "2027-05-18",
-      "source": "labyrinth"
-    },
-    {
-      "id": "7a9868b0fbe9709a",
-      "title": "Pfingstferienworkshop: Fantastische Zirkuswelt! für Kinder von 6-8 Jahren in Bietigheim-Bissingen",
-      "date_start": "2027-05-24",
+      "id": "07a1bdf6813a14a6",
+      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 5-7 Jahren in Ludwigsburg",
+      "date_start": "2026-11-07",
       "source": "labyrinth"
     }
   ]
