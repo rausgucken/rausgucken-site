@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-14T10:25:15.779778+02:00",
+  "generated_at": "2026-07-15T10:01:30.579914+02:00",
   "city": "asperg",
   "sources": [
+    "asperg_fuehrungen",
     "glasperlenspiel",
-    "asperg_veranstaltungen",
-    "asperg_fuehrungen"
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-07-13T09:58:29.294527+02:00",
-  "count_added": 19,
-  "count_removed": 0,
+  "previous_run": "2026-07-14T10:25:15.801235+02:00",
+  "count_added": 18,
+  "count_removed": 1,
   "added": [
     {
       "id": "df2fb65f3b7fecca",
@@ -117,13 +117,14 @@
       "title": "Humorfest mit Ernst Mantel und Werner Koczwara",
       "date_start": "2026-07-10",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "5a28724e90053e07",
-      "title": "Kabarettistin Constanze Lindner - Lesung und Show",
-      "date_start": "2026-09-19",
-      "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "3b64797c9bde034c",
+      "title": "Start HEISS AUF LESEN 2026",
+      "date_start": "2026-07-14",
+      "source": "asperg_veranstaltungen"
+    }
+  ]
 }

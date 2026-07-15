@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-07-14T07:56:49.098136+02:00",
+  "generated_at": "2026-07-15T08:05:36.118475+02:00",
   "city": "ingersheim",
   "sources": [
     "ingersheim_gemeinde"
   ],
-  "previous_run": "2026-07-13T07:42:50.956679+02:00",
-  "count_added": 1,
-  "count_removed": 0,
-  "added": [
+  "previous_run": "2026-07-14T07:56:49.118800+02:00",
+  "count_added": 0,
+  "count_removed": 3,
+  "added": [],
+  "removed": [
     {
-      "id": "793174ee3f3a555f",
-      "title": "Ingersheimer Boule-Turnier",
-      "date_start": "2026-09-12",
+      "id": "df310a5ea4bf8f68",
+      "title": "Blutspendeaktion",
+      "date_start": "2026-07-14",
+      "source": "ingersheim_gemeinde"
+    },
+    {
+      "id": "9595514b60aef48e",
+      "title": "Erntedank - Gottesdienst",
+      "date_start": "2026-10-04",
+      "source": "ingersheim_gemeinde"
+    },
+    {
+      "id": "9be9253802ca4235",
+      "title": "LEGO - Stadt",
+      "date_start": "2026-10-09",
       "source": "ingersheim_gemeinde"
     }
-  ],
-  "removed": []
+  ]
 }

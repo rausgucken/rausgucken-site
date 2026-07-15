@@ -1,80 +1,36 @@
 {
-  "generated_at": "2026-07-14T10:36:59.441871+02:00",
+  "generated_at": "2026-07-15T10:06:31.187341+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "kunstverein_ausstellungen",
-    "forum_schlosspark",
-    "museum",
-    "schloss",
-    "musikhalle_lb",
-    "ludwigsburg_stadt",
-    "labyrinth",
-    "blueba",
-    "karlskaserne_ausstellungen",
-    "kunstverein_veranstaltungen",
-    "karlskaserne_veranstaltungen",
     "garnisonmuseum",
-    "stabi"
+    "blueba",
+    "labyrinth",
+    "forum_schlosspark",
+    "stabi",
+    "schloss",
+    "kunstverein_veranstaltungen",
+    "musikhalle_lb",
+    "kunstverein_ausstellungen",
+    "karlskaserne_veranstaltungen",
+    "ludwigsburg_stadt",
+    "museum",
+    "karlskaserne_ausstellungen"
   ],
-  "previous_run": "2026-07-13T10:14:56.646898+02:00",
-  "count_added": 6,
-  "count_removed": 6,
+  "previous_run": "2026-07-14T10:36:59.480455+02:00",
+  "count_added": 22,
+  "count_removed": 28,
   "added": [
     {
-      "id": "11932095b678154b",
+      "id": "d57b6313912b76df",
       "title": "„Weil menschlich so viel möglich ist“",
       "date_start": "2026-05-08",
       "source": "schloss"
     },
     {
-      "id": "9f12e5eb04ca2fab",
-      "title": "Herbstferienworkshop: Das magische Königreich für Kinder von 6-10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
+      "id": "d24fc2b934be8284",
+      "title": "Konrad oder Das Kind aus der Konservenbüchse",
+      "date_start": "2026-07-20",
       "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "4da77d9107c21b5d",
-      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 5-7 Jahren in Ludwigsburg",
-      "date_start": "2026-11-07",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "33db71f4708977da",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-09-09",
-      "source": "museum"
-    },
-    {
-      "id": "e5930b81ea6b2002",
-      "title": "Venezianischer Maskenball",
-      "date_start": "2026-09-03",
-      "source": "schloss"
-    },
-    {
-      "id": "c81ce9fdfb461c7c",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-02",
-      "source": "stabi"
-    }
-  ],
-  "removed": [
-    {
-      "id": "01650d0eed14deaa",
-      "title": "„Weil menschlich so viel möglich ist“",
-      "date_start": "2026-05-08",
-      "source": "schloss"
-    },
-    {
-      "id": "06f6e8cc8a2f749f",
-      "title": "Insta was? Einstieg in die Welt der Reels, Postings und Stories",
-      "date_start": "2026-07-13",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "9b5ff81cf5f2f83f",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-07-22",
-      "source": "stabi"
     },
     {
       "id": "fa01f595680c02e3",
@@ -83,16 +39,288 @@
       "source": "stabi"
     },
     {
-      "id": "8502df4b8b8ecdeb",
-      "title": "Herbstferienworkshop: Das magische Königreich für Kinder von 6-10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
+      "id": "f2f2eead6dec8ec5",
+      "title": "Workshop: Ein Hirschkopf aus Ton für Kinder ab 8 Jahren in Ludwigsburg",
+      "date_start": "2026-11-14",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "41faa0d81fdf9fa8",
+      "title": "»Der Freischütz«",
+      "date_start": "2026-07-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fbd88a9bac2d65af",
+      "title": "»Der Freischütz«",
+      "date_start": "2026-07-18",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "76c92b119384a42a",
+      "title": "Sommerferienworkshop: Binding journals in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "9b5ff81cf5f2f83f",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-07-22",
+      "source": "stabi"
+    },
+    {
+      "id": "9c9fbd15ba4ab3e2",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-07-16",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "dd571ebd66511a63",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-08-20",
       "source": "labyrinth"
     },
     {
-      "id": "07a1bdf6813a14a6",
-      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 5-7 Jahren in Ludwigsburg",
-      "date_start": "2026-11-07",
+      "id": "1ec690593f8e5c9c",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-09-17",
       "source": "labyrinth"
+    },
+    {
+      "id": "b64dcda2dd844e2b",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-10-15",
+      "source": "labyrinth"
+    },
+    {
+      "id": "74e12e6948e59b78",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-11-19",
+      "source": "labyrinth"
+    },
+    {
+      "id": "b33661a485b57575",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-12-10",
+      "source": "labyrinth"
+    },
+    {
+      "id": "d2bb7de5aac30f56",
+      "title": "DER LINDBERGHFLUG – GAECHINGER CANTOREY",
+      "date_start": "2027-05-01",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "f9c275e90654629b",
+      "title": "BLUMEN, BÜSCHE, BEETHOVEN – KINDERKONZERT",
+      "date_start": "2027-05-03",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "326bb1fac5352014",
+      "title": "CHRISTINA LANDSHAMER & STUTTGARTER PHILHARMONIKER",
+      "date_start": "2027-05-06",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "6e62c21195939264",
+      "title": "STUTTGARTER PHILHARMONIKER",
+      "date_start": "2027-05-09",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "58f7cdbb5d945edd",
+      "title": "ALPENSINFONIE – DEUTSCHE STAATSPHILHARMONIE",
+      "date_start": "2027-05-14",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "9919025159685b61",
+      "title": "Tischtennis Outdoor-Midi-Turnier",
+      "date_start": "2026-07-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "62c51424f75d77a0",
+      "title": "KOSTÜMFÜHRUNG: Franziska von Hohenheim",
+      "date_start": "2026-07-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "80f664d09d7d8601",
+      "title": "Emil und die Detektive",
+      "date_start": "2026-07-19",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "11932095b678154b",
+      "title": "„Weil menschlich so viel möglich ist“",
+      "date_start": "2026-05-08",
+      "source": "schloss"
+    },
+    {
+      "id": "aef1483879683520",
+      "title": "HEISS AUF LESEN",
+      "date_start": "2026-07-14",
+      "source": "stabi"
+    },
+    {
+      "id": "3d744ae620476626",
+      "title": "Bewegungsgruppe hat Plätze frei",
+      "date_start": "2026-07-14",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "10595078ddd34b18",
+      "title": "LUDWIGSBURGER VÄTERGRUPPE",
+      "date_start": "2026-07-14",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "436247bad0ae402b",
+      "title": "Lisa Batiashvili",
+      "date_start": "2026-07-14",
+      "source": "schloss"
+    },
+    {
+      "id": "9e9376577bd7dc86",
+      "title": "Lisa Batiashvili – Ludwigsburger Schlossfestspiele",
+      "date_start": "2026-07-14",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "efeaa2ead8871298",
+      "title": "Internetführerschein",
+      "date_start": "2026-07-15",
+      "source": "stabi"
+    },
+    {
+      "id": "f8e66f69a41603a7",
+      "title": "»Der Freischütz«",
+      "date_start": "2026-07-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "26306d8c908be2f0",
+      "title": "»Der Freischütz«",
+      "date_start": "2026-07-18",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a77cb32c210e5670",
+      "title": "Konrad oder Das Kind aus der Konservenbüchse",
+      "date_start": "2026-07-20",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "c8df0c0a6925172c",
+      "title": "Sommerferienworkshop: Binding journals in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "c6c9cfd98a1e5a04",
+      "title": "V01CES//B0D1EZ – 18 Uhr",
+      "date_start": "2026-07-30",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "bd0304179c1c41c4",
+      "title": "V01CES//B0D1EZ – 21 Uhr",
+      "date_start": "2026-07-30",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "c81ce9fdfb461c7c",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-02",
+      "source": "stabi"
+    },
+    {
+      "id": "82384961d5685a3d",
+      "title": "Münz-Messe Ludwigsburg",
+      "date_start": "2026-09-19",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "778b66783e085b80",
+      "title": "Haake Festival 2026",
+      "date_start": "2026-09-25",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "929c22685704278f",
+      "title": "Herbstferienworkshop: Herbstmagie mit Eco-Printing ab 10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "1ca2620c5973273b",
+      "title": "Asaf Avidan",
+      "date_start": "2026-11-02",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "317673fe35aa8ebd",
+      "title": "Workshop: Ein Hirschkopf aus Ton für Kinder ab 8 Jahren in Ludwigsburg",
+      "date_start": "2026-11-14",
+      "source": "labyrinth"
+    },
+    {
+      "id": "95a23730fe2b4821",
+      "title": "Annis wilde Tierabenteuer - 12 Uhr-Vorstellung",
+      "date_start": "2026-12-13",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "d5ebe3d8fd2e8fa3",
+      "title": "Annis wilde Tierabenteuer - 16 Uhr-Vorstellung",
+      "date_start": "2026-12-13",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "a7e335f752a40746",
+      "title": "Der Nussknacker",
+      "date_start": "2026-12-16",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "97756fa7882f3f1f",
+      "title": "Biyon Kattilathu",
+      "date_start": "2026-12-19",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "78345532a39907dc",
+      "title": "Jimmy Kelly & the Streetorchestra - Celebrate A Kelly Christmas",
+      "date_start": "2026-12-23",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "3a8578e896db5232",
+      "title": "Dschungelbuch – das Musical",
+      "date_start": "2026-12-27",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "499286371720c410",
+      "title": "Dschungelbuch – das Musical",
+      "date_start": "2026-12-28",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "35ee17596fed705a",
+      "title": "Best of Musicals",
+      "date_start": "2027-02-18",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "a424676372bc8b84",
+      "title": "Der große LORIOT-Abend",
+      "date_start": "2027-04-05",
+      "source": "forum_schlosspark"
     }
   ]
 }
