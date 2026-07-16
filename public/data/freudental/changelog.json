@@ -1,12 +1,32 @@
 {
-  "generated_at": "2026-07-15T08:15:18.346699+02:00",
+  "generated_at": "2026-07-16T08:35:25.539008+02:00",
   "city": "freudental",
   "sources": [
     "freudental_gemeinde"
   ],
-  "previous_run": "2026-07-13T08:02:11.245002+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-07-15T08:15:18.367100+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "62f709172a204037",
+      "title": "Seniorenausflug ins Blühende Barock/Schloss Ludwigsburg",
+      "date_start": "2026-09-16",
+      "source": "freudental_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "66306009a013d33f",
+      "title": "Seniorennachmittag Kleeblattheim",
+      "date_start": "2026-07-15",
+      "source": "freudental_gemeinde"
+    },
+    {
+      "id": "64f1cad98284fec2",
+      "title": "Seniorenausflug Landesgartenschau Ellwangen",
+      "date_start": "2026-09-16",
+      "source": "freudental_gemeinde"
+    }
+  ]
 }

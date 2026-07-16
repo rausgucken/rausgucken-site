@@ -1,9 +1,9 @@
 {
-  "scraped_at": "2026-07-15T10:06:31.227962+02:00",
+  "scraped_at": "2026-07-16T10:53:59.857292+02:00",
   "city": "ludwigsburg",
   "event_count": 846,
   "flagged_count": 0,
-  "expired_count": 0,
+  "expired_count": 3,
   "sources_scraped": [
     "blueba",
     "forum_schlosspark",
@@ -20,85 +20,87 @@
     "stabi"
   ],
   "source_counts": {
-    "schloss": 175,
-    "ludwigsburg_stadt": 45,
+    "ludwigsburg_stadt": 43,
+    "schloss": 174,
     "museum": 48,
     "blueba": 47,
     "kunstverein_ausstellungen": 4,
     "karlskaserne_ausstellungen": 1,
-    "stabi": 199,
-    "garnisonmuseum": 3,
-    "karlskaserne_veranstaltungen": 104,
+    "stabi": 197,
+    "karlskaserne_veranstaltungen": 107,
     "musikhalle_lb": 20,
-    "labyrinth": 151,
+    "labyrinth": 155,
+    "garnisonmuseum": 1,
     "forum_schlosspark": 42,
     "kunstverein_veranstaltungen": 7
   },
   "sources_failed": [],
-  "data_hash": "3ac68a9684347349",
+  "data_hash": "32d9da5d012e028d",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 15.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 16.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "schloss": 1.0,
     "ludwigsburg_stadt": 1.0,
+    "schloss": 1.0,
     "museum": 1.0,
     "blueba": 1.0,
     "kunstverein_ausstellungen": 1.0,
     "karlskaserne_ausstellungen": 0.8,
     "stabi": 1.0,
-    "garnisonmuseum": 1.0,
     "karlskaserne_veranstaltungen": 1.0,
     "musikhalle_lb": 1.0,
     "labyrinth": 1.0,
+    "garnisonmuseum": 1.0,
     "forum_schlosspark": 1.0,
     "kunstverein_veranstaltungen": 1.0
   },
   "source_event_counts": {
-    "schloss": 175,
-    "ludwigsburg_stadt": 45,
+    "ludwigsburg_stadt": 43,
+    "schloss": 174,
     "museum": 48,
     "blueba": 47,
     "kunstverein_ausstellungen": 4,
     "karlskaserne_ausstellungen": 1,
-    "stabi": 199,
-    "garnisonmuseum": 3,
-    "karlskaserne_veranstaltungen": 104,
+    "stabi": 197,
+    "karlskaserne_veranstaltungen": 107,
     "musikhalle_lb": 20,
-    "labyrinth": 151,
+    "labyrinth": 155,
+    "garnisonmuseum": 1,
     "forum_schlosspark": 42,
     "kunstverein_veranstaltungen": 7
   },
   "count_drift_warnings": {
-    "karlskaserne_ausstellungen": "Count drift: 1 vs historical avg 2"
+    "karlskaserne_ausstellungen": "Count drift: 1 vs historical avg 2",
+    "garnisonmuseum": "Count drift: 1 vs historical avg 3"
   },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 486.5,
-    "runtime_delta_vs_baseline": 1.718,
+    "runtime_minutes": 534.0,
+    "runtime_delta_vs_baseline": 1.983,
     "source_health": {
-      "schloss": 1.0,
       "ludwigsburg_stadt": 1.0,
+      "schloss": 1.0,
       "museum": 1.0,
       "blueba": 1.0,
       "kunstverein_ausstellungen": 1.0,
       "karlskaserne_ausstellungen": 0.8,
       "stabi": 1.0,
-      "garnisonmuseum": 1.0,
       "karlskaserne_veranstaltungen": 1.0,
       "musikhalle_lb": 1.0,
       "labyrinth": 1.0,
+      "garnisonmuseum": 1.0,
       "forum_schlosspark": 1.0,
       "kunstverein_veranstaltungen": 1.0
     },
     "count_drift_warnings": {
-      "karlskaserne_ausstellungen": "Count drift: 1 vs historical avg 2"
+      "karlskaserne_ausstellungen": "Count drift: 1 vs historical avg 2",
+      "garnisonmuseum": "Count drift: 1 vs historical avg 3"
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-07-15T10:17:34.196050+02:00"
+    "generated_at": "2026-07-16T11:04:46.495495+02:00"
   }
 }
