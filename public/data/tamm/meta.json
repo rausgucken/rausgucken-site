@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-16T05:18:02.469947+02:00",
+  "scraped_at": "2026-07-17T05:04:59.480870+02:00",
   "city": "tamm",
   "event_count": 81,
   "flagged_count": 0,
@@ -11,9 +11,9 @@
     "tamm": 81
   },
   "sources_failed": [],
-  "data_hash": "7da4ae68b4a53a85",
+  "data_hash": "0256e2df3622adb5",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 16.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 17.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "tamm": 1.0
@@ -23,18 +23,18 @@
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 534.0,
-    "runtime_delta_vs_baseline": 1.983,
+    "runtime_minutes": 539.0,
+    "runtime_delta_vs_baseline": 2.011,
     "source_health": {
       "tamm": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-07-16T11:04:47.493048+02:00"
+    "status": "critical",
+    "generated_at": "2026-07-17T11:09:39.387606+02:00"
   }
 }

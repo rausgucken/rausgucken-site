@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-07-16T05:59:16.229137+02:00",
+  "scraped_at": "2026-07-17T06:04:18.155559+02:00",
   "city": "kornwestheim",
-  "event_count": 227,
+  "event_count": 230,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -10,14 +10,14 @@
     "kornwestheim"
   ],
   "source_counts": {
-    "kornwestheim": 194,
+    "kornwestheim": 195,
     "das_k_buecherei": 6,
-    "das_k_spielplan": 27
+    "das_k_spielplan": 29
   },
   "sources_failed": [],
-  "data_hash": "6183df4e899ceed0",
+  "data_hash": "d9dacc87bdb0f665",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 16.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 17.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "kornwestheim": 1.0,
@@ -25,18 +25,18 @@
     "das_k_spielplan": 1.0
   },
   "source_event_counts": {
-    "kornwestheim": 194,
+    "kornwestheim": 195,
     "das_k_buecherei": 6,
-    "das_k_spielplan": 27
+    "das_k_spielplan": 29
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 534.0,
-    "runtime_delta_vs_baseline": 1.983,
+    "runtime_minutes": 539.0,
+    "runtime_delta_vs_baseline": 2.011,
     "source_health": {
       "kornwestheim": 1.0,
       "das_k_buecherei": 1.0,
@@ -44,7 +44,7 @@
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-07-16T11:04:46.330959+02:00"
+    "status": "critical",
+    "generated_at": "2026-07-17T11:09:38.233281+02:00"
   }
 }
