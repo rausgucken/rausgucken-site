@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-17T07:46:31.591417+02:00",
+  "generated_at": "2026-07-18T07:27:18.732174+02:00",
   "city": "oberstenfeld",
   "sources": [
     "oberstenfeld_veranstaltungen"
   ],
-  "previous_run": "2026-07-16T08:03:27.416489+02:00",
-  "count_added": 46,
-  "count_removed": 0,
+  "previous_run": "2026-07-17T07:46:31.667065+02:00",
+  "count_added": 48,
+  "count_removed": 1,
   "added": [
     {
       "id": "60dcaf202491b251",
@@ -283,7 +283,26 @@
       "title": "Suppentöpfle",
       "date_start": "2026-07-14",
       "source": "oberstenfeld_veranstaltungen"
+    },
+    {
+      "id": "1431ac3fff54de84",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-07-16",
+      "source": "oberstenfeld_veranstaltungen"
+    },
+    {
+      "id": "2c9ca669184b29be",
+      "title": "Beachparty",
+      "date_start": "2026-08-07",
+      "source": "oberstenfeld_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "cd476f8eab020842",
+      "title": "Beachparty",
+      "date_start": "2026-08-08",
+      "source": "oberstenfeld_veranstaltungen"
+    }
+  ]
 }

@@ -1,15 +1,51 @@
 {
-  "generated_at": "2026-07-17T10:58:59.455306+02:00",
+  "generated_at": "2026-07-18T09:56:18.462939+02:00",
   "city": "asperg",
   "sources": [
     "asperg_veranstaltungen",
-    "asperg_fuehrungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-07-16T10:37:53.759595+02:00",
+  "previous_run": "2026-07-17T10:58:59.531352+02:00",
   "count_added": 19,
-  "count_removed": 0,
+  "count_removed": 3,
   "added": [
+    {
+      "id": "fd2706ada4fe62ad",
+      "title": "Asperg lecker – Stadtführung mit kulturellen und kulinarischen Häppchen",
+      "date_start": "2026-03-27",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "e8852c1be0ce91a4",
+      "title": "Stadtführung",
+      "date_start": "2026-04-19",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "8491ccde4b12548a",
+      "title": "Führung durch Altasperg",
+      "date_start": "2026-04-26",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "facf4a9de3005998",
+      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
+      "date_start": "2026-04-30",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "ba9d495cc3c7c0d1",
+      "title": "Stadtführung mit kulturellen und kulinarischen Häppchen",
+      "date_start": "2026-05-08",
+      "source": "asperg_fuehrungen"
+    },
+    {
+      "id": "a1d3caa2ddd5bcd2",
+      "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
+      "date_start": "2026-05-10",
+      "source": "asperg_fuehrungen"
+    },
     {
       "id": "6fa9b7bf570bc190",
       "title": "Int. Museumstag „Geschichte entdecken“",
@@ -53,6 +89,12 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "d8d9a4602f7dc217",
+      "title": "Tag der dt. Einheit - Kostümführung",
+      "date_start": "2025-10-03",
+      "source": "asperg_fuehrungen"
+    },
+    {
       "id": "cb7d4d5e64cac6fd",
       "title": "Ausstellung",
       "date_start": "2026-11-22",
@@ -71,59 +113,36 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "fd2706ada4fe62ad",
-      "title": "Asperg lecker – Stadtführung mit kulturellen und kulinarischen Häppchen",
-      "date_start": "2026-03-27",
-      "source": "asperg_fuehrungen"
+      "id": "432acda1b34cde9f",
+      "title": "Krämermarkt",
+      "date_start": "2026-07-22",
+      "source": "asperg_veranstaltungen"
     },
     {
-      "id": "e8852c1be0ce91a4",
-      "title": "Stadtführung",
-      "date_start": "2026-04-19",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "8491ccde4b12548a",
-      "title": "Führung durch Altasperg",
-      "date_start": "2026-04-26",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "facf4a9de3005998",
-      "title": "Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
-      "date_start": "2026-04-30",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "ba9d495cc3c7c0d1",
-      "title": "Stadtführung mit kulturellen und kulinarischen Häppchen",
-      "date_start": "2026-05-08",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "a1d3caa2ddd5bcd2",
-      "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
-      "date_start": "2026-05-10",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "d8d9a4602f7dc217",
-      "title": "Tag der dt. Einheit - Kostümführung",
-      "date_start": "2025-10-03",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "c4b9892e3be2af53",
-      "title": "Vortrag über die Entstehung der Insektenwiese Freiberg a.N.",
-      "date_start": "2026-10-14",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "e6eeca5d9254479f",
-      "title": "kein Weihnachtskonzert",
-      "date_start": "2026-11-27",
+      "id": "998b48d8b82258d1",
+      "title": "Theaterabend Hanne Sommer",
+      "date_start": "2026-07-17",
       "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "169de10246511544",
+      "title": "Führung „Auf der Flucht“ – Asperger Fluchtgeschichten",
+      "date_start": "2026-07-17",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "8976b421559c9988",
+      "title": "Theaterabend - Warum hat man dieses Leben",
+      "date_start": "2026-07-17",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "eca247ecc7b09f93",
+      "title": "Krämermarkt 22.07.2026",
+      "date_start": "2026-07-22",
+      "source": "asperg_veranstaltungen"
+    }
+  ]
 }

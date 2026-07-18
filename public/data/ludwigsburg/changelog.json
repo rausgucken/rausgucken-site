@@ -1,36 +1,30 @@
 {
-  "generated_at": "2026-07-17T09:25:29.478723+02:00",
+  "generated_at": "2026-07-18T08:28:12.612340+02:00",
   "city": "ludwigsburg",
   "sources": [
     "schloss",
-    "stabi",
-    "musikhalle_lb",
-    "kunstverein_ausstellungen",
     "kunstverein_veranstaltungen",
-    "forum_schlosspark",
+    "musikhalle_lb",
     "garnisonmuseum",
     "blueba",
-    "labyrinth",
-    "ludwigsburg_stadt",
-    "museum",
     "karlskaserne_veranstaltungen",
-    "karlskaserne_ausstellungen"
+    "forum_schlosspark",
+    "karlskaserne_ausstellungen",
+    "museum",
+    "stabi",
+    "labyrinth",
+    "kunstverein_ausstellungen",
+    "ludwigsburg_stadt"
   ],
-  "previous_run": "2026-07-16T10:53:59.857292+02:00",
-  "count_added": 26,
-  "count_removed": 17,
+  "previous_run": "2026-07-17T09:25:29.575741+02:00",
+  "count_added": 38,
+  "count_removed": 24,
   "added": [
     {
-      "id": "fa8d08903f7a396d",
+      "id": "d144629c00229383",
       "title": "„Weil menschlich so viel möglich ist“",
       "date_start": "2026-05-08",
       "source": "schloss"
-    },
-    {
-      "id": "d24fc2b934be8284",
-      "title": "Konrad oder Das Kind aus der Konservenbüchse",
-      "date_start": "2026-07-20",
-      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "feee56b785ce127e",
@@ -39,10 +33,40 @@
       "source": "stabi"
     },
     {
-      "id": "fa01f595680c02e3",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-02",
-      "source": "stabi"
+      "id": "8608497d4e604c4c",
+      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "labyrinth"
+    },
+    {
+      "id": "9e457b32710cc6ab",
+      "title": "Sommerferienworkshop: T-Rex-Alarm in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "8502df4b8b8ecdeb",
+      "title": "Herbstferienworkshop: Das magische Königreich für Kinder von 6-10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "69a6e2f7d849c153",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2026-11-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "ff8a62da5898c693",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2026-11-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "35481261515aefd7",
+      "title": "Sommerferienworkshop: Trickfilm in Stop-Motion-Technik in Ludwigsburg",
+      "date_start": "2026-08-31",
+      "source": "labyrinth"
     },
     {
       "id": "d3d20f419148a996",
@@ -57,228 +81,318 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "929c22685704278f",
-      "title": "Herbstferienworkshop: Herbstmagie mit Eco-Printing ab 10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "17afd3d48bcfc7c3",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": null,
+      "source": "schloss"
     },
     {
-      "id": "33855549599c0830",
-      "title": "Internationale Geschichteninsel - Albanisch",
-      "date_start": "2026-09-25",
-      "source": "stabi"
+      "id": "c44f27a6674bc2d4",
+      "title": "Ludwigsburger Kürbis-Schnitzwelt",
+      "date_start": "2026-08-27",
+      "source": "blueba"
     },
     {
-      "id": "711a0659077f3806",
-      "title": "Internationale Geschichteninsel - Russisch",
-      "date_start": "2026-10-13",
-      "source": "stabi"
+      "id": "dd06bc14a21566ba",
+      "title": "Kürbis-Märchen",
+      "date_start": "2026-09-12",
+      "source": "blueba"
     },
     {
-      "id": "82384961d5685a3d",
-      "title": "Münz-Messe Ludwigsburg",
+      "id": "42e3d1ba9808bb10",
+      "title": "Kürbis-Sortenschau",
+      "date_start": "2026-09-12",
+      "source": "blueba"
+    },
+    {
+      "id": "7cf97dad91107869",
+      "title": "Early-Weigh-Off der Riesenkürbisse",
+      "date_start": "2026-09-13",
+      "source": "blueba"
+    },
+    {
+      "id": "8a098a1c279787b4",
+      "title": "Kürbis-Regatta",
       "date_start": "2026-09-19",
-      "source": "forum_schlosspark"
+      "source": "blueba"
     },
     {
-      "id": "1ca2620c5973273b",
-      "title": "Asaf Avidan",
-      "date_start": "2026-11-02",
-      "source": "forum_schlosspark"
+      "id": "563eacbf5f0b7c01",
+      "title": "Kürbis-Schnitz-Event buchen auf der Kürbisausstellung",
+      "date_start": "2026-09-19",
+      "source": "blueba"
     },
     {
-      "id": "95a23730fe2b4821",
-      "title": "Annis wilde Tierabenteuer - 12 Uhr-Vorstellung",
-      "date_start": "2026-12-13",
-      "source": "forum_schlosspark"
+      "id": "188a6768d496046c",
+      "title": "Sicher und gesund zur Schule",
+      "date_start": "2026-09-19",
+      "source": "blueba"
     },
     {
-      "id": "d5ebe3d8fd2e8fa3",
-      "title": "Annis wilde Tierabenteuer - 16 Uhr-Vorstellung",
-      "date_start": "2026-12-13",
-      "source": "forum_schlosspark"
+      "id": "895e643560932e67",
+      "title": "Deutschlands größte Kürbissuppe",
+      "date_start": "2026-09-26",
+      "source": "blueba"
     },
     {
-      "id": "a7e335f752a40746",
-      "title": "Der Nussknacker",
-      "date_start": "2026-12-16",
-      "source": "forum_schlosspark"
+      "id": "a558a7c1c5dbc910",
+      "title": "Kürbis-Märchen",
+      "date_start": "2026-09-26",
+      "source": "blueba"
     },
     {
-      "id": "97756fa7882f3f1f",
-      "title": "Biyon Kattilathu",
-      "date_start": "2026-12-19",
-      "source": "forum_schlosspark"
+      "id": "1798b5769ac3b1fd",
+      "title": "Kürbis-Märchen",
+      "date_start": "2026-10-03",
+      "source": "blueba"
     },
     {
-      "id": "78345532a39907dc",
-      "title": "Jimmy Kelly & the Streetorchestra - Celebrate A Kelly Christmas",
-      "date_start": "2026-12-23",
-      "source": "forum_schlosspark"
+      "id": "f80771ee0cf011a0",
+      "title": "Deutsche Meisterschaft im Kürbiswiegen",
+      "date_start": "2026-10-04",
+      "source": "blueba"
     },
     {
-      "id": "3a8578e896db5232",
-      "title": "Dschungelbuch – das Musical",
-      "date_start": "2026-12-27",
-      "source": "forum_schlosspark"
+      "id": "a4ea4b3e99978309",
+      "title": "Europameisterschaft im Kürbiswiegen",
+      "date_start": "2026-10-11",
+      "source": "blueba"
     },
     {
-      "id": "499286371720c410",
-      "title": "Dschungelbuch – das Musical",
-      "date_start": "2026-12-28",
-      "source": "forum_schlosspark"
+      "id": "4bb6c87f27711751",
+      "title": "Ludwigsburgs Riesenkürbis-Schnitzfestival",
+      "date_start": "2026-10-18",
+      "source": "blueba"
     },
     {
-      "id": "35ee17596fed705a",
-      "title": "Best of Musicals",
-      "date_start": "2027-02-18",
-      "source": "forum_schlosspark"
+      "id": "ca660a8bb54d6efd",
+      "title": "Halloween-Kürbis-Schnitzen für Alle",
+      "date_start": "2026-10-24",
+      "source": "blueba"
     },
     {
-      "id": "a424676372bc8b84",
-      "title": "Der große LORIOT-Abend",
-      "date_start": "2027-04-05",
-      "source": "forum_schlosspark"
+      "id": "2643912d41b08b55",
+      "title": "Halloween-Kürbis-Schnitzen für Alle",
+      "date_start": "2026-10-31",
+      "source": "blueba"
     },
     {
-      "id": "14cbfa0f7d4ca465",
-      "title": "Monrepos Open Air III – Ludwigsburger Schlossfestspiele",
-      "date_start": "2026-07-19",
+      "id": "f9a8acf3eabbaec9",
+      "title": "Kürbisschlachtfest",
+      "date_start": "2026-11-01",
+      "source": "blueba"
+    },
+    {
+      "id": "8efdfda7bf510937",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-07-22",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "084606c6529e7de0",
-      "title": "Veranstaltungsreihe | Campus der Generationen",
-      "date_start": "2026-07-21",
+      "id": "5c661fa7f178d8db",
+      "title": "LuBu MoVes",
+      "date_start": "2026-07-22",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "1668c20b43c71de6",
-      "title": "Bewegungsgruppe hat Plätze frei",
-      "date_start": "2026-07-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "dbb7c59bec6c240a",
-      "title": "Insta was? Einstieg in die Welt der Reels, Postings und Stories",
-      "date_start": "2026-07-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "884bcb21df9e60f3",
-      "title": "Das Schicksal von Hans und Sophie Scholl im Fokus",
-      "date_start": "2026-07-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "6973351906b253cc",
+      "id": "3ea8918f3d233ed9",
       "title": "Der Gott des Gemetzels",
-      "date_start": "2026-07-21",
+      "date_start": "2026-07-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "e919f45b46f2d419",
+      "title": "Konzertlesung Rosita Roman: Eine Hommage an Wort und Klang",
+      "date_start": "2026-07-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "ef03d5b9397d8e35",
+      "title": "Ludwigsburg malt",
+      "date_start": "2026-07-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "efe2b37acd5f92ec",
+      "title": "Ritmo y Pasión - Tanzen unter den Sternen",
+      "date_start": "2026-07-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "22893a3c6d80103f",
+      "title": "Kostümführung: Nedd ganz saubr",
+      "date_start": "2026-07-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "156b46c3c295e883",
+      "title": "Boxing & Beats",
+      "date_start": "2026-07-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "ecc1334f24d99d32",
+      "title": "Der Gott des Gemetzels",
+      "date_start": "2026-07-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2334204107cd8815",
+      "title": "Psychologische Beratung – mit Herz und Erfahrung für Sie da!",
+      "date_start": "2026-07-24",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "549d9647f8b21a61",
+      "title": "Digitale Hilfe für ältere Menschen in Schlösslesfeld",
+      "date_start": "2026-07-24",
       "source": "ludwigsburg_stadt"
     }
   ],
   "removed": [
     {
-      "id": "4bb8965f9aa75160",
+      "id": "4338d42d24902687",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "fa8d08903f7a396d",
       "title": "„Weil menschlich so viel möglich ist“",
       "date_start": "2026-05-08",
       "source": "schloss"
     },
     {
-      "id": "dad444b46d491a39",
-      "title": "Sport für die Seele",
-      "date_start": "2026-07-16",
+      "id": "ce512de32a6b2a69",
+      "title": "Vortrag \"Hitze im Alter\" - gut und sicher durch warme Tage",
+      "date_start": "2026-07-17",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "9acc072033c5c0ea",
-      "title": "Bilderbuchkino am Nachmittag",
-      "date_start": "2026-07-16",
-      "source": "stabi"
+      "id": "31d0f3a3f2c311c2",
+      "title": "The Ilan Lev Method",
+      "date_start": "2026-07-17",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "9c9fbd15ba4ab3e2",
-      "title": "Bilderbuchkino am Nachmittag",
-      "date_start": "2026-07-16",
+      "id": "a3274653684e5999",
+      "title": "Genussführung: Historie und Häppchen",
+      "date_start": "2026-07-17",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "b32dea6e6df43c2f",
-      "title": "Veranstaltungsreihe | Campus der Generationen",
-      "date_start": "2026-07-16",
+      "id": "a052a8f5c9e32f4c",
+      "title": "Genussführung: Oh là là! Auf Frankreichs Spuren durch Ludwigsburg",
+      "date_start": "2026-07-17",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "2aadcf04324bb79a",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-07-16",
-      "source": "museum"
-    },
-    {
-      "id": "95543155a4fc4914",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-07-16",
+      "id": "2f3a9b1017f32427",
+      "title": "Genussführung: Weinerlebnis in Hoheneck",
+      "date_start": "2026-07-17",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "e5b7a185383d0bd7",
-      "title": "Ludwigsburg macht Musik",
-      "date_start": "2026-07-16",
+      "id": "c5cbd7240760d4c9",
+      "title": "Poesie im Bienenhaus ENTFÄLLT",
+      "date_start": "2026-07-17",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "a26d1733732fd1ca",
+      "id": "5ec2d0e8f8cd4f9e",
       "title": "Der Gott des Gemetzels",
-      "date_start": "2026-07-16",
+      "date_start": "2026-07-17",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "6493afe699d06ffd",
-      "title": "Jonas Palm",
-      "date_start": "2026-07-16",
-      "source": "schloss"
-    },
-    {
-      "id": "403161050694d7d2",
-      "title": "Konrad oder Das Kind aus der Konservenbüchse",
-      "date_start": "2026-07-20",
+      "id": "09528f27eba65b55",
+      "title": "Afrobeats und Amapiano Musik",
+      "date_start": "2026-07-17",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "c81ce9fdfb461c7c",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-02",
-      "source": "stabi"
+      "id": "990de2af72dd3e36",
+      "title": "Klangentspannung",
+      "date_start": "2026-07-17",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "f045fcb4600e1e8e",
-      "title": "Internationale Geschichteninsel - Albanisch",
-      "date_start": "2026-09-18",
-      "source": "stabi"
+      "id": "41faa0d81fdf9fa8",
+      "title": "»Der Freischütz«",
+      "date_start": "2026-07-17",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "02a112209f9473b8",
-      "title": "Internationale Geschichteninsel - Russisch",
-      "date_start": "2026-10-06",
-      "source": "stabi"
+      "id": "f245bfbbb459ee5b",
+      "title": "Uli Binetsch Fusion 4",
+      "date_start": "2026-07-17",
+      "source": "musikhalle_lb"
     },
     {
-      "id": "326bb1fac5352014",
-      "title": "CHRISTINA LANDSHAMER & STUTTGARTER PHILHARMONIKER",
-      "date_start": "2027-05-06",
-      "source": "forum_schlosspark"
+      "id": "cd0b057b8f70d333",
+      "title": "Monrepos Open Air I – Ludwigsburger Schlossfestspiele",
+      "date_start": "2026-07-17",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "6e62c21195939264",
-      "title": "STUTTGARTER PHILHARMONIKER",
-      "date_start": "2027-05-09",
-      "source": "forum_schlosspark"
+      "id": "71f3c3fc124c71d5",
+      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "58f7cdbb5d945edd",
-      "title": "ALPENSINFONIE – DEUTSCHE STAATSPHILHARMONIE",
-      "date_start": "2027-05-14",
-      "source": "forum_schlosspark"
+      "id": "7b6451eaba7a077b",
+      "title": "Sommerferienworkshop: T-Rex-Alarm in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "labyrinth"
+    },
+    {
+      "id": "56413126867c106e",
+      "title": "Sommerferienworkshop: Hip Hop Streetdance Kids in Bietigheim",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "603fe36ac301102f",
+      "title": "Sommerferienworkshop: Hip Hop Streetdance in Bietigheim",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "f517ee76209c5869",
+      "title": "Sommerferienworkshop: Kunst im Wald in Bietigheim",
+      "date_start": "2026-08-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "dd2f05a1b9d6b282",
+      "title": "Sommerferienworkshop: Trickfilm in Stop-Motion-Technik in Ludwigsburg",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "54afb91bf5571d01",
+      "title": "Herbstferienworkshop: Fang den Räuber Hotzenplotz ab 4 Jahren in Bietigheim-Bissingen",
+      "date_start": "2026-10-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "9f12e5eb04ca2fab",
+      "title": "Herbstferienworkshop: Das magische Königreich für Kinder von 6-10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "f2fe52b602405bbd",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2026-11-03",
+      "source": "labyrinth"
+    },
+    {
+      "id": "0e4e914970980529",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2026-11-03",
+      "source": "labyrinth"
     }
   ]
 }
