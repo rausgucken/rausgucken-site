@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-07-18T05:52:58.738547+02:00",
+  "generated_at": "2026-07-19T05:51:11.993285+02:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-07-17T06:09:59.747679+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-07-18T05:52:58.813636+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "4bed51877be0f16c",
+      "title": "Kulturprogramm",
+      "date_start": "2026-10-24",
+      "source": "affalterbach_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "d570a651aed217fa",
+      "title": "Kulturprogramm",
+      "date_start": "2026-07-18",
+      "source": "affalterbach_stadt"
+    }
+  ]
 }

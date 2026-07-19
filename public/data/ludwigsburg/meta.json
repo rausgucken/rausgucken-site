@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-07-18T08:28:12.708432+02:00",
+  "scraped_at": "2026-07-19T10:01:19.259383+02:00",
   "city": "ludwigsburg",
-  "event_count": 863,
+  "event_count": 860,
   "flagged_count": 0,
   "expired_count": 3,
   "sources_scraped": [
@@ -20,24 +20,24 @@
     "stabi"
   ],
   "source_counts": {
-    "ludwigsburg_stadt": 44,
+    "ludwigsburg_stadt": 42,
     "schloss": 173,
     "museum": 47,
-    "blueba": 63,
+    "blueba": 62,
     "kunstverein_ausstellungen": 4,
     "karlskaserne_ausstellungen": 1,
-    "stabi": 196,
     "karlskaserne_veranstaltungen": 103,
-    "labyrinth": 155,
+    "stabi": 195,
+    "labyrinth": 156,
     "garnisonmuseum": 1,
     "forum_schlosspark": 50,
     "kunstverein_veranstaltungen": 7,
     "musikhalle_lb": 19
   },
   "sources_failed": [],
-  "data_hash": "bcb05947917e9332",
+  "data_hash": "6a92980749487470",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 18.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 19.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "ludwigsburg_stadt": 1.0,
@@ -46,8 +46,8 @@
     "blueba": 1.0,
     "kunstverein_ausstellungen": 1.0,
     "karlskaserne_ausstellungen": 0.8,
-    "stabi": 1.0,
     "karlskaserne_veranstaltungen": 1.0,
+    "stabi": 1.0,
     "labyrinth": 1.0,
     "garnisonmuseum": 1.0,
     "forum_schlosspark": 1.0,
@@ -55,15 +55,15 @@
     "musikhalle_lb": 1.0
   },
   "source_event_counts": {
-    "ludwigsburg_stadt": 44,
+    "ludwigsburg_stadt": 42,
     "schloss": 173,
     "museum": 47,
-    "blueba": 63,
+    "blueba": 62,
     "kunstverein_ausstellungen": 4,
     "karlskaserne_ausstellungen": 1,
-    "stabi": 196,
     "karlskaserne_veranstaltungen": 103,
-    "labyrinth": 155,
+    "stabi": 195,
+    "labyrinth": 156,
     "garnisonmuseum": 1,
     "forum_schlosspark": 50,
     "kunstverein_veranstaltungen": 7,
@@ -77,8 +77,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 476.3,
-    "runtime_delta_vs_baseline": 1.661,
+    "runtime_minutes": 562.9,
+    "runtime_delta_vs_baseline": 2.145,
     "source_health": {
       "ludwigsburg_stadt": 1.0,
       "schloss": 1.0,
@@ -86,8 +86,8 @@
       "blueba": 1.0,
       "kunstverein_ausstellungen": 1.0,
       "karlskaserne_ausstellungen": 0.8,
-      "stabi": 1.0,
       "karlskaserne_veranstaltungen": 1.0,
+      "stabi": 1.0,
       "labyrinth": 1.0,
       "garnisonmuseum": 1.0,
       "forum_schlosspark": 1.0,
@@ -99,6 +99,6 @@
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-07-18T10:06:57.541129+02:00"
+    "generated_at": "2026-07-19T11:35:33.076501+02:00"
   }
 }
