@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-19T11:22:53.612341+02:00",
+  "generated_at": "2026-07-21T01:55:02.315853+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
     "glasperlenspiel",
+    "asperg_veranstaltungen",
     "asperg_fuehrungen"
   ],
-  "previous_run": "2026-07-18T09:56:18.539635+02:00",
-  "count_added": 20,
-  "count_removed": 2,
+  "previous_run": "2026-07-19T11:22:53.689617+02:00",
+  "count_added": 19,
+  "count_removed": 4,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -123,26 +123,32 @@
       "title": "Theaterabend Hanne Sommer",
       "date_start": "2026-07-17",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "24c8304f19b0f8bf",
-      "title": "Murzarella - Bauchsängerin mit Singenden Puppen",
-      "date_start": "2026-11-22",
-      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "5b5923a7b7ebb7d3",
-      "title": "Altpapiersammlung",
-      "date_start": "2026-07-18",
+      "id": "388982e5c52df88b",
+      "title": "Gartenfest unter den Apfelbäumen",
+      "date_start": "2026-07-19",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "5ba7097b86f9352c",
-      "title": "Gartenfest unter den Apfelbäumen",
-      "date_start": "2026-07-18",
+      "id": "a77ae79123aa5b49",
+      "title": "Theater – Omelette Surprise",
+      "date_start": "2026-07-19",
       "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "5e7d15b9ab58969d",
+      "title": "Vergnügtes Spiel mit Jupiter",
+      "date_start": "2026-07-19",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "c5e3c4417c578638",
+      "title": "Ehepaar Lore und Harry",
+      "date_start": "2026-10-24",
+      "source": "glasperlenspiel"
     }
   ]
 }

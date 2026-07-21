@@ -1,20 +1,1435 @@
 {
-  "generated_at": "2026-07-19T05:43:45.789295+02:00",
+  "generated_at": "2026-07-21T01:55:03.378954+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-07-18T05:47:24.235637+02:00",
+  "previous_run": "2026-07-19T05:43:45.870710+02:00",
   "count_added": 0,
-  "count_removed": 1,
+  "count_removed": 237,
   "added": [],
   "removed": [
     {
-      "id": "ed2dcbd170547d90",
-      "title": "Die Natur und WIR - eine Ausstellung mit Kindern der Doris Leibinger Grundschule",
-      "date_start": "2026-06-19",
-      "source": "ditzingen_stadt"
+      "id": "58c5b032f0648738",
+      "title": "Sonntags-Café für den guten Zweck",
+      "date_start": "2026-07-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fc42ed82413f8e7c",
+      "title": "KEIN FEDIA-Theaterworkshop (FEDIA, Stadt Ditzingen)",
+      "date_start": "2026-07-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1ee53fdcf0da0d32",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-07-21",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0e1f60c9f20b384d",
+      "title": "Skatgruppen",
+      "date_start": "2026-07-21",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b72e9e34dcc981d4",
+      "title": "FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
+      "date_start": "2026-07-21",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b8684ef03e21729a",
+      "title": "Fotogruppe",
+      "date_start": "2026-07-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "790b6bc3e18dd170",
+      "title": "Spanisch Stammtisch",
+      "date_start": "2026-07-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1bec6b7ceec5071d",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-07-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8a8be29424938feb",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-07-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a0521401e3713ca6",
+      "title": "Wohlbefinden und Wohlsein",
+      "date_start": "2026-07-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "89544ea2b01d0382",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-07-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "93292393bc31faca",
+      "title": "Rummikub",
+      "date_start": "2026-07-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3d5debad5627aaff",
+      "title": "Marktfrühstück der Bügerstiftung (Bürgerstiftung/ Neuapostolische Kirche)",
+      "date_start": "2026-07-25",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7dea2cd8e02f1050",
+      "title": "Wandern ab 60",
+      "date_start": "2026-07-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "361ff5dfc3386497",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-07-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "58409636af686f11",
+      "title": "Skatgruppen",
+      "date_start": "2026-07-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9808ac510275487b",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-07-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8553edd02c336c9a",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-07-30",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "167fd04c0906a70d",
+      "title": "KEIN Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-07-30",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "12ac97470b81deda",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-07-31",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "201aaf61774921ea",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-08-04",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9a7926cd7e5dfba9",
+      "title": "Skatgruppen",
+      "date_start": "2026-08-04",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0e63b951ca248ddb",
+      "title": "FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
+      "date_start": "2026-08-04",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "21724a425c59a28b",
+      "title": "KEIN Nähkästchen",
+      "date_start": "2026-08-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "56d1bd83817b3b60",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-08-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c588ab7fac527446",
+      "title": "Offenes Kaffeetrinken anstatt Mobilität und Fitness",
+      "date_start": "2026-08-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4e50972f0e012afb",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-08-07",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b8883ee726d3649a",
+      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-08-07",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9ec939418cf8362c",
+      "title": "Kontakt-Treff \"Neuland\" - Treffpunkt für Verwitwete (Abt. Senioren)",
+      "date_start": "2026-08-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "19d00879b86b5690",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-08-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "00ad2c9be69e1fcc",
+      "title": "Skatgruppen",
+      "date_start": "2026-08-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5027e49201e4a91c",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-08-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fb95bbbea5147e0d",
+      "title": "Fotogruppe",
+      "date_start": "2026-08-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "14b35878a319e525",
+      "title": "KEIN Vesper.Päusle",
+      "date_start": "2026-08-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "963c40bc67e65174",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-08-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "10485e60849e0e5b",
+      "title": "KEIN Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-08-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a8194b5822199b7a",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-08-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "749dbb6646bc538e",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-08-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d836593b08f7006d",
+      "title": "Sonntags-Café für den guten Zweck",
+      "date_start": "2026-08-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "66bd71ea79700c91",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-08-18",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5457f152384230ae",
+      "title": "Skatgruppen",
+      "date_start": "2026-08-18",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "934c6186504e8aca",
+      "title": "Gesprächskreis Demenz (Abt. Senioren, Demenzberatung)",
+      "date_start": "2026-08-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f118d8f083526a6e",
+      "title": "KEIN GlemsTaler TauschRing (GlemsTaler TauschRing)",
+      "date_start": "2026-08-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "78272ca4c611af87",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-08-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "eba85841e33d7ec8",
+      "title": "Offenes Kaffeetrinken anstatt Mobilität und Fitness",
+      "date_start": "2026-08-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "2cb6839ea9701132",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-08-21",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9fbd1d45227f6aa0",
+      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-08-21",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "02d666a3e4fcd615",
+      "title": "Wandern ab 60",
+      "date_start": "2026-08-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "477d49e46a7f03cc",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-08-25",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "bb6db86cbfc53ffb",
+      "title": "Skatgruppen",
+      "date_start": "2026-08-25",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fe0bebc018154200",
+      "title": "KEIN English Conversation Stammtisch",
+      "date_start": "2026-08-25",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1c2f4b86bd9d522e",
+      "title": "Fotogruppe",
+      "date_start": "2026-08-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e9a93a22b33cccf4",
+      "title": "KEIN Spanisch Stammtisch",
+      "date_start": "2026-08-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d5499da4dfe3cc97",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-08-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8323b68d68a8ad83",
+      "title": "KEIN Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-08-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1e35adab51ea26f2",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-08-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3c428399cd79e8fd",
+      "title": "Rummikub",
+      "date_start": "2026-08-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "29e88fe5fa279a15",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fbc94215b82bf698",
+      "title": "Skatgruppen",
+      "date_start": "2026-09-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4396105da0bdf9d7",
+      "title": "FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
+      "date_start": "2026-09-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3b98189b751d6f9d",
+      "title": "TanzTreff",
+      "date_start": "2026-09-02",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "10b7548f982b0a61",
+      "title": "Nähkästchen",
+      "date_start": "2026-09-02",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f2210d38bba956fd",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-09-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "cf7516eb13816248",
+      "title": "Offenes Kaffeetrinken anstatt Mobilität und Fitness",
+      "date_start": "2026-09-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b98213cf102ca773",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-09-04",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "aac9f3bb7a72fe46",
+      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-09-04",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f8e987273470be6f",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "de3055a30ecdb536",
+      "title": "Skatgruppen",
+      "date_start": "2026-09-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "11f6bc57f2baf215",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-09-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "165227f8b3deddb0",
+      "title": "Fotogruppe",
+      "date_start": "2026-09-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8748e61832153cf2",
+      "title": "Vesper.Päusle",
+      "date_start": "2026-09-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7fc6857cda88e6f4",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-09-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "723be6d97d0ab7b2",
+      "title": "KEIN Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-09-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "093d17b594862c34",
+      "title": "Wohlbefinden und Wohlsein",
+      "date_start": "2026-09-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "dbc02a46176dcae3",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-09-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "731f3a4a41ac434c",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-09-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7bf586b9a62c4c17",
+      "title": "Kontakt-Treff \"Neuland\" - Treffpunkt für Verwitwete (Abt. Senioren)",
+      "date_start": "2026-09-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8ed1557e0213bc75",
+      "title": "?? FEDIA-Theaterworkshop (FEDIA, Stadt Ditzingen)",
+      "date_start": "2026-09-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "013286cf192da6c2",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1a0ae30a8097e8db",
+      "title": "Skatgruppen",
+      "date_start": "2026-09-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "61cf45071bd3c4de",
+      "title": "Gesprächskreis Demenz (Abt. Senioren, Demenzberatung)",
+      "date_start": "2026-09-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8e7ad282b8565353",
+      "title": "GlemsTaler TauschRing (GlemsTaler TauschRing)",
+      "date_start": "2026-09-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "789a4bbaba90a646",
+      "title": "Smartphone-Workshop 1",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5e00543b48443db1",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e73f6347644149bd",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "45294a52d8e200f5",
+      "title": "Wohlbefinden und Wohlsein",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "614f43774e73fbad",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-09-18",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "6eb2fa73c9aa6c04",
+      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-09-18",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1985b98472f9ebc2",
+      "title": "Sonntags-Café für den guten Zweck",
+      "date_start": "2026-09-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "276066d215f1884d",
+      "title": "LandFrauen Ditzingen - Besprechung (Internes Treffen) (LandFrauen Ditzingen)",
+      "date_start": "2026-09-21",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "954c939f8c10beca",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "6cc5259fd080f833",
+      "title": "Skatgruppen",
+      "date_start": "2026-09-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4f7c7c7c1e332e56",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-09-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "717c80640608d9d3",
+      "title": "Fotogruppe",
+      "date_start": "2026-09-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a5f8cbf80d29baf7",
+      "title": "Spanisch Stammtisch",
+      "date_start": "2026-09-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9b28310f46c37904",
+      "title": "Smartphone-Workshop 1",
+      "date_start": "2026-09-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "98783d9b2d2ba625",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-09-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4efd54be26978c0f",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-09-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "6e27cc459e38d741",
+      "title": "Vortrag: Herausforderung Demenz ()",
+      "date_start": "2026-09-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8a5b71e12dd92bc9",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-09-25",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "bd5619073f752785",
+      "title": "Rummikub",
+      "date_start": "2026-09-25",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c29b40b03b756aa4",
+      "title": "Begegnungs Café (AK Asyl)",
+      "date_start": "2026-09-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e53cb923571609b0",
+      "title": "Wandern ab 60",
+      "date_start": "2026-09-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f09e93205fbcba34",
+      "title": "Filmabend von Ewig anders (Ewig anders Ditzingen)",
+      "date_start": "2026-09-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "dd2c553d50dccc67",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5234ff04aab2838a",
+      "title": "Skatgruppen",
+      "date_start": "2026-09-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9f4f8bdc52d17c81",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-09-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "15752fde53408b31",
+      "title": "Smartphone-Workshop 1",
+      "date_start": "2026-10-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e23db44dce9cd7ef",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fa16edb663dcac7d",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-10-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d3fbc1e4231d233f",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-10-02",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "31c67f03a7134749",
+      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-10-02",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e12c424b46856bcd",
+      "title": "Interne Veranstaltung (Stadt Ditzingen)",
+      "date_start": "2026-10-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0e60f550887f8acd",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a5524a6edbfb7be5",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1e344e41f6d3c160",
+      "title": "?? FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "69dff56a5900ec9e",
+      "title": "Nähkästchen",
+      "date_start": "2026-10-07",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "828fa3eb34548c01",
+      "title": "Smartphone-Workshop 1",
+      "date_start": "2026-10-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fc04337586ff3861",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "bd2d39a33611198a",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-10-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0db9ed040dfbbd2a",
+      "title": "AK Asyl - Besprechung (AK Asyl)",
+      "date_start": "2026-10-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a46c5fb2570e5432",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-10-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "54dd5f4a7f7fa8c8",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-10-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7ee1cd2d73abbb21",
+      "title": "Internationaler Frauenabend",
+      "date_start": "2026-10-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fc6c9ebe7392ed48",
+      "title": "Kaffeenachmittag des Schwäbischen Albvereins (Schwäbischer Albverein)",
+      "date_start": "2026-10-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "52d18173364ab249",
+      "title": "Kontakt-Treff \"Neuland\" - Treffpunkt für Verwitwete (Abt. Senioren)",
+      "date_start": "2026-10-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5f75550705fb80a6",
+      "title": "LandFrauen Ditzingen - Besprechung (Internes Treffen) (LandFrauen Ditzingen)",
+      "date_start": "2026-10-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "14229a20db4fd0e0",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ce56dc3f3f503bf0",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ab3425fb83731efd",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-10-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e6a58956036a8b47",
+      "title": "Fotogruppe",
+      "date_start": "2026-10-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3671674272de0ef2",
+      "title": "Vesper.Päusle",
+      "date_start": "2026-10-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "26a9d5202f6c3377",
+      "title": "Smartphone Workshop 2",
+      "date_start": "2026-10-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "302f3b11cd42db3d",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a477a98a6a105549",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-10-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "21f8bd75211d7921",
+      "title": "Entspannung für Körper und Geist",
+      "date_start": "2026-10-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "36de4de0b95f8a27",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-10-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "933eaa67666fd921",
+      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-10-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d72d854ba5ef984f",
+      "title": "?? FEDIA-Theaterworkshop (FEDIA, Stadt Ditzingen)",
+      "date_start": "2026-10-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "6baa96ccd9dce0ef",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ea52fed362fefc99",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "695380bf9638415a",
+      "title": "Gesprächskreis Demenz (Abt. Senioren, Demenzberatung)",
+      "date_start": "2026-10-21",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "719e971f05bbf290",
+      "title": "GlemsTaler TauschRing (GlemsTaler TauschRing)",
+      "date_start": "2026-10-21",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e330007724a7627b",
+      "title": "Smartphone Workshop 2",
+      "date_start": "2026-10-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "2f4f25f5d55ee75c",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "718c9229c1dc92ac",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-10-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "46799fada3bf271a",
+      "title": "Frauen-Stammtisch der LandFrauen Ditzingen (LandFrauen DItzingen)",
+      "date_start": "2026-10-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ed1ede2d570f3f8f",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-10-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7fd74b6fde606c32",
+      "title": "Rummikub",
+      "date_start": "2026-10-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "6355e6a9f8244f61",
+      "title": "Wandern ab 60",
+      "date_start": "2026-10-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5a523689d4ec3203",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1bf37ef81e2ca936",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4a370f8f94d04c38",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-10-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9d511dc2d336c5d6",
+      "title": "Fotogruppe",
+      "date_start": "2026-10-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7493eef04a300034",
+      "title": "?? Spanisch Stammtisch",
+      "date_start": "2026-10-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "6ad4648c0834cf6f",
+      "title": "Smartphone Workshop 2",
+      "date_start": "2026-10-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ca38fff239b10586",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "027482bbcc232dc1",
+      "title": "KEIN Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-10-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8716e910273b6b93",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-10-30",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "aa6447f051b2975b",
+      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-10-30",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "64c3cce315b62e79",
+      "title": "Kreativ-Workshop (LandFrauen Ditzingen)",
+      "date_start": "2026-11-02",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b8e9f39cd294910a",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "33f784b3e9d2c8ce",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "dd52020cf2722df7",
+      "title": "FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
+      "date_start": "2026-11-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "073fdc50a28f96db",
+      "title": "TanzTreff",
+      "date_start": "2026-11-04",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ed7530fefe6434d2",
+      "title": "Nähkästchen",
+      "date_start": "2026-11-04",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "bae0d47cd52c1169",
+      "title": "Smartphone Workshop 2",
+      "date_start": "2026-11-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d4e75150ab94bd93",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "26b5b2fe384329e5",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-11-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5cecfc16956db98f",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-11-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "32fb29aa0913c7af",
+      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-11-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fcf15753179feb1c",
+      "title": "Kontakt-Treff \"Neuland\" - Treffpunkt für Verwitwete (Abt. Senioren)",
+      "date_start": "2026-11-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4cf84a3803132154",
+      "title": "LandFrauen Ditzingen - Besprechung (Internes Treffen) (LandFrauen Ditzingen)",
+      "date_start": "2026-11-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "2b309f923ed51887",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f5316e69220c66d8",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4411c4464692e489",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-11-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "2f07542b6cc4aaff",
+      "title": "Fotogruppe",
+      "date_start": "2026-11-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "390a79ca3f24174a",
+      "title": "Vesper.Päusle",
+      "date_start": "2026-11-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0b4176a7424a2771",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "aa842f4214041ba4",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-11-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f17613132976752d",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-11-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9bf55c7da880d3a6",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-11-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "61c494d3a1c4b370",
+      "title": "?? FEDIA-Theaterworkshop (FEDIA, Stadt Ditzingen)",
+      "date_start": "2026-11-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f9f70166f9843db1",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "75dd622c2755f5d6",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0526e4c443a1816e",
+      "title": "Gesprächskreis Demenz (Abt. Senioren, Demenzberatung)",
+      "date_start": "2026-11-18",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0413fd605d511901",
+      "title": "GlemsTaler TauschRing (GlemsTaler TauschRing)",
+      "date_start": "2026-11-18",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4b19192867e17cbd",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "320df581403bb49b",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-11-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "34c0027bf279db71",
+      "title": "Entspannung für Körper und Geist",
+      "date_start": "2026-11-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9e2e1d6bcd4c8524",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-11-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b7b3e8a11bc0cd74",
+      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-11-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3d4a1e7001c61f0e",
+      "title": "Wandern ab 60",
+      "date_start": "2026-11-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "904ecfdf7ccff83e",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5737409ef3156d25",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f0812158cdb89ec7",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-11-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1f2419ae6f79ee8b",
+      "title": "Fotogruppe",
+      "date_start": "2026-11-25",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ede4f40ae160d765",
+      "title": "Spanisch Stammtisch",
+      "date_start": "2026-11-25",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "80f826e2711b8d30",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8697ad28420c0e0b",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-11-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4b7ffadb54ead18e",
+      "title": "Adventskranzbinden (LandFrauen Ditzingen)",
+      "date_start": "2026-11-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d04904b1aae12db2",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-11-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8e392a7e342dd165",
+      "title": "Rummikub",
+      "date_start": "2026-11-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "046bd545357fa02c",
+      "title": "Internationaler Frauenabend - Plätzchen backen",
+      "date_start": "2026-11-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ec04b99c16a848c0",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-12-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a09313aa8c34f356",
+      "title": "Skatgruppen",
+      "date_start": "2026-12-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e53b0389f632b8b9",
+      "title": "FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
+      "date_start": "2026-12-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b196d677a3ff80d1",
+      "title": "Nähkästchen",
+      "date_start": "2026-12-02",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7afdab817a0aeb2f",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-12-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "014b5e28e3ce1aee",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-12-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f7f2574d0938836c",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-12-04",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e4f4fe6aa8de6e2a",
+      "title": "?? Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-12-04",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "6e89a6c83e5983af",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-12-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4722221f6e957375",
+      "title": "Skatgruppen",
+      "date_start": "2026-12-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "29b196ca2e00b140",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-12-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ce895d2d9649bca3",
+      "title": "Fotogruppe",
+      "date_start": "2026-12-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "14a5a49ca693dd7c",
+      "title": "Vesper.Päusle",
+      "date_start": "2026-12-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "83cd4905e1863d6a",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-12-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "33aec7d2be6507c1",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-12-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "2287456fd0eb2b18",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-12-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c53f419740b33e4b",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-12-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "384a808d21b83dca",
+      "title": "Kontakt-Treff \"Neuland\" - Treffpunkt für Verwitwete (Abt. Senioren)",
+      "date_start": "2026-12-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "88f0500fae01cbfb",
+      "title": "?? FEDIA-Theaterworkshop (FEDIA, Stadt Ditzingen)",
+      "date_start": "2026-12-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e1d3b6c56cd76cae",
+      "title": "LandFrauen Ditzingen - Besprechung (Internes Treffen) (LandFrauen Ditzingen)",
+      "date_start": "2026-12-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4b950b5470e914c7",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-12-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ca52af83f42cea3a",
+      "title": "Skatgruppen",
+      "date_start": "2026-12-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "670ff239d7feb3f6",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-12-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "075415cce0dc03e9",
+      "title": "Gesprächskreis Demenz (Abt. Senioren, Demenzberatung)",
+      "date_start": "2026-12-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0988bf9b1d3d5545",
+      "title": "KEIN GlemsTaler TauschRing (GlemsTaler TauschRing)",
+      "date_start": "2026-12-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ff905894adcff571",
+      "title": "Spanisch Stammtisch",
+      "date_start": "2026-12-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c8f2f4d8529cc3ab",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-12-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "35b3db3ef936b59a",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-12-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c892cef01f9c5c47",
+      "title": "Entspannung für Körper und Geist",
+      "date_start": "2026-12-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8e16b556007596ec",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-12-18",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "bc7ecb480e487738",
+      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-12-18",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "135634d26a186808",
+      "title": "?? FEDIA-Theaterworkshop (FEDIA, Stadt Ditzingen)",
+      "date_start": "2026-12-21",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "52379d063d12fda4",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-12-22",
+      "source": "ditzingen_treffpunkt_adler"
     }
   ]
 }

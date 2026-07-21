@@ -1,16 +1,79 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-07-20T06:00:01.919324+02:00",
-  "event_count": 2,
+  "generated_at": "2026-07-20T19:30:20.644165+02:00",
+  "event_count": 8,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
+    {
+      "id": "5068f655c207ea85",
+      "title": "Sommerserenade",
+      "date_start": "2026-07-24",
+      "date_end": null,
+      "time": "19:00 Uhr",
+      "description": "In Grpßingersheim wird die Sommerserenade auf dem Hindenburgplatz feiern. Der Akkordeonverein Ingersheim e.V. bietet ein familienfreundliches Programm an.",
+      "location": "Hindenburgplatz, Grpßingersheim",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2212",
+      "original_url": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2212",
+      "source": "ingersheim_gemeinde",
+      "city": "ingersheim",
+      "slug": "sommerserenade-2026-07-24-inge",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-07-20T08:01:21.497060+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Ingersheim",
+      "canonical_url": "https://www.rausgucken.de/ingersheim/events/sommerserenade-2026-07-24-inge"
+    },
+    {
+      "id": "8b4891a205988e09",
+      "title": "Kinderferienprogramm",
+      "date_start": "2026-09-11",
+      "date_end": "2026-09-11",
+      "time": "14:00 - 17:00 Uhr",
+      "description": "In der SKV Halle bietet das Blasorchester-Jugend ein Kinderferienprogramm an. Von 14 bis 17 Uhr finden verschiedene Aktivitäten für Kinder statt.",
+      "location": "SKV Halle",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2175",
+      "original_url": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2175",
+      "source": "ingersheim_gemeinde",
+      "city": "ingersheim",
+      "slug": "kinderferienprogramm-2026-09-11-inge",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-07-20T08:01:22.176754+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Ingersheim",
+      "canonical_url": "https://www.rausgucken.de/ingersheim/events/kinderferienprogramm-2026-09-11-inge"
+    },
     {
       "id": "9f219d4b7feec6be",
       "title": "KINDER - Kleiderbasar",
       "date_start": "2026-09-26",
       "date_end": null,
       "time": "12:00 - 14:00 Uhr",
-      "description": null,
+      "description": "In der SKV-Halle Ingersheim findet ein Kinderkleiderbasar statt, organisiert von der Ev. Kirchengemeinde Ingersheim am Neckar. Die Veranstaltung bietet den Teilnehmern eine Auswahl an Second-Hand-Kleidern für Kinder.",
       "location": "SKV-Halle Ingersheim",
       "price": null,
       "age_min": 4,
@@ -27,7 +90,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-07-19T02:08:43.688410+02:00",
+      "scraped_at": "2026-07-20T08:01:22.177095+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -42,13 +105,14 @@
       "date_start": "2026-10-18",
       "date_end": null,
       "time": null,
-      "description": null,
+      "description": "In der SKV-Halle Großingersheim findet das Familienherbstfest statt. Das Blasorchester Ingersheim begleitet den Tag mit Musik, und es bietet Möglichkeiten für alle Altersgruppen.",
       "location": "SKV-Halle Großingersheim",
       "price": null,
       "age_min": 4,
       "age_max": null,
       "tags": [
-        "Familie"
+        "Familie",
+        "Musik"
       ],
       "link": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2043",
       "original_url": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2043",
@@ -58,7 +122,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-19T02:08:44.409122+02:00",
+      "scraped_at": "2026-07-20T08:01:22.861991+02:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -66,6 +130,132 @@
       "editorial_tip": null,
       "source_label": "Gemeinde Ingersheim",
       "canonical_url": "https://www.rausgucken.de/ingersheim/events/familienherbstfest-2026-10-18-inge"
+    },
+    {
+      "id": "47da86c29dfaa0c8",
+      "title": "Laterne laufen",
+      "date_start": "2026-10-23",
+      "date_end": "2026-10-23",
+      "time": "16:00 - 20:00 Uhr",
+      "description": "Im Rahmen der traditionalen Laterne laufen am Festplatz Schönblick bietet sich an, Lichter durch die Gassen zu laufen und familienfreundliche Unterhaltung zu genießen. Veranstaltet vom Musikverein Kleiningersheim e.V.",
+      "location": "Festplatz Schönblick",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2067",
+      "original_url": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2067",
+      "source": "ingersheim_gemeinde",
+      "city": "ingersheim",
+      "slug": "laterne-laufen-2026-10-23-inge",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-07-20T08:01:22.862032+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Ingersheim",
+      "canonical_url": "https://www.rausgucken.de/ingersheim/events/laterne-laufen-2026-10-23-inge"
+    },
+    {
+      "id": "df8dcbaf76b72043",
+      "title": "Kinderjahresfeier",
+      "date_start": "2026-12-12",
+      "date_end": null,
+      "time": null,
+      "description": "In der Kinderjahresfeier am Fischerwörthhalle feiern Kinder und Erwachsene gemeinsam das Ende des Schuljahres. Veranstalter TV Ingersheim e.V. bietet eine familienfreundliche Veranstaltung an.",
+      "location": "Fischerwörthhalle",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2114",
+      "original_url": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2114",
+      "source": "ingersheim_gemeinde",
+      "city": "ingersheim",
+      "slug": "kinderjahresfeier-2026-12-12-inge",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-07-20T08:01:24.182054+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Ingersheim",
+      "canonical_url": "https://www.rausgucken.de/ingersheim/events/kinderjahresfeier-2026-12-12-inge"
+    },
+    {
+      "id": "6d579b8f8b7ee741",
+      "title": "Kinderkirchweihnacht mit Krippenspiel",
+      "date_start": "2026-12-20",
+      "date_end": "2026-12-20",
+      "time": "10:00 Uhr",
+      "description": "In der Martinskirche Großingersheim findet eine Kinderkirchweihnacht mit Krippenspiel statt. Die Veranstaltung bietet Kindern und Erwachsenen ein familienfreundliches Ereignis im Rahmen des Weihnachtsfestes.",
+      "location": "Martinskirche Großingersheim",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2154",
+      "original_url": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2154",
+      "source": "ingersheim_gemeinde",
+      "city": "ingersheim",
+      "slug": "kinderkirchweihnacht-mit-krippenspiel-2026-12-20-inge",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-07-20T08:01:24.182168+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Ingersheim",
+      "canonical_url": "https://www.rausgucken.de/ingersheim/events/kinderkirchweihnacht-mit-krippenspiel-2026-12-20-inge"
+    },
+    {
+      "id": "491113dcd4f3e32d",
+      "title": "Kinderfasching",
+      "date_start": "2027-02-07",
+      "date_end": null,
+      "time": "14:00 - 16:30 Uhr",
+      "description": "In der SKV-Halle in Großingersheim findet der Kinderfasching statt. Von 14:00 bis 16:30 Uhr verbindet das Ereignis Unterhaltung und Freude für Kinder. Veranstaltet vom Akkordeonverein Ingersheim e.V.",
+      "location": "SKV-Halle, Großingersheim",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2057",
+      "original_url": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2057",
+      "source": "ingersheim_gemeinde",
+      "city": "ingersheim",
+      "slug": "kinderfasching-2027-02-07-inge",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-07-20T08:01:24.846127+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Ingersheim",
+      "canonical_url": "https://www.rausgucken.de/ingersheim/events/kinderfasching-2027-02-07-inge"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-07-20T06:00:01.898712+02:00",
+  "generated_at": "2026-07-20T14:47:59.244086+02:00",
   "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
@@ -9,13 +9,15 @@
       "title": "Repair Café - reparieren statt wegwerfen",
       "date_start": "2026-07-29",
       "date_end": null,
-      "time": "14:00 - 18:00 Uhr",
-      "description": null,
+      "time": "14:00 - 14:00 Uhr",
+      "description": "In diesem Workshop lernen Teilnehmer, alte Gegenstände zu reparieren anstatt wegzuschmeißen. Der Veranstalter Repair Café Erdmannhausen bietet Fachwissen und Materialien für Reparaturtätigkeiten in einem Vereinsraum des Rathauses.",
       "location": "Rathaus, Vereinsraum",
       "price": null,
       "age_min": null,
       "age_max": null,
-      "tags": [],
+      "tags": [
+        "Workshop"
+      ],
       "link": "https://www.erdmannhausen.de/sport-kultur-freizeit/veranstaltungen",
       "original_url": "https://www.erdmannhausen.de/sport-kultur-freizeit/veranstaltungen",
       "source": "erdmannhausen_stadt",
@@ -24,8 +26,8 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-07-19T02:08:44.721590+02:00",
-      "extraction_confidence": 0.9,
+      "scraped_at": "2026-07-20T08:01:21.640178+02:00",
+      "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
@@ -39,12 +41,14 @@
       "date_start": "2026-07-30",
       "date_end": "2026-08-08",
       "time": null,
-      "description": null,
+      "description": "In Absberg am Brombachsee findet das Saisonabschluss-Zeltlager für Jugendliche statt. Organisiert durch die Biegelkicker e.V., bietet es eine einzigartige Zusammenkunft nach der Saison.",
       "location": "Absberg, Brombachsee",
       "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [],
+      "age_min": 12,
+      "age_max": 18,
+      "tags": [
+        "Kinder"
+      ],
       "link": "https://www.erdmannhausen.de/sport-kultur-freizeit/veranstaltungen",
       "original_url": "https://www.erdmannhausen.de/sport-kultur-freizeit/veranstaltungen",
       "source": "erdmannhausen_stadt",
@@ -59,7 +63,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-07-19T02:08:44.721632+02:00",
+      "scraped_at": "2026-07-20T08:01:21.640266+02:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,

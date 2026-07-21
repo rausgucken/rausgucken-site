@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-19T07:27:55.937482+02:00",
+  "generated_at": "2026-07-20T08:29:18.421159+02:00",
   "city": "oberstenfeld",
   "sources": [
     "oberstenfeld_veranstaltungen"
   ],
-  "previous_run": "2026-07-18T07:27:18.807625+02:00",
+  "previous_run": "2026-07-19T07:27:56.013003+02:00",
   "count_added": 47,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [
     {
       "id": "60dcaf202491b251",
@@ -291,5 +291,18 @@
       "source": "oberstenfeld_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "17525417d0c4198a",
+      "title": "55. Prevorster Seifenkutschenrennen",
+      "date_start": "2026-07-19",
+      "source": "oberstenfeld_veranstaltungen"
+    },
+    {
+      "id": "9b05402adc0b3a81",
+      "title": "Peterskirchenführung",
+      "date_start": "2026-07-19",
+      "source": "oberstenfeld_veranstaltungen"
+    }
+  ]
 }
