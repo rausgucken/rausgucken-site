@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-07-21T06:00:01.509305+02:00",
-  "event_count": 5,
+  "generated_at": "2026-07-22T06:00:02.379707+02:00",
+  "event_count": 8,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,14 +26,45 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-20T08:01:25.404602+02:00",
+      "scraped_at": "2026-07-21T02:09:42.614728+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Sersheim",
       "canonical_url": "https://www.rausgucken.de/sersheim/events/old--und-youngtimer-treffen-2026-07-26-sers"
+    },
+    {
+      "id": "913d88f41968bb9c",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-09-24",
+      "date_end": null,
+      "time": null,
+      "description": "In der Katholischen Gemeindesaal findet ein Seniorennachmittag statt, kombiniert aus Familie und Unterhaltung.",
+      "location": "Kath. Gemeindesaal",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254543702/Seniorennachmittag.html?nodeID=523254543702",
+      "original_url": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254543702/Seniorennachmittag.html?nodeID=523254543702",
+      "source": "sersheim_gemeinde",
+      "city": "sersheim",
+      "slug": "seniorennachmittag-2026-09-24-sers",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-07-21T02:09:42.614766+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Sersheim",
+      "canonical_url": "https://www.rausgucken.de/sersheim/events/seniorennachmittag-2026-09-24-sers"
     },
     {
       "id": "f0889ec6bee619d4",
@@ -57,7 +88,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-07-20T08:01:25.404684+02:00",
+      "scraped_at": "2026-07-21T02:09:42.614825+02:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -89,7 +120,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-20T08:01:25.404733+02:00",
+      "scraped_at": "2026-07-21T02:09:42.614883+02:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
@@ -99,7 +130,71 @@
       "canonical_url": "https://www.rausgucken.de/sersheim/events/tag-des-kinderturnens-2026-11-08-sers"
     },
     {
-      "id": "6403fed01ac99e9f",
+      "id": "9a1b5d2d8b22faef",
+      "title": "Senioren Café",
+      "date_start": "2026-11-10",
+      "date_end": null,
+      "time": null,
+      "description": "Im Ev. Gemeindezentrum tritt ein Senioren Café auf, das Familien und Freunde zusammenbringt. Mit Unterhaltungsprogramm und Sozialen Begegnungen richtet sich die Veranstaltung an alle Altersgruppen.",
+      "location": "Ev. Gemeindezentrum",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254526502/SeniorenCaf.html?nodeID=523254526502",
+      "original_url": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254526502/SeniorenCaf.html?nodeID=523254526502",
+      "source": "sersheim_gemeinde",
+      "city": "sersheim",
+      "slug": "senioren-cafe-2026-11-10-sers",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-07-21T02:09:42.614898+02:00",
+      "extraction_confidence": 0.65,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Sersheim",
+      "canonical_url": "https://www.rausgucken.de/sersheim/events/senioren-cafe-2026-11-10-sers"
+    },
+    {
+      "id": "4a4824e8635f1695",
+      "title": "Weihnachtsfeier",
+      "date_start": "2026-12-05",
+      "date_end": null,
+      "time": null,
+      "description": "In der Sport- und Kulturhalle findet eine Weihnachtsfeier statt. Mit typischen Weihnachtsthemen wird ein familienfreundliches Fest für alle Altersgruppen angeboten.",
+      "location": "Sport- und Kulturhalle",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie",
+        "Fest",
+        "Sport"
+      ],
+      "link": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254525902/Weihnachtsfeier.html?nodeID=523254525902",
+      "original_url": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254525902/Weihnachtsfeier.html?nodeID=523254525902",
+      "source": "sersheim_gemeinde",
+      "city": "sersheim",
+      "slug": "weihnachtsfeier-2026-12-05-sers",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-07-21T02:09:42.615016+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Sersheim",
+      "canonical_url": "https://www.rausgucken.de/sersheim/events/weihnachtsfeier-2026-12-05-sers"
+    },
+    {
+      "id": "999da4d4bc659406",
       "title": "Adventsfeier",
       "date_start": "2026-12-08",
       "date_end": null,
@@ -112,17 +207,17 @@
       "tags": [
         "Familie"
       ],
-      "link": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254527452/Adventsfeier.html?nodeID=523254527452",
-      "original_url": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254527452/Adventsfeier.html?nodeID=523254527452",
+      "link": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254525952/Adventsfeier.html?nodeID=523254525952",
+      "original_url": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254525952/Adventsfeier.html?nodeID=523254525952",
       "source": "sersheim_gemeinde",
       "city": "sersheim",
       "slug": "adventsfeier-2026-12-08-sers",
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-07-20T08:01:25.404856+02:00",
+      "scraped_at": "2026-07-21T02:09:42.615038+02:00",
       "extraction_confidence": 0.85,
-      "is_new": false,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -130,35 +225,35 @@
       "canonical_url": "https://www.rausgucken.de/sersheim/events/adventsfeier-2026-12-08-sers"
     },
     {
-      "id": "bf9d79173316fffc",
-      "title": "Weihnachtsleider",
-      "date_start": "2026-12-24",
+      "id": "ee093c990b28f6d4",
+      "title": "Senioren Café",
+      "date_start": "2026-12-08",
       "date_end": null,
       "time": null,
-      "description": "In der romantischen Umgebung des Haus am Schlösslesbrunnen werden klassische Weihnachtsleider von erfahrenen Sängern vorgeführt. Ein perfektes Familien- und Freundschaftsvergnügen zur Weihnachtszeit.",
-      "location": "Haus am Schlösslesbrunnen",
+      "description": "In diesem Familien-Café im Gemeindezentrum trafen Senioren und ihre Begleiter sich für ein gemeinsames Erlebnis. Mit Unterhaltung und Gesellschaft partagern Teilnehmer einen schönen Nachmittag.",
+      "location": "Gemeindezentrum",
       "price": null,
       "age_min": 4,
       "age_max": null,
       "tags": [
         "Familie"
       ],
-      "link": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254527602/Weihnachtsleider.html?nodeID=523254527602",
-      "original_url": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254527602/Weihnachtsleider.html?nodeID=523254527602",
+      "link": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254527502/SeniorenCaf.html?nodeID=523254527502",
+      "original_url": "https://www.sersheim.de/site/Sersheim-Layout-2022/node/20086682/zmdetail_523254527502/SeniorenCaf.html?nodeID=523254527502",
       "source": "sersheim_gemeinde",
       "city": "sersheim",
-      "slug": "weihnachtsleider-2026-12-24-sers",
+      "slug": "senioren-cafe-2026-12-08-sers",
       "weekdays": [
-        4
+        2
       ],
-      "scraped_at": "2026-07-20T08:01:25.404877+02:00",
-      "extraction_confidence": 0.75,
-      "is_new": false,
+      "scraped_at": "2026-07-21T02:09:42.615042+02:00",
+      "extraction_confidence": 0.65,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Sersheim",
-      "canonical_url": "https://www.rausgucken.de/sersheim/events/weihnachtsleider-2026-12-24-sers"
+      "canonical_url": "https://www.rausgucken.de/sersheim/events/senioren-cafe-2026-12-08-sers"
     }
   ]
 }

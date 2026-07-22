@@ -1,6 +1,6 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-07-21T06:00:01.418860+02:00",
+  "generated_at": "2026-07-22T06:00:02.276840+02:00",
   "event_count": 6,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
@@ -9,8 +9,8 @@
       "title": "Spiele - Nachmittag",
       "date_start": "2026-07-27",
       "date_end": null,
-      "time": "14:30 Uhr",
-      "description": null,
+      "time": "14:30 - 18:00",
+      "description": "In der Begegnungsstätte Besigheim findet ein Nachmittagsprogramm mit diversen Spielen statt. Teilnehmer können sich an verschiedenen Spieltischen austauschen und Spaß haben.",
       "location": "Begegnungsstätte Besigheim",
       "price": null,
       "age_min": null,
@@ -24,7 +24,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-20T02:07:55.094295+02:00",
+      "scraped_at": "2026-07-22T02:03:49.079194+02:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
@@ -34,12 +34,12 @@
       "canonical_url": "https://www.rausgucken.de/besigheim/events/spiele---nachmittag-2026-07-27-besi"
     },
     {
-      "id": "a6f6528a53bdec2b",
+      "id": "8085fb87ea52838e",
       "title": "Sportabzeichenabnahme Geräteturnen",
       "date_start": "2026-07-29",
       "date_end": null,
-      "time": "20:00 Uhr",
-      "description": null,
+      "time": "20:00",
+      "description": "In der Gustav-Siegle-Halle Besigheim wird ein Sportabzeichenabnahmelibretto für Geräteturner verliehen. Die Anwesenden feiern die Leistungen der Teilnehmer mit.",
       "location": "Gustav-Siegle-Halle Besigheim",
       "price": null,
       "age_min": null,
@@ -49,45 +49,50 @@
       "original_url": "https://www.besigheim.de/site/Besigheim-2023/node/20981999/zmdetail_523253442207/SportabzeichenabnahmeGerteturnen.html?nodeID=523253442207",
       "source": "besigheim_stadt",
       "city": "besigheim",
-      "slug": "sportabzeichenabnahme-geraeteturnen-2026-07-29t200000-europeberlin-besi",
-      "weekdays": [],
-      "scraped_at": "2026-07-20T02:07:55.094298+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
+      "slug": "sportabzeichenabnahme-geraeteturnen-2026-07-29-besi",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-07-22T02:03:49.079197+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Besigheim",
-      "canonical_url": "https://www.rausgucken.de/besigheim/events/sportabzeichenabnahme-geraeteturnen-2026-07-29t200000-europeberlin-besi"
+      "canonical_url": "https://www.rausgucken.de/besigheim/events/sportabzeichenabnahme-geraeteturnen-2026-07-29-besi"
     },
     {
-      "id": "08d006f0ff5797a5",
+      "id": "4341b3603d5eeed2",
       "title": "Eis essen",
       "date_start": "2026-07-30",
       "date_end": null,
-      "time": "14:30 - 14:30 Uhr",
-      "description": null,
+      "time": "14:30 - 15:30",
+      "description": "In der Begegnungsstätte Besigheim kann man sich mit Freunden und Familie an einem kalten Sommertag einladendes Eis gönnen.",
       "location": "Begegnungsstätte Besigheim",
       "price": null,
-      "age_min": null,
+      "age_min": 4,
       "age_max": null,
       "tags": [
+        "Familie",
         "Kulinarik"
       ],
       "link": "https://www.besigheim.de/site/Besigheim-2023/node/20981999/zmdetail_523253354002/Eisessen.html?nodeID=523253354002",
       "original_url": "https://www.besigheim.de/site/Besigheim-2023/node/20981999/zmdetail_523253354002/Eisessen.html?nodeID=523253354002",
       "source": "besigheim_stadt",
       "city": "besigheim",
-      "slug": "eis-essen-2026-07-30t1430000200-besi",
-      "weekdays": [],
-      "scraped_at": "2026-07-20T02:07:55.094300+02:00",
+      "slug": "eis-essen-2026-07-30-besi",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-07-22T02:03:49.079200+02:00",
       "extraction_confidence": 0.75,
-      "is_new": false,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Besigheim",
-      "canonical_url": "https://www.rausgucken.de/besigheim/events/eis-essen-2026-07-30t1430000200-besi"
+      "canonical_url": "https://www.rausgucken.de/besigheim/events/eis-essen-2026-07-30-besi"
     },
     {
       "id": "137cf0d67c7e53b7",
@@ -95,7 +100,7 @@
       "date_start": "2026-07-31",
       "date_end": null,
       "time": null,
-      "description": null,
+      "description": "Freilichttheateraufführungen des Stückes \"Werwolf\" im Steinhausgarten bieten eine lebendige Inszenierung unter offener Himmel.",
       "location": "Steinhausgarten",
       "price": null,
       "age_min": null,
@@ -111,7 +116,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-07-20T02:07:55.094306+02:00",
+      "scraped_at": "2026-07-22T02:03:49.079205+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -121,12 +126,12 @@
       "canonical_url": "https://www.rausgucken.de/besigheim/events/freilichttheaterauffuehrungen-werwolf-2026-07-31-besi"
     },
     {
-      "id": "8b70921606061213",
+      "id": "5b86f8394bd17701",
       "title": "Ernten im Naschgarten",
       "date_start": "2026-07-31",
       "date_end": null,
-      "time": "17:00 Uhr",
-      "description": null,
+      "time": "17:00 - 17:00",
+      "description": "In der Schuppenanlage am Bietigheimer Straße kann man im Sommer den Frühlingsschlag ernten. Einige Naschbarstecke sind für die Teilnehmer vorgesehen.",
       "location": "Schuppenanlage Bietigheimer Straße",
       "price": null,
       "age_min": null,
@@ -136,26 +141,28 @@
       "original_url": "https://www.besigheim.de/site/Besigheim-2023/node/20981999/zmdetail_523253354003/ErntenimNaschgarten.html?nodeID=523253354003",
       "source": "besigheim_stadt",
       "city": "besigheim",
-      "slug": "ernten-im-naschgarten-2026-07-31t170000-europeberlin-besi",
-      "weekdays": [],
-      "scraped_at": "2026-07-20T02:07:55.094303+02:00",
+      "slug": "ernten-im-naschgarten-2026-07-31-besi",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-07-22T02:03:49.079202+02:00",
       "extraction_confidence": 0.85,
-      "is_new": false,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Besigheim",
-      "canonical_url": "https://www.rausgucken.de/besigheim/events/ernten-im-naschgarten-2026-07-31t170000-europeberlin-besi"
+      "canonical_url": "https://www.rausgucken.de/besigheim/events/ernten-im-naschgarten-2026-07-31-besi"
     },
     {
       "id": "48bf538e2d0ff36f",
       "title": "Kinderstadtführung „Am Fluss entlang – Natur erleben und verstehen“",
       "date_start": "2026-08-02",
       "date_end": null,
-      "time": "14:00 Uhr",
-      "description": "In dieser stadtaufklärenden Führung durch Besigheims Marktplatz führt Gästeführerin Koni Hanft Kinder ab 8 Jahre und Erwachsene auf eine Naturreise am Fluss. Das Verstehen von Umweltaspekten wird mit Interesse und Spaß vermittelt.",
+      "time": "14:00",
+      "description": "In dieser stadtaufklärenden Führung durch den Marktplatz Besigheim leiten Sie Kinder ab 8 Jahre gemeinsam mit Gästeführerin Koni Hanft in die Wunder der Natur am Fluss ein. Ein bunt gefärbtes Erlebnis für alle Altersgruppen.",
       "location": "Marktplatz Besigheim",
-      "price": "6,00 Euro",
+      "price": "6 € inklusive Gebühren",
       "age_min": 8,
       "age_max": null,
       "tags": [
@@ -170,8 +177,8 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-20T02:07:55.094308+02:00",
-      "extraction_confidence": 0.92,
+      "scraped_at": "2026-07-22T02:03:49.079207+02:00",
+      "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
