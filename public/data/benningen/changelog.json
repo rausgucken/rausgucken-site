@@ -1,12 +1,25 @@
 {
-  "generated_at": "2026-07-19T05:50:57.431651+02:00",
+  "generated_at": "2026-07-24T05:56:06.469704+02:00",
   "city": "benningen",
   "sources": [
     "benningen_stadt"
   ],
-  "previous_run": "2026-07-18T05:52:58.077992+02:00",
+  "previous_run": "2026-07-23T06:13:39.262740+02:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "b45d67e5721d367b",
+      "title": "Gemeinderatssitzung",
+      "date_start": "2026-07-20",
+      "source": "benningen_stadt"
+    },
+    {
+      "id": "e3cc7c2dee3a7195",
+      "title": "Mitgliederversammlung",
+      "date_start": "2026-07-22",
+      "source": "benningen_stadt"
+    }
+  ]
 }

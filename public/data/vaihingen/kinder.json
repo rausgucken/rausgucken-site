@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-07-24T06:00:02.276406+02:00",
-  "event_count": 21,
+  "generated_at": "2026-07-24T06:52:59.609087+02:00",
+  "event_count": 23,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -29,7 +29,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-07-23T02:05:35.864525+02:00",
+      "scraped_at": "2026-07-24T02:04:07.067612+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -62,7 +62,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-07-23T02:05:45.146742+02:00",
+      "scraped_at": "2026-07-24T02:04:18.016139+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -70,6 +70,37 @@
       "editorial_tip": null,
       "source_label": "Stadt Vaihingen an der Enz",
       "canonical_url": "https://www.rausgucken.de/vaihingen/events/lerchenhof-fest-lohrmann-2026-07-31-vaih"
+    },
+    {
+      "id": "672ae659f4756238",
+      "title": "Modellflug-Schnupperkurs",
+      "date_start": "2026-08-01",
+      "date_end": null,
+      "time": "14:00 - 16:30",
+      "description": "In diesem Schnupperkurs lernen Kinder ab 8 Jahre die Welt des Modellflugs kennen. Professionelle Anleiter führen sie durch die Grundlagen der Technik und Abenteuer im Flug.",
+      "location": "HMSV Fluggelände Weitfeld, Vaihingen",
+      "price": "5,00 €",
+      "age_min": 8,
+      "age_max": 16,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2342/modellflug-schnupperkurs-abheben-in-die-welt-des-fliegens",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2342/modellflug-schnupperkurs-abheben-in-die-welt-des-fliegens",
+      "source": "vaihingen_stadt",
+      "city": "vaihingen",
+      "slug": "modellflug-schnupperkurs-2026-08-01-vaih",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-07-24T02:04:22.518061+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Vaihingen an der Enz",
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/modellflug-schnupperkurs-2026-08-01-vaih"
     },
     {
       "id": "1c532452265450fb",
@@ -97,7 +128,7 @@
         2,
         3
       ],
-      "scraped_at": "2026-07-23T02:05:47.859414+02:00",
+      "scraped_at": "2026-07-24T02:04:25.414115+02:00",
       "extraction_confidence": 0.83,
       "is_new": false,
       "is_booked_out": false,
@@ -132,7 +163,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-07-23T02:05:49.101592+02:00",
+      "scraped_at": "2026-07-24T02:04:28.301228+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -142,70 +173,69 @@
       "canonical_url": "https://www.rausgucken.de/vaihingen/events/kinderspielstadt-mini-vaihingen-2026-08-03-vaih"
     },
     {
-      "id": "1f4fe4ed6d83a3d0",
-      "title": "Ballett (4-7 Jahre)",
+      "id": "017f36234318ce79",
+      "title": "Kids Disco",
       "date_start": "2026-08-03",
       "date_end": null,
       "time": "16:30 - 17:15",
-      "description": "In diesem Kinderballettkurs lernen Kinder spielerisch die Grundlagen des klassischen Tanzes. Mit Freude und Fantasie werden erste Ballettpositionen vermittelt. Der Kurs fördert Koordination, Musikalität und Selbstvertrauen in einer kindgerechten Atmosphäre. Ideal für Kinder ab 4 Jahren ohne Vorkenntnisse.",
-      "location": "Dance Company, Uhlandstr. 24, 71665 Vaihingen/Kleinglattbach",
+      "description": "In dieser Kinderdisco bewegen sich die Teilnehmer zu modernen Kinderliedern und entfalten ihre Beweglichkeit, Koordination und Kreativität. Für Kinder im Alter von 3 bis 6 Jahren geeignet.",
+      "location": "Tanzschule Dance Company, Uhlandstr.24, 72166 Vaihingen/Kleinglattbach",
       "price": "15,00 €",
-      "age_min": 4,
-      "age_max": 7,
-      "tags": [
-        "Kinder",
-        "Tanz",
-        "Workshop",
-        "Familie"
-      ],
-      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2306/ballett-4-7-jahre",
-      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2306/ballett-4-7-jahre",
-      "source": "vaihingen_stadt",
-      "city": "vaihingen",
-      "slug": "ballett-4-7-jahre-2026-08-03-vaih",
-      "weekdays": [
-        1
-      ],
-      "scraped_at": "2026-07-23T02:05:51.974679+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Vaihingen an der Enz",
-      "canonical_url": "https://www.rausgucken.de/vaihingen/events/ballett-4-7-jahre-2026-08-03-vaih"
-    },
-    {
-      "id": "0addbc46cca04dbb",
-      "title": "Ferienprogramm Halli,hallo wir reisen- Urlaubsfeeling in der Musikschule",
-      "date_start": "2026-08-06",
-      "date_end": null,
-      "time": "16:00 - 17:00",
-      "description": "In diesem Ferienprogramm für Kinder zwischen 4 und 6 Jahren singen, klatschen, trommeln und tanzen sie zum Thema Sommer und Reisen. Angetanelt durch die Begeisterung der Kinderleiterin Sabrina Noack-Karg.",
-      "location": "Musikschule Slapstick Enzgasse 25 71665 Vaihingen / Enz",
-      "price": "8,00 €",
-      "age_min": 4,
+      "age_min": 3,
       "age_max": 6,
       "tags": [
         "Kinder",
         "Familie"
       ],
-      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2311/hallihallo-wir-reisen-urlaubsfeeling-in-der-musikschule",
-      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2311/hallihallo-wir-reisen-urlaubsfeeling-in-der-musikschule",
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2338/kids-disco",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2338/kids-disco",
       "source": "vaihingen_stadt",
       "city": "vaihingen",
-      "slug": "ferienprogramm-hallihallo-wir-reisen--urlaubsfeeling-in-der-musikschule-2026-08-06-vaih",
+      "slug": "kids-disco-2026-08-03-vaih",
       "weekdays": [
-        4
+        1
       ],
-      "scraped_at": "2026-07-23T02:05:57.588247+02:00",
+      "scraped_at": "2026-07-24T02:04:31.322342+02:00",
       "extraction_confidence": 1.0,
-      "is_new": false,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Vaihingen an der Enz",
-      "canonical_url": "https://www.rausgucken.de/vaihingen/events/ferienprogramm-hallihallo-wir-reisen--urlaubsfeeling-in-der-musikschule-2026-08-06-vaih"
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/kids-disco-2026-08-03-vaih"
+    },
+    {
+      "id": "56d601775bde4eb3",
+      "title": "Spiel und Spaß mit dem Fahrrad",
+      "date_start": "2026-08-04",
+      "date_end": null,
+      "time": "09:30 - 12:00",
+      "description": "In dieser Workshop-Session lernen Kinder im Rahmen des Ferienprogramms in verschiedenen Parcours ihre Fahrradsicherheit verbessern. Unter der Leitung der Polizei erhalten sie wertvolle Tipps. Helm ist Pflicht. Treffpunkt: Jugendverkehrsschule, Walter-de-Pay-Str. 22, Vaihingen.",
+      "location": "Jugendverkehrsschule, Walter-de-Pay-Str. 22, Ort Vaihingen",
+      "price": null,
+      "age_min": 5,
+      "age_max": 7,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2344/spiel-und-spass-mit-dem-fahrrad",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2344/spiel-und-spass-mit-dem-fahrrad",
+      "source": "vaihingen_stadt",
+      "city": "vaihingen",
+      "slug": "spiel-und-spass-mit-dem-fahrrad-2026-08-04-vaih",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-07-24T02:04:34.342186+02:00",
+      "extraction_confidence": 0.95,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Vaihingen an der Enz",
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/spiel-und-spass-mit-dem-fahrrad-2026-08-04-vaih"
     },
     {
       "id": "67859fcaaa892cd9",
@@ -231,7 +261,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-07-23T02:06:05.187505+02:00",
+      "scraped_at": "2026-07-24T02:04:40.149105+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -241,7 +271,7 @@
       "canonical_url": "https://www.rausgucken.de/vaihingen/events/kinderspielstadt-mini-vaihingen-2026-08-10-vaih"
     },
     {
-      "id": "5481ac0d5b74b5c5",
+      "id": "92158c9bed1ad3ce",
       "title": "Kids Disco",
       "date_start": "2026-08-10",
       "date_end": null,
@@ -255,15 +285,15 @@
         "Kinder",
         "Familie"
       ],
-      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2322/kids-disco",
-      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2322/kids-disco",
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2341/kids-disco",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2341/kids-disco",
       "source": "vaihingen_stadt",
       "city": "vaihingen",
       "slug": "kids-disco-2026-08-10-vaih",
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-23T02:06:08.010379+02:00",
+      "scraped_at": "2026-07-24T02:04:43.218992+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
@@ -296,7 +326,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-23T02:06:10.866663+02:00",
+      "scraped_at": "2026-07-24T02:04:46.019209+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -304,6 +334,39 @@
       "editorial_tip": null,
       "source_label": "Stadt Vaihingen an der Enz",
       "canonical_url": "https://www.rausgucken.de/vaihingen/events/hip-hop-2026-08-10-vaih"
+    },
+    {
+      "id": "76f4b917e59ff32c",
+      "title": "create your heaven",
+      "date_start": "2026-08-17",
+      "date_end": "2026-08-19",
+      "time": "09:00 - 16:00",
+      "description": "In diesem Workshop lernst du, mutiger zu werden und deine Stärken zu entdecken. Über drei Tage findest du heraus, was in dir steckt, und wächst über dich hinaus. Mit Spaß und Bewegung arbeitest du an deinem Selbstbewusstsein. Für das Mittagessen musst du selbst organisieren, Snacks, Tee und Wasser stehen zur Verfügung. Treffpunkt am ersten Tag um 9 Uhr im Foyer der Ottmar-Mergenthaler Realschule.",
+      "location": "Ottmar-Mergenthaler Realschule",
+      "price": "99,00 €",
+      "age_min": 11,
+      "age_max": 15,
+      "tags": [
+        "Workshop"
+      ],
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2337/six-seven-create-your-heaven",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2337/six-seven-create-your-heaven",
+      "source": "vaihingen_stadt",
+      "city": "vaihingen",
+      "slug": "create-your-heaven-2026-08-17-vaih",
+      "weekdays": [
+        1,
+        2,
+        3
+      ],
+      "scraped_at": "2026-07-24T02:04:52.667069+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Vaihingen an der Enz",
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/create-your-heaven-2026-08-17-vaih"
     },
     {
       "id": "5a2aa199ea967cca",
@@ -329,7 +392,7 @@
         1,
         2
       ],
-      "scraped_at": "2026-07-23T02:06:17.688141+02:00",
+      "scraped_at": "2026-07-24T02:04:55.567104+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -339,39 +402,7 @@
       "canonical_url": "https://www.rausgucken.de/vaihingen/events/emk-lego-stadt-2026-08-17-vaih"
     },
     {
-      "id": "a007f3f2a7695f8f",
-      "title": "Kids Disco",
-      "date_start": "2026-08-17",
-      "date_end": null,
-      "time": "16:30 - 17:15",
-      "description": "In dieser Kinderdisco lernen und spielen Kinder im Alter von 3 bis 6 Jahren die Bewegungsfähigkeit, Koordination, Rhythmik und Kreativität aus. Mit modernen Kinderliedern bewegen sie sich gemeinsam zum Spaß. Treffpunkt: Tanzschule Dance Company an Uhlandstr.24 in Vaihingen/Kleinglattbach.",
-      "location": "Tanzschule Dance Company, Uhlandstr.24, 72166 Vaihingen/Kleinglattbach",
-      "price": "15,00 €",
-      "age_min": 3,
-      "age_max": 6,
-      "tags": [
-        "Kinder",
-        "Familie"
-      ],
-      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2313/kids-disco",
-      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2313/kids-disco",
-      "source": "vaihingen_stadt",
-      "city": "vaihingen",
-      "slug": "kids-disco-2026-08-17-vaih",
-      "weekdays": [
-        1
-      ],
-      "scraped_at": "2026-07-23T02:06:20.279179+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Vaihingen an der Enz",
-      "canonical_url": "https://www.rausgucken.de/vaihingen/events/kids-disco-2026-08-17-vaih"
-    },
-    {
-      "id": "985ab67a3f41ba98",
+      "id": "f9c8c2e3ee3c7bf8",
       "title": "EmK LEGO®-Stadt",
       "date_start": "2026-08-20",
       "date_end": "2026-08-21",
@@ -385,8 +416,8 @@
         "Kinder",
         "Familie"
       ],
-      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2336/emk-lego-stadt",
-      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2336/emk-lego-stadt",
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2343/emk-lego-stadt",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2343/emk-lego-stadt",
       "source": "vaihingen_stadt",
       "city": "vaihingen",
       "slug": "emk-lego-stadt-2026-08-20-vaih",
@@ -394,7 +425,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-07-23T02:06:23.216790+02:00",
+      "scraped_at": "2026-07-24T02:04:58.572237+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
@@ -426,7 +457,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-23T02:06:27.672293+02:00",
+      "scraped_at": "2026-07-24T02:05:03.508842+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -436,42 +467,73 @@
       "canonical_url": "https://www.rausgucken.de/vaihingen/events/hundefuehrerschein-fuer-kinder-2026-08-24-vaih"
     },
     {
-      "id": "f4c236afb54754b3",
-      "title": "Akrobatik Kids + Teens",
+      "id": "20cf23774e3c22f9",
+      "title": "Ballett (8-12 Jahre)",
       "date_start": "2026-08-24",
       "date_end": null,
-      "time": "18:15 - 19:05",
-      "description": "In diesem Workshop lernen Kinder und Jugendliche spielerisch Körperspannung, Balance und Beweglichkeit durch Übungen wie Rollen, Handstände und Pyramiden. Sie fördern Kraft, Koordination und Teamarbeit in einer sicheren Umgebung und entwickeln Vertrauen in ihren Körper – ideal für alle, die gerne turnen.",
-      "location": "Dance Company, Uhlandstr. 24, 71665 Vaihingen/Kleinglattbach",
+      "time": "17:15 - 18:05",
+      "description": "In diesem Kinderballettkurs lernen 8-12-jährige Tänzer*innen die Grundlagen des klassischen Tanzes unter Berücksichtigung Freude und Fantasie. Der Kurs fördert Koordination, Musikalität und Selbstvertrauen. Ab ca. 8 Jahren bereiten sich die Kinder auf Übungen an der Stange vor. Keine Vorkenntnisse erforderlich. Treffpunkt Dance Company, Uhlandstr. 24, Vaihingen/Kleinglattbach.",
+      "location": "Dance Company, Uhlandstr. 24, Vaihingen/Kleinglattbach",
       "price": "15,00 €",
-      "age_min": 6,
-      "age_max": 14,
+      "age_min": 8,
+      "age_max": 12,
       "tags": [
         "Kinder",
         "Tanz",
-        "Workshop",
-        "Sport",
-        "Familie"
+        "Workshop"
       ],
-      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2305/akrobatik-kids-teens",
-      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2305/akrobatik-kids-teens",
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2339/ballett-8-12-jahre",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2339/ballett-8-12-jahre",
       "source": "vaihingen_stadt",
       "city": "vaihingen",
-      "slug": "akrobatik-kids-teens-2026-08-24-vaih",
+      "slug": "ballett-8-12-jahre-2026-08-24-vaih",
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-23T02:06:30.443072+02:00",
-      "extraction_confidence": 0.92,
-      "is_new": false,
+      "scraped_at": "2026-07-24T02:05:06.662253+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Vaihingen an der Enz",
-      "canonical_url": "https://www.rausgucken.de/vaihingen/events/akrobatik-kids-teens-2026-08-24-vaih"
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/ballett-8-12-jahre-2026-08-24-vaih"
     },
     {
-      "id": "e5bbc866f54fd45a",
+      "id": "d3ff216f40ad8c19",
+      "title": "Kleines ganz groß",
+      "date_start": "2026-09-02",
+      "date_end": null,
+      "time": "14:00 - 15:30",
+      "description": "In diesem Workshop lernen Kinder und Erwachsene, kleine Dinge mit Lupe, Mikroskop und Projektion auf dem Bildschirm zu betrachten. Bringt gern eigene Objekte zum Anschauen oder bringt Papier und Stifte für Malereien mit.",
+      "location": "Bürger-Treff Grabenstr.20 Raum Vaihingen",
+      "price": "Kostenlos",
+      "age_min": 0,
+      "age_max": 1000,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2345/kleines-ganz-gross",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2345/kleines-ganz-gross",
+      "source": "vaihingen_stadt",
+      "city": "vaihingen",
+      "slug": "kleines-ganz-gross-2026-09-02-vaih",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-07-24T02:05:16.392079+02:00",
+      "extraction_confidence": 0.92,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Vaihingen an der Enz",
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/kleines-ganz-gross-2026-09-02-vaih"
+    },
+    {
+      "id": "ff85b8907634d3b7",
       "title": "ELMAR - Eine elefantastische Musikstunde mit dem bunten Elefanten",
       "date_start": "2026-09-03",
       "date_end": null,
@@ -485,17 +547,17 @@
         "Kinder",
         "Familie"
       ],
-      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2312/elmar-eine-elefantastische-musikstunde-mit-dem-bunten-elefanten",
-      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2312/elmar-eine-elefantastische-musikstunde-mit-dem-bunten-elefanten",
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2346/elmar-eine-elefantastische-musikstunde-mit-dem-bunten-elefanten",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2346/elmar-eine-elefantastische-musikstunde-mit-dem-bunten-elefanten",
       "source": "vaihingen_stadt",
       "city": "vaihingen",
       "slug": "elmar---eine-elefantastische-musikstunde-mit-dem-bunten-elefanten-2026-09-03-vaih",
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-07-23T02:06:41.841071+02:00",
+      "scraped_at": "2026-07-24T02:05:19.026409+02:00",
       "extraction_confidence": 1.0,
-      "is_new": false,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -503,7 +565,7 @@
       "canonical_url": "https://www.rausgucken.de/vaihingen/events/elmar---eine-elefantastische-musikstunde-mit-dem-bunten-elefanten-2026-09-03-vaih"
     },
     {
-      "id": "6f0ad5168a72614b",
+      "id": "028179a8ec41f301",
       "title": "Mensch ärgere dich nicht-Turnier",
       "date_start": "2026-09-11",
       "date_end": null,
@@ -517,15 +579,15 @@
         "Kinder",
         "Familie"
       ],
-      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2321/mensch-aergere-dich-nicht-turnier",
-      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2321/mensch-aergere-dich-nicht-turnier",
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2340/mensch-aergere-dich-nicht-turnier",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2340/mensch-aergere-dich-nicht-turnier",
       "source": "vaihingen_stadt",
       "city": "vaihingen",
       "slug": "mensch-aergere-dich-nicht-turnier-2026-09-11-vaih",
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-07-23T02:06:53.018029+02:00",
+      "scraped_at": "2026-07-24T02:05:30.226825+02:00",
       "extraction_confidence": 0.85,
       "is_new": true,
       "is_booked_out": false,
@@ -557,7 +619,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-07-23T02:06:55.726873+02:00",
+      "scraped_at": "2026-07-24T02:05:33.075449+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -589,7 +651,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-23T02:07:01.282240+02:00",
+      "scraped_at": "2026-07-24T02:05:37.266011+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -621,7 +683,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-07-23T02:07:21.106559+02:00",
+      "scraped_at": "2026-07-24T02:05:58.174987+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -652,7 +714,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-07-23T02:08:24.403748+02:00",
+      "scraped_at": "2026-07-24T02:06:58.931880+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -686,7 +748,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-07-23T02:08:27.201269+02:00",
+      "scraped_at": "2026-07-24T02:07:00.161114+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,

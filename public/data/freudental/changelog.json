@@ -1,12 +1,25 @@
 {
-  "generated_at": "2026-07-20T13:56:55.273871+02:00",
+  "generated_at": "2026-07-24T07:21:11.607307+02:00",
   "city": "freudental",
   "sources": [
     "freudental_gemeinde"
   ],
-  "previous_run": "2026-07-19T08:27:17.095809+02:00",
+  "previous_run": "2026-07-23T07:30:56.627744+02:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "5507bcec7135b041",
+      "title": "Gemeinderatssitzung",
+      "date_start": "2026-07-22",
+      "source": "freudental_gemeinde"
+    },
+    {
+      "id": "030b4f5efed23d26",
+      "title": "After-Work-Party",
+      "date_start": "2026-07-23",
+      "source": "freudental_gemeinde"
+    }
+  ]
 }

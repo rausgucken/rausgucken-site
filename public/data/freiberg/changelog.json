@@ -1,24 +1,1489 @@
 {
-  "generated_at": "2026-07-19T05:03:03.359334+02:00",
+  "generated_at": "2026-07-24T05:20:36.311729+02:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-07-18T05:02:58.960130+02:00",
-  "count_added": 0,
-  "count_removed": 2,
-  "added": [],
-  "removed": [
+  "previous_run": "2026-07-23T05:11:48.120208+02:00",
+  "count_added": 117,
+  "count_removed": 129,
+  "added": [
     {
-      "id": "61338f42aae06b95",
-      "title": "Bürgerfest",
-      "date_start": "2026-07-18",
+      "id": "71f91bc8f23fda30",
+      "title": "Roter Frühschoppen",
+      "date_start": "2026-07-25",
       "source": "freiberg_veranstaltungen"
     },
     {
-      "id": "0b04d11428c8c6c6",
+      "id": "b3359ed1e5b9b891",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-07-26",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "c00a6a286b0e737d",
+      "title": "Handarbeitstreff",
+      "date_start": "2026-07-27",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "44fbc7d1ed28bde2",
+      "title": "Kleiderkammer",
+      "date_start": "2026-07-28",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "9ad3fc0a7cdc0600",
+      "title": "Stammtisch Grüne Brücke Freiberg a.N.",
+      "date_start": "2026-07-28",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "74862ece2d4235d1",
       "title": "Freiberger Wochenmarkt",
-      "date_start": "2026-07-18",
+      "date_start": "2026-07-29",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "b7af53063974575d",
+      "title": "DRK-Tanzkreis 60+",
+      "date_start": "2026-07-29",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "92e4a9ada6f1e57a",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-07-29",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "7b4b1985e66930b4",
+      "title": "ADFC Feierabendtour",
+      "date_start": "2026-07-29",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f1de346c4800fbfc",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-07-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "0fe9af65c3c8fb7d",
+      "title": "Selbsthilfegruppe für Angehörige psychisch Erkrankter",
+      "date_start": "2026-08-03",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "871e9aebf81e6842",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-08-05",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "c344229f6ce5e98c",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-08-06",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "8ea598cb5e2dc16e",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-08-12",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "c526f6e76a99a599",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-08-15",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "18f38a83468ded46",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-08-19",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "cc09cbeb2a164f0d",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-08-20",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "522b23b2bb0b0035",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-08-22",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a054908189b23d8f",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-08-26",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a19d11ecc5f892f9",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-08-26",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f29d102fa89750f3",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-09-03",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "53bdfd5f6e549b6b",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-09-05",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "571af4f814922d39",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-09-06",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "955acb7d5713c3f6",
+      "title": "Selbsthilfegruppe für Angehörige psychisch Erkrankter",
+      "date_start": "2026-09-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "8e962021ed4431cb",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-09-09",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "089039b3b1fc9f9b",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-09-10",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "de77d6fec860b5b2",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-09-12",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "8bfcaa389c5b068a",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-09-13",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "efa22706f8c741d3",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-09-16",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "6fec22ec9cd3d5c0",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-09-17",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "11a25bfa92c8f7c0",
+      "title": "Roter Frühschoppen der Freiberger SPD",
+      "date_start": "2026-09-19",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "340ce1b960aef631",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-09-20",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d2b5fc869eb6b332",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-09-23",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "ff4f1ecf9af56e48",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-09-23",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "e5e45a928fc9f582",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-09-24",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "5eeb25b506fe8188",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-09-26",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "9a58e0062f917ae9",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-09-27",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "fa07d1da235de3e8",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-09-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "e5d34456d4a5cd0e",
+      "title": "Blutspenden",
+      "date_start": "2026-09-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "212e9e7b1b76342c",
+      "title": "Wie wichtig ist ein Testament?",
+      "date_start": "2026-10-01",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a82613668aaca6bf",
+      "title": "EMMVEE & Serdar Karibik live",
+      "date_start": "2026-10-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "49f4563ed57a268c",
+      "title": "Schiffsmodellbauaustellung anlässlich des 40 jähigen Vereisjubiläums",
+      "date_start": "2026-10-03",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "8ee971ebcfe090be",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-10-04",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "cd2a5aa9842fb340",
+      "title": "Selbsthilfegruppe für Angehörige psychisch Erkrankter",
+      "date_start": "2026-10-05",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "5a148ba5aeffd3f9",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "935fcedacdcc36c8",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-10-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a5df71d41dfa32a2",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-10-08",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "6a2180565c6e750e",
+      "title": "Schnippelparty",
+      "date_start": "2026-10-09",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "cbfb0e630a9356b1",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-10",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "84f80914f411d9b9",
+      "title": "Textil-Reparaturwerkstatt Kittelflickerei",
+      "date_start": "2026-10-10",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "efada35ceaa62c12",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-10-11",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "0002fc2355c595b5",
+      "title": "DRK-Tanzkreis 60+",
+      "date_start": "2026-10-14",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "cd7ac1486a8c146d",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-10-14",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "ba45dc51a7de5e3a",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-10-15",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "709eb6356e70cb01",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-17",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4e8c075bd8e03655",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-10-18",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "60482b60fe6db414",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-21",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "015d6d1ae0c06146",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-10-21",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4bcea168052b7234",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-10-22",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "5fc1194e4ae27325",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-24",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "140e672ab8416d33",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-10-25",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "3a2cbd3897553043",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-28",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "43ab976276853312",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-10-28",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d91b792f68ac5c7f",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-10-29",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "717abb822897e2a5",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-31",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "0e0983c43d60b26e",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-11-01",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "2f82b354a9675b45",
+      "title": "Selbsthilfegruppe für Angehörige psychisch Erkrankter",
+      "date_start": "2026-11-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "b1a82852c9c65fdb",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-04",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "6ea7e436b91d2a96",
+      "title": "DRK-Tanzkreis 60+",
+      "date_start": "2026-11-04",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "3608bbcaf6be044d",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-11-04",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f6d47c6523fab57e",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-11-05",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d0948dbdd90e5c8f",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-11-08",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4687361449035330",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-11",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "ec32bf9b215b8d5d",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-11-11",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "6511ad702703facf",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-11-12",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "6206838a04ebd9f5",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-11-15",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "1ccb63b876d02eaa",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-18",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "096dc5ae25605210",
+      "title": "DRK-Tanzkreis 60+",
+      "date_start": "2026-11-18",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "9e4d9126939d04f0",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-11-18",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a986d6cce5065b0c",
+      "title": "Kammermusik-Konzert - K&K KLAVIERDUO",
+      "date_start": "2026-11-18",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "ef282505bfd0a35b",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-11-19",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "e72e18828b0d4a4d",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-21",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "c21a2034e5184796",
+      "title": "Roter Frühschoppen der Freiberger SPD",
+      "date_start": "2026-11-21",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "8863be8c5302e30b",
+      "title": "JAZZNIGHT BigBand Freiberg",
+      "date_start": "2026-11-21",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "9a2eea0154d4bcc4",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-11-22",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f78adb4411828758",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-25",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "9d13b981becd9f79",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-11-25",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f54b48886a402035",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-28",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d188e672f2180068",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-11-29",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f151dcac1af97d46",
+      "title": "DRK-Tanzkreis 60+",
+      "date_start": "2026-12-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "05c549bb10c9a44e",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-12-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "b2baee49ea483854",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-12-03",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4d32861427ac4b29",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-12-06",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "65ba293069c7fd23",
+      "title": "Selbsthilfegruppe für Angehörige psychisch Erkrankter",
+      "date_start": "2026-12-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "115841df6957aae5",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-12-12",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "60e4958b47fd0b9d",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-12-13",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "3b26001afe3d0d78",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-12-16",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a1bc81446ced639b",
+      "title": "DRK-Tanzkreis 60+",
+      "date_start": "2026-12-16",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "b184ab18f9a88e3c",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-12-16",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f01993ee21c6721d",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-12-20",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "11095b21f9fa9522",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-12-23",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "edcfe9657e9b5a6b",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-12-23",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "c319e6d281fcb87b",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-12-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d8437ffc9a57529c",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-12-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "db9244ea50b1b7c9",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-01-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a4aac1605f4f2bbf",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-01-06",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "adeb3aae3e56bd47",
+      "title": "Walking/Lauftreff",
+      "date_start": "2027-01-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "df43498c768dd2f9",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-01-13",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "e4ae21c49334ebd6",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-01-20",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "fe424cdbb6fd4b4d",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-01-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "c60ecd5ca4950dfc",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-02-10",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "53e92da5dbe281a7",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-02-10",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "0dfd7c2aab542b36",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-02-17",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "eaf57860bb649b5b",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-02-20",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "bf4c3e488c9b890e",
+      "title": "Außerordentlichen Mitgliederversammlung",
+      "date_start": "2026-07-24",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d986cc5dcdce3537",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-02-24",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "bf78149cea96e3cc",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-02-24",
+      "source": "freiberg_veranstaltungen"
+    }
+  ],
+  "removed": [
+    {
+      "id": "511c9d808fc4368b",
+      "title": "Bürgerfest",
+      "date_start": "2026-07-19",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "609dc514180c5e82",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-07-19",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "453fdc5d739b6b91",
+      "title": "Klimawerkstatt",
+      "date_start": "2026-07-20",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "81b9ae4699e205c8",
+      "title": "Kleiderkammer ist geöffnet",
+      "date_start": "2026-07-21",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "c72ae6064d77926d",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-07-22",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "1ed8e2928372b80c",
+      "title": "Blutspenden",
+      "date_start": "2026-07-22",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d6ed1a957ad1cb5d",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-07-22",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "8e1d0f9227da7989",
+      "title": "ADFC Feierabendtour",
+      "date_start": "2026-07-22",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "24c0ade3d6033054",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-07-23",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "bf737270f64000ce",
+      "title": "Textil-Reparaturwerkstatt Kittelflickerei",
+      "date_start": "2026-07-23",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "3244a2be9f5aead7",
+      "title": "Roter Frühschoppen",
+      "date_start": "2026-07-25",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a2e966fe4550f56e",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-07-26",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "723d4bb87cbf8d42",
+      "title": "Handarbeitstreff",
+      "date_start": "2026-07-27",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "3a13d0899be6dbe4",
+      "title": "Kleiderkammer ist geöffnet",
+      "date_start": "2026-07-28",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "01f20ae2a735fd1c",
+      "title": "Stammtisch Grüne Brücke Freiberg a.N.",
+      "date_start": "2026-07-28",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "87eb061e1e95f87e",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-07-29",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "7ccd921c8919b725",
+      "title": "DRK-Tanzkreis 60+",
+      "date_start": "2026-07-29",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "6196b7ae58ab7d11",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-07-29",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "ea08156528be521c",
+      "title": "ADFC Feierabendtour",
+      "date_start": "2026-07-29",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "71d7f1a946022e86",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-07-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "5de4635acc0907bd",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-08-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "5390b0f6aca3d205",
+      "title": "Selbsthilfegruppe für Angehörige psychisch Erkrankter",
+      "date_start": "2026-08-03",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4beb0ef86a8fe3b9",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-08-05",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "e3fc1bd5b5e7025b",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-08-05",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "bf52561312746747",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-08-06",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "98e9f05ec5671716",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-08-09",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "1a96d6f955d65fd3",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-08-12",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "324e1cd068793342",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-08-12",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "1252e3a438eba359",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-08-15",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f0ed13ffaf29e240",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-08-16",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d929b00ff14ec289",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-08-19",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "27f277f333b35f4c",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-08-20",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a98f8995bd30a224",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-08-22",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "86536743de5041ea",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-08-23",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4e5a5046528d5365",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-08-26",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a0dc918a86521071",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-08-26",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d724f4c006f50f38",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-08-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "b430e1bb7f8aed34",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-09-03",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "539c7210fb79d5a7",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-09-05",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "9a6ebf32e4d25eb7",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-09-06",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f554e3cef73d51a5",
+      "title": "Selbsthilfegruppe für Angehörige psychisch Erkrankter",
+      "date_start": "2026-09-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "c363f0f7323191a3",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-09-09",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "fb177bfb8f6b51a8",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-09-10",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a5da4814b752543c",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-09-12",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "3d1af0889835d4b8",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-09-13",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f852c171ee7e8532",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-09-16",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "962546bca39d112c",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-09-17",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "bc139a400c7044ee",
+      "title": "Roter Frühschoppen der Freiberger SPD",
+      "date_start": "2026-09-19",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "baf978064cf02ab9",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-09-20",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4a356a442a39f935",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-09-23",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d0655d39f0e76753",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-09-23",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "313afeea82327674",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-09-24",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "940572fb78d17d1f",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-09-26",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4faf8fcbc76cdb96",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-09-27",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "3015edbb15e70b4d",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-09-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d530bcb01ff21144",
+      "title": "Blutspenden",
+      "date_start": "2026-09-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d886ba9ea02ce476",
+      "title": "EMMVEE & Serdar Karibik live",
+      "date_start": "2026-10-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "33d4dc42e1dbb277",
+      "title": "Schiffsmodellbauaustellung",
+      "date_start": "2026-10-03",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "179a5fa61ab6f5b0",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-10-04",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "3845d9f7275449f0",
+      "title": "Selbsthilfegruppe für Angehörige psychisch Erkrankter",
+      "date_start": "2026-10-05",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "72a02a749127ec35",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "8ab7b9cfc8596128",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-10-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4014949e65670ab9",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-10-08",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "c7caf31e79a35d09",
+      "title": "Schnippelparty",
+      "date_start": "2026-10-09",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "95ee4e64a2164a6e",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-10",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a99bdf8d25cd8785",
+      "title": "Textil-Reparaturwerkstatt Kittelflickerei",
+      "date_start": "2026-10-10",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "995b2b4032c97a1c",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-10-11",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f43b17717568d00f",
+      "title": "DRK-Tanzkreis 60+",
+      "date_start": "2026-10-14",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "497a07ae08c9d847",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-10-14",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "c977c5d8aac2d092",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-10-15",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "587994735dee6ab7",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-17",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "defd94d1223b8202",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-10-18",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "3d57cb9503a9ab31",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-21",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "bcbb708733c93aaf",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-10-21",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "11b75d617e0f13aa",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-10-22",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "85c3041600bd4615",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-24",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f3edcdbc0d35ec2c",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-10-25",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4ed796c57f4d75c4",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-28",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "944b9b6b159e8877",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-10-28",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d8e93564d50ad6ee",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-10-29",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "97d7590e458c489b",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-10-31",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "86e07ce6be4fa00b",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-11-01",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4626b10a5fe001ed",
+      "title": "Selbsthilfegruppe für Angehörige psychisch Erkrankter",
+      "date_start": "2026-11-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f2ad169738f180a4",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-04",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "1a578f5a2cfb61d4",
+      "title": "DRK-Tanzkreis 60+",
+      "date_start": "2026-11-04",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "5e698bf474b67eea",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-11-04",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "36fe5b75ff72db88",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-11-05",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "9a3366136697148f",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-11-08",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "00eac953f767041b",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-11",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "14e137ec902e3856",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-11-11",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "6cedda27cdd1a573",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-11-12",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "bc1998a1d5cb1393",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-11-15",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "06d7de79b6118ff6",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-18",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "897086e030ca7c64",
+      "title": "DRK-Tanzkreis 60+",
+      "date_start": "2026-11-18",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "6c37bce24fb127cb",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-11-18",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "061b19a8fd1c58e0",
+      "title": "Kammermusik-Konzert - K&K KLAVIERDUO",
+      "date_start": "2026-11-18",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "26735e8846c29633",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-11-19",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "cff028254ed4bd2e",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-21",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "dadc45d6565f228b",
+      "title": "Roter Frühschoppen der Freiberger SPD",
+      "date_start": "2026-11-21",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "06a644649b4f935b",
+      "title": "JAZZNIGHT BigBand Freiberg",
+      "date_start": "2026-11-21",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a559cd45a5cd84a4",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-11-22",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "70107466aee2b19b",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-25",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d71e315da4c74447",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-11-25",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "41317c95fc584a0d",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-28",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "e4c2d9e6f5724106",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-11-29",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "3e2956e4961a4a45",
+      "title": "DRK-Tanzkreis 60+",
+      "date_start": "2026-12-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "386995f60387df5b",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-12-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "b6f15e09bf005ac3",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-12-03",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "ee2f170e5ec02b1b",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-12-06",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "648caad64f359cf4",
+      "title": "Selbsthilfegruppe für Angehörige psychisch Erkrankter",
+      "date_start": "2026-12-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "6816208fa527a6a2",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-12-12",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "5a08266a15f2c533",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-12-13",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "1eab86680d5d0c8d",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-12-16",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "d5f0da3c5867ebc5",
+      "title": "DRK-Tanzkreis 60+",
+      "date_start": "2026-12-16",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "956e3e94caebcd92",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-12-16",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "ee15efb19bef2154",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-12-20",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "141e7b58e23b78ea",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-12-23",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "0a5b347bfdacc9fa",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-12-23",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f497ec8839d278dc",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-12-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f9ac8e76e0108e0e",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-12-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "6e07bd26714230f2",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-01-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "5ecfa824ab8b842a",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-01-06",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "952c7bf2f75de998",
+      "title": "Walking/Lauftreff",
+      "date_start": "2027-01-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "ca9d07b85d4b49a7",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-01-13",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "3ad4fcedf244cfa4",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-01-20",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "62f35f8356fb1545",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-01-30",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "366b39e18ab16722",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-02-10",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "ef5589370f2606bb",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-02-10",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "9c27b3e5444706b6",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-02-17",
       "source": "freiberg_veranstaltungen"
     }
   ]

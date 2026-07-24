@@ -1,25 +1,40 @@
 {
-  "scraped_at": "2026-07-21T12:12:58.297266+02:00",
+  "scraped_at": "2026-07-24T05:56:07.285637+02:00",
   "city": "marbach",
-  "event_count": 50,
+  "event_count": 49,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "marbach_stadt"
   ],
   "source_counts": {
-    "marbach_stadt": 50
+    "marbach_stadt": 49
   },
   "sources_failed": [],
-  "data_hash": "a3626408c1668612",
+  "data_hash": "f880ad13d4e18ff4",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 21.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 24.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "marbach_stadt": 0.98
   },
   "source_event_counts": {
-    "marbach_stadt": 50
+    "marbach_stadt": 49
   },
-  "count_drift_warnings": {}
+  "count_drift_warnings": {},
+  "quality_report": {
+    "regression_pass_rate": 1.0,
+    "flagged_rate_current": 0.0,
+    "flagged_rate_4week_avg": 0.0,
+    "trend": "stable",
+    "runtime_minutes": 495.9,
+    "runtime_delta_vs_baseline": 1.77,
+    "source_health": {
+      "marbach_stadt": 0.98
+    },
+    "count_drift_warnings": {},
+    "quarantined_sources": [],
+    "status": "warning",
+    "generated_at": "2026-07-24T10:28:50.937417+02:00"
+  }
 }

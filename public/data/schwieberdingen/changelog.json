@@ -1,19 +1,25 @@
 {
-  "generated_at": "2026-07-20T08:29:16.195116+02:00",
+  "generated_at": "2026-07-24T10:10:38.183161+02:00",
   "city": "schwieberdingen",
   "sources": [
     "schwieberdingen_gemeinde"
   ],
-  "previous_run": "2026-07-19T06:44:27.810783+02:00",
-  "count_added": 1,
-  "count_removed": 0,
-  "added": [
+  "previous_run": "2026-07-23T06:59:09.776575+02:00",
+  "count_added": 0,
+  "count_removed": 2,
+  "added": [],
+  "removed": [
     {
-      "id": "e855c70794b5631b",
+      "id": "8439419abef43725",
       "title": "Persönliche Beratung",
-      "date_start": "2026-11-03",
+      "date_start": "2026-07-21",
+      "source": "schwieberdingen_gemeinde"
+    },
+    {
+      "id": "b2b887b0e616cbb8",
+      "title": "Line Dance Gruppe",
+      "date_start": "2026-07-22",
       "source": "schwieberdingen_gemeinde"
     }
-  ],
-  "removed": []
+  ]
 }

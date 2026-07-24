@@ -1,17 +1,29 @@
 {
-  "generated_at": "2026-07-20T07:44:28.556844+02:00",
+  "generated_at": "2026-07-24T06:36:57.282474+02:00",
   "city": "steinheim",
   "sources": [
     "steinheim_stadt"
   ],
-  "previous_run": "2026-07-19T07:27:55.275218+02:00",
-  "count_added": 3,
-  "count_removed": 0,
+  "previous_run": "2026-07-23T06:59:09.041294+02:00",
+  "count_added": 6,
+  "count_removed": 1,
   "added": [
     {
       "id": "234a2d27960bb010",
       "title": "Kelterbrettle 2026",
       "date_start": "2026-07-10",
+      "source": "steinheim_stadt"
+    },
+    {
+      "id": "dea9c388186a53dc",
+      "title": "Saisonopening Fußballjugend TSG Steinheim",
+      "date_start": "2026-07-26",
+      "source": "steinheim_stadt"
+    },
+    {
+      "id": "3f5ee99e87950f57",
+      "title": "Jazz und Rock am Forsthaus Fetzenhardt",
+      "date_start": "2026-07-26",
       "source": "steinheim_stadt"
     },
     {
@@ -25,7 +37,20 @@
       "title": "Feuerzangenbowle 2026",
       "date_start": "2026-06-12",
       "source": "steinheim_stadt"
+    },
+    {
+      "id": "41c00b2f3dad49e1",
+      "title": "Gemeinsam aktiv 60+ - Wöchentlicher Spielenachmittag",
+      "date_start": "2026-07-28",
+      "source": "steinheim_stadt"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "6a932b9332ae5602",
+      "title": "Gemeinsam aktiv 60+ - Wöchentlicher Spielenachmittag",
+      "date_start": "2026-07-21",
+      "source": "steinheim_stadt"
+    }
+  ]
 }

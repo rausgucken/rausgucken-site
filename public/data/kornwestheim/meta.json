@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-07-20T05:45:04.415580+02:00",
+  "scraped_at": "2026-07-23T05:46:27.457337+02:00",
   "city": "kornwestheim",
-  "event_count": 230,
+  "event_count": 228,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -10,14 +10,14 @@
     "kornwestheim"
   ],
   "source_counts": {
-    "kornwestheim": 195,
+    "kornwestheim": 194,
     "das_k_buecherei": 6,
-    "das_k_spielplan": 29
+    "das_k_spielplan": 28
   },
   "sources_failed": [],
-  "data_hash": "aaa6ff0b3dd76e09",
+  "data_hash": "17fb512720a702ae",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 20.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 23.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "kornwestheim": 1.0,
@@ -25,9 +25,9 @@
     "das_k_spielplan": 1.0
   },
   "source_event_counts": {
-    "kornwestheim": 195,
+    "kornwestheim": 194,
     "das_k_buecherei": 6,
-    "das_k_spielplan": 29
+    "das_k_spielplan": 28
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -35,8 +35,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 1435.0,
-    "runtime_delta_vs_baseline": 7.017,
+    "runtime_minutes": 495.9,
+    "runtime_delta_vs_baseline": 1.77,
     "source_health": {
       "kornwestheim": 1.0,
       "das_k_buecherei": 1.0,
@@ -45,6 +45,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-07-21T02:34:12.428928+02:00"
+    "generated_at": "2026-07-24T10:28:50.696883+02:00"
   }
 }

@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-07-20T19:43:46.985539+02:00",
+  "generated_at": "2026-07-24T07:46:54.173811+02:00",
   "city": "walheim",
   "sources": [
     "walheim_gemeinde"
   ],
-  "previous_run": "2026-07-19T20:57:48.892119+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-07-23T09:09:57.182697+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "17deb73b62c424e9",
+      "title": "Gemeinderatssitzung",
+      "date_start": "2026-09-17",
+      "source": "walheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "d99787d44ced7617",
+      "title": "Gemeinderatssitzung",
+      "date_start": "2026-07-23",
+      "source": "walheim_gemeinde"
+    }
+  ]
 }

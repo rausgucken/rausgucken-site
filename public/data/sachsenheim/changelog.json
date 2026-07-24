@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-20T05:45:05.092326+02:00",
+  "generated_at": "2026-07-24T05:20:39.242786+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-07-19T05:43:46.608693+02:00",
-  "count_added": 8,
-  "count_removed": 0,
+  "previous_run": "2026-07-23T06:03:14.614314+02:00",
+  "count_added": 10,
+  "count_removed": 3,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -52,11 +52,42 @@
       "source": "sachsenheim_kultur"
     },
     {
+      "id": "93f9cf11b9d7a482",
+      "title": "Herbstfeier mit Musik, Basteln und Brot",
+      "date_start": "2026-10-09",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "8cb4c3c237b9f3c5",
+      "title": "ECOmedy mit Matthias Jung",
+      "date_start": "2026-10-09",
+      "source": "sachsenheim_library"
+    },
+    {
       "id": "7863010f44a7a5a4",
       "title": "Führung, Zu Gast bei Rittern und Geistern",
       "date_start": "2026-05-17",
       "source": "sachsenheim_library"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "ea20b1b007525d8c",
+      "title": "Sommerfest",
+      "date_start": "2026-07-21",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "1b004c9bc8238e2c",
+      "title": "Bürgerinfoveranstaltung zu dem Ausbau der Weißen Flecken in Kleinsachsenheim",
+      "date_start": "2026-07-22",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "51cbbf7e64c4b82a",
+      "title": "Bürgerinfoveranstaltung zu dem Ausbau der Weißen Flecken",
+      "date_start": "2026-07-22",
+      "source": "sachsenheim_library"
+    }
+  ]
 }
