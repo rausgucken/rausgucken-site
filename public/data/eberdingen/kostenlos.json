@@ -1,7 +1,7 @@
 {
   "subset": "kostenlos",
-  "generated_at": "2026-07-23T06:00:01.671678+02:00",
-  "event_count": 9,
+  "generated_at": "2026-07-24T06:00:01.983796+02:00",
+  "event_count": 11,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,7 +26,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-21T02:08:07.882822+02:00",
+      "scraped_at": "2026-07-23T02:09:00.072049+02:00",
       "extraction_confidence": 0.9,
       "is_new": false,
       "is_booked_out": false,
@@ -56,7 +56,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-07-21T02:08:07.882876+02:00",
+      "scraped_at": "2026-07-23T02:09:00.072095+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -87,7 +87,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-21T02:08:07.883006+02:00",
+      "scraped_at": "2026-07-23T02:09:00.072202+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -116,7 +116,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-07-21T02:08:07.883031+02:00",
+      "scraped_at": "2026-07-23T02:09:00.072224+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -147,7 +147,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-07-21T02:08:07.887223+02:00",
+      "scraped_at": "2026-07-23T02:09:00.072329+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -177,7 +177,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-07-21T02:08:07.887357+02:00",
+      "scraped_at": "2026-07-23T02:09:00.072384+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -187,13 +187,13 @@
       "canonical_url": "https://www.rausgucken.de/eberdingen/events/schoene-tierschau-in-der-nussschale-2026-11-07-eber"
     },
     {
-      "id": "92a21c5956e47882",
-      "title": "Nikolausfeier",
+      "id": "45e619583b16ff9d",
+      "title": "Eberdinger Weihnachtsmarkt",
       "date_start": "2026-12-05",
-      "date_end": "2026-12-06",
-      "time": "16:00 - 21:00",
-      "description": "In dieser Nikolausfeier auf dem OGV-Vereinsgelände unterhalb des Kappelpfades feiern Mitglieder und Besucher das Weihnachtsfest mit der Familie. Das Ereignis findet über zwei Tage statt, bietet however, specific details such as the time frame or activities are not provided in the given facts.",
-      "location": "OGV-Vereinsgelände unterhalb des Kappelpfades",
+      "date_end": "2026-12-05",
+      "time": "15:00 - 21:00",
+      "description": "In der Eberdingener Altstadt bietet sich der 3. Weihnachtsmarkt an, ein verzaubertes Entertainmentspektakel für die gesamte Familie. Von Nachmittag bis Abend spannt eine Vielfalt an Aktivitäten und Leckereien den Besucherlockstoff.",
+      "location": null,
       "price": null,
       "age_min": 4,
       "age_max": null,
@@ -204,12 +204,41 @@
       "original_url": "https://www.eberdingen.de/eventcalendar",
       "source": "eberdingen_veranstaltungen",
       "city": "eberdingen",
+      "slug": "eberdinger-weihnachtsmarkt-2026-12-05-eber",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-07-23T02:09:00.072401+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Eberdingen",
+      "canonical_url": "https://www.rausgucken.de/eberdingen/events/eberdinger-weihnachtsmarkt-2026-12-05-eber"
+    },
+    {
+      "id": "92a21c5956e47882",
+      "title": "Nikolausfeier",
+      "date_start": "2026-12-05",
+      "date_end": "2026-12-06",
+      "time": "16:00 - 21:00",
+      "description": "In dieser Nikolausfeier auf dem OGV-Vereinsgelände unterhalb des Kappelpfades feiern Mitglieder und Besucher das Weihnachtsfest mit Tradition und Freude. Veranstalter sind der Obst- und Gartenbauverein Nussdorf e.V. weitere Details finden Sie rechtzeitig hier und im Mitteilungsblatt der Gemeinde Eberdingen.",
+      "location": "OGV-Vereinsgelände unterhalb des Kappelpfades",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.eberdingen.de/eventcalendar",
+      "original_url": "https://www.eberdingen.de/eventcalendar",
+      "source": "eberdingen_veranstaltungen",
+      "city": "eberdingen",
       "slug": "nikolausfeier-2026-12-05-eber",
       "weekdays": [
         0,
         6
       ],
-      "scraped_at": "2026-07-21T02:08:07.887520+02:00",
+      "scraped_at": "2026-07-23T02:09:00.716028+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -217,6 +246,38 @@
       "editorial_tip": null,
       "source_label": "Gemeinde Eberdingen",
       "canonical_url": "https://www.rausgucken.de/eberdingen/events/nikolausfeier-2026-12-05-eber"
+    },
+    {
+      "id": "80ae41e5919e6a2c",
+      "title": "Kinderfasching",
+      "date_start": "2027-01-30",
+      "date_end": null,
+      "time": "14:11",
+      "description": "Kinder genießen einen Fasching im Rahmen eines Veranstaltungsabends in der Gemeindehalle Hochdorf. Mit Spielzeug und Freude sind sie bei der Party eingeladen.",
+      "location": "Gemeindehalle Hochdorf",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.eberdingen.de/eventcalendar",
+      "original_url": "https://www.eberdingen.de/eventcalendar",
+      "source": "eberdingen_veranstaltungen",
+      "city": "eberdingen",
+      "slug": "kinderfasching-2027-01-30-eber",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-07-23T02:09:00.716062+02:00",
+      "extraction_confidence": 0.6,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Eberdingen",
+      "canonical_url": "https://www.rausgucken.de/eberdingen/events/kinderfasching-2027-01-30-eber"
     },
     {
       "id": "2e8f7a45dd29dec1",
@@ -238,7 +299,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-07-21T02:08:08.534553+02:00",
+      "scraped_at": "2026-07-23T02:09:00.716084+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -267,7 +328,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-07-21T02:08:08.534667+02:00",
+      "scraped_at": "2026-07-23T02:09:00.716166+02:00",
       "extraction_confidence": 0.85,
       "is_new": true,
       "is_booked_out": false,

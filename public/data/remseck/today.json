@@ -1,41 +1,69 @@
 {
   "subset": "today",
-  "generated_at": "2026-07-23T06:00:01.835287+02:00",
-  "event_count": 1,
+  "generated_at": "2026-07-24T06:00:02.240875+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "f4b45780f55a2523",
-      "title": "Hochberger Bücherfreunde",
-      "date_start": "2026-07-23",
+      "id": "82d375397aa81bce",
+      "title": "Game Day",
+      "date_start": "2026-07-24",
       "date_end": null,
-      "time": "15:00 – 16:00",
-      "description": "In der Ortsbücherei Hochberg lernen Kinder ab 4 Jahren, gemeinsam mit spannenden Geschichten zu basteln. Nach dem Vorlesen entstehen fantasievolle Figuren und Kunstwerke, die jedes Kind mit nach Hause nimmt.",
-      "location": "Ortsbücherei Hochberg",
+      "time": "15:00 – 17:30",
+      "description": "In der Mediathek im KUBUS können Kinder und Erwachsene ab 6 Jahren freie Spielezeit genießen. Im 3. OG kann jeder sich einfach einen Controller ausleihen. Bitte bringt unter 16-jährigen Teilnehmern eine unterschriebene Einwilligungserklärung mit. Die Aktivität ist kostenlos.",
+      "location": "Mediathek im KUBUS",
       "price": "Kostenlos",
-      "age_min": 4,
+      "age_min": 6,
       "age_max": null,
       "tags": [
         "Kinder",
-        "Lesung",
         "Familie"
       ],
       "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
       "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
       "source": "remseck_mediathek",
       "city": "remseck",
-      "slug": "hochberger-buecherfreunde-2026-07-23-rems",
+      "slug": "game-day-2026-07-24-rems",
       "weekdays": [
-        4
+        5
       ],
-      "scraped_at": "2026-07-23T02:03:51.739121+02:00",
+      "scraped_at": "2026-07-24T02:01:07.773104+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Mediathek im KUBUS Remseck",
-      "canonical_url": "https://www.rausgucken.de/remseck/events/hochberger-buecherfreunde-2026-07-23-rems"
+      "canonical_url": "https://www.rausgucken.de/remseck/events/game-day-2026-07-24-rems"
+    },
+    {
+      "id": "cf1aa606b30ef4f8",
+      "title": "Open-Air Poetry Slam",
+      "date_start": "2026-07-24",
+      "date_end": null,
+      "time": "19:00 - 21:00",
+      "description": "Im Freien entfaltet sich dieser Poetry Slam an der Neckarseite. Teilnehmer und Zuschauer genießen kreative Texte in einer offenen Atmosphäre am Remsecker Neckarstrand.",
+      "location": "Neckarstrand, Remseck am Neckar",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.stadt-remseck.de/Kulturveranstaltungen-im-Ueberblick/Open-Air-Poetry-Slam-event-appointment16472",
+      "original_url": "https://www.stadt-remseck.de/Kulturveranstaltungen-im-Ueberblick/Open-Air-Poetry-Slam-event-appointment16472",
+      "source": "remseck_stadt",
+      "city": "remseck",
+      "slug": "open-air-poetry-slam-2026-07-24-rems",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-07-24T02:01:13.912359+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Remseck am Neckar",
+      "canonical_url": "https://www.rausgucken.de/remseck/events/open-air-poetry-slam-2026-07-24-rems"
     }
   ]
 }

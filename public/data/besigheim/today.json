@@ -1,40 +1,70 @@
 {
   "subset": "today",
-  "generated_at": "2026-07-23T06:00:01.638192+02:00",
-  "event_count": 1,
+  "generated_at": "2026-07-24T06:00:01.960695+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "5829b682e15add9c",
-      "title": "Sommerfest",
-      "date_start": "2026-07-23",
+      "id": "77a73c860fa03181",
+      "title": "Werwolf",
+      "date_start": "2026-07-24",
       "date_end": null,
-      "time": "14:30 - 16:00",
-      "description": "Ein Familienfest in der Begegnungsstätte Besigheim feiert den Sommertag mit Unterhaltung und kulinarischen Genüssen.",
-      "location": "Begegnungsstätte Besigheim",
+      "time": null,
+      "description": "In der Steinhausgarten-Auflage des Freilichttheaters wird das Theaterstück \"Werwolf\" vorgeführt. Erleben Sie die Spannung dieser Aufführung in der offenen Natur.",
+      "location": "Steinhausgarten",
       "price": null,
-      "age_min": 4,
+      "age_min": null,
       "age_max": null,
       "tags": [
-        "Familie",
-        "Kulinarik"
+        "Fuehrung"
       ],
-      "link": "https://www.besigheim.de/site/Besigheim-2023/node/20981999/zmdetail_523253349295/Sommerfest.html?nodeID=523253349295",
-      "original_url": "https://www.besigheim.de/site/Besigheim-2023/node/20981999/zmdetail_523253349295/Sommerfest.html?nodeID=523253349295",
+      "link": "https://www.besigheim.de/site/Besigheim-2023/node/20981999/zmdetail_523253349297/FreilichttheaterauffhrungenWerwolf.html?nodeID=523253349297",
+      "original_url": "https://www.besigheim.de/site/Besigheim-2023/node/20981999/zmdetail_523253349297/FreilichttheaterauffhrungenWerwolf.html?nodeID=523253349297",
       "source": "besigheim_stadt",
       "city": "besigheim",
-      "slug": "sommerfest-2026-07-23-besi",
+      "slug": "werwolf-2026-07-24-besi",
       "weekdays": [
-        4
+        5
       ],
-      "scraped_at": "2026-07-23T02:04:55.629471+02:00",
+      "scraped_at": "2026-07-23T02:04:55.629478+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Besigheim",
+      "canonical_url": "https://www.rausgucken.de/besigheim/events/werwolf-2026-07-24-besi"
+    },
+    {
+      "id": "6c3de6209d35f0b8",
+      "title": "Jugend Camp Turngau Neckar Enz",
+      "date_start": "2026-07-24",
+      "date_end": null,
+      "time": null,
+      "description": "Jugendliches Outdoor-Camp am Turngau in der Nähe des Neckars und der Enz richtet sich an Teilnehmer ab 12 Jahre.",
+      "location": null,
+      "price": null,
+      "age_min": 12,
+      "age_max": null,
+      "tags": [
+        "Outdoor"
+      ],
+      "link": "https://www.besigheim.de/site/Besigheim-2023/node/20981999/zmdetail_523253349296/JugendCampTurngauNeckarEnzfrJugendlicheab12Jahren.html?nodeID=523253349296",
+      "original_url": "https://www.besigheim.de/site/Besigheim-2023/node/20981999/zmdetail_523253349296/JugendCampTurngauNeckarEnzfrJugendlicheab12Jahren.html?nodeID=523253349296",
+      "source": "besigheim_stadt",
+      "city": "besigheim",
+      "slug": "jugend-camp-turngau-neckar-enz-2026-07-24-besi",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-07-23T02:04:55.629482+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Besigheim",
-      "canonical_url": "https://www.rausgucken.de/besigheim/events/sommerfest-2026-07-23-besi"
+      "canonical_url": "https://www.rausgucken.de/besigheim/events/jugend-camp-turngau-neckar-enz-2026-07-24-besi"
     }
   ]
 }
