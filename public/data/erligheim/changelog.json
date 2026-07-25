@@ -1,19 +1,25 @@
 {
-  "generated_at": "2026-07-24T07:23:02.190375+02:00",
+  "generated_at": "2026-07-25T07:45:01.033151+02:00",
   "city": "erligheim",
   "sources": [
     "erligheim_gemeinde"
   ],
-  "previous_run": "2026-07-23T07:42:24.695356+02:00",
-  "count_added": 1,
-  "count_removed": 0,
-  "added": [
+  "previous_run": "2026-07-24T07:23:02.265163+02:00",
+  "count_added": 0,
+  "count_removed": 2,
+  "added": [],
+  "removed": [
     {
-      "id": "7dbe2f88f3ed2f3a",
-      "title": "Sommerfest",
-      "date_start": "2026-07-29",
+      "id": "c8f9ff65021447e5",
+      "title": "Erligheimer Weintage",
+      "date_start": "2026-07-21",
+      "source": "erligheim_gemeinde"
+    },
+    {
+      "id": "3810a29d16f7c7f1",
+      "title": "Sommerfest der Vorschule",
+      "date_start": "2026-07-24",
       "source": "erligheim_gemeinde"
     }
-  ],
-  "removed": []
+  ]
 }

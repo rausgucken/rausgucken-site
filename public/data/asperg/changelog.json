@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-24T09:27:11.617141+02:00",
+  "generated_at": "2026-07-25T12:25:45.190487+02:00",
   "city": "asperg",
   "sources": [
-    "glasperlenspiel",
     "asperg_fuehrungen",
-    "asperg_veranstaltungen"
+    "asperg_veranstaltungen",
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-07-23T10:55:04.916956+02:00",
-  "count_added": 21,
-  "count_removed": 2,
+  "previous_run": "2026-07-24T09:27:11.692277+02:00",
+  "count_added": 20,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -101,10 +101,10 @@
       "source": "asperg_fuehrungen"
     },
     {
-      "id": "55afae9a3013a6eb",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2026-10-25",
-      "source": "glasperlenspiel"
+      "id": "1c6ad3d7d99bdd15",
+      "title": "Halloween Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
+      "date_start": "2025-10-31",
+      "source": "asperg_fuehrungen"
     },
     {
       "id": "cb7d4d5e64cac6fd",
@@ -129,26 +129,7 @@
       "title": "Theaterabend Hanne Sommer",
       "date_start": "2026-07-17",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "1c6ad3d7d99bdd15",
-      "title": "Halloween Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
-      "date_start": "2025-10-31",
-      "source": "asperg_fuehrungen"
     }
   ],
-  "removed": [
-    {
-      "id": "432acda1b34cde9f",
-      "title": "Krämermarkt",
-      "date_start": "2026-07-22",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "4fdbbc65b6db59ad",
-      "title": "Wanderer Between the Worlds",
-      "date_start": "2026-12-03",
-      "source": "glasperlenspiel"
-    }
-  ]
+  "removed": []
 }
