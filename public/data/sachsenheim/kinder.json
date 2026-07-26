@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-07-25T06:07:11.628124+02:00",
-  "event_count": 6,
+  "generated_at": "2026-07-26T06:00:01.485580+02:00",
+  "event_count": 7,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -27,7 +27,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-25T02:05:17.952357+02:00",
+      "scraped_at": "2026-07-26T02:02:58.675446+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -59,7 +59,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-25T02:05:44.683179+02:00",
+      "scraped_at": "2026-07-26T02:03:25.365587+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -92,7 +92,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-07-25T02:05:48.004389+02:00",
+      "scraped_at": "2026-07-26T02:03:28.602179+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -124,7 +124,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-25T02:05:23.330712+02:00",
+      "scraped_at": "2026-07-26T02:03:03.888233+02:00",
       "extraction_confidence": 0.95,
       "is_new": false,
       "is_booked_out": false,
@@ -157,7 +157,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-07-25T02:05:31.923627+02:00",
+      "scraped_at": "2026-07-26T02:03:12.291768+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -190,7 +190,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-07-25T02:05:56.194969+02:00",
+      "scraped_at": "2026-07-26T02:03:36.691351+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -198,6 +198,38 @@
       "editorial_tip": null,
       "source_label": "Stadtbücherei Sachsenheim",
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/ecomedy-mit-matthias-jung-2026-10-09-sach-1"
+    },
+    {
+      "id": "2ce8978582c50b0e",
+      "title": "Kindererlebnisnachmittag",
+      "date_start": "2026-10-10",
+      "date_end": null,
+      "time": "15:00 - 17:30",
+      "description": "In diesem Kindererlebnisnachmittag am Stadtmuseum in Sachsenheim erleben Kinder ab 6 Jahren das Alte Rom. Kampfspielen wie Asterix und Obelix, probieren köstlicher Honigtaler und basteln sich ein Andenken.",
+      "location": "Stadtmuseum, Oberriexinger Straße 29, 74343 Sachsenheim",
+      "price": "Kostenlos (Anmeldung im Stadtmuseum erforderlich)",
+      "age_min": 6,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Essen-spielen-und-kaempfen-wie-die-Roemer-event-appointment5298",
+      "original_url": "https://www.sachsenheim.de/termin/Essen-spielen-und-kaempfen-wie-die-Roemer-event-appointment5298",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "kindererlebnisnachmittag-2026-10-10-sach",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-07-26T02:03:14.378940+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/kindererlebnisnachmittag-2026-10-10-sach"
     }
   ]
 }
