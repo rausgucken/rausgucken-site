@@ -1,4 +1,12 @@
 name: IndexNow
+
+# BUGFIX (2026-07-26): Previous version had NO checkout step and a hardcoded
+# 6-URL list covering only Ludwigsburg. Every city added since initial launch
+# (Eberdingen, Erligheim, Pleidelsheim, and ~30 others) was never submitted to
+# IndexNow. This version checks out the repo and builds the URL list
+# dynamically from public/data/cities.json on every run — new cities are
+# picked up automatically with zero workflow edits needed.
+
 on:
   push:
     branches: [main]
@@ -7,24 +15,71 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build URL list from cities.json
+        run: |
+          python3 - << 'EOF'
+          import json
+
+          with open("public/data/cities.json", encoding="utf-8") as f:
+              data = json.load(f)
+          cities = data if isinstance(data, list) else data.get("cities", [])
+
+          urls = []
+          for c in cities:
+              if not c.get("covered"):
+                  continue
+              # City hub page
+              if c.get("url"):
+                  urls.append(f"https://www.rausgucken.de{c['url']}")
+              # Atom feed
+              if c.get("feed_url"):
+                  urls.append(f"https://www.rausgucken.de{c['feed_url']}")
+
+          # Ludwigsburg-specific: temporal pages are Landkreis-level only,
+          # not auto-derivable from a per-city loop — keep explicit.
+          urls += [
+              "https://www.rausgucken.de/ludwigsburg/heute/",
+              "https://www.rausgucken.de/ludwigsburg/morgen/",
+              "https://www.rausgucken.de/ludwigsburg/dieses-wochenende/",
+              "https://www.rausgucken.de/ludwigsburg/naechste-woche/",
+          ]
+
+          # de-dupe while preserving order
+          seen = set()
+          deduped = []
+          for u in urls:
+              if u not in seen:
+                  seen.add(u)
+                  deduped.append(u)
+
+          payload = {
+              "host": "www.rausgucken.de",
+              "key": "18bbf0b3986e4372beac4e82b7585a6a",
+              "keyLocation": "https://www.rausgucken.de/18bbf0b3986e4372beac4e82b7585a6a.txt",
+              "urlList": deduped,
+          }
+
+          with open("/tmp/indexnow_payload.json", "w", encoding="utf-8") as f:
+              json.dump(payload, f)
+
+          print(f"Built payload with {len(deduped)} URLs across all covered cities")
+          EOF
+
       - name: Ping IndexNow
         run: |
           HTTP_CODE=$(curl -s -o /tmp/resp.txt -w "%{http_code}" \
             -X POST "https://api.indexnow.org/indexnow" \
             -H "Content-Type: application/json; charset=utf-8" \
-            -d '{
-              "host": "www.rausgucken.de",
-              "key": "18bbf0b3986e4372beac4e82b7585a6a",
-              "keyLocation": "https://www.rausgucken.de/18bbf0b3986e4372beac4e82b7585a6a.txt",
-              "urlList": [
-                "https://www.rausgucken.de/ludwigsburg/",
-                "https://www.rausgucken.de/ludwigsburg/heute/",
-                "https://www.rausgucken.de/ludwigsburg/morgen/",
-                "https://www.rausgucken.de/ludwigsburg/dieses-wochenende/",
-                "https://www.rausgucken.de/ludwigsburg/naechste-woche/",
-                "https://www.rausgucken.de/ludwigsburg/kinder/"
-              ]
-            }')
+            --data-binary @/tmp/indexnow_payload.json)
           echo "IndexNow HTTP: $HTTP_CODE"
           cat /tmp/resp.txt
-          [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "202" ] && echo "✅ Accepted" || echo "❌ Failed"
+          echo ""
+          if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "202" ]; then
+            echo "✅ Accepted"
+          else
+            echo "❌ Failed"
+            exit 1
+          fi
