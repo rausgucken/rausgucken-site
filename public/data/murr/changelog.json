@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-07-25T07:39:34.718595+02:00",
+  "generated_at": "2026-07-26T07:25:06.875670+02:00",
   "city": "murr",
   "sources": [
     "murr_gemeinde"
   ],
-  "previous_run": "2026-07-24T06:53:01.008265+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-07-25T07:39:34.796420+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "bead01fe223b74c0",
+      "title": "Sommernachtsfest",
+      "date_start": "2026-07-26",
+      "source": "murr_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "1affb191a209afce",
+      "title": "Sommernachtsfest",
+      "date_start": "2026-07-25",
+      "source": "murr_gemeinde"
+    }
+  ]
 }

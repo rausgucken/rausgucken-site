@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-25T12:25:45.190487+02:00",
+  "generated_at": "2026-07-26T11:07:17.589715+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
     "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-07-24T09:27:11.692277+02:00",
-  "count_added": 20,
-  "count_removed": 0,
+  "previous_run": "2026-07-25T12:25:45.266112+02:00",
+  "count_added": 21,
+  "count_removed": 2,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -129,7 +129,26 @@
       "title": "Theaterabend Hanne Sommer",
       "date_start": "2026-07-17",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "bcf92250cc7c0054",
+      "title": "Das Quartett spielt klassischen Gitarrenswing",
+      "date_start": "2026-11-29",
+      "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "b033ab5b5c861dc9",
+      "title": "Stadtfest",
+      "date_start": "2026-07-25",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "e7c7445ce23f3b83",
+      "title": "Kirbe",
+      "date_start": "2026-10-04",
+      "source": "asperg_veranstaltungen"
+    }
+  ]
 }

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-25T07:30:12.746181+02:00",
+  "generated_at": "2026-07-26T07:24:42.864612+02:00",
   "city": "steinheim",
   "sources": [
     "steinheim_stadt"
   ],
-  "previous_run": "2026-07-24T06:36:57.357596+02:00",
-  "count_added": 3,
-  "count_removed": 0,
+  "previous_run": "2026-07-25T07:30:12.820104+02:00",
+  "count_added": 2,
+  "count_removed": 1,
   "added": [
     {
       "id": "d68e284ade57609f",
@@ -19,13 +19,14 @@
       "title": "Feuerzangenbowle 2026",
       "date_start": "2026-06-12",
       "source": "steinheim_stadt"
-    },
-    {
-      "id": "234a2d27960bb010",
-      "title": "Kelterbrettle 2026",
-      "date_start": "2026-07-10",
-      "source": "steinheim_stadt"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "c49c839a2c616f56",
+      "title": "Splashdiving-Contest",
+      "date_start": "2026-07-25",
+      "source": "steinheim_stadt"
+    }
+  ]
 }
