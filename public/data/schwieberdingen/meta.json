@@ -1,25 +1,40 @@
 {
-  "scraped_at": "2026-07-26T06:47:36.216742+02:00",
+  "scraped_at": "2026-07-27T06:45:05.423872+02:00",
   "city": "schwieberdingen",
-  "event_count": 51,
+  "event_count": 50,
   "flagged_count": 0,
   "expired_count": 1,
   "sources_scraped": [
     "schwieberdingen_gemeinde"
   ],
   "source_counts": {
-    "schwieberdingen_gemeinde": 51
+    "schwieberdingen_gemeinde": 50
   },
   "sources_failed": [],
-  "data_hash": "13566df89f151131",
+  "data_hash": "5f0ceb4327565b6e",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 26.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 27.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schwieberdingen_gemeinde": 0.93
   },
   "source_event_counts": {
-    "schwieberdingen_gemeinde": 51
+    "schwieberdingen_gemeinde": 50
   },
-  "count_drift_warnings": {}
+  "count_drift_warnings": {},
+  "quality_report": {
+    "regression_pass_rate": 1.0,
+    "flagged_rate_current": 0.0,
+    "flagged_rate_4week_avg": 0.0,
+    "trend": "stable",
+    "runtime_minutes": 561.7,
+    "runtime_delta_vs_baseline": 2.138,
+    "source_health": {
+      "schwieberdingen_gemeinde": 0.93
+    },
+    "count_drift_warnings": {},
+    "quarantined_sources": [],
+    "status": "warning",
+    "generated_at": "2026-07-27T11:34:55.796042+02:00"
+  }
 }

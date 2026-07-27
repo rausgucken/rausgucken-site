@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-07-26T06:47:36.140173+02:00",
+  "generated_at": "2026-07-27T06:45:05.349244+02:00",
   "city": "schwieberdingen",
   "sources": [
     "schwieberdingen_gemeinde"
   ],
-  "previous_run": "2026-07-25T06:51:28.691203+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-07-26T06:47:36.216742+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "5b3c4c38bc5b5717",
+      "title": "Sommerfest",
+      "date_start": "2026-07-25",
+      "source": "schwieberdingen_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "38e8cc3914cc1cc7",
+      "title": "Feierlicher Gottesdienst zum Verabschieden des geschäftsführenden Pfarrers",
+      "date_start": "2026-07-26",
+      "source": "schwieberdingen_gemeinde"
+    }
+  ]
 }

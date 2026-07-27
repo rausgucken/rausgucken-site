@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-26T11:07:17.589715+02:00",
+  "generated_at": "2026-07-27T11:21:40.526777+02:00",
   "city": "asperg",
   "sources": [
     "asperg_veranstaltungen",
-    "glasperlenspiel",
-    "asperg_fuehrungen"
+    "asperg_fuehrungen",
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-07-25T12:25:45.266112+02:00",
-  "count_added": 21,
+  "previous_run": "2026-07-26T11:07:17.665356+02:00",
+  "count_added": 22,
   "count_removed": 2,
   "added": [
     {
@@ -131,23 +131,29 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "bcf92250cc7c0054",
-      "title": "Das Quartett spielt klassischen Gitarrenswing",
-      "date_start": "2026-11-29",
+      "id": "e7c7445ce23f3b83",
+      "title": "Kirbe",
+      "date_start": "2026-10-04",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "1aa41cf72ad6d52f",
+      "title": "Göttlicher Playboy - Vergnügtes Spiel",
+      "date_start": "2027-07-19",
       "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "b033ab5b5c861dc9",
-      "title": "Stadtfest",
-      "date_start": "2026-07-25",
+      "id": "4a82c59a6e2a6669",
+      "title": "Führung - Ein Gang über die schwäbische Bastille",
+      "date_start": "2026-07-26",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "e7c7445ce23f3b83",
-      "title": "Kirbe",
-      "date_start": "2026-10-04",
+      "id": "a69ef248dbb122c1",
+      "title": "Stadtfest",
+      "date_start": "2026-07-26",
       "source": "asperg_veranstaltungen"
     }
   ]

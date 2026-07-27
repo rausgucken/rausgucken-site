@@ -1,24 +1,25 @@
 {
-  "generated_at": "2026-07-26T05:00:31.457727+02:00",
+  "generated_at": "2026-07-27T05:02:54.015284+02:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-07-25T05:00:26.557406+02:00",
-  "count_added": 0,
-  "count_removed": 2,
-  "added": [],
+  "previous_run": "2026-07-26T05:00:31.534839+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "868d581e76629f0c",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-02-27",
+      "source": "freiberg_veranstaltungen"
+    }
+  ],
   "removed": [
     {
-      "id": "91a26215448db439",
-      "title": "Freiberger Wochenmarkt",
-      "date_start": "2026-07-25",
-      "source": "freiberg_veranstaltungen"
-    },
-    {
-      "id": "71f91bc8f23fda30",
-      "title": "Roter Frühschoppen",
-      "date_start": "2026-07-25",
+      "id": "b3359ed1e5b9b891",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-07-26",
       "source": "freiberg_veranstaltungen"
     }
   ]
