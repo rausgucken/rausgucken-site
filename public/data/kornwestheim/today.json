@@ -1,68 +1,77 @@
 {
   "subset": "today",
-  "generated_at": "2026-07-27T06:00:12.414943+02:00",
+  "generated_at": "2026-07-28T06:00:02.139707+02:00",
   "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "2c75bbc243d0f7a8",
-      "title": "Ü60-Nachmittag",
-      "date_start": "2026-07-27",
+      "id": "655b5b4f6082ed85",
+      "title": "Heiss auf Lesen 2026",
+      "date_start": "2026-07-28",
+      "date_end": "2026-09-15",
+      "time": null,
+      "description": "In der Stadtbücherei findet der Leseabend \"Heiß auf Lesen\" statt. Teilnehmer können sich im Austausch mit anderen Liebhabern von Literatur rund um aktuellen Themenkreis engagieren.",
+      "location": "Stadtbücherei",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Lesung"
+      ],
+      "link": "https://www.das-k.info/site/Kornwestheim_Das-K/node/14965354/zmdetail_523254958901/index.html",
+      "original_url": "https://www.das-k.info/site/Kornwestheim_Das-K/node/14965354/zmdetail_523254958901/index.html",
+      "source": "das_k_buecherei",
+      "city": "kornwestheim",
+      "slug": "heiss-auf-lesen-2026-2026-07-28-das",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scraped_at": "2026-07-27T02:05:21.021021+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtbücherei Kornwestheim",
+      "canonical_url": "https://www.rausgucken.de/kornwestheim/events/heiss-auf-lesen-2026-2026-07-28-das"
+    },
+    {
+      "id": "8255228187432723",
+      "title": "Musiknacht Open",
+      "date_start": "2026-07-28",
       "date_end": null,
-      "time": "15:00 - 17:00",
-      "description": "In diesem familienfreundlichen Nachmittagsgeschehen im Bewohner- und Familienzentrum (BFZ) bieten sich Aktivitäten an, die besonders für Erwachsene mit jungen Leuten geeignet sind.",
-      "location": "Bewohner- und Familienzentrum (BFZ)",
+      "time": "17:00 bis 22:45",
+      "description": "Im Zentrum des Marktplatzes Kornwestheim findet eine Musiknacht statt. Musiker und Bands bieten ein vielfältiges Programm an Live-Musik an. Ein ideales Familien- und Freundschaftserlebnis unter freiem Himmel.",
+      "location": "Marktplatz Kornwestheim",
       "price": null,
       "age_min": 4,
       "age_max": null,
       "tags": [
-        "Familie"
+        "Familie",
+        "Musik"
       ],
-      "link": "https://www.kornwestheim.de/site/Kornwestheim_Internet/node/16727978/zmdetail_523254047209/_60Nachmittag.html",
-      "original_url": "https://www.kornwestheim.de/site/Kornwestheim_Internet/node/16727978/zmdetail_523254047209/_60Nachmittag.html",
+      "link": "https://www.kornwestheim.de/site/Kornwestheim_Internet/node/16727978/zmdetail_523255550659/MusiknachtOpen.html",
+      "original_url": "https://www.kornwestheim.de/site/Kornwestheim_Internet/node/16727978/zmdetail_523255550659/MusiknachtOpen.html",
       "source": "kornwestheim",
       "city": "kornwestheim",
-      "slug": "ue60-nachmittag-2026-07-27-korn",
+      "slug": "musiknacht-open-2026-07-28-korn",
       "weekdays": [
-        1
+        2
       ],
-      "scraped_at": "2026-07-27T02:01:53.568092+02:00",
+      "scraped_at": "2026-07-27T02:01:54.654219+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Kornwestheim",
-      "canonical_url": "https://www.rausgucken.de/kornwestheim/events/ue60-nachmittag-2026-07-27-korn"
-    },
-    {
-      "id": "e68c52deb4d4da0b",
-      "title": "Kaffeetreff - SPD Seniorenkreis",
-      "date_start": "2026-07-27",
-      "date_end": null,
-      "time": "ab 14:30",
-      "description": "In der Begegnungsstätte Schafhof trafen sich Mitglieder des SPD-Seniorenkreises für einen kaffeegetränkten Austausch. Thema des Tages: aktuelle politische Entwicklungen und lokale Initiativen.",
-      "location": "Begegnungsstätte Schafhof",
-      "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [],
-      "link": "https://www.kornwestheim.de/site/Kornwestheim_Internet/node/16727978/zmdetail_523252547132/KaffeetreffSPDSeniorenkreis.html",
-      "original_url": "https://www.kornwestheim.de/site/Kornwestheim_Internet/node/16727978/zmdetail_523252547132/KaffeetreffSPDSeniorenkreis.html",
-      "source": "kornwestheim",
-      "city": "kornwestheim",
-      "slug": "kaffeetreff---spd-seniorenkreis-2026-07-27-korn",
-      "weekdays": [
-        1
-      ],
-      "scraped_at": "2026-07-27T02:01:52.529525+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Kornwestheim",
-      "canonical_url": "https://www.rausgucken.de/kornwestheim/events/kaffeetreff---spd-seniorenkreis-2026-07-27-korn"
+      "canonical_url": "https://www.rausgucken.de/kornwestheim/events/musiknacht-open-2026-07-28-korn"
     }
   ]
 }
