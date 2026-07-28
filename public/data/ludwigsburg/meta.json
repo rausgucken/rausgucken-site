@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-07-27T10:05:26.323930+02:00",
+  "scraped_at": "2026-07-28T13:17:39.489384+02:00",
   "city": "ludwigsburg",
-  "event_count": 842,
+  "event_count": 668,
   "flagged_count": 0,
   "expired_count": 2,
   "sources_scraped": [
@@ -15,31 +15,28 @@
     "ludwigsburg_stadt",
     "museum",
     "musikhalle_lb",
-    "schloss",
     "stabi"
   ],
   "source_counts": {
     "ludwigsburg_stadt": 31,
-    "schloss": 174,
     "museum": 45,
     "kunstverein_ausstellungen": 4,
     "stabi": 191,
-    "karlskaserne_veranstaltungen": 110,
+    "karlskaserne_veranstaltungen": 111,
     "blueba": 59,
-    "labyrinth": 151,
+    "labyrinth": 150,
     "forum_schlosspark": 50,
     "kunstverein_veranstaltungen": 7,
     "musikhalle_lb": 19,
     "karlskaserne_ausstellungen": 1
   },
   "sources_failed": [],
-  "data_hash": "2d3c0b028c6a8a7f",
+  "data_hash": "ba7950ed96ca333f",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 27.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 28.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "ludwigsburg_stadt": 1.0,
-    "schloss": 1.0,
     "museum": 1.0,
     "kunstverein_ausstellungen": 1.0,
     "stabi": 1.0,
@@ -53,13 +50,12 @@
   },
   "source_event_counts": {
     "ludwigsburg_stadt": 31,
-    "schloss": 174,
     "museum": 45,
     "kunstverein_ausstellungen": 4,
     "stabi": 191,
-    "karlskaserne_veranstaltungen": 110,
+    "karlskaserne_veranstaltungen": 111,
     "blueba": 59,
-    "labyrinth": 151,
+    "labyrinth": 150,
     "forum_schlosspark": 50,
     "kunstverein_veranstaltungen": 7,
     "musikhalle_lb": 19,
@@ -71,11 +67,10 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 561.7,
-    "runtime_delta_vs_baseline": 2.138,
+    "runtime_minutes": 755.1,
+    "runtime_delta_vs_baseline": 3.218,
     "source_health": {
       "ludwigsburg_stadt": 1.0,
-      "schloss": 1.0,
       "museum": 1.0,
       "kunstverein_ausstellungen": 1.0,
       "stabi": 1.0,
@@ -90,6 +85,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-07-27T11:34:54.956160+02:00"
+    "generated_at": "2026-07-28T14:49:54.286809+02:00"
   }
 }

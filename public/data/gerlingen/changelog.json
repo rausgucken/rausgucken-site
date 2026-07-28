@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-27T05:59:08.129127+02:00",
+  "generated_at": "2026-07-28T08:52:37.775534+02:00",
   "city": "gerlingen",
   "sources": [
     "gerlingen_stadt"
   ],
-  "previous_run": "2026-07-26T05:59:27.490725+02:00",
-  "count_added": 2,
-  "count_removed": 1,
+  "previous_run": "2026-07-27T05:59:08.204924+02:00",
+  "count_added": 3,
+  "count_removed": 2,
   "added": [
     {
       "id": "99accb9f6d501614",
@@ -15,17 +15,29 @@
       "source": "gerlingen_stadt"
     },
     {
-      "id": "0c1bd5cbd727388e",
-      "title": "Wochenmarkt",
-      "date_start": "2026-11-14",
+      "id": "a1c3b5101b60c08f",
+      "title": "Kostenlose Schnupperkurse",
+      "date_start": "2026-09-19",
+      "source": "gerlingen_stadt"
+    },
+    {
+      "id": "d3461d1111d48e6c",
+      "title": "Kurs: Holzige Typen",
+      "date_start": "2026-09-30",
       "source": "gerlingen_stadt"
     }
   ],
   "removed": [
     {
-      "id": "6ae352a8134985f5",
-      "title": "Öffentliche Führung durch Ausstellung",
-      "date_start": "2026-07-26",
+      "id": "8bc6fb7ccd38da68",
+      "title": "Vorlesung für Kinder",
+      "date_start": "2026-11-13",
+      "source": "gerlingen_stadt"
+    },
+    {
+      "id": "0c1bd5cbd727388e",
+      "title": "Wochenmarkt",
+      "date_start": "2026-11-14",
       "source": "gerlingen_stadt"
     }
   ]

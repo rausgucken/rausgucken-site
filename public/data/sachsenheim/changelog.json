@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-27T05:44:28.302990+02:00",
+  "generated_at": "2026-07-28T08:44:01.525004+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-07-26T05:41:05.078855+02:00",
-  "count_added": 8,
-  "count_removed": 0,
+  "previous_run": "2026-07-27T05:44:28.379082+02:00",
+  "count_added": 9,
+  "count_removed": 1,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -56,7 +56,20 @@
       "title": "Führung, Zu Gast bei Rittern und Geistern",
       "date_start": "2026-05-17",
       "source": "sachsenheim_library"
+    },
+    {
+      "id": "fa7bdbe51f1d2949",
+      "title": "Die Grabowskis - Die unteren 10.000",
+      "date_start": "2026-10-10",
+      "source": "sachsenheim_kultur"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "95b0698a091c6565",
+      "title": "2. Sitzung des Zweckverbandes Eichwald",
+      "date_start": "2026-07-27",
+      "source": "sachsenheim_kultur"
+    }
+  ]
 }

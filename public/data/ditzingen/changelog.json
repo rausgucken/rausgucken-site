@@ -1,20 +1,39 @@
 {
-  "generated_at": "2026-07-27T05:53:38.362096+02:00",
+  "generated_at": "2026-07-28T08:44:38.658249+02:00",
   "city": "ditzingen",
   "sources": [
     "ditzingen_stadt",
     "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-07-26T05:51:58.771072+02:00",
-  "count_added": 0,
+  "previous_run": "2026-07-27T05:53:38.442324+02:00",
+  "count_added": 3,
   "count_removed": 1,
-  "added": [],
+  "added": [
+    {
+      "id": "3ba7849c606a8f8b",
+      "title": "Musik Inklusive Alle",
+      "date_start": "2026-10-12",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "23bdb60dd87057b5",
+      "title": "Musik Inklusive Alle",
+      "date_start": "2026-11-09",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "f5330ed1194f4bf7",
+      "title": "Musik Inklusive Alle",
+      "date_start": "2026-12-07",
+      "source": "ditzingen_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "70eee3d171e40e61",
-      "title": "Frauenschwimmen",
-      "date_start": "2026-07-26",
-      "source": "ditzingen_stadt"
+      "id": "7dea2cd8e02f1050",
+      "title": "Wandern ab 60",
+      "date_start": "2026-07-27",
+      "source": "ditzingen_treffpunkt_adler"
     }
   ]
 }

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-27T11:21:40.526777+02:00",
+  "generated_at": "2026-07-28T14:35:05.596174+02:00",
   "city": "asperg",
   "sources": [
     "asperg_veranstaltungen",
     "asperg_fuehrungen",
     "glasperlenspiel"
   ],
-  "previous_run": "2026-07-26T11:07:17.665356+02:00",
-  "count_added": 22,
-  "count_removed": 2,
+  "previous_run": "2026-07-27T11:21:40.602721+02:00",
+  "count_added": 21,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -95,6 +95,12 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "10d425a272fda171",
+      "title": "Ein Gang über die schwäbische Bastille - Kostümführung",
+      "date_start": "2026-07-26",
+      "source": "asperg_fuehrungen"
+    },
+    {
       "id": "d8d9a4602f7dc217",
       "title": "Tag der dt. Einheit - Kostümführung",
       "date_start": "2025-10-03",
@@ -129,32 +135,7 @@
       "title": "Theaterabend Hanne Sommer",
       "date_start": "2026-07-17",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "e7c7445ce23f3b83",
-      "title": "Kirbe",
-      "date_start": "2026-10-04",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "1aa41cf72ad6d52f",
-      "title": "Göttlicher Playboy - Vergnügtes Spiel",
-      "date_start": "2027-07-19",
-      "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "4a82c59a6e2a6669",
-      "title": "Führung - Ein Gang über die schwäbische Bastille",
-      "date_start": "2026-07-26",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "a69ef248dbb122c1",
-      "title": "Stadtfest",
-      "date_start": "2026-07-26",
-      "source": "asperg_veranstaltungen"
-    }
-  ]
+  "removed": []
 }
