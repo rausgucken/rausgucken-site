@@ -1,12 +1,38 @@
 {
-  "generated_at": "2026-07-28T11:38:40.614248+02:00",
+  "generated_at": "2026-07-29T09:11:53.912051+02:00",
   "city": "gemmrigheim",
   "sources": [
     "gemmrigheim_gemeinde"
   ],
-  "previous_run": "2026-07-27T07:31:05.181625+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-07-28T11:38:40.691974+02:00",
+  "count_added": 2,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "fef0bc74b4302d57",
+      "title": "Open-Air-Kino",
+      "date_start": "2026-07-31",
+      "source": "gemmrigheim_gemeinde"
+    },
+    {
+      "id": "e16c9ab152a40864",
+      "title": "42. Jahreshauptversammlung",
+      "date_start": "2026-11-20",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "1755e402bb32b469",
+      "title": "Geschichtsstammtisch Gemmrigheim",
+      "date_start": "2026-07-28",
+      "source": "gemmrigheim_gemeinde"
+    },
+    {
+      "id": "da3e48de345d3d16",
+      "title": "Open-Air-Kino",
+      "date_start": "2026-07-31",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ]
 }

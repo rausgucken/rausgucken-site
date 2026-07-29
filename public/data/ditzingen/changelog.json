@@ -1,38 +1,44 @@
 {
-  "generated_at": "2026-07-28T08:44:38.658249+02:00",
+  "generated_at": "2026-07-29T06:37:28.658764+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_treffpunkt_adler",
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-07-27T05:53:38.442324+02:00",
-  "count_added": 3,
-  "count_removed": 1,
+  "previous_run": "2026-07-28T08:44:38.737757+02:00",
+  "count_added": 1,
+  "count_removed": 4,
   "added": [
     {
-      "id": "3ba7849c606a8f8b",
-      "title": "Musik Inklusive Alle",
-      "date_start": "2026-10-12",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "23bdb60dd87057b5",
-      "title": "Musik Inklusive Alle",
-      "date_start": "2026-11-09",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "f5330ed1194f4bf7",
-      "title": "Musik Inklusive Alle",
-      "date_start": "2026-12-07",
-      "source": "ditzingen_stadt"
+      "id": "89ad478ae843e30e",
+      "title": "Sommernachmittag \"Eiskaffee und Sommerdeko\"",
+      "date_start": "2026-08-13",
+      "source": "ditzingen_treffpunkt_adler"
     }
   ],
   "removed": [
     {
-      "id": "7dea2cd8e02f1050",
-      "title": "Wandern ab 60",
-      "date_start": "2026-07-27",
+      "id": "361ff5dfc3386497",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-07-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "58409636af686f11",
+      "title": "Skatgruppen",
+      "date_start": "2026-07-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "eca39dda502673a7",
+      "title": "Vorlesezeit",
+      "date_start": "2026-07-28",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "9808ac510275487b",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-07-28",
       "source": "ditzingen_treffpunkt_adler"
     }
   ]

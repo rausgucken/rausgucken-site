@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-07-28T13:17:39.489384+02:00",
+  "scraped_at": "2026-07-29T12:15:06.792574+02:00",
   "city": "ludwigsburg",
-  "event_count": 668,
+  "event_count": 840,
   "flagged_count": 0,
   "expired_count": 2,
   "sources_scraped": [
@@ -15,10 +15,12 @@
     "ludwigsburg_stadt",
     "museum",
     "musikhalle_lb",
+    "schloss",
     "stabi"
   ],
   "source_counts": {
-    "ludwigsburg_stadt": 31,
+    "ludwigsburg_stadt": 29,
+    "schloss": 174,
     "museum": 45,
     "kunstverein_ausstellungen": 4,
     "stabi": 191,
@@ -31,12 +33,13 @@
     "karlskaserne_ausstellungen": 1
   },
   "sources_failed": [],
-  "data_hash": "ba7950ed96ca333f",
+  "data_hash": "d30a7f4745b24354",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 28.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 29.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "ludwigsburg_stadt": 1.0,
+    "schloss": 1.0,
     "museum": 1.0,
     "kunstverein_ausstellungen": 1.0,
     "stabi": 1.0,
@@ -49,7 +52,8 @@
     "karlskaserne_ausstellungen": 0.67
   },
   "source_event_counts": {
-    "ludwigsburg_stadt": 31,
+    "ludwigsburg_stadt": 29,
+    "schloss": 174,
     "museum": 45,
     "kunstverein_ausstellungen": 4,
     "stabi": 191,
@@ -67,10 +71,11 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 755.1,
-    "runtime_delta_vs_baseline": 3.218,
+    "runtime_minutes": 688.0,
+    "runtime_delta_vs_baseline": 2.844,
     "source_health": {
       "ludwigsburg_stadt": 1.0,
+      "schloss": 1.0,
       "museum": 1.0,
       "kunstverein_ausstellungen": 1.0,
       "stabi": 1.0,
@@ -85,6 +90,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-07-28T14:49:54.286809+02:00"
+    "generated_at": "2026-07-29T13:40:34.297272+02:00"
   }
 }

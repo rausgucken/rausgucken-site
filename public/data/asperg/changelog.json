@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-28T14:35:05.596174+02:00",
+  "generated_at": "2026-07-29T13:27:58.143658+02:00",
   "city": "asperg",
   "sources": [
     "asperg_veranstaltungen",
     "asperg_fuehrungen",
     "glasperlenspiel"
   ],
-  "previous_run": "2026-07-27T11:21:40.602721+02:00",
+  "previous_run": "2026-07-28T14:35:05.671217+02:00",
   "count_added": 21,
-  "count_removed": 0,
+  "count_removed": 1,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -137,5 +137,12 @@
       "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "5a28724e90053e07",
+      "title": "Kabarettistin Constanze Lindner - Lesung und Show",
+      "date_start": "2026-09-19",
+      "source": "glasperlenspiel"
+    }
+  ]
 }

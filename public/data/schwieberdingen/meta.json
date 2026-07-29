@@ -1,44 +1,40 @@
 {
-  "scraped_at": "2026-07-28T10:24:41.641724+02:00",
+  "scraped_at": "2026-07-29T08:20:32.116466+02:00",
   "city": "schwieberdingen",
-  "event_count": 29,
+  "event_count": 39,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "schwieberdingen_gemeinde"
   ],
   "source_counts": {
-    "schwieberdingen_gemeinde": 29
+    "schwieberdingen_gemeinde": 39
   },
   "sources_failed": [],
-  "data_hash": "a54185cf8cfd8493",
+  "data_hash": "7ef9fb56c7a35f3b",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 28.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 29.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schwieberdingen_gemeinde": 0.93
   },
   "source_event_counts": {
-    "schwieberdingen_gemeinde": 29
+    "schwieberdingen_gemeinde": 39
   },
-  "count_drift_warnings": {
-    "schwieberdingen_gemeinde": "Count drift: 29 vs historical avg 52"
-  },
+  "count_drift_warnings": {},
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 755.1,
-    "runtime_delta_vs_baseline": 3.218,
+    "runtime_minutes": 688.0,
+    "runtime_delta_vs_baseline": 2.844,
     "source_health": {
       "schwieberdingen_gemeinde": 0.93
     },
-    "count_drift_warnings": {
-      "schwieberdingen_gemeinde": "Count drift: 29 vs historical avg 52"
-    },
+    "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-07-28T14:49:55.118831+02:00"
+    "generated_at": "2026-07-29T13:40:35.136736+02:00"
   }
 }

@@ -1,30 +1,25 @@
 {
-  "generated_at": "2026-07-28T13:17:39.398462+02:00",
+  "generated_at": "2026-07-29T12:15:06.691297+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "museum",
-    "stabi",
-    "blueba",
     "kunstverein_ausstellungen",
-    "karlskaserne_ausstellungen",
-    "karlskaserne_veranstaltungen",
-    "forum_schlosspark",
-    "musikhalle_lb",
     "garnisonmuseum",
+    "schloss",
     "labyrinth",
+    "stabi",
+    "karlskaserne_veranstaltungen",
     "kunstverein_veranstaltungen",
-    "ludwigsburg_stadt"
+    "forum_schlosspark",
+    "blueba",
+    "ludwigsburg_stadt",
+    "musikhalle_lb",
+    "karlskaserne_ausstellungen",
+    "museum"
   ],
-  "previous_run": "2026-07-27T10:05:26.323930+02:00",
-  "count_added": 4,
-  "count_removed": 176,
+  "previous_run": "2026-07-28T13:17:39.489384+02:00",
+  "count_added": 177,
+  "count_removed": 3,
   "added": [
-    {
-      "id": "7d416dc729fa62eb",
-      "title": "Sommerferienworkshop: Geschichten schreiben und illustrieren in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
     {
       "id": "feee56b785ce127e",
       "title": "HEISS AUF LESEN",
@@ -38,17 +33,9 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "fea032c22fc17970",
-      "title": "Knips dich kreativ",
-      "date_start": "2026-08-03",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "f2d072ce4584b2b4",
+      "id": "5e012f0afde9b9cc",
       "title": "Klassische Schlossführung „Herzog“",
-      "date_start": "2026-03-28",
+      "date_start": null,
       "source": "schloss"
     },
     {
@@ -58,34 +45,22 @@
       "source": "schloss"
     },
     {
+      "id": "285848540796b935",
+      "title": "„Weil menschlich so viel möglich ist“",
+      "date_start": "2026-05-08",
+      "source": "schloss"
+    },
+    {
       "id": "4338d42d24902687",
       "title": "Klassische Schlossführung in englischer Sprache",
       "date_start": "2026-03-28",
       "source": "schloss"
     },
     {
-      "id": "01c46d9e2a523cc4",
-      "title": "„Weil menschlich so viel möglich ist“",
-      "date_start": "2026-05-08",
-      "source": "schloss"
-    },
-    {
-      "id": "592bc6693d801112",
-      "title": "Insta was? Einstieg in die Welt der Reels, Postings und Stories",
-      "date_start": "2026-07-27",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "c9b966b3f5e07bd7",
+      "id": "c6597eba7db8be4c",
       "title": "AnnenMayKantereit",
       "date_start": "2026-07-29",
       "source": "schloss"
-    },
-    {
-      "id": "b115f88fd7a03652",
-      "title": "Sommerferienworkshop: Geschichten schreiben und illustrieren in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
     },
     {
       "id": "e4240586f15e035f",
@@ -97,6 +72,12 @@
       "id": "5b518982e4a3c77f",
       "title": "TREAM",
       "date_start": "2026-07-31",
+      "source": "schloss"
+    },
+    {
+      "id": "35bb6bb83d3edb07",
+      "title": "Klassische Führung für Familien",
+      "date_start": "2026-03-28",
       "source": "schloss"
     },
     {
@@ -1096,10 +1077,30 @@
       "source": "schloss"
     },
     {
-      "id": "0ddc5d99ebe250f8",
-      "title": "Klassische Führung für Familien",
-      "date_start": null,
-      "source": "schloss"
+      "id": "6a686aab9f902a7c",
+      "title": "SportBox am Mehrgenerationenhaus (MGH)",
+      "date_start": "2026-07-31",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "655c84a5aab48737",
+      "title": "Veranstaltungsreihe | Campus der Generationen",
+      "date_start": "2026-07-28",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "de75783086ee1c53",
+      "title": "Bewegungsgruppe hat Plätze frei",
+      "date_start": "2026-07-28",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "497e0b0c2480e460",
+      "title": "AnnenMayKantereit bei den KSKmusicOpen 2026",
+      "date_start": "2026-07-28",
+      "source": "ludwigsburg_stadt"
     }
   ]
 }

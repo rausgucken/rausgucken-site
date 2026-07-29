@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-07-29T06:00:02.057717+02:00",
-  "event_count": 3,
+  "generated_at": "2026-07-29T09:38:12.871520+02:00",
+  "event_count": 4,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,7 +26,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-28T02:08:26.272287+02:00",
+      "scraped_at": "2026-07-29T02:08:06.885554+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -57,7 +57,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-07-28T02:08:26.272386+02:00",
+      "scraped_at": "2026-07-29T02:08:06.885696+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -88,7 +88,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-07-28T02:08:26.272467+02:00",
+      "scraped_at": "2026-07-29T02:08:06.885770+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -96,6 +96,37 @@
       "editorial_tip": null,
       "source_label": "Gemeinde Erligheim",
       "canonical_url": "https://www.rausgucken.de/erligheim/events/seniorentreff-2026-09-19-erli"
+    },
+    {
+      "id": "f7522f86d6f64296",
+      "title": "Erntedank/Familiengottesdienst",
+      "date_start": "2026-10-04",
+      "date_end": null,
+      "time": "10:00",
+      "description": "In der Johanneskirche Erligheim findet der Erntedank/Familiengottesdienst statt, organisiert von der Ev. Kirchengemeinde.",
+      "location": "Johanneskirche Erligheim",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.erligheim.de/eventcalendar?action=view_event&event_id=388",
+      "original_url": "https://www.erligheim.de/eventcalendar?action=view_event&event_id=388",
+      "source": "erligheim_gemeinde",
+      "city": "erligheim",
+      "slug": "erntedankfamiliengottesdienst-2026-10-04-erli",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-07-29T02:08:07.553670+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Erligheim",
+      "canonical_url": "https://www.rausgucken.de/erligheim/events/erntedankfamiliengottesdienst-2026-10-04-erli"
     }
   ]
 }
