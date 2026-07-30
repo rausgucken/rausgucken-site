@@ -1,7 +1,7 @@
 {
   "subset": "tomorrow",
-  "generated_at": "2026-07-29T09:11:54.066949+02:00",
-  "event_count": 2,
+  "generated_at": "2026-07-30T06:00:02.029923+02:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -40,35 +40,64 @@
       "canonical_url": "https://www.rausgucken.de/gemmrigheim/events/sommerferienprogramm-2026-07-30-gemm"
     },
     {
-      "id": "77e0dfed51f42716",
-      "title": "Bewirtung beim Weinsommer",
-      "date_start": "2026-07-30",
-      "date_end": null,
-      "time": "17",
-      "description": "Im Genußplatz im Forst findet eine Bewirtung während des Weinsommers statt. Genießen Sie kulinarische Delikatessen und prägnante Weine in angenehmer Umgebung.",
-      "location": "Genußplatz im Forst",
+      "id": "ea44663e41cf9124",
+      "title": "Bregenzer Festspiele",
+      "date_start": "2026-07-31",
+      "date_end": "2026-08-02",
+      "time": null,
+      "description": "In Gemmrigheim findet der Bregenzer Festspiele-Abschnitt statt, ein programmaufschlussender Spaziergang durch kulturelleHighlights für alle Altersgruppen.",
+      "location": "Gemmrigheim",
       "price": null,
       "age_min": null,
       "age_max": null,
-      "tags": [
-        "Kulinarik"
-      ],
-      "link": "https://www.gemmrigheim.de/site/Gemmrigheim_BFO/node/11133186/zmdetail_523252198352/index.html",
-      "original_url": "https://www.gemmrigheim.de/site/Gemmrigheim_BFO/node/11133186/zmdetail_523252198352/index.html",
+      "tags": [],
+      "link": "https://www.gemmrigheim.de/site/Gemmrigheim_BFO/node/11133186/zmdetail_523252198502/index.html",
+      "original_url": "https://www.gemmrigheim.de/site/Gemmrigheim_BFO/node/11133186/zmdetail_523252198502/index.html",
       "source": "gemmrigheim_gemeinde",
       "city": "gemmrigheim",
-      "slug": "bewirtung-beim-weinsommer-2026-07-30-gemm",
+      "slug": "bregenzer-festspiele-2026-07-31-gemm",
       "weekdays": [
-        4
+        0,
+        5,
+        6
       ],
-      "scraped_at": "2026-07-29T02:08:01.254659+02:00",
+      "scraped_at": "2026-07-29T02:08:01.254895+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Gemmrigheim",
-      "canonical_url": "https://www.rausgucken.de/gemmrigheim/events/bewirtung-beim-weinsommer-2026-07-30-gemm"
+      "canonical_url": "https://www.rausgucken.de/gemmrigheim/events/bregenzer-festspiele-2026-07-31-gemm"
+    },
+    {
+      "id": "fef0bc74b4302d57",
+      "title": "Open-Air-Kino",
+      "date_start": "2026-07-31",
+      "date_end": null,
+      "time": "19",
+      "description": "Ein Open-Air-Kino im Kelterplatz bietet filmsamen Spätnachmittage und Abende unter freiem Himmel.",
+      "location": "Kelterplatz",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.gemmrigheim.de/site/Gemmrigheim_BFO/node/11133186/zmdetail_523256147000/index.html",
+      "original_url": "https://www.gemmrigheim.de/site/Gemmrigheim_BFO/node/11133186/zmdetail_523256147000/index.html",
+      "source": "gemmrigheim_gemeinde",
+      "city": "gemmrigheim",
+      "slug": "open-air-kino-2026-07-31-gemm",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-07-29T02:08:01.255291+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Gemmrigheim",
+      "canonical_url": "https://www.rausgucken.de/gemmrigheim/events/open-air-kino-2026-07-31-gemm"
     }
   ]
 }
