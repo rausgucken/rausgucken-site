@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-29T13:27:58.143658+02:00",
+  "generated_at": "2026-07-31T03:39:19.699575+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
     "asperg_fuehrungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-07-28T14:35:05.671217+02:00",
-  "count_added": 21,
-  "count_removed": 1,
+  "previous_run": "2026-07-29T13:27:58.219357+02:00",
+  "count_added": 22,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -135,14 +135,13 @@
       "title": "Theaterabend Hanne Sommer",
       "date_start": "2026-07-17",
       "source": "glasperlenspiel"
-    }
-  ],
-  "removed": [
+    },
     {
-      "id": "5a28724e90053e07",
-      "title": "Kabarettistin Constanze Lindner - Lesung und Show",
-      "date_start": "2026-09-19",
+      "id": "758f0470cca5b005",
+      "title": "Jazz-Abende",
+      "date_start": "2026-11-06",
       "source": "glasperlenspiel"
     }
-  ]
+  ],
+  "removed": []
 }

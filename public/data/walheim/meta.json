@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-07-29T10:47:59.656753+02:00",
+  "scraped_at": "2026-07-31T07:31:21.018866+02:00",
   "city": "walheim",
-  "event_count": 20,
+  "event_count": 19,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "walheim_gemeinde"
   ],
   "source_counts": {
-    "walheim_gemeinde": 20
+    "walheim_gemeinde": 19
   },
   "sources_failed": [],
-  "data_hash": "87cdd72272e87c9d",
+  "data_hash": "d1f73b24d0ba81b1",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 29.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 31.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "walheim_gemeinde": 0.99
   },
   "source_event_counts": {
-    "walheim_gemeinde": 20
+    "walheim_gemeinde": 19
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 688.0,
-    "runtime_delta_vs_baseline": 2.844,
+    "runtime_minutes": 388.3,
+    "runtime_delta_vs_baseline": 1.169,
     "source_health": {
       "walheim_gemeinde": 0.99
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-07-29T13:40:35.517753+02:00"
+    "generated_at": "2026-07-31T08:40:58.193625+02:00"
   }
 }

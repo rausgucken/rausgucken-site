@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-07-29T06:38:30.179766+02:00",
+  "scraped_at": "2026-07-31T04:04:10.928245+02:00",
   "city": "kornwestheim",
-  "event_count": 224,
+  "event_count": 226,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -11,13 +11,13 @@
   ],
   "source_counts": {
     "das_k_buecherei": 5,
-    "kornwestheim": 193,
-    "das_k_spielplan": 26
+    "kornwestheim": 194,
+    "das_k_spielplan": 27
   },
   "sources_failed": [],
-  "data_hash": "799e878bad31588f",
+  "data_hash": "eacb7a97f1f6cb8f",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 29.07.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 31.07.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "das_k_buecherei": 1.0,
@@ -26,8 +26,8 @@
   },
   "source_event_counts": {
     "das_k_buecherei": 5,
-    "kornwestheim": 193,
-    "das_k_spielplan": 26
+    "kornwestheim": 194,
+    "das_k_spielplan": 27
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -35,8 +35,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 688.0,
-    "runtime_delta_vs_baseline": 2.844,
+    "runtime_minutes": 388.3,
+    "runtime_delta_vs_baseline": 1.169,
     "source_health": {
       "das_k_buecherei": 1.0,
       "kornwestheim": 1.0,
@@ -45,6 +45,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-07-29T13:40:34.137497+02:00"
+    "generated_at": "2026-07-31T08:40:56.799921+02:00"
   }
 }

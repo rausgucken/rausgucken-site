@@ -1,7 +1,7 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-07-31T06:00:02.374433+02:00",
-  "event_count": 2,
+  "generated_at": "2026-07-31T06:02:11.627916+02:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,7 +26,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-07-30T02:07:42.609525+02:00",
+      "scraped_at": "2026-07-31T02:05:47.122034+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -55,7 +55,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-07-30T02:07:42.609562+02:00",
+      "scraped_at": "2026-07-31T02:05:47.122071+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -63,6 +63,35 @@
       "editorial_tip": null,
       "source_label": "Gemeinde Ingersheim",
       "canonical_url": "https://www.rausgucken.de/ingersheim/events/kaffeeklatsch-generationstreff-fuer-jung-und-alt-2026-08-05-inge"
+    },
+    {
+      "id": "4d34b3b2fdd3d242",
+      "title": "GenussWandern",
+      "date_start": "2026-08-09",
+      "date_end": null,
+      "time": "11:00 - 18:00",
+      "description": "In Bietigheim-Bissingen, Besigheim und Ingersheim genießen Sie den GenussWandern. Entdecken Sie die schönen Winkel dieser Region mit 3B Tourismus.",
+      "location": "Bietigheim-Bissingen, Besigheim, Ingersheim",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2101",
+      "original_url": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2101",
+      "source": "ingersheim_gemeinde",
+      "city": "ingersheim",
+      "slug": "genusswandern-2026-08-09-inge",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-07-31T02:05:47.122111+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Ingersheim",
+      "canonical_url": "https://www.rausgucken.de/ingersheim/events/genusswandern-2026-08-09-inge"
     }
   ]
 }

@@ -1,9 +1,45 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-07-31T06:00:02.312952+02:00",
-  "event_count": 4,
+  "generated_at": "2026-07-31T06:51:12.994437+02:00",
+  "event_count": 5,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
+    {
+      "id": "14cdc7c98d77ce2e",
+      "title": "Dorffreizeit",
+      "date_start": "2026-08-03",
+      "date_end": "2026-08-07",
+      "time": null,
+      "description": "In dieser Dorffreizeit von Montag bis Freitag genießen Familien verschiedene Aktivitäten in Erligheim. Ein programmaufgeladener Tagesablauf bietet Spaziergänge, Spiele und kulinarische Delikatessen. Veranstaltet vom CVJM Erligheim.",
+      "location": null,
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie",
+        "Kulinarik"
+      ],
+      "link": "https://www.erligheim.de/eventcalendar?action=view_event&event_id=373",
+      "original_url": "https://www.erligheim.de/eventcalendar?action=view_event&event_id=373",
+      "source": "erligheim_gemeinde",
+      "city": "erligheim",
+      "slug": "dorffreizeit-2026-08-03-erli",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-07-31T02:07:03.065030+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Erligheim",
+      "canonical_url": "https://www.rausgucken.de/erligheim/events/dorffreizeit-2026-08-03-erli"
+    },
     {
       "id": "8f586d5bb24ce30e",
       "title": "Umzug beim Pferdemarkt",
@@ -26,7 +62,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-07-29T02:08:06.885554+02:00",
+      "scraped_at": "2026-07-31T02:07:03.065319+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -57,7 +93,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-07-29T02:08:06.885696+02:00",
+      "scraped_at": "2026-07-31T02:07:03.729554+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -88,7 +124,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-07-29T02:08:06.885770+02:00",
+      "scraped_at": "2026-07-31T02:07:03.729657+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -119,9 +155,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-07-29T02:08:07.553670+02:00",
+      "scraped_at": "2026-07-31T02:07:03.729884+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
