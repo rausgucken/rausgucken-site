@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-08-01T04:24:20.113185+02:00",
+  "scraped_at": "2026-08-02T04:30:46.152421+02:00",
   "city": "kornwestheim",
-  "event_count": 226,
+  "event_count": 224,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -10,14 +10,14 @@
     "kornwestheim"
   ],
   "source_counts": {
-    "das_k_buecherei": 5,
+    "das_k_buecherei": 4,
     "kornwestheim": 194,
-    "das_k_spielplan": 27
+    "das_k_spielplan": 26
   },
   "sources_failed": [],
-  "data_hash": "fce4f72604769ba7",
+  "data_hash": "469bc1e8676af425",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 01.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 02.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "das_k_buecherei": 1.0,
@@ -25,9 +25,9 @@
     "das_k_spielplan": 1.0
   },
   "source_event_counts": {
-    "das_k_buecherei": 5,
+    "das_k_buecherei": 4,
     "kornwestheim": 194,
-    "das_k_spielplan": 27
+    "das_k_spielplan": 26
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -35,8 +35,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 358.3,
-    "runtime_delta_vs_baseline": 1.002,
+    "runtime_minutes": 379.1,
+    "runtime_delta_vs_baseline": 1.118,
     "source_health": {
       "das_k_buecherei": 1.0,
       "kornwestheim": 1.0,
@@ -45,6 +45,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-01T08:11:02.197123+02:00"
+    "generated_at": "2026-08-02T08:32:06.225101+02:00"
   }
 }

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-01T03:36:41.303367+02:00",
+  "generated_at": "2026-08-02T03:39:49.792795+02:00",
   "city": "asperg",
   "sources": [
-    "glasperlenspiel",
     "asperg_fuehrungen",
+    "glasperlenspiel",
     "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-07-31T03:39:19.777278+02:00",
+  "previous_run": "2026-08-01T03:36:41.380010+02:00",
   "count_added": 21,
-  "count_removed": 0,
+  "count_removed": 1,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -137,5 +137,12 @@
       "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "37a11c092025148e",
+      "title": "RepairCafe & UpcyclingWerkstatt",
+      "date_start": "2026-08-01",
+      "source": "asperg_veranstaltungen"
+    }
+  ]
 }

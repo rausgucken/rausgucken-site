@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-08-01T05:40:34.094931+02:00",
+  "scraped_at": "2026-08-02T05:45:57.968677+02:00",
   "city": "ingersheim",
-  "event_count": 59,
+  "event_count": 58,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "ingersheim_gemeinde"
   ],
   "source_counts": {
-    "ingersheim_gemeinde": 59
+    "ingersheim_gemeinde": 58
   },
   "sources_failed": [],
-  "data_hash": "9253867db702759f",
+  "data_hash": "3970e3d9f04663d7",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 01.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 02.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "ingersheim_gemeinde": 0.97
   },
   "source_event_counts": {
-    "ingersheim_gemeinde": 59
+    "ingersheim_gemeinde": 58
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 358.3,
-    "runtime_delta_vs_baseline": 1.002,
+    "runtime_minutes": 379.1,
+    "runtime_delta_vs_baseline": 1.118,
     "source_health": {
       "ingersheim_gemeinde": 0.97
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-01T08:11:01.965874+02:00"
+    "generated_at": "2026-08-02T08:32:05.994142+02:00"
   }
 }
