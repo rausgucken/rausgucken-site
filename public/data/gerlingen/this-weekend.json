@@ -1,39 +1,68 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-08-02T06:00:02.304530+02:00",
-  "event_count": 1,
+  "generated_at": "2026-08-03T06:00:02.409117+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "f773687a7aa2e08f",
-      "title": "Sommerfest des CVJM",
-      "date_start": "2026-08-02",
+      "id": "1326cccbea6d19f3",
+      "title": "Wochenmarkt",
+      "date_start": "2026-08-08",
       "date_end": null,
-      "time": "18:00 - 18:00",
-      "description": "In diesem Sommerfest feiern Mitglieder und Gäste des CVJM gemeinsam die warmen Sommertage. Mit Musik, Spezialitäten und interaktiven Stationen genießen alle den heiteren Abend.",
-      "location": null,
+      "time": null,
+      "description": "Im Wochenmarkt auf dem Rathausplatz finden Sie eine Vielfalt an Familienfreundlichen Aktivitäten und Unterhaltung. Besuchen Sie den Markt und entdecken Sie lokale Einzelhändler, Essenseinrichtungen und unterhaltsame Standorte für alle Altersgruppen.",
+      "location": "Rathausplatz",
       "price": null,
-      "age_min": null,
+      "age_min": 4,
       "age_max": null,
       "tags": [
-        "Musik"
+        "Familie"
       ],
-      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523255297756/SommerfestdesCVJM.html?nodeID=523255297756",
-      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523255297756/SommerfestdesCVJM.html?nodeID=523255297756",
+      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523252461830/Wochenmarkt.html?nodeID=523252461830",
+      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523252461830/Wochenmarkt.html?nodeID=523252461830",
       "source": "gerlingen_stadt",
       "city": "gerlingen",
-      "slug": "sommerfest-des-cvjm-2026-08-02-gerl",
+      "slug": "wochenmarkt-2026-08-08-gerl",
       "weekdays": [
-        0
+        6
       ],
-      "scraped_at": "2026-08-02T02:03:03.402788+02:00",
-      "extraction_confidence": 0.65,
+      "scraped_at": "2026-08-03T02:03:36.419291+02:00",
+      "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Gerlingen",
-      "canonical_url": "https://www.rausgucken.de/gerlingen/events/sommerfest-des-cvjm-2026-08-02-gerl"
+      "canonical_url": "https://www.rausgucken.de/gerlingen/events/wochenmarkt-2026-08-08-gerl"
+    },
+    {
+      "id": "3071083baffdd4bc",
+      "title": "Erzählzeit der Leseclubaktion HEISS AUF LESEN©",
+      "date_start": "2026-08-08",
+      "date_end": null,
+      "time": "11:30",
+      "description": "In der Erzählzeit des Leseclubaktions HEISS AUF LESEN© teilen Teilnehmer ihre Lieblingsgeschichten und Entdeckungen aus dem literarischen Universum. Die Veranstaltung findet in der Stadtbücherei Gerlingen statt.",
+      "location": "Stadtbücherei Gerlingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523255570606/ErzhlzeitderLeseclubaktionHEISSAUFLESEN.html?nodeID=523255570606",
+      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523255570606/ErzhlzeitderLeseclubaktionHEISSAUFLESEN.html?nodeID=523255570606",
+      "source": "gerlingen_stadt",
+      "city": "gerlingen",
+      "slug": "erzaehlzeit-der-leseclubaktion-heiss-auf-lesen-2026-08-08-gerl",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-08-03T02:03:36.419294+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Gerlingen",
+      "canonical_url": "https://www.rausgucken.de/gerlingen/events/erzaehlzeit-der-leseclubaktion-heiss-auf-lesen-2026-08-08-gerl"
     }
   ]
 }
