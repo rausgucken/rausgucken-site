@@ -1,29 +1,42 @@
 {
-  "generated_at": "2026-08-02T08:19:04.687790+02:00",
+  "generated_at": "2026-08-03T07:54:08.882261+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "ludwigsburg_stadt",
-    "schloss",
-    "musikhalle_lb",
-    "labyrinth",
-    "kunstverein_ausstellungen",
-    "blueba",
-    "forum_schlosspark",
-    "stabi",
     "karlskaserne_veranstaltungen",
-    "garnisonmuseum",
+    "blueba",
     "kunstverein_veranstaltungen",
-    "karlskaserne_ausstellungen"
+    "stabi",
+    "labyrinth",
+    "ludwigsburg_stadt",
+    "karlskaserne_ausstellungen",
+    "forum_schlosspark",
+    "museum",
+    "garnisonmuseum",
+    "musikhalle_lb",
+    "schloss",
+    "kunstverein_ausstellungen"
   ],
-  "previous_run": "2026-08-01T07:58:20.990983+02:00",
-  "count_added": 35,
-  "count_removed": 87,
+  "previous_run": "2026-08-02T08:19:04.781479+02:00",
+  "count_added": 57,
+  "count_removed": 16,
   "added": [
     {
-      "id": "8dcd9d29a449ca9d",
+      "id": "702ba8d1586dc2b1",
       "title": "„Weil menschlich so viel möglich ist“",
       "date_start": "2026-05-08",
       "source": "schloss"
+    },
+    {
+      "id": "3c842e723154e8b6",
+      "title": "Der Bär, der nicht da war",
+      "date_start": "2026-11-09",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "616656af9c975269",
+      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 8-12 Jahren in Ludwigsburg",
+      "date_start": "2026-11-21",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "feee56b785ce127e",
@@ -32,111 +45,15 @@
       "source": "stabi"
     },
     {
-      "id": "96a58f20c0979177",
-      "title": "Sommerferienworkshop: Die Schule der magischen Tiere in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "labyrinth"
-    },
-    {
-      "id": "c2933aa889599b3d",
-      "title": "Workshop: Ein Krabbenkutter aus Ton für Kinder ab 7 Jahren in Ludwigsburg",
-      "date_start": "2026-11-21",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "383f5cd78e5d346a",
-      "title": "Workshop: Ein Buch als Aufbewahrungsversteck aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-11-21",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "cc242e04da71f5ea",
-      "title": "Workshop: Ein Feldhase aus Ton Keramikworkshop für Kinder ab 7 Jahren in Ludwigsburg",
-      "date_start": "2027-03-20",
-      "source": "labyrinth"
-    },
-    {
-      "id": "59ed9be05b83c245",
-      "title": "Osterferienworkshop: Kunst ist Spiel und Spiel ist Kunst! für Kinder von 6-10 Jahren in Ludwigsburg",
-      "date_start": "2027-03-24",
-      "source": "labyrinth"
-    },
-    {
-      "id": "d34a29ec3cc2b3dd",
-      "title": "Osterferienworkshop: Das geheime Haus des Hasen für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2027-03-24",
-      "source": "labyrinth"
-    },
-    {
-      "id": "50d85ec631edda3e",
-      "title": "Osterferienworkshop: Endlich Frühling! Malen und Gestalten für Kinder ab 6 Jahren in Bietigheim-Bissingen",
-      "date_start": "2027-03-24",
-      "source": "labyrinth"
-    },
-    {
-      "id": "3cca350a63a175ac",
-      "title": "Osterferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
-      "date_start": "2027-03-24",
-      "source": "labyrinth"
-    },
-    {
-      "id": "8f8d98b8c34c1172",
-      "title": "Osterferienworkshop: Der Zufall malt Gesichter für Kinder ab 6 Jahren in Ludwigsburg",
+      "id": "a288379042d33ca3",
+      "title": "Osterferienworkshop: Mensch ärgere dich nicht! für Kinder ab 7 Jahren in Ludwigsburg",
       "date_start": "2027-03-30",
       "source": "labyrinth"
     },
     {
-      "id": "5c49b1853b732f74",
+      "id": "7f9e3803bf319b8f",
       "title": "Sommerferienworkshop: In Holz hauen und Schnitzen in Ludwigsburg",
       "date_start": "2026-08-31",
-      "source": "labyrinth"
-    },
-    {
-      "id": "4cdb3505b68e302f",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-11-10",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "d84f7628a03df709",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-11-10",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "f2f2eead6dec8ec5",
-      "title": "Workshop: Ein Hirschkopf aus Ton für Kinder ab 8 Jahren in Ludwigsburg",
-      "date_start": "2026-11-14",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "ca7a5b54ee4417b8",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren",
-      "date_start": "2027-01-19",
-      "source": "labyrinth"
-    },
-    {
-      "id": "6403e67ffa9f96cb",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2027-01-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "7cba865326960f62",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2027-01-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "c46a9f50a0e78e8e",
-      "title": "Osterferienworkshop: Kikeriki - Verrückte Hähne für Kinder von 8-10 Jahren in Bietigheim-Bissingen",
-      "date_start": "2027-03-24",
-      "source": "labyrinth"
-    },
-    {
-      "id": "b6d3444ea040ce2e",
-      "title": "Workshop: Mini Kunst Lab für Kinder von 1-2 Jahren und Mütter, Väter, Begleitpersonen in Ludwigsburg",
-      "date_start": "2026-11-11",
       "source": "karlskaserne_veranstaltungen"
     },
     {
@@ -146,246 +63,16 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "d4aa778b31c5cd74",
-      "title": "Der Bär, der nicht da war",
-      "date_start": "2026-11-09",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "59c065bb01199bc6",
-      "title": "Workshop: Der Nikolaus als Räucherkerzenmann aus Ton für Kinder ab 5 Jahren in Bietigheim",
-      "date_start": "2026-11-14",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "8a048933220b743d",
-      "title": "Die Grabowskis",
-      "date_start": "2026-11-21",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "d75e605db9ebcafe",
-      "title": "SPORT TROTZ KREBS",
-      "date_start": "2026-08-03",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "d2be6c436fd16d73",
-      "title": "Workshop: Comics zeichnen",
-      "date_start": "2026-08-04",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "d8fbe3cfa2ecc12b",
-      "title": "Bewegungsgruppe hat Plätze frei",
-      "date_start": "2026-08-04",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "682889c5f698f42e",
-      "title": "Workshop: Trickfilme gestalten",
-      "date_start": "2026-08-04",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "64d83f3be56d2cd4",
-      "title": "Insta was? Einstieg in die Welt der Reels, Postings und Stories",
-      "date_start": "2026-08-04",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "5a7bc8de14cf369e",
-      "title": "Digitale Hilfe im Mehrgenerationenhaus",
-      "date_start": "2026-08-04",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "dc56fc41a81754cc",
-      "title": "Museumspause",
-      "date_start": "2026-08-05",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4d428664522658f4",
-      "title": "Formular- Guide",
-      "date_start": "2026-08-05",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4e4f747add8dc71c",
-      "title": "Kostenfreie Beratung rund um’s Balkonkraftwerk",
-      "date_start": "2026-08-05",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b37e03cd08d72830",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-08-05",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "cf43338b0797fd53",
-      "title": "Europa meets Schlossfestspiele",
-      "date_start": "2026-08-05",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
       "id": "7c82aba616f7a699",
       "title": "Ausstellung Respekt! Menschen der Karlshöhe",
       "date_start": "2026-05-03",
       "source": "museum"
     },
     {
-      "id": "d283f8c28d475e72",
-      "title": "„Weil menschlich so viel möglich ist“",
-      "date_start": "2026-05-08",
-      "source": "schloss"
-    },
-    {
       "id": "650ef2c04fb838df",
       "title": "Little America – Fotografie Jürgen Schadeberg",
       "date_start": "2026-07-01",
       "source": "museum"
-    },
-    {
-      "id": "030c78503db7e3f5",
-      "title": "Sommerferienworkshop: Wackeldackel, Löwenhocker, Kistenlaster in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "71f3c3fc124c71d5",
-      "title": "Sommerferienworkshop: Farbige Ytong-Skulptur in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "059a76bccb1762e4",
-      "title": "[AUSFALL] Sommerferienworkshop: Die Wunderwelt der Stempel und Schablonen in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "81352261c765ae85",
-      "title": "Sommerferienworkshop: Schule der magischen Tiere in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "9e457b32710cc6ab",
-      "title": "Sommerferienworkshop: T-Rex-Alarm in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "72e10c8ed44a49e9",
-      "title": "Sommerferienworkshop: Ballett kreativ in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "b873eda16e867696",
-      "title": "Sommerferienworkshop: Wackeldackel, Löwenhocker, Kistenlaster in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
-    },
-    {
-      "id": "872e8f84c7328f86",
-      "title": "Sommerferienworkshop: Ballett kreativ in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
-    },
-    {
-      "id": "96e25ce14ffd36b8",
-      "title": "Sommerferienworkshop: Ballett kreativ in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "a9c450b50c518dae",
-      "title": "Sommerferienworkshop: Wackeldackel, Löwenhocker, Kistenlaster in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "5681eeab06c5b41e",
-      "title": "Sommerferienworkshop: Zootiere aus Ton in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "55ed5d6c86f3dc92",
-      "title": "[AUSFALL] Sommerferienworkshop: Pferde und magische Einhörner in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "76c92b119384a42a",
-      "title": "Sommerferienworkshop: Binding journals in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "7d416dc729fa62eb",
-      "title": "Sommerferienworkshop: Geschichten schreiben und illustrieren in Ludwigsburg",
-      "date_start": "2026-07-30",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "885fb1e2fa3af098",
-      "title": "Sommerferienworkshop: Zootiere aus Ton in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "labyrinth"
-    },
-    {
-      "id": "568df5ba900e8b26",
-      "title": "Sommerferienworkshop: Zootiere aus Ton in Bietigheim",
-      "date_start": "2026-07-30",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "302f41f6d194564f",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-08-01",
-      "source": "stabi"
-    },
-    {
-      "id": "1c382dc83c228145",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-08-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "508185249fc8b84c",
-      "title": "Märchenerzählerin",
-      "date_start": "2026-08-01",
-      "source": "blueba"
-    },
-    {
-      "id": "a58e027393107854",
-      "title": "Karaoke & Wulle",
-      "date_start": "2026-08-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "41b2c6b97d4d103b",
-      "title": "Dmytro Udovychenko – Ludwigsburger Schlossfestspiele",
-      "date_start": "2026-08-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "675c32305daa556a",
-      "title": "Ach, diese Lücke, diese entsetzliche Lücke",
-      "date_start": "2026-08-01",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "ee891b04e633d89b",
-      "title": "Sommerferienworkshop: Die Schule der magischen Tiere in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "84515f699269c9bc",
@@ -416,12 +103,6 @@
       "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
       "date_start": "2026-08-29",
       "source": "museum"
-    },
-    {
-      "id": "7f9e3803bf319b8f",
-      "title": "Sommerferienworkshop: In Holz hauen und Schnitzen in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "412a38bbfbc19241",
@@ -514,12 +195,6 @@
       "source": "museum"
     },
     {
-      "id": "54afb91bf5571d01",
-      "title": "Herbstferienworkshop: Fang den Räuber Hotzenplotz ab 4 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
       "id": "33c73002bed4f546",
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2026-10-27",
@@ -550,40 +225,16 @@
       "source": "museum"
     },
     {
-      "id": "3f492120d95cd106",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-11-10",
-      "source": "labyrinth"
-    },
-    {
       "id": "503013994c307868",
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2026-11-10",
       "source": "museum"
     },
     {
-      "id": "1499774355cb8ac8",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-11-10",
-      "source": "labyrinth"
-    },
-    {
-      "id": "cf94fc4cfcc8a0f4",
-      "title": "Workshop: Mini Kunst Lab für Kinder von 1-2 Jahren und Mütter, Väter, Begleitpersonen in Ludwigsburg",
-      "date_start": "2026-11-11",
-      "source": "labyrinth"
-    },
-    {
       "id": "d8b7431bc4a684b1",
       "title": "Stadtgeschichten",
       "date_start": "2026-11-11",
       "source": "museum"
-    },
-    {
-      "id": "317673fe35aa8ebd",
-      "title": "Workshop: Ein Hirschkopf aus Ton für Kinder ab 8 Jahren in Ludwigsburg",
-      "date_start": "2026-11-14",
-      "source": "labyrinth"
     },
     {
       "id": "48eda5404372f7f9",
@@ -602,18 +253,6 @@
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2026-11-17",
       "source": "museum"
-    },
-    {
-      "id": "adc5949aa3c97131",
-      "title": "Workshop: Ein Buch als Aufbewahrungsversteck aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-11-21",
-      "source": "labyrinth"
-    },
-    {
-      "id": "c42365f3b16dbe40",
-      "title": "Workshop: Ein Krabbenkutter aus Ton für Kinder ab 7 Jahren in Ludwigsburg",
-      "date_start": "2026-11-21",
-      "source": "labyrinth"
     },
     {
       "id": "22f9f9b321aa01e3",
@@ -676,24 +315,6 @@
       "source": "museum"
     },
     {
-      "id": "a335a62b6c2ff53a",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren",
-      "date_start": "2027-01-19",
-      "source": "labyrinth"
-    },
-    {
-      "id": "5f6a17a65b0b2674",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2027-01-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "38ca6a742a734e95",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2027-01-26",
-      "source": "labyrinth"
-    },
-    {
       "id": "9d8ff67588d6e2b0",
       "title": "Bilderbuchsamstag auf Achse",
       "date_start": "2027-02-13",
@@ -706,52 +327,138 @@
       "source": "museum"
     },
     {
-      "id": "c2de64b2c88adcde",
-      "title": "Workshop: Ein Feldhase aus Ton Keramikworkshop für Kinder ab 7 Jahren in Ludwigsburg",
-      "date_start": "2027-03-20",
-      "source": "labyrinth"
-    },
-    {
-      "id": "fab5c7c52b1d8e0d",
-      "title": "Osterferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
-      "date_start": "2027-03-24",
-      "source": "labyrinth"
-    },
-    {
-      "id": "d63fef1c1a08c12c",
-      "title": "Osterferienworkshop: Endlich Frühling! Malen und Gestalten für Kinder ab 6 Jahren in Bietigheim-Bissingen",
-      "date_start": "2027-03-24",
-      "source": "labyrinth"
-    },
-    {
-      "id": "42b74208708ba5d0",
-      "title": "Osterferienworkshop: Das geheime Haus des Hasen für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2027-03-24",
-      "source": "labyrinth"
-    },
-    {
-      "id": "13ff641bcf66ef1f",
-      "title": "Osterferienworkshop: Kikeriki - Verrückte Hähne für Kinder von 8-10 Jahren in Bietigheim-Bissingen",
-      "date_start": "2027-03-24",
-      "source": "labyrinth"
-    },
-    {
-      "id": "38735e3777fcd7be",
-      "title": "Osterferienworkshop: Kunst ist Spiel und Spiel ist Kunst! für Kinder von 6-10 Jahren in Ludwigsburg",
-      "date_start": "2027-03-24",
-      "source": "labyrinth"
-    },
-    {
-      "id": "5ae03eec15635a8d",
-      "title": "Osterferienworkshop: Der Zufall malt Gesichter für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2027-03-30",
-      "source": "labyrinth"
-    },
-    {
       "id": "557f572ab46b1d46",
       "title": "Bilderbuchsamstag auf Achse",
       "date_start": "2027-04-03",
       "source": "museum"
+    },
+    {
+      "id": "946d653dc7f86f1b",
+      "title": "Sommerferienworkshop: Kunterbunter Meeresgarten in Bietigheim",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "54afb91bf5571d01",
+      "title": "Herbstferienworkshop: Fang den Räuber Hotzenplotz ab 4 Jahren in Bietigheim-Bissingen",
+      "date_start": "2026-10-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "668c24481ab1fc2a",
+      "title": "TTW OPEN STAGE",
+      "date_start": "2026-11-28",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "8db9d9307351a417",
+      "title": "LuBu MoVes",
+      "date_start": "2026-08-05",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "df481941250f4ae6",
+      "title": "Ludwigsburger Weinlaube",
+      "date_start": "2026-08-06",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "8dcd9d29a449ca9d",
+      "title": "„Weil menschlich so viel möglich ist“",
+      "date_start": "2026-05-08",
+      "source": "schloss"
+    },
+    {
+      "id": "9952fe0ca9c6fadb",
+      "title": "Sommerferienworkshop: Ein gemauerter Turm aus Ton in Ludwigsburg",
+      "date_start": "2026-07-30",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "21c8a59f1a57693e",
+      "title": "Märchenfest",
+      "date_start": "2026-08-01",
+      "source": "blueba"
+    },
+    {
+      "id": "f781c0291402b17e",
+      "title": "Märchenfest im Blühenden Barock",
+      "date_start": "2026-08-01",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "bcff3bf8c5afddb6",
+      "title": "Schaufahren der Modellschiffe",
+      "date_start": "2026-08-02",
+      "source": "blueba"
+    },
+    {
+      "id": "0d0f8d98b8bf631c",
+      "title": "Sonntagslunch",
+      "date_start": "2026-08-02",
+      "source": "blueba"
+    },
+    {
+      "id": "29bf90703b0c0fd5",
+      "title": "Märchenerzählerin",
+      "date_start": "2026-08-02",
+      "source": "blueba"
+    },
+    {
+      "id": "abab3531ac48caa5",
+      "title": "David Garrett - KSKmusicOpen 2026",
+      "date_start": "2026-08-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "22512017ba6887da",
+      "title": "Das Kanu des Manitu",
+      "date_start": "2026-08-02",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "003560b927e9744f",
+      "title": "David Garrett",
+      "date_start": "2026-08-02",
+      "source": "schloss"
+    },
+    {
+      "id": "1554cbf7e4f34949",
+      "title": "Sommerferienworkshop: Bühne frei! in Bietigheim",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "5c49b1853b732f74",
+      "title": "Sommerferienworkshop: In Holz hauen und Schnitzen in Ludwigsburg",
+      "date_start": "2026-08-31",
+      "source": "labyrinth"
+    },
+    {
+      "id": "c8f9473b0720ebd5",
+      "title": "Sommerferienworkshop: Abenteuer Manege! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "d4aa778b31c5cd74",
+      "title": "Der Bär, der nicht da war",
+      "date_start": "2026-11-09",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "885541231ab9a712",
+      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 8-12 Jahren in Ludwigsburg",
+      "date_start": "2026-11-21",
+      "source": "labyrinth"
+    },
+    {
+      "id": "4a7a648d882c3288",
+      "title": "Osterferienworkshop: Mensch ärgere dich nicht! für Kinder ab 7 Jahren in Ludwigsburg",
+      "date_start": "2027-03-30",
+      "source": "labyrinth"
     }
   ]
 }
