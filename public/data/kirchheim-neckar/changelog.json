@@ -1,18 +1,49 @@
 {
-  "generated_at": "2026-08-03T07:11:52.395648+02:00",
+  "generated_at": "2026-08-04T08:02:43.890868+02:00",
   "city": "kirchheim-neckar",
   "sources": [
     "kirchheim-neckar_gemeinde"
   ],
-  "previous_run": "2026-08-02T08:00:26.666394+02:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-08-03T07:11:52.471019+02:00",
+  "count_added": 4,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "63ed17cdf97a8ba2",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-03",
+      "source": "kirchheim-neckar_gemeinde"
+    },
+    {
+      "id": "84d2fe33f5135e4c",
+      "title": "Mattenkurse",
+      "date_start": "2026-10-24",
+      "source": "kirchheim-neckar_gemeinde"
+    },
+    {
+      "id": "4a7aed55e8ce81f2",
+      "title": "Mattenkurse",
+      "date_start": "2026-11-07",
+      "source": "kirchheim-neckar_gemeinde"
+    },
+    {
+      "id": "aac4b533b2056795",
+      "title": "Mattenkurse",
+      "date_start": "2026-11-08",
+      "source": "kirchheim-neckar_gemeinde"
+    }
+  ],
   "removed": [
     {
-      "id": "7b06cfe6b9858b5b",
-      "title": "Bauwagenkneipe",
-      "date_start": "2026-08-02",
+      "id": "d4b7c9ab22908750",
+      "title": "Friedhofs Café",
+      "date_start": "2026-08-03",
+      "source": "kirchheim-neckar_gemeinde"
+    },
+    {
+      "id": "87f283492ddbb449",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-03",
       "source": "kirchheim-neckar_gemeinde"
     }
   ]

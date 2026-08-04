@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-03T03:54:33.826817+02:00",
+  "scraped_at": "2026-08-04T03:55:44.943092+02:00",
   "city": "sachsenheim",
   "event_count": 19,
   "flagged_count": 0,
@@ -9,37 +9,41 @@
     "sachsenheim_library"
   ],
   "source_counts": {
-    "sachsenheim_kultur": 15,
-    "sachsenheim_library": 4
+    "sachsenheim_kultur": 16,
+    "sachsenheim_library": 3
   },
   "sources_failed": [],
-  "data_hash": "91d658dc2e8fdd53",
+  "data_hash": "b0a2d4492102d813",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 03.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 04.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "sachsenheim_kultur": 0.98,
     "sachsenheim_library": 0.98
   },
   "source_event_counts": {
-    "sachsenheim_kultur": 15,
-    "sachsenheim_library": 4
+    "sachsenheim_kultur": 16,
+    "sachsenheim_library": 3
   },
-  "count_drift_warnings": {},
+  "count_drift_warnings": {
+    "sachsenheim_library": "Count drift: 3 vs historical avg 5"
+  },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 354.1,
-    "runtime_delta_vs_baseline": 0.978,
+    "runtime_minutes": 403.2,
+    "runtime_delta_vs_baseline": 1.253,
     "source_health": {
       "sachsenheim_kultur": 0.98,
       "sachsenheim_library": 0.98
     },
-    "count_drift_warnings": {},
+    "count_drift_warnings": {
+      "sachsenheim_library": "Count drift: 3 vs historical avg 5"
+    },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-03T08:08:01.905607+02:00"
+    "generated_at": "2026-08-04T08:56:58.721382+02:00"
   }
 }
