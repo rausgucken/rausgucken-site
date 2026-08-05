@@ -1,12 +1,50 @@
 {
-  "generated_at": "2026-08-04T07:45:33.928299+02:00",
+  "generated_at": "2026-08-05T07:13:41.225374+02:00",
   "city": "sersheim",
   "sources": [
     "sersheim_gemeinde"
   ],
-  "previous_run": "2026-08-03T07:02:18.136576+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-08-04T07:45:34.003199+02:00",
+  "count_added": 3,
+  "count_removed": 3,
+  "added": [
+    {
+      "id": "ae7a5f50a3dcea9f",
+      "title": "Vorlesenachmittag",
+      "date_start": "2026-11-27",
+      "source": "sersheim_gemeinde"
+    },
+    {
+      "id": "b8dfeddd610f6ec0",
+      "title": "Bazar",
+      "date_start": "2026-11-28",
+      "source": "sersheim_gemeinde"
+    },
+    {
+      "id": "35e68674204be829",
+      "title": "Adventskonzert",
+      "date_start": "2026-11-28",
+      "source": "sersheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "8a3a809fc209b8d4",
+      "title": "Vorlesenachmittag",
+      "date_start": "2026-11-27",
+      "source": "sersheim_gemeinde"
+    },
+    {
+      "id": "ecb5afb7df658878",
+      "title": "Adventskonzert",
+      "date_start": "2026-11-28",
+      "source": "sersheim_gemeinde"
+    },
+    {
+      "id": "898f0df056d89a03",
+      "title": "Bazar",
+      "date_start": "2026-11-28",
+      "source": "sersheim_gemeinde"
+    }
+  ]
 }

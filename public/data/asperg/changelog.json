@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-04T03:28:01.728401+02:00",
+  "generated_at": "2026-08-05T03:26:12.512815+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
     "asperg_fuehrungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-08-03T03:43:23.383419+02:00",
+  "previous_run": "2026-08-04T03:28:01.804615+02:00",
   "count_added": 18,
-  "count_removed": 1,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -119,12 +119,5 @@
       "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "1aa41cf72ad6d52f",
-      "title": "Göttlicher Playboy - Vergnügtes Spiel",
-      "date_start": "2027-07-19",
-      "source": "glasperlenspiel"
-    }
-  ]
+  "removed": []
 }

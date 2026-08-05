@@ -1,36 +1,30 @@
 {
-  "generated_at": "2026-08-04T08:43:11.953240+02:00",
+  "generated_at": "2026-08-05T08:05:33.471108+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "kunstverein_veranstaltungen",
-    "blueba",
-    "labyrinth",
-    "musikhalle_lb",
-    "stabi",
     "garnisonmuseum",
+    "stabi",
+    "labyrinth",
     "karlskaserne_ausstellungen",
-    "museum",
     "karlskaserne_veranstaltungen",
+    "schloss",
+    "kunstverein_veranstaltungen",
     "kunstverein_ausstellungen",
-    "ludwigsburg_stadt",
     "forum_schlosspark",
-    "schloss"
+    "musikhalle_lb",
+    "blueba",
+    "ludwigsburg_stadt",
+    "museum"
   ],
-  "previous_run": "2026-08-03T07:54:08.979479+02:00",
-  "count_added": 17,
-  "count_removed": 14,
+  "previous_run": "2026-08-04T08:43:12.051393+02:00",
+  "count_added": 8,
+  "count_removed": 11,
   "added": [
     {
-      "id": "4d147d3606ccdadc",
+      "id": "8d75f322ef8db7aa",
       "title": "„Weil menschlich so viel möglich ist“",
       "date_start": "2026-05-08",
       "source": "schloss"
-    },
-    {
-      "id": "ee891b04e633d89b",
-      "title": "Sommerferienworkshop: Die Schule der magischen Tiere in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "feee56b785ce127e",
@@ -39,16 +33,10 @@
       "source": "stabi"
     },
     {
-      "id": "35481261515aefd7",
-      "title": "Sommerferienworkshop: Trickfilm in Stop-Motion-Technik in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "labyrinth"
-    },
-    {
-      "id": "796f2ca522539c13",
-      "title": "Herbstferienworkshop: Herbstmagie mit Eco-Printing ab 10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "labyrinth"
+      "id": "6dd0656dcc16941d",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2026-12-01",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "d3d20f419148a996",
@@ -57,156 +45,96 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "28476e3ba2fea75f",
-      "title": "Von diebischen Elstern und listigen Gaunern",
-      "date_start": "2026-09-27",
-      "source": "schloss"
-    },
-    {
-      "id": "27aed77ed6309c45",
-      "title": "Von diebischen Elstern und listigen Gaunern",
-      "date_start": "2026-11-29",
-      "source": "schloss"
-    },
-    {
-      "id": "1efd40009fd56e29",
-      "title": "Sommerferienworkshop: Theaterwerkstatt in Bietigheim",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "f5dafc7887b5c3f3",
-      "title": "Workshop: Ein bunt gemalter Weihnachtsengel für Kinder ab 4 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-11-28",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "b7a91c65ccb2741d",
-      "title": "IMPRO SPECIAL: X-MAS SHOW",
-      "date_start": "2026-11-29",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "02da30666443ab80",
-      "title": "Hi.Francky - AfterWork Donnerstag",
-      "date_start": "2026-08-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "940cbd4d4e967c83",
-      "title": "Fit im Netz",
-      "date_start": "2026-08-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "817c25dc49dc9863",
+      "id": "0bbf034d5435ca8e",
       "title": "Gaming Friday",
-      "date_start": "2026-08-07",
+      "date_start": "2026-12-04",
+      "source": "stabi"
+    },
+    {
+      "id": "37994af215b3167f",
+      "title": "Kleidertausch für Frauen! Dein Schrank braucht frischen Wind?!",
+      "date_start": "2026-08-08",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "b0d7a0f64d424acd",
-      "title": "Candlelight: Taylor Swift",
-      "date_start": "2026-10-09",
-      "source": "musikhalle_lb"
+      "id": "0ca9f7d4b3184d5b",
+      "title": "Genussführung: Ludwigsburger Versucherle",
+      "date_start": "2026-08-08",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "f3c664fcd7b87af6",
-      "title": "Candlelight: Taylor Swift",
-      "date_start": "2027-01-08",
-      "source": "musikhalle_lb"
-    },
-    {
-      "id": "198880f6b676cbc8",
-      "title": "Candlelight: Taylor Swift",
-      "date_start": "2027-03-19",
-      "source": "musikhalle_lb"
+      "id": "869b1aa573362845",
+      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
+      "date_start": "2026-08-08",
+      "source": "ludwigsburg_stadt"
     }
   ],
   "removed": [
     {
-      "id": "702ba8d1586dc2b1",
+      "id": "4d147d3606ccdadc",
       "title": "„Weil menschlich so viel möglich ist“",
       "date_start": "2026-05-08",
       "source": "schloss"
     },
     {
-      "id": "96a58f20c0979177",
-      "title": "Sommerferienworkshop: Die Schule der magischen Tiere in Ludwigsburg",
-      "date_start": "2026-08-03",
-      "source": "labyrinth"
-    },
-    {
-      "id": "9d39353d91fbb507",
-      "title": "Knips dich kreativ",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "fea032c22fc17970",
-      "title": "Knips dich kreativ",
-      "date_start": "2026-08-03",
+      "id": "d2be6c436fd16d73",
+      "title": "Workshop: Comics zeichnen",
+      "date_start": "2026-08-04",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "37d7d6f6ea98c420",
-      "title": "Knips dich kreativ",
-      "date_start": "2026-08-03",
+      "id": "0b7a9765630f5362",
+      "title": "Workshop: Comics zeichnen",
+      "date_start": "2026-08-04",
       "source": "stabi"
     },
     {
-      "id": "5843c74af858d856",
+      "id": "2632b945d7e1570c",
+      "title": "XR/VR-Initiative",
+      "date_start": "2026-08-04",
+      "source": "stabi"
+    },
+    {
+      "id": "d8fbe3cfa2ecc12b",
+      "title": "Bewegungsgruppe hat Plätze frei",
+      "date_start": "2026-08-04",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "682889c5f698f42e",
+      "title": "Workshop: Trickfilme gestalten",
+      "date_start": "2026-08-04",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "7b38d33c216b0df0",
+      "title": "Workshop: Trickfilme gestalten",
+      "date_start": "2026-08-04",
+      "source": "stabi"
+    },
+    {
+      "id": "64d83f3be56d2cd4",
       "title": "Insta was? Einstieg in die Welt der Reels, Postings und Stories",
-      "date_start": "2026-08-03",
+      "date_start": "2026-08-04",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "d75e605db9ebcafe",
-      "title": "SPORT TROTZ KREBS",
-      "date_start": "2026-08-03",
+      "id": "48cc708d5e277bca",
+      "title": "Und es war Sommer - Dieter Thomas Kuhn & Band",
+      "date_start": "2026-08-04",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "5a7bc8de14cf369e",
+      "title": "Digitale Hilfe im Mehrgenerationenhaus",
+      "date_start": "2026-08-04",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "8bc3a6835eed6764",
-      "title": "Therapie für Wikinger",
-      "date_start": "2026-08-03",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "69e0b836e61cf748",
-      "title": "Sommerferienworkshop: Flughafen Schlosshof, bitte melden! in Bietigheim",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "dd2f05a1b9d6b282",
-      "title": "Sommerferienworkshop: Trickfilm in Stop-Motion-Technik in Ludwigsburg",
-      "date_start": "2026-08-31",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "7b4fafec809c3497",
-      "title": "[AUSFALL] Sommerferienworkshop: An die Farben - fertig - los! in Bietigheim",
-      "date_start": "2026-09-07",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "cfc72384a266308b",
-      "title": "Herbstferienworkshop: König Peter und Prinzessin Lila aus Ton für Kinder ab 7 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "929c22685704278f",
-      "title": "Herbstferienworkshop: Herbstmagie mit Eco-Printing ab 10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0bbf034d5435ca8e",
-      "title": "Gaming Friday",
-      "date_start": "2026-12-04",
-      "source": "stabi"
+      "id": "f6c1f17124b6c99e",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2026-12-01",
+      "source": "labyrinth"
     }
   ]
 }

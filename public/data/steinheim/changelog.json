@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-04T07:13:03.072054+02:00",
+  "generated_at": "2026-08-05T06:33:05.137499+02:00",
   "city": "steinheim",
   "sources": [
     "steinheim_stadt"
   ],
-  "previous_run": "2026-08-03T05:42:36.401134+02:00",
-  "count_added": 2,
-  "count_removed": 0,
+  "previous_run": "2026-08-04T07:13:03.145997+02:00",
+  "count_added": 3,
+  "count_removed": 2,
   "added": [
     {
       "id": "d68e284ade57609f",
@@ -19,7 +19,26 @@
       "title": "Feuerzangenbowle 2026",
       "date_start": "2026-06-12",
       "source": "steinheim_stadt"
+    },
+    {
+      "id": "7a4b491d7bda2b1d",
+      "title": "Gemeinsam aktiv 60+ - Wöchentlicher Spielenachmittag",
+      "date_start": "2026-08-11",
+      "source": "steinheim_stadt"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "3691d5bae45b9792",
+      "title": "Gemeinsam aktiv 60+ - Wöchentlicher Spielenachmittag",
+      "date_start": "2026-08-04",
+      "source": "steinheim_stadt"
+    },
+    {
+      "id": "e4cfdb1df846cd22",
+      "title": "Tiertafel-Treff",
+      "date_start": "2026-08-04",
+      "source": "steinheim_stadt"
+    }
+  ]
 }
