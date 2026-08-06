@@ -1,38 +1,56 @@
 {
-  "generated_at": "2026-08-05T03:37:04.200473+02:00",
+  "generated_at": "2026-08-06T03:40:55.889282+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_treffpunkt_adler",
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-08-04T04:09:01.921817+02:00",
-  "count_added": 1,
-  "count_removed": 3,
+  "previous_run": "2026-08-05T03:37:04.285389+02:00",
+  "count_added": 5,
+  "count_removed": 2,
   "added": [
     {
-      "id": "ce711ddfe180ea58",
-      "title": "Hirschlander Weihnachtstag",
-      "date_start": "2026-12-11",
+      "id": "ec1341e679479336",
+      "title": "Sound of Europe:  Eine musikalische Reise durch Europa",
+      "date_start": "2026-11-07",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "8dc71e995540394f",
+      "title": "Europäisches Filmfestival : Die Herbstzeitlosen",
+      "date_start": "2026-09-25",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "2bd8bd02e4f39ad7",
+      "title": "Europäisches Filmfestival : Auf Augenhöhe",
+      "date_start": "2026-11-05",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "f44ec4d431ac0f2c",
+      "title": "Europäisches Filmfestival : Ein kleines Stück vom Kuchen",
+      "date_start": "2026-11-05",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "2f2f5c990a9d7e83",
+      "title": "Europäisches Filmfestival : Monsieur Pierre geht online",
+      "date_start": "2026-11-27",
       "source": "ditzingen_stadt"
     }
   ],
   "removed": [
     {
-      "id": "33589226ca0bc476",
-      "title": "\"Geistig fit\"-Gedächtnistraining",
-      "date_start": "2026-08-04",
-      "source": "ditzingen_treffpunkt_adler"
+      "id": "c9065fadd66f1972",
+      "title": "Café Masche - gemeinsam kreativ sein im inklusiven Strickcafé",
+      "date_start": "2026-08-05",
+      "source": "ditzingen_stadt"
     },
     {
-      "id": "e622d68270f33361",
-      "title": "Skatgruppen",
-      "date_start": "2026-08-04",
-      "source": "ditzingen_treffpunkt_adler"
-    },
-    {
-      "id": "a9f399de0f212168",
-      "title": "FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
-      "date_start": "2026-08-04",
+      "id": "153dc1a85def3df2",
+      "title": "KEIN Nähkästchen",
+      "date_start": "2026-08-05",
       "source": "ditzingen_treffpunkt_adler"
     }
   ]

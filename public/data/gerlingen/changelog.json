@@ -1,12 +1,32 @@
 {
-  "generated_at": "2026-08-05T03:40:49.346936+02:00",
+  "generated_at": "2026-08-06T03:46:29.807608+02:00",
   "city": "gerlingen",
   "sources": [
     "gerlingen_stadt"
   ],
-  "previous_run": "2026-08-04T04:10:54.634567+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-08-05T03:40:49.422946+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "10380646cdb96644",
+      "title": "Feierabendtour im Strohgäu und After-Work-Treffen",
+      "date_start": "2026-08-13",
+      "source": "gerlingen_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "4eba2a381e7f68b4",
+      "title": "Gymnastik im Freien",
+      "date_start": "2026-08-05",
+      "source": "gerlingen_stadt"
+    },
+    {
+      "id": "489dd2b2d5140f21",
+      "title": "Erzählzeit der Leseclubaktion HEISS AUF LESEN©",
+      "date_start": "2026-08-05",
+      "source": "gerlingen_stadt"
+    }
+  ]
 }

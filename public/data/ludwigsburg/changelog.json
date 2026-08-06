@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-05T08:05:33.471108+02:00",
+  "generated_at": "2026-08-06T08:25:55.673041+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "garnisonmuseum",
+    "museum",
     "stabi",
-    "labyrinth",
+    "ludwigsburg_stadt",
     "karlskaserne_ausstellungen",
     "karlskaserne_veranstaltungen",
-    "schloss",
+    "labyrinth",
     "kunstverein_veranstaltungen",
-    "kunstverein_ausstellungen",
     "forum_schlosspark",
+    "garnisonmuseum",
+    "kunstverein_ausstellungen",
     "musikhalle_lb",
-    "blueba",
-    "ludwigsburg_stadt",
-    "museum"
+    "schloss",
+    "blueba"
   ],
-  "previous_run": "2026-08-04T08:43:12.051393+02:00",
-  "count_added": 8,
-  "count_removed": 11,
+  "previous_run": "2026-08-05T08:05:33.570031+02:00",
+  "count_added": 34,
+  "count_removed": 20,
   "added": [
     {
-      "id": "8d75f322ef8db7aa",
+      "id": "de39aff232dc7095",
       "title": "„Weil menschlich so viel möglich ist“",
       "date_start": "2026-05-08",
       "source": "schloss"
@@ -33,10 +33,28 @@
       "source": "stabi"
     },
     {
-      "id": "6dd0656dcc16941d",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-12-01",
+      "id": "b875a99c1c34d6c5",
+      "title": "Workshop: Ein Weihnachtsengel aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
+      "date_start": "2026-12-05",
       "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "8d6968c97c5c0f68",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-02-02",
+      "source": "labyrinth"
+    },
+    {
+      "id": "929c22685704278f",
+      "title": "Herbstferienworkshop: Herbstmagie mit Eco-Printing ab 10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "13ff641bcf66ef1f",
+      "title": "Osterferienworkshop: Kikeriki - Verrückte Hähne für Kinder von 8-10 Jahren in Bietigheim-Bissingen",
+      "date_start": "2027-03-24",
+      "source": "labyrinth"
     },
     {
       "id": "d3d20f419148a996",
@@ -45,95 +63,287 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "0bbf034d5435ca8e",
-      "title": "Gaming Friday",
-      "date_start": "2026-12-04",
+      "id": "7553dd43e4517178",
+      "title": "Klassische Schlossführung „Herzogin“",
+      "date_start": null,
+      "source": "schloss"
+    },
+    {
+      "id": "a58c00d35037fe05",
+      "title": "Kunstausstellung Kaleidoskop",
+      "date_start": "2026-08-16",
+      "source": "schloss"
+    },
+    {
+      "id": "69e0b836e61cf748",
+      "title": "Sommerferienworkshop: Flughafen Schlosshof, bitte melden! in Bietigheim",
+      "date_start": "2026-08-31",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "c8f9473b0720ebd5",
+      "title": "Sommerferienworkshop: Abenteuer Manege! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "7b4fafec809c3497",
+      "title": "[AUSFALL] Sommerferienworkshop: An die Farben - fertig - los! in Bietigheim",
+      "date_start": "2026-09-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "cfc72384a266308b",
+      "title": "Herbstferienworkshop: König Peter und Prinzessin Lila aus Ton für Kinder ab 7 Jahren in Bietigheim-Bissingen",
+      "date_start": "2026-10-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "53f8dd7fe1ad814d",
+      "title": "Storytime in der Hauptstelle",
+      "date_start": "2026-10-15",
       "source": "stabi"
     },
     {
-      "id": "37994af215b3167f",
-      "title": "Kleidertausch für Frauen! Dein Schrank braucht frischen Wind?!",
-      "date_start": "2026-08-08",
+      "id": "bc461c4b200c5f27",
+      "title": "Storytime in der Hauptstelle",
+      "date_start": "2026-11-12",
+      "source": "stabi"
+    },
+    {
+      "id": "f00f466d67fa5460",
+      "title": "Storytime in der Hauptstelle",
+      "date_start": "2026-12-10",
+      "source": "stabi"
+    },
+    {
+      "id": "fa01f595680c02e3",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-02",
+      "source": "stabi"
+    },
+    {
+      "id": "990149f6d8d2ae29",
+      "title": "Schachmatt dem Alter",
+      "date_start": "2026-08-07",
+      "source": "stabi"
+    },
+    {
+      "id": "d3eaf72b8dca9202",
+      "title": "Schachmatt dem Alter",
+      "date_start": "2026-08-21",
+      "source": "stabi"
+    },
+    {
+      "id": "6e62c21195939264",
+      "title": "STUTTGARTER PHILHARMONIKER",
+      "date_start": "2027-05-09",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "8cff4075b789cc46",
+      "title": "Im Reich der Feen beim Naturerlebnis Neckar",
+      "date_start": "2026-08-09",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "0ca9f7d4b3184d5b",
-      "title": "Genussführung: Ludwigsburger Versucherle",
-      "date_start": "2026-08-08",
+      "id": "9365a0987992b497",
+      "title": "Workshop \"Mitsingen, Mitmusizieren\" + Konzert",
+      "date_start": "2026-08-09",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "869b1aa573362845",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-08-08",
+      "id": "31e4721f76e909b2",
+      "title": "Naturführung: Die Zugwiesen",
+      "date_start": "2026-08-09",
       "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "71b9b7eebfbd94b7",
+      "title": "Insta was? Einstieg in die Welt der Reels, Postings und Stories",
+      "date_start": "2026-08-10",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "1776f2a14b4f389f",
+      "title": "The Piano Tuner",
+      "date_start": "2026-08-10",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2b9ca240d1ceb4ea",
+      "title": "Workshop: CAD & 3D-Druck",
+      "date_start": "2026-08-11",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fb0193762e8838ee",
+      "title": "Bewegungsgruppe hat Plätze frei",
+      "date_start": "2026-08-11",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c2b5716d1233297f",
+      "title": "Candlelight: Metallica",
+      "date_start": "2026-11-06",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "5e59bdc0ca63721b",
+      "title": "Candlelight: Tribut an Metallica",
+      "date_start": "2026-11-06",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "7de6ff754851d250",
+      "title": "Die Pralinetten - Comedy zum Anbeißen!",
+      "date_start": "2026-12-11",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "2764304dfbe2c6f3",
+      "title": "Candlelight: Tribut an Metallica",
+      "date_start": "2027-01-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "393db1aa58f33481",
+      "title": "Candlelight: Metallica",
+      "date_start": "2027-01-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "6e0edbe7a9f9dd71",
+      "title": "Candlelight: Tribut an Metallica",
+      "date_start": "2027-03-20",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "d648b3057cd215a9",
+      "title": "Candlelight: Metallica",
+      "date_start": "2027-03-20",
+      "source": "musikhalle_lb"
     }
   ],
   "removed": [
     {
-      "id": "4d147d3606ccdadc",
+      "id": "23fc3c1c77f2a028",
+      "title": "Klassische Schlossführung „Herzogin“",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "8d75f322ef8db7aa",
       "title": "„Weil menschlich so viel möglich ist“",
       "date_start": "2026-05-08",
       "source": "schloss"
     },
     {
-      "id": "d2be6c436fd16d73",
-      "title": "Workshop: Comics zeichnen",
-      "date_start": "2026-08-04",
+      "id": "84515f699269c9bc",
+      "title": "Museumspause",
+      "date_start": "2026-08-05",
+      "source": "museum"
+    },
+    {
+      "id": "dc56fc41a81754cc",
+      "title": "Museumspause",
+      "date_start": "2026-08-05",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "0b7a9765630f5362",
-      "title": "Workshop: Comics zeichnen",
-      "date_start": "2026-08-04",
+      "id": "4d428664522658f4",
+      "title": "Formular- Guide",
+      "date_start": "2026-08-05",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a12462cbf8991bf4",
+      "title": "Workshop: Tonwerkstatt ab 8 Jahren",
+      "date_start": "2026-08-05",
+      "source": "labyrinth"
+    },
+    {
+      "id": "4e4f747add8dc71c",
+      "title": "Kostenfreie Beratung rund um’s Balkonkraftwerk",
+      "date_start": "2026-08-05",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "b37e03cd08d72830",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-08-05",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3ffa164e622d5f72",
+      "title": "Sprechtreff Deutsch - ONLINE",
+      "date_start": "2026-08-05",
       "source": "stabi"
     },
     {
-      "id": "2632b945d7e1570c",
-      "title": "XR/VR-Initiative",
-      "date_start": "2026-08-04",
+      "id": "6a50ae7e5ca1e1cc",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-08-05",
       "source": "stabi"
     },
     {
-      "id": "d8fbe3cfa2ecc12b",
-      "title": "Bewegungsgruppe hat Plätze frei",
-      "date_start": "2026-08-04",
+      "id": "cf43338b0797fd53",
+      "title": "Europa meets Schlossfestspiele",
+      "date_start": "2026-08-05",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "682889c5f698f42e",
-      "title": "Workshop: Trickfilme gestalten",
-      "date_start": "2026-08-04",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7b38d33c216b0df0",
-      "title": "Workshop: Trickfilme gestalten",
-      "date_start": "2026-08-04",
-      "source": "stabi"
-    },
-    {
-      "id": "64d83f3be56d2cd4",
-      "title": "Insta was? Einstieg in die Welt der Reels, Postings und Stories",
-      "date_start": "2026-08-04",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "48cc708d5e277bca",
-      "title": "Und es war Sommer - Dieter Thomas Kuhn & Band",
-      "date_start": "2026-08-04",
+      "id": "7292553bdc4a1c42",
+      "title": "LuBu MoVes",
+      "date_start": "2026-08-05",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "5a7bc8de14cf369e",
-      "title": "Digitale Hilfe im Mehrgenerationenhaus",
-      "date_start": "2026-08-04",
+      "id": "8db9d9307351a417",
+      "title": "LuBu MoVes",
+      "date_start": "2026-08-05",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "f6c1f17124b6c99e",
+      "id": "9a7adf303c90afa0",
+      "title": "FESTSPIEL-FINALE – María Dueñas & European Union Youth Orchestra",
+      "date_start": "2026-08-05",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "b1ace938f7e6b5af",
+      "title": "Solo mio",
+      "date_start": "2026-08-05",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "c81ce9fdfb461c7c",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-02",
+      "source": "stabi"
+    },
+    {
+      "id": "796f2ca522539c13",
+      "title": "Herbstferienworkshop: Herbstmagie mit Eco-Printing ab 10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "b2fa98a16082e266",
+      "title": "Workshop: Ein Weihnachtsengel aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
+      "date_start": "2026-12-05",
+      "source": "labyrinth"
+    },
+    {
+      "id": "2201cfa60e9972b3",
       "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2026-12-01",
+      "date_start": "2027-02-02",
+      "source": "labyrinth"
+    },
+    {
+      "id": "c46a9f50a0e78e8e",
+      "title": "Osterferienworkshop: Kikeriki - Verrückte Hähne für Kinder von 8-10 Jahren in Bietigheim-Bissingen",
+      "date_start": "2027-03-24",
       "source": "labyrinth"
     }
   ]
