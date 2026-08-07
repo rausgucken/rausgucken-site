@@ -1,39 +1,68 @@
 {
   "subset": "tomorrow",
-  "generated_at": "2026-08-06T06:00:01.800548+02:00",
-  "event_count": 1,
+  "generated_at": "2026-08-07T06:00:01.539393+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "736cb0de30c4830e",
-      "title": "Offener Mittagstisch",
-      "date_start": "2026-08-07",
+      "id": "1326cccbea6d19f3",
+      "title": "Wochenmarkt",
+      "date_start": "2026-08-08",
       "date_end": null,
       "time": null,
-      "description": "Im Ristorante-Pizzeria Il Cocco bietet sich der Offene Mittagstisch an, um kulinarische Delikatessen genüsslich zu genießen. Einladung zum Austausch in einer freundlichen Atmosphäre.",
-      "location": "Ristorante-Pizzeria Il Cocco",
+      "description": "Im Wochenmarkt auf dem Rathausplatz finden Sie eine Vielfalt an Familienfreundlichen Aktivitäten und Unterhaltung. Besuchen Sie den Markt und entdecken Sie lokale Einzelhändler, Essenseinrichtungen und unterhaltsame Standorte für alle Altersgruppen.",
+      "location": "Rathausplatz",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523252461830/Wochenmarkt.html?nodeID=523252461830",
+      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523252461830/Wochenmarkt.html?nodeID=523252461830",
+      "source": "gerlingen_stadt",
+      "city": "gerlingen",
+      "slug": "wochenmarkt-2026-08-08-gerl",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-08-07T02:03:22.547384+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Gerlingen",
+      "canonical_url": "https://www.rausgucken.de/gerlingen/events/wochenmarkt-2026-08-08-gerl"
+    },
+    {
+      "id": "3071083baffdd4bc",
+      "title": "Erzählzeit der Leseclubaktion HEISS AUF LESEN©",
+      "date_start": "2026-08-08",
+      "date_end": null,
+      "time": "11:30",
+      "description": "In der Erzählzeit des Leseclubaktions HEISS AUF LESEN© teilen Teilnehmer ihre Lieblingsgeschichten und Entdeckungen aus dem literarischen Universum. Die Veranstaltung findet in der Stadtbücherei Gerlingen statt.",
+      "location": "Stadtbücherei Gerlingen",
       "price": null,
       "age_min": null,
       "age_max": null,
-      "tags": [
-        "Kulinarik"
-      ],
-      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523252401119/OffenerMittagstisch.html?nodeID=523252401119",
-      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523252401119/OffenerMittagstisch.html?nodeID=523252401119",
+      "tags": [],
+      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523255570606/ErzhlzeitderLeseclubaktionHEISSAUFLESEN.html?nodeID=523255570606",
+      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523255570606/ErzhlzeitderLeseclubaktionHEISSAUFLESEN.html?nodeID=523255570606",
       "source": "gerlingen_stadt",
       "city": "gerlingen",
-      "slug": "offener-mittagstisch-2026-08-07-gerl",
+      "slug": "erzaehlzeit-der-leseclubaktion-heiss-auf-lesen-2026-08-08-gerl",
       "weekdays": [
-        5
+        6
       ],
-      "scraped_at": "2026-08-06T02:03:14.035429+02:00",
+      "scraped_at": "2026-08-07T02:03:22.547388+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Gerlingen",
-      "canonical_url": "https://www.rausgucken.de/gerlingen/events/offener-mittagstisch-2026-08-07-gerl"
+      "canonical_url": "https://www.rausgucken.de/gerlingen/events/erzaehlzeit-der-leseclubaktion-heiss-auf-lesen-2026-08-08-gerl"
     }
   ]
 }
