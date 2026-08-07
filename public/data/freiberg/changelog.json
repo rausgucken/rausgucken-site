@@ -1,24 +1,25 @@
 {
-  "generated_at": "2026-08-06T03:31:10.216501+02:00",
+  "generated_at": "2026-08-07T03:31:48.811207+02:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-08-05T03:28:04.374623+02:00",
-  "count_added": 0,
-  "count_removed": 2,
-  "added": [],
+  "previous_run": "2026-08-06T03:31:10.295938+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "d443ec57603ef3cb",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-03-06",
+      "source": "freiberg_veranstaltungen"
+    }
+  ],
   "removed": [
     {
-      "id": "871e9aebf81e6842",
-      "title": "Freiberger Wochenmarkt",
-      "date_start": "2026-08-05",
-      "source": "freiberg_veranstaltungen"
-    },
-    {
-      "id": "686094d534acef39",
-      "title": "ADFC Feierabendtour",
-      "date_start": "2026-08-05",
+      "id": "c344229f6ce5e98c",
+      "title": "Walking/Lauftreff",
+      "date_start": "2026-08-06",
       "source": "freiberg_veranstaltungen"
     }
   ]

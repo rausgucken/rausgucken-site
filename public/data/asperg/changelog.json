@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-06T03:27:15.007561+02:00",
+  "generated_at": "2026-08-07T03:27:59.266580+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
     "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-08-05T03:26:12.587867+02:00",
+  "previous_run": "2026-08-06T03:27:15.085394+02:00",
   "count_added": 19,
   "count_removed": 0,
   "added": [
@@ -113,15 +113,15 @@
       "source": "asperg_fuehrungen"
     },
     {
-      "id": "f41d95e9fb23ce3e",
-      "title": "Gruselige Kinderführung an Halloween",
-      "date_start": "2026-10-31",
-      "source": "asperg_veranstaltungen"
-    },
-    {
       "id": "cb7d4d5e64cac6fd",
       "title": "Ausstellung",
       "date_start": "2026-11-22",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "753078979a745a42",
+      "title": "Lindners Lebenslust",
+      "date_start": "2026-09-19",
       "source": "glasperlenspiel"
     }
   ],
