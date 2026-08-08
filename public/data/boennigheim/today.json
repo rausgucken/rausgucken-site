@@ -1,7 +1,38 @@
 {
   "subset": "today",
-  "generated_at": "2026-08-07T06:00:01.494281+02:00",
-  "event_count": 0,
+  "generated_at": "2026-08-08T06:00:02.179935+02:00",
+  "event_count": 1,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "events": []
+  "events": [
+    {
+      "id": "7ed2c5bb3b7ea1fa",
+      "title": "Stromberg-Cup",
+      "date_start": "2026-08-08",
+      "date_end": "2026-08-09",
+      "time": null,
+      "description": "In den Sporthallen von Bönnigheim findet der Stromberg-Cup statt. Athletenbewerben sich in verschiedenen Disziplinen um das Rennenk加以中文继续\n\n<|im_start|>user\n请用德语完成描述。注意保持与先前例子一致的格式和字数要求。",
+      "location": "Sporthallen 1 und 2 Bönnigheim",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.boennigheim.de/eventcalendar?action=view_event&event_id=7880",
+      "original_url": "https://www.boennigheim.de/eventcalendar?action=view_event&event_id=7880",
+      "source": "boennigheim_stadtkalender",
+      "city": "boennigheim",
+      "slug": "stromberg-cup-2026-08-08-boen",
+      "weekdays": [
+        0,
+        6
+      ],
+      "scraped_at": "2026-08-08T02:03:23.026927+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Bönnigheim",
+      "canonical_url": "https://www.rausgucken.de/boennigheim/events/stromberg-cup-2026-08-08-boen"
+    }
+  ]
 }
