@@ -1,25 +1,32 @@
 {
-  "generated_at": "2026-08-08T05:51:42.711692+02:00",
+  "generated_at": "2026-08-09T05:09:26.298860+02:00",
   "city": "marbach",
   "sources": [
     "marbach_stadt"
   ],
-  "previous_run": "2026-08-07T04:38:00.007269+02:00",
+  "previous_run": "2026-08-08T05:51:42.787416+02:00",
   "count_added": 2,
-  "count_removed": 0,
+  "count_removed": 1,
   "added": [
     {
-      "id": "858f3a5a1ca06f84",
-      "title": "Marbach moves",
-      "date_start": "2026-09-08",
+      "id": "45bfd049bb3e9059",
+      "title": "Erdbeobachtung mittels Satellitenbildern heute",
+      "date_start": "2026-09-09",
       "source": "marbach_stadt"
     },
     {
-      "id": "d677331001a027f7",
-      "title": "Annika Scheffel zu Gast in der 17. Kulturakademie \"Literatur\"",
-      "date_start": "2026-09-08",
+      "id": "429ee072506e81d0",
+      "title": "Fotografie-Workshop im Rahmen von \"Heiß Auf Lesen\"",
+      "date_start": "2026-09-09",
       "source": "marbach_stadt"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "cc2885bdfcddec7b",
+      "title": "Öffentliche Führung in der Alexanderkirche - Architekturführung",
+      "date_start": "2026-08-16",
+      "source": "marbach_stadt"
+    }
+  ]
 }

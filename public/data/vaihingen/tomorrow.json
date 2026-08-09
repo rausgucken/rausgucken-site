@@ -1,6 +1,6 @@
 {
   "subset": "tomorrow",
-  "generated_at": "2026-08-09T06:00:02.353365+02:00",
+  "generated_at": "2026-08-09T06:32:30.654737+02:00",
   "event_count": 4,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
@@ -28,7 +28,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-08-08T02:04:17.215703+02:00",
+      "scraped_at": "2026-08-09T02:04:33.829320+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -38,73 +38,71 @@
       "canonical_url": "https://www.rausgucken.de/vaihingen/events/kinderspielstadt-mini-vaihingen-2026-08-10-vaih"
     },
     {
-      "id": "730e3b6346f89d17",
-      "title": "EmK LEGO®-Stadt",
+      "id": "cfb7e5f3c1f954bb",
+      "title": "Tenniscamp TSC Vaihingen/Enz",
       "date_start": "2026-08-10",
-      "date_end": "2026-08-11",
-      "time": "14:00 - 17:30",
-      "description": "In der EmK-LEGO®-Stadt bauen Kinder ab 6 Jahren gemeinsam mit anderen eine Stadt aus mehr als 20 m2 LEGO®-Steinen. Viele Ideen und genügend Raum bieten unendliche Möglichkeiten zur Kreativität. Projekte können realisiert oder nach eigenem Entwurf aufgebaut werden. Eine kurze Einführung startet den Bauablauf.",
-      "location": "In den Räumen im Untergeschoss der Friedenskirche, Salzäckerstraße 7 Ort Friedenskirche Vaihingen an der Enz",
-      "price": "4,00 €",
+      "date_end": "2026-08-12",
+      "time": "09:30 - 16:00",
+      "description": "Dieser Tenniscamp für Kinder und Jugendliche bietet ein vielfältiges Tennis- und Freizeitprogramm. Teilnehmer von 6 bis 18 Jahren genießen den Spaß am Tennis in einem ferienfreundlichen Umfeld.",
+      "location": "Tennisanlage TSC Vaihingen Enz, Walter-de-Pay-Straße 40, Vaihingen Enz (neben dem VfB-Sportplatz)",
+      "price": "140,00 €",
       "age_min": 6,
-      "age_max": null,
+      "age_max": 18,
       "tags": [
-        "Fuehrung",
         "Kinder",
         "Familie"
       ],
-      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2541/emk-lego-stadt",
-      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2541/emk-lego-stadt",
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2558/tenniscamp-tsc-vaihingenenz",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2558/tenniscamp-tsc-vaihingenenz",
       "source": "vaihingen_stadt",
       "city": "vaihingen",
-      "slug": "emk-lego-stadt-2026-08-10-vaih",
+      "slug": "tenniscamp-tsc-vaihingenenz-2026-08-10-vaih",
       "weekdays": [
         1,
-        2
+        2,
+        3
       ],
-      "scraped_at": "2026-08-08T02:04:18.575142+02:00",
+      "scraped_at": "2026-08-09T02:04:37.174017+02:00",
+      "extraction_confidence": 0.92,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Vaihingen an der Enz",
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/tenniscamp-tsc-vaihingenenz-2026-08-10-vaih"
+    },
+    {
+      "id": "cc2a9dfeaf8dfd66",
+      "title": "Unsere Tiere",
+      "date_start": "2026-08-10",
+      "date_end": null,
+      "time": "14:30 - 18:00",
+      "description": "In diesem Workshop lernen Kinder und Jugendliche das tägliche Leben im Tierheim kennen. Mit einer Führung durch die Stationen und einem kleinen Snack schließen sich kreativen Bastelaktivitäten an. Wichtiger: Stornierungen bis 14 Tage vor dem Beginn der Veranstaltung möglich.",
+      "location": "Tierheim Vaihingen/Enz, Enzgasse 56, Ort Vaihingen",
+      "price": "3,00 €",
+      "age_min": 10,
+      "age_max": 13,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Workshop"
+      ],
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2563/unsere-tiere",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2563/unsere-tiere",
+      "source": "vaihingen_stadt",
+      "city": "vaihingen",
+      "slug": "unsere-tiere-2026-08-10-vaih",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-08-09T02:04:38.503153+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Vaihingen an der Enz",
-      "canonical_url": "https://www.rausgucken.de/vaihingen/events/emk-lego-stadt-2026-08-10-vaih"
-    },
-    {
-      "id": "e1116e3d9d6f41f0",
-      "title": "Akrobatik Kids + Teens",
-      "date_start": "2026-08-10",
-      "date_end": null,
-      "time": "18:15 - 19:05",
-      "description": "In diesem Workshop lernen Kinder und Jugendliche spielerisch Körperspannung, Balance und Beweglichkeit durch Übungen wie Rollen, Handstände und Pyramiden. Sie fördern Kraft, Koordination und Teamarbeit in einer sicheren Umgebung – ideal für alle, die gerne turnen!",
-      "location": "Dance Company, Uhlandstr. 24, 71665 Vaihingen/Kleinglattbach",
-      "price": "15,00 €",
-      "age_min": 6,
-      "age_max": 14,
-      "tags": [
-        "Kinder",
-        "Tanz",
-        "Workshop",
-        "Sport",
-        "Familie"
-      ],
-      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2522/akrobatik-kids-teens",
-      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2522/akrobatik-kids-teens",
-      "source": "vaihingen_stadt",
-      "city": "vaihingen",
-      "slug": "akrobatik-kids-teens-2026-08-10-vaih",
-      "weekdays": [
-        1
-      ],
-      "scraped_at": "2026-08-08T02:04:19.880577+02:00",
-      "extraction_confidence": 0.92,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Vaihingen an der Enz",
-      "canonical_url": "https://www.rausgucken.de/vaihingen/events/akrobatik-kids-teens-2026-08-10-vaih"
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/unsere-tiere-2026-08-10-vaih"
     },
     {
       "id": "a4123a2cdc0e6f1b",
@@ -128,9 +126,9 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-08-08T02:04:21.211095+02:00",
+      "scraped_at": "2026-08-09T02:04:41.410964+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,

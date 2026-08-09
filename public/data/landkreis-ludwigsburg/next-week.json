@@ -1,7 +1,7 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-08-09T06:00:02.419987+02:00",
-  "event_count": 151,
+  "generated_at": "2026-08-09T07:55:01.363254+02:00",
+  "event_count": 158,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -24,7 +24,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-08-08T02:15:33.994793+02:00",
+      "scraped_at": "2026-08-09T02:15:45.025491+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -55,7 +55,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-08-08T02:06:26.751302+02:00",
+      "scraped_at": "2026-08-09T02:06:31.423561+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -86,7 +86,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-08-08T02:15:33.994881+02:00",
+      "scraped_at": "2026-08-09T02:15:45.025578+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -264,7 +264,7 @@
         4,
         5
       ],
-      "scraped_at": "2026-08-08T02:04:17.215703+02:00",
+      "scraped_at": "2026-08-09T02:04:33.829320+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -274,73 +274,71 @@
       "canonical_url": "https://www.rausgucken.de/vaihingen/events/kinderspielstadt-mini-vaihingen-2026-08-10-vaih"
     },
     {
-      "id": "730e3b6346f89d17",
-      "title": "EmK LEGO®-Stadt",
+      "id": "cfb7e5f3c1f954bb",
+      "title": "Tenniscamp TSC Vaihingen/Enz",
       "date_start": "2026-08-10",
-      "date_end": "2026-08-11",
-      "time": "14:00 - 17:30",
-      "description": "In der EmK-LEGO®-Stadt bauen Kinder ab 6 Jahren gemeinsam mit anderen eine Stadt aus mehr als 20 m2 LEGO®-Steinen. Viele Ideen und genügend Raum bieten unendliche Möglichkeiten zur Kreativität. Projekte können realisiert oder nach eigenem Entwurf aufgebaut werden. Eine kurze Einführung startet den Bauablauf.",
-      "location": "In den Räumen im Untergeschoss der Friedenskirche, Salzäckerstraße 7 Ort Friedenskirche Vaihingen an der Enz",
-      "price": "4,00 €",
+      "date_end": "2026-08-12",
+      "time": "09:30 - 16:00",
+      "description": "Dieser Tenniscamp für Kinder und Jugendliche bietet ein vielfältiges Tennis- und Freizeitprogramm. Teilnehmer von 6 bis 18 Jahren genießen den Spaß am Tennis in einem ferienfreundlichen Umfeld.",
+      "location": "Tennisanlage TSC Vaihingen Enz, Walter-de-Pay-Straße 40, Vaihingen Enz (neben dem VfB-Sportplatz)",
+      "price": "140,00 €",
       "age_min": 6,
-      "age_max": null,
+      "age_max": 18,
       "tags": [
-        "Fuehrung",
         "Kinder",
         "Familie"
       ],
-      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2541/emk-lego-stadt",
-      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2541/emk-lego-stadt",
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2558/tenniscamp-tsc-vaihingenenz",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2558/tenniscamp-tsc-vaihingenenz",
       "source": "vaihingen_stadt",
       "city": "vaihingen",
-      "slug": "emk-lego-stadt-2026-08-10-vaih",
+      "slug": "tenniscamp-tsc-vaihingenenz-2026-08-10-vaih",
       "weekdays": [
         1,
-        2
+        2,
+        3
       ],
-      "scraped_at": "2026-08-08T02:04:18.575142+02:00",
+      "scraped_at": "2026-08-09T02:04:37.174017+02:00",
+      "extraction_confidence": 0.92,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Vaihingen an der Enz",
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/tenniscamp-tsc-vaihingenenz-2026-08-10-vaih"
+    },
+    {
+      "id": "cc2a9dfeaf8dfd66",
+      "title": "Unsere Tiere",
+      "date_start": "2026-08-10",
+      "date_end": null,
+      "time": "14:30 - 18:00",
+      "description": "In diesem Workshop lernen Kinder und Jugendliche das tägliche Leben im Tierheim kennen. Mit einer Führung durch die Stationen und einem kleinen Snack schließen sich kreativen Bastelaktivitäten an. Wichtiger: Stornierungen bis 14 Tage vor dem Beginn der Veranstaltung möglich.",
+      "location": "Tierheim Vaihingen/Enz, Enzgasse 56, Ort Vaihingen",
+      "price": "3,00 €",
+      "age_min": 10,
+      "age_max": 13,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Workshop"
+      ],
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2563/unsere-tiere",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2563/unsere-tiere",
+      "source": "vaihingen_stadt",
+      "city": "vaihingen",
+      "slug": "unsere-tiere-2026-08-10-vaih",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-08-09T02:04:38.503153+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Vaihingen an der Enz",
-      "canonical_url": "https://www.rausgucken.de/vaihingen/events/emk-lego-stadt-2026-08-10-vaih"
-    },
-    {
-      "id": "e1116e3d9d6f41f0",
-      "title": "Akrobatik Kids + Teens",
-      "date_start": "2026-08-10",
-      "date_end": null,
-      "time": "18:15 - 19:05",
-      "description": "In diesem Workshop lernen Kinder und Jugendliche spielerisch Körperspannung, Balance und Beweglichkeit durch Übungen wie Rollen, Handstände und Pyramiden. Sie fördern Kraft, Koordination und Teamarbeit in einer sicheren Umgebung – ideal für alle, die gerne turnen!",
-      "location": "Dance Company, Uhlandstr. 24, 71665 Vaihingen/Kleinglattbach",
-      "price": "15,00 €",
-      "age_min": 6,
-      "age_max": 14,
-      "tags": [
-        "Kinder",
-        "Tanz",
-        "Workshop",
-        "Sport",
-        "Familie"
-      ],
-      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2522/akrobatik-kids-teens",
-      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2522/akrobatik-kids-teens",
-      "source": "vaihingen_stadt",
-      "city": "vaihingen",
-      "slug": "akrobatik-kids-teens-2026-08-10-vaih",
-      "weekdays": [
-        1
-      ],
-      "scraped_at": "2026-08-08T02:04:19.880577+02:00",
-      "extraction_confidence": 0.92,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Vaihingen an der Enz",
-      "canonical_url": "https://www.rausgucken.de/vaihingen/events/akrobatik-kids-teens-2026-08-10-vaih"
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/unsere-tiere-2026-08-10-vaih"
     },
     {
       "id": "a4123a2cdc0e6f1b",
@@ -364,9 +362,9 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-08-08T02:04:21.211095+02:00",
+      "scraped_at": "2026-08-09T02:04:41.410964+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -422,7 +420,7 @@
       "city": "ludwigsburg",
       "slug": "mission-spuernase-110826---120826-stab",
       "weekdays": [],
-      "scraped_at": "2026-08-08T02:10:02.925060+02:00",
+      "scraped_at": "2026-08-09T02:10:01.704651+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -453,7 +451,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-08-08T02:10:01.291141+02:00",
+      "scraped_at": "2026-08-09T02:09:59.772011+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -484,7 +482,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-08-08T02:15:33.995095+02:00",
+      "scraped_at": "2026-08-09T02:15:45.025799+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -515,7 +513,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-08-08T02:15:33.995224+02:00",
+      "scraped_at": "2026-08-09T02:15:45.025929+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -544,7 +542,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-08-08T02:06:28.368920+02:00",
+      "scraped_at": "2026-08-09T02:06:32.838740+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -574,7 +572,7 @@
         2,
         3
       ],
-      "scraped_at": "2026-08-08T02:15:15.564690+02:00",
+      "scraped_at": "2026-08-09T02:15:14.484644+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -915,6 +913,39 @@
       "canonical_url": "https://www.rausgucken.de/benningen/events/blutspenden-2026-08-11-benn"
     },
     {
+      "id": "1ad8faeace6c4801",
+      "title": "Unsere Tiere",
+      "date_start": "2026-08-11",
+      "date_end": null,
+      "time": "14:30 - 18:00",
+      "description": "In diesem Workshop lernen Kinder und Jugendliche, das tägliche Leben im Tierheim Vaihingen/Enz kennenzulernen. Mit Führung durch verschiedene Stationen und einem Rätselspiel rund um die Thematik Tiere werden sie aktiv beteiligt. Anschließend gibt es einen Snack und ein Handwerkskunstprojekt.",
+      "location": "Tierheim Vaihingen/Enz, Enzgasse 56, Ort Vaihingen",
+      "price": "3,00 €",
+      "age_min": 10,
+      "age_max": 13,
+      "tags": [
+        "Fuehrung",
+        "Kinder",
+        "Workshop"
+      ],
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2561/unsere-tiere",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/2561/unsere-tiere",
+      "source": "vaihingen_stadt",
+      "city": "vaihingen",
+      "slug": "unsere-tiere-2026-08-11-vaih",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-08-09T02:04:44.277415+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Vaihingen an der Enz",
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/unsere-tiere-2026-08-11-vaih"
+    },
+    {
       "id": "11a5827a4c8845bd",
       "title": "ReparaturTREFF",
       "date_start": "2026-08-11",
@@ -934,7 +965,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-08-08T02:04:22.488786+02:00",
+      "scraped_at": "2026-08-09T02:04:46.941238+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1003,7 +1034,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-08-08T02:15:32.776315+02:00",
+      "scraped_at": "2026-08-09T02:15:44.069530+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1038,7 +1069,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-08-08T02:15:33.996717+02:00",
+      "scraped_at": "2026-08-09T02:15:45.027596+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1069,7 +1100,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-08-08T02:15:33.995714+02:00",
+      "scraped_at": "2026-08-09T02:15:45.026415+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1100,7 +1131,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-08-08T02:10:06.214020+02:00",
+      "scraped_at": "2026-08-09T02:10:04.882389+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1132,7 +1163,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-08-08T02:00:35.738530+02:00",
+      "scraped_at": "2026-08-09T02:00:21.487259+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1161,7 +1192,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-08-08T02:15:33.995819+02:00",
+      "scraped_at": "2026-08-09T02:15:45.026514+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1190,7 +1221,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-08-08T02:10:07.621448+02:00",
+      "scraped_at": "2026-08-09T02:10:06.433087+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1219,7 +1250,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-08-08T02:15:33.996258+02:00",
+      "scraped_at": "2026-08-09T02:15:45.026954+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1227,6 +1258,35 @@
       "editorial_tip": null,
       "source_label": "Stadt Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/stadtgeschichten-2026-08-12-ludw"
+    },
+    {
+      "id": "146f8552056cda36",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-08-12",
+      "date_end": null,
+      "time": "18:00–19:00",
+      "description": "In diesem Veranstaltungskonzentrum erzählen fachkundige Führer Stadtgeschichten an den historischen Orten des Museums im MIK. Ein Einblick in die Vergangenheit von Ludwigsburg wird durch interaktive Elemente bereichert.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806656",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806656",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "stadtgeschichten-2026-08-12-muse",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-08-09T02:00:08.984513+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/stadtgeschichten-2026-08-12-muse"
     },
     {
       "id": "c40c8a656dbc864b",
@@ -1248,7 +1308,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-08-08T02:06:29.769311+02:00",
+      "scraped_at": "2026-08-09T02:06:34.186209+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1279,7 +1339,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-08-08T02:15:33.996483+02:00",
+      "scraped_at": "2026-08-09T02:15:45.027188+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1308,7 +1368,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-08-08T02:06:31.172496+02:00",
+      "scraped_at": "2026-08-09T02:06:35.589383+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1809,7 +1869,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-08-08T02:06:39.029297+02:00",
+      "scraped_at": "2026-08-09T02:07:11.904186+02:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -1838,7 +1898,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-08-08T02:09:16.740025+02:00",
+      "scraped_at": "2026-08-09T02:09:15.463764+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1871,7 +1931,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-08-08T02:00:37.523166+02:00",
+      "scraped_at": "2026-08-09T02:00:23.662433+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1900,7 +1960,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-08-08T02:15:33.996842+02:00",
+      "scraped_at": "2026-08-09T02:15:45.027726+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1929,7 +1989,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-08-08T02:15:33.996959+02:00",
+      "scraped_at": "2026-08-09T02:15:45.027839+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1960,7 +2020,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-08-08T02:15:33.997014+02:00",
+      "scraped_at": "2026-08-09T02:15:45.027895+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1989,7 +2049,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-08-08T02:15:33.997341+02:00",
+      "scraped_at": "2026-08-09T02:15:45.028053+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2020,7 +2080,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-08-08T02:15:33.997048+02:00",
+      "scraped_at": "2026-08-09T02:15:45.027929+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2437,9 +2497,9 @@
         4,
         5
       ],
-      "scraped_at": "2026-08-08T02:04:23.814904+02:00",
+      "scraped_at": "2026-08-09T02:04:49.837911+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -2498,7 +2558,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-08-08T02:07:24.610869+02:00",
+      "scraped_at": "2026-08-09T02:07:46.103086+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2527,7 +2587,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-08-08T02:15:33.997541+02:00",
+      "scraped_at": "2026-08-09T02:15:45.028236+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2559,7 +2619,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-08-08T02:10:02.925175+02:00",
+      "scraped_at": "2026-08-09T02:10:01.704788+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2591,7 +2651,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-08-08T02:15:33.997418+02:00",
+      "scraped_at": "2026-08-09T02:15:45.028116+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2599,6 +2659,35 @@
       "editorial_tip": null,
       "source_label": "Stadt Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/ferienworkshop-museumsbuch-interaktiv-2026-08-14-ludw"
+    },
+    {
+      "id": "51a4f0cb4be13889",
+      "title": "Ferienworkshop Museumsbuch interaktiv",
+      "date_start": "2026-08-14",
+      "date_end": null,
+      "time": "10:00–12:00",
+      "description": "Dieser Ferienworkshop bietet interaktive Erlebnisse im Ludwigsburg Museum im MIK. Teilnehmer können das Museum durch eine besondere Perspektive entdecken und aktiv mit dem Material interagieren.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523254372401",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523254372401",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "ferienworkshop-museumsbuch-interaktiv-2026-08-14-muse",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-08-09T02:00:08.984595+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/ferienworkshop-museumsbuch-interaktiv-2026-08-14-muse"
     },
     {
       "id": "63baf8ac0935549f",
@@ -2620,7 +2709,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-08-08T02:15:33.997666+02:00",
+      "scraped_at": "2026-08-09T02:15:45.028352+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2649,7 +2738,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-08-08T02:10:11.880219+02:00",
+      "scraped_at": "2026-08-09T02:10:10.632868+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2664,13 +2753,13 @@
       "date_start": "2026-08-14",
       "date_end": null,
       "time": "14:30",
-      "description": "In dieser Führung durch das Residenzschloss Ludwigsburg erfährt man, welche Handwerker am Bau beteiligt waren und welche Herausforderungen beim Errichten eines Barockschlosses bestanden haben. Expertin Zeina Elcheikh (Dipl.-Ing. M.Sc.) beleuchtet die Rolle verschiedener Materialien und Werkzeuge in der Baugeschichte des Schlosses.",
+      "description": "In diesem Workshop lernen Teilnehmer, wie es war, Schlossbau zu betreiben. Mit historischen Beispielen und praktischer Tätigkeit entdecken sie die Ausmaße des königlichen Bauprojekts in Ludwigsburg.",
       "location": "Residenzschloss Ludwigsburg",
-      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "price": null,
       "age_min": null,
       "age_max": null,
       "tags": [
-        "Fuehrung"
+        "Workshop"
       ],
       "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/mission-schlossbau-baumeister-gesucht/9866/830939",
       "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/mission-schlossbau-baumeister-gesucht/9866/830939",
@@ -2680,7 +2769,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-08-08T02:00:39.009548+02:00",
+      "scraped_at": "2026-08-09T02:00:25.081163+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2713,7 +2802,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-08-08T02:10:01.291290+02:00",
+      "scraped_at": "2026-08-09T02:09:59.772161+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2742,7 +2831,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-08-08T02:15:33.997774+02:00",
+      "scraped_at": "2026-08-09T02:15:45.028453+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2773,7 +2862,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-08-08T02:15:33.998010+02:00",
+      "scraped_at": "2026-08-09T02:15:45.028684+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2802,7 +2891,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-08-08T02:15:33.998142+02:00",
+      "scraped_at": "2026-08-09T02:15:45.028826+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3163,7 +3252,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-08-08T02:06:16.862156+02:00",
+      "scraped_at": "2026-08-09T02:06:07.328293+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3194,7 +3283,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-08-08T02:06:20.465012+02:00",
+      "scraped_at": "2026-08-09T02:06:08.757358+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3289,7 +3378,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-08T02:15:32.776348+02:00",
+      "scraped_at": "2026-08-09T02:15:44.069569+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3322,7 +3411,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-08T02:10:02.925293+02:00",
+      "scraped_at": "2026-08-09T02:10:01.704907+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3351,7 +3440,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-08T02:00:40.631378+02:00",
+      "scraped_at": "2026-08-09T02:00:40.585154+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3380,7 +3469,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-08T02:15:33.998765+02:00",
+      "scraped_at": "2026-08-09T02:15:45.029403+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3411,7 +3500,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-08T02:15:33.998637+02:00",
+      "scraped_at": "2026-08-09T02:15:45.029132+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3440,7 +3529,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-08T02:15:33.998307+02:00",
+      "scraped_at": "2026-08-09T02:15:45.029283+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3469,7 +3558,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-08T02:15:32.776382+02:00",
+      "scraped_at": "2026-08-09T02:15:44.069602+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3501,9 +3590,9 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-08T02:15:33.999105+02:00",
+      "scraped_at": "2026-08-09T02:15:45.029748+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -3530,9 +3619,9 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-08T02:15:33.999388+02:00",
+      "scraped_at": "2026-08-09T02:15:45.030034+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -3559,9 +3648,9 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-08T02:15:33.999480+02:00",
+      "scraped_at": "2026-08-09T02:15:45.030126+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -3840,6 +3929,35 @@
       "canonical_url": "https://www.rausgucken.de/grossbottwar/events/heiss-auf-lesen-2026-startet-am-dienstag-2107-2026-08-15-gros"
     },
     {
+      "id": "9589276ff77348a0",
+      "title": "Friedensminute",
+      "date_start": "2026-08-15",
+      "date_end": null,
+      "time": "12:00 - 12:01",
+      "description": "Eine Minute des Schweigens wird am Marktplatz für den Frieden eingehalten. Unabhängig von politischer, religiöser oder weltanschaulicher Zugehörigkeit sind alle einladend willkommen.",
+      "location": "Marktplatz",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/1919/friedensminute",
+      "original_url": "https://www.vaihingen.de/freizeit-erlebnis/veranstaltungen/kalender/1919/friedensminute",
+      "source": "vaihingen_stadt",
+      "city": "vaihingen",
+      "slug": "friedensminute-2026-08-15-vaih",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-08-09T02:04:52.348484+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Vaihingen an der Enz",
+      "canonical_url": "https://www.rausgucken.de/vaihingen/events/friedensminute-2026-08-15-vaih"
+    },
+    {
       "id": "327847458272c8cf",
       "title": "Kleine Weinkunde - große Genussfahrt - Erlebniswochenende der Region Stuttgart",
       "date_start": "2026-08-15",
@@ -3859,7 +3977,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-08T02:04:26.523856+02:00",
+      "scraped_at": "2026-08-09T02:04:53.712473+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -3917,7 +4035,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-08T02:06:59.936273+02:00",
+      "scraped_at": "2026-08-09T02:07:28.272583+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3948,7 +4066,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-08-08T02:00:44.811167+02:00",
+      "scraped_at": "2026-08-09T02:00:44.954173+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -3977,9 +4095,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-08-08T02:15:33.999700+02:00",
+      "scraped_at": "2026-08-09T02:15:45.030342+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -4006,7 +4124,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-08-08T02:00:46.153627+02:00",
+      "scraped_at": "2026-08-09T02:00:46.560138+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4014,6 +4132,37 @@
       "editorial_tip": null,
       "source_label": "Residenzschloss Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/kunstausstellung-kaleidoskop-2026-08-16-schl"
+    },
+    {
+      "id": "bc25450d0a5ba21c",
+      "title": "Regio-Genuss mit Oldie-Bus",
+      "date_start": "2026-08-16",
+      "date_end": null,
+      "time": "14:00 - 17:00",
+      "description": "Ein nostalgischer Oldie-Bus fährt durch die Landstraßen, verbindet den Busparkplatz Residenzschloss mit kulinarischen Genüssen. Passanten werden eingeladen, an dieser regionalen Gourmetfahrt teilzuwerden.",
+      "location": "Busparkplatz Residenzschloss",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Kulinarik"
+      ],
+      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523253941901/index.html",
+      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523253941901/index.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "regio-genuss-mit-oldie-bus-2026-08-16-ludw",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-08-09T02:15:45.030660+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/regio-genuss-mit-oldie-bus-2026-08-16-ludw"
     },
     {
       "id": "7c7447bba0140ff3",
@@ -4035,7 +4184,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-08-08T02:00:53.621913+02:00",
+      "scraped_at": "2026-08-09T02:00:52.803844+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4066,7 +4215,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-08-08T02:00:55.431129+02:00",
+      "scraped_at": "2026-08-09T02:00:54.690304+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -4074,6 +4223,67 @@
       "editorial_tip": null,
       "source_label": "Residenzschloss Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/orient-trifft-okzident-im-residenzschloss-2026-08-16-schl"
+    },
+    {
+      "id": "90bf56a040f642cd",
+      "title": "Morgens Zirkus, abends Theater",
+      "date_start": "2026-08-16",
+      "date_end": null,
+      "time": "16:00 Uhr - 17:30",
+      "description": "In der Morgenstunde bietet der Zirkus Freude und Überraschungen, während abendliche Vorstellungen im Theater spannende Geschichten erzählen.",
+      "location": "VorleseScheune Hoheneck",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Theater",
+        "Tanz"
+      ],
+      "link": "https://www.vorlesescheune.de",
+      "original_url": "https://www.vorlesescheune.de",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "morgens-zirkus-abends-theater-2026-08-16-ludw",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-08-09T02:15:45.030796+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/morgens-zirkus-abends-theater-2026-08-16-ludw"
+    },
+    {
+      "id": "f6870445ab117978",
+      "title": "Ein fast perfekter Antrag",
+      "date_start": "2026-08-16",
+      "date_end": null,
+      "time": "19",
+      "description": "In diesem Veranstaltungskonzept bietet das Kunstzentrum Karlskaserne die Möglichkeit, sich mit einem romantischen Antragsmoment zu inspirieren. Künstlerische Darstellungen und interaktive Elemente laden Einheimische und Besucher ein, über den perfekten Antrag nachzugrübeln und ihre eigenen Ideen freizusetzen.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.openairkino-ludwigsburg.de/ ein-fast-perfekter-antrag",
+      "original_url": "https://www.openairkino-ludwigsburg.de/ ein-fast-perfekter-antrag",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "ein-fast-perfekter-antrag-2026-08-16-ludw",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-08-09T02:15:45.030899+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/ein-fast-perfekter-antrag-2026-08-16-ludw"
     },
     {
       "id": "296f3f616721bd9f",
@@ -4560,7 +4770,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-08-08T02:06:24.147368+02:00",
+      "scraped_at": "2026-08-09T02:06:10.169417+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
