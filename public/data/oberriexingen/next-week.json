@@ -1,39 +1,71 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-08-09T07:31:27.783369+02:00",
-  "event_count": 1,
+  "generated_at": "2026-08-10T06:00:01.633138+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "e5a0dc08371c08cd",
-      "title": "Seniorentreff",
-      "date_start": "2026-08-12",
+      "id": "586e6b8b05836fec",
+      "title": "Backhauscafé",
+      "date_start": "2026-08-19",
       "date_end": null,
       "time": null,
-      "description": "In der Pizzeria Da Enzo bietet das Goldene Oktober ein Treffen für Senioren an. Gelegen in der Hauptstraße von Oberriexingen, verbindet die Veranstaltung kulinarische Genüsse mit gemütlicher Geselligkeit.",
-      "location": "Pizzeria Da Enzo, Hauptstraße, Oberriexingen",
+      "description": "Im Backhaus auf der Hauptstraße in Oberriexingen bietet das Backhauscafé eine entspannte Veranstaltung für alle Interessierten. Mit dem Veranstalter LandFrauen findet Ihr ein familienfreundliches Ambiente und leckere Kaffeeruhe.",
+      "location": "Backhaus, Hauptstraße, Oberriexingen",
       "price": null,
-      "age_min": null,
+      "age_min": 4,
       "age_max": null,
       "tags": [
-        "Kulinarik"
+        "Familie"
       ],
-      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/seniorentreff-56/",
-      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/seniorentreff-56/",
+      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/backhauscafe-52/",
+      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/backhauscafe-52/",
       "source": "oberriexingen_stadt",
       "city": "oberriexingen",
-      "slug": "seniorentreff-2026-08-12-ober",
+      "slug": "backhauscafe-2026-08-19-ober",
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-08-09T02:07:11.904186+02:00",
-      "extraction_confidence": 0.65,
+      "scraped_at": "2026-08-09T02:07:12.636729+02:00",
+      "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Oberriexingen",
-      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/seniorentreff-2026-08-12-ober"
+      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/backhauscafe-2026-08-19-ober"
+    },
+    {
+      "id": "b85a2ff4c739ee05",
+      "title": "VKZ Tour",
+      "date_start": "2026-08-22",
+      "date_end": null,
+      "time": null,
+      "description": "In der VKZ Tour startet die Stadtkapelle Ori mit einer Musikveranstaltung auf dem Enzinsel. Einladung zum Genuss klassischer Musik im idyllischen Umfeld.",
+      "location": "Enzinsel",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Musik"
+      ],
+      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/start-ziel-vkz-tour/",
+      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/start-ziel-vkz-tour/",
+      "source": "oberriexingen_stadt",
+      "city": "oberriexingen",
+      "slug": "vkz-tour-2026-08-22-ober",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-08-09T02:07:13.375421+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Oberriexingen",
+      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/vkz-tour-2026-08-22-ober"
     }
   ]
 }
