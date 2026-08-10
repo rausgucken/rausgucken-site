@@ -1,58 +1,52 @@
 {
-  "generated_at": "2026-08-09T04:11:58.913233+02:00",
+  "generated_at": "2026-08-10T04:18:05.168775+02:00",
   "city": "kornwestheim",
   "sources": [
+    "das_k_buecherei",
     "das_k_spielplan",
-    "kornwestheim",
-    "das_k_buecherei"
+    "kornwestheim"
   ],
-  "previous_run": "2026-08-08T04:38:59.733857+02:00",
+  "previous_run": "2026-08-09T04:11:58.992086+02:00",
   "count_added": 3,
-  "count_removed": 4,
+  "count_removed": 3,
   "added": [
     {
-      "id": "c0cd710e475ab7a3",
+      "id": "c27d089fb2575ea4",
+      "title": "LesefantenClub",
+      "date_start": "2026-12-03",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "edc91d5abb74c32b",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-12-04",
+      "date_start": "2026-12-05",
       "source": "kornwestheim"
     },
     {
-      "id": "221297e9078dc49a",
-      "title": "Ehrenamts-Kongress",
-      "date_start": "2026-12-04",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "7efc8c8938bd5e36",
+      "id": "45bfe6c7a5e004af",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-04",
+      "date_start": "2026-12-05",
       "source": "kornwestheim"
     }
   ],
   "removed": [
     {
-      "id": "ea0b246cf55e4354",
+      "id": "7eb820dc2a973177",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-08-08",
+      "date_start": "2026-08-09",
       "source": "kornwestheim"
     },
     {
-      "id": "3e541cdc988a379a",
+      "id": "407637eba4f87278",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-08-08",
+      "date_start": "2026-08-09",
       "source": "kornwestheim"
     },
     {
-      "id": "e35cce2af04bfec9",
-      "title": "Begegnungscafé auf dem Friedhof",
-      "date_start": "2026-08-08",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "f20fa48557586889",
-      "title": "Ferienspaß im Alfred-Kercher-Sportbad!",
-      "date_start": "2026-08-08",
-      "source": "kornwestheim"
+      "id": "084a9661948b5482",
+      "title": "LesefantenClub",
+      "date_start": "2026-12-03",
+      "source": "das_k_buecherei"
     }
   ]
 }
