@@ -1,19 +1,38 @@
 {
-  "generated_at": "2026-08-10T04:15:27.468162+02:00",
+  "generated_at": "2026-08-11T04:22:15.157647+02:00",
   "city": "gerlingen",
   "sources": [
     "gerlingen_stadt"
   ],
-  "previous_run": "2026-08-09T03:46:41.497963+02:00",
-  "count_added": 1,
-  "count_removed": 0,
+  "previous_run": "2026-08-10T04:15:27.544831+02:00",
+  "count_added": 2,
+  "count_removed": 2,
   "added": [
+    {
+      "id": "a9d2935f30a1d589",
+      "title": "Omotesenke Teezeremonie & Tanzaufführung 'Jiutamai'",
+      "date_start": "2026-09-25",
+      "source": "gerlingen_stadt"
+    },
+    {
+      "id": "38d5a32cebccd63e",
+      "title": "Facial Flow Yoga",
+      "date_start": "2026-09-27",
+      "source": "gerlingen_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "9e30a14f6377607d",
+      "title": "Treffen des Arbeitskreises Energie",
+      "date_start": "2026-08-10",
+      "source": "gerlingen_stadt"
+    },
     {
       "id": "252c5ed062506b62",
       "title": "Treffen des Arbeitskreises MIT:WIRKEN",
       "date_start": "2026-12-04",
       "source": "gerlingen_stadt"
     }
-  ],
-  "removed": []
+  ]
 }

@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-08-10T07:25:50.699673+02:00",
+  "generated_at": "2026-08-11T07:57:49.278354+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "kunstverein_ausstellungen",
-    "kunstverein_veranstaltungen",
-    "karlskaserne_veranstaltungen",
-    "forum_schlosspark",
-    "stabi",
-    "garnisonmuseum",
-    "blueba",
-    "labyrinth",
-    "museum",
-    "karlskaserne_ausstellungen",
-    "ludwigsburg_stadt",
     "musikhalle_lb",
-    "schloss"
+    "kunstverein_ausstellungen",
+    "stabi",
+    "labyrinth",
+    "forum_schlosspark",
+    "karlskaserne_veranstaltungen",
+    "museum",
+    "kunstverein_veranstaltungen",
+    "ludwigsburg_stadt",
+    "karlskaserne_ausstellungen",
+    "schloss",
+    "blueba",
+    "garnisonmuseum"
   ],
-  "previous_run": "2026-08-09T07:55:01.196490+02:00",
-  "count_added": 8,
+  "previous_run": "2026-08-10T07:25:50.802733+02:00",
+  "count_added": 11,
   "count_removed": 7,
   "added": [
     {
@@ -27,8 +27,14 @@
       "source": "stabi"
     },
     {
-      "id": "0d6f7bb949f22086",
-      "title": "Faschingsferienworkshop: Tierisch groß! - Köpfe mit Charakter für Kinder von 7-10 Jahren in Ludwigsburg",
+      "id": "ddc788a23a823f30",
+      "title": "Workshop: Flatter- und Krabbeltiere aus Gips für Kinder ab 7 Jahren in Ludwigsburg",
+      "date_start": "2027-02-27",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "29dc6c686d9c0010",
+      "title": "Faschingsferienworkshop: Theater-Werkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
       "date_start": "2027-02-08",
       "source": "labyrinth"
     },
@@ -39,78 +45,90 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "54afb91bf5571d01",
-      "title": "Herbstferienworkshop: Fang den Räuber Hotzenplotz ab 4 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "5a1810fafc3c5ec5",
+      "title": "Candlelight: Taylor Swift",
+      "date_start": "2026-10-09",
+      "source": "musikhalle_lb"
     },
     {
-      "id": "bd147f12a735d7c6",
-      "title": "Alice im Wunderland",
-      "date_start": "2027-02-26",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "17afd3d48bcfc7c3",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": null,
+      "source": "schloss"
     },
     {
-      "id": "e9e748f1821ed5ab",
-      "title": "Bewegungsgruppe hat Plätze frei",
-      "date_start": "2026-08-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "3ee9b49ebbee383c",
-      "title": "Steckerlfischfiasko",
-      "date_start": "2026-08-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "2555799763595088",
-      "title": "Workshop: Roboter programmieren",
+      "id": "28b3d8796183558b",
+      "title": "Scratch-Hackathon",
       "date_start": "2026-08-19",
       "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "cb380fab26bdfd22",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-08-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "37bc4311fee05762",
+      "title": "41. Antiquaria – Antiquariatsmesse Ludwigsburg",
+      "date_start": "2027-01-28",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "f31cb121ed590ea6",
+      "title": "41. Antiquaria – Antiquariatsmesse Ludwigsburg",
+      "date_start": "2027-01-29",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "0a320c7c98d8f635",
+      "title": "41. Antiquaria – Antiquariatsmesse Ludwigsburg",
+      "date_start": "2027-01-30",
+      "source": "musikhalle_lb"
     }
   ],
   "removed": [
     {
-      "id": "8cff4075b789cc46",
-      "title": "Im Reich der Feen beim Naturerlebnis Neckar",
-      "date_start": "2026-08-09",
+      "id": "4338d42d24902687",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "71b9b7eebfbd94b7",
+      "title": "Insta was? Einstieg in die Welt der Reels, Postings und Stories",
+      "date_start": "2026-08-10",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "a4ee4383dd607545",
-      "title": "Familientag im Restaurant Parkcafé",
-      "date_start": "2026-08-09",
-      "source": "blueba"
-    },
-    {
-      "id": "16d3e6fc042993af",
-      "title": "Kasperletheater im Märchengarten",
-      "date_start": "2026-08-09",
-      "source": "blueba"
-    },
-    {
-      "id": "9365a0987992b497",
-      "title": "Workshop \"Mitsingen, Mitmusizieren\" + Konzert",
-      "date_start": "2026-08-09",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "31e4721f76e909b2",
-      "title": "Naturführung: Die Zugwiesen",
-      "date_start": "2026-08-09",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7ebd5b47b64749b0",
-      "title": "Amrum",
-      "date_start": "2026-08-09",
+      "id": "acf31db7fded4c15",
+      "title": "The Piano Tuner",
+      "date_start": "2026-08-10",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "7e34793e820792dc",
-      "title": "Faschingsferienworkshop: Tierisch groß! - Köpfe mit Charakter für Kinder von 7-10 Jahren in Ludwigsburg",
+      "id": "1776f2a14b4f389f",
+      "title": "The Piano Tuner",
+      "date_start": "2026-08-10",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "b0d7a0f64d424acd",
+      "title": "Candlelight: Taylor Swift",
+      "date_start": "2026-10-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "d490bbc0a3c5544a",
+      "title": "Faschingsferienworkshop: Theater-Werkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
       "date_start": "2027-02-08",
       "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "6f65867da8f40204",
+      "title": "Workshop: Flatter- und Krabbeltiere aus Gips für Kinder ab 7 Jahren in Ludwigsburg",
+      "date_start": "2027-02-27",
+      "source": "labyrinth"
     }
   ]
 }
