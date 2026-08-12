@@ -159,9 +159,40 @@ const canonical = `${siteUrl}/datenschutz`;
       </p>
     </section>
 
-    <!-- 6. Spam-Schutz Turnstile -->
+    <!-- 6. Geräteübertragung — QR-Code / Code-Eingabe -->
+    <section aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading">6. Geräteübertragung — QR-Code / Code-Eingabe</h2>
+      <p>
+        Auf der Seite <a href="/meine-events">Meine Events</a> können Sie Ihre
+        gemerkten Veranstaltungen per QR-Code oder 6-stelligem Code auf ein
+        anderes Gerät übertragen — als Alternative ohne Kamera- oder
+        Kontozwang. Dazu wird eine kurze Liste (Stadt + Kurzkennung je
+        Veranstaltung, keine personenbezogenen Daten) für die Dauer der
+        Übertragung auf unserem Server zwischengespeichert.
+      </p>
+      <p>
+        Diese Zwischenspeicherung ist technisch bewusst minimal gehalten:
+      </p>
+      <ul>
+        <li>Die Daten werden ausschließlich im Arbeitsspeicher gehalten — nicht in einer Datenbank und nicht auf der Festplatte.</li>
+        <li>Sie werden automatisch nach 10 Minuten gelöscht, falls sie nicht abgerufen werden.</li>
+        <li>Sie werden sofort nach dem ersten erfolgreichen Abruf durch das Zielgerät gelöscht (Einmalverwendung — der Code funktioniert danach nicht mehr).</li>
+      </ul>
+      <p>
+        Es werden keine Namen, IP-Adressen oder sonstigen identifizierenden
+        Daten mit der übertragenen Liste verknüpft. Diese Funktion ist von
+        der Erinnerungsfunktion (Abschnitt 5) unabhängig — anders als dort
+        gibt es hier keine dauerhafte Speicherung.
+      </p>
+      <p>
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse
+        an einer funktionierenden Geräteübertragung ohne Nutzerkonto).
+      </p>
+    </section>
+
+    <!-- 7. Spam-Schutz Turnstile -->
     <section aria-labelledby="turnstile-heading">
-      <h2 id="turnstile-heading">6. Spam-Schutz — Cloudflare Turnstile</h2>
+      <h2 id="turnstile-heading">7. Spam-Schutz — Cloudflare Turnstile</h2>
       <p>
         Das Kontaktformular ist mit <strong>Cloudflare Turnstile</strong>
         zum Schutz vor automatisierten Anfragen (Spam) gesichert. Dabei werden
@@ -177,9 +208,9 @@ const canonical = `${siteUrl}/datenschutz`;
       </p>
     </section>
 
-    <!-- 7. Veranstaltungsdaten -->
+    <!-- 8. Veranstaltungsdaten -->
     <section aria-labelledby="scraping-heading">
-      <h2 id="scraping-heading">7. Automatisierte Datenerfassung (Scraping)</h2>
+      <h2 id="scraping-heading">8. Automatisierte Datenerfassung (Scraping)</h2>
       <p>
         rausgucken.de sammelt Veranstaltungsinformationen automatisiert von
         öffentlich zugänglichen Websites lokaler Institutionen
@@ -195,9 +226,9 @@ const canonical = `${siteUrl}/datenschutz`;
       </p>
     </section>
 
-    <!-- 8. Cookies & localStorage -->
+    <!-- 9. Cookies & localStorage -->
     <section aria-labelledby="cookies-heading">
-      <h2 id="cookies-heading">8. Cookies &amp; localStorage</h2>
+      <h2 id="cookies-heading">9. Cookies &amp; localStorage</h2>
       <p>
         Diese Website setzt <strong>keine Tracking-Cookies</strong>.
         Folgende Werte werden ausschließlich lokal im <code>localStorage</code>
@@ -212,18 +243,20 @@ const canonical = `${siteUrl}/datenschutz`;
       </ul>
     </section>
 
-    <!-- 9. Ihre Rechte -->
+    <!-- 10. Ihre Rechte -->
     <section aria-labelledby="rechte-heading">
-      <h2 id="rechte-heading">9. Ihre Rechte</h2>
+      <h2 id="rechte-heading">10. Ihre Rechte</h2>
       <p>
         Sie haben gemäß DSGVO das Recht auf Auskunft, Berichtigung, Löschung
         und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie
         das Recht auf Datenübertragbarkeit. Für die meisten Funktionen von
         rausgucken.de entfällt dies in der Praxis, da keine personenbezogenen
-        Daten gespeichert werden. Ausnahme: Wenn Sie Erinnerungen aktiviert
+        Daten gespeichert werden. Die Geräteübertragung (Abschnitt 6) löscht
+        sich technisch selbst innerhalb von höchstens 10 Minuten — hier ist
+        keine Anfrage nötig. Ausnahme: Wenn Sie Erinnerungen aktiviert
         haben, speichern wir eine anonyme Geräte-ID, ein FCM-Token und Ihre
-        gemerkten Events (siehe Abschnitt 5) — auf Anfrage löschen wir diese
-        umgehend vollständig.
+        gemerkten Events dauerhaft (siehe Abschnitt 5) — auf Anfrage löschen
+        wir diese umgehend vollständig.
       </p>
       <p>
         Bei Fragen zur Datenverarbeitung oder zur Ausübung Ihrer Rechte
@@ -234,9 +267,9 @@ const canonical = `${siteUrl}/datenschutz`;
       </p>
     </section>
 
-    <!-- 10. Änderungen -->
+    <!-- 11. Änderungen -->
     <section aria-labelledby="aenderungen-heading">
-      <h2 id="aenderungen-heading">10. Änderungen dieser Erklärung</h2>
+      <h2 id="aenderungen-heading">11. Änderungen dieser Erklärung</h2>
       <p>
         Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen,
         etwa wenn neue Dienste eingebunden werden. Die jeweils aktuelle Fassung
