@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-08-11T07:57:49.278354+02:00",
+  "generated_at": "2026-08-12T08:07:38.559640+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "musikhalle_lb",
-    "kunstverein_ausstellungen",
-    "stabi",
     "labyrinth",
+    "garnisonmuseum",
+    "blueba",
     "forum_schlosspark",
+    "ludwigsburg_stadt",
+    "musikhalle_lb",
     "karlskaserne_veranstaltungen",
     "museum",
-    "kunstverein_veranstaltungen",
-    "ludwigsburg_stadt",
     "karlskaserne_ausstellungen",
+    "stabi",
     "schloss",
-    "blueba",
-    "garnisonmuseum"
+    "kunstverein_ausstellungen",
+    "kunstverein_veranstaltungen"
   ],
-  "previous_run": "2026-08-10T07:25:50.802733+02:00",
-  "count_added": 11,
+  "previous_run": "2026-08-11T07:57:49.375286+02:00",
+  "count_added": 7,
   "count_removed": 7,
   "added": [
     {
@@ -27,46 +27,72 @@
       "source": "stabi"
     },
     {
-      "id": "ddc788a23a823f30",
-      "title": "Workshop: Flatter- und Krabbeltiere aus Gips für Kinder ab 7 Jahren in Ludwigsburg",
-      "date_start": "2027-02-27",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "29dc6c686d9c0010",
-      "title": "Faschingsferienworkshop: Theater-Werkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "labyrinth"
-    },
-    {
       "id": "d3d20f419148a996",
       "title": "„Deutsche Reservisten-Bierkrüge; Zeitzeugen der Kaiserzeit von 1871 bis 1918",
       "date_start": "2026-07-15",
       "source": "garnisonmuseum"
     },
     {
-      "id": "5a1810fafc3c5ec5",
-      "title": "Candlelight: Taylor Swift",
-      "date_start": "2026-10-09",
+      "id": "060a22f0711bbadf",
+      "title": "41. Antiquaria – Antiquariatsmesse Ludwigsburg",
+      "date_start": "2027-01-28",
       "source": "musikhalle_lb"
     },
     {
-      "id": "17afd3d48bcfc7c3",
+      "id": "4338d42d24902687",
       "title": "Klassische Schlossführung in englischer Sprache",
-      "date_start": null,
+      "date_start": "2026-03-28",
       "source": "schloss"
     },
     {
-      "id": "28b3d8796183558b",
-      "title": "Scratch-Hackathon",
+      "id": "e4b2a58534f7165b",
+      "title": "Alice im Wunderland",
+      "date_start": "2027-02-27",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "75c0492512daa817",
+      "title": "Paris Murder Mystery",
       "date_start": "2026-08-19",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "cb380fab26bdfd22",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-08-19",
+      "id": "c2c687e357edf51a",
+      "title": "Hi.Francky - AfterWork Donnerstag",
+      "date_start": "2026-08-20",
       "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "cbad36c84077954c",
+      "title": "Workshop: CAD & 3D-Druck",
+      "date_start": "2026-08-11",
+      "source": "stabi"
+    },
+    {
+      "id": "2b9ca240d1ceb4ea",
+      "title": "Workshop: CAD & 3D-Druck",
+      "date_start": "2026-08-11",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fb0193762e8838ee",
+      "title": "Bewegungsgruppe hat Plätze frei",
+      "date_start": "2026-08-11",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "b00650f4b1b9cf33",
+      "title": "Der Teufel trägt Prada 2",
+      "date_start": "2026-08-11",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "cfc72384a266308b",
+      "title": "Herbstferienworkshop: König Peter und Prinzessin Lila aus Ton für Kinder ab 7 Jahren in Bietigheim-Bissingen",
+      "date_start": "2026-10-26",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "37bc4311fee05762",
@@ -75,60 +101,10 @@
       "source": "musikhalle_lb"
     },
     {
-      "id": "f31cb121ed590ea6",
-      "title": "41. Antiquaria – Antiquariatsmesse Ludwigsburg",
-      "date_start": "2027-01-29",
-      "source": "musikhalle_lb"
-    },
-    {
-      "id": "0a320c7c98d8f635",
-      "title": "41. Antiquaria – Antiquariatsmesse Ludwigsburg",
-      "date_start": "2027-01-30",
-      "source": "musikhalle_lb"
-    }
-  ],
-  "removed": [
-    {
-      "id": "4338d42d24902687",
+      "id": "17afd3d48bcfc7c3",
       "title": "Klassische Schlossführung in englischer Sprache",
-      "date_start": "2026-03-28",
+      "date_start": null,
       "source": "schloss"
-    },
-    {
-      "id": "71b9b7eebfbd94b7",
-      "title": "Insta was? Einstieg in die Welt der Reels, Postings und Stories",
-      "date_start": "2026-08-10",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "acf31db7fded4c15",
-      "title": "The Piano Tuner",
-      "date_start": "2026-08-10",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "1776f2a14b4f389f",
-      "title": "The Piano Tuner",
-      "date_start": "2026-08-10",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b0d7a0f64d424acd",
-      "title": "Candlelight: Taylor Swift",
-      "date_start": "2026-10-09",
-      "source": "musikhalle_lb"
-    },
-    {
-      "id": "d490bbc0a3c5544a",
-      "title": "Faschingsferienworkshop: Theater-Werkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "6f65867da8f40204",
-      "title": "Workshop: Flatter- und Krabbeltiere aus Gips für Kinder ab 7 Jahren in Ludwigsburg",
-      "date_start": "2027-02-27",
-      "source": "labyrinth"
     }
   ]
 }

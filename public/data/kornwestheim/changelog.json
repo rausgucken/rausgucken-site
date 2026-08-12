@@ -1,14 +1,28 @@
 {
-  "generated_at": "2026-08-11T04:22:18.235992+02:00",
+  "generated_at": "2026-08-12T03:42:16.482039+02:00",
   "city": "kornwestheim",
   "sources": [
-    "kornwestheim",
     "das_k_buecherei",
+    "kornwestheim",
     "das_k_spielplan"
   ],
-  "previous_run": "2026-08-10T04:18:05.248520+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-08-11T04:22:18.317141+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "de24caa39bbbf8d1",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2026-12-06",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "51f96e41c5819be4",
+      "title": "Musiknacht Open",
+      "date_start": "2026-08-11",
+      "source": "kornwestheim"
+    }
+  ]
 }

@@ -1,0 +1,984 @@
+---
+// src/pages/meine-events/index.astro
+// Saved events page — reads from localStorage client-side only.
+// No server data, no cookies, no GDPR issues. noindex: true.
+import Base from "../../layouts/Base.astro";
+import QRExportModal from "../../components/QRExportModal.astro";
+---
+
+<Base
+  title="Meine Events – Gespeicherte Veranstaltungen | rausgucken.de"
+  description="Deine gespeicherten Veranstaltungen auf rausgucken.de. Merke Events und erhalte Erinnerungen."
+  canonical="/meine-events/"
+  noindex={true}
+>
+  <nav class="breadcrumb" aria-label="Brotkrumennavigation">
+    <a href="https://www.rausgucken.de">rausgucken.de</a>
+    <span aria-hidden="true"> › </span>
+    <span aria-current="page">Meine Events</span>
+  </nav>
+
+  <div class="page-header" style="max-width:720px;margin-left:auto;margin-right:auto;">
+    <h1>Meine Events</h1>
+    <p class="page-subtitle">
+      <span id="saved-count-badge" class="count-badge">0</span>
+      gespeicherte Veranstaltungen
+    </p>
+  </div>
+
+  <!-- ── Saved Events Action Bar ───────────────────────────────────────────── -->
+  <div id="saved-action-bar" class="collection-actions" hidden>
+
+    <!-- QR transfer pill — rendered by QRExportModal below, but we need a slot placeholder -->
+    <!-- Calendar export pill with dropdown -->
+    <div class="cal-dropdown-wrap" id="cal-dropdown-wrap">
+      <button type="button" id="cal-dropdown-btn" class="action-btn" aria-label="Kalender-Export" aria-haspopup="true" aria-expanded="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="18" rx="2"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+          <line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        <span>Kalender exportieren</span>
+        <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
+      <div class="cal-dropdown" id="cal-dropdown" hidden role="menu">
+        <button type="button" id="ics-export-btn" class="cal-dropdown-item" role="menuitem">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+            <polyline points="8 14 10 16 16 12"/>
+          </svg>
+          Apple / Outlook (.ics)
+          <span class="cal-dropdown-hint">direkt importieren</span>
+        </button>
+        <button type="button" id="gcal-export-btn" class="cal-dropdown-item" role="menuitem">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+            <line x1="12" y1="14" x2="12" y2="20"/>
+            <polyline points="9 17 12 20 15 17"/>
+          </svg>
+          Google Kalender
+          <span class="cal-dropdown-hint">.ics laden → Kalender → Importieren</span>
+        </button>
+      </div>
+    </div>
+
+    <span class="action-bar-label" id="action-bar-count"></span>
+  </div>
+
+  <!-- Google Calendar import tooltip — shown after ICS download -->
+  <div id="gcal-hint" class="gcal-hint" hidden role="status">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    .ics heruntergeladen — in Google Kalender: Einstellungen → Importieren → Datei auswählen.
+    <button type="button" id="gcal-hint-close" aria-label="Schließen" style="background:none;border:none;cursor:pointer;padding:0 0.25rem;color:inherit;font-size:1rem;line-height:1;">×</button>
+  </div>
+
+
+  <!-- Notification opt-in banner -->
+  <div id="notif-banner" class="notif-banner" hidden role="region" aria-label="Erinnerungen aktivieren">
+    <div class="notif-banner-inner">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/>
+      </svg>
+      <div class="notif-banner-text">
+        <strong>Erinnerungen aktivieren?</strong>
+        <span>Wir erinnern dich am Vorabend deiner gespeicherten Events.</span>
+      </div>
+      <button id="notif-allow-btn" class="empty-cta empty-cta--sm">Aktivieren</button>
+      <button id="notif-dismiss-btn" class="empty-reset empty-reset--sm" aria-label="Schließen">Nein danke</button>
+    </div>
+  </div>
+
+  <!-- Notification status message -->
+  <div id="notif-status" class="notif-status" hidden></div>
+
+  <!-- Empty state -->
+  <div id="empty-state" class="empty-state" hidden>
+    <div class="empty-state-inner">
+      <p class="empty-headline">Noch nichts gespeichert</p>
+      <p class="empty-body">
+        Tippe auf <strong>Merken</strong> bei einer Veranstaltung, um sie hier zu speichern
+        und eine Erinnerung zu erhalten.
+      </p>
+      <div class="empty-ctas">
+        <a href="/ludwigsburg/" class="empty-cta">Veranstaltungen entdecken →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- QR transfer (export/import) -->
+  <QRExportModal />
+
+  <!-- Saved list -->
+  <section id="saved-section" hidden>
+    <h2 class="section-heading">Gespeicherte Veranstaltungen</h2>
+    <div id="saved-list" aria-live="polite" aria-label="Gespeicherte Veranstaltungen"></div>
+    <div class="clear-row">
+      <button id="clear-all-btn" class="empty-reset">Alle löschen</button>
+    </div>
+  </section>
+
+
+  <!-- Filter preferences reset panel -->
+  <section class="pref-panel" aria-label="Filtereinstellungen">
+    <h2 class="section-heading" style="margin-top:2.5rem;">Filtereinstellungen</h2>
+    <div class="pref-panel-inner">
+      <div class="pref-status" id="pref-status"></div>
+      <p class="pref-desc">
+        Deine bevorzugten Filtereinstellungen (Kategorie, Altersgruppe) werden automatisch
+        gespeichert und beim nächsten Besuch wiederhergestellt.
+      </p>
+      <div class="pref-row" id="pref-display">
+        <!-- populated by JS -->
+      </div>
+      <button id="pref-reset-btn" class="empty-reset pref-reset-btn" type="button">
+        Filtereinstellungen zurücksetzen
+      </button>
+    </div>
+  </section>
+
+
+</Base>
+
+<style>
+  /* Notification banner — matches .sources-chip palette but wider */
+  .notif-banner {
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+    background: var(--coral-light);
+    border: 1px solid var(--coral);
+    border-radius: var(--radius);
+    padding: 0.85rem 1.1rem;
+  }
+  .notif-banner-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .notif-banner-inner > svg { flex-shrink: 0; color: var(--coral); }
+  .notif-banner-text {
+    flex: 1;
+    min-width: 160px;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .notif-banner-text span { color: var(--text-60); }
+
+  .notif-status {
+    max-width: 720px;
+    margin: 0 auto 1.25rem;
+    padding: 0.7rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    background: var(--sage-light);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .notif-status--error {
+    background: rgba(229,90,77,0.08);
+    color: #e55a4d;
+    border-color: rgba(229,90,77,0.2);
+  }
+
+  /* Reuse city-page empty-state pattern exactly */
+  .empty-state { display: none; padding: 3rem 1.5rem; text-align: center; }
+  .empty-state:not([hidden]) { display: block; }
+  .empty-state-inner {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    box-shadow: var(--shadow-card);
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .empty-headline {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .empty-body {
+    font-size: 0.95rem;
+    color: var(--text-60);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  .empty-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+  .empty-cta {
+    background: var(--coral);
+    color: var(--text);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.6rem 1.25rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    transition: background 150ms;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .empty-cta:hover { background: var(--coral-dark); text-decoration: none; }
+  .empty-cta:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+  .empty-cta--sm { min-height: 36px; padding: 0.45rem 0.9rem; font-size: 0.82rem; }
+
+  .empty-reset {
+    background: transparent;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-60);
+    cursor: pointer;
+    min-height: 44px;
+    font-family: var(--font-body);
+    transition: border-color 150ms, color 150ms;
+  }
+  .empty-reset:hover { border-color: var(--coral); color: var(--coral); }
+  .empty-reset:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+  .empty-reset--sm { min-height: 36px; padding: 0.4rem 0.85rem; font-size: 0.8rem; }
+
+  /* Section heading — matches .section-heading in city pages */
+  .section-heading {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clear-row {
+    max-width: 720px;
+    margin: 1.25rem auto 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .clear-row .empty-reset:hover { border-color: #e55a4d; color: #e55a4d; }
+
+  /* Saved event card — mirrors EventCard layout */
+  .saved-card {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-card);
+    position: relative;
+    transition: transform 200ms cubic-bezier(0.4,0,0.2,1),
+                box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .saved-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+  }
+  .saved-card.is-past { opacity: 0.6; }
+
+  /* card-link row: date badge + body */
+  .saved-card-link {
+    display: flex; flex: 1; text-decoration: none; color: inherit; outline: none;
+  }
+  .saved-card-link:hover { text-decoration: none; }
+
+  .saved-card-date {
+    background: var(--coral);
+    color: var(--text);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-width: 58px; flex-shrink: 0;
+    padding: 0.75rem 0.4rem; gap: 0;
+  }
+  .saved-card-date.no-date { background: var(--tag-bg); color: var(--text-60); }
+  .saved-card-date .date-weekday {
+    font-size: 0.6rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.07em; opacity: 0.75; margin-bottom: 1px;
+  }
+  .saved-card-date .date-day {
+    font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem; line-height: 1;
+  }
+  .saved-card-date .date-month {
+    font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.07em; opacity: 0.80;
+  }
+  .saved-card-date .date-infinity { font-size: 1.4rem; line-height: 1; opacity: 0.5; }
+
+  .saved-card-body {
+    padding: 0.85rem 1rem 0.75rem; flex: 1;
+    display: flex; flex-direction: column; gap: 0.4rem; min-width: 0;
+  }
+  .saved-card-title {
+    font-family: var(--font-heading); font-weight: 700; font-size: 0.97rem;
+    color: var(--text); line-height: 1.3;
+    display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .saved-card-meta {
+    display: flex; flex-direction: column; gap: 0.2rem;
+  }
+  .saved-meta-item {
+    display: flex; align-items: center; gap: 0.35rem;
+    font-size: 0.78rem; font-weight: 500; color: var(--text-60);
+  }
+  .saved-meta-item svg { flex-shrink: 0; stroke: var(--coral); }
+
+  /* card footer row */
+  .saved-card-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    border-top: 1px solid var(--border);
+    background: rgba(0,0,0,0.02);
+    padding: 0.3rem 0.6rem 0.3rem 0.4rem;
+    min-height: 36px; gap: 0.4rem;
+  }
+  html.dark .saved-card-footer { background: rgba(255,255,255,0.03); }
+
+  .saved-card-remove {
+    background: none; border: none; cursor: pointer;
+    color: var(--text-30); padding: 0.4rem;
+    border-radius: var(--radius-sm);
+    transition: color 150ms, background 150ms;
+    flex-shrink: 0; display: flex; align-items: center;
+    min-width: 36px; min-height: 36px; justify-content: center;
+    font-size: 0.75rem; font-weight: 600; font-family: var(--font-body);
+    gap: 0.3rem;
+  }
+  .saved-card-remove:hover { color: #e55a4d; background: rgba(229,90,77,0.08); }
+  .saved-card-remove:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+
+  /* ── Filter preferences panel ───────────────────────────────────────────── */
+  .pref-panel { max-width: 720px; margin: 0 auto; }
+  .pref-panel-inner {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-card);
+  }
+  .pref-desc {
+    font-size: 0.875rem;
+    color: var(--text-60);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  .pref-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    min-height: 28px;
+  }
+  .pref-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    height: 28px;
+    padding: 0 0.75rem;
+    background: var(--coral-light);
+    border: 1px solid var(--coral);
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .pref-chip--empty {
+    background: var(--tag-bg);
+    border-color: var(--border);
+    color: var(--text-60);
+    font-weight: 400;
+  }
+  .pref-reset-btn { margin-top: 0; }
+  .pref-status {
+    font-size: 0.82rem;
+    color: var(--sage);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    min-height: 1.2em;
+    transition: opacity 300ms;
+  }
+
+
+  /* ── Saved events action bar ─────────────────────────────────────────── */
+  .collection-actions {
+    max-width: 720px;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--tag-bg);
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    padding: 0 1rem;
+    height: 40px;
+    font-size: 0.84rem;
+    font-weight: 600;
+    font-family: var(--font-body);
+    color: var(--text-60);
+    cursor: pointer;
+    min-height: 44px;
+    text-decoration: none;
+    transition: border-color 150ms, background 150ms, color 150ms;
+    white-space: nowrap;
+  }
+  .action-btn:hover {
+    border-color: var(--coral);
+    background: var(--coral-light);
+    color: var(--coral);
+    text-decoration: none;
+  }
+  .action-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+  .action-btn .chevron { transition: transform 150ms; flex-shrink: 0; }
+  .action-btn[aria-expanded="true"] .chevron { transform: rotate(180deg); }
+  .action-btn[aria-expanded="true"] {
+    border-color: var(--coral);
+    background: var(--coral-light);
+    color: var(--coral);
+  }
+  .action-bar-label {
+    font-size: 0.78rem;
+    color: var(--text-60);
+    margin-left: 0.25rem;
+  }
+
+  /* Calendar dropdown */
+  .cal-dropdown-wrap {
+    position: relative;
+  }
+  .cal-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    background: var(--surface-card);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius, 12px);
+    box-shadow: var(--shadow-hover);
+    min-width: 240px;
+    z-index: 30;
+    overflow: hidden;
+  }
+  .cal-dropdown[hidden] { display: none; }
+  .cal-dropdown-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--border-subtle);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text);
+    text-align: left;
+    transition: background 120ms;
+  }
+  .cal-dropdown-item:last-child { border-bottom: none; }
+  .cal-dropdown-item:hover { background: var(--coral-light); }
+  .cal-dropdown-item:focus-visible { outline: 2px solid var(--coral); outline-offset: -2px; }
+  .cal-dropdown-item svg { flex-shrink: 0; margin-top: 1px; stroke: var(--coral); }
+  .cal-dropdown-hint {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--text-60);
+    margin-top: 1px;
+  }
+
+  .gcal-hint {
+    max-width: 720px;
+    margin: -0.5rem auto 1rem;
+    padding: 0.6rem 0.9rem;
+    background: var(--sage-light);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    color: var(--text-60);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .gcal-hint svg { flex-shrink: 0; stroke: var(--sage); }
+
+</style>
+
+<script>
+  const STORAGE_KEY       = 'rg-saved';
+  const NOTIF_DISMISS_KEY = 'rg-notif-dismissed';
+
+  function getSaved() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); } catch { return []; }
+  }
+  function setSaved(arr) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); } catch {}
+  }
+
+  function formatDate(iso) {
+    const d = new Date(iso + 'T12:00:00');
+    return {
+      day:     d.getDate(),
+      month:   d.toLocaleDateString('de-DE', { month: 'short' }),
+      weekday: d.toLocaleDateString('de-DE', { weekday: 'short' }),
+      full:    d.toLocaleDateString('de-DE', { day: 'numeric', month: 'long' }),
+      isPast:  d < new Date(new Date().setHours(0,0,0,0)),
+    };
+  }
+
+  function sanitise(str) {
+    // Basic XSS guard for localStorage-sourced strings injected into innerHTML
+    const d = document.createElement('div');
+    d.appendChild(document.createTextNode(str || ''));
+    return d.innerHTML;
+  }
+  function sanitiseUrl(url) {
+    // Only allow https:// and / relative URLs
+    if (!url) return '#';
+    if (url.startsWith('/') || url.startsWith('https://')) return url;
+    return '#';
+  }
+
+  function renderList() {
+    const saved   = getSaved();
+    const list    = document.getElementById('saved-list');
+    const section = document.getElementById('saved-section');
+    const empty   = document.getElementById('empty-state');
+    const badge   = document.getElementById('saved-count-badge');
+
+    badge.textContent = String(saved.length);
+    section.hidden = saved.length === 0;
+    empty.hidden   = saved.length > 0;
+
+    if (saved.length === 0) { list.innerHTML = ''; return; }
+
+    // Sort: upcoming first (no date → end)
+    const sorted = [...saved].sort((a, b) => {
+      if (!a.date_start && !b.date_start) return 0;
+      if (!a.date_start) return 1;
+      if (!b.date_start) return -1;
+      return a.date_start.localeCompare(b.date_start);
+    });
+
+    list.innerHTML = sorted.map(ev => {
+      const d = ev.date_start ? formatDate(ev.date_start) : null;
+      const safeTitle = sanitise(ev.title || '');
+      const safeUrl   = sanitiseUrl(ev.url);
+      const cityLabel = ev.city ? ev.city.charAt(0).toUpperCase() + ev.city.slice(1) : '';
+
+      const dateBadge = d
+        ? `<div class="date-badge" aria-hidden="true">
+             <span class="date-weekday">${d.weekday}</span>
+             <span class="date-day">${d.day}</span>
+             <span class="date-month">${d.month}</span>
+           </div>`
+        : `<div class="date-badge date-badge--standing" aria-hidden="true">
+             <span class="date-infinity">∞</span>
+             <span class="date-month">immer</span>
+           </div>`;
+
+      const iconCal = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
+      const iconPin = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>`;
+      const iconX   = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>`;
+      const dateText = d ? `${d.weekday}, ${d.full}` : 'Regelmäßig';
+
+      return `<article class="event-card${d && d.isPast ? ' event-card--standing' : ''}" data-slug="${sanitise(ev.slug || '')}">
+        <a class="card-link" href="${safeUrl}"
+           aria-label="${safeTitle}${d ? ', ' + d.full : ''}${cityLabel ? ' – ' + sanitise(cityLabel) : ''}">
+          ${dateBadge}
+          <div class="card-body">
+            <div class="card-tags">
+              ${d && d.isPast ? '<span class="tag" style="background:rgba(229,90,77,0.08);color:#e55a4d;">Vergangen</span>' : ''}
+            </div>
+            <h3 class="card-title">${safeTitle}</h3>
+            <div class="card-meta">
+              <span class="meta-item">${iconCal}${sanitise(dateText)}</span>
+              ${cityLabel ? `<span class="meta-item">${iconPin}${sanitise(cityLabel)}</span>` : ''}
+            </div>
+          </div>
+        </a>
+        <div class="card-footer">
+          <div class="footer-line1">
+            <span style="font-size:0.72rem;color:var(--text-60);padding:0 0.25rem;">${sanitise(cityLabel)}</span>
+            <button class="merken-btn saved-remove-btn" data-slug="${sanitise(ev.slug || '')}"
+                    aria-label="Merken aufheben: ${safeTitle}">
+              ${iconX} <span class="merken-label">Entfernen</span>
+            </button>
+          </div>
+        </div>
+      </article>`;
+    }).join('');
+
+    list.querySelectorAll('.saved-remove-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const slug = btn.dataset.slug;
+        setSaved(getSaved().filter(e => e.slug !== slug));
+        window.dispatchEvent(new CustomEvent('rg:saved-changed', { detail: { slug, saved: false } }));
+        renderList();
+        maybeShowBanner();
+      });
+    });
+  }
+
+  function maybeShowBanner() {
+    const banner    = document.getElementById('notif-banner');
+    const dismissed = localStorage.getItem(NOTIF_DISMISS_KEY);
+    const granted   = typeof Notification !== 'undefined' && Notification.permission === 'granted';
+    banner.hidden   = !!dismissed || getSaved().length === 0 || granted;
+  }
+
+  function showStatus(msg, isError = false) {
+    const el = document.getElementById('notif-status');
+    el.textContent = msg;
+    el.className   = 'notif-status' + (isError ? ' notif-status--error' : '');
+    el.hidden      = false;
+  }
+
+  // Init
+  renderList();
+  maybeShowBanner();
+
+  document.getElementById('clear-all-btn').addEventListener('click', () => {
+    if (!confirm('Alle gespeicherten Events löschen?')) return;
+    setSaved([]);
+    renderList();
+    document.getElementById('notif-banner').hidden = true;
+  });
+
+  document.getElementById('notif-allow-btn').addEventListener('click', async () => {
+    if (!('Notification' in window) || !('serviceWorker' in navigator)) {
+      showStatus('Dein Browser unterstützt keine Benachrichtigungen.', true);
+      return;
+    }
+    const btn = document.getElementById('notif-allow-btn');
+    btn.disabled = true;
+    btn.textContent = '…';
+    try {
+      const { subscribePush } = await import('/src/scripts/push-subscribe.js');
+      await subscribePush();
+      document.getElementById('notif-banner').hidden = true;
+      localStorage.setItem(NOTIF_DISMISS_KEY, '1');
+      showStatus('✅ Erinnerungen aktiviert! Du wirst am Vorabend deiner gespeicherten Events benachrichtigt.');
+    } catch (e) {
+      btn.disabled = false;
+      btn.textContent = 'Aktivieren';
+      if (e.message === 'Permission denied') {
+        document.getElementById('notif-banner').hidden = true;
+        localStorage.setItem(NOTIF_DISMISS_KEY, '1');
+        showStatus('Benachrichtigungen nicht erlaubt. Du kannst sie jederzeit in den Browser-Einstellungen aktivieren.', true);
+      } else {
+        showStatus('Fehler beim Aktivieren: ' + e.message, true);
+      }
+    }
+  });
+
+  document.getElementById('notif-dismiss-btn').addEventListener('click', () => {
+    document.getElementById('notif-banner').hidden = true;
+    localStorage.setItem(NOTIF_DISMISS_KEY, '1');
+  });
+
+  window.addEventListener('rg:saved-changed', () => { renderList(); maybeShowBanner(); });
+
+  // Expose postUpdateSaved globally so EventCard can call it without dynamic import
+  import('/src/scripts/push-subscribe.js').then(m => {
+    window.__rgPostUpdateSaved = m.postUpdateSaved;
+  }).catch(() => {});
+
+  // DEBUG reset — visit /meine-events/?reset-push to clear push localStorage
+  if (window.location.search.includes('reset-push')) {
+    localStorage.removeItem('rg-notif-dismissed');
+    localStorage.removeItem('rg-push-enabled');
+    localStorage.removeItem('rg-fcm-token');
+    window.location.href = '/meine-events/';
+  }
+
+  // ── Filter preferences management ────────────────────────────────────────
+  const PREF_TAGS = 'rg-pref-tags';
+  const PREF_AGE  = 'rg-pref-age';
+
+  const TAG_LABELS = {
+    'Ausstellung': 'Ausstellung', 'Entertainment': 'Entertainment',
+    'Familie': 'Familie', 'Fest': 'Fest', 'Fuehrung': 'Führung',
+    'Jugend': 'Jugend', 'Kinder': 'Kinder', 'Kulinarik': 'Kulinarik',
+    'Lesung': 'Lesung', 'Messe': 'Messe', 'Musik': 'Musik',
+    'Outdoor': 'Outdoor', 'Sport': 'Sport', 'Sprache': 'Sprache',
+    'Tanz': 'Tanz', 'Theater': 'Theater', 'Vortrag': 'Vortrag',
+    'Workshop': 'Workshop',
+  };
+  const AGE_LABELS = {
+    '0-3': '0–3 Jahre', '3-6': '3–6 Jahre', '6-12': '6–12 Jahre',
+    '12-17': '12–17 Jahre', '18-99': 'Erwachsene (18+)',
+  };
+
+  function renderPrefDisplay() {
+    const display = document.getElementById('pref-display');
+    if (!display) return;
+    let chips = [];
+    try {
+      const tag = localStorage.getItem(PREF_TAGS);
+      const age = localStorage.getItem(PREF_AGE);
+      if (tag) chips.push(`<span class="pref-chip">🏷 ${TAG_LABELS[tag] || tag}</span>`);
+      if (age) chips.push(`<span class="pref-chip">👶 ${AGE_LABELS[age] || age}</span>`);
+    } catch (e) {}
+    if (chips.length === 0) {
+      display.innerHTML = '<span class="pref-chip pref-chip--empty">Keine gespeicherten Einstellungen</span>';
+    } else {
+      display.innerHTML = chips.join('');
+    }
+  }
+
+  renderPrefDisplay();
+
+  const prefResetBtn = document.getElementById('pref-reset-btn');
+  if (prefResetBtn) {
+    prefResetBtn.addEventListener('click', () => {
+      try {
+        localStorage.removeItem(PREF_TAGS);
+        localStorage.removeItem(PREF_AGE);
+      } catch (e) {}
+      renderPrefDisplay();
+      const status = document.getElementById('pref-status');
+      if (status) {
+        status.textContent = '✓ Filtereinstellungen zurückgesetzt';
+        setTimeout(() => { status.textContent = ''; }, 3000);
+      }
+    });
+  }
+
+  // ── Action bar — ICS export + Google Calendar ────────────────────────────
+  const actionBar   = document.getElementById('saved-action-bar');
+  const actionCount = document.getElementById('action-bar-count');
+  const gcalHint    = document.getElementById('gcal-hint');
+
+
+  // ── Inline ICS generation (no server, no external import) ───────────────
+  function pad2(n) { return String(n).padStart(2, '0'); }
+  function toIcalDate(iso) { return iso ? iso.replace(/-/g, '') : null; }
+  function foldLine(line) {
+    if (line.length <= 75) return line;
+    const chunks = [];
+    let i = 0;
+    while (i < line.length) { chunks.push(line.slice(i, i + (i === 0 ? 75 : 74))); i += (i === 0 ? 75 : 74); }
+    return chunks.join('\r\n ');
+  }
+  function escIcal(str) {
+    return String(str || '').replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,').replace(/\n/g,'\\n').replace(/\r/g,'');
+  }
+  function buildVEvent(ev) {
+    const lines = ['BEGIN:VEVENT'];
+    const now = new Date();
+    const dtstamp = `${now.getUTCFullYear()}${pad2(now.getUTCMonth()+1)}${pad2(now.getUTCDate())}T${pad2(now.getUTCHours())}${pad2(now.getUTCMinutes())}${pad2(now.getUTCSeconds())}Z`;
+    lines.push(`UID:rg-${ev.slug||ev.id||Math.random().toString(36).slice(2)}@rausgucken.de`);
+    lines.push(`DTSTAMP:${dtstamp}`);
+    const dtstart = toIcalDate(ev.date_start);
+    if (dtstart) {
+      lines.push(`DTSTART;VALUE=DATE:${dtstart}`);
+      const base = ev.date_end || ev.date_start;
+      const endD = new Date(base + 'T12:00:00');
+      endD.setDate(endD.getDate() + 1);
+      lines.push(`DTEND;VALUE=DATE:${endD.getFullYear()}${pad2(endD.getMonth()+1)}${pad2(endD.getDate())}`);
+    }
+    if (ev.title)    lines.push(foldLine(`SUMMARY:${escIcal(ev.title)}`));
+    if (ev.location) lines.push(foldLine(`LOCATION:${escIcal(ev.location)}`));
+    const desc = [ev.time, ev.description, ev.price ? `Preis: ${ev.price}` : null, ev.source_label ? `Quelle: ${ev.source_label}` : null].filter(Boolean).join('\n');
+    if (desc) lines.push(foldLine(`DESCRIPTION:${escIcal(desc)}`));
+    const url = ev.canonical_url || ev.url || (ev.slug && ev.city ? `https://www.rausgucken.de/${ev.city}/events/${ev.slug}` : null);
+    if (url) lines.push(foldLine(`URL:${url}`));
+    lines.push('END:VEVENT');
+    return lines.join('\r\n');
+  }
+  function generateCollectionICS(events, label) {
+    const exportable = events.filter(ev => ev.date_start);
+    if (!exportable.length) { alert('Keine datierten Veranstaltungen zum Exportieren.'); return; }
+    const cal = [
+      'BEGIN:VCALENDAR','VERSION:2.0',
+      `PRODID:-//rausgucken.de//Events//DE`,
+      `X-WR-CALNAME:${escIcal(label)}`,
+      'X-WR-TIMEZONE:Europe/Berlin','CALSCALE:GREGORIAN','METHOD:PUBLISH',
+      ...exportable.map(buildVEvent),
+      'END:VCALENDAR'
+    ].join('\r\n');
+    const blob = new Blob([cal], { type: 'text/calendar;charset=utf-8' });
+    const burl = URL.createObjectURL(blob);
+    const fname = label.replace(/[^\w\s-]/g,'').replace(/\s+/g,'-').toLowerCase();
+    const a = document.createElement('a');
+    a.href = burl; a.download = `${fname}.ics`;
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(burl);
+  }
+
+  function updateActionBar() {
+    const saved = getSaved();
+    const dated = saved.filter(ev => ev.date_start);
+    actionBar.hidden = saved.length === 0;
+    actionCount.textContent = dated.length > 0
+      ? `${dated.length} Termin${dated.length !== 1 ? 'e' : ''}`
+      : '';
+    // Move QR transfer bar into action bar as first child (idempotent)
+    const qrBar = document.querySelector('.qr-transfer-bar');
+    if (qrBar && actionBar && !actionBar.contains(qrBar)) {
+      actionBar.insertBefore(qrBar, actionBar.firstChild);
+    }
+  }
+
+  // ── Calendar dropdown toggle ──────────────────────────────────────────────
+  const calBtn      = document.getElementById('cal-dropdown-btn');
+  const calDropdown = document.getElementById('cal-dropdown');
+
+  calBtn.addEventListener('click', () => {
+    const open = calDropdown.hidden === false;
+    calDropdown.hidden = open;
+    calBtn.setAttribute('aria-expanded', String(!open));
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if (!document.getElementById('cal-dropdown-wrap').contains(e.target)) {
+      calDropdown.hidden = true;
+      calBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  document.getElementById('ics-export-btn').addEventListener('click', async () => {
+    const saved = getSaved().filter(ev => ev.date_start);
+    if (saved.length === 0) { alert('Keine datierten Events zum Exportieren.'); return; }
+    generateCollectionICS(saved, 'Meine Events – rausgucken.de');
+    calDropdown.hidden = true;
+    calBtn.setAttribute('aria-expanded', 'false');
+  });
+
+  document.getElementById('gcal-export-btn').addEventListener('click', async () => {
+    const saved = getSaved().filter(ev => ev.date_start);
+    if (saved.length === 0) { alert('Keine datierten Events zum Exportieren.'); return; }
+    generateCollectionICS(saved, 'Meine Events – rausgucken.de');
+    window.open('https://calendar.google.com/calendar/r/settings/export', '_blank', 'noopener');
+    calDropdown.hidden = true;
+    calBtn.setAttribute('aria-expanded', 'false');
+    if (gcalHint) gcalHint.hidden = false;
+  });
+
+  if (document.getElementById('gcal-hint-close')) {
+    document.getElementById('gcal-hint-close').addEventListener('click', () => {
+      gcalHint.hidden = true;
+    });
+  }
+
+  window.addEventListener('rg:saved-changed', updateActionBar);
+  updateActionBar();
+</script>
+
+<style is:global>
+  /* ── EventCard-identical styles for saved cards ─────────────────────── */
+  #saved-list { display: flex; flex-direction: column; gap: 0.75rem; max-width: 720px; margin: 0 auto; }
+
+  #saved-list .event-card {
+    background: var(--surface-card, var(--surface));
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-card);
+    position: relative;
+    transition: transform 200ms cubic-bezier(0.4,0,0.2,1), box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    #saved-list .event-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+  }
+  #saved-list .event-card--standing { border-left: 3px solid var(--coral); }
+
+  #saved-list .card-link {
+    display: flex; flex: 1; text-decoration: none; color: inherit; outline: none;
+  }
+  #saved-list .card-link:hover { text-decoration: none; }
+
+  #saved-list .date-badge {
+    background: var(--coral); color: var(--text);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-width: 58px; flex-shrink: 0; padding: 0.75rem 0.4rem; align-self: stretch;
+  }
+  #saved-list .date-badge--standing { background: var(--tag-bg); color: var(--text-60); }
+  #saved-list .date-weekday {
+    font-size: 0.6rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.07em; opacity: 0.75; margin-bottom: 1px;
+  }
+  #saved-list .date-day {
+    font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem; line-height: 1;
+  }
+  #saved-list .date-month {
+    font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.07em; opacity: 0.80;
+  }
+  #saved-list .date-infinity { font-size: 1.4rem; line-height: 1; opacity: 0.5; }
+
+  #saved-list .card-body {
+    padding: 0.85rem 1rem 0.75rem; flex: 1;
+    display: flex; flex-direction: column; gap: 0.4rem; min-width: 0;
+  }
+  #saved-list .card-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; align-items: center; }
+  #saved-list .tag {
+    background: var(--tag-bg); color: var(--text-60);
+    font-size: 0.7rem; font-weight: 500; padding: 2px 8px; border-radius: 20px; white-space: nowrap;
+  }
+  #saved-list .card-title {
+    font-family: var(--font-heading); font-weight: 700; font-size: 0.97rem;
+    color: var(--text); line-height: 1.3;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  #saved-list .card-meta { display: flex; flex-direction: column; gap: 0.2rem; }
+  #saved-list .meta-item {
+    display: flex; align-items: center; gap: 0.35rem;
+    font-size: 0.78rem; font-weight: 500; color: var(--text-60);
+  }
+  #saved-list .meta-item svg { flex-shrink: 0; stroke: var(--coral); }
+
+  #saved-list .card-footer {
+    display: flex; flex-direction: column;
+    border-top: 1px solid var(--border);
+    background: var(--surface-card, var(--surface));
+    padding-bottom: 0.2rem;
+  }
+  html.dark #saved-list .card-footer { background: rgba(255,255,255,0.03); }
+  #saved-list .footer-line1 {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.3rem 0.6rem 0.35rem 1rem; min-height: 36px; gap: 0.4rem;
+  }
+  #saved-list .merken-btn {
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    background: none; border: none; cursor: pointer;
+    padding: 0.25rem 0.5rem; min-height: 36px;
+    border-radius: var(--radius-sm);
+    color: var(--text-60); font-size: 0.75rem; font-weight: 600;
+    font-family: var(--font-body);
+    transition: color 150ms, background 150ms; flex-shrink: 0;
+  }
+  #saved-list .merken-btn:hover { color: #e55a4d; background: rgba(229,90,77,0.08); }
+  #saved-list .merken-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+</style>
