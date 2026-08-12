@@ -91,6 +91,12 @@ import QRExportModal from "../../components/QRExportModal.astro";
       <div class="notif-banner-text">
         <strong>Erinnerungen aktivieren?</strong>
         <span>Wir erinnern dich am Vorabend deiner gespeicherten Events.</span>
+        <span class="notif-banner-privacy">
+          Dazu übertragen wir eine anonyme Geräte-ID und deine gemerkten Events
+          an unseren Server und Google Firebase (FCM) — das ist der einzige Weg,
+          den wir gefunden haben, um das ohne Nutzerkonto anzubieten.
+          <a href="/datenschutz#push-heading">Mehr dazu</a>.
+        </span>
       </div>
       <button id="notif-allow-btn" class="empty-cta empty-cta--sm">Aktivieren</button>
       <button id="notif-dismiss-btn" class="empty-reset empty-reset--sm" aria-label="Schließen">Nein danke</button>
@@ -175,6 +181,13 @@ import QRExportModal from "../../components/QRExportModal.astro";
     gap: 0.1rem;
   }
   .notif-banner-text span { color: var(--text-60); }
+  .notif-banner-privacy {
+    font-size: 0.78rem;
+    color: var(--text-30);
+    margin-top: 0.15rem;
+    line-height: 1.4;
+  }
+  .notif-banner-privacy a { color: inherit; text-decoration: underline; }
 
   .notif-status {
     max-width: 720px;

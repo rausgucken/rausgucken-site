@@ -110,9 +110,58 @@ const canonical = `${siteUrl}/datenschutz`;
       </p>
     </section>
 
-    <!-- 5. Spam-Schutz Turnstile -->
+    <!-- 5. Push-Benachrichtigungen — Firebase Cloud Messaging -->
+    <section aria-labelledby="push-heading">
+      <h2 id="push-heading">5. Push-Benachrichtigungen — Firebase Cloud Messaging (FCM)</h2>
+      <p>
+        Auf der Seite <a href="/meine-events">Meine Events</a> können Sie optional
+        Erinnerungen für gemerkte Veranstaltungen aktivieren. Dabei nutzen wir
+        <strong>Firebase Cloud Messaging (FCM)</strong>, einen Dienst der
+        Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland;
+        Muttergesellschaft Google LLC, USA), um Ihnen am Vorabend eines
+        gespeicherten Events eine Browser-Benachrichtigung zuzustellen.
+      </p>
+      <p>
+        Bei Aktivierung werden auf unserem eigenen Server (push.rausgucken.de)
+        folgende Daten gespeichert:
+      </p>
+      <ul>
+        <li>eine zufällig erzeugte, anonyme Geräte-ID (UUID) ohne Bezug zu Ihrer Identität,</li>
+        <li>ein von Google vergebenes FCM-Registrierungs-Token, technisch erforderlich für die Zustellung,</li>
+        <li>die Kurzkennungen (Slugs) Ihrer gemerkten Veranstaltungen, damit die richtige Erinnerung zugestellt wird.</li>
+      </ul>
+      <p>
+        Es werden keine Namen, E-Mail-Adressen oder sonstige direkt
+        identifizierenden Daten erhoben. Ein Nutzerkonto ist nicht erforderlich —
+        dies ist die einzige uns bekannte Möglichkeit, Erinnerungen und eine
+        geräteübergreifende Übertragung gemerkter Events anzubieten, ohne
+        Nutzer:innen zur Kontoerstellung zu zwingen.
+      </p>
+      <p>
+        Da die Zustellung technisch über Google läuft, kann dabei eine
+        Datenübertragung an Google-Server außerhalb der EU (insbesondere USA)
+        stattfinden. Google hat sich hierfür den EU-Standardvertragsklauseln
+        unterworfen. Weitere Informationen:
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+          Firebase Datenschutzrichtlinie</a>.
+      </p>
+      <p>
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Die
+        Funktion wird ausschließlich nach aktiver Bestätigung über den
+        Button „Aktivieren" eingerichtet und ist jederzeit widerrufbar.
+      </p>
+      <p>
+        Widerruf: Sie können Benachrichtigungen jederzeit über Ihre
+        Browser-Einstellungen deaktivieren. Zur vollständigen Löschung der
+        serverseitig gespeicherten UUID, des Tokens und der gemerkten Events
+        wenden Sie sich bitte über das <a href="/about#kontakt">Kontaktformular</a>
+        an uns — wir löschen den Eintrag umgehend.
+      </p>
+    </section>
+
+    <!-- 6. Spam-Schutz Turnstile -->
     <section aria-labelledby="turnstile-heading">
-      <h2 id="turnstile-heading">5. Spam-Schutz — Cloudflare Turnstile</h2>
+      <h2 id="turnstile-heading">6. Spam-Schutz — Cloudflare Turnstile</h2>
       <p>
         Das Kontaktformular ist mit <strong>Cloudflare Turnstile</strong>
         zum Schutz vor automatisierten Anfragen (Spam) gesichert. Dabei werden
@@ -128,9 +177,9 @@ const canonical = `${siteUrl}/datenschutz`;
       </p>
     </section>
 
-    <!-- 6. Veranstaltungsdaten -->
+    <!-- 7. Veranstaltungsdaten -->
     <section aria-labelledby="scraping-heading">
-      <h2 id="scraping-heading">6. Automatisierte Datenerfassung (Scraping)</h2>
+      <h2 id="scraping-heading">7. Automatisierte Datenerfassung (Scraping)</h2>
       <p>
         rausgucken.de sammelt Veranstaltungsinformationen automatisiert von
         öffentlich zugänglichen Websites lokaler Institutionen
@@ -146,28 +195,35 @@ const canonical = `${siteUrl}/datenschutz`;
       </p>
     </section>
 
-    <!-- 7. Cookies -->
+    <!-- 8. Cookies & localStorage -->
     <section aria-labelledby="cookies-heading">
-      <h2 id="cookies-heading">7. Cookies</h2>
+      <h2 id="cookies-heading">8. Cookies &amp; localStorage</h2>
       <p>
         Diese Website setzt <strong>keine Tracking-Cookies</strong>.
-        Es wird ausschließlich ein technisches Cookie zur Speicherung
-        Ihrer Farbschema-Einstellung (Hell/Dunkel) im
-        <code>localStorage</code> Ihres Browsers gesetzt.
-        Dieser Wert verlässt Ihren Browser nicht und wird nicht an
-        Server übertragen.
+        Folgende Werte werden ausschließlich lokal im <code>localStorage</code>
+        Ihres Browsers gespeichert und verlassen Ihr Gerät nicht, sofern Sie
+        die Erinnerungsfunktion nicht aktivieren (siehe Abschnitt 5):
       </p>
+      <ul>
+        <li><code>rg-theme</code> — Ihre Farbschema-Einstellung (Hell/Dunkel)</li>
+        <li><code>rg-saved</code> — Ihre gemerkten Veranstaltungen</li>
+        <li><code>rg-pref-tags</code>, <code>rg-pref-age</code> — Ihre bevorzugten Filtereinstellungen</li>
+        <li><code>rg-uuid</code>, <code>rg-fcm-token</code>, <code>rg-notif-dismissed</code> — nur gesetzt, wenn Sie Erinnerungen aktivieren (siehe Abschnitt 5)</li>
+      </ul>
     </section>
 
-    <!-- 8. Ihre Rechte -->
+    <!-- 9. Ihre Rechte -->
     <section aria-labelledby="rechte-heading">
-      <h2 id="rechte-heading">8. Ihre Rechte</h2>
+      <h2 id="rechte-heading">9. Ihre Rechte</h2>
       <p>
         Sie haben gemäß DSGVO das Recht auf Auskunft, Berichtigung, Löschung
         und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie
-        das Recht auf Datenübertragbarkeit. Da auf rausgucken.de keine
-        personenbezogenen Daten gespeichert werden, entfällt in der Praxis
-        der Großteil dieser Rechte.
+        das Recht auf Datenübertragbarkeit. Für die meisten Funktionen von
+        rausgucken.de entfällt dies in der Praxis, da keine personenbezogenen
+        Daten gespeichert werden. Ausnahme: Wenn Sie Erinnerungen aktiviert
+        haben, speichern wir eine anonyme Geräte-ID, ein FCM-Token und Ihre
+        gemerkten Events (siehe Abschnitt 5) — auf Anfrage löschen wir diese
+        umgehend vollständig.
       </p>
       <p>
         Bei Fragen zur Datenverarbeitung oder zur Ausübung Ihrer Rechte
@@ -178,9 +234,9 @@ const canonical = `${siteUrl}/datenschutz`;
       </p>
     </section>
 
-    <!-- 9. Änderungen -->
+    <!-- 10. Änderungen -->
     <section aria-labelledby="aenderungen-heading">
-      <h2 id="aenderungen-heading">9. Änderungen dieser Erklärung</h2>
+      <h2 id="aenderungen-heading">10. Änderungen dieser Erklärung</h2>
       <p>
         Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen,
         etwa wenn neue Dienste eingebunden werden. Die jeweils aktuelle Fassung
