@@ -1,31 +1,776 @@
 {
-  "generated_at": "2026-08-12T03:40:08.135548+02:00",
+  "generated_at": "2026-08-13T03:49:42.906581+02:00",
   "city": "ditzingen",
   "sources": [
     "ditzingen_stadt",
     "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-08-11T04:16:39.370500+02:00",
-  "count_added": 0,
-  "count_removed": 3,
-  "added": [],
+  "previous_run": "2026-08-12T03:40:08.216977+02:00",
+  "count_added": 62,
+  "count_removed": 65,
+  "added": [
+    {
+      "id": "c04f41dba89e3924",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-08-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3abd9ffbcc3ba826",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-08-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4028d0af37c7aed8",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-08-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e05d2cc312bcfcdb",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-08-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "607c743b672dd49b",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-09-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "6594738770492b11",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-09-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "37372ead915c2819",
+      "title": "KEIN Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-09-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "adf89f9a87085422",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-09-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "133de26eced47e99",
+      "title": "Kontakt-Treff \"Neuland\" - Treffpunkt für Verwitwete",
+      "date_start": "2026-09-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0566566114bb74a2",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5e0259b2d97d8271",
+      "title": "Sonntags-Café für den guten Zweck",
+      "date_start": "2026-09-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ca4c9c1101155af5",
+      "title": "LandFrauen Ditzingen - Besprechung (Internes Treffen) (LandFrauen Ditzingen)",
+      "date_start": "2026-09-21",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e0de2865c1a270ad",
+      "title": "Spanisch Stammtisch",
+      "date_start": "2026-09-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "204fbf4e9bb01701",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-09-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "6ca3efe29d5db9d2",
+      "title": "Vortrag: Herausforderung Demenz ()",
+      "date_start": "2026-09-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7f75f3e171b38dd7",
+      "title": "Begegnungs Café (AK Asyl)",
+      "date_start": "2026-09-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "80a5823a84beb12c",
+      "title": "Filmabend von Ewig anders (Ewig anders Ditzingen)",
+      "date_start": "2026-09-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "878bb34acb591a64",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "33cc020c29a65929",
+      "title": "Interne Veranstaltung (Stadt Ditzingen)",
+      "date_start": "2026-10-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "52d43fcea5917a12",
+      "title": "?? FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "36ce21c35234d999",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "2b44f80ac374975f",
+      "title": "AK Asyl - Besprechung (AK Asyl)",
+      "date_start": "2026-10-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e2e601fb8269ad2b",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-10-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3336230123b1c536",
+      "title": "Kaffeenachmittag des Schwäbischen Albvereins (Schwäbischer Albverein)",
+      "date_start": "2026-10-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e1096d91f7908036",
+      "title": "LandFrauen Ditzingen - Besprechung (Internes Treffen) (LandFrauen Ditzingen)",
+      "date_start": "2026-10-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "cfc1caf1c3ed06ee",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e485ab7e4aab8348",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d90a86ee87021dbe",
+      "title": "Frauen-Stammtisch der LandFrauen Ditzingen (LandFrauen DItzingen)",
+      "date_start": "2026-10-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a411308305b6280e",
+      "title": "?? Spanisch Stammtisch",
+      "date_start": "2026-10-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b5363f7bddc2f436",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9247f78eb005b1d9",
+      "title": "KEIN Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-10-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8fdecab038f0cf2d",
+      "title": "Kreativ-Workshop (LandFrauen Ditzingen)",
+      "date_start": "2026-11-02",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "85c450ea9908e1a3",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "548e9a0a49af5067",
+      "title": "Kontakt-Treff \"Neuland\" - Treffpunkt für Verwitwete",
+      "date_start": "2026-11-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d77066683f537c19",
+      "title": "LandFrauen Ditzingen - Besprechung (Internes Treffen) (LandFrauen Ditzingen)",
+      "date_start": "2026-11-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "81bceb7f3ffd48cf",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b824a05f6576f212",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-11-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8002c8a6d584f08c",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f83996c0adebb2e2",
+      "title": "Spanisch Stammtisch",
+      "date_start": "2026-11-25",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "334ca51961b1f98d",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e5cd44e8ff56b0bd",
+      "title": "Adventskranzbinden (LandFrauen Ditzingen)",
+      "date_start": "2026-11-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c710438e9cc4edd2",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-12-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c4b4ca2d58c8ac33",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-12-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0c1d9cf8f06d6f36",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-12-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "acb93c065939a56e",
+      "title": "Kontakt-Treff \"Neuland\" - Treffpunkt für Verwitwete",
+      "date_start": "2026-12-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "bf5e9f5fcc4355c2",
+      "title": "LandFrauen Ditzingen - Besprechung (Internes Treffen) (LandFrauen Ditzingen)",
+      "date_start": "2026-12-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7b3496cae7d16080",
+      "title": "Gesprächskreis Demenz (Abt. Senioren, Demenzberatung)",
+      "date_start": "2026-12-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "91575bc6e91a7682",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-12-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d5609f2ab0291ad2",
+      "title": "ABGESAGT: Sommernachmittag \"Eiskaffee und Sommerdeko\"",
+      "date_start": "2026-08-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c38328b068042c5e",
+      "title": "KEIN English Conversation Stammtisch",
+      "date_start": "2026-09-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b18b949d41ec6de8",
+      "title": "FEDIA-Theaterworkshop (FEDIA, Stadt Ditzingen)",
+      "date_start": "2026-09-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "69a91b363f915df4",
+      "title": "Smartphone-Workshop 1",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "30cff1429ec23ed5",
+      "title": "Smartphone-Workshop 1",
+      "date_start": "2026-09-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "cdc53fd0a8b11fb0",
+      "title": "Smartphone-Workshop 1",
+      "date_start": "2026-10-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "de2a187a21a99449",
+      "title": "Smartphone-Workshop 1",
+      "date_start": "2026-10-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8ba5d23afc04fd48",
+      "title": "Sonntags-Café für den guten Zweck",
+      "date_start": "2026-10-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "971713c0548a2928",
+      "title": "Smartphone Workshop 2",
+      "date_start": "2026-10-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "277c9e0a619990ae",
+      "title": "FEDIA-Theaterworkshop (FEDIA, Stadt Ditzingen)",
+      "date_start": "2026-10-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0f50e6ec02f66f6f",
+      "title": "Smartphone Workshop 2",
+      "date_start": "2026-10-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ee7f8ac5ae8de50e",
+      "title": "Smartphone Workshop 2",
+      "date_start": "2026-10-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "478f6480f1e6d6b0",
+      "title": "Smartphone Workshop 2",
+      "date_start": "2026-11-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e2ffc65ffc5f87cc",
+      "title": "Sonntags-Café für den guten Zweck",
+      "date_start": "2026-11-22",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ],
   "removed": [
     {
-      "id": "1fd326eeae6eb187",
-      "title": "\"Geistig fit\"-Gedächtnistraining",
-      "date_start": "2026-08-11",
+      "id": "de7d142ca8c6522f",
+      "title": "Gesprächskreis Demenz (Abt. Senioren, Demenzberatung)",
+      "date_start": "2026-08-12",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "951945acb2c0ad0b",
-      "title": "Skatgruppen",
-      "date_start": "2026-08-11",
+      "id": "14dad178cd27132b",
+      "title": "Fotogruppe",
+      "date_start": "2026-08-12",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "7760d264a0b8a854",
+      "id": "9b14ef5eee02943d",
+      "title": "KEIN Vesper.Päusle",
+      "date_start": "2026-08-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "12a13d5a0534331a",
+      "title": "Spieletreff",
+      "date_start": "2026-08-12",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "44e1ba54fe2237de",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-08-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "89ad478ae843e30e",
+      "title": "Sommernachmittag \"Eiskaffee und Sommerdeko\"",
+      "date_start": "2026-08-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "04f26e1a25315a36",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-08-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a4ddf5bd8d1ce2de",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-08-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "807a3ebd8e34f301",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-08-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "986a7f7f39a4eeec",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-09-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "34e100d8e0b17644",
       "title": "English Conversation Stammtisch",
-      "date_start": "2026-08-11",
+      "date_start": "2026-09-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "67d24cad23192703",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-09-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "723be6d97d0ab7b2",
+      "title": "KEIN Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-09-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "509966c991efc7c0",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-09-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "73e5090e2ffc21a7",
+      "title": "Kontakt-Treff \"Neuland\" - Treffpunkt für Verwitwete",
+      "date_start": "2026-09-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3c9208099699b37c",
+      "title": "?? FEDIA-Theaterworkshop (FEDIA, Stadt Ditzingen)",
+      "date_start": "2026-09-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "cb4b11509821f9a1",
+      "title": "Smartphone-Workshop 1",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5a78e3a7e5fa264d",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1985b98472f9ebc2",
+      "title": "Sonntags-Café für den guten Zweck",
+      "date_start": "2026-09-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "276066d215f1884d",
+      "title": "LandFrauen Ditzingen - Besprechung (Internes Treffen) (LandFrauen Ditzingen)",
+      "date_start": "2026-09-21",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a5f8cbf80d29baf7",
+      "title": "Spanisch Stammtisch",
+      "date_start": "2026-09-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b05eb0205257e24a",
+      "title": "Smartphone-Workshop 1",
+      "date_start": "2026-09-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c81793d4d0135b84",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-09-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "6e27cc459e38d741",
+      "title": "Vortrag: Herausforderung Demenz ()",
+      "date_start": "2026-09-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c29b40b03b756aa4",
+      "title": "Begegnungs Café (AK Asyl)",
+      "date_start": "2026-09-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f09e93205fbcba34",
+      "title": "Filmabend von Ewig anders (Ewig anders Ditzingen)",
+      "date_start": "2026-09-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a32d53d34ba38249",
+      "title": "Smartphone-Workshop 1",
+      "date_start": "2026-10-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8126f1c602e311e3",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e12c424b46856bcd",
+      "title": "Interne Veranstaltung (Stadt Ditzingen)",
+      "date_start": "2026-10-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1e344e41f6d3c160",
+      "title": "?? FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "510c4ea74e0c276e",
+      "title": "Smartphone-Workshop 1",
+      "date_start": "2026-10-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a9ae49f0ec6a1041",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0db9ed040dfbbd2a",
+      "title": "AK Asyl - Besprechung (AK Asyl)",
+      "date_start": "2026-10-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3fe8f7c7dd7b2543",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-10-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fc6c9ebe7392ed48",
+      "title": "Kaffeenachmittag des Schwäbischen Albvereins (Schwäbischer Albverein)",
+      "date_start": "2026-10-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5f75550705fb80a6",
+      "title": "LandFrauen Ditzingen - Besprechung (Internes Treffen) (LandFrauen Ditzingen)",
+      "date_start": "2026-10-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "2bc4d3c876ddb02b",
+      "title": "Smartphone Workshop 2",
+      "date_start": "2026-10-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "99ca1bf39291f3fc",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5238abd820f30b27",
+      "title": "?? FEDIA-Theaterworkshop (FEDIA, Stadt Ditzingen)",
+      "date_start": "2026-10-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "93c2b2e42e1337e5",
+      "title": "Smartphone Workshop 2",
+      "date_start": "2026-10-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a52568f68fe2a14c",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "46799fada3bf271a",
+      "title": "Frauen-Stammtisch der LandFrauen Ditzingen (LandFrauen DItzingen)",
+      "date_start": "2026-10-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7493eef04a300034",
+      "title": "?? Spanisch Stammtisch",
+      "date_start": "2026-10-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0598ebd682eacf09",
+      "title": "Smartphone Workshop 2",
+      "date_start": "2026-10-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1cc0924f8ef6dce6",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-10-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "027482bbcc232dc1",
+      "title": "KEIN Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-10-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "64c3cce315b62e79",
+      "title": "Kreativ-Workshop (LandFrauen Ditzingen)",
+      "date_start": "2026-11-02",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "6af96d199cc91e24",
+      "title": "Smartphone Workshop 2",
+      "date_start": "2026-11-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1e6f3c88cb68f695",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7a42949f425f8c02",
+      "title": "Kontakt-Treff \"Neuland\" - Treffpunkt für Verwitwete",
+      "date_start": "2026-11-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4cf84a3803132154",
+      "title": "LandFrauen Ditzingen - Besprechung (Internes Treffen) (LandFrauen Ditzingen)",
+      "date_start": "2026-11-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9e3d227ca4dabcac",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e7a15a6fb99a1504",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-11-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "cd720826569e3917",
+      "title": "?? FEDIA-Theaterworkshop (FEDIA, Stadt Ditzingen)",
+      "date_start": "2026-11-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4a0045f143b33d1c",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ede4f40ae160d765",
+      "title": "Spanisch Stammtisch",
+      "date_start": "2026-11-25",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0be64ad891a684e8",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4b7ffadb54ead18e",
+      "title": "Adventskranzbinden (LandFrauen Ditzingen)",
+      "date_start": "2026-11-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "33001c0c602501bf",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-12-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9dc606f5248988f5",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-12-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "51eac3d8ca96e837",
+      "title": "Spielenachmittag \"Rummikub und mehr\"",
+      "date_start": "2026-12-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ceac9fc66d16ddbe",
+      "title": "Kontakt-Treff \"Neuland\" - Treffpunkt für Verwitwete",
+      "date_start": "2026-12-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e1d3b6c56cd76cae",
+      "title": "LandFrauen Ditzingen - Besprechung (Internes Treffen) (LandFrauen Ditzingen)",
+      "date_start": "2026-12-14",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b9049cce26dc8d01",
+      "title": "Gesprächskreis Demenz (Abt. Senioren, Demenzberatung)",
+      "date_start": "2026-12-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7647dfc7270ccdc4",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-12-17",
       "source": "ditzingen_treffpunkt_adler"
     }
   ]
