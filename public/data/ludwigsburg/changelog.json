@@ -1,24 +1,25 @@
 {
-  "generated_at": "2026-08-15T10:09:27.381731+02:00",
+  "generated_at": "2026-08-15T23:32:48.492460+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "museum",
     "schloss",
-    "ludwigsburg_stadt",
-    "stabi",
-    "kunstverein_ausstellungen",
+    "museum",
     "kunstverein_veranstaltungen",
-    "labyrinth",
-    "karlskaserne_ausstellungen",
-    "forum_schlosspark",
-    "garnisonmuseum",
     "blueba",
+    "musikhalle_lb",
+    "garnisonmuseum",
+    "stabi",
+    "karlskaserne_ausstellungen",
+    "lisbert_queer",
     "karlskaserne_veranstaltungen",
-    "musikhalle_lb"
+    "labyrinth",
+    "ludwigsburg_stadt",
+    "kunstverein_ausstellungen",
+    "forum_schlosspark"
   ],
-  "previous_run": "2026-08-14T11:30:57.993276+02:00",
-  "count_added": 9,
-  "count_removed": 12,
+  "previous_run": "2026-08-15T10:09:27.476580+02:00",
+  "count_added": 7,
+  "count_removed": 1,
   "added": [
     {
       "id": "feee56b785ce127e",
@@ -33,120 +34,42 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "35bb6bb83d3edb07",
-      "title": "Klassische Führung für Familien",
-      "date_start": "2026-03-28",
-      "source": "schloss"
+      "id": "1df13f6b164f832a",
+      "title": "LIBBERT Spieleabend",
+      "date_start": "2026-08-20",
+      "source": "lisbert_queer"
     },
     {
-      "id": "69356c166438db23",
-      "title": "XR/VR-Initiative",
-      "date_start": "2026-08-18",
-      "source": "ludwigsburg_stadt"
+      "id": "cb038976135914ad",
+      "title": "LISBERT Babbel Bubble",
+      "date_start": "2026-09-03",
+      "source": "lisbert_queer"
     },
     {
-      "id": "b9cb69e9391916e2",
-      "title": "LUDWIGSBURGER VÄTERGRUPPE",
-      "date_start": "2026-08-25",
-      "source": "ludwigsburg_stadt"
+      "id": "e6d5a1f381a8c1d9",
+      "title": "LISBERT Babbel Bubble",
+      "date_start": "2026-10-01",
+      "source": "lisbert_queer"
     },
     {
-      "id": "59b887434fbe0b3b",
-      "title": "Genussführung: Ludwigsburger Versucherle",
-      "date_start": "2026-08-26",
-      "source": "ludwigsburg_stadt"
+      "id": "b1e98cdfbeeb4528",
+      "title": "LISBERT Babbel Bubble",
+      "date_start": "2026-11-05",
+      "source": "lisbert_queer"
     },
     {
-      "id": "172d15f83f673a9b",
-      "title": "Kräuterführung",
-      "date_start": "2026-08-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "657feae461f4c92a",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-08-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "ba73c5ff680da4bc",
-      "title": "Auffangen. Informieren – Begleiten – Frauenselbsthilfe Krebs e. V.",
-      "date_start": "2026-08-26",
-      "source": "ludwigsburg_stadt"
+      "id": "44e6e61443b9dab2",
+      "title": "LISBERT Babbel Bubble",
+      "date_start": "2026-12-03",
+      "source": "lisbert_queer"
     }
   ],
   "removed": [
     {
-      "id": "b58b66a1484ef580",
-      "title": "KreativWerkstatt - Hey sommar/Ein Sommer in Schweden",
-      "date_start": "2026-08-14",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "886674379408d31b",
-      "title": "KreativWerkstatt - Hej sommar - Sommer in Schweden",
-      "date_start": "2026-08-14",
-      "source": "stabi"
-    },
-    {
-      "id": "391667e495922192",
-      "title": "Ferienworkshop Museumsbuch interaktiv",
-      "date_start": "2026-08-14",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "51a4f0cb4be13889",
-      "title": "Ferienworkshop Museumsbuch interaktiv",
-      "date_start": "2026-08-14",
-      "source": "museum"
-    },
-    {
-      "id": "63baf8ac0935549f",
-      "title": "Schachmatt dem Alter",
-      "date_start": "2026-08-14",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "62151096e3b8ba45",
-      "title": "Schachmatt dem Alter",
-      "date_start": "2026-08-14",
-      "source": "stabi"
-    },
-    {
-      "id": "f732f67690c1ed12",
-      "title": "Mission Schlossbau: Baumeister gesucht!",
-      "date_start": "2026-08-14",
-      "source": "schloss"
-    },
-    {
-      "id": "6c06359e25e3789f",
-      "title": "Ich bin online und du?",
-      "date_start": "2026-08-14",
-      "source": "stabi"
-    },
-    {
-      "id": "b5f0c34130539958",
-      "title": "Ich bin online und du?",
-      "date_start": "2026-08-14",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "145fb06064681242",
-      "title": "SportBox am Mehrgenerationenhaus (MGH)",
-      "date_start": "2026-08-14",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "5ff9b1c14990600a",
-      "title": "Der Astronaut - Projekt Hail Mary",
-      "date_start": "2026-08-14",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "0ddc5d99ebe250f8",
-      "title": "Klassische Führung für Familien",
-      "date_start": null,
-      "source": "schloss"
+      "id": "e8b73cad8c2e526d",
+      "title": "Schaufahren der Modellschiffe",
+      "date_start": "2026-08-15",
+      "source": "blueba"
     }
   ]
 }
