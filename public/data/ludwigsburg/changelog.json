@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-08-15T23:32:48.492460+02:00",
+  "generated_at": "2026-08-16T09:48:09.089771+02:00",
   "city": "ludwigsburg",
   "sources": [
+    "lisbert_queer",
+    "ludwigsburg_stadt",
+    "blueba",
     "schloss",
     "museum",
-    "kunstverein_veranstaltungen",
-    "blueba",
-    "musikhalle_lb",
-    "garnisonmuseum",
-    "stabi",
-    "karlskaserne_ausstellungen",
-    "lisbert_queer",
     "karlskaserne_veranstaltungen",
-    "labyrinth",
-    "ludwigsburg_stadt",
+    "stabi",
+    "kunstverein_veranstaltungen",
     "kunstverein_ausstellungen",
-    "forum_schlosspark"
+    "forum_schlosspark",
+    "musikhalle_lb",
+    "labyrinth",
+    "garnisonmuseum",
+    "karlskaserne_ausstellungen"
   ],
-  "previous_run": "2026-08-15T10:09:27.476580+02:00",
-  "count_added": 7,
-  "count_removed": 1,
+  "previous_run": "2026-08-15T23:32:48.589576+02:00",
+  "count_added": 8,
+  "count_removed": 9,
   "added": [
     {
       "id": "feee56b785ce127e",
@@ -34,42 +34,96 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "1df13f6b164f832a",
-      "title": "LIBBERT Spieleabend",
-      "date_start": "2026-08-20",
-      "source": "lisbert_queer"
+      "id": "aa2fef9d136e1192",
+      "title": "Roboter programmieren: Eltern-Kind-Workshop",
+      "date_start": "2026-08-27",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "cb038976135914ad",
-      "title": "LISBERT Babbel Bubble",
-      "date_start": "2026-09-03",
-      "source": "lisbert_queer"
+      "id": "ba683dadeb66fb06",
+      "title": "Hi.Francky - AfterWork Donnerstag",
+      "date_start": "2026-08-27",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "e6d5a1f381a8c1d9",
-      "title": "LISBERT Babbel Bubble",
-      "date_start": "2026-10-01",
-      "source": "lisbert_queer"
+      "id": "88986b2c42685ec4",
+      "title": "Ritmo y Pasión - Tanzen unter den Sternen",
+      "date_start": "2026-08-27",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "b1e98cdfbeeb4528",
-      "title": "LISBERT Babbel Bubble",
-      "date_start": "2026-11-05",
-      "source": "lisbert_queer"
+      "id": "60bc26c8533e2555",
+      "title": "Waldbaden",
+      "date_start": "2026-08-29",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "44e6e61443b9dab2",
-      "title": "LISBERT Babbel Bubble",
-      "date_start": "2026-12-03",
-      "source": "lisbert_queer"
+      "id": "842cfbbf9f00e88c",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-08-29",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "e1c9080ddc9dd003",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-08-29",
+      "source": "ludwigsburg_stadt"
     }
   ],
   "removed": [
     {
-      "id": "e8b73cad8c2e526d",
-      "title": "Schaufahren der Modellschiffe",
+      "id": "8b2099eb08aaa97f",
+      "title": "Lichterzauber",
       "date_start": "2026-08-15",
       "source": "blueba"
+    },
+    {
+      "id": "30d42141902b2bb5",
+      "title": "Bilderbuchsamstag",
+      "date_start": "2026-08-15",
+      "source": "stabi"
+    },
+    {
+      "id": "41bb0e60aae72ea1",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-08-15",
+      "source": "schloss"
+    },
+    {
+      "id": "fcd400a5e1ac161e",
+      "title": "Nachmittagsflohmarkt",
+      "date_start": "2026-08-15",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "33467d84b2f5bf5a",
+      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
+      "date_start": "2026-08-15",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "4541db64fe40078b",
+      "title": "Lichterzauber im Blühenden Barock",
+      "date_start": "2026-08-15",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "e807a2bfc6cb4a6e",
+      "title": "Genussführung: MärchenZauber & WeinGenuss",
+      "date_start": "2026-08-15",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "f34c8e0eea814fbd",
+      "title": "Basketballländerspiel Damen: Deutschland vs. Spanien",
+      "date_start": "2026-08-15",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3bb21990ad8b28ef",
+      "title": "Steckerlfischfiasko",
+      "date_start": "2026-08-15",
+      "source": "ludwigsburg_stadt"
     }
   ]
 }
