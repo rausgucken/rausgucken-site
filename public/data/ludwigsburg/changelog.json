@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-08-16T09:48:09.089771+02:00",
+  "generated_at": "2026-08-17T09:56:18.332883+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "lisbert_queer",
-    "ludwigsburg_stadt",
-    "blueba",
-    "schloss",
     "museum",
-    "karlskaserne_veranstaltungen",
-    "stabi",
-    "kunstverein_veranstaltungen",
-    "kunstverein_ausstellungen",
     "forum_schlosspark",
-    "musikhalle_lb",
-    "labyrinth",
+    "karlskaserne_ausstellungen",
+    "stabi",
     "garnisonmuseum",
-    "karlskaserne_ausstellungen"
+    "kunstverein_ausstellungen",
+    "kunstverein_veranstaltungen",
+    "musikhalle_lb",
+    "blueba",
+    "ludwigsburg_stadt",
+    "karlskaserne_veranstaltungen",
+    "schloss",
+    "labyrinth",
+    "lisbert_queer"
   ],
-  "previous_run": "2026-08-15T23:32:48.589576+02:00",
-  "count_added": 8,
-  "count_removed": 9,
+  "previous_run": "2026-08-16T09:48:09.184573+02:00",
+  "count_added": 6,
+  "count_removed": 8,
   "added": [
     {
       "id": "feee56b785ce127e",
@@ -34,95 +34,77 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "aa2fef9d136e1192",
-      "title": "Roboter programmieren: Eltern-Kind-Workshop",
-      "date_start": "2026-08-27",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "ba683dadeb66fb06",
-      "title": "Hi.Francky - AfterWork Donnerstag",
-      "date_start": "2026-08-27",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "88986b2c42685ec4",
-      "title": "Ritmo y Pasión - Tanzen unter den Sternen",
-      "date_start": "2026-08-27",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "60bc26c8533e2555",
-      "title": "Waldbaden",
+      "id": "7166516269ce40c7",
+      "title": "Geschichtsführung: Alter Friedhof",
       "date_start": "2026-08-29",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "842cfbbf9f00e88c",
-      "title": "Werkstatt für Kinder",
+      "id": "75eb3a4d845fa442",
+      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
       "date_start": "2026-08-29",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "e1c9080ddc9dd003",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-08-29",
+      "id": "56c1f2f8cced6f97",
+      "title": "Schleuse Deluxe beim Naturerlebnis Neckar",
+      "date_start": "2026-08-30",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2d50655f7facc2ce",
+      "title": "Kinder- und Familienführung: Zeitreise mit Kindermädchen Gina",
+      "date_start": "2026-08-30",
       "source": "ludwigsburg_stadt"
     }
   ],
   "removed": [
     {
-      "id": "8b2099eb08aaa97f",
-      "title": "Lichterzauber",
-      "date_start": "2026-08-15",
-      "source": "blueba"
-    },
-    {
-      "id": "30d42141902b2bb5",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-08-15",
-      "source": "stabi"
-    },
-    {
-      "id": "41bb0e60aae72ea1",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-08-15",
+      "id": "a0e8f5491d6ea57a",
+      "title": "Meine erste Schlossführung",
+      "date_start": "2026-08-16",
       "source": "schloss"
     },
     {
-      "id": "fcd400a5e1ac161e",
-      "title": "Nachmittagsflohmarkt",
-      "date_start": "2026-08-15",
+      "id": "5a65bbb46b0209d0",
+      "title": "Naturerlebnis Neckar",
+      "date_start": "2026-08-16",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "33467d84b2f5bf5a",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-08-15",
+      "id": "a58c00d35037fe05",
+      "title": "Kunstausstellung Kaleidoskop",
+      "date_start": "2026-08-16",
+      "source": "schloss"
+    },
+    {
+      "id": "bc25450d0a5ba21c",
+      "title": "Regio-Genuss mit Oldie-Bus",
+      "date_start": "2026-08-16",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "4541db64fe40078b",
-      "title": "Lichterzauber im Blühenden Barock",
-      "date_start": "2026-08-15",
+      "id": "7c7447bba0140ff3",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-08-16",
+      "source": "schloss"
+    },
+    {
+      "id": "1bd7dac2841f3854",
+      "title": "Orient trifft Okzident im Residenzschloss",
+      "date_start": "2026-08-16",
+      "source": "schloss"
+    },
+    {
+      "id": "90bf56a040f642cd",
+      "title": "Morgens Zirkus, abends Theater",
+      "date_start": "2026-08-16",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "e807a2bfc6cb4a6e",
-      "title": "Genussführung: MärchenZauber & WeinGenuss",
-      "date_start": "2026-08-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "f34c8e0eea814fbd",
-      "title": "Basketballländerspiel Damen: Deutschland vs. Spanien",
-      "date_start": "2026-08-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "3bb21990ad8b28ef",
-      "title": "Steckerlfischfiasko",
-      "date_start": "2026-08-15",
+      "id": "f6870445ab117978",
+      "title": "Ein fast perfekter Antrag",
+      "date_start": "2026-08-16",
       "source": "ludwigsburg_stadt"
     }
   ]
