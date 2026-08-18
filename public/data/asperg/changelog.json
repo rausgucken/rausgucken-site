@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-17T06:19:55.301339+02:00",
+  "generated_at": "2026-08-18T06:16:35.090911+02:00",
   "city": "asperg",
   "sources": [
     "asperg_veranstaltungen",
-    "asperg_fuehrungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-08-16T06:14:57.956315+02:00",
-  "count_added": 20,
-  "count_removed": 1,
+  "previous_run": "2026-08-17T06:19:55.380774+02:00",
+  "count_added": 19,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -101,6 +101,12 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "5ca517997e11470e",
+      "title": "Fahrradtour auf dem Keltenweg",
+      "date_start": "2026-08-16",
+      "source": "asperg_fuehrungen"
+    },
+    {
       "id": "d8d9a4602f7dc217",
       "title": "Tag der dt. Einheit - Kostümführung",
       "date_start": "2025-10-03",
@@ -117,26 +123,7 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "5ca517997e11470e",
-      "title": "Fahrradtour auf dem Keltenweg",
-      "date_start": "2026-08-16",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "b328e18ca3dd9533",
-      "title": "Back to the roots - Rock & More",
-      "date_start": "2026-10-10",
-      "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "590a9faba2849d9a",
-      "title": "Fahrradtour auf dem Keltenweg",
-      "date_start": "2026-08-16",
-      "source": "asperg_veranstaltungen"
-    }
-  ]
+  "removed": []
 }
