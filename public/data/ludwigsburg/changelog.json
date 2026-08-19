@@ -1,25 +1,32 @@
 {
-  "generated_at": "2026-08-18T10:33:16.534554+02:00",
+  "generated_at": "2026-08-19T10:32:45.380082+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "labyrinth",
-    "forum_schlosspark",
-    "garnisonmuseum",
-    "blueba",
-    "karlskaserne_ausstellungen",
-    "karlskaserne_veranstaltungen",
-    "ludwigsburg_stadt",
-    "kunstverein_veranstaltungen",
-    "stabi",
-    "kunstverein_ausstellungen",
+    "schloss",
     "musikhalle_lb",
+    "karlskaserne_veranstaltungen",
+    "forum_schlosspark",
+    "kunstverein_ausstellungen",
+    "garnisonmuseum",
+    "ludwigsburg_stadt",
+    "blueba",
     "lisbert_queer",
-    "schloss"
+    "museum",
+    "labyrinth",
+    "stabi",
+    "kunstverein_veranstaltungen",
+    "karlskaserne_ausstellungen"
   ],
-  "previous_run": "2026-08-17T09:56:18.426638+02:00",
-  "count_added": 3,
-  "count_removed": 45,
+  "previous_run": "2026-08-18T10:33:16.628467+02:00",
+  "count_added": 49,
+  "count_removed": 12,
   "added": [
+    {
+      "id": "ece2a25890957bbc",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-08-22",
+      "source": "schloss"
+    },
     {
       "id": "feee56b785ce127e",
       "title": "HEISS AUF LESEN",
@@ -27,19 +34,17 @@
       "source": "stabi"
     },
     {
+      "id": "d1a6dc6343132b31",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-03-02",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
       "id": "d3d20f419148a996",
       "title": "„Deutsche Reservisten-Bierkrüge; Zeitzeugen der Kaiserzeit von 1871 bis 1918",
       "date_start": "2026-07-15",
       "source": "garnisonmuseum"
     },
-    {
-      "id": "84214690640c5cf2",
-      "title": "Summer Football Camp",
-      "date_start": "2026-08-31",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
     {
       "id": "7c82aba616f7a699",
       "title": "Ausstellung Respekt! Menschen der Karlshöhe",
@@ -51,24 +56,6 @@
       "title": "Little America – Fotografie Jürgen Schadeberg",
       "date_start": "2026-07-01",
       "source": "museum"
-    },
-    {
-      "id": "c8d0f4dff8dea073",
-      "title": "Theater Tredeschin",
-      "date_start": "2026-08-17",
-      "source": "blueba"
-    },
-    {
-      "id": "005223f76fc8beba",
-      "title": "Tiere im Schloss",
-      "date_start": "2026-08-17",
-      "source": "schloss"
-    },
-    {
-      "id": "e2765b20689a9197",
-      "title": "One Battle After Another",
-      "date_start": "2026-08-17",
-      "source": "ludwigsburg_stadt"
     },
     {
       "id": "c48034e537af9ed5",
@@ -197,12 +184,6 @@
       "source": "museum"
     },
     {
-      "id": "746f98c5fe1bfba3",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-11-05",
-      "source": "museum"
-    },
-    {
       "id": "503013994c307868",
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2026-11-10",
@@ -236,12 +217,6 @@
       "id": "22f9f9b321aa01e3",
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2026-11-24",
-      "source": "museum"
-    },
-    {
-      "id": "3e6569c50955cf0f",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-11-28",
       "source": "museum"
     },
     {
@@ -309,6 +284,110 @@
       "title": "Bilderbuchsamstag auf Achse",
       "date_start": "2027-04-03",
       "source": "museum"
+    },
+    {
+      "id": "99e72e31ad1cd303",
+      "title": "XR/VR-Initiative",
+      "date_start": "2026-09-15",
+      "source": "stabi"
+    },
+    {
+      "id": "f09f97807552609d",
+      "title": "Games-Hackathon",
+      "date_start": "2026-08-31",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "896023d671ea0b22",
+      "title": "Museumspause",
+      "date_start": "2026-09-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "1c93733115058251",
+      "title": "Kostenfreie Beratung rund um’s Balkonkraftwerk",
+      "date_start": "2026-09-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "b48a0dbc60fcee81",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-02",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "c16ae401fe1a60cd",
+      "title": "Knips dich kreativ",
+      "date_start": "2026-08-18",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "452ac0d00456e7c8",
+      "title": "Knips dich kreativ",
+      "date_start": "2026-08-18",
+      "source": "labyrinth"
+    },
+    {
+      "id": "5296c5b2b1baa151",
+      "title": "Knips dich kreativ",
+      "date_start": "2026-08-18",
+      "source": "stabi"
+    },
+    {
+      "id": "e34267302ef71569",
+      "title": "XR/VR-Initiative",
+      "date_start": "2026-08-18",
+      "source": "stabi"
+    },
+    {
+      "id": "69356c166438db23",
+      "title": "XR/VR-Initiative",
+      "date_start": "2026-08-18",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "e9e748f1821ed5ab",
+      "title": "Bewegungsgruppe hat Plätze frei",
+      "date_start": "2026-08-18",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "487ba2d9e7a5f728",
+      "title": "Theater Tredeschin",
+      "date_start": "2026-08-18",
+      "source": "blueba"
+    },
+    {
+      "id": "56fac27e90397852",
+      "title": "Treppauf, treppab",
+      "date_start": "2026-08-18",
+      "source": "schloss"
+    },
+    {
+      "id": "3ee9b49ebbee383c",
+      "title": "Steckerlfischfiasko",
+      "date_start": "2026-08-18",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "55b8703638c64636",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-08-22",
+      "source": "schloss"
+    },
+    {
+      "id": "4cb66bbadbf049cc",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Bietigheim-Bissingen",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "d3ad323a1900b2b7",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-03-02",
+      "source": "labyrinth"
     }
   ]
 }

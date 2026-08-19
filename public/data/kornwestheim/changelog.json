@@ -1,25 +1,37 @@
 {
-  "generated_at": "2026-08-18T07:19:51.699702+02:00",
+  "generated_at": "2026-08-19T06:47:40.573286+02:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_buecherei",
     "kornwestheim",
+    "das_k_buecherei",
     "das_k_spielplan"
   ],
-  "previous_run": "2026-08-17T06:43:05.889671+02:00",
-  "count_added": 1,
-  "count_removed": 1,
+  "previous_run": "2026-08-18T07:19:51.778931+02:00",
+  "count_added": 2,
+  "count_removed": 2,
   "added": [
     {
-      "id": "168b293eb982896a",
+      "id": "62f2f2c1086700f3",
       "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
       "date_start": "2026-10-02",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "4b8adf80e7b3a557",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "date_start": "2026-12-11",
       "source": "kornwestheim"
     }
   ],
   "removed": [
     {
-      "id": "62f2f2c1086700f3",
+      "id": "617e746a99c7fb04",
+      "title": "Musiknacht Open",
+      "date_start": "2026-08-18",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "168b293eb982896a",
       "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
       "date_start": "2026-10-02",
       "source": "kornwestheim"

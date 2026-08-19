@@ -1,20 +1,26 @@
 {
-  "generated_at": "2026-08-18T07:16:02.674844+02:00",
+  "generated_at": "2026-08-19T06:41:50.326637+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_treffpunkt_adler",
-    "ditzingen_stadt"
+    "ditzingen_stadt",
+    "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-08-17T06:39:03.637533+02:00",
-  "count_added": 1,
-  "count_removed": 0,
-  "added": [
+  "previous_run": "2026-08-18T07:16:02.755891+02:00",
+  "count_added": 0,
+  "count_removed": 2,
+  "added": [],
+  "removed": [
     {
-      "id": "8966c26c97749035",
-      "title": "Gesprächskreis Demenz (Abt. Senioren, Demenzberatung)",
-      "date_start": "2027-08-18",
+      "id": "6ff17d4e03300202",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-08-18",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8a8229d7416b7724",
+      "title": "Skatgruppen",
+      "date_start": "2026-08-18",
       "source": "ditzingen_treffpunkt_adler"
     }
-  ],
-  "removed": []
+  ]
 }

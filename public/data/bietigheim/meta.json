@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-08-18T07:15:46.541358+02:00",
+  "scraped_at": "2026-08-19T07:13:04.211367+02:00",
   "city": "bietigheim",
-  "event_count": 229,
+  "event_count": 215,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,41 +9,37 @@
     "bietigheim_galerie"
   ],
   "source_counts": {
-    "bietigheim": 218,
+    "bietigheim": 204,
     "bietigheim_galerie": 11
   },
   "sources_failed": [],
-  "data_hash": "89e383d7dcb58ed9",
+  "data_hash": "e7efe1e212b7b5d6",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 18.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 19.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "bietigheim": 1.0,
     "bietigheim_galerie": 0.81
   },
   "source_event_counts": {
-    "bietigheim": 218,
+    "bietigheim": 204,
     "bietigheim_galerie": 11
   },
-  "count_drift_warnings": {
-    "bietigheim_galerie": "Count drift: 11 vs historical avg 16"
-  },
+  "count_drift_warnings": {},
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 513.3,
-    "runtime_delta_vs_baseline": 1.868,
+    "runtime_minutes": 512.7,
+    "runtime_delta_vs_baseline": 1.864,
     "source_health": {
       "bietigheim": 1.0,
       "bietigheim_galerie": 0.81
     },
-    "count_drift_warnings": {
-      "bietigheim_galerie": "Count drift: 11 vs historical avg 16"
-    },
+    "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-18T10:47:32.638357+02:00"
+    "generated_at": "2026-08-19T10:45:50.353288+02:00"
   }
 }

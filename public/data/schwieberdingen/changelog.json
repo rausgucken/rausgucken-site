@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-18T08:10:28.621025+02:00",
+  "generated_at": "2026-08-19T08:03:18.744675+02:00",
   "city": "schwieberdingen",
   "sources": [
     "schwieberdingen_gemeinde"
   ],
-  "previous_run": "2026-08-17T07:32:06.526771+02:00",
+  "previous_run": "2026-08-18T08:10:28.696751+02:00",
   "count_added": 1,
-  "count_removed": 0,
+  "count_removed": 1,
   "added": [
     {
       "id": "c08c5bfe49aa26f6",
@@ -15,5 +15,12 @@
       "source": "schwieberdingen_gemeinde"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "a7e5c794bab59056",
+      "title": "Persönliche Beratung",
+      "date_start": "2026-08-18",
+      "source": "schwieberdingen_gemeinde"
+    }
+  ]
 }
