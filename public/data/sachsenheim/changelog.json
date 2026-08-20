@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-19T06:34:39.961789+02:00",
+  "generated_at": "2026-08-20T06:40:48.924274+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-08-18T06:25:11.586684+02:00",
-  "count_added": 9,
-  "count_removed": 0,
+  "previous_run": "2026-08-19T06:34:40.037285+02:00",
+  "count_added": 10,
+  "count_removed": 1,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -62,7 +62,20 @@
       "title": "Führung, Zu Gast bei Rittern und Geistern",
       "date_start": "2026-05-17",
       "source": "sachsenheim_library"
+    },
+    {
+      "id": "00078f66a6c9303c",
+      "title": "Erste Hilfe-Kurs für Bildungs- und Betreuungseinrichtungen nach BG-Standard",
+      "date_start": "2026-09-14",
+      "source": "sachsenheim_kultur"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "9f270aa4c184f007",
+      "title": "Waldbaden - Herbstwald",
+      "date_start": "2026-10-09",
+      "source": "sachsenheim_kultur"
+    }
+  ]
 }

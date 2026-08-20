@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-08-19T06:47:28.055731+02:00",
+  "scraped_at": "2026-08-20T06:56:10.347663+02:00",
   "city": "grossbottwar",
-  "event_count": 181,
+  "event_count": 190,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "grossbottwar_veranstaltungen"
   ],
   "source_counts": {
-    "grossbottwar_veranstaltungen": 181
+    "grossbottwar_veranstaltungen": 190
   },
   "sources_failed": [],
-  "data_hash": "684402107e18203a",
+  "data_hash": "abc181ed3779a376",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 19.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 20.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "grossbottwar_veranstaltungen": 1.0
   },
   "source_event_counts": {
-    "grossbottwar_veranstaltungen": 181
+    "grossbottwar_veranstaltungen": 190
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 512.7,
-    "runtime_delta_vs_baseline": 1.864,
+    "runtime_minutes": 510.0,
+    "runtime_delta_vs_baseline": 1.849,
     "source_health": {
       "grossbottwar_veranstaltungen": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-19T10:45:51.116171+02:00"
+    "generated_at": "2026-08-20T10:42:57.443098+02:00"
   }
 }

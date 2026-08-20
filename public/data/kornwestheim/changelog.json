@@ -1,15 +1,53 @@
 {
-  "generated_at": "2026-08-19T06:47:40.573286+02:00",
+  "generated_at": "2026-08-20T07:21:00.170015+02:00",
   "city": "kornwestheim",
   "sources": [
-    "kornwestheim",
     "das_k_buecherei",
-    "das_k_spielplan"
+    "das_k_spielplan",
+    "kornwestheim"
   ],
-  "previous_run": "2026-08-18T07:19:51.778931+02:00",
-  "count_added": 2,
-  "count_removed": 2,
+  "previous_run": "2026-08-19T06:47:40.652003+02:00",
+  "count_added": 5,
+  "count_removed": 5,
   "added": [
+    {
+      "id": "5f31e5b86347c830",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-09-04",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "168b293eb982896a",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-10-02",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "8592519b0cae8d4c",
+      "title": "Führung auf dem Vereinsgelände Gleisbeet",
+      "date_start": "2026-08-27",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "deb5f86b3a5fab52",
+      "title": "Solar-Sprechstunde mit den ehrenamtlichen Solar Scouts Kornwestheim",
+      "date_start": "2026-09-12",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "c27bb0f516fca0fe",
+      "title": "Abschlussfest Heiss auf Lesen 2026",
+      "date_start": "2026-09-18",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "b31f8d55420dcca1",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-09-04",
+      "source": "kornwestheim"
+    },
     {
       "id": "62f2f2c1086700f3",
       "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
@@ -21,19 +59,17 @@
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
       "date_start": "2026-12-11",
       "source": "kornwestheim"
-    }
-  ],
-  "removed": [
+    },
     {
-      "id": "617e746a99c7fb04",
-      "title": "Musiknacht Open",
-      "date_start": "2026-08-18",
+      "id": "47e24aed7529ecfd",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2026-12-11",
       "source": "kornwestheim"
     },
     {
-      "id": "168b293eb982896a",
-      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
-      "date_start": "2026-10-02",
+      "id": "6bcbcc2066ff0af9",
+      "title": "Xmas Rocks",
+      "date_start": "2026-12-11",
       "source": "kornwestheim"
     }
   ]

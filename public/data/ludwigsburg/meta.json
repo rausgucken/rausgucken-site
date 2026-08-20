@@ -1,9 +1,9 @@
 {
-  "scraped_at": "2026-08-19T10:32:45.473207+02:00",
+  "scraped_at": "2026-08-20T10:30:01.880000+02:00",
   "city": "ludwigsburg",
-  "event_count": 779,
+  "event_count": 777,
   "flagged_count": 0,
-  "expired_count": 2,
+  "expired_count": 3,
   "sources_scraped": [
     "blueba",
     "forum_schlosspark",
@@ -22,12 +22,12 @@
   "source_counts": {
     "ludwigsburg_stadt": 48,
     "schloss": 166,
-    "museum": 40,
+    "museum": 42,
     "kunstverein_ausstellungen": 4,
     "blueba": 45,
-    "karlskaserne_veranstaltungen": 105,
-    "stabi": 179,
-    "labyrinth": 98,
+    "karlskaserne_veranstaltungen": 106,
+    "stabi": 175,
+    "labyrinth": 97,
     "lisbert_queer": 5,
     "kunstverein_veranstaltungen": 6,
     "musikhalle_lb": 32,
@@ -35,9 +35,9 @@
     "karlskaserne_ausstellungen": 1
   },
   "sources_failed": [],
-  "data_hash": "f34314b9ccbbfb8b",
+  "data_hash": "562fdacd71341410",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 19.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 20.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "ludwigsburg_stadt": 1.0,
@@ -57,12 +57,12 @@
   "source_event_counts": {
     "ludwigsburg_stadt": 48,
     "schloss": 166,
-    "museum": 40,
+    "museum": 42,
     "kunstverein_ausstellungen": 4,
     "blueba": 45,
-    "karlskaserne_veranstaltungen": 105,
-    "stabi": 179,
-    "labyrinth": 98,
+    "karlskaserne_veranstaltungen": 106,
+    "stabi": 175,
+    "labyrinth": 97,
     "lisbert_queer": 5,
     "kunstverein_veranstaltungen": 6,
     "musikhalle_lb": 32,
@@ -75,8 +75,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 512.7,
-    "runtime_delta_vs_baseline": 1.864,
+    "runtime_minutes": 510.0,
+    "runtime_delta_vs_baseline": 1.849,
     "source_health": {
       "ludwigsburg_stadt": 1.0,
       "schloss": 1.0,
@@ -95,6 +95,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-19T10:45:51.731732+02:00"
+    "generated_at": "2026-08-20T10:42:58.063905+02:00"
   }
 }

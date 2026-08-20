@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-08-19T10:32:45.380082+02:00",
+  "generated_at": "2026-08-20T10:30:01.786540+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "schloss",
-    "musikhalle_lb",
-    "karlskaserne_veranstaltungen",
-    "forum_schlosspark",
-    "kunstverein_ausstellungen",
-    "garnisonmuseum",
-    "ludwigsburg_stadt",
-    "blueba",
-    "lisbert_queer",
-    "museum",
-    "labyrinth",
     "stabi",
+    "karlskaserne_veranstaltungen",
+    "labyrinth",
+    "garnisonmuseum",
+    "lisbert_queer",
+    "karlskaserne_ausstellungen",
+    "blueba",
     "kunstverein_veranstaltungen",
-    "karlskaserne_ausstellungen"
+    "kunstverein_ausstellungen",
+    "musikhalle_lb",
+    "museum",
+    "ludwigsburg_stadt",
+    "forum_schlosspark",
+    "schloss"
   ],
-  "previous_run": "2026-08-18T10:33:16.628467+02:00",
-  "count_added": 49,
-  "count_removed": 12,
+  "previous_run": "2026-08-19T10:32:45.473207+02:00",
+  "count_added": 9,
+  "count_removed": 8,
   "added": [
     {
-      "id": "ece2a25890957bbc",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-08-22",
-      "source": "schloss"
+      "id": "a72f39f4461540f6",
+      "title": "Herbstferienworkshop: Die Tiere im Wald von 8-10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "feee56b785ce127e",
@@ -34,359 +34,95 @@
       "source": "stabi"
     },
     {
-      "id": "d1a6dc6343132b31",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2027-03-02",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
       "id": "d3d20f419148a996",
       "title": "„Deutsche Reservisten-Bierkrüge; Zeitzeugen der Kaiserzeit von 1871 bis 1918",
       "date_start": "2026-07-15",
       "source": "garnisonmuseum"
     },
     {
-      "id": "7c82aba616f7a699",
-      "title": "Ausstellung Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-05-03",
+      "id": "746f98c5fe1bfba3",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-05",
       "source": "museum"
     },
     {
-      "id": "650ef2c04fb838df",
-      "title": "Little America – Fotografie Jürgen Schadeberg",
-      "date_start": "2026-07-01",
-      "source": "museum"
-    },
-    {
-      "id": "c48034e537af9ed5",
+      "id": "3e6569c50955cf0f",
       "title": "Werkstatt für Kinder",
-      "date_start": "2026-08-29",
-      "source": "museum"
-    },
-    {
-      "id": "a8cbbcf36745b299",
-      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-08-29",
-      "source": "museum"
-    },
-    {
-      "id": "412a38bbfbc19241",
-      "title": "Museumspause",
-      "date_start": "2026-09-02",
-      "source": "museum"
-    },
-    {
-      "id": "33db71f4708977da",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-09-09",
-      "source": "museum"
-    },
-    {
-      "id": "da91c6d4fe2f0d58",
-      "title": "Tag des Offenen Denkmals",
-      "date_start": "2026-09-13",
-      "source": "museum"
-    },
-    {
-      "id": "1da712de65240f53",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-09-16",
-      "source": "museum"
-    },
-    {
-      "id": "937f51ce6917680b",
-      "title": "Offenes Atelier: Origami, Regina Ille-Kopp",
-      "date_start": "2026-09-17",
-      "source": "museum"
-    },
-    {
-      "id": "a321ac78d9c91527",
-      "title": "Gastrosophie-Abend",
-      "date_start": "2026-09-24",
-      "source": "museum"
-    },
-    {
-      "id": "5f0f28478d262af4",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-09-26",
-      "source": "museum"
-    },
-    {
-      "id": "1ad591165ba69227",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-06",
-      "source": "museum"
-    },
-    {
-      "id": "10574e50c47e9a2d",
-      "title": "Museumspause",
-      "date_start": "2026-10-07",
-      "source": "museum"
-    },
-    {
-      "id": "d47a92c5185c1929",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-13",
-      "source": "museum"
-    },
-    {
-      "id": "50d1b8bcae088f0f",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-10-14",
-      "source": "museum"
-    },
-    {
-      "id": "fffeb549fd24639b",
-      "title": "Mitmach-Ausstellung flott, flott!",
-      "date_start": "2026-10-17",
-      "source": "museum"
-    },
-    {
-      "id": "5beb0ee8eb08f214",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-20",
-      "source": "museum"
-    },
-    {
-      "id": "2c0921e304b82ec4",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-10-21",
-      "source": "museum"
-    },
-    {
-      "id": "c170b028731594af",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-10-24",
-      "source": "museum"
-    },
-    {
-      "id": "33c73002bed4f546",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-27",
-      "source": "museum"
-    },
-    {
-      "id": "19b34a6bd1f128f7",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-10-31",
-      "source": "museum"
-    },
-    {
-      "id": "744c68f84155ddb4",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-03",
-      "source": "museum"
-    },
-    {
-      "id": "cc3cacc7ccb69d7b",
-      "title": "Museumspause",
-      "date_start": "2026-11-04",
-      "source": "museum"
-    },
-    {
-      "id": "503013994c307868",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-10",
-      "source": "museum"
-    },
-    {
-      "id": "d8b7431bc4a684b1",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-11-11",
-      "source": "museum"
-    },
-    {
-      "id": "48eda5404372f7f9",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2026-11-14",
-      "source": "museum"
-    },
-    {
-      "id": "fbefa5096d00bf96",
-      "title": "Stadtspaziergang zu Christian Friedrich Daniel Schubart",
-      "date_start": "2026-11-14",
-      "source": "museum"
-    },
-    {
-      "id": "3a07be9ff60f3ffd",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-17",
-      "source": "museum"
-    },
-    {
-      "id": "22f9f9b321aa01e3",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-24",
-      "source": "museum"
-    },
-    {
-      "id": "1be2100766f9975a",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
       "date_start": "2026-11-28",
       "source": "museum"
     },
     {
-      "id": "ceffd17f4f8fa9ec",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-01",
-      "source": "museum"
-    },
-    {
-      "id": "0200632eb9bc01e9",
-      "title": "Museumspause",
-      "date_start": "2026-12-02",
-      "source": "museum"
-    },
-    {
-      "id": "a6439166304ac087",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-08",
-      "source": "museum"
-    },
-    {
-      "id": "d3a73fb64cac0f86",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-12-09",
-      "source": "museum"
-    },
-    {
-      "id": "772817fe51854b17",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2026-12-12",
-      "source": "museum"
-    },
-    {
-      "id": "712623bc24124a9c",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-15",
-      "source": "museum"
-    },
-    {
-      "id": "731d87843648da13",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-22",
-      "source": "museum"
-    },
-    {
-      "id": "9d8ff67588d6e2b0",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2027-02-13",
-      "source": "museum"
-    },
-    {
-      "id": "a1dbffe5920531f4",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2027-03-13",
-      "source": "museum"
-    },
-    {
-      "id": "557f572ab46b1d46",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2027-04-03",
-      "source": "museum"
-    },
-    {
-      "id": "99e72e31ad1cd303",
-      "title": "XR/VR-Initiative",
-      "date_start": "2026-09-15",
+      "id": "fa01f595680c02e3",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-02",
       "source": "stabi"
     },
     {
-      "id": "f09f97807552609d",
-      "title": "Games-Hackathon",
-      "date_start": "2026-08-31",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "896023d671ea0b22",
-      "title": "Museumspause",
+      "id": "078d1b19ec12e1b3",
+      "title": "Frauen in Gesellschaft - in und mit der Natur",
       "date_start": "2026-09-02",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "1c93733115058251",
-      "title": "Kostenfreie Beratung rund um’s Balkonkraftwerk",
+      "id": "7d54b95447e7258f",
+      "title": "LuBu MoVes",
       "date_start": "2026-09-02",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "b48a0dbc60fcee81",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-02",
+      "id": "e97e576eaed5207b",
+      "title": "SPORT TROTZ KREBS",
+      "date_start": "2026-09-03",
       "source": "ludwigsburg_stadt"
     }
   ],
   "removed": [
     {
-      "id": "c16ae401fe1a60cd",
-      "title": "Knips dich kreativ",
-      "date_start": "2026-08-18",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "2555799763595088",
+      "title": "Workshop: Roboter programmieren",
+      "date_start": "2026-08-19",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "452ac0d00456e7c8",
-      "title": "Knips dich kreativ",
-      "date_start": "2026-08-18",
-      "source": "labyrinth"
-    },
-    {
-      "id": "5296c5b2b1baa151",
-      "title": "Knips dich kreativ",
-      "date_start": "2026-08-18",
+      "id": "76f5842e7e10c0ed",
+      "title": "Workshop: Roboter programmieren",
+      "date_start": "2026-08-19",
       "source": "stabi"
     },
     {
-      "id": "e34267302ef71569",
-      "title": "XR/VR-Initiative",
-      "date_start": "2026-08-18",
+      "id": "cb380fab26bdfd22",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-08-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "f7d864e397ca204f",
+      "title": "Sprechtreff Deutsch - ONLINE",
+      "date_start": "2026-08-19",
       "source": "stabi"
     },
     {
-      "id": "69356c166438db23",
-      "title": "XR/VR-Initiative",
-      "date_start": "2026-08-18",
+      "id": "a12daa578c1f1e08",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-08-19",
+      "source": "stabi"
+    },
+    {
+      "id": "75c0492512daa817",
+      "title": "Paris Murder Mystery",
+      "date_start": "2026-08-19",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "e9e748f1821ed5ab",
-      "title": "Bewegungsgruppe hat Plätze frei",
-      "date_start": "2026-08-18",
-      "source": "ludwigsburg_stadt"
+      "id": "c81ce9fdfb461c7c",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-02",
+      "source": "stabi"
     },
     {
-      "id": "487ba2d9e7a5f728",
-      "title": "Theater Tredeschin",
-      "date_start": "2026-08-18",
-      "source": "blueba"
-    },
-    {
-      "id": "56fac27e90397852",
-      "title": "Treppauf, treppab",
-      "date_start": "2026-08-18",
-      "source": "schloss"
-    },
-    {
-      "id": "3ee9b49ebbee383c",
-      "title": "Steckerlfischfiasko",
-      "date_start": "2026-08-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "55b8703638c64636",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-08-22",
-      "source": "schloss"
-    },
-    {
-      "id": "4cb66bbadbf049cc",
-      "title": "Faschingsferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Bietigheim-Bissingen",
-      "date_start": "2027-02-08",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "d3ad323a1900b2b7",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2027-03-02",
+      "id": "8e726080233c84d6",
+      "title": "Herbstferienworkshop: Die Tiere im Wald von 8-10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
       "source": "labyrinth"
     }
   ]

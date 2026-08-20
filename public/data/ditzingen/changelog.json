@@ -1,25 +1,38 @@
 {
-  "generated_at": "2026-08-19T06:41:50.326637+02:00",
+  "generated_at": "2026-08-20T06:48:38.505455+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_treffpunkt_adler",
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-08-18T07:16:02.755891+02:00",
-  "count_added": 0,
-  "count_removed": 2,
-  "added": [],
-  "removed": [
+  "previous_run": "2026-08-19T06:41:50.407019+02:00",
+  "count_added": 3,
+  "count_removed": 1,
+  "added": [
     {
-      "id": "6ff17d4e03300202",
-      "title": "\"Geistig fit\"-Gedächtnistraining",
-      "date_start": "2026-08-18",
-      "source": "ditzingen_treffpunkt_adler"
+      "id": "c8af6e3c2c8223a9",
+      "title": "Himmelswelten - Bilder und Skulpturen von Elke Gaertner",
+      "date_start": "2026-11-22",
+      "source": "ditzingen_stadt"
     },
     {
-      "id": "8a8229d7416b7724",
-      "title": "Skatgruppen",
-      "date_start": "2026-08-18",
+      "id": "c2709469451e609b",
+      "title": "Highlightskonzert",
+      "date_start": "2026-10-10",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "5f7a55ae916993ce",
+      "title": "Weihnachtliches Musizieren der Jugendmusikschule",
+      "date_start": "2026-12-06",
+      "source": "ditzingen_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "f118d8f083526a6e",
+      "title": "KEIN GlemsTaler TauschRing (GlemsTaler TauschRing)",
+      "date_start": "2026-08-19",
       "source": "ditzingen_treffpunkt_adler"
     }
   ]
