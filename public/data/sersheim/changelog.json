@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-08-20T09:31:14.091059+02:00",
+  "generated_at": "2026-08-21T09:30:25.033176+02:00",
   "city": "sersheim",
   "sources": [
     "sersheim_gemeinde"
   ],
-  "previous_run": "2026-08-19T09:40:51.850413+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-08-20T09:31:14.168322+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "ae7a5f50a3dcea9f",
+      "title": "Vorlesenachmittag",
+      "date_start": "2026-11-27",
+      "source": "sersheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "8a3a809fc209b8d4",
+      "title": "Vorlesenachmittag",
+      "date_start": "2026-11-27",
+      "source": "sersheim_gemeinde"
+    }
+  ]
 }

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-20T06:40:48.924274+02:00",
+  "generated_at": "2026-08-21T06:34:33.535743+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_kultur",
-    "sachsenheim_library"
+    "sachsenheim_library",
+    "sachsenheim_kultur"
   ],
-  "previous_run": "2026-08-19T06:34:40.037285+02:00",
-  "count_added": 10,
-  "count_removed": 1,
+  "previous_run": "2026-08-20T06:40:48.999715+02:00",
+  "count_added": 11,
+  "count_removed": 5,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -19,12 +19,6 @@
       "id": "7abb0b728b87ef8b",
       "title": "„Gold und Glamour“ in Sachsenheim",
       "date_start": "2026-03-15",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "a5fa289de417abe1",
-      "title": "Zu Gast bei Rittern und Geistern",
-      "date_start": "2026-05-17",
       "source": "sachsenheim_kultur"
     },
     {
@@ -58,24 +52,60 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "7863010f44a7a5a4",
-      "title": "Führung, Zu Gast bei Rittern und Geistern",
-      "date_start": "2026-05-17",
-      "source": "sachsenheim_library"
+      "id": "ef75f739316f4a33",
+      "title": "Zu Gast bei Rittern und Geistern",
+      "date_start": "2026-10-03",
+      "source": "sachsenheim_kultur"
     },
     {
-      "id": "00078f66a6c9303c",
-      "title": "Erste Hilfe-Kurs für Bildungs- und Betreuungseinrichtungen nach BG-Standard",
-      "date_start": "2026-09-14",
+      "id": "60bbce4b38ebf21c",
+      "title": "Zu Gast bei Rittern und Geistern",
+      "date_start": "2026-09-06",
       "source": "sachsenheim_kultur"
-    }
-  ],
-  "removed": [
+    },
+    {
+      "id": "3e124a88424d2c88",
+      "title": "Zeitreise zum Schmecken und Schnuppern",
+      "date_start": "2026-10-04",
+      "source": "sachsenheim_kultur"
+    },
     {
       "id": "9f270aa4c184f007",
       "title": "Waldbaden - Herbstwald",
       "date_start": "2026-10-09",
       "source": "sachsenheim_kultur"
+    }
+  ],
+  "removed": [
+    {
+      "id": "684a98cc91c8b391",
+      "title": "Führung, Zu Gast bei Rittern und Geistern",
+      "date_start": "2026-09-06",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "d3041ec04187d420",
+      "title": "Zu Gast bei Rittern und Geistern",
+      "date_start": "2026-09-06",
+      "source": "sachsenheim_library"
+    },
+    {
+      "id": "809446d4e34ed5d5",
+      "title": "Zu Gast bei Rittern und Geistern",
+      "date_start": "2026-10-03",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "2ce125c72958b7c8",
+      "title": "Kochkurs für Erwachsene: Schlemmen wie bei den Kelten, im alten Rom und bei Ritter Hermann von Sachsenheim",
+      "date_start": "2026-10-04",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "a98905a579cf9e84",
+      "title": "Zeitreise zum Schmecken und Schnuppern",
+      "date_start": "2026-10-04",
+      "source": "sachsenheim_library"
     }
   ]
 }

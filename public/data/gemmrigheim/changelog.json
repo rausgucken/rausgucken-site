@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-08-20T08:52:57.343070+02:00",
+  "generated_at": "2026-08-21T08:51:07.496476+02:00",
   "city": "gemmrigheim",
   "sources": [
     "gemmrigheim_gemeinde"
   ],
-  "previous_run": "2026-08-19T08:54:28.843958+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-08-20T08:52:57.417983+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "07fb6b892ffe255c",
+      "title": "Adventsglühen",
+      "date_start": "2026-11-29",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "e192693b39d6aeee",
+      "title": "Freizeitwanderung August",
+      "date_start": "2026-08-20",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ]
 }

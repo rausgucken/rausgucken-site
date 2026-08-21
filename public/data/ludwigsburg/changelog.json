@@ -1,36 +1,48 @@
 {
-  "generated_at": "2026-08-20T10:30:01.786540+02:00",
+  "generated_at": "2026-08-21T10:19:53.835776+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "stabi",
-    "karlskaserne_veranstaltungen",
-    "labyrinth",
-    "garnisonmuseum",
-    "lisbert_queer",
-    "karlskaserne_ausstellungen",
     "blueba",
-    "kunstverein_veranstaltungen",
-    "kunstverein_ausstellungen",
-    "musikhalle_lb",
     "museum",
+    "labyrinth",
+    "lisbert_queer",
     "ludwigsburg_stadt",
+    "musikhalle_lb",
+    "kunstverein_ausstellungen",
+    "stabi",
+    "garnisonmuseum",
+    "karlskaserne_ausstellungen",
     "forum_schlosspark",
-    "schloss"
+    "kunstverein_veranstaltungen",
+    "schloss",
+    "karlskaserne_veranstaltungen"
   ],
-  "previous_run": "2026-08-19T10:32:45.473207+02:00",
+  "previous_run": "2026-08-20T10:30:01.880000+02:00",
   "count_added": 9,
-  "count_removed": 8,
+  "count_removed": 9,
   "added": [
     {
-      "id": "a72f39f4461540f6",
-      "title": "Herbstferienworkshop: Die Tiere im Wald von 8-10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "55b8703638c64636",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-08-22",
+      "source": "schloss"
+    },
+    {
+      "id": "b4f5b6fa3d5ac8fc",
+      "title": "Scratch Hackathon",
+      "date_start": "2026-08-19",
+      "source": "stabi"
     },
     {
       "id": "feee56b785ce127e",
       "title": "HEISS AUF LESEN",
       "date_start": "2026-07-07",
+      "source": "stabi"
+    },
+    {
+      "id": "c81ce9fdfb461c7c",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-02",
       "source": "stabi"
     },
     {
@@ -40,90 +52,84 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "746f98c5fe1bfba3",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-11-05",
-      "source": "museum"
+      "id": "5c132b7324b833a5",
+      "title": "Fit im Netz",
+      "date_start": "2026-09-03",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "3e6569c50955cf0f",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-11-28",
-      "source": "museum"
+      "id": "7a252560cff30310",
+      "title": "Boxing & Beats",
+      "date_start": "2026-09-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2d4c18184d8fbe60",
+      "title": "Venezianischer Maskenball im Residenzschloss Ludwigsburg",
+      "date_start": "2026-09-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fd4e812b6ca1a51b",
+      "title": "Venezianische Messe 2026",
+      "date_start": "2026-09-04",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "392a2c23456dcd95",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-08-20",
+      "source": "stabi"
+    },
+    {
+      "id": "dd571ebd66511a63",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-08-20",
+      "source": "labyrinth"
+    },
+    {
+      "id": "1df13f6b164f832a",
+      "title": "LIBBERT Spieleabend",
+      "date_start": "2026-08-20",
+      "source": "lisbert_queer"
+    },
+    {
+      "id": "c2c687e357edf51a",
+      "title": "Hi.Francky - AfterWork Donnerstag",
+      "date_start": "2026-08-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "4654fb1de85654f7",
+      "title": "Ritmo y Pasión - Tanzen unter den Sternen",
+      "date_start": "2026-08-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "126c0927608dfbc8",
+      "title": "Glennkill: Ein Schafskrimi",
+      "date_start": "2026-08-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "ece2a25890957bbc",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-08-22",
+      "source": "schloss"
+    },
+    {
+      "id": "ba683dadeb66fb06",
+      "title": "Hi.Francky - AfterWork Donnerstag",
+      "date_start": "2026-08-27",
+      "source": "ludwigsburg_stadt"
     },
     {
       "id": "fa01f595680c02e3",
       "title": "Sprechtreff Deutsch",
       "date_start": "2026-09-02",
       "source": "stabi"
-    },
-    {
-      "id": "078d1b19ec12e1b3",
-      "title": "Frauen in Gesellschaft - in und mit der Natur",
-      "date_start": "2026-09-02",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7d54b95447e7258f",
-      "title": "LuBu MoVes",
-      "date_start": "2026-09-02",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "e97e576eaed5207b",
-      "title": "SPORT TROTZ KREBS",
-      "date_start": "2026-09-03",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "2555799763595088",
-      "title": "Workshop: Roboter programmieren",
-      "date_start": "2026-08-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "76f5842e7e10c0ed",
-      "title": "Workshop: Roboter programmieren",
-      "date_start": "2026-08-19",
-      "source": "stabi"
-    },
-    {
-      "id": "cb380fab26bdfd22",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-08-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "f7d864e397ca204f",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-08-19",
-      "source": "stabi"
-    },
-    {
-      "id": "a12daa578c1f1e08",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-08-19",
-      "source": "stabi"
-    },
-    {
-      "id": "75c0492512daa817",
-      "title": "Paris Murder Mystery",
-      "date_start": "2026-08-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "c81ce9fdfb461c7c",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-02",
-      "source": "stabi"
-    },
-    {
-      "id": "8e726080233c84d6",
-      "title": "Herbstferienworkshop: Die Tiere im Wald von 8-10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "labyrinth"
     }
   ]
 }
