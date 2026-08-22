@@ -1,48 +1,30 @@
 {
-  "generated_at": "2026-08-21T10:19:53.835776+02:00",
+  "generated_at": "2026-08-22T10:26:01.565618+02:00",
   "city": "ludwigsburg",
   "sources": [
+    "schloss",
+    "labyrinth",
     "blueba",
     "museum",
-    "labyrinth",
+    "musikhalle_lb",
+    "karlskaserne_ausstellungen",
+    "karlskaserne_veranstaltungen",
+    "forum_schlosspark",
+    "kunstverein_ausstellungen",
+    "garnisonmuseum",
     "lisbert_queer",
     "ludwigsburg_stadt",
-    "musikhalle_lb",
-    "kunstverein_ausstellungen",
     "stabi",
-    "garnisonmuseum",
-    "karlskaserne_ausstellungen",
-    "forum_schlosspark",
-    "kunstverein_veranstaltungen",
-    "schloss",
-    "karlskaserne_veranstaltungen"
+    "kunstverein_veranstaltungen"
   ],
-  "previous_run": "2026-08-20T10:30:01.880000+02:00",
-  "count_added": 9,
-  "count_removed": 9,
+  "previous_run": "2026-08-21T10:19:53.929092+02:00",
+  "count_added": 7,
+  "count_removed": 8,
   "added": [
-    {
-      "id": "55b8703638c64636",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-08-22",
-      "source": "schloss"
-    },
-    {
-      "id": "b4f5b6fa3d5ac8fc",
-      "title": "Scratch Hackathon",
-      "date_start": "2026-08-19",
-      "source": "stabi"
-    },
     {
       "id": "feee56b785ce127e",
       "title": "HEISS AUF LESEN",
       "date_start": "2026-07-07",
-      "source": "stabi"
-    },
-    {
-      "id": "c81ce9fdfb461c7c",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-02",
       "source": "stabi"
     },
     {
@@ -52,84 +34,84 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "5c132b7324b833a5",
-      "title": "Fit im Netz",
-      "date_start": "2026-09-03",
-      "source": "ludwigsburg_stadt"
+      "id": "5e012f0afde9b9cc",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": null,
+      "source": "schloss"
     },
     {
-      "id": "7a252560cff30310",
-      "title": "Boxing & Beats",
-      "date_start": "2026-09-03",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "2d4c18184d8fbe60",
-      "title": "Venezianischer Maskenball im Residenzschloss Ludwigsburg",
-      "date_start": "2026-09-03",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "fd4e812b6ca1a51b",
-      "title": "Venezianische Messe 2026",
+      "id": "a0a94b382b668473",
+      "title": "Kostümführung: Reichsgräfin Wilhelmine von Grävenitz",
       "date_start": "2026-09-04",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "1cf01bd4a2fe2eb4",
+      "title": "Venezianische Messe 2026",
+      "date_start": "2026-09-05",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "0d97558e764c3585",
+      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
+      "date_start": "2026-09-05",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3ac69f6b1eb078c5",
+      "title": "Kostümführung: Mit Harlekina zur Venezianischen Messe",
+      "date_start": "2026-09-05",
       "source": "ludwigsburg_stadt"
     }
   ],
   "removed": [
     {
-      "id": "392a2c23456dcd95",
-      "title": "Bilderbuchkino am Nachmittag",
-      "date_start": "2026-08-20",
-      "source": "stabi"
-    },
-    {
-      "id": "dd571ebd66511a63",
-      "title": "Bilderbuchkino am Nachmittag",
-      "date_start": "2026-08-20",
-      "source": "labyrinth"
-    },
-    {
-      "id": "1df13f6b164f832a",
-      "title": "LIBBERT Spieleabend",
-      "date_start": "2026-08-20",
-      "source": "lisbert_queer"
-    },
-    {
-      "id": "c2c687e357edf51a",
-      "title": "Hi.Francky - AfterWork Donnerstag",
-      "date_start": "2026-08-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4654fb1de85654f7",
-      "title": "Ritmo y Pasión - Tanzen unter den Sternen",
-      "date_start": "2026-08-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "126c0927608dfbc8",
-      "title": "Glennkill: Ein Schafskrimi",
-      "date_start": "2026-08-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "ece2a25890957bbc",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-08-22",
+      "id": "f2d072ce4584b2b4",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": "2026-03-28",
       "source": "schloss"
     },
     {
-      "id": "ba683dadeb66fb06",
-      "title": "Hi.Francky - AfterWork Donnerstag",
-      "date_start": "2026-08-27",
+      "id": "28b3d8796183558b",
+      "title": "Scratch-Hackathon",
+      "date_start": "2026-08-19",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "fa01f595680c02e3",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-02",
+      "id": "876570b43a4b1af3",
+      "title": "Schachmatt dem Alter",
+      "date_start": "2026-08-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "d3eaf72b8dca9202",
+      "title": "Schachmatt dem Alter",
+      "date_start": "2026-08-21",
       "source": "stabi"
+    },
+    {
+      "id": "a212fcebe842a897",
+      "title": "Mission Schlossbau: Baumeister gesucht!",
+      "date_start": "2026-08-21",
+      "source": "schloss"
+    },
+    {
+      "id": "97e49d16b6028b1d",
+      "title": "Blick hinter die Kulissen",
+      "date_start": "2026-08-21",
+      "source": "schloss"
+    },
+    {
+      "id": "0ae180a0478ffdcc",
+      "title": "Steckerlfischfiasko",
+      "date_start": "2026-08-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "059c48aeed65b9c2",
+      "title": "Piano Night in der Stadtkirche am Marktplatz",
+      "date_start": "2026-08-21",
+      "source": "ludwigsburg_stadt"
     }
   ]
 }

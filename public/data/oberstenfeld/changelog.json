@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-21T08:08:06.127297+02:00",
+  "generated_at": "2026-08-22T07:50:29.841716+02:00",
   "city": "oberstenfeld",
   "sources": [
     "oberstenfeld_veranstaltungen"
   ],
-  "previous_run": "2026-08-20T08:09:24.032527+02:00",
-  "count_added": 49,
-  "count_removed": 0,
+  "previous_run": "2026-08-21T08:08:06.203582+02:00",
+  "count_added": 48,
+  "count_removed": 1,
   "added": [
     {
       "id": "60dcaf202491b251",
@@ -189,12 +189,6 @@
       "source": "oberstenfeld_veranstaltungen"
     },
     {
-      "id": "efaac15d629e3374",
-      "title": "DRK - Blutspenden in Gronau",
-      "date_start": "2026-04-24",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
       "id": "c3e04578c8022a0e",
       "title": "Backtraum",
       "date_start": "2026-04-24",
@@ -303,5 +297,12 @@
       "source": "oberstenfeld_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "f4ad138d936df890",
+      "title": "DRK - Blutspenden in Gronau",
+      "date_start": "2026-08-21",
+      "source": "oberstenfeld_veranstaltungen"
+    }
+  ]
 }

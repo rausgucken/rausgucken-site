@@ -1,15 +1,59 @@
 {
-  "generated_at": "2026-08-21T07:18:14.605801+02:00",
+  "generated_at": "2026-08-22T06:31:23.284147+02:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_spielplan",
     "kornwestheim",
-    "das_k_buecherei"
+    "das_k_buecherei",
+    "das_k_spielplan"
   ],
-  "previous_run": "2026-08-20T07:21:00.248791+02:00",
-  "count_added": 2,
-  "count_removed": 1,
+  "previous_run": "2026-08-21T07:18:14.685199+02:00",
+  "count_added": 4,
+  "count_removed": 5,
   "added": [
+    {
+      "id": "5f31e5b86347c830",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-09-04",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "fa3439a4917dae43",
+      "title": "Eine Weihnachtsgeschichte",
+      "date_start": "2026-12-10",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "47e24aed7529ecfd",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2026-12-11",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "6bcbcc2066ff0af9",
+      "title": "Xmas Rocks",
+      "date_start": "2026-12-11",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "0be6234e752f99a6",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "date_start": "2026-08-21",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "808ea290b124bb3f",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2026-08-21",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "251cd301e6992c87",
+      "title": "Qigong-Workshopreihe",
+      "date_start": "2026-08-21",
+      "source": "kornwestheim"
+    },
     {
       "id": "b31f8d55420dcca1",
       "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
@@ -17,18 +61,10 @@
       "source": "kornwestheim"
     },
     {
-      "id": "64168171b3ee5989",
-      "title": "Weststadtfest",
-      "date_start": "2026-09-26",
-      "source": "kornwestheim"
-    }
-  ],
-  "removed": [
-    {
-      "id": "5f31e5b86347c830",
-      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
-      "date_start": "2026-09-04",
-      "source": "kornwestheim"
+      "id": "4d9eda5d50e5bef5",
+      "title": "Eine Weihnachtsgeschichte",
+      "date_start": "2026-12-10",
+      "source": "das_k_spielplan"
     }
   ]
 }
