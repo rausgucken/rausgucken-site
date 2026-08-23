@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-08-22T10:26:01.565618+02:00",
+  "generated_at": "2026-08-23T10:07:25.448791+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "schloss",
-    "labyrinth",
-    "blueba",
-    "museum",
-    "musikhalle_lb",
-    "karlskaserne_ausstellungen",
-    "karlskaserne_veranstaltungen",
-    "forum_schlosspark",
     "kunstverein_ausstellungen",
     "garnisonmuseum",
-    "lisbert_queer",
-    "ludwigsburg_stadt",
+    "schloss",
+    "blueba",
     "stabi",
-    "kunstverein_veranstaltungen"
+    "ludwigsburg_stadt",
+    "kunstverein_veranstaltungen",
+    "lisbert_queer",
+    "karlskaserne_ausstellungen",
+    "musikhalle_lb",
+    "labyrinth",
+    "museum",
+    "forum_schlosspark",
+    "karlskaserne_veranstaltungen"
   ],
-  "previous_run": "2026-08-21T10:19:53.929092+02:00",
-  "count_added": 7,
-  "count_removed": 8,
+  "previous_run": "2026-08-22T10:26:01.659699+02:00",
+  "count_added": 10,
+  "count_removed": 11,
   "added": [
     {
       "id": "feee56b785ce127e",
@@ -28,33 +28,107 @@
       "source": "stabi"
     },
     {
+      "id": "8e726080233c84d6",
+      "title": "Herbstferienworkshop: Die Tiere im Wald von 8-10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "d3ad323a1900b2b7",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-03-02",
+      "source": "labyrinth"
+    },
+    {
       "id": "d3d20f419148a996",
       "title": "„Deutsche Reservisten-Bierkrüge; Zeitzeugen der Kaiserzeit von 1871 bis 1918",
       "date_start": "2026-07-15",
       "source": "garnisonmuseum"
     },
     {
-      "id": "5e012f0afde9b9cc",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": null,
+      "id": "5335911a57262fa5",
+      "title": "Kostümführung: Mit Harlekina zur Venezianischen Messe",
+      "date_start": "2026-09-05",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "e11edb840eef8851",
+      "title": "Sound of Europe - Chorkonzert",
+      "date_start": "2026-10-25",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "4cb66bbadbf049cc",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Bietigheim-Bissingen",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "96d4f15e73a09af6",
+      "title": "Viva Cuba",
+      "date_start": "2026-09-05",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "053076f13add7c09",
+      "title": "Biber-Fieber beim Naturerlebnis Neckar",
+      "date_start": "2026-09-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "da4e7ec75df5338c",
+      "title": "Venezianische Messe 2026",
+      "date_start": "2026-09-06",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "df481941250f4ae6",
+      "title": "Ludwigsburger Weinlaube",
+      "date_start": "2026-08-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "f8e36aef01008cf2",
+      "title": "Vom Keller auf den Teller",
+      "date_start": "2026-08-22",
       "source": "schloss"
     },
     {
-      "id": "a0a94b382b668473",
-      "title": "Kostümführung: Reichsgräfin Wilhelmine von Grävenitz",
-      "date_start": "2026-09-04",
+      "id": "89afdf3b1d400c46",
+      "title": "Genussführung: Ludwigsburger Versucherle",
+      "date_start": "2026-08-22",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "1cf01bd4a2fe2eb4",
-      "title": "Venezianische Messe 2026",
-      "date_start": "2026-09-05",
-      "source": "ludwigsburg_stadt"
+      "id": "47fa58ced1983f7d",
+      "title": "Bilderbuchsamstag",
+      "date_start": "2026-08-22",
+      "source": "stabi"
     },
     {
-      "id": "0d97558e764c3585",
+      "id": "158650e606b9784e",
+      "title": "Führung durch das Schlosstheater",
+      "date_start": "2026-08-22",
+      "source": "schloss"
+    },
+    {
+      "id": "55b8703638c64636",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-08-22",
+      "source": "schloss"
+    },
+    {
+      "id": "7aadbbb8f7ff181d",
       "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-09-05",
+      "date_start": "2026-08-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "60469f171b8c49f9",
+      "title": "Die Odyssee",
+      "date_start": "2026-08-22",
       "source": "ludwigsburg_stadt"
     },
     {
@@ -62,56 +136,18 @@
       "title": "Kostümführung: Mit Harlekina zur Venezianischen Messe",
       "date_start": "2026-09-05",
       "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "f2d072ce4584b2b4",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": "2026-03-28",
-      "source": "schloss"
     },
     {
-      "id": "28b3d8796183558b",
-      "title": "Scratch-Hackathon",
-      "date_start": "2026-08-19",
-      "source": "ludwigsburg_stadt"
+      "id": "a72f39f4461540f6",
+      "title": "Herbstferienworkshop: Die Tiere im Wald von 8-10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "876570b43a4b1af3",
-      "title": "Schachmatt dem Alter",
-      "date_start": "2026-08-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "d3eaf72b8dca9202",
-      "title": "Schachmatt dem Alter",
-      "date_start": "2026-08-21",
-      "source": "stabi"
-    },
-    {
-      "id": "a212fcebe842a897",
-      "title": "Mission Schlossbau: Baumeister gesucht!",
-      "date_start": "2026-08-21",
-      "source": "schloss"
-    },
-    {
-      "id": "97e49d16b6028b1d",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-08-21",
-      "source": "schloss"
-    },
-    {
-      "id": "0ae180a0478ffdcc",
-      "title": "Steckerlfischfiasko",
-      "date_start": "2026-08-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "059c48aeed65b9c2",
-      "title": "Piano Night in der Stadtkirche am Marktplatz",
-      "date_start": "2026-08-21",
-      "source": "ludwigsburg_stadt"
+      "id": "d1a6dc6343132b31",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-03-02",
+      "source": "karlskaserne_veranstaltungen"
     }
   ]
 }

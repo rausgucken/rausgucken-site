@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-08-22T06:30:40.642909+02:00",
+  "generated_at": "2026-08-23T06:50:01.479984+02:00",
   "city": "gerlingen",
   "sources": [
     "gerlingen_stadt"
   ],
-  "previous_run": "2026-08-21T07:18:03.293629+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-08-22T06:30:40.718481+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "2d15749b05604349",
+      "title": "Öffentliche Sitzung des Technischen Ausschusses",
+      "date_start": "2026-11-30",
+      "source": "gerlingen_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "387c6845047ceaeb",
+      "title": "Wochenmarkt",
+      "date_start": "2026-08-22",
+      "source": "gerlingen_stadt"
+    }
+  ]
 }

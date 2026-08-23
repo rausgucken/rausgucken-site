@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-08-22T08:50:58.353917+02:00",
+  "scraped_at": "2026-08-23T08:37:35.400143+02:00",
   "city": "freudental",
-  "event_count": 31,
+  "event_count": 30,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "freudental_gemeinde"
   ],
   "source_counts": {
-    "freudental_gemeinde": 31
+    "freudental_gemeinde": 30
   },
   "sources_failed": [],
-  "data_hash": "bb6feef85d96510a",
+  "data_hash": "687f7f1a2d100243",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 22.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 23.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "freudental_gemeinde": 0.99
   },
   "source_event_counts": {
-    "freudental_gemeinde": 31
+    "freudental_gemeinde": 30
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 506.0,
-    "runtime_delta_vs_baseline": 1.827,
+    "runtime_minutes": 487.4,
+    "runtime_delta_vs_baseline": 1.723,
     "source_health": {
       "freudental_gemeinde": 0.99
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-22T10:39:23.489446+02:00"
+    "generated_at": "2026-08-23T10:20:44.774913+02:00"
   }
 }

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-22T06:15:22.057322+02:00",
+  "generated_at": "2026-08-23T06:12:02.769641+02:00",
   "city": "asperg",
   "sources": [
+    "asperg_fuehrungen",
     "glasperlenspiel",
-    "asperg_veranstaltungen",
-    "asperg_fuehrungen"
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-08-21T06:11:55.795824+02:00",
+  "previous_run": "2026-08-22T06:15:22.135197+02:00",
   "count_added": 20,
-  "count_removed": 1,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -107,6 +107,12 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "dc5f0f5ffd4b18ae",
+      "title": "Abendliche Stadtführung",
+      "date_start": "2026-08-21",
+      "source": "asperg_fuehrungen"
+    },
+    {
       "id": "d8d9a4602f7dc217",
       "title": "Tag der dt. Einheit - Kostümführung",
       "date_start": "2025-10-03",
@@ -123,20 +129,7 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "dc5f0f5ffd4b18ae",
-      "title": "Abendliche Stadtführung",
-      "date_start": "2026-08-21",
-      "source": "asperg_fuehrungen"
     }
   ],
-  "removed": [
-    {
-      "id": "f729a1e06961f38b",
-      "title": "Abendliche Stadtführung",
-      "date_start": "2026-08-21",
-      "source": "asperg_veranstaltungen"
-    }
-  ]
+  "removed": []
 }

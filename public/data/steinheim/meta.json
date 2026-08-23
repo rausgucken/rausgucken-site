@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-08-22T08:50:56.881256+02:00",
+  "scraped_at": "2026-08-23T08:37:33.935653+02:00",
   "city": "steinheim",
-  "event_count": 22,
+  "event_count": 23,
   "flagged_count": 0,
-  "expired_count": 3,
+  "expired_count": 4,
   "sources_scraped": [
     "steinheim_stadt"
   ],
   "source_counts": {
-    "steinheim_stadt": 22
+    "steinheim_stadt": 23
   },
   "sources_failed": [],
-  "data_hash": "7c8bde51d866e5c9",
+  "data_hash": "ea5b7b976044805d",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 22.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 23.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "steinheim_stadt": 0.84
+    "steinheim_stadt": 0.85
   },
   "source_event_counts": {
-    "steinheim_stadt": 22
+    "steinheim_stadt": 23
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 506.0,
-    "runtime_delta_vs_baseline": 1.827,
+    "runtime_minutes": 487.4,
+    "runtime_delta_vs_baseline": 1.723,
     "source_health": {
-      "steinheim_stadt": 0.84
+      "steinheim_stadt": 0.85
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-22T10:39:25.314113+02:00"
+    "generated_at": "2026-08-23T10:20:46.618069+02:00"
   }
 }
