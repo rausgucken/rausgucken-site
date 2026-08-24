@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-08-24T06:00:01.768282+02:00",
-  "event_count": 3,
+  "generated_at": "2026-08-24T06:32:52.462040+02:00",
+  "event_count": 4,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,7 +26,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-08-23T02:00:06.493117+02:00",
+      "scraped_at": "2026-08-24T02:00:06.724052+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -55,7 +55,7 @@
       "city": "freiberg",
       "slug": "selbsthilfegruppe-fuer-angehoerige-psychisch-erkrankter-2026-10-05t1930000200-frei",
       "weekdays": [],
-      "scraped_at": "2026-08-23T02:00:15.173617+02:00",
+      "scraped_at": "2026-08-24T02:00:15.427966+02:00",
       "extraction_confidence": 0.9,
       "is_new": false,
       "is_booked_out": false,
@@ -86,7 +86,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-08-23T02:00:35.775254+02:00",
+      "scraped_at": "2026-08-24T02:00:36.015962+02:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
@@ -94,6 +94,35 @@
       "editorial_tip": null,
       "source_label": "Stadt Freiberg am Neckar",
       "canonical_url": "https://www.rausgucken.de/freiberg/events/freiberger-weihnachtsmarkt-2026-12-06-frei"
+    },
+    {
+      "id": "3b26001afe3d0d78",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-12-16",
+      "date_end": null,
+      "time": "07:00 - 12:30",
+      "description": "Im Freiberger Wochenmarkt finden am Marktplatz ausgedehnte Handwerks- und Lebensmittelangebote statt. Von den Standbesitzern der Familie Zahner können Besucher Produkte probieren und kaufen.",
+      "location": "Marktplatz, Freiberg a.N.",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.freiberg-an.de/index.php?id=308&publish%5BcalendarViewType%5D=classic#event56672597",
+      "original_url": "https://www.freiberg-an.de/index.php?id=308&publish%5BcalendarViewType%5D=classic#event56672597",
+      "source": "freiberg_veranstaltungen",
+      "city": "freiberg",
+      "slug": "freiberger-wochenmarkt-2026-12-16t0700000100-frei",
+      "weekdays": [],
+      "scraped_at": "2026-08-24T02:00:39.387641+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Freiberg am Neckar",
+      "canonical_url": "https://www.rausgucken.de/freiberg/events/freiberger-wochenmarkt-2026-12-16t0700000100-frei"
     }
   ]
 }

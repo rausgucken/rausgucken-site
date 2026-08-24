@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-08-23T10:07:25.448791+02:00",
+  "generated_at": "2026-08-24T10:30:07.793040+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "kunstverein_ausstellungen",
-    "garnisonmuseum",
-    "schloss",
-    "blueba",
-    "stabi",
-    "ludwigsburg_stadt",
-    "kunstverein_veranstaltungen",
-    "lisbert_queer",
-    "karlskaserne_ausstellungen",
-    "musikhalle_lb",
     "labyrinth",
-    "museum",
+    "karlskaserne_veranstaltungen",
+    "kunstverein_veranstaltungen",
     "forum_schlosspark",
-    "karlskaserne_veranstaltungen"
+    "kunstverein_ausstellungen",
+    "musikhalle_lb",
+    "ludwigsburg_stadt",
+    "blueba",
+    "karlskaserne_ausstellungen",
+    "schloss",
+    "stabi",
+    "garnisonmuseum",
+    "lisbert_queer",
+    "museum"
   ],
-  "previous_run": "2026-08-22T10:26:01.659699+02:00",
-  "count_added": 10,
-  "count_removed": 11,
+  "previous_run": "2026-08-23T10:07:25.543253+02:00",
+  "count_added": 8,
+  "count_removed": 12,
   "added": [
     {
       "id": "feee56b785ce127e",
@@ -28,16 +28,10 @@
       "source": "stabi"
     },
     {
-      "id": "8e726080233c84d6",
-      "title": "Herbstferienworkshop: Die Tiere im Wald von 8-10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "d3ad323a1900b2b7",
+      "id": "d1a6dc6343132b31",
       "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
       "date_start": "2027-03-02",
-      "source": "labyrinth"
+      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "d3d20f419148a996",
@@ -46,16 +40,90 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "5335911a57262fa5",
-      "title": "Kostümführung: Mit Harlekina zur Venezianischen Messe",
-      "date_start": "2026-09-05",
+      "id": "f2d072ce4584b2b4",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "0ddc5d99ebe250f8",
+      "title": "Klassische Führung für Familien",
+      "date_start": null,
+      "source": "schloss"
+    },
+    {
+      "id": "82838e1dc11af887",
+      "title": "Kostümführung: Reichsgräfin Wilhelmine von Grävenitz",
+      "date_start": "2026-09-06",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "e11edb840eef8851",
-      "title": "Sound of Europe - Chorkonzert",
-      "date_start": "2026-10-25",
+      "id": "620b899a95500179",
+      "title": "Kostümführung: Mit Harlekina zur Venezianischen Messe",
+      "date_start": "2026-09-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "850aea2eddc67536",
+      "title": "LesArt 2026",
+      "date_start": "2026-09-06",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "35bb6bb83d3edb07",
+      "title": "Klassische Führung für Familien",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "530659648161d8d2",
+      "title": "Sommernachts Open Air Kino",
+      "date_start": "2026-08-01",
       "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "571541fd803dcdcc",
+      "title": "Sommernachts Open Air Kino",
+      "date_start": "2026-08-01",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "319822eb730952da",
+      "title": "Meine erste Schlossführung",
+      "date_start": "2026-08-23",
+      "source": "schloss"
+    },
+    {
+      "id": "3f127431d5c8f0e0",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-08-23",
+      "source": "schloss"
+    },
+    {
+      "id": "ecfcd0b0d74a5ff8",
+      "title": "Kleidung, die verführt",
+      "date_start": "2026-08-23",
+      "source": "schloss"
+    },
+    {
+      "id": "b5a9ae6e35a0bd55",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-08-23",
+      "source": "schloss"
+    },
+    {
+      "id": "5c45f448b574bb4b",
+      "title": "Oh la la 2 - Neue Tests, neues Chaos",
+      "date_start": "2026-08-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "6e97c3ceeeac2e80",
+      "title": "For KING & COUNTRY",
+      "date_start": "2026-08-23",
+      "source": "ludwigsburg_stadt"
     },
     {
       "id": "4cb66bbadbf049cc",
@@ -64,90 +132,16 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "96d4f15e73a09af6",
-      "title": "Viva Cuba",
-      "date_start": "2026-09-05",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "053076f13add7c09",
-      "title": "Biber-Fieber beim Naturerlebnis Neckar",
-      "date_start": "2026-09-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "da4e7ec75df5338c",
-      "title": "Venezianische Messe 2026",
-      "date_start": "2026-09-06",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "df481941250f4ae6",
-      "title": "Ludwigsburger Weinlaube",
-      "date_start": "2026-08-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "f8e36aef01008cf2",
-      "title": "Vom Keller auf den Teller",
-      "date_start": "2026-08-22",
-      "source": "schloss"
-    },
-    {
-      "id": "89afdf3b1d400c46",
-      "title": "Genussführung: Ludwigsburger Versucherle",
-      "date_start": "2026-08-22",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "47fa58ced1983f7d",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-08-22",
-      "source": "stabi"
-    },
-    {
-      "id": "158650e606b9784e",
-      "title": "Führung durch das Schlosstheater",
-      "date_start": "2026-08-22",
-      "source": "schloss"
-    },
-    {
-      "id": "55b8703638c64636",
-      "title": "Zwischen List und Lust",
-      "date_start": "2026-08-22",
-      "source": "schloss"
-    },
-    {
-      "id": "7aadbbb8f7ff181d",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-08-22",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "60469f171b8c49f9",
-      "title": "Die Odyssee",
-      "date_start": "2026-08-22",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "3ac69f6b1eb078c5",
-      "title": "Kostümführung: Mit Harlekina zur Venezianischen Messe",
-      "date_start": "2026-09-05",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "a72f39f4461540f6",
-      "title": "Herbstferienworkshop: Die Tiere im Wald von 8-10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "d1a6dc6343132b31",
+      "id": "d3ad323a1900b2b7",
       "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
       "date_start": "2027-03-02",
-      "source": "karlskaserne_veranstaltungen"
+      "source": "labyrinth"
+    },
+    {
+      "id": "5e012f0afde9b9cc",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": null,
+      "source": "schloss"
     }
   ]
 }
