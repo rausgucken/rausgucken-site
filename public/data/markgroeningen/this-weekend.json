@@ -1,37 +1,71 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-08-23T06:50:56.861934+02:00",
-  "event_count": 1,
+  "generated_at": "2026-08-24T06:00:01.868682+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "00ddf53e0cd7b5b2",
-      "title": "Ökum. Gottesdienst zum Internationalen Musikfest",
-      "date_start": "2026-08-23",
-      "date_end": null,
-      "time": "10:30",
-      "description": "In diesem Gottesdienst zum Internationalen Musikfest am Festzelt/Festplatz nimmt die Evangelische Verbundkirchengemeinde Markgröningen–Riexingen Einladung zu einem Tag der Glaubenskultur und Unterhaltung.",
-      "location": "Festzelt/Festplatz",
+      "id": "b80b106493b1b3fd",
+      "title": "Schäferlauf",
+      "date_start": "2026-08-28",
+      "date_end": "2026-08-31",
+      "time": null,
+      "description": "In Markgröningen feiert man den Schäferlauf vom 28. bis 31. August im Stadtgebiet. Ein traditionelles Fest mit geselliger Stimmung, organisiert von der Stadt.",
+      "location": "Stadtgebiet",
       "price": null,
       "age_min": null,
       "age_max": null,
-      "tags": [],
-      "link": "https://www.markgroeningen.de/kultur-tourismus/veranstaltungskalender/5196/oekum-gottesdienst-zum-internationalen-musikfest",
-      "original_url": "https://www.markgroeningen.de/kultur-tourismus/veranstaltungskalender/5196/oekum-gottesdienst-zum-internationalen-musikfest",
+      "tags": [
+        "Fest"
+      ],
+      "link": "https://www.markgroeningen.de/kultur-tourismus/veranstaltungskalender/5199/schaeferlauf",
+      "original_url": "https://www.markgroeningen.de/kultur-tourismus/veranstaltungskalender/5199/schaeferlauf",
       "source": "markgroeningen",
       "city": "markgroeningen",
-      "slug": "oekum-gottesdienst-zum-internationalen-musikfest-2026-08-23-mark",
+      "slug": "schaeferlauf-2026-08-28-mark",
       "weekdays": [
-        0
+        0,
+        1,
+        5,
+        6
       ],
-      "scraped_at": "2026-08-23T02:00:41.493327+02:00",
+      "scraped_at": "2026-08-23T02:00:41.493592+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Markgröningen",
-      "canonical_url": "https://www.rausgucken.de/markgroeningen/events/oekum-gottesdienst-zum-internationalen-musikfest-2026-08-23-mark"
+      "canonical_url": "https://www.rausgucken.de/markgroeningen/events/schaeferlauf-2026-08-28-mark"
+    },
+    {
+      "id": "a0eb09e21597f2ff",
+      "title": "Ökum. Festgottesdienst zum Schäferlauf",
+      "date_start": "2026-08-29",
+      "date_end": null,
+      "time": "11:45",
+      "description": "In der Bartholomäuskirche findet ein Festgottesdienst zum Schäferlauf statt. Organisiert von der Ev. Verbundkirchengemeinde Markgröningen–Riexingen.",
+      "location": "Bartholomäuskirche",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.markgroeningen.de/kultur-tourismus/veranstaltungskalender/5200/oekum-festgottesdienst-zum-schaeferlauf",
+      "original_url": "https://www.markgroeningen.de/kultur-tourismus/veranstaltungskalender/5200/oekum-festgottesdienst-zum-schaeferlauf",
+      "source": "markgroeningen",
+      "city": "markgroeningen",
+      "slug": "oekum-festgottesdienst-zum-schaeferlauf-2026-08-29-mark",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-08-23T02:00:41.494125+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Markgröningen",
+      "canonical_url": "https://www.rausgucken.de/markgroeningen/events/oekum-festgottesdienst-zum-schaeferlauf-2026-08-29-mark"
     }
   ]
 }
