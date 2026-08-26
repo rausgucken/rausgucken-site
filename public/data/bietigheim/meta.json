@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-08-25T06:49:34.924273+02:00",
+  "scraped_at": "2026-08-26T06:55:29.141252+02:00",
   "city": "bietigheim",
-  "event_count": 215,
+  "event_count": 238,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,20 +9,20 @@
     "bietigheim_galerie"
   ],
   "source_counts": {
-    "bietigheim": 204,
+    "bietigheim": 227,
     "bietigheim_galerie": 11
   },
   "sources_failed": [],
-  "data_hash": "14151736583a3726",
+  "data_hash": "cd541f3aca6cd3c2",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 25.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 26.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "bietigheim": 1.0,
     "bietigheim_galerie": 0.81
   },
   "source_event_counts": {
-    "bietigheim": 204,
+    "bietigheim": 227,
     "bietigheim_galerie": 11
   },
   "count_drift_warnings": {},
@@ -31,8 +31,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 472.7,
-    "runtime_delta_vs_baseline": 1.641,
+    "runtime_minutes": 482.4,
+    "runtime_delta_vs_baseline": 1.695,
     "source_health": {
       "bietigheim": 1.0,
       "bietigheim_galerie": 0.81
@@ -40,6 +40,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-25T10:05:57.206645+02:00"
+    "generated_at": "2026-08-26T10:15:26.283361+02:00"
   }
 }

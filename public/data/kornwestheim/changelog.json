@@ -1,14 +1,46 @@
 {
-  "generated_at": "2026-08-25T06:29:02.384902+02:00",
+  "generated_at": "2026-08-26T06:58:37.508329+02:00",
   "city": "kornwestheim",
   "sources": [
     "kornwestheim",
-    "das_k_spielplan",
-    "das_k_buecherei"
+    "das_k_buecherei",
+    "das_k_spielplan"
   ],
-  "previous_run": "2026-08-24T07:10:24.089212+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-08-25T06:29:02.464046+02:00",
+  "count_added": 3,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "1b1417d9b47e9625",
+      "title": "Offene Sprechstunde der Bezirksgruppe Ludwigsburg des Blinden- und Sehbehindertenverbandes Württemberg e.V.",
+      "date_start": "2026-12-16",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "1c50c39434a42e61",
+      "title": "Weihnachtskonzert",
+      "date_start": "2026-12-16",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "e39866d5921cf439",
+      "title": "Gemeinderat (GR)",
+      "date_start": "2026-12-17",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "abd78a59aae88364",
+      "title": "Musiknacht Open",
+      "date_start": "2026-08-25",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "aab2a2622a0ccece",
+      "title": "Qigong-Workshopreihe",
+      "date_start": "2026-08-25",
+      "source": "kornwestheim"
+    }
+  ]
 }

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-25T08:25:40.619177+02:00",
+  "generated_at": "2026-08-26T08:33:03.913789+02:00",
   "city": "steinheim",
   "sources": [
     "steinheim_stadt"
   ],
-  "previous_run": "2026-08-24T08:58:41.648200+02:00",
+  "previous_run": "2026-08-25T08:25:40.693510+02:00",
   "count_added": 5,
-  "count_removed": 0,
+  "count_removed": 1,
   "added": [
     {
       "id": "790667c6a3776c89",
@@ -33,11 +33,18 @@
       "source": "steinheim_stadt"
     },
     {
-      "id": "1ddd59e477a672b0",
-      "title": "Musikalischer Gottesdienst, 25 Jahre Chor Horizonte",
-      "date_start": "2026-10-18",
+      "id": "d5cf578e7fa786f6",
+      "title": "Gemeinsam aktiv 60+ - Wöchentlicher Spielenachmittag",
+      "date_start": "2026-09-01",
       "source": "steinheim_stadt"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "5abb952e6c20c446",
+      "title": "Gemeinsam aktiv 60+ - Wöchentlicher Spielenachmittag",
+      "date_start": "2026-08-25",
+      "source": "steinheim_stadt"
+    }
+  ]
 }

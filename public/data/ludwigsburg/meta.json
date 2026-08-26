@@ -1,11 +1,12 @@
 {
-  "scraped_at": "2026-08-25T09:52:40.163849+02:00",
+  "scraped_at": "2026-08-26T10:02:22.225751+02:00",
   "city": "ludwigsburg",
-  "event_count": 720,
+  "event_count": 573,
   "flagged_count": 0,
   "expired_count": 2,
   "sources_scraped": [
     "blueba",
+    "demokratisches_zentrum",
     "forum_schlosspark",
     "karlskaserne_ausstellungen",
     "karlskaserne_veranstaltungen",
@@ -20,12 +21,13 @@
   ],
   "source_counts": {
     "ludwigsburg_stadt": 47,
-    "schloss": 156,
+    "schloss": 8,
     "kunstverein_ausstellungen": 4,
     "blueba": 45,
     "stabi": 172,
     "karlskaserne_veranstaltungen": 106,
     "lisbert_queer": 5,
+    "demokratisches_zentrum": 1,
     "kunstverein_veranstaltungen": 6,
     "musikhalle_lb": 32,
     "labyrinth": 96,
@@ -33,9 +35,9 @@
     "karlskaserne_ausstellungen": 1
   },
   "sources_failed": [],
-  "data_hash": "82f8bf5dc36b898d",
+  "data_hash": "0d50b0a50a605fb9",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 25.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 26.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "ludwigsburg_stadt": 1.0,
@@ -45,6 +47,7 @@
     "stabi": 1.0,
     "karlskaserne_veranstaltungen": 1.0,
     "lisbert_queer": 1.0,
+    "demokratisches_zentrum": 0.93,
     "kunstverein_veranstaltungen": 1.0,
     "musikhalle_lb": 1.0,
     "labyrinth": 1.0,
@@ -53,26 +56,29 @@
   },
   "source_event_counts": {
     "ludwigsburg_stadt": 47,
-    "schloss": 156,
+    "schloss": 8,
     "kunstverein_ausstellungen": 4,
     "blueba": 45,
     "stabi": 172,
     "karlskaserne_veranstaltungen": 106,
     "lisbert_queer": 5,
+    "demokratisches_zentrum": 1,
     "kunstverein_veranstaltungen": 6,
     "musikhalle_lb": 32,
     "labyrinth": 96,
     "forum_schlosspark": 50,
     "karlskaserne_ausstellungen": 1
   },
-  "count_drift_warnings": {},
+  "count_drift_warnings": {
+    "schloss": "Count drift: 8 vs historical avg 160"
+  },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 472.7,
-    "runtime_delta_vs_baseline": 1.641,
+    "runtime_minutes": 482.4,
+    "runtime_delta_vs_baseline": 1.695,
     "source_health": {
       "ludwigsburg_stadt": 1.0,
       "schloss": 1.0,
@@ -81,15 +87,18 @@
       "stabi": 1.0,
       "karlskaserne_veranstaltungen": 1.0,
       "lisbert_queer": 1.0,
+      "demokratisches_zentrum": 0.93,
       "kunstverein_veranstaltungen": 1.0,
       "musikhalle_lb": 1.0,
       "labyrinth": 1.0,
       "forum_schlosspark": 1.0,
       "karlskaserne_ausstellungen": 0.67
     },
-    "count_drift_warnings": {},
+    "count_drift_warnings": {
+      "schloss": "Count drift: 8 vs historical avg 160"
+    },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-25T10:05:58.583880+02:00"
+    "generated_at": "2026-08-26T10:15:27.674600+02:00"
   }
 }
