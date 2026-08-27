@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-08-26T06:12:41.730196+02:00",
+  "generated_at": "2026-08-27T06:17:50.563165+02:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-08-25T06:14:35.834682+02:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-08-26T06:12:41.809785+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "4ae02f4912cba27c",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-03-27",
+      "source": "freiberg_veranstaltungen"
+    }
+  ],
   "removed": [
     {
-      "id": "0b485ca1a805e07e",
-      "title": "Selbsthilfegruppe Sucht",
-      "date_start": "2026-08-25",
+      "id": "a054908189b23d8f",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-08-26",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a19d11ecc5f892f9",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2026-08-26",
       "source": "freiberg_veranstaltungen"
     }
   ]

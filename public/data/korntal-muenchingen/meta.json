@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-08-26T09:39:43.844876+02:00",
+  "scraped_at": "2026-08-27T09:53:13.740584+02:00",
   "city": "korntal-muenchingen",
-  "event_count": 104,
+  "event_count": 103,
   "flagged_count": 0,
   "expired_count": 1,
   "sources_scraped": [
     "korntal_muenchingen"
   ],
   "source_counts": {
-    "korntal_muenchingen": 104
+    "korntal_muenchingen": 103
   },
   "sources_failed": [],
-  "data_hash": "7901ac003365f5f4",
+  "data_hash": "339733735a6d2ab9",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 26.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 27.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "korntal_muenchingen": 0.96
   },
   "source_event_counts": {
-    "korntal_muenchingen": 104
+    "korntal_muenchingen": 103
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 482.4,
-    "runtime_delta_vs_baseline": 1.695,
+    "runtime_minutes": 587.7,
+    "runtime_delta_vs_baseline": 2.283,
     "source_health": {
       "korntal_muenchingen": 0.96
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-26T10:15:27.436600+02:00"
+    "generated_at": "2026-08-27T12:02:14.443415+02:00"
   }
 }
