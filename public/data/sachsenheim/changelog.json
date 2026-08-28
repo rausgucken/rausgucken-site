@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-27T06:24:24.111834+02:00",
+  "generated_at": "2026-08-28T06:35:54.325566+02:00",
   "city": "sachsenheim",
   "sources": [
     "sachsenheim_library",
     "sachsenheim_kultur"
   ],
-  "previous_run": "2026-08-26T06:18:50.907065+02:00",
-  "count_added": 7,
-  "count_removed": 0,
+  "previous_run": "2026-08-27T06:24:24.186609+02:00",
+  "count_added": 8,
+  "count_removed": 1,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -46,11 +46,24 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "95004b8424404ff9",
-      "title": "Waldbaden - Sommerfülle",
-      "date_start": "2026-08-07",
+      "id": "93f9cf11b9d7a482",
+      "title": "Herbstfeier mit Musik, Basteln und Brot",
+      "date_start": "2026-10-09",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "ceae2cb8f73bb2e0",
+      "title": "ECOmedy mit Matthias Jung",
+      "date_start": "2026-10-09",
       "source": "sachsenheim_kultur"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "f26262bd88e91ad1",
+      "title": "Waldbaden - Sommerfülle",
+      "date_start": "2026-09-11",
+      "source": "sachsenheim_kultur"
+    }
+  ]
 }

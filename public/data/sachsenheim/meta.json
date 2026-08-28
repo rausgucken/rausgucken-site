@@ -1,28 +1,28 @@
 {
-  "scraped_at": "2026-08-27T06:24:24.186609+02:00",
+  "scraped_at": "2026-08-28T06:35:54.401403+02:00",
   "city": "sachsenheim",
-  "event_count": 16,
+  "event_count": 17,
   "flagged_count": 0,
-  "expired_count": 7,
+  "expired_count": 6,
   "sources_scraped": [
     "sachsenheim_kultur",
     "sachsenheim_library"
   ],
   "source_counts": {
-    "sachsenheim_kultur": 15,
+    "sachsenheim_kultur": 16,
     "sachsenheim_library": 1
   },
   "sources_failed": [],
-  "data_hash": "ef087f5d9cddca6f",
+  "data_hash": "6102e53cc10fe498",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 27.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 28.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "sachsenheim_kultur": 0.97,
+    "sachsenheim_kultur": 0.98,
     "sachsenheim_library": 0.97
   },
   "source_event_counts": {
-    "sachsenheim_kultur": 15,
+    "sachsenheim_kultur": 16,
     "sachsenheim_library": 1
   },
   "count_drift_warnings": {},
@@ -31,15 +31,15 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 587.7,
-    "runtime_delta_vs_baseline": 2.283,
+    "runtime_minutes": 503.1,
+    "runtime_delta_vs_baseline": 1.811,
     "source_health": {
-      "sachsenheim_kultur": 0.97,
+      "sachsenheim_kultur": 0.98,
       "sachsenheim_library": 0.97
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-27T12:02:15.451160+02:00"
+    "generated_at": "2026-08-28T10:37:22.953015+02:00"
   }
 }
