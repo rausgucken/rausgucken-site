@@ -1,25 +1,26 @@
 {
-  "generated_at": "2026-08-28T10:23:04.550044+02:00",
+  "generated_at": "2026-08-29T10:19:09.244082+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "labyrinth",
-    "kunstverein_veranstaltungen",
-    "garnisonmuseum",
-    "musikhalle_lb",
-    "ludwigsburg_stadt",
-    "blueba",
-    "forum_schlosspark",
-    "stabi",
-    "karlskaserne_ausstellungen",
-    "lisbert_queer",
     "kunstverein_ausstellungen",
-    "karlskaserne_veranstaltungen",
     "demokratisches_zentrum",
-    "schloss"
+    "blueba",
+    "karlskaserne_ausstellungen",
+    "labyrinth",
+    "karlskaserne_veranstaltungen",
+    "schloss",
+    "kunstverein_veranstaltungen",
+    "musikhalle_lb",
+    "forum_schlosspark",
+    "garnisonmuseum",
+    "lisbert_queer",
+    "museum",
+    "ludwigsburg_stadt",
+    "stabi"
   ],
-  "previous_run": "2026-08-27T11:47:44.841600+02:00",
-  "count_added": 13,
-  "count_removed": 49,
+  "previous_run": "2026-08-28T10:23:04.641742+02:00",
+  "count_added": 48,
+  "count_removed": 2,
   "added": [
     {
       "id": "feee56b785ce127e",
@@ -27,80 +28,6 @@
       "date_start": "2026-07-07",
       "source": "stabi"
     },
-    {
-      "id": "c81ce9fdfb461c7c",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-02",
-      "source": "stabi"
-    },
-    {
-      "id": "3c962a38ff9c1304",
-      "title": "Märchenerzählerin",
-      "date_start": "2026-08-28",
-      "source": "blueba"
-    },
-    {
-      "id": "58ed0b9f169f992c",
-      "title": "Märchenerzählerin",
-      "date_start": "2026-08-30",
-      "source": "blueba"
-    },
-    {
-      "id": "23fc3c1c77f2a028",
-      "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": "2026-03-28",
-      "source": "schloss"
-    },
-    {
-      "id": "33cdc96d0eddbda9",
-      "title": "Schlösslesfeldfest 2026",
-      "date_start": "2026-09-25",
-      "source": "stabi"
-    },
-    {
-      "id": "158c9d570a35ab21",
-      "title": "Kasernenspaziergang ostwärts der Stuttgarter Straße mit OTL a",
-      "date_start": "2026-09-20",
-      "source": "garnisonmuseum"
-    },
-    {
-      "id": "a1b6012cb361f366",
-      "title": "„Erwin Rommel und die württembergischen ‚Gebirgler‘ auf dem italienische Kriegsschauplatz 1917 – Vom Tagliamento Fluss bis ins Piavetal“ Ein Vortrag von Dr",
-      "date_start": "2026-10-07",
-      "source": "garnisonmuseum"
-    },
-    {
-      "id": "e2b72d85909b083f",
-      "title": "„Das Imperium schlägt zurück",
-      "date_start": "2026-12-09",
-      "source": "garnisonmuseum"
-    },
-    {
-      "id": "2602f18622893705",
-      "title": "Adventkaffee der MGLB",
-      "date_start": "2026-12-12",
-      "source": "garnisonmuseum"
-    },
-    {
-      "id": "8b36d1bf6d16327a",
-      "title": "„Die militärische und politische Karriere von Napoleon Bonaparte",
-      "date_start": "2026-12-16",
-      "source": "garnisonmuseum"
-    },
-    {
-      "id": "cc4827f8c98760ee",
-      "title": "Zwischen Leben und Tod: Das Geheimnis der Endgültigkeit",
-      "date_start": "2026-09-08",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "1034350e2228020a",
-      "title": "Literatur am Vormittag",
-      "date_start": "2026-09-09",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
     {
       "id": "7c82aba616f7a699",
       "title": "Ausstellung Respekt! Menschen der Karlshöhe",
@@ -114,64 +41,16 @@
       "source": "museum"
     },
     {
-      "id": "01db2569a5ada2e6",
-      "title": "Wer schön sein will, muss leiden",
-      "date_start": "2026-08-27",
-      "source": "schloss"
-    },
-    {
-      "id": "aa2fef9d136e1192",
-      "title": "Roboter programmieren: Eltern-Kind-Workshop",
-      "date_start": "2026-08-27",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "78e5fa4ff32da14c",
-      "title": "Roboter programmieren: Eltern-Kind-Workshop",
-      "date_start": "2026-08-27",
-      "source": "stabi"
-    },
-    {
-      "id": "88986b2c42685ec4",
-      "title": "Ritmo y Pasión - Tanzen unter den Sternen",
-      "date_start": "2026-08-27",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4ba2846554310782",
-      "title": "Märchenerzählerin",
-      "date_start": "2026-08-28",
-      "source": "blueba"
-    },
-    {
-      "id": "c48034e537af9ed5",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-08-29",
-      "source": "museum"
-    },
-    {
       "id": "a8cbbcf36745b299",
       "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
       "date_start": "2026-08-29",
       "source": "museum"
     },
     {
-      "id": "4028d6f4c508a83e",
-      "title": "Märchenerzählerin",
-      "date_start": "2026-08-30",
-      "source": "blueba"
-    },
-    {
       "id": "412a38bbfbc19241",
       "title": "Museumspause",
       "date_start": "2026-09-02",
       "source": "museum"
-    },
-    {
-      "id": "fa01f595680c02e3",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-02",
-      "source": "stabi"
     },
     {
       "id": "33db71f4708977da",
@@ -330,6 +209,12 @@
       "source": "museum"
     },
     {
+      "id": "1be2100766f9975a",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
       "id": "ceffd17f4f8fa9ec",
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2026-12-01",
@@ -390,9 +275,53 @@
       "source": "museum"
     },
     {
-      "id": "7553dd43e4517178",
-      "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": null,
+      "id": "f86ca49479230e15",
+      "title": "Filmabend - Kinder und Familienfilm (FSK 0)",
+      "date_start": "2026-09-25",
+      "source": "stabi"
+    },
+    {
+      "id": "2fef41eba9d52375",
+      "title": "Filmabend für Erwachsene (FSK 12)",
+      "date_start": "2026-09-25",
+      "source": "stabi"
+    },
+    {
+      "id": "d2630f343ef22203",
+      "title": "Haikus und japanische Märchen",
+      "date_start": "2026-09-26",
+      "source": "stabi"
+    },
+    {
+      "id": "2a05a47fb695fa1f",
+      "title": "Schach für Anfänger bis Profi",
+      "date_start": "2026-09-26",
+      "source": "stabi"
+    },
+    {
+      "id": "f1cb6643613a18db",
+      "title": "Zwei lebhaft erzählte kurze Bibelgeschichten",
+      "date_start": "2026-09-26",
+      "source": "stabi"
+    },
+    {
+      "id": "a1048f0f9ab2b34b",
+      "title": "Kasernenspaziergang westlich der Stuttgarter Straße mit OTL a",
+      "date_start": "2026-09-13",
+      "source": "garnisonmuseum"
+    }
+  ],
+  "removed": [
+    {
+      "id": "3c962a38ff9c1304",
+      "title": "Märchenerzählerin",
+      "date_start": "2026-08-28",
+      "source": "blueba"
+    },
+    {
+      "id": "a6c8e50187893e78",
+      "title": "Mission Schlossbau: Baumeister gesucht!",
+      "date_start": "2026-08-28",
       "source": "schloss"
     }
   ]

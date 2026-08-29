@@ -1,31 +1,43 @@
 {
-  "generated_at": "2026-08-28T06:47:33.619678+02:00",
+  "generated_at": "2026-08-29T07:07:31.619042+02:00",
   "city": "gerlingen",
   "sources": [
     "gerlingen_stadt"
   ],
-  "previous_run": "2026-08-27T06:37:12.125427+02:00",
+  "previous_run": "2026-08-28T06:47:33.695553+02:00",
   "count_added": 2,
-  "count_removed": 1,
+  "count_removed": 3,
   "added": [
     {
-      "id": "0d27837b96655334",
-      "title": "Vernissage 'Fenster & Wege' – Ruth May",
-      "date_start": "2026-10-05",
+      "id": "d64e3f509d43d71b",
+      "title": "Tag der offenen Tür",
+      "date_start": "2026-09-19",
+      "source": "gerlingen_stadt"
+    },
+    {
+      "id": "02fdd62602c094d4",
+      "title": "Musikalischer Tanznachmittag",
+      "date_start": "2026-09-26",
+      "source": "gerlingen_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "88a1a2890a515e46",
+      "title": "Wochenmarkt",
+      "date_start": "2026-11-28",
+      "source": "gerlingen_stadt"
+    },
+    {
+      "id": "2d15749b05604349",
+      "title": "Öffentliche Sitzung des Technischen Ausschusses",
+      "date_start": "2026-11-30",
       "source": "gerlingen_stadt"
     },
     {
       "id": "238165d3b8e41239",
       "title": "Märchenabend mit Musik",
       "date_start": "2026-11-30",
-      "source": "gerlingen_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "c6049ee55eae91b9",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-12-01",
       "source": "gerlingen_stadt"
     }
   ]

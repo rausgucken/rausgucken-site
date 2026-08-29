@@ -1,25 +1,86 @@
 {
-  "generated_at": "2026-08-28T06:41:36.313733+02:00",
+  "generated_at": "2026-08-29T06:35:20.033155+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_treffpunkt_adler",
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-08-27T06:31:13.643026+02:00",
-  "count_added": 0,
-  "count_removed": 2,
-  "added": [],
-  "removed": [
+  "previous_run": "2026-08-28T06:41:36.394701+02:00",
+  "count_added": 7,
+  "count_removed": 5,
+  "added": [
     {
-      "id": "e05d2cc312bcfcdb",
-      "title": "Computer- und Handy-Sprechstunde",
-      "date_start": "2026-08-27",
+      "id": "b260cfb2d375881b",
+      "title": "Schöckinger Flöhe - Großer Garagenflohmarkt in Schöckingen",
+      "date_start": "2026-09-19",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "208416232e13d484",
+      "title": "Schöcktails: Cocktails\\, Musik und Kinderdisco in Schöckingen",
+      "date_start": "2026-09-19",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "fa0902a4caae8df8",
+      "title": "Wohlbefinden und Wohlsein",
+      "date_start": "2026-09-10",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "e59d0e43caa95ccc",
-      "title": "KEIN Mobilität und Fitness - Gymnastik im Sitzen",
-      "date_start": "2026-08-27",
+      "id": "fa8673cf662ec84b",
+      "title": "Wohlbefinden und Wohlsein",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a98c72d82bce4c22",
+      "title": "FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4fff923274805234",
+      "title": "Improvisationstheater - Wir spielen für Sie/Euch!",
+      "date_start": "2026-10-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e921fcd5844c940d",
+      "title": "Improvisationstheater - Wir spielen für Sie/Euch!",
+      "date_start": "2026-10-29",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ],
+  "removed": [
+    {
+      "id": "cf9f233c0a87a5f6",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-08-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9e3488fea7492596",
+      "title": "Rummikub",
+      "date_start": "2026-08-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ae91b5e49c670dff",
+      "title": "Wohlbefinden und Wohlsein",
+      "date_start": "2026-09-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f6e5e7a05d4a8c7a",
+      "title": "Wohlbefinden und Wohlsein",
+      "date_start": "2026-09-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "52d43fcea5917a12",
+      "title": "?? FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
+      "date_start": "2026-10-06",
       "source": "ditzingen_treffpunkt_adler"
     }
   ]

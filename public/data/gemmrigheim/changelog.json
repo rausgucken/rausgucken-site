@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-08-28T08:47:11.280544+02:00",
+  "generated_at": "2026-08-29T08:37:17.467646+02:00",
   "city": "gemmrigheim",
   "sources": [
     "gemmrigheim_gemeinde"
   ],
-  "previous_run": "2026-08-27T08:47:28.326215+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-08-28T08:47:11.355477+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "2d5135519de146c7",
+      "title": "Winterfeier",
+      "date_start": "2026-12-05",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "7d9aa434fc204926",
+      "title": "Bergwanderung",
+      "date_start": "2026-08-28",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ]
 }
