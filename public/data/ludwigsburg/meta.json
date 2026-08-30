@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-08-29T10:19:09.336755+02:00",
+  "scraped_at": "2026-08-30T10:12:47.603122+02:00",
   "city": "ludwigsburg",
-  "event_count": 764,
+  "event_count": 759,
   "flagged_count": 0,
   "expired_count": 1,
   "sources_scraped": [
@@ -23,14 +23,14 @@
   ],
   "source_counts": {
     "ludwigsburg_stadt": 45,
-    "schloss": 152,
-    "museum": 41,
+    "schloss": 149,
+    "museum": 40,
     "kunstverein_ausstellungen": 4,
-    "blueba": 44,
-    "stabi": 175,
+    "blueba": 43,
+    "stabi": 174,
     "karlskaserne_veranstaltungen": 106,
     "lisbert_queer": 5,
-    "demokratisches_zentrum": 1,
+    "demokratisches_zentrum": 2,
     "kunstverein_veranstaltungen": 6,
     "musikhalle_lb": 32,
     "garnisonmuseum": 6,
@@ -39,9 +39,9 @@
     "karlskaserne_ausstellungen": 1
   },
   "sources_failed": [],
-  "data_hash": "ba7445dcb67fad65",
+  "data_hash": "60f328109ee3114c",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 29.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 30.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "ludwigsburg_stadt": 1.0,
@@ -62,14 +62,14 @@
   },
   "source_event_counts": {
     "ludwigsburg_stadt": 45,
-    "schloss": 152,
-    "museum": 41,
+    "schloss": 149,
+    "museum": 40,
     "kunstverein_ausstellungen": 4,
-    "blueba": 44,
-    "stabi": 175,
+    "blueba": 43,
+    "stabi": 174,
     "karlskaserne_veranstaltungen": 106,
     "lisbert_queer": 5,
-    "demokratisches_zentrum": 1,
+    "demokratisches_zentrum": 2,
     "kunstverein_veranstaltungen": 6,
     "musikhalle_lb": 32,
     "garnisonmuseum": 6,
@@ -83,8 +83,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 499.2,
-    "runtime_delta_vs_baseline": 1.789,
+    "runtime_minutes": 492.8,
+    "runtime_delta_vs_baseline": 1.753,
     "source_health": {
       "ludwigsburg_stadt": 1.0,
       "schloss": 1.0,
@@ -105,6 +105,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-29T10:32:38.143499+02:00"
+    "generated_at": "2026-08-30T10:26:54.159437+02:00"
   }
 }

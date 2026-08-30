@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-29T10:19:09.244082+02:00",
+  "generated_at": "2026-08-30T10:12:47.510630+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "kunstverein_ausstellungen",
-    "demokratisches_zentrum",
-    "blueba",
-    "karlskaserne_ausstellungen",
-    "labyrinth",
-    "karlskaserne_veranstaltungen",
-    "schloss",
-    "kunstverein_veranstaltungen",
-    "musikhalle_lb",
-    "forum_schlosspark",
-    "garnisonmuseum",
-    "lisbert_queer",
-    "museum",
+    "stabi",
     "ludwigsburg_stadt",
-    "stabi"
+    "kunstverein_veranstaltungen",
+    "karlskaserne_ausstellungen",
+    "forum_schlosspark",
+    "karlskaserne_veranstaltungen",
+    "demokratisches_zentrum",
+    "schloss",
+    "museum",
+    "lisbert_queer",
+    "blueba",
+    "garnisonmuseum",
+    "labyrinth",
+    "kunstverein_ausstellungen",
+    "musikhalle_lb"
   ],
-  "previous_run": "2026-08-28T10:23:04.641742+02:00",
-  "count_added": 48,
-  "count_removed": 2,
+  "previous_run": "2026-08-29T10:19:09.336755+02:00",
+  "count_added": 8,
+  "count_removed": 12,
   "added": [
     {
       "id": "feee56b785ce127e",
@@ -29,16 +29,84 @@
       "source": "stabi"
     },
     {
-      "id": "7c82aba616f7a699",
-      "title": "Ausstellung Respekt! Menschen der Karlshöhe",
-      "date_start": "2026-05-03",
-      "source": "museum"
+      "id": "17afd3d48bcfc7c3",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": null,
+      "source": "schloss"
     },
     {
-      "id": "650ef2c04fb838df",
-      "title": "Little America – Fotografie Jürgen Schadeberg",
-      "date_start": "2026-07-01",
-      "source": "museum"
+      "id": "7693e175cde5f4b2",
+      "title": "Reparaturcafé",
+      "date_start": "2026-09-16",
+      "source": "demokratisches_zentrum"
+    },
+    {
+      "id": "04df43e7e2c096d2",
+      "title": "Internetführerschein",
+      "date_start": "2026-09-09",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "04273d0329fe672e",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-09",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c71065b3572f36fa",
+      "title": "Spanisch Kursberatung",
+      "date_start": "2026-09-09",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "47032c39b7177866",
+      "title": "Französisch Kursberatung",
+      "date_start": "2026-09-09",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "91f1734f7eaa1a95",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-09-09",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "4338d42d24902687",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "60bc26c8533e2555",
+      "title": "Waldbaden",
+      "date_start": "2026-08-29",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "842cfbbf9f00e88c",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-08-29",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "69c0363bcfc40aa1",
+      "title": "Etikette und Intrigen",
+      "date_start": "2026-08-29",
+      "source": "schloss"
+    },
+    {
+      "id": "5c490e70d7d8c361",
+      "title": "Bilderbuchsamstag",
+      "date_start": "2026-08-29",
+      "source": "stabi"
+    },
+    {
+      "id": "e1c9080ddc9dd003",
+      "title": "Ausstellungsrundgang Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-08-29",
+      "source": "ludwigsburg_stadt"
     },
     {
       "id": "a8cbbcf36745b299",
@@ -47,281 +115,33 @@
       "source": "museum"
     },
     {
-      "id": "412a38bbfbc19241",
-      "title": "Museumspause",
-      "date_start": "2026-09-02",
-      "source": "museum"
+      "id": "7166516269ce40c7",
+      "title": "Geschichtsführung: Alter Friedhof",
+      "date_start": "2026-08-29",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "33db71f4708977da",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-09-09",
-      "source": "museum"
+      "id": "bf700453d5664efe",
+      "title": "Kleidung, die verführt",
+      "date_start": "2026-08-29",
+      "source": "schloss"
     },
     {
-      "id": "da91c6d4fe2f0d58",
-      "title": "Tag des Offenen Denkmals",
-      "date_start": "2026-09-13",
-      "source": "museum"
+      "id": "75eb3a4d845fa442",
+      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
+      "date_start": "2026-08-29",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "1da712de65240f53",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-09-16",
-      "source": "museum"
-    },
-    {
-      "id": "937f51ce6917680b",
-      "title": "Offenes Atelier: Origami, Regina Ille-Kopp",
-      "date_start": "2026-09-17",
-      "source": "museum"
-    },
-    {
-      "id": "a321ac78d9c91527",
-      "title": "Gastrosophie-Abend",
-      "date_start": "2026-09-24",
-      "source": "museum"
-    },
-    {
-      "id": "5f0f28478d262af4",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-09-26",
-      "source": "museum"
-    },
-    {
-      "id": "1ad591165ba69227",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-06",
-      "source": "museum"
-    },
-    {
-      "id": "10574e50c47e9a2d",
-      "title": "Museumspause",
-      "date_start": "2026-10-07",
-      "source": "museum"
-    },
-    {
-      "id": "d47a92c5185c1929",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-13",
-      "source": "museum"
-    },
-    {
-      "id": "50d1b8bcae088f0f",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-10-14",
-      "source": "museum"
-    },
-    {
-      "id": "fffeb549fd24639b",
-      "title": "Mitmach-Ausstellung flott, flott!",
-      "date_start": "2026-10-17",
-      "source": "museum"
-    },
-    {
-      "id": "5beb0ee8eb08f214",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-20",
-      "source": "museum"
-    },
-    {
-      "id": "2c0921e304b82ec4",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-10-21",
-      "source": "museum"
-    },
-    {
-      "id": "c170b028731594af",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-10-24",
-      "source": "museum"
-    },
-    {
-      "id": "33c73002bed4f546",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-27",
-      "source": "museum"
-    },
-    {
-      "id": "19b34a6bd1f128f7",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-10-31",
-      "source": "museum"
-    },
-    {
-      "id": "744c68f84155ddb4",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-03",
-      "source": "museum"
-    },
-    {
-      "id": "cc3cacc7ccb69d7b",
-      "title": "Museumspause",
-      "date_start": "2026-11-04",
-      "source": "museum"
-    },
-    {
-      "id": "746f98c5fe1bfba3",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-11-05",
-      "source": "museum"
-    },
-    {
-      "id": "503013994c307868",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-10",
-      "source": "museum"
-    },
-    {
-      "id": "d8b7431bc4a684b1",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-11-11",
-      "source": "museum"
-    },
-    {
-      "id": "48eda5404372f7f9",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2026-11-14",
-      "source": "museum"
-    },
-    {
-      "id": "fbefa5096d00bf96",
-      "title": "Stadtspaziergang zu Christian Friedrich Daniel Schubart",
-      "date_start": "2026-11-14",
-      "source": "museum"
-    },
-    {
-      "id": "3a07be9ff60f3ffd",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-17",
-      "source": "museum"
-    },
-    {
-      "id": "22f9f9b321aa01e3",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-11-24",
-      "source": "museum"
-    },
-    {
-      "id": "3e6569c50955cf0f",
-      "title": "Werkstatt für Kinder",
-      "date_start": "2026-11-28",
-      "source": "museum"
-    },
-    {
-      "id": "1be2100766f9975a",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
-      "date_start": "2026-11-28",
-      "source": "museum"
-    },
-    {
-      "id": "ceffd17f4f8fa9ec",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-01",
-      "source": "museum"
-    },
-    {
-      "id": "0200632eb9bc01e9",
-      "title": "Museumspause",
-      "date_start": "2026-12-02",
-      "source": "museum"
-    },
-    {
-      "id": "a6439166304ac087",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-08",
-      "source": "museum"
-    },
-    {
-      "id": "d3a73fb64cac0f86",
-      "title": "Stadtgeschichten",
-      "date_start": "2026-12-09",
-      "source": "museum"
-    },
-    {
-      "id": "772817fe51854b17",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2026-12-12",
-      "source": "museum"
-    },
-    {
-      "id": "712623bc24124a9c",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-15",
-      "source": "museum"
-    },
-    {
-      "id": "731d87843648da13",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-12-22",
-      "source": "museum"
-    },
-    {
-      "id": "9d8ff67588d6e2b0",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2027-02-13",
-      "source": "museum"
-    },
-    {
-      "id": "a1dbffe5920531f4",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2027-03-13",
-      "source": "museum"
-    },
-    {
-      "id": "557f572ab46b1d46",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2027-04-03",
-      "source": "museum"
-    },
-    {
-      "id": "f86ca49479230e15",
-      "title": "Filmabend - Kinder und Familienfilm (FSK 0)",
-      "date_start": "2026-09-25",
-      "source": "stabi"
-    },
-    {
-      "id": "2fef41eba9d52375",
-      "title": "Filmabend für Erwachsene (FSK 12)",
-      "date_start": "2026-09-25",
-      "source": "stabi"
-    },
-    {
-      "id": "d2630f343ef22203",
-      "title": "Haikus und japanische Märchen",
-      "date_start": "2026-09-26",
-      "source": "stabi"
-    },
-    {
-      "id": "2a05a47fb695fa1f",
-      "title": "Schach für Anfänger bis Profi",
-      "date_start": "2026-09-26",
-      "source": "stabi"
-    },
-    {
-      "id": "f1cb6643613a18db",
-      "title": "Zwei lebhaft erzählte kurze Bibelgeschichten",
-      "date_start": "2026-09-26",
-      "source": "stabi"
-    },
-    {
-      "id": "a1048f0f9ab2b34b",
-      "title": "Kasernenspaziergang westlich der Stuttgarter Straße mit OTL a",
-      "date_start": "2026-09-13",
-      "source": "garnisonmuseum"
-    }
-  ],
-  "removed": [
-    {
-      "id": "3c962a38ff9c1304",
+      "id": "260a110a0e8af56a",
       "title": "Märchenerzählerin",
-      "date_start": "2026-08-28",
+      "date_start": "2026-08-29",
       "source": "blueba"
     },
     {
-      "id": "a6c8e50187893e78",
-      "title": "Mission Schlossbau: Baumeister gesucht!",
-      "date_start": "2026-08-28",
+      "id": "a349ace23c66ed64",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-08-29",
       "source": "schloss"
     }
   ]

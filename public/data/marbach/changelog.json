@@ -1,24 +1,31 @@
 {
-  "generated_at": "2026-08-29T07:07:33.855367+02:00",
+  "generated_at": "2026-08-30T06:48:40.247509+02:00",
   "city": "marbach",
   "sources": [
     "marbach_stadt"
   ],
-  "previous_run": "2026-08-28T06:48:32.515012+02:00",
-  "count_added": 0,
+  "previous_run": "2026-08-29T07:07:33.930901+02:00",
+  "count_added": 1,
   "count_removed": 2,
-  "added": [],
+  "added": [
+    {
+      "id": "73b3c56f61c628e0",
+      "title": "Bergfest beim Musikverein",
+      "date_start": "2026-09-30",
+      "source": "marbach_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "93a14d62dd9d481e",
-      "title": "Offenes Treffen der Nachhaltigkeitsgruppe Marbach",
-      "date_start": "2026-09-02",
+      "id": "b48ab2f69934b113",
+      "title": "Vorlesen zur Marktzeit für Kinder",
+      "date_start": "2026-09-05",
       "source": "marbach_stadt"
     },
     {
-      "id": "904767f18841132b",
-      "title": "Marbacher Kelterfest",
-      "date_start": "2026-09-04",
+      "id": "42a3e989dfe0c071",
+      "title": "Literatur zur Marktzeit",
+      "date_start": "2026-09-05",
       "source": "marbach_stadt"
     }
   ]
