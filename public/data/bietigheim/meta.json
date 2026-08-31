@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-08-30T08:01:41.653647+02:00",
+  "scraped_at": "2026-08-31T07:53:18.118126+02:00",
   "city": "bietigheim",
-  "event_count": 233,
+  "event_count": 240,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,21 +9,21 @@
     "bietigheim_galerie"
   ],
   "source_counts": {
-    "bietigheim": 223,
-    "bietigheim_galerie": 10
+    "bietigheim": 229,
+    "bietigheim_galerie": 11
   },
   "sources_failed": [],
-  "data_hash": "5696f2f50fc0009d",
+  "data_hash": "28ddf8d51c4b5891",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 30.08.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 31.08.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "bietigheim": 1.0,
-    "bietigheim_galerie": 0.81
+    "bietigheim_galerie": 0.82
   },
   "source_event_counts": {
-    "bietigheim": 223,
-    "bietigheim_galerie": 10
+    "bietigheim": 229,
+    "bietigheim_galerie": 11
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -31,15 +31,15 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 492.8,
-    "runtime_delta_vs_baseline": 1.753,
+    "runtime_minutes": 484.2,
+    "runtime_delta_vs_baseline": 1.705,
     "source_health": {
       "bietigheim": 1.0,
-      "bietigheim_galerie": 0.81
+      "bietigheim_galerie": 0.82
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-08-30T10:26:52.773852+02:00"
+    "generated_at": "2026-08-31T10:18:34.800194+02:00"
   }
 }
