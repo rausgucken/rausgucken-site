@@ -1,39 +1,73 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-08-30T06:34:04.384034+02:00",
-  "event_count": 1,
+  "generated_at": "2026-08-31T06:00:02.508338+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "60bbce4b38ebf21c",
-      "title": "Zu Gast bei Rittern und Geistern",
-      "date_start": "2026-09-06",
-      "date_end": null,
-      "time": "14:30 - 16:30",
-      "description": "In dieser Führung durch das Stadtmuseum erleben Sie das Leben von Rittern und Geistern. Führen wird von Experten und bringt Einblicke in die Geschichte Großsachsenheims. Termin: Sonntag, 03. Oktober.",
-      "location": "Stadtmuseum, Oberriexinger Straße 29, 74343 Sachsenheim",
-      "price": "Kostenpflichtig",
-      "age_min": null,
+      "id": "6ccca057ffba05f3",
+      "title": "Wein am Schloß",
+      "date_start": "2026-09-11",
+      "date_end": "2026-09-12",
+      "time": "18:00 - 00:00",
+      "description": "In den Schlossgarten Großsachsenheim bietet sich ein einzigartiges Weinerlebnis an. Von 18:00 Uhr bis spät genossen Sie exklusive Weine und kulinarische Delikatessen im väterlichen Geschmack der Familie Zahner.",
+      "location": "Schlossgarten Großsachsenheim, 74343 Sachsenheim",
+      "price": null,
+      "age_min": 4,
       "age_max": null,
       "tags": [
-        "Fuehrung"
+        "Familie",
+        "Kulinarik"
       ],
-      "link": "https://www.sachsenheim.de/termin/AUSGEBUCHT-Zu-Gast-bei-Rittern-und-Geistern-event-appointment5330",
-      "original_url": "https://www.sachsenheim.de/termin/AUSGEBUCHT-Zu-Gast-bei-Rittern-und-Geistern-event-appointment5330",
+      "link": "https://www.sachsenheim.de/termin/Wein-am-Schloss-event-appointment5641",
+      "original_url": "https://www.sachsenheim.de/termin/Wein-am-Schloss-event-appointment5641",
+      "source": "sachsenheim_library",
+      "city": "sachsenheim",
+      "slug": "wein-am-schloss-2026-09-11-sach-1",
+      "weekdays": [
+        5,
+        6
+      ],
+      "scraped_at": "2026-08-30T02:01:59.228150+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtbücherei Sachsenheim",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/wein-am-schloss-2026-09-11-sach-1"
+    },
+    {
+      "id": "47db4b1ebe70dcc2",
+      "title": "Sachsenheimer Klopferlestag",
+      "date_start": "2026-09-13",
+      "date_end": null,
+      "time": "13:00 - 18:00",
+      "description": "Inmitten des idyllischen Schlossgartens Großsachsenheim findet das Familienfest \"Sachsenheimer Klopferlestag\" statt. Von 13:00 bis 18:00 Uhr lockt ein buntes Programm mit vielen Highlights für alle Altersgruppen.",
+      "location": "Schlossgarten Großsachsenheim, 74343 Sachsenheim",
+      "price": null,
+      "age_min": 0,
+      "age_max": null,
+      "tags": [
+        "Familie",
+        "Fest"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Sachsenheimer-Klopferlestag-event-appointment5379",
+      "original_url": "https://www.sachsenheim.de/termin/Sachsenheimer-Klopferlestag-event-appointment5379",
       "source": "sachsenheim_kultur",
       "city": "sachsenheim",
-      "slug": "zu-gast-bei-rittern-und-geistern-2026-09-06-sach",
+      "slug": "sachsenheimer-klopferlestag-2026-09-13-sach",
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-08-30T02:01:31.789990+02:00",
-      "extraction_confidence": 0.83,
+      "scraped_at": "2026-08-30T02:01:34.950514+02:00",
+      "extraction_confidence": 0.95,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Sachsenheim – Kulturprogramm",
-      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/zu-gast-bei-rittern-und-geistern-2026-09-06-sach"
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/sachsenheimer-klopferlestag-2026-09-13-sach"
     }
   ]
 }
