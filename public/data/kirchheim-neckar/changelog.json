@@ -1,12 +1,44 @@
 {
-  "generated_at": "2026-08-31T09:21:36.616270+02:00",
+  "generated_at": "2026-09-01T10:10:43.458968+02:00",
   "city": "kirchheim-neckar",
   "sources": [
     "kirchheim-neckar_gemeinde"
   ],
-  "previous_run": "2026-08-30T09:29:09.951981+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-08-31T09:21:36.691936+02:00",
+  "count_added": 2,
+  "count_removed": 3,
+  "added": [
+    {
+      "id": "63ed17cdf97a8ba2",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-03",
+      "source": "kirchheim-neckar_gemeinde"
+    },
+    {
+      "id": "6fdbf19e477589fd",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-24",
+      "source": "kirchheim-neckar_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "38492c77761465d4",
+      "title": "Friedhofs Café",
+      "date_start": "2026-08-31",
+      "source": "kirchheim-neckar_gemeinde"
+    },
+    {
+      "id": "87f283492ddbb449",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-03",
+      "source": "kirchheim-neckar_gemeinde"
+    },
+    {
+      "id": "b1101e27118487c6",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-24",
+      "source": "kirchheim-neckar_gemeinde"
+    }
+  ]
 }

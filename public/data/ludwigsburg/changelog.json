@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-31T10:04:12.783782+02:00",
+  "generated_at": "2026-09-01T11:50:36.990420+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "schloss",
-    "garnisonmuseum",
-    "demokratisches_zentrum",
-    "ludwigsburg_stadt",
-    "lisbert_queer",
+    "labyrinth",
     "karlskaserne_veranstaltungen",
     "karlskaserne_ausstellungen",
-    "labyrinth",
     "kunstverein_ausstellungen",
-    "kunstverein_veranstaltungen",
-    "forum_schlosspark",
-    "stabi",
-    "musikhalle_lb",
+    "blueba",
+    "lisbert_queer",
     "museum",
-    "blueba"
+    "musikhalle_lb",
+    "demokratisches_zentrum",
+    "garnisonmuseum",
+    "forum_schlosspark",
+    "schloss",
+    "ludwigsburg_stadt",
+    "kunstverein_veranstaltungen",
+    "stabi"
   ],
-  "previous_run": "2026-08-30T10:12:47.603122+02:00",
-  "count_added": 5,
-  "count_removed": 138,
+  "previous_run": "2026-08-31T10:04:12.873170+02:00",
+  "count_added": 134,
+  "count_removed": 3,
   "added": [
     {
       "id": "feee56b785ce127e",
@@ -29,84 +29,16 @@
       "source": "stabi"
     },
     {
-      "id": "5e012f0afde9b9cc",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": null,
-      "source": "schloss"
-    },
-    {
-      "id": "583c7e93fd846f48",
-      "title": "Reparaturcafé",
-      "date_start": "2026-11-18",
-      "source": "demokratisches_zentrum"
-    },
-    {
-      "id": "8a90c68d9f45f064",
-      "title": "LuBu MoVes",
-      "date_start": "2026-09-09",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "eeefd0c845f0766c",
-      "title": "Vortragsreihe „Leben mit Sehbehinderung\"",
-      "date_start": "2026-09-09",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
       "id": "f2d072ce4584b2b4",
       "title": "Klassische Schlossführung „Herzog“",
       "date_start": "2026-03-28",
       "source": "schloss"
     },
     {
-      "id": "6c27bb5126537f83",
-      "title": "Fotografieren erlaubt",
-      "date_start": "2026-08-30",
+      "id": "4338d42d24902687",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": "2026-03-28",
       "source": "schloss"
-    },
-    {
-      "id": "dde85954f193df18",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-08-30",
-      "source": "schloss"
-    },
-    {
-      "id": "56c1f2f8cced6f97",
-      "title": "Schleuse Deluxe beim Naturerlebnis Neckar",
-      "date_start": "2026-08-30",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "22d11c5b78e147f2",
-      "title": "Schaufahren der Modellschiffe",
-      "date_start": "2026-08-30",
-      "source": "blueba"
-    },
-    {
-      "id": "187fd134d857ba7b",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-08-30",
-      "source": "schloss"
-    },
-    {
-      "id": "41b655f6e63d7eb7",
-      "title": "Von diebischen Elstern und listigen Gaunern",
-      "date_start": "2026-08-30",
-      "source": "schloss"
-    },
-    {
-      "id": "58ed0b9f169f992c",
-      "title": "Märchenerzählerin",
-      "date_start": "2026-08-30",
-      "source": "blueba"
-    },
-    {
-      "id": "2d50655f7facc2ce",
-      "title": "Kinder- und Familienführung: Zeitreise mit Kindermädchen Gina",
-      "date_start": "2026-08-30",
-      "source": "ludwigsburg_stadt"
     },
     {
       "id": "7ad3d4352969dcc0",
@@ -493,7 +425,7 @@
       "source": "schloss"
     },
     {
-      "id": "5a930ec6d525c8e3",
+      "id": "8ae850f43842ff47",
       "title": "Schaurig schön - Halloween Special",
       "date_start": "2026-10-31",
       "source": "schloss"
@@ -880,6 +812,38 @@
       "id": "2782e54aa547001c",
       "title": "Zwischen List und Lust",
       "date_start": "2026-12-31",
+      "source": "schloss"
+    },
+    {
+      "id": "fc24132fc2d3d393",
+      "title": "Reparaturcafé",
+      "date_start": "2026-10-21",
+      "source": "demokratisches_zentrum"
+    },
+    {
+      "id": "b5aec54e43678d11",
+      "title": "Café Lieblingsplatz",
+      "date_start": "2026-09-10",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "3f9d8e15f9a96f2c",
+      "title": "Ninja-Parcours X Kunsteisbahn",
+      "date_start": "2026-04-04",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "17afd3d48bcfc7c3",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": null,
+      "source": "schloss"
+    },
+    {
+      "id": "5e012f0afde9b9cc",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": null,
       "source": "schloss"
     }
   ]
