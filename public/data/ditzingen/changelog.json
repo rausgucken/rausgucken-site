@@ -1,13 +1,45 @@
 {
-  "generated_at": "2026-09-01T07:27:16.422841+02:00",
+  "generated_at": "2026-09-02T06:27:25.077276+02:00",
   "city": "ditzingen",
   "sources": [
     "ditzingen_stadt",
     "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-08-31T06:35:00.723885+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-09-01T07:27:16.508192+02:00",
+  "count_added": 1,
+  "count_removed": 4,
+  "added": [
+    {
+      "id": "cb89b9215cb9029d",
+      "title": "KEIN \"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-15",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ],
+  "removed": [
+    {
+      "id": "a07e4b7d9ef7f58c",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b87455f2135fcf4b",
+      "title": "Skatgruppen",
+      "date_start": "2026-09-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "62143c010c80985a",
+      "title": "FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
+      "date_start": "2026-09-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "576232cd7036923c",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-15",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ]
 }
