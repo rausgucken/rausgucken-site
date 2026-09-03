@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-09-02T06:29:32.639684+02:00",
+  "generated_at": "2026-09-03T06:41:14.796649+02:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-09-01T07:29:07.464132+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-09-02T06:29:32.715240+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "f95c6a81fd2d3cbe",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-10-07",
+      "source": "affalterbach_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "6b1bd373cba9a701",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-09-02",
+      "source": "affalterbach_stadt"
+    }
+  ]
 }

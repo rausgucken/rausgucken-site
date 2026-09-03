@@ -1,14 +1,28 @@
 {
-  "generated_at": "2026-09-02T06:29:33.466053+02:00",
+  "generated_at": "2026-09-03T07:11:04.913768+02:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_spielplan",
+    "das_k_buecherei",
     "kornwestheim",
-    "das_k_buecherei"
+    "das_k_spielplan"
   ],
-  "previous_run": "2026-09-01T07:52:15.410440+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-09-02T06:29:33.547169+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "62f2f2c1086700f3",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-10-02",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "168b293eb982896a",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-10-02",
+      "source": "kornwestheim"
+    }
+  ]
 }

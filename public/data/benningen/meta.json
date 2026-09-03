@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-09-02T06:29:34.298181+02:00",
+  "scraped_at": "2026-09-03T06:41:16.387757+02:00",
   "city": "benningen",
-  "event_count": 66,
+  "event_count": 65,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "benningen_stadt"
   ],
   "source_counts": {
-    "benningen_stadt": 66
+    "benningen_stadt": 65
   },
   "sources_failed": [],
-  "data_hash": "26c51d8e8f959cb1",
+  "data_hash": "9f4ec7415992ce83",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 02.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 03.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "benningen_stadt": 1.0
   },
   "source_event_counts": {
-    "benningen_stadt": 66
+    "benningen_stadt": 65
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 480.9,
-    "runtime_delta_vs_baseline": 1.687,
+    "runtime_minutes": 499.5,
+    "runtime_delta_vs_baseline": 1.791,
     "source_health": {
       "benningen_stadt": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-02T10:14:13.043839+02:00"
+    "generated_at": "2026-09-03T10:34:02.169547+02:00"
   }
 }
