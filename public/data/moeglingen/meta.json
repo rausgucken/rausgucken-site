@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-09-03T06:22:21.988807+02:00",
+  "scraped_at": "2026-09-04T06:40:39.432148+02:00",
   "city": "moeglingen",
-  "event_count": 6,
+  "event_count": 19,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "moeglingen"
   ],
   "source_counts": {
-    "moeglingen": 6
+    "moeglingen": 19
   },
   "sources_failed": [],
-  "data_hash": "271c4209db278f57",
+  "data_hash": "a637bced11c5c50c",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 03.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 04.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "moeglingen": 0.97
+    "moeglingen": 0.98
   },
   "source_event_counts": {
-    "moeglingen": 6
+    "moeglingen": 19
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 499.5,
-    "runtime_delta_vs_baseline": 1.791,
+    "runtime_minutes": 584.9,
+    "runtime_delta_vs_baseline": 2.268,
     "source_health": {
-      "moeglingen": 0.97
+      "moeglingen": 0.98
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-03T10:34:03.955589+02:00"
+    "generated_at": "2026-09-04T11:59:17.930325+02:00"
   }
 }

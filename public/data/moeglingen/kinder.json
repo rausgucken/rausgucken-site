@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-09-04T06:00:02.425306+02:00",
-  "event_count": 1,
+  "generated_at": "2026-09-04T06:40:39.510796+02:00",
+  "event_count": 14,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,14 +26,430 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-09-03T02:00:48.542658+02:00",
+      "scraped_at": "2026-09-04T02:01:16.693503+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/gaming-treff-2026-09-18-moeg"
+    },
+    {
+      "id": "0363f5674540df0a",
+      "title": "Kamishibai-Vorlesestunde",
+      "date_start": "2026-09-30",
+      "date_end": null,
+      "time": "15:30",
+      "description": "In dieser Vorlesestunde wird Erzähltheater für Kinder im Alter von 3 bis 4 Jahren vorgestellt, begleitet von einer Erzählerin. Die Veranstaltung richtet sich an Kinder mit ihren Eltern oder Betreuern und findet in der Bibliothek Möglingen statt.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 3,
+      "age_max": 4,
+      "tags": [
+        "Kinder",
+        "Lesung",
+        "Familie"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4391",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4391",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "kamishibai-vorlesestunde-2026-09-30-moeg",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-09-04T02:01:16.693757+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/kamishibai-vorlesestunde-2026-09-30-moeg"
+    },
+    {
+      "id": "fac5503b7d10e35b",
+      "title": "Geschichtenzeit",
+      "date_start": "2026-10-01",
+      "date_end": null,
+      "time": "15:40",
+      "description": "In der Bibliothek Möglingen erwartet euch eine Vorlesung für Kinder im Alter von 5 bis 7 Jahren. Genießt die Geschichten einer einladenden Stimme.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 5,
+      "age_max": 7,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4388",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4388",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "geschichtenzeit-2026-10-01-moeg",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-09-04T02:01:16.693867+02:00",
+      "extraction_confidence": 0.92,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/geschichtenzeit-2026-10-01-moeg"
+    },
+    {
+      "id": "37b6f8e378c938f3",
+      "title": "Gaming-Treff",
+      "date_start": "2026-10-09",
+      "date_end": null,
+      "time": "15:30 - 16:15",
+      "description": "In der Bibliothek Möglingen findet ein Gaming-Treff für Kinder im Alter von 8 bis 12 Jahren statt. Das Ereignis kombiniert Freude am Spiel mit sozialer Interaktion in einer familienfreundlichen Umgebung.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 8,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4382",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4382",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "gaming-treff-2026-10-09-moeg",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-09-04T02:01:16.694067+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Möglingen",
-      "canonical_url": "https://www.rausgucken.de/moeglingen/events/gaming-treff-2026-09-18-moeg"
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/gaming-treff-2026-10-09-moeg"
+    },
+    {
+      "id": "b18650081b5d4efe",
+      "title": "Kamishibai-Vorlesestunde",
+      "date_start": "2026-10-21",
+      "date_end": null,
+      "time": "15:30",
+      "description": "In dieser Vorlesestunde vermitteln Erzähler*innen das Erzähltheater Kamishibai unter der Begleitung von erwachsenen. Zielgruppe sind Kinder im Alter von 3 bis 4 Jahre. Veranstaltet wird in der Bibliothek Möglingen.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 3,
+      "age_max": 4,
+      "tags": [
+        "Kinder",
+        "Lesung",
+        "Familie"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4392",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4392",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "kamishibai-vorlesestunde-2026-10-21-moeg",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-09-04T02:01:16.694171+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/kamishibai-vorlesestunde-2026-10-21-moeg"
+    },
+    {
+      "id": "ddb2d2881c299cba",
+      "title": "Gaming-Treff",
+      "date_start": "2026-10-23",
+      "date_end": null,
+      "time": "15:30 - 16:15",
+      "description": "In der Bibliothek Möglingen findet ein Gaming-Treff für Kinder im Alter von 8 bis 12 Jahren statt. Das Event bietet eine Gelegenheit zum Spass mit Spielkonsolen und Computern in-company.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 8,
+      "age_max": 12,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4383",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4383",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "gaming-treff-2026-10-23-moeg",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-09-04T02:01:16.694283+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/gaming-treff-2026-10-23-moeg"
+    },
+    {
+      "id": "d818e17b780930e8",
+      "title": "Geschichtenzeit",
+      "date_start": "2026-11-05",
+      "date_end": null,
+      "time": "15:40",
+      "description": "In der Bibliothek Möglingen nimmt die Geschichtenzeit für Kinder zwischen 5 und 7 Jahre statt. Erzähler sorgen mit spannenden Geschichten für eine kreative Afternoon.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 5,
+      "age_max": 7,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4389",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4389",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "geschichtenzeit-2026-11-05-moeg",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-09-04T02:01:16.694382+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/geschichtenzeit-2026-11-05-moeg"
+    },
+    {
+      "id": "91ff0097fa7210f6",
+      "title": "Gaming-Treff",
+      "date_start": "2026-11-06",
+      "date_end": null,
+      "time": "15:30 - 16:15",
+      "description": "In der Bibliothek Möglingen findet ein Gaming-Treff für Kinder zwischen 8 und 12 Jahren statt. Mit Spielzeugen und Ausrüstung zur Verfügung, können die Teilnehmer ihre Fähigkeiten im Einsatz stellen.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 8,
+      "age_max": 12,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4384",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4384",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "gaming-treff-2026-11-06-moeg",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-09-04T02:01:16.694475+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/gaming-treff-2026-11-06-moeg"
+    },
+    {
+      "id": "7f5fa59ae1bdad51",
+      "title": "Gaming-Treff",
+      "date_start": "2026-11-20",
+      "date_end": null,
+      "time": "15:30 - 16:15",
+      "description": "In der Bibliothek Möglingen findet ein Gaming-Treff für Kinder im Alter von 8 bis 12 Jahren statt.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 8,
+      "age_max": 12,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4385",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4385",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "gaming-treff-2026-11-20-moeg",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-09-04T02:01:17.447716+02:00",
+      "extraction_confidence": 0.9,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/gaming-treff-2026-11-20-moeg"
+    },
+    {
+      "id": "7461bcf47d5fea69",
+      "title": "Kamishibai-Vorlesestunde",
+      "date_start": "2026-11-25",
+      "date_end": null,
+      "time": "15:30",
+      "description": "In dieser Vorlesestunde erfahren Kinder im Alter von 3 bis 4 Jahren das Erzähltheater Kamishibai. Eine erwachsene Begleiterin fördert die kreativen Fähigkeiten der Kleinen durch interaktive Geschichten.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 3,
+      "age_max": 4,
+      "tags": [
+        "Kinder",
+        "Lesung",
+        "Familie"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4393",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4393",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "kamishibai-vorlesestunde-2026-11-25-moeg",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-09-04T02:01:17.447828+02:00",
+      "extraction_confidence": 0.95,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/kamishibai-vorlesestunde-2026-11-25-moeg"
+    },
+    {
+      "id": "bb808a30a7ef5bf9",
+      "title": "Geschichtenzeit",
+      "date_start": "2026-12-03",
+      "date_end": null,
+      "time": "15:40",
+      "description": "In der Bibliothek Möglingen erwartet die Geschichtenzeit Kinder im Alter von 5 bis 7 Jahren auf einem Vortrag mit literarischer Pracht.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 5,
+      "age_max": 7,
+      "tags": [
+        "Kinder",
+        "Vortrag",
+        "Familie"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4390",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4390",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "geschichtenzeit-2026-12-03-moeg",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-09-04T02:01:17.448027+02:00",
+      "extraction_confidence": 0.92,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/geschichtenzeit-2026-12-03-moeg"
+    },
+    {
+      "id": "e66ff098768cf0fc",
+      "title": "Gaming-Treff",
+      "date_start": "2026-12-04",
+      "date_end": null,
+      "time": "15:30 - 16:15",
+      "description": "In der Bibliothek Möglingen finden Kinder vom Alter von 8 bis 12 Jahren einen Treffpunkt fürs Gaming. Mit Freunden zu spielen und neue Spiele entdecken – unter Anleitung der Bibliothek.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 8,
+      "age_max": 12,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4386",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4386",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "gaming-treff-2026-12-04-moeg",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-09-04T02:01:17.448123+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/gaming-treff-2026-12-04-moeg"
+    },
+    {
+      "id": "4431b07df9402a8f",
+      "title": "Kamishibai-Vorlesestunde",
+      "date_start": "2026-12-16",
+      "date_end": null,
+      "time": "15:30",
+      "description": "In dieser Vorlesestunde wird erzähltheatermäßige Kamishibai für Kinder im Alter von 3 bis 4 Jahren vorgelesen. Eine erwachsene Begleiterin unterstützt die Teilnehmer durch den kreativen Erzählprozess.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 3,
+      "age_max": 4,
+      "tags": [
+        "Kinder",
+        "Lesung",
+        "Familie"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4394",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4394",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "kamishibai-vorlesestunde-2026-12-16-moeg",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-09-04T02:01:17.448333+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/kamishibai-vorlesestunde-2026-12-16-moeg"
+    },
+    {
+      "id": "96adcb9476c7e62c",
+      "title": "Gaming-Treff",
+      "date_start": "2026-12-18",
+      "date_end": null,
+      "time": "15:30 - 16:15",
+      "description": "In der Bibliothek Möglingen findet ein Gaming-Treff für Kinder im Alter von 8 bis 12 Jahren statt. Hier können die Teilnehmer ihre Lieblingsspiele genießen und mit Freunden spielen.",
+      "location": "Bibliothek Möglingen",
+      "price": null,
+      "age_min": 8,
+      "age_max": 12,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4387",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4387",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "gaming-treff-2026-12-18-moeg",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-09-04T02:01:17.448427+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/gaming-treff-2026-12-18-moeg"
     }
   ]
 }

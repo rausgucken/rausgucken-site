@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-03T06:11:15.048624+02:00",
+  "scraped_at": "2026-09-04T06:09:56.172193+02:00",
   "city": "asperg",
-  "event_count": 157,
+  "event_count": 160,
   "flagged_count": 0,
   "expired_count": 20,
   "sources_scraped": [
@@ -10,14 +10,14 @@
     "glasperlenspiel"
   ],
   "source_counts": {
-    "asperg_veranstaltungen": 113,
+    "asperg_veranstaltungen": 116,
     "glasperlenspiel": 39,
     "asperg_fuehrungen": 5
   },
   "sources_failed": [],
-  "data_hash": "d31bb3793197f6aa",
+  "data_hash": "8c04b5668c5fcf9d",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 03.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 04.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "asperg_veranstaltungen": 1.0,
@@ -25,7 +25,7 @@
     "asperg_fuehrungen": 0.76
   },
   "source_event_counts": {
-    "asperg_veranstaltungen": 113,
+    "asperg_veranstaltungen": 116,
     "glasperlenspiel": 39,
     "asperg_fuehrungen": 5
   },
@@ -35,8 +35,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 499.5,
-    "runtime_delta_vs_baseline": 1.791,
+    "runtime_minutes": 584.9,
+    "runtime_delta_vs_baseline": 2.268,
     "source_health": {
       "asperg_veranstaltungen": 1.0,
       "glasperlenspiel": 0.93,
@@ -45,6 +45,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-03T10:34:02.091696+02:00"
+    "generated_at": "2026-09-04T11:59:16.081789+02:00"
   }
 }
