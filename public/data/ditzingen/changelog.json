@@ -1,38 +1,33 @@
 {
-  "generated_at": "2026-09-04T06:59:23.930429+02:00",
+  "generated_at": "2026-09-05T06:50:00.066329+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_treffpunkt_adler",
-    "ditzingen_stadt"
+    "ditzingen_stadt",
+    "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-09-03T06:35:09.873808+02:00",
-  "count_added": 0,
-  "count_removed": 4,
-  "added": [],
+  "previous_run": "2026-09-04T06:59:24.010674+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "c71cbda43c75e11d",
+      "title": "Offenes Singen zum Tag der deutschen Einheit",
+      "date_start": "2026-10-03",
+      "source": "ditzingen_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "607c743b672dd49b",
-      "title": "Computer- und Handy-Sprechstunde",
-      "date_start": "2026-09-03",
+      "id": "155116b9d74b05ba",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-09-04",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "84f2234534f36ea0",
-      "title": "Offenes Kaffeetrinken anstatt Mobilität und Fitness",
-      "date_start": "2026-09-03",
+      "id": "30c6002c0d0f9e97",
+      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-09-04",
       "source": "ditzingen_treffpunkt_adler"
-    },
-    {
-      "id": "e306c0ebcd815ab7",
-      "title": "LEA Leseklub - ALLE mit dabei!",
-      "date_start": "2026-09-03",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "6fdf59c5ad62a441",
-      "title": "Vortrag \"Wölfe\\, Wildschweine und Wir: Wie leben wir mit wilden Tieren?\"",
-      "date_start": "2026-09-03",
-      "source": "ditzingen_stadt"
     }
   ]
 }
