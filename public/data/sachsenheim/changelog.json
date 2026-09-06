@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-05T06:44:24.970382+02:00",
+  "generated_at": "2026-09-06T06:22:06.615713+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-09-04T06:53:28.190494+02:00",
-  "count_added": 7,
-  "count_removed": 0,
+  "previous_run": "2026-09-05T06:44:25.046008+02:00",
+  "count_added": 9,
+  "count_removed": 1,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -50,7 +50,26 @@
       "title": "KleinstadtQueers",
       "date_start": "2026-08-29",
       "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "075accf4e7abc585",
+      "title": "Gast bei Rittern und Geistern",
+      "date_start": "2026-09-06",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "925b7dc570361f6e",
+      "title": "Zu Gast bei Rittern und Geistern",
+      "date_start": "2026-09-06",
+      "source": "sachsenheim_library"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "60bbce4b38ebf21c",
+      "title": "Zu Gast bei Rittern und Geistern",
+      "date_start": "2026-09-06",
+      "source": "sachsenheim_kultur"
+    }
+  ]
 }

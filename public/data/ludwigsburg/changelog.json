@@ -1,25 +1,26 @@
 {
-  "generated_at": "2026-09-05T10:10:04.906076+02:00",
+  "generated_at": "2026-09-06T10:00:49.919535+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "lisbert_queer",
-    "karlskaserne_veranstaltungen",
-    "stabi",
-    "blueba",
-    "kunstverein_ausstellungen",
-    "forum_schlosspark",
-    "ludwigsburg_stadt",
-    "labyrinth",
-    "garnisonmuseum",
     "kunstverein_veranstaltungen",
-    "musikhalle_lb",
+    "blueba",
+    "ludwigsburg_stadt",
+    "lisbert_queer",
+    "museum",
+    "garnisonmuseum",
+    "labyrinth",
+    "kunstverein_ausstellungen",
     "karlskaserne_ausstellungen",
+    "musikhalle_lb",
+    "karlskaserne_veranstaltungen",
+    "forum_schlosspark",
+    "demokratisches_zentrum",
     "schloss",
-    "demokratisches_zentrum"
+    "stabi"
   ],
-  "previous_run": "2026-09-04T11:44:57.105928+02:00",
-  "count_added": 7,
-  "count_removed": 46,
+  "previous_run": "2026-09-05T10:10:04.998863+02:00",
+  "count_added": 47,
+  "count_removed": 9,
   "added": [
     {
       "id": "feee56b785ce127e",
@@ -27,44 +28,6 @@
       "date_start": "2026-07-07",
       "source": "stabi"
     },
-    {
-      "id": "4338d42d24902687",
-      "title": "Klassische Schlossführung in englischer Sprache",
-      "date_start": "2026-03-28",
-      "source": "schloss"
-    },
-    {
-      "id": "35bb6bb83d3edb07",
-      "title": "Klassische Führung für Familien",
-      "date_start": "2026-03-28",
-      "source": "schloss"
-    },
-    {
-      "id": "b235ad234be612bc",
-      "title": "40 Jahre Schiffsmodellbauclub Ludwigsburg - Jubiläumsaktion",
-      "date_start": "2026-09-13",
-      "source": "blueba"
-    },
-    {
-      "id": "94c387de25a67afc",
-      "title": "Flohmarkt nur einmal im Jahr",
-      "date_start": "2026-09-12",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "27cdb6b66c3f3a10",
-      "title": "Crown of Sound 2026",
-      "date_start": "2026-09-12",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b88f9d935beaff35",
-      "title": "Geschichtsführung: Kluge Köpfe aus Ludwigsburg",
-      "date_start": "2026-09-13",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
     {
       "id": "7c82aba616f7a699",
       "title": "Ausstellung Respekt! Menschen der Karlshöhe",
@@ -78,40 +41,10 @@
       "source": "museum"
     },
     {
-      "id": "84214690640c5cf2",
-      "title": "Summer Football Camp",
-      "date_start": "2026-08-31",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "f09f97807552609d",
-      "title": "Games-Hackathon",
-      "date_start": "2026-08-31",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4463b5e559f0a0fd",
-      "title": "Die Blüba-Experten - Mein Staudenparadies",
-      "date_start": "2026-09-04",
-      "source": "blueba"
-    },
-    {
-      "id": "a0a94b382b668473",
-      "title": "Kostümführung: Reichsgräfin Wilhelmine von Grävenitz",
-      "date_start": "2026-09-04",
-      "source": "ludwigsburg_stadt"
-    },
-    {
       "id": "33db71f4708977da",
       "title": "Stadtgeschichten",
       "date_start": "2026-09-09",
       "source": "museum"
-    },
-    {
-      "id": "0bf2d698e4d64e28",
-      "title": "Schaufahren der Modellschiffe",
-      "date_start": "2026-09-13",
-      "source": "blueba"
     },
     {
       "id": "3192543b77754ff7",
@@ -330,16 +263,102 @@
       "source": "museum"
     },
     {
-      "id": "17afd3d48bcfc7c3",
-      "title": "Klassische Schlossführung in englischer Sprache",
+      "id": "5e012f0afde9b9cc",
+      "title": "Klassische Schlossführung „Herzog“",
       "date_start": null,
       "source": "schloss"
     },
     {
-      "id": "0ddc5d99ebe250f8",
-      "title": "Klassische Führung für Familien",
-      "date_start": null,
+      "id": "3832564da56a478b",
+      "title": "Naturerlebnis Neckar",
+      "date_start": "2026-09-13",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a5fcbdaf203e4fd8",
+      "title": "Genussführung: ANGEZAPFT in Ludwigsburg",
+      "date_start": "2026-09-13",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3e9a2f97b0b169cb",
+      "title": "Tag des Offenen Denkmals",
+      "date_start": "2026-09-13",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "20f65e3a5440e107",
+      "title": "Wichtel-Stube",
+      "date_start": "2026-09-14",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "ba1957de216975cd",
+      "title": "Real Twins",
+      "date_start": "2026-09-14",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "b83e23aed1b71eb9",
+      "title": "XR/VR-Initiative",
+      "date_start": "2026-09-15",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "f2d072ce4584b2b4",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": "2026-03-28",
       "source": "schloss"
+    },
+    {
+      "id": "135b12cde36857c4",
+      "title": "Bilderbuchsamstag",
+      "date_start": "2026-09-05",
+      "source": "stabi"
+    },
+    {
+      "id": "1cf01bd4a2fe2eb4",
+      "title": "Venezianische Messe 2026",
+      "date_start": "2026-09-05",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "0d97558e764c3585",
+      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
+      "date_start": "2026-09-05",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "9f354d00815c6409",
+      "title": "Märchenerzählerin",
+      "date_start": "2026-09-05",
+      "source": "blueba"
+    },
+    {
+      "id": "53d32f767530115f",
+      "title": "Kleidung, die verführt",
+      "date_start": "2026-09-05",
+      "source": "schloss"
+    },
+    {
+      "id": "3ac69f6b1eb078c5",
+      "title": "Kostümführung: Mit Harlekina zur Venezianischen Messe",
+      "date_start": "2026-09-05",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "96d4f15e73a09af6",
+      "title": "Viva Cuba",
+      "date_start": "2026-09-05",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fc24132fc2d3d393",
+      "title": "Reparaturcafé",
+      "date_start": "2026-10-21",
+      "source": "demokratisches_zentrum"
     }
   ]
 }
