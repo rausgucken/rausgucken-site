@@ -1,24 +1,31 @@
 {
-  "generated_at": "2026-09-06T06:54:53.388549+02:00",
+  "generated_at": "2026-09-07T06:35:16.228722+02:00",
   "city": "grossbottwar",
   "sources": [
     "grossbottwar_veranstaltungen"
   ],
-  "previous_run": "2026-09-05T06:53:40.549223+02:00",
-  "count_added": 0,
+  "previous_run": "2026-09-06T06:54:53.466706+02:00",
+  "count_added": 1,
   "count_removed": 2,
-  "added": [],
+  "added": [
+    {
+      "id": "ddbb67a77bc58d69",
+      "title": "Treffen älterer Menschen",
+      "date_start": "2027-09-07",
+      "source": "grossbottwar_veranstaltungen"
+    }
+  ],
   "removed": [
     {
-      "id": "d588ff95537c07d8",
+      "id": "c7e8850ee946fe61",
       "title": "Fest am Bach",
-      "date_start": "2026-09-05",
+      "date_start": "2026-09-06",
       "source": "grossbottwar_veranstaltungen"
     },
     {
-      "id": "dcfa331fa9feaf68",
+      "id": "a83ac0ad454873ec",
       "title": "Fest am Bach (LandFrauen Großbottwar)",
-      "date_start": "2026-09-05",
+      "date_start": "2026-09-06",
       "source": "grossbottwar_veranstaltungen"
     }
   ]

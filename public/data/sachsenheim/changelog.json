@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-06T06:22:06.615713+02:00",
+  "generated_at": "2026-09-07T06:27:21.974320+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_kultur",
-    "sachsenheim_library"
+    "sachsenheim_library",
+    "sachsenheim_kultur"
   ],
-  "previous_run": "2026-09-05T06:44:25.046008+02:00",
+  "previous_run": "2026-09-06T06:22:06.689843+02:00",
   "count_added": 9,
-  "count_removed": 1,
+  "count_removed": 2,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -52,6 +52,20 @@
       "source": "sachsenheim_kultur"
     },
     {
+      "id": "14ad5b10d1851c3a",
+      "title": "Tag der offenen Tür",
+      "date_start": "2026-10-10",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "eec27d450b3897d0",
+      "title": "Tag der offenen Tür in der neuen Kita littlebigFuture Sachsenheim",
+      "date_start": "2026-10-10",
+      "source": "sachsenheim_library"
+    }
+  ],
+  "removed": [
+    {
       "id": "075accf4e7abc585",
       "title": "Gast bei Rittern und Geistern",
       "date_start": "2026-09-06",
@@ -62,14 +76,6 @@
       "title": "Zu Gast bei Rittern und Geistern",
       "date_start": "2026-09-06",
       "source": "sachsenheim_library"
-    }
-  ],
-  "removed": [
-    {
-      "id": "60bbce4b38ebf21c",
-      "title": "Zu Gast bei Rittern und Geistern",
-      "date_start": "2026-09-06",
-      "source": "sachsenheim_kultur"
     }
   ]
 }

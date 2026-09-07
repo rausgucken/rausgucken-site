@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-09-06T06:10:38.372378+02:00",
+  "generated_at": "2026-09-07T06:14:50.846147+02:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-09-05T06:11:09.867769+02:00",
-  "count_added": 0,
+  "previous_run": "2026-09-06T06:10:38.451607+02:00",
+  "count_added": 2,
   "count_removed": 1,
-  "added": [],
+  "added": [
+    {
+      "id": "3cc8c02d0894c859",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-04-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "2e6c9492d4249b7b",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-04-07",
+      "source": "freiberg_veranstaltungen"
+    }
+  ],
   "removed": [
     {
-      "id": "53bdfd5f6e549b6b",
-      "title": "Freiberger Wochenmarkt",
-      "date_start": "2026-09-05",
+      "id": "571af4f814922d39",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-09-06",
       "source": "freiberg_veranstaltungen"
     }
   ]

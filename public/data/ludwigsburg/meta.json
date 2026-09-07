@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-06T10:00:50.012755+02:00",
+  "scraped_at": "2026-09-07T09:50:12.162917+02:00",
   "city": "ludwigsburg",
-  "event_count": 751,
+  "event_count": 745,
   "flagged_count": 0,
   "expired_count": 1,
   "sources_scraped": [
@@ -22,11 +22,11 @@
     "stabi"
   ],
   "source_counts": {
-    "schloss": 141,
-    "ludwigsburg_stadt": 49,
+    "schloss": 139,
     "museum": 39,
+    "ludwigsburg_stadt": 49,
     "kunstverein_ausstellungen": 4,
-    "blueba": 39,
+    "blueba": 35,
     "stabi": 169,
     "demokratisches_zentrum": 3,
     "karlskaserne_veranstaltungen": 106,
@@ -39,14 +39,14 @@
     "karlskaserne_ausstellungen": 1
   },
   "sources_failed": [],
-  "data_hash": "5d44aeb022d9c93e",
+  "data_hash": "5bc3d3985260f5e8",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 06.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 07.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schloss": 1.0,
-    "ludwigsburg_stadt": 1.0,
     "museum": 1.0,
+    "ludwigsburg_stadt": 1.0,
     "kunstverein_ausstellungen": 1.0,
     "blueba": 1.0,
     "stabi": 1.0,
@@ -61,11 +61,11 @@
     "karlskaserne_ausstellungen": 0.67
   },
   "source_event_counts": {
-    "schloss": 141,
-    "ludwigsburg_stadt": 49,
+    "schloss": 139,
     "museum": 39,
+    "ludwigsburg_stadt": 49,
     "kunstverein_ausstellungen": 4,
-    "blueba": 39,
+    "blueba": 35,
     "stabi": 169,
     "demokratisches_zentrum": 3,
     "karlskaserne_veranstaltungen": 106,
@@ -83,12 +83,12 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 480.8,
-    "runtime_delta_vs_baseline": 1.686,
+    "runtime_minutes": 470.2,
+    "runtime_delta_vs_baseline": 1.627,
     "source_health": {
       "schloss": 1.0,
-      "ludwigsburg_stadt": 1.0,
       "museum": 1.0,
+      "ludwigsburg_stadt": 1.0,
       "kunstverein_ausstellungen": 1.0,
       "blueba": 1.0,
       "stabi": 1.0,
@@ -105,6 +105,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-06T10:15:02.639479+02:00"
+    "generated_at": "2026-09-07T10:04:31.386831+02:00"
   }
 }

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-06T06:06:24.886699+02:00",
+  "generated_at": "2026-09-07T06:08:27.624154+02:00",
   "city": "asperg",
   "sources": [
     "glasperlenspiel",
-    "asperg_fuehrungen",
-    "asperg_veranstaltungen"
+    "asperg_veranstaltungen",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-09-05T06:07:05.822351+02:00",
+  "previous_run": "2026-09-06T06:06:24.965548+02:00",
   "count_added": 20,
-  "count_removed": 2,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -131,18 +131,5 @@
       "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "40a33aef42cbc2ba",
-      "title": "Wochenmarkt",
-      "date_start": "2026-09-05",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "1d0741562b2acd8c",
-      "title": "RepairCafe & UpcyclingWerkstatt",
-      "date_start": "2026-09-05",
-      "source": "asperg_veranstaltungen"
-    }
-  ]
+  "removed": []
 }

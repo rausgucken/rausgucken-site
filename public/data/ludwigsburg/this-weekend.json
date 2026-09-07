@@ -1,9 +1,46 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-09-07T06:00:01.981255+02:00",
-  "event_count": 26,
+  "generated_at": "2026-09-07T09:50:12.255115+02:00",
+  "event_count": 27,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
+    {
+      "id": "db1ece12e5f80942",
+      "title": "Floristische Ausstellung: Dornröschen",
+      "date_start": "2026-09-10",
+      "date_end": "2026-11-01",
+      "time": null,
+      "description": "In der Bluehenden Barockanlage Ludwigsburg präsentiert sich die Floristische Ausstellung „Dornröschen“. Besuchern bietet sie eine magische Reise durch das Blumengartenreich.",
+      "location": "Bluehendes Barock Ludwigsburg",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Ausstellung"
+      ],
+      "link": "https://www.blueba.de/de/veranstaltungen/orangerie.html",
+      "original_url": "https://www.blueba.de/de/veranstaltungen/orangerie.html",
+      "source": "blueba",
+      "city": "ludwigsburg",
+      "slug": "floristische-ausstellung-dornroeschen-2026-09-10-blue",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scraped_at": "2026-09-07T02:13:51.772620+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Bluehendes Barock Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/floristische-ausstellung-dornroeschen-2026-09-10-blue"
+    },
     {
       "id": "dd06bc14a21566ba",
       "title": "Kürbis-Märchen",
@@ -25,7 +62,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-09-06T02:14:50.623158+02:00",
+      "scraped_at": "2026-09-07T02:13:51.772652+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -60,7 +97,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-09-06T02:14:50.623188+02:00",
+      "scraped_at": "2026-09-07T02:13:51.772686+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -91,7 +128,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-06T02:14:51.811240+02:00",
+      "scraped_at": "2026-09-07T02:13:52.830346+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -99,6 +136,37 @@
       "editorial_tip": null,
       "source_label": "Stadt Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/crown-of-sound-2026-2026-09-12-ludw"
+    },
+    {
+      "id": "bbfc27b6c4f42973",
+      "title": "Blick hinter die Kulissen",
+      "date_start": "2026-09-12",
+      "date_end": null,
+      "time": "11:00",
+      "description": "In diesem Rundgang durch das Residenzschloss Ludwigsburg entdecken Sie Heizgänge, geheime Kellergewölbe und versteckte Innenhöfe. Besondere Attraktion ist der original erhaltene Dachstuhl. Begleitet wird die Tour von Mike Mack. Anmeldung erforderlich.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/blick-hinter-die-kulissen/9344/769802",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/blick-hinter-die-kulissen/9344/769802",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "blick-hinter-die-kulissen-2026-09-12-schl",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-09-07T02:00:25.378585+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/blick-hinter-die-kulissen-2026-09-12-schl"
     },
     {
       "id": "b90e34ae1b281062",
@@ -123,7 +191,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-06T02:14:51.810033+02:00",
+      "scraped_at": "2026-09-07T02:13:52.828969+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -131,37 +199,6 @@
       "editorial_tip": null,
       "source_label": "Stadt Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/genussfuehrung-ludwigsburger-versucherle-2026-09-12-ludw"
-    },
-    {
-      "id": "bbfc27b6c4f42973",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-09-12",
-      "date_end": null,
-      "time": "11:00",
-      "description": "In diesem Rundgang durch das Residenzschloss Ludwigsburg entdecken Sie Heizgänge, geheime Kellergewölbe und versteckte Innenhöfe. Besondere Attraktion ist der original erhaltene Dachstuhl. Begleitet wird die Tour von Mike Mack. Anmeldung erforderlich.",
-      "location": "Residenzschloss Ludwigsburg",
-      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
-      "age_min": null,
-      "age_max": null,
-      "tags": [
-        "Fuehrung"
-      ],
-      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/blick-hinter-die-kulissen/9344/769802",
-      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/blick-hinter-die-kulissen/9344/769802",
-      "source": "schloss",
-      "city": "ludwigsburg",
-      "slug": "blick-hinter-die-kulissen-2026-09-12-schl",
-      "weekdays": [
-        6
-      ],
-      "scraped_at": "2026-09-06T02:00:55.618716+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Residenzschloss Ludwigsburg",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/blick-hinter-die-kulissen-2026-09-12-schl"
     },
     {
       "id": "9e8f2f9f60abf6ce",
@@ -187,7 +224,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-06T02:08:52.477063+02:00",
+      "scraped_at": "2026-09-07T02:08:51.170971+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -218,7 +255,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-06T02:14:50.623219+02:00",
+      "scraped_at": "2026-09-07T02:13:51.772722+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -233,9 +270,9 @@
       "date_start": "2026-09-12",
       "date_end": null,
       "time": "13:30",
-      "description": "In dieser Führung durch das Schlosstheater werden die Besucher vom Hofgesellschaftsparkett aus sowie von der Königsloge und den steilen Rängen aus das 18. Jahrhundert erleben. Der Weg führt auch unter die historische Bühne und in das Depot des Theaters. Eine umfassende Tour durch besterhaltetes Schlosstheater-Landmarken. Anmeldung bei Sonderführungen erforderlich.",
+      "description": "In dieser Abendführung durch das Schlosstheater des Residenzschlosses Ludwigsburg werden die historischen Räume mit lebendigem Glanz versehen. Besuchern eröffnet eine Führerin Einblicke in die Architektur und Geschichte des Gebäudes.",
       "location": "Residenzschloss Ludwigsburg",
-      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "price": null,
       "age_min": null,
       "age_max": null,
       "tags": [
@@ -249,7 +286,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-06T02:00:56.977945+02:00",
+      "scraped_at": "2026-09-07T02:00:26.828169+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -280,7 +317,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-06T02:14:51.810361+02:00",
+      "scraped_at": "2026-09-07T02:13:52.829417+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -314,7 +351,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-06T02:14:51.810501+02:00",
+      "scraped_at": "2026-09-07T02:13:52.829111+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -343,7 +380,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-06T02:00:58.332702+02:00",
+      "scraped_at": "2026-09-07T02:00:42.340260+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -372,7 +409,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-06T02:01:01.603959+02:00",
+      "scraped_at": "2026-09-07T02:00:44.399204+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -404,7 +441,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-06T02:14:51.810821+02:00",
+      "scraped_at": "2026-09-07T02:13:52.829908+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -433,7 +470,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-06T02:01:02.968677+02:00",
+      "scraped_at": "2026-09-07T02:00:53.732451+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -462,7 +499,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-06T02:14:51.811018+02:00",
+      "scraped_at": "2026-09-07T02:13:52.830107+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -491,7 +528,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-06T02:14:50.623249+02:00",
+      "scraped_at": "2026-09-07T02:13:51.772757+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -522,7 +559,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-06T02:01:04.775706+02:00",
+      "scraped_at": "2026-09-07T02:00:55.640533+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -551,9 +588,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-06T02:14:51.811456+02:00",
+      "scraped_at": "2026-09-07T02:13:52.830563+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -580,7 +617,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-06T02:14:50.623290+02:00",
+      "scraped_at": "2026-09-07T02:13:51.772790+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -609,7 +646,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-06T02:14:49.760215+02:00",
+      "scraped_at": "2026-09-07T02:13:50.892857+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -640,7 +677,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-06T02:14:51.811796+02:00",
+      "scraped_at": "2026-09-07T02:13:52.830916+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -671,7 +708,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-06T02:14:50.623324+02:00",
+      "scraped_at": "2026-09-07T02:13:51.772820+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -702,7 +739,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-06T02:01:06.118334+02:00",
+      "scraped_at": "2026-09-07T02:00:59.447705+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -734,9 +771,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-06T02:14:51.812072+02:00",
+      "scraped_at": "2026-09-07T02:13:52.831200+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -765,9 +802,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-06T02:00:03.543465+02:00",
+      "scraped_at": "2026-09-07T02:00:03.864280+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -794,9 +831,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-06T02:14:51.812175+02:00",
+      "scraped_at": "2026-09-07T02:13:52.831309+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
