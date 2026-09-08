@@ -1,33 +1,27 @@
 {
-  "generated_at": "2026-09-07T09:50:12.070502+02:00",
+  "generated_at": "2026-09-08T10:32:35.023278+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "schloss",
-    "museum",
-    "karlskaserne_ausstellungen",
     "ludwigsburg_stadt",
-    "kunstverein_ausstellungen",
+    "karlskaserne_ausstellungen",
     "lisbert_queer",
+    "museum",
+    "garnisonmuseum",
+    "labyrinth",
+    "karlskaserne_veranstaltungen",
+    "stabi",
+    "schloss",
     "kunstverein_veranstaltungen",
     "musikhalle_lb",
     "demokratisches_zentrum",
-    "labyrinth",
-    "stabi",
-    "forum_schlosspark",
-    "garnisonmuseum",
     "blueba",
-    "karlskaserne_veranstaltungen"
+    "kunstverein_ausstellungen",
+    "forum_schlosspark"
   ],
-  "previous_run": "2026-09-06T10:00:50.012755+02:00",
-  "count_added": 13,
-  "count_removed": 18,
+  "previous_run": "2026-09-07T09:50:12.162917+02:00",
+  "count_added": 2,
+  "count_removed": 7,
   "added": [
-    {
-      "id": "8a1c65be377f3925",
-      "title": "Just White & Blue",
-      "date_start": "2026-09-11",
-      "source": "schloss"
-    },
     {
       "id": "feee56b785ce127e",
       "title": "HEISS AUF LESEN",
@@ -35,180 +29,54 @@
       "source": "stabi"
     },
     {
-      "id": "f2d072ce4584b2b4",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": "2026-03-28",
-      "source": "schloss"
-    },
-    {
-      "id": "db1ece12e5f80942",
-      "title": "Floristische Ausstellung: Dornröschen",
-      "date_start": "2026-09-10",
-      "source": "blueba"
-    },
-    {
-      "id": "caffda1ad630f680",
-      "title": "nappydancer®",
-      "date_start": "2026-09-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "525752ab0e4fd5ee",
-      "title": "Café mit Herz",
-      "date_start": "2026-09-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "18f067ecc22941a4",
-      "title": "Internationale Geschichteninsel auf Russisch",
-      "date_start": "2026-09-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "332618fc9b00ddee",
-      "title": "Silent Reading: Nachts in der Bibliothek",
-      "date_start": "2026-09-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "43e561fd79e61fa4",
-      "title": "Spielzeit FamilienLeben - Mittwochs",
-      "date_start": "2026-09-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "23afad342168d2ac",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "5f66cbf1484bb9a2",
-      "title": "Treff der Museumsfreunde",
-      "date_start": "2026-09-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "03776dd4860a711c",
-      "title": "LuBu MoVes",
-      "date_start": "2026-09-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "fc2fdb61831f21aa",
-      "title": "Spielzeit FamilienLeben - Donnerstags",
-      "date_start": "2026-09-17",
-      "source": "ludwigsburg_stadt"
+      "id": "0942db9b8dcfd24f",
+      "title": "DANZA CONTEMPORÁNEA DE CUBA",
+      "date_start": "2026-11-29",
+      "source": "forum_schlosspark"
     }
   ],
   "removed": [
     {
-      "id": "f37a088f3389e3e9",
-      "title": "Floristische Ausstellung: Duftende Pfade",
-      "date_start": "2026-07-30",
-      "source": "blueba"
-    },
-    {
-      "id": "fb60e3035650a7c1",
-      "title": "Circus Theater Roncalli",
-      "date_start": "2026-08-12",
-      "source": "blueba"
-    },
-    {
-      "id": "0b598e14d94a76e1",
-      "title": "Circus Roncalli 50 Jahre Jubiläum im Blühenden Barock",
-      "date_start": "2026-08-12",
+      "id": "70849e1c2e40c006",
+      "title": "Spielenachmittag Freibad Hoheneck",
+      "date_start": "2026-08-03",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "fd4e812b6ca1a51b",
-      "title": "Venezianische Messe 2026",
-      "date_start": "2026-09-04",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "053076f13add7c09",
-      "title": "Biber-Fieber beim Naturerlebnis Neckar",
-      "date_start": "2026-09-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b6c1e239e5739a51",
-      "title": "Kürbis-Führung",
-      "date_start": "2026-09-06",
-      "source": "blueba"
-    },
-    {
-      "id": "8254fbb41010937b",
-      "title": "Württembergs First Ladies",
-      "date_start": "2026-09-06",
+      "id": "05def27e8e0a6991",
+      "title": "Tiere im Schloss",
+      "date_start": "2026-09-07",
       "source": "schloss"
     },
     {
-      "id": "82838e1dc11af887",
-      "title": "Kostümführung: Reichsgräfin Wilhelmine von Grävenitz",
-      "date_start": "2026-09-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "da4e7ec75df5338c",
-      "title": "Venezianische Messe 2026",
-      "date_start": "2026-09-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "0467bb47c3abacec",
-      "title": "Sonntagslunch",
-      "date_start": "2026-09-06",
-      "source": "blueba"
-    },
-    {
-      "id": "67689e100ad6c2d9",
-      "title": "Von diebischen Elstern und listigen Gaunern",
-      "date_start": "2026-09-06",
-      "source": "schloss"
-    },
-    {
-      "id": "1dd7f02d642abcff",
-      "title": "Märchenerzählerin",
-      "date_start": "2026-09-06",
-      "source": "blueba"
-    },
-    {
-      "id": "0a00372ab98c574b",
-      "title": "Freifrau von Schwarzenfels",
-      "date_start": "2026-09-06",
-      "source": "schloss"
-    },
-    {
-      "id": "403f34dcf544f0aa",
-      "title": "Kostümführung: Mit Harlekina zur Venezianischen Messe",
-      "date_start": "2026-09-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "850aea2eddc67536",
-      "title": "LesArt 2026",
-      "date_start": "2026-09-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "61a395f68685f50c",
-      "title": "Naturführung: Die Zugwiesen",
-      "date_start": "2026-09-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "79729b1da57ec64c",
-      "title": "Just White & Blue",
+      "id": "7ad3d4352969dcc0",
+      "title": "Blick hinter die Kulissen",
       "date_start": "2026-09-11",
-      "source": "ludwigsburg_stadt"
+      "source": "schloss"
     },
     {
-      "id": "5e012f0afde9b9cc",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": null,
+      "id": "25f82894cf6e40d5",
+      "title": "Führung durch das Schlosstheater",
+      "date_start": "2026-09-12",
       "source": "schloss"
+    },
+    {
+      "id": "c1c448fc0ad427e3",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-09-12",
+      "source": "schloss"
+    },
+    {
+      "id": "6803d8f7ce6773c4",
+      "title": "Schaurig schön",
+      "date_start": "2026-09-12",
+      "source": "schloss"
+    },
+    {
+      "id": "7bd37224fa025a45",
+      "title": "DANZA CONTEMPORÁNEA DE CUBA",
+      "date_start": "2026-11-29",
+      "source": "forum_schlosspark"
     }
   ]
 }

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-07T06:27:21.974320+02:00",
+  "generated_at": "2026-09-08T06:58:42.459221+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-09-06T06:22:06.689843+02:00",
-  "count_added": 9,
-  "count_removed": 2,
+  "previous_run": "2026-09-07T06:27:22.050600+02:00",
+  "count_added": 10,
+  "count_removed": 4,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -52,6 +52,38 @@
       "source": "sachsenheim_kultur"
     },
     {
+      "id": "ed44c4e93bae5d03",
+      "title": "Energieberatungs-Infostand der LEA",
+      "date_start": "2026-09-21",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "78d3263875f6457b",
+      "title": "Weinbau in früheren Zeiten mit alten Arbeitsgeräten",
+      "date_start": "2026-09-27",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "1a564d042d17931a",
+      "title": "Hocketse",
+      "date_start": "2026-10-03",
+      "source": "sachsenheim_kultur"
+    }
+  ],
+  "removed": [
+    {
+      "id": "93f9cf11b9d7a482",
+      "title": "Herbstfeier mit Musik, Basteln und Brot",
+      "date_start": "2026-10-09",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "ceae2cb8f73bb2e0",
+      "title": "ECOmedy mit Matthias Jung",
+      "date_start": "2026-10-09",
+      "source": "sachsenheim_kultur"
+    },
+    {
       "id": "14ad5b10d1851c3a",
       "title": "Tag der offenen Tür",
       "date_start": "2026-10-10",
@@ -61,20 +93,6 @@
       "id": "eec27d450b3897d0",
       "title": "Tag der offenen Tür in der neuen Kita littlebigFuture Sachsenheim",
       "date_start": "2026-10-10",
-      "source": "sachsenheim_library"
-    }
-  ],
-  "removed": [
-    {
-      "id": "075accf4e7abc585",
-      "title": "Gast bei Rittern und Geistern",
-      "date_start": "2026-09-06",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "925b7dc570361f6e",
-      "title": "Zu Gast bei Rittern und Geistern",
-      "date_start": "2026-09-06",
       "source": "sachsenheim_library"
     }
   ]

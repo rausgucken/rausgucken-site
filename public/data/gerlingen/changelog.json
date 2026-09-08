@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-09-07T06:34:58.045436+02:00",
+  "generated_at": "2026-09-08T07:07:56.791545+02:00",
   "city": "gerlingen",
   "sources": [
     "gerlingen_stadt"
   ],
-  "previous_run": "2026-09-06T06:54:52.694658+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-09-07T06:34:58.121540+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "ca7f38f298a62f37",
+      "title": "Feierabendtour",
+      "date_start": "2026-09-10",
+      "source": "gerlingen_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "238165d3b8e41239",
+      "title": "Märchenabend mit Musik",
+      "date_start": "2026-11-30",
+      "source": "gerlingen_stadt"
+    }
+  ]
 }

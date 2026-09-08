@@ -1,18 +1,25 @@
 {
-  "generated_at": "2026-09-07T06:35:16.981189+02:00",
+  "generated_at": "2026-09-08T07:08:13.383050+02:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-09-06T06:54:54.941404+02:00",
-  "count_added": 0,
+  "previous_run": "2026-09-07T06:35:17.056381+02:00",
+  "count_added": 1,
   "count_removed": 1,
-  "added": [],
+  "added": [
+    {
+      "id": "9841e26cd41f5ef4",
+      "title": "Dorffreizeit",
+      "date_start": "2026-09-08",
+      "source": "affalterbach_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "094afa69ae2706a8",
-      "title": "Aussendungsgottesdienst",
-      "date_start": "2026-09-06",
+      "id": "6834cc7486c9791b",
+      "title": "Dorffreizeit",
+      "date_start": "2026-09-07",
       "source": "affalterbach_stadt"
     }
   ]

@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-07T09:50:12.162917+02:00",
+  "scraped_at": "2026-09-08T10:32:35.115538+02:00",
   "city": "ludwigsburg",
-  "event_count": 745,
+  "event_count": 739,
   "flagged_count": 0,
   "expired_count": 1,
   "sources_scraped": [
@@ -22,9 +22,9 @@
     "stabi"
   ],
   "source_counts": {
-    "schloss": 139,
+    "schloss": 134,
     "museum": 39,
-    "ludwigsburg_stadt": 49,
+    "ludwigsburg_stadt": 48,
     "kunstverein_ausstellungen": 4,
     "blueba": 35,
     "stabi": 169,
@@ -39,9 +39,9 @@
     "karlskaserne_ausstellungen": 1
   },
   "sources_failed": [],
-  "data_hash": "5bc3d3985260f5e8",
+  "data_hash": "1cb9e0daf2ff3e14",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 07.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 08.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schloss": 1.0,
@@ -61,9 +61,9 @@
     "karlskaserne_ausstellungen": 0.67
   },
   "source_event_counts": {
-    "schloss": 139,
+    "schloss": 134,
     "museum": 39,
-    "ludwigsburg_stadt": 49,
+    "ludwigsburg_stadt": 48,
     "kunstverein_ausstellungen": 4,
     "blueba": 35,
     "stabi": 169,
@@ -83,8 +83,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 470.2,
-    "runtime_delta_vs_baseline": 1.627,
+    "runtime_minutes": 512.6,
+    "runtime_delta_vs_baseline": 1.864,
     "source_health": {
       "schloss": 1.0,
       "museum": 1.0,
@@ -105,6 +105,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-07T10:04:31.386831+02:00"
+    "generated_at": "2026-09-08T10:45:53.950785+02:00"
   }
 }

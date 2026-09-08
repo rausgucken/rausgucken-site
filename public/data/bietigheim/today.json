@@ -1,7 +1,7 @@
 {
   "subset": "today",
-  "generated_at": "2026-09-08T06:00:01.420264+02:00",
-  "event_count": 1,
+  "generated_at": "2026-09-08T07:27:34.932104+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -24,7 +24,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-09-07T02:00:13.114546+02:00",
+      "scraped_at": "2026-09-08T02:00:13.403082+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -32,6 +32,43 @@
       "editorial_tip": null,
       "source_label": "Stadt Bietigheim-Bissingen",
       "canonical_url": "https://www.rausgucken.de/bietigheim/events/kostenloser-sitztanz-fuer-senioren-2026-09-08-biet"
+    },
+    {
+      "id": "a696c20f57f76186",
+      "title": "Familien-Fun-Freitag",
+      "date_start": "2026-09-08",
+      "date_end": "2026-10-19",
+      "time": "15:00",
+      "description": "In der Studioausstellung \"Bernhard Obst – The sky is open\" bietet sich am Fun-Freitag eine familienfreundliche Atmosphäre an. Der Künstler Jan Sprenger leitet einen Einblick in seine Werkstätte.",
+      "location": "Studioausstellung »Bernhard Obst – The sky is open«",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://galerie.bietigheim-bissingen.de/veranstaltungen/kalendarium/",
+      "original_url": "https://galerie.bietigheim-bissingen.de/veranstaltungen/kalendarium/",
+      "source": "bietigheim_galerie",
+      "city": "bietigheim",
+      "slug": "familien-fun-freitag-2026-09-08-biet",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scraped_at": "2026-09-08T02:04:33.682653+02:00",
+      "extraction_confidence": 0.65,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Städtische Galerie Bietigheim-Bissingen",
+      "canonical_url": "https://www.rausgucken.de/bietigheim/events/familien-fun-freitag-2026-09-08-biet"
     }
   ]
 }
