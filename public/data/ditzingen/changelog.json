@@ -1,13 +1,32 @@
 {
-  "generated_at": "2026-09-08T07:04:09.016184+02:00",
+  "generated_at": "2026-09-09T06:47:19.501794+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_treffpunkt_adler",
-    "ditzingen_stadt"
+    "ditzingen_stadt",
+    "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-09-07T06:33:04.698555+02:00",
+  "previous_run": "2026-09-08T07:04:09.100352+02:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 3,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "06306a7e3e069758",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0d34ef8bac2d2081",
+      "title": "Skatgruppen",
+      "date_start": "2026-09-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c38328b068042c5e",
+      "title": "KEIN English Conversation Stammtisch",
+      "date_start": "2026-09-08",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ]
 }

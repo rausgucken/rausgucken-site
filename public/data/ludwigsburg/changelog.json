@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-09-08T10:32:35.023278+02:00",
+  "generated_at": "2026-09-09T09:57:20.648845+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "ludwigsburg_stadt",
-    "karlskaserne_ausstellungen",
+    "stabi",
     "lisbert_queer",
     "museum",
+    "ludwigsburg_stadt",
     "garnisonmuseum",
+    "blueba",
+    "musikhalle_lb",
+    "schloss",
+    "kunstverein_ausstellungen",
+    "kunstverein_veranstaltungen",
+    "forum_schlosspark",
     "labyrinth",
     "karlskaserne_veranstaltungen",
-    "stabi",
-    "schloss",
-    "kunstverein_veranstaltungen",
-    "musikhalle_lb",
     "demokratisches_zentrum",
-    "blueba",
-    "kunstverein_ausstellungen",
-    "forum_schlosspark"
+    "karlskaserne_ausstellungen"
   ],
-  "previous_run": "2026-09-07T09:50:12.162917+02:00",
-  "count_added": 2,
-  "count_removed": 7,
+  "previous_run": "2026-09-08T10:32:35.115538+02:00",
+  "count_added": 34,
+  "count_removed": 25,
   "added": [
     {
       "id": "feee56b785ce127e",
@@ -29,54 +29,354 @@
       "source": "stabi"
     },
     {
-      "id": "0942db9b8dcfd24f",
-      "title": "DANZA CONTEMPORÁNEA DE CUBA",
-      "date_start": "2026-11-29",
-      "source": "forum_schlosspark"
+      "id": "0d6f7bb949f22086",
+      "title": "Faschingsferienworkshop: Tierisch groß! - Köpfe mit Charakter für Kinder von 7-10 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "3720c50d00f8f817",
+      "title": "Faschingsferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "43c06eaeccd3fd42",
+      "title": "Faschingsferienworkshop: Superhelden. Powergirls für Kinder ab 6 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "6f65867da8f40204",
+      "title": "Workshop: Flatter- und Krabbeltiere aus Gips für Kinder ab 7 Jahren in Ludwigsburg",
+      "date_start": "2027-02-27",
+      "source": "labyrinth"
+    },
+    {
+      "id": "c364bf34f3541a57",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance Kids für Kinder von 8-9 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "60cbf1cd4900b39e",
+      "title": "Faschingsferienworkshop: Kerzen selbst gießen und verzieren für Kinder ab 8 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "c035e137127267f1",
+      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 8-12 Jahren in Ludwigsburg",
+      "date_start": "2027-02-20",
+      "source": "labyrinth"
+    },
+    {
+      "id": "b14b4c15d55a8d2d",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-02-23",
+      "source": "labyrinth"
+    },
+    {
+      "id": "b42b66c1d934eb8b",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-02-23",
+      "source": "labyrinth"
+    },
+    {
+      "id": "266bf34ba3706b95",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-03-02",
+      "source": "labyrinth"
+    },
+    {
+      "id": "befcd6f1e9bf6aac",
+      "title": "Herbstferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "29dc6c686d9c0010",
+      "title": "Faschingsferienworkshop: Theater-Werkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "95855c3df3bf08b4",
+      "title": "Afrikanischer Tanz mit Livemusik // Interkulturelle Woche",
+      "date_start": "2026-09-27",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "dff2ed6824ad7f7e",
+      "title": "Der Körper erinnert 50+",
+      "date_start": "2026-09-27",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "5feac5b328f53672",
+      "title": "Somatic Dance",
+      "date_start": "2026-10-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "a073cca84e5e71c5",
+      "title": "Biodanza - \"Mut ist der Zauber, der Träume wahr werden lässt\"",
+      "date_start": "2026-10-04",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "8131ac1024c4af7a",
+      "title": "Salsa Solo Ladies 1 für Anfängerinnen",
+      "date_start": "2026-10-04",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "32c5941f625ce9f2",
+      "title": "The Ilan Lev Methode",
+      "date_start": "2026-10-09",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "eca9bcc155a55309",
+      "title": "Samba, Samba - Samba de Bahia!",
+      "date_start": "2026-10-10",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "c2afe7df7734d53a",
+      "title": "Feldenkrais Intensiv",
+      "date_start": "2026-10-10",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "c48a93568c919d31",
+      "title": "Starke Mütter – Starke Töchter!",
+      "date_start": "2026-10-10",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "40408f146ca8c941",
+      "title": "Salsa Solo Ladies 1 für Anfängerinnen",
+      "date_start": "2026-10-11",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "8fd544c01af277a7",
+      "title": "Starke Mütter – Starke Töchter!",
+      "date_start": "2026-10-11",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "9254a7103efab713",
+      "title": "Feldenkrais Intensiv",
+      "date_start": "2026-10-11",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "bff75d39ff69b786",
+      "title": "Storytelling!",
+      "date_start": "2026-10-16",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "5323783fa2516d1e",
+      "title": "Improvisation & Performance",
+      "date_start": "2026-10-17",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "b73489336bb6a493",
+      "title": "Wave am Abend",
+      "date_start": "2026-10-17",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "a6fdd9c63a7833e1",
+      "title": "Gyrokinesis®",
+      "date_start": "2026-10-18",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "55f4a0dfd2e8587c",
+      "title": "Improvisation & Performance",
+      "date_start": "2026-10-18",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "d0ff495755c9dacc",
+      "title": "Klangentspannung",
+      "date_start": "2026-10-18",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "f34862d447bab562",
+      "title": "Biodanza - \"Que bonita es esta vida\"",
+      "date_start": "2026-10-25",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "4e7ba3cfb1dea1c7",
+      "title": "Bilderbuchsamstag in der Stadtbibliothek",
+      "date_start": "2026-09-12",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "4bb52a43d430412e",
+      "title": "Internationale Geschichteninsel auf Spanisch",
+      "date_start": "2026-09-17",
+      "source": "ludwigsburg_stadt"
     }
   ],
   "removed": [
     {
-      "id": "70849e1c2e40c006",
-      "title": "Spielenachmittag Freibad Hoheneck",
-      "date_start": "2026-08-03",
+      "id": "694269efdf18e6b3",
+      "title": "Treppauf, treppab",
+      "date_start": "2026-09-08",
+      "source": "schloss"
+    },
+    {
+      "id": "5f13a43619ca40e2",
+      "title": "Englisch Kursberatung",
+      "date_start": "2026-09-08",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "05def27e8e0a6991",
-      "title": "Tiere im Schloss",
-      "date_start": "2026-09-07",
-      "source": "schloss"
+      "id": "cc4827f8c98760ee",
+      "title": "Zwischen Leben und Tod: Das Geheimnis der Endgültigkeit",
+      "date_start": "2026-09-08",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "7ad3d4352969dcc0",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-09-11",
-      "source": "schloss"
+      "id": "d3d386db95ac7ac5",
+      "title": "Internetführerschein",
+      "date_start": "2026-09-09",
+      "source": "stabi"
     },
     {
-      "id": "25f82894cf6e40d5",
-      "title": "Führung durch das Schlosstheater",
-      "date_start": "2026-09-12",
-      "source": "schloss"
+      "id": "e7bd1ff579217e42",
+      "title": "Herbstferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "c1c448fc0ad427e3",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-09-12",
-      "source": "schloss"
+      "id": "e295bebd0a1c9f8e",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance Kids für Kinder von 8-9 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "6803d8f7ce6773c4",
-      "title": "Schaurig schön",
-      "date_start": "2026-09-12",
-      "source": "schloss"
+      "id": "a27d11cd68c095b0",
+      "title": "Faschingsferienworkshop: Ein Pferd aus Holz gebaut ab 8 Jahren in Bietigheim-Bissingen",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "7bd37224fa025a45",
-      "title": "DANZA CONTEMPORÁNEA DE CUBA",
-      "date_start": "2026-11-29",
-      "source": "forum_schlosspark"
+      "id": "7e34793e820792dc",
+      "title": "Faschingsferienworkshop: Tierisch groß! - Köpfe mit Charakter für Kinder von 7-10 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "d490bbc0a3c5544a",
+      "title": "Faschingsferienworkshop: Theater-Werkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "abf0f4c75316602b",
+      "title": "Faschingsferienworkshop: Kerzen selbst gießen und verzieren für Kinder ab 8 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "3977aba3565e601a",
+      "title": "Faschingsferienworkshop: Superhelden. Powergirls für Kinder ab 6 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "90c7a6c16bc897eb",
+      "title": "Faschingsferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "4cb66bbadbf049cc",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Bietigheim-Bissingen",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "c3e66b15f8c44dec",
+      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 8-12 Jahren in Ludwigsburg",
+      "date_start": "2027-02-20",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "1550464924baf44e",
+      "title": "Alice im Wunderland",
+      "date_start": "2027-02-20",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "7aa6ebea0c3e745b",
+      "title": "Alice im Wunderland",
+      "date_start": "2027-02-21",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "d7faf8d396292e91",
+      "title": "Alice im Wunderland",
+      "date_start": "2027-02-23",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "1fbe5d6f0677eab5",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-02-23",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "dd02c744bb13303e",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-02-23",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "aad0ca12c9cc813e",
+      "title": "Alice im Wunderland",
+      "date_start": "2027-02-24",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "bd147f12a735d7c6",
+      "title": "Alice im Wunderland",
+      "date_start": "2027-02-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "ddc788a23a823f30",
+      "title": "Workshop: Flatter- und Krabbeltiere aus Gips für Kinder ab 7 Jahren in Ludwigsburg",
+      "date_start": "2027-02-27",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "e4b2a58534f7165b",
+      "title": "Alice im Wunderland",
+      "date_start": "2027-02-27",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "442d5deeabe80d83",
+      "title": "Alice im Wunderland",
+      "date_start": "2027-02-28",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "49b01b12d09e335c",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-03-02",
+      "source": "karlskaserne_veranstaltungen"
     }
   ]
 }
