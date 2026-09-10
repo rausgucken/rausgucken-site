@@ -1,31 +1,800 @@
 {
-  "generated_at": "2026-09-09T06:47:19.501794+02:00",
+  "generated_at": "2026-09-10T06:53:06.055122+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_treffpunkt_adler",
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-09-08T07:04:09.100352+02:00",
-  "count_added": 0,
-  "count_removed": 3,
-  "added": [],
+  "previous_run": "2026-09-09T06:47:19.582628+02:00",
+  "count_added": 100,
+  "count_removed": 31,
+  "added": [
+    {
+      "id": "db3df0c59515bb15",
+      "title": "Skatgruppen",
+      "date_start": "2026-09-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "8833dd9ea6717bfb",
+      "title": "Skatgruppen",
+      "date_start": "2026-09-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b52edffac2e6b3f4",
+      "title": "Skatgruppen",
+      "date_start": "2026-09-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0d3e6422be93cd50",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b2a213f66ce71fbb",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f03080b008a1723b",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "bc9806202f5935d3",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4783f5504fef38c9",
+      "title": "Makerspace",
+      "date_start": "2026-09-12",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "376db5d7f5830b41",
+      "title": "Makerspace",
+      "date_start": "2026-11-14",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "0382543b9d0d5be3",
+      "title": "Makerspace",
+      "date_start": "2026-12-12",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "c982be1c5f7cd19c",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "05a6862be4e4f9cc",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ab88e8a2161121f8",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "46f85342df7bf179",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "61ca05320a2c9727",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "568db8d57365561c",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c7aeffdc9e8929e4",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "aa7daa389a3ffaa5",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "57e9abb0a1dfade8",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "035683b0fb7016a9",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "84a01ea7c0006de1",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0ec724475bf81572",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "93082b7e34502d75",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "047f45d4a583da4a",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "637fccd996129690",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-12-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f75a02c2714e19fc",
+      "title": "Skatgruppen",
+      "date_start": "2026-12-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fd5632e644ea4da1",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-12-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "499c284a86d73846",
+      "title": "Skatgruppen",
+      "date_start": "2026-12-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ed8a5feb2af0100b",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-12-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d28b537790f1ca28",
+      "title": "Skatgruppen",
+      "date_start": "2026-12-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7ccc4bfd739d2fad",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-12-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "cbf8e6eaf2154e20",
+      "title": "Skatgruppen",
+      "date_start": "2026-12-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "04bb6b504f032be3",
+      "title": "Skatgruppen",
+      "date_start": "2026-12-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3143d183454e45b8",
+      "title": "Skatgruppen",
+      "date_start": "2027-01-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b595240352f4c431",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-01-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fc25038b4d0f49e9",
+      "title": "Skatgruppen",
+      "date_start": "2027-01-12",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fcb7fd37595c6728",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-01-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b45a5daa6ab28f29",
+      "title": "Skatgruppen",
+      "date_start": "2027-01-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "54d3df390774a2f2",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-01-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0d73c4994f318d48",
+      "title": "Skatgruppen",
+      "date_start": "2027-01-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f1e33fae34e6a0f9",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-02-02",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5db2d07b9883a812",
+      "title": "Skatgruppen",
+      "date_start": "2027-02-02",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b6022515721c7250",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-02-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ca8ee334b60bd459",
+      "title": "Skatgruppen",
+      "date_start": "2027-02-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1da7ef6a90bb7973",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-02-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e1734a4543e70da7",
+      "title": "Skatgruppen",
+      "date_start": "2027-02-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7c29e33154687451",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-02-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "2665b52987e83438",
+      "title": "Skatgruppen",
+      "date_start": "2027-02-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "730305722e7d03cd",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-03-02",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9792a47a6efffd94",
+      "title": "Skatgruppen",
+      "date_start": "2027-03-02",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "432260805f1cea81",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-03-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d5ce09d96d7a28aa",
+      "title": "Skatgruppen",
+      "date_start": "2027-03-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3980da322baff433",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-03-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fd6c05bec09ac0fc",
+      "title": "Skatgruppen",
+      "date_start": "2027-03-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a35c24acf9dbb66a",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-03-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "41d60529188ff7ff",
+      "title": "Skatgruppen",
+      "date_start": "2027-03-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "688c75afb881fc33",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-03-30",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "efad0759a1a75297",
+      "title": "Skatgruppen",
+      "date_start": "2027-03-30",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "2bf19a6056f526dc",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-04-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7ca4cccdc38efd7c",
+      "title": "Skatgruppen",
+      "date_start": "2027-04-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "902d8a27eca89c44",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-04-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a491063b82812548",
+      "title": "Skatgruppen",
+      "date_start": "2027-04-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "45dc51accd29d3da",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-04-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3e3b1d6b43bd708d",
+      "title": "Skatgruppen",
+      "date_start": "2027-04-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ae54a30f895f14f2",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-04-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "046ad12cdb22b397",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-05-04",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "773c624782d72ca7",
+      "title": "Skatgruppen",
+      "date_start": "2027-05-04",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "258061b99f0cc6ad",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-05-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b319f5a1f76fbbc9",
+      "title": "Skatgruppen",
+      "date_start": "2027-05-11",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f27919132b654e89",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-05-18",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "07d5433d29b4fcd6",
+      "title": "Skatgruppen",
+      "date_start": "2027-05-18",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "72320dda0fab941e",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-05-25",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "a5f2672f005ec9ba",
+      "title": "Skatgruppen",
+      "date_start": "2027-05-25",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "855393363f9929b7",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-06-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "22b5b64af8974cb5",
+      "title": "Skatgruppen",
+      "date_start": "2027-06-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "df123262885fe3f2",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-06-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "14cb291e3208ca5c",
+      "title": "Skatgruppen",
+      "date_start": "2027-06-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "31a44ffab0e0b130",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-06-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f72522a3b6ee5d10",
+      "title": "Skatgruppen",
+      "date_start": "2027-06-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b2c7ba6ec837fd93",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-06-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0ae3e558fb87ab12",
+      "title": "Skatgruppen",
+      "date_start": "2027-06-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d28597d7d7132bd3",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-06-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d89a854ecfb435bf",
+      "title": "Skatgruppen",
+      "date_start": "2027-06-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "67e469b1b18186ed",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-07-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "3707119d80012681",
+      "title": "Skatgruppen",
+      "date_start": "2027-07-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "2949cef17dc43299",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-07-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c4e6fc8dec12d636",
+      "title": "Skatgruppen",
+      "date_start": "2027-07-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d0505b9c95f9f814",
+      "title": "Skatgruppen",
+      "date_start": "2027-07-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "4299d5676d7740c2",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-07-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "6a8f2520cd39440c",
+      "title": "Skatgruppen",
+      "date_start": "2027-07-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ed865bfc79a47186",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-08-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "92ab913e53730b1d",
+      "title": "Skatgruppen",
+      "date_start": "2027-08-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "023cf5da6f45c0b7",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-08-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1c76754ed440ca7c",
+      "title": "Skatgruppen",
+      "date_start": "2027-08-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "11f39c2d3891b220",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-08-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "41f273a3d4dd1fb0",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-08-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "15da075b23f81dde",
+      "title": "Skatgruppen",
+      "date_start": "2027-08-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "83c17a577e1b1c72",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-08-31",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5655d5222da324f4",
+      "title": "Skatgruppen",
+      "date_start": "2027-08-31",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "61c9f8c492568c4a",
+      "title": "Skatgruppen",
+      "date_start": "2027-09-07",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ],
   "removed": [
     {
-      "id": "06306a7e3e069758",
-      "title": "\"Geistig fit\"-Gedächtnistraining",
-      "date_start": "2026-09-08",
+      "id": "7b4feb3c997abbeb",
+      "title": "Fotogruppe",
+      "date_start": "2026-09-09",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "0d34ef8bac2d2081",
+      "id": "d1ded8af8d868aa9",
+      "title": "Vesper.Päusle",
+      "date_start": "2026-09-09",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d67c993995619fe4",
+      "title": "Spieletreff",
+      "date_start": "2026-09-09",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "41fc9db2bb1f2baf",
       "title": "Skatgruppen",
-      "date_start": "2026-09-08",
+      "date_start": "2026-09-15",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "c38328b068042c5e",
-      "title": "KEIN English Conversation Stammtisch",
-      "date_start": "2026-09-08",
+      "id": "9ae2cb06f20b1ee4",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "1742405f8c15acbd",
+      "title": "Skatgruppen",
+      "date_start": "2026-09-22",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "43bbac34298d7f49",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-09-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f9af8e1ff33e8301",
+      "title": "Skatgruppen",
+      "date_start": "2026-09-29",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c27fe781ec861a94",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "33b8c9b29d789eb2",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fa336a4d1c60442a",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ae33709bf9aaa908",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-13",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "128a1e810fb914b5",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "2ba82f0bb0f216c9",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f373ba8eec8d333a",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d41dfae300b7bf28",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d6938343e063664c",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "592c651ecb25541a",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e2ec4977df655d4b",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "9c25a80ed20ba20d",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-10",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e52182da9fe59a44",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "e52d972c6fadfabf",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-17",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "bc3ef82b3f34696d",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "872493d2d2975547",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-24",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "495c383c6ff48df3",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-12-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "fb10264ba338d712",
+      "title": "Skatgruppen",
+      "date_start": "2026-12-01",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "c9dccf7f6c547cb4",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-12-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f5552a33cc85cdb3",
+      "title": "Skatgruppen",
+      "date_start": "2026-12-08",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d15ea774d404fd13",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-12-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7450982fc2561c9b",
+      "title": "Skatgruppen",
+      "date_start": "2026-12-15",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5544a1cccf5405e6",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-12-22",
       "source": "ditzingen_treffpunkt_adler"
     }
   ]
