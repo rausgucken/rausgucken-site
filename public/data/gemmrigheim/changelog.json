@@ -1,12 +1,38 @@
 {
-  "generated_at": "2026-09-10T08:54:46.485705+02:00",
+  "generated_at": "2026-09-11T08:01:33.933782+02:00",
   "city": "gemmrigheim",
   "sources": [
     "gemmrigheim_gemeinde"
   ],
-  "previous_run": "2026-09-09T07:43:34.777442+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-09-10T08:54:46.562487+02:00",
+  "count_added": 2,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "d2d3fabb4770cf61",
+      "title": "Woche der Demenz",
+      "date_start": "2026-09-18",
+      "source": "gemmrigheim_gemeinde"
+    },
+    {
+      "id": "5cb52732b7004f96",
+      "title": "Nächstes Treffen des Projekts \"Summendes Gemmrigheim\"",
+      "date_start": "2026-10-06",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "29542ffa6c536515",
+      "title": "Advents- und Weihnachtsliedersingen",
+      "date_start": "2026-12-12",
+      "source": "gemmrigheim_gemeinde"
+    },
+    {
+      "id": "0d182ebde2435eca",
+      "title": "Mbouzoukia Night",
+      "date_start": "2026-12-12",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ]
 }

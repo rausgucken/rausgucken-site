@@ -1,13 +1,12 @@
 {
-  "generated_at": "2026-09-10T06:25:01.609879+02:00",
+  "generated_at": "2026-09-11T06:21:19.375079+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
     "sachsenheim_kultur"
   ],
-  "previous_run": "2026-09-09T06:47:18.739192+02:00",
-  "count_added": 7,
-  "count_removed": 0,
+  "previous_run": "2026-09-10T06:25:01.689821+02:00",
+  "count_added": 8,
+  "count_removed": 1,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -50,7 +49,20 @@
       "title": "KleinstadtQueers",
       "date_start": "2026-08-29",
       "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "6c17e3d7a898e0cf",
+      "title": "Wein am Schloß",
+      "date_start": "2026-09-11",
+      "source": "sachsenheim_kultur"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "6ccca057ffba05f3",
+      "title": "Wein am Schloß",
+      "date_start": "2026-09-11",
+      "source": "sachsenheim_library"
+    }
+  ]
 }
