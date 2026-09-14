@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-12T06:06:58.858726+02:00",
+  "scraped_at": "2026-09-13T06:07:10.148868+02:00",
   "city": "asperg",
-  "event_count": 163,
+  "event_count": 160,
   "flagged_count": 0,
   "expired_count": 20,
   "sources_scraped": [
@@ -10,14 +10,14 @@
     "glasperlenspiel"
   ],
   "source_counts": {
-    "glasperlenspiel": 40,
-    "asperg_veranstaltungen": 118,
+    "glasperlenspiel": 39,
+    "asperg_veranstaltungen": 116,
     "asperg_fuehrungen": 5
   },
   "sources_failed": [],
-  "data_hash": "cf62856b6b1f6cbe",
+  "data_hash": "d1673523778607de",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 12.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 13.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "glasperlenspiel": 0.93,
@@ -25,18 +25,18 @@
     "asperg_fuehrungen": 0.76
   },
   "source_event_counts": {
-    "glasperlenspiel": 40,
-    "asperg_veranstaltungen": 118,
+    "glasperlenspiel": 39,
+    "asperg_veranstaltungen": 116,
     "asperg_fuehrungen": 5
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 553.9,
-    "runtime_delta_vs_baseline": 2.094,
+    "runtime_minutes": 513.9,
+    "runtime_delta_vs_baseline": 1.871,
     "source_health": {
       "glasperlenspiel": 0.93,
       "asperg_veranstaltungen": 1.0,
@@ -44,7 +44,7 @@
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-09-12T11:27:07.017819+02:00"
+    "status": "critical",
+    "generated_at": "2026-09-13T10:41:13.291494+02:00"
   }
 }

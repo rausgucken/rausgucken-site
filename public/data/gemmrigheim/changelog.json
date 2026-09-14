@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-09-12T07:50:13.736821+02:00",
+  "generated_at": "2026-09-13T08:54:23.496260+02:00",
   "city": "gemmrigheim",
   "sources": [
     "gemmrigheim_gemeinde"
   ],
-  "previous_run": "2026-09-11T08:01:34.009165+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-09-12T07:50:13.811487+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "0d182ebde2435eca",
+      "title": "Mbouzoukia Night",
+      "date_start": "2026-12-12",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "577a091a12d51056",
+      "title": "Gemmrigheimer Herbst",
+      "date_start": "2026-09-12",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ]
 }

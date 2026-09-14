@@ -1,13 +1,26 @@
 {
-  "generated_at": "2026-09-12T06:08:55.317480+02:00",
+  "generated_at": "2026-09-13T06:09:05.093784+02:00",
   "city": "remseck",
   "sources": [
     "remseck_mediathek",
     "remseck_stadt"
   ],
-  "previous_run": "2026-09-11T06:09:01.835037+02:00",
+  "previous_run": "2026-09-12T06:08:55.391659+02:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "f5ce01081a21884a",
+      "title": "Heiss auf Lesen",
+      "date_start": "2026-07-13",
+      "source": "remseck_mediathek"
+    },
+    {
+      "id": "6064b6ab1fc3771a",
+      "title": "Blind Date mit einem Buch",
+      "date_start": "2026-07-13",
+      "source": "remseck_mediathek"
+    }
+  ]
 }

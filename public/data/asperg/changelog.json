@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-12T06:06:58.780946+02:00",
+  "generated_at": "2026-09-13T06:07:10.072123+02:00",
   "city": "asperg",
   "sources": [
-    "glasperlenspiel",
+    "asperg_veranstaltungen",
     "asperg_fuehrungen",
-    "asperg_veranstaltungen"
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-09-11T06:05:01.899795+02:00",
+  "previous_run": "2026-09-12T06:06:58.858726+02:00",
   "count_added": 20,
-  "count_removed": 1,
+  "count_removed": 3,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -133,10 +133,22 @@
   ],
   "removed": [
     {
-      "id": "6a5ffbc8e7fdb21b",
-      "title": "Vernissage - Christina Lourenco: Unschaf",
-      "date_start": "2026-09-11",
+      "id": "d9a751715ca7042f",
+      "title": "Wochenmarkt",
+      "date_start": "2026-09-12",
       "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "a623a4d12ff8236c",
+      "title": "Kleinkunst - Open Stage Gala 2026",
+      "date_start": "2026-09-12",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "f2a61dd8c1734e6e",
+      "title": "Gala Open Stage",
+      "date_start": "2026-09-12",
+      "source": "glasperlenspiel"
     }
   ]
 }

@@ -1,40 +1,40 @@
 {
-  "scraped_at": "2026-09-12T06:20:06.377019+02:00",
+  "scraped_at": "2026-09-13T06:22:18.817405+02:00",
   "city": "sachsenheim",
-  "event_count": 16,
+  "event_count": 17,
   "flagged_count": 0,
   "expired_count": 7,
   "sources_scraped": [
     "sachsenheim_kultur"
   ],
   "source_counts": {
-    "sachsenheim_kultur": 16
+    "sachsenheim_kultur": 17
   },
   "sources_failed": [],
-  "data_hash": "0dee4ef4aa71c300",
+  "data_hash": "faab65842761a7f9",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 12.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 13.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "sachsenheim_kultur": 0.98
   },
   "source_event_counts": {
-    "sachsenheim_kultur": 16
+    "sachsenheim_kultur": 17
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 1.0,
+    "regression_pass_rate": 0.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 553.9,
-    "runtime_delta_vs_baseline": 2.094,
+    "runtime_minutes": 513.9,
+    "runtime_delta_vs_baseline": 1.871,
     "source_health": {
       "sachsenheim_kultur": 0.98
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "warning",
-    "generated_at": "2026-09-12T11:27:09.393183+02:00"
+    "status": "critical",
+    "generated_at": "2026-09-13T10:41:16.103502+02:00"
   }
 }
