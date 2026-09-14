@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-09-14T06:00:02.415237+02:00",
-  "event_count": 1,
+  "generated_at": "2026-09-14T06:43:54.068357+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -29,7 +29,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-09-13T02:02:04.111028+02:00",
+      "scraped_at": "2026-09-14T02:01:45.261924+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -37,6 +37,38 @@
       "editorial_tip": null,
       "source_label": "Stadt Sachsenheim – Kulturprogramm",
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/herbstfeier-mit-musik-basteln-und-brot-2026-10-09-sach"
+    },
+    {
+      "id": "ceae2cb8f73bb2e0",
+      "title": "ECOmedy mit Matthias Jung",
+      "date_start": "2026-10-09",
+      "date_end": null,
+      "time": "20:00 - 22:00",
+      "description": "In diesem Workshop lernen Teilnehmer, wie sie ihre Geduldskette loslassen und sich entspannen. Matthias Jung, Familien- und Pubertätscoach sowie Autor des SPIEGEL-Bestsellers, führt die Gruppe durch komische Geschichten und praktische Tipps.",
+      "location": "Restaurant ECO, Lammstraße 2, 74343 Sachsenheim",
+      "price": "20 Euro (vorverkauf) / 24 Euro (abendkasse) inklusive Speisen & Getränke",
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie",
+        "Workshop"
+      ],
+      "link": "https://www.sachsenheim.de/termin/ECOmedy-mit-Matthias-Jung-Chill-mal-event-appointment5743",
+      "original_url": "https://www.sachsenheim.de/termin/ECOmedy-mit-Matthias-Jung-Chill-mal-event-appointment5743",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "ecomedy-mit-matthias-jung-2026-10-09-sach",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-09-14T02:01:46.050456+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/ecomedy-mit-matthias-jung-2026-10-09-sach"
     }
   ]
 }

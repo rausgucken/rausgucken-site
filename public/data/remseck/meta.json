@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-13T06:09:05.167974+02:00",
+  "scraped_at": "2026-09-14T06:26:33.311262+02:00",
   "city": "remseck",
   "event_count": 15,
   "flagged_count": 0,
@@ -13,9 +13,9 @@
     "remseck_mediathek": 10
   },
   "sources_failed": [],
-  "data_hash": "d69b5c6570e1e2ad",
+  "data_hash": "6e1c681f07a891c6",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 13.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 14.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "remseck_stadt": 1.0,
@@ -27,19 +27,19 @@
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 0.0,
+    "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 513.9,
-    "runtime_delta_vs_baseline": 1.871,
+    "runtime_minutes": 523.6,
+    "runtime_delta_vs_baseline": 1.925,
     "source_health": {
       "remseck_stadt": 1.0,
       "remseck_mediathek": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "critical",
-    "generated_at": "2026-09-13T10:41:16.026431+02:00"
+    "status": "warning",
+    "generated_at": "2026-09-14T10:57:04.914251+02:00"
   }
 }

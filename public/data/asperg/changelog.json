@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-13T06:07:10.072123+02:00",
+  "generated_at": "2026-09-14T06:09:23.188615+02:00",
   "city": "asperg",
   "sources": [
+    "glasperlenspiel",
     "asperg_veranstaltungen",
-    "asperg_fuehrungen",
-    "glasperlenspiel"
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-09-12T06:06:58.858726+02:00",
-  "count_added": 20,
-  "count_removed": 3,
+  "previous_run": "2026-09-13T06:07:10.148868+02:00",
+  "count_added": 21,
+  "count_removed": 7,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -129,26 +129,56 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "986870bb89509d99",
+      "title": "Xang - Sieben jung gebliebene Männer",
+      "date_start": "2026-10-30",
+      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "d9a751715ca7042f",
-      "title": "Wochenmarkt",
-      "date_start": "2026-09-12",
+      "id": "e0d1c25a8c899b45",
+      "title": "Führung - Ein Gang über die schwäbische Bastille",
+      "date_start": "2026-09-13",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "a623a4d12ff8236c",
-      "title": "Kleinkunst - Open Stage Gala 2026",
-      "date_start": "2026-09-12",
+      "id": "dbca80e44af6e641",
+      "title": "Jazz-Matinee mit Colours of Soul",
+      "date_start": "2026-09-13",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "f2a61dd8c1734e6e",
-      "title": "Gala Open Stage",
-      "date_start": "2026-09-12",
+      "id": "7d6dc66af3cd45a5",
+      "title": "Colors of Soul",
+      "date_start": "2026-09-13",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "226036ad3a5e0c60",
+      "title": "Geschichte entdecken - Führung auf dem Hohenasperg",
+      "date_start": "2026-09-13",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "c531424324107ef3",
+      "title": "Führung für Kinder auf dem Hohenasperg",
+      "date_start": "2026-09-13",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "2414bbacdad8d4fc",
+      "title": "Get Ready - Aktion zum Schulstart",
+      "date_start": "2026-09-13",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "7fda114df7aafafd",
+      "title": "Theater - Omelett Surprise",
+      "date_start": "2026-09-13",
+      "source": "asperg_veranstaltungen"
     }
   ]
 }

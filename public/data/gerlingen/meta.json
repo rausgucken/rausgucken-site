@@ -1,40 +1,40 @@
 {
-  "scraped_at": "2026-09-13T06:53:26.983201+02:00",
+  "scraped_at": "2026-09-14T06:56:18.592027+02:00",
   "city": "gerlingen",
-  "event_count": 87,
+  "event_count": 88,
   "flagged_count": 0,
-  "expired_count": 1,
+  "expired_count": 0,
   "sources_scraped": [
     "gerlingen_stadt"
   ],
   "source_counts": {
-    "gerlingen_stadt": 87
+    "gerlingen_stadt": 88
   },
   "sources_failed": [],
-  "data_hash": "c26936b3f1a6ae53",
+  "data_hash": "f6a84925bb7af45f",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 13.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 14.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "gerlingen_stadt": 0.96
   },
   "source_event_counts": {
-    "gerlingen_stadt": 87
+    "gerlingen_stadt": 88
   },
   "count_drift_warnings": {},
   "quality_report": {
-    "regression_pass_rate": 0.0,
+    "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 513.9,
-    "runtime_delta_vs_baseline": 1.871,
+    "runtime_minutes": 523.6,
+    "runtime_delta_vs_baseline": 1.925,
     "source_health": {
       "gerlingen_stadt": 0.96
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
-    "status": "critical",
-    "generated_at": "2026-09-13T10:41:14.567552+02:00"
+    "status": "warning",
+    "generated_at": "2026-09-14T10:57:03.540186+02:00"
   }
 }
