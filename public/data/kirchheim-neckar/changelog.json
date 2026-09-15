@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-09-14T09:55:12.291279+02:00",
+  "generated_at": "2026-09-15T09:15:52.279933+02:00",
   "city": "kirchheim-neckar",
   "sources": [
     "kirchheim-neckar_gemeinde"
   ],
-  "previous_run": "2026-09-13T09:43:28.151439+02:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-09-14T09:55:12.371241+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "87f283492ddbb449",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-03",
+      "source": "kirchheim-neckar_gemeinde"
+    }
+  ],
   "removed": [
     {
-      "id": "ee01ecad8b505378",
-      "title": "TVK-Ausflug",
-      "date_start": "2026-09-13",
+      "id": "f27dad5bc93b204f",
+      "title": "Backhausfest 2026",
+      "date_start": "2026-09-18",
+      "source": "kirchheim-neckar_gemeinde"
+    },
+    {
+      "id": "63ed17cdf97a8ba2",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-03",
       "source": "kirchheim-neckar_gemeinde"
     }
   ]
