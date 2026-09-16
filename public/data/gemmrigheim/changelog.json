@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-09-15T07:41:09.552334+02:00",
+  "generated_at": "2026-09-16T08:04:24.508805+02:00",
   "city": "gemmrigheim",
   "sources": [
     "gemmrigheim_gemeinde"
   ],
-  "previous_run": "2026-09-14T08:12:21.261829+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-09-15T07:41:09.626723+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "9b58395f2187ee0a",
+      "title": "Gemmrigheimer SeniorenZeit",
+      "date_start": "2026-12-15",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "2a8529eda0fbd631",
+      "title": "Gemmrigheimer SeniorenZeit",
+      "date_start": "2026-09-15",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ]
 }

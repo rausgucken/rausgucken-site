@@ -1,39 +1,27 @@
 {
-  "generated_at": "2026-09-15T10:18:19.780107+02:00",
+  "generated_at": "2026-09-16T09:39:55.291058+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "karlskaserne_ausstellungen",
+    "blueba",
+    "museum",
+    "karlskaserne_veranstaltungen",
+    "musikhalle_lb",
+    "schloss",
+    "ludwigsburg_stadt",
+    "demokratisches_zentrum",
+    "lisbert_queer",
     "labyrinth",
     "garnisonmuseum",
-    "kunstverein_veranstaltungen",
-    "forum_schlosspark",
-    "museum",
     "stabi",
-    "blueba",
-    "demokratisches_zentrum",
-    "musikhalle_lb",
-    "lisbert_queer",
+    "forum_schlosspark",
+    "kunstverein_veranstaltungen",
     "kunstverein_ausstellungen",
-    "karlskaserne_veranstaltungen",
-    "ludwigsburg_stadt",
-    "schloss"
+    "karlskaserne_ausstellungen"
   ],
-  "previous_run": "2026-09-14T10:43:33.861423+02:00",
-  "count_added": 10,
-  "count_removed": 5,
+  "previous_run": "2026-09-15T10:18:19.873879+02:00",
+  "count_added": 13,
+  "count_removed": 12,
   "added": [
-    {
-      "id": "bc0bb0beb4a19732",
-      "title": "Herbstferienworkshop: Ein Gesicht zeichnen – einfach erklärt für Kinder von 8-12 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "9f12e5eb04ca2fab",
-      "title": "Herbstferienworkshop: Das magische Königreich für Kinder von 6-10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
     {
       "id": "feee56b785ce127e",
       "title": "HEISS AUF LESEN",
@@ -41,78 +29,150 @@
       "source": "stabi"
     },
     {
-      "id": "e289d76099a23c32",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-02",
+      "id": "e17e33b00cbcdcda",
+      "title": "Automesse Ludwigsburg",
+      "date_start": "2026-09-19",
       "source": "schloss"
     },
     {
-      "id": "6278e993418fc72e",
-      "title": "Schaurig schön",
-      "date_start": "2026-10-17",
-      "source": "schloss"
-    },
-    {
-      "id": "a1b3c6675971b909",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-31",
-      "source": "schloss"
-    },
-    {
-      "id": "efab71eca4ea6c7a",
-      "title": "queere Kunst von Alex Nezumi Stecher „Mäusefutter“",
-      "date_start": "2026-09-16",
+      "id": "fc24132fc2d3d393",
+      "title": "Reparaturcafé",
+      "date_start": "2026-10-21",
       "source": "demokratisches_zentrum"
     },
     {
-      "id": "14212965bacaab51",
-      "title": "Veranstaltung am 2026-10-07",
-      "date_start": "2026-10-07",
-      "source": "garnisonmuseum"
-    },
-    {
-      "id": "a76729deea06bd82",
-      "title": "Der kleine Märchengarten - Märchen zwischen Blumen und Honigbienen",
+      "id": "788cd55a81c49050",
+      "title": "Beleuchtung des Rathauses",
       "date_start": "2026-09-19",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "debde90223f978ed",
-      "title": "Genussführung: MärchenZauber & WeinGenuss",
+      "id": "c19153e37737aa73",
+      "title": "Escape-Tour: Willkommen zur Dämmerstunde",
       "date_start": "2026-09-19",
       "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5f89dcb83814742c",
+      "title": "Weltkindertag im Stadionbad",
+      "date_start": "2026-09-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2576ffa2c2a6f098",
+      "title": "Genussführung: Kaffeeklatsch mit der Grävenitz",
+      "date_start": "2026-09-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "7a20aca28a20b29f",
+      "title": "Kostümführung: Back in the Summer of '69",
+      "date_start": "2026-09-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "24ade1d447f30c52",
+      "title": "Candlelight: Rock Klassiker",
+      "date_start": "2026-10-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "486fb262a9f3b3a8",
+      "title": "Candlelight: Rock Klassiker",
+      "date_start": "2026-11-06",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "90a39dcd489bf354",
+      "title": "Candlelight: Rock Klassiker",
+      "date_start": "2027-01-08",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "cb0c8f70dd30737e",
+      "title": "Candlelight: Rock Klassiker",
+      "date_start": "2027-01-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "5817e5588223605f",
+      "title": "Candlelight: Rock Klassiker",
+      "date_start": "2027-03-13",
+      "source": "musikhalle_lb"
     }
   ],
   "removed": [
     {
-      "id": "20f65e3a5440e107",
-      "title": "Wichtel-Stube",
-      "date_start": "2026-09-14",
+      "id": "99e72e31ad1cd303",
+      "title": "XR/VR-Initiative",
+      "date_start": "2026-09-15",
+      "source": "stabi"
+    },
+    {
+      "id": "b83e23aed1b71eb9",
+      "title": "XR/VR-Initiative",
+      "date_start": "2026-09-15",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "ba1957de216975cd",
-      "title": "Real Twins",
-      "date_start": "2026-09-14",
+      "id": "caffda1ad630f680",
+      "title": "nappydancer®",
+      "date_start": "2026-09-15",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "8f9a9ad1ace964ca",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-02",
-      "source": "schloss"
+      "id": "525752ab0e4fd5ee",
+      "title": "Café mit Herz",
+      "date_start": "2026-09-15",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "8502df4b8b8ecdeb",
-      "title": "Herbstferienworkshop: Das magische Königreich für Kinder von 6-10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "labyrinth"
+      "id": "18f067ecc22941a4",
+      "title": "Internationale Geschichteninsel auf Russisch",
+      "date_start": "2026-09-15",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "03356d8ba2aa5041",
-      "title": "Herbstferienworkshop: Ein Gesicht zeichnen – einfach erklärt für Kinder von 8-12 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "labyrinth"
+      "id": "0ef64a760c413bad",
+      "title": "Internationale Geschichteninsel - Russisch",
+      "date_start": "2026-09-15",
+      "source": "stabi"
+    },
+    {
+      "id": "bcbd419d5555283f",
+      "title": "Silent Reading",
+      "date_start": "2026-09-15",
+      "source": "stabi"
+    },
+    {
+      "id": "332618fc9b00ddee",
+      "title": "Silent Reading: Nachts in der Bibliothek",
+      "date_start": "2026-09-15",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "d61c3290a74a8ba8",
+      "title": "Kostümführung: Nedd ganz saubr",
+      "date_start": "2026-09-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c2b5716d1233297f",
+      "title": "Candlelight: Metallica",
+      "date_start": "2026-11-06",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "393db1aa58f33481",
+      "title": "Candlelight: Metallica",
+      "date_start": "2027-01-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "d648b3057cd215a9",
+      "title": "Candlelight: Metallica",
+      "date_start": "2027-03-20",
+      "source": "musikhalle_lb"
     }
   ]
 }
