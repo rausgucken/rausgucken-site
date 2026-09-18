@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-09-18T06:00:01.742473+02:00",
-  "event_count": 11,
+  "generated_at": "2026-09-18T07:34:15.288492+02:00",
+  "event_count": 22,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,7 +26,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-17T05:02:49.058506+02:00",
+      "scraped_at": "2026-09-18T02:00:23.306413+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -58,7 +58,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-17T05:02:49.058518+02:00",
+      "scraped_at": "2026-09-18T02:00:23.306418+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -90,9 +90,9 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-17T05:02:49.058611+02:00",
+      "scraped_at": "2026-09-18T02:00:23.306462+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -122,7 +122,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-17T05:02:49.058729+02:00",
+      "scraped_at": "2026-09-18T02:00:23.306489+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -130,6 +130,100 @@
       "editorial_tip": null,
       "source_label": "Stadt Asperg",
       "canonical_url": "https://www.rausgucken.de/asperg/events/gemeindefest-2026-09-27-aspe"
+    },
+    {
+      "id": "68f98031c0a93d86",
+      "title": "Baby und Kids-Treff",
+      "date_start": "2026-09-30",
+      "date_end": null,
+      "time": "10:00 - 11:30",
+      "description": "In der Familie-freundlichen Veranstaltung treffen Eltern mit Babys und Kleinen sich zum Austausch und gemeinsamen Spielen im Familienbüro.",
+      "location": "Familienbüro, Asperg",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748250",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748250",
+      "source": "asperg_veranstaltungen",
+      "city": "asperg",
+      "slug": "baby-und-kids-treff-2026-09-30-aspe",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-09-18T02:00:23.306511+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/baby-und-kids-treff-2026-09-30-aspe"
+    },
+    {
+      "id": "d5bf1be738e6eaaa",
+      "title": "Sprechstunde der Fachstelle Hilfen für Alleinerziehende",
+      "date_start": "2026-10-13",
+      "date_end": null,
+      "time": "09:00 - 12:00",
+      "description": "In der Sprechstunde der Fachstelle Hilfen für Alleinerziehende können Sie sich mit Experten über Ihre individuellen Anliegen beraten. Das Familienbüro Asperg bietet dieses Dienstleistung an.",
+      "location": "Familienbüro, Asperg",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748261",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748261",
+      "source": "asperg_veranstaltungen",
+      "city": "asperg",
+      "slug": "sprechstunde-der-fachstelle-hilfen-fuer-alleinerziehende-2026-10-13-aspe",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-09-18T02:00:23.306660+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/sprechstunde-der-fachstelle-hilfen-fuer-alleinerziehende-2026-10-13-aspe"
+    },
+    {
+      "id": "c73548f7d0e70ee4",
+      "title": "Erziehungsberatung der Caritas",
+      "date_start": "2026-10-14",
+      "date_end": null,
+      "time": "12:30 - 16:00",
+      "description": "In diesem Angebot des Familienbüros Asperg erhält man Unterstützung bei Erziehung und familiären Fragen. Experten der Caritas bieten individuelle Beratungen für Eltern und Familien.",
+      "location": "Familienbüro Asperg, Asperg",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748282",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748282",
+      "source": "asperg_veranstaltungen",
+      "city": "asperg",
+      "slug": "erziehungsberatung-der-caritas-2026-10-14-aspe",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-09-18T02:00:23.306666+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/erziehungsberatung-der-caritas-2026-10-14-aspe"
     },
     {
       "id": "92d1daa17d0f46ae",
@@ -155,7 +249,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-17T05:02:49.058938+02:00",
+      "scraped_at": "2026-09-18T02:00:23.306723+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -163,6 +257,40 @@
       "editorial_tip": null,
       "source_label": "Stadt Asperg",
       "canonical_url": "https://www.rausgucken.de/asperg/events/fuer-familien---eine-reise-um-die-welt-2026-10-18-aspe"
+    },
+    {
+      "id": "8d60451192c5b41a",
+      "title": "Lieder-Theater-Programm zum Mitsingen und Mitmachen",
+      "date_start": "2026-10-18",
+      "date_end": null,
+      "time": "15:00",
+      "description": "In dem Lieder-Theater-Programm zum Mitsingen und Mitmachen reisen Vladi und Christof Altmann mit ihren Zuhörern und Zuschauern durch die Welt der Musik. Kinder im Alter von 4 bis 10 Jahren können mitsingen und mitmachen.",
+      "location": "Glasperlenspiel Asperg",
+      "price": null,
+      "age_min": 4,
+      "age_max": 10,
+      "tags": [
+        "Kinder",
+        "Musik",
+        "Theater",
+        "Familie"
+      ],
+      "link": "https://glasperlenspiel.de/oktober-2026",
+      "original_url": "https://glasperlenspiel.de/oktober-2026",
+      "source": "glasperlenspiel",
+      "city": "asperg",
+      "slug": "lieder-theater-programm-zum-mitsingen-und-mitmachen-2026-10-18-glas",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-09-18T02:00:28.630200+02:00",
+      "extraction_confidence": 0.65,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Glasperlenspiel Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/lieder-theater-programm-zum-mitsingen-und-mitmachen-2026-10-18-glas"
     },
     {
       "id": "9fce5eb64f283d91",
@@ -187,14 +315,46 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-17T05:02:49.058978+02:00",
+      "scraped_at": "2026-09-18T02:00:23.306773+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/bilderbuchkino-2026-10-24-aspe"
+    },
+    {
+      "id": "1588870926cf80cb",
+      "title": "Baby und Kids-Treff",
+      "date_start": "2026-10-28",
+      "date_end": null,
+      "time": "10:00 - 11:30",
+      "description": "In der Familie-freundlichen Umgebung des Familienbüros in Asperg trafen Eltern mit Kindern sich für Austausch und Freizeit.",
+      "location": "Familienbüro, Asperg",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748252",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748252",
+      "source": "asperg_veranstaltungen",
+      "city": "asperg",
+      "slug": "baby-und-kids-treff-2026-10-28-aspe",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-09-18T02:00:23.306788+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Asperg",
-      "canonical_url": "https://www.rausgucken.de/asperg/events/bilderbuchkino-2026-10-24-aspe"
+      "canonical_url": "https://www.rausgucken.de/asperg/events/baby-und-kids-treff-2026-10-28-aspe"
     },
     {
       "id": "f41d95e9fb23ce3e",
@@ -220,7 +380,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-17T05:02:49.059014+02:00",
+      "scraped_at": "2026-09-18T02:00:23.306817+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -228,6 +388,37 @@
       "editorial_tip": null,
       "source_label": "Stadt Asperg",
       "canonical_url": "https://www.rausgucken.de/asperg/events/gruselige-kinderfuehrung-an-halloween-2026-10-31-aspe"
+    },
+    {
+      "id": "d1df6c5faca3f671",
+      "title": "Erziehungsberatung der Caritas",
+      "date_start": "2026-11-18",
+      "date_end": null,
+      "time": "08:30 - 12:00",
+      "description": "In diesem Angebot des Familienbüros Asperg bietet die Caritas professionelle Beratungen und Unterstützung bei Erziehungssituationen. Experten vermitteln wertvolle Informationen und Lösungsansätze für Eltern.",
+      "location": "Familienbüro, Asperg",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748287",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748287",
+      "source": "asperg_veranstaltungen",
+      "city": "asperg",
+      "slug": "erziehungsberatung-der-caritas-2026-11-18-aspe",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-09-18T02:00:23.306910+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/erziehungsberatung-der-caritas-2026-11-18-aspe"
     },
     {
       "id": "b00570b477189543",
@@ -252,14 +443,46 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-17T05:02:49.059125+02:00",
+      "scraped_at": "2026-09-18T02:00:23.306934+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/bilderbuchkino-2026-11-21-aspe"
+    },
+    {
+      "id": "6a8c402f1ab33d4f",
+      "title": "Baby und Kids-Treff",
+      "date_start": "2026-11-25",
+      "date_end": null,
+      "time": "10:00 - 11:30",
+      "description": "In der Familie-freundlichen Umgebung des Familienbüros Asperg trafen Eltern mit Kindern sich für familienfreundliche Aktivitäten und Austausch.",
+      "location": "Familienbüro, Asperg",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748254",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748254",
+      "source": "asperg_veranstaltungen",
+      "city": "asperg",
+      "slug": "baby-und-kids-treff-2026-11-25-aspe",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-09-18T02:00:23.306960+02:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Asperg",
-      "canonical_url": "https://www.rausgucken.de/asperg/events/bilderbuchkino-2026-11-21-aspe"
+      "canonical_url": "https://www.rausgucken.de/asperg/events/baby-und-kids-treff-2026-11-25-aspe"
     },
     {
       "id": "48ba9c7b6bdd0bc0",
@@ -283,7 +506,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-09-17T05:02:49.059189+02:00",
+      "scraped_at": "2026-09-18T02:00:23.307009+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -315,9 +538,9 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-17T05:02:49.059213+02:00",
+      "scraped_at": "2026-09-18T02:00:23.307032+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -347,7 +570,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-17T05:02:49.059228+02:00",
+      "scraped_at": "2026-09-18T02:00:23.307048+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -355,6 +578,134 @@
       "editorial_tip": null,
       "source_label": "Stadt Asperg",
       "canonical_url": "https://www.rausgucken.de/asperg/events/fuer-familien---christof-und-vladi-altmann-der-weihnachtskoffer-2026-12-06-aspe"
+    },
+    {
+      "id": "79203c0597766da3",
+      "title": "Ein Koffer voll mit Liedern, Gedichten und Geschichten",
+      "date_start": "2026-12-06",
+      "date_end": null,
+      "time": "15:00",
+      "description": "In diesem Workshop lernen Kinder zwischen 3 und 9 Jahren, mit Liedern, Gedichten und Geschichten vom Weihnachts- und Winterthema zu spielen. Mitunter erwartet sie eine magische Reise durch den kulturellen Schatz der Jahreszeiten.",
+      "location": "Glasperlenspiel Asperg",
+      "price": null,
+      "age_min": 3,
+      "age_max": 9,
+      "tags": [
+        "Kinder",
+        "Workshop",
+        "Familie"
+      ],
+      "link": "https://glasperlenspiel.de/dezember-2026",
+      "original_url": "https://glasperlenspiel.de/dezember-2026",
+      "source": "glasperlenspiel",
+      "city": "asperg",
+      "slug": "ein-koffer-voll-mit-liedern-gedichten-und-geschichten-2026-12-06-glas",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-09-18T02:00:28.630255+02:00",
+      "extraction_confidence": 0.65,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Glasperlenspiel Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/ein-koffer-voll-mit-liedern-gedichten-und-geschichten-2026-12-06-glas"
+    },
+    {
+      "id": "4fb4d4d32ba4e4c9",
+      "title": "Nikolausaktion am Familienbüro",
+      "date_start": "2026-12-07",
+      "date_end": null,
+      "time": "14:00 - 16:00",
+      "description": "In der Nikolausaktion am Familienbüro können Kinder und Erwachsene gemeinsam Geschenke packen und Weihnachtsmärchen hören. Das Familienbüro bietet einen einladenden Rahmen für diese traditionelle Veranstaltung.",
+      "location": "Familienbüro, Asperg",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748290",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748290",
+      "source": "asperg_veranstaltungen",
+      "city": "asperg",
+      "slug": "nikolausaktion-am-familienbuero-2026-12-07-aspe",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-09-18T02:00:23.307061+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/nikolausaktion-am-familienbuero-2026-12-07-aspe"
+    },
+    {
+      "id": "dc2177c527750e57",
+      "title": "Erziehungsberatung der Caritas",
+      "date_start": "2026-12-09",
+      "date_end": null,
+      "time": "12:30 - 16:00",
+      "description": "In diesem Angebot des Familienbüros Asperg bietet die Caritas beratende Dienstleistungen für Eltern und Erziehungsberechtigte. Experten vermitteln wertvolle Informationen und Unterstützung bei der Erziehung von Kindern und Jugendlichen.",
+      "location": "Familienbüro Asperg, Asperg",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748286",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748286",
+      "source": "asperg_veranstaltungen",
+      "city": "asperg",
+      "slug": "erziehungsberatung-der-caritas-2026-12-09-aspe",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-09-18T02:00:23.307066+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/erziehungsberatung-der-caritas-2026-12-09-aspe"
+    },
+    {
+      "id": "bbcf5f3132fbb756",
+      "title": "Baby und Kids-Treff",
+      "date_start": "2026-12-16",
+      "date_end": null,
+      "time": "10:00 - 11:30",
+      "description": "In der Familie-Freundschaftsgruppe des Familienbüros Asperg trafen Eltern und Kinder sich für interaktive Spiele und Aktivitäten. Ein Unterstützungscounsellor unterstützt die Teilnehmer bei Fragen zur Erziehung.",
+      "location": "Familienbüro, Asperg",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748255",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46748255",
+      "source": "asperg_veranstaltungen",
+      "city": "asperg",
+      "slug": "baby-und-kids-treff-2026-12-16-aspe",
+      "weekdays": [
+        3
+      ],
+      "scraped_at": "2026-09-18T02:00:23.307109+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/baby-und-kids-treff-2026-12-16-aspe"
     }
   ]
 }

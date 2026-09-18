@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-17T08:40:19.540631+02:00",
+  "scraped_at": "2026-09-18T08:04:39.341679+02:00",
   "city": "kornwestheim",
-  "event_count": 223,
+  "event_count": 76,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -10,41 +10,45 @@
     "kornwestheim"
   ],
   "source_counts": {
-    "kornwestheim": 197,
-    "das_k_spielplan": 24,
-    "das_k_buecherei": 2
+    "das_k_buecherei": 10,
+    "kornwestheim": 36,
+    "das_k_spielplan": 30
   },
   "sources_failed": [],
-  "data_hash": "e55ccc80485557b3",
+  "data_hash": "0204e9a303c7070c",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 17.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 18.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
+    "das_k_buecherei": 1.0,
     "kornwestheim": 1.0,
-    "das_k_spielplan": 1.0,
-    "das_k_buecherei": 1.0
+    "das_k_spielplan": 1.0
   },
   "source_event_counts": {
-    "kornwestheim": 197,
-    "das_k_spielplan": 24,
-    "das_k_buecherei": 2
+    "das_k_buecherei": 10,
+    "kornwestheim": 36,
+    "das_k_spielplan": 30
   },
-  "count_drift_warnings": {},
+  "count_drift_warnings": {
+    "kornwestheim": "Count drift: 36 vs historical avg 196"
+  },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 626.5,
-    "runtime_delta_vs_baseline": 2.5,
+    "runtime_minutes": 669.1,
+    "runtime_delta_vs_baseline": 2.738,
     "source_health": {
+      "das_k_buecherei": 1.0,
       "kornwestheim": 1.0,
-      "das_k_spielplan": 1.0,
-      "das_k_buecherei": 1.0
+      "das_k_spielplan": 1.0
     },
-    "count_drift_warnings": {},
+    "count_drift_warnings": {
+      "kornwestheim": "Count drift: 36 vs historical avg 196"
+    },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-17T12:39:14.610756+02:00"
+    "generated_at": "2026-09-18T13:21:40.507515+02:00"
   }
 }

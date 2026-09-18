@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-09-17T11:43:55.305512+02:00",
+  "scraped_at": "2026-09-18T10:29:57.760390+02:00",
   "city": "kirchheim-neckar",
-  "event_count": 75,
+  "event_count": 74,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "kirchheim-neckar_gemeinde"
   ],
   "source_counts": {
-    "kirchheim-neckar_gemeinde": 75
+    "kirchheim-neckar_gemeinde": 74
   },
   "sources_failed": [],
-  "data_hash": "51f049a2be1d776c",
+  "data_hash": "7ccce0b37fa15f19",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 17.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 18.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "kirchheim-neckar_gemeinde": 0.97
   },
   "source_event_counts": {
-    "kirchheim-neckar_gemeinde": 75
+    "kirchheim-neckar_gemeinde": 74
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 626.5,
-    "runtime_delta_vs_baseline": 2.5,
+    "runtime_minutes": 669.1,
+    "runtime_delta_vs_baseline": 2.738,
     "source_health": {
       "kirchheim-neckar_gemeinde": 0.97
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-17T12:39:14.457477+02:00"
+    "generated_at": "2026-09-18T13:21:40.354332+02:00"
   }
 }

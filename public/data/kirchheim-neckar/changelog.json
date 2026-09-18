@@ -1,12 +1,32 @@
 {
-  "generated_at": "2026-09-17T11:43:55.229849+02:00",
+  "generated_at": "2026-09-18T10:29:57.685109+02:00",
   "city": "kirchheim-neckar",
   "sources": [
     "kirchheim-neckar_gemeinde"
   ],
-  "previous_run": "2026-09-16T09:07:26.510587+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-09-17T11:43:55.305512+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "87f283492ddbb449",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-03",
+      "source": "kirchheim-neckar_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "e1c36a4dcb2e4456",
+      "title": "Vorbesprechung zu den Sitzungen",
+      "date_start": "2026-09-17",
+      "source": "kirchheim-neckar_gemeinde"
+    },
+    {
+      "id": "63ed17cdf97a8ba2",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-03",
+      "source": "kirchheim-neckar_gemeinde"
+    }
+  ]
 }

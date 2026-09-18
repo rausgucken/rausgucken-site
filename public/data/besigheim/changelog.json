@@ -1,12 +1,38 @@
 {
-  "generated_at": "2026-09-17T08:42:02.861570+02:00",
+  "generated_at": "2026-09-18T13:09:09.023780+02:00",
   "city": "besigheim",
   "sources": [
     "besigheim_stadt"
   ],
-  "previous_run": "2026-09-16T06:11:21.235888+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-09-17T08:42:02.938785+02:00",
+  "count_added": 1,
+  "count_removed": 3,
+  "added": [
+    {
+      "id": "4dc8957b10896aa1",
+      "title": "Besigheimer Weihnachtsmarkt",
+      "date_start": "2026-12-05",
+      "source": "besigheim_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "f8f01a85d8ca985d",
+      "title": "Ausflug - Landesgartenschau Ellwangen",
+      "date_start": "2026-09-17",
+      "source": "besigheim_stadt"
+    },
+    {
+      "id": "0fc93d47558f99a8",
+      "title": "Bingo-Spielenachmittag",
+      "date_start": "2026-09-17",
+      "source": "besigheim_stadt"
+    },
+    {
+      "id": "037ade836b0892bd",
+      "title": "Weihnachtsmarkt mit Kunsthandwerkermarkt",
+      "date_start": "2026-12-05",
+      "source": "besigheim_stadt"
+    }
+  ]
 }

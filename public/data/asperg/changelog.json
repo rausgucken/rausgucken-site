@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-09-17T08:16:19.573310+02:00",
+  "generated_at": "2026-09-18T07:34:15.127855+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
-    "asperg_veranstaltungen"
+    "glasperlenspiel",
+    "asperg_veranstaltungen",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-09-16T06:03:03.126513+02:00",
-  "count_added": 34,
-  "count_removed": 42,
+  "previous_run": "2026-09-17T08:16:19.650036+02:00",
+  "count_added": 37,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -118,155 +119,63 @@
       "source": "asperg_fuehrungen"
     },
     {
-      "id": "1c6ad3d7d99bdd15",
-      "title": "Halloween Gruselige Kinderführung: „Mit dem Henker auf den Hohenasperg“",
-      "date_start": "2025-10-31",
-      "source": "asperg_fuehrungen"
-    },
-    {
-      "id": "bd52e6cfd21b6d6c",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-09-19",
+      "id": "68f98031c0a93d86",
+      "title": "Baby und Kids-Treff",
+      "date_start": "2026-09-30",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "1749ad0b29aae734",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-09-26",
+      "id": "d5bf1be738e6eaaa",
+      "title": "Sprechstunde der Fachstelle Hilfen für Alleinerziehende",
+      "date_start": "2026-10-13",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "7b9252c28e6433a5",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-10-10",
+      "id": "c73548f7d0e70ee4",
+      "title": "Erziehungsberatung der Caritas",
+      "date_start": "2026-10-14",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "0c715aaf4d4b4197",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-10-17",
+      "id": "1588870926cf80cb",
+      "title": "Baby und Kids-Treff",
+      "date_start": "2026-10-28",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "af76fd919aaee84c",
-      "title": "Die Kelten im mittleren Neckarraum - Vortrag",
-      "date_start": "2026-10-22",
+      "id": "d1df6c5faca3f671",
+      "title": "Erziehungsberatung der Caritas",
+      "date_start": "2026-11-18",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "9fce5eb64f283d91",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-10-24",
+      "id": "6a8c402f1ab33d4f",
+      "title": "Baby und Kids-Treff",
+      "date_start": "2026-11-25",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "70c101ba97b86451",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-10-31",
+      "id": "4fb4d4d32ba4e4c9",
+      "title": "Nikolausaktion am Familienbüro",
+      "date_start": "2026-12-07",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "dd9f877cd3c39fa0",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-11-07",
+      "id": "dc2177c527750e57",
+      "title": "Erziehungsberatung der Caritas",
+      "date_start": "2026-12-09",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "f6b3c3633c5617ae",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-11-14",
+      "id": "bbcf5f3132fbb756",
+      "title": "Baby und Kids-Treff",
+      "date_start": "2026-12-16",
       "source": "asperg_veranstaltungen"
     },
-    {
-      "id": "457cf2f525b827a8",
-      "title": "Bundesweiter Vorlesetag",
-      "date_start": "2026-11-20",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "b00570b477189543",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-11-21",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "40c6fb0b2a6bfd88",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-11-28",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "cb4385a8faff5bb4",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-12-05",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "2eab278a2d82970c",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-12-12",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "9925d1c350a8568e",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-12-19",
-      "source": "asperg_veranstaltungen"
-    }
-  ],
-  "removed": [
     {
       "id": "738e5166b390a760",
       "title": "unschaf",
       "date_start": "2026-09-11",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "e666c4b84718a974",
-      "title": "Ökumenischer Seniorennachmittag",
-      "date_start": "2026-09-16",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "c80e30eb9bf78a8b",
-      "title": "Sicher zur Schule statt mit dem „Elterntaxi“ - Informationsabend für Eltern",
-      "date_start": "2026-09-16",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "753078979a745a42",
-      "title": "Lindners Lebenslust",
-      "date_start": "2026-09-19",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "b7f697cc95abc371",
-      "title": "Abenteuerreise der Tiere",
-      "date_start": "2026-09-20",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "f126d6eb4e576f5a",
-      "title": "LeseKonzert Marlene Dietrich",
-      "date_start": "2026-09-20",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "c9025fee0817e42b",
-      "title": "Popmusiker Justice - Solopfad",
-      "date_start": "2026-09-25",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "4a16571a85ba8cac",
-      "title": "Texten und Songs der Liebe",
-      "date_start": "2026-09-27",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "a88a85dfeef9b2c3",
-      "title": "Jazz-Abende",
-      "date_start": "2026-10-02",
       "source": "glasperlenspiel"
     },
     {
@@ -276,27 +185,9 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "9932cfe05ba5ea22",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2026-10-04",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "b328e18ca3dd9533",
-      "title": "Back to the roots - Rock & More",
-      "date_start": "2026-10-10",
-      "source": "glasperlenspiel"
-    },
-    {
       "id": "d440d0379cbfa4db",
       "title": "Lesung",
       "date_start": "2026-10-11",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "c4b9892e3be2af53",
-      "title": "Vortrag über die Entstehung der Insektenwiese Freiberg a.N.",
-      "date_start": "2026-10-14",
       "source": "glasperlenspiel"
     },
     {
@@ -306,117 +197,15 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "1c6ffb9868d58b45",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2026-10-18",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "bdd848d1dae5e802",
-      "title": "Cleverle-Quiz-Abend",
-      "date_start": "2026-10-21",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "6966af02e9f1353c",
-      "title": "Jazz-Veranstaltung mit Gerhard Volz, Stefan Zenner und Didi Eckmaier",
+      "id": "e0c30f73c2c49809",
+      "title": "Jazz-Veranstaltung mit Gerhard Volz, Stefan „Mad Piano“ Zenner und Didi Eckmaier",
       "date_start": "2026-10-23",
       "source": "glasperlenspiel"
     },
     {
-      "id": "55afae9a3013a6eb",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2026-10-25",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "986870bb89509d99",
-      "title": "Xang - Sieben jung gebliebene Männer",
-      "date_start": "2026-10-30",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "98b554a7df0c8061",
-      "title": "England der 50er Jahre",
-      "date_start": "2026-10-31",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "af64c9be35ed4492",
-      "title": "Barbara Mergenthaler und Katharina Reich: Mascha Kaléko - Philosophie der Lyrik",
-      "date_start": "2026-11-01",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "758f0470cca5b005",
-      "title": "Jazz-Abende",
-      "date_start": "2026-11-06",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "ed3935ab415a98c5",
-      "title": "Physik in Hollywood II",
-      "date_start": "2026-11-08",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "c30f224d60d5cc2f",
-      "title": "Open Stage im Glasperlenspiel",
-      "date_start": "2026-11-11",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "aeeb22e3e3499688",
-      "title": "Der kleine, aber feine Künstlermarkt",
-      "date_start": "2026-11-15",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "0fd6236a75718b15",
-      "title": "Gruppe Live - Rock'n'Roll aus den 50er Jahren",
-      "date_start": "2026-11-20",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "b0c42af0f50a438e",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2026-11-21",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "24c8304f19b0f8bf",
-      "title": "Murzarella - Bauchsängerin mit Singenden Puppen",
+      "id": "cb7d4d5e64cac6fd",
+      "title": "Ausstellung",
       "date_start": "2026-11-22",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "e6eeca5d9254479f",
-      "title": "kein Weihnachtskonzert",
-      "date_start": "2026-11-27",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "e95843e5d104d974",
-      "title": "Der Schauspielaufführung 'Die Widerspenstigen im Zusammengriff'",
-      "date_start": "2026-11-28",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "bcf92250cc7c0054",
-      "title": "Das Quartett spielt klassischen Gitarrenswing",
-      "date_start": "2026-11-29",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "2a20da3dffed643f",
-      "title": "Lebendige Stand-Up-Comedy in 4D",
-      "date_start": "2026-11-29",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "a34d49fd94566031",
-      "title": "Jazz-Abende",
-      "date_start": "2026-12-04",
       "source": "glasperlenspiel"
     },
     {
@@ -426,15 +215,9 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "37099060500627ff",
-      "title": "Ein Koffer voll mit Liedern, Gedichten und Geschichten zur Weihnachts- und Winterzeit",
+      "id": "79203c0597766da3",
+      "title": "Ein Koffer voll mit Liedern, Gedichten und Geschichten",
       "date_start": "2026-12-06",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "71608f4c7a4d16ad",
-      "title": "Jens Heckermann - Kauz",
-      "date_start": "2026-12-11",
       "source": "glasperlenspiel"
     },
     {
@@ -444,28 +227,11 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "a63e01afafc5485b",
-      "title": "Blues-Programm von Christof Altmann",
-      "date_start": "2026-12-13",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "c3dc5fd9b4a40562",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2026-12-13",
-      "source": "glasperlenspiel"
-    },
-    {
       "id": "43f3b16d745a4ce1",
       "title": "Klavierabend am 4. Advent",
       "date_start": "2026-12-17",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "79a8dc9f685bd195",
-      "title": "Weihnachts-Mix",
-      "date_start": "2026-12-28",
-      "source": "glasperlenspiel"
     }
-  ]
+  ],
+  "removed": []
 }

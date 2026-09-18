@@ -1,12 +1,25 @@
 {
-  "generated_at": "2026-09-17T08:42:05.973617+02:00",
+  "generated_at": "2026-09-18T08:04:55.179941+02:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-09-16T06:20:03.212271+02:00",
+  "previous_run": "2026-09-17T08:42:06.048243+02:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "dc7edad973f8c91f",
+      "title": "Ökumenischer Gottesdienst Schulanfang",
+      "date_start": "2026-09-17",
+      "source": "affalterbach_stadt"
+    },
+    {
+      "id": "c6499066c27b92a4",
+      "title": "Begegnungstreff \"Affalterbach together\"",
+      "date_start": "2026-09-17",
+      "source": "affalterbach_stadt"
+    }
+  ]
 }

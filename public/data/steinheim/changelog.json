@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-17T10:56:27.054408+02:00",
+  "generated_at": "2026-09-18T08:53:37.691228+02:00",
   "city": "steinheim",
   "sources": [
     "steinheim_stadt"
   ],
-  "previous_run": "2026-09-16T08:01:49.395502+02:00",
+  "previous_run": "2026-09-17T10:56:27.129062+02:00",
   "count_added": 4,
-  "count_removed": 0,
+  "count_removed": 1,
   "added": [
     {
       "id": "b90c7035501275f5",
@@ -21,17 +21,24 @@
       "source": "steinheim_stadt"
     },
     {
-      "id": "df3eb88b7f380cb2",
-      "title": "Lehr- und Besichtigungsfahrt",
-      "date_start": "2026-09-23",
+      "id": "96162fa6e926ab22",
+      "title": "Gemeinsam aktiv 60+ - Wöchentlicher Spielenachmittag",
+      "date_start": "2026-09-22",
       "source": "steinheim_stadt"
     },
     {
-      "id": "04c27e9aa8c5b344",
-      "title": "Tiertafel-Treff",
-      "date_start": "2026-10-06",
+      "id": "077b6ae1d7f88261",
+      "title": "Ausflug des Seniorennachmittags",
+      "date_start": "2026-09-22",
       "source": "steinheim_stadt"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "231c984aca459c98",
+      "title": "Gemeinsam aktiv 60+ - Gesprächskreis Demenz für Angehörige",
+      "date_start": "2026-09-17",
+      "source": "steinheim_stadt"
+    }
+  ]
 }
