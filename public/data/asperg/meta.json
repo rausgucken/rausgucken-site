@@ -1,54 +1,54 @@
 {
-  "scraped_at": "2026-09-18T07:34:15.205098+02:00",
+  "scraped_at": "2026-09-19T07:09:03.252422+02:00",
   "city": "asperg",
-  "event_count": 146,
+  "event_count": 149,
   "flagged_count": 0,
-  "expired_count": 19,
+  "expired_count": 20,
   "sources_scraped": [
     "asperg_fuehrungen",
     "asperg_veranstaltungen",
     "glasperlenspiel"
   ],
   "source_counts": {
-    "glasperlenspiel": 9,
-    "asperg_fuehrungen": 5,
-    "asperg_veranstaltungen": 132
+    "glasperlenspiel": 14,
+    "asperg_veranstaltungen": 130,
+    "asperg_fuehrungen": 5
   },
   "sources_failed": [],
-  "data_hash": "fa28d5827192aeb6",
+  "data_hash": "7e06fb93644a7421",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 18.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 19.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "glasperlenspiel": 0.95,
-    "asperg_fuehrungen": 0.76,
-    "asperg_veranstaltungen": 1.0
+    "glasperlenspiel": 0.94,
+    "asperg_veranstaltungen": 1.0,
+    "asperg_fuehrungen": 0.77
   },
   "source_event_counts": {
-    "glasperlenspiel": 9,
-    "asperg_fuehrungen": 5,
-    "asperg_veranstaltungen": 132
+    "glasperlenspiel": 14,
+    "asperg_veranstaltungen": 130,
+    "asperg_fuehrungen": 5
   },
   "count_drift_warnings": {
-    "glasperlenspiel": "Count drift: 9 vs historical avg 40"
+    "glasperlenspiel": "Count drift: 14 vs historical avg 30"
   },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 669.1,
-    "runtime_delta_vs_baseline": 2.738,
+    "runtime_minutes": 641.8,
+    "runtime_delta_vs_baseline": 2.585,
     "source_health": {
-      "glasperlenspiel": 0.95,
-      "asperg_fuehrungen": 0.76,
-      "asperg_veranstaltungen": 1.0
+      "glasperlenspiel": 0.94,
+      "asperg_veranstaltungen": 1.0,
+      "asperg_fuehrungen": 0.77
     },
     "count_drift_warnings": {
-      "glasperlenspiel": "Count drift: 9 vs historical avg 40"
+      "glasperlenspiel": "Count drift: 14 vs historical avg 30"
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-18T13:21:39.044475+02:00"
+    "generated_at": "2026-09-19T12:54:20.767763+02:00"
   }
 }

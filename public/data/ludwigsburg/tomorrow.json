@@ -1,7 +1,7 @@
 {
   "subset": "tomorrow",
-  "generated_at": "2026-09-19T06:00:02.031821+02:00",
-  "event_count": 10,
+  "generated_at": "2026-09-19T12:41:47.733171+02:00",
+  "event_count": 16,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -27,9 +27,9 @@
         0,
         6
       ],
-      "scraped_at": "2026-09-18T02:15:52.332282+02:00",
+      "scraped_at": "2026-09-19T02:13:36.263726+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -62,9 +62,9 @@
         5,
         6
       ],
-      "scraped_at": "2026-09-18T02:15:52.332320+02:00",
+      "scraped_at": "2026-09-19T02:13:36.263759+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -92,9 +92,9 @@
         0,
         6
       ],
-      "scraped_at": "2026-09-18T02:00:13.740524+02:00",
+      "scraped_at": "2026-09-19T02:00:11.301728+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -102,19 +102,48 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/automesse-ludwigsburg-2026-09-19-schl"
     },
     {
+      "id": "29eae0a2fb72ccf6",
+      "title": "Automesse Ludwigsburg 2026",
+      "date_start": "2026-09-19",
+      "date_end": "2026-09-20",
+      "time": "Sa, 11:00 - 18:00 Uhr | So, 11:00 - 17:00",
+      "description": "Im Residenzschloss Ludwigsburg findet die Automesse 2026 statt. Besuchern bietet sie Einblicke in neueste Technologien und Innovationen aus der Welt des Automobils.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://ludwigsburger-wochenblatt.de/automesse/",
+      "original_url": "https://ludwigsburger-wochenblatt.de/automesse/",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "automesse-ludwigsburg-2026-2026-09-19-ludw",
+      "weekdays": [
+        0,
+        6
+      ],
+      "scraped_at": "2026-09-19T02:13:37.311265+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/automesse-ludwigsburg-2026-2026-09-19-ludw"
+    },
+    {
       "id": "ba1c40f53266e096",
       "title": "Meine erste Schlossführung",
       "date_start": "2026-09-20",
       "date_end": null,
       "time": "10:00",
-      "description": "In dieser Abendführung durch das beleuchtete Residenzschloss Ludwigsburg erkunden Erwachsene und Familien die Geschichte des Schlosses. Experten begleiten die Teilnehmer durch prachtvolle Räume, während spannende Geschichten lebendig werden.",
+      "description": "In dieser Führung durch das Residenzschloss Ludwigsburg erkunden kleine Entdecker ihre kindgerechte Geschichte der Bauten und Bewohner. In Begleitung eines Erwachsenen und mit dem Lieblingskuscheltier auf dem Schoß reisen sie für eine Stunde zurück in die Vergangenheit. Ein Anmeldefrist ist bei Sonderführungen notwendig.",
       "location": "Residenzschloss Ludwigsburg",
-      "price": null,
-      "age_min": 4,
+      "price": "Erwachsene 10,00 € Ermäßigte 5,00 € Familien 25,00 €",
+      "age_min": null,
       "age_max": null,
       "tags": [
-        "Fuehrung",
-        "Familie"
+        "Fuehrung"
       ],
       "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/meine-erste-schlossfuehrung/9362/770177",
       "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/meine-erste-schlossfuehrung/9362/770177",
@@ -124,9 +153,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-18T02:00:18.056213+02:00",
+      "scraped_at": "2026-09-19T02:00:18.848423+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -156,9 +185,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-18T02:15:52.332413+02:00",
+      "scraped_at": "2026-09-19T02:13:36.263861+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -185,9 +214,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-18T02:15:48.666214+02:00",
+      "scraped_at": "2026-09-19T02:13:35.384106+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -214,9 +243,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-18T02:00:33.571709+02:00",
+      "scraped_at": "2026-09-19T02:00:20.645877+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -245,14 +274,46 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-18T02:00:40.365641+02:00",
+      "scraped_at": "2026-09-19T02:00:40.745958+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Residenzschloss Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/sprichwoertern-auf-der-spur-2026-09-20-schl"
+    },
+    {
+      "id": "5f89dcb83814742c",
+      "title": "Weltkindertag im Stadionbad",
+      "date_start": "2026-09-20",
+      "date_end": null,
+      "time": "13:00 – 17:00",
+      "description": "In diesem Veranstaltungstag im Stadionbad werden Kinder und Erwachsene einladen, gemeinsam spielerische Aktivitäten zu genießen. Vielfältige Spiele und Aktivitäten sorgen für Spaß und aktives Erleben.",
+      "location": "Stadionbad",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.swlb.de/stadionbad",
+      "original_url": "https://www.swlb.de/stadionbad",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "weltkindertag-im-stadionbad-2026-09-20-ludw",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-09-19T02:13:37.312739+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/weltkindertag-im-stadionbad-2026-09-20-ludw"
     },
     {
       "id": "27c7c889880da9c4",
@@ -277,9 +338,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-18T02:15:52.332442+02:00",
+      "scraped_at": "2026-09-19T02:13:36.263895+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -287,17 +348,82 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/theater-tredeschin-2026-09-20-blue"
     },
     {
+      "id": "2576ffa2c2a6f098",
+      "title": "Genussführung: Kaffeeklatsch mit der Grävenitz",
+      "date_start": "2026-09-20",
+      "date_end": null,
+      "time": "14:00",
+      "description": "Im Genussführung-Kaffeeclatsch teilen Experten aus dem Museum der Geschichte und Kultur kulinarische Geschichten und Rezepte. Ein einzigartiger Nachmittag für Kaffeeliebhaber und Culinarik-Freunde.",
+      "location": "MIK Museum - Information - Kunst",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Kulinarik"
+      ],
+      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523253163111/index.html",
+      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523253163111/index.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "genussfuehrung-kaffeeklatsch-mit-der-graevenitz-2026-09-20-ludw",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-09-19T02:13:37.313090+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/genussfuehrung-kaffeeklatsch-mit-der-graevenitz-2026-09-20-ludw"
+    },
+    {
+      "id": "3aea54d01a93ae01",
+      "title": "Zusammen wohnen – Gemeinschaft leben: Offenes Treffen",
+      "date_start": "2026-09-20",
+      "date_end": null,
+      "time": "14:30 - 17:00",
+      "description": "In diesem offenen Treffen diskutieren Teilnehmer über das Thema „Zusammen wohnen – Gemeinschaft leben“. Das Event bietet die Möglichkeit, Erfahrungen auszutauschen und gemeinsam Lösungen zu finden. Veranstaltet von der DemoZ Ludwigsburg.",
+      "location": "DemoZ Ludwigsburg",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.demoz-lb.de/event/zusammen-wohnen-gemeinschaft-leben/",
+      "original_url": "https://www.demoz-lb.de/event/zusammen-wohnen-gemeinschaft-leben/",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "zusammen-wohnen-gemeinschaft-leben-offenes-treffen-2026-09-20-ludw",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-09-19T02:13:37.313615+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/zusammen-wohnen-gemeinschaft-leben-offenes-treffen-2026-09-20-ludw"
+    },
+    {
       "id": "5a9e9af682f06675",
       "title": "Jubel, Trubel, Heiterkeit",
       "date_start": "2026-09-20",
       "date_end": null,
       "time": "16:00",
-      "description": "In der Jubel-Veranstaltung führt Max Rechtsteiner durch das Residenzschloss Ludwigsburg. Er erzählt von den Geburtstagsfeierlichkeiten für Herzog Carl Eugen, dem Abenteurer Casanova und die Hintergründe des glanzvollen Hofes.",
+      "description": "In diesem Veranstaltungskonzert mischen sich Musik und Theater. Besuchern bietet es eine einzigartige Mischung aus live gespieltem Barockmusik und amüsanten Aufführungen, die das Residenzschloss Ludwigsburg zum Leben erwecken.",
       "location": "Residenzschloss Ludwigsburg",
-      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "price": null,
       "age_min": null,
       "age_max": null,
-      "tags": [],
+      "tags": [
+        "Fuehrung",
+        "Musik",
+        "Theater"
+      ],
       "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/jubel-trubel-heiterkeit/9354/769879",
       "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/jubel-trubel-heiterkeit/9354/769879",
       "source": "schloss",
@@ -306,14 +432,76 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-18T02:00:41.711408+02:00",
+      "scraped_at": "2026-09-19T02:00:42.169199+02:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Residenzschloss Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/jubel-trubel-heiterkeit-2026-09-20-schl"
+    },
+    {
+      "id": "ddb9fdb4e6849f59",
+      "title": "Moment mal",
+      "date_start": "2026-09-20",
+      "date_end": null,
+      "time": "16:00 - 17-30",
+      "description": "In der VorleseScheune Hoheneck bietet ein literarisches Abenteuer an. Gastgeber verzaubern mit ihrer Lesekunst und faszinierende Geschichten entfalten ihre magischen Kräfte, einzigartig für Erwachsene.",
+      "location": "VorleseScheune Hoheneck",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Lesung"
+      ],
+      "link": "https://www.vorlesescheune.de",
+      "original_url": "https://www.vorlesescheune.de",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "moment-mal-2026-09-20-ludw",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-09-19T02:13:37.313792+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/moment-mal-2026-09-20-ludw"
+    },
+    {
+      "id": "c43cc137386882c5",
+      "title": "Space Saloon",
+      "date_start": "2026-09-20",
+      "date_end": null,
+      "time": "19:00 – 21:00",
+      "description": "Im Space Saloon entdecken Sie eine kulinarische und kulturelle Reise unter dem Sternenhimmel. Auf Arsenalplatz bietet dieses Ereignis kulinarische Delikatessen und astronomische Vorträge an, verbindend durch musikalische Highlights.",
+      "location": "Arsenalplatz",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Kulinarik"
+      ],
+      "link": "http://www.spacesaloon.de",
+      "original_url": "http://www.spacesaloon.de",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "space-saloon-2026-09-20-ludw",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-09-19T02:13:37.313935+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/space-saloon-2026-09-20-ludw"
     }
   ]
 }

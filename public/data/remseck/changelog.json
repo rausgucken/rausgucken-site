@@ -1,13 +1,20 @@
 {
-  "generated_at": "2026-09-18T07:38:17.335237+02:00",
+  "generated_at": "2026-09-19T07:11:07.910509+02:00",
   "city": "remseck",
   "sources": [
-    "remseck_mediathek",
-    "remseck_stadt"
+    "remseck_stadt",
+    "remseck_mediathek"
   ],
-  "previous_run": "2026-09-17T08:16:21.115061+02:00",
+  "previous_run": "2026-09-18T07:38:17.409617+02:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 1,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "f7bb55685c7bb1cc",
+      "title": "Street Food Fiesta",
+      "date_start": "2026-09-18",
+      "source": "remseck_stadt"
+    }
+  ]
 }
