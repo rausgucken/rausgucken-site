@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-19T10:07:12.259060+02:00",
+  "generated_at": "2026-09-20T09:16:11.536747+02:00",
   "city": "steinheim",
   "sources": [
     "steinheim_stadt"
   ],
-  "previous_run": "2026-09-18T08:53:37.766197+02:00",
-  "count_added": 2,
-  "count_removed": 0,
+  "previous_run": "2026-09-19T10:07:12.334436+02:00",
+  "count_added": 3,
+  "count_removed": 1,
   "added": [
     {
       "id": "b90c7035501275f5",
@@ -19,7 +19,20 @@
       "title": "LandFrauen-Café am Marathonsonntag",
       "date_start": "2026-08-21",
       "source": "steinheim_stadt"
+    },
+    {
+      "id": "5d0e10828348c116",
+      "title": "Tag der offenen Tür | Feuerwehr Steinheim",
+      "date_start": "2026-09-23",
+      "source": "steinheim_stadt"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "4802430c8c094f02",
+      "title": "Tag der offenen Tür | Feuerwehr Steinheim",
+      "date_start": "2026-08-14",
+      "source": "steinheim_stadt"
+    }
+  ]
 }

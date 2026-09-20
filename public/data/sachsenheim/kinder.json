@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-09-20T06:00:01.737785+02:00",
-  "event_count": 2,
+  "generated_at": "2026-09-20T07:06:14.374758+02:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -29,7 +29,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-09-19T02:02:16.533874+02:00",
+      "scraped_at": "2026-09-20T02:02:17.014948+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -61,7 +61,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-09-19T02:02:17.613869+02:00",
+      "scraped_at": "2026-09-20T02:02:18.121912+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -69,6 +69,38 @@
       "editorial_tip": null,
       "source_label": "Stadt Sachsenheim – Kulturprogramm",
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/ecomedy-mit-matthias-jung-2026-10-09-sach"
+    },
+    {
+      "id": "055cb25ee0964412",
+      "title": "Tag der offenen Tür",
+      "date_start": "2026-10-10",
+      "date_end": null,
+      "time": "10:00 - 13:00",
+      "description": "Im Kindertagesbetrieb \"LittlebigFuture\" Sachsenheim bietet sich an, den Neubau zu entdecken. Besuchen Sie den Ersteröffnungstag und erfahren Sie mehr über die Anlagen und Konzepte für Kinder.",
+      "location": "Kinderhaus \"LittlebigFuture\" Sachsenheim, Südring 1, 74343 Sachsenheim",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Erster-Tag-der-offenen-Tuer-in-der-neuen-Kita-littlebigFuture-Sachsenheim-event-appointment6418",
+      "original_url": "https://www.sachsenheim.de/termin/Erster-Tag-der-offenen-Tuer-in-der-neuen-Kita-littlebigFuture-Sachsenheim-event-appointment6418",
+      "source": "sachsenheim_library",
+      "city": "sachsenheim",
+      "slug": "tag-der-offenen-tuer-2026-10-10-sach-1",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-09-20T02:02:43.377904+02:00",
+      "extraction_confidence": 0.7,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtbücherei Sachsenheim",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/tag-der-offenen-tuer-2026-10-10-sach-1"
     }
   ]
 }

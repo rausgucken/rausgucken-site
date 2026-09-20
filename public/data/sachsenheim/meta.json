@@ -1,25 +1,29 @@
 {
-  "scraped_at": "2026-09-19T07:17:06.909984+02:00",
+  "scraped_at": "2026-09-20T07:06:14.295384+02:00",
   "city": "sachsenheim",
   "event_count": 17,
   "flagged_count": 0,
   "expired_count": 7,
   "sources_scraped": [
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
   "source_counts": {
-    "sachsenheim_kultur": 17
+    "sachsenheim_kultur": 16,
+    "sachsenheim_library": 1
   },
   "sources_failed": [],
-  "data_hash": "842ed297d18def95",
+  "data_hash": "39dc533a5552786b",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 19.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 20.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "sachsenheim_kultur": 0.97
+    "sachsenheim_kultur": 0.97,
+    "sachsenheim_library": 0.94
   },
   "source_event_counts": {
-    "sachsenheim_kultur": 17
+    "sachsenheim_kultur": 16,
+    "sachsenheim_library": 1
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +31,15 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 641.8,
-    "runtime_delta_vs_baseline": 2.585,
+    "runtime_minutes": 523.4,
+    "runtime_delta_vs_baseline": 1.924,
     "source_health": {
-      "sachsenheim_kultur": 0.97
+      "sachsenheim_kultur": 0.97,
+      "sachsenheim_library": 0.94
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-19T12:54:23.142602+02:00"
+    "generated_at": "2026-09-20T10:56:26.392478+02:00"
   }
 }

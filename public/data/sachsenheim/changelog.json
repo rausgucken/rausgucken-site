@@ -1,12 +1,13 @@
 {
-  "generated_at": "2026-09-19T07:17:06.834131+02:00",
+  "generated_at": "2026-09-20T07:06:14.221626+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-09-18T07:43:28.581562+02:00",
-  "count_added": 7,
-  "count_removed": 0,
+  "previous_run": "2026-09-19T07:17:06.909984+02:00",
+  "count_added": 8,
+  "count_removed": 1,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -49,7 +50,20 @@
       "title": "KleinstadtQueers",
       "date_start": "2026-08-29",
       "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "055cb25ee0964412",
+      "title": "Tag der offenen Tür",
+      "date_start": "2026-10-10",
+      "source": "sachsenheim_library"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "523f7e359aca5d54",
+      "title": "Erste Hilfe Kurs nach BG-Standard",
+      "date_start": "2026-09-19",
+      "source": "sachsenheim_kultur"
+    }
+  ]
 }

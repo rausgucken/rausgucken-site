@@ -1,26 +1,50 @@
 {
-  "generated_at": "2026-09-19T07:18:51.404538+02:00",
+  "generated_at": "2026-09-20T07:31:21.324153+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_treffpunkt_adler",
-    "ditzingen_stadt"
+    "ditzingen_stadt",
+    "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-09-18T08:04:53.082216+02:00",
+  "previous_run": "2026-09-19T07:18:51.486773+02:00",
   "count_added": 0,
-  "count_removed": 2,
+  "count_removed": 6,
   "added": [],
   "removed": [
     {
-      "id": "29cc8ccad998a000",
-      "title": "Cappuccino.Päusle",
-      "date_start": "2026-09-18",
+      "id": "b260cfb2d375881b",
+      "title": "Schöckinger Flöhe - Großer Garagenflohmarkt in Schöckingen",
+      "date_start": "2026-09-19",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "5f7ce79e72ef84a3",
+      "title": "Vorlesezeit",
+      "date_start": "2026-09-19",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "208416232e13d484",
+      "title": "Schöcktails: Cocktails\\, Musik und Kinderdisco in Schöckingen",
+      "date_start": "2026-09-19",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "9cba0ad5d652867e",
+      "title": "Kulturnacht Ditzingen (Stadt Ditzingen)",
+      "date_start": "2026-09-19",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "9ac8b55430c0242f",
-      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
-      "date_start": "2026-09-18",
-      "source": "ditzingen_treffpunkt_adler"
+      "id": "5aa40ad2fc6114c8",
+      "title": "3. Kulturnacht am Laien",
+      "date_start": "2026-09-19",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "34fb03ddc63e3ecf",
+      "title": "3. Ditzinger Kulturnacht - Programm Konstanzer Kirche",
+      "date_start": "2026-09-19",
+      "source": "ditzingen_stadt"
     }
   ]
 }

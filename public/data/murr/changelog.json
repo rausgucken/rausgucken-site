@@ -1,19 +1,25 @@
 {
-  "generated_at": "2026-09-19T09:21:19.446748+02:00",
+  "generated_at": "2026-09-20T09:19:50.113171+02:00",
   "city": "murr",
   "sources": [
     "murr_gemeinde"
   ],
-  "previous_run": "2026-09-18T09:40:48.112058+02:00",
-  "count_added": 1,
-  "count_removed": 0,
-  "added": [
+  "previous_run": "2026-09-19T09:21:19.521313+02:00",
+  "count_added": 0,
+  "count_removed": 2,
+  "added": [],
+  "removed": [
     {
-      "id": "8cf5381476752829",
-      "title": "Altpapiersammlung",
-      "date_start": "2026-09-26",
+      "id": "c0dbe083f3c25e7e",
+      "title": "Neubürgerempfang",
+      "date_start": "2026-09-19",
+      "source": "murr_gemeinde"
+    },
+    {
+      "id": "36709164c1ebf7c1",
+      "title": "Einschulungsgottesdienst",
+      "date_start": "2026-09-19",
       "source": "murr_gemeinde"
     }
-  ],
-  "removed": []
+  ]
 }
