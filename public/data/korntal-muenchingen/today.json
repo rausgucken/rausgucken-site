@@ -1,69 +1,71 @@
 {
   "subset": "today",
-  "generated_at": "2026-09-20T10:18:28.065745+02:00",
+  "generated_at": "2026-09-21T06:00:01.521476+02:00",
   "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "a17914fb4dddd0bd",
-      "title": "50 Jahre Freizeitbad Münchingen",
-      "date_start": "2026-09-20",
+      "id": "ed13ddbec511532e",
+      "title": "Kräuterkunde und Aromapflege mit allen Sinnen",
+      "date_start": "2026-09-21",
       "date_end": null,
-      "time": "10:00",
-      "description": "In der Veranstaltung zum 50-jährigen Jubiläum des Freizeitbads Münchingen bietet sich ein vielfältiges Programm an, das die ganze Familie fesselt. Erleben Sie Musik, Unterhaltung und Mitmachaktionen über zwei Tage am Wasser und im Freibad.",
-      "location": "Freizeitbad Münchingen",
-      "price": null,
-      "age_min": 4,
-      "age_max": null,
-      "tags": [
-        "Familie",
-        "Musik"
-      ],
-      "link": "https://www.korntal-muenchingen.de/de/Aktuelles/Veranstaltungen/Veranstaltung?view=publish&item=eventDate&id=2438",
-      "original_url": "https://www.korntal-muenchingen.de/de/Aktuelles/Veranstaltungen/Veranstaltung?view=publish&item=eventDate&id=2438",
-      "source": "korntal_muenchingen",
-      "city": "korntal-muenchingen",
-      "slug": "50-jahre-freizeitbad-muenchingen-2026-09-20-korn",
-      "weekdays": [
-        0
-      ],
-      "scraped_at": "2026-09-20T02:07:40.766786+02:00",
-      "extraction_confidence": 0.85,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Korntal-Münchingen",
-      "canonical_url": "https://www.rausgucken.de/korntal-muenchingen/events/50-jahre-freizeitbad-muenchingen-2026-09-20-korn"
-    },
-    {
-      "id": "d228ce1c4013ad0b",
-      "title": "Literarischer Spaziergang mit Gerald Friese",
-      "date_start": "2026-09-20",
-      "date_end": null,
-      "time": "15:00 - 17:00",
-      "description": "In diesem literarischen Spaziergang durch den Seewald begleitet Gerald Friese Besucher auf einem 2,16 Kilometer langen Weg mit 10 Höhenmetern. Erfahren Sie Geschichten und Erzählungen an ausgewählten Stellen des Waldes.",
-      "location": "Treffpunkt: Waldspielplatz am Seewald. Strecke: Am und im Seewald 2,16 Kilometer, 10 Höhenmeter",
+      "time": "14:30 - 17:00",
+      "description": "In diesem Workshop lernen Sie die Welt der Kräuter und Aromen ausführlich kennen. Mit allen Sinnen werden Sie auf dem Spitalhof eintauchen und sich intensiv mit den Düften und Wirkungen vertraut machen.",
+      "location": "Spitalhof",
       "price": null,
       "age_min": null,
       "age_max": null,
-      "tags": [],
-      "link": "https://www.korntal-muenchingen.de/de/Aktuelles/Veranstaltungen/Veranstaltung?view=publish&item=eventDate&id=2380",
-      "original_url": "https://www.korntal-muenchingen.de/de/Aktuelles/Veranstaltungen/Veranstaltung?view=publish&item=eventDate&id=2380",
+      "tags": [
+        "Workshop"
+      ],
+      "link": "https://www.korntal-muenchingen.de/de/Aktuelles/Veranstaltungen/Veranstaltung?view=publish&item=eventDate&id=2488",
+      "original_url": "https://www.korntal-muenchingen.de/de/Aktuelles/Veranstaltungen/Veranstaltung?view=publish&item=eventDate&id=2488",
       "source": "korntal_muenchingen",
       "city": "korntal-muenchingen",
-      "slug": "literarischer-spaziergang-mit-gerald-friese-2026-09-20-korn",
+      "slug": "kraeuterkunde-und-aromapflege-mit-allen-sinnen-2026-09-21-korn",
       "weekdays": [
-        0
+        1
       ],
-      "scraped_at": "2026-09-20T02:07:40.766869+02:00",
+      "scraped_at": "2026-09-20T02:07:40.766944+02:00",
+      "extraction_confidence": 0.92,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Korntal-Münchingen",
+      "canonical_url": "https://www.rausgucken.de/korntal-muenchingen/events/kraeuterkunde-und-aromapflege-mit-allen-sinnen-2026-09-21-korn"
+    },
+    {
+      "id": "a760c797c389b7dc",
+      "title": "Miteinander unterstützenden Austausch",
+      "date_start": "2026-09-21",
+      "date_end": null,
+      "time": "15:00 - 17:00",
+      "description": "In den Räumen des KiFaz Kinder- und Familienzentrum finden Sie einen Austausch mit Unterstützung für alle Teilnehmer. Gemeinsam teilen und diskutieren Sie Themen im Familienviertel Korntal-Münchingen.",
+      "location": "KiFaz Kinder- und Familienzentrum, Goerdelerstraße 14, 70825 Korntal-Münchingen",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.korntal-muenchingen.de/de/Aktuelles/Veranstaltungen/Veranstaltung?view=publish&item=eventDate&id=2489",
+      "original_url": "https://www.korntal-muenchingen.de/de/Aktuelles/Veranstaltungen/Veranstaltung?view=publish&item=eventDate&id=2489",
+      "source": "korntal_muenchingen",
+      "city": "korntal-muenchingen",
+      "slug": "miteinander-unterstuetzenden-austausch-2026-09-21-korn",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-09-20T02:07:40.767020+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Korntal-Münchingen",
-      "canonical_url": "https://www.rausgucken.de/korntal-muenchingen/events/literarischer-spaziergang-mit-gerald-friese-2026-09-20-korn"
+      "canonical_url": "https://www.rausgucken.de/korntal-muenchingen/events/miteinander-unterstuetzenden-austausch-2026-09-21-korn"
     }
   ]
 }
