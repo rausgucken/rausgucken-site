@@ -1,27 +1,106 @@
 {
-  "generated_at": "2026-09-20T10:43:24.838016+02:00",
+  "generated_at": "2026-09-21T10:40:16.063813+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "demokratisches_zentrum",
-    "blueba",
-    "stabi",
-    "karlskaserne_ausstellungen",
-    "garnisonmuseum",
-    "lisbert_queer",
-    "schloss",
-    "ludwigsburg_stadt",
-    "kunstverein_veranstaltungen",
-    "musikhalle_lb",
-    "kunstverein_ausstellungen",
-    "museum",
-    "forum_schlosspark",
     "labyrinth",
-    "karlskaserne_veranstaltungen"
+    "kunstverein_veranstaltungen",
+    "schloss",
+    "karlskaserne_ausstellungen",
+    "kunstverein_ausstellungen",
+    "demokratisches_zentrum",
+    "forum_schlosspark",
+    "lisbert_queer",
+    "garnisonmuseum",
+    "ludwigsburg_stadt",
+    "karlskaserne_veranstaltungen",
+    "musikhalle_lb",
+    "stabi",
+    "blueba"
   ],
-  "previous_run": "2026-09-19T12:41:47.644287+02:00",
-  "count_added": 19,
-  "count_removed": 23,
+  "previous_run": "2026-09-20T10:43:24.931315+02:00",
+  "count_added": 9,
+  "count_removed": 67,
   "added": [
+    {
+      "id": "23fc3c1c77f2a028",
+      "title": "Klassische Schlossführung „Herzogin“",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "17afd3d48bcfc7c3",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": null,
+      "source": "schloss"
+    },
+    {
+      "id": "4500e3487ea9b49d",
+      "title": "Zwillingstreff",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "6d63db66b49108c8",
+      "title": "Offener Tag der Energieversorgung",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a1daf2f8e741edb8",
+      "title": "Kochnachmittag: Iranische Küche",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "03056b43531078b0",
+      "title": "Internationale Geschichteninsel auf Albanisch",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "cc98f76966628b02",
+      "title": "Workshop Game Development",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "7c66f348d2b8dc09",
+      "title": "Genussführung: Historie und Häppchen",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3fcda165758a8d33",
+      "title": "Genussführung: BELLA ITALIA",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "4338d42d24902687",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "7c82aba616f7a699",
+      "title": "Ausstellung Respekt! Menschen der Karlshöhe",
+      "date_start": "2026-05-03",
+      "source": "museum"
+    },
+    {
+      "id": "650ef2c04fb838df",
+      "title": "Little America – Fotografie Jürgen Schadeberg",
+      "date_start": "2026-07-01",
+      "source": "museum"
+    },
+    {
+      "id": "8a098a1c279787b4",
+      "title": "Kürbis-Regatta",
+      "date_start": "2026-09-19",
+      "source": "blueba"
+    },
     {
       "id": "d066f78fe9b981e6",
       "title": "Automesse Ludwigsburg",
@@ -29,28 +108,52 @@
       "source": "schloss"
     },
     {
-      "id": "dbcbef071d630034",
-      "title": "Candlelight: Weihnachtsklassiker",
-      "date_start": "2026-12-18",
-      "source": "musikhalle_lb"
+      "id": "29eae0a2fb72ccf6",
+      "title": "Automesse Ludwigsburg 2026",
+      "date_start": "2026-09-19",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "060a22f0711bbadf",
-      "title": "41. Antiquaria – Antiquariatsmesse Ludwigsburg",
-      "date_start": "2027-01-28",
-      "source": "musikhalle_lb"
-    },
-    {
-      "id": "7553dd43e4517178",
-      "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": null,
+      "id": "ba1c40f53266e096",
+      "title": "Meine erste Schlossführung",
+      "date_start": "2026-09-20",
       "source": "schloss"
     },
     {
-      "id": "6e62c21195939264",
-      "title": "STUTTGARTER PHILHARMONIKER",
-      "date_start": "2027-05-09",
-      "source": "forum_schlosspark"
+      "id": "2365a4b3de26095e",
+      "title": "(abgesagt) Kürbis-Führung",
+      "date_start": "2026-09-20",
+      "source": "blueba"
+    },
+    {
+      "id": "5df9a4a31a6d9c20",
+      "title": "Etikette und Intrigen",
+      "date_start": "2026-09-20",
+      "source": "schloss"
+    },
+    {
+      "id": "760b0afe2a93301c",
+      "title": "Sprichwörtern auf der Spur",
+      "date_start": "2026-09-20",
+      "source": "schloss"
+    },
+    {
+      "id": "5f89dcb83814742c",
+      "title": "Weltkindertag im Stadionbad",
+      "date_start": "2026-09-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "27c7c889880da9c4",
+      "title": "Theater Tredeschin",
+      "date_start": "2026-09-20",
+      "source": "blueba"
+    },
+    {
+      "id": "2576ffa2c2a6f098",
+      "title": "Genussführung: Kaffeeklatsch mit der Grävenitz",
+      "date_start": "2026-09-20",
+      "source": "ludwigsburg_stadt"
     },
     {
       "id": "7a20aca28a20b29f",
@@ -59,222 +162,322 @@
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "a3cd515b8ab278ca",
-      "title": "Spielzeit FamilienLeben - Donnerstags",
-      "date_start": "2026-09-24",
+      "id": "3aea54d01a93ae01",
+      "title": "Zusammen wohnen – Gemeinschaft leben: Offenes Treffen",
+      "date_start": "2026-09-20",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "5578497ddc30f677",
-      "title": "Wunderzeit der Entdeckung - Raum für Entwicklung nach dem PEKiP",
-      "date_start": "2026-09-24",
+      "id": "5a9e9af682f06675",
+      "title": "Jubel, Trubel, Heiterkeit",
+      "date_start": "2026-09-20",
+      "source": "schloss"
+    },
+    {
+      "id": "ddb9fdb4e6849f59",
+      "title": "Moment mal",
+      "date_start": "2026-09-20",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "665b2323ef2bd966",
-      "title": "Storytime",
-      "date_start": "2026-09-24",
+      "id": "c43cc137386882c5",
+      "title": "Space Saloon",
+      "date_start": "2026-09-20",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "e4aa09d6630024ff",
-      "title": "Café Lieblingsplatz",
-      "date_start": "2026-09-24",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "beaf740c14cce56c",
-      "title": "Wunderzeit der Sinne - Raum für Sensorik, freies Spiel und Entwicklung",
-      "date_start": "2026-09-24",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b74ca295f03b4548",
-      "title": "Roboter programmieren: Eltern-Kind-Workshop",
-      "date_start": "2026-09-24",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "5d848430c5032de1",
-      "title": "Internationale Geschichteninsel auf Türkisch",
-      "date_start": "2026-09-24",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "d68152453c65f657",
-      "title": "Genussführung: Taste & The City",
-      "date_start": "2026-09-24",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "2b69f39a6a542a2b",
-      "title": "Hi.Francky - AfterWork Donnerstag",
-      "date_start": "2026-09-24",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7e64f43e6b871614",
+      "id": "a321ac78d9c91527",
       "title": "Gastrosophie-Abend",
       "date_start": "2026-09-24",
-      "source": "ludwigsburg_stadt"
+      "source": "museum"
     },
     {
-      "id": "48d4132420bbee5f",
-      "title": "Kostümführung: Nedd ganz saubr",
-      "date_start": "2026-09-24",
-      "source": "ludwigsburg_stadt"
+      "id": "5f0f28478d262af4",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-09-26",
+      "source": "museum"
     },
     {
-      "id": "18dea9f2b877202b",
-      "title": "MHP RIESEN Ludwigsburg vs. Rostock",
-      "date_start": "2026-09-24",
-      "source": "ludwigsburg_stadt"
+      "id": "1ad591165ba69227",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-06",
+      "source": "museum"
     },
     {
-      "id": "057e3402a8026b1f",
-      "title": "Mobile Zockbude",
-      "date_start": "2026-09-24",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
+      "id": "10574e50c47e9a2d",
+      "title": "Museumspause",
+      "date_start": "2026-10-07",
+      "source": "museum"
+    },
     {
-      "id": "23fc3c1c77f2a028",
+      "id": "d47a92c5185c1929",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-13",
+      "source": "museum"
+    },
+    {
+      "id": "50d1b8bcae088f0f",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-10-14",
+      "source": "museum"
+    },
+    {
+      "id": "fffeb549fd24639b",
+      "title": "Mitmach-Ausstellung flott, flott!",
+      "date_start": "2026-10-17",
+      "source": "museum"
+    },
+    {
+      "id": "5beb0ee8eb08f214",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-20",
+      "source": "museum"
+    },
+    {
+      "id": "2c0921e304b82ec4",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2026-10-21",
+      "source": "museum"
+    },
+    {
+      "id": "c170b028731594af",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-10-24",
+      "source": "museum"
+    },
+    {
+      "id": "33c73002bed4f546",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-27",
+      "source": "museum"
+    },
+    {
+      "id": "19b34a6bd1f128f7",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-10-31",
+      "source": "museum"
+    },
+    {
+      "id": "744c68f84155ddb4",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-03",
+      "source": "museum"
+    },
+    {
+      "id": "cc3cacc7ccb69d7b",
+      "title": "Museumspause",
+      "date_start": "2026-11-04",
+      "source": "museum"
+    },
+    {
+      "id": "746f98c5fe1bfba3",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-05",
+      "source": "museum"
+    },
+    {
+      "id": "503013994c307868",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-10",
+      "source": "museum"
+    },
+    {
+      "id": "d8b7431bc4a684b1",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-11-11",
+      "source": "museum"
+    },
+    {
+      "id": "36e533426584ba6d",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2026-11-14",
+      "source": "museum"
+    },
+    {
+      "id": "fbefa5096d00bf96",
+      "title": "Stadtspaziergang zu Christian Friedrich Daniel Schubart",
+      "date_start": "2026-11-14",
+      "source": "museum"
+    },
+    {
+      "id": "3a07be9ff60f3ffd",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-17",
+      "source": "museum"
+    },
+    {
+      "id": "22f9f9b321aa01e3",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-24",
+      "source": "museum"
+    },
+    {
+      "id": "3e6569c50955cf0f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
+      "id": "1be2100766f9975a",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
+      "id": "ceffd17f4f8fa9ec",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-01",
+      "source": "museum"
+    },
+    {
+      "id": "0200632eb9bc01e9",
+      "title": "Museumspause",
+      "date_start": "2026-12-02",
+      "source": "museum"
+    },
+    {
+      "id": "a6439166304ac087",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-08",
+      "source": "museum"
+    },
+    {
+      "id": "d3a73fb64cac0f86",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-12-09",
+      "source": "museum"
+    },
+    {
+      "id": "6da0624d8f993620",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2026-12-12",
+      "source": "museum"
+    },
+    {
+      "id": "712623bc24124a9c",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-15",
+      "source": "museum"
+    },
+    {
+      "id": "731d87843648da13",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-22",
+      "source": "museum"
+    },
+    {
+      "id": "5b2fa53b4d224e27",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-01-12",
+      "source": "museum"
+    },
+    {
+      "id": "977fe135152e063a",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-01-19",
+      "source": "museum"
+    },
+    {
+      "id": "4970b2b5f1feeba4",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-01-26",
+      "source": "museum"
+    },
+    {
+      "id": "ef4e3745cd558465",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-02-02",
+      "source": "museum"
+    },
+    {
+      "id": "dd65f0064bc37985",
+      "title": "Museumspause",
+      "date_start": "2027-02-03",
+      "source": "museum"
+    },
+    {
+      "id": "57226b356397fd45",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-02-09",
+      "source": "museum"
+    },
+    {
+      "id": "d23fafd78c315299",
+      "title": "Stadtgeschichten",
+      "date_start": "2027-02-10",
+      "source": "museum"
+    },
+    {
+      "id": "bd5d3bd760a20207",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2027-02-13",
+      "source": "museum"
+    },
+    {
+      "id": "11f4daea147701fb",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-02-16",
+      "source": "museum"
+    },
+    {
+      "id": "c209b80c92ec5711",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2027-02-17",
+      "source": "museum"
+    },
+    {
+      "id": "1fd07d7716068697",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-02-23",
+      "source": "museum"
+    },
+    {
+      "id": "dbfbf8e4e6d8c729",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2027-02-27",
+      "source": "museum"
+    },
+    {
+      "id": "b787aa357cfe5a89",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-03-02",
+      "source": "museum"
+    },
+    {
+      "id": "bfe6f396a87a2728",
+      "title": "Museumspause",
+      "date_start": "2027-03-03",
+      "source": "museum"
+    },
+    {
+      "id": "2c7757808e044010",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-03-09",
+      "source": "museum"
+    },
+    {
+      "id": "4c612d5d68be6f89",
+      "title": "Stadtgeschichten",
+      "date_start": "2027-03-10",
+      "source": "museum"
+    },
+    {
+      "id": "8708bc91c9738313",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2027-03-13",
+      "source": "museum"
+    },
+    {
+      "id": "36b97b9d52293745",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-03-16",
+      "source": "museum"
+    },
+    {
+      "id": "7553dd43e4517178",
       "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": "2026-03-28",
+      "date_start": null,
       "source": "schloss"
-    },
-    {
-      "id": "ab51e11fb93b9262",
-      "title": "Beer.Kultur 2026",
-      "date_start": "2026-09-17",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "0d835f285259d657",
-      "title": "Tag der Zivilcourage",
-      "date_start": "2026-09-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "9b4cb8131b313f15",
-      "title": "Babymassage",
-      "date_start": "2026-09-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b411d74e886745af",
-      "title": "Stadt-Land-Spielt!",
-      "date_start": "2026-09-19",
-      "source": "stabi"
-    },
-    {
-      "id": "a0663288a1cfc638",
-      "title": "Waldbaden",
-      "date_start": "2026-09-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "3c2688c981226f59",
-      "title": "Rollator-Spaziergang in Eglosheim",
-      "date_start": "2026-09-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "51d308a66a8253d7",
-      "title": "Stoffmarkt Holland",
-      "date_start": "2026-09-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "188a6768d496046c",
-      "title": "Sicher und gesund zur Schule",
-      "date_start": "2026-09-19",
-      "source": "blueba"
-    },
-    {
-      "id": "171a45bcce96b684",
-      "title": "Kinder- und Familienführung: Von Zwergenflüstern und Riesenschritten",
-      "date_start": "2026-09-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "0cf9a42cb2379b85",
-      "title": "Bilderbuchsamstag in der Stadtbibliothek",
-      "date_start": "2026-09-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "e17e33b00cbcdcda",
-      "title": "Automesse Ludwigsburg",
-      "date_start": "2026-09-19",
-      "source": "schloss"
-    },
-    {
-      "id": "9a9b32e5c3f9331d",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-09-19",
-      "source": "schloss"
-    },
-    {
-      "id": "8e19c75aeb61cc8c",
-      "title": "Genussführung: Ludwigsburger Versucherle",
-      "date_start": "2026-09-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b673a95f7a53b1de",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-09-19",
-      "source": "stabi"
-    },
-    {
-      "id": "5b1627d1dfc9b14d",
-      "title": "Theater Tredeschin",
-      "date_start": "2026-09-19",
-      "source": "blueba"
-    },
-    {
-      "id": "23341d3d68cfe75d",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-09-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "c3ae1ed4a7bb90b0",
-      "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-09-19",
-      "source": "schloss"
-    },
-    {
-      "id": "debde90223f978ed",
-      "title": "Genussführung: MärchenZauber & WeinGenuss",
-      "date_start": "2026-09-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "788cd55a81c49050",
-      "title": "Beleuchtung des Rathauses",
-      "date_start": "2026-09-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "82384961d5685a3d",
-      "title": "Münz-Messe Ludwigsburg",
-      "date_start": "2026-09-19",
-      "source": "forum_schlosspark"
-    },
-    {
-      "id": "70cb5f5b31e4b404",
-      "title": "Candlelight: Weihnachtsklassiker",
-      "date_start": "2026-12-18",
-      "source": "musikhalle_lb"
-    },
-    {
-      "id": "37bc4311fee05762",
-      "title": "41. Antiquaria – Antiquariatsmesse Ludwigsburg",
-      "date_start": "2027-01-28",
-      "source": "musikhalle_lb"
     }
   ]
 }

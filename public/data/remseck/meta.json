@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-20T07:00:36.762140+02:00",
+  "scraped_at": "2026-09-21T07:09:23.167316+02:00",
   "city": "remseck",
-  "event_count": 13,
+  "event_count": 12,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,41 +9,41 @@
     "remseck_stadt"
   ],
   "source_counts": {
-    "remseck_stadt": 3,
-    "remseck_mediathek": 10
+    "remseck_mediathek": 10,
+    "remseck_stadt": 2
   },
   "sources_failed": [],
-  "data_hash": "d45e38e2be16f352",
+  "data_hash": "3495b9676d8c5db3",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 20.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 21.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "remseck_stadt": 1.0,
-    "remseck_mediathek": 1.0
+    "remseck_mediathek": 1.0,
+    "remseck_stadt": 0.87
   },
   "source_event_counts": {
-    "remseck_stadt": 3,
-    "remseck_mediathek": 10
+    "remseck_mediathek": 10,
+    "remseck_stadt": 2
   },
   "count_drift_warnings": {
-    "remseck_stadt": "Count drift: 3 vs historical avg 5"
+    "remseck_stadt": "Count drift: 2 vs historical avg 4"
   },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 523.4,
-    "runtime_delta_vs_baseline": 1.924,
+    "runtime_minutes": 520.3,
+    "runtime_delta_vs_baseline": 1.907,
     "source_health": {
-      "remseck_stadt": 1.0,
-      "remseck_mediathek": 1.0
+      "remseck_mediathek": 1.0,
+      "remseck_stadt": 0.87
     },
     "count_drift_warnings": {
-      "remseck_stadt": "Count drift: 3 vs historical avg 5"
+      "remseck_stadt": "Count drift: 2 vs historical avg 4"
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-20T10:56:26.310071+02:00"
+    "generated_at": "2026-09-21T10:53:12.202190+02:00"
   }
 }

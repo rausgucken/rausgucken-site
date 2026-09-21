@@ -1,125 +1,15 @@
 {
-  "generated_at": "2026-09-20T07:45:40.765208+02:00",
+  "generated_at": "2026-09-21T07:50:27.445303+02:00",
   "city": "kornwestheim",
   "sources": [
     "kornwestheim",
-    "das_k_spielplan",
-    "das_k_buecherei"
+    "das_k_buecherei",
+    "das_k_spielplan"
   ],
-  "previous_run": "2026-09-19T08:29:01.214572+02:00",
-  "count_added": 14,
-  "count_removed": 14,
+  "previous_run": "2026-09-20T07:45:40.844637+02:00",
+  "count_added": 5,
+  "count_removed": 6,
   "added": [
-    {
-      "id": "168b293eb982896a",
-      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
-      "date_start": "2026-10-02",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "e093f99b91ad5524",
-      "title": "LesefantenClub",
-      "date_start": "2026-10-08",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "71c4776a338cb74c",
-      "title": "Das Eselsöhrchen",
-      "date_start": "2026-10-13",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "228a53aebf52db3c",
-      "title": "LesefantenClub",
-      "date_start": "2026-10-22",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "f9f00ae1284aa980",
-      "title": "LesefantenClub",
-      "date_start": "2026-11-05",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "2cf04d738f6fce70",
-      "title": "WOHLTÄTIGKEITSKONZERT",
-      "date_start": "2026-11-14",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "ea9ad0cccad10092",
-      "title": "LesefantenClub",
-      "date_start": "2026-11-19",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "c27d089fb2575ea4",
-      "title": "LesefantenClub",
-      "date_start": "2026-12-03",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "fa3439a4917dae43",
-      "title": "Eine Weihnachtsgeschichte",
-      "date_start": "2026-12-10",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "7af06317d03cf260",
-      "title": "Der kleine Erdvogel",
-      "date_start": "2027-01-10",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "444da1c5a86f96ee",
-      "title": "Kornwestheim tanzt! - im WohnCafé Joos",
-      "date_start": "2026-09-23",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "ec1e3c9cf5fa5f41",
-      "title": "Begegnungscafé auf dem Friedhof",
-      "date_start": "2026-10-17",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "dcf34e8c91e81be5",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2027-01-10",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "bc46546860583827",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-01-10",
-      "source": "kornwestheim"
-    }
-  ],
-  "removed": [
-    {
-      "id": "69d81c479bd01fa9",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-09-19",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "282d2aa497f86959",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-09-19",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "81dab07b076e5559",
-      "title": "Begegnungscafé auf dem Friedhof",
-      "date_start": "2026-09-19",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "cc4232c28fe1b541",
-      "title": "Aktionstag Kippen",
-      "date_start": "2026-09-19",
-      "source": "kornwestheim"
-    },
     {
       "id": "62f2f2c1086700f3",
       "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
@@ -127,57 +17,65 @@
       "source": "kornwestheim"
     },
     {
-      "id": "f0374f3f362d7716",
-      "title": "LesefantenClub",
-      "date_start": "2026-10-08",
-      "source": "das_k_buecherei"
-    },
-    {
-      "id": "58c571be7691d87f",
-      "title": "Das Eselsöhrchen",
-      "date_start": "2026-10-13",
-      "source": "das_k_buecherei"
-    },
-    {
-      "id": "ccd46822a6420601",
-      "title": "LesefantenClub",
-      "date_start": "2026-10-22",
-      "source": "das_k_buecherei"
-    },
-    {
-      "id": "28d5ce4f46cbccff",
-      "title": "LesefantenClub",
-      "date_start": "2026-11-05",
-      "source": "das_k_buecherei"
-    },
-    {
-      "id": "d28abc61c2a05487",
-      "title": "WOHLTÄTIGKEITSKONZERT",
-      "date_start": "2026-11-14",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "2656b868c089456b",
-      "title": "LesefantenClub",
-      "date_start": "2026-11-19",
-      "source": "das_k_buecherei"
-    },
-    {
-      "id": "084a9661948b5482",
-      "title": "LesefantenClub",
-      "date_start": "2026-12-03",
-      "source": "das_k_buecherei"
-    },
-    {
-      "id": "4d9eda5d50e5bef5",
-      "title": "Eine Weihnachtsgeschichte",
-      "date_start": "2026-12-10",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "2831e81f57bc0e9c",
-      "title": "Der kleine Erdvogel",
+      "id": "3a3d0924e13261bb",
+      "title": "Galeriekonzert",
       "date_start": "2027-01-10",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "bca002fc84ed3a9d",
+      "title": "Theatersport",
+      "date_start": "2027-01-15",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "889f79e87328acef",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2027-01-15",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "16fa61303bf1a0b7",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "date_start": "2027-01-15",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "c5f747ad38975515",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "date_start": "2026-09-20",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "1b14884a2ab7c600",
+      "title": "33. Kornwestheimer Sika Triathlon",
+      "date_start": "2026-09-20",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "a542d7cd40ca3060",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2026-09-20",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "168b293eb982896a",
+      "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
+      "date_start": "2026-10-02",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "268f92793bad2dd4",
+      "title": "Galeriekonzert",
+      "date_start": "2027-01-10",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "d02c442bcc3e7a2e",
+      "title": "Theatersport",
+      "date_start": "2027-01-15",
       "source": "das_k_spielplan"
     }
   ]
