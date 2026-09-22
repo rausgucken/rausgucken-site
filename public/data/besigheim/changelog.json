@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-09-21T07:22:19.794024+02:00",
+  "generated_at": "2026-09-22T07:21:55.969256+02:00",
   "city": "besigheim",
   "sources": [
     "besigheim_stadt"
   ],
-  "previous_run": "2026-09-20T07:31:20.532842+02:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-09-21T07:22:19.872302+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "4dc8957b10896aa1",
+      "title": "Besigheimer Weihnachtsmarkt",
+      "date_start": "2026-12-05",
+      "source": "besigheim_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "d0dbd57fe35502ea",
-      "title": "Kostümführung „Das Schlitzohr und der Landjäger“",
-      "date_start": "2026-09-20",
+      "id": "3b84310b86c9142e",
+      "title": "Spiele - Nachmittag",
+      "date_start": "2026-09-21",
+      "source": "besigheim_stadt"
+    },
+    {
+      "id": "9d71e03ba7643a1a",
+      "title": "Besigheimer Weihnachtsmarkt",
+      "date_start": "2026-12-05",
       "source": "besigheim_stadt"
     }
   ]

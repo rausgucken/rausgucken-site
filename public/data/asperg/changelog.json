@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-21T06:53:54.074957+02:00",
+  "generated_at": "2026-09-22T06:55:15.350967+02:00",
   "city": "asperg",
   "sources": [
     "asperg_fuehrungen",
-    "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-09-20T07:00:33.764779+02:00",
-  "count_added": 22,
-  "count_removed": 4,
+  "previous_run": "2026-09-21T06:53:54.151942+02:00",
+  "count_added": 25,
+  "count_removed": 1,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -119,6 +119,12 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "52178d60414209cc",
+      "title": "Black stories – Asperg's dunkle Seite",
+      "date_start": "2026-09-20",
+      "source": "asperg_fuehrungen"
+    },
+    {
       "id": "d8d9a4602f7dc217",
       "title": "Tag der dt. Einheit - Kostümführung",
       "date_start": "2025-10-03",
@@ -131,42 +137,36 @@
       "source": "glasperlenspiel"
     },
     {
+      "id": "365e83515fb8e864",
+      "title": "LeseKonzert mit Patricia Prawit",
+      "date_start": "2026-09-20",
+      "source": "glasperlenspiel"
+    },
+    {
       "id": "cb7d4d5e64cac6fd",
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
     },
     {
-      "id": "365e83515fb8e864",
-      "title": "LeseKonzert mit Patricia Prawit",
-      "date_start": "2026-09-20",
+      "id": "1fb695ac38a15fca",
+      "title": "Colors of Soul",
+      "date_start": "2027-09-13",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "b328e18ca3dd9533",
+      "title": "Back to the roots - Rock & More",
+      "date_start": "2026-10-10",
       "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "506ade696d2e3368",
-      "title": "Für Familien - Q-Rage: Tierisch gut",
-      "date_start": "2026-09-20",
+      "id": "1b3f2de4db8cb9e3",
+      "title": "Ausstellungseröffnung Blende 81",
+      "date_start": "2026-10-04",
       "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "6bbb5535a262abb3",
-      "title": "Führung Black stories – Aspergs dunkle Seite",
-      "date_start": "2026-09-20",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "bfe8eca433ed90ec",
-      "title": "Lese-Konzept - Patricia Prawit: Nachtgedanken - nach dem Buch von Marlene Dietrich",
-      "date_start": "2026-09-20",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "b6e12d20d4329c04",
-      "title": "LeseKonzert mit Patricia Prawit",
-      "date_start": "2026-09-20",
-      "source": "glasperlenspiel"
     }
   ]
 }

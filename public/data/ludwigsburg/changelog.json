@@ -1,87 +1,38 @@
 {
-  "generated_at": "2026-09-21T10:40:16.063813+02:00",
+  "generated_at": "2026-09-22T11:20:04.820924+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "labyrinth",
-    "kunstverein_veranstaltungen",
+    "karlskaserne_veranstaltungen",
+    "blueba",
+    "ludwigsburg_stadt",
+    "museum",
     "schloss",
-    "karlskaserne_ausstellungen",
-    "kunstverein_ausstellungen",
+    "stabi",
+    "garnisonmuseum",
     "demokratisches_zentrum",
     "forum_schlosspark",
-    "lisbert_queer",
-    "garnisonmuseum",
-    "ludwigsburg_stadt",
-    "karlskaserne_veranstaltungen",
     "musikhalle_lb",
-    "stabi",
-    "blueba"
+    "karlskaserne_ausstellungen",
+    "lisbert_queer",
+    "kunstverein_veranstaltungen",
+    "kunstverein_ausstellungen",
+    "labyrinth"
   ],
-  "previous_run": "2026-09-20T10:43:24.931315+02:00",
-  "count_added": 9,
-  "count_removed": 67,
+  "previous_run": "2026-09-21T10:40:16.152229+02:00",
+  "count_added": 59,
+  "count_removed": 10,
   "added": [
     {
-      "id": "23fc3c1c77f2a028",
-      "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": "2026-03-28",
+      "id": "0bb89ec23d8ca28f",
+      "title": "Schaurig schön",
+      "date_start": "2026-09-26",
       "source": "schloss"
     },
     {
-      "id": "17afd3d48bcfc7c3",
-      "title": "Klassische Schlossführung in englischer Sprache",
-      "date_start": null,
-      "source": "schloss"
-    },
-    {
-      "id": "4500e3487ea9b49d",
-      "title": "Zwillingstreff",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "6d63db66b49108c8",
-      "title": "Offener Tag der Energieversorgung",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "a1daf2f8e741edb8",
-      "title": "Kochnachmittag: Iranische Küche",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "03056b43531078b0",
-      "title": "Internationale Geschichteninsel auf Albanisch",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "cc98f76966628b02",
-      "title": "Workshop Game Development",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7c66f348d2b8dc09",
-      "title": "Genussführung: Historie und Häppchen",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "3fcda165758a8d33",
-      "title": "Genussführung: BELLA ITALIA",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "4338d42d24902687",
-      "title": "Klassische Schlossführung in englischer Sprache",
-      "date_start": "2026-03-28",
-      "source": "schloss"
+      "id": "158c9d570a35ab21",
+      "title": "Kasernenspaziergang ostwärts der Stuttgarter Straße mit OTL a",
+      "date_start": "2026-09-20",
+      "source": "garnisonmuseum"
     },
     {
       "id": "7c82aba616f7a699",
@@ -94,96 +45,6 @@
       "title": "Little America – Fotografie Jürgen Schadeberg",
       "date_start": "2026-07-01",
       "source": "museum"
-    },
-    {
-      "id": "8a098a1c279787b4",
-      "title": "Kürbis-Regatta",
-      "date_start": "2026-09-19",
-      "source": "blueba"
-    },
-    {
-      "id": "d066f78fe9b981e6",
-      "title": "Automesse Ludwigsburg",
-      "date_start": "2026-09-19",
-      "source": "schloss"
-    },
-    {
-      "id": "29eae0a2fb72ccf6",
-      "title": "Automesse Ludwigsburg 2026",
-      "date_start": "2026-09-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "ba1c40f53266e096",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-09-20",
-      "source": "schloss"
-    },
-    {
-      "id": "2365a4b3de26095e",
-      "title": "(abgesagt) Kürbis-Führung",
-      "date_start": "2026-09-20",
-      "source": "blueba"
-    },
-    {
-      "id": "5df9a4a31a6d9c20",
-      "title": "Etikette und Intrigen",
-      "date_start": "2026-09-20",
-      "source": "schloss"
-    },
-    {
-      "id": "760b0afe2a93301c",
-      "title": "Sprichwörtern auf der Spur",
-      "date_start": "2026-09-20",
-      "source": "schloss"
-    },
-    {
-      "id": "5f89dcb83814742c",
-      "title": "Weltkindertag im Stadionbad",
-      "date_start": "2026-09-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "27c7c889880da9c4",
-      "title": "Theater Tredeschin",
-      "date_start": "2026-09-20",
-      "source": "blueba"
-    },
-    {
-      "id": "2576ffa2c2a6f098",
-      "title": "Genussführung: Kaffeeklatsch mit der Grävenitz",
-      "date_start": "2026-09-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7a20aca28a20b29f",
-      "title": "Kostümführung: Back in the Summer of '69",
-      "date_start": "2026-09-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "3aea54d01a93ae01",
-      "title": "Zusammen wohnen – Gemeinschaft leben: Offenes Treffen",
-      "date_start": "2026-09-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "5a9e9af682f06675",
-      "title": "Jubel, Trubel, Heiterkeit",
-      "date_start": "2026-09-20",
-      "source": "schloss"
-    },
-    {
-      "id": "ddb9fdb4e6849f59",
-      "title": "Moment mal",
-      "date_start": "2026-09-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "c43cc137386882c5",
-      "title": "Space Saloon",
-      "date_start": "2026-09-20",
-      "source": "ludwigsburg_stadt"
     },
     {
       "id": "a321ac78d9c91527",
@@ -474,8 +335,106 @@
       "source": "museum"
     },
     {
-      "id": "7553dd43e4517178",
-      "title": "Klassische Schlossführung „Herzogin“",
+      "id": "4338d42d24902687",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "35bb6bb83d3edb07",
+      "title": "Klassische Führung für Familien",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "35ec619155beffa6",
+      "title": "Selbstbewusst durch den Alltag: Selbstbehauptungstraining für ältere Frauen",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "acdf74b3af133a7d",
+      "title": "Ehrenamtsmesse",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "0acd9e3b412dccd9",
+      "title": "Internationale Geschichteninsel auf Französisch",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2c6246ffdfd49238",
+      "title": "Zwischen Leben und Tod: Das Geheimnis der Endgültigkeit",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "f43741a3f727e1a1",
+      "title": "SportBox am Mehrgenerationenhaus (MGH)",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "b9e6611a159fbb14",
+      "title": "MamaFit - Für Mamas mit Kindern bis 3 Jahre",
+      "date_start": "2026-09-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "7b789bdadc358024",
+      "title": "Wichtel-Stube",
+      "date_start": "2026-09-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "cd5821b7e985ce8c",
+      "title": "Sport-Wichtel",
+      "date_start": "2026-09-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "ec538b4544bbdaee",
+      "title": "Mama Workout Beckenboden",
+      "date_start": "2026-09-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "742a45c7ad8609d8",
+      "title": "Musik trifft Bewegung - Spielerisch die Welt entdecken",
+      "date_start": "2026-09-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "cf9ae5d0db88ed29",
+      "title": "Mama Workout mit Babybauch",
+      "date_start": "2026-09-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "463eea096a847ee8",
+      "title": "Digitale Hilfe im Mehrgenerationenhaus",
+      "date_start": "2026-09-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "d7d93f60cee79589",
+      "title": "Schaurig schön",
+      "date_start": "2026-09-26",
+      "source": "schloss"
+    },
+    {
+      "id": "0ddc5d99ebe250f8",
+      "title": "Klassische Führung für Familien",
+      "date_start": null,
+      "source": "schloss"
+    },
+    {
+      "id": "17afd3d48bcfc7c3",
+      "title": "Klassische Schlossführung in englischer Sprache",
       "date_start": null,
       "source": "schloss"
     }

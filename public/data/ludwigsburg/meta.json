@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-21T10:40:16.152229+02:00",
+  "scraped_at": "2026-09-22T11:20:04.910667+02:00",
   "city": "ludwigsburg",
-  "event_count": 674,
+  "event_count": 722,
   "flagged_count": 0,
   "expired_count": 1,
   "sources_scraped": [
@@ -16,13 +16,15 @@
     "labyrinth",
     "lisbert_queer",
     "ludwigsburg_stadt",
+    "museum",
     "musikhalle_lb",
     "schloss",
     "stabi"
   ],
   "source_counts": {
     "schloss": 123,
-    "ludwigsburg_stadt": 48,
+    "ludwigsburg_stadt": 46,
+    "museum": 50,
     "blueba": 24,
     "stabi": 152,
     "karlskaserne_veranstaltungen": 106,
@@ -37,13 +39,14 @@
     "demokratisches_zentrum": 4
   },
   "sources_failed": [],
-  "data_hash": "9274361fa02fd4aa",
+  "data_hash": "3c0e6c17ba83f0f2",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 21.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 22.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schloss": 1.0,
     "ludwigsburg_stadt": 1.0,
+    "museum": 1.0,
     "blueba": 1.0,
     "stabi": 1.0,
     "karlskaserne_veranstaltungen": 1.0,
@@ -59,7 +62,8 @@
   },
   "source_event_counts": {
     "schloss": 123,
-    "ludwigsburg_stadt": 48,
+    "ludwigsburg_stadt": 46,
+    "museum": 50,
     "blueba": 24,
     "stabi": 152,
     "karlskaserne_veranstaltungen": 106,
@@ -79,11 +83,12 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 520.3,
-    "runtime_delta_vs_baseline": 1.907,
+    "runtime_minutes": 560.1,
+    "runtime_delta_vs_baseline": 2.129,
     "source_health": {
       "schloss": 1.0,
       "ludwigsburg_stadt": 1.0,
+      "museum": 1.0,
       "blueba": 1.0,
       "stabi": 1.0,
       "karlskaserne_veranstaltungen": 1.0,
@@ -100,6 +105,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-21T10:53:11.517687+02:00"
+    "generated_at": "2026-09-22T11:33:58.937343+02:00"
   }
 }
