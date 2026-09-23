@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-22T07:08:01.747683+02:00",
+  "scraped_at": "2026-09-23T06:51:48.517805+02:00",
   "city": "remseck",
-  "event_count": 12,
+  "event_count": 11,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,41 +9,37 @@
     "remseck_stadt"
   ],
   "source_counts": {
-    "remseck_mediathek": 10,
+    "remseck_mediathek": 9,
     "remseck_stadt": 2
   },
   "sources_failed": [],
-  "data_hash": "ff319819ea9e493a",
+  "data_hash": "c177a7750fd12cda",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 22.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 23.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "remseck_mediathek": 1.0,
     "remseck_stadt": 0.87
   },
   "source_event_counts": {
-    "remseck_mediathek": 10,
+    "remseck_mediathek": 9,
     "remseck_stadt": 2
   },
-  "count_drift_warnings": {
-    "remseck_stadt": "Count drift: 2 vs historical avg 4"
-  },
+  "count_drift_warnings": {},
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 560.1,
-    "runtime_delta_vs_baseline": 2.129,
+    "runtime_minutes": 528.8,
+    "runtime_delta_vs_baseline": 1.954,
     "source_health": {
       "remseck_mediathek": 1.0,
       "remseck_stadt": 0.87
     },
-    "count_drift_warnings": {
-      "remseck_stadt": "Count drift: 2 vs historical avg 4"
-    },
+    "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-22T11:33:59.627503+02:00"
+    "generated_at": "2026-09-23T11:02:21.843243+02:00"
   }
 }

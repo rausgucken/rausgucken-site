@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-09-22T10:01:27.383503+02:00",
+  "scraped_at": "2026-09-23T09:54:01.504642+02:00",
   "city": "sersheim",
-  "event_count": 53,
+  "event_count": 52,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "sersheim_gemeinde"
   ],
   "source_counts": {
-    "sersheim_gemeinde": 53
+    "sersheim_gemeinde": 52
   },
   "sources_failed": [],
-  "data_hash": "cbbbeae5ac1eba85",
+  "data_hash": "703a1f1897166a6d",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 22.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 23.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "sersheim_gemeinde": 0.96
   },
   "source_event_counts": {
-    "sersheim_gemeinde": 53
+    "sersheim_gemeinde": 52
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 560.1,
-    "runtime_delta_vs_baseline": 2.129,
+    "runtime_minutes": 528.8,
+    "runtime_delta_vs_baseline": 1.954,
     "source_health": {
       "sersheim_gemeinde": 0.96
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-22T11:33:59.854160+02:00"
+    "generated_at": "2026-09-23T11:02:22.079273+02:00"
   }
 }

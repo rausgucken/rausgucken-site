@@ -1,40 +1,44 @@
 {
-  "scraped_at": "2026-09-22T09:25:52.266900+02:00",
+  "scraped_at": "2026-09-23T09:17:59.824136+02:00",
   "city": "eberdingen",
-  "event_count": 16,
+  "event_count": 11,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "eberdingen_veranstaltungen"
   ],
   "source_counts": {
-    "eberdingen_veranstaltungen": 16
+    "eberdingen_veranstaltungen": 11
   },
   "sources_failed": [],
-  "data_hash": "1a65b537f185fbe1",
+  "data_hash": "7a88556060ff955c",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 22.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 23.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "eberdingen_veranstaltungen": 0.96
   },
   "source_event_counts": {
-    "eberdingen_veranstaltungen": 16
+    "eberdingen_veranstaltungen": 11
   },
-  "count_drift_warnings": {},
+  "count_drift_warnings": {
+    "eberdingen_veranstaltungen": "Count drift: 11 vs historical avg 16"
+  },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 560.1,
-    "runtime_delta_vs_baseline": 2.129,
+    "runtime_minutes": 528.8,
+    "runtime_delta_vs_baseline": 1.954,
     "source_health": {
       "eberdingen_veranstaltungen": 0.96
     },
-    "count_drift_warnings": {},
+    "count_drift_warnings": {
+      "eberdingen_veranstaltungen": "Count drift: 11 vs historical avg 16"
+    },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-22T11:33:57.789719+02:00"
+    "generated_at": "2026-09-23T11:02:20.012019+02:00"
   }
 }

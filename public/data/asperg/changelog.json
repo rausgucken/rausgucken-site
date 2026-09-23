@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-22T06:55:15.350967+02:00",
+  "generated_at": "2026-09-23T06:49:07.672655+02:00",
   "city": "asperg",
   "sources": [
     "asperg_fuehrungen",
-    "glasperlenspiel",
-    "asperg_veranstaltungen"
+    "asperg_veranstaltungen",
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-09-21T06:53:54.151942+02:00",
+  "previous_run": "2026-09-22T06:55:15.428340+02:00",
   "count_added": 25,
-  "count_removed": 1,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -149,24 +149,17 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "1fb695ac38a15fca",
-      "title": "Colors of Soul",
-      "date_start": "2027-09-13",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "b328e18ca3dd9533",
-      "title": "Back to the roots - Rock & More",
-      "date_start": "2026-10-10",
-      "source": "glasperlenspiel"
-    }
-  ],
-  "removed": [
-    {
       "id": "1b3f2de4db8cb9e3",
       "title": "Ausstellungseröffnung Blende 81",
       "date_start": "2026-10-04",
       "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "c3dc5fd9b4a40562",
+      "title": "Ehepaar Lore und Harry",
+      "date_start": "2026-12-13",
+      "source": "glasperlenspiel"
     }
-  ]
+  ],
+  "removed": []
 }

@@ -1,19 +1,43 @@
 {
-  "generated_at": "2026-09-22T09:25:52.185795+02:00",
+  "generated_at": "2026-09-23T09:17:59.749651+02:00",
   "city": "eberdingen",
   "sources": [
     "eberdingen_veranstaltungen"
   ],
-  "previous_run": "2026-09-21T09:21:21.323994+02:00",
-  "count_added": 1,
-  "count_removed": 0,
-  "added": [
+  "previous_run": "2026-09-22T09:25:52.266900+02:00",
+  "count_added": 0,
+  "count_removed": 5,
+  "added": [],
+  "removed": [
+    {
+      "id": "448e68756d359f16",
+      "title": "Betriebsbesichtigung Laiseacker",
+      "date_start": "2026-09-22",
+      "source": "eberdingen_veranstaltungen"
+    },
+    {
+      "id": "a6dace59b4d4f497",
+      "title": "Vortragsveranstaltung 'Global Health'",
+      "date_start": "2026-10-20",
+      "source": "eberdingen_veranstaltungen"
+    },
+    {
+      "id": "0532dc52ebdfc76d",
+      "title": "Weiberzeche",
+      "date_start": "2026-11-05",
+      "source": "eberdingen_veranstaltungen"
+    },
+    {
+      "id": "e429e9a9a6101cd5",
+      "title": "Vortragsveranstaltung 'Nussdorfer Linsen'",
+      "date_start": "2026-11-17",
+      "source": "eberdingen_veranstaltungen"
+    },
     {
       "id": "80ae41e5919e6a2c",
       "title": "Kinderfasching",
       "date_start": "2027-01-30",
       "source": "eberdingen_veranstaltungen"
     }
-  ],
-  "removed": []
+  ]
 }

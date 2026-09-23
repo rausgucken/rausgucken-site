@@ -1,39 +1,70 @@
 {
-  "generated_at": "2026-09-22T11:20:04.820924+02:00",
+  "generated_at": "2026-09-23T10:48:51.299889+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "karlskaserne_veranstaltungen",
-    "blueba",
-    "ludwigsburg_stadt",
-    "museum",
-    "schloss",
-    "stabi",
-    "garnisonmuseum",
-    "demokratisches_zentrum",
-    "forum_schlosspark",
-    "musikhalle_lb",
-    "karlskaserne_ausstellungen",
-    "lisbert_queer",
     "kunstverein_veranstaltungen",
+    "demokratisches_zentrum",
+    "blueba",
+    "karlskaserne_veranstaltungen",
+    "karlskaserne_ausstellungen",
+    "forum_schlosspark",
+    "garnisonmuseum",
+    "musikhalle_lb",
+    "lisbert_queer",
     "kunstverein_ausstellungen",
-    "labyrinth"
+    "schloss",
+    "labyrinth",
+    "stabi",
+    "ludwigsburg_stadt"
   ],
-  "previous_run": "2026-09-21T10:40:16.152229+02:00",
-  "count_added": 59,
-  "count_removed": 10,
+  "previous_run": "2026-09-22T11:20:04.910667+02:00",
+  "count_added": 7,
+  "count_removed": 59,
   "added": [
-    {
-      "id": "0bb89ec23d8ca28f",
-      "title": "Schaurig schön",
-      "date_start": "2026-09-26",
-      "source": "schloss"
-    },
     {
       "id": "158c9d570a35ab21",
       "title": "Kasernenspaziergang ostwärts der Stuttgarter Straße mit OTL a",
       "date_start": "2026-09-20",
       "source": "garnisonmuseum"
     },
+    {
+      "id": "00a7678ecdb8089f",
+      "title": "Zimoun",
+      "date_start": "2026-10-03",
+      "source": "kunstverein_ausstellungen"
+    },
+    {
+      "id": "9ae21e72003fcdeb",
+      "title": "Kohler & Lass | Plateaus",
+      "date_start": "2026-10-03",
+      "source": "kunstverein_ausstellungen"
+    },
+    {
+      "id": "d9915d93e83a8137",
+      "title": "Crystal Soul",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "32e2144913194a5c",
+      "title": "Alles außer C-Dur",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "6129ccc4fec2f731",
+      "title": "Hörtraining in Kleingruppe für Hörgeräteträger",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "48233791561433e8",
+      "title": "Schlößlesfeldfest",
+      "date_start": "2026-09-25",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
     {
       "id": "7c82aba616f7a699",
       "title": "Ausstellung Respekt! Menschen der Karlshöhe",
@@ -47,6 +78,48 @@
       "source": "museum"
     },
     {
+      "id": "57d1f32dfb6aa33c",
+      "title": "MusikGarten",
+      "date_start": "2026-09-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2f01dcf94e2ed77f",
+      "title": "Kamishibai-Erzähltheater",
+      "date_start": "2026-09-22",
+      "source": "stabi"
+    },
+    {
+      "id": "95339ed9312b8e98",
+      "title": "Portugiesischsprachige Spielgruppe / Grupo de Brincadeiras em Português",
+      "date_start": "2026-09-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "70b73a9b6a099ba5",
+      "title": "Selbstbehauptung & Zivilcourage - Sicher handeln im Alltag",
+      "date_start": "2026-09-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "4de8b3c8413730fe",
+      "title": "Rückblick auf die Kulturehrung der Stadt Ludwigsburg",
+      "date_start": "2026-09-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "4dcc175c8f68944b",
+      "title": "Pride",
+      "date_start": "2026-09-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "e7d707ecf3b98a93",
+      "title": "LUDWIGSBURGER VÄTERGRUPPE",
+      "date_start": "2026-09-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
       "id": "a321ac78d9c91527",
       "title": "Gastrosophie-Abend",
       "date_start": "2026-09-24",
@@ -57,6 +130,18 @@
       "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
       "date_start": "2026-09-26",
       "source": "museum"
+    },
+    {
+      "id": "6f946ca5a815342c",
+      "title": "Zimoun",
+      "date_start": "2026-10-02",
+      "source": "kunstverein_ausstellungen"
+    },
+    {
+      "id": "e2c4748b0c75eea3",
+      "title": "Kohler & Lass | Plateaus",
+      "date_start": "2026-10-02",
+      "source": "kunstverein_ausstellungen"
     },
     {
       "id": "1ad591165ba69227",
@@ -333,110 +418,6 @@
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2027-03-16",
       "source": "museum"
-    },
-    {
-      "id": "4338d42d24902687",
-      "title": "Klassische Schlossführung in englischer Sprache",
-      "date_start": "2026-03-28",
-      "source": "schloss"
-    },
-    {
-      "id": "35bb6bb83d3edb07",
-      "title": "Klassische Führung für Familien",
-      "date_start": "2026-03-28",
-      "source": "schloss"
-    },
-    {
-      "id": "35ec619155beffa6",
-      "title": "Selbstbewusst durch den Alltag: Selbstbehauptungstraining für ältere Frauen",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "acdf74b3af133a7d",
-      "title": "Ehrenamtsmesse",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "0acd9e3b412dccd9",
-      "title": "Internationale Geschichteninsel auf Französisch",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "2c6246ffdfd49238",
-      "title": "Zwischen Leben und Tod: Das Geheimnis der Endgültigkeit",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "f43741a3f727e1a1",
-      "title": "SportBox am Mehrgenerationenhaus (MGH)",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "b9e6611a159fbb14",
-      "title": "MamaFit - Für Mamas mit Kindern bis 3 Jahre",
-      "date_start": "2026-09-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7b789bdadc358024",
-      "title": "Wichtel-Stube",
-      "date_start": "2026-09-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "cd5821b7e985ce8c",
-      "title": "Sport-Wichtel",
-      "date_start": "2026-09-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "ec538b4544bbdaee",
-      "title": "Mama Workout Beckenboden",
-      "date_start": "2026-09-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "742a45c7ad8609d8",
-      "title": "Musik trifft Bewegung - Spielerisch die Welt entdecken",
-      "date_start": "2026-09-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "cf9ae5d0db88ed29",
-      "title": "Mama Workout mit Babybauch",
-      "date_start": "2026-09-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "463eea096a847ee8",
-      "title": "Digitale Hilfe im Mehrgenerationenhaus",
-      "date_start": "2026-09-22",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "d7d93f60cee79589",
-      "title": "Schaurig schön",
-      "date_start": "2026-09-26",
-      "source": "schloss"
-    },
-    {
-      "id": "0ddc5d99ebe250f8",
-      "title": "Klassische Führung für Familien",
-      "date_start": null,
-      "source": "schloss"
-    },
-    {
-      "id": "17afd3d48bcfc7c3",
-      "title": "Klassische Schlossführung in englischer Sprache",
-      "date_start": null,
-      "source": "schloss"
     }
   ]
 }
