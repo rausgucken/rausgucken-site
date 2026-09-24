@@ -1,26 +1,33 @@
 {
-  "generated_at": "2026-09-23T10:48:51.299889+02:00",
+  "generated_at": "2026-09-24T12:15:23.689508+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "kunstverein_veranstaltungen",
-    "demokratisches_zentrum",
     "blueba",
-    "karlskaserne_veranstaltungen",
-    "karlskaserne_ausstellungen",
-    "forum_schlosspark",
-    "garnisonmuseum",
-    "musikhalle_lb",
-    "lisbert_queer",
-    "kunstverein_ausstellungen",
-    "schloss",
-    "labyrinth",
     "stabi",
-    "ludwigsburg_stadt"
+    "museum",
+    "demokratisches_zentrum",
+    "musikhalle_lb",
+    "karlskaserne_veranstaltungen",
+    "garnisonmuseum",
+    "karlskaserne_ausstellungen",
+    "ludwigsburg_stadt",
+    "lisbert_queer",
+    "labyrinth",
+    "forum_schlosspark",
+    "kunstverein_ausstellungen",
+    "kunstverein_veranstaltungen",
+    "schloss"
   ],
-  "previous_run": "2026-09-22T11:20:04.910667+02:00",
-  "count_added": 7,
-  "count_removed": 59,
+  "previous_run": "2026-09-23T10:48:51.388820+02:00",
+  "count_added": 63,
+  "count_removed": 12,
   "added": [
+    {
+      "id": "d7d93f60cee79589",
+      "title": "Schaurig schön",
+      "date_start": "2026-09-26",
+      "source": "schloss"
+    },
     {
       "id": "158c9d570a35ab21",
       "title": "Kasernenspaziergang ostwärts der Stuttgarter Straße mit OTL a",
@@ -28,43 +35,17 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "00a7678ecdb8089f",
-      "title": "Zimoun",
-      "date_start": "2026-10-03",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "9ae21e72003fcdeb",
-      "title": "Kohler & Lass | Plateaus",
-      "date_start": "2026-10-03",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "d9915d93e83a8137",
-      "title": "Crystal Soul",
+      "id": "33269db2e42ae70c",
+      "title": "September",
       "date_start": "2026-09-25",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "32e2144913194a5c",
-      "title": "Alles außer C-Dur",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
+      "id": "5a1810fafc3c5ec5",
+      "title": "Candlelight: Taylor Swift",
+      "date_start": "2026-10-09",
+      "source": "musikhalle_lb"
     },
-    {
-      "id": "6129ccc4fec2f731",
-      "title": "Hörtraining in Kleingruppe für Hörgeräteträger",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "48233791561433e8",
-      "title": "Schlößlesfeldfest",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
     {
       "id": "7c82aba616f7a699",
       "title": "Ausstellung Respekt! Menschen der Karlshöhe",
@@ -78,48 +59,6 @@
       "source": "museum"
     },
     {
-      "id": "57d1f32dfb6aa33c",
-      "title": "MusikGarten",
-      "date_start": "2026-09-22",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "2f01dcf94e2ed77f",
-      "title": "Kamishibai-Erzähltheater",
-      "date_start": "2026-09-22",
-      "source": "stabi"
-    },
-    {
-      "id": "95339ed9312b8e98",
-      "title": "Portugiesischsprachige Spielgruppe / Grupo de Brincadeiras em Português",
-      "date_start": "2026-09-22",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "70b73a9b6a099ba5",
-      "title": "Selbstbehauptung & Zivilcourage - Sicher handeln im Alltag",
-      "date_start": "2026-09-22",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4de8b3c8413730fe",
-      "title": "Rückblick auf die Kulturehrung der Stadt Ludwigsburg",
-      "date_start": "2026-09-22",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4dcc175c8f68944b",
-      "title": "Pride",
-      "date_start": "2026-09-22",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "e7d707ecf3b98a93",
-      "title": "LUDWIGSBURGER VÄTERGRUPPE",
-      "date_start": "2026-09-22",
-      "source": "ludwigsburg_stadt"
-    },
-    {
       "id": "a321ac78d9c91527",
       "title": "Gastrosophie-Abend",
       "date_start": "2026-09-24",
@@ -130,18 +69,6 @@
       "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
       "date_start": "2026-09-26",
       "source": "museum"
-    },
-    {
-      "id": "6f946ca5a815342c",
-      "title": "Zimoun",
-      "date_start": "2026-10-02",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "e2c4748b0c75eea3",
-      "title": "Kohler & Lass | Plateaus",
-      "date_start": "2026-10-02",
-      "source": "kunstverein_ausstellungen"
     },
     {
       "id": "1ad591165ba69227",
@@ -231,12 +158,6 @@
       "id": "d8b7431bc4a684b1",
       "title": "Stadtgeschichten",
       "date_start": "2026-11-11",
-      "source": "museum"
-    },
-    {
-      "id": "36e533426584ba6d",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2026-11-14",
       "source": "museum"
     },
     {
@@ -418,6 +339,140 @@
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2027-03-16",
       "source": "museum"
+    },
+    {
+      "id": "a145787661035769",
+      "title": "XR/VR-Initiative",
+      "date_start": "2026-09-29",
+      "source": "stabi"
+    },
+    {
+      "id": "12de921aa92f6f8d",
+      "title": "RHYTHM OF THE DANCE",
+      "date_start": "2027-02-05",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "5899fead49fe083f",
+      "title": "Workshop »Controller Werkstatt«",
+      "date_start": "2026-09-26",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a1d567764ff6e84a",
+      "title": "Rollator-Spaziergang in Eglosheim",
+      "date_start": "2026-09-26",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5bc1e35a4d9f4773",
+      "title": "Flohmarkt",
+      "date_start": "2026-09-26",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fde3f18017714718",
+      "title": "Bilderbuchsamstag in der Stadtbibliothek",
+      "date_start": "2026-09-26",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "eff0c0dcf83a59ad",
+      "title": "Olaf Schönborn Quartett",
+      "date_start": "2027-02-26",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "be566402bd39ffe2",
+      "title": "K.U.T. Trio",
+      "date_start": "2027-03-12",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "190f5cdd9c501df8",
+      "title": "Matthias Daneck’s N.O.W.",
+      "date_start": "2027-03-19",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "df7a3af08fb96862",
+      "title": "Fast Eddy's Blue Band",
+      "date_start": "2027-04-16",
+      "source": "musikhalle_lb"
+    }
+  ],
+  "removed": [
+    {
+      "id": "2b93569bf1a46abd",
+      "title": "Spielzeit FamilienLeben - Mittwochs",
+      "date_start": "2026-09-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "4e8a0c0455f6aa32",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "42377ee10c047331",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-09-23",
+      "source": "stabi"
+    },
+    {
+      "id": "f80ed93a37e10496",
+      "title": "BabyBauchTöne - Pänatales Singen für mich und dich",
+      "date_start": "2026-09-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "43ce673a1ac0c4f6",
+      "title": "Erneuerung der alten Rechten",
+      "date_start": "2026-09-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "e2106b45945045ad",
+      "title": "Josiah Queen",
+      "date_start": "2026-09-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "395cf811387239e4",
+      "title": "September",
+      "date_start": "2026-09-25",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "0bb89ec23d8ca28f",
+      "title": "Schaurig schön",
+      "date_start": "2026-09-26",
+      "source": "schloss"
+    },
+    {
+      "id": "b0d7a0f64d424acd",
+      "title": "Candlelight: Taylor Swift",
+      "date_start": "2026-10-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "9d5a7a749504538b",
+      "title": "Candlelight: Mozart vs. Beethoven",
+      "date_start": "2027-04-18",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "245b56bfe8845739",
+      "title": "Noah Diemer - Echoes Of Lullabies",
+      "date_start": "2027-04-30",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "6e62c21195939264",
+      "title": "STUTTGARTER PHILHARMONIKER",
+      "date_start": "2027-05-09",
+      "source": "forum_schlosspark"
     }
   ]
 }

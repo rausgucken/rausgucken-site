@@ -1,7 +1,7 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-09-24T06:00:02.149881+02:00",
-  "event_count": 24,
+  "generated_at": "2026-09-24T12:15:23.873532+02:00",
+  "event_count": 29,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -25,7 +25,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-09-23T02:13:44.140858+02:00",
+      "scraped_at": "2026-09-24T02:12:57.461419+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -59,7 +59,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-09-23T02:13:44.140895+02:00",
+      "scraped_at": "2026-09-24T02:12:57.461449+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -90,7 +90,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-23T02:05:36.290438+02:00",
+      "scraped_at": "2026-09-24T02:04:56.984060+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -98,6 +98,98 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-raku-in-der-tonwerkstatt-ab-18-jahren-in-ludwigsburg-2026-09-26-karl"
+    },
+    {
+      "id": "a1d567764ff6e84a",
+      "title": "Rollator-Spaziergang in Eglosheim",
+      "date_start": "2026-09-26",
+      "date_end": null,
+      "time": "10:00 bis 11:00",
+      "description": "In diesem Spaziergang durch die Ortschaft Eglosheim werden Teilnehmer mit einem Rollator begleitet. Ein unverbindlicher Ausflug, der das Gemeindeleben näher an den Teilnehmer heranführt.",
+      "location": "siehe Beschreibungstext",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523256641759/index.html",
+      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523256641759/index.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "rollator-spaziergang-in-eglosheim-2026-09-26-ludw",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-09-24T02:12:58.936253+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/rollator-spaziergang-in-eglosheim-2026-09-26-ludw"
+    },
+    {
+      "id": "5bc1e35a4d9f4773",
+      "title": "Flohmarkt",
+      "date_start": "2026-09-26",
+      "date_end": null,
+      "time": "10:00-12:30",
+      "description": "In diesem Flohmarkt finden Sie eine Vielzahl an Gebrauchtwaren, Antiquitäten und Trinkgeldstücken. Der Ort ist das Kinder- und Familienzentrum Grünbühl-Sonnenberg.",
+      "location": "Kinder- und Familienzentrum Grünbühl-Sonnenberg",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523256137350/index.html",
+      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523256137350/index.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "flohmarkt-2026-09-26-ludw",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-09-24T02:12:58.936608+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/flohmarkt-2026-09-26-ludw"
+    },
+    {
+      "id": "5899fead49fe083f",
+      "title": "Workshop »Controller Werkstatt«",
+      "date_start": "2026-09-26",
+      "date_end": null,
+      "time": "10:00-13:00",
+      "description": "In dieser Controller Werkstatt lernen Teilnehmer, elektronische Steuerungen zu entwerfen und zu prototypen. Mit Unterstützung durch einen Experten werden Innovationen in der Hardwareentwicklung erforscht.",
+      "location": "Blühendes Barock",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Workshop"
+      ],
+      "link": "https://www.kulturregion-stuttgart.de/projekte/beyondfun/gaming-zentrale/ludwigsburg-bluehendes-barock",
+      "original_url": "https://www.kulturregion-stuttgart.de/projekte/beyondfun/gaming-zentrale/ludwigsburg-bluehendes-barock",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "workshop-controller-werkstatt-2026-09-26-ludw",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-09-24T02:12:58.936097+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-controller-werkstatt-2026-09-26-ludw"
     },
     {
       "id": "6aaee10dc5b09790",
@@ -119,7 +211,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-23T02:13:44.140929+02:00",
+      "scraped_at": "2026-09-24T02:12:57.461481+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -129,14 +221,46 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/bonsai-beratungsaktion-2026-09-26-blue"
     },
     {
+      "id": "fde3f18017714718",
+      "title": "Bilderbuchsamstag in der Stadtbibliothek",
+      "date_start": "2026-09-26",
+      "date_end": null,
+      "time": "11",
+      "description": "In der Stadtbibliothek im Kulturzentrum findet der Bilderbuchsamstag statt. Kinder und Erwachsene genießen gemeinsam lesereiche Aktivitäten und Workshops rund um klassische Bilderbücher.",
+      "location": "Stadtbibliothek im Kulturzentrum",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx633ee6fd8254a.html",
+      "original_url": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx633ee6fd8254a.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "bilderbuchsamstag-in-der-stadtbibliothek-2026-09-26-ludw",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-09-24T02:12:58.936770+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/bilderbuchsamstag-in-der-stadtbibliothek-2026-09-26-ludw"
+    },
+    {
       "id": "4fdca2680908ba3f",
       "title": "Von weißer Wäsche und bunten Geschichten",
       "date_start": "2026-09-26",
       "date_end": null,
       "time": "11:00",
-      "description": "In dieser Veranstaltung lernen Sie über die Geschichte der weißen Wäsche und entdecken farbenfrohe Geschichten im Residenzschloss Ludwigsburg. Ein einzigartiger Einblick in traditionelle und moderne Waschgewohnheiten.",
+      "description": "In diesem Veranstaltungslauf durch das Residenzschloss Ludwigsburg erzählt Martina Bühner oder Larissa Ruta von den Aventuren der Magd Berta. Gehen Sie mit auf einen historischen Spaziergang, der von der Waschküche bis zum Weinkeller reicht und in dem die Alltagserlebnisse der Hofdamen und Diener belebt werden.",
       "location": "Residenzschloss Ludwigsburg",
-      "price": null,
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
       "age_min": null,
       "age_max": null,
       "tags": [],
@@ -148,7 +272,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-23T02:00:29.228888+02:00",
+      "scraped_at": "2026-09-24T02:00:15.169292+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -181,7 +305,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-23T02:09:08.900455+02:00",
+      "scraped_at": "2026-09-24T02:08:28.486500+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -214,7 +338,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-23T02:09:17.820674+02:00",
+      "scraped_at": "2026-09-24T02:08:37.059575+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -222,6 +346,37 @@
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/schach-fuer-anfaenger-bis-profi-2026-09-26-stab"
+    },
+    {
+      "id": "5f0f28478d262af4",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-09-26",
+      "date_end": null,
+      "time": "11:00–12:00",
+      "description": "In diesem 60-minütigen Rundgang durch das Ludwigsburg Museum im MIK werden die Highlights des Museums entdeckt. Experten führen Besucher durch die Ausstellungsräume und erzählen von den bedeutenden Kunstwerken und Geschichte des Museums.",
+      "location": "Museum im MIK",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung"
+      ],
+      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523252114751",
+      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523252114751",
+      "source": "museum",
+      "city": "ludwigsburg",
+      "slug": "museumsrundgang-ludwigsburg-in-60-minuten-2026-09-26-muse",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-09-24T02:00:03.923297+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtmuseum im MIK",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/museumsrundgang-ludwigsburg-in-60-minuten-2026-09-26-muse"
     },
     {
       "id": "d1f5e17dcdab3b88",
@@ -243,7 +398,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-23T02:00:44.783573+02:00",
+      "scraped_at": "2026-09-24T02:00:16.570567+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -275,7 +430,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-23T02:09:17.820793+02:00",
+      "scraped_at": "2026-09-24T02:08:37.059702+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -285,19 +440,48 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/zwei-lebhaft-erzaehlte-kurze-bibelgeschichten-2026-09-26-stab"
     },
     {
+      "id": "d7d93f60cee79589",
+      "title": "Schaurig schön",
+      "date_start": "2026-09-26",
+      "date_end": null,
+      "time": "19:00",
+      "description": "In dieser Veranstaltung erörtern Fachleute und Experten aus verschiedenen Bereichen Phänomene ums Residenzschloss Ludwigsburg. Mit ihren Kenntnissen und Geschichten beleuchten sie das Schloss mit schauriger Schönheit und historischem Hintergrund.",
+      "location": "Residenzschloss Ludwigsburg",
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung"
+      ],
+      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/schaurig-schoen/9347/769826",
+      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/schaurig-schoen/9347/769826",
+      "source": "schloss",
+      "city": "ludwigsburg",
+      "slug": "schaurig-schoen-2026-09-26-schl",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-09-24T02:00:19.339524+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Residenzschloss Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/schaurig-schoen-2026-09-26-schl"
+    },
+    {
       "id": "6692b8888c9e971b",
       "title": "Haake Festival",
       "date_start": "2026-09-26",
       "date_end": null,
       "time": "19:00",
-      "description": "In diesem Festival wird das Residenzschloss Ludwigsburg zu einem Schauplatz der Musik und Kunst. Ein breites Programm bietet kulturelle Highlights für alle Altersgruppen an.",
+      "description": "Im Ordenssaal des Residenzschlosses Ludwigsburg nimmt ein international besetztes Ensemble preisgekrönter Nachwuchskünstler Platz. Der Ludwigsburger Countertenor und Artist in Residence Nils Wanderer, der kürzlich an der New Yorker Met debütierte, leitet eine abendliche Reise durch unterschiedliche Klang- und Seelenwelten zusammen mit dem Viatores Quartet und herausragenden Solistinnen und Solisten.",
       "location": "Residenzschloss Ludwigsburg",
       "price": null,
       "age_min": null,
       "age_max": null,
-      "tags": [
-        "Musik"
-      ],
+      "tags": [],
       "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/haake-festival/9904/833935",
       "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/haake-festival/9904/833935",
       "source": "schloss",
@@ -306,7 +490,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-23T02:00:51.648298+02:00",
+      "scraped_at": "2026-09-24T02:00:17.968619+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -314,35 +498,6 @@
       "editorial_tip": null,
       "source_label": "Residenzschloss Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/haake-festival-2026-09-26-schl"
-    },
-    {
-      "id": "0bb89ec23d8ca28f",
-      "title": "Schaurig schön",
-      "date_start": "2026-09-26",
-      "date_end": null,
-      "time": "19:30",
-      "description": "In dieser Veranstaltung erörtert Kerstin Frisch M. A., Martina Bühner, Dipl. Übersetzerin, Anna Le Fur B. A., Laura Imprescia, Julia Tluk, Larissa Ruta und Beate Krauth mit der Erzählerin Kerstin Frisch M. A. die schaurigen und schönen Geschichten des Residenzschlosses Ludwigsburg.",
-      "location": "Residenzschloss Ludwigsburg",
-      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
-      "age_min": null,
-      "age_max": null,
-      "tags": [],
-      "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/schaurig-schoen/9347/841772",
-      "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/schaurig-schoen/9347/841772",
-      "source": "schloss",
-      "city": "ludwigsburg",
-      "slug": "schaurig-schoen-2026-09-26-schl",
-      "weekdays": [
-        6
-      ],
-      "scraped_at": "2026-09-23T02:01:21.720045+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Residenzschloss Ludwigsburg",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/schaurig-schoen-2026-09-26-schl"
     },
     {
       "id": "d2630f343ef22203",
@@ -366,7 +521,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-09-23T02:09:17.820914+02:00",
+      "scraped_at": "2026-09-24T02:08:37.059821+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -397,7 +552,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-23T02:01:23.076890+02:00",
+      "scraped_at": "2026-09-24T02:00:38.565218+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -428,7 +583,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-23T02:13:44.140962+02:00",
+      "scraped_at": "2026-09-24T02:12:57.461513+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -459,7 +614,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-23T02:01:24.403811+02:00",
+      "scraped_at": "2026-09-24T02:00:40.684797+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -490,7 +645,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-23T02:05:39.281862+02:00",
+      "scraped_at": "2026-09-24T02:04:59.725667+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -521,7 +676,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-23T02:05:40.905955+02:00",
+      "scraped_at": "2026-09-24T02:05:01.217786+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -550,7 +705,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-23T02:13:44.140992+02:00",
+      "scraped_at": "2026-09-24T02:12:57.461545+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -581,7 +736,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-23T02:05:42.254045+02:00",
+      "scraped_at": "2026-09-24T02:05:02.637758+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -612,7 +767,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-23T02:01:28.087861+02:00",
+      "scraped_at": "2026-09-24T02:00:44.443759+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -644,7 +799,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-23T02:13:44.141023+02:00",
+      "scraped_at": "2026-09-24T02:12:57.461576+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -673,7 +828,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-23T02:01:29.390127+02:00",
+      "scraped_at": "2026-09-24T02:00:45.810433+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -704,7 +859,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-23T02:01:30.734610+02:00",
+      "scraped_at": "2026-09-24T02:00:47.142326+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -733,7 +888,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-23T02:01:32.093020+02:00",
+      "scraped_at": "2026-09-24T02:00:48.509955+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,

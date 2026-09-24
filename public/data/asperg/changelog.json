@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-23T06:49:07.672655+02:00",
+  "generated_at": "2026-09-24T06:49:11.712246+02:00",
   "city": "asperg",
   "sources": [
     "asperg_fuehrungen",
     "asperg_veranstaltungen",
     "glasperlenspiel"
   ],
-  "previous_run": "2026-09-22T06:55:15.428340+02:00",
-  "count_added": 25,
-  "count_removed": 0,
+  "previous_run": "2026-09-23T06:49:07.749651+02:00",
+  "count_added": 24,
+  "count_removed": 1,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -149,17 +149,18 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "1b3f2de4db8cb9e3",
-      "title": "Ausstellungseröffnung Blende 81",
-      "date_start": "2026-10-04",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "c3dc5fd9b4a40562",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2026-12-13",
+      "id": "a88a85dfeef9b2c3",
+      "title": "Jazz-Abende",
+      "date_start": "2026-10-02",
       "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "a681abaf6a708fdd",
+      "title": "Musiktheater (Vorpremiere) - Mike Janipka: Die Sway-Show",
+      "date_start": "2026-09-23",
+      "source": "asperg_veranstaltungen"
+    }
+  ]
 }
