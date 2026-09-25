@@ -1,181 +1,72 @@
 {
-  "generated_at": "2026-09-24T06:49:45.139999+02:00",
+  "generated_at": "2026-09-25T07:34:19.739724+02:00",
   "city": "kornwestheim",
   "sources": [
     "das_k_spielplan",
-    "das_k_buecherei"
+    "das_k_buecherei",
+    "kornwestheim"
   ],
-  "previous_run": "2026-09-23T07:43:00.599684+02:00",
-  "count_added": 20,
-  "count_removed": 196,
+  "previous_run": "2026-09-24T06:49:45.216165+02:00",
+  "count_added": 142,
+  "count_removed": 9,
   "added": [
     {
-      "id": "d8d5210f76076473",
+      "id": "ad0a2d7444f35155",
       "title": "Das Eselsöhrchen",
       "date_start": "2026-09-29",
-      "source": "das_k_buecherei"
+      "source": "kornwestheim"
     },
     {
-      "id": "da4b316c992e5c1d",
+      "id": "f0dfadaa4acbf5d6",
       "title": "Unter offenem Himmel",
       "date_start": "2026-10-02",
-      "source": "das_k_spielplan"
+      "source": "kornwestheim"
     },
     {
-      "id": "f0374f3f362d7716",
-      "title": "LesefantenClub",
-      "date_start": "2026-10-08",
-      "source": "das_k_buecherei"
-    },
-    {
-      "id": "58c571be7691d87f",
+      "id": "71c4776a338cb74c",
       "title": "Das Eselsöhrchen",
       "date_start": "2026-10-13",
-      "source": "das_k_buecherei"
+      "source": "kornwestheim"
     },
     {
-      "id": "ccd46822a6420601",
-      "title": "LesefantenClub",
-      "date_start": "2026-10-22",
-      "source": "das_k_buecherei"
-    },
-    {
-      "id": "28d5ce4f46cbccff",
-      "title": "LesefantenClub",
-      "date_start": "2026-11-05",
-      "source": "das_k_buecherei"
-    },
-    {
-      "id": "2656b868c089456b",
-      "title": "LesefantenClub",
-      "date_start": "2026-11-19",
-      "source": "das_k_buecherei"
-    },
-    {
-      "id": "cfeb0e89ac8cad27",
-      "title": "Das Eselsöhrchen",
-      "date_start": "2026-11-24",
-      "source": "das_k_buecherei"
-    },
-    {
-      "id": "084a9661948b5482",
-      "title": "LesefantenClub",
-      "date_start": "2026-12-03",
-      "source": "das_k_buecherei"
-    },
-    {
-      "id": "58d36d3ccba51a2b",
+      "id": "87c6224234d3caba",
       "title": "Shakespeares Hamlet",
       "date_start": "2026-09-26",
-      "source": "das_k_spielplan"
+      "source": "kornwestheim"
     },
     {
-      "id": "6563069c349f7bb3",
+      "id": "faad9e48fcfdb60f",
       "title": "Der Sohn",
       "date_start": "2026-11-08",
-      "source": "das_k_spielplan"
+      "source": "kornwestheim"
     },
     {
-      "id": "d28abc61c2a05487",
-      "title": "WOHLTÄTIGKEITSKONZERT",
-      "date_start": "2026-11-14",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "383148ed663e9208",
-      "title": "Nils Holgersson",
-      "date_start": "2026-11-22",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "5a27cc2195dce8d4",
-      "title": "Stoppok",
-      "date_start": "2026-11-28",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "4d9eda5d50e5bef5",
-      "title": "Eine Weihnachtsgeschichte",
-      "date_start": "2026-12-10",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "2831e81f57bc0e9c",
-      "title": "Der kleine Erdvogel",
-      "date_start": "2027-01-10",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "268f92793bad2dd4",
-      "title": "Galeriekonzert",
-      "date_start": "2027-01-10",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "d02c442bcc3e7a2e",
-      "title": "Theatersport",
-      "date_start": "2027-01-15",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "ba4a032394315414",
-      "title": "SWR Big Band",
-      "date_start": "2026-11-20",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "65a57fe2a7041b42",
+      "id": "6112be269b9c287c",
       "title": "SchwabenNacht Kornwestheim",
       "date_start": "2026-12-04",
-      "source": "das_k_spielplan"
-    }
-  ],
-  "removed": [
-    {
-      "id": "36a1f924c2a311ae",
-      "title": "Ausschuss für Soziales und Integration (SIA)",
-      "date_start": "2026-09-23",
       "source": "kornwestheim"
     },
     {
-      "id": "444da1c5a86f96ee",
-      "title": "Kornwestheim tanzt! - im WohnCafé Joos",
-      "date_start": "2026-09-23",
+      "id": "fa3439a4917dae43",
+      "title": "Eine Weihnachtsgeschichte",
+      "date_start": "2026-12-10",
       "source": "kornwestheim"
     },
     {
-      "id": "db5b411c62a9715a",
-      "title": "Kaffeetreff - Bingo",
-      "date_start": "2026-09-23",
+      "id": "7af06317d03cf260",
+      "title": "Der kleine Erdvogel",
+      "date_start": "2027-01-10",
       "source": "kornwestheim"
     },
     {
-      "id": "6e6d60f396c0a4e4",
-      "title": "Gemeinderat (GR)",
-      "date_start": "2026-09-24",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "94b26c5043c07bec",
-      "title": "Kaffeetreff mit Singen",
-      "date_start": "2026-09-24",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "be73174b3cde16cb",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-09-25",
+      "id": "bca002fc84ed3a9d",
+      "title": "Theatersport",
+      "date_start": "2027-01-15",
       "source": "kornwestheim"
     },
     {
       "id": "4f940b380fb78555",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-09-25",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "b964e1035e4243a1",
-      "title": "Qigong-Workshopreihe",
       "date_start": "2026-09-25",
       "source": "kornwestheim"
     },
@@ -186,32 +77,20 @@
       "source": "kornwestheim"
     },
     {
-      "id": "643eae82e16c405c",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-09-26",
+      "id": "b964e1035e4243a1",
+      "title": "Qigong-Workshopreihe",
+      "date_start": "2026-09-25",
       "source": "kornwestheim"
     },
     {
-      "id": "28c6bb9a9bfa10db",
-      "title": "Internationales Frühstück",
-      "date_start": "2026-09-26",
+      "id": "be73174b3cde16cb",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "date_start": "2026-09-25",
       "source": "kornwestheim"
     },
     {
       "id": "4a6bda7a06614742",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-09-26",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "bd662f8f7fddebe7",
-      "title": "Workshop für griechische Folklore",
-      "date_start": "2026-09-26",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "29fdf22c798257a8",
-      "title": "Weststadtfest",
       "date_start": "2026-09-26",
       "source": "kornwestheim"
     },
@@ -228,15 +107,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "87c6224234d3caba",
-      "title": "Shakespeares Hamlet",
-      "date_start": "2026-09-26",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "c34b869b854d6086",
+      "id": "643eae82e16c405c",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-09-27",
+      "date_start": "2026-09-26",
       "source": "kornwestheim"
     },
     {
@@ -258,6 +131,12 @@
       "source": "kornwestheim"
     },
     {
+      "id": "489a2f141d8d370d",
+      "title": "Malen an der Staffelei",
+      "date_start": "2026-09-27",
+      "source": "kornwestheim"
+    },
+    {
       "id": "d88b3ed4cbe7bea0",
       "title": "Öffentliche Sonderführung am Wochenende",
       "date_start": "2026-09-27",
@@ -270,26 +149,20 @@
       "source": "kornwestheim"
     },
     {
-      "id": "0424069f028273f4",
-      "title": "Sprachcafé",
-      "date_start": "2026-09-28",
+      "id": "c34b869b854d6086",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "date_start": "2026-09-27",
       "source": "kornwestheim"
     },
     {
-      "id": "ad0a2d7444f35155",
-      "title": "Das Eselsöhrchen",
+      "id": "9c4eebe9d04a7bc0",
+      "title": "Kaffeetreff",
       "date_start": "2026-09-29",
       "source": "kornwestheim"
     },
     {
       "id": "ca7635c59a5e8b6f",
       "title": "Interkulturelles Kochen",
-      "date_start": "2026-09-29",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "9c4eebe9d04a7bc0",
-      "title": "Kaffeetreff",
       "date_start": "2026-09-29",
       "source": "kornwestheim"
     },
@@ -306,9 +179,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "9e9349740dda4c0a",
-      "title": "Kaffeetreff - Bingo",
-      "date_start": "2026-09-30",
+      "id": "80df3568c9bf4928",
+      "title": "Kaffeetreff mit Singen",
+      "date_start": "2026-10-01",
       "source": "kornwestheim"
     },
     {
@@ -318,25 +191,19 @@
       "source": "kornwestheim"
     },
     {
-      "id": "80df3568c9bf4928",
-      "title": "Kaffeetreff mit Singen",
-      "date_start": "2026-10-01",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "32f9c59b86b136bf",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-02",
-      "source": "kornwestheim"
-    },
-    {
       "id": "7b9b779e949e70dc",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
       "date_start": "2026-10-02",
       "source": "kornwestheim"
     },
     {
-      "id": "62f2f2c1086700f3",
+      "id": "1d9f9477f4ba1bb0",
+      "title": "Kaffeetreff - Spielenachmittag",
+      "date_start": "2026-10-02",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "168b293eb982896a",
       "title": "Öffentliche Führung in der Kulturgeschichtlichen Sammlung",
       "date_start": "2026-10-02",
       "source": "kornwestheim"
@@ -354,39 +221,15 @@
       "source": "kornwestheim"
     },
     {
-      "id": "f0dfadaa4acbf5d6",
-      "title": "Unter offenem Himmel",
-      "date_start": "2026-10-02",
-      "source": "kornwestheim"
-    },
-    {
       "id": "521821b755e88f2d",
       "title": "GGG – GrundGesetzGehört. Demokratie geht uns alle an!",
       "date_start": "2026-10-02",
       "source": "kornwestheim"
     },
     {
-      "id": "1d9f9477f4ba1bb0",
-      "title": "Kaffeetreff - Spielenachmittag",
-      "date_start": "2026-10-02",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "7c61b1f4b94d1c1d",
+      "id": "32f9c59b86b136bf",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-03",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "f5dcef8615729e82",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-10-03",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "f0b771989c4becf1",
-      "title": "Begegnungscafé auf dem Friedhof",
-      "date_start": "2026-10-03",
+      "date_start": "2026-10-02",
       "source": "kornwestheim"
     },
     {
@@ -396,153 +239,21 @@
       "source": "kornwestheim"
     },
     {
-      "id": "f62ea4c73751e5d4",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-04",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "5d0b939bacb46d39",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-10-04",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "8c26db1397b18b28",
-      "title": "Begegnungscafé auf dem Friedhof",
-      "date_start": "2026-10-04",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "eda672ebcec9c721",
-      "title": "Öffentliche Sonntagsführung",
-      "date_start": "2026-10-04",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "3ef4110e11d8f55f",
-      "title": "Salsa- und Bachata-Workshop mit internationaler Küche",
-      "date_start": "2026-10-04",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "66b6506c0a1b414e",
-      "title": "Ausschuss für Umwelt und Technik (AUT)",
-      "date_start": "2026-10-06",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "e093f99b91ad5524",
-      "title": "LesefantenClub",
-      "date_start": "2026-10-08",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "07e69dbc803fa42e",
-      "title": "Jugenddelegation Kornwestheim (JuDeko)",
-      "date_start": "2026-10-08",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "a4d440cd26aa94ec",
-      "title": "Verwaltungs- und Finanzausschuss (VFA)",
-      "date_start": "2026-10-08",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "131f4ab956ee4a0b",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-09",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "debbb2e931762122",
-      "title": "Frühstücksführung",
-      "date_start": "2026-10-09",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "093b94428052be3a",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-10-09",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "94222d91c7f1f5b3",
-      "title": "Öffentliche Kuratorinnenführung",
-      "date_start": "2026-10-09",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "764dd45144a560d7",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-10",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "b04d939bc400d982",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-10-10",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "bd1aadbb4feeb006",
-      "title": "Begegnungscafé auf dem Friedhof",
-      "date_start": "2026-10-10",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "0211e188511965a1",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-11",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "1d4a2df7f383b199",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-10-11",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "ad01dd21b332f507",
-      "title": "Der Kunst auf der Spur",
-      "date_start": "2026-10-11",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "71c4776a338cb74c",
-      "title": "Das Eselsöhrchen",
-      "date_start": "2026-10-13",
-      "source": "kornwestheim"
-    },
-    {
       "id": "03e2a4ccabd77d99",
       "title": "Herbstfest",
       "date_start": "2026-10-13",
       "source": "kornwestheim"
     },
     {
-      "id": "8bd6d996988d9c31",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-16",
+      "id": "b526ce6d30fd0022",
+      "title": "Filmabend: Ich sterbe. Kommst Du?",
+      "date_start": "2026-10-15",
       "source": "kornwestheim"
     },
     {
       "id": "75901bd4680750ae",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
       "date_start": "2026-10-16",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "94fa3fc45afc14ce",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-17",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "9e850d036c1c0d94",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-10-17",
       "source": "kornwestheim"
     },
     {
@@ -558,14 +269,20 @@
       "source": "kornwestheim"
     },
     {
-      "id": "427448d23d43a42b",
+      "id": "94fa3fc45afc14ce",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-18",
+      "date_start": "2026-10-17",
       "source": "kornwestheim"
     },
     {
       "id": "ceb43dfc82e675bd",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2026-10-18",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "427448d23d43a42b",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
       "date_start": "2026-10-18",
       "source": "kornwestheim"
     },
@@ -576,27 +293,15 @@
       "source": "kornwestheim"
     },
     {
-      "id": "81d4240b7a6c8b99",
-      "title": "Kornwestheim tanzt! - im WohnCafé Joos",
-      "date_start": "2026-10-21",
-      "source": "kornwestheim"
-    },
-    {
       "id": "ad452d079e08dbb4",
       "title": "Brezel und Buch",
       "date_start": "2026-10-21",
       "source": "kornwestheim"
     },
     {
-      "id": "228a53aebf52db3c",
-      "title": "LesefantenClub",
-      "date_start": "2026-10-22",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "9a63c2c6830c42db",
-      "title": "Gemeinderat (GR)",
-      "date_start": "2026-10-22",
+      "id": "81d4240b7a6c8b99",
+      "title": "Kornwestheim tanzt! - im WohnCafé Joos",
+      "date_start": "2026-10-21",
       "source": "kornwestheim"
     },
     {
@@ -606,9 +311,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "04626a7b892d7c79",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-23",
+      "id": "9a63c2c6830c42db",
+      "title": "Gemeinderat (GR)",
+      "date_start": "2026-10-22",
       "source": "kornwestheim"
     },
     {
@@ -624,9 +329,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "222555911a4c3670",
+      "id": "04626a7b892d7c79",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-24",
+      "date_start": "2026-10-23",
       "source": "kornwestheim"
     },
     {
@@ -648,8 +353,14 @@
       "source": "kornwestheim"
     },
     {
-      "id": "61f0ebc7ceee65bd",
+      "id": "222555911a4c3670",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "date_start": "2026-10-24",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "0c5dc9ed88e6f550",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
       "date_start": "2026-10-25",
       "source": "kornwestheim"
     },
@@ -660,8 +371,8 @@
       "source": "kornwestheim"
     },
     {
-      "id": "0c5dc9ed88e6f550",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "id": "61f0ebc7ceee65bd",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
       "date_start": "2026-10-25",
       "source": "kornwestheim"
     },
@@ -672,15 +383,15 @@
       "source": "kornwestheim"
     },
     {
-      "id": "d228f189a7062b0b",
-      "title": "Offene Sprechstunde der Bezirksgruppe Ludwigsburg des Blinden- und Sehbehindertenverbandes Württemberg e.V.",
-      "date_start": "2026-10-28",
+      "id": "0ec0a0bcc8ad9545",
+      "title": "Medienflohmarkt",
+      "date_start": "2026-10-27",
       "source": "kornwestheim"
     },
     {
-      "id": "93211967c3293ff9",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-30",
+      "id": "d228f189a7062b0b",
+      "title": "Offene Sprechstunde der Bezirksgruppe Ludwigsburg des Blinden- und Sehbehindertenverbandes Württemberg e.V.",
+      "date_start": "2026-10-28",
       "source": "kornwestheim"
     },
     {
@@ -696,9 +407,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "8eed9f7962111217",
+      "id": "93211967c3293ff9",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-31",
+      "date_start": "2026-10-30",
       "source": "kornwestheim"
     },
     {
@@ -714,9 +425,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "090511a8aba6023f",
+      "id": "8eed9f7962111217",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-11-01",
+      "date_start": "2026-10-31",
       "source": "kornwestheim"
     },
     {
@@ -732,15 +443,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "f9f00ae1284aa980",
-      "title": "LesefantenClub",
-      "date_start": "2026-11-05",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "600778c0770b87c5",
+      "id": "090511a8aba6023f",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-11-06",
+      "date_start": "2026-11-01",
       "source": "kornwestheim"
     },
     {
@@ -756,14 +461,20 @@
       "source": "kornwestheim"
     },
     {
-      "id": "517712ef788daf1b",
+      "id": "600778c0770b87c5",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-11-07",
+      "date_start": "2026-11-06",
       "source": "kornwestheim"
     },
     {
       "id": "2706c6b7a9cd7e94",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2026-11-07",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "517712ef788daf1b",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
       "date_start": "2026-11-07",
       "source": "kornwestheim"
     },
@@ -774,15 +485,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "4813f6aa61d13c7e",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-11-08",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "faad9e48fcfdb60f",
-      "title": "Der Sohn",
-      "date_start": "2026-11-08",
+      "id": "b5564ce2fa09d4fb",
+      "title": "Märchentheater rund um das Thema „Wein und mehr\"",
+      "date_start": "2026-11-10",
       "source": "kornwestheim"
     },
     {
@@ -792,21 +497,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "b5564ce2fa09d4fb",
-      "title": "Märchentheater rund um das Thema „Wein und mehr\"",
-      "date_start": "2026-11-10",
-      "source": "kornwestheim"
-    },
-    {
       "id": "810c10311498a454",
       "title": "Verwaltungs- und Finanzausschuss (VFA)",
       "date_start": "2026-11-12",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "9193343fc41c6e23",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-11-13",
       "source": "kornwestheim"
     },
     {
@@ -822,9 +515,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "0f8e03128c7d6f6c",
+      "id": "9193343fc41c6e23",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-11-14",
+      "date_start": "2026-11-13",
       "source": "kornwestheim"
     },
     {
@@ -834,15 +527,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "2cf04d738f6fce70",
-      "title": "WOHLTÄTIGKEITSKONZERT",
-      "date_start": "2026-11-14",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "d24fe59da590e578",
+      "id": "0f8e03128c7d6f6c",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-11-15",
+      "date_start": "2026-11-14",
       "source": "kornwestheim"
     },
     {
@@ -852,123 +539,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "445d9560d5a397b2",
-      "title": "Kornwestheim tanzt! - im WohnCafé Joos",
-      "date_start": "2026-11-18",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "ea9ad0cccad10092",
-      "title": "LesefantenClub",
-      "date_start": "2026-11-19",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "8531e96a361fb1d7",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-11-20",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "a0cd585678266ba6",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-11-20",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "5bab2909f37620a6",
-      "title": "Öffentliche Kuratorinnenführung",
-      "date_start": "2026-11-20",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "a4ce8b80f5e24abd",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-11-21",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "b797fbe4a89c009e",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-11-21",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "a1099b04da9e2d42",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-11-22",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "64ad85e405c99c87",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-11-22",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "751b19f74a38779c",
-      "title": "Nils Holgersson",
-      "date_start": "2026-11-22",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "3eb6640d79ab617a",
-      "title": "Das Eselsöhrchen",
-      "date_start": "2026-11-24",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "5e8318c5ff78b81b",
-      "title": "Offene Sprechstunde der Bezirksgruppe Ludwigsburg des Blinden- und Sehbehindertenverbandes Württemberg e.V.",
-      "date_start": "2026-11-25",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "0f0af3d3adf5d0cf",
-      "title": "Gemeinderat (GR)",
-      "date_start": "2026-11-26",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "39e7e16e66b80e73",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-11-27",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "f3a9fca61094c68d",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-11-27",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "b25403e876d99bb6",
-      "title": "Nachts im Museum – Märchenführung mit Xenia Busam",
-      "date_start": "2026-11-27",
-      "source": "kornwestheim"
-    },
-    {
       "id": "98a525d4eb739691",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
       "date_start": "2026-11-28",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "deda29c5f63062dd",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-11-28",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "18e363f8690973fb",
-      "title": "Stoppok",
-      "date_start": "2026-11-28",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "6734b110071dc580",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-11-29",
       "source": "kornwestheim"
     },
     {
@@ -978,15 +551,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "c27d089fb2575ea4",
-      "title": "LesefantenClub",
-      "date_start": "2026-12-03",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "7efc8c8938bd5e36",
+      "id": "6734b110071dc580",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-04",
+      "date_start": "2026-11-29",
       "source": "kornwestheim"
     },
     {
@@ -1002,9 +569,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "45bfe6c7a5e004af",
+      "id": "7efc8c8938bd5e36",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-05",
+      "date_start": "2026-12-04",
       "source": "kornwestheim"
     },
     {
@@ -1014,9 +581,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "02e2990716355ddf",
+      "id": "45bfe6c7a5e004af",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-06",
+      "date_start": "2026-12-05",
       "source": "kornwestheim"
     },
     {
@@ -1026,14 +593,20 @@
       "source": "kornwestheim"
     },
     {
-      "id": "87a5e58c12140f7c",
-      "title": "Ausschuss für Umwelt und Technik (AUT)",
-      "date_start": "2026-12-08",
+      "id": "02e2990716355ddf",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "date_start": "2026-12-06",
       "source": "kornwestheim"
     },
     {
       "id": "208039d1b902263d",
       "title": "Adventsfeier",
+      "date_start": "2026-12-08",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "87a5e58c12140f7c",
+      "title": "Ausschuss für Umwelt und Technik (AUT)",
       "date_start": "2026-12-08",
       "source": "kornwestheim"
     },
@@ -1056,18 +629,6 @@
       "source": "kornwestheim"
     },
     {
-      "id": "fa3439a4917dae43",
-      "title": "Eine Weihnachtsgeschichte",
-      "date_start": "2026-12-10",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "4b8adf80e7b3a557",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-11",
-      "source": "kornwestheim"
-    },
-    {
       "id": "47e24aed7529ecfd",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
       "date_start": "2026-12-11",
@@ -1080,9 +641,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "21f5e725d0749feb",
+      "id": "4b8adf80e7b3a557",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-12",
+      "date_start": "2026-12-11",
       "source": "kornwestheim"
     },
     {
@@ -1092,14 +653,20 @@
       "source": "kornwestheim"
     },
     {
-      "id": "0fdecf7712525550",
+      "id": "21f5e725d0749feb",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-13",
+      "date_start": "2026-12-12",
       "source": "kornwestheim"
     },
     {
       "id": "39e6325cb1407233",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2026-12-13",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "0fdecf7712525550",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
       "date_start": "2026-12-13",
       "source": "kornwestheim"
     },
@@ -1122,21 +689,15 @@
       "source": "kornwestheim"
     },
     {
-      "id": "62d04eeaba8d1e0e",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-18",
-      "source": "kornwestheim"
-    },
-    {
       "id": "d525d01e339a22e9",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
       "date_start": "2026-12-18",
       "source": "kornwestheim"
     },
     {
-      "id": "9a63219a16ba34cf",
+      "id": "62d04eeaba8d1e0e",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-19",
+      "date_start": "2026-12-18",
       "source": "kornwestheim"
     },
     {
@@ -1146,9 +707,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "60b90059499e74b2",
+      "id": "9a63219a16ba34cf",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-20",
+      "date_start": "2026-12-19",
       "source": "kornwestheim"
     },
     {
@@ -1158,9 +719,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "2f732c780264ae76",
+      "id": "60b90059499e74b2",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-25",
+      "date_start": "2026-12-20",
       "source": "kornwestheim"
     },
     {
@@ -1170,9 +731,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "3b3ef0428d2600b5",
+      "id": "2f732c780264ae76",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-26",
+      "date_start": "2026-12-25",
       "source": "kornwestheim"
     },
     {
@@ -1182,9 +743,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "989ea40c59a64c0d",
+      "id": "3b3ef0428d2600b5",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-12-27",
+      "date_start": "2026-12-26",
       "source": "kornwestheim"
     },
     {
@@ -1194,9 +755,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "980b676cf70c7f3b",
+      "id": "989ea40c59a64c0d",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-01-01",
+      "date_start": "2026-12-27",
       "source": "kornwestheim"
     },
     {
@@ -1206,9 +767,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "27d6182c0fe78685",
+      "id": "980b676cf70c7f3b",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-01-02",
+      "date_start": "2027-01-01",
       "source": "kornwestheim"
     },
     {
@@ -1218,9 +779,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "2372d421b2c900ec",
+      "id": "27d6182c0fe78685",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-01-03",
+      "date_start": "2027-01-02",
       "source": "kornwestheim"
     },
     {
@@ -1230,9 +791,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "1df9abd2a57e5188",
+      "id": "2372d421b2c900ec",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-01-08",
+      "date_start": "2027-01-03",
       "source": "kornwestheim"
     },
     {
@@ -1242,9 +803,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "ebfcfeb796bc2b33",
+      "id": "1df9abd2a57e5188",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-01-09",
+      "date_start": "2027-01-08",
       "source": "kornwestheim"
     },
     {
@@ -1254,9 +815,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "bc46546860583827",
+      "id": "ebfcfeb796bc2b33",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-01-10",
+      "date_start": "2027-01-09",
       "source": "kornwestheim"
     },
     {
@@ -1266,21 +827,9 @@
       "source": "kornwestheim"
     },
     {
-      "id": "7af06317d03cf260",
-      "title": "Der kleine Erdvogel",
-      "date_start": "2027-01-10",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "3a3d0924e13261bb",
-      "title": "Galeriekonzert",
-      "date_start": "2027-01-10",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "16fa61303bf1a0b7",
+      "id": "bc46546860583827",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-01-15",
+      "date_start": "2027-01-10",
       "source": "kornwestheim"
     },
     {
@@ -1290,9 +839,15 @@
       "source": "kornwestheim"
     },
     {
-      "id": "bca002fc84ed3a9d",
-      "title": "Theatersport",
+      "id": "16fa61303bf1a0b7",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
       "date_start": "2027-01-15",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "daa601368e2579fe",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2027-01-16",
       "source": "kornwestheim"
     },
     {
@@ -1302,10 +857,66 @@
       "source": "kornwestheim"
     },
     {
-      "id": "daa601368e2579fe",
+      "id": "de73c7e7491f1d7b",
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2027-01-16",
+      "date_start": "2027-01-17",
       "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "58d36d3ccba51a2b",
+      "title": "Shakespeares Hamlet",
+      "date_start": "2026-09-26",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "d8d5210f76076473",
+      "title": "Das Eselsöhrchen",
+      "date_start": "2026-09-29",
+      "source": "das_k_buecherei"
+    },
+    {
+      "id": "da4b316c992e5c1d",
+      "title": "Unter offenem Himmel",
+      "date_start": "2026-10-02",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "58c571be7691d87f",
+      "title": "Das Eselsöhrchen",
+      "date_start": "2026-10-13",
+      "source": "das_k_buecherei"
+    },
+    {
+      "id": "6563069c349f7bb3",
+      "title": "Der Sohn",
+      "date_start": "2026-11-08",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "65a57fe2a7041b42",
+      "title": "SchwabenNacht Kornwestheim",
+      "date_start": "2026-12-04",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "4d9eda5d50e5bef5",
+      "title": "Eine Weihnachtsgeschichte",
+      "date_start": "2026-12-10",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "2831e81f57bc0e9c",
+      "title": "Der kleine Erdvogel",
+      "date_start": "2027-01-10",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "d02c442bcc3e7a2e",
+      "title": "Theatersport",
+      "date_start": "2027-01-15",
+      "source": "das_k_spielplan"
     }
   ]
 }

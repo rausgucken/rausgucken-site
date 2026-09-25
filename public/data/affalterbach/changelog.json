@@ -1,12 +1,38 @@
 {
-  "generated_at": "2026-09-24T07:38:59.411754+02:00",
+  "generated_at": "2026-09-25T06:54:43.634772+02:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-09-23T07:42:39.880475+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-09-24T07:38:59.486246+02:00",
+  "count_added": 2,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "60c593c2b247acad",
+      "title": "Gemeinderatssitzung",
+      "date_start": "2026-10-22",
+      "source": "affalterbach_stadt"
+    },
+    {
+      "id": "c15363814a92d014",
+      "title": "Seniorenkreis",
+      "date_start": "2026-10-29",
+      "source": "affalterbach_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "29e02e67b3ebb3a4",
+      "title": "Seniorenkreis",
+      "date_start": "2026-09-24",
+      "source": "affalterbach_stadt"
+    },
+    {
+      "id": "e73feba2b9623210",
+      "title": "Gemeinderatssitzung",
+      "date_start": "2026-09-24",
+      "source": "affalterbach_stadt"
+    }
+  ]
 }
