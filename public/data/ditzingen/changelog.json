@@ -1,50 +1,51 @@
 {
-  "generated_at": "2026-09-25T06:46:38.426391+02:00",
+  "generated_at": "2026-09-26T06:55:54.845060+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_treffpunkt_adler",
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-09-24T07:07:24.471487+02:00",
-  "count_added": 0,
-  "count_removed": 6,
-  "added": [],
+  "previous_run": "2026-09-25T06:46:38.508174+02:00",
+  "count_added": 1,
+  "count_removed": 5,
+  "added": [
+    {
+      "id": "49c0c87ab14f5807",
+      "title": "Spanisch Stammtisch",
+      "date_start": "2026-10-28",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ],
   "removed": [
     {
-      "id": "039bbb47496061be",
-      "title": "Smartphone-Workshop 1",
-      "date_start": "2026-09-24",
+      "id": "ec2a3ffae4d0deec",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-09-25",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "204fbf4e9bb01701",
-      "title": "Computer- und Handy-Sprechstunde",
-      "date_start": "2026-09-24",
+      "id": "c046159b7346e984",
+      "title": "Rummikub",
+      "date_start": "2026-09-25",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "ba4bfbcff92ad8a0",
-      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
-      "date_start": "2026-09-24",
-      "source": "ditzingen_treffpunkt_adler"
-    },
-    {
-      "id": "9efeb8ba653419fe",
-      "title": "Abenteuer Bilderbuch für Kinder von 4 bis 6 Jahren",
-      "date_start": "2026-09-24",
+      "id": "794d8540f2edc1d5",
+      "title": "„Lückenleben“: Mein Mann\\, der Alzheimer\\, die Konventionen und ich – eine Lesung mit Katrin Seyfert",
+      "date_start": "2026-09-25",
       "source": "ditzingen_stadt"
     },
     {
-      "id": "6ca3efe29d5db9d2",
-      "title": "Vortrag: Herausforderung Demenz ()",
-      "date_start": "2026-09-24",
-      "source": "ditzingen_treffpunkt_adler"
+      "id": "8dc71e995540394f",
+      "title": "Europäisches Filmfestival : Die Herbstzeitlosen",
+      "date_start": "2026-09-25",
+      "source": "ditzingen_stadt"
     },
     {
-      "id": "78b9bb0a2d320bfe",
-      "title": "Herausforderung Demenz - Ein Vortrag im Rahmen der Woche der Demenz im Landkreis Ludwigsburg",
-      "date_start": "2026-09-24",
-      "source": "ditzingen_stadt"
+      "id": "a411308305b6280e",
+      "title": "?? Spanisch Stammtisch",
+      "date_start": "2026-10-28",
+      "source": "ditzingen_treffpunkt_adler"
     }
   ]
 }

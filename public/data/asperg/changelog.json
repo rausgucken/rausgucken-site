@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-25T06:44:47.816777+02:00",
+  "generated_at": "2026-09-26T06:46:24.098900+02:00",
   "city": "asperg",
   "sources": [
     "asperg_veranstaltungen",
     "glasperlenspiel",
     "asperg_fuehrungen"
   ],
-  "previous_run": "2026-09-24T06:49:11.788822+02:00",
-  "count_added": 24,
-  "count_removed": 0,
+  "previous_run": "2026-09-25T06:44:47.894915+02:00",
+  "count_added": 23,
+  "count_removed": 1,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -147,13 +147,14 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "af64c9be35ed4492",
-      "title": "Barbara Mergenthaler und Katharina Reich: Mascha Kaléko - Philosophie der Lyrik",
-      "date_start": "2026-11-01",
-      "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "9fb24e36bc291585",
+      "title": "Musikkabarett - Christian Langner: Bloß ein lustiges Lied ist ein gutes Lied",
+      "date_start": "2026-09-25",
+      "source": "asperg_veranstaltungen"
+    }
+  ]
 }
