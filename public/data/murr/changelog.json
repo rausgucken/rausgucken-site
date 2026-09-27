@@ -1,12 +1,25 @@
 {
-  "generated_at": "2026-09-26T09:14:44.985625+02:00",
+  "generated_at": "2026-09-27T07:33:53.612172+02:00",
   "city": "murr",
   "sources": [
     "murr_gemeinde"
   ],
-  "previous_run": "2026-09-25T08:58:50.452994+02:00",
+  "previous_run": "2026-09-26T09:14:45.060487+02:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "8cf5381476752829",
+      "title": "Altpapiersammlung",
+      "date_start": "2026-09-26",
+      "source": "murr_gemeinde"
+    },
+    {
+      "id": "25473392eaa592ab",
+      "title": "Kinderkleidermarkt",
+      "date_start": "2026-09-26",
+      "source": "murr_gemeinde"
+    }
+  ]
 }

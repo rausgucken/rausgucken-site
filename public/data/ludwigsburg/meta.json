@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-09-26T10:49:21.256240+02:00",
+  "scraped_at": "2026-09-27T09:04:49.952845+02:00",
   "city": "ludwigsburg",
-  "event_count": 710,
+  "event_count": 700,
   "flagged_count": 0,
   "expired_count": 2,
   "sources_scraped": [
@@ -22,14 +22,14 @@
     "stabi"
   ],
   "source_counts": {
-    "schloss": 122,
+    "schloss": 118,
     "museum": 50,
-    "ludwigsburg_stadt": 45,
-    "blueba": 24,
-    "karlskaserne_veranstaltungen": 106,
-    "stabi": 142,
+    "ludwigsburg_stadt": 46,
+    "blueba": 23,
+    "karlskaserne_veranstaltungen": 107,
+    "stabi": 138,
     "lisbert_queer": 3,
-    "labyrinth": 105,
+    "labyrinth": 102,
     "musikhalle_lb": 47,
     "kunstverein_ausstellungen": 2,
     "garnisonmuseum": 5,
@@ -39,9 +39,9 @@
     "demokratisches_zentrum": 4
   },
   "sources_failed": [],
-  "data_hash": "9430c4be356e2721",
+  "data_hash": "8e78b9b8ec2c4cf8",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 26.09.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 27.09.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schloss": 1.0,
@@ -61,14 +61,14 @@
     "demokratisches_zentrum": 0.93
   },
   "source_event_counts": {
-    "schloss": 122,
+    "schloss": 118,
     "museum": 50,
-    "ludwigsburg_stadt": 45,
-    "blueba": 24,
-    "karlskaserne_veranstaltungen": 106,
-    "stabi": 142,
+    "ludwigsburg_stadt": 46,
+    "blueba": 23,
+    "karlskaserne_veranstaltungen": 107,
+    "stabi": 138,
     "lisbert_queer": 3,
-    "labyrinth": 105,
+    "labyrinth": 102,
     "musikhalle_lb": 47,
     "kunstverein_ausstellungen": 2,
     "garnisonmuseum": 5,
@@ -85,8 +85,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 529.3,
-    "runtime_delta_vs_baseline": 1.957,
+    "runtime_minutes": 515.1,
+    "runtime_delta_vs_baseline": 1.878,
     "source_health": {
       "schloss": 1.0,
       "museum": 1.0,
@@ -109,6 +109,6 @@
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-09-26T11:03:27.882113+02:00"
+    "generated_at": "2026-09-27T10:49:46.904632+02:00"
   }
 }

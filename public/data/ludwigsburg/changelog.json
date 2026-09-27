@@ -1,43 +1,49 @@
 {
-  "generated_at": "2026-09-26T10:49:21.165994+02:00",
+  "generated_at": "2026-09-27T09:04:49.862709+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "ludwigsburg_stadt",
-    "kunstverein_ausstellungen",
-    "forum_schlosspark",
     "karlskaserne_veranstaltungen",
-    "schloss",
-    "lisbert_queer",
     "labyrinth",
+    "forum_schlosspark",
+    "garnisonmuseum",
     "demokratisches_zentrum",
     "musikhalle_lb",
-    "stabi",
+    "kunstverein_ausstellungen",
+    "lisbert_queer",
     "karlskaserne_ausstellungen",
-    "kunstverein_veranstaltungen",
-    "museum",
+    "schloss",
     "blueba",
-    "garnisonmuseum"
+    "ludwigsburg_stadt",
+    "museum",
+    "kunstverein_veranstaltungen",
+    "stabi"
   ],
-  "previous_run": "2026-09-25T11:15:10.541835+02:00",
-  "count_added": 27,
+  "previous_run": "2026-09-26T10:49:21.256240+02:00",
+  "count_added": 22,
   "count_removed": 30,
   "added": [
     {
-      "id": "46d23a6cd10344a3",
-      "title": "Der Grüffelo [ausgebucht]",
-      "date_start": "2026-10-19",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "3977aba3565e601a",
-      "title": "Faschingsferienworkshop: Superhelden. Powergirls für Kinder ab 6 Jahren in Ludwigsburg",
+      "id": "e295bebd0a1c9f8e",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance Kids für Kinder von 8-9 Jahren in Ludwigsburg",
       "date_start": "2027-02-08",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "e7bd1ff579217e42",
-      "title": "Herbstferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
+      "id": "90c7a6c16bc897eb",
+      "title": "Faschingsferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "33cdc96d0eddbda9",
+      "title": "Schlösslesfeldfest 2026",
+      "date_start": "2026-09-25",
+      "source": "stabi"
+    },
+    {
+      "id": "abf0f4c75316602b",
+      "title": "Faschingsferienworkshop: Kerzen selbst gießen und verzieren für Kinder ab 8 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
       "source": "karlskaserne_veranstaltungen"
     },
     {
@@ -47,16 +53,180 @@
       "source": "garnisonmuseum"
     },
     {
-      "id": "8fd544c01af277a7",
-      "title": "Starke Mütter – Starke Töchter!",
-      "date_start": "2026-10-11",
+      "id": "2a5cbfbe20f45915",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2027-03-20",
+      "source": "museum"
+    },
+    {
+      "id": "f9ad098325b53df5",
+      "title": "Sport für die Seele",
+      "date_start": "2026-10-01",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fa4364657da73042",
+      "title": "Genussführung: ANGEZAPFT in Ludwigsburg",
+      "date_start": "2026-10-01",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5cec4b11086a8fda",
+      "title": "Internationale Geschichteninsel auf Arabisch",
+      "date_start": "2026-10-01",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c98f9ab26850ddc4",
+      "title": "Rätsel-Tour: Willkommen zu den Geheimnissen der Dämmerstunde",
+      "date_start": "2026-10-01",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "24be9f2a0b8130d0",
+      "title": "Bühne frei! – Theaterspielen für Menschen ab 60",
+      "date_start": "2026-10-01",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "1608e1f11189758a",
+      "title": "Zwergeninsel",
+      "date_start": "2026-10-01",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "ab66c3c141a25ba4",
+      "title": "Gaming Friday",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "75334010fbc43ba1",
+      "title": "Ludwigsburger Spiele-Marathon zur Langen Nacht der Demokratie",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "75f78b01bf510238",
+      "title": "Yoga für Schwangere - entspannt und gestärkt durch die Schwangerschaft",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "0b3adaccdfd27128",
+      "title": "Internationale Geschichteninsel auf Portugiesisch",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a6015cfa54c201b2",
+      "title": "Genussführung: Ludwigsburg im Abendlicht",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3a51140cb0fffbb8",
+      "title": "Genussführung: Taste & The City",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c607d98b4c74ce6b",
+      "title": "Biografisches und Kreatives Schreiben - Schreibend zu mehr Gelassenheit im Familienalltag (Online)",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fc79b3288015a0bf",
+      "title": "In der Ruhe liegt die Kraft!",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "e270cd0d777669ef",
+      "title": "FilmStop - ImproGo! Neues Kulturprojekt in Ludwigsburg",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "22c87df5e5e583cf",
+      "title": "Brigitte Heidebrecht: Eingewandert nach Ludwigsburg - und dann...?",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "d1ae8fbb19cd8a9b",
+      "title": "Schlößlesfeldfest",
+      "date_start": "2026-09-26",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "4942682e2cf22660",
+      "title": "Workshop: Raku in der Tonwerkstatt ab 18 Jahren in Ludwigsburg",
+      "date_start": "2026-09-26",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "54afb91bf5571d01",
-      "title": "Herbstferienworkshop: Fang den Räuber Hotzenplotz ab 4 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "a1d567764ff6e84a",
+      "title": "Rollator-Spaziergang in Eglosheim",
+      "date_start": "2026-09-26",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5bc1e35a4d9f4773",
+      "title": "Flohmarkt",
+      "date_start": "2026-09-26",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5899fead49fe083f",
+      "title": "Workshop »Controller Werkstatt«",
+      "date_start": "2026-09-26",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "6aaee10dc5b09790",
+      "title": "Bonsai-Beratungsaktion",
+      "date_start": "2026-09-26",
+      "source": "blueba"
+    },
+    {
+      "id": "fde3f18017714718",
+      "title": "Bilderbuchsamstag in der Stadtbibliothek",
+      "date_start": "2026-09-26",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "4fdca2680908ba3f",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-09-26",
+      "source": "schloss"
+    },
+    {
+      "id": "fa0df461671c4538",
+      "title": "Bilderbuchsamstag",
+      "date_start": "2026-09-26",
+      "source": "stabi"
+    },
+    {
+      "id": "2a05a47fb695fa1f",
+      "title": "Schach für Anfänger bis Profi",
+      "date_start": "2026-09-26",
+      "source": "stabi"
+    },
+    {
+      "id": "dfc994d41232bdab",
+      "title": "Ludwigsburger Antikmeile",
+      "date_start": "2026-09-26",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5f0f28478d262af4",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-09-26",
+      "source": "museum"
     },
     {
       "id": "24eb6e7a33fbdbc3",
@@ -65,306 +235,106 @@
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "48dac54803968a92",
-      "title": "Exhibition on Screen: James McNeill Whistler",
-      "date_start": "2026-09-27",
+      "id": "e6d3e741c9ed560e",
+      "title": "Kinderfest auf dem Platz der Kinderrechte",
+      "date_start": "2026-09-26",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "937b96c1c2325b86",
-      "title": "Live-Musik Urban Life Church",
-      "date_start": "2026-09-27",
+      "id": "db02738c518f65ec",
+      "title": "Pixel & Pumpkin - Level Up im Blühenden Barock",
+      "date_start": "2026-09-26",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "313a66fe7ebe68d3",
-      "title": "Die Heilige Musik",
-      "date_start": "2026-09-27",
+      "id": "eb386eb833529e22",
+      "title": "Nachmittagsflohmarkt",
+      "date_start": "2026-09-26",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "6fd60753dee03a07",
-      "title": "Schlößlesfeldfest",
-      "date_start": "2026-09-27",
+      "id": "dac508c49f5b0467",
+      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
+      "date_start": "2026-09-26",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "89b9378ead113757",
-      "title": "Wichtel-Stube",
-      "date_start": "2026-09-28",
+      "id": "47d118f5d8323ac8",
+      "title": "Kidical Mass Ludwigsburg - fröhlich bunte Fahrraddemo",
+      "date_start": "2026-09-26",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "d66ee6afc5f75d5b",
-      "title": "Hatha-Yoga - entspannt in den Abend",
-      "date_start": "2026-09-28",
+      "id": "1bfc7afe76048e20",
+      "title": "DIE Tour, die glücklich macht - eine philosophische Erlebnis-Tour",
+      "date_start": "2026-09-26",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "d10f26c5026fc936",
-      "title": "XR/VR-Initiative",
-      "date_start": "2026-09-29",
+      "id": "d1f5e17dcdab3b88",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-09-26",
+      "source": "schloss"
+    },
+    {
+      "id": "f03d59ef71fc0e86",
+      "title": "Genussführung: Mikro-Wengerter aus Ludwigsburg",
+      "date_start": "2026-09-26",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "16e83aca28557891",
-      "title": "Gedächtnistraining - Geistig fit bleiben",
-      "date_start": "2026-09-29",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "9953585678fd341d",
-      "title": "Internationale Geschichteninsel auf Japanisch",
-      "date_start": "2026-09-29",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "28ec708f89c4d3fe",
-      "title": "Portugiesischsprachige Spielgruppe / Grupo de Brincadeiras em Português",
-      "date_start": "2026-09-29",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "c5a1d84004f4679c",
-      "title": "Armutssensibel Handeln",
-      "date_start": "2026-09-29",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "180b19d33aed9bc3",
-      "title": "Psychologische Beratung – mit Herz und Erfahrung für Sie da!",
-      "date_start": "2026-09-29",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7c03e7666160a64b",
-      "title": "4. Landesweite Fachtag „Armut und Teilhabe“",
-      "date_start": "2026-09-29",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "98115081a262e76b",
-      "title": "Spielzeit FamilienLeben - Mittwochs",
-      "date_start": "2026-09-30",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "dde1946129920a54",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-09-30",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "6c1512c37a145425",
-      "title": "After Work im Heilbad Hoheneck",
-      "date_start": "2026-09-30",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4a6401fdb0330733",
-      "title": "Auffangen. Informieren – Begleiten – Frauenselbsthilfe Krebs e. V.",
-      "date_start": "2026-09-30",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "0c8f18be0d033c6c",
-      "title": "Spielzeit FamilienLeben - Donnerstags",
-      "date_start": "2026-10-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "152401522500d0b8",
-      "title": "Aktionstag Weltstillwoche",
-      "date_start": "2026-10-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "9d5a7a749504538b",
-      "title": "Candlelight: Mozart vs. Beethoven",
-      "date_start": "2027-04-18",
-      "source": "musikhalle_lb"
-    }
-  ],
-  "removed": [
-    {
-      "id": "057e3402a8026b1f",
-      "title": "Mobile Zockbude",
-      "date_start": "2026-09-24",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "48233791561433e8",
-      "title": "Schlößlesfeldfest",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "6129ccc4fec2f731",
-      "title": "Hörtraining in Kleingruppe für Hörgeräteträger",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "35ec619155beffa6",
-      "title": "Selbstbewusst durch den Alltag: Selbstbehauptungstraining für ältere Frauen",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4500e3487ea9b49d",
-      "title": "Zwillingstreff",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b35e5dd03b8b1dff",
-      "title": "IT-Herausforderungen im Alltag meistern",
-      "date_start": "2026-09-25",
+      "id": "f1cb6643613a18db",
+      "title": "Zwei lebhaft erzählte kurze Bibelgeschichten",
+      "date_start": "2026-09-26",
       "source": "stabi"
     },
     {
-      "id": "6d63db66b49108c8",
-      "title": "Offener Tag der Energieversorgung",
-      "date_start": "2026-09-25",
+      "id": "6692b8888c9e971b",
+      "title": "Haake Festival",
+      "date_start": "2026-09-26",
+      "source": "schloss"
+    },
+    {
+      "id": "d7d93f60cee79589",
+      "title": "Schaurig schön",
+      "date_start": "2026-09-26",
+      "source": "schloss"
+    },
+    {
+      "id": "d98ec0c9cb22322c",
+      "title": "Wandern zwischen Rausch und Ekstase",
+      "date_start": "2026-09-26",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "03056b43531078b0",
-      "title": "Internationale Geschichteninsel auf Albanisch",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "33855549599c0830",
-      "title": "Internationale Geschichteninsel - Albanisch",
-      "date_start": "2026-09-25",
+      "id": "d2630f343ef22203",
+      "title": "Haikus und japanische Märchen",
+      "date_start": "2026-09-26",
       "source": "stabi"
     },
     {
-      "id": "a1daf2f8e741edb8",
-      "title": "Kochnachmittag: Iranische Küche",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7c66f348d2b8dc09",
-      "title": "Genussführung: Historie und Häppchen",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "cc98f76966628b02",
-      "title": "Workshop Game Development",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "acdf74b3af133a7d",
-      "title": "Ehrenamtsmesse",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "3fcda165758a8d33",
-      "title": "Genussführung: BELLA ITALIA",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "0acd9e3b412dccd9",
-      "title": "Internationale Geschichteninsel auf Französisch",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "d1d47fde865ef56b",
-      "title": "Internationale Geschichteninsel - Französisch",
-      "date_start": "2026-09-25",
-      "source": "stabi"
-    },
-    {
-      "id": "f86ca49479230e15",
-      "title": "Filmabend - Kinder und Familienfilm (FSK 0)",
-      "date_start": "2026-09-25",
-      "source": "stabi"
-    },
-    {
-      "id": "2c6246ffdfd49238",
-      "title": "Zwischen Leben und Tod: Das Geheimnis der Endgültigkeit",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "f43741a3f727e1a1",
-      "title": "SportBox am Mehrgenerationenhaus (MGH)",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "61dd69ecd2f333eb",
-      "title": "Der Körper als Bühne",
-      "date_start": "2026-09-25",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "4e5b6dc82da1a32d",
-      "title": "Wandern in Raum und Zeit",
-      "date_start": "2026-09-25",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "fb2c08e5d7ac96f1",
-      "title": "Alles außer C-Dur",
-      "date_start": "2026-09-25",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "d9915d93e83a8137",
-      "title": "Crystal Soul",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "32e2144913194a5c",
-      "title": "Alles außer C-Dur",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "2fef41eba9d52375",
-      "title": "Filmabend für Erwachsene (FSK 12)",
-      "date_start": "2026-09-25",
-      "source": "stabi"
-    },
-    {
-      "id": "33269db2e42ae70c",
-      "title": "September",
-      "date_start": "2026-09-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "cd2c745b7a9a95b2",
-      "title": "Der Grüffelo [ausgebucht]",
-      "date_start": "2026-10-19",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "befcd6f1e9bf6aac",
-      "title": "Herbstferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Ludwigsburg",
+      "id": "cfc72384a266308b",
+      "title": "Herbstferienworkshop: König Peter und Prinzessin Lila aus Ton für Kinder ab 7 Jahren in Bietigheim-Bissingen",
       "date_start": "2026-10-26",
-      "source": "labyrinth"
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "43c06eaeccd3fd42",
-      "title": "Faschingsferienworkshop: Superhelden. Powergirls für Kinder ab 6 Jahren in Ludwigsburg",
+      "id": "3720c50d00f8f817",
+      "title": "Faschingsferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
       "date_start": "2027-02-08",
       "source": "labyrinth"
     },
     {
-      "id": "d291701a4c8b2c75",
-      "title": "Wandern in Raum und Zeit",
-      "date_start": null,
-      "source": "karlskaserne_ausstellungen"
+      "id": "c364bf34f3541a57",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance Kids für Kinder von 8-9 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "60cbf1cd4900b39e",
+      "title": "Faschingsferienworkshop: Kerzen selbst gießen und verzieren für Kinder ab 8 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
     }
   ]
 }

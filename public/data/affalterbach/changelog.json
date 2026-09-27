@@ -1,18 +1,37 @@
 {
-  "generated_at": "2026-09-26T07:03:53.391054+02:00",
+  "generated_at": "2026-09-27T06:03:19.272331+02:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-09-25T06:54:43.712008+02:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-09-26T07:03:53.465664+02:00",
+  "count_added": 2,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "7185b18fcc1fc12f",
+      "title": "Herbstfest",
+      "date_start": "2026-09-27",
+      "source": "affalterbach_stadt"
+    },
+    {
+      "id": "a521a9fd48b68706",
+      "title": "Erste-Hilfe-Kurs",
+      "date_start": "2026-11-21",
+      "source": "affalterbach_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "9f9c453ba93057a3",
-      "title": "Herbstfest",
-      "date_start": "2026-09-25",
+      "id": "9d15df35d62fe737",
+      "title": "Erste-Hilfe-Kurs",
+      "date_start": "2026-09-26",
+      "source": "affalterbach_stadt"
+    },
+    {
+      "id": "5679d5518b88853f",
+      "title": "Kinderkleidermarkt",
+      "date_start": "2026-09-26",
       "source": "affalterbach_stadt"
     }
   ]
