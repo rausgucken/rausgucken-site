@@ -1,16 +1,110 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-09-27T06:00:02.098330+02:00",
-  "event_count": 3,
+  "generated_at": "2026-09-28T06:00:01.517842+02:00",
+  "event_count": 5,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "97798023e921c3c3",
+      "id": "4c0cedd6030dda18",
+      "title": "Come-in & Chill-out",
+      "date_start": "2026-10-03",
+      "date_end": "2026-10-03",
+      "time": "18:00",
+      "description": "In der Kuratorenführung erleben Sie die Ausstellung \"Spielwiese Kunst\" mit Dr. Petra Lanfermann. Anschließend können Sie sich mit Kaffee und Kuchen im gemütlichen Rahmen des Veranstaltungsorts entspannen.",
+      "location": null,
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Ausstellung"
+      ],
+      "link": "https://galerie.bietigheim-bissingen.de/veranstaltungen/kalendarium/",
+      "original_url": "https://galerie.bietigheim-bissingen.de/veranstaltungen/kalendarium/",
+      "source": "bietigheim_galerie",
+      "city": "bietigheim",
+      "slug": "come-in-chill-out-2026-10-03-biet",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-09-28T02:03:16.844495+02:00",
+      "extraction_confidence": 0.65,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Städtische Galerie Bietigheim-Bissingen",
+      "canonical_url": "https://www.rausgucken.de/bietigheim/events/come-in-chill-out-2026-10-03-biet"
+    },
+    {
+      "id": "33b48a54cc7e72d6",
+      "title": "„Musik für Orgel und Saxofon“ in der Stadtkirche",
+      "date_start": "2026-10-03",
+      "date_end": null,
+      "time": "19:00",
+      "description": "In der Stadtkirche von Bietigheim-Bissingen verbindet Orgel und Saxofon in einem Konzert klassischer Werke wie jene von Bach, Duruflé, Messiaen und weiteren Meistern. Interpreten sind Nikola Lutz und Edyta Müller. Eintritt frei, Spende willkommen.",
+      "location": "Bietigheim-Bissingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Musik"
+      ],
+      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-musik-fuer-orgel-und-saxofon-in-der-stadtkirche/",
+      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-musik-fuer-orgel-und-saxofon-in-der-stadtkirche/",
+      "source": "bietigheim",
+      "city": "bietigheim",
+      "slug": "musik-fuer-orgel-und-saxofon-in-der-stadtkirche-2026-10-03-biet",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-09-28T02:00:23.083930+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Bietigheim-Bissingen",
+      "canonical_url": "https://www.rausgucken.de/bietigheim/events/musik-fuer-orgel-und-saxofon-in-der-stadtkirche-2026-10-03-biet"
+    },
+    {
+      "id": "e8b599ed6a78599e",
+      "title": "Konzert Orgel und Saxofon",
+      "date_start": "2026-10-03",
+      "date_end": null,
+      "time": "19:00",
+      "description": "In diesem Konzert vereinen Orgel und Saxofonsoliści ihre Künstlerischen Fähigkeiten in einer einzigartigen Interpretation klassischer Meisterwerke. Ein faszinierendes Audienz-Erlebnis für Musikkennende und -Unkenntnige gleichermaßen.",
+      "location": "StadtkircheKirchplatz 4",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Musik"
+      ],
+      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-geistliche-matinee-3-2-6-1/",
+      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-geistliche-matinee-3-2-6-1/",
+      "source": "bietigheim",
+      "city": "bietigheim",
+      "slug": "konzert-orgel-und-saxofon-2026-10-03-biet",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-09-28T02:00:23.687666+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Bietigheim-Bissingen",
+      "canonical_url": "https://www.rausgucken.de/bietigheim/events/konzert-orgel-und-saxofon-2026-10-03-biet"
+    },
+    {
+      "id": "eed8a51abeb1e21a",
       "title": "Öffentliche Führung durch die Bietigheimer Altstadt",
-      "date_start": "2026-09-27",
+      "date_start": "2026-10-04",
       "date_end": null,
       "time": "10:30",
-      "description": "In den sonntäglichen Führungen durch die Bietigheimer Altstadt bietet die Stadtverwaltung Einblicke in die Geschichte und Architektur des Ortes. Besuch ist ab dem 5. April bis zum 25. Oktober möglich, mit Ausnahmen für barrierefreie Führungen am 24. Mai, 19. Juli und 27. September.",
+      "description": "In den sonntäglichen Führungen durch die Bietigheimer Altstadt bietet die Stadtverwaltung Einblicke in die Geschichte und Architektur des Kü(h)riosums am Kronenplatz. Die Veranstaltungen finden von April bis Oktober statt.",
       "location": "Ku(h)riosum am Kronenplatz",
       "price": "00 €",
       "age_min": null,
@@ -18,80 +112,54 @@
       "tags": [
         "Fuehrung"
       ],
-      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-oeffentliche-fuehrung-durch-die-bietigheimer-altstadt-5-4-4-6-2-4/",
-      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-oeffentliche-fuehrung-durch-die-bietigheimer-altstadt-5-4-4-6-2-4/",
+      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-oeffentliche-fuehrung-durch-die-bietigheimer-altstadt-5-4-4-6-2-5-1/",
+      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-oeffentliche-fuehrung-durch-die-bietigheimer-altstadt-5-4-4-6-2-5-1/",
       "source": "bietigheim",
       "city": "bietigheim",
-      "slug": "oeffentliche-fuehrung-durch-die-bietigheimer-altstadt-2026-09-27-biet",
+      "slug": "oeffentliche-fuehrung-durch-die-bietigheimer-altstadt-2026-10-04-biet",
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-27T02:00:11.277117+02:00",
+      "scraped_at": "2026-09-28T02:00:24.270210+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Bietigheim-Bissingen",
-      "canonical_url": "https://www.rausgucken.de/bietigheim/events/oeffentliche-fuehrung-durch-die-bietigheimer-altstadt-2026-09-27-biet"
+      "canonical_url": "https://www.rausgucken.de/bietigheim/events/oeffentliche-fuehrung-durch-die-bietigheimer-altstadt-2026-10-04-biet"
     },
     {
-      "id": "0d6d1dd276bd7780",
-      "title": "Bietigheimer Orgelherbst mit Rolf Müller (Altenberg)",
-      "date_start": "2026-09-27",
+      "id": "76bccdb4885e2051",
+      "title": "Ausstellung: Kunst und Tierschutz - Ars, Creatio et Animale",
+      "date_start": "2026-10-04",
       "date_end": null,
-      "time": "18:00",
-      "description": "In dieser Veranstaltung nimmt man am Orgelkonzert von Rolf Müller teil, das in der Kirche St. Laurentius stattfindet. Der Eintritt ist frei, Spenden werden willkommen geheißen.",
-      "location": "Kirche St. LaurentiusUhlandplatz 1",
-      "price": null,
+      "time": "11:30",
+      "description": "In der Gemeindehausausstellung \"Kunst und Tierschutz - Ars, Creatio et Animale\" präsentiert Hellas Friends Tierschutzförderverein e.V. Werke, die Kunst und Tierschutz verbinden. Die Ausstellung ist kostenlos und bietet Führung, Vorträge und eine Zaubershow. Spenden sind willkommen.",
+      "location": "Gemeindehaus St. LaurentiusUhlandplatz 1",
+      "price": "Kostenlos",
       "age_min": null,
       "age_max": null,
-      "tags": [],
-      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-bietigheimer-orgelherbst-mit-juergen-benkoe/",
-      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-bietigheimer-orgelherbst-mit-juergen-benkoe/",
+      "tags": [
+        "Fuehrung",
+        "Ausstellung"
+      ],
+      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-kunst-und-tierschutz-1/",
+      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-kunst-und-tierschutz-1/",
       "source": "bietigheim",
       "city": "bietigheim",
-      "slug": "bietigheimer-orgelherbst-mit-rolf-mueller-altenberg-2026-09-27-biet",
+      "slug": "ausstellung-kunst-und-tierschutz---ars-creatio-et-animale-2026-10-04-biet",
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-09-27T02:00:11.919351+02:00",
+      "scraped_at": "2026-09-28T02:00:24.886171+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Bietigheim-Bissingen",
-      "canonical_url": "https://www.rausgucken.de/bietigheim/events/bietigheimer-orgelherbst-mit-rolf-mueller-altenberg-2026-09-27-biet"
-    },
-    {
-      "id": "81ac1aeae577462a",
-      "title": "Jahreskonzert des Gospelchors „Vocal Chords“",
-      "date_start": "2026-09-27",
-      "date_end": null,
-      "time": "18:03",
-      "description": "Im Jahreskonzert des Gospelchors „Vocal Chords“ präsentiert sich ein musikalisches Highlight der Gemeinschaft. Mit dem Support der Ev. Kirchengemeinde Bissingen/Enz verbindet die Veranstaltung Tradition und modernes Chorgesangprogramm in Martin-Luther-Kirche.",
-      "location": "Martin-Luther-KirchePanoramastr. 37",
-      "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [],
-      "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-jahreskonzert-des-gospelchors-vocal-chords/",
-      "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-jahreskonzert-des-gospelchors-vocal-chords/",
-      "source": "bietigheim",
-      "city": "bietigheim",
-      "slug": "jahreskonzert-des-gospelchors-vocal-chords-2026-09-27-biet",
-      "weekdays": [
-        0
-      ],
-      "scraped_at": "2026-09-27T02:00:12.520958+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Bietigheim-Bissingen",
-      "canonical_url": "https://www.rausgucken.de/bietigheim/events/jahreskonzert-des-gospelchors-vocal-chords-2026-09-27-biet"
+      "canonical_url": "https://www.rausgucken.de/bietigheim/events/ausstellung-kunst-und-tierschutz---ars-creatio-et-animale-2026-10-04-biet"
     }
   ]
 }
