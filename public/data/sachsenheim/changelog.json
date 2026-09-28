@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-27T05:49:14.688254+02:00",
+  "generated_at": "2026-09-28T05:57:25.596077+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-09-26T06:53:50.257510+02:00",
-  "count_added": 7,
-  "count_removed": 0,
+  "previous_run": "2026-09-27T05:49:14.762751+02:00",
+  "count_added": 11,
+  "count_removed": 2,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -22,21 +22,9 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "96937df3cefd9a4e",
-      "title": "Öffentliche Führung – „Alles für die Katz!?“ Künstler sehen Katzen",
-      "date_start": "2026-05-17",
-      "source": "sachsenheim_kultur"
-    },
-    {
       "id": "2e6e0199c9d95a2c",
       "title": "Offener Gesprächskreis Demenz",
       "date_start": "2026-06-02",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "0d67c464b99b1406",
-      "title": "Öffentliche Führung – „Alles für die Katz!?“ Künstler sehen Katzen",
-      "date_start": "2026-06-28",
       "source": "sachsenheim_kultur"
     },
     {
@@ -50,7 +38,56 @@
       "title": "KleinstadtQueers",
       "date_start": "2026-08-29",
       "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "d7fae7ecdd353b67",
+      "title": "KleinstadtQueers",
+      "date_start": "2026-09-26",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "dd25f55972e8cb38",
+      "title": "Rollatortraining",
+      "date_start": "2026-10-16",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "0cf02045b88ba479",
+      "title": "Wein und herbstliche Farbenpracht",
+      "date_start": "2026-10-16",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "f3cd5df7a029a87e",
+      "title": "Rollatortraining",
+      "date_start": "2026-10-23",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "9de3cd251ec75515",
+      "title": "Tanznachmittag",
+      "date_start": "2026-10-27",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "91532ddd54df9e53",
+      "title": "Rollatortraining",
+      "date_start": "2026-10-23",
+      "source": "sachsenheim_library"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "78d3263875f6457b",
+      "title": "Weinbau in früheren Zeiten mit alten Arbeitsgeräten",
+      "date_start": "2026-09-27",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "c249d87497786cc1",
+      "title": "Öffentliche Führung – „Alles für die Katz!?“ Künstler sehen Katzen",
+      "date_start": "2026-09-27",
+      "source": "sachsenheim_kultur"
+    }
+  ]
 }

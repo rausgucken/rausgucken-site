@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-09-27T07:40:01.221475+02:00",
+  "generated_at": "2026-09-28T07:41:34.041637+02:00",
   "city": "gemmrigheim",
   "sources": [
     "gemmrigheim_gemeinde"
   ],
-  "previous_run": "2026-09-26T09:20:39.711994+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-09-27T07:40:01.299000+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "cadc91e8b6329261",
+      "title": "Gemmrigheimer SeniorenZeit",
+      "date_start": "2026-11-17",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "3b68d15573301b16",
+      "title": "On Tour mit Oma und Opa",
+      "date_start": "2026-09-27",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ]
 }

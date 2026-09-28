@@ -1,31 +1,50 @@
 {
-  "generated_at": "2026-09-27T05:51:06.759335+02:00",
+  "generated_at": "2026-09-28T05:57:56.071833+02:00",
   "city": "ditzingen",
   "sources": [
     "ditzingen_stadt",
     "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-09-26T06:55:54.926743+02:00",
-  "count_added": 0,
-  "count_removed": 3,
-  "added": [],
+  "previous_run": "2026-09-27T05:51:06.841711+02:00",
+  "count_added": 2,
+  "count_removed": 4,
+  "added": [
+    {
+      "id": "f2c8d8cd1e233dc4",
+      "title": "Skatgruppen",
+      "date_start": "2027-09-28",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b1241878135e9a94",
+      "title": "\"Betreuungscafé Augenblick\"  Betreuungsgruppe für Menschen mit und ohne Demenz (Abt. Senioren und Teilhabe)",
+      "date_start": "2027-09-28",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ],
   "removed": [
     {
-      "id": "1d9a8fa1e4ba9a50",
-      "title": "Musik zur Marktzeit XII - Junge Meister",
+      "id": "b5e21b46ed9c1edb",
+      "title": "Herbstfest 2026",
       "date_start": "2026-09-26",
       "source": "ditzingen_stadt"
     },
     {
-      "id": "1273d98910cd5878",
-      "title": "Besonderer Wochenmarkt \"Herbstlichter\"",
-      "date_start": "2026-09-26",
+      "id": "8f0d4c5cc915a13e",
+      "title": "5. Inklusionstennistag beim TC Ditzingen",
+      "date_start": "2026-09-27",
       "source": "ditzingen_stadt"
     },
     {
-      "id": "e2beae0da7928398",
-      "title": "Geführte Wanderung durch die Stadtteile zum Stadtjubiläum",
-      "date_start": "2026-09-26",
+      "id": "69d7082a516e3868",
+      "title": "Matinee des Posaunenchor Ditzingen",
+      "date_start": "2026-09-27",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "ef0ebde3ab9da7db",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-09-27",
       "source": "ditzingen_stadt"
     }
   ]
