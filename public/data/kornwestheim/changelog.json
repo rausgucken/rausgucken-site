@@ -1,130 +1,64 @@
 {
-  "generated_at": "2026-09-28T06:00:23.071364+02:00",
+  "generated_at": "2026-09-29T05:52:19.300272+02:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_buecherei",
+    "das_k_spielplan",
     "kornwestheim",
-    "das_k_spielplan"
+    "das_k_buecherei"
   ],
-  "previous_run": "2026-09-27T06:05:38.871056+02:00",
-  "count_added": 7,
-  "count_removed": 12,
+  "previous_run": "2026-09-28T06:00:23.152824+02:00",
+  "count_added": 4,
+  "count_removed": 4,
   "added": [
     {
-      "id": "baa48ad3437a0b28",
-      "title": "Pippi Langstrumpf",
-      "date_start": "2027-01-31",
+      "id": "ef12d7c7fdc9914e",
+      "title": "Linie 1",
+      "date_start": "2027-01-30",
       "source": "kornwestheim"
     },
     {
-      "id": "a29db1eaedc3292a",
+      "id": "e5576e351308755b",
       "title": "Motte will Meer!",
-      "date_start": "2027-02-01",
+      "date_start": "2027-02-02",
       "source": "kornwestheim"
+    },
+    {
+      "id": "6057114a16de649b",
+      "title": "Beauty Jungle Mädchenflohmarkt Kornwestheim",
+      "date_start": "2026-10-17",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "171c666287fad7a1",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2027-02-05",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "0424069f028273f4",
+      "title": "Sprachcafé",
+      "date_start": "2026-09-28",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "ef4bce89541be767",
+      "title": "Beauty Jungle Mädchenflohmarkt Kornwestheim",
+      "date_start": "2026-10-17",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "8a89aedbe46e4c11",
+      "title": "Linie 1",
+      "date_start": "2027-01-30",
+      "source": "das_k_spielplan"
     },
     {
       "id": "1f625fd4870c0e1b",
       "title": "Motte will Meer!",
       "date_start": "2027-02-02",
       "source": "kornwestheim"
-    },
-    {
-      "id": "debbb2e931762122",
-      "title": "Frühstücksführung",
-      "date_start": "2026-10-09",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "b9af66b2dfefeac1",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-01-30",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "e155c7c05f8b8998",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2027-01-31",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "d511fc2d8e2fcab4",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-01-31",
-      "source": "kornwestheim"
-    }
-  ],
-  "removed": [
-    {
-      "id": "c34b869b854d6086",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-09-27",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "b67f67e75e9c50fe",
-      "title": "Interkulturelles Fußballturnier",
-      "date_start": "2026-09-27",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "e67aa052134d87a1",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-09-27",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "7a966dd6018c6b92",
-      "title": "Buntes Treiben im Kulturkarree",
-      "date_start": "2026-09-27",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "17474359700f6b92",
-      "title": "Medienflohmarkt",
-      "date_start": "2026-09-27",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "89046e7005df9569",
-      "title": "Buntes Treiben im Kulturkarree",
-      "date_start": "2026-09-27",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "489a2f141d8d370d",
-      "title": "Malen an der Staffelei",
-      "date_start": "2026-09-27",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "d88b3ed4cbe7bea0",
-      "title": "Öffentliche Sonderführung am Wochenende",
-      "date_start": "2026-09-27",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "da1355df6b77cad0",
-      "title": "„Mehr Demokratie wagen“. Kornwestheim zwischen Diktatur und Neuanfang unter demokratischen Vorzeichen.",
-      "date_start": "2026-09-27",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "59e038ff443a8a82",
-      "title": "Pippi Langstrumpf",
-      "date_start": "2027-01-31",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "4c9a0155da3338c3",
-      "title": "Motte will Meer!",
-      "date_start": "2027-02-01",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "edf4815b48b10f8e",
-      "title": "Motte will Meer!",
-      "date_start": "2027-02-02",
-      "source": "das_k_spielplan"
     }
   ]
 }
