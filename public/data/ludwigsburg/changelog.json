@@ -1,56 +1,36 @@
 {
-  "generated_at": "2026-09-29T08:39:22.590277+02:00",
+  "generated_at": "2026-09-30T07:48:26.419680+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "schloss",
-    "karlskaserne_veranstaltungen",
-    "forum_schlosspark",
-    "garnisonmuseum",
-    "kunstverein_ausstellungen",
-    "museum",
     "karlskaserne_ausstellungen",
     "stabi",
-    "lisbert_queer",
-    "ludwigsburg_stadt",
-    "musikhalle_lb",
+    "karlskaserne_veranstaltungen",
     "labyrinth",
     "kunstverein_veranstaltungen",
+    "ludwigsburg_stadt",
+    "garnisonmuseum",
+    "blueba",
     "demokratisches_zentrum",
-    "blueba"
+    "forum_schlosspark",
+    "lisbert_queer",
+    "kunstverein_ausstellungen",
+    "musikhalle_lb"
   ],
-  "previous_run": "2026-09-28T09:00:48.472004+02:00",
-  "count_added": 16,
-  "count_removed": 10,
+  "previous_run": "2026-09-29T08:39:22.679048+02:00",
+  "count_added": 12,
+  "count_removed": 179,
   "added": [
     {
-      "id": "43c06eaeccd3fd42",
-      "title": "Faschingsferienworkshop: Superhelden. Powergirls für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "labyrinth"
+      "id": "dae2d624b468bafe",
+      "title": "Dinner for One - Express",
+      "date_start": "2026-12-30",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "3720c50d00f8f817",
-      "title": "Faschingsferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "labyrinth"
-    },
-    {
-      "id": "c364bf34f3541a57",
-      "title": "Faschingsferienworkshop: Hip-Hop Streetdance Kids für Kinder von 8-9 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "labyrinth"
-    },
-    {
-      "id": "60cbf1cd4900b39e",
-      "title": "Faschingsferienworkshop: Kerzen selbst gießen und verzieren für Kinder ab 8 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "labyrinth"
-    },
-    {
-      "id": "29dc6c686d9c0010",
-      "title": "Faschingsferienworkshop: Theater-Werkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "labyrinth"
+      "id": "4e070e9e6d2b7be4",
+      "title": "Dinner for One - Express",
+      "date_start": "2026-12-31",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "158c9d570a35ab21",
@@ -59,9 +39,341 @@
       "source": "garnisonmuseum"
     },
     {
+      "id": "188321081b668620",
+      "title": "TOMMI Kindersoftwarepreis 2026 - TOMMI Games Award",
+      "date_start": "2026-10-15",
+      "source": "stabi"
+    },
+    {
+      "id": "6eb7dff02d9f2a40",
+      "title": "TOMMI Kindersoftwarepreis 2026 - TOMMI Games Award",
+      "date_start": "2026-10-16",
+      "source": "stabi"
+    },
+    {
+      "id": "06939a21923a46d1",
+      "title": "TOMMI Kindersoftwarepreis 2026 - TOMMI Games Award",
+      "date_start": "2026-10-22",
+      "source": "stabi"
+    },
+    {
+      "id": "9e4400751e6c0df7",
+      "title": "TOMMI Kindersoftwarepreis 2026 - TOMMI Games Award",
+      "date_start": "2026-10-23",
+      "source": "stabi"
+    },
+    {
+      "id": "c3be2cd240822dc8",
+      "title": "Hundeschwimmen im Freibad Hoheneck",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "08a8459fa66e9708",
+      "title": "Interreligiöse Dialogtour 2026",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "697e6ddccc49beca",
+      "title": "Das ist kein Rückblick",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "257c35c7dc240f56",
+      "title": "Zeit und Unendlichkeit",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "0f239ae52a48f6ff",
+      "title": "Eiskalter GeisterAtem - eine gruselige Schmunzel-Tour",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "23fc3c1c77f2a028",
+      "title": "Klassische Schlossführung „Herzogin“",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "f2d072ce4584b2b4",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "4338d42d24902687",
+      "title": "Klassische Schlossführung in englischer Sprache",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "650ef2c04fb838df",
+      "title": "Little America – Fotografie Jürgen Schadeberg",
+      "date_start": "2026-07-01",
+      "source": "museum"
+    },
+    {
+      "id": "7c03e7666160a64b",
+      "title": "4. Landesweite Fachtag „Armut und Teilhabe“",
+      "date_start": "2026-09-29",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "180b19d33aed9bc3",
+      "title": "Psychologische Beratung – mit Herz und Erfahrung für Sie da!",
+      "date_start": "2026-09-29",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c5a1d84004f4679c",
+      "title": "Armutssensibel Handeln",
+      "date_start": "2026-09-29",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a145787661035769",
+      "title": "XR/VR-Initiative",
+      "date_start": "2026-09-29",
+      "source": "stabi"
+    },
+    {
+      "id": "d10f26c5026fc936",
+      "title": "XR/VR-Initiative",
+      "date_start": "2026-09-29",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "16e83aca28557891",
+      "title": "Gedächtnistraining - Geistig fit bleiben",
+      "date_start": "2026-09-29",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "9953585678fd341d",
+      "title": "Internationale Geschichteninsel auf Japanisch",
+      "date_start": "2026-09-29",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5452d00a4777fb4e",
+      "title": "Internationale Geschichteninsel - Japanisch",
+      "date_start": "2026-09-29",
+      "source": "stabi"
+    },
+    {
+      "id": "28ec708f89c4d3fe",
+      "title": "Portugiesischsprachige Spielgruppe / Grupo de Brincadeiras em Português",
+      "date_start": "2026-09-29",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "8f9a9ad1ace964ca",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-10-02",
+      "source": "schloss"
+    },
+    {
+      "id": "e375d410ae236a7d",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-10-03",
+      "source": "schloss"
+    },
+    {
+      "id": "832f747ac9026070",
+      "title": "Sprichwörtern auf der Spur",
+      "date_start": "2026-10-03",
+      "source": "schloss"
+    },
+    {
+      "id": "d5f033ad44875321",
+      "title": "Etikette und Intrigen",
+      "date_start": "2026-10-03",
+      "source": "schloss"
+    },
+    {
+      "id": "34aed2cc7b2bd54f",
+      "title": "Geisterjagd im Schloss",
+      "date_start": "2026-10-03",
+      "source": "schloss"
+    },
+    {
+      "id": "691f868f78a85054",
+      "title": "Meine erste Schlossführung",
+      "date_start": "2026-10-04",
+      "source": "schloss"
+    },
+    {
+      "id": "eb622935936a7fad",
+      "title": "Württembergs First Ladies",
+      "date_start": "2026-10-04",
+      "source": "schloss"
+    },
+    {
+      "id": "849d60fdf2972d76",
+      "title": "Zu Diensten des Herzogs",
+      "date_start": "2026-10-04",
+      "source": "schloss"
+    },
+    {
+      "id": "676e14f8d83b0c77",
+      "title": "Orient trifft Okzident im Residenzschloss",
+      "date_start": "2026-10-04",
+      "source": "schloss"
+    },
+    {
+      "id": "1ad591165ba69227",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-06",
+      "source": "museum"
+    },
+    {
+      "id": "10574e50c47e9a2d",
+      "title": "Museumspause",
+      "date_start": "2026-10-07",
+      "source": "museum"
+    },
+    {
+      "id": "810007d1f59c73e8",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-10-09",
+      "source": "schloss"
+    },
+    {
+      "id": "69afe45ef2871124",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-10-10",
+      "source": "schloss"
+    },
+    {
+      "id": "7fdd5bd7d5ca91b3",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-10-10",
+      "source": "schloss"
+    },
+    {
+      "id": "8413a6b3c2585245",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-10-10",
+      "source": "schloss"
+    },
+    {
+      "id": "609c96452ff50c17",
+      "title": "Schaurig schön",
+      "date_start": "2026-10-10",
+      "source": "schloss"
+    },
+    {
+      "id": "7b096f653f455a50",
+      "title": "Meine erste Schlossführung",
+      "date_start": "2026-10-11",
+      "source": "schloss"
+    },
+    {
+      "id": "7229c5b4b0447fbe",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-10-11",
+      "source": "schloss"
+    },
+    {
+      "id": "b744a79843c29fa7",
+      "title": "Vom Alltag einer herzoglichen Hofdame",
+      "date_start": "2026-10-11",
+      "source": "schloss"
+    },
+    {
+      "id": "24d8d3e0d730e13d",
+      "title": "Technik in der Unterwelt",
+      "date_start": "2026-10-11",
+      "source": "schloss"
+    },
+    {
+      "id": "d47a92c5185c1929",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-13",
+      "source": "museum"
+    },
+    {
+      "id": "50d1b8bcae088f0f",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-10-14",
+      "source": "museum"
+    },
+    {
+      "id": "3c37719ce76421c2",
+      "title": "TOMMI Kindersoftwarepreis 2026",
+      "date_start": "2026-10-15",
+      "source": "stabi"
+    },
+    {
+      "id": "b4b538ab14bd0040",
+      "title": "TOMMI Kindersoftwarepreis 2026",
+      "date_start": "2026-10-16",
+      "source": "stabi"
+    },
+    {
       "id": "3f8248990818a13a",
       "title": "Nachts im Schloss",
       "date_start": "2026-10-16",
+      "source": "schloss"
+    },
+    {
+      "id": "fffeb549fd24639b",
+      "title": "Mitmach-Ausstellung flott, flott!",
+      "date_start": "2026-10-17",
+      "source": "museum"
+    },
+    {
+      "id": "e4bf2f7aed295e6c",
+      "title": "Geisterjagd im Schloss",
+      "date_start": "2026-10-17",
+      "source": "schloss"
+    },
+    {
+      "id": "6278e993418fc72e",
+      "title": "Schaurig schön",
+      "date_start": "2026-10-17",
+      "source": "schloss"
+    },
+    {
+      "id": "549581cd921fb55f",
+      "title": "Europäischer Tag der Restaurierung",
+      "date_start": "2026-10-18",
+      "source": "schloss"
+    },
+    {
+      "id": "5beb0ee8eb08f214",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-20",
+      "source": "museum"
+    },
+    {
+      "id": "2c0921e304b82ec4",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2026-10-21",
+      "source": "museum"
+    },
+    {
+      "id": "6da8d7f747d5b2e5",
+      "title": "TOMMI Kindersoftwarepreis 2026",
+      "date_start": "2026-10-22",
+      "source": "stabi"
+    },
+    {
+      "id": "55ea7b2e1457c43a",
+      "title": "TOMMI Kindersoftwarepreis 2026",
+      "date_start": "2026-10-23",
+      "source": "stabi"
+    },
+    {
+      "id": "55964167c7f61f85",
+      "title": "Blick hinter die Kulissen",
+      "date_start": "2026-10-23",
       "source": "schloss"
     },
     {
@@ -71,28 +383,634 @@
       "source": "schloss"
     },
     {
+      "id": "c014ca09668641d0",
+      "title": "Spooky Splendour – Schaurig schön in englischer Sprache",
+      "date_start": "2026-10-23",
+      "source": "schloss"
+    },
+    {
+      "id": "c170b028731594af",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-10-24",
+      "source": "museum"
+    },
+    {
+      "id": "703a741898310ba8",
+      "title": "Blick hinter die Kulissen",
+      "date_start": "2026-10-24",
+      "source": "schloss"
+    },
+    {
+      "id": "d126a1a4c69e10b7",
+      "title": "Wasser im Ludwigsburger Schloss",
+      "date_start": "2026-10-24",
+      "source": "schloss"
+    },
+    {
+      "id": "2f6cdfa339221433",
+      "title": "Sprichwörtern auf der Spur",
+      "date_start": "2026-10-24",
+      "source": "schloss"
+    },
+    {
+      "id": "96f4773bfc56e38f",
+      "title": "Geisterjagd im Schloss",
+      "date_start": "2026-10-24",
+      "source": "schloss"
+    },
+    {
+      "id": "8289f354c56d1f81",
+      "title": "Vom Keller auf den Teller",
+      "date_start": "2026-10-25",
+      "source": "schloss"
+    },
+    {
+      "id": "a89e54912c673871",
+      "title": "Caché = verborgen",
+      "date_start": "2026-10-25",
+      "source": "schloss"
+    },
+    {
+      "id": "ce08c404934bfdca",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-10-25",
+      "source": "schloss"
+    },
+    {
+      "id": "ddef881670ec912c",
+      "title": "Tiere im Schloss",
+      "date_start": "2026-10-26",
+      "source": "schloss"
+    },
+    {
+      "id": "004f883a8e28ca03",
+      "title": "Treppauf, treppab",
+      "date_start": "2026-10-27",
+      "source": "schloss"
+    },
+    {
+      "id": "33c73002bed4f546",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-27",
+      "source": "museum"
+    },
+    {
+      "id": "6b8a7c245b81e217",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-10-27",
+      "source": "schloss"
+    },
+    {
+      "id": "4dc8026a9f225de6",
+      "title": "Der Schatz des Herzogs",
+      "date_start": "2026-10-28",
+      "source": "schloss"
+    },
+    {
+      "id": "6506f536d549b897",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-10-28",
+      "source": "schloss"
+    },
+    {
+      "id": "ab079cbc2c8dad1f",
+      "title": "Wer schön sein will, muss leiden",
+      "date_start": "2026-10-29",
+      "source": "schloss"
+    },
+    {
+      "id": "1035355eeb6a5d48",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-10-29",
+      "source": "schloss"
+    },
+    {
       "id": "a5ab7ce7f0794824",
       "title": "Mission Schlossbau: Baumeister gesucht!",
       "date_start": "2026-10-30",
       "source": "schloss"
     },
     {
-      "id": "d54e79a6992d3911",
-      "title": "Dinner for One - Express",
+      "id": "8f21d6b94ed19a01",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-10-30",
+      "source": "schloss"
+    },
+    {
+      "id": "19b34a6bd1f128f7",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-10-31",
+      "source": "museum"
+    },
+    {
+      "id": "ca896d18edc5209f",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-10-31",
+      "source": "schloss"
+    },
+    {
+      "id": "5a930ec6d525c8e3",
+      "title": "Schaurig schön - Halloween Special",
+      "date_start": "2026-10-31",
+      "source": "schloss"
+    },
+    {
+      "id": "509f8d4ea454ed68",
+      "title": "Schaurig schön",
+      "date_start": "2026-10-31",
+      "source": "schloss"
+    },
+    {
+      "id": "a1b3c6675971b909",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-10-31",
+      "source": "schloss"
+    },
+    {
+      "id": "298b6866487f6506",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-11-01",
+      "source": "schloss"
+    },
+    {
+      "id": "543a46b23b1a1015",
+      "title": "Technik in der Unterwelt",
+      "date_start": "2026-11-01",
+      "source": "schloss"
+    },
+    {
+      "id": "744c68f84155ddb4",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-03",
+      "source": "museum"
+    },
+    {
+      "id": "cc3cacc7ccb69d7b",
+      "title": "Museumspause",
+      "date_start": "2026-11-04",
+      "source": "museum"
+    },
+    {
+      "id": "746f98c5fe1bfba3",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-05",
+      "source": "museum"
+    },
+    {
+      "id": "0d540b05481a708d",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-11-06",
+      "source": "schloss"
+    },
+    {
+      "id": "2ed2ef7f860de8bc",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-11-07",
+      "source": "schloss"
+    },
+    {
+      "id": "4a683bac927fd658",
+      "title": "Etikette und Intrigen",
+      "date_start": "2026-11-07",
+      "source": "schloss"
+    },
+    {
+      "id": "398cec491371f150",
+      "title": "Geisterjagd im Schloss",
+      "date_start": "2026-11-07",
+      "source": "schloss"
+    },
+    {
+      "id": "62f745ad89e52924",
+      "title": "Kleidung, die verführt",
+      "date_start": "2026-11-08",
+      "source": "schloss"
+    },
+    {
+      "id": "8ee82da14f68e730",
+      "title": "Etikette und Intrigen",
+      "date_start": "2026-11-08",
+      "source": "schloss"
+    },
+    {
+      "id": "e74df3c19afa3c7f",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-11-08",
+      "source": "schloss"
+    },
+    {
+      "id": "503013994c307868",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-10",
+      "source": "museum"
+    },
+    {
+      "id": "d8b7431bc4a684b1",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-11-11",
+      "source": "museum"
+    },
+    {
+      "id": "c0b0df85de238dbb",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-11-13",
+      "source": "schloss"
+    },
+    {
+      "id": "a2bdb9e6b1a96665",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-11-14",
+      "source": "schloss"
+    },
+    {
+      "id": "36e533426584ba6d",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2026-11-14",
+      "source": "museum"
+    },
+    {
+      "id": "fbefa5096d00bf96",
+      "title": "Stadtspaziergang zu Christian Friedrich Daniel Schubart",
+      "date_start": "2026-11-14",
+      "source": "museum"
+    },
+    {
+      "id": "69cdd99f67fec8ef",
+      "title": "Schaurig schön",
+      "date_start": "2026-11-14",
+      "source": "schloss"
+    },
+    {
+      "id": "b4aa0a60f653e3a9",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-11-15",
+      "source": "schloss"
+    },
+    {
+      "id": "56a1c9f8fe5fc2f7",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-11-15",
+      "source": "schloss"
+    },
+    {
+      "id": "3a07be9ff60f3ffd",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-17",
+      "source": "museum"
+    },
+    {
+      "id": "d840e93a51869a5b",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-11-20",
+      "source": "schloss"
+    },
+    {
+      "id": "6fadda1333014240",
+      "title": "Blick hinter die Kulissen",
+      "date_start": "2026-11-21",
+      "source": "schloss"
+    },
+    {
+      "id": "da0bbcf295205ed4",
+      "title": "Führung durch das Schlosstheater",
+      "date_start": "2026-11-21",
+      "source": "schloss"
+    },
+    {
+      "id": "8788b9c90e12d88a",
+      "title": "Kaffee, Tee und Schokolade",
+      "date_start": "2026-11-21",
+      "source": "schloss"
+    },
+    {
+      "id": "bec160e4a17244a5",
+      "title": "Kleine Prinzessinnen und Prinzen – große Regeln",
+      "date_start": "2026-11-21",
+      "source": "schloss"
+    },
+    {
+      "id": "bb8e32de808c05eb",
+      "title": "Geisterjagd im Schloss",
+      "date_start": "2026-11-21",
+      "source": "schloss"
+    },
+    {
+      "id": "ff9be7cc5a1208c1",
+      "title": "Weißes Gold und Glanz der Seide",
+      "date_start": "2026-11-22",
+      "source": "schloss"
+    },
+    {
+      "id": "11d66526b1bdc316",
+      "title": "Caché = verborgen",
+      "date_start": "2026-11-22",
+      "source": "schloss"
+    },
+    {
+      "id": "dcc3c60c471bfeeb",
+      "title": "Zu Diensten des Herzogs",
+      "date_start": "2026-11-22",
+      "source": "schloss"
+    },
+    {
+      "id": "22f9f9b321aa01e3",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-24",
+      "source": "museum"
+    },
+    {
+      "id": "a7752960d0d414e8",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-11-27",
+      "source": "schloss"
+    },
+    {
+      "id": "3e6569c50955cf0f",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
+      "id": "1be2100766f9975a",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-28",
+      "source": "museum"
+    },
+    {
+      "id": "43d11f0217c95733",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-11-28",
+      "source": "schloss"
+    },
+    {
+      "id": "1ec6a66bdd4600c5",
+      "title": "Technik in der Unterwelt",
+      "date_start": "2026-11-28",
+      "source": "schloss"
+    },
+    {
+      "id": "b33f9e9683ef5f80",
+      "title": "Schaurig schön",
+      "date_start": "2026-11-28",
+      "source": "schloss"
+    },
+    {
+      "id": "27aed77ed6309c45",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-11-29",
+      "source": "schloss"
+    },
+    {
+      "id": "64df1722d26212ac",
+      "title": "Contenance oder die Welt des guten Benehmens",
+      "date_start": "2026-11-29",
+      "source": "schloss"
+    },
+    {
+      "id": "d21fa89d184dcbd6",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-11-29",
+      "source": "schloss"
+    },
+    {
+      "id": "ceffd17f4f8fa9ec",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-01",
+      "source": "museum"
+    },
+    {
+      "id": "0200632eb9bc01e9",
+      "title": "Museumspause",
+      "date_start": "2026-12-02",
+      "source": "museum"
+    },
+    {
+      "id": "5748806c46aaa4c0",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-04",
+      "source": "schloss"
+    },
+    {
+      "id": "ce3c44c8f5b589b9",
+      "title": "Jubel, Trubel, Heiterkeit",
+      "date_start": "2026-12-05",
+      "source": "schloss"
+    },
+    {
+      "id": "42512ac1cc8bc28f",
+      "title": "Schaurig schön",
+      "date_start": "2026-12-05",
+      "source": "schloss"
+    },
+    {
+      "id": "d4c515764ea8a075",
+      "title": "Weißes Gold und Glanz der Seide",
+      "date_start": "2026-12-06",
+      "source": "schloss"
+    },
+    {
+      "id": "5296727f937ed4c5",
+      "title": "Jubel, Trubel, Heiterkeit",
+      "date_start": "2026-12-06",
+      "source": "schloss"
+    },
+    {
+      "id": "a6439166304ac087",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-08",
+      "source": "museum"
+    },
+    {
+      "id": "d3a73fb64cac0f86",
+      "title": "Stadtgeschichten",
+      "date_start": "2026-12-09",
+      "source": "museum"
+    },
+    {
+      "id": "f1008c4eba1109ce",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-11",
+      "source": "schloss"
+    },
+    {
+      "id": "a2cb46c240959113",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-12-12",
+      "source": "schloss"
+    },
+    {
+      "id": "4d87c5ca09c94979",
+      "title": "Kaffeeklatsch bei Königs",
+      "date_start": "2026-12-12",
+      "source": "schloss"
+    },
+    {
+      "id": "fc597c0382e4160c",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-12-12",
+      "source": "schloss"
+    },
+    {
+      "id": "6da0624d8f993620",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2026-12-12",
+      "source": "museum"
+    },
+    {
+      "id": "cdd90fbb9816bfa8",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-12-13",
+      "source": "schloss"
+    },
+    {
+      "id": "89211d13bdf6eab4",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-12-13",
+      "source": "schloss"
+    },
+    {
+      "id": "172f3ecb05be2ebf",
+      "title": "Zu Diensten des Herzogs",
+      "date_start": "2026-12-13",
+      "source": "schloss"
+    },
+    {
+      "id": "712623bc24124a9c",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-15",
+      "source": "museum"
+    },
+    {
+      "id": "fc51076473883fb5",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-18",
+      "source": "schloss"
+    },
+    {
+      "id": "03235c3022d8734f",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-12-19",
+      "source": "schloss"
+    },
+    {
+      "id": "424e359f069a919f",
+      "title": "Etikette und Intrigen",
+      "date_start": "2026-12-19",
+      "source": "schloss"
+    },
+    {
+      "id": "d0f91dc233070913",
+      "title": "Schaurig schön",
+      "date_start": "2026-12-19",
+      "source": "schloss"
+    },
+    {
+      "id": "eed6bc16185af3b4",
+      "title": "Technik in der Unterwelt",
+      "date_start": "2026-12-20",
+      "source": "schloss"
+    },
+    {
+      "id": "873519c2ec98a0da",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-12-20",
+      "source": "schloss"
+    },
+    {
+      "id": "0c1eb95416e95798",
+      "title": "Etikette und Intrigen",
+      "date_start": "2026-12-20",
+      "source": "schloss"
+    },
+    {
+      "id": "731d87843648da13",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-12-22",
+      "source": "museum"
+    },
+    {
+      "id": "32fc9d1e6f95d3c2",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-12-25",
+      "source": "schloss"
+    },
+    {
+      "id": "c33a0ce87d913b46",
+      "title": "Kleidung, die verführt",
+      "date_start": "2026-12-25",
+      "source": "schloss"
+    },
+    {
+      "id": "f32a62fb2cce3a60",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-12-26",
+      "source": "schloss"
+    },
+    {
+      "id": "713d6fcdd7929a1b",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-12-26",
+      "source": "schloss"
+    },
+    {
+      "id": "536ae97f9d68c6e8",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-12-26",
+      "source": "schloss"
+    },
+    {
+      "id": "2e2521bd12a44211",
+      "title": "Mythos Mätresse",
       "date_start": "2026-12-27",
-      "source": "karlskaserne_veranstaltungen"
+      "source": "schloss"
     },
     {
-      "id": "00124a6416f7648e",
-      "title": "Dinner for One - Express",
+      "id": "0158a96c63eb8b6f",
+      "title": "Contenance oder die Welt des guten Benehmens",
+      "date_start": "2026-12-27",
+      "source": "schloss"
+    },
+    {
+      "id": "28210a998749579d",
+      "title": "Hidden Rooms",
+      "date_start": "2026-12-27",
+      "source": "schloss"
+    },
+    {
+      "id": "b0d321edb3776c57",
+      "title": "Die Liebe am Ludwigsburger Hof",
       "date_start": "2026-12-28",
-      "source": "karlskaserne_veranstaltungen"
+      "source": "schloss"
     },
     {
-      "id": "3f55814ec23b6268",
-      "title": "Dinner for One - Express",
+      "id": "9a0bc03a8f7a209b",
+      "title": "Vom Alltag einer herzoglichen Hofdame",
+      "date_start": "2026-12-28",
+      "source": "schloss"
+    },
+    {
+      "id": "a38669a50887eb1e",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-28",
+      "source": "schloss"
+    },
+    {
+      "id": "0835c6aaf9f72eb7",
+      "title": "Vom Alltag einer herzoglichen Hofdame",
       "date_start": "2026-12-29",
-      "source": "karlskaserne_veranstaltungen"
+      "source": "schloss"
+    },
+    {
+      "id": "9430e1a43fd3b307",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-29",
+      "source": "schloss"
+    },
+    {
+      "id": "79d398bcd6053f29",
+      "title": "Vom Alltag einer herzoglichen Hofdame",
+      "date_start": "2026-12-30",
+      "source": "schloss"
     },
     {
       "id": "ba28ca2436d3b64b",
@@ -101,84 +1019,154 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
+      "id": "0297efbcab5a82de",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-30",
+      "source": "schloss"
+    },
+    {
+      "id": "2782e54aa547001c",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-12-31",
+      "source": "schloss"
+    },
+    {
       "id": "0106e4251452c5cb",
       "title": "Dinner for One - Express",
       "date_start": "2026-12-31",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "4cb66bbadbf049cc",
-      "title": "Faschingsferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Bietigheim-Bissingen",
-      "date_start": "2027-02-08",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "5b2fa53b4d224e27",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-01-12",
+      "source": "museum"
     },
     {
-      "id": "ab16b6732a4fb412",
-      "title": "Kunstausstellung \"80 Jahre Kuhländer in Ludwigsburg\"",
-      "date_start": "2026-09-30",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "89b9378ead113757",
-      "title": "Wichtel-Stube",
-      "date_start": "2026-09-28",
-      "source": "ludwigsburg_stadt"
+      "id": "977fe135152e063a",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-01-19",
+      "source": "museum"
     },
     {
-      "id": "d66ee6afc5f75d5b",
-      "title": "Hatha-Yoga - entspannt in den Abend",
-      "date_start": "2026-09-28",
-      "source": "ludwigsburg_stadt"
+      "id": "4970b2b5f1feeba4",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-01-26",
+      "source": "museum"
     },
     {
-      "id": "0af5c874391cc4d6",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-23",
+      "id": "ef4e3745cd558465",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-02-02",
+      "source": "museum"
+    },
+    {
+      "id": "dd65f0064bc37985",
+      "title": "Museumspause",
+      "date_start": "2027-02-03",
+      "source": "museum"
+    },
+    {
+      "id": "57226b356397fd45",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-02-09",
+      "source": "museum"
+    },
+    {
+      "id": "d23fafd78c315299",
+      "title": "Stadtgeschichten",
+      "date_start": "2027-02-10",
+      "source": "museum"
+    },
+    {
+      "id": "bd5d3bd760a20207",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2027-02-13",
+      "source": "museum"
+    },
+    {
+      "id": "11f4daea147701fb",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-02-16",
+      "source": "museum"
+    },
+    {
+      "id": "c209b80c92ec5711",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2027-02-17",
+      "source": "museum"
+    },
+    {
+      "id": "1fd07d7716068697",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-02-23",
+      "source": "museum"
+    },
+    {
+      "id": "dbfbf8e4e6d8c729",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2027-02-27",
+      "source": "museum"
+    },
+    {
+      "id": "b787aa357cfe5a89",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-03-02",
+      "source": "museum"
+    },
+    {
+      "id": "bfe6f396a87a2728",
+      "title": "Museumspause",
+      "date_start": "2027-03-03",
+      "source": "museum"
+    },
+    {
+      "id": "2c7757808e044010",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-03-09",
+      "source": "museum"
+    },
+    {
+      "id": "4c612d5d68be6f89",
+      "title": "Stadtgeschichten",
+      "date_start": "2027-03-10",
+      "source": "museum"
+    },
+    {
+      "id": "8708bc91c9738313",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2027-03-13",
+      "source": "museum"
+    },
+    {
+      "id": "36b97b9d52293745",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-03-16",
+      "source": "museum"
+    },
+    {
+      "id": "bab93dd54e062b80",
+      "title": "Treff der Museumsfreunde",
+      "date_start": "2027-03-17",
+      "source": "museum"
+    },
+    {
+      "id": "2a5cbfbe20f45915",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2027-03-20",
+      "source": "museum"
+    },
+    {
+      "id": "d3567eef48470892",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2027-03-23",
+      "source": "museum"
+    },
+    {
+      "id": "0ddc5d99ebe250f8",
+      "title": "Klassische Führung für Familien",
+      "date_start": null,
       "source": "schloss"
-    },
-    {
-      "id": "e295bebd0a1c9f8e",
-      "title": "Faschingsferienworkshop: Hip-Hop Streetdance Kids für Kinder von 8-9 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "d490bbc0a3c5544a",
-      "title": "Faschingsferienworkshop: Theater-Werkstatt für Kinder von 10-14 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "abf0f4c75316602b",
-      "title": "Faschingsferienworkshop: Kerzen selbst gießen und verzieren für Kinder ab 8 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "3977aba3565e601a",
-      "title": "Faschingsferienworkshop: Superhelden. Powergirls für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "90c7a6c16bc897eb",
-      "title": "Faschingsferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "a27d11cd68c095b0",
-      "title": "Faschingsferienworkshop: Ein Pferd aus Holz gebaut ab 8 Jahren in Bietigheim-Bissingen",
-      "date_start": "2027-02-08",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "1550464924baf44e",
-      "title": "Alice im Wunderland",
-      "date_start": "2027-02-20",
-      "source": "karlskaserne_veranstaltungen"
     }
   ]
 }

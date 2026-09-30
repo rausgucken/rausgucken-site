@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-29T05:56:12.191552+02:00",
+  "generated_at": "2026-09-30T05:44:52.338012+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-09-28T05:57:25.670924+02:00",
-  "count_added": 6,
-  "count_removed": 0,
+  "previous_run": "2026-09-29T05:56:12.266593+02:00",
+  "count_added": 8,
+  "count_removed": 3,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -44,7 +44,38 @@
       "title": "KleinstadtQueers",
       "date_start": "2026-09-26",
       "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "a1233f34331c542b",
+      "title": "Weinerlebnistag",
+      "date_start": "2026-10-04",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "aa13e23f67eb7456",
+      "title": "Gläserne Produktion: Hoffest Schülke's Hof",
+      "date_start": "2026-10-11",
+      "source": "sachsenheim_library"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "f3cd5df7a029a87e",
+      "title": "Rollatortraining",
+      "date_start": "2026-10-23",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "91532ddd54df9e53",
+      "title": "Rollatortraining",
+      "date_start": "2026-10-23",
+      "source": "sachsenheim_library"
+    },
+    {
+      "id": "9de3cd251ec75515",
+      "title": "Tanznachmittag",
+      "date_start": "2026-10-27",
+      "source": "sachsenheim_kultur"
+    }
+  ]
 }
