@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-30T10:11:01.232641+02:00",
+  "generated_at": "2026-10-01T11:33:35.401826+02:00",
   "city": "asperg",
   "sources": [
+    "glasperlenspiel",
     "asperg_fuehrungen",
-    "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-09-29T10:07:40.676509+02:00",
-  "count_added": 24,
-  "count_removed": 0,
+  "previous_run": "2026-09-30T10:11:01.310385+02:00",
+  "count_added": 25,
+  "count_removed": 1,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -153,7 +153,20 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "a63e01afafc5485b",
+      "title": "Blues-Programm von Christof Altmann",
+      "date_start": "2026-12-13",
+      "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "68f98031c0a93d86",
+      "title": "Baby und Kids-Treff",
+      "date_start": "2026-09-30",
+      "source": "asperg_veranstaltungen"
+    }
+  ]
 }
