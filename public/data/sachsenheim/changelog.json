@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-01T05:42:31.653718+02:00",
+  "generated_at": "2026-10-02T05:55:15.932407+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-09-30T05:44:52.412484+02:00",
-  "count_added": 6,
-  "count_removed": 0,
+  "previous_run": "2026-10-01T05:42:31.727579+02:00",
+  "count_added": 8,
+  "count_removed": 2,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -19,6 +19,18 @@
       "id": "7abb0b728b87ef8b",
       "title": "„Gold und Glamour“ in Sachsenheim",
       "date_start": "2026-03-15",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "3eb294da9b6bc776",
+      "title": "KleinstadtQueers",
+      "date_start": "2026-08-29",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "d7fae7ecdd353b67",
+      "title": "KleinstadtQueers",
+      "date_start": "2026-09-26",
       "source": "sachsenheim_kultur"
     },
     {
@@ -34,17 +46,30 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "3eb294da9b6bc776",
-      "title": "KleinstadtQueers",
-      "date_start": "2026-08-29",
+      "id": "867c3883c7db5aa4",
+      "title": "Die Grabowskis – „Die unteren 10.000\"",
+      "date_start": "2026-10-10",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "d7fae7ecdd353b67",
-      "title": "KleinstadtQueers",
-      "date_start": "2026-09-26",
+      "id": "15626b2b92911696",
+      "title": "Kirbe in der Kelter Hohenhaslach",
+      "date_start": "2026-10-18",
       "source": "sachsenheim_kultur"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "1f54aba41e24d8c1",
+      "title": "Spiegelei und Blaubeerlameile",
+      "date_start": "2026-10-01",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "fa7bdbe51f1d2949",
+      "title": "Die Grabowskis - Die unteren 10.000",
+      "date_start": "2026-10-10",
+      "source": "sachsenheim_kultur"
+    }
+  ]
 }

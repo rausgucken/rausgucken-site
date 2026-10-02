@@ -1,12 +1,38 @@
 {
-  "generated_at": "2026-10-01T05:44:21.178507+02:00",
+  "generated_at": "2026-10-02T05:57:04.590132+02:00",
   "city": "besigheim",
   "sources": [
     "besigheim_stadt"
   ],
-  "previous_run": "2026-09-30T05:29:13.307606+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-10-01T05:44:21.259657+02:00",
+  "count_added": 1,
+  "count_removed": 3,
+  "added": [
+    {
+      "id": "9d71e03ba7643a1a",
+      "title": "Besigheimer Weihnachtsmarkt",
+      "date_start": "2026-12-05",
+      "source": "besigheim_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "1ec065bd24ab012e",
+      "title": "Rätselspiele",
+      "date_start": "2026-10-01",
+      "source": "besigheim_stadt"
+    },
+    {
+      "id": "ce1521d5613c218e",
+      "title": "Kindertheateraufführungen",
+      "date_start": "2026-12-05",
+      "source": "besigheim_stadt"
+    },
+    {
+      "id": "4dc8957b10896aa1",
+      "title": "Besigheimer Weihnachtsmarkt",
+      "date_start": "2026-12-05",
+      "source": "besigheim_stadt"
+    }
+  ]
 }
