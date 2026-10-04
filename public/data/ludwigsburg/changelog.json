@@ -1,200 +1,146 @@
 {
-  "generated_at": "2026-10-02T09:01:32.718063+02:00",
+  "generated_at": "2026-10-04T08:51:39.432597+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "blueba",
-    "labyrinth",
     "demokratisches_zentrum",
-    "lisbert_queer",
+    "ludwigsburg_stadt",
+    "stabi",
+    "museum",
     "forum_schlosspark",
+    "garnisonmuseum",
+    "kunstverein_ausstellungen",
+    "blueba",
+    "kunstverein_veranstaltungen",
+    "lisbert_queer",
+    "musikhalle_lb",
+    "labyrinth",
     "schloss",
     "karlskaserne_veranstaltungen",
-    "garnisonmuseum",
-    "stabi",
-    "musikhalle_lb",
-    "kunstverein_veranstaltungen",
-    "ludwigsburg_stadt",
-    "kunstverein_ausstellungen"
+    "karlskaserne_ausstellungen"
   ],
-  "previous_run": "2026-10-01T10:03:56.032479+02:00",
-  "count_added": 15,
-  "count_removed": 61,
+  "previous_run": "2026-10-03T09:00:04.663168+02:00",
+  "count_added": 81,
+  "count_removed": 39,
   "added": [
     {
-      "id": "8f9a9ad1ace964ca",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-02",
-      "source": "schloss"
-    },
-    {
-      "id": "158c9d570a35ab21",
-      "title": "Kasernenspaziergang ostwärts der Stuttgarter Straße mit OTL a",
-      "date_start": "2026-09-20",
-      "source": "garnisonmuseum"
-    },
-    {
-      "id": "5e012f0afde9b9cc",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": null,
-      "source": "schloss"
-    },
-    {
-      "id": "2cec69e225251676",
-      "title": "Geisterjagd im Schloss",
-      "date_start": "2026-11-13",
-      "source": "schloss"
-    },
-    {
-      "id": "11d66526b1bdc316",
-      "title": "Caché = verborgen",
-      "date_start": "2026-11-22",
-      "source": "schloss"
-    },
-    {
-      "id": "a92eda06c1ae9c25",
-      "title": "Geisterjagd im Schloss",
-      "date_start": "2026-11-27",
-      "source": "schloss"
-    },
-    {
-      "id": "01cc147d85a01e38",
-      "title": "Geisterjagd im Schloss",
-      "date_start": "2026-12-12",
-      "source": "schloss"
-    },
-    {
-      "id": "5740d065b00ea877",
-      "title": "Geisterjagd im Schloss",
-      "date_start": "2026-12-28",
-      "source": "schloss"
-    },
-    {
-      "id": "af6b49c7d4f6e1fd",
+      "id": "9986806912b04ae8",
       "title": "29. Jugendkunstpreis Baden-Württemberg 2026 \"Zusammen\"",
+      "date_start": "2026-10-10",
+      "source": "karlskaserne_ausstellungen"
+    },
+    {
+      "id": "a4bb5e38fb9c5b28",
+      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 5-7 Jahren in Ludwigsburg",
       "date_start": "2026-10-10",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "28a8c24f2ec2ea40",
-      "title": "Music got Rhythm – Das Jahrhundert des Jazz",
-      "date_start": "2026-11-04",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "ec51d6a0ab78c784",
+      "title": "Internationale Geschichteninsel - Albanisch",
+      "date_start": "2026-10-23",
+      "source": "stabi"
     },
     {
-      "id": "93ca47460f73ec68",
-      "title": "Kinderkino: Jazzy - Chaos im Regenwald",
-      "date_start": "2026-10-04",
-      "source": "ludwigsburg_stadt"
+      "id": "4599ead6cb6ee667",
+      "title": "Lesung \"Ins Leere gelaufen\"",
+      "date_start": "2026-10-08",
+      "source": "stabi"
     },
     {
-      "id": "a7cc1e3328be9aa4",
-      "title": "Das ist kein Rückblick",
-      "date_start": "2026-10-04",
-      "source": "ludwigsburg_stadt"
+      "id": "879c4991aaf81f26",
+      "title": "AKTIONSTAG PSYCHISCH STARK",
+      "date_start": "2026-10-08",
+      "source": "stabi"
     },
     {
-      "id": "2910b32f5b2ec764",
-      "title": "MHP RIESEN vs. VET-CONCEPT Gladiators Trier",
-      "date_start": "2026-10-04",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b7e46223fe1455fd",
-      "title": "Wichtel-Stube",
+      "id": "7902b992f06250f0",
+      "title": "Kunst zum Ausprobieren: \"Blumentopf bemalen\"",
       "date_start": "2026-10-05",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "16e1eba6220af1d5",
-      "title": "Schulvorstellung: Das ist kein Rückblick",
+      "id": "4c9280733210f2f5",
+      "title": "También la lluvia – Und dann der Regen",
       "date_start": "2026-10-05",
       "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
+    },
     {
-      "id": "f2d072ce4584b2b4",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": "2026-03-28",
-      "source": "schloss"
+      "id": "208bd1d27327806c",
+      "title": "Vererben und Schenken",
+      "date_start": "2026-10-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "d16d53363e03a77d",
+      "title": "SPORT TROTZ KREBS",
+      "date_start": "2026-10-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "78494ea3904e09dc",
+      "title": "Digitale Hilfe im Mehrgenerationenhaus",
+      "date_start": "2026-10-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "25059fe9a4a65f24",
+      "title": "Portugiesischsprachige Spielgruppe / Grupo de Brincadeiras em Português",
+      "date_start": "2026-10-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "abe707e19f59894a",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-10-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "348abe96e729bdc2",
+      "title": "Kostümführung: Gruselführung bei Nacht",
+      "date_start": "2026-10-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "541d941fb4c3de02",
+      "title": "Achtsamkeit im Alltag - Mehr Ruhe. Mehr Klarheit. Mehr bei dir ankommen.",
+      "date_start": "2026-10-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "93e749ad1b83cfc4",
+      "title": "Hausaufgaben ohne Stress: Wie Kinder zuhause entspannt und selbstständig lernen",
+      "date_start": "2026-10-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "4b0d0c62524de91c",
+      "title": "Torsten Sträter",
+      "date_start": "2026-10-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "eff130d287353e18",
+      "title": "Psychologische Beratung – mit Herz und Erfahrung für Sie da!",
+      "date_start": "2026-10-06",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "b0d7a0f64d424acd",
+      "title": "Candlelight: Taylor Swift",
+      "date_start": "2026-10-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "245b56bfe8845739",
+      "title": "Noah Diemer - Echoes Of Lullabies",
+      "date_start": "2027-04-30",
+      "source": "musikhalle_lb"
     },
     {
       "id": "650ef2c04fb838df",
       "title": "Little America – Fotografie Jürgen Schadeberg",
       "date_start": "2026-07-01",
       "source": "museum"
-    },
-    {
-      "id": "0c8f18be0d033c6c",
-      "title": "Spielzeit FamilienLeben - Donnerstags",
-      "date_start": "2026-10-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "d6ecb15e31dd60f7",
-      "title": "Zwergeninsel",
-      "date_start": "2026-10-01",
-      "source": "stabi"
-    },
-    {
-      "id": "1608e1f11189758a",
-      "title": "Zwergeninsel",
-      "date_start": "2026-10-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "152401522500d0b8",
-      "title": "Aktionstag Weltstillwoche",
-      "date_start": "2026-10-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "f9ad098325b53df5",
-      "title": "Sport für die Seele",
-      "date_start": "2026-10-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b4c34ec561cf3077",
-      "title": "Vorlesedonner",
-      "date_start": "2026-10-01",
-      "source": "stabi"
-    },
-    {
-      "id": "5cec4b11086a8fda",
-      "title": "Internationale Geschichteninsel auf Arabisch",
-      "date_start": "2026-10-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "fa4364657da73042",
-      "title": "Genussführung: ANGEZAPFT in Ludwigsburg",
-      "date_start": "2026-10-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "298d3b09ce424282",
-      "title": "Internationale Geschichteninsel - Arabisch",
-      "date_start": "2026-10-01",
-      "source": "stabi"
-    },
-    {
-      "id": "c98f9ab26850ddc4",
-      "title": "Rätsel-Tour: Willkommen zu den Geheimnissen der Dämmerstunde",
-      "date_start": "2026-10-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "e6d5a1f381a8c1d9",
-      "title": "LISBERT Babbel Bubble",
-      "date_start": "2026-10-01",
-      "source": "lisbert_queer"
-    },
-    {
-      "id": "e289d76099a23c32",
-      "title": "Nachts im Schloss",
-      "date_start": "2026-10-02",
-      "source": "schloss"
     },
     {
       "id": "1ad591165ba69227",
@@ -207,12 +153,6 @@
       "title": "Museumspause",
       "date_start": "2026-10-07",
       "source": "museum"
-    },
-    {
-      "id": "5ab192944bc97e86",
-      "title": "29. Jugendkunstpreis Baden-Württemberg 2026 \"Zusammen\"",
-      "date_start": "2026-10-09",
-      "source": "karlskaserne_ausstellungen"
     },
     {
       "id": "d47a92c5185c1929",
@@ -377,12 +317,6 @@
       "source": "museum"
     },
     {
-      "id": "5b2fa53b4d224e27",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2027-01-12",
-      "source": "museum"
-    },
-    {
       "id": "977fe135152e063a",
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2027-01-19",
@@ -411,12 +345,6 @@
       "title": "Workshop flott, flott: Schillerndes Mobile",
       "date_start": "2027-02-06",
       "source": "museum"
-    },
-    {
-      "id": "4cb66bbadbf049cc",
-      "title": "Faschingsferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Bietigheim-Bissingen",
-      "date_start": "2027-02-08",
-      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "57226b356397fd45",
@@ -455,6 +383,12 @@
       "source": "museum"
     },
     {
+      "id": "dbfbf8e4e6d8c729",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2027-02-27",
+      "source": "museum"
+    },
+    {
       "id": "b787aa357cfe5a89",
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2027-03-02",
@@ -477,6 +411,338 @@
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2027-03-09",
       "source": "museum"
+    },
+    {
+      "id": "f2d072ce4584b2b4",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": "2026-03-28",
+      "source": "schloss"
+    },
+    {
+      "id": "cfc72384a266308b",
+      "title": "Herbstferienworkshop: König Peter und Prinzessin Lila aus Ton für Kinder ab 7 Jahren in Bietigheim-Bissingen",
+      "date_start": "2026-10-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "4cb66bbadbf049cc",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Bietigheim-Bissingen",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "f2b486347e0cf3e7",
+      "title": "Spielzeit FamilienLeben - Mittwochs",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "8263c7e5b85c560f",
+      "title": "Museumspause",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a0ce4f74d3dbb2c9",
+      "title": "Kostenfreie Beratung rund um’s Balkonkraftwerk",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "939d613bc7e5084b",
+      "title": "Generationen im Gespräch",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "d66ea49af72377ff",
+      "title": "Genussführung: Taste & The City",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "34bfd08f7bcd76f4",
+      "title": "Pinktober",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "dd73f8df2f35aa66",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "85664cb104a986f5",
+      "title": "Frauen in Gesellschaft - in und mit der Natur",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c3c056a618560d69",
+      "title": "Music on Screen: Queen Budapest",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "df2de16897b505d7",
+      "title": "Augen entspannen, Sehkraft stärken",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "50890d1337843bbd",
+      "title": "Studio Konzert - Doppelkonzert mit Johanna Pohlmann & Myrsini Bekakou",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "bf85fdf186763a6a",
+      "title": "Französischer Markt",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "79bd949bc39b7a1e",
+      "title": "Formular- Guide",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "e27cf532e3d2d886",
+      "title": "Hörtraining in Kleingruppe für Hörgeräteträger",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3ee57755e5151f90",
+      "title": "Offener Elterntreff",
+      "date_start": "2026-10-02",
+      "source": "labyrinth"
+    },
+    {
+      "id": "bf5ae77f2acb35ea",
+      "title": "Gaming Friday",
+      "date_start": "2026-10-02",
+      "source": "stabi"
+    },
+    {
+      "id": "ab66c3c141a25ba4",
+      "title": "Gaming Friday",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "75334010fbc43ba1",
+      "title": "Ludwigsburger Spiele-Marathon zur Langen Nacht der Demokratie",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "0b3adaccdfd27128",
+      "title": "Internationale Geschichteninsel auf Portugiesisch",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "9879c85f0fdda2d9",
+      "title": "Internationale Geschichteninsel - Portugiesisch",
+      "date_start": "2026-10-02",
+      "source": "stabi"
+    },
+    {
+      "id": "75f78b01bf510238",
+      "title": "Yoga für Schwangere - entspannt und gestärkt durch die Schwangerschaft",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a6015cfa54c201b2",
+      "title": "Genussführung: Ludwigsburg im Abendlicht",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3a51140cb0fffbb8",
+      "title": "Genussführung: Taste & The City",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "22c87df5e5e583cf",
+      "title": "Brigitte Heidebrecht: Eingewandert nach Ludwigsburg - und dann...?",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "229f3f01d766c657",
+      "title": "Brigitte Heidebrecht: Eingewandert nach Ludwigsburg, und dann ...?",
+      "date_start": "2026-10-02",
+      "source": "stabi"
+    },
+    {
+      "id": "e270cd0d777669ef",
+      "title": "FilmStop - ImproGo! Neues Kulturprojekt in Ludwigsburg",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fc79b3288015a0bf",
+      "title": "In der Ruhe liegt die Kraft!",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "448a4bc9581b217e",
+      "title": "VIVALDI- DIE VIER JAHRESZEITEN",
+      "date_start": "2026-10-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "8f9a9ad1ace964ca",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-10-02",
+      "source": "schloss"
+    },
+    {
+      "id": "d9a0cfe6979cc292",
+      "title": "Cole’s Business",
+      "date_start": "2026-10-02",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "c3be2cd240822dc8",
+      "title": "Hundeschwimmen im Freibad Hoheneck",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5feac5b328f53672",
+      "title": "Somatic Dance",
+      "date_start": "2026-10-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "e375d410ae236a7d",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-10-03",
+      "source": "schloss"
+    },
+    {
+      "id": "43008113e035edee",
+      "title": "Menschenkette in LB",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2a8b12bd28b799bf",
+      "title": "Minigolf-Parcours der Kommunen",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "832f747ac9026070",
+      "title": "Sprichwörtern auf der Spur",
+      "date_start": "2026-10-03",
+      "source": "schloss"
+    },
+    {
+      "id": "d328664b379cfb5f",
+      "title": "Kinderkino: Jazzy - Chaos im Regenwald",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "572b389262efd068",
+      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a6022c8d744d6450",
+      "title": "5. Ludwigsburger DJK-Lauf",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "08a8459fa66e9708",
+      "title": "Interreligiöse Dialogtour 2026",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "d5f033ad44875321",
+      "title": "Etikette und Intrigen",
+      "date_start": "2026-10-03",
+      "source": "schloss"
+    },
+    {
+      "id": "edd28ac079604129",
+      "title": "Zeit und Unendlichkeit",
+      "date_start": "2026-10-03",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "257c35c7dc240f56",
+      "title": "Zeit und Unendlichkeit",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "0f239ae52a48f6ff",
+      "title": "Eiskalter GeisterAtem - eine gruselige Schmunzel-Tour",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "34aed2cc7b2bd54f",
+      "title": "Geisterjagd im Schloss",
+      "date_start": "2026-10-03",
+      "source": "schloss"
+    },
+    {
+      "id": "697e6ddccc49beca",
+      "title": "Das ist kein Rückblick",
+      "date_start": "2026-10-03",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2ed56b6a434e60fe",
+      "title": "AKTIONSTAG PSYCHISCH STARK",
+      "date_start": "2026-10-08",
+      "source": "stabi"
+    },
+    {
+      "id": "2042f27fcd866e0c",
+      "title": "Internationale Geschichteninsel - Albanisch",
+      "date_start": "2026-10-09",
+      "source": "stabi"
+    },
+    {
+      "id": "5a1810fafc3c5ec5",
+      "title": "Candlelight: Taylor Swift",
+      "date_start": "2026-10-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "af6b49c7d4f6e1fd",
+      "title": "29. Jugendkunstpreis Baden-Württemberg 2026 \"Zusammen\"",
+      "date_start": "2026-10-10",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "2cd4a3281b6e68cd",
+      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 5-7 Jahren in Ludwigsburg",
+      "date_start": "2026-10-10",
+      "source": "labyrinth"
+    },
+    {
+      "id": "5e012f0afde9b9cc",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": null,
+      "source": "schloss"
     }
   ]
 }

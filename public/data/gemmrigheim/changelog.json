@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-10-02T07:38:50.334348+02:00",
+  "generated_at": "2026-10-04T07:20:52.490229+02:00",
   "city": "gemmrigheim",
   "sources": [
     "gemmrigheim_gemeinde"
   ],
-  "previous_run": "2026-10-01T07:29:27.812644+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-10-03T07:31:03.565022+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "d2e9b4b9d8e6378a",
+      "title": "Freizeitwanderung November",
+      "date_start": "2026-11-19",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "3945d82e2289af24",
+      "title": "Wallfahrt",
+      "date_start": "2026-10-03",
+      "source": "gemmrigheim_gemeinde"
+    }
+  ]
 }

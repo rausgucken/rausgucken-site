@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-02T10:26:28.551282+02:00",
+  "generated_at": "2026-10-04T10:17:13.605016+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
+    "asperg_veranstaltungen",
     "glasperlenspiel",
-    "asperg_veranstaltungen"
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-10-01T11:33:35.479006+02:00",
-  "count_added": 24,
-  "count_removed": 1,
+  "previous_run": "2026-10-03T10:30:29.738431+02:00",
+  "count_added": 28,
+  "count_removed": 6,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -149,17 +149,71 @@
       "source": "glasperlenspiel"
     },
     {
+      "id": "ed3935ab415a98c5",
+      "title": "Physik in Hollywood II",
+      "date_start": "2026-11-08",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "b0c42af0f50a438e",
+      "title": "Ehepaar Lore und Harry",
+      "date_start": "2026-11-21",
+      "source": "glasperlenspiel"
+    },
+    {
       "id": "cb7d4d5e64cac6fd",
       "title": "Ausstellung",
       "date_start": "2026-11-22",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "98b554a7df0c8061",
+      "title": "England der 50er Jahre",
+      "date_start": "2026-10-31",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "79a8dc9f685bd195",
+      "title": "Weihnachts-Mix",
+      "date_start": "2026-12-28",
       "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "e87f22d62c8c0c16",
-      "title": "Treffpunkt Miki - Treffpunkt für Alle",
-      "date_start": "2026-10-01",
+      "id": "47b5f2df9a7f69de",
+      "title": "Jazz - Session - Die Glasperlenspieler",
+      "date_start": "2026-10-02",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "a88a85dfeef9b2c3",
+      "title": "Jazz-Abende",
+      "date_start": "2026-10-02",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "bf23017c5b2f62f1",
+      "title": "Wochenmarkt",
+      "date_start": "2026-10-03",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "4fb9886a3e976243",
+      "title": "Führung - Ein Gang über die schwäbische Bastille",
+      "date_start": "2026-10-03",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "9629872eca2d75d9",
+      "title": "RepairCafe & UpcyclingWerkstatt",
+      "date_start": "2026-10-03",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "36891f36d2624f02",
+      "title": "Theater - Alte Liebe (Premiere)",
+      "date_start": "2026-10-03",
       "source": "asperg_veranstaltungen"
     }
   ]
