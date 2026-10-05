@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-10-04T05:33:46.439062+02:00",
+  "generated_at": "2026-10-05T05:38:54.716548+02:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-10-03T05:39:15.133071+02:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-10-04T05:33:46.521044+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "e1f2a6f65520d937",
+      "title": "Tag der offenen Tür",
+      "date_start": "2026-11-01",
+      "source": "affalterbach_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "5567a95d7dc108f7",
-      "title": "LEA-Infostand Energieberatung",
-      "date_start": "2026-10-02",
+      "id": "4ffa792fd3a0737f",
+      "title": "Erntedank",
+      "date_start": "2026-10-04",
+      "source": "affalterbach_stadt"
+    },
+    {
+      "id": "c7966e378daad2fb",
+      "title": "Tag der offenen Tür",
+      "date_start": "2026-10-04",
       "source": "affalterbach_stadt"
     }
   ]

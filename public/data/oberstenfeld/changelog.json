@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-04T07:20:31.595615+02:00",
+  "generated_at": "2026-10-05T07:02:57.328041+02:00",
   "city": "oberstenfeld",
   "sources": [
     "oberstenfeld_veranstaltungen"
   ],
-  "previous_run": "2026-10-03T07:29:04.944798+02:00",
+  "previous_run": "2026-10-04T07:20:31.670568+02:00",
   "count_added": 56,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [
     {
       "id": "fa199f20b3bb75db",
@@ -243,12 +243,6 @@
       "source": "oberstenfeld_veranstaltungen"
     },
     {
-      "id": "1b0664801a93c9a1",
-      "title": "Das GroMusle hat geöffnet",
-      "date_start": "2026-06-07",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
       "id": "306549d9cf3e9a48",
       "title": "Suppentöpfle",
       "date_start": "2026-06-09",
@@ -343,7 +337,26 @@
       "title": "Goldener Herbst",
       "date_start": "2026-10-01",
       "source": "oberstenfeld_veranstaltungen"
+    },
+    {
+      "id": "e4d4b57cd2c0fa38",
+      "title": "Backtraum",
+      "date_start": "2026-10-02",
+      "source": "oberstenfeld_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "26172dc405b425c5",
+      "title": "Erntedank/ Gemeindefest",
+      "date_start": "2026-10-04",
+      "source": "oberstenfeld_veranstaltungen"
+    },
+    {
+      "id": "2c403623e26c15a5",
+      "title": "Das GroMusle hat geöffnet",
+      "date_start": "2026-10-04",
+      "source": "oberstenfeld_veranstaltungen"
+    }
+  ]
 }

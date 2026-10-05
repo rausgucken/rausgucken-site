@@ -1,42 +1,37 @@
 {
-  "generated_at": "2026-10-04T05:28:01.096474+02:00",
+  "generated_at": "2026-10-05T05:38:17.909722+02:00",
   "city": "ditzingen",
   "sources": [
     "ditzingen_treffpunkt_adler",
     "ditzingen_stadt"
   ],
-  "previous_run": "2026-10-03T05:38:33.811326+02:00",
-  "count_added": 0,
-  "count_removed": 5,
-  "added": [],
+  "previous_run": "2026-10-04T05:28:01.179881+02:00",
+  "count_added": 3,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "e89c70a41bc5f6fb",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-10-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "b9b428c19cd8a18d",
+      "title": "Skatgruppen",
+      "date_start": "2027-10-05",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "44dcf42ddd2e60c2",
+      "title": "\"Betreuungscafé Augenblick\"  Betreuungsgruppe für Menschen mit und ohne Demenz (Abt. Senioren und Teilhabe)",
+      "date_start": "2027-10-05",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ],
   "removed": [
     {
-      "id": "a762ace8862f664e",
-      "title": "Cappuccino.Päusle",
-      "date_start": "2026-10-02",
-      "source": "ditzingen_treffpunkt_adler"
-    },
-    {
-      "id": "eeecc6eee1399509",
-      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
-      "date_start": "2026-10-02",
-      "source": "ditzingen_treffpunkt_adler"
-    },
-    {
-      "id": "4c56ccadb082c462",
-      "title": "Gismo Graf Trio feat. Cheyenne",
-      "date_start": "2026-10-02",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "4e261ee241caee39",
-      "title": "Charity Bike Cup 2026",
-      "date_start": "2026-10-03",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "c71cbda43c75e11d",
-      "title": "Offenes Singen zum Tag der deutschen Einheit",
+      "id": "0ab7c9448cb04d78",
+      "title": "60. Deutsche Einzelmeisterschaften im Tipp-Kick",
       "date_start": "2026-10-03",
       "source": "ditzingen_stadt"
     }

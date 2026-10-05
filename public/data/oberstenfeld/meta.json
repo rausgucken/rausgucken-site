@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-10-04T07:20:31.670568+02:00",
+  "scraped_at": "2026-10-05T07:02:57.402930+02:00",
   "city": "oberstenfeld",
-  "event_count": 33,
+  "event_count": 31,
   "flagged_count": 0,
-  "expired_count": 57,
+  "expired_count": 56,
   "sources_scraped": [
     "oberstenfeld_veranstaltungen"
   ],
   "source_counts": {
-    "oberstenfeld_veranstaltungen": 33
+    "oberstenfeld_veranstaltungen": 31
   },
   "sources_failed": [],
-  "data_hash": "411deac37e125cb0",
+  "data_hash": "4c608bdf105a6caf",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 04.10.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 05.10.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "oberstenfeld_veranstaltungen": 1.0
   },
   "source_event_counts": {
-    "oberstenfeld_veranstaltungen": 33
+    "oberstenfeld_veranstaltungen": 31
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 497.2,
-    "runtime_delta_vs_baseline": 1.778,
+    "runtime_minutes": 452.8,
+    "runtime_delta_vs_baseline": 1.53,
     "source_health": {
       "oberstenfeld_veranstaltungen": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-10-04T10:31:27.895856+02:00"
+    "generated_at": "2026-10-05T09:45:33.824809+02:00"
   }
 }
