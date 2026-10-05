@@ -1,37 +1,71 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-10-04T07:34:15.594599+02:00",
-  "event_count": 1,
+  "generated_at": "2026-10-05T06:00:02.358182+02:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "0441b9a46fa7c473",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-10-04",
+      "id": "3e777d9327646935",
+      "title": "Familienolympiade",
+      "date_start": "2026-10-10",
       "date_end": null,
       "time": null,
-      "description": "In der Festhalle nimmt der Seniorennachmittag im Foyerbereich statt. Organisiert vom Krankenpflegeverein Oberriexingen bietet dieser Veranstaltungsort einen gemütlichen Rahmen für Teilnehmer aller Altersgruppen.",
-      "location": "Festhalle - Foyerbereich",
+      "description": "In der Familienolympiade können Kinder und Erwachsene gemeinsam an Sportwettbewerben teilnehmen. Organisationsteam TSV Oberriexingen bietet eine Vielzahl von Aktivitäten für alle Altersgruppen an.",
+      "location": "Sporthalle",
       "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [],
-      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/seniorennachmittag-5/",
-      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/seniorennachmittag-5/",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/familienolympiade/",
+      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/familienolympiade/",
       "source": "oberriexingen_stadt",
       "city": "oberriexingen",
-      "slug": "seniorennachmittag-2026-10-04-ober",
+      "slug": "familienolympiade-2026-10-10-ober",
       "weekdays": [
-        0
+        6
       ],
-      "scraped_at": "2026-10-04T02:09:46.501500+02:00",
+      "scraped_at": "2026-10-04T02:09:47.956034+02:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Oberriexingen",
-      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/seniorennachmittag-2026-10-04-ober"
+      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/familienolympiade-2026-10-10-ober"
+    },
+    {
+      "id": "a5d1ed2cbf9d4d5e",
+      "title": "Stadtführung",
+      "date_start": "2026-10-11",
+      "date_end": null,
+      "time": null,
+      "description": "In dieser Stadtführung durch Kronenplatz erfahren Sie die Geschichte des Ortes von Fachwissen der Stadt Oberriexingen.",
+      "location": "Kronenplatz, Oberriexingen",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung"
+      ],
+      "link": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/stadtfuehrung-7/",
+      "original_url": "https://www.oberriexingen.de/stadt-tourismus/aktuelles/veranstaltungskalender/veranstaltung/stadtfuehrung-7/",
+      "source": "oberriexingen_stadt",
+      "city": "oberriexingen",
+      "slug": "stadtfuehrung-2026-10-11-ober",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-10-04T02:09:49.489645+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Oberriexingen",
+      "canonical_url": "https://www.rausgucken.de/oberriexingen/events/stadtfuehrung-2026-10-11-ober"
     }
   ]
 }
