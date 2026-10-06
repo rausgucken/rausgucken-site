@@ -1,12 +1,38 @@
 {
-  "generated_at": "2026-10-05T07:02:59.517211+02:00",
+  "generated_at": "2026-10-06T08:40:34.599383+02:00",
   "city": "erdmannhausen",
   "sources": [
     "erdmannhausen_stadt"
   ],
-  "previous_run": "2026-10-04T07:20:33.824486+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-10-05T07:02:59.594746+02:00",
+  "count_added": 3,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "76ebb5ee183e3a3c",
+      "title": "Gott erLeben Gottesdienst mit dem Singteam",
+      "date_start": "2026-10-18",
+      "source": "erdmannhausen_stadt"
+    },
+    {
+      "id": "27e9b2754e3ee7ab",
+      "title": "Büchermarkt",
+      "date_start": "2026-11-07",
+      "source": "erdmannhausen_stadt"
+    },
+    {
+      "id": "b426bfff1b955ead",
+      "title": "Altpapiersammlung",
+      "date_start": "2026-11-21",
+      "source": "erdmannhausen_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "8e9ae00bbed3c621",
+      "title": "Gott erLeben Gottesdienst mit dem Singteam",
+      "date_start": "2026-10-17",
+      "source": "erdmannhausen_stadt"
+    }
+  ]
 }

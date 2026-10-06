@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-05T09:32:47.068849+02:00",
+  "generated_at": "2026-10-06T11:13:54.971552+02:00",
   "city": "asperg",
   "sources": [
+    "asperg_fuehrungen",
     "asperg_veranstaltungen",
-    "glasperlenspiel",
-    "asperg_fuehrungen"
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-10-04T10:17:13.682133+02:00",
+  "previous_run": "2026-10-05T09:32:47.145649+02:00",
   "count_added": 25,
-  "count_removed": 5,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -161,36 +161,5 @@
       "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "ef69002039c94c36",
-      "title": "Asperger Kirbe",
-      "date_start": "2026-10-04",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "961bae5bbbdc8898",
-      "title": "Hobbykunstmarkt",
-      "date_start": "2026-10-04",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "1b3f2de4db8cb9e3",
-      "title": "Ausstellungseröffnung Blende 81",
-      "date_start": "2026-10-04",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "63cdd4987eff132a",
-      "title": "Theater - Alte Liebe",
-      "date_start": "2026-10-04",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "9932cfe05ba5ea22",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2026-10-04",
-      "source": "glasperlenspiel"
-    }
-  ]
+  "removed": []
 }

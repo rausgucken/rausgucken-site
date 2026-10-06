@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-05T05:37:39.047324+02:00",
+  "generated_at": "2026-10-06T06:32:03.493572+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_kultur",
-    "sachsenheim_library"
+    "sachsenheim_library",
+    "sachsenheim_kultur"
   ],
-  "previous_run": "2026-10-04T05:54:07.999458+02:00",
+  "previous_run": "2026-10-05T05:37:39.124878+02:00",
   "count_added": 8,
-  "count_removed": 2,
+  "count_removed": 1,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -19,18 +19,6 @@
       "id": "7abb0b728b87ef8b",
       "title": "„Gold und Glamour“ in Sachsenheim",
       "date_start": "2026-03-15",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "2e6e0199c9d95a2c",
-      "title": "Offener Gesprächskreis Demenz",
-      "date_start": "2026-06-02",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "a5495be549239803",
-      "title": "Offener Gesprächskreis Demenz",
-      "date_start": "2026-07-07",
       "source": "sachsenheim_kultur"
     },
     {
@@ -46,30 +34,36 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "8b00a370d7920738",
-      "title": "KleinstadtQueers",
-      "date_start": "2026-10-31",
+      "id": "2e6e0199c9d95a2c",
+      "title": "Offener Gesprächskreis Demenz",
+      "date_start": "2026-06-02",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "361dc434bcd8b152",
-      "title": "Koschitzki und Pereira - Lieblingssongs",
-      "date_start": "2026-10-31",
+      "id": "a5495be549239803",
+      "title": "Offener Gesprächskreis Demenz",
+      "date_start": "2026-07-07",
       "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "7ff7c207d472a7ff",
+      "title": "Tag der offenen Tür",
+      "date_start": "2026-10-10",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "91532ddd54df9e53",
+      "title": "Rollatortraining",
+      "date_start": "2026-10-23",
+      "source": "sachsenheim_library"
     }
   ],
   "removed": [
     {
-      "id": "a1233f34331c542b",
-      "title": "Weinerlebnistag",
-      "date_start": "2026-10-04",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "3e124a88424d2c88",
-      "title": "Zeitreise zum Schmecken und Schnuppern",
-      "date_start": "2026-10-04",
-      "source": "sachsenheim_kultur"
+      "id": "055cb25ee0964412",
+      "title": "Tag der offenen Tür",
+      "date_start": "2026-10-10",
+      "source": "sachsenheim_library"
     }
   ]
 }
