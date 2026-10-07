@@ -1,12 +1,25 @@
 {
-  "generated_at": "2026-10-06T07:35:27.892382+02:00",
+  "generated_at": "2026-10-07T06:34:34.523576+02:00",
   "city": "schwieberdingen",
   "sources": [
     "schwieberdingen_gemeinde"
   ],
-  "previous_run": "2026-10-05T06:30:50.996690+02:00",
+  "previous_run": "2026-10-06T07:35:27.967922+02:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "ba984a780c0b15d1",
+      "title": "Persönliche Beratung",
+      "date_start": "2026-10-06",
+      "source": "schwieberdingen_gemeinde"
+    },
+    {
+      "id": "caca2022c55a8e71",
+      "title": "Spieleabend",
+      "date_start": "2026-10-06",
+      "source": "schwieberdingen_gemeinde"
+    }
+  ]
 }

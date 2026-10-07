@@ -1,20 +1,63 @@
 {
-  "generated_at": "2026-10-06T06:33:50.748600+02:00",
+  "generated_at": "2026-10-07T05:37:06.944871+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_treffpunkt_adler",
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-10-05T05:38:17.993157+02:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-10-06T06:33:50.830964+02:00",
+  "count_added": 1,
+  "count_removed": 7,
+  "added": [
+    {
+      "id": "37e9b598158d4f12",
+      "title": "Vorlesezeit",
+      "date_start": "2026-11-24",
+      "source": "ditzingen_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "33cc020c29a65929",
-      "title": "Interne Veranstaltung (Stadt Ditzingen)",
-      "date_start": "2026-10-05",
+      "id": "ab88e8a2161121f8",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-06",
       "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "0d3e6422be93cd50",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "eff2a480f4d17e83",
+      "title": "Nadelspiel und Kaffeeklatsch",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "a98c72d82bce4c22",
+      "title": "FEDIA-Freunde-Treff (FEDIA Stadt Ditzingen)",
+      "date_start": "2026-10-06",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "be073ee0a1d814c0",
+      "title": "Kaffeeklatsch mit Büchern",
+      "date_start": "2026-11-18",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "52a25da95e14af9d",
+      "title": "Vorlesezeit",
+      "date_start": "2026-11-24",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "cf9f713c2890f330",
+      "title": "Vorlesezeit",
+      "date_start": "2026-12-15",
+      "source": "ditzingen_stadt"
     }
   ]
 }

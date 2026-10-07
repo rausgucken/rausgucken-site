@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-10-06T09:56:06.684193+02:00",
+  "scraped_at": "2026-10-07T09:05:48.837764+02:00",
   "city": "ludwigsburg",
-  "event_count": 673,
+  "event_count": 668,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -24,7 +24,7 @@
   "source_counts": {
     "schloss": 109,
     "museum": 47,
-    "ludwigsburg_stadt": 49,
+    "ludwigsburg_stadt": 43,
     "blueba": 16,
     "kunstverein_ausstellungen": 2,
     "stabi": 129,
@@ -35,13 +35,13 @@
     "forum_schlosspark": 50,
     "labyrinth": 103,
     "kunstverein_veranstaltungen": 4,
-    "demokratisches_zentrum": 5,
+    "demokratisches_zentrum": 6,
     "lisbert_queer": 2
   },
   "sources_failed": [],
-  "data_hash": "a6894955952ac798",
+  "data_hash": "4473cf1e8a1ca50b",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 06.10.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 07.10.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "schloss": 1.0,
@@ -57,13 +57,13 @@
     "forum_schlosspark": 1.0,
     "labyrinth": 1.0,
     "kunstverein_veranstaltungen": 1.0,
-    "demokratisches_zentrum": 0.93,
+    "demokratisches_zentrum": 0.94,
     "lisbert_queer": 1.0
   },
   "source_event_counts": {
     "schloss": 109,
     "museum": 47,
-    "ludwigsburg_stadt": 49,
+    "ludwigsburg_stadt": 43,
     "blueba": 16,
     "kunstverein_ausstellungen": 2,
     "stabi": 129,
@@ -74,7 +74,7 @@
     "forum_schlosspark": 50,
     "labyrinth": 103,
     "kunstverein_veranstaltungen": 4,
-    "demokratisches_zentrum": 5,
+    "demokratisches_zentrum": 6,
     "lisbert_queer": 2
   },
   "count_drift_warnings": {},
@@ -83,8 +83,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 553.9,
-    "runtime_delta_vs_baseline": 2.094,
+    "runtime_minutes": 502.8,
+    "runtime_delta_vs_baseline": 1.809,
     "source_health": {
       "schloss": 1.0,
       "museum": 1.0,
@@ -99,12 +99,12 @@
       "forum_schlosspark": 1.0,
       "labyrinth": 1.0,
       "kunstverein_veranstaltungen": 1.0,
-      "demokratisches_zentrum": 0.93,
+      "demokratisches_zentrum": 0.94,
       "lisbert_queer": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-10-06T11:26:44.198527+02:00"
+    "generated_at": "2026-10-07T10:35:26.244561+02:00"
   }
 }

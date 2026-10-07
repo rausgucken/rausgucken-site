@@ -1,28 +1,28 @@
 {
-  "scraped_at": "2026-10-06T06:32:03.568269+02:00",
+  "scraped_at": "2026-10-07T05:37:06.184430+02:00",
   "city": "sachsenheim",
-  "event_count": 19,
+  "event_count": 18,
   "flagged_count": 0,
-  "expired_count": 6,
+  "expired_count": 7,
   "sources_scraped": [
     "sachsenheim_kultur",
     "sachsenheim_library"
   ],
   "source_counts": {
-    "sachsenheim_kultur": 17,
+    "sachsenheim_kultur": 16,
     "sachsenheim_library": 2
   },
   "sources_failed": [],
-  "data_hash": "b25ee48bb95c82a5",
+  "data_hash": "9e3a80090b9e1f13",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 06.10.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 07.10.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "sachsenheim_kultur": 0.98,
     "sachsenheim_library": 0.97
   },
   "source_event_counts": {
-    "sachsenheim_kultur": 17,
+    "sachsenheim_kultur": 16,
     "sachsenheim_library": 2
   },
   "count_drift_warnings": {},
@@ -31,8 +31,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 553.9,
-    "runtime_delta_vs_baseline": 2.094,
+    "runtime_minutes": 502.8,
+    "runtime_delta_vs_baseline": 1.809,
     "source_health": {
       "sachsenheim_kultur": 0.98,
       "sachsenheim_library": 0.97
@@ -40,6 +40,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-10-06T11:26:44.959804+02:00"
+    "generated_at": "2026-10-07T10:35:27.016137+02:00"
   }
 }

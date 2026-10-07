@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-06T06:32:03.493572+02:00",
+  "generated_at": "2026-10-07T05:37:06.098802+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-10-05T05:37:39.124878+02:00",
-  "count_added": 8,
+  "previous_run": "2026-10-06T06:32:03.568269+02:00",
+  "count_added": 7,
   "count_removed": 1,
   "added": [
     {
@@ -22,18 +22,6 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "3eb294da9b6bc776",
-      "title": "KleinstadtQueers",
-      "date_start": "2026-08-29",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "d7fae7ecdd353b67",
-      "title": "KleinstadtQueers",
-      "date_start": "2026-09-26",
-      "source": "sachsenheim_kultur"
-    },
-    {
       "id": "2e6e0199c9d95a2c",
       "title": "Offener Gesprächskreis Demenz",
       "date_start": "2026-06-02",
@@ -46,24 +34,30 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "7ff7c207d472a7ff",
-      "title": "Tag der offenen Tür",
-      "date_start": "2026-10-10",
+      "id": "3eb294da9b6bc776",
+      "title": "KleinstadtQueers",
+      "date_start": "2026-08-29",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "91532ddd54df9e53",
-      "title": "Rollatortraining",
-      "date_start": "2026-10-23",
-      "source": "sachsenheim_library"
+      "id": "d7fae7ecdd353b67",
+      "title": "KleinstadtQueers",
+      "date_start": "2026-09-26",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "6a1d40349ddd6ea4",
+      "title": "Erste Hilfe-Kurs nach BG-Standard",
+      "date_start": "2026-10-10",
+      "source": "sachsenheim_kultur"
     }
   ],
   "removed": [
     {
-      "id": "055cb25ee0964412",
-      "title": "Tag der offenen Tür",
-      "date_start": "2026-10-10",
-      "source": "sachsenheim_library"
+      "id": "d9d7564aae877880",
+      "title": "Offener Gesprächskreis Demenz",
+      "date_start": "2026-10-06",
+      "source": "sachsenheim_kultur"
     }
   ]
 }
