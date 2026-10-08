@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-07T10:22:47.415691+02:00",
+  "generated_at": "2026-10-08T09:57:53.671870+02:00",
   "city": "asperg",
   "sources": [
-    "glasperlenspiel",
+    "asperg_veranstaltungen",
     "asperg_fuehrungen",
-    "asperg_veranstaltungen"
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-10-06T11:13:55.049214+02:00",
-  "count_added": 27,
-  "count_removed": 0,
+  "previous_run": "2026-10-07T10:22:47.498102+02:00",
+  "count_added": 25,
+  "count_removed": 1,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -159,19 +159,14 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "fa000aafc92df982",
-      "title": "Schauübung der Feuerwehr Asperg",
-      "date_start": "2026-10-10",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "a2444b79e7f33127",
-      "title": "Quiz-Abend mit Elisabeth Kabatek",
-      "date_start": "2026-10-21",
-      "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "5a45d03d6ba7df2c",
+      "title": "Filmperle - Die Schüler der Madame Anne",
+      "date_start": "2026-10-07",
+      "source": "asperg_veranstaltungen"
+    }
+  ]
 }

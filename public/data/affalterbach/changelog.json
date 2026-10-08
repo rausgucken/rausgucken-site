@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-10-07T05:42:59.979652+02:00",
+  "generated_at": "2026-10-08T05:28:26.821163+02:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-10-06T06:43:14.342563+02:00",
-  "count_added": 0,
+  "previous_run": "2026-10-07T05:43:00.054668+02:00",
+  "count_added": 2,
   "count_removed": 1,
-  "added": [],
+  "added": [
+    {
+      "id": "4543483ea7324467",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-11-04",
+      "source": "affalterbach_stadt"
+    },
+    {
+      "id": "6d11219881618329",
+      "title": "Feline-Fest",
+      "date_start": "2026-11-08",
+      "source": "affalterbach_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "267101818f4ba800",
-      "title": "Vortrag",
-      "date_start": "2026-10-06",
+      "id": "f95c6a81fd2d3cbe",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-10-07",
       "source": "affalterbach_stadt"
     }
   ]

@@ -1,208 +1,32 @@
 {
-  "generated_at": "2026-10-07T09:05:48.747157+02:00",
+  "generated_at": "2026-10-08T08:43:07.093207+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "stabi",
-    "museum",
-    "forum_schlosspark",
-    "garnisonmuseum",
-    "lisbert_queer",
-    "karlskaserne_veranstaltungen",
-    "demokratisches_zentrum",
-    "musikhalle_lb",
     "schloss",
-    "karlskaserne_ausstellungen",
-    "labyrinth",
+    "karlskaserne_veranstaltungen",
+    "garnisonmuseum",
     "blueba",
-    "ludwigsburg_stadt",
     "kunstverein_veranstaltungen",
-    "kunstverein_ausstellungen"
+    "museum",
+    "labyrinth",
+    "stabi",
+    "karlskaserne_ausstellungen",
+    "lisbert_queer",
+    "kunstverein_ausstellungen",
+    "ludwigsburg_stadt",
+    "musikhalle_lb",
+    "forum_schlosspark",
+    "demokratisches_zentrum"
   ],
-  "previous_run": "2026-10-06T09:56:06.684193+02:00",
-  "count_added": 14,
-  "count_removed": 19,
+  "previous_run": "2026-10-07T09:05:48.837764+02:00",
+  "count_added": 55,
+  "count_removed": 43,
   "added": [
-    {
-      "id": "4f13fb63f3f89831",
-      "title": "Workshop flott, flott: Purzelwesen",
-      "date_start": "2026-12-05",
-      "source": "museum"
-    },
-    {
-      "id": "953e75ef01b82764",
-      "title": "Workshop flott, flott: Schillerndes Mobile",
-      "date_start": "2027-02-06",
-      "source": "museum"
-    },
-    {
-      "id": "b9d5b252faa669ca",
-      "title": "Workshop flott, flott: Stecken-Schnecke",
-      "date_start": "2027-03-06",
-      "source": "museum"
-    },
-    {
-      "id": "4c612d5d68be6f89",
-      "title": "Stadtgeschichten",
-      "date_start": "2027-03-10",
-      "source": "museum"
-    },
-    {
-      "id": "23fc3c1c77f2a028",
-      "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": "2026-03-28",
-      "source": "schloss"
-    },
-    {
-      "id": "431db625eb59be7c",
-      "title": "Workshop: Ein Kürbis als Geistervertreiber für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-10-25",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "1195bc5c372912d7",
-      "title": "Herbstferienworkshop: Ein Gesicht zeichnen – einfach erklärt für Kinder von 8-12 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "b99efaf09c8576c4",
-      "title": "Workshop: Ein Buch als Aufbewahrungsversteck aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-11-21",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "7754375cdc4c5392",
-      "title": "Workshop: Eine Schneeeule aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-12-12",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "f388931b608e31b2",
-      "title": "Neuauflage der legendären Müsli-Disko",
-      "date_start": "2026-11-07",
-      "source": "demokratisches_zentrum"
-    },
-    {
-      "id": "9d2066fa7744bd72",
-      "title": "OldMen Jazz",
-      "date_start": "2026-10-09",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7ec79c5db49ec0c5",
-      "title": "Hörtraining in Kleingruppe für Hörgeräteträger",
-      "date_start": "2026-10-09",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7cd68eb163ad8873",
-      "title": "Gemeinsam den Winter erleben",
-      "date_start": "2026-10-09",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "9194763d688f7b0c",
-      "title": "Genussführung: Ludwigsburger Versucherle",
-      "date_start": "2026-10-10",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "eff130d287353e18",
-      "title": "Psychologische Beratung – mit Herz und Erfahrung für Sie da!",
-      "date_start": "2026-10-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "208bd1d27327806c",
-      "title": "Vererben und Schenken",
-      "date_start": "2026-10-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "d16d53363e03a77d",
-      "title": "SPORT TROTZ KREBS",
-      "date_start": "2026-10-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "25059fe9a4a65f24",
-      "title": "Portugiesischsprachige Spielgruppe / Grupo de Brincadeiras em Português",
-      "date_start": "2026-10-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "1ad591165ba69227",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-06",
-      "source": "museum"
-    },
-    {
-      "id": "abe707e19f59894a",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "348abe96e729bdc2",
-      "title": "Kostümführung: Gruselführung bei Nacht",
-      "date_start": "2026-10-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "541d941fb4c3de02",
-      "title": "Achtsamkeit im Alltag - Mehr Ruhe. Mehr Klarheit. Mehr bei dir ankommen.",
-      "date_start": "2026-10-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4b0d0c62524de91c",
-      "title": "Torsten Sträter",
-      "date_start": "2026-10-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "93e749ad1b83cfc4",
-      "title": "Hausaufgaben ohne Stress: Wie Kinder zuhause entspannt und selbstständig lernen",
-      "date_start": "2026-10-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "78494ea3904e09dc",
-      "title": "Digitale Hilfe im Mehrgenerationenhaus",
-      "date_start": "2026-10-06",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "196a57118035af59",
-      "title": "Workshop: Ein Kürbis als Geistervertreiber für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-10-25",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "bc0bb0beb4a19732",
-      "title": "Herbstferienworkshop: Ein Gesicht zeichnen – einfach erklärt für Kinder von 8-12 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "383f5cd78e5d346a",
-      "title": "Workshop: Ein Buch als Aufbewahrungsversteck aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-11-21",
-      "source": "karlskaserne_veranstaltungen"
-    },
     {
       "id": "55fee914291dda85",
       "title": "Workshop flott, flott: Purzelwesen",
       "date_start": "2026-12-05",
       "source": "museum"
-    },
-    {
-      "id": "e708edc8821307c7",
-      "title": "Workshop: Eine Schneeeule aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-12-12",
-      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "92c9405715630725",
@@ -217,10 +41,576 @@
       "source": "museum"
     },
     {
-      "id": "7553dd43e4517178",
-      "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": null,
-      "source": "schloss"
+      "id": "81b2d78d27883971",
+      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 5-7 Jahren in Ludwigsburg",
+      "date_start": "2027-01-23",
+      "source": "labyrinth"
+    },
+    {
+      "id": "ee98f4358489852b",
+      "title": "Workshop: Wir schreinern selbst für Kinder ab 6 Jahren in Ludwigsburg",
+      "date_start": "2027-01-30",
+      "source": "labyrinth"
+    },
+    {
+      "id": "cfd2f42f578d48c3",
+      "title": "Faschingsferienworkshop: Eine bunte Tier-Maskerade für Kinder von 6-10 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "3720c50d00f8f817",
+      "title": "Faschingsferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "43c06eaeccd3fd42",
+      "title": "Faschingsferienworkshop: Superhelden. Powergirls für Kinder ab 6 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "506abe66f4843c0f",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-01-19",
+      "source": "labyrinth"
+    },
+    {
+      "id": "ca7a5b54ee4417b8",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren",
+      "date_start": "2027-01-19",
+      "source": "labyrinth"
+    },
+    {
+      "id": "6403e67ffa9f96cb",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-01-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "7cba865326960f62",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-01-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "8d6968c97c5c0f68",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-02-02",
+      "source": "labyrinth"
+    },
+    {
+      "id": "a43555dbd4791510",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-02-02",
+      "source": "labyrinth"
+    },
+    {
+      "id": "282350f76c3bdc6d",
+      "title": "Faschingsferien: Wir stempeln magische Welten für Kinder ab 8 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "d9971a88892a726f",
+      "title": "Faschingsferienworkshop: Dein Look, dein Kostüm! für Kinder von 8-11 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "c364bf34f3541a57",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance Kids für Kinder von 8-9 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "60cbf1cd4900b39e",
+      "title": "Faschingsferienworkshop: Kerzen selbst gießen und verzieren für Kinder ab 8 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "cfebf2e9cee42429",
+      "title": "Faschingsferienworkshop: Tanztheater-Werkstatt für Kinder ab 10 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "labyrinth"
+    },
+    {
+      "id": "d454323bfc17f56c",
+      "title": "Workshop: Vater und Kind in Ludwigsburg",
+      "date_start": "2027-01-23",
+      "source": "labyrinth"
+    },
+    {
+      "id": "4d57f9d139e76113",
+      "title": "Candlelight: Rock Klassiker",
+      "date_start": "2026-10-09",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5ed8a67616f1a46f",
+      "title": "Blank Page",
+      "date_start": "2026-10-09",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "ae70460767798766",
+      "title": "Candlelight: Taylor Swift",
+      "date_start": "2026-10-09",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "8708bc91c9738313",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2027-03-13",
+      "source": "museum"
+    },
+    {
+      "id": "c36e598dde046241",
+      "title": "Handstand & Movement Play",
+      "date_start": "2026-11-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "cc27ee774ae4667f",
+      "title": "Gaga/People Classes",
+      "date_start": "2026-11-07",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "85234f5e7c07d610",
+      "title": "Cookie Chor - im Rahmen von Wort Welten Ludwigsburg",
+      "date_start": "2026-11-14",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "058efba2e6939b84",
+      "title": "Yoga Dance & Mindfulness Training",
+      "date_start": "2026-11-14",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "3673fb0ea74353b1",
+      "title": "Taiji Qigong",
+      "date_start": "2026-11-15",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "6255e33c2a99d3c8",
+      "title": "Gyrokinesis®",
+      "date_start": "2026-11-15",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "d99bf52e4c632b66",
+      "title": "Wave am Morgen",
+      "date_start": "2026-11-15",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "f6cf16ec8e00d03f",
+      "title": "The Ilan Lev Methode",
+      "date_start": "2026-11-20",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "571d7cef1a0b8090",
+      "title": "Stahl Fatal",
+      "date_start": "2026-11-21",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "e0d01890763e5341",
+      "title": "Feldenkrais Intensiv",
+      "date_start": "2026-11-21",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "5d51d42ccc1954b3",
+      "title": "Klangentspannung",
+      "date_start": "2026-11-22",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "2c3e68561adf3ac8",
+      "title": "Singen & Klingen",
+      "date_start": "2026-11-27",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "9e3e9dbef175ec17",
+      "title": "Contemporary Floorwork",
+      "date_start": "2026-11-29",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "191a732abc208c4f",
+      "title": "Biodanza",
+      "date_start": "2026-11-29",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "99573f5256eec33d",
+      "title": "Salsa Solo Ladies 2 -mit Vorkenntnissen",
+      "date_start": "2026-11-29",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "4843ead3fb2ad3d3",
+      "title": "Floorwork Combo Advanced",
+      "date_start": "2026-11-29",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "477df19614f25e97",
+      "title": "The Ilan Lev Methode",
+      "date_start": "2026-12-04",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "23e26c3059af466e",
+      "title": "Feldenkrais Intensiv",
+      "date_start": "2026-12-05",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "dacc3d19da7012ed",
+      "title": "Dance Fight Grow",
+      "date_start": "2026-12-05",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "009216ee046f80f6",
+      "title": "Taiji Qigong",
+      "date_start": "2026-12-13",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "dafdfd3f4022a3ec",
+      "title": "Gyrokinesis®",
+      "date_start": "2026-12-13",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "944fa509230f5715",
+      "title": "Wave am Morgen",
+      "date_start": "2026-12-13",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "4e404ccaf3f4a364",
+      "title": "Digital Detox - ENTFÄLLT",
+      "date_start": "2026-10-09",
+      "source": "stabi"
+    },
+    {
+      "id": "d6b37231316552c7",
+      "title": "Bilderbuchsamstag in der Stadtbibliothek",
+      "date_start": "2026-10-10",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "36174c98c6b64059",
+      "title": "Urlaubsträume - Der Thementag",
+      "date_start": "2026-10-10",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3992e51c648f7e1a",
+      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
+      "date_start": "2026-10-10",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "63215200f0d8cf87",
+      "title": "Der Fluss- das Land - die Weinmacher: Wein und Häppchen on Tour auf den Grüß-Gott-Weg",
+      "date_start": "2026-10-10",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "04215449f75cb6ec",
+      "title": "Familientag",
+      "date_start": "2026-10-10",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "254dc9f97e94d7d0",
+      "title": "Genussführung: Der Fluss – das Land – die Weinmacher",
+      "date_start": "2026-10-10",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "0efc9f1356981ac0",
+      "title": "Die kleine Märchenstube für Genießer*innen",
+      "date_start": "2026-10-10",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "b5ea1db688c2bc1a",
+      "title": "Music on Screen: Queen Budapest",
+      "date_start": "2026-10-10",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "79bd949bc39b7a1e",
+      "title": "Formular- Guide",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "f2b486347e0cf3e7",
+      "title": "Spielzeit FamilienLeben - Mittwochs",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "10574e50c47e9a2d",
+      "title": "Museumspause",
+      "date_start": "2026-10-07",
+      "source": "museum"
+    },
+    {
+      "id": "8263c7e5b85c560f",
+      "title": "Museumspause",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a0ce4f74d3dbb2c9",
+      "title": "Kostenfreie Beratung rund um’s Balkonkraftwerk",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "dd73f8df2f35aa66",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fef0a02bec60183f",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-10-07",
+      "source": "stabi"
+    },
+    {
+      "id": "cc411eede8c25c49",
+      "title": "Sprechtreff Deutsch - ONLINE",
+      "date_start": "2026-10-07",
+      "source": "stabi"
+    },
+    {
+      "id": "d66ea49af72377ff",
+      "title": "Genussführung: Taste & The City",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "939d613bc7e5084b",
+      "title": "Generationen im Gespräch",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "34bfd08f7bcd76f4",
+      "title": "Pinktober",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c3c056a618560d69",
+      "title": "Music on Screen: Queen Budapest",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "85664cb104a986f5",
+      "title": "Frauen in Gesellschaft - in und mit der Natur",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "df2de16897b505d7",
+      "title": "Augen entspannen, Sehkraft stärken",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "50890d1337843bbd",
+      "title": "Studio Konzert - Doppelkonzert mit Johanna Pohlmann & Myrsini Bekakou",
+      "date_start": "2026-10-07",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "dce7953d6ff78cb2",
+      "title": "Digital Detox",
+      "date_start": "2026-10-09",
+      "source": "stabi"
+    },
+    {
+      "id": "24ade1d447f30c52",
+      "title": "Candlelight: Rock Klassiker",
+      "date_start": "2026-10-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "985620c4d73fc908",
+      "title": "Blank Page",
+      "date_start": "2026-10-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "b0d7a0f64d424acd",
+      "title": "Candlelight: Taylor Swift",
+      "date_start": "2026-10-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "4f13fb63f3f89831",
+      "title": "Workshop flott, flott: Purzelwesen",
+      "date_start": "2026-12-05",
+      "source": "museum"
+    },
+    {
+      "id": "a7e7cd86fcf68ec7",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-01-19",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "4a15bca0ac604eec",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren",
+      "date_start": "2027-01-19",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "a89dd2f05557767e",
+      "title": "Workshop: Vater und Kind in Ludwigsburg",
+      "date_start": "2027-01-23",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "8bbb8069af62df5e",
+      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 5-7 Jahren in Ludwigsburg",
+      "date_start": "2027-01-23",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "d8dbbfe4a3ee621b",
+      "title": "Ding.",
+      "date_start": "2027-01-24",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "bd6e3d048289f59f",
+      "title": "Ding.",
+      "date_start": "2027-01-25",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "eac410afa5ee0b35",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-01-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "083af1d9b66d8bce",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-01-26",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "a3c9d9b547c0e04f",
+      "title": "Workshop: Wir schreinern selbst für Kinder ab 6 Jahren in Ludwigsburg",
+      "date_start": "2027-01-30",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "1008712e1db8cbd4",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-02-02",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "bda83f427e9b3570",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2027-02-02",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "953e75ef01b82764",
+      "title": "Workshop flott, flott: Schillerndes Mobile",
+      "date_start": "2027-02-06",
+      "source": "museum"
+    },
+    {
+      "id": "e295bebd0a1c9f8e",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance Kids für Kinder von 8-9 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "abf0f4c75316602b",
+      "title": "Faschingsferienworkshop: Kerzen selbst gießen und verzieren für Kinder ab 8 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "3977aba3565e601a",
+      "title": "Faschingsferienworkshop: Superhelden. Powergirls für Kinder ab 6 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "90c7a6c16bc897eb",
+      "title": "Faschingsferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "b2cbf023997a5bfa",
+      "title": "Faschingsferienworkshop: Eine bunte Tier-Maskerade für Kinder von 6-10 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "4cb66bbadbf049cc",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Bietigheim-Bissingen",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "52dc8f2456211dd5",
+      "title": "Faschingsferienworkshop: Ein verwunschener Feuerdrache für Kinder ab 6 Jahren in Bietigheim-Bissingen",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "6d8be8bb274e7e5e",
+      "title": "Faschingsferienworkshop: Dein Look, dein Kostüm! für Kinder von 8-11 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "b949d08b86d931ad",
+      "title": "Faschingsferienworkshop: Tanztheater-Werkstatt für Kinder ab 10 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "279af23d1e6b597f",
+      "title": "Faschingsferien: Wir stempeln magische Welten für Kinder ab 8 Jahren in Ludwigsburg",
+      "date_start": "2027-02-08",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "b9d5b252faa669ca",
+      "title": "Workshop flott, flott: Stecken-Schnecke",
+      "date_start": "2027-03-06",
+      "source": "museum"
     }
   ]
 }
