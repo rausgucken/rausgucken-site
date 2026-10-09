@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-10-08T08:13:35.350565+02:00",
+  "generated_at": "2026-10-09T08:18:28.896995+02:00",
   "city": "kirchheim-neckar",
   "sources": [
     "kirchheim-neckar_gemeinde"
   ],
-  "previous_run": "2026-10-07T08:41:54.393530+02:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-10-08T08:13:35.425067+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "b1101e27118487c6",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-24",
+      "source": "kirchheim-neckar_gemeinde"
+    }
+  ],
   "removed": [
     {
-      "id": "6af8c82edf86a44a",
-      "title": "Pflegefall – was nun?",
-      "date_start": "2026-10-07",
+      "id": "d1b3291f4f309629",
+      "title": "Kamishibai",
+      "date_start": "2026-10-08",
+      "source": "kirchheim-neckar_gemeinde"
+    },
+    {
+      "id": "6fdbf19e477589fd",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-24",
       "source": "kirchheim-neckar_gemeinde"
     }
   ]

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-08T09:57:53.671870+02:00",
+  "generated_at": "2026-10-09T09:57:59.586606+02:00",
   "city": "asperg",
   "sources": [
     "asperg_veranstaltungen",
-    "asperg_fuehrungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-10-07T10:22:47.498102+02:00",
-  "count_added": 25,
-  "count_removed": 1,
+  "previous_run": "2026-10-08T09:57:53.748170+02:00",
+  "count_added": 27,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -159,14 +159,19 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "986870bb89509d99",
+      "title": "Xang - Sieben jung gebliebene Männer",
+      "date_start": "2026-10-30",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "0b1f1d7d1c33925a",
+      "title": "Weihnachts-Mix mit Frl. Wommy Wonder",
+      "date_start": "2026-12-24",
+      "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "5a45d03d6ba7df2c",
-      "title": "Filmperle - Die Schüler der Madame Anne",
-      "date_start": "2026-10-07",
-      "source": "asperg_veranstaltungen"
-    }
-  ]
+  "removed": []
 }

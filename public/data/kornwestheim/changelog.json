@@ -1,28 +1,70 @@
 {
-  "generated_at": "2026-10-08T05:32:31.135780+02:00",
+  "generated_at": "2026-10-09T05:48:52.314356+02:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_buecherei",
     "das_k_spielplan",
+    "das_k_buecherei",
     "kornwestheim"
   ],
-  "previous_run": "2026-10-07T05:43:39.200000+02:00",
-  "count_added": 1,
-  "count_removed": 1,
+  "previous_run": "2026-10-08T05:32:31.216225+02:00",
+  "count_added": 4,
+  "count_removed": 5,
   "added": [
     {
-      "id": "602e09ac1c6a9640",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "id": "a36b906ea5b041c7",
+      "title": "Dreimal König",
       "date_start": "2027-02-14",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "fbbd50becd9ca823",
+      "title": "The Best of Black Gospel",
+      "date_start": "2026-12-19",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "72a5843c4c024751",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "date_start": "2027-02-14",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "3753c6fa4c93beb3",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2027-02-19",
       "source": "kornwestheim"
     }
   ],
   "removed": [
     {
-      "id": "e871c448ba4d131d",
-      "title": "Kaffeetreff mit Singen",
-      "date_start": "2026-10-07",
+      "id": "e093f99b91ad5524",
+      "title": "LesefantenClub",
+      "date_start": "2026-10-08",
       "source": "kornwestheim"
+    },
+    {
+      "id": "07e69dbc803fa42e",
+      "title": "Jugenddelegation Kornwestheim (JuDeko)",
+      "date_start": "2026-10-08",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "a4d440cd26aa94ec",
+      "title": "Verwaltungs- und Finanzausschuss (VFA)",
+      "date_start": "2026-10-08",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "d8c9f86829d7f82d",
+      "title": "Kaffeetreff - Spielenachmittag",
+      "date_start": "2026-10-08",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "a4c7cd7cb540d11c",
+      "title": "Dreimal König",
+      "date_start": "2027-02-14",
+      "source": "das_k_spielplan"
     }
   ]
 }
