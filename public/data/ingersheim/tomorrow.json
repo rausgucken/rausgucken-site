@@ -1,7 +1,7 @@
 {
   "subset": "tomorrow",
-  "generated_at": "2026-10-08T07:06:44.714880+02:00",
-  "event_count": 2,
+  "generated_at": "2026-10-09T06:00:02.428160+02:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -36,33 +36,66 @@
       "canonical_url": "https://www.rausgucken.de/ingersheim/events/lego---stadt-2026-10-09-inge"
     },
     {
-      "id": "35a6eaa9165427e3",
-      "title": "Erzählcafe",
-      "date_start": "2026-10-09",
+      "id": "e1305fd11e7637dc",
+      "title": "Freizeitsporttag",
+      "date_start": "2026-10-10",
       "date_end": null,
-      "time": "15:00 - 16:30",
-      "description": "In diesem Erzählcafe teilen Claudia Scheller, Traudl Peters und Anna Lilly Eckert ihre Geschichten mit. Ein unverpasster Moment der Unterhaltung und Inspiration in der Begegnungsstätte an der Wilhelmstrasse.",
-      "location": "Begegnungsstätte, Wilhelmstrasse 2",
+      "time": null,
+      "description": "In der Fischerwörthhalle findet der Freizeitsporttag statt. Angeboten werden diverse sportliche Aktivitäten für alle Altersgruppen, organisiert von TV Ingersheim e.V.",
+      "location": "Fischerwörthhalle",
       "price": null,
       "age_min": null,
       "age_max": null,
       "tags": [],
-      "link": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2130",
-      "original_url": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2130",
+      "link": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2277",
+      "original_url": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2277",
       "source": "ingersheim_gemeinde",
       "city": "ingersheim",
-      "slug": "erzaehlcafe-2026-10-09-inge",
+      "slug": "freizeitsporttag-2026-10-10-inge",
       "weekdays": [
-        5
+        6
       ],
-      "scraped_at": "2026-10-08T02:07:57.438225+02:00",
-      "extraction_confidence": 0.92,
+      "scraped_at": "2026-10-08T02:07:57.438265+02:00",
+      "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Ingersheim",
-      "canonical_url": "https://www.rausgucken.de/ingersheim/events/erzaehlcafe-2026-10-09-inge"
+      "canonical_url": "https://www.rausgucken.de/ingersheim/events/freizeitsporttag-2026-10-10-inge"
+    },
+    {
+      "id": "5264968ad59ead5a",
+      "title": "Hoffest Weingut Velte",
+      "date_start": "2026-10-10",
+      "date_end": "2026-10-11",
+      "time": "17:00 - 23:00",
+      "description": "Ein Wochenende des Genusses auf dem Weingut Velte in Ingersheim. Von Samstag bis Sonntag findet ein Fest mit Weinproben und kulinarischen Delikatessen statt.",
+      "location": "Forststr. 12; 74379 Ingersheim",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Kulinarik",
+        "Fest"
+      ],
+      "link": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2209",
+      "original_url": "https://www.ingersheim.de/eventcalendar?action=view_event&event_id=2209",
+      "source": "ingersheim_gemeinde",
+      "city": "ingersheim",
+      "slug": "hoffest-weingut-velte-2026-10-10-inge",
+      "weekdays": [
+        0,
+        6
+      ],
+      "scraped_at": "2026-10-08T02:07:57.438305+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Ingersheim",
+      "canonical_url": "https://www.rausgucken.de/ingersheim/events/hoffest-weingut-velte-2026-10-10-inge"
     }
   ]
 }
