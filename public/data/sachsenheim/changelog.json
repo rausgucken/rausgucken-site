@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-09T05:40:04.073068+02:00",
+  "generated_at": "2026-10-10T06:01:42.531817+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_kultur",
-    "sachsenheim_library"
+    "sachsenheim_library",
+    "sachsenheim_kultur"
   ],
-  "previous_run": "2026-10-08T05:25:33.252082+02:00",
-  "count_added": 9,
-  "count_removed": 2,
+  "previous_run": "2026-10-09T05:40:04.148162+02:00",
+  "count_added": 10,
+  "count_removed": 3,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -52,6 +52,32 @@
       "source": "sachsenheim_kultur"
     },
     {
+      "id": "67c357d045354802",
+      "title": "Offener Gesprächskreis Demenz",
+      "date_start": "2026-11-03",
+      "source": "sachsenheim_library"
+    },
+    {
+      "id": "7657918f91cc3ba4",
+      "title": "The Leonard-Cohen-Project",
+      "date_start": "2026-11-07",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "c6741b0da8d17097",
+      "title": "Geschichte(n) aus unserem Land",
+      "date_start": "2026-11-13",
+      "source": "sachsenheim_kultur"
+    }
+  ],
+  "removed": [
+    {
+      "id": "9f270aa4c184f007",
+      "title": "Waldbaden - Herbstwald",
+      "date_start": "2026-10-09",
+      "source": "sachsenheim_kultur"
+    },
+    {
       "id": "2b70b9daea8ef789",
       "title": "Herbstfeier mit Musik, Basteln und Brotbacken",
       "date_start": "2026-10-09",
@@ -60,20 +86,6 @@
     {
       "id": "6368297e40512c2e",
       "title": "ECOmedy mit Matthias Jung - Chill mal Heute",
-      "date_start": "2026-10-09",
-      "source": "sachsenheim_kultur"
-    }
-  ],
-  "removed": [
-    {
-      "id": "93f9cf11b9d7a482",
-      "title": "Herbstfeier mit Musik, Basteln und Brot",
-      "date_start": "2026-10-09",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "ceae2cb8f73bb2e0",
-      "title": "ECOmedy mit Matthias Jung",
       "date_start": "2026-10-09",
       "source": "sachsenheim_kultur"
     }

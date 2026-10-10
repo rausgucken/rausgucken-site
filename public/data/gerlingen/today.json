@@ -1,7 +1,7 @@
 {
   "subset": "today",
-  "generated_at": "2026-10-10T06:00:02.178625+02:00",
-  "event_count": 3,
+  "generated_at": "2026-10-10T06:17:05.852302+02:00",
+  "event_count": 4,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,7 +26,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-10-09T02:03:53.707375+02:00",
+      "scraped_at": "2026-10-10T02:04:46.850441+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -55,9 +55,9 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-10-09T02:03:53.707367+02:00",
+      "scraped_at": "2026-10-10T02:04:46.850410+02:00",
       "extraction_confidence": 0.75,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -84,7 +84,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-10-09T02:03:53.707371+02:00",
+      "scraped_at": "2026-10-10T02:04:46.850434+02:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
@@ -92,6 +92,37 @@
       "editorial_tip": null,
       "source_label": "Stadt Gerlingen",
       "canonical_url": "https://www.rausgucken.de/gerlingen/events/kreisweites-maedchenspektakel-2026-10-10-gerl"
+    },
+    {
+      "id": "0aee1f9bdbdc25e1",
+      "title": "Konzert des Württembergischen Kammerchors",
+      "date_start": "2026-10-10",
+      "date_end": null,
+      "time": "19:30 - 19:30",
+      "description": "In der Kirche St. Peter und Paul veranstaltet der Württembergische Kammerchor ein Konzert, das Musikliebhabern nicht zu verfehlen ist.",
+      "location": "Kirche St. Peter und Paul",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Musik"
+      ],
+      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523256961203/KonzertdesWrttembergischenKammerchors.html?nodeID=523256961203",
+      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523256961203/KonzertdesWrttembergischenKammerchors.html?nodeID=523256961203",
+      "source": "gerlingen_stadt",
+      "city": "gerlingen",
+      "slug": "konzert-des-wuerttembergischen-kammerchors-2026-10-10-gerl",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-10-10T02:04:46.850445+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Gerlingen",
+      "canonical_url": "https://www.rausgucken.de/gerlingen/events/konzert-des-wuerttembergischen-kammerchors-2026-10-10-gerl"
     }
   ]
 }
