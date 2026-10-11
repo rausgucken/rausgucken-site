@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-10T07:48:00.655434+02:00",
+  "generated_at": "2026-10-11T07:37:31.893656+02:00",
   "city": "oberstenfeld",
   "sources": [
     "oberstenfeld_veranstaltungen"
   ],
-  "previous_run": "2026-10-09T07:17:56.888203+02:00",
+  "previous_run": "2026-10-10T07:48:00.730553+02:00",
   "count_added": 56,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [
     {
       "id": "fa199f20b3bb75db",
@@ -168,12 +168,6 @@
       "id": "d038fabcbc4252cd",
       "title": "Spiel-Strick und Schwatznachmittag",
       "date_start": "2026-03-12",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
-      "id": "430fd3b46dd37715",
-      "title": "Kleidermarkt Spielbude Oberstenfeld",
-      "date_start": "2026-03-14",
       "source": "oberstenfeld_veranstaltungen"
     },
     {
@@ -343,7 +337,26 @@
       "title": "Backtraum",
       "date_start": "2026-10-02",
       "source": "oberstenfeld_veranstaltungen"
+    },
+    {
+      "id": "b632e927cb2406b5",
+      "title": "Kleidertauschparty",
+      "date_start": "2026-10-16",
+      "source": "oberstenfeld_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "e126ca8e03d4290f",
+      "title": "Kleidermarkt Spielbude Oberstenfeld",
+      "date_start": "2026-10-10",
+      "source": "oberstenfeld_veranstaltungen"
+    },
+    {
+      "id": "8271e541bb3aa565",
+      "title": "Kleidertauschparty",
+      "date_start": "2026-10-16",
+      "source": "oberstenfeld_veranstaltungen"
+    }
+  ]
 }

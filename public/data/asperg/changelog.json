@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-10T10:05:38.305470+02:00",
+  "generated_at": "2026-10-11T09:53:11.204335+02:00",
   "city": "asperg",
   "sources": [
     "asperg_fuehrungen",
-    "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-10-09T09:57:59.663694+02:00",
-  "count_added": 26,
-  "count_removed": 1,
+  "previous_run": "2026-10-10T10:05:38.381634+02:00",
+  "count_added": 25,
+  "count_removed": 5,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -159,20 +159,38 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "1b5a8b017f5830c8",
-      "title": "Abenteuerreise der Tiere",
-      "date_start": "2027-09-20",
-      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "52abba307a2650e6",
-      "title": "Kabarett - Sabine Schief: Pfundsweiber - Jedes Gramm zählt!",
-      "date_start": "2026-10-09",
+      "id": "2f046289fbbff059",
+      "title": "Wochenmarkt",
+      "date_start": "2026-10-10",
       "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "7b9252c28e6433a5",
+      "title": "Bilderbuchkino",
+      "date_start": "2026-10-10",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "fa000aafc92df982",
+      "title": "Schauübung der Feuerwehr Asperg",
+      "date_start": "2026-10-10",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "dd8d63c41f5b797e",
+      "title": "Musik - Ageworn: Wohnzimmerkonzert",
+      "date_start": "2026-10-10",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "b328e18ca3dd9533",
+      "title": "Back to the roots - Rock & More",
+      "date_start": "2026-10-10",
+      "source": "glasperlenspiel"
     }
   ]
 }
