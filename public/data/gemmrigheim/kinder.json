@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-10-12T06:00:02.056009+02:00",
-  "event_count": 4,
+  "generated_at": "2026-10-12T07:02:48.389720+02:00",
+  "event_count": 5,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -27,7 +27,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-10-11T02:09:19.576552+02:00",
+      "scraped_at": "2026-10-12T02:10:20.516375+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -59,7 +59,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-10-11T02:09:19.579216+02:00",
+      "scraped_at": "2026-10-12T02:10:20.519075+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -92,7 +92,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-10-11T02:09:19.580858+02:00",
+      "scraped_at": "2026-10-12T02:10:20.520737+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -123,7 +123,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-10-11T02:09:19.582018+02:00",
+      "scraped_at": "2026-10-12T02:10:20.521928+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -131,6 +131,43 @@
       "editorial_tip": null,
       "source_label": "Gemeinde Gemmrigheim",
       "canonical_url": "https://www.rausgucken.de/gemmrigheim/events/grosses-finale-am-tag-der-bibliotheken-kindertheater-das-sams-2026-10-24-gemm"
+    },
+    {
+      "id": "65484697c86b0dd0",
+      "title": "begehbarer Adventskalender",
+      "date_start": "2026-12-01",
+      "date_end": "2026-12-24",
+      "time": "17",
+      "description": "In diesem begehrbaren Adventskalender entdecken Besucher 24 Türchen mit kleinen Surprisen. Ideal für Familien mit Kindern oder Freunde, die sich auf den Weihnachtsabend freuen.",
+      "location": "Gemmrigheim",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.gemmrigheim.de/site/Gemmrigheim_BFO/node/11133186/zmdetail_523252201652/index.html",
+      "original_url": "https://www.gemmrigheim.de/site/Gemmrigheim_BFO/node/11133186/zmdetail_523252201652/index.html",
+      "source": "gemmrigheim_gemeinde",
+      "city": "gemmrigheim",
+      "slug": "begehbarer-adventskalender-2026-12-01-gemm",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scraped_at": "2026-10-12T02:10:20.530992+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Gemmrigheim",
+      "canonical_url": "https://www.rausgucken.de/gemmrigheim/events/begehbarer-adventskalender-2026-12-01-gemm"
     }
   ]
 }

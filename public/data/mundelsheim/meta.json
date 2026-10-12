@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-10-11T06:56:28.917157+02:00",
+  "scraped_at": "2026-10-12T06:21:25.380879+02:00",
   "city": "mundelsheim",
-  "event_count": 32,
+  "event_count": 28,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "mundelsheim_veranstaltungen"
   ],
   "source_counts": {
-    "mundelsheim_veranstaltungen": 32
+    "mundelsheim_veranstaltungen": 28
   },
   "sources_failed": [],
-  "data_hash": "6d24e1464b785b40",
+  "data_hash": "293c9fc1827af121",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 11.10.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 12.10.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "mundelsheim_veranstaltungen": 1.0
   },
   "source_event_counts": {
-    "mundelsheim_veranstaltungen": 32
+    "mundelsheim_veranstaltungen": 28
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 473.2,
-    "runtime_delta_vs_baseline": 1.644,
+    "runtime_minutes": 436.4,
+    "runtime_delta_vs_baseline": 1.438,
     "source_health": {
       "mundelsheim_veranstaltungen": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-10-11T10:06:06.519128+02:00"
+    "generated_at": "2026-10-12T09:29:34.189967+02:00"
   }
 }

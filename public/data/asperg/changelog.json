@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-11T09:53:11.204335+02:00",
+  "generated_at": "2026-10-12T09:16:26.204586+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
     "glasperlenspiel",
-    "asperg_veranstaltungen"
+    "asperg_veranstaltungen",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-10-10T10:05:38.381634+02:00",
-  "count_added": 25,
-  "count_removed": 5,
+  "previous_run": "2026-10-11T09:53:11.281295+02:00",
+  "count_added": 26,
+  "count_removed": 6,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -159,37 +159,49 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "af9e17b2a69ddaf4",
+      "title": "Lesung",
+      "date_start": "2027-10-11",
+      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "2f046289fbbff059",
-      "title": "Wochenmarkt",
-      "date_start": "2026-10-10",
+      "id": "4073d1b15f6cac02",
+      "title": "Führung - Deutsch-Französische Begegnungen auf dem Hohenasperg",
+      "date_start": "2026-10-11",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "7b9252c28e6433a5",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-10-10",
+      "id": "74519c175edb7178",
+      "title": "Jazz - Matinee mit dem Classic Jazz Trio",
+      "date_start": "2026-10-11",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "fa000aafc92df982",
-      "title": "Schauübung der Feuerwehr Asperg",
-      "date_start": "2026-10-10",
+      "id": "c39102d91baddb60",
+      "title": "Führung durch die Weinberge am Hohenasperg",
+      "date_start": "2026-10-11",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "dd8d63c41f5b797e",
-      "title": "Musik - Ageworn: Wohnzimmerkonzert",
-      "date_start": "2026-10-10",
+      "id": "de1e2ef367792449",
+      "title": "Bläserkonzert „Feinblech“",
+      "date_start": "2026-10-11",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "b328e18ca3dd9533",
-      "title": "Back to the roots - Rock & More",
-      "date_start": "2026-10-10",
+      "id": "8e47be2c62a529e8",
+      "title": "Buchvorstellung mit Angelika Junge",
+      "date_start": "2026-10-11",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "d440d0379cbfa4db",
+      "title": "Lesung",
+      "date_start": "2026-10-11",
       "source": "glasperlenspiel"
     }
   ]
