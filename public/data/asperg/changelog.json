@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-12T09:16:26.204586+02:00",
+  "generated_at": "2026-10-13T09:20:27.937705+02:00",
   "city": "asperg",
   "sources": [
-    "glasperlenspiel",
     "asperg_veranstaltungen",
-    "asperg_fuehrungen"
+    "asperg_fuehrungen",
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-10-11T09:53:11.281295+02:00",
-  "count_added": 26,
-  "count_removed": 6,
+  "previous_run": "2026-10-12T09:16:26.281996+02:00",
+  "count_added": 25,
+  "count_removed": 3,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -137,16 +137,10 @@
       "source": "asperg_fuehrungen"
     },
     {
-      "id": "753078979a745a42",
-      "title": "Lindners Lebenslust",
-      "date_start": "2026-09-19",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "365e83515fb8e864",
-      "title": "LeseKonzert mit Patricia Prawit",
-      "date_start": "2026-09-20",
-      "source": "glasperlenspiel"
+      "id": "c588a60b9c50366f",
+      "title": "Deutsch-Französische Begegnungen",
+      "date_start": "2026-10-11",
+      "source": "asperg_fuehrungen"
     },
     {
       "id": "2f2d5f07a306b757",
@@ -161,47 +155,29 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "af9e17b2a69ddaf4",
-      "title": "Lesung",
-      "date_start": "2027-10-11",
+      "id": "00ca06b968c50194",
+      "title": "Jazz-Abende",
+      "date_start": "2027-10-02",
       "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "4073d1b15f6cac02",
-      "title": "Führung - Deutsch-Französische Begegnungen auf dem Hohenasperg",
-      "date_start": "2026-10-11",
-      "source": "asperg_veranstaltungen"
+      "id": "738e5166b390a760",
+      "title": "unschaf",
+      "date_start": "2026-09-11",
+      "source": "glasperlenspiel"
     },
     {
-      "id": "74519c175edb7178",
-      "title": "Jazz - Matinee mit dem Classic Jazz Trio",
-      "date_start": "2026-10-11",
-      "source": "asperg_veranstaltungen"
+      "id": "1fb695ac38a15fca",
+      "title": "Colors of Soul",
+      "date_start": "2027-09-13",
+      "source": "glasperlenspiel"
     },
     {
-      "id": "c39102d91baddb60",
-      "title": "Führung durch die Weinberge am Hohenasperg",
-      "date_start": "2026-10-11",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "de1e2ef367792449",
-      "title": "Bläserkonzert „Feinblech“",
-      "date_start": "2026-10-11",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "8e47be2c62a529e8",
-      "title": "Buchvorstellung mit Angelika Junge",
-      "date_start": "2026-10-11",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "d440d0379cbfa4db",
-      "title": "Lesung",
-      "date_start": "2026-10-11",
+      "id": "1b5a8b017f5830c8",
+      "title": "Abenteuerreise der Tiere",
+      "date_start": "2027-09-20",
       "source": "glasperlenspiel"
     }
   ]

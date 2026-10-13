@@ -1,255 +1,50 @@
 {
-  "generated_at": "2026-10-12T07:46:45.558961+02:00",
+  "generated_at": "2026-10-13T08:21:39.856686+02:00",
   "city": "ludwigsburg",
   "sources": [
-    "blueba",
     "garnisonmuseum",
-    "karlskaserne_ausstellungen",
-    "kunstverein_veranstaltungen",
-    "karlskaserne_veranstaltungen",
     "musikhalle_lb",
-    "demokratisches_zentrum",
-    "schloss",
-    "stabi",
-    "forum_schlosspark",
+    "kunstverein_ausstellungen",
     "lisbert_queer",
-    "ludwigsburg_stadt",
+    "stabi",
+    "museum",
+    "karlskaserne_veranstaltungen",
     "labyrinth",
-    "kunstverein_ausstellungen"
+    "ludwigsburg_stadt",
+    "karlskaserne_ausstellungen",
+    "schloss",
+    "kunstverein_veranstaltungen",
+    "demokratisches_zentrum",
+    "forum_schlosspark",
+    "blueba"
   ],
-  "previous_run": "2026-10-11T08:39:23.718191+02:00",
-  "count_added": 16,
-  "count_removed": 73,
+  "previous_run": "2026-10-12T07:46:45.649390+02:00",
+  "count_added": 57,
+  "count_removed": 11,
   "added": [
     {
-      "id": "8bbb8069af62df5e",
-      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 5-7 Jahren in Ludwigsburg",
-      "date_start": "2027-01-23",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "b6d6fba7f5db44fb",
-      "title": "Workshop: Vater und Kind in Ludwigsburg",
-      "date_start": "2027-01-23",
-      "source": "labyrinth"
-    },
-    {
-      "id": "eac410afa5ee0b35",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2027-01-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "083af1d9b66d8bce",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2027-01-26",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "7553dd43e4517178",
-      "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": null,
+      "id": "0af5c874391cc4d6",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-10-23",
       "source": "schloss"
     },
     {
-      "id": "cfc72384a266308b",
-      "title": "Herbstferienworkshop: König Peter und Prinzessin Lila aus Ton für Kinder ab 7 Jahren in Bietigheim-Bissingen",
+      "id": "a72f39f4461540f6",
+      "title": "Herbstferienworkshop: Die Tiere im Wald von 8-10 Jahren in Ludwigsburg",
       "date_start": "2026-10-26",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "d8dbbfe4a3ee621b",
-      "title": "Ding.",
-      "date_start": "2027-01-24",
+      "id": "1a72d913b096d7f3",
+      "title": "Workshop: Vater und Kind in Ludwigsburg",
+      "date_start": "2027-01-23",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "bd6e3d048289f59f",
-      "title": "Ding.",
-      "date_start": "2027-01-25",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "df336a95a7f4c3a7",
-      "title": "TOMMI Kindersoftwarepreis 2026",
-      "date_start": "2026-10-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "e413f342f9249179",
-      "title": "Seminar- und Hausarbeiten leicht gemacht",
-      "date_start": "2026-10-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7c0a57e1f0478c67",
-      "title": "Internationale Geschichteninsel auf Türkisch",
-      "date_start": "2026-10-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "065d991851f10fed",
-      "title": "Kunst zum Ausprobieren: \"Tag und Nacht\"",
-      "date_start": "2026-10-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "6fa720f264857c59",
-      "title": "Genussführung: Taste & The City",
-      "date_start": "2026-10-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "0810f465e70bb13b",
-      "title": "Resilienz im Alltag - Informationsabend für alle Interessierten",
-      "date_start": "2026-10-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b77c082abb4fe93c",
-      "title": "Afrika neu denken - junge Stimmen im Dialog",
-      "date_start": "2026-10-15",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "2f2243305467aba8",
-      "title": "Starke Stimmen, starke Welt mit Patrick Bopp",
-      "date_start": "2026-10-15",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "23fc3c1c77f2a028",
-      "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": "2026-03-28",
-      "source": "schloss"
-    },
-    {
-      "id": "650ef2c04fb838df",
-      "title": "Little America – Fotografie Jürgen Schadeberg",
-      "date_start": "2026-07-01",
-      "source": "museum"
-    },
-    {
-      "id": "589ee2922f5edaa7",
-      "title": "Little America – Fotografie Jürgen Schadeberg",
-      "date_start": "2026-07-01",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "bf85fdf186763a6a",
-      "title": "Französischer Markt",
-      "date_start": "2026-10-07",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4ba5c00df55364e3",
-      "title": "Feuerwehrfest Pflugfelden",
-      "date_start": "2026-10-10",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "bfd105bd499af2c4",
-      "title": "Workshop: Rote Bete, Gelber Löwenzahn für Kinder ab 4 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-10-10",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "501b9cbb6ed1b396",
-      "title": "Workshop: Rote Bete, Gelber Löwenzahn für Kinder ab 4 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-10-10",
-      "source": "labyrinth"
-    },
-    {
-      "id": "f36bfe9829c82ed1",
-      "title": "Workshop: Rote Bete, Gelber Löwenzahn für Kinder ab 4 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-10-10",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "a4ea4b3e99978309",
-      "title": "Europameisterschaft im Kürbiswiegen",
-      "date_start": "2026-10-11",
-      "source": "blueba"
-    },
-    {
-      "id": "7b096f653f455a50",
-      "title": "Meine erste Schlossführung",
-      "date_start": "2026-10-11",
-      "source": "schloss"
-    },
-    {
-      "id": "2ac72303246ce4be",
-      "title": "Taiji Qigong",
-      "date_start": "2026-10-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "5c3af5a218b0161c",
-      "title": "Kürbis-Führung",
-      "date_start": "2026-10-11",
-      "source": "blueba"
-    },
-    {
-      "id": "e3eb8d35cd835e02",
-      "title": "Schaufahren der Modellschiffe",
-      "date_start": "2026-10-11",
-      "source": "blueba"
-    },
-    {
-      "id": "7229c5b4b0447fbe",
-      "title": "Von diebischen Elstern und listigen Gaunern",
-      "date_start": "2026-10-11",
-      "source": "schloss"
-    },
-    {
-      "id": "399996d330903b9c",
-      "title": "Kastanienbeutelfest",
-      "date_start": "2026-10-11",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "40408f146ca8c941",
-      "title": "Salsa Solo Ladies 1 für Anfängerinnen",
-      "date_start": "2026-10-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "9254a7103efab713",
-      "title": "Feldenkrais Intensiv",
-      "date_start": "2026-10-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "8fd544c01af277a7",
-      "title": "Starke Mütter – Starke Töchter!",
-      "date_start": "2026-10-11",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "b744a79843c29fa7",
-      "title": "Vom Alltag einer herzoglichen Hofdame",
-      "date_start": "2026-10-11",
-      "source": "schloss"
-    },
-    {
-      "id": "70cf32722e063ed1",
-      "title": "Naturführung: Die Zugwiesen",
-      "date_start": "2026-10-11",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "24d8d3e0d730e13d",
-      "title": "Technik in der Unterwelt",
-      "date_start": "2026-10-11",
-      "source": "schloss"
-    },
-    {
-      "id": "ee7c3676fccafcce",
-      "title": "Hallo Taxi",
-      "date_start": "2026-10-11",
-      "source": "ludwigsburg_stadt"
+      "id": "34aab22fdd1669e2",
+      "title": "Der Nussknacker",
+      "date_start": "2026-12-16",
+      "source": "forum_schlosspark"
     },
     {
       "id": "d47a92c5185c1929",
@@ -286,12 +81,6 @@
       "title": "Werkstatt für Kinder",
       "date_start": "2026-10-24",
       "source": "museum"
-    },
-    {
-      "id": "54afb91bf5571d01",
-      "title": "Herbstferienworkshop: Fang den Räuber Hotzenplotz ab 4 Jahren in Bietigheim-Bissingen",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
     },
     {
       "id": "33c73002bed4f546",
@@ -390,7 +179,7 @@
       "source": "museum"
     },
     {
-      "id": "55fee914291dda85",
+      "id": "4f13fb63f3f89831",
       "title": "Workshop flott, flott: Purzelwesen",
       "date_start": "2026-12-05",
       "source": "museum"
@@ -438,34 +227,10 @@
       "source": "museum"
     },
     {
-      "id": "d454323bfc17f56c",
-      "title": "Workshop: Vater und Kind in Ludwigsburg",
-      "date_start": "2027-01-23",
-      "source": "labyrinth"
-    },
-    {
-      "id": "81b2d78d27883971",
-      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 5-7 Jahren in Ludwigsburg",
-      "date_start": "2027-01-23",
-      "source": "labyrinth"
-    },
-    {
-      "id": "6403e67ffa9f96cb",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2027-01-26",
-      "source": "labyrinth"
-    },
-    {
       "id": "4970b2b5f1feeba4",
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2027-01-26",
       "source": "museum"
-    },
-    {
-      "id": "7cba865326960f62",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Fortgeschrittene von 9-16 Jahren in Ludwigsburg",
-      "date_start": "2027-01-26",
-      "source": "labyrinth"
     },
     {
       "id": "ef4e3745cd558465",
@@ -480,7 +245,7 @@
       "source": "museum"
     },
     {
-      "id": "92c9405715630725",
+      "id": "953e75ef01b82764",
       "title": "Workshop flott, flott: Schillerndes Mobile",
       "date_start": "2027-02-06",
       "source": "museum"
@@ -540,7 +305,7 @@
       "source": "museum"
     },
     {
-      "id": "173d837196d73460",
+      "id": "b9d5b252faa669ca",
       "title": "Workshop flott, flott: Stecken-Schnecke",
       "date_start": "2027-03-06",
       "source": "museum"
@@ -556,6 +321,116 @@
       "title": "Stadtgeschichten",
       "date_start": "2027-03-10",
       "source": "museum"
+    },
+    {
+      "id": "8708bc91c9738313",
+      "title": "Bilderbuchsamstag auf Achse",
+      "date_start": "2027-03-13",
+      "source": "museum"
+    },
+    {
+      "id": "d3419aca6fd44f7c",
+      "title": "Zwillingstreff",
+      "date_start": "2026-10-16",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "81835b015a80c4a7",
+      "title": "Selbstbewusst durch den Alltag: Selbstbehauptungstraining für ältere Frauen",
+      "date_start": "2026-10-16",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "baff7457eb44885f",
+      "title": "Genussführung: Die süße Ludwigsburgerin",
+      "date_start": "2026-10-16",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "ad2c135f1399211d",
+      "title": "TOMMI Kindersoftwarepreis 2026",
+      "date_start": "2026-10-16",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "21b7450fe1e50ee9",
+      "title": "Ich bin online und du?",
+      "date_start": "2026-10-16",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "614a714a0c876df4",
+      "title": "Genussführung: Weingenuss mit Poesie",
+      "date_start": "2026-10-16",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "79632a8f6eccbd7e",
+      "title": "Wichtel-Stube",
+      "date_start": "2026-10-12",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "73f6eecf3de9f669",
+      "title": "Treffpunkt Natur: Pilzberatung mit Vortrag",
+      "date_start": "2026-10-12",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "f625c4cf25cbdd9e",
+      "title": "Kostenlose Informationsveranstaltung zum Thema Elterngeld - Für (werdende) Eltern",
+      "date_start": "2026-10-12",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "4222b622ea68053d",
+      "title": "Die Einsamkeit der Sterbenden und unsere Sorge um sie…",
+      "date_start": "2026-10-12",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a90c155769fefdbf",
+      "title": "Achtsam durch die dunkle Jahreszeit",
+      "date_start": "2026-10-12",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "070d9c67e70d09ad",
+      "title": "CHRIS NORMAN",
+      "date_start": "2026-10-12",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2f2243305467aba8",
+      "title": "Starke Stimmen, starke Welt mit Patrick Bopp",
+      "date_start": "2026-10-15",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3f2d2136d949e750",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-10-23",
+      "source": "schloss"
+    },
+    {
+      "id": "8e726080233c84d6",
+      "title": "Herbstferienworkshop: Die Tiere im Wald von 8-10 Jahren in Ludwigsburg",
+      "date_start": "2026-10-26",
+      "source": "labyrinth"
+    },
+    {
+      "id": "a7e335f752a40746",
+      "title": "Der Nussknacker",
+      "date_start": "2026-12-16",
+      "source": "forum_schlosspark"
+    },
+    {
+      "id": "b6d6fba7f5db44fb",
+      "title": "Workshop: Vater und Kind in Ludwigsburg",
+      "date_start": "2027-01-23",
+      "source": "labyrinth"
     }
   ]
 }
