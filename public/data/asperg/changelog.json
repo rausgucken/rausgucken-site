@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-13T09:20:27.937705+02:00",
+  "generated_at": "2026-10-14T08:57:35.165473+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
     "asperg_fuehrungen",
+    "asperg_veranstaltungen",
     "glasperlenspiel"
   ],
-  "previous_run": "2026-10-12T09:16:26.281996+02:00",
+  "previous_run": "2026-10-13T09:20:28.013814+02:00",
   "count_added": 25,
-  "count_removed": 3,
+  "count_removed": 1,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -155,30 +155,18 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "00ca06b968c50194",
-      "title": "Jazz-Abende",
-      "date_start": "2027-10-02",
-      "source": "glasperlenspiel"
+      "id": "f55536633c73b3a4",
+      "title": "Mobiles Kino",
+      "date_start": "2026-11-07",
+      "source": "asperg_veranstaltungen"
     }
   ],
   "removed": [
     {
-      "id": "738e5166b390a760",
-      "title": "unschaf",
-      "date_start": "2026-09-11",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "1fb695ac38a15fca",
-      "title": "Colors of Soul",
-      "date_start": "2027-09-13",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "1b5a8b017f5830c8",
-      "title": "Abenteuerreise der Tiere",
-      "date_start": "2027-09-20",
-      "source": "glasperlenspiel"
+      "id": "d5bf1be738e6eaaa",
+      "title": "Sprechstunde der Fachstelle Hilfen für Alleinerziehende",
+      "date_start": "2026-10-13",
+      "source": "asperg_veranstaltungen"
     }
   ]
 }

@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-10-13T07:28:32.253977+02:00",
+  "generated_at": "2026-10-14T07:38:13.660944+02:00",
   "city": "hemmingen",
   "sources": [
     "hemmingen_gemeinde"
   ],
-  "previous_run": "2026-10-12T07:59:23.326432+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-10-13T07:28:32.332302+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "8b4f5f274bd1e4f4",
+      "title": "Christnacht-Gottesdienst",
+      "date_start": "2026-12-24",
+      "source": "hemmingen_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "88639b37b260ce9b",
+      "title": "Arbeitskreis Besuchsdienst",
+      "date_start": "2026-10-13",
+      "source": "hemmingen_gemeinde"
+    }
+  ]
 }

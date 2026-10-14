@@ -1,27 +1,19 @@
 {
-  "generated_at": "2026-10-13T05:44:55.894750+02:00",
+  "generated_at": "2026-10-14T05:31:37.393344+02:00",
   "city": "kornwestheim",
   "sources": [
     "das_k_spielplan",
-    "das_k_buecherei",
-    "kornwestheim"
+    "kornwestheim",
+    "das_k_buecherei"
   ],
-  "previous_run": "2026-10-12T05:28:55.893243+02:00",
-  "count_added": 1,
-  "count_removed": 2,
+  "previous_run": "2026-10-13T05:44:55.974382+02:00",
+  "count_added": 4,
+  "count_removed": 4,
   "added": [
     {
-      "id": "ad4285f9964a27e4",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-02-26",
-      "source": "kornwestheim"
-    }
-  ],
-  "removed": [
-    {
-      "id": "df792b7172fc3976",
-      "title": "Kaffeetreff - CDU Senioren",
-      "date_start": "2026-10-12",
+      "id": "183d1ce98371c857",
+      "title": "Planet B",
+      "date_start": "2027-02-27",
       "source": "kornwestheim"
     },
     {
@@ -29,6 +21,44 @@
       "title": "Kornwestheim tanzt! - im WohnCafé Joos",
       "date_start": "2026-10-21",
       "source": "kornwestheim"
+    },
+    {
+      "id": "4a26817af1c3da51",
+      "title": "Gemeinsam Lichter der Erinnerung gestalten",
+      "date_start": "2026-11-03",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "13a96e8fa461e26d",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2027-02-27",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "71c4776a338cb74c",
+      "title": "Das Eselsöhrchen",
+      "date_start": "2026-10-13",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "f678a64b36a6ad09",
+      "title": "Kaffeetreff",
+      "date_start": "2026-10-13",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "03e2a4ccabd77d99",
+      "title": "Herbstfest",
+      "date_start": "2026-10-13",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "77e22b511870be0b",
+      "title": "Planet B",
+      "date_start": "2027-02-27",
+      "source": "das_k_spielplan"
     }
   ]
 }
