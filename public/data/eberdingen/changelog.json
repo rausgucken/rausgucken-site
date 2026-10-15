@@ -1,12 +1,32 @@
 {
-  "generated_at": "2026-10-14T06:57:22.646477+02:00",
+  "generated_at": "2026-10-15T07:04:54.040137+02:00",
   "city": "eberdingen",
   "sources": [
     "eberdingen_veranstaltungen"
   ],
-  "previous_run": "2026-10-13T07:15:35.565616+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-10-14T06:57:22.721140+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "8aa19803ad4f09e4",
+      "title": "Vortragsveranstaltung 'Schlaf'",
+      "date_start": "2027-03-17",
+      "source": "eberdingen_veranstaltungen"
+    }
+  ],
+  "removed": [
+    {
+      "id": "f50a67b406aacfe5",
+      "title": "Erlebnisabend mit Popcorn",
+      "date_start": "2027-03-09",
+      "source": "eberdingen_veranstaltungen"
+    },
+    {
+      "id": "29bad5809bafe8a1",
+      "title": "Schlaf",
+      "date_start": "2027-03-17",
+      "source": "eberdingen_veranstaltungen"
+    }
+  ]
 }

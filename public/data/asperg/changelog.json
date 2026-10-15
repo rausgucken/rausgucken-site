@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-14T08:57:35.165473+02:00",
+  "generated_at": "2026-10-15T09:40:02.639124+02:00",
   "city": "asperg",
   "sources": [
     "asperg_fuehrungen",
     "asperg_veranstaltungen",
     "glasperlenspiel"
   ],
-  "previous_run": "2026-10-13T09:20:28.013814+02:00",
-  "count_added": 25,
-  "count_removed": 1,
+  "previous_run": "2026-10-14T08:57:35.245480+02:00",
+  "count_added": 27,
+  "count_removed": 2,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -155,17 +155,35 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "f55536633c73b3a4",
-      "title": "Mobiles Kino",
-      "date_start": "2026-11-07",
+      "id": "e430174f35ac6c26",
+      "title": "Konzert \"Hoffnung und Zuversicht\"",
+      "date_start": "2026-11-01",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "a5c80c408ed7bc88",
+      "title": "Ökumenischer St. Martin Gottesdienst mit Umzug und Spiel",
+      "date_start": "2026-11-14",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "d8c6cad59e2b122a",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-11-19",
       "source": "asperg_veranstaltungen"
     }
   ],
   "removed": [
     {
-      "id": "d5bf1be738e6eaaa",
-      "title": "Sprechstunde der Fachstelle Hilfen für Alleinerziehende",
-      "date_start": "2026-10-13",
+      "id": "c73548f7d0e70ee4",
+      "title": "Erziehungsberatung der Caritas",
+      "date_start": "2026-10-14",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "48dcbf3f826afaa8",
+      "title": "Vortrag - Artenschutz Salzmann",
+      "date_start": "2026-10-14",
       "source": "asperg_veranstaltungen"
     }
   ]
