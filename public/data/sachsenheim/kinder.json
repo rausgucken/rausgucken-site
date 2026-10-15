@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-10-14T06:00:02.279560+02:00",
-  "event_count": 3,
+  "generated_at": "2026-10-15T06:00:01.905563+02:00",
+  "event_count": 4,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -28,7 +28,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-10-14T02:03:04.644274+02:00",
+      "scraped_at": "2026-10-15T02:02:57.680521+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -60,7 +60,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-10-14T02:03:14.509688+02:00",
+      "scraped_at": "2026-10-15T02:03:06.640988+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -92,7 +92,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-10-14T02:03:15.386279+02:00",
+      "scraped_at": "2026-10-15T02:03:07.380656+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -100,6 +100,37 @@
       "editorial_tip": null,
       "source_label": "Stadt Sachsenheim – Kulturprogramm",
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/fuehrung-stadtmuseum-nachts-im-museum-2026-11-21-sach"
+    },
+    {
+      "id": "00ec7182addd1c6b",
+      "title": "Gedenkfeier zum Totensonntag",
+      "date_start": "2026-11-22",
+      "date_end": null,
+      "time": "11:30 - 12:00",
+      "description": "In der Aussegnungshalle des Friedhofs Großsachsenheim findet am Sonntag um 11:30 Uhr eine Gedenkfeier zum Totensonntag statt. Zeremonien wie die Gedenksprache und Kranzniederlegung am Ehrenmal begleiten das Ereignis für Familien und Bekannte.",
+      "location": "Friedhof Großsachsenheim, Kirchhofstraße 15, 74343 Sachsenheim",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Gedenkfeier-zum-Totensonntag-event-appointment5279",
+      "original_url": "https://www.sachsenheim.de/termin/Gedenkfeier-zum-Totensonntag-event-appointment5279",
+      "source": "sachsenheim_library",
+      "city": "sachsenheim",
+      "slug": "gedenkfeier-zum-totensonntag-2026-11-22-sach-1",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-10-15T02:03:26.007679+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtbücherei Sachsenheim",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/gedenkfeier-zum-totensonntag-2026-11-22-sach-1"
     }
   ]
 }
