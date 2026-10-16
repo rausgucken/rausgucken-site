@@ -1,68 +1,103 @@
 {
   "subset": "today",
-  "generated_at": "2026-10-15T06:00:01.805316+02:00",
-  "event_count": 2,
+  "generated_at": "2026-10-16T06:00:02.476504+02:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "dcb3c7f6e56323d0",
-      "title": "Schadstoffmobil",
-      "date_start": "2026-10-15",
+      "id": "a7e71de12dcd2d4c",
+      "title": "Vorlesen für Kinder",
+      "date_start": "2026-10-16",
       "date_end": null,
       "time": null,
-      "description": "In diesem Veranstaltungsformat erfährt man über das Schadstoffmobil der Ludwigsburger Abfallverwertungsgesellschaft (AVL). Der Fokus liegt auf der Umweltfreundlichkeit im Bauwesen.",
-      "location": "Baubetriebs Hof",
+      "description": "In der Stadtbücherei Gerlingen werden Kinder ab 4 Jahren von einer Leserin vorisiert. Mit Geschichten und Erzählungen profitieren die Teilnehmer von einer warmen, einladenden Atmosphäre.",
+      "location": "Stadtbücherei Gerlingen",
       "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [],
-      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523252627300/SchadstoffmobilderLudwigsburgerAbfallverwertungsgesellschaftAVL.html?nodeID=523252627300",
-      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523252627300/SchadstoffmobilderLudwigsburgerAbfallverwertungsgesellschaftAVL.html?nodeID=523252627300",
-      "source": "gerlingen_stadt",
-      "city": "gerlingen",
-      "slug": "schadstoffmobil-2026-10-15-gerl",
-      "weekdays": [
-        4
-      ],
-      "scraped_at": "2026-10-15T02:03:49.622311+02:00",
-      "extraction_confidence": 0.65,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Gerlingen",
-      "canonical_url": "https://www.rausgucken.de/gerlingen/events/schadstoffmobil-2026-10-15-gerl"
-    },
-    {
-      "id": "dad163ea61ee0476",
-      "title": "Filmvorführung und Podiumsdiskussion: „WOHIN MIT MIR?\"",
-      "date_start": "2026-10-15",
-      "date_end": null,
-      "time": "19:00 - 19:00",
-      "description": "In der Rathausaula wird der Film \"Wohin mit mir?\" vorgestrahlt und anschließend nimmt ein Podiumsdiskussionsrunden zu den thematischen Aspekten des Films statt.",
-      "location": "Rathaus",
-      "price": null,
-      "age_min": null,
+      "age_min": 4,
       "age_max": null,
       "tags": [
-        "Fuehrung"
+        "Kinder",
+        "Lesung",
+        "Familie"
       ],
-      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523256859750/FilmvorfhrungundPodiumsdiskussionWOHINMITMIR.html?nodeID=523256859750",
-      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523256859750/FilmvorfhrungundPodiumsdiskussionWOHINMITMIR.html?nodeID=523256859750",
+      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523252371854/VorlesenfrKinderab4Jahren.html?nodeID=523252371854",
+      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523252371854/VorlesenfrKinderab4Jahren.html?nodeID=523252371854",
       "source": "gerlingen_stadt",
       "city": "gerlingen",
-      "slug": "filmvorfuehrung-und-podiumsdiskussion-wohin-mit-mir-2026-10-15-gerl",
+      "slug": "vorlesen-fuer-kinder-2026-10-16-gerl",
       "weekdays": [
-        4
+        5
       ],
-      "scraped_at": "2026-10-15T02:03:49.622337+02:00",
+      "scraped_at": "2026-10-15T02:03:49.622345+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Gerlingen",
-      "canonical_url": "https://www.rausgucken.de/gerlingen/events/filmvorfuehrung-und-podiumsdiskussion-wohin-mit-mir-2026-10-15-gerl"
+      "canonical_url": "https://www.rausgucken.de/gerlingen/events/vorlesen-fuer-kinder-2026-10-16-gerl"
+    },
+    {
+      "id": "f87fde7b5a52154b",
+      "title": "Live-Konzert",
+      "date_start": "2026-10-16",
+      "date_end": null,
+      "time": null,
+      "description": "In diesem Live-Konzert bietet die Band an, Musik und Unterhaltung für alle Altersgruppen. Der Veranstaltungsort ist das Jugendhaus B15.",
+      "location": "Jugendhaus B15",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Musik"
+      ],
+      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523256772753/LiveKonzert.html?nodeID=523256772753",
+      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523256772753/LiveKonzert.html?nodeID=523256772753",
+      "source": "gerlingen_stadt",
+      "city": "gerlingen",
+      "slug": "live-konzert-2026-10-16-gerl",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-10-15T02:03:49.622353+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Gerlingen",
+      "canonical_url": "https://www.rausgucken.de/gerlingen/events/live-konzert-2026-10-16-gerl"
+    },
+    {
+      "id": "b0a499a3df61ac36",
+      "title": "Bilder-Vortrag Ägypten",
+      "date_start": "2026-10-16",
+      "date_end": null,
+      "time": "18:00 - 18:00",
+      "description": "In diesem Vortrag präsentiert der Autor eine Auswahl beeindruckender Bilder aus Ägypten. Mit Fachwissen und Begeisterung teilt er Einblicke in die reiche Kultur und Geschichte des Landes.",
+      "location": "Bürger-Treff",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Vortrag"
+      ],
+      "link": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523257002160/BilderVortraggypten.html?nodeID=523257002160",
+      "original_url": "https://www.gerlingen.de/site/Gerlingen-Internet-2021/node/739644/zmdetail_523257002160/BilderVortraggypten.html?nodeID=523257002160",
+      "source": "gerlingen_stadt",
+      "city": "gerlingen",
+      "slug": "bilder-vortrag-aegypten-2026-10-16-gerl",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-10-15T02:03:49.622349+02:00",
+      "extraction_confidence": 0.75,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Gerlingen",
+      "canonical_url": "https://www.rausgucken.de/gerlingen/events/bilder-vortrag-aegypten-2026-10-16-gerl"
     }
   ]
 }

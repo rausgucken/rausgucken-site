@@ -1,7 +1,7 @@
 {
   "subset": "kostenlos",
-  "generated_at": "2026-10-15T06:00:01.903956+02:00",
-  "event_count": 9,
+  "generated_at": "2026-10-16T06:00:02.629647+02:00",
+  "event_count": 11,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -24,7 +24,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-10-15T02:02:46.020430+02:00",
+      "scraped_at": "2026-10-16T02:02:37.210432+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -56,7 +56,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-10-15T02:02:40.096556+02:00",
+      "scraped_at": "2026-10-16T02:02:31.017931+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -88,7 +88,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-10-15T02:02:40.096556+02:00",
+      "scraped_at": "2026-10-16T02:02:31.017931+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -119,7 +119,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-10-15T02:02:47.999483+02:00",
+      "scraped_at": "2026-10-16T02:02:39.181697+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -152,7 +152,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-10-15T02:02:40.096556+02:00",
+      "scraped_at": "2026-10-16T02:02:31.017931+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -184,7 +184,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-10-15T02:02:40.096556+02:00",
+      "scraped_at": "2026-10-16T02:02:31.017931+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -192,6 +192,69 @@
       "editorial_tip": null,
       "source_label": "Mediathek im KUBUS Remseck",
       "canonical_url": "https://www.rausgucken.de/remseck/events/bundesweiter-vorlesetag-2026-11-20-rems"
+    },
+    {
+      "id": "4c170dc35e110e59",
+      "title": "Weihnachtsmarkt",
+      "date_start": "2026-12-05",
+      "date_end": null,
+      "time": "15:00 – 18:00",
+      "description": "Die Mediathek im KUBUS lädt am 5. Dezember zwischen 15 und 18 Uhr zu einem Weihnachtsmarkt ein. Besucher können sich vorbeischauen und von der festlichen Atmosphäre verzaubern. Der Nikolaus besucht um 15:30 und 16:30 Uhr, um Geschichten zu erzählen.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 0,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "weihnachtsmarkt-2026-12-05-rems",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-10-16T02:02:31.017931+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck",
+      "canonical_url": "https://www.rausgucken.de/remseck/events/weihnachtsmarkt-2026-12-05-rems"
+    },
+    {
+      "id": "84732cf7b4d2aeea",
+      "title": "Nikolaus im Haus",
+      "date_start": "2026-12-05",
+      "date_end": null,
+      "time": "15:30 – 17:00",
+      "description": "Um 15:30 Uhr und 16:30 Uhr nimmt der Nikolaus in der Mediathek im KUBUS Kinder und Jugendliche einladend mit zu spannenden Geschichten. Geschenke, Spiele und Unterhaltung bereichern den Besuch.",
+      "location": "Mediathek im KUBUS",
+      "price": "Kostenlos",
+      "age_min": 0,
+      "age_max": 18,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "original_url": "https://mt-remseck.lmscloud.net/cgi-bin/koha/opac-page.pl?code=lmscloud-eventmanagement",
+      "source": "remseck_mediathek",
+      "city": "remseck",
+      "slug": "nikolaus-im-haus-2026-12-05-rems",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-10-16T02:02:31.017931+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Mediathek im KUBUS Remseck",
+      "canonical_url": "https://www.rausgucken.de/remseck/events/nikolaus-im-haus-2026-12-05-rems"
     },
     {
       "id": "ea3e5db6b0bb2efc",
@@ -218,7 +281,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-10-15T02:02:40.096556+02:00",
+      "scraped_at": "2026-10-16T02:02:31.017931+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -250,7 +313,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-10-15T02:02:40.096556+02:00",
+      "scraped_at": "2026-10-16T02:02:31.017931+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -282,7 +345,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-10-15T02:02:40.096556+02:00",
+      "scraped_at": "2026-10-16T02:02:31.017931+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
