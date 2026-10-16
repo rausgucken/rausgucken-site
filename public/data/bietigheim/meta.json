@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-10-15T05:22:48.496170+02:00",
+  "scraped_at": "2026-10-16T05:28:28.115579+02:00",
   "city": "bietigheim",
-  "event_count": 207,
+  "event_count": 221,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,21 +9,21 @@
     "bietigheim_galerie"
   ],
   "source_counts": {
-    "bietigheim_galerie": 18,
-    "bietigheim": 189
+    "bietigheim_galerie": 20,
+    "bietigheim": 201
   },
   "sources_failed": [],
-  "data_hash": "ad04dae4565a639e",
+  "data_hash": "f4b5398b207ff2d1",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 15.10.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 16.10.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "bietigheim_galerie": 0.81,
+    "bietigheim_galerie": 0.82,
     "bietigheim": 1.0
   },
   "source_event_counts": {
-    "bietigheim_galerie": 18,
-    "bietigheim": 189
+    "bietigheim_galerie": 20,
+    "bietigheim": 201
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -31,15 +31,15 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 460.0,
-    "runtime_delta_vs_baseline": 1.57,
+    "runtime_minutes": 496.5,
+    "runtime_delta_vs_baseline": 1.774,
     "source_health": {
-      "bietigheim_galerie": 0.81,
+      "bietigheim_galerie": 0.82,
       "bietigheim": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-10-15T09:52:57.071878+02:00"
+    "generated_at": "2026-10-16T10:29:50.774163+02:00"
   }
 }

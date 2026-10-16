@@ -1,13 +1,26 @@
 {
-  "generated_at": "2026-10-15T05:09:56.155653+02:00",
+  "generated_at": "2026-10-16T05:29:48.703134+02:00",
   "city": "remseck",
   "sources": [
-    "remseck_mediathek",
-    "remseck_stadt"
+    "remseck_stadt",
+    "remseck_mediathek"
   ],
-  "previous_run": "2026-10-14T05:06:04.148781+02:00",
-  "count_added": 0,
+  "previous_run": "2026-10-15T05:09:56.236554+02:00",
+  "count_added": 2,
   "count_removed": 0,
-  "added": [],
+  "added": [
+    {
+      "id": "4c170dc35e110e59",
+      "title": "Weihnachtsmarkt",
+      "date_start": "2026-12-05",
+      "source": "remseck_mediathek"
+    },
+    {
+      "id": "84732cf7b4d2aeea",
+      "title": "Nikolaus im Haus",
+      "date_start": "2026-12-05",
+      "source": "remseck_mediathek"
+    }
+  ],
   "removed": []
 }

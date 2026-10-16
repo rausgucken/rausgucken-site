@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-10-16T06:00:02.632137+02:00",
-  "event_count": 4,
+  "generated_at": "2026-10-16T06:05:12.426192+02:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -28,7 +28,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-10-15T02:02:57.680521+02:00",
+      "scraped_at": "2026-10-16T02:02:52.914223+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -38,99 +38,70 @@
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/kirbe-in-der-kelter-hohenhaslach-2026-10-18-sach"
     },
     {
-      "id": "f100a9b69a2f2e98",
-      "title": "Führung, Nachts im Museum",
-      "date_start": "2026-11-20",
-      "date_end": null,
-      "time": "18:30 - 20:00",
-      "description": "In der Dunkelheit leuchten die Geschichten des Stadtmuseums durch Fernlicht. Für Erwachsene und Jugendliche ab 8 Jahren: Eine ungewöhnliche Führung mit Taschenlampen und historischen Erzählungen.",
-      "location": "Stadtmuseum, Oberriexinger Straße 29, 74343 Sachsenheim",
-      "price": "5 €/Person",
-      "age_min": 8,
-      "age_max": null,
+      "id": "85f1ac8f1e553f98",
+      "title": "Jugendwoche im Jugendhaus Hot",
+      "date_start": "2026-10-19",
+      "date_end": "2026-10-23",
+      "time": null,
+      "description": "In der Jugendwoche im Jugendhaus Hot von Montag bis Freitag wird sich die Schwerpunkt auf Präventionsangebote legen. Veranstaltungen und Aktivitäten für Jugendliche finden statt.",
+      "location": "Jugendhaus HOT, Oberriexinger Straße 35, 74343 Sachsenheim",
+      "price": null,
+      "age_min": 12,
+      "age_max": 18,
       "tags": [
-        "Fuehrung",
         "Kinder"
       ],
-      "link": "https://www.sachsenheim.de/termin/Mit-Fernlichteffekt-durch-die-Geschichte-event-appointment5301",
-      "original_url": "https://www.sachsenheim.de/termin/Mit-Fernlichteffekt-durch-die-Geschichte-event-appointment5301",
+      "link": "https://www.sachsenheim.de/termin/Jugendwoche-im-Jugendhaus-Hot-event-appointment6693",
+      "original_url": "https://www.sachsenheim.de/termin/Jugendwoche-im-Jugendhaus-Hot-event-appointment6693",
       "source": "sachsenheim_kultur",
       "city": "sachsenheim",
-      "slug": "fuehrung-nachts-im-museum-2026-11-20-sach",
+      "slug": "jugendwoche-im-jugendhaus-hot-2026-10-19-sach",
       "weekdays": [
+        1,
+        2,
+        3,
+        4,
         5
       ],
-      "scraped_at": "2026-10-15T02:03:06.640988+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
+      "scraped_at": "2026-10-16T02:02:53.958923+02:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Sachsenheim – Kulturprogramm",
-      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/fuehrung-nachts-im-museum-2026-11-20-sach"
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/jugendwoche-im-jugendhaus-hot-2026-10-19-sach"
     },
     {
-      "id": "c0a6b371d3a5cc68",
-      "title": "Führung, Stadtmuseum Nachts im Museum",
-      "date_start": "2026-11-21",
+      "id": "b13747b10aba10e2",
+      "title": "Laternenumzug der Feuerwehr",
+      "date_start": "2026-10-23",
       "date_end": null,
-      "time": "18:30 - 20:00",
-      "description": "In der Nachts im Museum-Führung durch das Stadtmuseum werden mit Fernlichteffekten versteckte Geschichten entdeckt. Ideal für Erwachsene und Jugendliche ab 8 Jahren.",
-      "location": "Stadtmuseum, Oberriexinger Straße 29, 74343 Sachsenheim",
-      "price": "5 €/Person",
-      "age_min": 8,
-      "age_max": null,
-      "tags": [
-        "Fuehrung",
-        "Kinder"
-      ],
-      "link": "https://www.sachsenheim.de/termin/Mit-Fernlichteffekt-durch-die-Geschichte-event-appointment5302",
-      "original_url": "https://www.sachsenheim.de/termin/Mit-Fernlichteffekt-durch-die-Geschichte-event-appointment5302",
-      "source": "sachsenheim_kultur",
-      "city": "sachsenheim",
-      "slug": "fuehrung-stadtmuseum-nachts-im-museum-2026-11-21-sach",
-      "weekdays": [
-        6
-      ],
-      "scraped_at": "2026-10-15T02:03:07.380656+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Sachsenheim – Kulturprogramm",
-      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/fuehrung-stadtmuseum-nachts-im-museum-2026-11-21-sach"
-    },
-    {
-      "id": "00ec7182addd1c6b",
-      "title": "Gedenkfeier zum Totensonntag",
-      "date_start": "2026-11-22",
-      "date_end": null,
-      "time": "11:30 - 12:00",
-      "description": "In der Aussegnungshalle des Friedhofs Großsachsenheim findet am Sonntag um 11:30 Uhr eine Gedenkfeier zum Totensonntag statt. Zeremonien wie die Gedenksprache und Kranzniederlegung am Ehrenmal begleiten das Ereignis für Familien und Bekannte.",
-      "location": "Friedhof Großsachsenheim, Kirchhofstraße 15, 74343 Sachsenheim",
+      "time": "18:00 - 21:00",
+      "description": "In Kleinsachsenheim zelebriert die Feuerwehr zum 50. Mal den Laternenumzug durch leuchtende Laternen und familienfreundliche Aktivitäten.",
+      "location": "Feuerwehr Abteilung Kleinsachsenheim, Besigheimer Weg 4, 74343 Sachsenheim",
       "price": null,
       "age_min": 4,
       "age_max": null,
       "tags": [
         "Familie"
       ],
-      "link": "https://www.sachsenheim.de/termin/Gedenkfeier-zum-Totensonntag-event-appointment5279",
-      "original_url": "https://www.sachsenheim.de/termin/Gedenkfeier-zum-Totensonntag-event-appointment5279",
-      "source": "sachsenheim_library",
+      "link": "https://www.sachsenheim.de/termin/Laternenumzug-der-Feuerwehr-event-appointment6683",
+      "original_url": "https://www.sachsenheim.de/termin/Laternenumzug-der-Feuerwehr-event-appointment6683",
+      "source": "sachsenheim_kultur",
       "city": "sachsenheim",
-      "slug": "gedenkfeier-zum-totensonntag-2026-11-22-sach-1",
+      "slug": "laternenumzug-der-feuerwehr-2026-10-23-sach",
       "weekdays": [
-        0
+        5
       ],
-      "scraped_at": "2026-10-15T02:03:26.007679+02:00",
+      "scraped_at": "2026-10-16T02:02:56.146896+02:00",
       "extraction_confidence": 0.85,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Stadtbücherei Sachsenheim",
-      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/gedenkfeier-zum-totensonntag-2026-11-22-sach-1"
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/laternenumzug-der-feuerwehr-2026-10-23-sach"
     }
   ]
 }

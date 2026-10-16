@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-15T05:28:05.565365+02:00",
+  "generated_at": "2026-10-16T06:05:12.272580+02:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-10-14T05:25:00.494043+02:00",
-  "count_added": 7,
-  "count_removed": 1,
+  "previous_run": "2026-10-15T05:28:05.642267+02:00",
+  "count_added": 10,
+  "count_removed": 4,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -46,18 +46,54 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "00ec7182addd1c6b",
-      "title": "Gedenkfeier zum Totensonntag",
-      "date_start": "2026-11-22",
-      "source": "sachsenheim_library"
+      "id": "85f1ac8f1e553f98",
+      "title": "Jugendwoche im Jugendhaus Hot",
+      "date_start": "2026-10-19",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "b13747b10aba10e2",
+      "title": "Laternenumzug der Feuerwehr",
+      "date_start": "2026-10-23",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "bfd8d64019e41d04",
+      "title": "ONCE IN A BLUE MOON",
+      "date_start": "2026-10-23",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "415ae13c90b5f6ec",
+      "title": "Eröffnung der Sonderausstellung „Sachsenheim unterm Hakenkreuz\"",
+      "date_start": "2026-11-08",
+      "source": "sachsenheim_kultur"
     }
   ],
   "removed": [
     {
-      "id": "bce29656ab9bb677",
-      "title": "3. Sitzung des Zweckverbandes Eichwald",
-      "date_start": "2026-10-14",
+      "id": "f100a9b69a2f2e98",
+      "title": "Führung, Nachts im Museum",
+      "date_start": "2026-11-20",
       "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "c0a6b371d3a5cc68",
+      "title": "Führung, Stadtmuseum Nachts im Museum",
+      "date_start": "2026-11-21",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "6b15db4d01caf9a6",
+      "title": "Lisa Fitz - Heimleuchten",
+      "date_start": "2026-11-21",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "00ec7182addd1c6b",
+      "title": "Gedenkfeier zum Totensonntag",
+      "date_start": "2026-11-22",
+      "source": "sachsenheim_library"
     }
   ]
 }

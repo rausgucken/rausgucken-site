@@ -1,27 +1,33 @@
 {
-  "generated_at": "2026-10-15T05:30:41.489884+02:00",
+  "generated_at": "2026-10-16T06:09:50.902682+02:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_spielplan",
+    "das_k_buecherei",
     "kornwestheim",
-    "das_k_buecherei"
+    "das_k_spielplan"
   ],
-  "previous_run": "2026-10-14T05:31:37.474179+02:00",
+  "previous_run": "2026-10-15T05:30:41.568660+02:00",
   "count_added": 1,
-  "count_removed": 1,
+  "count_removed": 2,
   "added": [
     {
-      "id": "5470af2f5017b6bd",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-02-27",
+      "id": "dd83a7e17b4a4b8b",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2027-02-28",
       "source": "kornwestheim"
     }
   ],
   "removed": [
     {
-      "id": "0923bae0698667a8",
-      "title": "Kaffeetreff mit Singen",
-      "date_start": "2026-10-14",
+      "id": "df17962df1dc42c4",
+      "title": "Kaffeetreff - Spielenachmittag",
+      "date_start": "2026-10-15",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "b526ce6d30fd0022",
+      "title": "Filmabend: Ich sterbe. Kommst Du?",
+      "date_start": "2026-10-15",
       "source": "kornwestheim"
     }
   ]
