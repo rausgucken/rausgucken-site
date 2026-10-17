@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-10-16T06:05:12.426192+02:00",
-  "event_count": 3,
+  "generated_at": "2026-10-17T06:00:02.502991+02:00",
+  "event_count": 6,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -28,7 +28,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-10-16T02:02:52.914223+02:00",
+      "scraped_at": "2026-10-17T02:02:53.482290+02:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -63,9 +63,9 @@
         4,
         5
       ],
-      "scraped_at": "2026-10-16T02:02:53.958923+02:00",
+      "scraped_at": "2026-10-17T02:02:54.588850+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -94,14 +94,110 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-10-16T02:02:56.146896+02:00",
+      "scraped_at": "2026-10-17T02:02:56.766323+02:00",
       "extraction_confidence": 0.85,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Sachsenheim – Kulturprogramm",
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/laternenumzug-der-feuerwehr-2026-10-23-sach"
+    },
+    {
+      "id": "1e12b9e4bdcd6109",
+      "title": "Nacht im Museum",
+      "date_start": "2026-11-20",
+      "date_end": null,
+      "time": "18:30 - 20:00",
+      "description": "In der Stadtmuseum-Nacht werden mit Fernlichteffekten versteckte Geschichten entdeckt. Faszinierende Taschenlampenführungen durch die Sammlungen bieten Abenteuer für Kinder ab 8 Jahren.",
+      "location": "Stadtmuseum, Oberriexinger Straße 29, 74343 Sachsenheim",
+      "price": "5 €/Person",
+      "age_min": 8,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Kinder"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Mit-Fernlichteffekt-durch-die-Geschichte-event-appointment5301",
+      "original_url": "https://www.sachsenheim.de/termin/Mit-Fernlichteffekt-durch-die-Geschichte-event-appointment5301",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "nacht-im-museum-2026-11-20-sach",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-10-17T02:03:11.148475+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/nacht-im-museum-2026-11-20-sach"
+    },
+    {
+      "id": "4c57c0de477249bd",
+      "title": "Führung, Nachts im Museum",
+      "date_start": "2026-11-20",
+      "date_end": null,
+      "time": "18:30 - 20:00",
+      "description": "In der Dunkelheit leuchten die Geschichten des Stadtmuseums durch Fernlichter. Für Kinder ab 8 Jahren bietet eine fesselnde Führung im Museumsräumen neue Erkenntnisse und spannende Entdeckungen an.",
+      "location": "Stadtmuseum, Oberriexinger Straße 29, 74343 Sachsenheim",
+      "price": "5 €/Person",
+      "age_min": 8,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Kinder"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Mit-Fernlichteffekt-durch-die-Geschichte-event-appointment5301",
+      "original_url": "https://www.sachsenheim.de/termin/Mit-Fernlichteffekt-durch-die-Geschichte-event-appointment5301",
+      "source": "sachsenheim_library",
+      "city": "sachsenheim",
+      "slug": "fuehrung-nachts-im-museum-2026-11-20-sach",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-10-17T02:03:35.305474+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtbücherei Sachsenheim",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/fuehrung-nachts-im-museum-2026-11-20-sach"
+    },
+    {
+      "id": "c0a6b371d3a5cc68",
+      "title": "Führung, Stadtmuseum Nachts im Museum",
+      "date_start": "2026-11-21",
+      "date_end": null,
+      "time": "18:30 - 20:00",
+      "description": "Aufregende Taschenlampenführungen im Dunkeln durch das Stadtmuseum. Geschichten und Geheimnisse entdecken, ab 8 Jahren.",
+      "location": "Stadtmuseum, Oberriexinger Straße 29, 74343 Sachsenheim",
+      "price": "5 €/Person",
+      "age_min": 8,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Kinder"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Mit-Fernlichteffekt-durch-die-Geschichte-event-appointment5302",
+      "original_url": "https://www.sachsenheim.de/termin/Mit-Fernlichteffekt-durch-die-Geschichte-event-appointment5302",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "fuehrung-stadtmuseum-nachts-im-museum-2026-11-21-sach",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-10-17T02:03:12.257057+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/fuehrung-stadtmuseum-nachts-im-museum-2026-11-21-sach"
     }
   ]
 }
