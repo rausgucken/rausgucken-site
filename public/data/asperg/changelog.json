@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-16T10:16:32.936713+02:00",
+  "generated_at": "2026-10-17T09:29:17.616203+02:00",
   "city": "asperg",
   "sources": [
     "asperg_veranstaltungen",
     "asperg_fuehrungen",
     "glasperlenspiel"
   ],
-  "previous_run": "2026-10-15T09:40:02.716631+02:00",
-  "count_added": 24,
-  "count_removed": 1,
+  "previous_run": "2026-10-16T10:16:33.013176+02:00",
+  "count_added": 25,
+  "count_removed": 2,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -153,13 +153,25 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "c91a62775a9ee8d1",
+      "title": "Ehepaar Lore und Harry",
+      "date_start": "2027-10-04",
+      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "0336c980ff8b0476",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-10-15",
+      "id": "68ad4921e1b2b14e",
+      "title": "Kleidersammlung der Diakonie Martinushelfer",
+      "date_start": "2026-10-16",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "aa133bb5ee8e7efd",
+      "title": "Musikkabarett - Viktoria Lein: Ich kam. Sang. Und blieb!",
+      "date_start": "2026-10-16",
       "source": "asperg_veranstaltungen"
     }
   ]

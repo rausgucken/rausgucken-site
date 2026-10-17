@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-10-16T05:04:50.638748+02:00",
+  "generated_at": "2026-10-17T05:04:54.785542+02:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-10-15T05:09:53.836657+02:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-10-16T05:04:50.723429+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "97987a3fc1357360",
+      "title": "Stadtführung im Herbst 2026",
+      "date_start": "2026-10-18",
+      "source": "freiberg_veranstaltungen"
+    }
+  ],
   "removed": [
     {
-      "id": "b8642ba546056d7b",
-      "title": "Walking/Lauftreff",
-      "date_start": "2026-10-15",
+      "id": "e53c66a268dffb06",
+      "title": "BfB Repair Cafe",
+      "date_start": "2026-10-16",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "bc510f540230fb41",
+      "title": "Stadtführung im Herbst 2026",
+      "date_start": "2026-10-18",
       "source": "freiberg_veranstaltungen"
     }
   ]

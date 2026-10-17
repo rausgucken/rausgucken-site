@@ -1,68 +1,39 @@
 {
-  "generated_at": "2026-10-16T05:29:51.725804+02:00",
+  "generated_at": "2026-10-17T05:31:01.135072+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_treffpunkt_adler",
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-10-15T05:28:06.478834+02:00",
-  "count_added": 0,
-  "count_removed": 9,
-  "added": [],
+  "previous_run": "2026-10-16T05:29:51.806934+02:00",
+  "count_added": 1,
+  "count_removed": 3,
+  "added": [
+    {
+      "id": "6b49aad27848e7d4",
+      "title": "KEIN Cappuccino.Päusle",
+      "date_start": "2026-10-30",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ],
   "removed": [
     {
-      "id": "800d5f4cd7431872",
-      "title": "ABGESAGT: Smartphone Workshop 2",
-      "date_start": "2026-10-15",
+      "id": "4fe2c261e6712352",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-10-16",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "cfc1caf1c3ed06ee",
-      "title": "Computer- und Handy-Sprechstunde",
-      "date_start": "2026-10-15",
+      "id": "fac1d219cb1c1711",
+      "title": "Klöppelgruppe des Kunstvereins Ditzingen e.V. (Kunstverein Ditzingen e.V.)",
+      "date_start": "2026-10-16",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "708d931da25ad165",
-      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
-      "date_start": "2026-10-15",
+      "id": "fd763dee69bb5e6b",
+      "title": "Cappuccino.Päusle",
+      "date_start": "2026-10-30",
       "source": "ditzingen_treffpunkt_adler"
-    },
-    {
-      "id": "21f8bd75211d7921",
-      "title": "Entspannung für Körper und Geist",
-      "date_start": "2026-10-15",
-      "source": "ditzingen_treffpunkt_adler"
-    },
-    {
-      "id": "ad67f1b1305e876d",
-      "title": "Vorlesezeit für Kinder von 4 bis 6 Jahren",
-      "date_start": "2026-10-15",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "4fff923274805234",
-      "title": "Improvisationstheater - Wir spielen für Sie/Euch!",
-      "date_start": "2026-10-15",
-      "source": "ditzingen_treffpunkt_adler"
-    },
-    {
-      "id": "eb070319fe7aa25a",
-      "title": "LEA Leseklub - ALLE mit dabei!",
-      "date_start": "2026-10-15",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "958f1e9e810db3a1",
-      "title": "English Book Club",
-      "date_start": "2026-10-15",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "8e55a954647f8ee8",
-      "title": "Literatursalon mit der Salonnière Elisabeth Weller",
-      "date_start": "2026-10-15",
-      "source": "ditzingen_stadt"
     }
   ]
 }
