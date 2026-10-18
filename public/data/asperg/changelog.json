@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-17T09:29:17.616203+02:00",
+  "generated_at": "2026-10-18T09:16:49.921652+02:00",
   "city": "asperg",
   "sources": [
     "asperg_veranstaltungen",
-    "asperg_fuehrungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-10-16T10:16:33.013176+02:00",
-  "count_added": 25,
-  "count_removed": 2,
+  "previous_run": "2026-10-17T09:29:17.692640+02:00",
+  "count_added": 24,
+  "count_removed": 5,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -153,25 +153,37 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "c91a62775a9ee8d1",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2027-10-04",
-      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "68ad4921e1b2b14e",
-      "title": "Kleidersammlung der Diakonie Martinushelfer",
-      "date_start": "2026-10-16",
+      "id": "9ac335a0fdf76f6e",
+      "title": "Wochenmarkt",
+      "date_start": "2026-10-17",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "aa133bb5ee8e7efd",
-      "title": "Musikkabarett - Viktoria Lein: Ich kam. Sang. Und blieb!",
-      "date_start": "2026-10-16",
+      "id": "2cb08ec085ccb923",
+      "title": "Altpapiersammlung",
+      "date_start": "2026-10-17",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "644fe792fd938e99",
+      "title": "Kleidersammlung der Diakonie Martinushelfer",
+      "date_start": "2026-10-17",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "0c715aaf4d4b4197",
+      "title": "Bilderbuchkino",
+      "date_start": "2026-10-17",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "4ef28d6c00f5140e",
+      "title": "Magie - Andy Häussler: Irrtümer und andere Wunder",
+      "date_start": "2026-10-17",
       "source": "asperg_veranstaltungen"
     }
   ]
