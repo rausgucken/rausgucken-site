@@ -1,115 +1,77 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-10-18T09:16:50.081599+02:00",
+  "generated_at": "2026-10-19T06:00:01.569972+02:00",
   "event_count": 5,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "92d1daa17d0f46ae",
-      "title": "Für Familien - Eine Reise um die Welt",
-      "date_start": "2026-10-18",
+      "id": "a456810a748c4617",
+      "title": "Wochenmarkt",
+      "date_start": "2026-10-24",
       "date_end": null,
-      "time": "15:00",
-      "description": "In diesem familientauglichen Workshop bereisen Teilnehmer mit Kinder und Erwachsenen verschiedene kulturelle Zonen der Welt. Dabei lernen sie über unterschiedliche Traditionen und Geschichten aus verschiedenen Ländern.",
-      "location": "Glasperlenspiel, Asperg",
+      "time": "07:00 - 12:30",
+      "description": "Im Marktplatz von Asperg findet der Wochenmarkt statt. Ein Vielfalt an regionalen Produkten und lebendigen Standortveranstaltungen laden zu einem eindrucksvollen Einkaufserlebnis ein.",
+      "location": "Marktplatz, Asperg",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46312461",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46312461",
+      "source": "asperg_veranstaltungen",
+      "city": "asperg",
+      "slug": "wochenmarkt-2026-10-24-aspe",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-10-18T02:00:25.144344+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/wochenmarkt-2026-10-24-aspe"
+    },
+    {
+      "id": "9fce5eb64f283d91",
+      "title": "Bilderbuchkino",
+      "date_start": "2026-10-24",
+      "date_end": null,
+      "time": "10:30 - 11:00",
+      "description": "Im Bilderbuchkino erleben Kinder und Erwachsene gemeinsam lustige Geschichten auf dem großen Bildschirm. Die Stadtbücherei als Ort bietet eine warme Atmosphäre für diese familienfreundliche Veranstaltung.",
+      "location": "Stadtbücherei, Asperg",
       "price": null,
       "age_min": 4,
       "age_max": 12,
       "tags": [
         "Kinder",
-        "Familie",
-        "Workshop"
-      ],
-      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46029324",
-      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46029324",
-      "source": "asperg_veranstaltungen",
-      "city": "asperg",
-      "slug": "fuer-familien---eine-reise-um-die-welt-2026-10-18-aspe",
-      "weekdays": [
-        0
-      ],
-      "scraped_at": "2026-10-18T02:00:25.144273+02:00",
-      "extraction_confidence": 1.0,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Asperg",
-      "canonical_url": "https://www.rausgucken.de/asperg/events/fuer-familien---eine-reise-um-die-welt-2026-10-18-aspe"
-    },
-    {
-      "id": "8d60451192c5b41a",
-      "title": "Lieder-Theater-Programm zum Mitsingen und Mitmachen",
-      "date_start": "2026-10-18",
-      "date_end": null,
-      "time": "15:00",
-      "description": "In dem Lieder-Theater-Programm zum Mitsingen und Mitmachen reisen Vladi und Christof Altmann mit ihren Zuhörern und Zuschauern durch die Welt der Musik. Kinder im Alter von 4 bis 10 Jahren können mitsingen und mitmachen.",
-      "location": "Glasperlenspiel Asperg",
-      "price": null,
-      "age_min": 4,
-      "age_max": 10,
-      "tags": [
-        "Kinder",
-        "Musik",
-        "Theater",
         "Familie"
       ],
-      "link": "https://glasperlenspiel.de/oktober-2026",
-      "original_url": "https://glasperlenspiel.de/oktober-2026",
-      "source": "glasperlenspiel",
-      "city": "asperg",
-      "slug": "lieder-theater-programm-zum-mitsingen-und-mitmachen-2026-10-18-glas",
-      "weekdays": [
-        0
-      ],
-      "scraped_at": "2026-10-18T02:00:30.625295+02:00",
-      "extraction_confidence": 0.65,
-      "is_new": false,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Glasperlenspiel Asperg",
-      "canonical_url": "https://www.rausgucken.de/asperg/events/lieder-theater-programm-zum-mitsingen-und-mitmachen-2026-10-18-glas"
-    },
-    {
-      "id": "bce28432795464d1",
-      "title": "Führung Black stories 2.0",
-      "date_start": "2026-10-18",
-      "date_end": null,
-      "time": "16:00",
-      "description": "In der Goetheschule, Asperg, führt eine Führerin durch die Ausstellung \"Black stories 2.0\", where visitors explore diverse narratives and cultural perspectives.",
-      "location": "Goetheschule, Asperg",
-      "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [
-        "Fuehrung",
-        "Ausstellung"
-      ],
-      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=44669951",
-      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=44669951",
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46723780",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46723780",
       "source": "asperg_veranstaltungen",
       "city": "asperg",
-      "slug": "fuehrung-black-stories-20-2026-10-18-aspe",
+      "slug": "bilderbuchkino-2026-10-24-aspe",
       "weekdays": [
-        0
+        6
       ],
-      "scraped_at": "2026-10-18T02:00:25.144300+02:00",
+      "scraped_at": "2026-10-18T02:00:25.144349+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Asperg",
-      "canonical_url": "https://www.rausgucken.de/asperg/events/fuehrung-black-stories-20-2026-10-18-aspe"
+      "canonical_url": "https://www.rausgucken.de/asperg/events/bilderbuchkino-2026-10-24-aspe"
     },
     {
-      "id": "3a1818b3a88e09bd",
-      "title": "Theater - Alte Liebe",
-      "date_start": "2026-10-18",
+      "id": "bba04f1c5e73af63",
+      "title": "Theater - Ein Inspektor kommt",
+      "date_start": "2026-10-24",
       "date_end": null,
-      "time": "19:00",
-      "description": "Im Glasperlenspiel in Asperg entfaltet ein Stück über alte Liebe seine magischen Kräfte. Mit fesselnden Dialogen und einer atemberaubenden Bühnenpräsentation erinnert das Theater an vergessene Emotionen und verborgene Sehnsüchte.",
+      "time": "20:00",
+      "description": "Im Glasperlenspiel in Asperg findet ein Theaterstück statt, bei dem der Inspektor eine mysteriöse Ermittlung durchführt. Das Ereignis bietet spannende Momente für alle Interessierten.",
       "location": "Glasperlenspiel, Asperg",
       "price": null,
       "age_min": null,
@@ -117,30 +79,62 @@
       "tags": [
         "Theater"
       ],
-      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46029328",
-      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46029328",
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46029340",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46029340",
       "source": "asperg_veranstaltungen",
       "city": "asperg",
-      "slug": "theater---alte-liebe-2026-10-18-aspe",
+      "slug": "theater---ein-inspektor-kommt-2026-10-24-aspe",
       "weekdays": [
-        0
+        6
       ],
-      "scraped_at": "2026-10-18T02:00:25.144310+02:00",
+      "scraped_at": "2026-10-18T02:00:25.144355+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Asperg",
-      "canonical_url": "https://www.rausgucken.de/asperg/events/theater---alte-liebe-2026-10-18-aspe"
+      "canonical_url": "https://www.rausgucken.de/asperg/events/theater---ein-inspektor-kommt-2026-10-24-aspe"
     },
     {
-      "id": "1c6ffb9868d58b45",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2026-10-18",
+      "id": "13a89209f77b50bc",
+      "title": "Theater - Alte Liebe",
+      "date_start": "2026-10-25",
       "date_end": null,
       "time": "19:00",
-      "description": "In diesem Theaterstück wechseln die Ehepaar Lore und Harry kurz ihre Rollen, um ihre Ehekrise aus einer neuen Perspektive zu betrachten. Amusierende und tiefgreifende Dialoge beleuchten ihre Beziehung auf neue Weise.",
+      "description": "Im Glasperlenspiel in Asperg entdecken Sie die Neugrube der alten Liebe. In dieser Aufführung spiegelt sich die Wiederentdeckung vertrauter Gefühle auf der Bühne wider.",
+      "location": "Glasperlenspiel, Asperg",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Theater"
+      ],
+      "link": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46029344",
+      "original_url": "https://www.asperg.de/kultur-freizeit/freizeitgestaltung/veranstaltungen?c7-item=46029344",
+      "source": "asperg_veranstaltungen",
+      "city": "asperg",
+      "slug": "theater---alte-liebe-2026-10-25-aspe",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-10-18T02:00:25.144361+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Asperg",
+      "canonical_url": "https://www.rausgucken.de/asperg/events/theater---alte-liebe-2026-10-25-aspe"
+    },
+    {
+      "id": "55afae9a3013a6eb",
+      "title": "Ehepaar Lore und Harry",
+      "date_start": "2026-10-25",
+      "date_end": null,
+      "time": "19:00",
+      "description": "In diesem Theaterstück verfolgen Sie den temporeichen Schlagabtausch zwischen Lore und Harry, die auf amüsante und bewegende Weise ihre Ehekrise erleben. Erleben Sie wundervolle Dialoge im Glasperlenspiel Asperg.",
       "location": "Glasperlenspiel Asperg",
       "price": null,
       "age_min": null,
@@ -150,18 +144,18 @@
       "original_url": "https://glasperlenspiel.de/oktober-2026",
       "source": "glasperlenspiel",
       "city": "asperg",
-      "slug": "ehepaar-lore-und-harry-2026-10-18-glas",
+      "slug": "ehepaar-lore-und-harry-2026-10-25-glas",
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-10-18T02:00:30.625297+02:00",
+      "scraped_at": "2026-10-18T02:00:30.625306+02:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Glasperlenspiel Asperg",
-      "canonical_url": "https://www.rausgucken.de/asperg/events/ehepaar-lore-und-harry-2026-10-18-glas"
+      "canonical_url": "https://www.rausgucken.de/asperg/events/ehepaar-lore-und-harry-2026-10-25-glas"
     }
   ]
 }
