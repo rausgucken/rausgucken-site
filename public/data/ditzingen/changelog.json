@@ -1,43 +1,50 @@
 {
-  "generated_at": "2026-10-18T05:29:11.937580+02:00",
+  "generated_at": "2026-10-19T05:39:27.827412+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_treffpunkt_adler",
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-10-17T05:31:01.216851+02:00",
-  "count_added": 0,
-  "count_removed": 5,
-  "added": [],
+  "previous_run": "2026-10-18T05:29:12.018594+02:00",
+  "count_added": 3,
+  "count_removed": 3,
+  "added": [
+    {
+      "id": "5d71d26fbdfaf0d8",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-10-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "19f253671535f0ba",
+      "title": "Skatgruppen",
+      "date_start": "2027-10-19",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "bbc306c3c02b6463",
+      "title": "\"Betreuungscafé Augenblick\"  Betreuungsgruppe für Menschen mit und ohne Demenz (Abt. Senioren und Teilhabe)",
+      "date_start": "2027-10-19",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ],
   "removed": [
     {
-      "id": "bdcbb9661d58af8d",
-      "title": "Treppenhäppchen",
-      "date_start": "2026-10-17",
+      "id": "c5a5e9827c338666",
+      "title": "Vernissage zur Sonderausstellung \"50 Jahre Große Kreisstadt Ditzingen\"",
+      "date_start": "2026-10-18",
       "source": "ditzingen_stadt"
     },
     {
-      "id": "1c204bbc7216b210",
-      "title": "Vorlesezeit",
-      "date_start": "2026-10-17",
+      "id": "478fd0acaf84511f",
+      "title": "Konzert",
+      "date_start": "2026-10-18",
       "source": "ditzingen_stadt"
     },
     {
-      "id": "03afe782b205ba3d",
-      "title": "Serenade",
-      "date_start": "2026-10-17",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "522939646b2308d8",
-      "title": "EQUINOX - Lebensgeschichten",
-      "date_start": "2026-10-17",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "5b4d6ff923fdf03c",
-      "title": "IMPROJEKT  - Improvisationstheater",
-      "date_start": "2026-10-17",
+      "id": "8435e6b2d6a7c18b",
+      "title": "Neuer Termin: Männerschwimmen im Stadtbad",
+      "date_start": "2026-10-18",
       "source": "ditzingen_stadt"
     }
   ]

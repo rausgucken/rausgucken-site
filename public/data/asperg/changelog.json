@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-18T09:16:49.921652+02:00",
+  "generated_at": "2026-10-19T09:07:00.762269+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
     "glasperlenspiel",
-    "asperg_fuehrungen"
+    "asperg_fuehrungen",
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-10-17T09:29:17.692640+02:00",
-  "count_added": 24,
+  "previous_run": "2026-10-18T09:16:49.998112+02:00",
+  "count_added": 25,
   "count_removed": 5,
   "added": [
     {
@@ -153,38 +153,44 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "21b84ec62a60a309",
+      "title": "Lieder-Theater-Programm zum Mitsingen und Mitmachen",
+      "date_start": "2027-10-18",
+      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "9ac335a0fdf76f6e",
-      "title": "Wochenmarkt",
-      "date_start": "2026-10-17",
+      "id": "92d1daa17d0f46ae",
+      "title": "Für Familien - Eine Reise um die Welt",
+      "date_start": "2026-10-18",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "2cb08ec085ccb923",
-      "title": "Altpapiersammlung",
-      "date_start": "2026-10-17",
+      "id": "8d60451192c5b41a",
+      "title": "Lieder-Theater-Programm zum Mitsingen und Mitmachen",
+      "date_start": "2026-10-18",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "bce28432795464d1",
+      "title": "Führung Black stories 2.0",
+      "date_start": "2026-10-18",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "644fe792fd938e99",
-      "title": "Kleidersammlung der Diakonie Martinushelfer",
-      "date_start": "2026-10-17",
+      "id": "3a1818b3a88e09bd",
+      "title": "Theater - Alte Liebe",
+      "date_start": "2026-10-18",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "0c715aaf4d4b4197",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-10-17",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "4ef28d6c00f5140e",
-      "title": "Magie - Andy Häussler: Irrtümer und andere Wunder",
-      "date_start": "2026-10-17",
-      "source": "asperg_veranstaltungen"
+      "id": "1c6ffb9868d58b45",
+      "title": "Ehepaar Lore und Harry",
+      "date_start": "2026-10-18",
+      "source": "glasperlenspiel"
     }
   ]
 }
