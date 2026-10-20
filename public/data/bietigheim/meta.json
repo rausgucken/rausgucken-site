@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-10-19T05:20:56.142268+02:00",
+  "scraped_at": "2026-10-20T06:14:01.856431+02:00",
   "city": "bietigheim",
-  "event_count": 189,
+  "event_count": 202,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,21 +9,21 @@
     "bietigheim_galerie"
   ],
   "source_counts": {
-    "bietigheim_galerie": 18,
-    "bietigheim": 171
+    "bietigheim": 187,
+    "bietigheim_galerie": 15
   },
   "sources_failed": [],
-  "data_hash": "45623aa0763aa328",
+  "data_hash": "dde8d32cb4edd4eb",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 19.10.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 20.10.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "bietigheim_galerie": 0.82,
-    "bietigheim": 1.0
+    "bietigheim": 1.0,
+    "bietigheim_galerie": 0.82
   },
   "source_event_counts": {
-    "bietigheim_galerie": 18,
-    "bietigheim": 171
+    "bietigheim": 187,
+    "bietigheim_galerie": 15
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -31,15 +31,15 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 427.0,
-    "runtime_delta_vs_baseline": 1.385,
+    "runtime_minutes": 482.7,
+    "runtime_delta_vs_baseline": 1.697,
     "source_health": {
-      "bietigheim_galerie": 0.82,
-      "bietigheim": 1.0
+      "bietigheim": 1.0,
+      "bietigheim_galerie": 0.82
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-10-19T09:19:58.540100+02:00"
+    "generated_at": "2026-10-20T10:15:43.904748+02:00"
   }
 }

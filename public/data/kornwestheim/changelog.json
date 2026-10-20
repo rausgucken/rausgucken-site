@@ -1,25 +1,111 @@
 {
-  "generated_at": "2026-10-19T05:44:09.292772+02:00",
+  "generated_at": "2026-10-20T06:31:18.878524+02:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_spielplan",
     "kornwestheim",
-    "das_k_buecherei"
+    "das_k_buecherei",
+    "das_k_spielplan"
   ],
-  "previous_run": "2026-10-18T05:40:11.213362+02:00",
-  "count_added": 4,
-  "count_removed": 3,
+  "previous_run": "2026-10-19T05:44:09.372647+02:00",
+  "count_added": 10,
+  "count_removed": 8,
   "added": [
     {
-      "id": "c30e6c5d8ac07974",
+      "id": "77e22b511870be0b",
+      "title": "Planet B",
+      "date_start": "2027-02-27",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "2bef14f082dcebf6",
       "title": "Galeriekonzert",
+      "date_start": "2027-02-28",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "0a42e2ba663b5cff",
+      "title": "QUK-rein",
+      "date_start": "2026-10-26",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "88353ec7e50c8316",
+      "title": "QUK-rein",
+      "date_start": "2026-11-02",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "d2846a2576f0cd84",
+      "title": "QUK-rein",
+      "date_start": "2026-11-09",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "66546b1942ccadf5",
+      "title": "QUK-rein",
+      "date_start": "2026-11-23",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "5586d1118e749352",
+      "title": "QUK-rein",
+      "date_start": "2026-11-30",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "e36b43eff780cf47",
+      "title": "QUK-rein",
+      "date_start": "2026-12-07",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "b2bfb996b0e527ba",
+      "title": "QUK-rein",
+      "date_start": "2026-12-14",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "0394c125728443ea",
+      "title": "QUK-rein",
+      "date_start": "2026-12-21",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
+    {
+      "id": "088b997e72cde4da",
+      "title": "Kaffeetreff",
+      "date_start": "2026-10-19",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "5470af2f5017b6bd",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "date_start": "2027-02-27",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "183d1ce98371c857",
+      "title": "Planet B",
+      "date_start": "2027-02-27",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "e9d38bd52db8c169",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
       "date_start": "2027-02-28",
       "source": "kornwestheim"
     },
     {
-      "id": "14fa2c01ce41c6dc",
-      "title": "Ausschuss für Soziales und Integration (SIA)",
-      "date_start": "2026-12-09",
+      "id": "dd83a7e17b4a4b8b",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2027-02-28",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "c30e6c5d8ac07974",
+      "title": "Galeriekonzert",
+      "date_start": "2027-02-28",
       "source": "kornwestheim"
     },
     {
@@ -33,26 +119,6 @@
       "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
       "date_start": "2027-03-05",
       "source": "kornwestheim"
-    }
-  ],
-  "removed": [
-    {
-      "id": "427448d23d43a42b",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2026-10-18",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "ceb43dfc82e675bd",
-      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
-      "date_start": "2026-10-18",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "2bef14f082dcebf6",
-      "title": "Galeriekonzert",
-      "date_start": "2027-02-28",
-      "source": "das_k_spielplan"
     }
   ]
 }
