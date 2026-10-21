@@ -1,12 +1,32 @@
 {
-  "generated_at": "2026-10-20T08:02:07.202445+02:00",
+  "generated_at": "2026-10-21T07:58:41.121053+02:00",
   "city": "erligheim",
   "sources": [
     "erligheim_gemeinde"
   ],
-  "previous_run": "2026-10-19T07:09:16.662074+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-10-20T08:02:07.280049+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "6f6b2641b5333032",
+      "title": "Laternenumzug zum Gedenktag",
+      "date_start": "2026-11-03",
+      "source": "erligheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "4c0fa57fce4f7806",
+      "title": "Kirchengemeinderatssitzung",
+      "date_start": "2026-10-20",
+      "source": "erligheim_gemeinde"
+    },
+    {
+      "id": "dc5c36886173b5e2",
+      "title": "Laternenumzug",
+      "date_start": "2026-11-03",
+      "source": "erligheim_gemeinde"
+    }
+  ]
 }

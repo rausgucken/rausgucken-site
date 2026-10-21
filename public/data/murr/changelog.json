@@ -1,12 +1,25 @@
 {
-  "generated_at": "2026-10-20T07:50:11.962839+02:00",
+  "generated_at": "2026-10-21T07:44:25.940866+02:00",
   "city": "murr",
   "sources": [
     "murr_gemeinde"
   ],
-  "previous_run": "2026-10-19T07:03:33.916484+02:00",
+  "previous_run": "2026-10-20T07:50:12.040214+02:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "99e1ae5114a0d44b",
+      "title": "Sitzung: Verwaltungs- und Technischer Ausschuss",
+      "date_start": "2026-10-20",
+      "source": "murr_gemeinde"
+    },
+    {
+      "id": "bd4b03b22b4053a3",
+      "title": "Sitzung: Gemeinderat",
+      "date_start": "2026-10-20",
+      "source": "murr_gemeinde"
+    }
+  ]
 }

@@ -1,38 +1,37 @@
 {
-  "generated_at": "2026-10-20T06:14:30.574046+02:00",
+  "generated_at": "2026-10-21T06:19:51.275038+02:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_treffpunkt_adler",
-    "ditzingen_stadt"
+    "ditzingen_stadt",
+    "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-10-19T05:39:27.909907+02:00",
-  "count_added": 2,
-  "count_removed": 2,
-  "added": [
+  "previous_run": "2026-10-20T06:14:30.658659+02:00",
+  "count_added": 0,
+  "count_removed": 4,
+  "added": [],
+  "removed": [
     {
-      "id": "d5ea39fc40333e51",
-      "title": "Männerschwimmen 15.11.26",
-      "date_start": "2026-11-15",
+      "id": "61ca05320a2c9727",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f03080b008a1723b",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-20",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "f7381e67b1b0ee36",
+      "title": "Nadelspiel und Kaffeeklatsch",
+      "date_start": "2026-10-20",
       "source": "ditzingen_stadt"
     },
     {
-      "id": "eb369443c3922526",
-      "title": "Gesprächskreis Demenz (Abt. Senioren, Demenzberatung)",
-      "date_start": "2027-10-20",
-      "source": "ditzingen_treffpunkt_adler"
-    }
-  ],
-  "removed": [
-    {
-      "id": "277c9e0a619990ae",
-      "title": "FEDIA-Theaterworkshop (FEDIA, Stadt Ditzingen)",
-      "date_start": "2026-10-19",
-      "source": "ditzingen_treffpunkt_adler"
-    },
-    {
-      "id": "461b4b3e5e3d72aa",
-      "title": "Zusammen Singen",
-      "date_start": "2026-10-19",
+      "id": "7c112a16ecc54f89",
+      "title": "Wortcafé",
+      "date_start": "2026-10-20",
       "source": "ditzingen_stadt"
     }
   ]

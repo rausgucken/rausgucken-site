@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-10-20T07:52:12.882747+02:00",
+  "generated_at": "2026-10-21T07:46:20.965321+02:00",
   "city": "erdmannhausen",
   "sources": [
     "erdmannhausen_stadt"
   ],
-  "previous_run": "2026-10-19T07:03:35.329714+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-10-20T07:52:12.957952+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "d3b9818950597f22",
+      "title": "Erdmannhäuser Weihnachtsdörfle",
+      "date_start": "2026-11-21",
+      "source": "erdmannhausen_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "37feec1cf6ce4307",
+      "title": "Lesung in der Bücherei",
+      "date_start": "2026-10-20",
+      "source": "erdmannhausen_stadt"
+    }
+  ]
 }
