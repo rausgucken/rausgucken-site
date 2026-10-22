@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-21T09:53:46.257833+02:00",
+  "generated_at": "2026-10-22T08:45:49.740138+02:00",
   "city": "asperg",
   "sources": [
-    "glasperlenspiel",
     "asperg_veranstaltungen",
-    "asperg_fuehrungen"
+    "asperg_fuehrungen",
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-10-20T10:02:44.457261+02:00",
+  "previous_run": "2026-10-21T09:53:46.334499+02:00",
   "count_added": 24,
-  "count_removed": 0,
+  "count_removed": 3,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -155,5 +155,24 @@
       "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "77b124453b4692e7",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-10-21",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "dd56c2ce7ac553c9",
+      "title": "Quizabend mit Elisabeth Kabatek: Cleverle Contest No2",
+      "date_start": "2026-10-21",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "a2444b79e7f33127",
+      "title": "Quiz-Abend mit Elisabeth Kabatek",
+      "date_start": "2026-10-21",
+      "source": "glasperlenspiel"
+    }
+  ]
 }

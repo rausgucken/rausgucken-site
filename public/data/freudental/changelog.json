@@ -1,12 +1,25 @@
 {
-  "generated_at": "2026-10-21T07:53:16.702019+02:00",
+  "generated_at": "2026-10-22T07:46:22.557458+02:00",
   "city": "freudental",
   "sources": [
     "freudental_gemeinde"
   ],
-  "previous_run": "2026-10-20T07:58:34.035679+02:00",
+  "previous_run": "2026-10-21T07:53:16.775633+02:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "4f4efd3dca49919b",
+      "title": "Gemeinderatssitzung",
+      "date_start": "2026-10-21",
+      "source": "freudental_gemeinde"
+    },
+    {
+      "id": "102347621c8cf952",
+      "title": "Sprach-Café",
+      "date_start": "2026-10-21",
+      "source": "freudental_gemeinde"
+    }
+  ]
 }

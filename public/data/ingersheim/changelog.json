@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-10-21T07:44:26.644737+02:00",
+  "generated_at": "2026-10-22T07:40:34.973062+02:00",
   "city": "ingersheim",
   "sources": [
     "ingersheim_gemeinde"
   ],
-  "previous_run": "2026-10-20T07:52:12.240466+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-10-21T07:44:26.719090+02:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "410f282da354ecd1",
+      "title": "Klavierabend 'Vom Wasser'",
+      "date_start": "2026-11-20",
+      "source": "ingersheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "2d2ad70794963abf",
+      "title": "Klavierkonzert Frau Binzer",
+      "date_start": "2026-11-20",
+      "source": "ingersheim_gemeinde"
+    }
+  ]
 }
