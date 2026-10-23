@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-22T08:45:49.740138+02:00",
+  "generated_at": "2026-10-23T11:49:47.425264+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
     "asperg_fuehrungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-10-21T09:53:46.334499+02:00",
-  "count_added": 24,
-  "count_removed": 3,
+  "previous_run": "2026-10-22T08:45:49.817342+02:00",
+  "count_added": 25,
+  "count_removed": 1,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -153,26 +153,20 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "31a67c79e510f798",
+      "title": "Quiz-Abend mit Elisabeth Kabatek",
+      "date_start": "2027-10-21",
+      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "77b124453b4692e7",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-10-21",
+      "id": "af76fd919aaee84c",
+      "title": "Die Kelten im mittleren Neckarraum - Vortrag",
+      "date_start": "2026-10-22",
       "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "dd56c2ce7ac553c9",
-      "title": "Quizabend mit Elisabeth Kabatek: Cleverle Contest No2",
-      "date_start": "2026-10-21",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "a2444b79e7f33127",
-      "title": "Quiz-Abend mit Elisabeth Kabatek",
-      "date_start": "2026-10-21",
-      "source": "glasperlenspiel"
     }
   ]
 }

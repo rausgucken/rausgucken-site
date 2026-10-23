@@ -1,31 +1,30 @@
 {
-  "generated_at": "2026-10-21T07:44:24.512143+02:00",
+  "generated_at": "2026-10-23T07:44:45.318069+02:00",
   "city": "schwieberdingen",
   "sources": [
     "schwieberdingen_gemeinde"
   ],
-  "previous_run": "2026-10-20T07:09:34.920206+02:00",
-  "count_added": 1,
-  "count_removed": 2,
-  "added": [
+  "previous_run": "2026-10-21T07:44:24.586784+02:00",
+  "count_added": 0,
+  "count_removed": 3,
+  "added": [],
+  "removed": [
+    {
+      "id": "4df7327e50bf70b6",
+      "title": "Line Dance Gruppe",
+      "date_start": "2026-10-21",
+      "source": "schwieberdingen_gemeinde"
+    },
+    {
+      "id": "733aec4337196a73",
+      "title": "Babylesen",
+      "date_start": "2026-10-22",
+      "source": "schwieberdingen_gemeinde"
+    },
     {
       "id": "55ca3086694a9410",
       "title": "Sprechstunde mit dem Bürgermeister",
       "date_start": "2026-10-22",
-      "source": "schwieberdingen_gemeinde"
-    }
-  ],
-  "removed": [
-    {
-      "id": "695829b76c81de04",
-      "title": "Persönliche Beratung",
-      "date_start": "2026-10-20",
-      "source": "schwieberdingen_gemeinde"
-    },
-    {
-      "id": "f259e4f2b731c58b",
-      "title": "Treff für AutorInnen",
-      "date_start": "2026-10-20",
       "source": "schwieberdingen_gemeinde"
     }
   ]

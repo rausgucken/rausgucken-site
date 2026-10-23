@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-10-22T07:42:32.108086+02:00",
+  "generated_at": "2026-10-23T07:53:38.809435+02:00",
   "city": "eberdingen",
   "sources": [
     "eberdingen_veranstaltungen"
   ],
-  "previous_run": "2026-10-21T07:52:46.198534+02:00",
-  "count_added": 1,
-  "count_removed": 0,
-  "added": [
+  "previous_run": "2026-10-22T07:42:32.186474+02:00",
+  "count_added": 0,
+  "count_removed": 3,
+  "added": [],
+  "removed": [
     {
-      "id": "f50a67b406aacfe5",
-      "title": "Erlebnisabend mit Popcorn",
-      "date_start": "2027-03-09",
+      "id": "ffb323b549be98ad",
+      "title": "Blutspende",
+      "date_start": "2026-10-22",
+      "source": "eberdingen_veranstaltungen"
+    },
+    {
+      "id": "2d9665c5a5264513",
+      "title": "Herbstvortrag „Nussdorfer Linsen“",
+      "date_start": "2026-11-07",
+      "source": "eberdingen_veranstaltungen"
+    },
+    {
+      "id": "92a21c5956e47882",
+      "title": "Nikolausfeier",
+      "date_start": "2026-12-05",
       "source": "eberdingen_veranstaltungen"
     }
-  ],
-  "removed": []
+  ]
 }

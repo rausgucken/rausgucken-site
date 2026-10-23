@@ -1,26 +1,31 @@
 {
-  "generated_at": "2026-10-22T07:40:34.973062+02:00",
+  "generated_at": "2026-10-23T07:51:27.928339+02:00",
   "city": "ingersheim",
   "sources": [
     "ingersheim_gemeinde"
   ],
-  "previous_run": "2026-10-21T07:44:26.719090+02:00",
-  "count_added": 1,
-  "count_removed": 1,
+  "previous_run": "2026-10-22T07:40:35.048888+02:00",
+  "count_added": 3,
+  "count_removed": 0,
   "added": [
     {
-      "id": "410f282da354ecd1",
-      "title": "Klavierabend 'Vom Wasser'",
-      "date_start": "2026-11-20",
+      "id": "fe9d20d32ec16f43",
+      "title": "Kirche Kunterbunt",
+      "date_start": "2027-01-10",
+      "source": "ingersheim_gemeinde"
+    },
+    {
+      "id": "176e17b4d46e4993",
+      "title": "Abendgottesdienst zum Thema '7 Wochen ohne'",
+      "date_start": "2027-02-14",
+      "source": "ingersheim_gemeinde"
+    },
+    {
+      "id": "fdd044144d8a12c8",
+      "title": "Ökumenischer Weltgebetstag-Gottesdienst",
+      "date_start": "2027-03-05",
       "source": "ingersheim_gemeinde"
     }
   ],
-  "removed": [
-    {
-      "id": "2d2ad70794963abf",
-      "title": "Klavierkonzert Frau Binzer",
-      "date_start": "2026-11-20",
-      "source": "ingersheim_gemeinde"
-    }
-  ]
+  "removed": []
 }

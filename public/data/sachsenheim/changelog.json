@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-22T05:25:51.064968+02:00",
+  "generated_at": "2026-10-23T05:37:57.741568+02:00",
   "city": "sachsenheim",
   "sources": [
     "sachsenheim_kultur",
     "sachsenheim_library"
   ],
-  "previous_run": "2026-10-21T05:39:33.886683+02:00",
-  "count_added": 7,
-  "count_removed": 1,
+  "previous_run": "2026-10-22T05:25:51.140346+02:00",
+  "count_added": 8,
+  "count_removed": 3,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -46,18 +46,36 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "85f1ac8f1e553f98",
-      "title": "Jugendwoche im Jugendhaus Hot",
-      "date_start": "2026-10-19",
+      "id": "9ed869edcec3729f",
+      "title": "Laternenumzug der Feuerwehr Heute",
+      "date_start": "2026-10-23",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "9454c57d7bb2621a",
+      "title": "Vortragsreihe „Leben mit Sehbehinderung“",
+      "date_start": "2026-11-11",
       "source": "sachsenheim_kultur"
     }
   ],
   "removed": [
     {
-      "id": "7662252e918c9b19",
-      "title": "Jugendwoche im Jugendhaus Hot",
-      "date_start": "2026-10-19",
+      "id": "91532ddd54df9e53",
+      "title": "Rollatortraining",
+      "date_start": "2026-10-23",
       "source": "sachsenheim_library"
+    },
+    {
+      "id": "b13747b10aba10e2",
+      "title": "Laternenumzug der Feuerwehr",
+      "date_start": "2026-10-23",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "c0a6b371d3a5cc68",
+      "title": "Führung, Stadtmuseum Nachts im Museum",
+      "date_start": "2026-11-21",
+      "source": "sachsenheim_kultur"
     }
   ]
 }

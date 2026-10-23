@@ -1,18 +1,25 @@
 {
-  "generated_at": "2026-10-22T05:30:25.305915+02:00",
+  "generated_at": "2026-10-23T06:23:41.918519+02:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-10-21T06:24:16.925658+02:00",
-  "count_added": 0,
+  "previous_run": "2026-10-22T05:30:25.381324+02:00",
+  "count_added": 1,
   "count_removed": 1,
-  "added": [],
+  "added": [
+    {
+      "id": "4a0248bac4b5bee7",
+      "title": "Gemeinderatssitzung",
+      "date_start": "2026-11-19",
+      "source": "affalterbach_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "923cbb7754a23534",
-      "title": "Café Sonne Herbst",
-      "date_start": "2026-10-21",
+      "id": "60c593c2b247acad",
+      "title": "Gemeinderatssitzung",
+      "date_start": "2026-10-22",
       "source": "affalterbach_stadt"
     }
   ]
