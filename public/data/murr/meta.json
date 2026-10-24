@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-10-23T07:45:27.826334+02:00",
+  "scraped_at": "2026-10-24T07:38:21.932099+02:00",
   "city": "murr",
-  "event_count": 10,
+  "event_count": 12,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "murr_gemeinde"
   ],
   "source_counts": {
-    "murr_gemeinde": 10
+    "murr_gemeinde": 12
   },
   "sources_failed": [],
-  "data_hash": "78c8ca02a0573cc2",
+  "data_hash": "cd412be3f3eb2791",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 23.10.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 24.10.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "murr_gemeinde": 0.87
+    "murr_gemeinde": 0.91
   },
   "source_event_counts": {
-    "murr_gemeinde": 10
+    "murr_gemeinde": 12
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 589.8,
-    "runtime_delta_vs_baseline": 2.295,
+    "runtime_minutes": 476.7,
+    "runtime_delta_vs_baseline": 1.663,
     "source_health": {
-      "murr_gemeinde": 0.87
+      "murr_gemeinde": 0.91
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-10-23T12:02:52.953587+02:00"
+    "generated_at": "2026-10-24T10:09:54.048190+02:00"
   }
 }

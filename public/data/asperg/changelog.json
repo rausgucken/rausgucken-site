@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-23T11:49:47.425264+02:00",
+  "generated_at": "2026-10-24T09:56:44.572408+02:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
     "glasperlenspiel",
-    "asperg_veranstaltungen"
+    "asperg_veranstaltungen",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-10-22T08:45:49.817342+02:00",
-  "count_added": 25,
-  "count_removed": 1,
+  "previous_run": "2026-10-23T11:49:47.501993+02:00",
+  "count_added": 24,
+  "count_removed": 2,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -153,20 +153,20 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "31a67c79e510f798",
-      "title": "Quiz-Abend mit Elisabeth Kabatek",
-      "date_start": "2027-10-21",
-      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "af76fd919aaee84c",
-      "title": "Die Kelten im mittleren Neckarraum - Vortrag",
-      "date_start": "2026-10-22",
+      "id": "d8fb61da521159df",
+      "title": "Jazz - Piano Cocktailnight",
+      "date_start": "2026-10-23",
       "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "e0c30f73c2c49809",
+      "title": "Jazz-Veranstaltung mit Gerhard Volz, Stefan „Mad Piano“ Zenner und Didi Eckmaier",
+      "date_start": "2026-10-23",
+      "source": "glasperlenspiel"
     }
   ]
 }
