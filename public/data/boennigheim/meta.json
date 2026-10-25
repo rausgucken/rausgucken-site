@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-10-24T06:19:14.715207+02:00",
+  "scraped_at": "2026-10-25T04:07:49.474013+01:00",
   "city": "boennigheim",
-  "event_count": 50,
+  "event_count": 49,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "boennigheim_stadtkalender"
   ],
   "source_counts": {
-    "boennigheim_stadtkalender": 50
+    "boennigheim_stadtkalender": 49
   },
   "sources_failed": [],
-  "data_hash": "6d622edf69a28076",
+  "data_hash": "12c038750250d607",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 24.10.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 25.10.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "boennigheim_stadtkalender": 1.0
   },
   "source_event_counts": {
-    "boennigheim_stadtkalender": 50
+    "boennigheim_stadtkalender": 49
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 476.7,
-    "runtime_delta_vs_baseline": 1.663,
+    "runtime_minutes": 432.5,
+    "runtime_delta_vs_baseline": 1.416,
     "source_health": {
       "boennigheim_stadtkalender": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-10-24T10:09:52.356254+02:00"
+    "generated_at": "2026-10-25T08:25:34.633368+01:00"
   }
 }

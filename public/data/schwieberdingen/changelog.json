@@ -1,12 +1,32 @@
 {
-  "generated_at": "2026-10-24T06:56:33.544783+02:00",
+  "generated_at": "2026-10-25T05:34:31.202566+01:00",
   "city": "schwieberdingen",
   "sources": [
     "schwieberdingen_gemeinde"
   ],
-  "previous_run": "2026-10-23T07:44:45.393200+02:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-10-24T06:56:33.622345+02:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "d679b4a419328a6f",
+      "title": "offene Fraktionssitzung der CDU Gemeinderatsfraktion",
+      "date_start": "2026-11-09",
+      "source": "schwieberdingen_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "14800e2dbc63cce6",
+      "title": "Persönliche Beratung",
+      "date_start": "2026-12-29",
+      "source": "schwieberdingen_gemeinde"
+    },
+    {
+      "id": "5761127b13a23cc6",
+      "title": "Line Dance Gruppe",
+      "date_start": "2026-12-30",
+      "source": "schwieberdingen_gemeinde"
+    }
+  ]
 }

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-24T09:56:44.572408+02:00",
+  "generated_at": "2026-10-25T08:12:27.768447+01:00",
   "city": "asperg",
   "sources": [
-    "glasperlenspiel",
+    "asperg_fuehrungen",
     "asperg_veranstaltungen",
-    "asperg_fuehrungen"
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-10-23T11:49:47.501993+02:00",
+  "previous_run": "2026-10-24T09:56:44.648988+02:00",
   "count_added": 24,
-  "count_removed": 2,
+  "count_removed": 3,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -157,16 +157,22 @@
   ],
   "removed": [
     {
-      "id": "d8fb61da521159df",
-      "title": "Jazz - Piano Cocktailnight",
-      "date_start": "2026-10-23",
+      "id": "a456810a748c4617",
+      "title": "Wochenmarkt",
+      "date_start": "2026-10-24",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "e0c30f73c2c49809",
-      "title": "Jazz-Veranstaltung mit Gerhard Volz, Stefan „Mad Piano“ Zenner und Didi Eckmaier",
-      "date_start": "2026-10-23",
-      "source": "glasperlenspiel"
+      "id": "9fce5eb64f283d91",
+      "title": "Bilderbuchkino",
+      "date_start": "2026-10-24",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "bba04f1c5e73af63",
+      "title": "Theater - Ein Inspektor kommt",
+      "date_start": "2026-10-24",
+      "source": "asperg_veranstaltungen"
     }
   ]
 }
