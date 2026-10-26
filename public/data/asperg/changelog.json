@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-25T08:12:27.768447+01:00",
+  "generated_at": "2026-10-26T10:11:57.676909+01:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
+    "glasperlenspiel",
     "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-10-24T09:56:44.648988+02:00",
-  "count_added": 24,
-  "count_removed": 3,
+  "previous_run": "2026-10-25T08:12:27.844850+01:00",
+  "count_added": 25,
+  "count_removed": 2,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -153,26 +153,26 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "d816f89b41cd4002",
+      "title": "Alte Liebe",
+      "date_start": "2026-10-25",
+      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "a456810a748c4617",
-      "title": "Wochenmarkt",
-      "date_start": "2026-10-24",
+      "id": "13a89209f77b50bc",
+      "title": "Theater - Alte Liebe",
+      "date_start": "2026-10-25",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "9fce5eb64f283d91",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-10-24",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "bba04f1c5e73af63",
-      "title": "Theater - Ein Inspektor kommt",
-      "date_start": "2026-10-24",
-      "source": "asperg_veranstaltungen"
+      "id": "55afae9a3013a6eb",
+      "title": "Ehepaar Lore und Harry",
+      "date_start": "2026-10-25",
+      "source": "glasperlenspiel"
     }
   ]
 }

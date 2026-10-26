@@ -1,37 +1,44 @@
 {
-  "generated_at": "2026-10-25T04:07:46.920809+01:00",
+  "generated_at": "2026-10-26T05:56:26.514159+01:00",
   "city": "ditzingen",
   "sources": [
     "ditzingen_treffpunkt_adler",
     "ditzingen_stadt"
   ],
-  "previous_run": "2026-10-24T06:18:56.772921+02:00",
-  "count_added": 0,
-  "count_removed": 4,
-  "added": [],
+  "previous_run": "2026-10-25T04:07:47.003299+01:00",
+  "count_added": 3,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "32e6449ad0ef5e52",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-10-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5064cc64571fc1bf",
+      "title": "Skatgruppen",
+      "date_start": "2027-10-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "7f13f346d189f2e6",
+      "title": "\"Betreuungscafé Augenblick\"  Betreuungsgruppe für Menschen mit und ohne Demenz (Abt. Senioren und Teilhabe)",
+      "date_start": "2027-10-26",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ],
   "removed": [
     {
-      "id": "8719217691d7a488",
-      "title": "Eine Ausstellung von Daniel Schuster",
-      "date_start": "2026-09-18",
+      "id": "c624da831cd6f776",
+      "title": "Heimerdinger KlangFarben",
+      "date_start": "2026-10-25",
       "source": "ditzingen_stadt"
     },
     {
-      "id": "d16f3d07e196a896",
-      "title": "Musik zur Marktzeit XIV",
-      "date_start": "2026-10-24",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "dd3d3a4f04874d80",
-      "title": "Wein trifft Mundart: 8. Hirschlander Kabarett-Herbst",
-      "date_start": "2026-10-24",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "b37272c0b97152f3",
-      "title": "Weinprobe mit Musik",
-      "date_start": "2026-10-24",
+      "id": "1a05eed6635c583a",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-10-25",
       "source": "ditzingen_stadt"
     }
   ]
