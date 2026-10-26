@@ -1,37 +1,68 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-10-25T06:39:41.896588+01:00",
-  "event_count": 1,
+  "generated_at": "2026-10-26T06:00:01.783595+01:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "3e3baae1a1cb3483",
-      "title": "Dorfspaziergang mit „Geschichte(n) rund ums Dorf“",
-      "date_start": "2026-10-25",
+      "id": "e7d5d2dee2acf5ab",
+      "title": "Halloween Party",
+      "date_start": "2026-10-31",
       "date_end": null,
-      "time": "14:30",
-      "description": "In diesem Dorfspaziergang erfahren Sie Geschichten aus dem alten Ortskern von Walheim. Erzählt werden von Mitgliedern des Kulturspektrums sowie überraschenden Gästen, während Sie die Kulturdenkmale besuchen. Ein Getränkeverkostung und Leckereien sind inklusive.",
-      "location": null,
+      "time": "17:00",
+      "description": "In diesem Halloween-Event wird das Feuerwehrhaus Walheim zum ungewöhnlichen Veranstaltungsort. Ab 17 Uhr können Gäste sich mit Kostümen und Geistergeschichten unterhalten, ab 20 Uhr öffnet sich die Bar für Erwachsene.",
+      "location": "Feuerwehrhaus Walheim",
       "price": null,
       "age_min": null,
       "age_max": null,
       "tags": [],
-      "link": "https://www.walheim.de/erleben-besuchen/veranstaltungskalender/411/dorfspaziergang-mit-geschichten-rund-ums-dorf",
-      "original_url": "https://www.walheim.de/erleben-besuchen/veranstaltungskalender/411/dorfspaziergang-mit-geschichten-rund-ums-dorf",
+      "link": "https://www.walheim.de/erleben-besuchen/veranstaltungskalender/408/halloween-party",
+      "original_url": "https://www.walheim.de/erleben-besuchen/veranstaltungskalender/408/halloween-party",
       "source": "walheim_gemeinde",
       "city": "walheim",
-      "slug": "dorfspaziergang-mit-geschichten-rund-ums-dorf-2026-10-25-walh",
+      "slug": "halloween-party-2026-10-31-walh",
       "weekdays": [
-        0
+        6
       ],
-      "scraped_at": "2026-10-25T02:10:19.381407+02:00",
+      "scraped_at": "2026-10-25T02:10:21.296142+02:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Walheim",
-      "canonical_url": "https://www.rausgucken.de/walheim/events/dorfspaziergang-mit-geschichten-rund-ums-dorf-2026-10-25-walh"
+      "canonical_url": "https://www.rausgucken.de/walheim/events/halloween-party-2026-10-31-walh"
+    },
+    {
+      "id": "e7d8848a65c881a8",
+      "title": "Schlachtplattenfest",
+      "date_start": "2026-11-01",
+      "date_end": null,
+      "time": null,
+      "description": "Im Feuerwehrhaus Walheim findet das Schlachtplattenfest statt. Besuchern bietet es die Möglichkeit, sich mitmusizierend in traditionelle Musik zu versenken.",
+      "location": "Feuerwehrhaus Walheim",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Musik"
+      ],
+      "link": "https://www.walheim.de/erleben-besuchen/veranstaltungskalender/409/schlachtplattenfest",
+      "original_url": "https://www.walheim.de/erleben-besuchen/veranstaltungskalender/409/schlachtplattenfest",
+      "source": "walheim_gemeinde",
+      "city": "walheim",
+      "slug": "schlachtplattenfest-2026-11-01-walh",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-10-25T02:10:22.263144+02:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Walheim",
+      "canonical_url": "https://www.rausgucken.de/walheim/events/schlachtplattenfest-2026-11-01-walh"
     }
   ]
 }
