@@ -1,107 +1,39 @@
 {
-  "generated_at": "2026-10-26T09:09:48.678329+01:00",
+  "generated_at": "2026-10-27T08:41:34.895998+01:00",
   "city": "ludwigsburg",
   "sources": [
-    "lisbert_queer",
-    "musikhalle_lb",
-    "kunstverein_ausstellungen",
-    "labyrinth",
-    "karlskaserne_ausstellungen",
-    "kunstverein_veranstaltungen",
-    "schloss",
-    "stabi",
-    "forum_schlosspark",
     "garnisonmuseum",
-    "ludwigsburg_stadt",
-    "blueba",
+    "lisbert_queer",
     "karlskaserne_veranstaltungen",
     "demokratisches_zentrum",
-    "museum"
+    "museum",
+    "karlskaserne_ausstellungen",
+    "schloss",
+    "labyrinth",
+    "forum_schlosspark",
+    "stabi",
+    "kunstverein_veranstaltungen",
+    "ludwigsburg_stadt",
+    "musikhalle_lb",
+    "kunstverein_ausstellungen",
+    "blueba"
   ],
-  "previous_run": "2026-10-25T07:12:06.765614+01:00",
-  "count_added": 13,
-  "count_removed": 15,
+  "previous_run": "2026-10-26T09:09:48.767393+01:00",
+  "count_added": 8,
+  "count_removed": 7,
   "added": [
     {
-      "id": "3977aba3565e601a",
-      "title": "Faschingsferienworkshop: Superhelden. Powergirls für Kinder ab 6 Jahren in Ludwigsburg",
+      "id": "e295bebd0a1c9f8e",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance Kids für Kinder von 8-9 Jahren in Ludwigsburg",
       "date_start": "2027-02-08",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "b6ab25025d88c24c",
-      "title": "Workshop: Ein Erdmännchen aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2027-06-13",
-      "source": "labyrinth"
-    },
-    {
-      "id": "78145e869c25a93c",
-      "title": "Workshop: Porträt als Relief aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2027-06-13",
-      "source": "labyrinth"
-    },
-    {
-      "id": "8e726080233c84d6",
-      "title": "Herbstferienworkshop: Die Tiere im Wald von 8-10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "labyrinth"
-    },
-    {
-      "id": "abf0f4c75316602b",
-      "title": "Faschingsferienworkshop: Kerzen selbst gießen und verzieren für Kinder ab 8 Jahren in Ludwigsburg",
+      "id": "90c7a6c16bc897eb",
+      "title": "Faschingsferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
       "date_start": "2027-02-08",
       "source": "karlskaserne_veranstaltungen"
     },
-    {
-      "id": "bad0da2090e665dc",
-      "title": "Let’s jam!",
-      "date_start": "2026-10-24",
-      "source": "demokratisches_zentrum"
-    },
-    {
-      "id": "67d5b9195f916e23",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2027-03-30",
-      "source": "museum"
-    },
-    {
-      "id": "5e012f0afde9b9cc",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": null,
-      "source": "schloss"
-    },
-    {
-      "id": "a1db3dd0bf9298bf",
-      "title": "3D Krimidinner - La Petite Détective",
-      "date_start": "2026-10-30",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "81aa55ba4bc57544",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-10-31",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "80dfeb47fc9ca385",
-      "title": "3D Krimidinner - La Petite Détective",
-      "date_start": "2026-10-31",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "40d39c5ece5bf9f8",
-      "title": "Free Walking Tour zu Halloween: „Bis das letzte Licht erlischt“",
-      "date_start": "2026-10-31",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "dd6e75f27e49adaf",
-      "title": "Film + Gespräch: Barbara Buser - Pionierin der Nachhaltigkeit",
-      "date_start": "2026-11-01",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
     {
       "id": "f2d072ce4584b2b4",
       "title": "Klassische Schlossführung „Herzog“",
@@ -109,88 +41,78 @@
       "source": "schloss"
     },
     {
-      "id": "35bb6bb83d3edb07",
-      "title": "Klassische Führung für Familien",
-      "date_start": "2026-03-28",
+      "id": "5a6816d28991cbea",
+      "title": "Literatur am Vormittag - Buchvorstellung mit Susanne Sterzenbach",
+      "date_start": "2026-11-11",
+      "source": "stabi"
+    },
+    {
+      "id": "0eaffd4584db17a2",
+      "title": "Hobby.Kunst.Markt.",
+      "date_start": "2026-11-08",
+      "source": "stabi"
+    },
+    {
+      "id": "51b593d706d9fa33",
+      "title": "Literatur am Vormittag - Buchvorstellung mit Susanne Sterzenbach",
+      "date_start": "2026-11-12",
+      "source": "stabi"
+    },
+    {
+      "id": "637c97fa226eae0a",
+      "title": "Hobby-Weihnachtsmarkt im KUZ",
+      "date_start": "2026-11-28",
+      "source": "stabi"
+    },
+    {
+      "id": "de717bd86857a7f6",
+      "title": "Naturführung: Die Zugwiesen",
+      "date_start": "2026-11-01",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "ddef881670ec912c",
+      "title": "Tiere im Schloss",
+      "date_start": "2026-10-26",
       "source": "schloss"
     },
     {
-      "id": "62e47c05a74b2330",
-      "title": "Workshop: Ein Nasenaffe aus Ton für Kinder ab 7 Jahren in Ludwigsburg",
-      "date_start": "2026-10-24",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "8289f354c56d1f81",
-      "title": "Vom Keller auf den Teller",
-      "date_start": "2026-10-25",
-      "source": "schloss"
-    },
-    {
-      "id": "f34862d447bab562",
-      "title": "Biodanza - \"Que bonita es esta vida\"",
-      "date_start": "2026-10-25",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "a89e54912c673871",
-      "title": "Caché = verborgen",
-      "date_start": "2026-10-25",
-      "source": "schloss"
-    },
-    {
-      "id": "431db625eb59be7c",
-      "title": "Workshop: Ein Kürbis als Geistervertreiber für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-10-25",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "ce08c404934bfdca",
-      "title": "Von weißer Wäsche und bunten Geschichten",
-      "date_start": "2026-10-25",
-      "source": "schloss"
-    },
-    {
-      "id": "98a76ff417562186",
-      "title": "Schnupperstunde Einsteiger - Standard & Latein",
-      "date_start": "2026-10-25",
+      "id": "7670366872ead9cb",
+      "title": "»Hauptsache kein Zeitgeist« von & mit Hayat Erdoğan",
+      "date_start": "2026-10-26",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "e11edb840eef8851",
-      "title": "Sound of Europe - Chorkonzert",
-      "date_start": "2026-10-25",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "2f3a9329de520819",
+      "title": "Literatur am Vormittag",
+      "date_start": "2026-11-11",
+      "source": "stabi"
     },
     {
-      "id": "a72f39f4461540f6",
-      "title": "Herbstferienworkshop: Die Tiere im Wald von 8-10 Jahren in Ludwigsburg",
-      "date_start": "2026-10-26",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "58aed541d7f2d297",
+      "title": "Literatur am Vormittag",
+      "date_start": "2026-11-12",
+      "source": "stabi"
     },
     {
-      "id": "43c06eaeccd3fd42",
-      "title": "Faschingsferienworkshop: Superhelden. Powergirls für Kinder ab 6 Jahren in Ludwigsburg",
+      "id": "3720c50d00f8f817",
+      "title": "Faschingsferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
       "date_start": "2027-02-08",
       "source": "labyrinth"
     },
     {
-      "id": "60cbf1cd4900b39e",
-      "title": "Faschingsferienworkshop: Kerzen selbst gießen und verzieren für Kinder ab 8 Jahren in Ludwigsburg",
+      "id": "c364bf34f3541a57",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance Kids für Kinder von 8-9 Jahren in Ludwigsburg",
       "date_start": "2027-02-08",
       "source": "labyrinth"
     },
     {
-      "id": "cb93bcfad710c9e0",
-      "title": "Workshop: Porträt als Relief aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2027-06-13",
-      "source": "labyrinth"
-    },
-    {
-      "id": "ea99f41a6092762e",
-      "title": "Workshop: Ein Erdmännchen aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2027-06-13",
-      "source": "labyrinth"
+      "id": "5e012f0afde9b9cc",
+      "title": "Klassische Schlossführung „Herzog“",
+      "date_start": null,
+      "source": "schloss"
     }
   ]
 }
