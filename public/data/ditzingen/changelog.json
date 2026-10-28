@@ -1,32 +1,37 @@
 {
-  "generated_at": "2026-10-27T05:19:20.705314+01:00",
+  "generated_at": "2026-10-28T05:23:18.720909+01:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_treffpunkt_adler",
-    "ditzingen_stadt"
+    "ditzingen_stadt",
+    "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-10-26T05:56:26.595088+01:00",
-  "count_added": 2,
-  "count_removed": 1,
-  "added": [
+  "previous_run": "2026-10-27T05:19:20.789299+01:00",
+  "count_added": 0,
+  "count_removed": 4,
+  "added": [],
+  "removed": [
     {
-      "id": "8965494849e46f96",
-      "title": "Filmabend zur Frauenfasnet",
-      "date_start": "2027-02-04",
+      "id": "568db8d57365561c",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-10-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "bc9806202f5935d3",
+      "title": "Skatgruppen",
+      "date_start": "2026-10-27",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "73c6b18c7ae97f2d",
+      "title": "Vorlesezeit",
+      "date_start": "2026-10-27",
       "source": "ditzingen_stadt"
     },
     {
-      "id": "a16b1c21a068241a",
-      "title": "Funkenflugfest bei der Feuerwehr Hirschlanden",
-      "date_start": "2027-01-08",
-      "source": "ditzingen_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "6a21d64ad515866b",
-      "title": "Wandern ab 60",
-      "date_start": "2026-10-26",
+      "id": "e1c9dac9e04609fd",
+      "title": "English Conversation Stammtisch",
+      "date_start": "2026-10-27",
       "source": "ditzingen_treffpunkt_adler"
     }
   ]

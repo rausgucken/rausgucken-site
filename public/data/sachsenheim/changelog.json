@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-27T05:18:57.688502+01:00",
+  "generated_at": "2026-10-28T05:23:17.918814+01:00",
   "city": "sachsenheim",
   "sources": [
     "sachsenheim_kultur",
     "sachsenheim_library"
   ],
-  "previous_run": "2026-10-26T05:13:28.895099+01:00",
-  "count_added": 6,
-  "count_removed": 0,
+  "previous_run": "2026-10-27T05:18:57.763607+01:00",
+  "count_added": 7,
+  "count_removed": 1,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -40,11 +40,24 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "742bb91abff8c0bd",
-      "title": "Tanznachmittag",
-      "date_start": "2026-10-06",
+      "id": "6b6c706d4ed51238",
+      "title": "Informationsveranstaltung: Wärmepumpen im Altbau",
+      "date_start": "2026-11-26",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "661d3835d84c76ef",
+      "title": "Andacht und Gewalt! Neues aus dem Zisterzienserinnenkloster Rechentshofen",
+      "date_start": "2026-11-27",
       "source": "sachsenheim_kultur"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "9de3cd251ec75515",
+      "title": "Tanznachmittag",
+      "date_start": "2026-10-27",
+      "source": "sachsenheim_kultur"
+    }
+  ]
 }
