@@ -1,18 +1,37 @@
 {
-  "generated_at": "2026-10-28T05:23:32.304216+01:00",
+  "generated_at": "2026-10-29T05:35:56.860925+01:00",
   "city": "gerlingen",
   "sources": [
     "gerlingen_stadt"
   ],
-  "previous_run": "2026-10-27T05:25:12.610014+01:00",
-  "count_added": 0,
+  "previous_run": "2026-10-28T05:23:32.380727+01:00",
+  "count_added": 3,
   "count_removed": 1,
-  "added": [],
+  "added": [
+    {
+      "id": "8ab4cad46dde9738",
+      "title": "Musik bei Kerzenschein",
+      "date_start": "2026-11-22",
+      "source": "gerlingen_stadt"
+    },
+    {
+      "id": "63bb8bcf7bf2a5a4",
+      "title": "Offenes Weihnachtssingen zum Mitmachen",
+      "date_start": "2026-12-08",
+      "source": "gerlingen_stadt"
+    },
+    {
+      "id": "fa3b8abfc2275522",
+      "title": "Ein Abend von Brahms und Jobim bis La La Land",
+      "date_start": "2027-02-21",
+      "source": "gerlingen_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "9d9428e09c790907",
-      "title": "Lothar liest… vor!",
-      "date_start": "2026-10-27",
+      "id": "0213d68ba964192c",
+      "title": "Gesprächskreis Sternenkinder",
+      "date_start": "2026-10-28",
       "source": "gerlingen_stadt"
     }
   ]

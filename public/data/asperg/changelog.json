@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-28T09:43:43.583748+01:00",
+  "generated_at": "2026-10-29T10:51:08.118002+01:00",
   "city": "asperg",
   "sources": [
     "asperg_fuehrungen",
     "asperg_veranstaltungen",
     "glasperlenspiel"
   ],
-  "previous_run": "2026-10-27T09:46:21.056559+01:00",
+  "previous_run": "2026-10-28T09:43:43.659876+01:00",
   "count_added": 26,
-  "count_removed": 0,
+  "count_removed": 1,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -161,11 +161,18 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "a1eb27a9d685a3b7",
-      "title": "England der 50er Jahre",
-      "date_start": "2026-12-19",
+      "id": "e6eeca5d9254479f",
+      "title": "kein Weihnachtskonzert",
+      "date_start": "2026-11-27",
       "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "1588870926cf80cb",
+      "title": "Baby und Kids-Treff",
+      "date_start": "2026-10-28",
+      "source": "asperg_veranstaltungen"
+    }
+  ]
 }

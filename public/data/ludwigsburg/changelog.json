@@ -1,33 +1,27 @@
 {
-  "generated_at": "2026-10-28T08:44:37.498773+01:00",
+  "generated_at": "2026-10-29T09:25:04.571653+01:00",
   "city": "ludwigsburg",
   "sources": [
-    "labyrinth",
-    "museum",
-    "karlskaserne_veranstaltungen",
-    "blueba",
-    "schloss",
-    "stabi",
-    "kunstverein_ausstellungen",
-    "demokratisches_zentrum",
+    "lisbert_queer",
     "kunstverein_veranstaltungen",
-    "forum_schlosspark",
     "garnisonmuseum",
-    "musikhalle_lb",
     "karlskaserne_ausstellungen",
+    "karlskaserne_veranstaltungen",
+    "labyrinth",
+    "kunstverein_ausstellungen",
+    "blueba",
+    "forum_schlosspark",
+    "demokratisches_zentrum",
+    "schloss",
     "ludwigsburg_stadt",
-    "lisbert_queer"
+    "musikhalle_lb",
+    "stabi",
+    "museum"
   ],
-  "previous_run": "2026-10-27T08:41:34.984753+01:00",
+  "previous_run": "2026-10-28T08:44:37.587696+01:00",
   "count_added": 9,
-  "count_removed": 7,
+  "count_removed": 12,
   "added": [
-    {
-      "id": "8ae850f43842ff47",
-      "title": "Schaurig schön - Halloween Special",
-      "date_start": "2026-10-31",
-      "source": "schloss"
-    },
     {
       "id": "718625a62e42b7eb",
       "title": "Trickfilmstudio-Camp",
@@ -35,90 +29,126 @@
       "source": "stabi"
     },
     {
-      "id": "1125eadd487108c0",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-10-31",
-      "source": "ludwigsburg_stadt"
+      "id": "bdf9414f4c50bd46",
+      "title": "Recherche für Referate und GFS",
+      "date_start": "2026-10-29",
+      "source": "stabi"
     },
     {
-      "id": "8de07b786bc461eb",
-      "title": "Bilderbuchsamstag auf Achse",
-      "date_start": "2027-04-03",
-      "source": "museum"
+      "id": "164e045f2cfd42da",
+      "title": "Let's jam!",
+      "date_start": "2026-10-24",
+      "source": "demokratisches_zentrum"
     },
     {
-      "id": "0cb18a26cbd3ba5a",
-      "title": "Mimi Kohler & Leonie Lass | Plateaus",
-      "date_start": "2026-10-03",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "b3e4efdac2b6e71c",
-      "title": "Genussführung: ANGEZAPFT in Ludwigsburg",
+      "id": "695e727f7e3adcad",
+      "title": "3D Krimidinner - La Petite Détective",
       "date_start": "2026-11-01",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "e38e6594ca2d5bbe",
-      "title": "Queer Verbindet - Die queeren Kulturtage in Ludwigsburg",
-      "date_start": "2026-11-01",
-      "source": "lisbert_queer"
+      "id": "8b72004445ccf2d9",
+      "title": "Wichtel-Stube",
+      "date_start": "2026-11-02",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "a35db8e2a79df8fe",
-      "title": "LISBERT Wandergruppe",
-      "date_start": "2026-11-08",
-      "source": "lisbert_queer"
+      "id": "d5eae45d2d3ed1fa",
+      "title": "SPORT TROTZ KREBS",
+      "date_start": "2026-11-02",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "31a020cdec4ae400",
-      "title": "LIBBERT Spieleabend",
-      "date_start": "2026-11-26",
-      "source": "lisbert_queer"
+      "id": "52e2d344ee108a0c",
+      "title": "Geselliger Gitarrenabend",
+      "date_start": "2026-11-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5342e470bb2f044a",
+      "title": "Spätlingsmarkt",
+      "date_start": "2026-11-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "b1159f0c4f762981",
+      "title": "Digitale Hilfe im Mehrgenerationenhaus",
+      "date_start": "2026-11-03",
+      "source": "ludwigsburg_stadt"
     }
   ],
   "removed": [
     {
-      "id": "9ae21e72003fcdeb",
-      "title": "Kohler & Lass | Plateaus",
-      "date_start": "2026-10-03",
-      "source": "kunstverein_ausstellungen"
-    },
-    {
-      "id": "004f883a8e28ca03",
-      "title": "Treppauf, treppab",
-      "date_start": "2026-10-27",
+      "id": "4dc8026a9f225de6",
+      "title": "Der Schatz des Herzogs",
+      "date_start": "2026-10-28",
       "source": "schloss"
     },
     {
-      "id": "33c73002bed4f546",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-27",
-      "source": "museum"
-    },
-    {
-      "id": "996ec57e1251109d",
-      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
-      "date_start": "2026-10-27",
+      "id": "fc05cf57b38b4d6b",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-10-28",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "6b8a7c245b81e217",
+      "id": "6f3fb1261d595f14",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-10-28",
+      "source": "stabi"
+    },
+    {
+      "id": "2e0b42c46cffa1f1",
+      "title": "Sprechtreff Deutsch - ONLINE",
+      "date_start": "2026-10-28",
+      "source": "stabi"
+    },
+    {
+      "id": "ec15da8989d26f39",
+      "title": "Paint und Connect",
+      "date_start": "2026-10-28",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "d03e14903fad7d91",
+      "title": "After Work im Heilbad Hoheneck",
+      "date_start": "2026-10-28",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "0d7997df1466ce85",
+      "title": "Auffangen. Informieren – Begleiten – Frauenselbsthilfe Krebs e. V.",
+      "date_start": "2026-10-28",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "32a79fddb824dcd8",
+      "title": "Studio Konzert - Grand Ensemble KOA",
+      "date_start": "2026-10-28",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "abccb5a919fc7269",
+      "title": "DOK-Premiere: Biermann",
+      "date_start": "2026-10-28",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "6506f536d549b897",
       "title": "Nachts im Schloss",
-      "date_start": "2026-10-27",
+      "date_start": "2026-10-28",
       "source": "schloss"
     },
     {
-      "id": "81aa55ba4bc57544",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-10-31",
+      "id": "341ea781db89b5d4",
+      "title": "Vortrag: Ernährung im Alter: Was braucht der Körper jetzt?",
+      "date_start": "2026-10-28",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "5a930ec6d525c8e3",
-      "title": "Schaurig schön - Halloween Special",
-      "date_start": "2026-10-31",
-      "source": "schloss"
+      "id": "6483a3e5f0785cc4",
+      "title": "Sprechtreff Deutsch",
+      "date_start": "2026-11-18",
+      "source": "stabi"
     }
   ]
 }
