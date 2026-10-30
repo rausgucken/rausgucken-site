@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-10-29T10:51:08.195771+01:00",
+  "scraped_at": "2026-10-30T11:44:54.272514+01:00",
   "city": "asperg",
-  "event_count": 98,
+  "event_count": 103,
   "flagged_count": 0,
   "expired_count": 25,
   "sources_scraped": [
@@ -11,22 +11,22 @@
   ],
   "source_counts": {
     "asperg_veranstaltungen": 72,
-    "glasperlenspiel": 24,
+    "glasperlenspiel": 29,
     "asperg_fuehrungen": 2
   },
   "sources_failed": [],
-  "data_hash": "52212bfbea426c73",
+  "data_hash": "6ab077dc35e1efe3",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 29.10.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 30.10.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "asperg_veranstaltungen": 1.0,
-    "glasperlenspiel": 0.93,
+    "glasperlenspiel": 0.94,
     "asperg_fuehrungen": 0.67
   },
   "source_event_counts": {
     "asperg_veranstaltungen": 72,
-    "glasperlenspiel": 24,
+    "glasperlenspiel": 29,
     "asperg_fuehrungen": 2
   },
   "count_drift_warnings": {},
@@ -35,16 +35,16 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 531.1,
-    "runtime_delta_vs_baseline": 1.967,
+    "runtime_minutes": 584.9,
+    "runtime_delta_vs_baseline": 2.268,
     "source_health": {
       "asperg_veranstaltungen": 1.0,
-      "glasperlenspiel": 0.93,
+      "glasperlenspiel": 0.94,
       "asperg_fuehrungen": 0.67
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-10-29T11:04:21.655042+01:00"
+    "generated_at": "2026-10-30T11:57:55.011501+01:00"
   }
 }

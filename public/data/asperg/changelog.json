@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-29T10:51:08.118002+01:00",
+  "generated_at": "2026-10-30T11:44:54.196354+01:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
+    "glasperlenspiel",
     "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-10-28T09:43:43.659876+01:00",
-  "count_added": 26,
-  "count_removed": 1,
+  "previous_run": "2026-10-29T10:51:08.195771+01:00",
+  "count_added": 30,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -161,18 +161,35 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "e6eeca5d9254479f",
-      "title": "kein Weihnachtskonzert",
-      "date_start": "2026-11-27",
+      "id": "b8fb735e70a2d355",
+      "title": "Maurice's Kinderprogramm",
+      "date_start": "2027-01-17",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "0f676d43f5ccb2d5",
+      "title": "Ausstellung von Bettina Schwegler",
+      "date_start": "2027-01-31",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "ca3466c0483c1240",
+      "title": "Miss Eve - Detektiv-Ausbildung für Kinder",
+      "date_start": "2027-02-28",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "17a866f1fa566ce6",
+      "title": "Ehepaar Lore und Harry",
+      "date_start": "2027-04-18",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "0248fbc15ff134e1",
+      "title": "Lesung",
+      "date_start": "2027-04-21",
       "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "1588870926cf80cb",
-      "title": "Baby und Kids-Treff",
-      "date_start": "2026-10-28",
-      "source": "asperg_veranstaltungen"
-    }
-  ]
+  "removed": []
 }
