@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-10-30T06:04:14.406945+01:00",
+  "scraped_at": "2026-10-31T06:02:56.225727+01:00",
   "city": "kornwestheim",
-  "event_count": 208,
+  "event_count": 210,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,41 +9,41 @@
     "kornwestheim"
   ],
   "source_counts": {
-    "kornwestheim": 194,
+    "kornwestheim": 196,
     "das_k_spielplan": 14
   },
   "sources_failed": [],
-  "data_hash": "15835c3daefd6253",
+  "data_hash": "f43aba2864b4f051",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 30.10.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 31.10.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "kornwestheim": 1.0,
     "das_k_spielplan": 1.0
   },
   "source_event_counts": {
-    "kornwestheim": 194,
+    "kornwestheim": 196,
     "das_k_spielplan": 14
   },
   "count_drift_warnings": {
-    "das_k_spielplan": "Count drift: 14 vs historical avg 22"
+    "das_k_spielplan": "Count drift: 14 vs historical avg 21"
   },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 584.9,
-    "runtime_delta_vs_baseline": 2.268,
+    "runtime_minutes": 600.5,
+    "runtime_delta_vs_baseline": 2.355,
     "source_health": {
       "kornwestheim": 1.0,
       "das_k_spielplan": 1.0
     },
     "count_drift_warnings": {
-      "das_k_spielplan": "Count drift: 14 vs historical avg 22"
+      "das_k_spielplan": "Count drift: 14 vs historical avg 21"
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-10-30T11:57:56.482431+01:00"
+    "generated_at": "2026-10-31T12:13:49.659214+01:00"
   }
 }

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-30T11:44:54.196354+01:00",
+  "generated_at": "2026-10-31T12:00:33.223543+01:00",
   "city": "asperg",
   "sources": [
     "glasperlenspiel",
     "asperg_veranstaltungen",
     "asperg_fuehrungen"
   ],
-  "previous_run": "2026-10-29T10:51:08.195771+01:00",
+  "previous_run": "2026-10-30T11:44:54.272514+01:00",
   "count_added": 30,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -161,35 +161,48 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "b8fb735e70a2d355",
-      "title": "Maurice's Kinderprogramm",
-      "date_start": "2027-01-17",
+      "id": "4ceef7403f7a0893",
+      "title": "Konzert mit Xang",
+      "date_start": "2026-10-30",
       "source": "glasperlenspiel"
     },
     {
-      "id": "0f676d43f5ccb2d5",
-      "title": "Ausstellung von Bettina Schwegler",
-      "date_start": "2027-01-31",
+      "id": "f013902a08eec09c",
+      "title": "Vera Deckers - Kommunikationsmuster und Selbstironie",
+      "date_start": "2027-01-22",
       "source": "glasperlenspiel"
     },
     {
-      "id": "ca3466c0483c1240",
-      "title": "Miss Eve - Detektiv-Ausbildung für Kinder",
-      "date_start": "2027-02-28",
+      "id": "68eee05ca1e4e1c6",
+      "title": "Wundertüte",
+      "date_start": "2027-01-29",
       "source": "glasperlenspiel"
     },
     {
-      "id": "17a866f1fa566ce6",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2027-04-18",
+      "id": "db8d2bf8700fd492",
+      "title": "Reisegruppe Ehrenfeld - Sinn des Lebens",
+      "date_start": "2027-03-06",
       "source": "glasperlenspiel"
     },
     {
-      "id": "0248fbc15ff134e1",
-      "title": "Lesung",
-      "date_start": "2027-04-21",
+      "id": "be1640f19fd20d0d",
+      "title": "Sechs Musikanta, oin Sound",
+      "date_start": "2027-04-09",
       "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "528713edc43f7b76",
+      "title": "Musik - XANG: Jubel, Trubel, Heiserkeit",
+      "date_start": "2026-10-30",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "986870bb89509d99",
+      "title": "Xang - Sieben jung gebliebene Männer",
+      "date_start": "2026-10-30",
+      "source": "glasperlenspiel"
+    }
+  ]
 }
