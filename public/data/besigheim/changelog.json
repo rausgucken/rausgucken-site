@@ -1,15 +1,21 @@
 {
-  "generated_at": "2026-10-31T05:42:41.969323+01:00",
+  "generated_at": "2026-11-01T05:22:14.605874+01:00",
   "city": "besigheim",
   "sources": [
     "besigheim_stadt"
   ],
-  "previous_run": "2026-10-30T05:45:33.761130+01:00",
-  "count_added": 1,
+  "previous_run": "2026-10-31T05:42:42.046004+01:00",
+  "count_added": 2,
   "count_removed": 1,
   "added": [
     {
-      "id": "4dc8957b10896aa1",
+      "id": "c56f970f38f04ea6",
+      "title": "Jugendtheateraufführungen",
+      "date_start": "2026-10-30",
+      "source": "besigheim_stadt"
+    },
+    {
+      "id": "9d71e03ba7643a1a",
       "title": "Besigheimer Weihnachtsmarkt",
       "date_start": "2026-12-05",
       "source": "besigheim_stadt"
@@ -17,7 +23,7 @@
   ],
   "removed": [
     {
-      "id": "9d71e03ba7643a1a",
+      "id": "4dc8957b10896aa1",
       "title": "Besigheimer Weihnachtsmarkt",
       "date_start": "2026-12-05",
       "source": "besigheim_stadt"
