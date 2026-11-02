@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-11-01T07:01:09.646577+01:00",
+  "scraped_at": "2026-11-02T08:03:12.121428+01:00",
   "city": "loechgau",
-  "event_count": 23,
+  "event_count": 22,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "loechgau_gemeinde"
   ],
   "source_counts": {
-    "loechgau_gemeinde": 23
+    "loechgau_gemeinde": 22
   },
   "sources_failed": [],
-  "data_hash": "d9b172e65861ee1d",
+  "data_hash": "8b1276c6460206b5",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 01.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 02.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "loechgau_gemeinde": 0.97
   },
   "source_event_counts": {
-    "loechgau_gemeinde": 23
+    "loechgau_gemeinde": 22
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 563.6,
-    "runtime_delta_vs_baseline": 2.149,
+    "runtime_minutes": 572.5,
+    "runtime_delta_vs_baseline": 2.198,
     "source_health": {
       "loechgau_gemeinde": 0.97
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-01T11:36:46.743118+01:00"
+    "generated_at": "2026-11-02T11:46:11.229354+01:00"
   }
 }

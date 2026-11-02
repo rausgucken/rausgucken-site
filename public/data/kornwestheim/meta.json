@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-11-01T06:00:35.476621+01:00",
+  "scraped_at": "2026-11-02T05:55:45.776476+01:00",
   "city": "kornwestheim",
-  "event_count": 208,
+  "event_count": 209,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,41 +9,37 @@
     "kornwestheim"
   ],
   "source_counts": {
-    "kornwestheim": 194,
+    "kornwestheim": 195,
     "das_k_spielplan": 14
   },
   "sources_failed": [],
-  "data_hash": "ac4699197ba19942",
+  "data_hash": "d56642189b4b8cd4",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 01.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 02.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "kornwestheim": 1.0,
     "das_k_spielplan": 1.0
   },
   "source_event_counts": {
-    "kornwestheim": 194,
+    "kornwestheim": 195,
     "das_k_spielplan": 14
   },
-  "count_drift_warnings": {
-    "das_k_spielplan": "Count drift: 14 vs historical avg 20"
-  },
+  "count_drift_warnings": {},
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 563.6,
-    "runtime_delta_vs_baseline": 2.149,
+    "runtime_minutes": 572.5,
+    "runtime_delta_vs_baseline": 2.198,
     "source_health": {
       "kornwestheim": 1.0,
       "das_k_spielplan": 1.0
     },
-    "count_drift_warnings": {
-      "das_k_spielplan": "Count drift: 14 vs historical avg 20"
-    },
+    "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-01T11:36:46.664829+01:00"
+    "generated_at": "2026-11-02T11:46:11.152300+01:00"
   }
 }

@@ -1,44 +1,44 @@
 {
-  "scraped_at": "2026-11-01T06:57:08.687992+01:00",
+  "scraped_at": "2026-11-02T07:58:57.929756+01:00",
   "city": "schwieberdingen",
-  "event_count": 3,
+  "event_count": 5,
   "flagged_count": 0,
   "expired_count": 1,
   "sources_scraped": [
     "schwieberdingen_gemeinde"
   ],
   "source_counts": {
-    "schwieberdingen_gemeinde": 3
+    "schwieberdingen_gemeinde": 5
   },
   "sources_failed": [],
-  "data_hash": "324b575fd68bc8aa",
+  "data_hash": "f83c67550eadec39",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 01.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 02.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "schwieberdingen_gemeinde": 0.67
+    "schwieberdingen_gemeinde": 0.75
   },
   "source_event_counts": {
-    "schwieberdingen_gemeinde": 3
+    "schwieberdingen_gemeinde": 5
   },
   "count_drift_warnings": {
-    "schwieberdingen_gemeinde": "Count drift: 3 vs historical avg 22"
+    "schwieberdingen_gemeinde": "Count drift: 5 vs historical avg 17"
   },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 563.6,
-    "runtime_delta_vs_baseline": 2.149,
+    "runtime_minutes": 572.5,
+    "runtime_delta_vs_baseline": 2.198,
     "source_health": {
-      "schwieberdingen_gemeinde": 0.67
+      "schwieberdingen_gemeinde": 0.75
     },
     "count_drift_warnings": {
-      "schwieberdingen_gemeinde": "Count drift: 3 vs historical avg 22"
+      "schwieberdingen_gemeinde": "Count drift: 5 vs historical avg 17"
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-01T11:36:47.663755+01:00"
+    "generated_at": "2026-11-02T11:46:12.187387+01:00"
   }
 }

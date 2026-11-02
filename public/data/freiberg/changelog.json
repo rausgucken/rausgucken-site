@@ -1,24 +1,37 @@
 {
-  "generated_at": "2026-11-01T05:06:27.596936+01:00",
+  "generated_at": "2026-11-02T05:10:55.484335+01:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-10-31T05:05:59.539858+01:00",
-  "count_added": 0,
+  "previous_run": "2026-11-01T05:06:27.675846+01:00",
+  "count_added": 2,
   "count_removed": 2,
-  "added": [],
-  "removed": [
+  "added": [
     {
-      "id": "717abb822897e2a5",
+      "id": "4d1a066602917358",
       "title": "Freiberger Wochenmarkt",
-      "date_start": "2026-10-31",
+      "date_start": "2027-06-02",
       "source": "freiberg_veranstaltungen"
     },
     {
-      "id": "4e06a56635f49f76",
-      "title": "Freiberger Herbst-Krämermarkt",
-      "date_start": "2026-10-31",
+      "id": "2292c01036b80c7f",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-06-02",
+      "source": "freiberg_veranstaltungen"
+    }
+  ],
+  "removed": [
+    {
+      "id": "0e0983c43d60b26e",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-11-01",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "c17194a39e74beea",
+      "title": "Großer Lampionumzug der Stadt Freiberg",
+      "date_start": "2026-11-01",
       "source": "freiberg_veranstaltungen"
     }
   ]
