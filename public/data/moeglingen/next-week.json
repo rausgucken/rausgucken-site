@@ -1,40 +1,70 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-11-01T06:00:01.515254+01:00",
-  "event_count": 1,
+  "generated_at": "2026-11-02T06:00:01.772851+01:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "d818e17b780930e8",
-      "title": "Geschichtenzeit",
-      "date_start": "2026-11-05",
+      "id": "f8e7594d49f8dfec",
+      "title": "Gaming-Treff",
+      "date_start": "2026-11-13",
       "date_end": null,
-      "time": "15:40",
-      "description": "In der Bibliothek Möglingen nimmt die Geschichtenzeit für Kinder zwischen 5 und 7 Jahren statt. Erzähler sorgen für spannende Geschichten und Abenteuer.",
+      "time": "15:30 - 16:15",
+      "description": "In der Bibliothek Möglingen organisieren die Mitarbeiter ein Gaming-Treff für Kinder im Alter von 8 bis 12 Jahren.",
       "location": "Bibliothek Möglingen",
       "price": null,
-      "age_min": 5,
-      "age_max": 7,
+      "age_min": 8,
+      "age_max": 12,
       "tags": [
-        "Kinder",
-        "Familie"
+        "Kinder"
       ],
-      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4389",
-      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4389",
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4385",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4385",
       "source": "moeglingen",
       "city": "moeglingen",
-      "slug": "geschichtenzeit-2026-11-05-moeg",
+      "slug": "gaming-treff-2026-11-13-moeg",
       "weekdays": [
-        4
+        5
       ],
-      "scraped_at": "2026-11-01T02:01:26.619427+01:00",
-      "extraction_confidence": 0.92,
+      "scraped_at": "2026-11-02T02:01:46.793704+01:00",
+      "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Möglingen",
-      "canonical_url": "https://www.rausgucken.de/moeglingen/events/geschichtenzeit-2026-11-05-moeg"
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/gaming-treff-2026-11-13-moeg"
+    },
+    {
+      "id": "96df6ddeebdc9cab",
+      "title": "Die Reise des Sehers",
+      "date_start": "2026-11-14",
+      "date_end": null,
+      "time": "19:30 - 20:00",
+      "description": "In diesem Vortrag erlebt der Gedankenleser Lars Ruth seine Reise durch Zeit und Raum. Ein einzigartiges Erlebnis für alle Interessierten im Rahmen einer Veranstaltung der Gemeinde Möglingen Kultur in der Zehntscheuer.",
+      "location": "Zehntscheuer",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Vortrag"
+      ],
+      "link": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4372",
+      "original_url": "https://www.moeglingen.de/de/Aktuelles/Veranstaltungskalender/Veranstaltung?view=publish&item=eventDate&id=4372",
+      "source": "moeglingen",
+      "city": "moeglingen",
+      "slug": "die-reise-des-sehers-2026-11-14-moeg",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-02T02:01:46.793819+01:00",
+      "extraction_confidence": 0.9,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Möglingen",
+      "canonical_url": "https://www.rausgucken.de/moeglingen/events/die-reise-des-sehers-2026-11-14-moeg"
     }
   ]
 }
