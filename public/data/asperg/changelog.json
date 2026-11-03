@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-02T11:32:29.790814+01:00",
+  "generated_at": "2026-11-03T11:56:51.083529+01:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
     "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-11-01T11:23:36.312031+01:00",
-  "count_added": 25,
-  "count_removed": 8,
+  "previous_run": "2026-11-02T11:32:29.869100+01:00",
+  "count_added": 24,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -153,62 +153,7 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "021250e6a54d3858",
-      "title": "Einfach Sagenhaft",
-      "date_start": "2027-01-31",
-      "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "e430174f35ac6c26",
-      "title": "Konzert \"Hoffnung und Zuversicht\"",
-      "date_start": "2026-11-01",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "6b0e50d487006504",
-      "title": "Theater - Fisch ohne Fahrrrad",
-      "date_start": "2026-11-01",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "af64c9be35ed4492",
-      "title": "Barbara Mergenthaler und Katharina Reich: Mascha Kaléko - Philosophie der Lyrik",
-      "date_start": "2026-11-01",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "00ca06b968c50194",
-      "title": "Jazz-Abende",
-      "date_start": "2027-10-02",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "c91a62775a9ee8d1",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2027-10-04",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "af9e17b2a69ddaf4",
-      "title": "Lesung",
-      "date_start": "2027-10-11",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "21b84ec62a60a309",
-      "title": "Lieder-Theater-Programm zum Mitsingen und Mitmachen",
-      "date_start": "2027-10-18",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "31a67c79e510f798",
-      "title": "Quiz-Abend mit Elisabeth Kabatek",
-      "date_start": "2027-10-21",
-      "source": "glasperlenspiel"
-    }
-  ]
+  "removed": []
 }

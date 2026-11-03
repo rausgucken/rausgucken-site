@@ -1,13 +1,26 @@
 {
-  "generated_at": "2026-11-02T05:10:57.629771+01:00",
+  "generated_at": "2026-11-03T05:19:40.610239+01:00",
   "city": "remseck",
   "sources": [
-    "remseck_stadt",
-    "remseck_mediathek"
+    "remseck_mediathek",
+    "remseck_stadt"
   ],
-  "previous_run": "2026-11-01T05:06:29.791082+01:00",
-  "count_added": 0,
+  "previous_run": "2026-11-02T05:10:57.703707+01:00",
+  "count_added": 2,
   "count_removed": 0,
-  "added": [],
+  "added": [
+    {
+      "id": "267665687b600962",
+      "title": "Remsecker Weihnachtsmarkt",
+      "date_start": "2026-12-04",
+      "source": "remseck_stadt"
+    },
+    {
+      "id": "b975bfc74c7ddf24",
+      "title": "Remsecker Weihnachtsmarkt",
+      "date_start": "2026-12-05",
+      "source": "remseck_stadt"
+    }
+  ],
   "removed": []
 }
