@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-11-03T08:42:34.196465+01:00",
+  "generated_at": "2026-11-04T08:52:06.789410+01:00",
   "city": "kirchheim-neckar",
   "sources": [
     "kirchheim-neckar_gemeinde"
   ],
-  "previous_run": "2026-11-02T08:49:31.111005+01:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-11-03T08:42:34.273373+01:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "00acaa11fbb2b9a9",
+      "title": "Totengedenkfeier",
+      "date_start": "2026-11-22",
+      "source": "kirchheim-neckar_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "87f283492ddbb449",
+      "title": "s'Plauderstüble",
+      "date_start": "2026-11-03",
+      "source": "kirchheim-neckar_gemeinde"
+    }
+  ]
 }

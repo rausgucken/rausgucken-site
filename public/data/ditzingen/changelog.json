@@ -1,38 +1,44 @@
 {
-  "generated_at": "2026-11-03T06:18:48.599643+01:00",
+  "generated_at": "2026-11-04T06:09:32.419695+01:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_treffpunkt_adler",
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-11-02T05:17:15.691764+01:00",
-  "count_added": 2,
-  "count_removed": 2,
+  "previous_run": "2026-11-03T06:18:48.680392+01:00",
+  "count_added": 1,
+  "count_removed": 4,
   "added": [
     {
-      "id": "39bf30c8b3b27ede",
-      "title": "Rathaussturm",
-      "date_start": "2027-01-09",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "37b011368f760160",
-      "title": "Verschenkbörse",
-      "date_start": "2027-03-20",
+      "id": "1620957e339d6aa1",
+      "title": "Winterspielplatz",
+      "date_start": "2027-01-23",
       "source": "ditzingen_stadt"
     }
   ],
   "removed": [
     {
-      "id": "8fdecab038f0cf2d",
-      "title": "Kreativ-Workshop (LandFrauen Ditzingen)",
-      "date_start": "2026-11-02",
+      "id": "c7aeffdc9e8929e4",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2026-11-03",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "376db5d7f5830b41",
-      "title": "Makerspace",
-      "date_start": "2026-11-14",
+      "id": "975cfc79e12d9fe6",
+      "title": "Skatgruppen",
+      "date_start": "2026-11-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "901c3550967a7f92",
+      "title": "\"Betreuungscafé Augenblick\"  Betreuungsgruppe für Menschen mit und ohne Demenz (Abt. Senioren und Teilhabe)",
+      "date_start": "2026-11-03",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "500adb80f8c00e19",
+      "title": "Nadelspiel und Kaffeeklatsch",
+      "date_start": "2026-11-03",
       "source": "ditzingen_stadt"
     }
   ]

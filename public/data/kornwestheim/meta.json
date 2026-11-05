@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-11-03T06:19:06.442000+01:00",
+  "scraped_at": "2026-11-04T06:22:10.023317+01:00",
   "city": "kornwestheim",
-  "event_count": 209,
+  "event_count": 210,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,21 +9,21 @@
     "kornwestheim"
   ],
   "source_counts": {
-    "kornwestheim": 196,
-    "das_k_spielplan": 13
+    "kornwestheim": 195,
+    "das_k_spielplan": 15
   },
   "sources_failed": [],
-  "data_hash": "cbe2c4e2374c8c7e",
+  "data_hash": "e8996e0a3bb7d761",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 03.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 04.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "kornwestheim": 1.0,
     "das_k_spielplan": 1.0
   },
   "source_event_counts": {
-    "kornwestheim": 196,
-    "das_k_spielplan": 13
+    "kornwestheim": 195,
+    "das_k_spielplan": 15
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -31,8 +31,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 596.8,
-    "runtime_delta_vs_baseline": 2.334,
+    "runtime_minutes": 599.0,
+    "runtime_delta_vs_baseline": 2.346,
     "source_health": {
       "kornwestheim": 1.0,
       "das_k_spielplan": 1.0
@@ -40,6 +40,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-03T12:10:25.789682+01:00"
+    "generated_at": "2026-11-04T12:12:24.766156+01:00"
   }
 }
