@@ -1,7 +1,7 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-11-05T06:00:01.644475+01:00",
-  "event_count": 20,
+  "generated_at": "2026-11-05T08:36:08.562026+01:00",
+  "event_count": 25,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -29,7 +29,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-04T02:03:24.325045+01:00",
+      "scraped_at": "2026-11-05T02:02:55.879465+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -60,7 +60,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-04T02:03:21.707491+01:00",
+      "scraped_at": "2026-11-05T02:02:53.224620+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -92,9 +92,9 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-04T02:10:29.631004+01:00",
+      "scraped_at": "2026-11-05T02:10:23.627821+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -121,7 +121,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-04T02:00:33.428240+01:00",
+      "scraped_at": "2026-11-05T02:00:19.450508+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -154,7 +154,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-04T02:07:02.711415+01:00",
+      "scraped_at": "2026-11-05T02:06:20.455878+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -186,9 +186,9 @@
         0,
         6
       ],
-      "scraped_at": "2026-11-04T02:10:29.631544+01:00",
+      "scraped_at": "2026-11-05T02:10:23.628383+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -215,7 +215,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-04T02:03:22.984334+01:00",
+      "scraped_at": "2026-11-05T02:02:54.581657+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -223,6 +223,69 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/gagapeople-classes-2026-11-07-karl"
+    },
+    {
+      "id": "8a6d902a4fa8a7a8",
+      "title": "Kinderkino: Miss Moxy",
+      "date_start": "2026-11-07",
+      "date_end": null,
+      "time": "14:00",
+      "description": "In diesem Kinderkino-Event erleben Kinder und Familien das Abenteuer mit Miss Moxy. Ein besonderer Kinobesuch, bei dem Jüngste und Altste aufgeregt sind.",
+      "location": "Caligari - Kino",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.kinokult.de/filme/miss-moxy.html",
+      "original_url": "https://www.kinokult.de/filme/miss-moxy.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "kinderkino-miss-moxy-2026-11-07-ludw",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-05T02:10:23.628542+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/kinderkino-miss-moxy-2026-11-07-ludw"
+    },
+    {
+      "id": "b8b69249ec09a2b2",
+      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
+      "date_start": "2026-11-07",
+      "date_end": null,
+      "time": "14:00",
+      "description": "In dieser Führung durch den Schlosshof von Ludwigsburg wird der Besucher mit historischen Fakten und interessanten Details über das Residenzschloss vertraut. Der Führer beleuchtet die Bedeutung des Bauwerks in der Geschichte des Pfalzgrafen.",
+      "location": "Brunnen im mittleren Schlosshof des Residenzschlosses",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung"
+      ],
+      "link": "https://ludwigsburg-booking.inet-mainz.de/formular/uebersicht/15",
+      "original_url": "https://ludwigsburg-booking.inet-mainz.de/formular/uebersicht/15",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "geschichtsfuehrung-ludwigsburg-auf-einen-blick-2026-11-07-ludw",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-05T02:10:23.628852+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/geschichtsfuehrung-ludwigsburg-auf-einen-blick-2026-11-07-ludw"
     },
     {
       "id": "4a683bac927fd658",
@@ -244,7 +307,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-04T02:00:34.822689+01:00",
+      "scraped_at": "2026-11-05T02:00:21.171842+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -252,6 +315,66 @@
       "editorial_tip": null,
       "source_label": "Residenzschloss Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/etikette-und-intrigen-2026-11-07-schl"
+    },
+    {
+      "id": "38f4eb81455adbca",
+      "title": "Das ist kein Rückblick",
+      "date_start": "2026-11-07",
+      "date_end": null,
+      "time": "16:00",
+      "description": "In diesem Veranstaltungskonzept wird es um den gegenwärtigen Augenblick geht, ohne zurückzublicken. Besucher entdecken die Gegenwart des Schorndorfer Torhauses in einer einzigartigen Darbietung.",
+      "location": "Schorndorfer Torhaus",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.reservix.de/p/reservix/group/540097",
+      "original_url": "https://www.reservix.de/p/reservix/group/540097",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "das-ist-kein-rueckblick-2026-11-07-ludw",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-05T02:10:23.629573+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/das-ist-kein-rueckblick-2026-11-07-ludw"
+    },
+    {
+      "id": "4c3fdbc6462eb654",
+      "title": "Die Türmerin von Ludwigsburg - eine historische Erlebnis-Tour",
+      "date_start": "2026-11-07",
+      "date_end": null,
+      "time": "18:15 - 19:45",
+      "description": "In dieser historischen Erlebnis-Tour durch die Altstadt von Ludwigsburg besuchen Sie den Obelisk und entdecken die Geschichte der Türmerin. Fokussieren Sie sich auf architektonische Details und epische Geschichten aus der Vergangenheit.",
+      "location": "Obelisk auf dem Holzmarkt",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung"
+      ],
+      "link": "https://www.maerchenklang.de/heute-in-Ludwigsburg/",
+      "original_url": "https://www.maerchenklang.de/heute-in-Ludwigsburg/",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "die-tuermerin-von-ludwigsburg---eine-historische-erlebnis-tour-2026-11-07-ludw",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-05T02:10:23.630410+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/die-tuermerin-von-ludwigsburg---eine-historische-erlebnis-tour-2026-11-07-ludw"
     },
     {
       "id": "9b1af92a580a4b58",
@@ -273,7 +396,7 @@
       "city": "ludwigsburg",
       "slug": "candlelight-mozart-vs-beethoven-07112026-musi",
       "weekdays": [],
-      "scraped_at": "2026-11-04T02:10:30.492902+01:00",
+      "scraped_at": "2026-11-05T02:10:24.899933+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -302,7 +425,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-04T02:10:10.105310+01:00",
+      "scraped_at": "2026-11-05T02:10:06.408342+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -312,14 +435,43 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/vertigo-dance-company-2026-11-07-foru"
     },
     {
+      "id": "c667db323d04ce8b",
+      "title": "Beast in Black",
+      "date_start": "2026-11-07",
+      "date_end": null,
+      "time": "19:15",
+      "description": "In dieser Veranstaltung entdecken Besucher die Faszination des Schwarzpelzriesens. Experten leiten durch, erläutern Biologie und Verhalten dieses tierischen Rätsels. Ideal für alle, die Neugier und Wissen verbinden wollen.",
+      "location": "<b>MHP</b>Arena",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523251806001/index.html",
+      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523251806001/index.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "beast-in-black-2026-11-07-ludw",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-05T02:10:23.631001+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/beast-in-black-2026-11-07-ludw"
+    },
+    {
       "id": "398cec491371f150",
       "title": "Geisterjagd im Schloss",
       "date_start": "2026-11-07",
       "date_end": null,
       "time": "19:30",
-      "description": "In dieser Abendveranstaltung durch das beleuchtete Residenzschloss Ludwigsburg erforschen Teilnehmer die Geistergeschichten der Vergangenheit. Ein fachkundiger Führer begleitet den Spaziergang.",
+      "description": "In der Residenzschloss Ludwigsburg auf der Suche nach Spuk erforschen Teilnehmer mit Taschenlampen verwinkelte Räume und verborgene Gänge. Entdecke versteckte Puzzleteile und lausche schaurigen Geschichten unter Leitung des Schlossteam. Eine Stunde spuken durch historische Bereiche.",
       "location": "Residenzschloss Ludwigsburg",
-      "price": null,
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
       "age_min": null,
       "age_max": null,
       "tags": [],
@@ -331,7 +483,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-04T02:00:36.210094+01:00",
+      "scraped_at": "2026-11-05T02:00:22.587164+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -362,7 +514,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-04T02:10:22.429979+01:00",
+      "scraped_at": "2026-11-05T02:10:16.107475+01:00",
       "extraction_confidence": 0.82,
       "is_new": false,
       "is_booked_out": false,
@@ -391,7 +543,7 @@
       "city": "ludwigsburg",
       "slug": "candlelight-coldplay-ed-sheeran-07112026-musi",
       "weekdays": [],
-      "scraped_at": "2026-11-04T02:10:30.493043+01:00",
+      "scraped_at": "2026-11-05T02:10:24.900092+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -422,7 +574,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-04T02:00:53.830631+01:00",
+      "scraped_at": "2026-11-05T02:00:26.609651+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -451,7 +603,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-04T02:10:30.748767+01:00",
+      "scraped_at": "2026-11-05T02:10:25.156943+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -480,7 +632,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-04T02:07:11.301732+01:00",
+      "scraped_at": "2026-11-05T02:06:29.256181+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -509,7 +661,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-04T02:00:56.767293+01:00",
+      "scraped_at": "2026-11-05T02:00:29.822347+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -541,7 +693,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-04T02:03:25.779337+01:00",
+      "scraped_at": "2026-11-05T02:02:57.196704+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -570,7 +722,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-04T02:00:58.161856+01:00",
+      "scraped_at": "2026-11-05T02:00:31.189261+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -599,7 +751,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-04T02:10:10.105717+01:00",
+      "scraped_at": "2026-11-05T02:10:06.408768+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
