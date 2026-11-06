@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-05T11:30:21.756826+01:00",
+  "generated_at": "2026-11-06T11:35:37.564683+01:00",
   "city": "asperg",
   "sources": [
-    "glasperlenspiel",
+    "asperg_fuehrungen",
     "asperg_veranstaltungen",
-    "asperg_fuehrungen"
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-11-04T11:59:03.516171+01:00",
-  "count_added": 35,
-  "count_removed": 0,
+  "previous_run": "2026-11-05T11:30:21.833673+01:00",
+  "count_added": 24,
+  "count_removed": 1,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -153,73 +153,14 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "d8542d9e404b04b6",
-      "title": "Fahrradmarkt",
-      "date_start": "2027-03-20",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "4a3c588eec998e1f",
-      "title": "Bergfest",
-      "date_start": "2027-05-06",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "3e99683d6c1b242e",
-      "title": "Asperger Stadtfest",
-      "date_start": "2027-07-24",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "bd39d40a4884075c",
-      "title": "Asperger Stadtfest",
-      "date_start": "2027-07-25",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "b28aed3b459894c3",
-      "title": "Flohmarkt",
-      "date_start": "2027-09-18",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "acfc34c2aa8a5d77",
-      "title": "Asperger Highlandgames",
-      "date_start": "2027-09-25",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "79f0acbb3d7c8121",
-      "title": "Asperger Highlandgames",
-      "date_start": "2027-09-26",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "7fe926d45e35de18",
-      "title": "Asperger Kirbe",
-      "date_start": "2027-10-03",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "03d7628e6490ef5c",
-      "title": "Asperger Weihnachtsmarkt",
-      "date_start": "2027-11-27",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "f5bc55e33acd36ed",
-      "title": "Asperger Weihnachtsmarkt",
-      "date_start": "2027-11-28",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "7449a2260a357f9b",
-      "title": "Pierre Manceron - Eine Kochgeschichte",
-      "date_start": "2027-02-03",
-      "source": "glasperlenspiel"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "ab33d8a656c1707f",
+      "title": "Treffpunkt Miki - Treffpunkt für Alle",
+      "date_start": "2026-11-05",
+      "source": "asperg_veranstaltungen"
+    }
+  ]
 }
