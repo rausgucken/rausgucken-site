@@ -1,7 +1,7 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-11-07T06:00:02.244984+01:00",
-  "event_count": 47,
+  "generated_at": "2026-11-07T08:28:38.098745+01:00",
+  "event_count": 56,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -32,14 +32,47 @@
         5,
         6
       ],
-      "scraped_at": "2026-11-06T02:11:21.982053+01:00",
+      "scraped_at": "2026-11-07T02:11:19.319830+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/wortreisen-2026-11-07-ludw"
+    },
+    {
+      "id": "8637f0d699808b07",
+      "title": "Gesundheitswoche im Heilbad Hoheneck",
+      "date_start": "2026-11-09",
+      "date_end": "2026-11-13",
+      "time": null,
+      "description": "In der Gesundheitswoche im Heilbad Hoheneck werden verschiedene Therapiemethoden und Wellnessangebote für Erwachsene angeboten. Ein unvergessliches Erlebnis in der idyllischen Umgebung des Heilbades.",
+      "location": "Heilbad, Hoheneck",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.swlb.de/gesund-aktiv",
+      "original_url": "https://www.swlb.de/gesund-aktiv",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "gesundheitswoche-im-heilbad-hoheneck-2026-11-09-ludw",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scraped_at": "2026-11-07T02:11:19.327057+01:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Ludwigsburg",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/wortreisen-2026-11-07-ludw"
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/gesundheitswoche-im-heilbad-hoheneck-2026-11-09-ludw"
     },
     {
       "id": "3c842e723154e8b6",
@@ -65,7 +98,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-11-06T02:03:24.634126+01:00",
+      "scraped_at": "2026-11-07T02:03:25.906020+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -73,6 +106,190 @@
       "editorial_tip": null,
       "source_label": "Kunstzentrum Karlskaserne",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/der-baer-der-nicht-da-war-2026-11-09-karl"
+    },
+    {
+      "id": "9a0481237869c628",
+      "title": "Wichtel-Stube",
+      "date_start": "2026-11-09",
+      "date_end": null,
+      "time": "09:30 - 11:00",
+      "description": "In der Wichtel-Stube bietet das BabyZentrum Ludwigsburg familienfreundliche Aktivitäten für Kinder und Erwachsene. Mit handwerklichen Tätigkeiten entstehen warme Wintergäste, die den Raum mit Weihnachtsmagie erfüllen.",
+      "location": "Evangelische FamilienBildung Ludwigsburg (BabyZentrum)",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.familienbildungludwigsburg.de/programm/offene-treffs-1",
+      "original_url": "https://www.familienbildungludwigsburg.de/programm/offene-treffs-1",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "wichtel-stube-2026-11-09-ludw",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-11-07T02:11:19.323908+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/wichtel-stube-2026-11-09-ludw"
+    },
+    {
+      "id": "fe265cb203e0e341",
+      "title": "Schulvorstellung: Das ist kein Rückblick",
+      "date_start": "2026-11-09",
+      "date_end": null,
+      "time": "10:00",
+      "description": "In diesem Veranstaltungskonzentrum stellen Schüler und Lehrer der neuen Schuljahrperiode sich vor. Ein blick in die Zukunft ohne Rückblicke auf vergangene Jahre.",
+      "location": "Schorndorfer Torhaus",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://bit.ly/42HgiDR",
+      "original_url": "https://bit.ly/42HgiDR",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "schulvorstellung-das-ist-kein-rueckblick-2026-11-09-ludw",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-11-07T02:11:19.324613+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/schulvorstellung-das-ist-kein-rueckblick-2026-11-09-ludw"
+    },
+    {
+      "id": "f5a8d6c70d692acd",
+      "title": "Ballett Schnupperworkshop",
+      "date_start": "2026-11-09",
+      "date_end": null,
+      "time": "16:30 und 17:30",
+      "description": "In diesem Ballettschnupperworkshop lernen Anfänger grundlegende Tanzelemente unter der Leitung erfahrener TANZCLUB-Ludwigsburg-Lehrkräfte. Ideal für Neulinge und Interessenten.",
+      "location": "1. TANZCLUB Ludwigsburg e. V",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Tanz"
+      ],
+      "link": "https://www.1-tcl.de",
+      "original_url": "https://www.1-tcl.de",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "ballett-schnupperworkshop-2026-11-09-ludw",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-11-07T02:11:19.325615+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/ballett-schnupperworkshop-2026-11-09-ludw"
+    },
+    {
+      "id": "ed820322c86b4c82",
+      "title": "Vortrag und Austausch: „Mir geht’s nicht gut, wohin kann ich mich wenden?“",
+      "date_start": "2026-11-09",
+      "date_end": null,
+      "time": "17:00 bis 18:30",
+      "description": "In diesem Vortrag und Austauschgespräch werden die Möglichkeiten bei gesundheitlichen Problemen beleuchtet. Teilnehmerinnen und Teilnehmer lernen, wie man sich bei Bedarf um Hilfe bewerben kann.",
+      "location": "siehe Beschreibungstext",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Vortrag"
+      ],
+      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523256641756/index.html",
+      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523256641756/index.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "vortrag-und-austausch-mir-gehts-nicht-gut-wohin-kann-ich-mich-wenden-2026-11-09-ludw",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-11-07T02:11:19.325813+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/vortrag-und-austausch-mir-gehts-nicht-gut-wohin-kann-ich-mich-wenden-2026-11-09-ludw"
+    },
+    {
+      "id": "f2bc6bf5f4899da6",
+      "title": "MORD AUF SCHLOSS RONMEPOS",
+      "date_start": "2026-11-09",
+      "date_end": null,
+      "time": "19:30 - 21",
+      "description": "In dieser Veranstaltung nimmt man an einer Probenahme der Akademie für Darstellende Kunst Baden-Württemberg teil. Die Probebühne der Akademie bietet ein Einblick in das Theaterleben und die Arbeit der Schauspielerinnen und Schauspieler.",
+      "location": "Akademie für Darstellende Kunst Baden-Württemberg, Probebühne",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.ludwigsburg.de/start/kultur+und+freizeit/stadtschreiberstipendium.html",
+      "original_url": "https://www.ludwigsburg.de/start/kultur+und+freizeit/stadtschreiberstipendium.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "mord-auf-schloss-ronmepos-2026-11-09-ludw",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-11-07T02:11:19.326046+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/mord-auf-schloss-ronmepos-2026-11-09-ludw"
+    },
+    {
+      "id": "0c85825535d44c89",
+      "title": "Erbse und Bohne",
+      "date_start": "2026-11-10",
+      "date_end": null,
+      "time": "10:00 - 10:45",
+      "description": "In diesem literarischem Treffen werden Kinder und Erwachsene gemeinsam Erbse und Bohne entdecken. Mit Geschichten, Workshops und literarischen Aktivitäten wird die Veranstaltung für alle Altersgruppen geeignet.",
+      "location": "Pädagogische Hochschule - Literatur Café",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://theater-inklusiv-lb.de/2021-erbse-bohne/",
+      "original_url": "https://theater-inklusiv-lb.de/2021-erbse-bohne/",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "erbse-und-bohne-2026-11-10-ludw",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-11-07T02:11:19.327276+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/erbse-und-bohne-2026-11-10-ludw"
     },
     {
       "id": "97f4c3adde12d8dd",
@@ -96,7 +313,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-06T02:07:00.081026+01:00",
+      "scraped_at": "2026-11-07T02:06:53.798377+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -104,6 +321,38 @@
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/maerchen-und-malen-2026-11-10-stab"
+    },
+    {
+      "id": "fb558577412e8ea4",
+      "title": "Portugiesischsprachige Spielgruppe / Grupo de Brincadeiras em Português",
+      "date_start": "2026-11-10",
+      "date_end": null,
+      "time": "16:00 - 17:30",
+      "description": "In dieser Spielgruppe lernen Kinder im Portugiesischen zu kommunizieren, während sie mit anderen Kindern und Erwachsenen interagieren. Das BabyZentrum bietet ein freundliches Umfeld für diese kindgerechte Interkulturelle Erfahrung.",
+      "location": "Evangelische FamilienBildung Ludwigsburg (BabyZentrum)",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.familienbildungludwigsburg.de/programm/offene-treffs-1",
+      "original_url": "https://www.familienbildungludwigsburg.de/programm/offene-treffs-1",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "portugiesischsprachige-spielgruppe-grupo-de-brincadeiras-em-portugues-2026-11-10-ludw",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-11-07T02:11:19.327668+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/portugiesischsprachige-spielgruppe-grupo-de-brincadeiras-em-portugues-2026-11-10-ludw"
     },
     {
       "id": "4cdb3505b68e302f",
@@ -127,7 +376,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-06T02:03:25.982999+01:00",
+      "scraped_at": "2026-11-07T02:03:27.394876+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -158,7 +407,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-06T02:00:03.904815+01:00",
+      "scraped_at": "2026-11-07T02:00:03.589311+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -189,7 +438,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-06T02:03:27.355432+01:00",
+      "scraped_at": "2026-11-07T02:03:28.725578+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -221,7 +470,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-06T02:06:54.246444+01:00",
+      "scraped_at": "2026-11-07T02:06:47.805383+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -260,7 +509,7 @@
         5,
         6
       ],
-      "scraped_at": "2026-11-06T02:03:28.810015+01:00",
+      "scraped_at": "2026-11-07T02:03:30.061852+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -291,7 +540,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-11-06T02:06:54.246581+01:00",
+      "scraped_at": "2026-11-07T02:06:47.805612+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -322,7 +571,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-11-06T02:06:49.325499+01:00",
+      "scraped_at": "2026-11-07T02:06:42.825267+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -353,7 +602,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-11-06T02:06:55.654761+01:00",
+      "scraped_at": "2026-11-07T02:06:49.323606+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -382,7 +631,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-11-06T02:06:55.654896+01:00",
+      "scraped_at": "2026-11-07T02:06:49.323741+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -411,7 +660,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-11-06T02:00:03.905312+01:00",
+      "scraped_at": "2026-11-07T02:00:03.589800+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -440,7 +689,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-11-06T02:11:20.259541+01:00",
+      "scraped_at": "2026-11-07T02:11:17.519195+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -469,7 +718,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-06T02:07:00.081144+01:00",
+      "scraped_at": "2026-11-07T02:06:53.798511+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -500,7 +749,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-06T02:07:00.081259+01:00",
+      "scraped_at": "2026-11-07T02:06:53.798633+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -529,7 +778,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-06T02:06:04.957890+01:00",
+      "scraped_at": "2026-11-07T02:05:59.451743+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -561,7 +810,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-06T02:07:00.081383+01:00",
+      "scraped_at": "2026-11-07T02:06:53.798749+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -590,7 +839,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-06T02:07:00.081501+01:00",
+      "scraped_at": "2026-11-07T02:06:53.798876+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -622,7 +871,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-06T02:06:51.108227+01:00",
+      "scraped_at": "2026-11-07T02:06:44.652143+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -651,7 +900,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-06T02:06:51.108350+01:00",
+      "scraped_at": "2026-11-07T02:06:44.652261+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -680,7 +929,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-06T02:06:49.325618+01:00",
+      "scraped_at": "2026-11-07T02:06:42.825419+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -709,7 +958,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-06T02:06:51.108470+01:00",
+      "scraped_at": "2026-11-07T02:06:44.652384+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -738,7 +987,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-06T02:00:59.287318+01:00",
+      "scraped_at": "2026-11-07T02:01:02.965654+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -770,7 +1019,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-06T02:06:54.246695+01:00",
+      "scraped_at": "2026-11-07T02:06:47.805734+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -801,7 +1050,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-06T02:01:00.725029+01:00",
+      "scraped_at": "2026-11-07T02:01:04.369976+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -828,7 +1077,7 @@
       "city": "ludwigsburg",
       "slug": "quizabend-2026-11-13t193000-europeberlin-demo",
       "weekdays": [],
-      "scraped_at": "2026-11-06T02:11:10.536456+01:00",
+      "scraped_at": "2026-11-07T02:11:02.924136+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -855,7 +1104,7 @@
       "city": "ludwigsburg",
       "slug": "lilly-thornton-band-13112026-musi",
       "weekdays": [],
-      "scraped_at": "2026-11-06T02:11:22.810486+01:00",
+      "scraped_at": "2026-11-07T02:11:20.179706+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -888,7 +1137,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-11-06T02:03:33.153676+01:00",
+      "scraped_at": "2026-11-07T02:03:34.077794+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -922,7 +1171,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-11-06T02:03:34.477348+01:00",
+      "scraped_at": "2026-11-07T02:03:35.416198+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -956,7 +1205,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-11-06T02:10:57.115980+01:00",
+      "scraped_at": "2026-11-07T02:10:46.349150+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -987,7 +1236,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-06T02:03:30.289440+01:00",
+      "scraped_at": "2026-11-07T02:03:31.396859+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1018,7 +1267,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-06T02:07:01.609717+01:00",
+      "scraped_at": "2026-11-07T02:06:55.397302+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1049,7 +1298,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-06T02:03:31.759404+01:00",
+      "scraped_at": "2026-11-07T02:03:32.759567+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1081,7 +1330,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-06T02:06:51.108584+01:00",
+      "scraped_at": "2026-11-07T02:06:44.652503+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1112,7 +1361,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-06T02:06:54.246813+01:00",
+      "scraped_at": "2026-11-07T02:06:47.805858+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1120,6 +1369,35 @@
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/en-passant-2026-11-14-stab"
+    },
+    {
+      "id": "854f1129fdfe8af9",
+      "title": "Maker Zone zum Entdecken - Das Geheimnis verborgener Botschaften",
+      "date_start": "2026-11-14",
+      "date_end": null,
+      "time": "13:00 - 16:00",
+      "description": "In der Maker Zone können Sie sich mit dem Entdecken verborgener Botschaften inspirieren und ausprobieren, wie es funktioniert. Einmal am Tag von 16 bis 18 Uhr in Ludwigsburg.",
+      "location": "Stadtbibliothek Ludwigsburg",
+      "price": "Kostenlos",
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx6ac89ba972400.html",
+      "original_url": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx6ac89ba972400.html",
+      "source": "stabi",
+      "city": "ludwigsburg",
+      "slug": "maker-zone-zum-entdecken---das-geheimnis-verborgener-botschaften-2026-11-14-stab",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-07T02:06:42.825541+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtbibliothek Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/maker-zone-zum-entdecken---das-geheimnis-verborgener-botschaften-2026-11-14-stab"
     },
     {
       "id": "a2bdb9e6b1a96665",
@@ -1144,7 +1422,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-06T02:01:02.161725+01:00",
+      "scraped_at": "2026-11-07T02:01:05.711164+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1177,7 +1455,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-06T02:06:51.108698+01:00",
+      "scraped_at": "2026-11-07T02:06:44.652614+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1206,7 +1484,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-06T02:10:57.935864+01:00",
+      "scraped_at": "2026-11-07T02:10:47.302837+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1238,7 +1516,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-06T02:00:03.905420+01:00",
+      "scraped_at": "2026-11-07T02:00:03.589908+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1267,7 +1545,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-06T02:00:03.905964+01:00",
+      "scraped_at": "2026-11-07T02:00:03.590419+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1296,7 +1574,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-06T02:01:07.009098+01:00",
+      "scraped_at": "2026-11-07T02:01:08.393317+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1325,7 +1603,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:03:35.971654+01:00",
+      "scraped_at": "2026-11-07T02:03:36.706367+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1356,7 +1634,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:03:37.460694+01:00",
+      "scraped_at": "2026-11-07T02:03:38.041830+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1388,7 +1666,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:01:08.375556+01:00",
+      "scraped_at": "2026-11-07T02:01:11.968406+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1417,7 +1695,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:03:39.014642+01:00",
+      "scraped_at": "2026-11-07T02:03:39.426247+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1446,7 +1724,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:01:09.770269+01:00",
+      "scraped_at": "2026-11-07T02:01:13.362993+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,

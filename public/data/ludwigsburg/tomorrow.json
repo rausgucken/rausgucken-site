@@ -1,6 +1,6 @@
 {
   "subset": "tomorrow",
-  "generated_at": "2026-11-07T06:00:02.235884+01:00",
+  "generated_at": "2026-11-07T08:28:38.094873+01:00",
   "event_count": 14,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
@@ -32,9 +32,9 @@
         5,
         6
       ],
-      "scraped_at": "2026-11-06T02:11:21.982053+01:00",
+      "scraped_at": "2026-11-07T02:11:19.319830+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -64,7 +64,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-11-06T02:11:21.977938+01:00",
+      "scraped_at": "2026-11-07T02:11:19.315553+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -95,7 +95,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:25.333149+01:00",
+      "scraped_at": "2026-11-07T02:00:35.709794+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -124,7 +124,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:11:23.081678+01:00",
+      "scraped_at": "2026-11-07T02:11:20.434453+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -132,37 +132,6 @@
       "editorial_tip": null,
       "source_label": "LISBERT Queer Ludwigsburg e. V.",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/lisbert-wandergruppe-2026-11-08-lisb"
-    },
-    {
-      "id": "6a19036cc34487cc",
-      "title": "Genussführung: Kaffeeklatsch mit der Grävenitz",
-      "date_start": "2026-11-08",
-      "date_end": null,
-      "time": "14:00",
-      "description": "Im Genussführung-Kaffeeclatsch teilt die Grävenitz interessante Geschichten und Tendenzen aus dem Welt der Kultur. Ein einladender Moment für Kaffeeliebhaber und Kenner des Kunstschlüssels.",
-      "location": "MIK Museum - Information - Kunst",
-      "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [
-        "Fuehrung"
-      ],
-      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523253163109/index.html",
-      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523253163109/index.html",
-      "source": "ludwigsburg_stadt",
-      "city": "ludwigsburg",
-      "slug": "genussfuehrung-kaffeeklatsch-mit-der-graevenitz-2026-11-08-ludw",
-      "weekdays": [
-        0
-      ],
-      "scraped_at": "2026-11-06T02:11:21.982397+01:00",
-      "extraction_confidence": 1.0,
-      "is_new": true,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Ludwigsburg",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/genussfuehrung-kaffeeklatsch-mit-der-graevenitz-2026-11-08-ludw"
     },
     {
       "id": "b194272ddde7ffc5",
@@ -187,14 +156,45 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:11:21.982544+01:00",
+      "scraped_at": "2026-11-07T02:11:19.319976+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/kinderkino-miss-moxy-2026-11-08-ludw"
+    },
+    {
+      "id": "6a19036cc34487cc",
+      "title": "Genussführung: Kaffeeklatsch mit der Grävenitz",
+      "date_start": "2026-11-08",
+      "date_end": null,
+      "time": "14:00",
+      "description": "Im Genussführung-Kaffeeclatsch teilt die Grävenitz interessante Geschichten und Tendenzen aus dem Welt der Kultur. Ein einladender Moment für Kaffeeliebhaber und Kenner des Kunstschlüssels.",
+      "location": "MIK Museum - Information - Kunst",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung"
+      ],
+      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523253163109/index.html",
+      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523253163109/index.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "genussfuehrung-kaffeeklatsch-mit-der-graevenitz-2026-11-08-ludw",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-11-07T02:11:19.320333+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/genussfuehrung-kaffeeklatsch-mit-der-graevenitz-2026-11-08-ludw"
     },
     {
       "id": "0eaffd4584db17a2",
@@ -216,7 +216,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:07:00.080877+01:00",
+      "scraped_at": "2026-11-07T02:06:53.798211+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -245,7 +245,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:42.279650+01:00",
+      "scraped_at": "2026-11-07T02:00:54.997105+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -277,7 +277,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:03:19.743858+01:00",
+      "scraped_at": "2026-11-07T02:03:23.211068+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -287,48 +287,19 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/der-baer-der-nicht-da-war-2026-11-08-karl"
     },
     {
-      "id": "83e801623970c75d",
-      "title": "Das ist kein Rückblick",
-      "date_start": "2026-11-08",
-      "date_end": null,
-      "time": "15:00",
-      "description": "Ein Veranstaltungsbüro in der Altstadt bietet eine Führung durch das Schorndorfer Torhaus, währenddessen wird auf historische und architektonische Details hingewiesen.",
-      "location": "Schorndorfer Torhaus",
-      "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [
-        "Fuehrung"
-      ],
-      "link": "https://www.reservix.de/p/reservix/group/540097",
-      "original_url": "https://www.reservix.de/p/reservix/group/540097",
-      "source": "ludwigsburg_stadt",
-      "city": "ludwigsburg",
-      "slug": "das-ist-kein-rueckblick-2026-11-08-ludw",
-      "weekdays": [
-        0
-      ],
-      "scraped_at": "2026-11-06T02:11:21.983440+01:00",
-      "extraction_confidence": 1.0,
-      "is_new": true,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Ludwigsburg",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/das-ist-kein-rueckblick-2026-11-08-ludw"
-    },
-    {
       "id": "e74df3c19afa3c7f",
       "title": "Von diebischen Elstern und listigen Gaunern",
       "date_start": "2026-11-08",
       "date_end": null,
       "time": "16:00",
-      "description": "In diesem Spaziergang durch das Residenzschloss Ludwigsburg entdecken Sie Geschichten von listigen Gaunern und diekluge Elstern. Fesselnde Erzählungen in der Begleitung einer Expertin verleiht den historischen Räumen neue Leben.",
+      "description": "In der Residenzschloss Ludwigsburg wird die Meisterdiebin Freifrau von Schloß in einer einzigartigen Veranstaltung mit Schlossteam die Kunst des Diebstahls unter „zukünftige Kollegen“lehren. Zwischen Schlosskirche und Spielpavillon erörtert sie kriminelle Fälle, höfische Intrigen und den Verdacht auf wahre Verbrecher. Anmeldung erforderlich für diese besondere Führungsform.",
       "location": "Residenzschloss Ludwigsburg",
-      "price": null,
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
       "age_min": null,
       "age_max": null,
-      "tags": [],
+      "tags": [
+        "Fuehrung"
+      ],
       "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/von-diebischen-elstern-und-listigen-gaunern/9349/769842",
       "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/von-diebischen-elstern-und-listigen-gaunern/9349/769842",
       "source": "schloss",
@@ -337,7 +308,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:43.781909+01:00",
+      "scraped_at": "2026-11-07T02:01:01.398587+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -366,9 +337,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:11:21.983615+01:00",
+      "scraped_at": "2026-11-07T02:11:19.321237+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -397,9 +368,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:11:21.983968+01:00",
+      "scraped_at": "2026-11-07T02:11:19.321593+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -428,14 +399,43 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:11:21.985199+01:00",
+      "scraped_at": "2026-11-07T02:11:19.323036+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/musicalische-exequien-heinrich-schuetz-2026-11-08-ludw"
+    },
+    {
+      "id": "83e801623970c75d",
+      "title": "Das ist kein Rückblick",
+      "date_start": "2026-11-08",
+      "date_end": null,
+      "time": "17:00",
+      "description": "Ein Veranstaltungskonzept, das den Rückblick auf ein Ereignis oder einen Prozess vermeidet. Stattdessen bietet es eine prägnante Beschreibung des Ortes und der Aktivität.\n\nIn diesem Veranstaltungsformat laden wir Sie ins Schorndorfer Torhaus ein, um einen fokussierten Rückblick zu genießen – ohne historische oder chronologische Überlegungen.",
+      "location": "Schorndorfer Torhaus",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.reservix.de/p/reservix/group/540097",
+      "original_url": "https://www.reservix.de/p/reservix/group/540097",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "das-ist-kein-rueckblick-2026-11-08-ludw",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-11-07T02:11:19.323769+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/das-ist-kein-rueckblick-2026-11-08-ludw"
     }
   ]
 }

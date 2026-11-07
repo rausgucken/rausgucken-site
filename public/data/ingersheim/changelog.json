@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-11-06T08:09:12.502948+01:00",
+  "generated_at": "2026-11-07T07:49:55.132157+01:00",
   "city": "ingersheim",
   "sources": [
     "ingersheim_gemeinde"
   ],
-  "previous_run": "2026-11-05T07:56:02.365875+01:00",
-  "count_added": 0,
+  "previous_run": "2026-11-06T08:09:12.577152+01:00",
+  "count_added": 2,
   "count_removed": 1,
-  "added": [],
+  "added": [
+    {
+      "id": "72bb65b33774c0ca",
+      "title": "Glühweinausschank + Grillen",
+      "date_start": "2026-12-11",
+      "source": "ingersheim_gemeinde"
+    },
+    {
+      "id": "e87b9ce71d0ded71",
+      "title": "Glühweinausschank + Grillen",
+      "date_start": "2026-12-18",
+      "source": "ingersheim_gemeinde"
+    }
+  ],
   "removed": [
     {
-      "id": "00ebe86ace27f934",
-      "title": "Vortrag Gesundheit",
-      "date_start": "2026-11-05",
+      "id": "f8274130253b9e44",
+      "title": "Tag des Kinderturnens",
+      "date_start": "2026-11-06",
       "source": "ingersheim_gemeinde"
     }
   ]

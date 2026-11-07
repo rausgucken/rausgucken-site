@@ -1,24 +1,37 @@
 {
-  "generated_at": "2026-11-06T05:44:37.032270+01:00",
+  "generated_at": "2026-11-07T06:05:42.037177+01:00",
   "city": "grossbottwar",
   "sources": [
     "grossbottwar_veranstaltungen"
   ],
-  "previous_run": "2026-11-05T06:01:38.406076+01:00",
-  "count_added": 0,
-  "count_removed": 2,
-  "added": [],
-  "removed": [
+  "previous_run": "2026-11-06T05:44:37.109515+01:00",
+  "count_added": 3,
+  "count_removed": 1,
+  "added": [
     {
-      "id": "e329224fec088c1c",
-      "title": "Stammtisch der Landfrauen Winzerhausen",
-      "date_start": "2026-11-05",
+      "id": "d7a9f1034730264d",
+      "title": "Treffen älterer Menschen",
+      "date_start": "2027-01-12",
       "source": "grossbottwar_veranstaltungen"
     },
     {
-      "id": "bbf7b73eac68b56c",
-      "title": "Öffentliche Sitzung des Technischen Ausschusses",
-      "date_start": "2026-11-16",
+      "id": "f6a40c83e16f86df",
+      "title": "Café International",
+      "date_start": "2027-01-15",
+      "source": "grossbottwar_veranstaltungen"
+    },
+    {
+      "id": "7c49735f134cbe0a",
+      "title": "Café International",
+      "date_start": "2027-02-19",
+      "source": "grossbottwar_veranstaltungen"
+    }
+  ],
+  "removed": [
+    {
+      "id": "0ca0d944c2f6d728",
+      "title": "Treffen älterer Menschen",
+      "date_start": "2027-01-05",
       "source": "grossbottwar_veranstaltungen"
     }
   ]

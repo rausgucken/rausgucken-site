@@ -1,6 +1,6 @@
 {
   "subset": "tomorrow",
-  "generated_at": "2026-11-07T06:00:02.378468+01:00",
+  "generated_at": "2026-11-07T11:09:27.078026+01:00",
   "event_count": 81,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
@@ -32,9 +32,9 @@
         5,
         6
       ],
-      "scraped_at": "2026-11-06T02:11:21.982053+01:00",
+      "scraped_at": "2026-11-07T02:11:19.319830+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -64,7 +64,7 @@
         0,
         6
       ],
-      "scraped_at": "2026-11-06T02:11:21.977938+01:00",
+      "scraped_at": "2026-11-07T02:11:19.315553+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -155,7 +155,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:25.333149+01:00",
+      "scraped_at": "2026-11-07T02:00:35.709794+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -184,7 +184,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:11:23.081678+01:00",
+      "scraped_at": "2026-11-07T02:11:20.434453+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -192,37 +192,6 @@
       "editorial_tip": null,
       "source_label": "LISBERT Queer Ludwigsburg e. V.",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/lisbert-wandergruppe-2026-11-08-lisb"
-    },
-    {
-      "id": "6a19036cc34487cc",
-      "title": "Genussführung: Kaffeeklatsch mit der Grävenitz",
-      "date_start": "2026-11-08",
-      "date_end": null,
-      "time": "14:00",
-      "description": "Im Genussführung-Kaffeeclatsch teilt die Grävenitz interessante Geschichten und Tendenzen aus dem Welt der Kultur. Ein einladender Moment für Kaffeeliebhaber und Kenner des Kunstschlüssels.",
-      "location": "MIK Museum - Information - Kunst",
-      "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [
-        "Fuehrung"
-      ],
-      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523253163109/index.html",
-      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523253163109/index.html",
-      "source": "ludwigsburg_stadt",
-      "city": "ludwigsburg",
-      "slug": "genussfuehrung-kaffeeklatsch-mit-der-graevenitz-2026-11-08-ludw",
-      "weekdays": [
-        0
-      ],
-      "scraped_at": "2026-11-06T02:11:21.982397+01:00",
-      "extraction_confidence": 1.0,
-      "is_new": true,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Ludwigsburg",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/genussfuehrung-kaffeeklatsch-mit-der-graevenitz-2026-11-08-ludw"
     },
     {
       "id": "b194272ddde7ffc5",
@@ -247,14 +216,45 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:11:21.982544+01:00",
+      "scraped_at": "2026-11-07T02:11:19.319976+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/kinderkino-miss-moxy-2026-11-08-ludw"
+    },
+    {
+      "id": "6a19036cc34487cc",
+      "title": "Genussführung: Kaffeeklatsch mit der Grävenitz",
+      "date_start": "2026-11-08",
+      "date_end": null,
+      "time": "14:00",
+      "description": "Im Genussführung-Kaffeeclatsch teilt die Grävenitz interessante Geschichten und Tendenzen aus dem Welt der Kultur. Ein einladender Moment für Kaffeeliebhaber und Kenner des Kunstschlüssels.",
+      "location": "MIK Museum - Information - Kunst",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung"
+      ],
+      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523253163109/index.html",
+      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523253163109/index.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "genussfuehrung-kaffeeklatsch-mit-der-graevenitz-2026-11-08-ludw",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-11-07T02:11:19.320333+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/genussfuehrung-kaffeeklatsch-mit-der-graevenitz-2026-11-08-ludw"
     },
     {
       "id": "0eaffd4584db17a2",
@@ -276,7 +276,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:07:00.080877+01:00",
+      "scraped_at": "2026-11-07T02:06:53.798211+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -305,7 +305,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:42.279650+01:00",
+      "scraped_at": "2026-11-07T02:00:54.997105+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -337,7 +337,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:03:19.743858+01:00",
+      "scraped_at": "2026-11-07T02:03:23.211068+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -347,48 +347,19 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/der-baer-der-nicht-da-war-2026-11-08-karl"
     },
     {
-      "id": "83e801623970c75d",
-      "title": "Das ist kein Rückblick",
-      "date_start": "2026-11-08",
-      "date_end": null,
-      "time": "15:00",
-      "description": "Ein Veranstaltungsbüro in der Altstadt bietet eine Führung durch das Schorndorfer Torhaus, währenddessen wird auf historische und architektonische Details hingewiesen.",
-      "location": "Schorndorfer Torhaus",
-      "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [
-        "Fuehrung"
-      ],
-      "link": "https://www.reservix.de/p/reservix/group/540097",
-      "original_url": "https://www.reservix.de/p/reservix/group/540097",
-      "source": "ludwigsburg_stadt",
-      "city": "ludwigsburg",
-      "slug": "das-ist-kein-rueckblick-2026-11-08-ludw",
-      "weekdays": [
-        0
-      ],
-      "scraped_at": "2026-11-06T02:11:21.983440+01:00",
-      "extraction_confidence": 1.0,
-      "is_new": true,
-      "is_booked_out": false,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Stadt Ludwigsburg",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/das-ist-kein-rueckblick-2026-11-08-ludw"
-    },
-    {
       "id": "e74df3c19afa3c7f",
       "title": "Von diebischen Elstern und listigen Gaunern",
       "date_start": "2026-11-08",
       "date_end": null,
       "time": "16:00",
-      "description": "In diesem Spaziergang durch das Residenzschloss Ludwigsburg entdecken Sie Geschichten von listigen Gaunern und diekluge Elstern. Fesselnde Erzählungen in der Begleitung einer Expertin verleiht den historischen Räumen neue Leben.",
+      "description": "In der Residenzschloss Ludwigsburg wird die Meisterdiebin Freifrau von Schloß in einer einzigartigen Veranstaltung mit Schlossteam die Kunst des Diebstahls unter „zukünftige Kollegen“lehren. Zwischen Schlosskirche und Spielpavillon erörtert sie kriminelle Fälle, höfische Intrigen und den Verdacht auf wahre Verbrecher. Anmeldung erforderlich für diese besondere Führungsform.",
       "location": "Residenzschloss Ludwigsburg",
-      "price": null,
+      "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
       "age_min": null,
       "age_max": null,
-      "tags": [],
+      "tags": [
+        "Fuehrung"
+      ],
       "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/von-diebischen-elstern-und-listigen-gaunern/9349/769842",
       "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/von-diebischen-elstern-und-listigen-gaunern/9349/769842",
       "source": "schloss",
@@ -397,7 +368,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:43.781909+01:00",
+      "scraped_at": "2026-11-07T02:01:01.398587+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -426,9 +397,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:11:21.983615+01:00",
+      "scraped_at": "2026-11-07T02:11:19.321237+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -457,9 +428,9 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:11:21.983968+01:00",
+      "scraped_at": "2026-11-07T02:11:19.321593+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -488,14 +459,43 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:11:21.985199+01:00",
+      "scraped_at": "2026-11-07T02:11:19.323036+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/musicalische-exequien-heinrich-schuetz-2026-11-08-ludw"
+    },
+    {
+      "id": "83e801623970c75d",
+      "title": "Das ist kein Rückblick",
+      "date_start": "2026-11-08",
+      "date_end": null,
+      "time": "17:00",
+      "description": "Ein Veranstaltungskonzept, das den Rückblick auf ein Ereignis oder einen Prozess vermeidet. Stattdessen bietet es eine prägnante Beschreibung des Ortes und der Aktivität.\n\nIn diesem Veranstaltungsformat laden wir Sie ins Schorndorfer Torhaus ein, um einen fokussierten Rückblick zu genießen – ohne historische oder chronologische Überlegungen.",
+      "location": "Schorndorfer Torhaus",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.reservix.de/p/reservix/group/540097",
+      "original_url": "https://www.reservix.de/p/reservix/group/540097",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "das-ist-kein-rueckblick-2026-11-08-ludw",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-11-07T02:11:19.323769+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/das-ist-kein-rueckblick-2026-11-08-ludw"
     },
     {
       "id": "d45787615309998b",
@@ -517,7 +517,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:20.239114+01:00",
+      "scraped_at": "2026-11-07T02:00:19.895658+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -546,7 +546,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:20.900304+01:00",
+      "scraped_at": "2026-11-07T02:00:20.521466+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -578,7 +578,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:21.548704+01:00",
+      "scraped_at": "2026-11-07T02:00:21.180649+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -610,7 +610,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:22.282097+01:00",
+      "scraped_at": "2026-11-07T02:00:21.834823+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -639,7 +639,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:22.958251+01:00",
+      "scraped_at": "2026-11-07T02:00:22.457203+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -671,7 +671,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:28.778655+01:00",
+      "scraped_at": "2026-11-07T02:04:17.843980+01:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -798,7 +798,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:24.020676+01:00",
+      "scraped_at": "2026-11-07T02:00:20.657964+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -829,7 +829,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:24.020682+01:00",
+      "scraped_at": "2026-11-07T02:00:20.657972+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -858,7 +858,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:24.020690+01:00",
+      "scraped_at": "2026-11-07T02:00:20.657981+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -889,7 +889,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:00:29.047399+01:00",
+      "scraped_at": "2026-11-07T02:00:25.787985+01:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -1096,18 +1096,18 @@
       "original_url": "https://www.kornwestheim.de/site/Kornwestheim_Internet/node/16727978/zmdetail_523255787250/AusstellungStadtLandSehnsuchtIdyllischeAnsichteninKunstundAlltagskulturausdemSdwesten.html",
       "source": "kornwestheim",
       "city": "kornwestheim",
-      "slug": "ausstellung-stadt-land-sehnsucht-idyllische-ansichten-in-kunst-und-alltagskultur-aus-dem-2",
+      "slug": "ausstellung-stadt-land-sehnsucht-idyllische-ansichten-in-kunst-und-alltagskultur-aus-dem-1",
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:01:03.466688+01:00",
+      "scraped_at": "2026-11-07T02:01:01.489022+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Kornwestheim",
-      "canonical_url": "https://www.rausgucken.de/kornwestheim/events/ausstellung-stadt-land-sehnsucht-idyllische-ansichten-in-kunst-und-alltagskultur-aus-dem-2"
+      "canonical_url": "https://www.rausgucken.de/kornwestheim/events/ausstellung-stadt-land-sehnsucht-idyllische-ansichten-in-kunst-und-alltagskultur-aus-dem-1"
     },
     {
       "id": "4813f6aa61d13c7e",
@@ -1131,7 +1131,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:01:01.439847+01:00",
+      "scraped_at": "2026-11-07T02:00:58.989339+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1162,7 +1162,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:01:02.474496+01:00",
+      "scraped_at": "2026-11-07T02:01:00.382946+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1344,7 +1344,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:21.192049+01:00",
+      "scraped_at": "2026-11-07T02:04:20.875089+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1375,7 +1375,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:21.192204+01:00",
+      "scraped_at": "2026-11-07T02:04:20.875222+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1404,7 +1404,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:21.191949+01:00",
+      "scraped_at": "2026-11-07T02:04:20.874990+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1433,7 +1433,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:38.629915+01:00",
+      "scraped_at": "2026-11-07T02:04:37.723121+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -1462,7 +1462,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:26.450200+01:00",
+      "scraped_at": "2026-11-07T02:04:30.671251+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1491,7 +1491,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:26.450523+01:00",
+      "scraped_at": "2026-11-07T02:04:30.671561+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1520,7 +1520,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:26.450842+01:00",
+      "scraped_at": "2026-11-07T02:04:30.671873+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1549,7 +1549,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:26.451052+01:00",
+      "scraped_at": "2026-11-07T02:04:30.672082+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1581,7 +1581,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:27.808470+01:00",
+      "scraped_at": "2026-11-07T02:04:32.297615+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1612,7 +1612,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:27.808602+01:00",
+      "scraped_at": "2026-11-07T02:04:32.297747+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1641,7 +1641,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:30.188380+01:00",
+      "scraped_at": "2026-11-07T02:04:35.933363+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1670,7 +1670,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:04:30.188386+01:00",
+      "scraped_at": "2026-11-07T02:04:35.933371+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1730,7 +1730,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:06:52.536059+01:00",
+      "scraped_at": "2026-11-07T02:06:48.194783+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1759,7 +1759,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:06:59.250293+01:00",
+      "scraped_at": "2026-11-07T02:06:58.165648+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1788,7 +1788,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:07:00.541672+01:00",
+      "scraped_at": "2026-11-07T02:07:01.357694+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1819,7 +1819,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:07:29.263734+01:00",
+      "scraped_at": "2026-11-07T02:07:40.305742+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1850,7 +1850,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:07:31.804113+01:00",
+      "scraped_at": "2026-11-07T02:07:43.878626+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1881,7 +1881,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:08:03.910155+01:00",
+      "scraped_at": "2026-11-07T02:08:04.060213+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -1910,7 +1910,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:08:13.390684+01:00",
+      "scraped_at": "2026-11-07T02:08:16.583591+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1941,7 +1941,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:08:14.850633+01:00",
+      "scraped_at": "2026-11-07T02:08:19.679789+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1970,7 +1970,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:08:16.231379+01:00",
+      "scraped_at": "2026-11-07T02:08:21.096609+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -1999,7 +1999,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:08:17.669607+01:00",
+      "scraped_at": "2026-11-07T02:08:24.275101+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2030,7 +2030,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:09:24.537639+01:00",
+      "scraped_at": "2026-11-07T02:10:27.613239+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2061,7 +2061,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:09:28.298245+01:00",
+      "scraped_at": "2026-11-07T02:10:31.138817+01:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -2090,7 +2090,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:09:28.297989+01:00",
+      "scraped_at": "2026-11-07T02:10:31.138558+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -2119,7 +2119,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:09:28.298065+01:00",
+      "scraped_at": "2026-11-07T02:10:31.138635+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -2148,7 +2148,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:09:28.298117+01:00",
+      "scraped_at": "2026-11-07T02:10:31.138684+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -2177,7 +2177,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:09:28.298162+01:00",
+      "scraped_at": "2026-11-07T02:10:31.138730+01:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
@@ -2208,7 +2208,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:09:28.298203+01:00",
+      "scraped_at": "2026-11-07T02:10:31.138773+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -2237,7 +2237,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:09:32.564325+01:00",
+      "scraped_at": "2026-11-07T02:10:35.561179+01:00",
       "extraction_confidence": 0.9,
       "is_new": false,
       "is_booked_out": false,
@@ -2266,7 +2266,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:10:04.003196+01:00",
+      "scraped_at": "2026-11-07T02:11:06.357497+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -2295,7 +2295,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:10:04.003199+01:00",
+      "scraped_at": "2026-11-07T02:11:06.357500+01:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
@@ -2327,7 +2327,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:10:04.003202+01:00",
+      "scraped_at": "2026-11-07T02:11:06.357503+01:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
@@ -2358,7 +2358,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:10:04.003205+01:00",
+      "scraped_at": "2026-11-07T02:11:06.357506+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -2390,7 +2390,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:10:04.003208+01:00",
+      "scraped_at": "2026-11-07T02:11:06.357508+01:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
@@ -2419,7 +2419,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:10:30.619103+01:00",
+      "scraped_at": "2026-11-07T02:11:24.626949+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -2448,7 +2448,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-06T02:10:47.177268+01:00",
+      "scraped_at": "2026-11-07T02:11:27.690417+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,

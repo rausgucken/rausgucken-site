@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-11-06T08:11:15.355194+01:00",
+  "scraped_at": "2026-11-07T07:49:58.015790+01:00",
   "city": "gemmrigheim",
-  "event_count": 34,
+  "event_count": 32,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "gemmrigheim_gemeinde"
   ],
   "source_counts": {
-    "gemmrigheim_gemeinde": 34
+    "gemmrigheim_gemeinde": 32
   },
   "sources_failed": [],
-  "data_hash": "84810f9db1854e67",
+  "data_hash": "6831be264b5845ed",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 06.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 07.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "gemmrigheim_gemeinde": 1.0
   },
   "source_event_counts": {
-    "gemmrigheim_gemeinde": 34
+    "gemmrigheim_gemeinde": 32
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 575.6,
-    "runtime_delta_vs_baseline": 2.216,
+    "runtime_minutes": 549.4,
+    "runtime_delta_vs_baseline": 2.069,
     "source_health": {
       "gemmrigheim_gemeinde": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-06T11:49:07.748465+01:00"
+    "generated_at": "2026-11-07T11:22:44.240678+01:00"
   }
 }

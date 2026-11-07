@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-06T11:35:37.564683+01:00",
+  "generated_at": "2026-11-07T11:09:26.891403+01:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
     "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-11-05T11:30:21.833673+01:00",
-  "count_added": 24,
-  "count_removed": 1,
+  "previous_run": "2026-11-06T11:35:37.641416+01:00",
+  "count_added": 26,
+  "count_removed": 2,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -153,14 +153,32 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "bf83a0d93b684b7e",
+      "title": "Adventlicher Seniorennachmittag",
+      "date_start": "2026-12-10",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "1e35b3e0404b4839",
+      "title": "Wochenmarkt",
+      "date_start": "2026-12-24",
+      "source": "asperg_veranstaltungen"
     }
   ],
   "removed": [
     {
-      "id": "ab33d8a656c1707f",
-      "title": "Treffpunkt Miki - Treffpunkt für Alle",
-      "date_start": "2026-11-05",
+      "id": "be7433aa271ded50",
+      "title": "Jam Session - Die Glasperlenspieler",
+      "date_start": "2026-11-06",
       "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "758f0470cca5b005",
+      "title": "Jazz-Abende",
+      "date_start": "2026-11-06",
+      "source": "glasperlenspiel"
     }
   ]
 }
