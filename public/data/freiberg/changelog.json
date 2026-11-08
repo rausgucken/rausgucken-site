@@ -1,18 +1,37 @@
 {
-  "generated_at": "2026-11-07T05:07:14.819730+01:00",
+  "generated_at": "2026-11-08T05:04:55.619876+01:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-11-06T05:07:16.897448+01:00",
-  "count_added": 0,
-  "count_removed": 1,
-  "added": [],
+  "previous_run": "2026-11-07T05:07:14.899289+01:00",
+  "count_added": 1,
+  "count_removed": 3,
+  "added": [
+    {
+      "id": "1cece449e118dad6",
+      "title": "Vereinsmeisterschaft",
+      "date_start": "2026-11-07",
+      "source": "freiberg_veranstaltungen"
+    }
+  ],
   "removed": [
     {
-      "id": "90c9910b7f35f627",
-      "title": "The Genesis & Phil Collins Tribute Show",
-      "date_start": "2026-11-06",
+      "id": "1dfb3905f99cdc03",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2026-11-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "04b6d74b6f07f402",
+      "title": "Vereinsmeisterschaft",
+      "date_start": "2026-11-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "b0f2c81006fe9ae4",
+      "title": "Hearts and Bones meets Kauz",
+      "date_start": "2026-11-07",
       "source": "freiberg_veranstaltungen"
     }
   ]

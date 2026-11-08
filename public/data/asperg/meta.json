@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-11-07T11:09:26.969360+01:00",
+  "scraped_at": "2026-11-08T10:55:46.287933+01:00",
   "city": "asperg",
-  "event_count": 107,
+  "event_count": 105,
   "flagged_count": 0,
   "expired_count": 24,
   "sources_scraped": [
@@ -10,23 +10,23 @@
     "glasperlenspiel"
   ],
   "source_counts": {
-    "asperg_veranstaltungen": 75,
-    "glasperlenspiel": 31,
+    "asperg_veranstaltungen": 70,
+    "glasperlenspiel": 34,
     "asperg_fuehrungen": 1
   },
   "sources_failed": [],
-  "data_hash": "e2845448766d7c4d",
+  "data_hash": "dce8f466c6f283ed",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 07.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 08.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "asperg_veranstaltungen": 1.0,
-    "glasperlenspiel": 0.94,
+    "glasperlenspiel": 0.93,
     "asperg_fuehrungen": 0.62
   },
   "source_event_counts": {
-    "asperg_veranstaltungen": 75,
-    "glasperlenspiel": 31,
+    "asperg_veranstaltungen": 70,
+    "glasperlenspiel": 34,
     "asperg_fuehrungen": 1
   },
   "count_drift_warnings": {},
@@ -35,16 +35,16 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 549.4,
-    "runtime_delta_vs_baseline": 2.069,
+    "runtime_minutes": 535.8,
+    "runtime_delta_vs_baseline": 1.993,
     "source_health": {
       "asperg_veranstaltungen": 1.0,
-      "glasperlenspiel": 0.94,
+      "glasperlenspiel": 0.93,
       "asperg_fuehrungen": 0.62
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "critical",
-    "generated_at": "2026-11-07T11:22:43.370988+01:00"
+    "generated_at": "2026-11-08T11:09:10.255902+01:00"
   }
 }

@@ -1,12 +1,25 @@
 {
-  "generated_at": "2026-11-07T08:04:20.148298+01:00",
+  "generated_at": "2026-11-08T07:54:33.023111+01:00",
   "city": "sersheim",
   "sources": [
     "sersheim_gemeinde"
   ],
-  "previous_run": "2026-11-06T08:27:30.489019+01:00",
+  "previous_run": "2026-11-07T08:04:20.226332+01:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "b2ce646ef766654e",
+      "title": "Mitgliederversammlung",
+      "date_start": "2026-11-07",
+      "source": "sersheim_gemeinde"
+    },
+    {
+      "id": "8366b5f8716890ef",
+      "title": "Clubkonzert mit Wildfire",
+      "date_start": "2026-11-07",
+      "source": "sersheim_gemeinde"
+    }
+  ]
 }

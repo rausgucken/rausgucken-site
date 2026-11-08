@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-07T11:09:26.891403+01:00",
+  "generated_at": "2026-11-08T10:55:46.211099+01:00",
   "city": "asperg",
   "sources": [
     "asperg_veranstaltungen",
-    "glasperlenspiel",
-    "asperg_fuehrungen"
+    "asperg_fuehrungen",
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-11-06T11:35:37.641416+01:00",
-  "count_added": 26,
-  "count_removed": 2,
+  "previous_run": "2026-11-07T11:09:26.969360+01:00",
+  "count_added": 27,
+  "count_removed": 5,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -155,30 +155,54 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "bf83a0d93b684b7e",
-      "title": "Adventlicher Seniorennachmittag",
-      "date_start": "2026-12-10",
-      "source": "asperg_veranstaltungen"
+      "id": "24650732b17427b8",
+      "title": "Tauchgang nach versunkenen Sätzen",
+      "date_start": "2026-12-27",
+      "source": "glasperlenspiel"
     },
     {
-      "id": "1e35b3e0404b4839",
-      "title": "Wochenmarkt",
-      "date_start": "2026-12-24",
-      "source": "asperg_veranstaltungen"
+      "id": "c40ceccc541792cf",
+      "title": "Jazz-Abende",
+      "date_start": "2027-02-05",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "d0d5f369b6a1db9c",
+      "title": "Ehepaar Lore und Harry",
+      "date_start": "2027-02-13",
+      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "be7433aa271ded50",
-      "title": "Jam Session - Die Glasperlenspieler",
-      "date_start": "2026-11-06",
+      "id": "3537459d284bf224",
+      "title": "Wochenmarkt",
+      "date_start": "2026-11-07",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "758f0470cca5b005",
-      "title": "Jazz-Abende",
-      "date_start": "2026-11-06",
-      "source": "glasperlenspiel"
+      "id": "dd9f877cd3c39fa0",
+      "title": "Bilderbuchkino",
+      "date_start": "2026-11-07",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "f55536633c73b3a4",
+      "title": "Mobiles Kino",
+      "date_start": "2026-11-07",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "ce925f1cb073e579",
+      "title": "RepairCafe & UpcyclingWerkstatt",
+      "date_start": "2026-11-07",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "8ac496364b80c716",
+      "title": "Theater - Omelette Surprise",
+      "date_start": "2026-11-07",
+      "source": "asperg_veranstaltungen"
     }
   ]
 }

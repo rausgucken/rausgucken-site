@@ -1,12 +1,31 @@
 {
-  "generated_at": "2026-11-07T07:49:57.240947+01:00",
+  "generated_at": "2026-11-08T08:01:48.414248+01:00",
   "city": "hemmingen",
   "sources": [
     "hemmingen_gemeinde"
   ],
-  "previous_run": "2026-11-06T08:11:14.644508+01:00",
+  "previous_run": "2026-11-07T07:49:57.315424+01:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 3,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "fb88412bc00d997c",
+      "title": "Bewirtung beim Krämermarkt",
+      "date_start": "2026-11-07",
+      "source": "hemmingen_gemeinde"
+    },
+    {
+      "id": "049dec69d49ac1c1",
+      "title": "Krämermarkt",
+      "date_start": "2026-11-07",
+      "source": "hemmingen_gemeinde"
+    },
+    {
+      "id": "800a469c034d0f51",
+      "title": "Krämermarkt Weltladen-Café",
+      "date_start": "2026-11-07",
+      "source": "hemmingen_gemeinde"
+    }
+  ]
 }
