@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-08T10:55:46.211099+01:00",
+  "generated_at": "2026-11-09T11:09:18.895303+01:00",
   "city": "asperg",
   "sources": [
+    "glasperlenspiel",
     "asperg_veranstaltungen",
-    "asperg_fuehrungen",
-    "glasperlenspiel"
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-11-07T11:09:26.969360+01:00",
-  "count_added": 27,
-  "count_removed": 5,
+  "previous_run": "2026-11-08T10:55:46.287933+01:00",
+  "count_added": 25,
+  "count_removed": 4,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -155,54 +155,36 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "24650732b17427b8",
-      "title": "Tauchgang nach versunkenen Sätzen",
-      "date_start": "2026-12-27",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "c40ceccc541792cf",
-      "title": "Jazz-Abende",
-      "date_start": "2027-02-05",
-      "source": "glasperlenspiel"
-    },
-    {
-      "id": "d0d5f369b6a1db9c",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2027-02-13",
-      "source": "glasperlenspiel"
+      "id": "58ac8249e0e68390",
+      "title": "Geschichte entdecken",
+      "date_start": "2026-11-08",
+      "source": "asperg_fuehrungen"
     }
   ],
   "removed": [
     {
-      "id": "3537459d284bf224",
-      "title": "Wochenmarkt",
-      "date_start": "2026-11-07",
+      "id": "e8afc68db9e215fb",
+      "title": "Geschichte entdecken - Führung auf dem Hohenasperg",
+      "date_start": "2026-11-08",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "dd9f877cd3c39fa0",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-11-07",
+      "id": "e14c1e5fcd32a037",
+      "title": "Führung Black stories – Aspergs dunkle Seite",
+      "date_start": "2026-11-08",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "f55536633c73b3a4",
-      "title": "Mobiles Kino",
-      "date_start": "2026-11-07",
+      "id": "c7bd7e8ff5af3c18",
+      "title": "Infotainment - Sascha Vogel: Physik in Hollywood II",
+      "date_start": "2026-11-08",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "ce925f1cb073e579",
-      "title": "RepairCafe & UpcyclingWerkstatt",
-      "date_start": "2026-11-07",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "8ac496364b80c716",
-      "title": "Theater - Omelette Surprise",
-      "date_start": "2026-11-07",
-      "source": "asperg_veranstaltungen"
+      "id": "ed3935ab415a98c5",
+      "title": "Physik in Hollywood II",
+      "date_start": "2026-11-08",
+      "source": "glasperlenspiel"
     }
   ]
 }

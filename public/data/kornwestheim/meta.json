@@ -1,45 +1,54 @@
 {
-  "scraped_at": "2026-11-08T05:04:56.419634+01:00",
+  "scraped_at": "2026-11-09T06:18:20.821577+01:00",
   "city": "kornwestheim",
-  "event_count": 38,
+  "event_count": 207,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "das_k_buecherei",
-    "das_k_spielplan"
+    "das_k_spielplan",
+    "kornwestheim"
   ],
   "source_counts": {
-    "das_k_spielplan": 33,
-    "das_k_buecherei": 5
+    "kornwestheim": 186,
+    "das_k_spielplan": 18,
+    "das_k_buecherei": 3
   },
   "sources_failed": [],
-  "data_hash": "50955a326a8767d4",
+  "data_hash": "a412d3892f13ae45",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 08.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 09.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
+    "kornwestheim": 1.0,
     "das_k_spielplan": 1.0,
     "das_k_buecherei": 1.0
   },
   "source_event_counts": {
-    "das_k_spielplan": 33,
-    "das_k_buecherei": 5
+    "kornwestheim": 186,
+    "das_k_spielplan": 18,
+    "das_k_buecherei": 3
   },
-  "count_drift_warnings": {},
+  "count_drift_warnings": {
+    "das_k_buecherei": "Count drift: 3 vs historical avg 5"
+  },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 535.8,
-    "runtime_delta_vs_baseline": 1.993,
+    "runtime_minutes": 566.1,
+    "runtime_delta_vs_baseline": 2.163,
     "source_health": {
+      "kornwestheim": 1.0,
       "das_k_spielplan": 1.0,
       "das_k_buecherei": 1.0
     },
-    "count_drift_warnings": {},
+    "count_drift_warnings": {
+      "das_k_buecherei": "Count drift: 3 vs historical avg 5"
+    },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-08T11:09:11.736497+01:00"
+    "generated_at": "2026-11-09T11:39:24.617862+01:00"
   }
 }

@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-11-09T06:00:01.626977+01:00",
-  "event_count": 2,
+  "generated_at": "2026-11-09T08:17:02.608714+01:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -26,7 +26,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-08T02:07:21.670581+01:00",
+      "scraped_at": "2026-11-09T02:07:18.517626+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -58,7 +58,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-08T02:07:21.670747+01:00",
+      "scraped_at": "2026-11-09T02:07:18.517785+01:00",
       "extraction_confidence": 0.75,
       "is_new": false,
       "is_booked_out": false,
@@ -66,6 +66,36 @@
       "editorial_tip": null,
       "source_label": "Gemeinde Eberdingen",
       "canonical_url": "https://www.rausgucken.de/eberdingen/events/hochdorfer-weihnachtsdoerfle-2026-12-10-eber"
+    },
+    {
+      "id": "e7dcc80bf786dc97",
+      "title": "Faschingsbar",
+      "date_start": "2027-01-30",
+      "date_end": null,
+      "time": "20:00",
+      "description": "In der Foyer Gemeindehalle Hochdorf findet eine Faschingsbar für alle Altergruppen statt. Entspannen und feiern Sie in familienfreundlicher Umgebung mit Musik und Getränken. Veranstaltet vom TSV Hochdorf/Enz.",
+      "location": "Foyer Gemeindehalle Hochdorf",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie",
+        "Musik"
+      ],
+      "link": "https://www.eberdingen.de/eventcalendar",
+      "original_url": "https://www.eberdingen.de/eventcalendar",
+      "source": "eberdingen_veranstaltungen",
+      "city": "eberdingen",
+      "slug": "faschingsbar-2027-01-30t200000-europeberlin-eber",
+      "weekdays": [],
+      "scraped_at": "2026-11-09T02:07:18.518006+01:00",
+      "extraction_confidence": 0.8,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Eberdingen",
+      "canonical_url": "https://www.rausgucken.de/eberdingen/events/faschingsbar-2027-01-30t200000-europeberlin-eber"
     }
   ]
 }

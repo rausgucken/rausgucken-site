@@ -1,7 +1,7 @@
 {
   "subset": "today",
-  "generated_at": "2026-11-09T06:00:01.593580+01:00",
-  "event_count": 2,
+  "generated_at": "2026-11-09T06:48:39.814536+01:00",
+  "event_count": 3,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -27,7 +27,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-11-08T02:00:18.835643+01:00",
+      "scraped_at": "2026-11-09T02:00:18.035807+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -56,14 +56,46 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-11-08T02:00:21.227815+01:00",
+      "scraped_at": "2026-11-09T02:00:18.662421+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Bietigheim-Bissingen",
       "canonical_url": "https://www.rausgucken.de/bietigheim/events/buergergespraech-untermberg-2026-11-09-biet"
+    },
+    {
+      "id": "dcbeab305eec6701",
+      "title": "Führung exklusiv für Lehrkräfte und Erzieher*innen durch die Ausstellung »Karl Hofer – Zwischen Schönheit und Wahrheit«",
+      "date_start": "2026-11-09",
+      "date_end": "2026-11-09",
+      "time": "17:00",
+      "description": "In dieser exklusiven Führung durch die Ausstellung „Karl Hofer – Zwischen Schönheit und Wahrheit“ erhalten Lehrkräfte und Erzieher*innen Einblicke in das Werk des Malers.",
+      "location": null,
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Ausstellung"
+      ],
+      "link": "https://galerie.bietigheim-bissingen.de/veranstaltungen/kalendarium/",
+      "original_url": "https://galerie.bietigheim-bissingen.de/veranstaltungen/kalendarium/",
+      "source": "bietigheim_galerie",
+      "city": "bietigheim",
+      "slug": "fuehrung-exklusiv-fuer-lehrkraefte-und-erzieherinnen-durch-die-ausstellung-karl-hofer",
+      "weekdays": [
+        1
+      ],
+      "scraped_at": "2026-11-09T02:04:49.355207+01:00",
+      "extraction_confidence": 0.65,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Städtische Galerie Bietigheim-Bissingen",
+      "canonical_url": "https://www.rausgucken.de/bietigheim/events/fuehrung-exklusiv-fuer-lehrkraefte-und-erzieherinnen-durch-die-ausstellung-karl-hofer"
     }
   ]
 }

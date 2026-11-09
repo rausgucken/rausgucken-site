@@ -1,12 +1,68 @@
 {
-  "generated_at": "2026-11-08T07:47:28.606250+01:00",
+  "generated_at": "2026-11-09T08:24:17.827610+01:00",
   "city": "hessigheim",
   "sources": [
     "hessigheim_gemeinde"
   ],
-  "previous_run": "2026-11-07T07:57:08.117928+01:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-11-08T07:47:28.682974+01:00",
+  "count_added": 4,
+  "count_removed": 5,
+  "added": [
+    {
+      "id": "400ef0c16c4ea3ad",
+      "title": "Gottesdienst Volkstrauertag",
+      "date_start": "2026-11-15",
+      "source": "hessigheim_gemeinde"
+    },
+    {
+      "id": "95af9a7fd3a438f9",
+      "title": "Jugendgottesdienst",
+      "date_start": "2026-11-21",
+      "source": "hessigheim_gemeinde"
+    },
+    {
+      "id": "b8178940f959a13b",
+      "title": "Weihnachtsmarkt",
+      "date_start": "2026-12-05",
+      "source": "hessigheim_gemeinde"
+    },
+    {
+      "id": "1df4dfe165412f4a",
+      "title": "KIKI-Weihnachtsfeier",
+      "date_start": "2026-12-20",
+      "source": "hessigheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "def4182fe2aefadc",
+      "title": "Rauchfleischschießen",
+      "date_start": "2026-11-08",
+      "source": "hessigheim_gemeinde"
+    },
+    {
+      "id": "f13a0705361fab2d",
+      "title": "Gottesdienst Volkstrauertag",
+      "date_start": "2026-11-15",
+      "source": "hessigheim_gemeinde"
+    },
+    {
+      "id": "983753fc53398e49",
+      "title": "Jugendgottesdienst",
+      "date_start": "2026-11-21",
+      "source": "hessigheim_gemeinde"
+    },
+    {
+      "id": "6ac727175358e38b",
+      "title": "Weihnachtsmarkt",
+      "date_start": "2026-12-05",
+      "source": "hessigheim_gemeinde"
+    },
+    {
+      "id": "2d42ca4ac85b5bee",
+      "title": "KIKI-Weihnachtsfeier",
+      "date_start": "2026-12-20",
+      "source": "hessigheim_gemeinde"
+    }
+  ]
 }
