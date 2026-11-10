@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-09T11:09:18.895303+01:00",
+  "generated_at": "2026-11-10T11:44:01.595518+01:00",
   "city": "asperg",
   "sources": [
     "glasperlenspiel",
-    "asperg_veranstaltungen",
-    "asperg_fuehrungen"
+    "asperg_fuehrungen",
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-11-08T10:55:46.287933+01:00",
-  "count_added": 25,
-  "count_removed": 4,
+  "previous_run": "2026-11-09T11:09:18.972954+01:00",
+  "count_added": 38,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -149,42 +149,95 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "58ac8249e0e68390",
+      "title": "Geschichte entdecken",
+      "date_start": "2026-11-08",
+      "source": "asperg_fuehrungen"
+    },
+    {
       "id": "cb7d4d5e64cac6fd",
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
     },
     {
-      "id": "58ac8249e0e68390",
-      "title": "Geschichte entdecken",
-      "date_start": "2026-11-08",
-      "source": "asperg_fuehrungen"
-    }
-  ],
-  "removed": [
-    {
-      "id": "e8afc68db9e215fb",
-      "title": "Geschichte entdecken - Führung auf dem Hohenasperg",
-      "date_start": "2026-11-08",
+      "id": "65aa56913cfd2592",
+      "title": "Wochenmarkt",
+      "date_start": "2027-01-09",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "e14c1e5fcd32a037",
-      "title": "Führung Black stories – Aspergs dunkle Seite",
-      "date_start": "2026-11-08",
+      "id": "9f02a4b36e857074",
+      "title": "Wochenmarkt",
+      "date_start": "2027-01-16",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "c7bd7e8ff5af3c18",
-      "title": "Infotainment - Sascha Vogel: Physik in Hollywood II",
-      "date_start": "2026-11-08",
+      "id": "051887f83f9e430c",
+      "title": "Wochenmarkt",
+      "date_start": "2027-01-23",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "ed3935ab415a98c5",
+      "id": "35794e01abf64070",
+      "title": "Wochenmarkt",
+      "date_start": "2027-01-30",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "e61fa59af2f8ee29",
+      "title": "Wochenmarkt",
+      "date_start": "2027-02-06",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "4d05b02f2e7ea3b8",
+      "title": "Wochenmarkt",
+      "date_start": "2027-02-13",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "e25f623b0bb9e239",
+      "title": "Wochenmarkt",
+      "date_start": "2027-02-20",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "7fa396967b1aab3f",
+      "title": "Wochenmarkt",
+      "date_start": "2027-02-27",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "cc30529666ef01b1",
+      "title": "Wochenmarkt",
+      "date_start": "2027-03-06",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "22665aded51f5db5",
+      "title": "Wochenmarkt",
+      "date_start": "2027-03-13",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "5218b1f76ad0f5ea",
+      "title": "Wochenmarkt",
+      "date_start": "2027-03-20",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "d24ad66542988baa",
+      "title": "Wochenmarkt",
+      "date_start": "2027-03-27",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "daa822c7ef49f599",
       "title": "Physik in Hollywood II",
-      "date_start": "2026-11-08",
+      "date_start": "2027-11-08",
       "source": "glasperlenspiel"
     }
-  ]
+  ],
+  "removed": []
 }
