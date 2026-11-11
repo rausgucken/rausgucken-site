@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-11-10T12:15:13.622624+01:00",
+  "scraped_at": "2026-11-11T12:29:30.766114+01:00",
   "city": "ludwigsburg",
-  "event_count": 595,
+  "event_count": 604,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -21,25 +21,25 @@
     "stabi"
   ],
   "source_counts": {
-    "ludwigsburg_stadt": 43,
+    "ludwigsburg_stadt": 44,
     "kunstverein_ausstellungen": 2,
-    "museum": 46,
+    "museum": 47,
     "blueba": 2,
     "schloss": 66,
-    "stabi": 139,
     "karlskaserne_veranstaltungen": 105,
+    "stabi": 149,
     "garnisonmuseum": 4,
-    "kunstverein_veranstaltungen": 3,
     "demokratisches_zentrum": 2,
-    "musikhalle_lb": 44,
     "labyrinth": 91,
     "forum_schlosspark": 46,
-    "lisbert_queer": 2
+    "musikhalle_lb": 43,
+    "lisbert_queer": 2,
+    "kunstverein_veranstaltungen": 1
   },
   "sources_failed": [],
-  "data_hash": "36169de4a46e2dd5",
+  "data_hash": "17587e18ed7c5d40",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 10.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 11.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "ludwigsburg_stadt": 1.0,
@@ -47,63 +47,63 @@
     "museum": 1.0,
     "blueba": 0.76,
     "schloss": 1.0,
-    "stabi": 1.0,
     "karlskaserne_veranstaltungen": 1.0,
+    "stabi": 1.0,
     "garnisonmuseum": 1.0,
-    "kunstverein_veranstaltungen": 1.0,
     "demokratisches_zentrum": 0.95,
-    "musikhalle_lb": 1.0,
     "labyrinth": 1.0,
     "forum_schlosspark": 1.0,
-    "lisbert_queer": 1.0
+    "musikhalle_lb": 1.0,
+    "lisbert_queer": 1.0,
+    "kunstverein_veranstaltungen": 1.0
   },
   "source_event_counts": {
-    "ludwigsburg_stadt": 43,
+    "ludwigsburg_stadt": 44,
     "kunstverein_ausstellungen": 2,
-    "museum": 46,
+    "museum": 47,
     "blueba": 2,
     "schloss": 66,
-    "stabi": 139,
     "karlskaserne_veranstaltungen": 105,
+    "stabi": 149,
     "garnisonmuseum": 4,
-    "kunstverein_veranstaltungen": 3,
     "demokratisches_zentrum": 2,
-    "musikhalle_lb": 44,
     "labyrinth": 91,
     "forum_schlosspark": 46,
-    "lisbert_queer": 2
+    "musikhalle_lb": 43,
+    "lisbert_queer": 2,
+    "kunstverein_veranstaltungen": 1
   },
   "count_drift_warnings": {
-    "demokratisches_zentrum": "Count drift: 2 vs historical avg 3"
+    "kunstverein_veranstaltungen": "Count drift: 1 vs historical avg 3"
   },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 615.2,
-    "runtime_delta_vs_baseline": 2.437,
+    "runtime_minutes": 629.5,
+    "runtime_delta_vs_baseline": 2.517,
     "source_health": {
       "ludwigsburg_stadt": 1.0,
       "kunstverein_ausstellungen": 1.0,
       "museum": 1.0,
       "blueba": 0.76,
       "schloss": 1.0,
-      "stabi": 1.0,
       "karlskaserne_veranstaltungen": 1.0,
+      "stabi": 1.0,
       "garnisonmuseum": 1.0,
-      "kunstverein_veranstaltungen": 1.0,
       "demokratisches_zentrum": 0.95,
-      "musikhalle_lb": 1.0,
       "labyrinth": 1.0,
       "forum_schlosspark": 1.0,
-      "lisbert_queer": 1.0
+      "musikhalle_lb": 1.0,
+      "lisbert_queer": 1.0,
+      "kunstverein_veranstaltungen": 1.0
     },
     "count_drift_warnings": {
-      "demokratisches_zentrum": "Count drift: 2 vs historical avg 3"
+      "kunstverein_veranstaltungen": "Count drift: 1 vs historical avg 3"
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-10T12:28:27.047633+01:00"
+    "generated_at": "2026-11-11T12:42:47.082569+01:00"
   }
 }

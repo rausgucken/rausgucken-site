@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-11-10T08:17:06.500780+01:00",
+  "generated_at": "2026-11-11T09:09:50.310065+01:00",
   "city": "loechgau",
   "sources": [
     "loechgau_gemeinde"
   ],
-  "previous_run": "2026-11-09T08:18:57.171747+01:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-11-10T08:17:06.577494+01:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "a8bc30ac84f55d72",
+      "title": "Tanzfestival",
+      "date_start": "2026-11-14",
+      "source": "loechgau_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "7571a5a8e87f7236",
+      "title": "Tanzfestival",
+      "date_start": "2026-11-13",
+      "source": "loechgau_gemeinde"
+    }
+  ]
 }
