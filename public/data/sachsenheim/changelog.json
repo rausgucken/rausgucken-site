@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-11T05:26:23.882127+01:00",
+  "generated_at": "2026-11-12T05:56:58.029545+01:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-11-10T05:47:36.052020+01:00",
-  "count_added": 7,
-  "count_removed": 0,
+  "previous_run": "2026-11-11T05:26:23.959208+01:00",
+  "count_added": 9,
+  "count_removed": 1,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -50,7 +50,26 @@
       "title": "Offener Gesprächskreis Demenz",
       "date_start": "2026-11-03",
       "source": "sachsenheim_library"
+    },
+    {
+      "id": "fca1a255c2b03189",
+      "title": "KleinstadtQueers",
+      "date_start": "2026-11-28",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "6d39b535ef2ed4ef",
+      "title": "Offener Gesprächskreis Demenz",
+      "date_start": "2026-12-01",
+      "source": "sachsenheim_library"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "9454c57d7bb2621a",
+      "title": "Vortragsreihe „Leben mit Sehbehinderung“",
+      "date_start": "2026-11-11",
+      "source": "sachsenheim_kultur"
+    }
+  ]
 }

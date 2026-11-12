@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-11-11T12:08:54.804578+01:00",
+  "scraped_at": "2026-11-12T11:06:20.162524+01:00",
   "city": "asperg",
-  "event_count": 126,
+  "event_count": 128,
   "flagged_count": 0,
   "expired_count": 25,
   "sources_scraped": [
@@ -10,14 +10,14 @@
     "glasperlenspiel"
   ],
   "source_counts": {
-    "asperg_veranstaltungen": 91,
-    "glasperlenspiel": 34,
+    "asperg_veranstaltungen": 92,
+    "glasperlenspiel": 35,
     "asperg_fuehrungen": 1
   },
   "sources_failed": [],
-  "data_hash": "50ba21fc501053e8",
+  "data_hash": "91b7783cff807ed2",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 11.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 12.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "asperg_veranstaltungen": 1.0,
@@ -25,8 +25,8 @@
     "asperg_fuehrungen": 0.62
   },
   "source_event_counts": {
-    "asperg_veranstaltungen": 91,
-    "glasperlenspiel": 34,
+    "asperg_veranstaltungen": 92,
+    "glasperlenspiel": 35,
     "asperg_fuehrungen": 1
   },
   "count_drift_warnings": {},
@@ -35,8 +35,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 629.5,
-    "runtime_delta_vs_baseline": 2.517,
+    "runtime_minutes": 592.1,
+    "runtime_delta_vs_baseline": 2.308,
     "source_health": {
       "asperg_veranstaltungen": 1.0,
       "glasperlenspiel": 0.93,
@@ -45,6 +45,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "critical",
-    "generated_at": "2026-11-11T12:42:45.455177+01:00"
+    "generated_at": "2026-11-12T12:05:19.322771+01:00"
   }
 }
