@@ -1,6 +1,6 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-11-11T06:08:41.406835+01:00",
+  "generated_at": "2026-11-12T06:00:02.448257+01:00",
   "event_count": 19,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
@@ -27,7 +27,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-11T02:00:45.959684+01:00",
+      "scraped_at": "2026-11-12T02:00:34.863153+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -59,7 +59,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-11T02:04:30.684000+01:00",
+      "scraped_at": "2026-11-12T02:02:49.806531+01:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -91,7 +91,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-11-11T02:00:47.697261+01:00",
+      "scraped_at": "2026-11-12T02:00:35.460623+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -123,7 +123,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-11T02:00:49.434431+01:00",
+      "scraped_at": "2026-11-12T02:00:36.063366+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -155,7 +155,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-11T02:04:30.684084+01:00",
+      "scraped_at": "2026-11-12T02:02:49.806615+01:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -184,7 +184,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-11T02:00:50.049683+01:00",
+      "scraped_at": "2026-11-12T02:00:36.681402+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -213,7 +213,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-11T02:00:51.895838+01:00",
+      "scraped_at": "2026-11-12T02:00:37.289225+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -245,9 +245,9 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-11T02:00:52.520790+01:00",
+      "scraped_at": "2026-11-12T02:00:37.900655+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -255,33 +255,36 @@
       "canonical_url": "https://www.rausgucken.de/bietigheim/events/ausgebucht---buch-auf-augen-auf---hier-wird-vorgelesen-2026-11-20-biet"
     },
     {
-      "id": "4b7cd52dd2b95c98",
-      "title": "Bilderbuchkino",
+      "id": "f6c2bfcf9e6128af",
+      "title": "AUSGEBUCHT - Bilderbuchkino",
       "date_start": "2026-11-20",
       "date_end": null,
       "time": "16:00",
-      "description": "Lesepatin Kornelia Herden liest das Bilderbuchkino „Herr Elch und sein Bücherbus“. In dieser Geschichte baut Herr Elch einen Bus zu einem Bücherbus um, um Geschichten für das Dorf zu erzählen.",
+      "description": "Lesepatin Kornelia Herden liest das Bilderbuchkino „Herr Elch und sein Bücherbus“ an der Otto-Rombach-Bücherei. Geschichten um/books about einladendes Lesen für Kinder zwischen 5 und 7 Jahren.",
       "location": "Otto-Rombach-BüchereiHauptstr. 19",
       "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [],
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
       "link": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-bilderbuchkino-1/",
       "original_url": "https://www.bietigheim-bissingen.de/veranstaltungen/detailansicht/detail-bilderbuchkino-1/",
       "source": "bietigheim",
       "city": "bietigheim",
-      "slug": "bilderbuchkino-2026-11-20-biet",
+      "slug": "ausgebucht---bilderbuchkino-2026-11-20-biet",
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-11T02:00:54.316003+01:00",
+      "scraped_at": "2026-11-12T02:00:38.515730+01:00",
       "extraction_confidence": 1.0,
-      "is_new": false,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Bietigheim-Bissingen",
-      "canonical_url": "https://www.rausgucken.de/bietigheim/events/bilderbuchkino-2026-11-20-biet"
+      "canonical_url": "https://www.rausgucken.de/bietigheim/events/ausgebucht---bilderbuchkino-2026-11-20-biet"
     },
     {
       "id": "4043660fef5cc894",
@@ -305,7 +308,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-11T02:00:54.971051+01:00",
+      "scraped_at": "2026-11-12T02:00:39.120149+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -336,7 +339,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-11T02:00:55.578412+01:00",
+      "scraped_at": "2026-11-12T02:00:39.743002+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -365,7 +368,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-11T02:00:57.390824+01:00",
+      "scraped_at": "2026-11-12T02:00:40.332497+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -394,7 +397,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-11T02:00:59.114762+01:00",
+      "scraped_at": "2026-11-12T02:00:40.924125+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -425,7 +428,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-11T02:00:59.715186+01:00",
+      "scraped_at": "2026-11-12T02:00:41.538589+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -456,7 +459,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-11T02:01:01.469274+01:00",
+      "scraped_at": "2026-11-12T02:00:42.131976+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -487,7 +490,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-11T02:01:02.111358+01:00",
+      "scraped_at": "2026-11-12T02:00:42.728104+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -518,7 +521,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-11T02:01:02.747366+01:00",
+      "scraped_at": "2026-11-12T02:00:43.327068+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -550,7 +553,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-11T02:01:04.604195+01:00",
+      "scraped_at": "2026-11-12T02:00:43.919940+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -582,7 +585,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-11T02:04:30.684160+01:00",
+      "scraped_at": "2026-11-12T02:02:49.806695+01:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
