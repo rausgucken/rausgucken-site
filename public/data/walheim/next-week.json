@@ -1,7 +1,7 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-11-13T06:00:02.235394+01:00",
-  "event_count": 1,
+  "generated_at": "2026-11-13T11:00:59.020027+01:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -24,7 +24,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-12T02:10:18.288180+01:00",
+      "scraped_at": "2026-11-13T02:08:47.544935+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -32,6 +32,38 @@
       "editorial_tip": null,
       "source_label": "Gemeinde Walheim",
       "canonical_url": "https://www.rausgucken.de/walheim/events/gemeinderatssitzung-2026-11-19-walh"
+    },
+    {
+      "id": "e27ef2d4e4349b62",
+      "title": "Bücherwichtel-Club",
+      "date_start": "2026-11-20",
+      "date_end": null,
+      "time": "15:15 - 15:45",
+      "description": "In der Gemeindebücherei Walheim findet ein Bücherwichtel-Club statt, an dem Spiel- und Klanggeschichten für Kinder im Alter von 2 bis 5 Jahren vorgelesen werden.",
+      "location": "Gemeindebücherei Walheim",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://www.walheim.de/erleben-besuchen/veranstaltungskalender/419/buecherwichtel-club",
+      "original_url": "https://www.walheim.de/erleben-besuchen/veranstaltungskalender/419/buecherwichtel-club",
+      "source": "walheim_gemeinde",
+      "city": "walheim",
+      "slug": "buecherwichtel-club-2026-11-20-walh",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-11-13T02:08:49.765092+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Walheim",
+      "canonical_url": "https://www.rausgucken.de/walheim/events/buecherwichtel-club-2026-11-20-walh"
     }
   ]
 }

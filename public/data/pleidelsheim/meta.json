@@ -1,25 +1,25 @@
 {
-  "scraped_at": "2026-11-12T08:40:42.371973+01:00",
+  "scraped_at": "2026-11-13T11:01:10.314977+01:00",
   "city": "pleidelsheim",
-  "event_count": 135,
+  "event_count": 134,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "pleidelsheim"
   ],
   "source_counts": {
-    "pleidelsheim": 135
+    "pleidelsheim": 134
   },
   "sources_failed": [],
-  "data_hash": "073148a295259030",
+  "data_hash": "2ecba973e702ad6f",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 12.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 13.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "pleidelsheim": 1.0
   },
   "source_event_counts": {
-    "pleidelsheim": 135
+    "pleidelsheim": 134
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -27,14 +27,14 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 592.1,
-    "runtime_delta_vs_baseline": 2.308,
+    "runtime_minutes": 729.3,
+    "runtime_delta_vs_baseline": 3.074,
     "source_health": {
       "pleidelsheim": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-12T12:05:21.587318+01:00"
+    "generated_at": "2026-11-13T14:22:32.656245+01:00"
   }
 }

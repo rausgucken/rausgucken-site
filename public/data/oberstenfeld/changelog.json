@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-12T07:47:31.229738+01:00",
+  "generated_at": "2026-11-13T07:41:03.345604+01:00",
   "city": "oberstenfeld",
   "sources": [
     "oberstenfeld_veranstaltungen"
   ],
-  "previous_run": "2026-11-11T08:46:12.980910+01:00",
-  "count_added": 56,
-  "count_removed": 0,
+  "previous_run": "2026-11-12T07:47:31.308866+01:00",
+  "count_added": 53,
+  "count_removed": 1,
   "added": [
     {
       "id": "60dcaf202491b251",
@@ -99,12 +99,6 @@
       "source": "oberstenfeld_veranstaltungen"
     },
     {
-      "id": "ebb213915629136b",
-      "title": "Spiel-Strick und Schwatznachmittag",
-      "date_start": "2026-01-22",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
       "id": "9213233f6a473681",
       "title": "Frauentreff",
       "date_start": "2026-01-27",
@@ -138,12 +132,6 @@
       "id": "3f49a0cf02e8130a",
       "title": "Suppentöpfle",
       "date_start": "2026-03-10",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
-      "id": "d038fabcbc4252cd",
-      "title": "Spiel-Strick und Schwatznachmittag",
-      "date_start": "2026-03-12",
       "source": "oberstenfeld_veranstaltungen"
     },
     {
@@ -315,12 +303,6 @@
       "source": "oberstenfeld_veranstaltungen"
     },
     {
-      "id": "c961739ceffa07c5",
-      "title": "Spiel-Strick und Schwatznachmittag",
-      "date_start": "2026-10-15",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
       "id": "1049be55496986d9",
       "title": "Seniorennachmittag",
       "date_start": "2026-10-15",
@@ -345,5 +327,12 @@
       "source": "oberstenfeld_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "9c56e3f4996172d3",
+      "title": "Spiel-Strick und Schwatznachmittag",
+      "date_start": "2026-11-12",
+      "source": "oberstenfeld_veranstaltungen"
+    }
+  ]
 }
