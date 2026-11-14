@@ -1,13 +1,26 @@
 {
-  "generated_at": "2026-11-13T05:13:19.155877+01:00",
+  "generated_at": "2026-11-14T05:13:22.645764+01:00",
   "city": "remseck",
   "sources": [
     "remseck_mediathek",
     "remseck_stadt"
   ],
-  "previous_run": "2026-11-12T05:15:09.940577+01:00",
+  "previous_run": "2026-11-13T05:13:19.229925+01:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "a5b667b441489298",
+      "title": "Game Day",
+      "date_start": "2026-11-13",
+      "source": "remseck_mediathek"
+    },
+    {
+      "id": "65e1b7362169ab90",
+      "title": "Joint Five \"A-Cappella und ein Hauch von Kässpätzle\"",
+      "date_start": "2026-11-13",
+      "source": "remseck_stadt"
+    }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-11-14T06:00:02.089653+01:00",
-  "event_count": 3,
+  "generated_at": "2026-11-14T06:05:53.855654+01:00",
+  "event_count": 4,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -10,7 +10,7 @@
       "date_start": "2026-11-14",
       "date_end": null,
       "time": "19:30 - 01:00",
-      "description": "In dieser Saunanacht können Sie von 19:30 Uhr bis 1:00 Uhr in Sachsenheim entspannen. Die Sauna auf Oberriexinger Straße 45 wartet mit einem wohltuenden Heilbad erfahrung auf.",
+      "description": "In dieser Saunanacht können Sie von 19:30 Uhr bis 1:00 Uhr in der Sauna Oberriexinger Straße 45 entspannen. Der Veranstaltungsort bietet einen Wickeltisch und öffentliche Toiletten (Rollstuhlgerecht).",
       "location": "Sauna Oberriexinger Straße 45, 74343 Sachsenheim",
       "price": null,
       "age_min": null,
@@ -24,7 +24,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-13T02:02:15.676506+01:00",
+      "scraped_at": "2026-11-14T02:02:26.007940+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -34,34 +34,61 @@
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/lange-saunanacht-2026-11-14-sach"
     },
     {
-      "id": "b9124ca4b484a6ad",
-      "title": "Klezmer-Abend",
+      "id": "cfcc978a573b0592",
+      "title": "Klezmer-Abend mit Pankraz",
       "date_start": "2026-11-14",
       "date_end": null,
       "time": "19:30 - 22:00",
-      "description": "In diesem Klezmer-Abend vermitteln Musik und Lieder aus eigener Feder sowie Vertonungen von Dichtern Thomas Brasch und Theodor Kramer musikalische Bilder und Geschichten. Auf Deutsch und Jiddisch ohne übertriebene Elemente füllen sich die Räume des Schmid's Domino in Sachsenheim mit einzigartiger Klangfarben.",
+      "description": "In diesem Klezmer-Abend mit Pankraz wird Musikalische Bilder und Geschichten aus eigener Feder oder Vertonungen von Dichtern Thomas Brasch und Theodor Kramer vorgeführt. Lieder auf Deutsch und Jiddisch spiegeln tägliche Lebenssituationen wider, ohne übertriebene Emotionen oder exotische Elemente zu verwenden.",
       "location": "Schmid's Domino, Max-Eyth-Straße 2, 74343 Sachsenheim",
       "price": "18 € / 20 €",
       "age_min": null,
       "age_max": null,
-      "tags": [
-        "Musik"
-      ],
+      "tags": [],
       "link": "https://www.sachsenheim.de/termin/Pankraz-Klezmer-Abend-event-appointment5140",
       "original_url": "https://www.sachsenheim.de/termin/Pankraz-Klezmer-Abend-event-appointment5140",
       "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "klezmer-abend-mit-pankraz-2026-11-14-sach",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-14T02:02:25.166288+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/klezmer-abend-mit-pankraz-2026-11-14-sach"
+    },
+    {
+      "id": "67535278dc6e4d99",
+      "title": "Klezmer-Abend",
+      "date_start": "2026-11-14",
+      "date_end": null,
+      "time": "19:30 - 22:00",
+      "description": "In diesem Klezmer-Abend vermitteln die Musiker Pankraz musikalische Bilder und Geschichten aus eigener Feder sowie Vertonungen von Dichtern Thomas Brasch und Theodor Kramer. Lieder auf Deutsch und Jiddisch spiegeln einfache, authentische Emotionen wider.",
+      "location": "Schmid's Domino, Max-Eyth-Straße 2, 74343 Sachsenheim",
+      "price": "18 € / 20 €",
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.sachsenheim.de/termin/Pankraz-Klezmer-Abend-event-appointment5140",
+      "original_url": "https://www.sachsenheim.de/termin/Pankraz-Klezmer-Abend-event-appointment5140",
+      "source": "sachsenheim_library",
       "city": "sachsenheim",
       "slug": "klezmer-abend-2026-11-14-sach",
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-13T02:02:14.723603+01:00",
+      "scraped_at": "2026-11-14T02:02:46.333604+01:00",
       "extraction_confidence": 1.0,
-      "is_new": false,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "source_label": "Stadtbücherei Sachsenheim",
       "canonical_url": "https://www.rausgucken.de/sachsenheim/events/klezmer-abend-2026-11-14-sach"
     },
     {
@@ -84,7 +111,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-13T02:02:16.653743+01:00",
+      "scraped_at": "2026-11-14T02:02:26.822504+01:00",
       "extraction_confidence": 0.7,
       "is_new": false,
       "is_booked_out": false,
