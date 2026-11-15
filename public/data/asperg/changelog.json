@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-14T12:03:09.523177+01:00",
+  "generated_at": "2026-11-15T11:22:16.998116+01:00",
   "city": "asperg",
   "sources": [
-    "glasperlenspiel",
+    "asperg_fuehrungen",
     "asperg_veranstaltungen",
-    "asperg_fuehrungen"
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-11-13T13:30:57.991508+01:00",
-  "count_added": 26,
-  "count_removed": 0,
+  "previous_run": "2026-11-14T12:03:09.599417+01:00",
+  "count_added": 25,
+  "count_removed": 4,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -159,13 +159,32 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "0d867c5cfd7ebc47",
-      "title": "Auftaktveranstaltung zum Programm Macherstadt",
-      "date_start": "2026-11-23",
-      "source": "asperg_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "4fc8e9fd84749e82",
+      "title": "Wochenmarkt",
+      "date_start": "2026-11-14",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "f6b3c3633c5617ae",
+      "title": "Bilderbuchkino",
+      "date_start": "2026-11-14",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "a5c80c408ed7bc88",
+      "title": "Ökumenischer St. Martin Gottesdienst mit Umzug und Spiel",
+      "date_start": "2026-11-14",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "4c9331d1584b8e31",
+      "title": "Der kleine, aber feine Künstlermarkt",
+      "date_start": "2026-11-14",
+      "source": "glasperlenspiel"
+    }
+  ]
 }

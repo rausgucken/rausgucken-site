@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-14T06:05:53.699833+01:00",
+  "generated_at": "2026-11-15T05:59:38.124457+01:00",
   "city": "sachsenheim",
   "sources": [
     "sachsenheim_library",
     "sachsenheim_kultur"
   ],
-  "previous_run": "2026-11-13T05:55:39.234099+01:00",
-  "count_added": 11,
+  "previous_run": "2026-11-14T06:05:53.776513+01:00",
+  "count_added": 9,
   "count_removed": 3,
   "added": [
     {
@@ -52,21 +52,29 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "cfcc978a573b0592",
-      "title": "Klezmer-Abend mit Pankraz",
+      "id": "36411b7248c8b08f",
+      "title": "Informationsveranstaltung: Wärmepumpen im Altbau",
+      "date_start": "2026-12-09",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "1590969879511beb",
+      "title": "Geselliges Beisammensein mit erheiternden Geschichten von Doris Rau",
+      "date_start": "2026-12-11",
+      "source": "sachsenheim_kultur"
+    }
+  ],
+  "removed": [
+    {
+      "id": "d191414df73c3e21",
+      "title": "Lange Saunanacht",
       "date_start": "2026-11-14",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "494364333ddce3b6",
-      "title": "Advent in den Weinbergen",
-      "date_start": "2026-12-04",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "7fcb96c6a8dec1fc",
-      "title": "Sachsenheimer Weihnachtsmarkt",
-      "date_start": "2026-12-06",
+      "id": "cfcc978a573b0592",
+      "title": "Klezmer-Abend mit Pankraz",
+      "date_start": "2026-11-14",
       "source": "sachsenheim_kultur"
     },
     {
@@ -74,26 +82,6 @@
       "title": "Klezmer-Abend",
       "date_start": "2026-11-14",
       "source": "sachsenheim_library"
-    }
-  ],
-  "removed": [
-    {
-      "id": "c6741b0da8d17097",
-      "title": "Geschichte(n) aus unserem Land",
-      "date_start": "2026-11-13",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "7e66a64187633726",
-      "title": "Richtig lecker! Weinprobe",
-      "date_start": "2026-11-13",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "b9124ca4b484a6ad",
-      "title": "Klezmer-Abend",
-      "date_start": "2026-11-14",
-      "source": "sachsenheim_kultur"
     }
   ]
 }
