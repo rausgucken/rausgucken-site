@@ -1,37 +1,68 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-11-15T08:06:08.128655+01:00",
-  "event_count": 1,
+  "generated_at": "2026-11-16T06:00:01.477327+01:00",
+  "event_count": 2,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "09a5821a0477db71",
-      "title": "Gedenkfeier zum Volkstrauertag",
-      "date_start": "2026-11-15",
-      "date_end": "2026-11-15",
-      "time": "11:15 - 11:15",
-      "description": "In der Gedenkfeier am Friedhof werden Opfer des Zweiten Weltkriegs angesprochen. Ein ehrenwerter Moment des Nachdenkens und der Erinnerung findet statt.",
-      "location": "Friedhof",
+      "id": "b5a25de0fdbba133",
+      "title": "Jugendgottesdienst Kath. Kirche",
+      "date_start": "2026-11-21",
+      "date_end": "2026-11-21",
+      "time": "18:00 - 18:00",
+      "description": "Jugendliche sind eingeladen, am Gottesdienst in der Heilig-Kreuz-Kirche in Besigheim teilzunehmen.",
+      "location": "Besigheim, Heilig-Kreuz-Kirche",
       "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [],
-      "link": "https://freudental.de/event/gedenkfeier-zum-volkstrauertag/",
-      "original_url": "https://freudental.de/event/gedenkfeier-zum-volkstrauertag/",
+      "age_min": 12,
+      "age_max": 18,
+      "tags": [
+        "Kinder"
+      ],
+      "link": "https://freudental.de/event/jugendgottesdienst-kath-kirche/",
+      "original_url": "https://freudental.de/event/jugendgottesdienst-kath-kirche/",
       "source": "freudental_gemeinde",
       "city": "freudental",
-      "slug": "gedenkfeier-zum-volkstrauertag-2026-11-15-freu",
+      "slug": "jugendgottesdienst-kath-kirche-2026-11-21-freu",
       "weekdays": [
-        0
+        6
       ],
-      "scraped_at": "2026-11-15T02:09:32.128527+01:00",
+      "scraped_at": "2026-11-15T02:09:32.128878+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Freudental",
-      "canonical_url": "https://www.rausgucken.de/freudental/events/gedenkfeier-zum-volkstrauertag-2026-11-15-freu"
+      "canonical_url": "https://www.rausgucken.de/freudental/events/jugendgottesdienst-kath-kirche-2026-11-21-freu"
+    },
+    {
+      "id": "c22a7ab0c21cc8cb",
+      "title": "Film „Freudental“ von Thomas Lahusen (Freudentaler Nachfahre)",
+      "date_start": "2026-11-22",
+      "date_end": "2026-11-22",
+      "time": "17:00 - 17:00",
+      "description": "Ein Filmabend im PKC Freudental präsentiert \"Freudental\", ein Werk des Freudentaler Nachfahren Thomas Lahusen.",
+      "location": "PKC Freudental",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://freudental.de/event/film-freudental-von-thomas-lahusen-freudentaler-nachfahre/",
+      "original_url": "https://freudental.de/event/film-freudental-von-thomas-lahusen-freudentaler-nachfahre/",
+      "source": "freudental_gemeinde",
+      "city": "freudental",
+      "slug": "film-freudental-von-thomas-lahusen-freudentaler-nachfahre-2026-11-22-freu",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-11-15T02:09:32.128903+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Freudental",
+      "canonical_url": "https://www.rausgucken.de/freudental/events/film-freudental-von-thomas-lahusen-freudentaler-nachfahre-2026-11-22-freu"
     }
   ]
 }

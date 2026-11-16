@@ -1,37 +1,131 @@
 {
   "subset": "this-weekend",
-  "generated_at": "2026-11-15T06:00:01.596989+01:00",
-  "event_count": 1,
+  "generated_at": "2026-11-16T06:00:01.538949+01:00",
+  "event_count": 4,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "8116c6ee86cbbf8b",
-      "title": "Gedenkfeier zum Volkstrauertag",
-      "date_start": "2026-11-15",
+      "id": "c0a6b371d3a5cc68",
+      "title": "Führung, Stadtmuseum Nachts im Museum",
+      "date_start": "2026-11-21",
+      "date_end": null,
+      "time": "18:30 - 20:00",
+      "description": "In der Stadtmuseum-Nacht werden mit Taschenlampen durch die Geschichte geführt. Für Kinder ab 8 Jahren geeignet, bietet diese Führung im Dunkeln aufregende Erlebnisse. Kosten betragen 5 € pro Person.",
+      "location": "Stadtmuseum, Oberriexinger Straße 29, 74343 Sachsenheim",
+      "price": "5 €/Person",
+      "age_min": 8,
+      "age_max": null,
+      "tags": [
+        "Fuehrung",
+        "Kinder"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Mit-Fernlichteffekt-durch-die-Geschichte-event-appointment5302",
+      "original_url": "https://www.sachsenheim.de/termin/Mit-Fernlichteffekt-durch-die-Geschichte-event-appointment5302",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "fuehrung-stadtmuseum-nachts-im-museum-2026-11-21-sach",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-16T02:01:27.547491+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/fuehrung-stadtmuseum-nachts-im-museum-2026-11-21-sach"
+    },
+    {
+      "id": "d06609c6aad1e053",
+      "title": "Heimleuchten",
+      "date_start": "2026-11-21",
+      "date_end": null,
+      "time": "20:00 - 22:00",
+      "description": "In diesem Vortrag beleuchtet Lisa Fitz Politik, Medien und den Digital-Alltag mit Humor und Verstand. Sie überdenkt gängige Deutungen und fördert eine offene Diskussion. Ein unterhaltsamer Abend ohne Zeigefinger.",
+      "location": "Mensa, Oberriexinger Straße 35, 74343 Sachsenheim",
+      "price": "28 € / 32 €",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Vortrag"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Lisa-Fitz-Heimleuchten-event-appointment5125",
+      "original_url": "https://www.sachsenheim.de/termin/Lisa-Fitz-Heimleuchten-event-appointment5125",
+      "source": "sachsenheim_kultur",
+      "city": "sachsenheim",
+      "slug": "heimleuchten-2026-11-21-sach",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-16T02:01:28.639202+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Sachsenheim – Kulturprogramm",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/heimleuchten-2026-11-21-sach"
+    },
+    {
+      "id": "647687efeb758441",
+      "title": "Lisa Fitz - Heimleuchten",
+      "date_start": "2026-11-21",
+      "date_end": null,
+      "time": "20:00 - 22:00",
+      "description": "In ihrem Vortrag \"Heimleuchten\" beleuchtet Lisa Fitz Politik, Medien und den Digital-Alltag mit Verstand und Humor. Sie fordert das Publikum zu einem unterhaltsamen Abend ein, in dem unterschiedliche Sichtweisen aushalten.",
+      "location": "Mensa, Oberriexinger Straße 35, 74343 Sachsenheim",
+      "price": "28 € / 32 €",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Vortrag"
+      ],
+      "link": "https://www.sachsenheim.de/termin/Lisa-Fitz-Heimleuchten-event-appointment5125",
+      "original_url": "https://www.sachsenheim.de/termin/Lisa-Fitz-Heimleuchten-event-appointment5125",
+      "source": "sachsenheim_library",
+      "city": "sachsenheim",
+      "slug": "lisa-fitz---heimleuchten-2026-11-21-sach",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-16T02:01:54.804949+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": false,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtbücherei Sachsenheim",
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/lisa-fitz---heimleuchten-2026-11-21-sach"
+    },
+    {
+      "id": "0e89bba6f8943ed2",
+      "title": "Gedenkfeier zum Totensonntag",
+      "date_start": "2026-11-22",
       "date_end": null,
       "time": "11:30 - 12:00",
-      "description": "In den Stadtteilen Kleinsachsenheim, Hohenhaslach, Ochsenbach und Häfnerhaslach wird anlässlich des Volkstrauertags ein Gedenkfeier zur Erinnerung an die Opfer des Zweiten Weltkriegs begangen. Auf dem Friedhof Spielberg beginnt die Aussegnung erst um 12 Uhr.",
-      "location": "Friedhof Kleinsachsenheim, Aussegnungshalle; Friedhof Hohenhasalach, Aussegnungshalle; Am Ehrenmal vor der evangelischen Kirche Ochsenbach; Friedhof Spielberg, Aussegnungshalle; Am Ehrenmal auf dem Friedhof Häfnerhaslach",
+      "description": "In der Aussegnungshalle des Friedhofs Großsachsenheim findet eine Gedenkfeier zum Totensonntag statt. Die Kranzniederlegung am Ehrenmal begleitet die Gedenkansprache.",
+      "location": "Friedhof Großsachsenheim, Aussegnungshalle, Kirchhofstraße 15, 74343 Sachsenheim",
       "price": null,
       "age_min": null,
       "age_max": null,
       "tags": [],
-      "link": "https://www.sachsenheim.de/termin/Gedenkfeier-zum-Volkstrauertag-event-appointment5280",
-      "original_url": "https://www.sachsenheim.de/termin/Gedenkfeier-zum-Volkstrauertag-event-appointment5280",
+      "link": "https://www.sachsenheim.de/termin/Gedenkfeier-zum-Totensonntag-event-appointment5279",
+      "original_url": "https://www.sachsenheim.de/termin/Gedenkfeier-zum-Totensonntag-event-appointment5279",
       "source": "sachsenheim_kultur",
       "city": "sachsenheim",
-      "slug": "gedenkfeier-zum-volkstrauertag-2026-11-15-sach",
+      "slug": "gedenkfeier-zum-totensonntag-2026-11-22-sach",
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-15T02:02:32.386550+01:00",
+      "scraped_at": "2026-11-16T02:01:29.699128+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadt Sachsenheim – Kulturprogramm",
-      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/gedenkfeier-zum-volkstrauertag-2026-11-15-sach"
+      "canonical_url": "https://www.rausgucken.de/sachsenheim/events/gedenkfeier-zum-totensonntag-2026-11-22-sach"
     }
   ]
 }
