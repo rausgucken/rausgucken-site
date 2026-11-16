@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-15T05:59:38.124457+01:00",
+  "generated_at": "2026-11-16T05:22:03.813732+01:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-11-14T06:05:53.776513+01:00",
-  "count_added": 9,
-  "count_removed": 3,
+  "previous_run": "2026-11-15T05:59:38.208366+01:00",
+  "count_added": 8,
+  "count_removed": 1,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -52,36 +52,18 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "36411b7248c8b08f",
-      "title": "Informationsveranstaltung: Wärmepumpen im Altbau",
-      "date_start": "2026-12-09",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "1590969879511beb",
-      "title": "Geselliges Beisammensein mit erheiternden Geschichten von Doris Rau",
-      "date_start": "2026-12-11",
+      "id": "a6cbc65734edda34",
+      "title": "Adventssamstag",
+      "date_start": "2026-12-12",
       "source": "sachsenheim_kultur"
     }
   ],
   "removed": [
     {
-      "id": "d191414df73c3e21",
-      "title": "Lange Saunanacht",
-      "date_start": "2026-11-14",
+      "id": "8116c6ee86cbbf8b",
+      "title": "Gedenkfeier zum Volkstrauertag",
+      "date_start": "2026-11-15",
       "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "cfcc978a573b0592",
-      "title": "Klezmer-Abend mit Pankraz",
-      "date_start": "2026-11-14",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "67535278dc6e4d99",
-      "title": "Klezmer-Abend",
-      "date_start": "2026-11-14",
-      "source": "sachsenheim_library"
     }
   ]
 }

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-15T11:22:16.998116+01:00",
+  "generated_at": "2026-11-16T11:02:38.302560+01:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
     "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-11-14T12:03:09.599417+01:00",
-  "count_added": 25,
-  "count_removed": 4,
+  "previous_run": "2026-11-15T11:22:17.074371+01:00",
+  "count_added": 26,
+  "count_removed": 3,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -159,32 +159,32 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "bc2d8ea4dcc1089c",
+      "title": "Bühnenshow von Philipp Weber",
+      "date_start": "2027-04-17",
+      "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "4fc8e9fd84749e82",
-      "title": "Wochenmarkt",
-      "date_start": "2026-11-14",
+      "id": "1157a260a4dde143",
+      "title": "Künstlermarkt im Glasperlenspiel",
+      "date_start": "2026-11-15",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "f6b3c3633c5617ae",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-11-14",
+      "id": "4d4b633017e530a8",
+      "title": "Gedenkfeier zum Volkstrauertag",
+      "date_start": "2026-11-15",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "a5c80c408ed7bc88",
-      "title": "Ökumenischer St. Martin Gottesdienst mit Umzug und Spiel",
-      "date_start": "2026-11-14",
+      "id": "c182310cd9a12793",
+      "title": "Black Stories 2.0",
+      "date_start": "2026-11-15",
       "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "4c9331d1584b8e31",
-      "title": "Der kleine, aber feine Künstlermarkt",
-      "date_start": "2026-11-14",
-      "source": "glasperlenspiel"
     }
   ]
 }

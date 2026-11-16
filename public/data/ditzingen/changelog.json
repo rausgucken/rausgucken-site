@@ -1,37 +1,38 @@
 {
-  "generated_at": "2026-11-15T05:42:08.669239+01:00",
+  "generated_at": "2026-11-16T05:22:46.061130+01:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_treffpunkt_adler",
-    "ditzingen_stadt"
+    "ditzingen_stadt",
+    "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-11-14T06:05:54.583340+01:00",
-  "count_added": 0,
-  "count_removed": 4,
-  "added": [],
+  "previous_run": "2026-11-15T05:42:08.749892+01:00",
+  "count_added": 3,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "48669f9893128817",
+      "title": "\"Geistig fit\"-Gedächtnistraining",
+      "date_start": "2027-11-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "99807ae69bd04be3",
+      "title": "Skatgruppen",
+      "date_start": "2027-11-16",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "5f08871294ad6e4a",
+      "title": "\"Betreuungscafé Augenblick\"  Betreuungsgruppe für Menschen mit und ohne Demenz (Abt. Senioren und Teilhabe)",
+      "date_start": "2027-11-16",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ],
   "removed": [
     {
-      "id": "cf612a424b4ec9c3",
-      "title": "Entspannung am Wochenende",
-      "date_start": "2026-11-14",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "465ba87dfc4d2e15",
-      "title": "Schöckinger Sternenmarkt",
-      "date_start": "2026-11-14",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "a4cd27fd439aded9",
-      "title": "Vorlesezeit",
-      "date_start": "2026-11-14",
-      "source": "ditzingen_stadt"
-    },
-    {
-      "id": "79cfff81f8ef81f5",
-      "title": "Familiennachmittag am Sternenmarkt",
-      "date_start": "2026-11-14",
+      "id": "d5ea39fc40333e51",
+      "title": "Männerschwimmen 15.11.26",
+      "date_start": "2026-11-15",
       "source": "ditzingen_stadt"
     }
   ]

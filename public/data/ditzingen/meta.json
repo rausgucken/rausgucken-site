@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-11-15T05:42:08.749892+01:00",
+  "scraped_at": "2026-11-16T05:22:46.142014+01:00",
   "city": "ditzingen",
-  "event_count": 339,
+  "event_count": 341,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,21 +9,21 @@
     "ditzingen_treffpunkt_adler"
   ],
   "source_counts": {
-    "ditzingen_stadt": 142,
-    "ditzingen_treffpunkt_adler": 197
+    "ditzingen_treffpunkt_adler": 200,
+    "ditzingen_stadt": 141
   },
   "sources_failed": [],
-  "data_hash": "9b27ea2fa1e43067",
+  "data_hash": "eba1916596543840",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 15.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 16.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "ditzingen_stadt": 1.0,
-    "ditzingen_treffpunkt_adler": 1.0
+    "ditzingen_treffpunkt_adler": 1.0,
+    "ditzingen_stadt": 1.0
   },
   "source_event_counts": {
-    "ditzingen_stadt": 142,
-    "ditzingen_treffpunkt_adler": 197
+    "ditzingen_treffpunkt_adler": 200,
+    "ditzingen_stadt": 141
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -31,15 +31,15 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 584.1,
-    "runtime_delta_vs_baseline": 2.263,
+    "runtime_minutes": 576.4,
+    "runtime_delta_vs_baseline": 2.22,
     "source_health": {
-      "ditzingen_stadt": 1.0,
-      "ditzingen_treffpunkt_adler": 1.0
+      "ditzingen_treffpunkt_adler": 1.0,
+      "ditzingen_stadt": 1.0
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-15T11:59:02.682857+01:00"
+    "generated_at": "2026-11-16T11:49:35.181516+01:00"
   }
 }
