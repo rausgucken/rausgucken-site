@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-16T11:02:38.302560+01:00",
+  "generated_at": "2026-11-17T14:20:20.712944+01:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
     "glasperlenspiel",
-    "asperg_fuehrungen"
+    "asperg_fuehrungen",
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-11-15T11:22:17.074371+01:00",
-  "count_added": 26,
-  "count_removed": 3,
+  "previous_run": "2026-11-16T11:02:38.378323+01:00",
+  "count_added": 27,
+  "count_removed": 0,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -155,36 +155,23 @@
       "source": "asperg_fuehrungen"
     },
     {
+      "id": "36736769b14ffb67",
+      "title": "Black stories 2.0 – Tatort vor der Haustür",
+      "date_start": "2026-11-15",
+      "source": "asperg_fuehrungen"
+    },
+    {
       "id": "cb7d4d5e64cac6fd",
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
     },
     {
-      "id": "bc2d8ea4dcc1089c",
-      "title": "Bühnenshow von Philipp Weber",
-      "date_start": "2027-04-17",
+      "id": "ddee5f49323260a5",
+      "title": "Die Bräschtling Sisters",
+      "date_start": "2027-02-12",
       "source": "glasperlenspiel"
     }
   ],
-  "removed": [
-    {
-      "id": "1157a260a4dde143",
-      "title": "Künstlermarkt im Glasperlenspiel",
-      "date_start": "2026-11-15",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "4d4b633017e530a8",
-      "title": "Gedenkfeier zum Volkstrauertag",
-      "date_start": "2026-11-15",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "c182310cd9a12793",
-      "title": "Black Stories 2.0",
-      "date_start": "2026-11-15",
-      "source": "asperg_veranstaltungen"
-    }
-  ]
+  "removed": []
 }

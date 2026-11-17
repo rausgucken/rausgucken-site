@@ -1,12 +1,13 @@
 {
-  "generated_at": "2026-11-16T05:22:03.813732+01:00",
+  "generated_at": "2026-11-17T06:10:13.700677+01:00",
   "city": "sachsenheim",
   "sources": [
+    "sachsenheim_museum",
     "sachsenheim_kultur",
     "sachsenheim_library"
   ],
-  "previous_run": "2026-11-15T05:59:38.208366+01:00",
-  "count_added": 8,
+  "previous_run": "2026-11-16T05:22:03.888699+01:00",
+  "count_added": 15,
   "count_removed": 1,
   "added": [
     {
@@ -52,17 +53,59 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "a6cbc65734edda34",
-      "title": "Adventssamstag",
-      "date_start": "2026-12-12",
+      "id": "7959be9262ad84f5",
+      "title": "Öffentliche Führung in der Sonderausstellung",
+      "date_start": "2026-11-29",
       "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "40866f31a24f906e",
+      "title": "Erzählcafé: Erinnerungen, die bleiben – Zeitzeugen erzählen",
+      "date_start": "2027-01-31",
+      "source": "sachsenheim_museum"
+    },
+    {
+      "id": "660b1738f23a472d",
+      "title": "Vortrag: Die Tötungsanstalt Grafeneck",
+      "date_start": "2027-02-16",
+      "source": "sachsenheim_museum"
+    },
+    {
+      "id": "cbf0a5b3ff47c8d2",
+      "title": "Lesung: Karl Knodel – Meine Jugendjahre",
+      "date_start": "2027-03-07",
+      "source": "sachsenheim_museum"
+    },
+    {
+      "id": "59ceb71f07077ed1",
+      "title": "Filmabend: Es geschah auf unserem Grund.",
+      "date_start": "2027-04-16",
+      "source": "sachsenheim_museum"
+    },
+    {
+      "id": "dd8bf534991bc342",
+      "title": "Ochsenbach im Nationalsozialismus",
+      "date_start": "2027-04-27",
+      "source": "sachsenheim_museum"
+    },
+    {
+      "id": "aa4851ed8d9b7d0a",
+      "title": "Öffentliche Führung in der Sonderausstellung",
+      "date_start": "2027-03-07",
+      "source": "sachsenheim_museum"
+    },
+    {
+      "id": "39459578a56231ba",
+      "title": "Öffentliche Führung in der Sonderausstellung",
+      "date_start": "2027-05-02",
+      "source": "sachsenheim_museum"
     }
   ],
   "removed": [
     {
-      "id": "8116c6ee86cbbf8b",
-      "title": "Gedenkfeier zum Volkstrauertag",
-      "date_start": "2026-11-15",
+      "id": "a6cbc65734edda34",
+      "title": "Adventssamstag",
+      "date_start": "2026-12-12",
       "source": "sachsenheim_kultur"
     }
   ]

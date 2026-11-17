@@ -1,29 +1,33 @@
 {
-  "scraped_at": "2026-11-16T05:22:03.888699+01:00",
+  "scraped_at": "2026-11-17T06:10:13.835360+01:00",
   "city": "sachsenheim",
-  "event_count": 19,
+  "event_count": 26,
   "flagged_count": 0,
   "expired_count": 7,
   "sources_scraped": [
     "sachsenheim_kultur",
-    "sachsenheim_library"
+    "sachsenheim_library",
+    "sachsenheim_museum"
   ],
   "source_counts": {
     "sachsenheim_kultur": 16,
-    "sachsenheim_library": 3
+    "sachsenheim_library": 3,
+    "sachsenheim_museum": 7
   },
   "sources_failed": [],
-  "data_hash": "5e6d6618c8c807d0",
+  "data_hash": "d2805a6a90ab409b",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 16.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 17.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "sachsenheim_kultur": 0.98,
-    "sachsenheim_library": 1.0
+    "sachsenheim_library": 1.0,
+    "sachsenheim_museum": 0.98
   },
   "source_event_counts": {
     "sachsenheim_kultur": 16,
-    "sachsenheim_library": 3
+    "sachsenheim_library": 3,
+    "sachsenheim_museum": 7
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -31,15 +35,16 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 576.4,
-    "runtime_delta_vs_baseline": 2.22,
+    "runtime_minutes": 761.2,
+    "runtime_delta_vs_baseline": 3.253,
     "source_health": {
       "sachsenheim_kultur": 0.98,
-      "sachsenheim_library": 1.0
+      "sachsenheim_library": 1.0,
+      "sachsenheim_museum": 0.98
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-16T11:49:37.167223+01:00"
+    "generated_at": "2026-11-17T14:54:25.526094+01:00"
   }
 }
