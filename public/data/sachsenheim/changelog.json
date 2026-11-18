@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-17T06:10:13.700677+01:00",
+  "generated_at": "2026-11-18T04:56:03.881680+01:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_museum",
     "sachsenheim_kultur",
-    "sachsenheim_library"
+    "sachsenheim_library",
+    "sachsenheim_museum"
   ],
-  "previous_run": "2026-11-16T05:22:03.888699+01:00",
-  "count_added": 15,
-  "count_removed": 1,
+  "previous_run": "2026-11-17T06:10:13.835360+01:00",
+  "count_added": 9,
+  "count_removed": 2,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -53,59 +53,29 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "7959be9262ad84f5",
-      "title": "Öffentliche Führung in der Sonderausstellung",
-      "date_start": "2026-11-29",
+      "id": "164d9a102b178223",
+      "title": "Mitmachaktion: Kleine Gaben – große Freude",
+      "date_start": "2026-10-30",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "40866f31a24f906e",
-      "title": "Erzählcafé: Erinnerungen, die bleiben – Zeitzeugen erzählen",
-      "date_start": "2027-01-31",
-      "source": "sachsenheim_museum"
-    },
-    {
-      "id": "660b1738f23a472d",
-      "title": "Vortrag: Die Tötungsanstalt Grafeneck",
-      "date_start": "2027-02-16",
-      "source": "sachsenheim_museum"
-    },
-    {
-      "id": "cbf0a5b3ff47c8d2",
-      "title": "Lesung: Karl Knodel – Meine Jugendjahre",
-      "date_start": "2027-03-07",
-      "source": "sachsenheim_museum"
-    },
-    {
-      "id": "59ceb71f07077ed1",
-      "title": "Filmabend: Es geschah auf unserem Grund.",
-      "date_start": "2027-04-16",
-      "source": "sachsenheim_museum"
-    },
-    {
-      "id": "dd8bf534991bc342",
-      "title": "Ochsenbach im Nationalsozialismus",
-      "date_start": "2027-04-27",
-      "source": "sachsenheim_museum"
-    },
-    {
-      "id": "aa4851ed8d9b7d0a",
+      "id": "e8ce00b08696b701",
       "title": "Öffentliche Führung in der Sonderausstellung",
-      "date_start": "2027-03-07",
-      "source": "sachsenheim_museum"
-    },
-    {
-      "id": "39459578a56231ba",
-      "title": "Öffentliche Führung in der Sonderausstellung",
-      "date_start": "2027-05-02",
+      "date_start": "2027-01-24",
       "source": "sachsenheim_museum"
     }
   ],
   "removed": [
     {
-      "id": "a6cbc65734edda34",
-      "title": "Adventssamstag",
-      "date_start": "2026-12-12",
+      "id": "36411b7248c8b08f",
+      "title": "Informationsveranstaltung: Wärmepumpen im Altbau",
+      "date_start": "2026-12-09",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "1590969879511beb",
+      "title": "Geselliges Beisammensein mit erheiternden Geschichten von Doris Rau",
+      "date_start": "2026-12-11",
       "source": "sachsenheim_kultur"
     }
   ]

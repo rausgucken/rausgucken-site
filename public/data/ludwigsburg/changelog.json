@@ -1,177 +1,225 @@
 {
-  "generated_at": "2026-11-17T14:41:12.508886+01:00",
+  "generated_at": "2026-11-18T09:14:42.266465+01:00",
   "city": "ludwigsburg",
   "sources": [
-    "stabi",
-    "garnisonmuseum",
-    "schloss",
-    "blueba",
-    "karlskaserne_veranstaltungen",
-    "labyrinth",
-    "kunstverein_ausstellungen",
-    "forum_schlosspark",
-    "kunstverein_veranstaltungen",
-    "lisbert_queer",
     "museum",
     "musikhalle_lb",
+    "labyrinth",
+    "demokratisches_zentrum",
+    "kunstverein_veranstaltungen",
+    "garnisonmuseum",
+    "kunstverein_ausstellungen",
+    "blueba",
+    "forum_schlosspark",
+    "lisbert_queer",
+    "karlskaserne_veranstaltungen",
+    "schloss",
     "ludwigsburg_stadt",
-    "demokratisches_zentrum"
+    "stabi"
   ],
-  "previous_run": "2026-11-16T11:36:24.099029+01:00",
-  "count_added": 12,
-  "count_removed": 13,
+  "previous_run": "2026-11-17T14:41:12.599456+01:00",
+  "count_added": 16,
+  "count_removed": 17,
   "added": [
     {
-      "id": "55fee914291dda85",
-      "title": "Workshop flott, flott: Purzelwesen",
-      "date_start": "2026-12-05",
-      "source": "museum"
-    },
-    {
-      "id": "92c9405715630725",
-      "title": "Workshop flott, flott: Schillerndes Mobile",
-      "date_start": "2027-02-06",
-      "source": "museum"
-    },
-    {
-      "id": "173d837196d73460",
-      "title": "Workshop flott, flott: Stecken-Schnecke",
-      "date_start": "2027-03-06",
-      "source": "museum"
-    },
-    {
-      "id": "26136330590e54ee",
-      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 8-12 Jahren in Ludwigsburg",
-      "date_start": "2027-03-20",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "1b78d106409fb85d",
-      "title": "Ludwigsburger Krippenweg",
-      "date_start": "2026-11-24",
-      "source": "museum"
-    },
-    {
-      "id": "8a68b83d324e7fc6",
-      "title": "Blick hinter die Kulissen der LudwigsTafel",
-      "date_start": "2026-11-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "69f56742cda4f38c",
-      "title": "Zwillingstreff",
+      "id": "0827648c7c8b713a",
+      "title": "MXDMCN The New Organ Trio",
       "date_start": "2026-11-20",
       "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "bd1ca3ac255d1a50",
-      "title": "Spielerisch das Lundy-Modell entdecken",
-      "date_start": "2026-11-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "f25d735d8e027068",
-      "title": "PRIDE Kreativnachmittag",
-      "date_start": "2026-11-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b79cf920b33b1f3e",
-      "title": "Licht an für die Kinderrechte!",
-      "date_start": "2026-11-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "d35af12782d18b0a",
-      "title": "Fridays for Coding",
-      "date_start": "2026-11-20",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "535da8a6f89f6122",
-      "title": "Die Türmerin von Ludwigsburg - eine historische Erlebnis-Tour",
-      "date_start": "2026-11-20",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "c4ae6989f3375c35",
-      "title": "WOrtreisen",
-      "date_start": "2026-11-07",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "81423537ed6dbf2c",
-      "title": "Wichtel-Stube",
-      "date_start": "2026-11-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "9ee7ee5ad480667d",
-      "title": "Ballett Schnupperworkshop",
-      "date_start": "2026-11-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "c161199528de092d",
-      "title": "\"Wer bin ich, wenn ich nicht mehr dort bin?\" Zwei Kriege, zwei Fluchten und die Frage der Zugehörigkeit",
-      "date_start": "2026-11-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "377ec486cdbaf503",
-      "title": "Geselliger Gitarrenabend",
-      "date_start": "2026-11-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "25800d81ac14745f",
-      "title": "Kinderzuschlag - mehr Geld für die Familie?",
-      "date_start": "2026-11-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "a82f7a2a4f4bf126",
-      "title": "Podiumsgespräch mit Barbara Mundel und Samuel Koch",
-      "date_start": "2026-11-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "1825a592f8cf12a4",
-      "title": "Theateraufführung \"tierisch gut\" von Q-Rage",
-      "date_start": "2026-11-16",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4f13fb63f3f89831",
-      "title": "Workshop flott, flott: Purzelwesen",
-      "date_start": "2026-12-05",
-      "source": "museum"
-    },
-    {
-      "id": "953e75ef01b82764",
-      "title": "Workshop flott, flott: Schillerndes Mobile",
-      "date_start": "2027-02-06",
-      "source": "museum"
-    },
-    {
-      "id": "b9d5b252faa669ca",
-      "title": "Workshop flott, flott: Stecken-Schnecke",
-      "date_start": "2027-03-06",
-      "source": "museum"
-    },
-    {
-      "id": "b12ec192a99a0f83",
-      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 8-12 Jahren in Ludwigsburg",
-      "date_start": "2027-03-20",
-      "source": "labyrinth"
     },
     {
       "id": "7f5467ba64aabb13",
       "title": "Museumspause",
       "date_start": "2027-06-02",
       "source": "museum"
+    },
+    {
+      "id": "dba68d763db72f01",
+      "title": "Klassische Schlossführung „Herzogin“ in englischer Sprache",
+      "date_start": "2026-10-28",
+      "source": "schloss"
+    },
+    {
+      "id": "7fca19a150779b60",
+      "title": "Klassische Schlossführung „Herzog“ in englischer Sprache",
+      "date_start": "2026-10-28",
+      "source": "schloss"
+    },
+    {
+      "id": "856f0128eb655119",
+      "title": "KreativWerkstatt - Fasching",
+      "date_start": "2027-02-05",
+      "source": "stabi"
+    },
+    {
+      "id": "0d7744496361be56",
+      "title": "KreativWerkstatt - Ostern",
+      "date_start": "2027-03-19",
+      "source": "stabi"
+    },
+    {
+      "id": "8833ac6c331f6cf0",
+      "title": "KreativWerkstatt - Krimi",
+      "date_start": "2027-05-14",
+      "source": "stabi"
+    },
+    {
+      "id": "4ebb0221684308d5",
+      "title": "HUNDERTWASSER ORIGINALGRAFIK AUSSTELLUNG",
+      "date_start": "2026-11-02",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "95051a233d3d1758",
+      "title": "Keine Gewalt gegen Frauen!",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "f19e3ee0cf9c62aa",
+      "title": "Echt unheimlich",
+      "date_start": "2026-11-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "1eb177b387255dcd",
+      "title": "Auswirkungen von Armut und sozialer Benachteiligung",
+      "date_start": "2026-11-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "0a64b163e69d5bec",
+      "title": "Aktion Wunschbaum 2026",
+      "date_start": "2026-11-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "1d7167202ac8df68",
+      "title": "Wenn die Ohren „müde“ werden",
+      "date_start": "2026-11-20",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "61f8ef2cf1fea7ad",
+      "title": "Leo stark! Resilienz und Selbstbehauptung",
+      "date_start": "2026-11-21",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "51141a02355965dd",
+      "title": "Sammy Vomáčka Jazz Trio",
+      "date_start": "2027-04-09",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "75084a86a58ccd10",
+      "title": "Jordans Trio",
+      "date_start": "2027-04-23",
+      "source": "musikhalle_lb"
+    }
+  ],
+  "removed": [
+    {
+      "id": "a5d3795438f065e3",
+      "title": "HUNDERTWASSER ORIGINALGRAFIK AUSSTELLUNG",
+      "date_start": "2026-11-01",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3bdcebb2dc47fa5f",
+      "title": "Psychologische Beratung – mit Herz und Erfahrung für Sie da!",
+      "date_start": "2026-11-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2972c3762d6901e4",
+      "title": "Offene Vorlesung an der Evangelischen Hochschule",
+      "date_start": "2026-11-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "cedf87f11a41a459",
+      "title": "Badische Residenzen - Badische Residenz Karlsruhe",
+      "date_start": "2026-11-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "b24158aa000c19bf",
+      "title": "Portugiesischsprachige Spielgruppe / Grupo de Brincadeiras em Português",
+      "date_start": "2026-11-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3a07be9ff60f3ffd",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-17",
+      "source": "museum"
+    },
+    {
+      "id": "ee3f182bc43a1130",
+      "title": "Aktiv im MIK: Qigong im Museumsfoyer",
+      "date_start": "2026-11-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "72af8cbb636219ae",
+      "title": "Geschenke mit KI gestalten",
+      "date_start": "2026-11-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fc84cbee2fe88d17",
+      "title": "Film: 22 Bahnen mit anschließendem Filmgespräch",
+      "date_start": "2026-11-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "abb7aefceff2fab2",
+      "title": "LUDWIGSBURGER VÄTERGRUPPE",
+      "date_start": "2026-11-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "f9f9e7b90f04ef7f",
+      "title": "Bi-2",
+      "date_start": "2026-11-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "dee251f67fc0d362",
+      "title": "Theateraufführung \"tierisch gut\" von Q-Rage",
+      "date_start": "2026-11-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "3155de868c3b8c42",
+      "title": "Digitale Hilfe im Mehrgenerationenhaus",
+      "date_start": "2026-11-17",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5b1cad60c33f76b7",
+      "title": "MXDMCN The New Organ Trio",
+      "date_start": "2026-11-20",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "0bbf034d5435ca8e",
+      "title": "Gaming Friday",
+      "date_start": "2026-12-04",
+      "source": "stabi"
+    },
+    {
+      "id": "e86fd3d6ef51d7cf",
+      "title": "Klassische Schlossführung „Herzogin“ in englischer Sprache",
+      "date_start": null,
+      "source": "schloss"
+    },
+    {
+      "id": "7d82153a8e644148",
+      "title": "Klassische Schlossführung „Herzog“ in englischer Sprache",
+      "date_start": null,
+      "source": "schloss"
     }
   ]
 }

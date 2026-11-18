@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-11-17T11:10:10.648116+01:00",
+  "generated_at": "2026-11-18T07:07:09.683929+01:00",
   "city": "ingersheim",
   "sources": [
     "ingersheim_gemeinde"
   ],
-  "previous_run": "2026-11-16T07:47:22.539396+01:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-11-17T11:10:10.723480+01:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "692106827c0215f7",
+      "title": "Adventskonzert",
+      "date_start": "2026-12-13",
+      "source": "ingersheim_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "9ba9a3adb91f2a94",
+      "title": "Jugendvorspiel",
+      "date_start": "2027-05-09",
+      "source": "ingersheim_gemeinde"
+    }
+  ]
 }

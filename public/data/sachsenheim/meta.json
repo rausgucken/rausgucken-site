@@ -1,23 +1,23 @@
 {
-  "scraped_at": "2026-11-17T06:10:13.835360+01:00",
+  "scraped_at": "2026-11-18T04:56:03.957800+01:00",
   "city": "sachsenheim",
-  "event_count": 26,
+  "event_count": 25,
   "flagged_count": 0,
-  "expired_count": 7,
+  "expired_count": 8,
   "sources_scraped": [
     "sachsenheim_kultur",
     "sachsenheim_library",
     "sachsenheim_museum"
   ],
   "source_counts": {
-    "sachsenheim_kultur": 16,
+    "sachsenheim_kultur": 14,
     "sachsenheim_library": 3,
-    "sachsenheim_museum": 7
+    "sachsenheim_museum": 8
   },
   "sources_failed": [],
-  "data_hash": "d2805a6a90ab409b",
+  "data_hash": "a2f9ced51a8147da",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 17.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 18.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "sachsenheim_kultur": 0.98,
@@ -25,9 +25,9 @@
     "sachsenheim_museum": 0.98
   },
   "source_event_counts": {
-    "sachsenheim_kultur": 16,
+    "sachsenheim_kultur": 14,
     "sachsenheim_library": 3,
-    "sachsenheim_museum": 7
+    "sachsenheim_museum": 8
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -35,8 +35,8 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 761.2,
-    "runtime_delta_vs_baseline": 3.253,
+    "runtime_minutes": 434.7,
+    "runtime_delta_vs_baseline": 1.428,
     "source_health": {
       "sachsenheim_kultur": 0.98,
       "sachsenheim_library": 1.0,
@@ -45,6 +45,6 @@
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-17T14:54:25.526094+01:00"
+    "generated_at": "2026-11-18T09:28:02.080393+01:00"
   }
 }

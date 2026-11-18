@@ -1,12 +1,56 @@
 {
-  "generated_at": "2026-11-17T11:10:09.935531+01:00",
+  "generated_at": "2026-11-18T07:05:09.767852+01:00",
   "city": "murr",
   "sources": [
     "murr_gemeinde"
   ],
-  "previous_run": "2026-11-16T07:47:21.834054+01:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-11-17T11:10:10.013213+01:00",
+  "count_added": 5,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "8afc110c06689eab",
+      "title": "Silent Reading Party",
+      "date_start": "2026-11-20",
+      "source": "murr_gemeinde"
+    },
+    {
+      "id": "f0fbfbed1867f83f",
+      "title": "Weihnachtsglanz",
+      "date_start": "2026-11-21",
+      "source": "murr_gemeinde"
+    },
+    {
+      "id": "8a49b0f868ae7146",
+      "title": "Totengedenkfeier",
+      "date_start": "2026-11-22",
+      "source": "murr_gemeinde"
+    },
+    {
+      "id": "796903620b98c20e",
+      "title": "Müllsammel-Aktion",
+      "date_start": "2026-12-04",
+      "source": "murr_gemeinde"
+    },
+    {
+      "id": "ee71342f73434079",
+      "title": "Jahreskonzert \"Bella Italia\"",
+      "date_start": "2026-12-05",
+      "source": "murr_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "50e945acf8c60e51",
+      "title": "Sitzung: Gemeinderat",
+      "date_start": "2026-11-17",
+      "source": "murr_gemeinde"
+    },
+    {
+      "id": "ab8e87e63158227d",
+      "title": "Jahreskonzert",
+      "date_start": "2026-12-05",
+      "source": "murr_gemeinde"
+    }
+  ]
 }

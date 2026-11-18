@@ -1,25 +1,26 @@
 {
-  "generated_at": "2026-11-17T11:39:35.375711+01:00",
+  "generated_at": "2026-11-18T07:40:27.760896+01:00",
   "city": "loechgau",
   "sources": [
     "loechgau_gemeinde"
   ],
-  "previous_run": "2026-11-16T08:20:36.503170+01:00",
-  "count_added": 2,
-  "count_removed": 0,
+  "previous_run": "2026-11-17T11:39:35.452014+01:00",
+  "count_added": 1,
+  "count_removed": 1,
   "added": [
     {
-      "id": "1dc07c515d130a94",
-      "title": "Fasching",
-      "date_start": "2027-02-06",
-      "source": "loechgau_gemeinde"
-    },
-    {
-      "id": "8ba1302634f9e3c8",
-      "title": "Verkaufsoffener Sonntag + Kunsthandwerkermarkt",
-      "date_start": "2027-06-13",
+      "id": "44e11b4abad5e12a",
+      "title": "Weihnachtskrimi-Lesung",
+      "date_start": "2026-12-11",
       "source": "loechgau_gemeinde"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "04fb9273e53966fa",
+      "title": "Weihnachtskrimi-Lesung",
+      "date_start": "2026-12-11",
+      "source": "loechgau_gemeinde"
+    }
+  ]
 }

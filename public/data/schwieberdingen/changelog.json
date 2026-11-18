@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-17T10:10:42.729625+01:00",
+  "generated_at": "2026-11-18T07:02:39.153509+01:00",
   "city": "schwieberdingen",
   "sources": [
     "schwieberdingen_gemeinde"
   ],
-  "previous_run": "2026-11-16T07:06:26.342679+01:00",
-  "count_added": 3,
-  "count_removed": 0,
+  "previous_run": "2026-11-17T10:10:42.804753+01:00",
+  "count_added": 2,
+  "count_removed": 2,
   "added": [
     {
       "id": "9e820ec72fb28cd4",
@@ -15,17 +15,24 @@
       "source": "schwieberdingen_gemeinde"
     },
     {
-      "id": "cb597bbc3a97d47d",
-      "title": "Kirche Kunterbunt",
-      "date_start": "2027-01-23",
-      "source": "schwieberdingen_gemeinde"
-    },
-    {
-      "id": "745d8c25e4db8f45",
-      "title": "Gemeindefest für Jugendliche",
-      "date_start": "2027-06-19",
+      "id": "0b4f509a2e488e71",
+      "title": "Orangenaktion",
+      "date_start": "2026-11-28",
       "source": "schwieberdingen_gemeinde"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "bf32939c5157bce6",
+      "title": "Persönliche Beratung",
+      "date_start": "2026-11-17",
+      "source": "schwieberdingen_gemeinde"
+    },
+    {
+      "id": "ee1c7835b9869ad8",
+      "title": "Lesung aus Thomas Gerls neuen Thriller",
+      "date_start": "2026-11-17",
+      "source": "schwieberdingen_gemeinde"
+    }
+  ]
 }
