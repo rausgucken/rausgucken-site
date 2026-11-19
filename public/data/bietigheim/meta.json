@@ -1,7 +1,7 @@
 {
-  "scraped_at": "2026-11-18T05:29:06.150880+01:00",
+  "scraped_at": "2026-11-19T05:30:21.485278+01:00",
   "city": "bietigheim",
-  "event_count": 199,
+  "event_count": 196,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
@@ -9,21 +9,21 @@
     "bietigheim_galerie"
   ],
   "source_counts": {
-    "bietigheim": 187,
-    "bietigheim_galerie": 12
+    "bietigheim": 185,
+    "bietigheim_galerie": 11
   },
   "sources_failed": [],
-  "data_hash": "9b57e42b76065a27",
+  "data_hash": "539c9bd87e07d976",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 18.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 19.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "bietigheim": 1.0,
-    "bietigheim_galerie": 0.81
+    "bietigheim_galerie": 0.8
   },
   "source_event_counts": {
-    "bietigheim": 187,
-    "bietigheim_galerie": 12
+    "bietigheim": 185,
+    "bietigheim_galerie": 11
   },
   "count_drift_warnings": {},
   "quality_report": {
@@ -31,15 +31,15 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 434.7,
-    "runtime_delta_vs_baseline": 1.428,
+    "runtime_minutes": 449.5,
+    "runtime_delta_vs_baseline": 1.511,
     "source_health": {
       "bietigheim": 1.0,
-      "bietigheim_galerie": 0.81
+      "bietigheim_galerie": 0.8
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-18T09:27:59.936282+01:00"
+    "generated_at": "2026-11-19T09:42:48.110611+01:00"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-11-18T07:12:42.546445+01:00",
+  "scraped_at": "2026-11-19T07:19:20.668208+01:00",
   "city": "kornwestheim",
   "event_count": 204,
   "flagged_count": 0,
@@ -9,41 +9,41 @@
     "kornwestheim"
   ],
   "source_counts": {
-    "kornwestheim": 196,
-    "das_k_spielplan": 8
+    "kornwestheim": 197,
+    "das_k_spielplan": 7
   },
   "sources_failed": [],
-  "data_hash": "24d5a0708a05b1a8",
+  "data_hash": "ca47078af12d6b24",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 18.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 19.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
     "kornwestheim": 1.0,
     "das_k_spielplan": 1.0
   },
   "source_event_counts": {
-    "kornwestheim": 196,
-    "das_k_spielplan": 8
+    "kornwestheim": 197,
+    "das_k_spielplan": 7
   },
   "count_drift_warnings": {
-    "das_k_spielplan": "Count drift: 8 vs historical avg 19"
+    "das_k_spielplan": "Count drift: 7 vs historical avg 18"
   },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 434.7,
-    "runtime_delta_vs_baseline": 1.428,
+    "runtime_minutes": 449.5,
+    "runtime_delta_vs_baseline": 1.511,
     "source_health": {
       "kornwestheim": 1.0,
       "das_k_spielplan": 1.0
     },
     "count_drift_warnings": {
-      "das_k_spielplan": "Count drift: 8 vs historical avg 19"
+      "das_k_spielplan": "Count drift: 7 vs historical avg 18"
     },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-18T09:28:01.158136+01:00"
+    "generated_at": "2026-11-19T09:42:49.330007+01:00"
   }
 }

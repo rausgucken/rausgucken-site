@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-18T04:36:36.287821+01:00",
+  "generated_at": "2026-11-19T04:37:18.744802+01:00",
   "city": "asperg",
   "sources": [
     "asperg_fuehrungen",
-    "glasperlenspiel",
-    "asperg_veranstaltungen"
+    "asperg_veranstaltungen",
+    "glasperlenspiel"
   ],
-  "previous_run": "2026-11-17T14:20:20.793908+01:00",
-  "count_added": 26,
-  "count_removed": 0,
+  "previous_run": "2026-11-18T04:36:36.365542+01:00",
+  "count_added": 33,
+  "count_removed": 2,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -165,7 +165,62 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
+    },
+    {
+      "id": "85f37a1988da42e7",
+      "title": "Altpapiersammlung",
+      "date_start": "2027-01-16",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "9690f2d34ffde919",
+      "title": "Vortrag",
+      "date_start": "2027-01-26",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "8e5908fc1c832934",
+      "title": "Frühlingsmarkt",
+      "date_start": "2027-03-14",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "0fe81c77feb20bc8",
+      "title": "Altpapiersammlung",
+      "date_start": "2027-04-10",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "1b3b04dafd773790",
+      "title": "Altpapiersammlung",
+      "date_start": "2027-07-17",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "570477e8fb5c91b1",
+      "title": "Hobbykunstmarkt",
+      "date_start": "2027-10-03",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "ba644e64ce5ff825",
+      "title": "Altpapiersammlung",
+      "date_start": "2027-10-23",
+      "source": "asperg_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "d1df6c5faca3f671",
+      "title": "Erziehungsberatung der Caritas",
+      "date_start": "2026-11-18",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "da83b00fd0a32327",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-11-18",
+      "source": "asperg_veranstaltungen"
+    }
+  ]
 }

@@ -1,12 +1,32 @@
 {
-  "generated_at": "2026-11-18T04:36:39.107915+01:00",
+  "generated_at": "2026-11-19T04:54:59.387924+01:00",
   "city": "besigheim",
   "sources": [
     "besigheim_stadt"
   ],
-  "previous_run": "2026-11-17T06:10:14.861894+01:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-11-18T04:36:39.183839+01:00",
+  "count_added": 1,
+  "count_removed": 2,
+  "added": [
+    {
+      "id": "db361120bee21354",
+      "title": "Konzert \"Glanz, Gesang und Weihnachtsfreude\"",
+      "date_start": "2026-12-06",
+      "source": "besigheim_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "f108d3bc3b8be956",
+      "title": "Demokratie gelebt - von Ottmarsheim zur UN nach New York",
+      "date_start": "2026-11-18",
+      "source": "besigheim_stadt"
+    },
+    {
+      "id": "9ab992aa8fe0ed6d",
+      "title": "Buß- und Bettag mit Posaunenchor",
+      "date_start": "2026-11-18",
+      "source": "besigheim_stadt"
+    }
+  ]
 }
