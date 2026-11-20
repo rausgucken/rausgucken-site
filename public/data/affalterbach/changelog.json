@@ -1,12 +1,26 @@
 {
-  "generated_at": "2026-11-19T05:31:06.334186+01:00",
+  "generated_at": "2026-11-20T05:08:19.092022+01:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-11-18T04:56:42.536186+01:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-11-19T05:31:06.408193+01:00",
+  "count_added": 1,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "49e8d6110d08aed2",
+      "title": "Gemeinderatssitzung",
+      "date_start": "2026-12-17",
+      "source": "affalterbach_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "4a0248bac4b5bee7",
+      "title": "Gemeinderatssitzung",
+      "date_start": "2026-11-19",
+      "source": "affalterbach_stadt"
+    }
+  ]
 }

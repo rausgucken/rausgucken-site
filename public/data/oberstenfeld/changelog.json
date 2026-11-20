@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-19T07:14:42.330391+01:00",
+  "generated_at": "2026-11-20T07:24:59.976558+01:00",
   "city": "oberstenfeld",
   "sources": [
     "oberstenfeld_veranstaltungen"
   ],
-  "previous_run": "2026-11-18T07:02:40.630404+01:00",
-  "count_added": 53,
-  "count_removed": 0,
+  "previous_run": "2026-11-19T07:14:42.405454+01:00",
+  "count_added": 44,
+  "count_removed": 2,
   "added": [
     {
       "id": "60dcaf202491b251",
@@ -93,12 +93,6 @@
       "source": "oberstenfeld_veranstaltungen"
     },
     {
-      "id": "989aad6d228d08de",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-01-15",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
       "id": "9213233f6a473681",
       "title": "Frauentreff",
       "date_start": "2026-01-27",
@@ -108,12 +102,6 @@
       "id": "071bdf56965ed10e",
       "title": "Suppentöpfle",
       "date_start": "2026-02-10",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
-      "id": "8abe5d567a056016",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-02-19",
       "source": "oberstenfeld_veranstaltungen"
     },
     {
@@ -135,12 +123,6 @@
       "source": "oberstenfeld_veranstaltungen"
     },
     {
-      "id": "995801e07fa304d3",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-03-19",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
       "id": "8c8209976eb994a2",
       "title": "Frauentreff",
       "date_start": "2026-03-24",
@@ -155,12 +137,6 @@
     {
       "id": "f9296f7cc3586806",
       "title": "Goldener Herbst",
-      "date_start": "2026-04-16",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
-      "id": "af10d702688bd205",
-      "title": "Seniorennachmittag",
       "date_start": "2026-04-16",
       "source": "oberstenfeld_veranstaltungen"
     },
@@ -195,21 +171,9 @@
       "source": "oberstenfeld_veranstaltungen"
     },
     {
-      "id": "43f3de91fdb579f2",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-05-21",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
       "id": "306549d9cf3e9a48",
       "title": "Suppentöpfle",
       "date_start": "2026-06-09",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
-      "id": "bbb653be209a34c7",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-06-18",
       "source": "oberstenfeld_veranstaltungen"
     },
     {
@@ -243,12 +207,6 @@
       "source": "oberstenfeld_veranstaltungen"
     },
     {
-      "id": "1431ac3fff54de84",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-07-16",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
       "id": "29c6e3f12127ed02",
       "title": "Magnetangler Museum geöffnet",
       "date_start": "2026-07-26",
@@ -270,12 +228,6 @@
       "id": "543edbb5690277b8",
       "title": "Suppentöpfle",
       "date_start": "2026-09-08",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
-      "id": "88f2be31d794c909",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-09-17",
       "source": "oberstenfeld_veranstaltungen"
     },
     {
@@ -303,12 +255,6 @@
       "source": "oberstenfeld_veranstaltungen"
     },
     {
-      "id": "1049be55496986d9",
-      "title": "Seniorennachmittag",
-      "date_start": "2026-10-15",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
       "id": "0a986682d627023c",
       "title": "Frauentreff",
       "date_start": "2026-10-20",
@@ -327,5 +273,18 @@
       "source": "oberstenfeld_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "eea3d8dd122ac39f",
+      "title": "Seniorennachmittag",
+      "date_start": "2026-11-19",
+      "source": "oberstenfeld_veranstaltungen"
+    },
+    {
+      "id": "883c6ba97ff44844",
+      "title": "Adventsbasteln",
+      "date_start": "2026-11-19",
+      "source": "oberstenfeld_veranstaltungen"
+    }
+  ]
 }

@@ -1,254 +1,31 @@
 {
-  "generated_at": "2026-11-19T09:29:29.030513+01:00",
+  "generated_at": "2026-11-20T09:55:06.360751+01:00",
   "city": "ludwigsburg",
   "sources": [
-    "schloss",
-    "lisbert_queer",
-    "musikhalle_lb",
-    "kunstverein_veranstaltungen",
     "demokratisches_zentrum",
-    "ludwigsburg_stadt",
-    "labyrinth",
     "garnisonmuseum",
+    "stabi",
+    "musikhalle_lb",
+    "lisbert_queer",
+    "ludwigsburg_stadt",
+    "kunstverein_veranstaltungen",
     "karlskaserne_veranstaltungen",
-    "kunstverein_ausstellungen",
-    "blueba",
     "forum_schlosspark",
-    "stabi"
+    "kunstverein_ausstellungen",
+    "schloss",
+    "museum",
+    "blueba",
+    "labyrinth"
   ],
-  "previous_run": "2026-11-18T09:14:42.356680+01:00",
-  "count_added": 16,
-  "count_removed": 68,
+  "previous_run": "2026-11-19T09:29:29.118675+01:00",
+  "count_added": 56,
+  "count_removed": 16,
   "added": [
-    {
-      "id": "70ebaa57335d9636",
-      "title": "Osterferienworkshop: Zauberhafte Wundertiere für Kinder ab 8 Jahren in Ludwigsburg",
-      "date_start": "2027-03-24",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "d63d36773efbd0ba",
-      "title": "Leo stark! Resilienz und Selbstbehauptung",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7553dd43e4517178",
-      "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": null,
-      "source": "schloss"
-    },
-    {
-      "id": "5e012f0afde9b9cc",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": null,
-      "source": "schloss"
-    },
-    {
-      "id": "e86fd3d6ef51d7cf",
-      "title": "Klassische Schlossführung „Herzogin“ in englischer Sprache",
-      "date_start": null,
-      "source": "schloss"
-    },
-    {
-      "id": "7d82153a8e644148",
-      "title": "Klassische Schlossführung „Herzog“ in englischer Sprache",
-      "date_start": null,
-      "source": "schloss"
-    },
-    {
-      "id": "aaefb941bfad0c48",
-      "title": "Des Königs leere (T)Räume?!",
-      "date_start": null,
-      "source": "schloss"
-    },
-    {
-      "id": "4cb66bbadbf049cc",
-      "title": "Faschingsferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Bietigheim-Bissingen",
-      "date_start": "2027-02-08",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "0bbf034d5435ca8e",
-      "title": "Gaming Friday",
-      "date_start": "2026-12-04",
-      "source": "stabi"
-    },
-    {
-      "id": "ecba0dde2f2b55b7",
-      "title": "Wanderausstellung „Kunst gegen Missbrauch\"",
-      "date_start": "2026-11-19",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "6eafa0ad1145603e",
-      "title": "Bilderbuchsamstag in der Stadtbibliothek",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "c347b104bcbbb464",
-      "title": "Spielsachen- und Fahrzeugbörse",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "c706ede32cdabbf9",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "1618aa103224d218",
-      "title": "Kinderkino: Der Wunderweltenbaum",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "e7c2d6e4474a42b2",
-      "title": "Geschichtsführung: Ludwigsburger Anekdoten",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "cda4debd22a710c6",
-      "title": "🎸 Rocknacht 2026 – Das Jubiläum!",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
     {
       "id": "fffeb549fd24639b",
       "title": "Mitmach-Ausstellung flott, flott!",
       "date_start": "2026-10-17",
       "source": "museum"
-    },
-    {
-      "id": "c6bbb8d68920d1ee",
-      "title": "Klassische Schlossführung „Herzogin“",
-      "date_start": "2026-10-28",
-      "source": "schloss"
-    },
-    {
-      "id": "54716eb70b7898eb",
-      "title": "Klassische Schlossführung „Herzog“",
-      "date_start": "2026-10-28",
-      "source": "schloss"
-    },
-    {
-      "id": "670646fb764117e3",
-      "title": "Des Königs leere (T)Räume?!",
-      "date_start": "2026-10-28",
-      "source": "schloss"
-    },
-    {
-      "id": "dba68d763db72f01",
-      "title": "Klassische Schlossführung „Herzogin“ in englischer Sprache",
-      "date_start": "2026-10-28",
-      "source": "schloss"
-    },
-    {
-      "id": "7fca19a150779b60",
-      "title": "Klassische Schlossführung „Herzog“ in englischer Sprache",
-      "date_start": "2026-10-28",
-      "source": "schloss"
-    },
-    {
-      "id": "9f8e9889700eb6a1",
-      "title": "Christlicher Antisemitismus im 20. Jahrhundert",
-      "date_start": "2026-11-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7789f67da40c0404",
-      "title": "Studieninformationstag",
-      "date_start": "2026-11-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "5ca322456738682a",
-      "title": "Vom Markt auf den Tisch: Ernährung regional, saisonal und alltagsnah erleben",
-      "date_start": "2026-11-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "7ca217ac2b7ce518",
-      "title": "Spielzeit FamilienLeben - Mittwochs",
-      "date_start": "2026-11-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "1327a199b8bafb04",
-      "title": "KiFa-Café Familie stärken - Angebote entdecken!",
-      "date_start": "2026-11-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b088d1ab1a607d14",
-      "title": "Offener Treff",
-      "date_start": "2026-11-18",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "a758acabba1eb5c1",
-      "title": "Offener Treff",
-      "date_start": "2026-11-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "aa9c467b25542ad6",
-      "title": "KiFa-Café: Sprache gemeinsam stärken",
-      "date_start": "2026-11-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "73af9b3d18c982c6",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-11-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "6483a3e5f0785cc4",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-11-18",
-      "source": "stabi"
-    },
-    {
-      "id": "b64e2607aedf4643",
-      "title": "Sprechtreff Deutsch - ONLINE",
-      "date_start": "2026-11-18",
-      "source": "stabi"
-    },
-    {
-      "id": "bac5ffa9c2747dd1",
-      "title": "Jugendtheaterstück „SHCNIPSELJAGD“",
-      "date_start": "2026-11-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "e6dd5c75770f7c24",
-      "title": "Mehr Gelassenheit im Familienalltag - Informationsabend für Eltern",
-      "date_start": "2026-11-18",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "583c7e93fd846f48",
-      "title": "Reparaturcafé",
-      "date_start": "2026-11-18",
-      "source": "demokratisches_zentrum"
-    },
-    {
-      "id": "f650d50a3c5ad4e0",
-      "title": "Toni Simon: ein geschlechtlich und gesellschaftlich nonkonformes Leben",
-      "date_start": "2026-11-19",
-      "source": "museum"
-    },
-    {
-      "id": "61f8ef2cf1fea7ad",
-      "title": "Leo stark! Resilienz und Selbstbehauptung",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
     },
     {
       "id": "1b78d106409fb85d",
@@ -287,7 +64,7 @@
       "source": "museum"
     },
     {
-      "id": "55fee914291dda85",
+      "id": "4f13fb63f3f89831",
       "title": "Workshop flott, flott: Purzelwesen",
       "date_start": "2026-12-05",
       "source": "museum"
@@ -353,7 +130,7 @@
       "source": "museum"
     },
     {
-      "id": "92c9405715630725",
+      "id": "953e75ef01b82764",
       "title": "Workshop flott, flott: Schillerndes Mobile",
       "date_start": "2027-02-06",
       "source": "museum"
@@ -413,7 +190,7 @@
       "source": "museum"
     },
     {
-      "id": "173d837196d73460",
+      "id": "b9d5b252faa669ca",
       "title": "Workshop flott, flott: Stecken-Schnecke",
       "date_start": "2027-03-06",
       "source": "museum"
@@ -459,12 +236,6 @@
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2027-03-23",
       "source": "museum"
-    },
-    {
-      "id": "34b893ab28104e45",
-      "title": "Osterferienworkshop: Zauberhafte Wundertiere für Kinder ab 8 Jahren in Ludwigsburg",
-      "date_start": "2027-03-24",
-      "source": "labyrinth"
     },
     {
       "id": "67d5b9195f916e23",
@@ -525,6 +296,164 @@
       "title": "Museumspause",
       "date_start": "2027-06-02",
       "source": "museum"
+    },
+    {
+      "id": "5192cc2741dff6fd",
+      "title": "Stadtgeschichten",
+      "date_start": "2027-06-10",
+      "source": "museum"
+    },
+    {
+      "id": "5f87c90fe38403c6",
+      "title": "The Royal Ballet: Manon",
+      "date_start": "2026-11-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c5a6f06a1eeb2fd4",
+      "title": "Figurentheater: Familie Wutz feiert Weihnachten",
+      "date_start": "2026-11-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "e6d0564e331a0338",
+      "title": "Kinderkino: Der Wunderweltenbaum",
+      "date_start": "2026-11-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "9a318a671b69acd7",
+      "title": "European Outdoor Film Tour 26/27 - EOFT",
+      "date_start": "2026-11-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "ee6758cb79d5941a",
+      "title": "MHP RIESEN vs. SYNTAINICS MBC",
+      "date_start": "2026-11-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "6a3cbf369453ca2f",
+      "title": "Wichtel-Stube",
+      "date_start": "2026-11-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "75d3bbfe6fdd576c",
+      "title": "Adventskranz basteln",
+      "date_start": "2026-11-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "7320eb64a808fe9b",
+      "title": "Lesung: \"Arthur und Lilly. Das Mädchen und der Holocaust-Überlebende\" mit Autorin Lilly Maier",
+      "date_start": "2026-11-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c99d3387eab63e4f",
+      "title": "Nachhaltige Körperpflege",
+      "date_start": "2026-11-23",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "3a5895d8119ba99f",
+      "title": "Spielzeit FamilienLeben - Donnerstags",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "2c6e2545eeb33d4d",
+      "title": "Vom Markt auf den Tisch: Ernährung regional, saisonal und alltagsnah erleben",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "8a68b83d324e7fc6",
+      "title": "Blick hinter die Kulissen der LudwigsTafel",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "6b5dd3c9a60bf6a3",
+      "title": "Gründungswerkstatt",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "7b19377f51260d2c",
+      "title": "Spielerisch das Lundy-Modell entdecken",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "747126df459bddd1",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-11-19",
+      "source": "stabi"
+    },
+    {
+      "id": "73dce411c888381d",
+      "title": "Vorlesedonner",
+      "date_start": "2026-11-19",
+      "source": "stabi"
+    },
+    {
+      "id": "16d5fe1a2843cd73",
+      "title": "Roboter programmieren: Eltern-Kind-Workshop",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a5acc0c151bcdc89",
+      "title": "Roboter programmieren: Eltern-Kind-Workshop",
+      "date_start": "2026-11-19",
+      "source": "stabi"
+    },
+    {
+      "id": "74e12e6948e59b78",
+      "title": "Bilderbuchkino am Nachmittag",
+      "date_start": "2026-11-19",
+      "source": "labyrinth"
+    },
+    {
+      "id": "f7ab23258ed853a9",
+      "title": "Café Lieblingsplatz",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "95051a233d3d1758",
+      "title": "Keine Gewalt gegen Frauen!",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c63d974b963f9ac0",
+      "title": "Mit Energie und Gelassenheit durch die Wechseljahre",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "f0bbec2c8695c9d6",
+      "title": "Was wird aus der deutsch-französischen Kooperation?",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "138477a8eca28234",
+      "title": "Toni Simon: ein geschlechtlich und gesellschaftlich nonkonformes Leben",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "f81e5d4074206941",
+      "title": "Theateraufführung \"tierisch gut\" von Q-Rage",
+      "date_start": "2026-11-19",
+      "source": "ludwigsburg_stadt"
     }
   ]
 }
