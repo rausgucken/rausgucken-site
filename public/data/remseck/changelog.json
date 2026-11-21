@@ -1,13 +1,20 @@
 {
-  "generated_at": "2026-11-20T04:37:53.343057+01:00",
+  "generated_at": "2026-11-21T04:40:27.810016+01:00",
   "city": "remseck",
   "sources": [
-    "remseck_stadt",
-    "remseck_mediathek"
+    "remseck_mediathek",
+    "remseck_stadt"
   ],
-  "previous_run": "2026-11-19T04:53:00.197728+01:00",
+  "previous_run": "2026-11-20T04:37:53.417910+01:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 1,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "53917913353f46a0",
+      "title": "Bundesweiter Vorlesetag",
+      "date_start": "2026-11-20",
+      "source": "remseck_mediathek"
+    }
+  ]
 }

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-20T04:53:38.526453+01:00",
+  "generated_at": "2026-11-21T05:14:19.623339+01:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_kultur",
+    "sachsenheim_library",
     "sachsenheim_museum",
-    "sachsenheim_library"
+    "sachsenheim_kultur"
   ],
-  "previous_run": "2026-11-19T05:01:35.198033+01:00",
-  "count_added": 11,
-  "count_removed": 3,
+  "previous_run": "2026-11-20T04:53:38.604680+01:00",
+  "count_added": 12,
+  "count_removed": 4,
   "added": [
     {
       "id": "15ee3262c7bdad94",
@@ -41,6 +41,12 @@
       "source": "sachsenheim_kultur"
     },
     {
+      "id": "6924ba15e3ca881b",
+      "title": "Mitmachaktion: Kleine Gaben – große Freude",
+      "date_start": "2026-10-30",
+      "source": "sachsenheim_kultur"
+    },
+    {
       "id": "164d9a102b178223",
       "title": "Mitmachaktion: Kleine Gaben – große Freude",
       "date_start": "2026-10-30",
@@ -59,11 +65,25 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "6924ba15e3ca881b",
-      "title": "Mitmachaktion: Kleine Gaben – große Freude",
-      "date_start": "2026-10-30",
+      "id": "f100a9b69a2f2e98",
+      "title": "Führung, Nachts im Museum",
+      "date_start": "2026-11-20",
       "source": "sachsenheim_kultur"
     },
+    {
+      "id": "e035969240ebd541",
+      "title": "Führung, Nachts im Museum",
+      "date_start": "2026-11-21",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "36411b7248c8b08f",
+      "title": "Informationsveranstaltung: Wärmepumpen im Altbau",
+      "date_start": "2026-12-09",
+      "source": "sachsenheim_kultur"
+    }
+  ],
+  "removed": [
     {
       "id": "04d1a059db4c49ff",
       "title": "Führung, Stadtmuseum Nachts im Museum",
@@ -75,26 +95,18 @@
       "title": "Steillagendinner",
       "date_start": "2026-11-20",
       "source": "sachsenheim_kultur"
-    }
-  ],
-  "removed": [
+    },
     {
-      "id": "1e12b9e4bdcd6109",
-      "title": "Nacht im Museum",
-      "date_start": "2026-11-20",
+      "id": "c0a6b371d3a5cc68",
+      "title": "Führung, Stadtmuseum Nachts im Museum",
+      "date_start": "2026-11-21",
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "4c57c0de477249bd",
-      "title": "Führung, Nachts im Museum",
-      "date_start": "2026-11-20",
+      "id": "647687efeb758441",
+      "title": "Lisa Fitz - Heimleuchten",
+      "date_start": "2026-11-21",
       "source": "sachsenheim_library"
-    },
-    {
-      "id": "ed9dcb789fd35318",
-      "title": "Steillagendinner",
-      "date_start": "2026-11-20",
-      "source": "sachsenheim_kultur"
     }
   ]
 }
