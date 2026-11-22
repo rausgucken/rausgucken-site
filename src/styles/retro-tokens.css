@@ -1,0 +1,29 @@
+/* Retro-modern tokens. html:root / html:root.dark out-rank plain :root / .dark / :root.dark
+   in Base.astro regardless of load order. Legacy aliases keep old var names working. */
+html:root {
+  --papaya:#E24E42;       /* borders, icons, large type, date block */
+  --papaya-fill:#F2685D;  /* buttons/chips WITH ink text (5.64:1) */
+  --papaya-text:#C2382D;  /* small text on cream (5.05:1) */
+  --aqua:#008F95;
+  --aqua-text:#00757A;    /* small text on cream (5.14:1) */
+  --mustard:#E9B000;
+  --blush:#EB6E80;
+  --ink:#1E1B1A;
+  --bg:#FBF7F0; --surface:#FFFDF8; --surface-card:#FFFDF8;
+  --border:rgba(30,27,26,0.85); --border-subtle:rgba(30,27,26,0.18);
+  --text:#1E1B1A; --text-60:#5E5A55; --text-30:#8F8A82;
+  --tag-bg:rgba(30,27,26,0.06);
+  --radius:0; --shadow-card:none; --shadow-hover:4px 4px 0 var(--ink);
+  /* legacy aliases */
+  --coral:var(--papaya-fill); --coral-dark:var(--papaya); --coral-light:rgba(226,78,66,0.12);
+  --sage:var(--aqua); --sage-light:rgba(0,143,149,0.14);
+}
+html:root.dark {
+  --bg:#1E1B1A; --surface:#2A2624; --surface-card:#2A2624;
+  --border:rgba(245,240,230,0.55); --border-subtle:rgba(245,240,230,0.16);
+  --text:#F5F0E6; --text-60:#B5ADA2; --text-30:#7C766D;
+  --tag-bg:rgba(245,240,230,0.08);
+  --papaya-text:#F2685D; --aqua-text:#3FC1C9;
+  --shadow-hover:4px 4px 0 var(--papaya);
+  --coral-light:rgba(242,104,93,0.16); --sage-light:rgba(63,193,201,0.16);
+}

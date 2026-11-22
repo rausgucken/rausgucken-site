@@ -15,6 +15,15 @@ export const onRequest: PagesFunction = async (context) => {
     return Response.redirect("https://www.rausgucken.de" + redirect, 301);
   }
 
+  // Preview deployments (<branch>.<project>.pages.dev): serve as-is, noindex.
+  // Production <project>.pages.dev (2 labels) still redirects to www below.
+  if (/^[^.]+\.[^.]+\.pages\.dev$/.test(url.hostname)) {
+    const res = await context.next();
+    const out = new Response(res.body, res);
+    out.headers.set("X-Robots-Tag", "noindex, nofollow");
+    return out;
+  }
+
   // Block crawlers on *.pages.dev + redirect to www
   if (url.hostname.endsWith(".pages.dev")) {
     // Serve noindex header before redirecting — prevents crawlers indexing pages.dev
