@@ -510,7 +510,7 @@ loadLeaflet(() => init());
   .search-suggestions {
     position: absolute; top: calc(100% + 8px); left: 0; right: 0;
     background: var(--surface-card); border: 1px solid var(--border);
-    border-radius: 0; box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    border-radius: 0; box-shadow: var(--shadow-hover);
     z-index: 50; max-height: 280px; overflow-y: auto;
     list-style: none; margin: 0; padding: 0.3rem;
   }
@@ -524,7 +524,7 @@ loadLeaflet(() => init());
   .search-suggestions li:last-child { border-bottom: none; }
   .search-suggestions li:hover,
   .search-suggestions li.highlighted {
-    background: rgba(226,78,66,0.18);
+    background: color-mix(in srgb, var(--papaya) 18%, transparent);
     border-bottom-color: transparent;
   }
   .search-suggestions li:hover .sug-name,
@@ -616,7 +616,7 @@ loadLeaflet(() => init());
     color: var(--text) !important; font-family: var(--font-body) !important;
     font-size: 0.75rem !important; font-weight: 600 !important;
     padding: 0.2rem 0.5rem !important; border-radius: 0 !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12) !important;
+    box-shadow: none !important;
     white-space: nowrap !important;
   }
   :global(.leaflet-tooltip-top.city-tooltip::before) { border-top-color: var(--border) !important; }

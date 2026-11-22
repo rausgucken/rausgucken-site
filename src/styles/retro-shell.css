@@ -45,3 +45,17 @@ html body .go-btn.go-btn, html body #radius-combined-link#radius-combined-link {
 }
 html body .go-btn.go-btn:hover, html body #radius-combined-link#radius-combined-link:hover { background: var(--papaya-fill); color: var(--ink); box-shadow: var(--shadow-hover); }
 html body .map-container.map-container { border: 1.5px solid var(--text); border-radius: 0; }
+
+/* pagefind vars (7.2): beat pagefind-ui.css (.pagefind-ui) via extra specificity */
+html body .pagefind-ui {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: var(--papaya-text);
+  --pagefind-ui-text: var(--text);
+  --pagefind-ui-background: var(--surface-card);
+  --pagefind-ui-border: var(--border);
+  --pagefind-ui-tag: var(--tag-bg);
+  --pagefind-ui-border-width: 1.5px;
+  --pagefind-ui-border-radius: 0px;
+  --pagefind-ui-image-border-radius: 0px;
+  --pagefind-ui-font: var(--font-body);
+}
