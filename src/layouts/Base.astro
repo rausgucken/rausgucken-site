@@ -1,6 +1,7 @@
 ---
 import '../styles/retro-tokens.css';
 import '../styles/retro-fonts.css';
+import '../styles/retro-shell.css';
 // src/layouts/Base.astro
 // SEO: lang="de-DE", hreflang, canonical (per-page), OG image, font preload, schema slots
 
@@ -323,7 +324,7 @@ const websiteSchema = isHomepage ? {
     }
     nav.breadcrumb a:hover {
       color: var(--papaya-text);
-      text-decoration-color: var(--coral);
+      text-decoration-color: var(--papaya);
       text-decoration: underline;
     }
     .breadcrumb span[aria-hidden] { color: var(--text-60); }
@@ -350,7 +351,7 @@ const websiteSchema = isHomepage ? {
       align-items: center;
       height: 22px;
       padding: 0 0.55rem;
-      background: var(--coral);
+      background: var(--papaya-fill);
       color: var(--ink);
       font-size: 0.72rem;
       font-weight: 700;
@@ -372,7 +373,7 @@ const websiteSchema = isHomepage ? {
     .loading-spinner {
       width: 16px; height: 16px;
       border: 2px solid var(--border);
-      border-top-color: var(--coral);
+      border-top-color: var(--papaya);
       border-radius: 50%;
       animation: spin 0.7s linear infinite;
       flex-shrink: 0;

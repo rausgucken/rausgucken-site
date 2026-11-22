@@ -1,0 +1,47 @@
+/* retro-shell.css: Phase 4b. Global overrides (doubled class beats Astro-scoped specificity).
+   Tokens only. Sharp corners. Ink hairline borders. Hard shadow on hover. Ink text on fills. */
+
+/* Shared action buttons: QR, ICS, RSS, Share, Install, meine-events actions */
+html body .action-btn.action-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+  min-height: 44px; padding: 0 0.85rem; background: transparent; color: var(--text);
+  border: 1.5px solid var(--text); border-radius: 0; box-shadow: none;
+  font-size: 0.8125rem; font-weight: 600; line-height: 1; text-decoration: none; cursor: pointer;
+  transition: background-color 120ms, box-shadow 120ms, transform 120ms;
+}
+html body .action-btn.action-btn:hover { background: var(--papaya-fill); color: var(--ink); box-shadow: var(--shadow-hover); text-decoration: none; }
+@media (prefers-reduced-motion: no-preference) { html body .action-btn.action-btn:hover { transform: translate(-2px, -2px); } }
+html body .action-btn.action-btn:focus-visible { outline: 2px solid var(--papaya); outline-offset: 2px; }
+
+/* Filter bar */
+html body .filter-toggle-btn.filter-toggle-btn { border: 1.5px solid var(--text); border-radius: 0; }
+html body .filter-toggle-btn.filter-toggle-btn:hover { border-color: var(--text); box-shadow: var(--shadow-hover); }
+html body .filter-toggle-btn.filter-toggle-btn[aria-expanded="true"] { border-color: var(--text); box-shadow: none; }
+html body .shortcut-pill.shortcut-pill {
+  background: transparent; color: var(--text); border: 1.5px solid var(--text); border-radius: 0; box-shadow: none; min-height: 44px;
+}
+html body .shortcut-pill.shortcut-pill:hover { background: var(--papaya-fill); color: var(--ink); box-shadow: var(--shadow-hover); }
+html body .shortcut-pill--sage.shortcut-pill--sage { background: var(--aqua-fill); color: var(--ink); }
+html body .shortcut-pill--sage.shortcut-pill--sage:hover { background: var(--aqua-fill); color: var(--ink); box-shadow: var(--shadow-hover); }
+html body .filter-reset.filter-reset { border: 1.5px solid var(--text); border-radius: 0; color: var(--text); background: transparent; }
+html body .filter-reset.filter-reset:hover { background: var(--papaya-fill); color: var(--ink); border-color: var(--text); box-shadow: var(--shadow-hover); }
+
+/* Day selector */
+html body .day-tab.day-tab { border: 1.5px solid var(--text); border-radius: 0; box-shadow: none; }
+html body .day-tab--inactive.day-tab--inactive { background: transparent; color: var(--text-60); }
+html body .day-tab--inactive.day-tab--inactive:hover { background: var(--surface-card); color: var(--text); }
+html body .day-tab--active.day-tab--active { background: var(--papaya-fill); color: var(--ink); border-color: var(--text); }
+html body .day-tab.day-tab:focus-visible { outline: 2px solid var(--papaya); outline-offset: 2px; }
+
+/* Homepage: search + buttons + map */
+html body .search-box.search-box { border: 1.5px solid var(--text); border-radius: 0; background: var(--surface-card); }
+html body .search-box.search-box:focus-within { border-color: var(--text); outline: 2px solid var(--papaya); outline-offset: 2px; }
+html body .search-suggestions.search-suggestions { border: 1.5px solid var(--text); border-radius: 0; background: var(--surface-card); box-shadow: var(--shadow-hover); }
+html body .search-suggestions li:hover { background: var(--tag-bg); }
+html body .city-badge.city-badge { border-radius: 0; }
+html body .go-btn.go-btn, html body #radius-combined-link#radius-combined-link {
+  background: var(--papaya-fill); color: var(--ink); border: 1.5px solid var(--text); border-radius: 0; font-weight: 700; text-decoration: none;
+  transition: box-shadow 120ms, transform 120ms;
+}
+html body .go-btn.go-btn:hover, html body #radius-combined-link#radius-combined-link:hover { background: var(--papaya-fill); color: var(--ink); box-shadow: var(--shadow-hover); }
+html body .map-container.map-container { border: 1.5px solid var(--text); border-radius: 0; }
