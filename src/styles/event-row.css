@@ -89,7 +89,7 @@ html.dark .event-card .card-footer { background: none; }
 .event-card .footer-line1 { display: flex; align-items: center; gap: 0.5rem; flex: 1 1 auto; min-width: 0; padding: 0; min-height: 44px; }
 .event-card .footer-line2 { padding: 0; flex: 0 0 auto; }
 .event-card .merken-btn {
-  min-height: 44px; min-width: 44px; padding: 0 0.5rem; margin-left: -0.5rem; border-radius: 0;
+  min-height: 44px; min-width: 44px; padding: 0 0.5rem; margin-left: -0.5rem; border: 0; border-radius: 0; box-shadow: none;
   background: none; color: var(--text-60); justify-content: center;
 }
 .event-card .merken-btn:hover { background: none; color: var(--papaya-text); }
