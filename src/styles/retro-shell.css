@@ -66,3 +66,27 @@ html body .pagefind-ui .pagefind-ui__result-link { font-family: var(--font-headi
 html body .pagefind-ui .pagefind-ui__result-link:hover { color: var(--papaya-text); }
 html body .pagefind-ui .pagefind-ui__search-clear { font-family: var(--font-body); background: transparent; border: 1.5px solid var(--border); border-radius: 0; color: var(--text); min-height: 44px; padding: 0 0.9rem; }
 html body .pagefind-ui .pagefind-ui__message { font-family: var(--font-body); color: var(--text); }
+
+/* suggestions row layout (7.5) */
+html body .search-suggestions li,
+html body .search-suggestions .sug-item {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; text-align: left; min-height: 44px; padding: 10px 14px;
+  border: 0; border-bottom: 1px solid color-mix(in srgb, var(--text) 15%, transparent);
+  box-shadow: none; background: transparent; cursor: pointer;
+}
+html body .search-suggestions li:last-child { border-bottom: 0; }
+html body .search-suggestions li:hover,
+html body .search-suggestions li.active,
+html body .search-suggestions li.is-active,
+html body .search-suggestions li[aria-selected="true"] {
+  background: color-mix(in srgb, var(--papaya) 18%, transparent);
+}
+
+/* suggestions highlighted (7.6) */
+html body .search-suggestions li.highlighted {
+  background: color-mix(in srgb, var(--papaya) 18%, transparent);
+}
+
+/* suggestions flush (7.7) */
+html body .search-suggestions.search-suggestions { padding: 0; }

@@ -312,6 +312,7 @@ slider.addEventListener("input", updateRadius);
 searchInput.addEventListener("input", () => {
   const q = searchInput.value.trim();
   searchClear.hidden = q.length === 0;
+  highlightedIndex = -1;
   searchInput.setAttribute("aria-expanded", q.length > 0 ? "true" : "false");
   if (q.length < 1) { suggestionsEl.hidden = true; return; }
   const nq = normalize(q);
@@ -395,10 +396,12 @@ suggestionsEl.addEventListener("mouseout", e => {
 });
 
 function pickSuggestion(id) {
-  const city = CITIES.find(c => c.id === id);
+  const city = CITIES.find(c => String(c.id) === String(id));
   if (!city) return;
   suggestionsEl.hidden = true;
   searchInput.setAttribute("aria-expanded", "false");
+  searchInput.value = city.name;
+  highlightedIndex = -1;
   selectCity(city);
 }
 

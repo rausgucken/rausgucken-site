@@ -338,13 +338,13 @@ const relatedEvents: any[] = isExpired
     <header class="event-header">
       <div class="event-tags" aria-label="Kategorien">
         {Array.isArray(ev.tags) && ev.tags.map((t: string) => (
-          <a href={`/${city}/`}
+          <a href={`/${city}/`} data-pagefind-ignore
              class={`tag${t === "Kinder" || t === "Familie" ? " tag--sage" : ""}`}>
             {TAG_LABELS[t] ?? t}
           </a>
         ))}
         {ev.age_min != null && (
-          <span class="tag tag--age">
+          <span class="tag tag--age" data-pagefind-ignore>
             ab {ev.age_min} J.{ev.age_max ? ` bis ${ev.age_max} J.` : "+"}
           </span>
         )}
@@ -365,7 +365,7 @@ const relatedEvents: any[] = isExpired
     </div>
 
     <!-- ── Meta grid ──────────────────────────────────────────────────────── -->
-    <dl class="meta-grid">
+    <dl class="meta-grid" data-pagefind-ignore>
       <div class="meta-item">
         <dt class="meta-label">Datum</dt>
         <dd class="meta-value" content={ev.date_start ?? ""}>{formatDateDE(ev.date_start)}</dd>
@@ -399,7 +399,7 @@ const relatedEvents: any[] = isExpired
     <!-- ── Description ────────────────────────────────────────────────────── -->
     {ev.description && (
       <div class="event-description">
-        <h2>Beschreibung</h2>
+        <h2 data-pagefind-ignore>Beschreibung</h2>
         <p>{ev.description}</p>
       </div>
     )}
