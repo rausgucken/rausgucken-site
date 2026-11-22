@@ -37,6 +37,14 @@ const credits = creditsData;
       </div>
     ))}
   </div>
+  <section class="font-credits">
+    <h2>Schriften</h2>
+    <ul>
+      <li><strong>Fraunces</strong> (Undercase Type) · SIL Open Font License 1.1 · <a href="/fonts/LICENSE-fraunces.txt">Lizenztext</a></li>
+      <li><strong>Hanken Grotesk</strong> (Hanken Design Co.) · SIL Open Font License 1.1 · <a href="/fonts/LICENSE-hanken.txt">Lizenztext</a></li>
+    </ul>
+    <p>Beide Schriften werden von rausgucken.de selbst ausgeliefert, es werden keine Daten an Dritte übertragen.</p>
+  </section>
 </Base>
 <style>
   .credits-grid {
@@ -81,4 +89,10 @@ const credits = creditsData;
   .credit-info a {
     color: var(--papaya-text);
   }
+  .font-credits { max-width: 720px; margin-top: 2rem; border-top: 1.5px solid var(--border); padding-top: 1.25rem; }
+  .font-credits h2 { font-family: var(--font-heading); font-size: 1.25rem; margin: 0 0 0.75rem; }
+  .font-credits ul { margin: 0 0 0.75rem; padding-left: 1.1rem; color: var(--text-60); font-size: 0.9rem; }
+  .font-credits li { margin-bottom: 0.35rem; }
+  .font-credits p { color: var(--text-60); font-size: 0.85rem; margin: 0; }
+  .font-credits a { color: var(--papaya-text); }
 </style>

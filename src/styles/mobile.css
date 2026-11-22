@@ -122,7 +122,7 @@
     /* Force consistent box model */
     -webkit-appearance: none;
     appearance: none;
-    border: 1px solid #d1d5db;
+    border: 1px solid var(--border);
     border-radius: 0;
     padding: 0.5rem 0.75rem;
     font-size: 1rem;          /* ≥16px prevents iOS auto-zoom */
@@ -139,8 +139,8 @@
 
   /* Dark mode date input */
   .dark input[type="date"] {
-    border-color: rgba(255, 255, 255, 0.15);
-    color: #FFFDF9;
+    border-color: var(--border);
+    color: var(--text);
   }
 
   /* Remove calendar icon in WebKit */
@@ -168,7 +168,7 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     /* Shadow to indicate stickiness */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: none;
   }
 }
 
