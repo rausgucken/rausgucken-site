@@ -481,7 +481,7 @@ loadLeaflet(() => init());
   .search-wrap { position: relative; max-width: 600px; width: 100%; margin: 0 auto; }
   .search-box {
     display: flex; align-items: center;
-    border: 2px solid var(--border); border-radius: 32px;
+    border: 2px solid var(--border); border-radius: 0;
     background: var(--surface); padding: 0 0.5rem 0 1.25rem;
     transition: border-color 150ms;
     box-shadow: 0 4px 24px rgba(0,0,0,0.18);
@@ -500,7 +500,7 @@ loadLeaflet(() => init());
   }
   .search-submit {
     width: 46px; height: 46px; flex-shrink: 0;
-    background: var(--coral); border: none; border-radius: 24px;
+    background: var(--coral); border: none; border-radius: 0;
     cursor: pointer; display: flex; align-items: center; justify-content: center;
     transition: background 150ms; margin: 4px;
   }
@@ -510,14 +510,14 @@ loadLeaflet(() => init());
   .search-suggestions {
     position: absolute; top: calc(100% + 8px); left: 0; right: 0;
     background: var(--surface-card); border: 1px solid var(--border);
-    border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    border-radius: 0; box-shadow: 0 8px 32px rgba(0,0,0,0.25);
     z-index: 50; max-height: 280px; overflow-y: auto;
     list-style: none; margin: 0; padding: 0.3rem;
   }
   .search-suggestions li {
     padding: 0.65rem 0.85rem; cursor: pointer;
     display: flex; justify-content: space-between; align-items: center;
-    gap: 0.5rem; border-radius: 8px;
+    gap: 0.5rem; border-radius: 0;
     border-bottom: 1px solid var(--border-subtle);
     transition: background 100ms;
   }
@@ -528,17 +528,17 @@ loadLeaflet(() => init());
     border-bottom-color: transparent;
   }
   .search-suggestions li:hover .sug-name,
-  .search-suggestions li.highlighted .sug-name { color: var(--coral); }
+  .search-suggestions li.highlighted .sug-name { color: var(--papaya-text); }
   .search-suggestions li:hover .sug-type,
   .search-suggestions li:hover .sug-soon,
   .search-suggestions li.highlighted .sug-type,
-  .search-suggestions li.highlighted .sug-soon { color: var(--coral); opacity: 0.7; }
+  .search-suggestions li.highlighted .sug-soon { color: var(--papaya-text); opacity: 0.7; }
   .sug-name { font-size: 0.9rem; color: var(--text); }
   .sug-type { font-size: 0.78rem; color: var(--text-60); }
   .sug-soon { font-size: 0.72rem; color: var(--text-60); }
   .city-badge {
     flex-shrink: 0; font-size: 0.72rem; background: var(--coral); color: #fff;
-    border-radius: 4px; padding: 0.1rem 0.45rem; font-weight: 600;
+    border-radius: 0; padding: 0.1rem 0.45rem; font-weight: 600;
   }
 
   .sug-notfound { cursor: default; }
@@ -547,7 +547,7 @@ loadLeaflet(() => init());
     flex-shrink: 0;
     font-size: 0.78rem;
     font-weight: 600;
-    color: var(--coral);
+    color: var(--papaya-text);
     text-decoration: none;
     white-space: nowrap;
   }
@@ -562,7 +562,7 @@ loadLeaflet(() => init());
     flex-shrink: 0;
     font-size: 0.78rem;
     font-weight: 600;
-    color: var(--coral);
+    color: var(--papaya-text);
     text-decoration: none;
     white-space: nowrap;
   }
@@ -576,11 +576,11 @@ loadLeaflet(() => init());
     display: inline-flex; align-items: center; gap: 0.4rem;
     margin: 0.6rem auto 0; background: none; border: none;
     color: var(--text-60); font-size: 0.85rem; font-family: var(--font-body);
-    cursor: pointer; padding: 0.2rem 0.4rem; border-radius: 6px;
+    cursor: pointer; padding: 0.2rem 0.4rem; border-radius: 0;
     transition: color 150ms; white-space: nowrap; min-width: 160px;
     justify-content: center;
   }
-  .locate-btn:hover { color: var(--coral); }
+  .locate-btn:hover { color: var(--papaya-text); }
   .locate-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
   .locate-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
@@ -592,13 +592,13 @@ loadLeaflet(() => init());
     margin-bottom: 0.75rem; flex-wrap: wrap; gap: 0.5rem;
   }
   .map-header-left { display: flex; align-items: center; gap: 0.5rem; }
-  .pin-icon { width: 18px; height: 18px; color: var(--coral); flex-shrink: 0; }
+  .pin-icon { width: 18px; height: 18px; color: var(--papaya-text); flex-shrink: 0; }
   .map-city-label { font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; color: var(--text); }
 
   .go-btn {
     display: inline-block; background: var(--coral); color: #fff !important;
     font-weight: 700; font-size: 0.82rem; padding: 0.35rem 0.85rem;
-    border-radius: 8px; text-decoration: none !important; white-space: nowrap;
+    border-radius: 0; text-decoration: none !important; white-space: nowrap;
     transition: background 150ms;
   }
   .go-btn:hover { background: var(--coral-dark); text-decoration: none !important; }
@@ -615,7 +615,7 @@ loadLeaflet(() => init());
     background: var(--surface) !important; border: 1px solid var(--border) !important;
     color: var(--text) !important; font-family: var(--font-body) !important;
     font-size: 0.75rem !important; font-weight: 600 !important;
-    padding: 0.2rem 0.5rem !important; border-radius: 6px !important;
+    padding: 0.2rem 0.5rem !important; border-radius: 0 !important;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12) !important;
     white-space: nowrap !important;
   }
@@ -624,7 +624,7 @@ loadLeaflet(() => init());
   /* Radius */
   .radius-row { display: flex; align-items: center; gap: 1rem; margin-top: 1rem; }
   .radius-label { font-size: 0.85rem; color: var(--text-60); white-space: nowrap; flex-shrink: 0; }
-  .radius-val { color: var(--coral); }
+  .radius-val { color: var(--papaya-text); }
   .radius-slider { flex: 1; accent-color: var(--coral); cursor: pointer; }
 
   /* City list */
@@ -633,7 +633,7 @@ loadLeaflet(() => init());
     display: flex; justify-content: space-between; align-items: center;
     padding: 0.55rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem;
   }
-  .city-row a { color: var(--coral); font-weight: 600; text-decoration: none; }
+  .city-row a { color: var(--papaya-text); font-weight: 600; text-decoration: none; }
   .city-row-type { font-weight: 400; font-size: 0.78rem; color: var(--text-60); }
   .city-row a:hover { text-decoration: underline; }
   .city-row--selected a { color: var(--text); }
@@ -642,7 +642,7 @@ loadLeaflet(() => init());
     display: block; margin-top: 0.75rem; text-align: center;
     background: var(--coral); color: #fff !important;
     font-weight: 700; font-size: 0.88rem; padding: 0.6rem 1rem;
-    border-radius: 10px; text-decoration: none !important;
+    border-radius: 0; text-decoration: none !important;
     transition: background 150ms;
   }
   .combined-btn:hover { background: var(--coral-dark); }

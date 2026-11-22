@@ -245,14 +245,14 @@ const faqSchema = faqItems.length > 0 ? {
   .faq-question::before {
     content: "▸";
     font-size: 0.65rem;
-    color: var(--coral);
+    color: var(--papaya-text);
     transition: transform 150ms;
     flex-shrink: 0;
   }
   details.faq-item[open] .faq-question::before {
     transform: rotate(90deg);
   }
-  .faq-question:hover { color: var(--coral); }
+  .faq-question:hover { color: var(--papaya-text); }
   .faq-question:focus-visible {
     outline: 2px solid var(--coral);
     outline-offset: -2px;
@@ -304,13 +304,13 @@ const faqSchema = faqItems.length > 0 ? {
     transition: color 150ms, text-decoration-color 150ms;
   }
   .faq-event-link:hover {
-    color: var(--coral);
+    color: var(--papaya-text);
     text-decoration-color: var(--coral);
   }
   .faq-event-link:focus-visible {
     outline: 2px solid var(--coral);
     outline-offset: 2px;
-    border-radius: 2px;
+    border-radius: 0;
   }
 
   .faq-event-meta {
@@ -322,7 +322,7 @@ const faqSchema = faqItems.length > 0 ? {
     display: inline-block;
     font-size: 0.8rem;
     font-weight: 700;
-    color: var(--coral);
+    color: var(--papaya-text);
     text-decoration: none;
     margin-top: 0.25rem;
     transition: opacity 150ms;
@@ -331,6 +331,6 @@ const faqSchema = faqItems.length > 0 ? {
   .faq-cta:focus-visible {
     outline: 2px solid var(--coral);
     outline-offset: 2px;
-    border-radius: 2px;
+    border-radius: 0;
   }
 </style>

@@ -208,7 +208,7 @@ const _showRegular = isStanding && !ev.time;
   /* ── Date badge ─────────────────────────────────────────────────────────── */
   .date-badge {
     background: var(--coral);
-    color: var(--text);
+    color: var(--ink);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,7 +268,7 @@ const _showRegular = isStanding && !ev.time;
     font-size: 0.7rem;
     font-weight: 500;
     padding: 2px 8px;
-    border-radius: 20px;
+    border-radius: 0;
     white-space: nowrap;
   }
   .tag--age {
@@ -277,12 +277,12 @@ const _showRegular = isStanding && !ev.time;
     font-weight: 600;
   }
   .badge-new {
-    background: var(--sage);
-    color: var(--text);
+    background: var(--aqua-fill);
+    color: var(--ink);
     font-size: 0.65rem;
     font-weight: 700;
     padding: 2px 7px;
-    border-radius: 20px;
+    border-radius: 0;
     text-transform: uppercase;
     letter-spacing: 0.06em;
   }
@@ -292,7 +292,7 @@ const _showRegular = isStanding && !ev.time;
     font-size: 0.65rem;
     font-weight: 600;
     padding: 2px 7px;
-    border-radius: 4px;
+    border-radius: 0;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     border: 1px solid var(--border);
@@ -367,9 +367,9 @@ const _showRegular = isStanding && !ev.time;
     text-overflow: ellipsis;
     min-width: 0;
   }
-  .source-attribution:hover { color: var(--coral); }
+  .source-attribution:hover { color: var(--papaya-text); }
   html.dark .source-attribution { color: var(--text-60); }
-  html.dark .source-attribution:hover { color: var(--coral); }
+  html.dark .source-attribution:hover { color: var(--papaya-text); }
 
   .freshness-stamp {
     font-size: 0.67rem;
@@ -396,7 +396,7 @@ const _showRegular = isStanding && !ev.time;
     flex-shrink: 0;
   }
   .merken-btn:hover {
-    color: var(--coral);
+    color: var(--papaya-text);
     background: var(--coral-light);
   }
   .merken-btn:focus-visible {
@@ -408,10 +408,10 @@ const _showRegular = isStanding && !ev.time;
     stroke: var(--coral);
   }
   .merken-btn[aria-pressed="true"] .merken-label {
-    color: var(--coral);
+    color: var(--papaya-text);
   }
   .merken-btn[aria-pressed="true"] {
-    color: var(--coral);
+    color: var(--papaya-text);
   }
 </style>
 

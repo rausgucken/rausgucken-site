@@ -12,7 +12,7 @@ h1 {
 .search-wrap { position: relative; max-width: 480px; margin: 0 auto 1.5rem; }
 .search-box {
   display: flex; align-items: center;
-  border: 2px solid var(--border); border-radius: 12px;
+  border: 2px solid var(--border); border-radius: 0;
   background: var(--surface); padding: 0 0.8rem; transition: border-color 150ms;
 }
 .search-box:focus-within { border-color: var(--coral); }
@@ -26,7 +26,7 @@ h1 {
 .search-suggestions {
   position: absolute; top: calc(100% + 4px); left: 0; right: 0;
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  border-radius: 0; box-shadow: 0 8px 24px rgba(0,0,0,0.1);
   z-index: 50; max-height: 260px; overflow-y: auto;
   list-style: none; margin: 0; padding: 0.4rem 0;
 }
@@ -37,7 +37,7 @@ h1 {
 .search-suggestions li:hover { background: rgba(0,0,0,0.04); }
 .city-badge {
   font-size: 0.72rem; background: var(--coral); color: #fff;
-  border-radius: 4px; padding: 0.1rem 0.4rem; font-weight: 600;
+  border-radius: 0; padding: 0.1rem 0.4rem; font-weight: 600;
 }
 
 .map-and-panel {
@@ -55,7 +55,7 @@ h1 {
 .map-tooltip {
   position: absolute; pointer-events: none;
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 6px; padding: 0.35rem 0.65rem;
+  border-radius: 0; padding: 0.35rem 0.65rem;
   font-size: 0.78rem; line-height: 1.4; color: var(--text);
   box-shadow: 0 4px 12px rgba(0,0,0,0.12); white-space: nowrap; z-index: 10;
 }
@@ -78,13 +78,13 @@ h1 {
 .go-btn {
   display: inline-block; background: var(--coral); color: #fff;
   font-weight: 700; font-size: 0.88rem; padding: 0.5rem 1rem;
-  border-radius: 8px; text-decoration: none;
+  border-radius: 0; text-decoration: none;
 }
 .go-btn:hover { background: #e04a38; }
 
 .radius-section { display: flex; flex-direction: column; gap: 0.4rem; }
 .slider-label { font-size: 0.88rem; color: var(--text-60); }
-.radius-val { color: var(--coral); font-weight: 700; }
+.radius-val { color: var(--papaya-text); font-weight: 700; }
 .radius-slider { width: 100%; accent-color: var(--coral); cursor: pointer; }
 .slider-ticks { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-60); opacity: 0.6; }
 
@@ -96,7 +96,7 @@ h1 {
 #radius-combined-link {
   display: block; background: var(--coral); color: #fff !important;
   font-weight: 700; font-size: 0.88rem; padding: 0.55rem 1rem;
-  border-radius: 8px; text-decoration: none !important;
+  border-radius: 0; text-decoration: none !important;
   text-align: center; margin-top: 0.75rem; transition: background 150ms;
 }
 #radius-combined-link:hover { background: #e04a38; }

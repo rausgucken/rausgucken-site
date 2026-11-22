@@ -157,10 +157,10 @@
     height: 20px;
     padding: 0 5px;
     background: var(--coral);
-    color: var(--text);
+    color: var(--ink);
     font-size: 0.7rem;
     font-weight: 700;
-    border-radius: 20px;
+    border-radius: 0;
     flex-shrink: 0;
   }
 
@@ -193,17 +193,17 @@
     min-height: 44px;
     padding: 0 0.85rem;
     background: var(--coral);
-    color: var(--text);
+    color: var(--ink);
     font-size: 0.78rem;
     font-weight: 600;
-    border-radius: 20px;
+    border-radius: 0;
     text-decoration: none;
     white-space: nowrap;
     transition: background 150ms, transform 150ms;
   }
   .shortcut-pill:hover { background: var(--coral-dark); transform: translateY(-1px); text-decoration: none; }
   .shortcut-pill:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
-  .shortcut-pill--sage { background: var(--sage); color: var(--text); }
+  .shortcut-pill--sage { background: var(--aqua-fill); color: var(--ink); }
   .shortcut-pill--sage:hover { background: #7aaa58; }
 
   /* ── Filter controls row ─────────────────────────────────────────────────── */
@@ -259,7 +259,7 @@
     cursor: pointer; transition: border-color 150ms, color 150ms, background 150ms;
     align-self: flex-end; white-space: nowrap;
   }
-  .filter-reset:hover { border-color: var(--coral); color: var(--coral); background: var(--coral-light); }
+  .filter-reset:hover { border-color: var(--coral); color: var(--papaya-text); background: var(--coral-light); }
   .filter-reset:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
 
   .filter-count {

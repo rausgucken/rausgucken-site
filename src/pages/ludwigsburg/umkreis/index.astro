@@ -60,12 +60,12 @@ const cityNamesJson = JSON.stringify(cityNames);
 
 <style>
   .page-wrap { max-width: 760px; margin: 0 auto; padding: 2rem 1rem 4rem; }
-  .back-link { font-size: 0.85rem; color: var(--coral); text-decoration: none; display: inline-block; margin-bottom: 1rem; }
+  .back-link { font-size: 0.85rem; color: var(--papaya-text); text-decoration: none; display: inline-block; margin-bottom: 1rem; }
   h1 { font-family: var(--font-heading); font-weight: 800; font-size: 2rem; margin: 0 0 0.3rem; }
   .sub { color: var(--text-60); font-size: 0.9rem; margin: 0 0 1.25rem; }
   .city-filters { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
   :global(.city-chip) {
-    border: none; outline: none; appearance: none; -webkit-appearance: none; border-radius: 20px;
+    border: none; outline: none; appearance: none; -webkit-appearance: none; border-radius: 0;
     padding: 0.3rem 0.85rem; font-size: 0.8rem; font-weight: 600;
     cursor: pointer; background: var(--surface-secondary, #444857); color: var(--text-60);
     transition: all 120ms;
@@ -74,7 +74,7 @@ const cityNamesJson = JSON.stringify(cityNames);
   .event-wrap { margin-bottom: 0.25rem; }
   .city-tag {
     font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.07em; color: var(--coral); padding: 0.15rem 0; margin-bottom: 0.15rem;
+    letter-spacing: 0.07em; color: var(--papaya-text); padding: 0.15rem 0; margin-bottom: 0.15rem;
   }
   .empty { text-align: center; color: var(--text-60); padding: 3rem 0; }
 </style>

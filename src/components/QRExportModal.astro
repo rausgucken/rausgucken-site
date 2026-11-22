@@ -323,9 +323,9 @@ async function renderExportPage(idx) {
   // 4. Page nav
   if (total > 1) {
     exportHint.innerHTML =
-      `<button id="qr-prev" style="background:none;border:none;cursor:pointer;color:var(--coral);font-size:1.1rem;padding:0 8px;opacity:${idx===0?0.3:1}" ${idx===0?'disabled':''}>&#9664;</button>` +
+      `<button id="qr-prev" style="background:none;border:none;cursor:pointer;color: var(--papaya-text);font-size:1.1rem;padding:0 8px;opacity:${idx===0?0.3:1}" ${idx===0?'disabled':''}>&#9664;</button>` +
       `Seite&nbsp;${idx+1}&nbsp;von&nbsp;${total}` +
-      `<button id="qr-next" style="background:none;border:none;cursor:pointer;color:var(--coral);font-size:1.1rem;padding:0 8px;opacity:${idx===total-1?0.3:1}" ${idx===total-1?'disabled':''}>&#9654;</button>`;
+      `<button id="qr-next" style="background:none;border:none;cursor:pointer;color: var(--papaya-text);font-size:1.1rem;padding:0 8px;opacity:${idx===total-1?0.3:1}" ${idx===total-1?'disabled':''}>&#9654;</button>`;
     document.getElementById('qr-prev')?.addEventListener('click', () => {
       if (qrPageIdx > 0) { qrPageIdx--; renderExportPage(qrPageIdx); }
     });
@@ -703,7 +703,7 @@ if (document.readyState === 'loading') {
     background: var(--tag-bg);
     color: var(--text-60);
     border: 1.5px solid var(--border);
-    border-radius: 20px;
+    border-radius: 0;
     font-size: 0.84rem;
     font-weight: 600;
     cursor: pointer;
@@ -714,7 +714,7 @@ if (document.readyState === 'loading') {
   }
   .qr-transfer-btn:hover {
     background: var(--coral-light);
-    color: var(--coral);
+    color: var(--papaya-text);
     border-color: var(--coral);
   }
   .qr-transfer-btn:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
@@ -774,7 +774,7 @@ if (document.readyState === 'loading') {
     color: var(--text-60); cursor: pointer; transition: background 150ms;
     flex-shrink: 0;
   }
-  .qr-tm-close:hover { background: var(--coral-light); color: var(--coral); }
+  .qr-tm-close:hover { background: var(--coral-light); color: var(--papaya-text); }
   .qr-tm-close:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
 
   .qr-tm-desc {
@@ -787,7 +787,7 @@ if (document.readyState === 'loading') {
   }
   .qr-tm-hint {
     font-size: 0.82rem;
-    color: var(--coral);
+    color: var(--papaya-text);
     font-weight: 600;
     margin: 0;
   }
@@ -802,7 +802,7 @@ if (document.readyState === 'loading') {
   /* ── Export canvas ─────────────────────────────────────────────────────── */
   .qr-tm-canvas-wrap {
     width: 260px; height: 260px;
-    border-radius: 12px; overflow: hidden;
+    border-radius: 0; overflow: hidden;
     background: #fff;
     display: flex; align-items: center; justify-content: center;
   }
@@ -814,7 +814,7 @@ if (document.readyState === 'loading') {
     width: 100%;
     max-width: 300px;
     aspect-ratio: 1;
-    border-radius: 12px;
+    border-radius: 0;
     overflow: hidden;
     background: #000;
   }
@@ -833,7 +833,7 @@ if (document.readyState === 'loading') {
   .qr-scan-frame {
     width: 60%; aspect-ratio: 1;
     border: 2.5px solid var(--coral);
-    border-radius: 8px;
+    border-radius: 0;
     box-shadow: 0 0 0 9999px rgba(0,0,0,0.35);
   }
   .qr-scan-hint {
@@ -886,7 +886,7 @@ if (document.readyState === 'loading') {
   .qr-preview-actions { display: flex; gap: 0.6rem; width: 100%; }
   .qr-preview-confirm {
     flex: 1;
-    background: var(--coral); color: var(--text);
+    background: var(--coral); color: var(--ink);
     border: none; border-radius: var(--radius-sm, 8px);
     padding: 0.65rem 1rem; font-size: 0.875rem; font-weight: 700;
     cursor: pointer; font-family: inherit; min-height: 44px;
@@ -901,7 +901,7 @@ if (document.readyState === 'loading') {
     cursor: pointer; font-family: inherit; min-height: 44px;
     transition: border-color 150ms, color 150ms;
   }
-  .qr-preview-cancel:hover { border-color: var(--coral); color: var(--coral); }
+  .qr-preview-cancel:hover { border-color: var(--coral); color: var(--papaya-text); }
   .qr-preview-cancel:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
 
   /* ── Success / Error ───────────────────────────────────────────────────── */
@@ -941,15 +941,15 @@ if (document.readyState === 'loading') {
   .qr-code-input:focus { outline: 2px solid var(--coral); border-color: var(--coral); }
   .qr-code-submit {
     height: 44px; padding: 0 1rem;
-    background: var(--coral); color: var(--text);
+    background: var(--coral); color: var(--ink);
     border: none; border-radius: var(--radius-sm, 8px);
     font-size: 0.875rem; font-weight: 700; cursor: pointer; font-family: inherit;
   }
   .qr-code-submit:disabled { opacity: 0.5; cursor: not-allowed; }
-  .qr-code-error { font-size: 0.8rem; color: #e55a4d; margin: 0; text-align: center; }
+  .qr-code-error { font-size: 0.8rem; color: var(--papaya-text); margin: 0; text-align: center; }
 
   .qr-import-error {
-    font-size: 0.875rem; color: #e55a4d; text-align: center;
+    font-size: 0.875rem; color: var(--papaya-text); text-align: center;
     background: rgba(229,90,77,0.06); border: 1px solid rgba(229,90,77,0.2);
     border-radius: var(--radius-sm, 8px); padding: 0.75rem 1rem; width: 100%; margin: 0;
   }

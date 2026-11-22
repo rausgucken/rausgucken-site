@@ -156,7 +156,7 @@ document.addEventListener("keydown", (e) => {
     background: var(--tag-bg);
     color: var(--text-60);
     border: none;
-    border-radius: 20px;
+    border-radius: 0;
     font-size: 0.82rem;
     font-weight: 500;
     cursor: pointer;
@@ -165,7 +165,7 @@ document.addEventListener("keydown", (e) => {
   }
   .qr-btn:hover {
     background: var(--coral-light);
-    color: var(--coral);
+    color: var(--papaya-text);
   }
   .qr-btn:focus-visible {
     outline: 2px solid var(--coral);
@@ -234,14 +234,14 @@ document.addEventListener("keydown", (e) => {
     transition: background 150ms;
     flex-shrink: 0;
   }
-  .qr-modal-close:hover { background: var(--coral-light); color: var(--coral); }
+  .qr-modal-close:hover { background: var(--coral-light); color: var(--papaya-text); }
   .qr-modal-close:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
 
   /* ── Canvas wrapper ────────────────────────────────────────────────────── */
   .qr-modal-canvas-wrap {
     width: 280px;
     height: 280px;
-    border-radius: 12px;
+    border-radius: 0;
     overflow: hidden;
     background: #fff;
     display: flex;
@@ -264,7 +264,7 @@ document.addEventListener("keydown", (e) => {
 
   .qr-modal-url {
     font-size: 0.75rem;
-    color: var(--coral);
+    color: var(--papaya-text);
     word-break: break-all;
     text-align: center;
     text-decoration: none;

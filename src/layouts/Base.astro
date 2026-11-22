@@ -155,10 +155,10 @@ const websiteSchema = isHomepage ? {
 
     /* ── Light mode tokens ─────────────────────────────────────────────────── */
     :root {
-      --coral:        #FF6F61;
-      --coral-dark:   #e55a4d;
+      --coral: var(--papaya);
+      --coral-dark: var(--papaya);
       --coral-light:  rgba(255,111,97,0.10);
-      --sage:         #90BE6D;
+      --sage: var(--aqua);
       --sage-light:   rgba(144,190,109,0.15);
 
       --bg:           #FFFDF9;
@@ -216,7 +216,7 @@ const websiteSchema = isHomepage ? {
       transition: background 250ms ease, color 250ms ease;
     }
     h1,h2,h3,h4 { font-family: var(--font-heading); color: var(--text); line-height: 1.2; }
-    a { color: var(--coral); text-decoration: none; }
+    a { color: var(--papaya-text); text-decoration: none; }
     a:hover { text-decoration: underline; }
     *:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
 
@@ -243,12 +243,12 @@ const websiteSchema = isHomepage ? {
     .site-logo { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; }
     .site-logo img { height: 40px; width: 40px; border-radius: 0; object-fit: contain; }
     .site-logo-text { font-family: var(--font-heading); font-weight: 800; font-size: 1.25rem; color: var(--text); letter-spacing: -0.02em; }
-    .site-logo-text span { color: var(--coral); }
+    .site-logo-text span { color: var(--papaya-text); }
     .site-logo:hover { text-decoration: none; }
 
     .site-nav { display: flex; align-items: center; gap: 1rem; }
     .site-nav > a { font-size: 0.9rem; font-weight: 500; color: var(--text-60); transition: color 150ms; }
-    .site-nav > a:hover { color: var(--coral); text-decoration: none; }
+    .site-nav > a:hover { color: var(--papaya-text); text-decoration: none; }
 
     .theme-btn {
       width: 44px; height: 44px;
@@ -275,17 +275,17 @@ const websiteSchema = isHomepage ? {
       position: relative;
     }
     .nav-saved-link:hover {
-      color: var(--coral); border-color: var(--coral);
+      color: var(--papaya-text); border-color: var(--coral);
       background: var(--coral-light); text-decoration: none;
     }
     .nav-saved-link svg { flex-shrink: 0; }
     .nav-saved-text { white-space: nowrap; }
     .nav-saved-badge {
       position: absolute; top: -6px; right: -6px;
-      background: var(--coral); color: var(--text);
+      background: var(--coral); color: var(--ink);
       font-size: 0.6rem; font-weight: 700;
       min-width: 17px; height: 17px;
-      border-radius: 20px; padding: 0 4px;
+      border-radius: 0; padding: 0 4px;
       display: flex; align-items: center; justify-content: center;
       line-height: 1;
     }
@@ -322,7 +322,7 @@ const websiteSchema = isHomepage ? {
     }
     .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.45rem; }
     .footer-col a { color: var(--text-60); font-size: 0.85rem; }
-    .footer-col a:hover { color: var(--coral); text-decoration: none; }
+    .footer-col a:hover { color: var(--papaya-text); text-decoration: none; }
     .footer-legal {
       max-width: 1100px;
       margin: 2rem auto 0;
@@ -355,7 +355,7 @@ const websiteSchema = isHomepage ? {
       transition: color 150ms, text-decoration-color 150ms;
     }
     nav.breadcrumb a:hover {
-      color: var(--coral);
+      color: var(--papaya-text);
       text-decoration-color: var(--coral);
       text-decoration: underline;
     }
@@ -384,10 +384,10 @@ const websiteSchema = isHomepage ? {
       height: 22px;
       padding: 0 0.55rem;
       background: var(--coral);
-      color: var(--text);
+      color: var(--ink);
       font-size: 0.72rem;
       font-weight: 700;
-      border-radius: 20px;
+      border-radius: 0;
     }
 
     /* ── Global: ensure [hidden] always wins over display:flex/block etc. ─── */

@@ -45,7 +45,7 @@
     font-size: 0.875rem;   /* 14px — readable without zooming */
     padding: 0.5rem 0.625rem;
     min-height: 44px;      /* WCAG tap target */
-    border-radius: 0.375rem;
+    border-radius: 0;
     appearance: none;
     -webkit-appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23373F51' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
@@ -81,7 +81,7 @@
   [data-component="EventCard"],
   article.card {
     padding: 0.875rem 1rem;  /* tighter than desktop */
-    border-radius: 0.5rem;
+    border-radius: 0;
     margin-bottom: 0.625rem;
   }
 
@@ -181,7 +181,7 @@
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid #d1d5db;
-    border-radius: 0.375rem;
+    border-radius: 0;
     padding: 0.5rem 0.75rem;
     font-size: 1rem;          /* ≥16px prevents iOS auto-zoom */
     font-family: inherit;
