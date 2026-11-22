@@ -6,7 +6,7 @@
  * - Push notifications: show reminder for saved events
  */
 
-const CACHE_VERSION = 'rg-v1';
+const CACHE_VERSION = 'rg-v2';
 const SHELL_CACHE   = `${CACHE_VERSION}-shell`;
 const DATA_CACHE    = `${CACHE_VERSION}-data`;
 const IMAGE_CACHE   = `${CACHE_VERSION}-images`;
