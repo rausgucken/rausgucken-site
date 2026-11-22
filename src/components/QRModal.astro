@@ -61,9 +61,9 @@ import QRCodeStyling from "qr-code-styling";
 // ── Logo SVG as data URL (inline — no external fetch) ──────────────────────
 const LOGO_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
   <rect width="160" height="160" rx="24" fill="white"/>
-  <circle cx="62" cy="98" r="32" fill="#FF6F61"/>
-  <circle cx="114" cy="114" r="16" fill="#FF6F61"/>
-  <path d="M 75 36 L 124 36 L 124 85" fill="none" stroke="#FF6F61" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="62" cy="98" r="32" fill="#E24E42"/>
+  <circle cx="114" cy="114" r="16" fill="#E24E42"/>
+  <path d="M 75 36 L 124 36 L 124 85" fill="none" stroke="#E24E42" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`;
 const LOGO_URL = `data:image/svg+xml;base64,${btoa(LOGO_SVG)}`;
 
@@ -102,15 +102,15 @@ function openModal() {
       data:   pageUrl,
       image:  LOGO_URL,
       dotsOptions: {
-        color: "#373F51",   // charcoal — high contrast on white
+        color: "#1E1B1A",   // charcoal — high contrast on white
         type:  "rounded",
       },
       cornersSquareOptions: {
-        color: "#FF6F61",   // coral corner squares
+        color: "#E24E42",   // coral corner squares
         type:  "extra-rounded",
       },
       cornersDotOptions: {
-        color: "#FF6F61",
+        color: "#E24E42",
       },
       backgroundOptions: {
         color: "#ffffff",

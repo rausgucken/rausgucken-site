@@ -66,7 +66,7 @@ const sizeClass = size === 'sm' ? 'freshness-stamp--sm'
     font-size: 13px;
     line-height: 1.4;
     /* Design system rule: default text color + opacity-70 only. Never Coral. */
-    color: #373F51;           /* text-charcoal */
+    color: var(--text-60);
     opacity: 0.7;
   }
 
@@ -102,9 +102,9 @@ const sizeClass = size === 'sm' ? 'freshness-stamp--sm'
   }
 
   @keyframes freshness-pulse {
-    0%   { box-shadow: 0 0 0 0 rgba(255, 111, 97, 0.35); }
-    70%  { box-shadow: 0 0 0 5px rgba(255, 111, 97, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(255, 111, 97, 0); }
+    0%   { box-shadow: 0 0 0 0 rgba(226,78,66, 0.35); }
+    70%  { box-shadow: 0 0 0 5px rgba(226,78,66, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(226,78,66, 0); }
   }
 
   /* ◐ Recent — half coral */

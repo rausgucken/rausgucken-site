@@ -194,7 +194,7 @@ function initMap(city) {
     const isSelected = c.id === city.id;
     const marker = L.circleMarker([c.lat, c.lng], {
       radius: isSelected ? 12 : 8,
-      fillColor: isSelected ? "#FF6F61" : "#373F51",
+      fillColor: isSelected ? "#E24E42" : "#1E1B1A",
       color: "#fff",
       weight: 2,
       opacity: 1,
@@ -225,7 +225,7 @@ function updateMarkers(inRadiusIds) {
     const inRange = inRadiusIds.has(c.id);
     m.setStyle({
       radius: isSelected ? 12 : 8,
-      fillColor: isSelected ? "#FF6F61" : (inRange ? "#373F51" : "#373F51"),
+      fillColor: isSelected ? "#E24E42" : (inRange ? "#1E1B1A" : "#1E1B1A"),
       fillOpacity: inRange || isSelected ? 1 : 0.2,
       opacity: inRange || isSelected ? 1 : 0.2,
     });
@@ -243,10 +243,10 @@ function updateRadius() {
     if (radiusCircle) radiusCircle.remove();
     radiusCircle = window.L.circle([selectedCity.lat, selectedCity.lng], {
       radius: radius * 1000,
-      color: "#FF6F61",
+      color: "#E24E42",
       weight: 1.5,
       opacity: 0.5,
-      fillColor: "#FF6F61",
+      fillColor: "#E24E42",
       fillOpacity: 0.06,
     }).addTo(map);
   }
@@ -384,7 +384,7 @@ suggestionsEl.addEventListener("mouseover", e => {
     el.style.color = "";
     el.querySelectorAll("span").forEach(s => s.style.color = "");
   });
-  li.querySelectorAll("span").forEach(s => s.style.color = "#FF6F61");
+  li.querySelectorAll("span").forEach(s => s.style.color = "var(--papaya-text)");
 });
 
 suggestionsEl.addEventListener("mouseout", e => {
@@ -486,7 +486,7 @@ loadLeaflet(() => init());
     transition: border-color 150ms;
     box-shadow: 0 4px 24px rgba(0,0,0,0.18);
   }
-  .search-box:focus-within { border-color: var(--coral); box-shadow: 0 4px 32px rgba(255,111,97,0.18); }
+  .search-box:focus-within { border-color: var(--coral); box-shadow: 0 4px 32px rgba(226,78,66,0.18); }
   .search-icon { width: 20px; height: 20px; color: var(--text-60); flex-shrink: 0; margin-right: 0.6rem; }
   .search-box input {
     flex: 1; border: none; outline: none; background: transparent;
@@ -504,7 +504,7 @@ loadLeaflet(() => init());
     cursor: pointer; display: flex; align-items: center; justify-content: center;
     transition: background 150ms; margin: 4px;
   }
-  .search-submit:hover { background: var(--coral-dark); }
+  .search-submit:hover { background: var(--papaya-fill); box-shadow: var(--shadow-hover); transform: translate(-2px,-2px);  }
   .search-submit svg { width: 20px; height: 20px; color: #fff; }
 
   .search-suggestions {
@@ -524,7 +524,7 @@ loadLeaflet(() => init());
   .search-suggestions li:last-child { border-bottom: none; }
   .search-suggestions li:hover,
   .search-suggestions li.highlighted {
-    background: rgba(255,111,97,0.18);
+    background: rgba(226,78,66,0.18);
     border-bottom-color: transparent;
   }
   .search-suggestions li:hover .sug-name,
@@ -537,7 +537,7 @@ loadLeaflet(() => init());
   .sug-type { font-size: 0.78rem; color: var(--text-60); }
   .sug-soon { font-size: 0.72rem; color: var(--text-60); }
   .city-badge {
-    flex-shrink: 0; font-size: 0.72rem; background: var(--coral); color: #fff;
+    flex-shrink: 0; font-size: 0.72rem; background: var(--coral); color: var(--ink);
     border-radius: 0; padding: 0.1rem 0.45rem; font-weight: 600;
   }
 
@@ -601,7 +601,7 @@ loadLeaflet(() => init());
     border-radius: 0; text-decoration: none !important; white-space: nowrap;
     transition: background 150ms;
   }
-  .go-btn:hover { background: var(--coral-dark); text-decoration: none !important; }
+  .go-btn:hover { background: var(--papaya-fill); box-shadow: var(--shadow-hover); transform: translate(-2px,-2px);  text-decoration: none !important; }
 
   /* Leaflet map */
   .leaflet-map {
@@ -645,7 +645,7 @@ loadLeaflet(() => init());
     border-radius: 0; text-decoration: none !important;
     transition: background 150ms;
   }
-  .combined-btn:hover { background: var(--coral-dark); }
+  .combined-btn:hover { background: var(--papaya-fill); box-shadow: var(--shadow-hover); transform: translate(-2px,-2px);  }
 
 
 

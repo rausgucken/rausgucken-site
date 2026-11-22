@@ -95,7 +95,7 @@
 
     <!-- Success state -->
     <div id="qr-import-success" class="qr-import-success" hidden>
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#90BE6D" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#008F95" stroke-width="2" stroke-linecap="round" aria-hidden="true">
         <polyline points="20 6 9 17 4 12"/>
       </svg>
       <p id="qr-import-success-msg"></p>
@@ -202,9 +202,9 @@ function renderQRToCanvas(text, canvasEl) {
     try {
       const _svgLogo = [
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">',
-        '<circle cx="62" cy="98" r="32" fill="#FF6F61"/>',
-        '<circle cx="114" cy="114" r="16" fill="#FF6F61"/>',
-        '<path d="M 75 36 L 124 36 L 124 85" fill="none" stroke="#FF6F61"',
+        '<circle cx="62" cy="98" r="32" fill="#E24E42"/>',
+        '<circle cx="114" cy="114" r="16" fill="#E24E42"/>',
+        '<path d="M 75 36 L 124 36 L 124 85" fill="none" stroke="#E24E42"',
         ' stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>',
         '</svg>'
       ].join('');
@@ -226,15 +226,15 @@ function renderQRToCanvas(text, canvasEl) {
           hideBackgroundDots: true,
         },
         dotsOptions: {
-          color:    '#FF6F61',
+          color:    '#E24E42',
           type:     'rounded',
         },
         cornersSquareOptions: {
-          color: '#373F51',
+          color: '#1E1B1A',
           type:  'extra-rounded',
         },
         cornersDotOptions: {
-          color: '#FF6F61',
+          color: '#E24E42',
           type:  'dot',
         },
         backgroundOptions: {
@@ -892,7 +892,7 @@ if (document.readyState === 'loading') {
     cursor: pointer; font-family: inherit; min-height: 44px;
     transition: background 150ms;
   }
-  .qr-preview-confirm:hover { background: var(--coral-dark); }
+  .qr-preview-confirm:hover { background: var(--papaya-fill); box-shadow: var(--shadow-hover); transform: translate(-2px,-2px);  }
   .qr-preview-confirm:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
   .qr-preview-cancel {
     background: transparent; border: 1.5px solid var(--border);
