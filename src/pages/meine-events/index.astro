@@ -159,8 +159,8 @@ import QRExportModal from "../../components/QRExportModal.astro";
   .notif-banner {
     max-width: 720px;
     margin: 0 auto 1.5rem;
-    background: var(--coral-light);
-    border: 1px solid var(--coral);
+    background: var(--tag-bg);
+    border: 1px solid var(--papaya);
     border-radius: var(--radius);
     padding: 0.85rem 1.1rem;
   }
@@ -195,7 +195,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
     padding: 0.7rem 1rem;
     border-radius: var(--radius-sm);
     font-size: 0.875rem;
-    background: var(--sage-light);
+    background: var(--tag-bg);
     color: var(--text);
     border: 1px solid var(--border);
   }
@@ -237,7 +237,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
     justify-content: center;
   }
   .empty-cta {
-    background: var(--coral);
+    background: var(--papaya-fill);
     color: var(--ink);
     font-size: 0.875rem;
     font-weight: 600;
@@ -269,7 +269,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
     font-family: var(--font-body);
     transition: border-color 150ms, color 150ms;
   }
-  .empty-reset:hover { border-color: var(--coral); color: var(--papaya-text); }
+  .empty-reset:hover { border-color: var(--papaya); color: var(--papaya-text); }
   .empty-reset:focus-visible { outline: 2px solid var(--papaya); outline-offset: 2px; }
   .empty-reset--sm { min-height: 36px; padding: 0.4rem 0.85rem; font-size: 0.8rem; }
 
@@ -318,7 +318,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
   .saved-card-link:hover { text-decoration: none; }
 
   .saved-card-date {
-    background: var(--coral);
+    background: var(--papaya-fill);
     color: var(--ink);
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     min-width: 58px; flex-shrink: 0;
@@ -355,7 +355,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
     display: flex; align-items: center; gap: 0.35rem;
     font-size: 0.78rem; font-weight: 500; color: var(--text-60);
   }
-  .saved-meta-item svg { flex-shrink: 0; stroke: var(--coral); }
+  .saved-meta-item svg { flex-shrink: 0; stroke: var(--papaya); }
 
   /* card footer row */
   .saved-card-footer {
@@ -408,8 +408,8 @@ import QRExportModal from "../../components/QRExportModal.astro";
     gap: 0.3rem;
     height: 28px;
     padding: 0 0.75rem;
-    background: var(--coral-light);
-    border: 1px solid var(--coral);
+    background: var(--tag-bg);
+    border: 1px solid var(--papaya);
     border-radius: 0;
     font-size: 0.78rem;
     font-weight: 600;
@@ -462,8 +462,8 @@ import QRExportModal from "../../components/QRExportModal.astro";
     white-space: nowrap;
   }
   .action-btn:hover {
-    border-color: var(--coral);
-    background: var(--coral-light);
+    border-color: var(--papaya);
+    background: var(--tag-bg);
     color: var(--papaya-text);
     text-decoration: none;
   }
@@ -471,8 +471,8 @@ import QRExportModal from "../../components/QRExportModal.astro";
   .action-btn .chevron { transition: transform 150ms; flex-shrink: 0; }
   .action-btn[aria-expanded="true"] .chevron { transform: rotate(180deg); }
   .action-btn[aria-expanded="true"] {
-    border-color: var(--coral);
-    background: var(--coral-light);
+    border-color: var(--papaya);
+    background: var(--tag-bg);
     color: var(--papaya-text);
   }
   .action-bar-label {
@@ -516,9 +516,9 @@ import QRExportModal from "../../components/QRExportModal.astro";
     transition: background 120ms;
   }
   .cal-dropdown-item:last-child { border-bottom: none; }
-  .cal-dropdown-item:hover { background: var(--coral-light); }
+  .cal-dropdown-item:hover { background: var(--tag-bg); }
   .cal-dropdown-item:focus-visible { outline: 2px solid var(--papaya); outline-offset: -2px; }
-  .cal-dropdown-item svg { flex-shrink: 0; margin-top: 1px; stroke: var(--coral); }
+  .cal-dropdown-item svg { flex-shrink: 0; margin-top: 1px; stroke: var(--papaya); }
   .cal-dropdown-hint {
     display: block;
     font-size: 0.72rem;
@@ -531,7 +531,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
     max-width: 720px;
     margin: -0.5rem auto 1rem;
     padding: 0.6rem 0.9rem;
-    background: var(--sage-light);
+    background: var(--tag-bg);
     border: 1px solid var(--border);
     border-radius: var(--radius-sm);
     font-size: 0.82rem;
@@ -540,7 +540,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
     align-items: center;
     gap: 0.5rem;
   }
-  .gcal-hint svg { flex-shrink: 0; stroke: var(--sage); }
+  .gcal-hint svg { flex-shrink: 0; stroke: var(--aqua); }
 
 </style>
 
@@ -925,7 +925,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
   @media (prefers-reduced-motion: no-preference) {
     #saved-list .event-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
   }
-  #saved-list .event-card--standing { border-left: 3px solid var(--coral); }
+  #saved-list .event-card--standing { border-left: 3px solid var(--papaya); }
 
   #saved-list .card-link {
     display: flex; flex: 1; text-decoration: none; color: inherit; outline: none;
@@ -933,7 +933,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
   #saved-list .card-link:hover { text-decoration: none; }
 
   #saved-list .date-badge {
-    background: var(--coral); color: var(--ink);
+    background: var(--papaya-fill); color: var(--ink);
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     min-width: 58px; flex-shrink: 0; padding: 0.75rem 0.4rem; align-self: stretch;
   }
@@ -970,7 +970,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
     display: flex; align-items: center; gap: 0.35rem;
     font-size: 0.78rem; font-weight: 500; color: var(--text-60);
   }
-  #saved-list .meta-item svg { flex-shrink: 0; stroke: var(--coral); }
+  #saved-list .meta-item svg { flex-shrink: 0; stroke: var(--papaya); }
 
   #saved-list .card-footer {
     display: flex; flex-direction: column;

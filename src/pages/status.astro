@@ -86,7 +86,7 @@ function getStatus(meta) {
 
 function healthColor(score) {
   if (score === null || score === undefined) return 'var(--text-30)';
-  if (score >= 0.85) return 'var(--sage)';
+  if (score >= 0.85) return 'var(--aqua)';
   if (score >= 0.65) return '#f5a623';
   return '#e53e3e';
 }
@@ -378,14 +378,14 @@ document.getElementById('refresh-btn')?.addEventListener('click', loadDashboard)
     font-size: 0.78rem;
     background: transparent;
     color: var(--papaya-text);
-    border: 1px solid var(--coral);
+    border: 1px solid var(--papaya);
     border-radius: 0;
     padding: 0.2rem 0.75rem;
     cursor: pointer;
     transition: background 120ms;
     min-height: 28px;
   }
-  .refresh-btn:hover { background: var(--coral-light); }
+  .refresh-btn:hover { background: var(--tag-bg); }
   .refresh-btn:focus-visible { outline: 2px solid var(--papaya); outline-offset: 2px; }
 
   /* ── Landkreis summary bar ───────────────────────────────────────────────── */
@@ -610,7 +610,7 @@ document.getElementById('refresh-btn')?.addEventListener('click', loadDashboard)
   }
   .loading-dot {
     width: 8px; height: 8px;
-    background: var(--coral);
+    background: var(--papaya-fill);
     border-radius: 50%;
     animation: pulse 1.2s ease-in-out infinite;
   }

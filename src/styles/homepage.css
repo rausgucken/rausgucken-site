@@ -15,7 +15,7 @@ h1 {
   border: 2px solid var(--border); border-radius: 0;
   background: var(--surface); padding: 0 0.8rem; transition: border-color 150ms;
 }
-.search-box:focus-within { border-color: var(--coral); }
+.search-box:focus-within { border-color: var(--papaya); }
 .search-icon { width: 18px; height: 18px; color: var(--text-60); flex-shrink: 0; margin-right: 0.5rem; }
 .search-box input {
   flex: 1; border: none; outline: none; background: transparent;
@@ -36,7 +36,7 @@ h1 {
 }
 .search-suggestions li:hover { background: rgba(0,0,0,0.04); }
 .city-badge {
-  font-size: 0.72rem; background: var(--coral); color: var(--ink);
+  font-size: 0.72rem; background: var(--papaya-fill); color: var(--ink);
   border-radius: 0; padding: 0.1rem 0.4rem; font-weight: 600;
 }
 
@@ -70,17 +70,17 @@ h1 {
 .hint-arrow { font-size: 1.1rem; }
 
 .selected-box {
-  background: var(--surface); border: 2px solid var(--coral);
+  background: var(--surface); border: 2px solid var(--papaya);
   border-radius: var(--radius); padding: 1rem;
 }
 .selected-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-60); margin: 0 0 0.25rem; }
 .selected-name { font-family: var(--font-heading); font-weight: 800; font-size: 1.4rem; color: var(--text); margin: 0 0 0.6rem; }
 .go-btn {
-  display: inline-block; background: var(--coral); color: var(--ink);
+  display: inline-block; background: var(--papaya-fill); color: var(--ink);
   font-weight: 700; font-size: 0.88rem; padding: 0.5rem 1rem;
   border-radius: 0; text-decoration: none;
 }
-.go-btn:hover { background: #e04a38; }
+.go-btn:hover { background: var(--papaya-fill); }
 
 .radius-section { display: flex; flex-direction: column; gap: 0.4rem; }
 .slider-label { font-size: 0.88rem; color: var(--text-60); }
@@ -94,9 +94,9 @@ h1 {
 }
 
 #radius-combined-link {
-  display: block; background: var(--coral); color: #fff !important;
+  display: block; background: var(--papaya-fill); color: #fff !important;
   font-weight: 700; font-size: 0.88rem; padding: 0.55rem 1rem;
   border-radius: 0; text-decoration: none !important;
   text-align: center; margin-top: 0.75rem; transition: background 150ms;
 }
-#radius-combined-link:hover { background: #e04a38; }
+#radius-combined-link:hover { background: var(--papaya-fill); }
