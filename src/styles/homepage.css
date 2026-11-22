@@ -26,7 +26,7 @@ h1 {
 .search-suggestions {
   position: absolute; top: calc(100% + 4px); left: 0; right: 0;
   background: var(--surface); border: 1px solid var(--border);
-  border-radius: 0; box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  border-radius: 0; box-shadow: var(--shadow-hover);
   z-index: 50; max-height: 260px; overflow-y: auto;
   list-style: none; margin: 0; padding: 0.4rem 0;
 }
@@ -34,7 +34,7 @@ h1 {
   padding: 0.5rem 1rem; cursor: pointer; font-size: 0.9rem; color: var(--text);
   display: flex; justify-content: space-between; align-items: center;
 }
-.search-suggestions li:hover { background: rgba(0,0,0,0.04); }
+.search-suggestions li:hover { background: var(--tag-bg); }
 .city-badge {
   font-size: 0.72rem; background: var(--papaya-fill); color: var(--ink);
   border-radius: 0; padding: 0.1rem 0.4rem; font-weight: 600;
@@ -57,7 +57,7 @@ h1 {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: 0; padding: 0.35rem 0.65rem;
   font-size: 0.78rem; line-height: 1.4; color: var(--text);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12); white-space: nowrap; z-index: 10;
+  box-shadow: var(--shadow-hover); white-space: nowrap; z-index: 10;
 }
 
 .side-col { display: flex; flex-direction: column; gap: 1.25rem; }

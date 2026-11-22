@@ -102,9 +102,9 @@ const sizeClass = size === 'sm' ? 'freshness-stamp--sm'
   }
 
   @keyframes freshness-pulse {
-    0%   { box-shadow: 0 0 0 0 rgba(226,78,66, 0.35); }
-    70%  { box-shadow: 0 0 0 5px rgba(226,78,66, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(226,78,66, 0); }
+    0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--papaya-fill) 35%, transparent); }
+    70%  { box-shadow: 0 0 0 5px color-mix(in srgb, var(--papaya-fill) 0%, transparent); }
+    100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--papaya-fill) 0%, transparent); }
   }
 
   /* ◐ Recent — half coral */
@@ -114,7 +114,7 @@ const sizeClass = size === 'sm' ? 'freshness-stamp--sm'
     height: 8px;
     border-radius: 50%;
     overflow: hidden;
-    background: #C8C8C8;
+    background: var(--text-30);
     position: relative;
   }
 
@@ -127,7 +127,7 @@ const sizeClass = size === 'sm' ? 'freshness-stamp--sm'
   }
 
   :global(.dark) .dot--recent {
-    background: #666;
+    background: var(--text-60);
   }
 
   /* ○ Older — outline ring */
