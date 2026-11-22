@@ -28,9 +28,8 @@
     const style = document.createElement('style');
     style.id = 'rg-widget-styles';
     style.textContent = `
-@import url('${FONT_URL}');
-.rg-widget{--rg-coral:#FF6F61;--rg-coral-dark:#e55a4d;--rg-text:#373F51;--rg-text-60:rgba(55,63,81,0.60);--rg-border:rgba(55,63,81,0.10);--rg-bg:#FFFDF9;--rg-card:#ffffff;--rg-tag-bg:rgba(55,63,81,0.07);font-family:'Nunito',sans-serif;color:var(--rg-text);background:var(--rg-bg);border:1px solid var(--rg-border);border-radius:12px;overflow:hidden;max-width:520px;width:100%;box-sizing:border-box;}
-.rg-widget[data-rausgucken-theme="dark"]{--rg-text:#f0ede8;--rg-text-60:rgba(240,237,232,0.60);--rg-border:rgba(240,237,232,0.12);--rg-bg:#1e2030;--rg-card:#252837;--rg-tag-bg:rgba(240,237,232,0.08);}
+.rg-widget{--rg-coral:#F2685D;--rg-accent:#C2382D;--rg-big:#E24E42;--rg-ink:#1E1B1A;--rg-text:#1E1B1A;--rg-text-60:#5E5A55;--rg-border:rgba(30,27,26,0.18);--rg-frame:#1E1B1A;--rg-bg:#FBF7F0;--rg-card:#FFFDF8;--rg-tag-bg:rgba(30,27,26,0.07);font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;color:var(--rg-text);background:var(--rg-bg);border:1.5px solid var(--rg-frame);border-radius:0;overflow:hidden;max-width:520px;width:100%;box-sizing:border-box;}
+.rg-widget[data-rausgucken-theme="dark"]{--rg-accent:#F2685D;--rg-big:#F2685D;--rg-text:#F5F0E6;--rg-text-60:#B5ADA2;--rg-border:rgba(245,240,230,0.16);--rg-frame:rgba(245,240,230,0.55);--rg-bg:#1E1B1A;--rg-card:#2A2624;--rg-tag-bg:rgba(245,240,230,0.08);}
 .rg-widget *{box-sizing:border-box;}
 .rg-header{display:flex;align-items:center;gap:8px;padding:14px 16px 10px;border-bottom:1px solid var(--rg-border);background:var(--rg-bg);}
 .rg-logo-mark{width:22px;height:22px;flex-shrink:0;}
@@ -41,20 +40,20 @@
 .rg-item:last-child{border-bottom:none;}
 .rg-item:hover{background:var(--rg-tag-bg);}
 .rg-date-col{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:2px;}
-.rg-date-day{font-size:20px;font-weight:800;line-height:1;color:var(--rg-coral);}
+.rg-date-day{font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:700;line-height:1;color:var(--rg-big);}
 .rg-date-mon{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--rg-text-60);margin-top:2px;}
 .rg-date-range{font-size:9px;color:var(--rg-text-60);font-weight:600;margin-top:4px;text-align:center;line-height:1.3;}
 .rg-content{}
-.rg-title{font-size:13px;font-weight:700;line-height:1.35;color:var(--rg-text);margin:0 0 4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.rg-title{font-family:Georgia,'Times New Roman',serif;font-size:14px;font-weight:700;line-height:1.35;color:var(--rg-text);margin:0 0 4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
 .rg-meta{font-size:11px;color:var(--rg-text-60);font-weight:600;margin:0 0 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .rg-tags{display:flex;flex-wrap:wrap;gap:3px;}
-.rg-tag{font-size:10px;font-weight:700;color:var(--rg-text-60);background:var(--rg-tag-bg);border-radius:4px;padding:1px 5px;}
-.rg-tag-new{background:var(--rg-coral);color:#fff;}
+.rg-tag{font-size:10px;font-weight:700;color:var(--rg-text-60);background:var(--rg-tag-bg);border-radius:0;padding:1px 5px;}
+.rg-tag-new{background:var(--rg-coral);color:var(--rg-ink);}
 .rg-footer{display:flex;align-items:center;justify-content:space-between;padding:8px 16px;background:var(--rg-bg);border-top:1px solid var(--rg-border);}
 .rg-powered{font-size:11px;color:var(--rg-text-60);font-weight:600;}
-.rg-powered a{color:var(--rg-coral);text-decoration:none;font-weight:800;}
+.rg-powered a{color:var(--rg-accent);text-decoration:none;font-weight:800;}
 .rg-powered a:hover{text-decoration:underline;}
-.rg-all-link{font-size:11px;font-weight:700;color:var(--rg-coral);text-decoration:none;display:flex;align-items:center;gap:3px;}
+.rg-all-link{font-size:11px;font-weight:700;color:var(--rg-accent);text-decoration:none;display:flex;align-items:center;gap:3px;}
 .rg-all-link:hover{text-decoration:underline;}
 .rg-state{padding:28px 16px;text-align:center;font-size:13px;color:var(--rg-text-60);font-weight:600;}
 .rg-state-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--rg-coral);margin-right:6px;animation:rg-pulse 1.2s ease-in-out infinite;}
@@ -126,7 +125,7 @@
   function headerHTML(city, count) {
     const label = cityDisplayName(city) || city;
     const countStr = count !== null ? '<span class="rg-header-count">' + count + ' Events</span>' : '';
-    return '<div class="rg-header">' + logoSVG('#FF6F61')
+    return '<div class="rg-header">' + logoSVG('#E24E42')
       + '<span class="rg-header-city">Veranstaltungen in ' + escapeHtml(label) + '</span>'
       + countStr + '</div>';
   }
