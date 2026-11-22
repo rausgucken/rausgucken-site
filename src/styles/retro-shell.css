@@ -90,3 +90,6 @@ html body .search-suggestions li.highlighted {
 
 /* suggestions flush (7.7) */
 html body .search-suggestions.search-suggestions { padding: 0; }
+
+/* filter body border (9.1) */
+html body .filter-bar.filter-bar { border: 1.5px solid var(--text); border-top: 0; border-radius: 0; box-shadow: none; }
