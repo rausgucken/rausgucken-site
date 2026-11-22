@@ -126,15 +126,6 @@ const websiteSchema = isHomepage ? {
   <!-- ── Font preload (SEO §23 Core Web Vitals) ───────────────────────────── -->
   <!-- Preload only the two weights actually used above the fold -->
   <!-- font-display:swap is included in the Google Fonts URL via &display=swap -->
-  <link
-    rel="preload"
-    as="style"
-    href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Inter:wght@400;500;600&display=swap"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
 
   <!-- ── Sitemap reference ────────────────────────────────────────────────── -->
   <!-- Helps crawlers discover the sitemap index without relying only on robots.txt -->
@@ -184,8 +175,6 @@ const websiteSchema = isHomepage ? {
       --color-text-muted: var(--text-60); --color-accent: var(--coral);
       --color-accent-light: var(--coral-light); --color-tag-bg: var(--tag-bg);
 
-      --font-heading: 'Nunito', sans-serif;
-      --font-body:    'Inter', sans-serif;
       --radius:    14px;
       --radius-sm: 8px;
       --transition: transform 200ms cubic-bezier(0.4,0,0.2,1),
