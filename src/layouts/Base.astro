@@ -155,51 +155,10 @@ const websiteSchema = isHomepage ? {
     :root {
       --coral: var(--papaya);
       --coral-dark: var(--papaya);
-      --coral-light:  rgba(255,111,97,0.10);
       --sage: var(--aqua);
-      --sage-light:   rgba(144,190,109,0.15);
 
-      --bg:           #FFFDF9;
-      --surface:      #ffffff;
-      --surface-card: #ffffff;
-      --border:       rgba(55,63,81,0.12);
-      --border-subtle:rgba(55,63,81,0.07);
-
-      --text:         #373F51;
-      --text-60:      rgba(55,63,81,0.60);
-      --text-30:      rgba(55,63,81,0.30);
-      --tag-bg:       rgba(55,63,81,0.07);
-
-      --shadow-card:  0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
-      --shadow-hover: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -2px rgba(0,0,0,0.05);
-
-      /* Backwards-compat aliases */
-      --color-bg: var(--bg); --color-surface: var(--surface);
-      --color-border: var(--border); --color-text: var(--text);
-      --color-text-muted: var(--text-60); --color-accent: var(--coral);
-      --color-accent-light: var(--coral-light); --color-tag-bg: var(--tag-bg);
-
-      --radius:    14px;
-      --radius-sm: 8px;
       --transition: transform 200ms cubic-bezier(0.4,0,0.2,1),
                     box-shadow 200ms cubic-bezier(0.4,0,0.2,1);
-    }
-
-    /* ── Dark mode tokens ──────────────────────────────────────────────────── */
-    html.dark {
-      --bg:           #373F51;
-      --surface:      #373F51;
-      --surface-card: #444857;
-      --border:       rgba(255,255,255,0.06);
-      --border-subtle:rgba(255,255,255,0.04);
-      --text:         #FFFDF9;
-      --text-60:      rgba(255,253,249,0.60);
-      --text-30:      rgba(255,253,249,0.30);
-      --tag-bg:       rgba(255,255,255,0.08);
-      --shadow-card:  0 2px 8px rgba(0,0,0,0.22);
-      --shadow-hover: 0 10px 20px rgba(0,0,0,0.35);
-      --coral-light:  rgba(255,111,97,0.15);
-      --sage-light:   rgba(144,190,109,0.12);
     }
 
     /* ── Base ──────────────────────────────────────────────────────────────── */
