@@ -1,12 +1,25 @@
 {
-  "generated_at": "2026-11-21T05:14:21.035674+01:00",
+  "generated_at": "2026-11-22T05:23:58.547821+01:00",
   "city": "affalterbach",
   "sources": [
     "affalterbach_stadt"
   ],
-  "previous_run": "2026-11-20T05:08:19.171895+01:00",
+  "previous_run": "2026-11-21T05:14:21.110680+01:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "a521a9fd48b68706",
+      "title": "Erste-Hilfe-Kurs",
+      "date_start": "2026-11-21",
+      "source": "affalterbach_stadt"
+    },
+    {
+      "id": "baf495a19679b391",
+      "title": "Kunstsamstag",
+      "date_start": "2026-11-21",
+      "source": "affalterbach_stadt"
+    }
+  ]
 }

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-21T06:51:30.671161+01:00",
+  "generated_at": "2026-11-22T07:28:09.543842+01:00",
   "city": "oberstenfeld",
   "sources": [
     "oberstenfeld_veranstaltungen"
   ],
-  "previous_run": "2026-11-20T07:25:00.054247+01:00",
-  "count_added": 46,
-  "count_removed": 0,
+  "previous_run": "2026-11-21T06:51:30.746363+01:00",
+  "count_added": 44,
+  "count_removed": 1,
   "added": [
     {
       "id": "60dcaf202491b251",
@@ -271,19 +271,14 @@
       "title": "Suppentöpfle",
       "date_start": "2026-11-10",
       "source": "oberstenfeld_veranstaltungen"
-    },
-    {
-      "id": "e44b1598d04d8c60",
-      "title": "Das GroMusle ist geöffnet",
-      "date_start": "2026-12-06",
-      "source": "oberstenfeld_veranstaltungen"
-    },
-    {
-      "id": "a8df3110e6da08ca",
-      "title": "Das GroMusle ist geöffnet",
-      "date_start": "2027-01-03",
-      "source": "oberstenfeld_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "e27fcfe2fcd6e5b6",
+      "title": "Erste-Hilfe-Kurs Feuerwehr Prevorst",
+      "date_start": "2026-11-21",
+      "source": "oberstenfeld_veranstaltungen"
+    }
+  ]
 }

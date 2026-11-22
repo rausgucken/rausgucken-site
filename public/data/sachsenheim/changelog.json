@@ -1,21 +1,15 @@
 {
-  "generated_at": "2026-11-21T05:14:19.623339+01:00",
+  "generated_at": "2026-11-22T05:17:53.892162+01:00",
   "city": "sachsenheim",
   "sources": [
     "sachsenheim_library",
     "sachsenheim_museum",
     "sachsenheim_kultur"
   ],
-  "previous_run": "2026-11-20T04:53:38.604680+01:00",
+  "previous_run": "2026-11-21T05:14:19.700913+01:00",
   "count_added": 12,
-  "count_removed": 4,
+  "count_removed": 2,
   "added": [
-    {
-      "id": "15ee3262c7bdad94",
-      "title": "Führung, Stadtmuseum Nachts im Museum",
-      "date_start": "2026-01-30",
-      "source": "sachsenheim_kultur"
-    },
     {
       "id": "2e6e0199c9d95a2c",
       "title": "Offener Gesprächskreis Demenz",
@@ -65,11 +59,31 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "f100a9b69a2f2e98",
-      "title": "Führung, Nachts im Museum",
-      "date_start": "2026-11-20",
+      "id": "77fbf0190d7a5dd4",
+      "title": "Geselliges Beisammensein mit erheiternden Geschichten von Doris Rau",
+      "date_start": "2026-12-11",
+      "source": "sachsenheim_library"
+    },
+    {
+      "id": "a6cbc65734edda34",
+      "title": "Adventssamstag",
+      "date_start": "2026-12-12",
       "source": "sachsenheim_kultur"
     },
+    {
+      "id": "bf5617b2c0110027",
+      "title": "Adventssamstag",
+      "date_start": "2026-12-12",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "3c03eb96fe17a3e8",
+      "title": "Adventskonzert",
+      "date_start": "2026-12-12",
+      "source": "sachsenheim_kultur"
+    }
+  ],
+  "removed": [
     {
       "id": "e035969240ebd541",
       "title": "Führung, Nachts im Museum",
@@ -77,36 +91,10 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "36411b7248c8b08f",
-      "title": "Informationsveranstaltung: Wärmepumpen im Altbau",
-      "date_start": "2026-12-09",
-      "source": "sachsenheim_kultur"
-    }
-  ],
-  "removed": [
-    {
-      "id": "04d1a059db4c49ff",
-      "title": "Führung, Stadtmuseum Nachts im Museum",
-      "date_start": "2026-11-20",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "6bd60f7760bb7334",
-      "title": "Steillagendinner",
-      "date_start": "2026-11-20",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "c0a6b371d3a5cc68",
-      "title": "Führung, Stadtmuseum Nachts im Museum",
+      "id": "d06609c6aad1e053",
+      "title": "Heimleuchten",
       "date_start": "2026-11-21",
       "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "647687efeb758441",
-      "title": "Lisa Fitz - Heimleuchten",
-      "date_start": "2026-11-21",
-      "source": "sachsenheim_library"
     }
   ]
 }

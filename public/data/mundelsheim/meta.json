@@ -1,40 +1,44 @@
 {
-  "scraped_at": "2026-11-21T06:50:42.777594+01:00",
+  "scraped_at": "2026-11-22T05:53:55.498025+01:00",
   "city": "mundelsheim",
-  "event_count": 12,
+  "event_count": 8,
   "flagged_count": 0,
   "expired_count": 0,
   "sources_scraped": [
     "mundelsheim_veranstaltungen"
   ],
   "source_counts": {
-    "mundelsheim_veranstaltungen": 12
+    "mundelsheim_veranstaltungen": 8
   },
   "sources_failed": [],
-  "data_hash": "9a5ababb5ed2606d",
+  "data_hash": "5d74ce2ee677cf01",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 21.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 22.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "mundelsheim_veranstaltungen": 1.0
+    "mundelsheim_veranstaltungen": 0.92
   },
   "source_event_counts": {
-    "mundelsheim_veranstaltungen": 12
+    "mundelsheim_veranstaltungen": 8
   },
-  "count_drift_warnings": {},
+  "count_drift_warnings": {
+    "mundelsheim_veranstaltungen": "Count drift: 8 vs historical avg 13"
+  },
   "quality_report": {
     "regression_pass_rate": 1.0,
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 441.8,
-    "runtime_delta_vs_baseline": 1.468,
+    "runtime_minutes": 483.4,
+    "runtime_delta_vs_baseline": 1.701,
     "source_health": {
-      "mundelsheim_veranstaltungen": 1.0
+      "mundelsheim_veranstaltungen": 0.92
     },
-    "count_drift_warnings": {},
+    "count_drift_warnings": {
+      "mundelsheim_veranstaltungen": "Count drift: 8 vs historical avg 13"
+    },
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-21T09:37:13.507154+01:00"
+    "generated_at": "2026-11-22T10:17:00.514998+01:00"
   }
 }
