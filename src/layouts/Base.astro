@@ -1,5 +1,6 @@
 ---
 import '../styles/retro-tokens.css';
+import '../styles/retro-fonts.css';
 // src/layouts/Base.astro
 // SEO: lang="de-DE", hreflang, canonical (per-page), OG image, font preload, schema slots
 
@@ -124,8 +125,6 @@ const websiteSchema = isHomepage ? {
 
   <!-- ── Font preload (SEO §23 Core Web Vitals) ───────────────────────────── -->
   <!-- Preload only the two weights actually used above the fold -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <!-- font-display:swap is included in the Google Fonts URL via &display=swap -->
   <link
     rel="preload"
@@ -148,6 +147,10 @@ const websiteSchema = isHomepage ? {
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   )}
   <script defer data-domain="rausgucken.de" src="https://analytics.rausgucken.de/js/script.outbound-links.js"></script>
+
+  <!-- rg-fonts-preload -->
+  <link rel="preload" href="/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/hanken-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
 
   <style is:global>
     @import '../styles/mobile.css';

@@ -1,0 +1,12 @@
+/* retro-fonts.css: self-hosted (OFL), no third-party requests */
+@font-face { font-family: "Fraunces";
+  src: url("/fonts/fraunces-var.woff2") format("woff2");
+  font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Hanken Grotesk";
+  src: url("/fonts/hanken-grotesk-var.woff2") format("woff2");
+  font-weight: 100 900; font-style: normal; font-display: swap; }
+/* Fallbacks with line-metric overrides (size-adjust added after CLS measurement) */
+@font-face { font-family: "Fraunces Fallback"; src: local("Georgia");
+  ascent-override: 97.8%; descent-override: 25.5%; line-gap-override: 0.0%; }
+@font-face { font-family: "Hanken Fallback"; src: local("Arial");
+  ascent-override: 100.0%; descent-override: 30.3%; line-gap-override: 0.0%; }

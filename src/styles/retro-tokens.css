@@ -14,7 +14,9 @@ html:root {
   --border:rgba(30,27,26,0.85); --border-subtle:rgba(30,27,26,0.18);
   --text:#1E1B1A; --text-60:#5E5A55; --text-30:#8F8A82;
   --tag-bg:rgba(30,27,26,0.06);
-  --radius:0; --radius-sm:0; --shadow-card:none; --shadow-hover:4px 4px 0 var(--ink);
+  --radius:0; --radius-sm:0;
+  --font-heading:"Fraunces","Fraunces Fallback",Georgia,serif;
+  --font-body:"Hanken Grotesk","Hanken Fallback",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; --shadow-card:none; --shadow-hover:4px 4px 0 var(--ink);
   /* legacy aliases */
   --coral:var(--papaya-fill); --coral-dark:var(--papaya); --coral-light:rgba(226,78,66,0.12);
   --sage:var(--aqua); --sage-light:rgba(0,143,149,0.14);
