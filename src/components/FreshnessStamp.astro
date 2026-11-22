@@ -67,11 +67,11 @@ const sizeClass = size === 'sm' ? 'freshness-stamp--sm'
     line-height: 1.4;
     /* Design system rule: default text color + opacity-70 only. Never Coral. */
     color: var(--text-60);
-    opacity: 0.7;
+    opacity: 1;
   }
 
   :global(.dark) .freshness-stamp {
-    color: #FFFDF9;           /* text-offwhite */
+    color: var(--text-60);
   }
 
   .freshness-stamp--sm { font-size: 12px; }

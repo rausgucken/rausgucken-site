@@ -1,0 +1,72 @@
+/* retro-detail.css: Phase 5. Event detail page + secondary components. Global, doubled selectors beat scoped CSS.
+   Sharp corners, 1.5px ink hairlines, hard shadow on hover only (and on FeaturedEvent), ink text on fills. */
+
+/* Headings */
+html body .event-detail h1.event-title, html body .event-header h1 { font-family: var(--font-heading); font-weight: 700; letter-spacing: -0.01em; }
+
+/* Hero */
+html body .event-hero.event-hero { border: 1.5px solid var(--text); border-radius: 0; }
+html body .hero-img.hero-img { filter: none; }
+
+/* Detail tags: outline default, Familie/Kinder (tag--sage) = mustard fill with ink text */
+html body .event-tags .tag.tag { background: transparent; color: var(--text); border: 1px solid var(--border); border-radius: 0; font-weight: 600; }
+html body .event-tags a.tag.tag:hover { background: var(--surface-card); color: var(--text); border-color: var(--text); }
+html body .event-tags .tag--sage.tag--sage { background: var(--mustard); color: var(--ink); border-color: transparent; }
+html body .event-tags .tag--sage.tag--sage:hover { background: var(--mustard); color: var(--ink); border-color: var(--text); }
+html body .event-tags .tag--age.tag--age { border-style: dashed; }
+
+/* Editorial tip (all uses) */
+html body .editorial-tip.editorial-tip {
+  background: transparent; border: 1px solid var(--border); border-left: 3px solid var(--papaya); border-radius: 0;
+}
+html body .editorial-tip .tip-label { color: var(--papaya-text); }
+html body .editorial-tip .tip-text { font-family: var(--font-heading); font-style: italic; font-size: 1rem; line-height: 1.55; }
+
+/* Source box + primary buttons */
+html body .source-box.source-box { background: var(--surface-card); border: 1.5px solid var(--text); border-radius: 0; }
+html body .btn-cta.btn-cta, html body .btn-original.btn-original {
+  background: var(--papaya-fill); color: var(--ink); border: 1.5px solid var(--text); border-radius: 0; font-weight: 700; min-height: 44px;
+}
+html body .btn-cta.btn-cta:hover, html body .btn-original.btn-original:hover { background: var(--papaya-fill); color: var(--ink); box-shadow: var(--shadow-hover); }
+html body .btn-cta--ghost.btn-cta--ghost { background: transparent; color: var(--text); }
+html body .btn-cta--ghost.btn-cta--ghost:hover { background: var(--papaya-fill); color: var(--ink); }
+html body .btn-original:focus-visible, html body .btn-cta:focus-visible { outline: 2px solid var(--papaya); outline-offset: 2px; }
+
+/* Share + calendar dropdowns */
+html body .btn-share.btn-share, html body .btn-ics.btn-ics {
+  background: transparent; color: var(--text); border: 1.5px solid var(--text); border-radius: 0; min-height: 44px; box-shadow: none;
+}
+html body .btn-share.btn-share:hover, html body .btn-ics.btn-ics:hover,
+html body .share-dropdown[open] .btn-share.btn-share { background: var(--papaya-fill); color: var(--ink); border-color: var(--text); box-shadow: var(--shadow-hover); }
+html body .share-dropdown .share-menu.share-menu, html body .cal-menu.cal-menu {
+  background: var(--surface-card); border: 1.5px solid var(--text); border-radius: 0; box-shadow: var(--shadow-hover);
+}
+html body .share-item:hover, html body .cal-menu a:hover { background: var(--tag-bg); color: var(--text); }
+
+/* Related rows + link pills */
+html body .related-card.related-card { background: transparent; border: 0; border-bottom: 1px solid var(--border-subtle); border-radius: 0; box-shadow: none; }
+html body .related-card.related-card:hover { background: var(--surface-card); border-color: var(--border-subtle); box-shadow: var(--shadow-hover); }
+html body .related-pages-links a, html body .temporal-links a {
+  background: transparent; color: var(--text); border: 1px solid var(--border); border-radius: 0; min-height: 44px;
+}
+html body .related-pages-links a:hover, html body .temporal-links a:hover { background: var(--papaya-fill); color: var(--ink); border-color: var(--text); text-decoration: none; }
+
+/* Expired banner */
+html body .expired-banner.expired-banner { background: var(--surface-card); border: 1.5px solid var(--text); border-left: 4px solid var(--papaya); border-radius: 0; }
+
+/* FeaturedEvent: the one component with a resting hard shadow */
+html body .featured-event-aside.featured-event-aside {
+  background: var(--surface-card); border: 1.5px solid var(--text); border-left: 4px solid var(--papaya); border-radius: 0; box-shadow: var(--shadow-hover);
+}
+html body .featured-title.featured-title { font-family: var(--font-heading); font-size: 1.0625rem; }
+html body .featured-cta.featured-cta {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 1rem; border: 1.5px solid var(--text); font-weight: 700; line-height: 1;
+}
+html body .featured-cta.featured-cta:hover { opacity: 1; box-shadow: var(--shadow-hover); }
+
+/* Sidebar */
+html body .sidebar-heading.sidebar-heading { color: var(--text-60); border-bottom: 1.5px solid var(--text); }
+html body .sidebar-section-heading.sidebar-section-heading { opacity: 1; }
+html body .sidebar-link.sidebar-link { min-height: 44px; }
+html body .sidebar-link.sidebar-link:hover { text-decoration: underline; text-decoration-color: var(--papaya); text-underline-offset: 3px; }
+html body .ext-icon.ext-icon { opacity: 0.7; }
