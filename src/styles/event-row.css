@@ -1,0 +1,105 @@
+/* event-row.css: retro-modern event rows (Gate 1). Global, imported by EventCard.astro.
+   Tokens only. Sharp corners. Hard shadow on hover only. Ink on every fill. */
+:root { --row-date: 64px; --row-gap: 1rem; }
+
+html body .event-list, html body #event-grid { gap: 0; }
+
+.event-card {
+  display: block; position: relative; margin: 0; padding: 1rem 0.75rem; overflow: visible;
+  background: transparent; border: 0; border-bottom: 1px solid var(--border-subtle);
+  border-radius: 0; box-shadow: none;
+}
+.event-card--standing { border-left: 0; }
+.event-card--sponsored { border: 1.5px dashed var(--border); margin: 0.5rem 0; }
+@media (hover: hover) { .event-card:hover { background: var(--surface-card); box-shadow: var(--shadow-hover); } }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .event-card { transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease; }
+  .event-card:hover { transform: translate(-2px, -2px); }
+}
+.event-card:focus-within { background: var(--surface-card); }
+
+.event-card .card-link {
+  display: flex; align-items: flex-start; gap: var(--row-gap); min-height: 44px;
+  color: inherit; text-decoration: none; outline: none;
+}
+.event-card .card-link:focus-visible { outline: 2px solid var(--papaya); outline-offset: 2px; }
+
+/* Ticket-stub date block */
+.event-card .date-badge {
+  flex: 0 0 var(--row-date); width: var(--row-date); align-self: flex-start;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 0.45rem 0 0.5rem; gap: 0;
+  background: var(--papaya-fill); color: var(--ink); border: 1.5px solid var(--border); border-radius: 0;
+}
+html.dark .event-card .date-badge:not(.date-badge--standing) {
+  background: var(--surface-card); border-color: var(--papaya); color: var(--text);
+}
+.event-card .date-badge--standing { background: transparent; color: var(--text-60); border-style: dashed; }
+.event-card .date-weekday { font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.2; opacity: 1; margin: 0; }
+.event-card .date-day { font-family: var(--font-heading); font-weight: 700; font-size: 2rem; line-height: 1; }
+.event-card .date-day--range { font-size: 0.9375rem; line-height: 2.1; }
+.event-card .date-month { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; line-height: 1.2; opacity: 1; }
+.event-card .date-infinity { font-size: 1.5rem; line-height: 1; opacity: 1; }
+
+/* Body */
+.event-card .card-body { flex: 1; min-width: 0; padding: 0; display: flex; flex-direction: column; gap: 0.3rem; }
+.event-card .card-title {
+  margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: 1.25rem; line-height: 1.25;
+  color: var(--text); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.event-card .card-link:hover .card-title { text-decoration: underline; text-decoration-color: var(--papaya); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.event-card .card-meta { display: flex; flex-wrap: wrap; gap: 0.1rem 1rem; }
+.event-card .meta-item { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.8125rem; font-weight: 500; color: var(--text-60); }
+.event-card .meta-item svg { flex-shrink: 0; stroke: var(--papaya); }
+.event-card .card-desc {
+  margin: 0; font-size: 0.9375rem; line-height: 1.5; color: var(--text);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+/* Chips + badges */
+.event-card .card-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; margin-top: 0.15rem; overflow: visible; }
+.event-card .tag {
+  flex-shrink: 0; border-radius: 0; padding: 1px 8px; font-size: 0.75rem; font-weight: 600; line-height: 1.6;
+  white-space: nowrap; color: var(--ink); background: transparent; border: 1px solid transparent;
+}
+.event-card .tag--mustard { background: var(--mustard); }
+.event-card .tag--blush   { background: var(--blush); }
+.event-card .tag--aqua    { background: var(--aqua-fill); }
+.event-card .tag--outline, .event-card .tag--age { background: transparent; color: var(--text); border-color: var(--border); }
+.event-card .tag--age { border-style: dashed; }
+.event-card .badge-new {
+  font-size: 0.6875rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; line-height: 1.4;
+  color: var(--papaya-text); background: transparent; border-radius: 0; padding: 0 1px; border-bottom: 2px solid var(--papaya);
+}
+.event-card .badge-booked {
+  font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+  background: var(--ink); color: #F5F0E6; border: 1px solid var(--border); border-radius: 0; padding: 1px 7px;
+}
+.event-card .badge-sponsored {
+  font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--text-60); background: transparent; border: 1px dashed var(--border); border-radius: 0; padding: 1px 7px;
+}
+
+/* Footer: aligned under the text column, 44px targets */
+.event-card .card-footer {
+  display: flex; flex-wrap: wrap; align-items: center; column-gap: 0.75rem;
+  margin: 0.15rem 0 0 calc(var(--row-date) + var(--row-gap)); border: 0; background: none;
+}
+html.dark .event-card .card-footer { background: none; }
+.event-card .footer-line1 { display: flex; align-items: center; gap: 0.5rem; flex: 1 1 auto; min-width: 0; padding: 0; min-height: 44px; }
+.event-card .footer-line2 { padding: 0; flex: 0 0 auto; }
+.event-card .merken-btn {
+  min-height: 44px; min-width: 44px; padding: 0 0.5rem; margin-left: -0.5rem; border-radius: 0;
+  background: none; color: var(--text-60); justify-content: center;
+}
+.event-card .merken-btn:hover { background: none; color: var(--papaya-text); }
+.event-card .merken-btn:focus-visible { outline: 2px solid var(--papaya); outline-offset: 2px; }
+.event-card .merken-btn[aria-pressed="true"], .event-card .merken-btn[aria-pressed="true"] .merken-label { color: var(--papaya-text); }
+.event-card .merken-btn[aria-pressed="true"] .merken-icon { fill: var(--papaya); stroke: var(--papaya); }
+.event-card .source-attribution {
+  display: inline-flex; align-items: center; min-height: 44px; min-width: 0; padding: 0; margin: 0; line-height: 1.3;
+  font-size: 0.75rem; color: var(--text-60); text-decoration: underline; text-underline-offset: 2px;
+  white-space: normal; overflow: visible;
+}
+.event-card .source-attribution:hover { color: var(--papaya-text); }
+@media (max-width: 480px) { .event-card .card-title { font-size: 1.125rem; } }

@@ -135,7 +135,7 @@ const featuredEvent = featuredSlug
       {datedRest.length > 0 && (
         <div id="load-more-container" style="text-align:center; margin: 1.5rem 0;">
           <button id="load-more-btn" style="
-            background: var(--coral); color: #fff; border: none; border-radius: 0;
+            background: var(--papaya-fill); color: var(--ink); border: 1.5px solid var(--ink); border-radius: 0;
             padding: 0.75rem 2rem; font-size: 1rem; cursor: pointer; font-family: var(--font-body);
           ">
             Weitere {datedRest.length} Veranstaltungen laden
@@ -144,7 +144,7 @@ const featuredEvent = featuredSlug
           <script is:inline>
             document.getElementById('load-more-btn')?.addEventListener('click', function() {
               const container = document.getElementById('load-more-container');
-              const grid      = document.querySelector('#section-dated .event-grid');
+              const grid      = document.querySelector('#section-dated #event-grid, #section-dated .event-grid');
               if (!grid) return;
               fetch('/data/erligheim/events-current.json')
                 .then(r => r.json())

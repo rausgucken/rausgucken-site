@@ -1,0 +1,9 @@
+{
+  "_comment": "Presentation only (chip colours). Does NOT replace config/tags.json. Unknown tags fall back to 'outline'.",
+  "groups": {
+    "familie": { "chip": "mustard", "tags": ["Familie", "Kinder", "Jugend"] },
+    "buehne":  { "chip": "blush",   "tags": ["Musik", "Tanz", "Theater", "Entertainment", "Fest"] },
+    "kultur":  { "chip": "aqua",    "tags": ["Ausstellung", "Fuehrung", "Lesung", "Vortrag", "Sprache", "Workshop"] },
+    "rest":    { "chip": "outline", "tags": ["Outdoor", "Sport", "Kulinarik", "Messe"] }
+  }
+}

@@ -1,8 +1,14 @@
 ---
-// src/components/EventCard.astro
+// src/components/EventCard.astro: retro row (v4). Styles: src/styles/event-row.css (global).
+// CONTRACT (do not rename): classes event-card, card-link, date-badge, card-body, card-tags, card-title,
+// card-meta, card-desc, merken-btn/.merken-icon/.merken-label, source-attribution, freshness-stamp;
+// data-attrs tags/source/age-min/age-max/date/weekdays/location. Client twin: src/scripts/event-card-render.js
+import FreshnessStamp from './FreshnessStamp.astro';
+import tagGroups from '../data/tag-groups.json';
+import '../styles/event-row.css';
+
 const { event: ev } = Astro.props;
 const city = ev.city || "ludwigsburg";
-import FreshnessStamp from './FreshnessStamp.astro';
 
 function formatDate(iso) {
   if (!iso) return null;
@@ -14,34 +20,25 @@ function formatDate(iso) {
     full:    d.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" }),
   };
 }
+const TAG_LABELS = { Fuehrung: "Führung" };
+const GROUP_OF = {};
+for (const g of Object.values(tagGroups.groups)) for (const t of g.tags) GROUP_OF[t] = g.chip;
 
-const TAG_LABELS = {
-  Ausstellung: "Ausstellung",  Entertainment: "Entertainment",
-  Familie:     "Familie",       Fest:          "Fest",
-  Fuehrung:    "Führung",       Jugend:        "Jugend",
-  Kinder:      "Kinder",        Kulinarik:     "Kulinarik",
-  Lesung:      "Lesung",        Messe:         "Messe",
-  Musik:       "Musik",         Outdoor:       "Outdoor",
-  Sport:       "Sport",         Sprache:       "Sprache",
-  Tanz:        "Tanz",          Theater:       "Theater",
-  Vortrag:     "Vortrag",       Workshop:      "Workshop",
-};
-
-const dateObj    = formatDate(ev.date_start);
-const isStanding = !ev.date_start;
+const tagsArr     = Array.isArray(ev.tags) ? ev.tags : [];
+const chips       = tagsArr.slice(0, 3).map(t => ({ label: TAG_LABELS[t] || t, cls: GROUP_OF[t] || "outline" }));
+const dateObj     = formatDate(ev.date_start);
+const isStanding  = !ev.date_start;
 const isSponsored = ev.sponsored === true;
-
+const showNew     = ev.is_new && !isSponsored;
+const showAge     = ev.age_min != null;
+const ageText     = showAge ? ("ab " + ev.age_min + " J." + (ev.age_max ? "–" + ev.age_max : "+")) : "";
 const weekdayAttr = ev.weekdays ? ev.weekdays.join(",") : "";
-
-const _showNew    = ev.is_new && !isSponsored;
-const _showAge    = ev.age_min != null;
-const _ageText    = ev.age_min != null ? ("ab " + ev.age_min + " J." + (ev.age_max ? "–" + ev.age_max : "+")) : "";
-const _tag0        = ev.tags[0] ? (TAG_LABELS[ev.tags[0]] || ev.tags[0]) : null;
-const _tag1        = ev.tags[1] ? (TAG_LABELS[ev.tags[1]] || ev.tags[1]) : null;
-const _tag2        = ev.tags[2] ? (TAG_LABELS[ev.tags[2]] || ev.tags[2]) : null;
-const _locShort    = ev.location ? ev.location.replace("Residenzschloss Ludwigsburg", "Residenzschloss LB") : null;
-const _showRegular = isStanding && !ev.time;
-
+const endDay = (ev.date_start && ev.date_end && ev.date_end !== ev.date_start && ev.date_end.slice(0, 7) === ev.date_start.slice(0, 7))
+  ? new Date(ev.date_end + "T12:00:00").getDate() : null;
+const dayText     = dateObj ? (endDay ? dateObj.day + ".–" + endDay + "." : String(dateObj.day)) : "";
+const hasTagRow   = isSponsored || showNew || ev.is_booked_out || chips.length > 0 || showAge;
+const priceShort  = ev.price ? String(ev.price).split(" ").slice(0, 3).join(" ") : null;
+const locShort    = ev.location ? ev.location.replace("Residenzschloss Ludwigsburg", "Residenzschloss LB") : null;
 ---
 
 <article
@@ -51,7 +48,7 @@ const _showRegular = isStanding && !ev.time;
     { "event-card--new":       ev.is_new },
     { "event-card--sponsored": isSponsored },
   ]}
-  data-tags={ev.tags.join(",")}
+  data-tags={tagsArr.join(",")}
   data-source={ev.source}
   data-age-min={ev.age_min ?? ""}
   data-age-max={ev.age_max ?? ""}
@@ -59,7 +56,6 @@ const _showRegular = isStanding && !ev.time;
   data-weekdays={weekdayAttr}
   data-location={ev.location ?? ""}
 >
-
   <a
     href={`/${city}/events/${ev.slug}`}
     class="card-link"
@@ -68,7 +64,7 @@ const _showRegular = isStanding && !ev.time;
     {dateObj ? (
       <div class="date-badge" aria-hidden="true">
         <span class="date-weekday">{dateObj.weekday}</span>
-        <span class="date-day">{dateObj.day}</span>
+        <span class:list={["date-day", { "date-day--range": !!endDay }]}>{dayText}</span>
         <span class="date-month">{dateObj.month}</span>
       </div>
     ) : (
@@ -79,15 +75,6 @@ const _showRegular = isStanding && !ev.time;
     )}
 
     <div class="card-body">
-      <div class="card-tags">
-        {isSponsored && <span class="badge-sponsored" aria-label="Anzeige">Anzeige</span>}
-        {_showNew && <span class="badge-new">Neu</span>}
-        {_tag0 && <span class="tag">{_tag0}</span>}
-        {_tag1 && <span class="tag">{_tag1}</span>}
-        {_tag2 && <span class="tag">{_tag2}</span>}
-        {_showAge && <span class="tag tag--age">{_ageText}</span>}
-      </div>
-
       <h3 class="card-title">{ev.title}</h3>
 
       <div class="card-meta">
@@ -103,26 +90,34 @@ const _showRegular = isStanding && !ev.time;
             Regelmäßig
           </span>
         )}
-        {ev.location && (
+        {locShort && (
           <span class="meta-item">
             <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            {ev.location.replace("Residenzschloss Ludwigsburg", "Residenzschloss LB")}
+            {locShort}
           </span>
         )}
-        {ev.price && (
+        {priceShort && (
           <span class="meta-item">
             <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-            {ev.price.split(" ").slice(0, 3).join(" ")}
+            {priceShort}
           </span>
         )}
       </div>
 
       {ev.description && (
         <p class="card-desc">
-          {ev.description.length > 110
-            ? ev.description.slice(0, 110) + "…"
-            : ev.description}
+          {ev.description.length > 110 ? ev.description.slice(0, 110) + "…" : ev.description}
         </p>
+      )}
+
+      {hasTagRow && (
+        <div class="card-tags">
+          {isSponsored && <span class="badge-sponsored" aria-label="Anzeige">Anzeige</span>}
+          {showNew && <span class="badge-new">Neu</span>}
+          {ev.is_booked_out && <span class="badge-booked">Ausgebucht</span>}
+          {chips.map(c => <span class={`tag tag--${c.cls}`}>{c.label}</span>)}
+          {showAge && <span class="tag tag--age">{ageText}</span>}
+        </div>
       )}
     </div>
   </a>
@@ -150,7 +145,7 @@ const _showRegular = isStanding && !ev.time;
           class="source-attribution"
           onclick="event.stopPropagation()"
         >
-          Quelle: {ev.source_label}
+          Quelle: {ev.source_label}<span class="source-more">&nbsp;— Originalseite prüfen</span>
         </a>
       )}
     </div>
@@ -159,261 +154,6 @@ const _showRegular = isStanding && !ev.time;
     </div>
   </div>
 </article>
-
-<style>
-  /* ── Card shell ──────────────────────────────────────────────────────────── */
-  .event-card {
-    background: var(--surface-card, var(--surface));
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: var(--shadow-card);
-    position: relative;
-    transition: transform 200ms cubic-bezier(0.4,0,0.2,1),
-                box-shadow 200ms cubic-bezier(0.4,0,0.2,1),
-                background 250ms ease;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .event-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-hover);
-    }
-  }
-
-  .event-card:focus-within {
-    outline: 2px solid var(--coral);
-    outline-offset: 0px;
-  }
-
-  .event-card--standing  { border-left: 3px solid var(--coral); }
-  .event-card--sponsored {
-    border-left: 3px solid var(--sage);
-    background: var(--sage-light);
-  }
-
-  /* ── Card link ──────────────────────────────────────────────────────────── */
-  .card-link {
-    display: flex;
-    flex: 1;
-    text-decoration: none;
-    color: inherit;
-    min-height: 0;
-    outline: none;
-  }
-  .card-link:hover { text-decoration: none; }
-
-  /* ── Date badge ─────────────────────────────────────────────────────────── */
-  .date-badge {
-    background: var(--coral);
-    color: var(--ink);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 58px;
-    flex-shrink: 0;
-    padding: 0.75rem 0.4rem;
-    gap: 0;
-  }
-  .date-badge--standing {
-    background: var(--tag-bg);
-    color: var(--text-60);
-  }
-  .date-weekday {
-    font-size: 0.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    opacity: 0.75;
-    margin-bottom: 1px;
-  }
-  .date-day {
-    font-family: var(--font-heading);
-    font-weight: 800;
-    font-size: 1.5rem;
-    line-height: 1;
-  }
-  .date-month {
-    font-size: 0.65rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    opacity: 0.80;
-  }
-  .date-infinity {
-    font-size: 1.4rem;
-    line-height: 1;
-    opacity: 0.5;
-  }
-
-  /* ── Card body ──────────────────────────────────────────────────────────── */
-  .card-body {
-    padding: 0.85rem 1rem 0.75rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    min-width: 0;
-  }
-
-  /* ── Tags ───────────────────────────────────────────────────────────────── */
-  .card-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; align-items: center; }
-
-  .tag {
-    background: var(--tag-bg);
-    color: var(--text-60);
-    font-size: 0.7rem;
-    font-weight: 500;
-    padding: 2px 8px;
-    border-radius: 0;
-    white-space: nowrap;
-  }
-  .tag--age {
-    background: var(--sage-light);
-    color: var(--text);
-    font-weight: 600;
-  }
-  .badge-new {
-    background: var(--aqua-fill);
-    color: var(--ink);
-    font-size: 0.65rem;
-    font-weight: 700;
-    padding: 2px 7px;
-    border-radius: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-  }
-  .badge-sponsored {
-    background: var(--tag-bg);
-    color: var(--text-60);
-    font-size: 0.65rem;
-    font-weight: 600;
-    padding: 2px 7px;
-    border-radius: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    border: 1px solid var(--border);
-  }
-
-  /* ── Title ──────────────────────────────────────────────────────────────── */
-  .card-title {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 0.97rem;
-    color: var(--text);
-    line-height: 1.3;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  /* ── Meta ───────────────────────────────────────────────────────────────── */
-  .card-meta { display: flex; flex-direction: column; gap: 0.2rem; }
-  .meta-item {
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
-    font-size: 0.78rem;
-    font-weight: 500;
-    color: var(--text-60);
-  }
-  .meta-item svg { flex-shrink: 0; stroke: var(--coral); }
-
-  /* ── Description ────────────────────────────────────────────────────────── */
-  .card-desc {
-    font-size: 0.8rem;
-    color: var(--text-60);
-    line-height: 1.5;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    margin-top: 0.1rem;
-  }
-
-  /* ── Card footer ────────────────────────────────────────────────────────── */
-  .card-footer {
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid var(--border);
-    background: rgba(0,0,0,0.02);
-  }
-  html.dark .card-footer { background: rgba(255,255,255,0.03); }
-
-  .footer-line1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.3rem 0.6rem 0.2rem 0.4rem;
-    min-height: 36px;
-    gap: 0.4rem;
-  }
-  .footer-line2 {
-    padding: 0 0.75rem 0.35rem 0.75rem;
-  }
-
-  .source-attribution {
-    font-size: 0.72rem;
-    font-family: var(--font-body);
-    color: var(--text-60);
-    text-decoration: none;
-    transition: color 150ms;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    min-width: 0;
-  }
-  .source-attribution:hover { color: var(--papaya-text); }
-  html.dark .source-attribution { color: var(--text-60); }
-  html.dark .source-attribution:hover { color: var(--papaya-text); }
-
-  .freshness-stamp {
-    font-size: 0.67rem;
-    color: var(--text);
-    opacity: 0.70;
-  }
-
-  /* ── Merken button ───────────────────────────────────────────────────────── */
-  .merken-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.25rem 0.5rem;
-    min-height: 36px;
-    border-radius: var(--radius-sm);
-    color: var(--text-60);
-    font-size: 0.75rem;
-    font-weight: 600;
-    font-family: var(--font-body);
-    transition: color 150ms, background 150ms;
-    flex-shrink: 0;
-  }
-  .merken-btn:hover {
-    color: var(--papaya-text);
-    background: var(--coral-light);
-  }
-  .merken-btn:focus-visible {
-    outline: 2px solid var(--coral);
-    outline-offset: 2px;
-  }
-  .merken-btn[aria-pressed="true"] .merken-icon {
-    fill: var(--coral);
-    stroke: var(--coral);
-  }
-  .merken-btn[aria-pressed="true"] .merken-label {
-    color: var(--papaya-text);
-  }
-  .merken-btn[aria-pressed="true"] {
-    color: var(--papaya-text);
-  }
-</style>
 
 <script is:inline>
   // Merken: save/unsave events in localStorage
@@ -512,4 +252,8 @@ const _showRegular = isStanding && !ev.time;
       };
     }
   })();
+</script>
+
+<script>
+  import '../scripts/event-card-render.js';
 </script>
