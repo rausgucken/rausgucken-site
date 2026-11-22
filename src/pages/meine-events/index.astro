@@ -200,9 +200,9 @@ import QRExportModal from "../../components/QRExportModal.astro";
     border: 1px solid var(--border);
   }
   .notif-status--error {
-    background: rgba(229,90,77,0.08);
+    background: color-mix(in srgb, var(--papaya) 12%, transparent);
     color: var(--papaya-text);
-    border-color: rgba(229,90,77,0.2);
+    border-color: color-mix(in srgb, var(--papaya) 40%, transparent);
   }
 
   /* Reuse city-page empty-state pattern exactly */
@@ -361,11 +361,11 @@ import QRExportModal from "../../components/QRExportModal.astro";
   .saved-card-footer {
     display: flex; align-items: center; justify-content: space-between;
     border-top: 1px solid var(--border);
-    background: rgba(0,0,0,0.02);
+    background: var(--tag-bg);
     padding: 0.3rem 0.6rem 0.3rem 0.4rem;
     min-height: 36px; gap: 0.4rem;
   }
-  html.dark .saved-card-footer { background: rgba(255,255,255,0.03); }
+  html.dark .saved-card-footer { background: var(--tag-bg); }
 
   .saved-card-remove {
     background: none; border: none; cursor: pointer;
@@ -377,7 +377,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
     font-size: 0.75rem; font-weight: 600; font-family: var(--font-body);
     gap: 0.3rem;
   }
-  .saved-card-remove:hover { color: var(--papaya-text); background: rgba(229,90,77,0.08); }
+  .saved-card-remove:hover { color: var(--papaya-text); background: color-mix(in srgb, var(--papaya) 12%, transparent); }
   .saved-card-remove:focus-visible { outline: 2px solid var(--papaya); outline-offset: 2px; }
 
   /* ── Filter preferences panel ───────────────────────────────────────────── */
@@ -628,7 +628,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
           ${dateBadge}
           <div class="card-body">
             <div class="card-tags">
-              ${d && d.isPast ? '<span class="tag" style="background:rgba(229,90,77,0.08);color: var(--papaya-text);">Vergangen</span>' : ''}
+              ${d && d.isPast ? '<span class="tag tag--past">Vergangen</span>' : ''}
             </div>
             <h3 class="card-title">${safeTitle}</h3>
             <div class="card-meta">
@@ -978,7 +978,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
     background: var(--surface-card, var(--surface));
     padding-bottom: 0.2rem;
   }
-  html.dark #saved-list .card-footer { background: rgba(255,255,255,0.03); }
+  html.dark #saved-list .card-footer { background: var(--tag-bg); }
   #saved-list .footer-line1 {
     display: flex; align-items: center; justify-content: space-between;
     padding: 0.3rem 0.6rem 0.35rem 1rem; min-height: 36px; gap: 0.4rem;
@@ -992,6 +992,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
     font-family: var(--font-body);
     transition: color 150ms, background 150ms; flex-shrink: 0;
   }
-  #saved-list .merken-btn:hover { color: var(--papaya-text); background: rgba(229,90,77,0.08); }
+  #saved-list .merken-btn:hover { color: var(--papaya-text); background: color-mix(in srgb, var(--papaya) 12%, transparent); }
   #saved-list .merken-btn:focus-visible { outline: 2px solid var(--papaya); outline-offset: 2px; }
+  .tag--past { background: var(--tag-bg); color: var(--papaya-text); border: 1px solid var(--papaya); }
 </style>
