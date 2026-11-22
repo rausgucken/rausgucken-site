@@ -94,7 +94,7 @@ h1 {
 }
 
 #radius-combined-link {
-  display: block; background: var(--papaya-fill); color: #fff !important;
+  display: block; background: var(--papaya-fill); color: var(--ink) !important;
   font-weight: 700; font-size: 0.88rem; padding: 0.55rem 1rem;
   border-radius: 0; text-decoration: none !important;
   text-align: center; margin-top: 0.75rem; transition: background 150ms;
