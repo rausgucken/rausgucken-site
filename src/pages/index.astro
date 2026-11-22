@@ -195,7 +195,7 @@ function initMap(city) {
     const marker = L.circleMarker([c.lat, c.lng], {
       radius: isSelected ? 12 : 8,
       fillColor: isSelected ? "#E24E42" : "#1E1B1A",
-      color: "#fff",
+      color: "#F5F0E6",
       weight: 2,
       opacity: 1,
       fillOpacity: 1,
@@ -484,9 +484,9 @@ loadLeaflet(() => init());
     border: 2px solid var(--border); border-radius: 0;
     background: var(--surface); padding: 0 0.5rem 0 1.25rem;
     transition: border-color 150ms;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    box-shadow: none;
   }
-  .search-box:focus-within { border-color: var(--papaya); box-shadow: 0 4px 32px rgba(226,78,66,0.18); }
+  .search-box:focus-within { border-color: var(--papaya); box-shadow: var(--shadow-hover); }
   .search-icon { width: 20px; height: 20px; color: var(--text-60); flex-shrink: 0; margin-right: 0.6rem; }
   .search-box input {
     flex: 1; border: none; outline: none; background: transparent;
@@ -505,7 +505,7 @@ loadLeaflet(() => init());
     transition: background 150ms; margin: 4px;
   }
   .search-submit:hover { background: var(--papaya-fill); box-shadow: var(--shadow-hover); transform: translate(-2px,-2px);  }
-  .search-submit svg { width: 20px; height: 20px; color: #fff; }
+  .search-submit svg { width: 20px; height: 20px; color: var(--ink); }
 
   .search-suggestions {
     position: absolute; top: calc(100% + 8px); left: 0; right: 0;
