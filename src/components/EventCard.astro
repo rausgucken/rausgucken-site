@@ -3,7 +3,6 @@
 // CONTRACT (do not rename): classes event-card, card-link, date-badge, card-body, card-tags, card-title,
 // card-meta, card-desc, merken-btn/.merken-icon/.merken-label, source-attribution, freshness-stamp;
 // data-attrs tags/source/age-min/age-max/date/weekdays/location. Client twin: src/scripts/event-card-render.js
-import FreshnessStamp from './FreshnessStamp.astro';
 import tagGroups from '../data/tag-groups.json';
 import '../styles/event-row.css';
 
@@ -148,9 +147,6 @@ const locShort    = ev.location ? ev.location.replace("Residenzschloss Ludwigsbu
           Quelle: {ev.source_label}<span class="source-more">&nbsp;— Originalseite prüfen</span>
         </a>
       )}
-    </div>
-    <div class="footer-line2">
-      <FreshnessStamp scrapedAt={ev.scraped_at} size="sm" showTime={false} />
     </div>
   </div>
 </article>
