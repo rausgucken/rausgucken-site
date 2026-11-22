@@ -13,7 +13,6 @@
 (function () {
   'use strict';
   const BASE = 'https://www.rausgucken.de';
-  const FONT_URL = 'https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap';
   const TAG_LABELS = {
     Ausstellung:'Ausstellung',Entertainment:'Entertainment',Familie:'Familie',
     Fest:'Fest',Fuehrung:'F\u00fchrung',Jugend:'Jugend',Kinder:'Kinder',

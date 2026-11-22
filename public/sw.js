@@ -37,9 +37,7 @@ self.addEventListener('fetch', event => {
   const url = new URL(request.url);
 
   if (request.method !== 'GET') return;
-  if (url.origin !== self.location.origin &&
-      !url.hostname.includes('fonts.gstatic.com') &&
-      !url.hostname.includes('fonts.googleapis.com')) return;
+  if (url.origin !== self.location.origin) return;
 
   if (url.pathname.startsWith('/data/') && url.pathname.endsWith('.json')) {
     event.respondWith(networkFirst(request, DATA_CACHE));
@@ -47,10 +45,6 @@ self.addEventListener('fetch', event => {
   }
   if (url.pathname.startsWith('/og/')) {
     event.respondWith(cacheFirst(request, IMAGE_CACHE));
-    return;
-  }
-  if (url.hostname.includes('fonts.gstatic.com') || url.hostname.includes('fonts.googleapis.com')) {
-    event.respondWith(staleWhileRevalidate(request, SHELL_CACHE));
     return;
   }
   if (request.mode === 'navigate') {
