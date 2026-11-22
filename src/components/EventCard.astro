@@ -190,8 +190,11 @@ const locShort    = ev.location ? ev.location.replace("Residenzschloss Ludwigsbu
         _origRestore && _origRestore();
         if (!window._rgClicksBound) {
           window._rgClicksBound = true;
-          document.querySelectorAll('.merken-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
+          // Delegated: also covers cards added later by "Weitere laden".
+          document.addEventListener('click', function(e) {
+            const btn = e.target.closest('.merken-btn');
+            if (!btn || btn.classList.contains('saved-remove-btn')) return;
+            (function() {
         const slug = this.dataset.slug;
         const card = this.closest('.event-card');
         // Gather event data from card's data attributes + nearby DOM
@@ -242,7 +245,7 @@ const locShort    = ev.location ? ev.location.replace("Residenzschloss Ludwigsbu
             }).catch(() => {});
           }
         }
-            });
+            }).call(btn);
           });
         }
       };
