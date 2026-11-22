@@ -61,7 +61,7 @@ html body .pagefind-ui {
 }
 
 /* pagefind polish (7.3) */
-html body .pagefind-ui mark { background: var(--mustard); color: var(--ink); padding: 0 2px; }
+html body .pagefind-ui mark { background: #FFEE00; color: var(--ink); padding: 0 2px; }
 html body .pagefind-ui .pagefind-ui__result-link { font-family: var(--font-heading); font-weight: 600; font-size: 1.2rem; color: var(--text); }
 html body .pagefind-ui .pagefind-ui__result-link:hover { color: var(--papaya-text); }
 html body .pagefind-ui .pagefind-ui__search-clear { font-family: var(--font-body); background: transparent; border: 1.5px solid var(--border); border-radius: 0; color: var(--text); min-height: 44px; padding: 0 0.9rem; }
