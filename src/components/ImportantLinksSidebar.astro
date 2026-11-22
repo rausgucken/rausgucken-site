@@ -137,14 +137,14 @@ const resolvedLinks = links.map((link, i) => ({
     right: 220px;
     top: auto;
     width: 200px;
-    background: var(--surface-card, #2a2f3a);
+    background: var(--surface-card);
     border: 1px solid var(--border);
     border-radius: 0;
     padding: 0.55rem 0.7rem;
     font-size: 0.75rem;
     line-height: 1.45;
     color: var(--text);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    box-shadow: var(--shadow-hover);
     pointer-events: none;
     z-index: 100;
     white-space: normal;
@@ -156,7 +156,7 @@ const resolvedLinks = links.map((link, i) => ({
     right: -6px;
     width: 10px;
     height: 10px;
-    background: var(--surface-card, #2a2f3a);
+    background: var(--surface-card);
     border-right: 1px solid var(--border);
     border-top: 1px solid var(--border);
     transform: rotate(45deg);
