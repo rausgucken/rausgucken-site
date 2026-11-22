@@ -87,8 +87,8 @@ function getStatus(meta) {
 function healthColor(score) {
   if (score === null || score === undefined) return 'var(--text-30)';
   if (score >= 0.85) return 'var(--aqua)';
-  if (score >= 0.65) return '#f5a623';
-  return '#e53e3e';
+  if (score >= 0.65) return 'var(--status-warn)';
+  return 'var(--status-crit)';
 }
 
 function healthLabel(score) {
@@ -433,8 +433,8 @@ document.getElementById('refresh-btn')?.addEventListener('click', loadDashboard)
     transition: box-shadow 150ms;
   }
   .city-card:hover { box-shadow: var(--shadow-hover); }
-  .city-card--warning { border-left: 3px solid #f5a623; }
-  .city-card--critical { border-left: 3px solid #e53e3e; }
+  .city-card--warning { border-left: 3px solid var(--status-warn); }
+  .city-card--critical { border-left: 3px solid var(--status-crit); }
   .city-card--error {
     border-left: 3px solid var(--border);
     opacity: 0.6;
@@ -471,9 +471,9 @@ document.getElementById('refresh-btn')?.addEventListener('click', loadDashboard)
     flex-shrink: 0;
     margin-top: 4px;
   }
-  .status-dot--ok       { background: var(--aqua-fill); box-shadow: 0 0 0 3px rgba(0,143,149,0.2); }
-  .status-dot--warning  { background: #f5a623;     box-shadow: 0 0 0 3px rgba(245,166,35,0.2); }
-  .status-dot--critical { background: #e53e3e;     box-shadow: 0 0 0 3px rgba(229,62,62,0.2); }
+  .status-dot--ok       { background: var(--aqua-fill); box-shadow: 0 0 0 3px color-mix(in srgb, var(--aqua-fill) 20%, transparent); }
+  .status-dot--warning  { background: var(--status-warn);     box-shadow: 0 0 0 3px color-mix(in srgb, var(--status-warn) 20%, transparent); }
+  .status-dot--critical { background: var(--status-crit);     box-shadow: 0 0 0 3px color-mix(in srgb, var(--status-crit) 20%, transparent); }
   .status-dot--unknown  { background: var(--border); }
 
   /* Meta pills row */
@@ -490,8 +490,8 @@ document.getElementById('refresh-btn')?.addEventListener('click', loadDashboard)
     color: var(--text-60);
     border: 1px solid var(--border-subtle);
   }
-  .meta-pill--warn { background: rgba(245,166,35,0.12); color: #b37a00; border-color: rgba(245,166,35,0.3); }
-  .meta-pill--crit { background: rgba(229,62,62,0.10);  color: #c53030; border-color: rgba(229,62,62,0.25); }
+  .meta-pill--warn { background: color-mix(in srgb, var(--status-warn) 12%, transparent); color: var(--status-warn-text); border-color: color-mix(in srgb, var(--status-warn) 30%, transparent); }
+  .meta-pill--crit { background: color-mix(in srgb, var(--status-crit) 10%, transparent);  color: var(--status-crit-text); border-color: color-mix(in srgb, var(--status-crit) 25%, transparent); }
 
   /* Stats grid */
   .city-stats {
@@ -502,8 +502,8 @@ document.getElementById('refresh-btn')?.addEventListener('click', loadDashboard)
   .stat { display: flex; flex-direction: column; gap: 0.1rem; }
   .stat-label { font-size: 0.68rem; color: var(--text-30); text-transform: uppercase; letter-spacing: 0.05em; }
   .stat-val   { font-size: 0.85rem; color: var(--text); font-weight: 600; }
-  .val-warn   { color: #b37a00; }
-  .val-crit   { color: #c53030; }
+  .val-warn   { color: var(--status-warn-text); }
+  .val-crit   { color: var(--status-crit-text); }
 
   /* Alert rows */
   .alert-row {
@@ -512,8 +512,8 @@ document.getElementById('refresh-btn')?.addEventListener('click', loadDashboard)
     border-radius: var(--radius-sm);
     line-height: 1.5;
   }
-  .alert-row--warn { background: rgba(245,166,35,0.10); color: #7a5500; }
-  .alert-row--crit { background: rgba(229,62,62,0.08);  color: #9b2c2c; }
+  .alert-row--warn { background: color-mix(in srgb, var(--status-warn) 10%, transparent); color: var(--status-warn-text); }
+  .alert-row--crit { background: color-mix(in srgb, var(--status-crit) 8%, transparent);  color: var(--status-crit-text); }
   .alert-row strong { font-weight: 700; }
 
   /* Source details */
@@ -558,8 +558,8 @@ document.getElementById('refresh-btn')?.addEventListener('click', loadDashboard)
     vertical-align: middle;
   }
   .source-table tr:last-child td { border-bottom: none; }
-  .source-table tr.row-quarantine { background: rgba(229,62,62,0.04); }
-  .source-table tr.row-drift      { background: rgba(245,166,35,0.04); }
+  .source-table tr.row-quarantine { background: color-mix(in srgb, var(--status-crit) 4%, transparent); }
+  .source-table tr.row-drift      { background: color-mix(in srgb, var(--status-warn) 4%, transparent); }
   .src-name { color: var(--text); font-weight: 600; font-family: var(--font-heading); }
 
   .score-pill {
@@ -581,8 +581,8 @@ document.getElementById('refresh-btn')?.addEventListener('click', loadDashboard)
     font-weight: 600;
   }
   .badge-ok   { color: var(--text-30); }
-  .badge-warn { background: rgba(245,166,35,0.12); color: #7a5500; }
-  .badge-crit { background: rgba(229,62,62,0.10);  color: #9b2c2c; }
+  .badge-warn { background: color-mix(in srgb, var(--status-warn) 12%, transparent); color: var(--status-warn-text); }
+  .badge-crit { background: color-mix(in srgb, var(--status-crit) 10%, transparent);  color: var(--status-crit-text); }
 
   .no-sources { font-size: 0.8rem; color: var(--text-30); margin: 0.5rem 0 0; }
   .error-msg  { font-size: 0.85rem; color: var(--text-30); margin: 0; }
@@ -599,7 +599,7 @@ document.getElementById('refresh-btn')?.addEventListener('click', loadDashboard)
   }
   .error-state {
     grid-column: 1 / -1;
-    color: #c53030;
+    color: var(--status-crit-text);
     font-size: 0.9rem;
     padding: 2rem 0;
   }

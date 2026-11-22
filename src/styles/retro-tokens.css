@@ -30,3 +30,7 @@ html:root.dark {
   --shadow-hover:4px 4px 0 var(--papaya);
   --coral-light:rgba(242,104,93,0.16); --sage-light:rgba(63,193,201,0.16);
 }
+
+/* status tokens (Phase 6.3) */
+html:root { --status-warn: #B37A00; --status-warn-text: #7A5500; --status-crit: #B3261E; --status-crit-text: #B3261E; }
+html:root.dark { --status-warn: #E9B000; --status-warn-text: #F5F0E6; --status-crit: #FF8A80; --status-crit-text: #FF8A80; }
