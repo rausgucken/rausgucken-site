@@ -6,6 +6,7 @@ html:root {
   --papaya-text:#C2382D;  /* small text on cream (5.05:1) */
   --aqua:#008F95;
   --aqua-text:#00757A;    /* small text on cream (5.14:1) */
+  --aqua-fill:#2AB3BA;    /* chips WITH ink text */
   --mustard:#E9B000;
   --blush:#EB6E80;
   --ink:#1E1B1A;
@@ -13,7 +14,7 @@ html:root {
   --border:rgba(30,27,26,0.85); --border-subtle:rgba(30,27,26,0.18);
   --text:#1E1B1A; --text-60:#5E5A55; --text-30:#8F8A82;
   --tag-bg:rgba(30,27,26,0.06);
-  --radius:0; --shadow-card:none; --shadow-hover:4px 4px 0 var(--ink);
+  --radius:0; --radius-sm:0; --shadow-card:none; --shadow-hover:4px 4px 0 var(--ink);
   /* legacy aliases */
   --coral:var(--papaya-fill); --coral-dark:var(--papaya); --coral-light:rgba(226,78,66,0.12);
   --sage:var(--aqua); --sage-light:rgba(0,143,149,0.14);
