@@ -100,3 +100,6 @@ html body .credit-info a,
 html body a[href*="LICENSE-"] { text-decoration: underline; text-underline-offset: 2px; }
 /* hint text: solid token, no faded grey */
 html body .field-hint { color: var(--text-60); }
+
+/* cls: reserve search box (9.3) */
+html body .pagefind-search-wrap { min-height: 64px; }

@@ -25,7 +25,7 @@ import linksData from "../../../config/important-links-ingersheim.json";
 const events = (eventsData as any).events ?? eventsData;
 const meta = metaData as any;
 
-const dated    = (events as any[]).filter((e: any) => e.date_start);
+const dated    = (events as any[]).filter((e: any) => e.date_start && e.date_start >= new Date().toISOString().split("T")[0]);
 const standing = (events as any[]).filter((e: any) => !e.date_start);
 const INITIAL_LIMIT = 200;
 const datedInitial  = dated.slice(0, INITIAL_LIMIT);
@@ -130,6 +130,20 @@ const featuredEvent = featuredSlug
           </div>
         </section>
       )}
+
+      <!-- cls: hide cards that went stale since build, before first paint (mirrors app.js applyFilters date rules) -->
+      <script is:inline>
+        (function () {
+          var t = new Date().toISOString().slice(0, 10);
+          document.querySelectorAll('#event-grid .event-card').forEach(function (c) {
+            var d = c.dataset.date; if (!d) return;
+            if (d < t) { c.style.display = 'none'; return; }
+            var w = (c.dataset.weekdays || '').split(',').filter(Boolean);
+            if (w.length && w.indexOf(String(new Date(d + 'T12:00:00').getDay())) < 0) c.style.display = 'none';
+          });
+        })();
+      </script>
+
 
       
       {datedRest.length > 0 && (
