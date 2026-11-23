@@ -1,31 +1,44 @@
 {
-  "generated_at": "2026-11-22T05:17:54.700461+01:00",
+  "generated_at": "2026-11-23T04:47:20.819749+01:00",
   "city": "ditzingen",
   "sources": [
     "ditzingen_stadt",
     "ditzingen_treffpunkt_adler"
   ],
-  "previous_run": "2026-11-21T04:40:48.020222+01:00",
-  "count_added": 0,
+  "previous_run": "2026-11-22T05:17:54.781116+01:00",
+  "count_added": 2,
   "count_removed": 3,
-  "added": [],
+  "added": [
+    {
+      "id": "212e518e9c0702be",
+      "title": "Skatgruppen",
+      "date_start": "2027-11-23",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "d281f1ef8b2e70ca",
+      "title": "\"Betreuungscafé Augenblick\"  Betreuungsgruppe für Menschen mit und ohne Demenz (Abt. Senioren und Teilhabe)",
+      "date_start": "2027-11-23",
+      "source": "ditzingen_treffpunkt_adler"
+    }
+  ],
   "removed": [
     {
-      "id": "d5f80efd8c9d1fb2",
-      "title": "Kino im Bürgersaal Ditzingen: Filme in französischer und englischer Originalfassung sowie Angebote in deutscher Sprache",
-      "date_start": "2026-11-20",
+      "id": "c8af6e3c2c8223a9",
+      "title": "Himmelswelten - Bilder und Skulpturen von Elke Gaertner",
+      "date_start": "2026-11-22",
       "source": "ditzingen_stadt"
     },
     {
-      "id": "f7bf8736b7b3b35b",
-      "title": "Musik zur Marktzeit XVI",
-      "date_start": "2026-11-21",
-      "source": "ditzingen_stadt"
+      "id": "e2ffc65ffc5f87cc",
+      "title": "Sonntags-Café für den guten Zweck",
+      "date_start": "2026-11-22",
+      "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "3f7e5b9bc50a5a11",
-      "title": "Herbstkonzert",
-      "date_start": "2026-11-21",
+      "id": "92dc48095f353194",
+      "title": "Frauenschwimmen",
+      "date_start": "2026-11-22",
       "source": "ditzingen_stadt"
     }
   ]

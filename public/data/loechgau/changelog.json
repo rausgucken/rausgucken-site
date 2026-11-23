@@ -1,18 +1,37 @@
 {
-  "generated_at": "2026-11-22T08:40:34.778695+01:00",
+  "generated_at": "2026-11-23T07:20:33.709407+01:00",
   "city": "loechgau",
   "sources": [
     "loechgau_gemeinde"
   ],
-  "previous_run": "2026-11-21T07:44:25.050592+01:00",
-  "count_added": 0,
+  "previous_run": "2026-11-22T08:40:34.854628+01:00",
+  "count_added": 3,
   "count_removed": 1,
-  "added": [],
+  "added": [
+    {
+      "id": "3c043d33a7600cfe",
+      "title": "Kinderbibelwoche",
+      "date_start": "2027-03-31",
+      "source": "loechgau_gemeinde"
+    },
+    {
+      "id": "ca49181c8cb553e6",
+      "title": "Vocalis",
+      "date_start": "2027-04-19",
+      "source": "loechgau_gemeinde"
+    },
+    {
+      "id": "d2e94cbfcf5ee908",
+      "title": "Ausflug Opus",
+      "date_start": "2027-05-01",
+      "source": "loechgau_gemeinde"
+    }
+  ],
   "removed": [
     {
-      "id": "8a38f4567609690d",
-      "title": "Jugendgottesdienst",
-      "date_start": "2026-11-21",
+      "id": "56ef0cbb836ffd65",
+      "title": "Totensonntag Männerchor Liederkranz Löchgau e.V.",
+      "date_start": "2026-11-22",
       "source": "loechgau_gemeinde"
     }
   ]

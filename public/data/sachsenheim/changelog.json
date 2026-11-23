@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-22T05:17:53.892162+01:00",
+  "generated_at": "2026-11-23T04:58:30.563895+01:00",
   "city": "sachsenheim",
   "sources": [
-    "sachsenheim_library",
     "sachsenheim_museum",
-    "sachsenheim_kultur"
+    "sachsenheim_kultur",
+    "sachsenheim_library"
   ],
-  "previous_run": "2026-11-21T05:14:19.700913+01:00",
-  "count_added": 12,
-  "count_removed": 2,
+  "previous_run": "2026-11-22T05:17:53.967026+01:00",
+  "count_added": 9,
+  "count_removed": 1,
   "added": [
     {
       "id": "2e6e0199c9d95a2c",
@@ -59,41 +59,17 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "77fbf0190d7a5dd4",
-      "title": "Geselliges Beisammensein mit erheiternden Geschichten von Doris Rau",
-      "date_start": "2026-12-11",
-      "source": "sachsenheim_library"
-    },
-    {
-      "id": "a6cbc65734edda34",
-      "title": "Adventssamstag",
-      "date_start": "2026-12-12",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "bf5617b2c0110027",
-      "title": "Adventssamstag",
-      "date_start": "2026-12-12",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "3c03eb96fe17a3e8",
-      "title": "Adventskonzert",
-      "date_start": "2026-12-12",
+      "id": "ecceb049ce96111f",
+      "title": "4. Sitzung des Zweckverbandes Eichwald",
+      "date_start": "2026-12-14",
       "source": "sachsenheim_kultur"
     }
   ],
   "removed": [
     {
-      "id": "e035969240ebd541",
-      "title": "Führung, Nachts im Museum",
-      "date_start": "2026-11-21",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "d06609c6aad1e053",
-      "title": "Heimleuchten",
-      "date_start": "2026-11-21",
+      "id": "0e89bba6f8943ed2",
+      "title": "Gedenkfeier zum Totensonntag",
+      "date_start": "2026-11-22",
       "source": "sachsenheim_kultur"
     }
   ]

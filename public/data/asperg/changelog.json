@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-22T04:40:39.668993+01:00",
+  "generated_at": "2026-11-23T04:46:06.976548+01:00",
   "city": "asperg",
   "sources": [
-    "asperg_fuehrungen",
     "asperg_veranstaltungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-11-21T04:40:26.450771+01:00",
-  "count_added": 27,
-  "count_removed": 5,
+  "previous_run": "2026-11-22T04:40:39.745710+01:00",
+  "count_added": 36,
+  "count_removed": 2,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -161,48 +161,84 @@
       "source": "asperg_fuehrungen"
     },
     {
-      "id": "cb7d4d5e64cac6fd",
-      "title": "Ausstellung",
-      "date_start": "2026-11-22",
-      "source": "glasperlenspiel"
-    },
-    {
       "id": "08789374e1320cb2",
       "title": "Alte Liebe",
       "date_start": "2026-11-21",
+      "source": "glasperlenspiel"
+    },
+    {
+      "id": "0c820f416bc08e5d",
+      "title": "Weihnachtszauber beim DRK",
+      "date_start": "2026-12-19",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "5d6537411a6b8096",
+      "title": "DRK-Café",
+      "date_start": "2027-01-24",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "f1bba29178e1308c",
+      "title": "DRK-Café",
+      "date_start": "2027-02-14",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "87e348b4b527aa9b",
+      "title": "Blutspendetermin",
+      "date_start": "2027-02-22",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "85f7d5b4aedecaa0",
+      "title": "DRK Café",
+      "date_start": "2027-04-11",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "e655c8de66859eae",
+      "title": "Blutspendetermin",
+      "date_start": "2027-07-19",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "f0a8d04c767e1484",
+      "title": "Blutspendetermin",
+      "date_start": "2027-10-25",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "17ed679a871c127f",
+      "title": "DRK-Café",
+      "date_start": "2027-10-31",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "e21523dd697ac59f",
+      "title": "DRK-Café",
+      "date_start": "2027-12-12",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "cb7d4d5e64cac6fd",
+      "title": "Ausstellung",
+      "date_start": "2026-11-22",
       "source": "glasperlenspiel"
     }
   ],
   "removed": [
     {
-      "id": "3fb61d934026934c",
-      "title": "Wochenmarkt",
-      "date_start": "2026-11-21",
+      "id": "38f1ba0e074d7b49",
+      "title": "Vernissage - Daniela Meta Epple & Ingrid Sofie Berner: Gemeinsam kreativ",
+      "date_start": "2026-11-22",
       "source": "asperg_veranstaltungen"
     },
     {
-      "id": "b00570b477189543",
-      "title": "Bilderbuchkino",
-      "date_start": "2026-11-21",
+      "id": "41fada48939796f5",
+      "title": "Bauchgesänge - Murzarella: Best of",
+      "date_start": "2026-11-22",
       "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "f36b35d41ae38720",
-      "title": "Jahreskonzert",
-      "date_start": "2026-11-21",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "c5cd2d2752d4fe8d",
-      "title": "Theater - Alte Liebe",
-      "date_start": "2026-11-21",
-      "source": "asperg_veranstaltungen"
-    },
-    {
-      "id": "b0c42af0f50a438e",
-      "title": "Ehepaar Lore und Harry",
-      "date_start": "2026-11-21",
-      "source": "glasperlenspiel"
     }
   ]
 }

@@ -1,224 +1,42 @@
 {
-  "generated_at": "2026-11-22T10:03:26.520922+01:00",
+  "generated_at": "2026-11-23T08:46:59.165856+01:00",
   "city": "ludwigsburg",
   "sources": [
-    "schloss",
-    "forum_schlosspark",
+    "stabi",
+    "garnisonmuseum",
+    "kunstverein_ausstellungen",
+    "blueba",
+    "lisbert_queer",
+    "demokratisches_zentrum",
     "kunstverein_veranstaltungen",
+    "forum_schlosspark",
+    "musikhalle_lb",
+    "schloss",
+    "ludwigsburg_stadt",
     "karlskaserne_veranstaltungen",
     "museum",
-    "stabi",
-    "blueba",
-    "ludwigsburg_stadt",
-    "demokratisches_zentrum",
-    "garnisonmuseum",
-    "musikhalle_lb",
-    "lisbert_queer",
-    "labyrinth",
-    "kunstverein_ausstellungen"
+    "labyrinth"
   ],
-  "previous_run": "2026-11-21T09:21:49.591915+01:00",
-  "count_added": 16,
-  "count_removed": 21,
+  "previous_run": "2026-11-22T10:03:26.607984+01:00",
+  "count_added": 12,
+  "count_removed": 15,
   "added": [
     {
-      "id": "0d6f7bb949f22086",
-      "title": "Faschingsferienworkshop: Tierisch groß! - Köpfe mit Charakter für Kinder von 7-10 Jahren in Ludwigsburg",
-      "date_start": "2027-02-08",
-      "source": "labyrinth"
-    },
-    {
-      "id": "58683210ce8fd230",
-      "title": "Osterferienworkshop: Hinein in die für Kinder ab 8 Jahren",
+      "id": "bf1f67bf56a8fdf5",
+      "title": "Osterferienworkshop: Kunst ist Spiel und Spiel ist Kunst! für Kinder von 6-10 Jahren in Ludwigsburg",
       "date_start": "2027-03-24",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "9109cbcade3938a0",
-      "title": "Osterferienworkshop: Urban Sketching Zeichenworkshop ab 10 Jahren",
+      "id": "1753454914e0aaba",
+      "title": "Osterferienworkshop: Das geheime Haus des Hasen für Kinder ab 6 Jahren in Ludwigsburg",
       "date_start": "2027-03-24",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "dd96a7781b1b0ddf",
-      "title": "Osterferienworkshop: Kikeriki - Verrückte Hähne für Kinder von 8-10 Jahren in Bietigheim-Bissingen",
+      "id": "28b158ce14da77dd",
+      "title": "Osterferienworkshop: Magisches Fotolabor für Kinder ab 10 Jahren",
       "date_start": "2027-03-24",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "ecc5b6c003dc440a",
-      "title": "Sprechtreff Deutsch",
-      "date_start": "2026-11-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "925b52158cfdd186",
-      "title": "After Work im Heilbad Hoheneck",
-      "date_start": "2026-11-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "4c91b63e75a69555",
-      "title": "Selbstverteidigungstraining für Mädchen und Frauen ab 16 Jahren",
-      "date_start": "2026-11-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "605a133c98a08d64",
-      "title": "Auffangen. Informieren – Begleiten – Frauenselbsthilfe Krebs e. V.",
-      "date_start": "2026-11-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b8bd752f43f5f4d6",
-      "title": "Fassaden ein Film von Alina Cyranek über häusliche Gewalt gegen Frauen",
-      "date_start": "2026-11-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "245def6df70f80bd",
-      "title": "Zusammen1: Antisemitismusprävention im und durch Sport",
-      "date_start": "2026-11-25",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "68d9e3ebaada627c",
-      "title": "Spielzeit FamilienLeben - Donnerstags",
-      "date_start": "2026-11-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "390c9b004ef0093a",
-      "title": "Internationale Geschichteninsel auf Arabisch",
-      "date_start": "2026-11-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "a29844fc39339303",
-      "title": "Maker Zone",
-      "date_start": "2026-11-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "89aef2a567c07949",
-      "title": "Spiel mit!: Spiel des Jahres 2026",
-      "date_start": "2026-11-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "54fe130ee6e99238",
-      "title": "Infoveranstaltung: Vorsorge bei Starkregen",
-      "date_start": "2026-11-26",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "31f7cf2414b12ca9",
-      "title": "Zwillingstreff",
-      "date_start": "2026-11-27",
-      "source": "ludwigsburg_stadt"
-    }
-  ],
-  "removed": [
-    {
-      "id": "d63d36773efbd0ba",
-      "title": "Leo stark! Resilienz und Selbstbehauptung",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "b99efaf09c8576c4",
-      "title": "Workshop: Ein Buch als Aufbewahrungsversteck aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2026-11-21",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "616656af9c975269",
-      "title": "Workshop: Zirkus- und Stelzenlaufwerkstatt für Kinder von 8-12 Jahren in Ludwigsburg",
-      "date_start": "2026-11-21",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "571d7cef1a0b8090",
-      "title": "Stahl Fatal",
-      "date_start": "2026-11-21",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "6eafa0ad1145603e",
-      "title": "Bilderbuchsamstag in der Stadtbibliothek",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "6fadda1333014240",
-      "title": "Blick hinter die Kulissen",
-      "date_start": "2026-11-21",
-      "source": "schloss"
-    },
-    {
-      "id": "b07293ee11887cd5",
-      "title": "Bilderbuchsamstag",
-      "date_start": "2026-11-21",
-      "source": "stabi"
-    },
-    {
-      "id": "c347b104bcbbb464",
-      "title": "Spielsachen- und Fahrzeugbörse",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "da0bbcf295205ed4",
-      "title": "Führung durch das Schlosstheater",
-      "date_start": "2026-11-21",
-      "source": "schloss"
-    },
-    {
-      "id": "8788b9c90e12d88a",
-      "title": "Kaffee, Tee und Schokolade",
-      "date_start": "2026-11-21",
-      "source": "schloss"
-    },
-    {
-      "id": "1618aa103224d218",
-      "title": "Kinderkino: Der Wunderweltenbaum",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "c706ede32cdabbf9",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "bec160e4a17244a5",
-      "title": "Kleine Prinzessinnen und Prinzen – große Regeln",
-      "date_start": "2026-11-21",
-      "source": "schloss"
-    },
-    {
-      "id": "e7c2d6e4474a42b2",
-      "title": "Geschichtsführung: Ludwigsburger Anekdoten",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "cda4debd22a710c6",
-      "title": "🎸 Rocknacht 2026 – Das Jubiläum!",
-      "date_start": "2026-11-21",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "bb8e32de808c05eb",
-      "title": "Geisterjagd im Schloss",
-      "date_start": "2026-11-21",
-      "source": "schloss"
-    },
-    {
-      "id": "8a048933220b743d",
-      "title": "Die Grabowskis",
-      "date_start": "2026-11-21",
       "source": "karlskaserne_veranstaltungen"
     },
     {
@@ -228,20 +46,142 @@
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "7e34793e820792dc",
-      "title": "Faschingsferienworkshop: Tierisch groß! - Köpfe mit Charakter für Kinder von 7-10 Jahren in Ludwigsburg",
+      "id": "c3e1043d3eb1bf40",
+      "title": "Kochnachmittag: Internationale Suppenküche",
+      "date_start": "2026-11-27",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fcdeb15ddbe3c536",
+      "title": "Internationale Geschichteninsel auf Französisch",
+      "date_start": "2026-11-27",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "a01837ed47a68d1f",
+      "title": "Internationale Geschichteninsel auf Chinesisch",
+      "date_start": "2026-11-27",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c2cf3686315756e3",
+      "title": "Völlig losgelöst – Hymnen deines Lebens: Die 80er Show",
+      "date_start": "2026-11-27",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "37ca980934cf4f2a",
+      "title": "Werkstatt für Kinder",
+      "date_start": "2026-11-28",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "fd71e83e295795c2",
+      "title": "Bilderbuchsamstag in der Stadtbibliothek",
+      "date_start": "2026-11-28",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "88c52dba133fa381",
+      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "date_start": "2026-11-28",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "04285cb13d48a4f1",
+      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
+      "date_start": "2026-11-28",
+      "source": "ludwigsburg_stadt"
+    }
+  ],
+  "removed": [
+    {
+      "id": "e0d01890763e5341",
+      "title": "Feldenkrais Intensiv",
+      "date_start": "2026-11-21",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "c2933aa889599b3d",
+      "title": "Workshop: Ein Krabbenkutter aus Ton für Kinder ab 7 Jahren in Ludwigsburg",
+      "date_start": "2026-11-21",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "ff9be7cc5a1208c1",
+      "title": "Weißes Gold und Glanz der Seide",
+      "date_start": "2026-11-22",
+      "source": "schloss"
+    },
+    {
+      "id": "5f87c90fe38403c6",
+      "title": "The Royal Ballet: Manon",
+      "date_start": "2026-11-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "11d66526b1bdc316",
+      "title": "Caché = verborgen",
+      "date_start": "2026-11-22",
+      "source": "schloss"
+    },
+    {
+      "id": "e6d0564e331a0338",
+      "title": "Kinderkino: Der Wunderweltenbaum",
+      "date_start": "2026-11-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c5a6f06a1eeb2fd4",
+      "title": "Figurentheater: Familie Wutz feiert Weihnachten",
+      "date_start": "2026-11-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "dcc3c60c471bfeeb",
+      "title": "Zu Diensten des Herzogs",
+      "date_start": "2026-11-22",
+      "source": "schloss"
+    },
+    {
+      "id": "ee6758cb79d5941a",
+      "title": "MHP RIESEN vs. SYNTAINICS MBC",
+      "date_start": "2026-11-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "5d51d42ccc1954b3",
+      "title": "Klangentspannung",
+      "date_start": "2026-11-22",
+      "source": "karlskaserne_veranstaltungen"
+    },
+    {
+      "id": "9a318a671b69acd7",
+      "title": "European Outdoor Film Tour 26/27 - EOFT",
+      "date_start": "2026-11-22",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "4cb66bbadbf049cc",
+      "title": "Faschingsferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Bietigheim-Bissingen",
       "date_start": "2027-02-08",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "4d73d610c57dc677",
-      "title": "Osterferienworkshop: Hinein in die für Kinder ab 8 Jahren",
+      "id": "d34a29ec3cc2b3dd",
+      "title": "Osterferienworkshop: Das geheime Haus des Hasen für Kinder ab 6 Jahren in Ludwigsburg",
       "date_start": "2027-03-24",
       "source": "labyrinth"
     },
     {
-      "id": "780b160930a1db76",
-      "title": "Osterferienworkshop: Urban Sketching Zeichenworkshop ab 10 Jahren",
+      "id": "f7ab39948dde9a4e",
+      "title": "Osterferienworkshop: Magisches Fotolabor für Kinder ab 10 Jahren",
+      "date_start": "2027-03-24",
+      "source": "labyrinth"
+    },
+    {
+      "id": "59ed9be05b83c245",
+      "title": "Osterferienworkshop: Kunst ist Spiel und Spiel ist Kunst! für Kinder von 6-10 Jahren in Ludwigsburg",
       "date_start": "2027-03-24",
       "source": "labyrinth"
     }

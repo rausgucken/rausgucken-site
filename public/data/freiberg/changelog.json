@@ -1,36 +1,43 @@
 {
-  "generated_at": "2026-11-22T02:13:03.916885+01:00",
+  "generated_at": "2026-11-23T02:16:40.937574+01:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-11-21T02:12:32.581701+01:00",
-  "count_added": 0,
-  "count_removed": 4,
-  "added": [],
+  "previous_run": "2026-11-22T02:13:03.994381+01:00",
+  "count_added": 2,
+  "count_removed": 3,
+  "added": [
+    {
+      "id": "6a036d893d41f56f",
+      "title": "Freiberger Wochenmarkt",
+      "date_start": "2027-06-23",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "da44af2fe1ed2d0a",
+      "title": "Kaffee für alle Freibergerinnen und Freiberger",
+      "date_start": "2027-06-23",
+      "source": "freiberg_veranstaltungen"
+    }
+  ],
   "removed": [
     {
-      "id": "e72e18828b0d4a4d",
-      "title": "Freiberger Wochenmarkt",
-      "date_start": "2026-11-21",
+      "id": "7b9a7ad2b39641fb",
+      "title": "UNICATI - Hobbykunstmarkt",
+      "date_start": "2026-11-22",
       "source": "freiberg_veranstaltungen"
     },
     {
-      "id": "319b08e97070d8a1",
-      "title": "Nordic Walking",
-      "date_start": "2026-11-21",
+      "id": "9a2eea0154d4bcc4",
+      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
+      "date_start": "2026-11-22",
       "source": "freiberg_veranstaltungen"
     },
     {
-      "id": "c21a2034e5184796",
-      "title": "Roter Frühschoppen der Freiberger SPD",
-      "date_start": "2026-11-21",
-      "source": "freiberg_veranstaltungen"
-    },
-    {
-      "id": "5f748947ba7ae945",
-      "title": "JAZZNIGHT BigBand Freiberg",
-      "date_start": "2026-11-21",
+      "id": "721bb3ae9d16045d",
+      "title": "Konzert zum Ewigkeitssonntag",
+      "date_start": "2026-11-22",
       "source": "freiberg_veranstaltungen"
     }
   ]

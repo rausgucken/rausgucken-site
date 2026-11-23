@@ -1,7 +1,7 @@
 {
   "subset": "kinder",
-  "generated_at": "2026-11-23T06:00:01.589988+01:00",
-  "event_count": 4,
+  "generated_at": "2026-11-23T08:19:47.810028+01:00",
+  "event_count": 5,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -27,7 +27,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-22T02:03:25.231847+01:00",
+      "scraped_at": "2026-11-23T02:03:35.668121+01:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -58,7 +58,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-22T02:03:37.656292+01:00",
+      "scraped_at": "2026-11-23T02:03:44.905160+01:00",
       "extraction_confidence": 0.85,
       "is_new": false,
       "is_booked_out": false,
@@ -89,7 +89,7 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-11-22T02:03:40.484624+01:00",
+      "scraped_at": "2026-11-23T02:03:47.920958+01:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -121,7 +121,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-22T02:05:18.532395+01:00",
+      "scraped_at": "2026-11-23T02:04:58.890756+01:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -129,6 +129,38 @@
       "editorial_tip": null,
       "source_label": "Stadt Steinheim an der Murr",
       "canonical_url": "https://www.rausgucken.de/steinheim/events/kelterfest-2027-09-17-stei"
+    },
+    {
+      "id": "ab8bfdb328c99f57",
+      "title": "Tag der offenen Tür",
+      "date_start": "2027-09-18",
+      "date_end": "2027-09-19",
+      "time": "17:00 – 02:00",
+      "description": "Die Feuerwehr Steinheim lädt zur Tag der offenen Tür ein. Besucher können die Abteilung Steinheim besuchen und Familienaktivitäten genießen.",
+      "location": "Feuerwehr Steinheim | Abteilung Steinheim",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie"
+      ],
+      "link": "https://www.stadt-steinheim.de/kultur-sport/veranstaltungen/2047/beschreibung-fehlt-tag-der-offenen-tuer-feuerwehr-steinheim-abt-steinheim",
+      "original_url": "https://www.stadt-steinheim.de/kultur-sport/veranstaltungen/2047/beschreibung-fehlt-tag-der-offenen-tuer-feuerwehr-steinheim-abt-steinheim",
+      "source": "steinheim_stadt",
+      "city": "steinheim",
+      "slug": "tag-der-offenen-tuer-2027-09-18-stei",
+      "weekdays": [
+        0,
+        6
+      ],
+      "scraped_at": "2026-11-23T02:05:02.243507+01:00",
+      "extraction_confidence": 0.65,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Steinheim an der Murr",
+      "canonical_url": "https://www.rausgucken.de/steinheim/events/tag-der-offenen-tuer-2027-09-18-stei"
     }
   ]
 }
