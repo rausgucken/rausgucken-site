@@ -1,17 +1,48 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-11-22T08:44:12.735988+01:00",
-  "event_count": 1,
+  "generated_at": "2026-11-23T06:00:01.512979+01:00",
+  "event_count": 4,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
-      "id": "4ffc39ad121754fc",
-      "title": "Spiel mit!",
-      "date_start": "2026-11-27",
+      "id": "f4991e15de46fa40",
+      "title": "Mike Müllerbauer Konzert",
+      "date_start": "2026-12-03",
       "date_end": null,
-      "time": "14:30 - 17:00",
-      "description": "In der Felsengartenschule laden Sie ein, gemeinsam zu spielen und Spaß zu haben. Vielfältige Spiele und Aktivitäten für alle Altersgruppen sorgen für Unterhaltung und Erholung.",
-      "location": "Felsengartenschule",
+      "time": "16:00 - 20:00",
+      "description": "In der Gemeindehalle veranstaltet die Ev. Kirchengemeinde ein Konzert mit Mike Müllerbauer, der sich durch seine vielseitige Musik und Interpretation klassischer sowie eigenkomponierter Werke hervorgetan hat.",
+      "location": "Gemeindehalle",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Musik"
+      ],
+      "link": "https://www.hessigheim.de/veranstaltungen/?seite=1",
+      "original_url": "https://www.hessigheim.de/veranstaltungen/?seite=1",
+      "source": "hessigheim_gemeinde",
+      "city": "hessigheim",
+      "slug": "mike-muellerbauer-konzert-2026-12-03-hess",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-11-22T02:04:28.296343+01:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Hessigheim",
+      "canonical_url": "https://www.rausgucken.de/hessigheim/events/mike-muellerbauer-konzert-2026-12-03-hess"
+    },
+    {
+      "id": "82f281a36397fa84",
+      "title": "Weihnachtsfeier",
+      "date_start": "2026-12-04",
+      "date_end": null,
+      "time": "19:30 - 21:00",
+      "description": "In dieser Weihnachtsfeier im Feuerwehrhaus genießen Besucher traditionelle Gerichte und Leckereien. Mit Kinderaktivitäten und Weihnachtsgeschichten wird der Feststoff bereitgestellt. Veranstaltet von der Freiwilligen Feuerwehr.",
+      "location": "Feuerwehrhaus",
       "price": null,
       "age_min": null,
       "age_max": null,
@@ -20,18 +51,80 @@
       "original_url": "https://www.hessigheim.de/veranstaltungen/?seite=1",
       "source": "hessigheim_gemeinde",
       "city": "hessigheim",
-      "slug": "spiel-mit-2026-11-27-hess",
-      "weekdays": [
-        5
-      ],
-      "scraped_at": "2026-11-22T02:04:28.296270+01:00",
+      "slug": "weihnachtsfeier-2026-12-04t193000-europeberlin-hess",
+      "weekdays": [],
+      "scraped_at": "2026-11-22T02:04:28.296391+01:00",
       "extraction_confidence": 0.85,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Gemeinde Hessigheim",
-      "canonical_url": "https://www.rausgucken.de/hessigheim/events/spiel-mit-2026-11-27-hess"
+      "canonical_url": "https://www.rausgucken.de/hessigheim/events/weihnachtsfeier-2026-12-04t193000-europeberlin-hess"
+    },
+    {
+      "id": "db566f4b46b9d0e3",
+      "title": "Weihnachtsmarkt",
+      "date_start": "2026-12-05",
+      "date_end": "2026-12-06",
+      "time": null,
+      "description": "Weihnachtsmarkt in der Altstadt bietet kulinarische Delikatessen, handwerkliche Kunstwerke und eine familienfreundliche Atmosphäre. Von Samstag bis Sonntag vor der Alten Kelter finden Sie unterirdische Weihnachtsgeschichten und traditionelle Marktraditionen.",
+      "location": "Vor der Alten Kelter",
+      "price": null,
+      "age_min": 4,
+      "age_max": null,
+      "tags": [
+        "Familie",
+        "Kulinarik"
+      ],
+      "link": "https://www.hessigheim.de/veranstaltungen/?seite=1",
+      "original_url": "https://www.hessigheim.de/veranstaltungen/?seite=1",
+      "source": "hessigheim_gemeinde",
+      "city": "hessigheim",
+      "slug": "weihnachtsmarkt-2026-12-05-hess",
+      "weekdays": [
+        0,
+        6
+      ],
+      "scraped_at": "2026-11-22T02:04:28.296432+01:00",
+      "extraction_confidence": 0.85,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Hessigheim",
+      "canonical_url": "https://www.rausgucken.de/hessigheim/events/weihnachtsmarkt-2026-12-05-hess"
+    },
+    {
+      "id": "e4b5acfa92126faa",
+      "title": "Fackelwanderung",
+      "date_start": "2026-12-05",
+      "date_end": null,
+      "time": "16:30 - 18:00",
+      "description": "In der Fackelwanderung durch das TASV Sportgelände bietet der Turn- und Athletik-Sportverein Hessigheim ein außergewöhnliches Outdoor-Erlebnis. Mit brennenden Fackeln marschieren Teilnehmer gemeinsam durch die Abenddämmerung, erlebend die Eintracht und Freude des Gemeinschaftsgefühls.",
+      "location": "TASV Sportgelände",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Outdoor"
+      ],
+      "link": "https://www.hessigheim.de/veranstaltungen/?seite=1",
+      "original_url": "https://www.hessigheim.de/veranstaltungen/?seite=1",
+      "source": "hessigheim_gemeinde",
+      "city": "hessigheim",
+      "slug": "fackelwanderung-2026-12-05-hess",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-22T02:04:28.296473+01:00",
+      "extraction_confidence": 0.75,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Gemeinde Hessigheim",
+      "canonical_url": "https://www.rausgucken.de/hessigheim/events/fackelwanderung-2026-12-05-hess"
     }
   ]
 }
