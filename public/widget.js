@@ -36,7 +36,8 @@
 .rg-header-count{font-size:12px;color:var(--rg-text-60);font-weight:600;}
 .rg-list{list-style:none;margin:0;padding:0;}
 .rg-item{display:grid;grid-template-columns:52px 1fr;gap:0 12px;padding:12px 16px;border-bottom:1px solid var(--rg-border);text-decoration:none;color:inherit;transition:background 0.15s;cursor:pointer;}
-.rg-item:last-child{border-bottom:none;}
+.rg-list li{margin:0;padding:0;list-style:none;}
+.rg-list li:last-child .rg-item{border-bottom:none;}
 .rg-item:hover{background:var(--rg-tag-bg);}
 .rg-date-col{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:2px;}
 .rg-date-day{font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:700;line-height:1;color:var(--rg-big);}
@@ -170,7 +171,7 @@
           return;
         }
         container.innerHTML = headerHTML(city, events.length)
-          + '<ul class="rg-list">' + shown.map(ev => renderEvent(ev, city)).join('') + '</ul>'
+          + '<ul class="rg-list">' + shown.map(ev => '<li>' + renderEvent(ev, city) + '</li>').join('') + '</ul>'
           + footerHTML(city);
       })
       .catch(() => {
