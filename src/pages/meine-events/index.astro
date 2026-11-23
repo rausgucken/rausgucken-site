@@ -107,7 +107,7 @@ import QRExportModal from "../../components/QRExportModal.astro";
   <div id="notif-status" class="notif-status" hidden></div>
 
   <!-- Empty state -->
-  <div id="empty-state" class="empty-state" hidden>
+  <div id="empty-state" class="empty-state">
     <div class="empty-state-inner">
       <p class="empty-headline">Noch nichts gespeichert</p>
       <p class="empty-body">
@@ -132,6 +132,28 @@ import QRExportModal from "../../components/QRExportModal.astro";
     </div>
   </section>
 
+
+  <!-- cls: pre-paint saved/empty toggle (reads same key as renderList; renderList stays the source of truth) -->
+  <script is:inline>
+    (function () {
+      var n = 0;
+      try { n = (JSON.parse(localStorage.getItem('rg-saved') || '[]') || []).length; } catch (e) { return; }
+      if (n > 0) {
+        document.getElementById('empty-state').hidden = true;
+        document.getElementById('saved-section').hidden = false;
+        // reserve list height (card 154px + 12.5px gap) so the module-rendered cards don't push the page down;
+        // released at DOMContentLoaded (module has rendered by then) so later deletions leave no blank gap
+        // mirror maybeShowBanner(): visible unless dismissed or notification permission already granted
+        var dismissed = null;
+        try { dismissed = localStorage.getItem('rg-notif-dismissed'); } catch (e) {}
+        var granted = typeof Notification !== 'undefined' && Notification.permission === 'granted';
+        if (!dismissed && !granted) document.getElementById('notif-banner').hidden = false;
+        var l = document.getElementById('saved-list');
+        l.style.minHeight = (n * 154 + (n - 1) * 12.5) + 'px';
+        document.addEventListener('DOMContentLoaded', function () { l.style.minHeight = ''; });
+      }
+    })();
+  </script>
 
   <!-- Filter preferences reset panel -->
   <section class="pref-panel" aria-label="Filtereinstellungen">
