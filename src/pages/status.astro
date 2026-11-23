@@ -174,7 +174,7 @@ function renderCityCard(city, meta) {
       <div class="city-card city-card--error">
         <div class="city-card-header">
           <h2 class="city-name">${city.name}</h2>
-          <span class="status-dot status-dot--unknown" aria-label="Unbekannt"></span>
+          <span class="status-dot status-dot--unknown" role="img" aria-label="Unbekannt"></span>
         </div>
         <p class="error-msg">meta.json nicht verfügbar</p>
       </div>
@@ -218,7 +218,7 @@ function renderCityCard(city, meta) {
           </h2>
           ${schemaNote}
         </div>
-        <span class="status-dot ${dotClass}" aria-label="${dotLabel}" title="${dotLabel}"></span>
+        <span class="status-dot ${dotClass}" role="img" aria-label="${dotLabel}" title="${dotLabel}"></span>
       </div>
 
       <div class="city-meta-row">

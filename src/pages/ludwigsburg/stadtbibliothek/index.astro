@@ -161,13 +161,13 @@ const placeSchema = {
 </Base>
 
 <style>
-  .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 0.25rem 0.5rem; list-style: none; margin: 0 0 1.5rem; padding: 0; font-size: 0.85rem; opacity: 0.7; }
+  .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 0.25rem 0.5rem; list-style: none; margin: 0 0 1.5rem; padding: 0; font-size: 0.85rem; }
   .breadcrumbs a { text-decoration: underline; text-underline-offset: 2px; }
   .page-header { margin-bottom: 1.5rem; max-width: 720px; margin-left: auto; margin-right: auto; }
   .page-header h1 { margin: 0.25rem 0 0.5rem; }
-  .page-subtitle { margin: 0; opacity: 0.7; font-size: 0.95rem; }
-  .page-header-eyebrow { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; opacity: 0.7; margin-bottom: 0.5rem; }
-  .dot-dual { color: var(--papaya); font-size: 0.75rem; letter-spacing: 0.15em; }
+  .page-subtitle { margin: 0; color: var(--text-60); font-size: 0.95rem; }
+  .page-header-eyebrow { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-60); margin-bottom: 0.5rem; }
+  .dot-dual { color: var(--papaya-text); font-size: 0.75rem; letter-spacing: 0.15em; }
   .venue-intro { max-width: 720px; margin: 0 auto 1.5rem; padding: 1.25rem 1.5rem; background: var(--surface-card); border: 1px solid var(--border); border-left: 4px solid var(--papaya); border-radius: var(--radius); font-size: 0.92rem; line-height: 1.65; }
   .venue-intro p { margin: 0 0 0.75rem; }
   .venue-intro p:last-child { margin-bottom: 0; }
@@ -178,9 +178,9 @@ const placeSchema = {
   .disclaimer-box a { color: var(--text); font-weight: 600; margin-left: 0.35rem; }
   .related-pages { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(0,0,0,0.08); }
   :global(.dark) .related-pages { border-top-color: rgba(255,255,255,0.06); }
-  .related-heading { font-size: 0.9rem; font-weight: 600; opacity: 0.6; margin-bottom: 0.75rem; }
+  .related-heading { font-size: 0.9rem; font-weight: 600; color: var(--text-60); margin-bottom: 0.75rem; }
   .related-links { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; margin: 0; }
-  .related-links a { font-size: 0.875rem; padding: 0.35rem 0.75rem; border-radius: 0; border: 1px solid currentColor; opacity: 0.65; text-decoration: none; transition: opacity 150ms; }
+  .related-links a { font-size: 0.875rem; padding: 0.35rem 0.75rem; border-radius: 0; border: 1px solid currentColor; text-decoration: none; }
   .related-links a:hover { opacity: 1; }
   .section-heading { font-size: 1.1rem; font-weight: 600; margin: 2.5rem 0 1rem; opacity: 0.8; }
   .empty-state-static { text-align: center; padding: 3rem 1rem; opacity: 0.7; }

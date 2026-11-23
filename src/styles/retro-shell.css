@@ -93,3 +93,10 @@ html body .search-suggestions.search-suggestions { padding: 0; }
 
 /* filter body border (9.1) */
 html body .filter-bar.filter-bar { border: 1.5px solid var(--text); border-top: 0; border-radius: 0; box-shadow: none; }
+
+/* a11y fixes (9.2) */
+/* links inside running text must not rely on colour alone */
+html body .credit-info a,
+html body a[href*="LICENSE-"] { text-decoration: underline; text-underline-offset: 2px; }
+/* hint text: solid token, no faded grey */
+html body .field-hint { color: var(--text-60); }
