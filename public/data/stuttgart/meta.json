@@ -1,0 +1,41 @@
+{
+  "scraped_at": "2026-11-24T15:09:09.868998+01:00",
+  "city": "stuttgart",
+  "event_count": 1280,
+  "flagged_count": 0,
+  "expired_count": 5,
+  "sources_scraped": [
+    "linkes_zentrum_lilo_hermann",
+    "schwarzer_keiler",
+    "stadtbibliothek_stuttgart",
+    "stuttgart_master_feed_index",
+    "werkstatthaus"
+  ],
+  "source_counts": {
+    "stuttgart_master_feed_index": 955,
+    "stadtbibliothek_stuttgart": 262,
+    "schwarzer_keiler": 21,
+    "linkes_zentrum_lilo_hermann": 23,
+    "werkstatthaus": 19
+  },
+  "sources_failed": [],
+  "data_hash": "3f4bf0c2b3518155",
+  "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 24.11.2026. Bitte Originalseite prüfen.",
+  "pipeline_version": "multi-city-v2",
+  "source_health": {
+    "stuttgart_master_feed_index": 0.95,
+    "stadtbibliothek_stuttgart": 1.0,
+    "schwarzer_keiler": 1.0,
+    "linkes_zentrum_lilo_hermann": 1.0,
+    "werkstatthaus": 0.92
+  },
+  "source_event_counts": {
+    "stuttgart_master_feed_index": 955,
+    "stadtbibliothek_stuttgart": 262,
+    "schwarzer_keiler": 21,
+    "linkes_zentrum_lilo_hermann": 23,
+    "werkstatthaus": 19
+  },
+  "count_drift_warnings": {}
+}
