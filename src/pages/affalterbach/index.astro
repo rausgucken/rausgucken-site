@@ -169,26 +169,9 @@ const featuredEvent = featuredSlug
                   );
                   const remaining = allEvents.filter(e => e.date_start && !shown.has(e.slug));
                   remaining.forEach(function(ev) {
-                    const tags  = (ev.tags || []).map(t => '<span class="tag">' + t + '</span>').join('');
-                    const price = ev.price ? '<span class="card-price">' + ev.price + '</span>' : '';
-                    const html  = `<article class="event-card" data-date="${ev.date_start||''}" data-tags="${(ev.tags||[]).join(',')}" data-age-min="${ev.age_min??''}" data-age-max="${ev.age_max??''}">
-                      <div class="card-body">
-                        <div class="card-meta-top"><span class="card-date">${ev.date_start||'∞'}</span>${ev.time ? '<span class="card-time"> · '+ev.time+'</span>' : ''}</div>
-                        <h3 class="card-title"><a class="card-link" href="/${ev.city||'affalterbach'}/events/${ev.slug}">${ev.title||''}</a></h3>
-                        ${ev.location ? '<p class="card-location">📍 '+ev.location+'</p>' : ''}
-                        ${ev.description ? '<p class="card-description">'+ev.description.slice(0,120)+'…</p>' : ''}
-                        <div class="card-tags">${tags}</div>
-                        ${price}
-                        <div class="card-footer"><span class="card-source">Quelle: ${ev.source_label||''}</span>
-                          <button class="merken-btn" data-slug="${ev.slug}" aria-pressed="false">
-                            <span class="merken-icon">🔖</span><span class="merken-label">Merken</span>
-                          </button>
-                        </div>
-                      </div>
-                    </article>`;
-                    const wrapper = document.createElement('div');
-                    wrapper.innerHTML = html;
-                    grid.appendChild(wrapper.firstElementChild);
+                    const out = window.rgRenderCard && window.rgRenderCard(ev);
+                    if (typeof out === 'string') { const wrapper = document.createElement('div'); wrapper.innerHTML = out.trim(); if (wrapper.firstElementChild) grid.appendChild(wrapper.firstElementChild); }
+                    else if (out) { grid.appendChild(out); }
                   });
                   container.remove();
                   clearTimeout(window._rgRestoreTimer);
