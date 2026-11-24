@@ -69,6 +69,20 @@ const dateLabel = ev.date_start ? formatDateShort(ev.date_start) : "Dauerveranst
 const MAX       = 45;
 const truncated = ev.title.length > MAX ? ev.title.slice(0, MAX).trimEnd() + "…" : ev.title;
 const seoTitle  = `${truncated} ${cityDisplay} ${dateLabel} | rausgucken.de`;
+// Facts-only fallback so Event JSON-LD always has a description (GSC: Missing field 'description')
+const _fmtDate = (s) => {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(s || "");
+  return m ? `${m[3]}.${m[2]}.${m[1]}` : "";
+};
+const schemaDesc = (ev.description && ev.description.trim())
+  ? ev.description.trim()
+  : [
+      ev.title,
+      _fmtDate(ev.date_start) ? `am ${_fmtDate(ev.date_start)}` : "",
+      ev.time ? `(${ev.time})` : "",
+      ev.location ? `in ${ev.location}` : "",
+      ev.source_label ? `– Veranstaltung von ${ev.source_label}` : "",
+    ].filter(Boolean).join(" ") + ". Alle Angaben bitte auf der Originalseite prüfen.";
 const metaDesc  = ev.description
   ? ev.description.slice(0, 150) + (ev.description.length > 150 ? "…" : "")
   : `${ev.title} – Veranstaltung in ${cityDisplay}${ev.date_start ? ` am ${dateLabel}` : ""}. Alle Details und Originalseite auf rausgucken.de.`;
@@ -175,7 +189,7 @@ const eventSchema = {
   "@context": "https://schema.org",
   "@type": "Event",
   "name": ev.title,
-  ...(ev.description ? { "description": ev.description } : {}),
+  "description": schemaDesc,
   "inLanguage": "de-DE",
   ...(ev.date_start ? {
     "startDate": (() => {
