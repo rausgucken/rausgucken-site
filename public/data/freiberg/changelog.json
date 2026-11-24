@@ -1,43 +1,187 @@
 {
-  "generated_at": "2026-11-23T02:16:40.937574+01:00",
+  "generated_at": "2026-11-24T03:01:46.387177+01:00",
   "city": "freiberg",
   "sources": [
     "freiberg_veranstaltungen"
   ],
-  "previous_run": "2026-11-22T02:13:03.994381+01:00",
-  "count_added": 2,
-  "count_removed": 3,
+  "previous_run": "2026-11-23T02:16:41.016082+01:00",
+  "count_added": 24,
+  "count_removed": 5,
   "added": [
     {
-      "id": "6a036d893d41f56f",
-      "title": "Freiberger Wochenmarkt",
-      "date_start": "2027-06-23",
+      "id": "d48d85591ac25d3f",
+      "title": "Freiberger Weihnachtsmarkt",
+      "date_start": "2026-12-05",
       "source": "freiberg_veranstaltungen"
     },
     {
-      "id": "da44af2fe1ed2d0a",
-      "title": "Kaffee für alle Freibergerinnen und Freiberger",
-      "date_start": "2027-06-23",
+      "id": "e4cf96fd5abc3184",
+      "title": "Freiberger Weihnachtsmarkt",
+      "date_start": "2026-12-06",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "f262405b1908adbf",
+      "title": "Technischer Ausschuss",
+      "date_start": "2027-01-12",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "0269988947e15e86",
+      "title": "Tag der Modelleisenbahn",
+      "date_start": "2026-12-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "0cea23f4f2e7ed3e",
+      "title": "Offenes Advents- und Nikolauslieder-Singen",
+      "date_start": "2026-12-04",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "5c0c05488537b59b",
+      "title": "BfB Repair Cafe",
+      "date_start": "2026-12-11",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "b2b8052ccfda63c3",
+      "title": "Hospizgruppentreffen",
+      "date_start": "2026-12-16",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "19e88506d6fa4265",
+      "title": "BfB Repair Cafe",
+      "date_start": "2026-12-18",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "278f5b92fa0d06a3",
+      "title": "Hospizgruppentreffen",
+      "date_start": "2027-01-13",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4dc1f9ed7f4eec75",
+      "title": "Freiberger Digitale Senioren (FDS)",
+      "date_start": "2027-02-01",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "417671867c52fb9d",
+      "title": "Grüne Brücke Freiberg a.N.",
+      "date_start": "2027-02-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "cb0431bbcbea943e",
+      "title": "Hospizgruppentreffen",
+      "date_start": "2027-02-02",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a659529ab03631b6",
+      "title": "Freiberger Digitale Senioren (FDS)",
+      "date_start": "2027-02-15",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "efa66d951ed570e0",
+      "title": "Freiberger Digitale Senioren (FDS)",
+      "date_start": "2027-03-01",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "9c96df1d024fe589",
+      "title": "Hospizgruppentreffen",
+      "date_start": "2027-03-10",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "feb300963a6b5ec1",
+      "title": "Freiberger Digitale Senioren (FDS)",
+      "date_start": "2027-03-15",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "43872d1e9449ef7e",
+      "title": "Hospizgruppentreffen",
+      "date_start": "2027-04-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "68c8caff32f7d6ae",
+      "title": "Freiberger Digitale Senioren (FDS)",
+      "date_start": "2027-04-19",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "e69ddefda474d283",
+      "title": "Freiberger Digitale Senioren (FDS)",
+      "date_start": "2027-05-03",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "4e648980549a6f2d",
+      "title": "Grüne Brücke Freiberg a.N.",
+      "date_start": "2027-05-04",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "761e9f4fef55c7e9",
+      "title": "Hospizgruppentreffen",
+      "date_start": "2027-05-19",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "8d106fef89b6a140",
+      "title": "Freiberger Digitale Senioren (FDS)",
+      "date_start": "2027-06-07",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "1f8f3f65de3e4c4b",
+      "title": "Hospizgruppentreffen",
+      "date_start": "2027-06-16",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "b0757976284daef8",
+      "title": "Freiberger Digitale Senioren (FDS)",
+      "date_start": "2027-06-21",
       "source": "freiberg_veranstaltungen"
     }
   ],
   "removed": [
     {
-      "id": "7b9a7ad2b39641fb",
-      "title": "UNICATI - Hobbykunstmarkt",
-      "date_start": "2026-11-22",
+      "id": "3115fddfdb610975",
+      "title": "Klimawerkstatt",
+      "date_start": "2026-11-23",
       "source": "freiberg_veranstaltungen"
     },
     {
-      "id": "9a2eea0154d4bcc4",
-      "title": "Ausstellung 'Kennen Sie Afrikanisch Freiberg?'",
-      "date_start": "2026-11-22",
+      "id": "5a99f76056d5532b",
+      "title": "Technischer Ausschuss",
+      "date_start": "2026-12-01",
       "source": "freiberg_veranstaltungen"
     },
     {
-      "id": "721bb3ae9d16045d",
-      "title": "Konzert zum Ewigkeitssonntag",
-      "date_start": "2026-11-22",
+      "id": "ae5f156e7294316e",
+      "title": "Freiberger Weihnachtsmarkt",
+      "date_start": "2026-12-05",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "a6fde564efc2a539",
+      "title": "Freiberger Weihnachtsmarkt",
+      "date_start": "2026-12-06",
+      "source": "freiberg_veranstaltungen"
+    },
+    {
+      "id": "7cca477854840c63",
+      "title": "Technischer Ausschuss",
+      "date_start": "2027-01-12",
       "source": "freiberg_veranstaltungen"
     }
   ]

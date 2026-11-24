@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-23T04:58:30.563895+01:00",
+  "generated_at": "2026-11-24T06:09:45.749502+01:00",
   "city": "sachsenheim",
   "sources": [
+    "sachsenheim_library",
     "sachsenheim_museum",
-    "sachsenheim_kultur",
-    "sachsenheim_library"
+    "sachsenheim_kultur"
   ],
-  "previous_run": "2026-11-22T05:17:53.967026+01:00",
-  "count_added": 9,
-  "count_removed": 1,
+  "previous_run": "2026-11-23T04:58:30.638576+01:00",
+  "count_added": 10,
+  "count_removed": 2,
   "added": [
     {
       "id": "2e6e0199c9d95a2c",
@@ -59,17 +59,29 @@
       "source": "sachsenheim_library"
     },
     {
-      "id": "ecceb049ce96111f",
-      "title": "4. Sitzung des Zweckverbandes Eichwald",
-      "date_start": "2026-12-14",
+      "id": "8116c6ee86cbbf8b",
+      "title": "Gedenkfeier zum Volkstrauertag",
+      "date_start": "2026-11-15",
       "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "1568c4cd9017b5a8",
+      "title": "Seniorenadventsfeier",
+      "date_start": "2026-11-25",
+      "source": "sachsenheim_library"
     }
   ],
   "removed": [
     {
-      "id": "0e89bba6f8943ed2",
-      "title": "Gedenkfeier zum Totensonntag",
-      "date_start": "2026-11-22",
+      "id": "0d62040c07111073",
+      "title": "Seniorenadventsfeier",
+      "date_start": "2026-11-25",
+      "source": "sachsenheim_kultur"
+    },
+    {
+      "id": "ecceb049ce96111f",
+      "title": "4. Sitzung des Zweckverbandes Eichwald",
+      "date_start": "2026-12-14",
       "source": "sachsenheim_kultur"
     }
   ]

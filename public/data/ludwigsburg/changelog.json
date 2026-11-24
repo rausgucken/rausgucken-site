@@ -1,187 +1,337 @@
 {
-  "generated_at": "2026-11-23T08:46:59.165856+01:00",
+  "generated_at": "2026-11-24T10:01:34.114825+01:00",
   "city": "ludwigsburg",
   "sources": [
-    "stabi",
-    "garnisonmuseum",
-    "kunstverein_ausstellungen",
-    "blueba",
-    "lisbert_queer",
-    "demokratisches_zentrum",
+    "labyrinth",
     "kunstverein_veranstaltungen",
-    "forum_schlosspark",
-    "musikhalle_lb",
-    "schloss",
-    "ludwigsburg_stadt",
     "karlskaserne_veranstaltungen",
+    "schloss",
+    "lisbert_queer",
+    "garnisonmuseum",
+    "demokratisches_zentrum",
     "museum",
-    "labyrinth"
+    "blueba",
+    "ludwigsburg_stadt",
+    "stabi",
+    "musikhalle_lb",
+    "kunstverein_ausstellungen",
+    "forum_schlosspark"
   ],
-  "previous_run": "2026-11-22T10:03:26.607984+01:00",
-  "count_added": 12,
-  "count_removed": 15,
+  "previous_run": "2026-11-23T08:46:59.252063+01:00",
+  "count_added": 7,
+  "count_removed": 45,
   "added": [
     {
-      "id": "bf1f67bf56a8fdf5",
-      "title": "Osterferienworkshop: Kunst ist Spiel und Spiel ist Kunst! für Kinder von 6-10 Jahren in Ludwigsburg",
-      "date_start": "2027-03-24",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "1753454914e0aaba",
-      "title": "Osterferienworkshop: Das geheime Haus des Hasen für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2027-03-24",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "28b158ce14da77dd",
-      "title": "Osterferienworkshop: Magisches Fotolabor für Kinder ab 10 Jahren",
-      "date_start": "2027-03-24",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "a27d11cd68c095b0",
-      "title": "Faschingsferienworkshop: Ein Pferd aus Holz gebaut ab 8 Jahren in Bietigheim-Bissingen",
+      "id": "7e34793e820792dc",
+      "title": "Faschingsferienworkshop: Tierisch groß! - Köpfe mit Charakter für Kinder von 7-10 Jahren in Ludwigsburg",
       "date_start": "2027-02-08",
       "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "c3e1043d3eb1bf40",
-      "title": "Kochnachmittag: Internationale Suppenküche",
-      "date_start": "2026-11-27",
-      "source": "ludwigsburg_stadt"
+      "id": "6e061bca686b4ed4",
+      "title": "Osterferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
+      "date_start": "2027-03-24",
+      "source": "karlskaserne_veranstaltungen"
     },
     {
-      "id": "fcdeb15ddbe3c536",
-      "title": "Internationale Geschichteninsel auf Französisch",
-      "date_start": "2026-11-27",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "a01837ed47a68d1f",
-      "title": "Internationale Geschichteninsel auf Chinesisch",
-      "date_start": "2026-11-27",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "c2cf3686315756e3",
-      "title": "Völlig losgelöst – Hymnen deines Lebens: Die 80er Show",
-      "date_start": "2026-11-27",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "37ca980934cf4f2a",
-      "title": "Werkstatt für Kinder",
+      "id": "e6210cddaf80f36f",
+      "title": "Candlelight: Tribut an Adele",
       "date_start": "2026-11-28",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "fd71e83e295795c2",
-      "title": "Bilderbuchsamstag in der Stadtbibliothek",
+      "id": "e3919c12fd3d8983",
+      "title": "Bibliothek der Vielfalt",
+      "date_start": "2026-12-17",
+      "source": "stabi"
+    },
+    {
+      "id": "bdc1ee2609cc3f02",
+      "title": "WinterWeinerlebnistour mit Glühwein und Fackeln",
       "date_start": "2026-11-28",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "88c52dba133fa381",
-      "title": "Museumsrundgang Ludwigsburg in 60 Minuten",
+      "id": "4e9526a3ad026d3f",
+      "title": "Geschichtsführung: Ludwigsburg zur Weihnachtszeit",
       "date_start": "2026-11-28",
       "source": "ludwigsburg_stadt"
     },
     {
-      "id": "04285cb13d48a4f1",
-      "title": "Geschichtsführung: Ludwigsburg auf einen Blick",
+      "id": "8e73b66da079c2a1",
+      "title": "Textilbefreit schwimmen",
       "date_start": "2026-11-28",
       "source": "ludwigsburg_stadt"
     }
   ],
   "removed": [
     {
-      "id": "e0d01890763e5341",
-      "title": "Feldenkrais Intensiv",
-      "date_start": "2026-11-21",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "6a3cbf369453ca2f",
+      "title": "Wichtel-Stube",
+      "date_start": "2026-11-23",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "c2933aa889599b3d",
-      "title": "Workshop: Ein Krabbenkutter aus Ton für Kinder ab 7 Jahren in Ludwigsburg",
-      "date_start": "2026-11-21",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "75d3bbfe6fdd576c",
+      "title": "Adventskranz basteln",
+      "date_start": "2026-11-23",
+      "source": "ludwigsburg_stadt"
     },
     {
-      "id": "ff9be7cc5a1208c1",
+      "id": "7320eb64a808fe9b",
+      "title": "Lesung: \"Arthur und Lilly. Das Mädchen und der Holocaust-Überlebende\" mit Autorin Lilly Maier",
+      "date_start": "2026-11-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "c99d3387eab63e4f",
+      "title": "Nachhaltige Körperpflege",
+      "date_start": "2026-11-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "ceacbc669e8447b3",
+      "title": "Biografische Erkundungen - Mit kreativen Schreibtechniken dem Leben auf der Spur",
+      "date_start": "2026-11-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "595fcf33db9270ed",
+      "title": "Poetry Performance: Pablo Neruda - Von Liebe, Alltag und Widerstand",
+      "date_start": "2026-11-23",
+      "source": "ludwigsburg_stadt"
+    },
+    {
+      "id": "6149b7001ad993e0",
+      "title": "Candlelight: Tribut an Adele",
+      "date_start": "2026-11-28",
+      "source": "musikhalle_lb"
+    },
+    {
+      "id": "42512ac1cc8bc28f",
+      "title": "Schaurig schön",
+      "date_start": "2026-12-05",
+      "source": "schloss"
+    },
+    {
+      "id": "d4c515764ea8a075",
       "title": "Weißes Gold und Glanz der Seide",
-      "date_start": "2026-11-22",
+      "date_start": "2026-12-06",
       "source": "schloss"
     },
     {
-      "id": "5f87c90fe38403c6",
-      "title": "The Royal Ballet: Manon",
-      "date_start": "2026-11-22",
-      "source": "ludwigsburg_stadt"
-    },
-    {
-      "id": "11d66526b1bdc316",
-      "title": "Caché = verborgen",
-      "date_start": "2026-11-22",
+      "id": "5296727f937ed4c5",
+      "title": "Jubel, Trubel, Heiterkeit",
+      "date_start": "2026-12-06",
       "source": "schloss"
     },
     {
-      "id": "e6d0564e331a0338",
-      "title": "Kinderkino: Der Wunderweltenbaum",
-      "date_start": "2026-11-22",
-      "source": "ludwigsburg_stadt"
+      "id": "f1008c4eba1109ce",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-11",
+      "source": "schloss"
     },
     {
-      "id": "c5a6f06a1eeb2fd4",
-      "title": "Figurentheater: Familie Wutz feiert Weihnachten",
-      "date_start": "2026-11-22",
-      "source": "ludwigsburg_stadt"
+      "id": "a2cb46c240959113",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-12-12",
+      "source": "schloss"
     },
     {
-      "id": "dcc3c60c471bfeeb",
+      "id": "4d87c5ca09c94979",
+      "title": "Kaffeeklatsch bei Königs",
+      "date_start": "2026-12-12",
+      "source": "schloss"
+    },
+    {
+      "id": "fc597c0382e4160c",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-12-12",
+      "source": "schloss"
+    },
+    {
+      "id": "01cc147d85a01e38",
+      "title": "Geisterjagd im Schloss",
+      "date_start": "2026-12-12",
+      "source": "schloss"
+    },
+    {
+      "id": "861e459f55076200",
+      "title": "Von seidenen Fäden und kostbaren Quasten",
+      "date_start": "2026-12-13",
+      "source": "schloss"
+    },
+    {
+      "id": "cdd90fbb9816bfa8",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-12-13",
+      "source": "schloss"
+    },
+    {
+      "id": "89211d13bdf6eab4",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-12-13",
+      "source": "schloss"
+    },
+    {
+      "id": "172f3ecb05be2ebf",
       "title": "Zu Diensten des Herzogs",
-      "date_start": "2026-11-22",
+      "date_start": "2026-12-13",
       "source": "schloss"
     },
     {
-      "id": "ee6758cb79d5941a",
-      "title": "MHP RIESEN vs. SYNTAINICS MBC",
-      "date_start": "2026-11-22",
-      "source": "ludwigsburg_stadt"
+      "id": "fc51076473883fb5",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-18",
+      "source": "schloss"
     },
     {
-      "id": "5d51d42ccc1954b3",
-      "title": "Klangentspannung",
-      "date_start": "2026-11-22",
-      "source": "karlskaserne_veranstaltungen"
+      "id": "03235c3022d8734f",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-12-19",
+      "source": "schloss"
     },
     {
-      "id": "9a318a671b69acd7",
-      "title": "European Outdoor Film Tour 26/27 - EOFT",
-      "date_start": "2026-11-22",
-      "source": "ludwigsburg_stadt"
+      "id": "424e359f069a919f",
+      "title": "Etikette und Intrigen",
+      "date_start": "2026-12-19",
+      "source": "schloss"
     },
     {
-      "id": "4cb66bbadbf049cc",
-      "title": "Faschingsferienworkshop: Hip-Hop Streetdance für Kinder ab 10 Jahren in Bietigheim-Bissingen",
+      "id": "d0f91dc233070913",
+      "title": "Schaurig schön",
+      "date_start": "2026-12-19",
+      "source": "schloss"
+    },
+    {
+      "id": "eed6bc16185af3b4",
+      "title": "Technik in der Unterwelt",
+      "date_start": "2026-12-20",
+      "source": "schloss"
+    },
+    {
+      "id": "873519c2ec98a0da",
+      "title": "Freifrau von Schwarzenfels",
+      "date_start": "2026-12-20",
+      "source": "schloss"
+    },
+    {
+      "id": "0c1eb95416e95798",
+      "title": "Etikette und Intrigen",
+      "date_start": "2026-12-20",
+      "source": "schloss"
+    },
+    {
+      "id": "32fc9d1e6f95d3c2",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-12-25",
+      "source": "schloss"
+    },
+    {
+      "id": "c33a0ce87d913b46",
+      "title": "Kleidung, die verführt",
+      "date_start": "2026-12-25",
+      "source": "schloss"
+    },
+    {
+      "id": "f32a62fb2cce3a60",
+      "title": "Von weißer Wäsche und bunten Geschichten",
+      "date_start": "2026-12-26",
+      "source": "schloss"
+    },
+    {
+      "id": "713d6fcdd7929a1b",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-12-26",
+      "source": "schloss"
+    },
+    {
+      "id": "536ae97f9d68c6e8",
+      "title": "Von diebischen Elstern und listigen Gaunern",
+      "date_start": "2026-12-26",
+      "source": "schloss"
+    },
+    {
+      "id": "2e2521bd12a44211",
+      "title": "Mythos Mätresse",
+      "date_start": "2026-12-27",
+      "source": "schloss"
+    },
+    {
+      "id": "0158a96c63eb8b6f",
+      "title": "Contenance oder die Welt des guten Benehmens",
+      "date_start": "2026-12-27",
+      "source": "schloss"
+    },
+    {
+      "id": "28210a998749579d",
+      "title": "Hidden Rooms",
+      "date_start": "2026-12-27",
+      "source": "schloss"
+    },
+    {
+      "id": "b0d321edb3776c57",
+      "title": "Die Liebe am Ludwigsburger Hof",
+      "date_start": "2026-12-28",
+      "source": "schloss"
+    },
+    {
+      "id": "9a0bc03a8f7a209b",
+      "title": "Vom Alltag einer herzoglichen Hofdame",
+      "date_start": "2026-12-28",
+      "source": "schloss"
+    },
+    {
+      "id": "5740d065b00ea877",
+      "title": "Geisterjagd im Schloss",
+      "date_start": "2026-12-28",
+      "source": "schloss"
+    },
+    {
+      "id": "a38669a50887eb1e",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-28",
+      "source": "schloss"
+    },
+    {
+      "id": "0835c6aaf9f72eb7",
+      "title": "Vom Alltag einer herzoglichen Hofdame",
+      "date_start": "2026-12-29",
+      "source": "schloss"
+    },
+    {
+      "id": "9430e1a43fd3b307",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-29",
+      "source": "schloss"
+    },
+    {
+      "id": "79d398bcd6053f29",
+      "title": "Vom Alltag einer herzoglichen Hofdame",
+      "date_start": "2026-12-30",
+      "source": "schloss"
+    },
+    {
+      "id": "0297efbcab5a82de",
+      "title": "Nachts im Schloss",
+      "date_start": "2026-12-30",
+      "source": "schloss"
+    },
+    {
+      "id": "2782e54aa547001c",
+      "title": "Zwischen List und Lust",
+      "date_start": "2026-12-31",
+      "source": "schloss"
+    },
+    {
+      "id": "0d6f7bb949f22086",
+      "title": "Faschingsferienworkshop: Tierisch groß! - Köpfe mit Charakter für Kinder von 7-10 Jahren in Ludwigsburg",
       "date_start": "2027-02-08",
-      "source": "karlskaserne_veranstaltungen"
-    },
-    {
-      "id": "d34a29ec3cc2b3dd",
-      "title": "Osterferienworkshop: Das geheime Haus des Hasen für Kinder ab 6 Jahren in Ludwigsburg",
-      "date_start": "2027-03-24",
       "source": "labyrinth"
     },
     {
-      "id": "f7ab39948dde9a4e",
-      "title": "Osterferienworkshop: Magisches Fotolabor für Kinder ab 10 Jahren",
-      "date_start": "2027-03-24",
-      "source": "labyrinth"
-    },
-    {
-      "id": "59ed9be05b83c245",
-      "title": "Osterferienworkshop: Kunst ist Spiel und Spiel ist Kunst! für Kinder von 6-10 Jahren in Ludwigsburg",
+      "id": "3cca350a63a175ac",
+      "title": "Osterferienworkshop: Stelzenlauf-Ferienwerkstatt für Kinder und Jugendliche von 7-12 Jahren in Ludwigsburg",
       "date_start": "2027-03-24",
       "source": "labyrinth"
     }

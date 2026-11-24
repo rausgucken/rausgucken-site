@@ -1,32 +1,32 @@
 {
-  "scraped_at": "2026-11-23T04:58:30.638576+01:00",
+  "scraped_at": "2026-11-24T06:09:45.823221+01:00",
   "city": "sachsenheim",
-  "event_count": 24,
+  "event_count": 23,
   "flagged_count": 0,
-  "expired_count": 8,
+  "expired_count": 9,
   "sources_scraped": [
     "sachsenheim_kultur",
     "sachsenheim_library",
     "sachsenheim_museum"
   ],
   "source_counts": {
-    "sachsenheim_kultur": 14,
-    "sachsenheim_library": 2,
+    "sachsenheim_library": 3,
+    "sachsenheim_kultur": 12,
     "sachsenheim_museum": 8
   },
   "sources_failed": [],
-  "data_hash": "2f75a4b44f63d326",
+  "data_hash": "d507c793932a28af",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 23.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 24.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
+    "sachsenheim_library": 0.98,
     "sachsenheim_kultur": 0.97,
-    "sachsenheim_library": 0.99,
     "sachsenheim_museum": 0.98
   },
   "source_event_counts": {
-    "sachsenheim_kultur": 14,
-    "sachsenheim_library": 2,
+    "sachsenheim_library": 3,
+    "sachsenheim_kultur": 12,
     "sachsenheim_museum": 8
   },
   "count_drift_warnings": {},
@@ -35,16 +35,16 @@
     "flagged_rate_current": 0.0,
     "flagged_rate_4week_avg": 0.0,
     "trend": "stable",
-    "runtime_minutes": 407.0,
-    "runtime_delta_vs_baseline": 1.274,
+    "runtime_minutes": 481.6,
+    "runtime_delta_vs_baseline": 1.691,
     "source_health": {
+      "sachsenheim_library": 0.98,
       "sachsenheim_kultur": 0.97,
-      "sachsenheim_library": 0.99,
       "sachsenheim_museum": 0.98
     },
     "count_drift_warnings": {},
     "quarantined_sources": [],
     "status": "warning",
-    "generated_at": "2026-11-23T09:03:16.348473+01:00"
+    "generated_at": "2026-11-24T10:14:40.905217+01:00"
   }
 }

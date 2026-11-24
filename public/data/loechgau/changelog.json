@@ -1,17 +1,43 @@
 {
-  "generated_at": "2026-11-23T07:20:33.709407+01:00",
+  "generated_at": "2026-11-24T08:26:28.730303+01:00",
   "city": "loechgau",
   "sources": [
     "loechgau_gemeinde"
   ],
-  "previous_run": "2026-11-22T08:40:34.854628+01:00",
-  "count_added": 3,
-  "count_removed": 1,
+  "previous_run": "2026-11-23T07:20:33.785172+01:00",
+  "count_added": 4,
+  "count_removed": 3,
   "added": [
     {
-      "id": "3c043d33a7600cfe",
-      "title": "Kinderbibelwoche",
-      "date_start": "2027-03-31",
+      "id": "99c1c935cc60fd06",
+      "title": "Ökumenischer Bibelsonntag",
+      "date_start": "2027-01-24",
+      "source": "loechgau_gemeinde"
+    },
+    {
+      "id": "e91d3137bb8934f2",
+      "title": "Weltgebetstag",
+      "date_start": "2027-03-05",
+      "source": "loechgau_gemeinde"
+    },
+    {
+      "id": "1123657e9231b903",
+      "title": "African Vocalis",
+      "date_start": "2027-04-19",
+      "source": "loechgau_gemeinde"
+    },
+    {
+      "id": "edbafd00e7143fea",
+      "title": "Erntedankfest",
+      "date_start": "2027-10-03",
+      "source": "loechgau_gemeinde"
+    }
+  ],
+  "removed": [
+    {
+      "id": "34ed0c1fb3e7438b",
+      "title": "Weltgebetstag",
+      "date_start": "2027-03-05",
       "source": "loechgau_gemeinde"
     },
     {
@@ -21,17 +47,9 @@
       "source": "loechgau_gemeinde"
     },
     {
-      "id": "d2e94cbfcf5ee908",
-      "title": "Ausflug Opus",
-      "date_start": "2027-05-01",
-      "source": "loechgau_gemeinde"
-    }
-  ],
-  "removed": [
-    {
-      "id": "56ef0cbb836ffd65",
-      "title": "Totensonntag Männerchor Liederkranz Löchgau e.V.",
-      "date_start": "2026-11-22",
+      "id": "02e49b2af4e7db0d",
+      "title": "Erntedankfest",
+      "date_start": "2027-10-03",
       "source": "loechgau_gemeinde"
     }
   ]
