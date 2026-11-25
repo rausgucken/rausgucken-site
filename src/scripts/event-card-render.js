@@ -43,7 +43,6 @@ export function renderCard(ev) {
   if (ev.is_booked_out) chips += '<span class="badge-booked">Ausgebucht</span>';
   tags.slice(0, 3).forEach((t) => { chips += '<span class="tag tag--' + (GROUP_OF[t] || 'outline') + '">' + esc(LABELS[t] || t) + '</span>'; });
   if (ev.age_min != null) chips += '<span class="tag tag--age">' + esc('ab ' + ev.age_min + ' J.' + (ev.age_max ? '–' + ev.age_max : '+')) + '</span>';
-  const label = esc(ev.title + (full ? ', ' + full : '') + (ev.location ? ' – ' + ev.location : ''));
   const src = ev.source_label
     ? '<a href="' + esc(ev.original_url) + '" target="_blank" rel="noopener noreferrer" class="source-attribution" onclick="event.stopPropagation()">Quelle: ' +
       esc(ev.source_label) + '<span class="source-more">&nbsp;— Originalseite prüfen</span></a>'
@@ -51,7 +50,7 @@ export function renderCard(ev) {
   return '<article class="event-card' + (standing ? ' event-card--standing' : '') + (ev.is_new ? ' event-card--new' : '') + (sponsored ? ' event-card--sponsored' : '') +
     '" data-tags="' + esc(tags.join(',')) + '" data-source="' + esc(ev.source) + '" data-age-min="' + esc(ev.age_min ?? '') + '" data-age-max="' + esc(ev.age_max ?? '') +
     '" data-date="' + esc(ev.date_start ?? '') + '" data-weekdays="' + esc(ev.weekdays ? ev.weekdays.join(',') : '') + '" data-location="' + esc(ev.location ?? '') + '">' +
-    '<a href="/' + esc(city) + '/events/' + esc(ev.slug) + '" class="card-link" aria-label="' + label + '">' + badge +
+    '<a href="/' + esc(city) + '/events/' + esc(ev.slug) + '" class="card-link">' + (full ? '<span class="rg-sr-only">' + esc(full) + '. </span>' : '') + badge +
     '<div class="card-body"><h3 class="card-title">' + esc(ev.title) + '</h3><div class="card-meta">' + meta + '</div>' +
     (desc ? '<p class="card-desc">' + desc + '</p>' : '') + (chips ? '<div class="card-tags">' + chips + '</div>' : '') + '</div></a>' +
     '<div class="card-footer"><div class="footer-line1"><button class="merken-btn" data-slug="' + esc(ev.slug) + '" aria-label="Veranstaltung merken: ' + esc(ev.title) +

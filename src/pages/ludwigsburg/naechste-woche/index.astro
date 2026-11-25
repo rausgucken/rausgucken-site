@@ -112,7 +112,8 @@ const days = [
   <div class="empty-state" id="empty-state" aria-live="polite" hidden></div>
 
   {events.length > 0 ? (
-    <div class="event-list" id="event-grid">
+    <h2 class="rg-sr-only">Veranstaltungen</h2><!-- RG-A11Y-2026-11-25 -->
+  <div class="event-list" id="event-grid">
       {events.map(ev => (
         <div
           class="event-day-wrapper"

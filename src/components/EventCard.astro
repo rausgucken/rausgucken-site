@@ -58,8 +58,8 @@ const locShort    = ev.location ? ev.location.replace("Residenzschloss Ludwigsbu
   <a
     href={`/${city}/events/${ev.slug}`}
     class="card-link"
-    aria-label={`${ev.title}${dateObj ? `, ${dateObj.full}` : ""}${ev.location ? ` – ${ev.location}` : ""}`}
   >
+    {dateObj && <span class="rg-sr-only">{dateObj.full}. </span>}
     {dateObj ? (
       <div class="date-badge" aria-hidden="true">
         <span class="date-weekday">{dateObj.weekday}</span>

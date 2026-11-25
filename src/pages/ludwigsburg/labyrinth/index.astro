@@ -119,7 +119,8 @@ const placeSchema = {
 
       {dated.length > 0 && (
         <section id="section-dated">
-          <div id="event-grid" class="event-list">
+          <h2 class="rg-sr-only">Veranstaltungen</h2><!-- RG-A11Y-2026-11-25 -->
+  <div id="event-grid" class="event-list">
             {dated.map((ev: any) => <EventCard event={ev} />)}
           </div>
         </section>

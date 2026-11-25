@@ -320,7 +320,7 @@ const relatedEvents: any[] = isExpired
   )}
 
   {isExpired && relatedEvents.length > 0 && (
-    <div class="related-events" aria-label="Ähnliche aktuelle Veranstaltungen">
+    <div class="related-events" role="group" aria-label="Ähnliche aktuelle Veranstaltungen">
       {relatedEvents.map((r: any) => (
         <a href={`/${city}/events/${r.slug}/`} class="related-card">
           <div class="related-card-body">
@@ -350,7 +350,7 @@ const relatedEvents: any[] = isExpired
 
   <article class="event-detail">
     <header class="event-header">
-      <div class="event-tags" aria-label="Kategorien">
+      <div class="event-tags" role="group" aria-label="Kategorien">
         {Array.isArray(ev.tags) && ev.tags.map((t: string) => (
           <a href={`/${city}/`} data-pagefind-ignore
              class={`tag${t === "Kinder" || t === "Familie" ? " tag--sage" : ""}`}>
@@ -427,7 +427,7 @@ const relatedEvents: any[] = isExpired
     )}
 
     <!-- ── Source box ─────────────────────────────────────────────────────── -->
-    <div class="source-box" aria-label="Quellenangabe">
+    <div class="source-box" role="group" aria-label="Quellenangabe">
       <div class="source-info">
         <p class="source-label">Quelle &amp; Aktualität</p>
         <p class="source-name">{organizer.name}</p>
