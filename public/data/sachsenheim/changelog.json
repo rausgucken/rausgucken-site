@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-24T06:09:45.749502+01:00",
+  "generated_at": "2026-11-25T04:48:16.336990+01:00",
   "city": "sachsenheim",
   "sources": [
     "sachsenheim_library",
     "sachsenheim_museum",
     "sachsenheim_kultur"
   ],
-  "previous_run": "2026-11-23T04:58:30.638576+01:00",
+  "previous_run": "2026-11-24T06:09:45.823221+01:00",
   "count_added": 10,
-  "count_removed": 2,
+  "count_removed": 1,
   "added": [
     {
       "id": "2e6e0199c9d95a2c",
@@ -65,24 +65,18 @@
       "source": "sachsenheim_kultur"
     },
     {
-      "id": "1568c4cd9017b5a8",
+      "id": "a9dc7422d682cc12",
       "title": "Seniorenadventsfeier",
       "date_start": "2026-11-25",
-      "source": "sachsenheim_library"
+      "source": "sachsenheim_kultur"
     }
   ],
   "removed": [
     {
-      "id": "0d62040c07111073",
+      "id": "1568c4cd9017b5a8",
       "title": "Seniorenadventsfeier",
       "date_start": "2026-11-25",
-      "source": "sachsenheim_kultur"
-    },
-    {
-      "id": "ecceb049ce96111f",
-      "title": "4. Sitzung des Zweckverbandes Eichwald",
-      "date_start": "2026-12-14",
-      "source": "sachsenheim_kultur"
+      "source": "sachsenheim_library"
     }
   ]
 }

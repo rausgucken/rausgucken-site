@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-24T09:26:44.022088+01:00",
+  "generated_at": "2026-11-25T09:02:13.248934+01:00",
   "city": "steinheim",
   "sources": [
     "steinheim_stadt"
   ],
-  "previous_run": "2026-11-23T08:19:47.728925+01:00",
-  "count_added": 4,
-  "count_removed": 0,
+  "previous_run": "2026-11-24T09:26:44.097556+01:00",
+  "count_added": 5,
+  "count_removed": 1,
   "added": [
     {
       "id": "67aca717ff87e23b",
@@ -31,7 +31,20 @@
       "title": "GSV Schneckenfest",
       "date_start": "2026-10-07",
       "source": "steinheim_stadt"
+    },
+    {
+      "id": "e2ba817757ebe5f0",
+      "title": "Hallen-Bezirksmeisterschaft Jugendfußball",
+      "date_start": "2026-11-28",
+      "source": "steinheim_stadt"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "e00bef403c60f244",
+      "title": "Gemeinsam aktiv 60+ - Wöchentlicher Spielenachmittag",
+      "date_start": "2026-11-24",
+      "source": "steinheim_stadt"
+    }
+  ]
 }

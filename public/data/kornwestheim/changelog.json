@@ -1,58 +1,76 @@
 {
-  "generated_at": "2026-11-24T08:04:51.422098+01:00",
+  "generated_at": "2026-11-25T06:00:41.400606+01:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_spielplan",
+    "das_k_buecherei",
     "kornwestheim",
-    "das_k_buecherei"
+    "das_k_spielplan"
   ],
-  "previous_run": "2026-11-23T06:32:51.942503+01:00",
-  "count_added": 3,
-  "count_removed": 4,
+  "previous_run": "2026-11-24T08:04:51.499951+01:00",
+  "count_added": 4,
+  "count_removed": 6,
   "added": [
     {
-      "id": "1a305948ad032f6c",
-      "title": "Musizierstunde",
-      "date_start": "2027-04-28",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "306d79accef5e4e2",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "id": "8f3351d8f1551b4c",
+      "title": "Mantel & Koczwara",
       "date_start": "2027-04-30",
       "source": "kornwestheim"
     },
     {
-      "id": "9521d30f1c35d452",
-      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-05-01",
+      "id": "38bc280da1335b76",
+      "title": "Der Dachs hat heute schlechte Laune",
+      "date_start": "2027-05-02",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "27b2059966a14028",
+      "title": "Keramik Bemalen - Kostenlos",
+      "date_start": "2026-11-25",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "8913a237718ab06b",
+      "title": "Ehrenamts-Kongress",
+      "date_start": "2026-12-04",
       "source": "kornwestheim"
     }
   ],
   "removed": [
     {
-      "id": "66546b1942ccadf5",
-      "title": "QUK-rein",
-      "date_start": "2026-11-23",
+      "id": "d21d5e381d88ec70",
+      "title": "Das Eselsöhrchen",
+      "date_start": "2026-11-24",
       "source": "kornwestheim"
     },
     {
-      "id": "8132ae697d31cfb9",
-      "title": "Sprechen & Zuhören",
-      "date_start": "2026-11-23",
+      "id": "18f13f8df5342c58",
+      "title": "Kaffeetreff - Bingo",
+      "date_start": "2026-11-24",
       "source": "kornwestheim"
     },
     {
-      "id": "945d05b9fedc22d0",
-      "title": "Sprechen & Zuhören: Wie geht es mir gerade mit Deutschland?",
-      "date_start": "2026-11-23",
+      "id": "4a5129f641218ac9",
+      "title": "Die Kornwestheimer Innenstadt im Wandel - Entwicklungen der Vergangenheit, Gegenwart und der Zukunft. Eine besondere Stadtführung",
+      "date_start": "2026-11-28",
       "source": "kornwestheim"
     },
     {
-      "id": "52dcebbe09734f18",
-      "title": "Kaffeetreff",
-      "date_start": "2026-11-23",
+      "id": "221297e9078dc49a",
+      "title": "Ehrenamts-Kongress",
+      "date_start": "2026-12-04",
       "source": "kornwestheim"
+    },
+    {
+      "id": "ad438898dcf6835e",
+      "title": "Mantel & Koczwara",
+      "date_start": "2027-04-30",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "684ead9a26ff42e3",
+      "title": "Der Dachs hat heute schlechte Laune",
+      "date_start": "2027-05-02",
+      "source": "das_k_spielplan"
     }
   ]
 }

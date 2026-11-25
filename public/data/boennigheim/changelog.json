@@ -1,12 +1,44 @@
 {
-  "generated_at": "2026-11-24T05:21:59.492712+01:00",
+  "generated_at": "2026-11-25T04:48:54.242823+01:00",
   "city": "boennigheim",
   "sources": [
     "boennigheim_stadtkalender"
   ],
-  "previous_run": "2026-11-23T04:46:10.544086+01:00",
-  "count_added": 0,
-  "count_removed": 0,
-  "added": [],
-  "removed": []
+  "previous_run": "2026-11-24T05:21:59.567041+01:00",
+  "count_added": 4,
+  "count_removed": 1,
+  "added": [
+    {
+      "id": "acc544daee5b070b",
+      "title": "Lichterzauber",
+      "date_start": "2026-12-05",
+      "source": "boennigheim_stadtkalender"
+    },
+    {
+      "id": "5bc47c68b84ea474",
+      "title": "Frühjahrsmesse",
+      "date_start": "2027-04-11",
+      "source": "boennigheim_stadtkalender"
+    },
+    {
+      "id": "359845dc054bc367",
+      "title": "Weinfestival",
+      "date_start": "2027-09-10",
+      "source": "boennigheim_stadtkalender"
+    },
+    {
+      "id": "1c536efe150a1f3b",
+      "title": "Weihnachstmarkt",
+      "date_start": "2027-11-27",
+      "source": "boennigheim_stadtkalender"
+    }
+  ],
+  "removed": [
+    {
+      "id": "2fdab73e2e83b1fb",
+      "title": "Lichterzauber",
+      "date_start": "2026-12-05",
+      "source": "boennigheim_stadtkalender"
+    }
+  ]
 }

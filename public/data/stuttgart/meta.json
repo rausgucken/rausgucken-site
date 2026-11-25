@@ -1,9 +1,9 @@
 {
-  "scraped_at": "2026-11-24T15:09:09.868998+01:00",
+  "scraped_at": "2026-11-25T09:51:28.573331+01:00",
   "city": "stuttgart",
-  "event_count": 1280,
+  "event_count": 938,
   "flagged_count": 0,
-  "expired_count": 5,
+  "expired_count": 4,
   "sources_scraped": [
     "linkes_zentrum_lilo_hermann",
     "schwarzer_keiler",
@@ -12,30 +12,53 @@
     "werkstatthaus"
   ],
   "source_counts": {
-    "stuttgart_master_feed_index": 955,
+    "stuttgart_master_feed_index": 613,
     "stadtbibliothek_stuttgart": 262,
     "schwarzer_keiler": 21,
     "linkes_zentrum_lilo_hermann": 23,
     "werkstatthaus": 19
   },
   "sources_failed": [],
-  "data_hash": "3f4bf0c2b3518155",
+  "data_hash": "78b2245e72cc59db",
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
-  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 24.11.2026. Bitte Originalseite prüfen.",
+  "disclaimer_note": "Alle Angaben ohne Gewähr. Stand: 25.11.2026. Bitte Originalseite prüfen.",
   "pipeline_version": "multi-city-v2",
   "source_health": {
-    "stuttgart_master_feed_index": 0.95,
+    "stuttgart_master_feed_index": 0.94,
     "stadtbibliothek_stuttgart": 1.0,
     "schwarzer_keiler": 1.0,
     "linkes_zentrum_lilo_hermann": 1.0,
     "werkstatthaus": 0.92
   },
   "source_event_counts": {
-    "stuttgart_master_feed_index": 955,
+    "stuttgart_master_feed_index": 613,
     "stadtbibliothek_stuttgart": 262,
     "schwarzer_keiler": 21,
     "linkes_zentrum_lilo_hermann": 23,
     "werkstatthaus": 19
   },
-  "count_drift_warnings": {}
+  "count_drift_warnings": {
+    "stuttgart_master_feed_index": "Count drift: 613 vs historical avg 960"
+  },
+  "quality_report": {
+    "regression_pass_rate": 1.0,
+    "flagged_rate_current": 0.0,
+    "flagged_rate_4week_avg": 0.0,
+    "trend": "stable",
+    "runtime_minutes": 471.5,
+    "runtime_delta_vs_baseline": 1.634,
+    "source_health": {
+      "stuttgart_master_feed_index": 0.94,
+      "stadtbibliothek_stuttgart": 1.0,
+      "schwarzer_keiler": 1.0,
+      "linkes_zentrum_lilo_hermann": 1.0,
+      "werkstatthaus": 0.92
+    },
+    "count_drift_warnings": {
+      "stuttgart_master_feed_index": "Count drift: 613 vs historical avg 960"
+    },
+    "quarantined_sources": [],
+    "status": "warning",
+    "generated_at": "2026-11-25T10:04:40.539355+01:00"
+  }
 }
