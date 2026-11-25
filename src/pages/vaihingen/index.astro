@@ -254,6 +254,11 @@ const featuredEvent = featuredSlug
               searching: 'Suche läuft…',
             }
           });
+          // RG-SEARCH-LABEL: accessible name for the search input (axe label-title-only)
+          (function () {
+            var lab = function () { var i = document.querySelector('#search .pagefind-ui__search-input'); if (i && !i.getAttribute('aria-label')) { i.setAttribute('aria-label', 'Veranstaltungen suchen'); return true; } return false; };
+            if (!lab()) { var mo = new MutationObserver(function () { if (lab()) mo.disconnect(); }); mo.observe(document.getElementById('search'), { childList: true, subtree: true }); }
+          })();
         };
         document.head.appendChild(s);
       }
