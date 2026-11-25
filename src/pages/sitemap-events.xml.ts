@@ -2,7 +2,7 @@
 // SEO §11: All active per-event pages across all cities with lastmod from scraped_at.
 // Expired events (date_start > 30 days ago) are excluded.
 // Cities derived dynamically from public/data/cities.json — do not hardcode imports.
-import { readFileSync } from "fs";
+import { readFileSync, existsSync } from "fs";
 import { join } from "path";
 
 export async function GET() {
@@ -15,7 +15,10 @@ export async function GET() {
   const citiesPath = join(process.cwd(), "public", "data", "cities.json");
   const citiesData: Array<{ id: string; covered: boolean }> =
     JSON.parse(readFileSync(citiesPath, "utf-8"));
-  const coveredCities = citiesData.filter(c => c.covered).map(c => c.id);
+  // RG-FIX-SITEMAP-404: only cities that really have an events/[slug] page (landkreis-ludwigsburg has none)
+  const coveredCities = citiesData
+    .filter(c => c.covered && existsSync(join(process.cwd(), "src", "pages", c.id, "events", "[slug].astro")))
+    .map(c => c.id);
 
   // Load events for each city — skip cities whose events file doesn't exist yet
   const cityEvents: Array<{ city: string; events: any[] }> = [];

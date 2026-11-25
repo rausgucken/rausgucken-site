@@ -2,7 +2,7 @@
 // Date archive sitemap — rolling 30-day window across all covered cities.
 // Cities read from cities.json — no hardcoding. Landkreis hub excluded.
 // Only dates with ≥1 event are included (mirrors getStaticPaths logic).
-import { readFileSync } from "fs";
+import { readFileSync, existsSync } from "fs";
 import { join }         from "path";
 
 const SKIP_IDS = new Set(["landkreis-ludwigsburg"]);
@@ -24,7 +24,8 @@ export async function GET() {
   const citiesPath = join(process.cwd(), "public", "data", "cities.json");
   const citiesRaw: any[] = JSON.parse(readFileSync(citiesPath, "utf-8"));
   const cities = (Array.isArray(citiesRaw) ? citiesRaw : (citiesRaw as any).cities ?? [])
-    .filter((c: any) => c.covered && !SKIP_IDS.has(c.id));
+    // RG-FIX-SITEMAP-404: only cities that really have a [date] archive route (today: ludwigsburg)
+    .filter((c: any) => c.covered && !SKIP_IDS.has(c.id) && existsSync(join(process.cwd(), "src", "pages", c.id, "[date]", "index.astro")));
 
   const urls: string[] = [];
 
