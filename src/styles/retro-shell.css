@@ -103,3 +103,9 @@ html body .field-hint { color: var(--text-60); }
 
 /* cls: reserve search box (9.3) */
 html body .pagefind-search-wrap { min-height: 64px; }
+
+/* RG-LAYOUT-BALANCE: centre reading column + fixed sidebar as one block (desktop only) */
+@media (min-width: 961px) {
+  html body main:has(.city-sidebar) { padding-right: calc(1.5rem + 234px); }
+  html body div.city-sidebar.city-sidebar { left: calc(50% + 267px); }
+}
