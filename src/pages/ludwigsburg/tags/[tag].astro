@@ -65,7 +65,7 @@ const tagEvents: any[] = allEvents
     return a.date_start.localeCompare(b.date_start);
   });
 
-const dated    = tagEvents.filter((e: any) => e.date_start);
+const dated    = tagEvents.filter((e: any) => e.date_start && e.date_start >= new Date().toISOString().split("T")[0]);
 const standing = tagEvents.filter((e: any) => !e.date_start);
 
 const buildDate = new Date();
