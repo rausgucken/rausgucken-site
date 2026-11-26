@@ -1,21 +1,7 @@
 /**
- * Cloudflare Pages Function — TEMPLATE
- * Copy to functions/hessigheim/events/[[slug]].js when adding a new city.
- * Replace all tokens before use:
- *   hessigheim        → URL slug, e.g. kornwestheim
- *   Hessigheim → display name, e.g. Kornwestheim
- *
- * Route: /hessigheim/events/*.ics
- *
- * Only activates for .ics requests. All other /hessigheim/events/* requests
- * fall through to the static Astro-generated HTML page.
- *
- * Reads events-current.json via ASSETS binding — no external fetch, no build step.
- *
- * NOTE: The leading underscore in _ICS_TEMPLATE/ does NOT suppress Cloudflare
- * Pages Function routing. This directory must be kept outside the functions/
- * root or excluded via _routes.json if Cloudflare starts routing it as a live
- * path. Verify after any Cloudflare Pages runtime update.
+ * Cloudflare Pages Function — Hessigheim (GENERATED from functions/_ICS_TEMPLATE; do not hand-edit)
+ * Change the template and run: python3 scripts/render_ics_functions.py
+ * Route: /hessigheim/events/*.ics — only .ics requests; everything else falls through to the static page.
  */
 
 export async function onRequest(context) {

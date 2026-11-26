@@ -1,21 +1,7 @@
 /**
- * Cloudflare Pages Function — TEMPLATE
- * Copy to functions/benningen/events/[[slug]].js when adding a new city.
- * Replace all tokens before use:
- *   benningen        → URL slug, e.g. kornwestheim
- *   Benningen am Neckar → display name, e.g. Kornwestheim
- *
- * Route: /benningen/events/*.ics
- *
- * Only activates for .ics requests. All other /benningen/events/* requests
- * fall through to the static Astro-generated HTML page.
- *
- * Reads events-current.json via ASSETS binding — no external fetch, no build step.
- *
- * NOTE: The leading underscore in _ICS_TEMPLATE/ does NOT suppress Cloudflare
- * Pages Function routing. This directory must be kept outside the functions/
- * root or excluded via _routes.json if Cloudflare starts routing it as a live
- * path. Verify after any Cloudflare Pages runtime update.
+ * Cloudflare Pages Function — Benningen am Neckar (GENERATED from functions/_ICS_TEMPLATE; do not hand-edit)
+ * Change the template and run: python3 scripts/render_ics_functions.py
+ * Route: /benningen/events/*.ics — only .ics requests; everything else falls through to the static page.
  */
 
 export async function onRequest(context) {

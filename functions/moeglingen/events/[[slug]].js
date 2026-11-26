@@ -1,114 +1,183 @@
-// functions/moeglingen/events/[[slug]].js
-//
-// Cloudflare Pages Function — ICS calendar export for Möglingen events.
-// Intercepts only requests ending in .ics; all other requests fall through
-// to the static Astro page (standard CF Pages passthrough behaviour).
-//
-// Usage: GET /moeglingen/events/{slug}.ics
-// Rollback: remove this file — static Astro pages are unaffected.
+/**
+ * Cloudflare Pages Function — Möglingen (GENERATED from functions/_ICS_TEMPLATE; do not hand-edit)
+ * Change the template and run: python3 scripts/render_ics_functions.py
+ * Route: /moeglingen/events/*.ics — only .ics requests; everything else falls through to the static page.
+ */
 
 export async function onRequest(context) {
-  const { request, env } = context;
-  const url = new URL(request.url);
+  const url = new URL(context.request.url);
 
-  // Only handle .ics requests — pass everything else to static Astro
-  if (!url.pathname.endsWith(".ics")) {
-    return context.next();  // pass through to static Astro page
+  // Pass all non-.ics requests to the static Astro page
+  if (!url.pathname.endsWith('.ics')) {
+    return context.next();
   }
 
-  // Extract slug: strip /moeglingen/events/ prefix and .ics suffix
-  const slug = url.pathname
-    .replace(/^\/moeglingen\/events\//, "")
-    .replace(/\.ics$/, "");
-
+  // /moeglingen/events/some-event-slug.ics -> some-event-slug
+  const slug = url.pathname.replace(/\.ics$/, '').split('/').filter(Boolean).pop();
   if (!slug) {
-    return new Response("Not found", { status: 404 });
+    return new Response('Not found', { status: 404 });
   }
 
-  // Fetch current event data from the static JSON in the site
-  const dataUrl = new URL("/data/moeglingen/events-current.json", url.origin);
+  // Load events via ASSETS binding
   let events;
   try {
-    const res = await fetch(dataUrl.toString());
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const dataUrl = new URL('/data/moeglingen/events-current.json', url.origin);
+    const res = await context.env.ASSETS.fetch(new Request(dataUrl.toString()));
+    if (!res.ok) throw new Error(`ASSETS fetch ${res.status}`);
     events = await res.json();
   } catch (err) {
-    return new Response("Could not load event data", { status: 502 });
+    return new Response(`Failed to load events: ${err.message}`, { status: 500 });
   }
 
-  const ev = events.find((e) => e.slug === slug);
-  if (!ev) {
-    return new Response("Event not found", { status: 404 });
+  const event = events.find(e => e.slug === slug);
+  if (!event) {
+    return new Response('Event not found', {
+      status: 404,
+      headers: { 'Content-Type': 'text/plain; charset=utf-8' },
+    });
   }
 
-  // Build ICS content
-  const now = new Date().toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
-  const uid = `${slug}@rausgucken.de`;
+  const ics = buildICS(event);
 
-  const dtstart = ev.date_start
-    ? ev.date_start.replace(/-/g, "") // YYYYMMDD
-    : null;
-  const dtend = ev.date_end
-    ? ev.date_end.replace(/-/g, "")
-    : dtstart;
-
-  // Prepend time if available: parse first HH:MM from ev.time
-  let dtStartVal = dtstart ? `DTSTART;VALUE=DATE:${dtstart}` : null;
-  let dtEndVal   = dtend   ? `DTEND;VALUE=DATE:${dtend}`     : null;
-
-  if (dtstart && ev.time) {
-    const timeMatch = ev.time.match(/(\d{1,2}):(\d{2})/);
-    if (timeMatch) {
-      const hh = timeMatch[1].padStart(2, "0");
-      const mm = timeMatch[2];
-      dtStartVal = `DTSTART:${dtstart}T${hh}${mm}00`;
-      // End time: look for second HH:MM
-      const allTimes = [...ev.time.matchAll(/(\d{1,2}):(\d{2})/g)];
-      if (allTimes.length >= 2) {
-        const eh = allTimes[allTimes.length - 1][1].padStart(2, "0");
-        const em = allTimes[allTimes.length - 1][2];
-        dtEndVal = `DTEND:${dtend}T${eh}${em}00`;
-      } else {
-        dtEndVal = `DTEND:${dtend}T${hh}${mm}00`;
-      }
-    }
-  }
-
-  const escICS = (s) =>
-    (s ?? "").toString().replace(/\\/g, "\\\\").replace(/;/g, "\\;")
-             .replace(/,/g, "\\,").replace(/\n/g, "\\n");
-
-  const lines = [
-    "BEGIN:VCALENDAR",
-    "VERSION:2.0",
-    "PRODID:-//rausgucken.de//DE",
-    "CALSCALE:GREGORIAN",
-    "METHOD:PUBLISH",
-    "BEGIN:VEVENT",
-    `UID:${uid}`,
-    `DTSTAMP:${now}`,
-    dtStartVal ?? "DTSTART;VALUE=DATE:19700101",
-    dtEndVal   ?? "DTEND;VALUE=DATE:19700101",
-    `SUMMARY:${escICS(ev.title)}`,
-    ev.location ? `LOCATION:${escICS(ev.location)}` : null,
-    ev.description ? `DESCRIPTION:${escICS(ev.description)}` : null,
-    ev.price ? `COMMENT:Preis: ${escICS(ev.price)}` : null,
-    // URL: points to rausgucken.de deep link (canonical_url set by manifest.py)
-    // Original source URL is already in DESCRIPTION for user reference
-    `URL:${ev.canonical_url || 'https://www.rausgucken.de/moeglingen/events/' + ev.slug}`,
-    `ORGANIZER;CN=${escICS(ev.source_label ?? "Gemeinde Möglingen")}:MAILTO:info@moeglingen.de`,
-    "END:VEVENT",
-    "END:VCALENDAR",
-  ]
-    .filter(Boolean)
-    .join("\r\n");
-
-  return new Response(lines, {
+  return new Response(ics, {
     status: 200,
     headers: {
-      "Content-Type": "text/calendar; charset=utf-8",
-      "Content-Disposition": `attachment; filename="${slug}.ics"`,
-      "Cache-Control": "public, max-age=3600",
+      'Content-Type': 'text/calendar; charset=utf-8',
+      'Content-Disposition': `attachment; filename="${slug}.ics"`,
+      'Cache-Control': 'public, max-age=3600',
     },
   });
+}
+
+/**
+ * Build RFC 5545 iCalendar string for a single event.
+ *
+ * Handles:
+ *   - All-day events (no time field)
+ *   - Timed events  (parses "HH:MM - HH:MM Uhr" from ev.time)
+ *   - Multi-day     (date_end present)
+ *   - Line folding at 75 octets per RFC 5545 §3.1
+ *   - Special char escaping per RFC 5545 §3.3.11
+ */
+function buildICS(ev) {
+  const now   = utcStamp(new Date());
+  const uid   = `${ev.slug}@rausgucken.de`;
+  const site  = 'https://www.rausgucken.de';
+
+  let dtstart, dtend, allDay = false;
+
+  if (ev.time) {
+    const startM = ev.time.match(/(\d{1,2}):(\d{2})/);
+    if (startM) {
+      const sh = startM[1].padStart(2, '0');
+      const sm = startM[2];
+      dtstart  = `${ev.date_start.replace(/-/g, '')}T${sh}${sm}00`;
+
+      const endM = ev.time.match(/\d{1,2}:\d{2}\s*[-\u2013]\s*(\d{1,2}):(\d{2})/);
+      if (endM) {
+        const eh      = endM[1].padStart(2, '0');
+        const em      = endM[2];
+        const endDate = ev.date_end ? ev.date_end.replace(/-/g, '') : ev.date_start.replace(/-/g, '');
+        dtend = `${endDate}T${eh}${em}00`;
+      } else {
+        dtend = addHours(dtstart, 1);
+      }
+    } else {
+      allDay = true;
+    }
+  } else {
+    allDay = true;
+  }
+
+  if (allDay) {
+    dtstart = ev.date_start.replace(/-/g, '');
+    const endBase = ev.date_end || ev.date_start;
+    dtend = isoDatePlusDays(endBase, 1).replace(/-/g, '');
+  }
+
+  const descParts = [];
+  if (ev.description)   descParts.push(ev.description);
+  if (ev.price)         descParts.push(`Preis: ${ev.price}`);
+  if (ev.location)      descParts.push(`Adresse: ${ev.location}\nMöglingen, Baden-Württemberg`);
+  if (ev.original_url)  descParts.push(`Originalseite (bitte vor Teilnahme prüfen): ${ev.original_url}`);
+  descParts.push('Alle Angaben ohne Gewähr – Infos können sich ändern. Bitte Originalseite prüfen.');
+  const description = descParts.join('\n\n');
+
+  const orgName = ev.source_label || ev.location || 'rausgucken.de';
+
+  const lines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//rausgucken.de//Event Calendar//DE',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    `X-WR-CALNAME:${escICS(ev.title || 'Veranstaltung')}`,
+    'X-WR-TIMEZONE:Europe/Berlin',
+    'BEGIN:VEVENT',
+    `UID:${uid}`,
+    `DTSTAMP:${now}Z`,
+    allDay
+      ? `DTSTART;VALUE=DATE:${dtstart}`
+      : `DTSTART;TZID=Europe/Berlin:${dtstart}`,
+    allDay
+      ? `DTEND;VALUE=DATE:${dtend}`
+      : `DTEND;TZID=Europe/Berlin:${dtend}`,
+    fold(`SUMMARY:${escICS(ev.title || '')}`),
+  ];
+
+  if (description) lines.push(fold(`DESCRIPTION:${escICS(description)}`));
+  if (ev.location)  lines.push(fold(`LOCATION:${escICS(ev.location)}`));
+  // URL: points to rausgucken.de deep link (canonical_url set by manifest.py)
+  // Original source URL is already in DESCRIPTION for user reference
+  const eventUrl = ev.canonical_url || `https://www.rausgucken.de/moeglingen/events/${ev.slug}`;
+  lines.push(`URL:${eventUrl}`);
+
+  lines.push(`ORGANIZER;CN=${escICS(orgName)}:mailto:noreply@rausgucken.de`);
+  lines.push(
+    `X-ALT-DESC;FMTTYPE=text/html:<a href="${site}/moeglingen/events/${ev.slug}">` +
+    `Auf rausgucken.de ansehen</a>`
+  );
+
+  lines.push('END:VEVENT');
+  lines.push('END:VCALENDAR');
+
+  return lines.join('\r\n') + '\r\n';
+}
+
+function escICS(str) {
+  return String(str)
+    .replace(/\\/g, '\\\\')
+    .replace(/;/g,  '\\;')
+    .replace(/,/g,  '\\\,')
+    .replace(/\n/g, '\\n')
+    .replace(/\r/g, '');
+}
+
+function fold(line) {
+  if (line.length <= 75) return line;
+  let out = '';
+  let pos = 0;
+  while (pos < line.length) {
+    if (pos === 0) { out += line.slice(0, 75); pos = 75; }
+    else           { out += '\r\n ' + line.slice(pos, pos + 74); pos += 74; }
+  }
+  return out;
+}
+
+function utcStamp(d) {
+  return d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+}
+
+function addHours(dt, h) {
+  const y = +dt.slice(0,4), mo = +dt.slice(4,6)-1, d = +dt.slice(6,8);
+  const hr = +dt.slice(9,11), mi = +dt.slice(11,13);
+  const nd = new Date(Date.UTC(y, mo, d, hr + h, mi));
+  const p  = n => String(n).padStart(2,'0');
+  return `${nd.getUTCFullYear()}${p(nd.getUTCMonth()+1)}${p(nd.getUTCDate())}T${p(nd.getUTCHours())}${p(nd.getUTCMinutes())}00`;
+}
+
+function isoDatePlusDays(iso, n) {
+  const d = new Date(iso + 'T00:00:00Z');
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
 }

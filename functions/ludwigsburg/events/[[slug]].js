@@ -1,11 +1,7 @@
 /**
- * Cloudflare Pages Function
- * Route: /ludwigsburg/events/*.ics
- *
- * Only activates for .ics requests. All other /ludwigsburg/events/* requests
- * fall through to the static Astro-generated HTML page.
- *
- * Reads events-current.json via ASSETS binding — no external fetch, no build step.
+ * Cloudflare Pages Function — Ludwigsburg (GENERATED from functions/_ICS_TEMPLATE; do not hand-edit)
+ * Change the template and run: python3 scripts/render_ics_functions.py
+ * Route: /ludwigsburg/events/*.ics — only .ics requests; everything else falls through to the static page.
  */
 
 export async function onRequest(context) {
@@ -22,7 +18,7 @@ export async function onRequest(context) {
     return new Response('Not found', { status: 404 });
   }
 
-  // Load events via ASSETS binding (same pattern as _temporal.js)
+  // Load events via ASSETS binding
   let events;
   try {
     const dataUrl = new URL('/data/ludwigsburg/events-current.json', url.origin);
@@ -36,7 +32,7 @@ export async function onRequest(context) {
   const event = events.find(e => e.slug === slug);
   if (!event) {
     return new Response('Event not found', {
-      status: 410,
+      status: 404,
       headers: { 'Content-Type': 'text/plain; charset=utf-8' },
     });
   }
@@ -71,14 +67,12 @@ function buildICS(ev) {
   let dtstart, dtend, allDay = false;
 
   if (ev.time) {
-    // Parse start time from "14:00 - 16:00 Uhr" or "14:00 Uhr"
     const startM = ev.time.match(/(\d{1,2}):(\d{2})/);
     if (startM) {
       const sh = startM[1].padStart(2, '0');
       const sm = startM[2];
       dtstart  = `${ev.date_start.replace(/-/g, '')}T${sh}${sm}00`;
 
-      // Try to parse end time
       const endM = ev.time.match(/\d{1,2}:\d{2}\s*[-\u2013]\s*(\d{1,2}):(\d{2})/);
       if (endM) {
         const eh      = endM[1].padStart(2, '0');
@@ -101,16 +95,14 @@ function buildICS(ev) {
     dtend = isoDatePlusDays(endBase, 1).replace(/-/g, '');
   }
 
-  // Build DESCRIPTION from available facts
   const descParts = [];
   if (ev.description)   descParts.push(ev.description);
   if (ev.price)         descParts.push(`Preis: ${ev.price}`);
-  if (ev.location)      descParts.push(`Adresse: ${ev.location}\\nLudwigsburg, Baden-Württemberg`);
+  if (ev.location)      descParts.push(`Adresse: ${ev.location}\nLudwigsburg, Baden-Württemberg`);
   if (ev.original_url)  descParts.push(`Originalseite (bitte vor Teilnahme prüfen): ${ev.original_url}`);
   descParts.push('Alle Angaben ohne Gewähr – Infos können sich ändern. Bitte Originalseite prüfen.');
-  const description = descParts.join('\\n\\n');
+  const description = descParts.join('\n\n');
 
-  // Organizer label (source_label populated by manifest.py)
   const orgName = ev.source_label || ev.location || 'rausgucken.de';
 
   const lines = [
@@ -152,19 +144,15 @@ function buildICS(ev) {
   return lines.join('\r\n') + '\r\n';
 }
 
-// ─── Helpers ─────────────────────────────────────────────────────────────────
-
-/** Escape per RFC 5545 §3.3.11 */
 function escICS(str) {
   return String(str)
     .replace(/\\/g, '\\\\')
     .replace(/;/g,  '\\;')
-    .replace(/,/g,  '\\,')
+    .replace(/,/g,  '\\\,')
     .replace(/\n/g, '\\n')
     .replace(/\r/g, '');
 }
 
-/** Fold long lines at 75 octets per RFC 5545 §3.1 */
 function fold(line) {
   if (line.length <= 75) return line;
   let out = '';
@@ -176,12 +164,10 @@ function fold(line) {
   return out;
 }
 
-/** Date → iCal UTC stamp: 20260509T120000Z */
 function utcStamp(d) {
   return d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
 }
 
-/** Add N hours to YYYYMMDDTHHMMSS string */
 function addHours(dt, h) {
   const y = +dt.slice(0,4), mo = +dt.slice(4,6)-1, d = +dt.slice(6,8);
   const hr = +dt.slice(9,11), mi = +dt.slice(11,13);
@@ -190,7 +176,6 @@ function addHours(dt, h) {
   return `${nd.getUTCFullYear()}${p(nd.getUTCMonth()+1)}${p(nd.getUTCDate())}T${p(nd.getUTCHours())}${p(nd.getUTCMinutes())}00`;
 }
 
-/** Add N days to YYYY-MM-DD, return YYYY-MM-DD */
 function isoDatePlusDays(iso, n) {
   const d = new Date(iso + 'T00:00:00Z');
   d.setUTCDate(d.getUTCDate() + n);

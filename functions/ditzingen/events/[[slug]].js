@@ -1,21 +1,7 @@
 /**
- * Cloudflare Pages Function — TEMPLATE
- * Copy to functions/ditzingen/events/[[slug]].js when adding a new city.
- * Replace all tokens before use:
- *   ditzingen        → URL slug, e.g. kornwestheim
- *   Ditzingen → display name, e.g. Kornwestheim
- *
- * Route: /ditzingen/events/*.ics
- *
- * Only activates for .ics requests. All other /ditzingen/events/* requests
- * fall through to the static Astro-generated HTML page.
- *
- * Reads events-current.json via ASSETS binding — no external fetch, no build step.
- *
- * NOTE: The leading underscore in _ICS_TEMPLATE/ does NOT suppress Cloudflare
- * Pages Function routing. This directory must be kept outside the functions/
- * root or excluded via _routes.json if Cloudflare starts routing it as a live
- * path. Verify after any Cloudflare Pages runtime update.
+ * Cloudflare Pages Function — Ditzingen (GENERATED from functions/_ICS_TEMPLATE; do not hand-edit)
+ * Change the template and run: python3 scripts/render_ics_functions.py
+ * Route: /ditzingen/events/*.ics — only .ics requests; everything else falls through to the static page.
  */
 
 export async function onRequest(context) {
