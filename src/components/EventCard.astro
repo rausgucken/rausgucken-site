@@ -214,7 +214,6 @@ const locShort    = ev.location ? ev.location.replace("Residenzschloss Ludwigsbu
           if (window.Capacitor) {
             window.dispatchEvent(new CustomEvent('fcm:subscribe', { detail: { topic: `event_${slug}` } }));
           } else {
-            console.log(`Web simulation: Subscribed to topic event_${slug}`);
           }
         } else {
           saved.splice(idx, 1);
@@ -223,7 +222,6 @@ const locShort    = ev.location ? ev.location.replace("Residenzschloss Ludwigsbu
           if (window.Capacitor) {
             window.dispatchEvent(new CustomEvent('fcm:unsubscribe', { detail: { topic: `event_${slug}` } }));
           } else {
-            console.log(`Web simulation: Unsubscribed from topic event_${slug}`);
           }
         }
         setSaved(saved);
