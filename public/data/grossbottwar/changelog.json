@@ -1,12 +1,25 @@
 {
-  "generated_at": "2026-11-25T05:31:26.383453+01:00",
+  "generated_at": "2026-11-26T04:52:26.758827+01:00",
   "city": "grossbottwar",
   "sources": [
     "grossbottwar_veranstaltungen"
   ],
-  "previous_run": "2026-11-24T05:49:48.053225+01:00",
+  "previous_run": "2026-11-25T05:31:26.458842+01:00",
   "count_added": 0,
-  "count_removed": 0,
+  "count_removed": 2,
   "added": [],
-  "removed": []
+  "removed": [
+    {
+      "id": "004b3b5bfebe3e24",
+      "title": "Öffentliche Sitzung des Verwaltungsausschusses",
+      "date_start": "2026-11-25",
+      "source": "grossbottwar_veranstaltungen"
+    },
+    {
+      "id": "cecc5adeca2f089a",
+      "title": "Öffentliche Sitzung des Gemeinderates",
+      "date_start": "2026-11-25",
+      "source": "grossbottwar_veranstaltungen"
+    }
+  ]
 }

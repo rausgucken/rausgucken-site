@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-25T04:32:02.826600+01:00",
+  "generated_at": "2026-11-26T04:40:56.516727+01:00",
   "city": "asperg",
   "sources": [
     "asperg_veranstaltungen",
-    "asperg_fuehrungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_fuehrungen"
   ],
-  "previous_run": "2026-11-24T05:21:56.123728+01:00",
-  "count_added": 28,
-  "count_removed": 0,
+  "previous_run": "2026-11-25T04:32:02.906166+01:00",
+  "count_added": 27,
+  "count_removed": 1,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -171,13 +171,14 @@
       "title": "Ausstellung",
       "date_start": "2026-11-22",
       "source": "glasperlenspiel"
-    },
-    {
-      "id": "3248d0391b3a0134",
-      "title": "Jahreshauptversammlung des Obst- und Gartenbauvereins",
-      "date_start": "2027-03-28",
-      "source": "asperg_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "6a8c402f1ab33d4f",
+      "title": "Baby und Kids-Treff",
+      "date_start": "2026-11-25",
+      "source": "asperg_veranstaltungen"
+    }
+  ]
 }

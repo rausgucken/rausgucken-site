@@ -1,27 +1,41 @@
 {
-  "generated_at": "2026-11-25T06:00:41.400606+01:00",
+  "generated_at": "2026-11-26T05:18:21.470945+01:00",
   "city": "kornwestheim",
   "sources": [
-    "das_k_buecherei",
     "kornwestheim",
-    "das_k_spielplan"
+    "das_k_spielplan",
+    "das_k_buecherei"
   ],
-  "previous_run": "2026-11-24T08:04:51.499951+01:00",
+  "previous_run": "2026-11-25T06:00:41.479002+01:00",
   "count_added": 4,
-  "count_removed": 6,
+  "count_removed": 3,
   "added": [
     {
-      "id": "8f3351d8f1551b4c",
-      "title": "Mantel & Koczwara",
-      "date_start": "2027-04-30",
+      "id": "061423121af4d2c9",
+      "title": "Gemeinderat (GR)",
+      "date_start": "2026-12-17",
       "source": "kornwestheim"
     },
     {
-      "id": "38bc280da1335b76",
-      "title": "Der Dachs hat heute schlechte Laune",
+      "id": "1445acf359d0a30a",
+      "title": "ABGESAGT! Die Kornwestheimer Innenstadt im Wandel - Entwicklungen der Vergangenheit, Gegenwart und der Zukunft. Eine besondere Stadtführung",
+      "date_start": "2026-11-28",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "0df0f3d3821c2aed",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
       "date_start": "2027-05-02",
       "source": "kornwestheim"
     },
+    {
+      "id": "c709e118b8fe125b",
+      "title": "Gottesvorstellungen von Kindern – Phänomene kindlicher Spiritualität",
+      "date_start": "2027-05-03",
+      "source": "kornwestheim"
+    }
+  ],
+  "removed": [
     {
       "id": "27b2059966a14028",
       "title": "Keramik Bemalen - Kostenlos",
@@ -29,48 +43,16 @@
       "source": "kornwestheim"
     },
     {
-      "id": "8913a237718ab06b",
-      "title": "Ehrenamts-Kongress",
-      "date_start": "2026-12-04",
-      "source": "kornwestheim"
-    }
-  ],
-  "removed": [
-    {
-      "id": "d21d5e381d88ec70",
-      "title": "Das Eselsöhrchen",
-      "date_start": "2026-11-24",
+      "id": "8aed39802f87b952",
+      "title": "Kaffeetreff mit Singen",
+      "date_start": "2026-11-25",
       "source": "kornwestheim"
     },
     {
-      "id": "18f13f8df5342c58",
-      "title": "Kaffeetreff - Bingo",
-      "date_start": "2026-11-24",
+      "id": "e39866d5921cf439",
+      "title": "Gemeinderat (GR)",
+      "date_start": "2026-12-17",
       "source": "kornwestheim"
-    },
-    {
-      "id": "4a5129f641218ac9",
-      "title": "Die Kornwestheimer Innenstadt im Wandel - Entwicklungen der Vergangenheit, Gegenwart und der Zukunft. Eine besondere Stadtführung",
-      "date_start": "2026-11-28",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "221297e9078dc49a",
-      "title": "Ehrenamts-Kongress",
-      "date_start": "2026-12-04",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "ad438898dcf6835e",
-      "title": "Mantel & Koczwara",
-      "date_start": "2027-04-30",
-      "source": "das_k_spielplan"
-    },
-    {
-      "id": "684ead9a26ff42e3",
-      "title": "Der Dachs hat heute schlechte Laune",
-      "date_start": "2027-05-02",
-      "source": "das_k_spielplan"
     }
   ]
 }
