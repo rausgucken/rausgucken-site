@@ -1,32 +1,63 @@
 {
-  "generated_at": "2026-11-26T04:41:01.430988+01:00",
+  "generated_at": "2026-11-27T08:04:20.606943+01:00",
   "city": "ditzingen",
   "sources": [
-    "ditzingen_stadt",
-    "ditzingen_treffpunkt_adler"
+    "ditzingen_treffpunkt_adler",
+    "ditzingen_stadt"
   ],
-  "previous_run": "2026-11-25T04:48:55.104908+01:00",
-  "count_added": 0,
-  "count_removed": 3,
-  "added": [],
+  "previous_run": "2026-11-26T04:41:01.512494+01:00",
+  "count_added": 1,
+  "count_removed": 7,
+  "added": [
+    {
+      "id": "5a5a376b5d375a11",
+      "title": "Blutspende",
+      "date_start": "2027-02-12",
+      "source": "ditzingen_stadt"
+    }
+  ],
   "removed": [
     {
-      "id": "5018ff5f9f7da3e1",
-      "title": "Fotogruppe",
-      "date_start": "2026-11-25",
+      "id": "334ca51961b1f98d",
+      "title": "Computer- und Handy-Sprechstunde",
+      "date_start": "2026-11-26",
       "source": "ditzingen_treffpunkt_adler"
     },
     {
-      "id": "245a542ca8e933ad",
-      "title": "Vorlesezeit",
-      "date_start": "2026-11-25",
+      "id": "2d1d6ea9153e5db2",
+      "title": "Mobilität und Fitness - Gymnastik im Sitzen",
+      "date_start": "2026-11-26",
+      "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "55a38629dc2ab5ca",
+      "title": "Flohmarkt in der Stadtteilbibliothek Hirschlanden",
+      "date_start": "2026-11-26",
       "source": "ditzingen_stadt"
     },
     {
-      "id": "f83996c0adebb2e2",
-      "title": "Spanisch Stammtisch",
-      "date_start": "2026-11-25",
+      "id": "96a08e42f2647098",
+      "title": "LEA Leseklub - ALLE mit dabei!",
+      "date_start": "2026-11-26",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "e5cd44e8ff56b0bd",
+      "title": "Adventskranzbinden (LandFrauen Ditzingen)",
+      "date_start": "2026-11-26",
       "source": "ditzingen_treffpunkt_adler"
+    },
+    {
+      "id": "ea9f5643554a05eb",
+      "title": "Der Energiesparkommissar kommt! Kostenfreier Vortrag zu Wärmepumpen im Altbau in Ditzingen",
+      "date_start": "2026-11-26",
+      "source": "ditzingen_stadt"
+    },
+    {
+      "id": "435eed28970de59d",
+      "title": "Blutspende",
+      "date_start": "2027-01-22",
+      "source": "ditzingen_stadt"
     }
   ]
 }

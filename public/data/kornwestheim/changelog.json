@@ -1,57 +1,159 @@
 {
-  "generated_at": "2026-11-26T05:18:21.470945+01:00",
+  "generated_at": "2026-11-27T09:49:17.692506+01:00",
   "city": "kornwestheim",
   "sources": [
+    "das_k_buecherei",
     "kornwestheim",
-    "das_k_spielplan",
-    "das_k_buecherei"
+    "das_k_spielplan"
   ],
-  "previous_run": "2026-11-25T06:00:41.479002+01:00",
-  "count_added": 4,
-  "count_removed": 3,
+  "previous_run": "2026-11-26T05:18:21.550061+01:00",
+  "count_added": 8,
+  "count_removed": 16,
   "added": [
     {
-      "id": "061423121af4d2c9",
-      "title": "Gemeinderat (GR)",
-      "date_start": "2026-12-17",
-      "source": "kornwestheim"
+      "id": "e703e43e78fdef10",
+      "title": "Moby Dick",
+      "date_start": "2027-04-10",
+      "source": "das_k_spielplan"
     },
     {
-      "id": "1445acf359d0a30a",
-      "title": "ABGESAGT! Die Kornwestheimer Innenstadt im Wandel - Entwicklungen der Vergangenheit, Gegenwart und der Zukunft. Eine besondere Stadtführung",
-      "date_start": "2026-11-28",
-      "source": "kornwestheim"
+      "id": "ad438898dcf6835e",
+      "title": "Mantel & Koczwara",
+      "date_start": "2027-04-30",
+      "source": "das_k_spielplan"
     },
     {
-      "id": "0df0f3d3821c2aed",
+      "id": "2237c83eb5d18b9e",
+      "title": "Das Eselöhrchen",
+      "date_start": "2026-12-08",
+      "source": "das_k_buecherei"
+    },
+    {
+      "id": "4d9eda5d50e5bef5",
+      "title": "Eine Weihnachtsgeschichte",
+      "date_start": "2026-12-10",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "232f2ba2e494c0fc",
+      "title": "Die Nacht der 5 Tenöre",
+      "date_start": "2026-12-30",
+      "source": "das_k_spielplan"
+    },
+    {
+      "id": "77f0d57b09d54c04",
       "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
-      "date_start": "2027-05-02",
+      "date_start": "2027-05-07",
       "source": "kornwestheim"
     },
     {
-      "id": "c709e118b8fe125b",
-      "title": "Gottesvorstellungen von Kindern – Phänomene kindlicher Spiritualität",
-      "date_start": "2027-05-03",
+      "id": "32e58c9ea800f575",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "date_start": "2027-05-08",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "96c6249d0d488c77",
+      "title": "Ausstellung \"Stadt – Land – Sehnsucht. Idyllische Ansichten in Kunst und Alltagskultur aus dem Südwesten\"",
+      "date_start": "2027-05-09",
       "source": "kornwestheim"
     }
   ],
   "removed": [
     {
-      "id": "27b2059966a14028",
-      "title": "Keramik Bemalen - Kostenlos",
-      "date_start": "2026-11-25",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "8aed39802f87b952",
-      "title": "Kaffeetreff mit Singen",
-      "date_start": "2026-11-25",
-      "source": "kornwestheim"
-    },
-    {
-      "id": "e39866d5921cf439",
+      "id": "0f0af3d3adf5d0cf",
       "title": "Gemeinderat (GR)",
-      "date_start": "2026-12-17",
+      "date_start": "2026-11-26",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "88a533058f5222b2",
+      "title": "Lebensmut trotz(t) Demenz",
+      "date_start": "2026-11-26",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "5529c6621d919e40",
+      "title": "Kaffeetreff - Spielenachmittag",
+      "date_start": "2026-11-26",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "92c6ad811a6b1237",
+      "title": "Spaziergang am Alten Friedhof",
+      "date_start": "2026-12-05",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "c3c4355f73ce1f7a",
+      "title": "Das Eselöhrchen",
+      "date_start": "2026-12-08",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "87a5e58c12140f7c",
+      "title": "Ausschuss für Umwelt und Technik (AUT)",
+      "date_start": "2026-12-08",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "208039d1b902263d",
+      "title": "Adventsfeier",
+      "date_start": "2026-12-08",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "14fa2c01ce41c6dc",
+      "title": "Ausschuss für Soziales und Integration (SIA)",
+      "date_start": "2026-12-09",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "0be6ab054df4831b",
+      "title": "Musizierstunde",
+      "date_start": "2026-12-09",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "956633536c368ae6",
+      "title": "Verwaltungs- und Finanzausschuss (VFA)",
+      "date_start": "2026-12-10",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "fa3439a4917dae43",
+      "title": "Eine Weihnachtsgeschichte",
+      "date_start": "2026-12-10",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "47e24aed7529ecfd",
+      "title": "Ausstellung \"Reiner Michelfelder – ars dynografia\"",
+      "date_start": "2026-12-11",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "6bcbcc2066ff0af9",
+      "title": "Xmas Rocks",
+      "date_start": "2026-12-11",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "e8062d4b46194e7f",
+      "title": "Die Nacht der 5 Tenöre",
+      "date_start": "2026-12-30",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "3de218150953bd1c",
+      "title": "Moby Dick",
+      "date_start": "2027-04-10",
+      "source": "kornwestheim"
+    },
+    {
+      "id": "8f3351d8f1551b4c",
+      "title": "Mantel & Koczwara",
+      "date_start": "2027-04-30",
       "source": "kornwestheim"
     }
   ]
