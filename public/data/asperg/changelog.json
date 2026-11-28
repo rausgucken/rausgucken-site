@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-27T07:27:06.779124+01:00",
+  "generated_at": "2026-11-28T04:31:37.079826+01:00",
   "city": "asperg",
   "sources": [
-    "asperg_veranstaltungen",
     "asperg_fuehrungen",
-    "glasperlenspiel"
+    "glasperlenspiel",
+    "asperg_veranstaltungen"
   ],
-  "previous_run": "2026-11-26T04:40:56.593378+01:00",
-  "count_added": 30,
-  "count_removed": 0,
+  "previous_run": "2026-11-27T07:27:06.855882+01:00",
+  "count_added": 39,
+  "count_removed": 2,
   "added": [
     {
       "id": "fd2706ada4fe62ad",
@@ -173,23 +173,90 @@
       "source": "glasperlenspiel"
     },
     {
-      "id": "711faf0b312c963f",
-      "title": "Barbara Mergenthaler und Katharina Reich: Mascha Kaléko - Philosophie der Lyrik",
-      "date_start": "2027-11-01",
-      "source": "glasperlenspiel"
+      "id": "0a3c909de7603ffd",
+      "title": "Seniorennachmittag",
+      "date_start": "2027-01-20",
+      "source": "asperg_veranstaltungen"
     },
     {
-      "id": "741947eaf45c77af",
-      "title": "Höchstkomischer philosophischer Exkurs",
-      "date_start": "2027-02-20",
-      "source": "glasperlenspiel"
+      "id": "d7b10fc517f61a6a",
+      "title": "Seniorennachmittag",
+      "date_start": "2027-02-03",
+      "source": "asperg_veranstaltungen"
     },
     {
-      "id": "4044e238c790e261",
-      "title": "Jazz-Abende",
-      "date_start": "2027-04-02",
-      "source": "glasperlenspiel"
+      "id": "073632fac69345df",
+      "title": "Weltgebetstag der Frauen",
+      "date_start": "2027-03-05",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "c276b165a106fb74",
+      "title": "Seniorennachmittag",
+      "date_start": "2027-03-17",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "67cfc17577458bd8",
+      "title": "Seniorennachmittag",
+      "date_start": "2027-04-21",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "e5f4f72cfa335c25",
+      "title": "Seniorennachmittag",
+      "date_start": "2027-05-19",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "8861c3fd30eab760",
+      "title": "Seniorennachmittag",
+      "date_start": "2027-06-16",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "05fd6a136227e11c",
+      "title": "Seniorennachmittag",
+      "date_start": "2027-07-21",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "959d2206e24ac62c",
+      "title": "Seniorennachmittag",
+      "date_start": "2027-09-15",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "8117cdd49e652992",
+      "title": "Ökumenischer Seniorennachmittag",
+      "date_start": "2027-10-26",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "5920783e6b64b93c",
+      "title": "Seniorennachmittag",
+      "date_start": "2027-11-17",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "fbd7adb9f11b9713",
+      "title": "Seniorennachmittag",
+      "date_start": "2027-12-08",
+      "source": "asperg_veranstaltungen"
     }
   ],
-  "removed": []
+  "removed": [
+    {
+      "id": "be27c3bff30990da",
+      "title": "Musik - Just sing!: (K)ein Weihnachtskonzert",
+      "date_start": "2026-11-27",
+      "source": "asperg_veranstaltungen"
+    },
+    {
+      "id": "e6eeca5d9254479f",
+      "title": "kein Weihnachtskonzert",
+      "date_start": "2026-11-27",
+      "source": "glasperlenspiel"
+    }
+  ]
 }

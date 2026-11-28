@@ -1,7 +1,7 @@
 {
   "subset": "next-week",
-  "generated_at": "2026-11-28T06:00:01.683645+01:00",
-  "event_count": 33,
+  "generated_at": "2026-11-28T09:54:56.593422+01:00",
+  "event_count": 42,
   "disclaimer": "Die auf rausgucken.de angezeigten Veranstaltungsinformationen werden automatisch von öffentlich zugänglichen Webseiten gesammelt. Trotz größtmöglicher Sorgfalt übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der Daten. Bitte überprüfen Sie alle Angaben auf der jeweiligen Originalseite (siehe original_url jedes Eintrags) bevor Sie teilnehmen.",
   "events": [
     {
@@ -27,9 +27,9 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-11-27T02:09:23.578382+01:00",
+      "scraped_at": "2026-11-28T02:12:07.668058+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -59,9 +59,9 @@
       "weekdays": [
         1
       ],
-      "scraped_at": "2026-11-27T02:09:23.578702+01:00",
+      "scraped_at": "2026-11-28T02:12:07.668357+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -69,12 +69,45 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/pur-arena-tour-2026-2026-11-30-ludw"
     },
     {
+      "id": "a208a6679c50f059",
+      "title": "Eltern-Kind-Workshop",
+      "date_start": "2026-12-01",
+      "date_end": null,
+      "time": "15 bis 17",
+      "description": "In diesem Workshop lernen Eltern und Kinder gemeinsam neue Kunsttechniken. Mit Faszination und Spaß entstehen einzigartige Kunstwerke unter der Leitung erfahrener Künstlerinnen.",
+      "location": "Kinder- und Familienzentrum Poppenweiler",
+      "price": null,
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie",
+        "Workshop"
+      ],
+      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523257298709/index.html",
+      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523257298709/index.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "eltern-kind-workshop-2026-12-01-ludw",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-11-28T02:12:07.668573+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/eltern-kind-workshop-2026-12-01-ludw"
+    },
+    {
       "id": "07f66474ed7f0a11",
       "title": "Wichtelstunde",
       "date_start": "2026-12-01",
       "date_end": null,
       "time": "15:30 - 16:30",
-      "description": "In dieser Veranstaltung erzählen Geschichten aus der Geschichteninsel Arabisch für Kinder und Erwachsene. Die Wichtelstunde fokussiert auf internationale Legenden und bringt sie lebendig zum Leben.",
+      "description": "In dieser Veranstaltung erleben Kinder die Weihnachtsmagie mit der Wichtelstunde. Sie können anhand von Geschichten und Tätigkeiten in Ludwigsburg ein Einblick in das Leben der kleinen Hexen erhalten.",
       "location": "Stadtbibliothek Ludwigsburg",
       "price": "Kostenlos",
       "age_min": 4,
@@ -91,14 +124,43 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-27T02:03:50.690070+01:00",
+      "scraped_at": "2026-11-28T02:06:07.504215+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/wichtelstunde-2026-12-01-stab"
+    },
+    {
+      "id": "0db17fca9e7acbb4",
+      "title": "Internationale Geschichteninsel auf Russisch",
+      "date_start": "2026-12-01",
+      "date_end": null,
+      "time": "16-17",
+      "description": "In der Stadtbibliothek des Kulturzentrums bietet sich eine Einblicke in die Welt der russischen Erzählkunst. Mit fesselnden Geschichten und Mythen aus Russland teilt eine Expertin ihre Kenntnisse mit Besuchern aller Altersgruppen.",
+      "location": "Stadtbibliothek im Kulturzentrum",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx63a4873d7eaad.html",
+      "original_url": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx63a4873d7eaad.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "internationale-geschichteninsel-auf-russisch-2026-12-01-ludw",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-11-28T02:12:07.669058+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/internationale-geschichteninsel-auf-russisch-2026-12-01-ludw"
     },
     {
       "id": "ddb67fa309a6cde1",
@@ -120,7 +182,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-27T02:03:50.690196+01:00",
+      "scraped_at": "2026-11-28T02:06:07.504347+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -130,35 +192,96 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/internationale-geschichteninsel---russisch-2026-12-01-stab"
     },
     {
-      "id": "f6c1f17124b6c99e",
-      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "id": "e6e6aebc27d36d3b",
+      "title": "Portugiesischsprachige Spielgruppe / Grupo de Brincadeiras em Português",
       "date_start": "2026-12-01",
       "date_end": null,
-      "time": "16:00-18:00",
-      "description": "In dieser Werkstatt lernen Anfänger zwischen 9 und 16 Jahren die Grundlagen der Luftakrobatik. Mit Unterstützung durch professionelle Trainers verfeinern sie ihre Balance- und Koordinationstechniken in einer sicheren Umgebung.",
-      "location": "Kunstzentrum Karlskaserne",
+      "time": "16:00 - 17:30",
+      "description": "In dieser Spielgruppe lernen Kinder im Portugiesischen die Grundlagen und genießen gemeinsame Aktivitäten unter der Betreuung von pädagogisch ausgebildeten Erwachsenen.",
+      "location": "Evangelische FamilienBildung Ludwigsburg (BabyZentrum)",
       "price": null,
-      "age_min": null,
-      "age_max": null,
+      "age_min": 4,
+      "age_max": 12,
       "tags": [
-        "Workshop"
+        "Kinder",
+        "Familie"
       ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286851/zmdetail_523255395823/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286851/zmdetail_523255395823/index.html",
-      "source": "labyrinth",
+      "link": "https://www.familienbildungludwigsburg.de/programm/offene-treffs-1",
+      "original_url": "https://www.familienbildungludwigsburg.de/programm/offene-treffs-1",
+      "source": "ludwigsburg_stadt",
       "city": "ludwigsburg",
-      "slug": "workshop-luftakrobatik-werkstatt-fuer-anfaenger-von-9-16-jahren-in-ludwigsburg-2026-12-01",
+      "slug": "portugiesischsprachige-spielgruppe-grupo-de-brincadeiras-em-portugues-2026-12-01-ludw",
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-27T02:08:57.480269+01:00",
+      "scraped_at": "2026-11-28T02:12:07.668829+01:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Kunstschule Labyrinth",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-luftakrobatik-werkstatt-fuer-anfaenger-von-9-16-jahren-in-ludwigsburg-2026-12-01"
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/portugiesischsprachige-spielgruppe-grupo-de-brincadeiras-em-portugues-2026-12-01-ludw"
+    },
+    {
+      "id": "6dd0656dcc16941d",
+      "title": "Workshop: Luftakrobatik-Werkstatt für Anfänger von 9-16 Jahren in Ludwigsburg",
+      "date_start": "2026-12-01",
+      "date_end": null,
+      "time": "16:00-18:00",
+      "description": "In dieser Luftakrobatik-Werkstatt lernen Anfänger von 9-16 Jahren die Grundlagen der Flugkunst. Mit Unterstützung durch professionelle Instrukteure profitieren Teilnehmer von einem sicheren und unterhaltsamen Einstieg in das Zirkusleben.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "24,00 Euro",
+      "age_min": 10,
+      "age_max": null,
+      "tags": [
+        "Workshop"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255395823/WorkshopLuftakrobatikWerkstattfrAnfngervon916JahreninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255395823/WorkshopLuftakrobatikWerkstattfrAnfngervon916JahreninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "workshop-luftakrobatik-werkstatt-fuer-anfaenger-von-9-16-jahren-in-ludwigsburg-2026-12-01-1",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-11-28T02:02:58.979384+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-luftakrobatik-werkstatt-fuer-anfaenger-von-9-16-jahren-in-ludwigsburg-2026-12-01-1"
+    },
+    {
+      "id": "ea41a5b098609676",
+      "title": "Lesetipps vom Stabi-Team",
+      "date_start": "2026-12-01",
+      "date_end": null,
+      "time": "17",
+      "description": "Im Rahmen einer Veranstaltung des Stabi-Teams bietet die Stadtbibliothek im Kulturzentrum Lesetipps und Empfehlungen für alle Interessenten.",
+      "location": "Stadtbibliothek im Kulturzentrum",
+      "price": null,
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523255018003/index.html",
+      "original_url": "https://www.ludwigsburg.de/site/Ludwigsburg-Internet-2020/node/16990284/zmdetail_523255018003/index.html",
+      "source": "ludwigsburg_stadt",
+      "city": "ludwigsburg",
+      "slug": "lesetipps-vom-stabi-team-2026-12-01-ludw",
+      "weekdays": [
+        2
+      ],
+      "scraped_at": "2026-11-28T02:12:07.669216+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/lesetipps-vom-stabi-team-2026-12-01-ludw"
     },
     {
       "id": "4732188329a33243",
@@ -180,7 +303,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-27T02:03:54.121869+01:00",
+      "scraped_at": "2026-11-28T02:06:10.478584+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -190,33 +313,33 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/lesetipps-vom-stabi-team-2026-12-01-stab"
     },
     {
-      "id": "ceffd17f4f8fa9ec",
+      "id": "aab877ebf1841f32",
       "title": "Aktiv im MIK: Qigong im Museumsfoyer",
       "date_start": "2026-12-01",
       "date_end": null,
       "time": "17:00–18:00",
-      "description": "In der Ausrichtung des Museums im Kultursplitter wird Qigong im Museumsfoyer angeboten. Mit dem Fokus auf körperliche und geistige Übungen bietet diese Veranstaltung eine ruhige Pause in der Stadt.",
-      "location": "Museum im MIK",
+      "description": "Im Museumsfoyer des MIK bietet sich die Möglichkeit, den Tag mit Qigong zu beenden. Die Übungen finden in gemütlicher Umgebung statt und sind für alle geeignet.",
+      "location": "Ludwigsburg Museum im MIK",
       "price": null,
       "age_min": null,
       "age_max": null,
       "tags": [],
-      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806692",
-      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806692",
-      "source": "museum",
+      "link": "http://www.ludwigsburgmuseum.de",
+      "original_url": "http://www.ludwigsburgmuseum.de",
+      "source": "ludwigsburg_stadt",
       "city": "ludwigsburg",
-      "slug": "aktiv-im-mik-qigong-im-museumsfoyer-2026-12-01-muse",
+      "slug": "aktiv-im-mik-qigong-im-museumsfoyer-2026-12-01-ludw",
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-27T02:00:03.841775+01:00",
+      "scraped_at": "2026-11-28T02:12:07.669323+01:00",
       "extraction_confidence": 1.0,
-      "is_new": false,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Stadtmuseum im MIK",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/aktiv-im-mik-qigong-im-museumsfoyer-2026-12-01-muse"
+      "source_label": "Stadt Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/aktiv-im-mik-qigong-im-museumsfoyer-2026-12-01-ludw"
     },
     {
       "id": "e3e13fe3d9fe2e8e",
@@ -240,7 +363,7 @@
       "weekdays": [
         2
       ],
-      "scraped_at": "2026-11-27T02:08:57.480418+01:00",
+      "scraped_at": "2026-11-28T02:11:36.664086+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -250,33 +373,36 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-luftakrobatik-werkstatt-fuer-fortgeschrittene-von-9-16-jahren-in-ludwigsburg"
     },
     {
-      "id": "0200632eb9bc01e9",
-      "title": "Museumspause",
+      "id": "4d2ce648db4c8c7e",
+      "title": "Wichtelstunde",
       "date_start": "2026-12-02",
       "date_end": null,
-      "time": "12:30–13:00",
-      "description": "Im Ludwigsburg Museum im MIK bietet sich eine Pause mit Ausstellungsguiden an. Besuchen Sie die Sammlungen und profitieren Sie von den Einsichten der Guiden.",
-      "location": "Museum im MIK",
-      "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [],
-      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806670",
-      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523251806670",
-      "source": "museum",
+      "time": "15:30 - 16:30",
+      "description": "In dieser Veranstaltung lernen Kinder, mit Hilfe einer Dozentin, Wichtelkunst zu meistern. Materialien sind bereitgestellt. Einmal im Monat in Ludwigsburg.",
+      "location": "Stadtbibliothek Ludwigsburg",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx6b0953ac6e572.html",
+      "original_url": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx6b0953ac6e572.html",
+      "source": "stabi",
       "city": "ludwigsburg",
-      "slug": "museumspause-2026-12-02-muse",
+      "slug": "wichtelstunde-2026-12-02-stab",
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-11-27T02:00:03.841866+01:00",
+      "scraped_at": "2026-11-28T02:06:07.504474+01:00",
       "extraction_confidence": 1.0,
-      "is_new": false,
+      "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Stadtmuseum im MIK",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/museumspause-2026-12-02-muse"
+      "source_label": "Stadtbibliothek Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/wichtelstunde-2026-12-02-stab"
     },
     {
       "id": "656ebb706ce0f6da",
@@ -298,7 +424,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-11-27T02:03:55.565808+01:00",
+      "scraped_at": "2026-11-28T02:06:11.856208+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -327,7 +453,7 @@
       "weekdays": [
         3
       ],
-      "scraped_at": "2026-11-27T02:03:55.565972+01:00",
+      "scraped_at": "2026-11-28T02:06:11.856343+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -358,7 +484,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-27T02:03:13.613524+01:00",
+      "scraped_at": "2026-11-28T02:05:30.355055+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -387,7 +513,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-27T02:03:50.690312+01:00",
+      "scraped_at": "2026-11-28T02:06:07.504591+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -420,7 +546,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-27T02:04:00.066050+01:00",
+      "scraped_at": "2026-11-28T02:06:16.354245+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -428,6 +554,38 @@
       "editorial_tip": null,
       "source_label": "Stadtbibliothek Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/vorlesedonner-2026-12-03-stab"
+    },
+    {
+      "id": "ad1322451ff02289",
+      "title": "Wichtelstunde",
+      "date_start": "2026-12-03",
+      "date_end": null,
+      "time": "15:30 - 16:30",
+      "description": "In dieser Veranstaltung erfahren Kinder von Ludwigsburg die Geschichte der Wichtel. Mit Geschichten und kleineren Aktivitäten beschäftigt, entdecken sie das magische Leben der winzigen Feen.",
+      "location": "Stadtbibliothek Ludwigsburg",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx6b09540cb7c0f.html",
+      "original_url": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx6b09540cb7c0f.html",
+      "source": "stabi",
+      "city": "ludwigsburg",
+      "slug": "wichtelstunde-2026-12-03-stab",
+      "weekdays": [
+        4
+      ],
+      "scraped_at": "2026-11-28T02:06:07.504707+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtbibliothek Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/wichtelstunde-2026-12-03-stab"
     },
     {
       "id": "235b7114038abd8b",
@@ -449,7 +607,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-27T02:03:50.690438+01:00",
+      "scraped_at": "2026-11-28T02:06:07.504835+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -478,7 +636,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-27T02:03:48.700621+01:00",
+      "scraped_at": "2026-11-28T02:06:05.481356+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -507,7 +665,7 @@
       "weekdays": [
         4
       ],
-      "scraped_at": "2026-11-27T02:09:25.776127+01:00",
+      "scraped_at": "2026-11-28T02:12:08.811818+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -515,6 +673,69 @@
       "editorial_tip": null,
       "source_label": "LISBERT Queer Ludwigsburg e. V.",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/lisbert-babbel-bubble-2026-12-03-lisb"
+    },
+    {
+      "id": "477df19614f25e97",
+      "title": "The Ilan Lev Methode",
+      "date_start": "2026-12-04",
+      "date_end": null,
+      "time": "10:30-12:30",
+      "description": "In diesem Workshop lernen Sie die Techniken der The Ilan Lev Methode unter Anleitung von Experten. Entwickeln Sie Ihre künstlerischen Fähigkeiten in einem inspirierenden Umfeld des Kunstzentrums Karlskaserne.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "28 €",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Workshop"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523256924755/TheIlanLevMethode.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523256924755/TheIlanLevMethode.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "the-ilan-lev-methode-2026-12-04-karl",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-11-28T02:03:00.411358+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/the-ilan-lev-methode-2026-12-04-karl"
+    },
+    {
+      "id": "da3b2337830188d9",
+      "title": "Wichtelstunde",
+      "date_start": "2026-12-04",
+      "date_end": null,
+      "time": "15:30 - 16:30",
+      "description": "In dieser Veranstaltung lernen Kinder in Ludwigsburg die Welt der Wichtel entdecken. Mitunternahmen und Geschichten sorgen für eine magische Stunde voller Fantasie und Spaß.",
+      "location": "Stadtbibliothek Ludwigsburg",
+      "price": "Kostenlos",
+      "age_min": 4,
+      "age_max": 12,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx6b095438d7662.html",
+      "original_url": "https://events-stabi.ludwigsburg.de/Veranstaltung/cmx6b095438d7662.html",
+      "source": "stabi",
+      "city": "ludwigsburg",
+      "slug": "wichtelstunde-2026-12-04-stab",
+      "weekdays": [
+        5
+      ],
+      "scraped_at": "2026-11-28T02:06:07.504954+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Stadtbibliothek Ludwigsburg",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/wichtelstunde-2026-12-04-stab"
     },
     {
       "id": "0bbf034d5435ca8e",
@@ -539,7 +760,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-27T02:03:48.700797+01:00",
+      "scraped_at": "2026-11-28T02:06:05.481524+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -554,7 +775,7 @@
       "date_start": "2026-12-04",
       "date_end": null,
       "time": "19:00",
-      "description": "Bei dieser Abendführung durch das beleuchtete Residenzschloss Ludwigsburg verwandeln sich die prachtvollen Räume und Porträts der Schlossbewohner im Lichtschein der Laternen. Ein eindrucksvolles Erlebnis für alle Altersgruppen. Anmeldung erforderlich.",
+      "description": "Bei dieser Abendführung durch das Residenzschloss Ludwigsburg verwandelt sich die Dämmerung die Räume in mysteriöse Welten, in denen Porträts der Schlossbewohner zum Leben erwachen. Ein einzigartiges Erlebnis für alle Altersgruppen. Anmeldung erforderlich.",
       "location": "Residenzschloss Ludwigsburg",
       "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
       "age_min": null,
@@ -570,7 +791,7 @@
       "weekdays": [
         5
       ],
-      "scraped_at": "2026-11-27T02:01:15.004363+01:00",
+      "scraped_at": "2026-11-28T02:01:05.954325+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -597,7 +818,7 @@
       "city": "ludwigsburg",
       "slug": "uni-big-band-stuttgart-04122026-musi",
       "weekdays": [],
-      "scraped_at": "2026-11-27T02:09:25.477471+01:00",
+      "scraped_at": "2026-11-28T02:12:08.540129+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -614,7 +835,7 @@
       "time": "09:30-13:30",
       "description": "In dieser Workshop-Funktion lernen Kinder zwischen 5 und 7 Jahren das Zirkus- und Stelzenlaufwerk. Mit Unterstützung durch professionelle Workshoppädagogen entdecken sie die Welt der Künste.",
       "location": "Kunstzentrum Karlskaserne",
-      "price": null,
+      "price": "39,00 Euro",
       "age_min": 4,
       "age_max": 12,
       "tags": [
@@ -631,9 +852,9 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-27T02:08:55.764934+01:00",
+      "scraped_at": "2026-11-28T02:11:35.107986+01:00",
       "extraction_confidence": 1.0,
-      "is_new": true,
+      "is_new": false,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
@@ -662,7 +883,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-27T02:01:16.418586+01:00",
+      "scraped_at": "2026-11-28T02:01:07.435916+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -693,7 +914,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-27T02:03:50.690566+01:00",
+      "scraped_at": "2026-11-28T02:06:07.505067+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -703,14 +924,75 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/bilderbuchsamstag-2026-12-05-stab"
     },
     {
-      "id": "b2fa98a16082e266",
+      "id": "23e26c3059af466e",
+      "title": "Feldenkrais Intensiv",
+      "date_start": "2026-12-05",
+      "date_end": "2026-12-06",
+      "time": "11:00-14:00",
+      "description": "In diesem Workshop am Kunstzentrum Karlskaserne werden die Methoden von Moshe Feldenkrais erprobt. Teilnehmer können ihre Bewegungskompetenz und Bewusstheit verbessern durch kreative Übungen und Aktionen.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "96 €",
+      "age_min": null,
+      "age_max": null,
+      "tags": [
+        "Workshop"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523256924756/FeldenkraisIntensiv.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523256924756/FeldenkraisIntensiv.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "feldenkrais-intensiv-2026-12-05-karl",
+      "weekdays": [
+        0,
+        6
+      ],
+      "scraped_at": "2026-11-28T02:03:01.785526+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/feldenkrais-intensiv-2026-12-05-karl"
+    },
+    {
+      "id": "dacc3d19da7012ed",
+      "title": "Dance Fight Grow",
+      "date_start": "2026-12-05",
+      "date_end": null,
+      "time": "12:00-18:00",
+      "description": "In der Dance Fight Grow-Workshopreihe experimentieren Künstlerinnen und Künstler mit Bewegung, Kampfkunst und Wachstum. Einzigartige Formate im Kunstzentrum Karlskaserne fördern körperliche und emotionale Entwicklung.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "180 €",
+      "age_min": null,
+      "age_max": null,
+      "tags": [],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523256924757/DanceFightGrow.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523256924757/DanceFightGrow.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "dance-fight-grow-2026-12-05-karl",
+      "weekdays": [
+        6
+      ],
+      "scraped_at": "2026-11-28T02:03:03.250418+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/dance-fight-grow-2026-12-05-karl"
+    },
+    {
+      "id": "b875a99c1c34d6c5",
       "title": "Workshop: Ein Weihnachtsengel aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
       "date_start": "2026-12-05",
       "date_end": null,
       "time": "14:00-17:00",
-      "description": "In diesem Workshop lernen Kinder ab 6 Jahren, einen Weihnachtsengel aus Ton zu formen. Unter Anleitung durch eine Dozentin entstehen kreative Kunstwerke für das Weihnachtshaus.",
+      "description": "In diesem Workshop lernen Kinder ab 6 Jahren, einen Weihnachtsengel aus Ton zu formen. Unter Anleitung durch die Künstlerin entstehen originelle Handwerkskunstwerke.",
       "location": "Kunstzentrum Karlskaserne",
-      "price": null,
+      "price": "37,00 Euro",
       "age_min": 6,
       "age_max": null,
       "tags": [
@@ -718,53 +1000,22 @@
         "Workshop",
         "Familie"
       ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286802/zmdetail_523255395841/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286802/zmdetail_523255395841/index.html",
-      "source": "labyrinth",
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255395841/AUSGEBUCHTWorkshopEinWeihnachtsengelausTonfrKinderab6JahreninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255395841/AUSGEBUCHTWorkshopEinWeihnachtsengelausTonfrKinderab6JahreninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
       "city": "ludwigsburg",
-      "slug": "workshop-ein-weihnachtsengel-aus-ton-fuer-kinder-ab-6-jahren-in-ludwigsburg-2026-12-05",
+      "slug": "workshop-ein-weihnachtsengel-aus-ton-fuer-kinder-ab-6-jahren-in-ludwigsburg-2026-12-05-1",
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-27T02:08:56.605745+01:00",
-      "extraction_confidence": 1.0,
-      "is_new": true,
-      "is_booked_out": true,
-      "sponsored": false,
-      "editorial_tip": null,
-      "source_label": "Kunstschule Labyrinth",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-ein-weihnachtsengel-aus-ton-fuer-kinder-ab-6-jahren-in-ludwigsburg-2026-12-05"
-    },
-    {
-      "id": "55fee914291dda85",
-      "title": "Workshop flott, flott: Purzelwesen",
-      "date_start": "2026-12-05",
-      "date_end": null,
-      "time": "14:00–15:30",
-      "description": "In diesem Workshop lernen Teilnehmer, flott Purzelwesen zu biegen und zu gestalten. Mit Unterstützung durch den Dozenten sind alle Anfänger willkommen.",
-      "location": "Museum im MIK",
-      "price": null,
-      "age_min": null,
-      "age_max": null,
-      "tags": [
-        "Workshop"
-      ],
-      "link": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523256848479",
-      "original_url": "https://ludwigsburgmuseum.ludwigsburg.de/site/Ludwigsburg-Museum-2025/node/23792569/zmdetail/index.html?nodeID=523256848479",
-      "source": "museum",
-      "city": "ludwigsburg",
-      "slug": "workshop-flott-flott-purzelwesen-2026-12-05-muse",
-      "weekdays": [
-        6
-      ],
-      "scraped_at": "2026-11-27T02:00:03.842370+01:00",
+      "scraped_at": "2026-11-28T02:03:04.624864+01:00",
       "extraction_confidence": 1.0,
       "is_new": true,
       "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Stadtmuseum im MIK",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-flott-flott-purzelwesen-2026-12-05-muse"
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-ein-weihnachtsengel-aus-ton-fuer-kinder-ab-6-jahren-in-ludwigsburg-2026-12-05-1"
     },
     {
       "id": "8744e328b3724028",
@@ -786,7 +1037,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-27T02:09:06.273854+01:00",
+      "scraped_at": "2026-11-28T02:11:50.656171+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -801,12 +1052,14 @@
       "date_start": "2026-12-05",
       "date_end": null,
       "time": "19:00",
-      "description": "In dieser Veranstaltung erörtern Kerstin Frisch M. A., Martina Bühner, Anna Le Fur B. A., Laura Imprescia, Julia Tluk, Larissa Ruta und Beate Krauth mit der Publikum das Unerklärliche ums Residenzschloss Ludwigsburg. Moderation: Kerstin Frisch M. A.",
+      "description": "In dieser Veranstaltung erkennt man das Schaurige im Schönlichen durch Führungen und Geschichten rund ums Residenzschloss Ludwigsburg. Expertinnen und Geisterforscher partagerisschen ihre Kenntnisse mit.",
       "location": "Residenzschloss Ludwigsburg",
       "price": "Erwachsene 13,00 € Ermäßigte 6,50 € Familien 32,50 €",
       "age_min": null,
       "age_max": null,
-      "tags": [],
+      "tags": [
+        "Fuehrung"
+      ],
       "link": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/schaurig-schoen/9347/769831",
       "original_url": "https://www.schloss-ludwigsburg.de/besuchsinformation/fuehrungen-veranstaltungen/weitere-informationen-zum-ausgewaehlten-angebot/schaurig-schoen/9347/769831",
       "source": "schloss",
@@ -815,7 +1068,7 @@
       "weekdays": [
         6
       ],
-      "scraped_at": "2026-11-27T02:01:21.590397+01:00",
+      "scraped_at": "2026-11-28T02:01:08.750786+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -846,7 +1099,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-27T02:09:22.432405+01:00",
+      "scraped_at": "2026-11-28T02:12:06.694841+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -856,14 +1109,14 @@
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/winterpause-2026-12-06-blue"
     },
     {
-      "id": "e1c971a7a0423bfd",
+      "id": "4a04a07ce818243c",
       "title": "Workshop: Ein Weihnachtsengel aus Ton für Kinder ab 6 Jahren in Ludwigsburg",
       "date_start": "2026-12-06",
       "date_end": null,
       "time": "14:00-17:00",
-      "description": "In diesem Workshop lernen Kinder ab 6 Jahren, einen Weihnachtsengel aus Ton zu formen. Unter Anleitung durch eine Dozentin entstehen originelle Kunstwerke.",
+      "description": "In diesem Workshop lernen Kinder ab 6 Jahren, einen Weihnachtsengel aus Ton zu formen. Erwachsene begleiten die Tätigkeit im Kunstzentrum Karlskaserne Ludwigsburg.",
       "location": "Kunstzentrum Karlskaserne",
-      "price": null,
+      "price": "37,00 Euro",
       "age_min": 6,
       "age_max": null,
       "tags": [
@@ -871,22 +1124,22 @@
         "Workshop",
         "Familie"
       ],
-      "link": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286802/zmdetail_523255395843/index.html",
-      "original_url": "https://kunstschule-labyrinth.ludwigsburg.de/site/Ludwigsburg-Labyrinth-2019/node/17286802/zmdetail_523255395843/index.html",
-      "source": "labyrinth",
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255395843/AUSGEBUCHTWorkshopEinWeihnachtsengelausTonfrKinderab6JahreninLudwigsburg.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255395843/AUSGEBUCHTWorkshopEinWeihnachtsengelausTonfrKinderab6JahreninLudwigsburg.html",
+      "source": "karlskaserne_veranstaltungen",
       "city": "ludwigsburg",
-      "slug": "workshop-ein-weihnachtsengel-aus-ton-fuer-kinder-ab-6-jahren-in-ludwigsburg-2026-12-06",
+      "slug": "workshop-ein-weihnachtsengel-aus-ton-fuer-kinder-ab-6-jahren-in-ludwigsburg-2026-12-06-2",
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-27T02:08:56.605890+01:00",
+      "scraped_at": "2026-11-28T02:03:07.413161+01:00",
       "extraction_confidence": 1.0,
       "is_new": true,
-      "is_booked_out": true,
+      "is_booked_out": false,
       "sponsored": false,
       "editorial_tip": null,
-      "source_label": "Kunstschule Labyrinth",
-      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-ein-weihnachtsengel-aus-ton-fuer-kinder-ab-6-jahren-in-ludwigsburg-2026-12-06"
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/workshop-ein-weihnachtsengel-aus-ton-fuer-kinder-ab-6-jahren-in-ludwigsburg-2026-12-06-2"
     },
     {
       "id": "d4c515764ea8a075",
@@ -910,7 +1163,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-27T02:01:22.977670+01:00",
+      "scraped_at": "2026-11-28T02:01:10.132848+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -941,7 +1194,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-27T02:09:16.380553+01:00",
+      "scraped_at": "2026-11-28T02:12:00.579753+01:00",
       "extraction_confidence": 0.65,
       "is_new": false,
       "is_booked_out": false,
@@ -949,6 +1202,38 @@
       "editorial_tip": null,
       "source_label": "Demokratisches Zentrum Ludwigsburg",
       "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/besonderer-zeichenworkshop-mit-blindportraeten-2026-12-06-demo"
+    },
+    {
+      "id": "5d33022f47115635",
+      "title": "Lichtgestöber - Schneegefunkel",
+      "date_start": "2026-12-06",
+      "date_end": null,
+      "time": "15:00",
+      "description": "In der Kunstzentrum Karlskaserne bietet sich ein Lichtgestöber mit Schneegefunkel an. Besonders für Kinder ab 3 Jahren geeignet, mischt Licht und Schnee in einer kreativen Darbietung.",
+      "location": "Kunstzentrum Karlskaserne",
+      "price": "6€",
+      "age_min": 3,
+      "age_max": null,
+      "tags": [
+        "Kinder",
+        "Familie"
+      ],
+      "link": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255855172/LichtgestberSchneegefunkel.html",
+      "original_url": "https://karlskaserne.ludwigsburg.de/site/Ludwigsburg-Karlskaserne-2025/node/23666757/zmdetail_523255855172/LichtgestberSchneegefunkel.html",
+      "source": "karlskaserne_veranstaltungen",
+      "city": "ludwigsburg",
+      "slug": "lichtgestoeber---schneegefunkel-2026-12-06-karl",
+      "weekdays": [
+        0
+      ],
+      "scraped_at": "2026-11-28T02:03:08.692953+01:00",
+      "extraction_confidence": 1.0,
+      "is_new": true,
+      "is_booked_out": false,
+      "sponsored": false,
+      "editorial_tip": null,
+      "source_label": "Kunstzentrum Karlskaserne",
+      "canonical_url": "https://www.rausgucken.de/ludwigsburg/events/lichtgestoeber---schneegefunkel-2026-12-06-karl"
     },
     {
       "id": "5296727f937ed4c5",
@@ -970,7 +1255,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-27T02:01:24.277443+01:00",
+      "scraped_at": "2026-11-28T02:01:13.219966+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
@@ -999,7 +1284,7 @@
       "weekdays": [
         0
       ],
-      "scraped_at": "2026-11-27T02:09:06.274506+01:00",
+      "scraped_at": "2026-11-28T02:11:50.656547+01:00",
       "extraction_confidence": 1.0,
       "is_new": false,
       "is_booked_out": false,
